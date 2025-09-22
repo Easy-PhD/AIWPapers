@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MIS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mis">MIS - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Aura: An automated system for the real-time evaluation of flight maneuver performance. <em>MIS</em>, 1-11. (<a href='https://doi.org/10.1109/MIS.2025.3607236'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The automated evaluation of flight maneuver performance in civilian and military aircraft enhances pilot proficiency and aircraft safety. In this article, we present Aura, an inaircraft flight maneuver training system that provides real-time performance feedback to pilots. Aura consists of sequential flight data capture, flight data analysis, and flight data visualization modules. The flight data capture module uses a pipeline of computer vision techniques and object detection algorithms to collect flight data optically. The flight data analysis module applies a transformer-based classifier network, trained on a custom dataset, to identify flight maneuvers in real-time. The flight data visualization module displays processed data to pilots on a hardware display in a task-specific layout. Aura does not need a physical interface with aircraft avionics, thereby circumventing data access issues in military aircraft. Aura is ground tested using UH-60M Black Hawk helicopter flight simulator recordings and is flight tested for several hours in a Cessna 172S G1000 to validate effectiveness.},
+  archive      = {J_MIS},
+  author       = {Mahdi Al-Husseini and Joshua Barnett and Joseph Divyan Thomas and Tony G. Chen},
+  doi          = {10.1109/MIS.2025.3607236},
+  journal      = {IEEE Intelligent Systems},
+  month        = {9},
+  pages        = {1-11},
+  shortjournal = {IEEE Intell. Syst.},
+  title        = {Aura: An automated system for the real-time evaluation of flight maneuver performance},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploiting AI for attacks: On the interplay between adversarial AI and offensive AI. <em>MIS</em>, 1-10. (<a href='https://doi.org/10.1109/MIS.2025.3610364'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As Artificial Intelligence (AI) continues to evolve, it has transitioned from a research-focused discipline to a widely adopted technology, enabling intelligent solutions across various sectors. In security, AI’s role in strengthening organizational resilience has been studied for over two decades. While much attention has focused on AI’s constructive applications, the increasing maturity and integration of AI have also exposed its darker potentials. This article explores two emerging AI-related threats and the interplay between them: AI as a target of attacks (‘Adversarial AI’) and AI as a means to launch attacks on any target (‘Offensive AI’) – potentially even on another AI. By cutting through the confusion and explaining these threats in plain terms, we introduce the complex and often misunderstood interplay between Adversarial AI and Offensive AI, offering a clear and accessible introduction to the challenges posed by these threats.},
+  archive      = {J_MIS},
+  author       = {Saskia Laura Schröer and Luca Pajola and Alberto Castagnaro and Giovanni Apruzzese and Mauro Conti},
+  doi          = {10.1109/MIS.2025.3610364},
+  journal      = {IEEE Intelligent Systems},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Intell. Syst.},
+  title        = {Exploiting AI for attacks: On the interplay between adversarial AI and offensive AI},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

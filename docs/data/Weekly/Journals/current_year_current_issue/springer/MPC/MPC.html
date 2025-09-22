@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MPC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mpc">MPC - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Adaptive sieving: A dimension reduction technique for sparse optimization problems. <em>MPC</em>, <em>17</em>(3), 585-616. (<a href='https://doi.org/10.1007/s12532-025-00282-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose an adaptive sieving (AS) strategy for solving general sparse machine learning models by effectively exploring the intrinsic sparsity of the solutions, wherein only a sequence of reduced problems with much smaller sizes need to be solved. We further apply the proposed AS strategy to generate solution paths for large-scale sparse optimization problems efficiently. We establish the theoretical guarantees for the proposed AS strategy including its finite termination property. Extensive numerical experiments are presented in this paper to demonstrate the effectiveness and flexibility of the AS strategy to solve large-scale machine learning models.},
+  archive      = {J_MPC},
+  author       = {Yuan, Yancheng and Lin, Meixia and Sun, Defeng and Toh, Kim-Chuan},
+  doi          = {10.1007/s12532-025-00282-2},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {585-616},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Adaptive sieving: A dimension reduction technique for sparse optimization problems},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Polynomial optimization relaxations for generalized semi-infinite programs. <em>MPC</em>, <em>17</em>(3), 547-583. (<a href='https://doi.org/10.1007/s12532-025-00280-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies generalized semi-infinite programs (GSIPs) given by polynomials. We propose a hierarchy of polynomial optimization relaxations to solve them. They are based on Lagrange multiplier expressions and polynomial extensions. Moment-SOS relaxations are applied to solve the polynomial optimization. The convergence of this hierarchy is shown under certain conditions. In particular, the classical semi-infinite programs can be solved as a special case of GSIPs. We also study GSIPs that have convex infinity constraints and show that they can be solved exactly by a single polynomial optimization relaxation. The computational efficiency is demonstrated by extensive numerical results.},
+  archive      = {J_MPC},
+  author       = {Hu, Xiaomeng and Nie, Jiawang},
+  doi          = {10.1007/s12532-025-00280-4},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {547-583},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Polynomial optimization relaxations for generalized semi-infinite programs},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MATRS: Heuristic methods for noisy derivative-free bound-constrained mixed-integer optimization. <em>MPC</em>, <em>17</em>(3), 505-546. (<a href='https://doi.org/10.1007/s12532-025-00281-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces MATRS, a novel matrix adaptation trust-region strategy designed to solve noisy derivative-free mixed-integer optimization problems with simple bounds in low dimensions. MATRS operates through a repeated cycle of five phases: mutation, selection, recombination, trust-region, and mixed-integer, executed in this sequence. But if in the mutation phase a new best point (the point with the lowest inexact function value among all evaluated points so far) is found, the selection, recombination, and trust-region phases are skipped. Similarly, if the recombination phase finds a new best point, the trust-region phase is skipped. The mixed-integer phase is always performed. To search for a new best point, the mutation and recombination phases use extrapolation whereas the mixed-integer phase performs a mixed-integer line search along directions estimated to go into a valley. Numerical results on several collections of test problems show that MATRS is competitive with state-of-the-art derivative-free mixed-integer solvers.},
+  archive      = {J_MPC},
+  author       = {Kimiaei, Morteza and Neumaier, Arnold},
+  doi          = {10.1007/s12532-025-00281-3},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {505-546},
+  shortjournal = {Math. Program. Comput.},
+  title        = {MATRS: Heuristic methods for noisy derivative-free bound-constrained mixed-integer optimization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Globally solving concave quadratic programs via doubly nonnegative relaxation. <em>MPC</em>, <em>17</em>(3), 451-503. (<a href='https://doi.org/10.1007/s12532-025-00279-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of maximizing a convex quadratic function over a bounded polyhedral set. We design a new framework based on SDP relaxations and cutting plane methods for solving the associated reference value problem. The major novelty is a new way to generate valid cuts through the doubly nonnegative (DNN) relaxation. We establish various theoretical properties of the DNN relaxation, including its equivalence with the Shor relaxation of an equivalent quadratically constrained problem, the strong duality, and the generation of valid cuts from an approximate solution of the DNN relaxation returned by an arbitrary SDP solver. Computational results on both real and synthetic data demonstrate the efficiency of the proposed method and its ability to solve high-dimensional problems with dense data. In particular, our new algorithm successfully solves in 3 days the reference value problem arising from computational biology for a dataset containing more than 300,000 instances of dimension 78. In contrast, CPLEX or Gurobi is estimated to require years of computational time for the same dataset on the same computing platform.},
+  archive      = {J_MPC},
+  author       = {Qu, Zheng and Zeng, Tianyou and Lou, Yuchen},
+  doi          = {10.1007/s12532-025-00279-x},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {451-503},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Globally solving concave quadratic programs via doubly nonnegative relaxation},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning to use local cuts. <em>MPC</em>, <em>17</em>(3), 437-450. (<a href='https://doi.org/10.1007/s12532-025-00278-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An essential component in modern solvers for mixed-integer (linear) programs (MIPs) is the separation of additional inequalities (cutting planes) to tighten the linear programming relaxation. Various algorithmic decisions are necessary when integrating cutting plane methods into a branch-and-bound (B&B) solver as there is always the trade-off between the efficiency of the cuts and their overhead, given that they tend to slow down the solution time of the relaxation. One of the most crucial questions is: Should cuts only be generated globally at the root or also locally at nodes of the tree? We address this question by a machine learning approach for which we train a regression forest to predict the speed-up (or slow-down) provided by using local cuts. We demonstrate with an open implementation that this helps to improve the performance of the FICO Xpress MIP solver on a public test set of general MIP instances. We further report on the impact of a practical implementation inside Xpress on a large, diverse set of real-world industry MIPs.},
+  archive      = {J_MPC},
+  author       = {Berthold, Timo and Francobaldi, Matteo and Hendel, Gregor},
+  doi          = {10.1007/s12532-025-00278-y},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {437-450},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Learning to use local cuts},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

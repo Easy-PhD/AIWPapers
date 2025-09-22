@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TETC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tetc">TETC - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Efficient training and neuro-encoding for bridging hybrid ANN and SNN computation. <em>TETC</em>, 1-14. (<a href='https://doi.org/10.1109/TETC.2025.3607104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The complementary strengths of Spiking Neural Networks (SNNs) and Artificial Neural Networks (ANNs) have promoted interest in leveraging hybrid ANN/SNN computation. While most existing efforts focus on ANN-SNN conversion for pure SNN inference, hybrid ANN/SNN inference present unique challenges where complexity and performance in both domains are critical. Key limitations include achieving ultra-low latency, maintaining unified training parameters for resource sharing, and developing efficient neural and encoding models for hybrid data interactions. To address these challenges, We introduce the Adaptive Clip-Floor-Shift (ACFS) activation to bridge the ANN-SNN gap with unified parameters, balancing inference accuracy and complexity across both domains. Our Hybrid NeuroEncoding Bridge (HNEB) integrating Clipped-ReLU for ANNs, proposed Selective Integrate-and-Fire (SIF) model for enhanced SNN sparsity, and a Stateless Spike Encoding (SSE) mechanism for resource-efficient activation-spike conversion. Experimental results on VGG16 and ResNet demonstrate SNNs achieving competitive accuracy (≤ 0.89% loss) versus ANNs at ultra-low latency (e.g., T ≤ 4 for CIFAR10, T ≤ 8 for CIFAR100). Experimental analysis reveals Hybrid Neural Netwroks (HNNs) provide superior energy-accuracy trade-offs, improving energy efficiency by up to 84.13% over pure SNNs while maintaining accuracy through layer-wise ANN/SNN partitioning and minimized encoding overhead.},
+  archive      = {J_TETC},
+  author       = {Musheer Abdullah and De Xu and Zhaoqi Miao and Yuhao Tai and Sawsan Alhabashi and Chen Zhao and Wu Gao},
+  doi          = {10.1109/TETC.2025.3607104},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Efficient training and neuro-encoding for bridging hybrid ANN and SNN computation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). OER-miner: One-off episode rule mining for process event logs. <em>TETC</em>, 1-13. (<a href='https://doi.org/10.1109/TETC.2025.3607892'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Episode mining is an active subfield of data mining in which the aim is to retrieve important knowledge from temporal data and can be used to analyze fault reports and web navigation logs. However, existing methods generally do not consider time gap constraints, and overestimate the frequency of episodes, which may lead to mining a large number of episodes that users are not interested in. To tackle this problem, this paper investigates one-off episode rule (OER) mining with time gap constraints for process event logs and proposes a one-off episode rule mining algorithm called OER-Miner that can mine frequent one-off episodes and the implicit relationship among them. To generate fewer and prune unpromising candidate episodes, OERMiner utilizes episode join and pruning strategies, respectively. To efficiently calculate the candidate episode support, position indexes, and depth-first search and backtracking strategies are applied to calculate the number of occurrences. Experimental results verify that OER-Miner yields a better performance than seven other competitive algorithms on nine publicly available event logs. More importantly, OER-Miner can be applied to a real-industrial log to identify rework phenomena in the production process by mining strong one-off episode rules, to discover the optimal processes and deficiencies of the system, and provide recommendations for further improvement. All algorithms can be downloaded from https://github.com/wuc567/PatternMining/tree/master/OER-Miner},
+  archive      = {J_TETC},
+  author       = {Youxi Wu and Zhihong Dong and Jing Liu and Yan Li and Cong Liu and Lijie Wen and Xindong Wu},
+  doi          = {10.1109/TETC.2025.3607892},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {OER-miner: One-off episode rule mining for process event logs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A genetic approach for automatic AxC design exploration at RTL based on assertion mining and fault analysis. <em>TETC</em>, 1-15. (<a href='https://doi.org/10.1109/TETC.2025.3609050'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In Approximate Computing (AxC), design exploration methods have been introduced to automatically identify approximation targets at the gate level. However, only some of them are applicable at at Register Transfer Level (RTL); furthermore, the benefits of combining information from assertions and fault analysis have not been fully explored. This paper proposes a novel methodology for guiding AxC design exploration at RTL considering two approximation techniques: bit-width reduction and statement reduction. Then, it employs fault injection to mimic the approximation effect on the design under approximation. To guide the designer while assessing the approximation choices, assertions, which formally capture the behaviors implemented in the design, are dynamically generated from the RTL simulation traces. Then, the impact of fault injections on the truth values of the assertions is employed as a proxy for measuring the functional accuracy of the corresponding approximations. Based on this evaluation, a genetic algorithm is finally used to rank and cluster the approximation targets, thus providing the designer with an efficient and effective way to automatically analyze AxC variants in terms of the trade-off between accuracy and performance. The experiments carried out on state-of-the-art benchmarks show that the proposed approach represents a promising solution for the automation of AxC design exploration at RTL.},
+  archive      = {J_TETC},
+  author       = {Alberto Bosio and Samuele Germiniani and Graziano Pravadelli and Marcello Traiola},
+  doi          = {10.1109/TETC.2025.3609050},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {A genetic approach for automatic AxC design exploration at RTL based on assertion mining and fault analysis},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

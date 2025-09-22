@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ar">AR - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Persistent multi-resource coverage with heterogeneous multi-robot teams. <em>AR</em>, <em>49</em>(4), 1-21. (<a href='https://doi.org/10.1007/s10514-025-10207-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-robot teams provide an effective solution for delivering multiple types of goods, such as food or medicine, to various locations of demand. This work presents a Voronoi-based coverage control approach to the multi-resource allocation problem, and considers a heterogeneous team comprising robots with different resource types and capacities. The team must supply resources to multiple demand locations. Demand of resources may change over time, and fluctuate in overall demand, which is represented over the environment as a time-varying density function. From the demand density, robots minimize their respective locational cost, adapting and moving to areas of higher demand. Robots must adhere to supply constraints and replenish resources over time to ensure persistent resource coverage. This paper therefore investigates how to enable persistent deployments, wherein robots must continually alternate between serving demand or replenishing resources. We explore four algorithms for resource replenishment, which vary in communication, forecasting, and information assumptions. Simulations and hardware experiments demonstrate a need-based auction algorithm, which aims to minimize service blackouts, produces the best performance for a heterogeneous team. We also present a discussion on acceptable alternatives for homogeneous teams without communication.},
+  archive      = {J_AR},
+  author       = {Coffey, Mela and Pierson, Alyssa},
+  doi          = {10.1007/s10514-025-10207-6},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {Auton. Robot.},
+  title        = {Persistent multi-resource coverage with heterogeneous multi-robot teams},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

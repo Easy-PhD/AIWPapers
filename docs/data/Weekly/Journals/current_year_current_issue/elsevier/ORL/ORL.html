@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ORL</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="orl">ORL - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2026). Monotone convergence of spreading processes on networks. <em>ORL</em>, <em>64</em>, 107363. (<a href='https://doi.org/10.1016/j.orl.2025.107363'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We analyze the Bass and SI models for the spreading of innovations and epidemics, respectively, on homogeneous complete networks, on one-dimensional networks, and on heterogeneous two-groups complete networks. We allow the network parameters to be time dependent, which is a prerequisite for the analysis of optimal promotional strategies on networks. Using a novel top-down analysis of the master equations, we present a simple proof for the monotone convergence of these models to their respective infinite-population limits. This leads to explicit expressions for the expected adoption or infection level in the Bass and SI models with time-dependent parameters on infinite homogeneous complete and circular networks, and on heterogeneous two-groups complete networks.},
+  archive      = {J_ORL},
+  author       = {Gadi Fibich and Amit Golan and Steven Schochet},
+  doi          = {10.1016/j.orl.2025.107363},
+  journal      = {Operations Research Letters},
+  month        = {1},
+  pages        = {107363},
+  shortjournal = {Oper. Res. Lett.},
+  title        = {Monotone convergence of spreading processes on networks},
+  volume       = {64},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJAR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijar">IJAR - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2026). Choosing the center of star-shaped set-valued data compatible with measure-preserving arithmetic. <em>IJAR</em>, <em>188</em>, 109575. (<a href='https://doi.org/10.1016/j.ijar.2025.109575'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Set-valued data has traditionally been represented by considering non-empty compact and convex subsets of R d with the usual Minkowski addition. An alternative and flexible setting that admits a functional representation are the star-shaped sets. A framework based on a center-radial characterization has been introduced to treat these sets from a statistical point of view. The arithmetic is defined directionally, which is more natural for representing imprecision propagation in higher dimensions. Nevertheless, the problem of determining a center for star-shaped sets coherent with the arithmetic and sound for statistical purposes has not been fully addressed yet. The aim is to advance on the directional characterization for star-shaped sets by considering a measure-preserving arithmetic together with a center selection fully compatible with this arithmetic. The practicability of the new framework will be illustrated using a classical dataset in set-valued statistics.},
+  archive      = {J_IJAR},
+  author       = {Gil González-Rodríguez},
+  doi          = {10.1016/j.ijar.2025.109575},
+  journal      = {International Journal of Approximate Reasoning},
+  month        = {1},
+  pages        = {109575},
+  shortjournal = {Int. J. Approx. Reasoning},
+  title        = {Choosing the center of star-shaped set-valued data compatible with measure-preserving arithmetic},
+  volume       = {188},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

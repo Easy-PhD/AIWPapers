@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TAI</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tai">TAI - 27</h2>
+<ul>
+<li><details>
+<summary>
+(2025). FedImp: Enhancing federated learning convergence with impurity-based weighting. <em>TAI</em>, 1-13. (<a href='https://doi.org/10.1109/TAI.2025.3605307'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning (FL) is a collaborative paradigm that enables multiple devices to train a global model while preserving local data privacy. A major challenge in FL is the non-Independent and Identically Distributed (non-IID) nature of data across devices, which hinders training efficiency and slows convergence. To tackle this, we propose Federated Impurity Weighting (FedImp), a novel algorithm that quantifies each device’s contribution based on the informational content of its local data. These contributions are normalized to compute distinct aggregation weights for the global model update. Extensive experiments on EMNIST and CIFAR-10 datasets show that FedImp significantly improves convergence speed, reducing communication rounds by up to 64.4%, 27.8%, and 66.7% on EMNIST, and 44.2%, 44%, and 25.6% on CIFAR-10 compared to FedAvg, FedProx, and FedAdp, respectively. Under highly imbalanced data distributions, FedImp outperforms all baselines and achieves the highest accuracy. Overall, FedImp offers an effective solution to enhance FL efficiency in non-IID settings.},
+  archive      = {J_TAI},
+  author       = {Hai Anh Tran and Cuong Ta and Truong X. Tran},
+  doi          = {10.1109/TAI.2025.3605307},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {FedImp: Enhancing federated learning convergence with impurity-based weighting},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Watermarking language models through language models. <em>TAI</em>, 1-10. (<a href='https://doi.org/10.1109/TAI.2025.3605117'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Watermarking the outputs of large language models (LLMs) is critical for provenance tracing, content regulation, and model accountability. Existing approaches often rely on access to model internals or are constrained by static rules and token-level perturbations. Moreover, the idea of steering generative behavior via prompt-based instruction control remains largely underexplored. We introduce a prompt-guided watermarking framework that operates entirely at the input level and requires no access to model parameters or decoding logits. The framework comprises three cooperating components: a Prompting LM that synthesizes watermarking instructions from user prompts, a Marking LM that generates watermarked outputs conditioned on these instructions, and a Detecting LM trained to classify whether a response carries an embedded watermark. This modular design enables dynamic watermarking that adapts to individual prompts while remaining compatible with diverse LLM architectures, including both proprietary and open-weight models. We evaluate the framework over 25 combinations of Prompting and Marking LMs, such as GPT-4o, Mistral, LLaMA3, and DeepSeek. Experimental results show that watermark signals generalize across architectures and remain robust under fine-tuning, model distillation, and prompt-based adversarial attacks, demonstrating the effectiveness and robustness of the proposed approach.},
+  archive      = {J_TAI},
+  author       = {Agnibh Dasgupta and Abdullah All Tanvir and Xin Zhong},
+  doi          = {10.1109/TAI.2025.3605117},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Watermarking language models through language models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Beyond accurate distillation: Calibrated knowledge distillation for reliable predictionsn. <em>TAI</em>, 1-13. (<a href='https://doi.org/10.1109/TAI.2025.3605902'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge distillation is a common technique for improving the performance of a shallow student network by transferring information from a teacher network, which in general, is comparatively large and deep. These teacher networks are pre-trained and often uncalibrated, as no calibration technique is applied to the teacher model while training. Calibration of a network measures the probability of correctness for any of its predictions, which is crucial for high-risk domains where reliable predictions are essential. In this paper, we study how to obtain a calibrated student from an uncalibrated teacher. Our approach relies on the fusion of the data-augmentation techniques, including but not limited to Mixup and CutMix, with knowledge distillation. We incorporate and analyze the impact of focal loss in the distillation framework to further improve the calibration of the student model. We perform extensive experiments to validate our approach on various datasets, including CIFAR-100, TinyImageNet, ImageNet and Diabetic Retinopathy datasets, and compare it with various techniques like CRD, RKD, DKD and MLLD to obtain calibrated student models. Furthermore, we conduct an ablation study to dissect the influence of augmentation techniques and the integration of focal loss. Additionally, we assess the robustness of our approach by evaluating its performance on corrupted CIFAR-100C data, demonstrating its consistent and reliable outcomes even under challenging conditions.},
+  archive      = {J_TAI},
+  author       = {Ishan Mishra and Vamsi Krishna Sethu and Deepak Mishra},
+  doi          = {10.1109/TAI.2025.3605902},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Beyond accurate distillation: Calibrated knowledge distillation for reliable predictionsn},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A positive-unlabeled learning approach with self-correcting regularized risk. <em>TAI</em>, 1-13. (<a href='https://doi.org/10.1109/TAI.2025.3605890'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The primary objective of Positive Unlabeled learning (PU learning) is to train a binary classifier with positively labeled data and unlabeled data. An inherent aspect of this approach involves incorporating the positive class prior of unlabeled data directly into the classification process, which is typically challenging in real-world scenarios. Moreover, existing studies often lack evaluations of PU classifiers without involving the positive class prior (true or estimated) of the unlabeled data, representing a significant research gap. In this paper, we introduce a robust, two-step PU learning algorithm by incorporating a potential negative sampler in step 1 (warm start) and minimizing a self-correcting regularized risk function in step 2. The risk function possesses a self-correcting property that attempts to mitigate the weakness of the potential negative sampler in the warm start step. The risk function enables us to enhance robustness in the presence of mislabeled candidate negative samples. We demonstrate the effectiveness of our method on image as well as text benchmarks. Results show that the proposed method consistently outperforms the state-of-the-art PU learning algorithms.},
+  archive      = {J_TAI},
+  author       = {Sayantang Saha and Atif Hassan and Jiaul H. Paik},
+  doi          = {10.1109/TAI.2025.3605890},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {A positive-unlabeled learning approach with self-correcting regularized risk},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ARD-LoRA: Dynamic rank allocation for parameter-efficient fine-tuning of foundation models with heterogeneous adaptation needs. <em>TAI</em>, 1-10. (<a href='https://doi.org/10.1109/TAI.2025.3605569'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conventional Low-Rank Adaptation (LoRA) methods employ a fixed rank, imposing uniform adaptation across transformer layers and attention heads despite their heterogeneous learning dynamics. This paper introduces Adaptive Rank Dynamic LoRA (ARD-LoRA), a novel framework that automates rank allocation through learnable scaling factors. These factors are optimized via a meta-objective balancing task performance and parameter efficiency, incorporating $\ell_1$ sparsity for minimal rank and Total Variation regularization for stable rank transitions. ARD-LoRA enables continuous, differentiable, per-head rank adaptation. Experiments on LLAMA-3.1-70B and PaliGemma-2 demonstrate ARD-LoRA’s efficacy, achieving up to 99.3% of full fine-tuning performance with only 0.32% trainable parameters, outperforming strong baselines like DoRA and AdaLoRA. Furthermore, it reduces multimodal adaptation memory by 41%. These results establish dynamic, fine-grained rank allocation as a critical paradigm for efficient foundation model adaptation.},
+  archive      = {J_TAI},
+  author       = {Haseeb Ullah Khan Shinwari and Muhammad Usama},
+  doi          = {10.1109/TAI.2025.3605569},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {ARD-LoRA: Dynamic rank allocation for parameter-efficient fine-tuning of foundation models with heterogeneous adaptation needs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Let invariant learning inspire neighbor-shift generalization on graphs. <em>TAI</em>, 1-12. (<a href='https://doi.org/10.1109/TAI.2025.3605894'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Neural Networks (GNNs) have achieved strong performance on various graph learning tasks under the assumption of independently and identically distributed (IID) data. However, recent studies reveal that GNNs suffer from performance drops under distribution shifts, prompting growing interest in out-of-distribution (OOD) generalization. In this work, we identify a previously underexplored challenge Neighbor Shift, which refers to structural inconsistencies in node neighborhoods across environments. We analyze its characteristics and demonstrate its negative impact on node-level classification. To tackle this issue, we propose the Neighbor-Shift Robust Graph Neural Network (NSRGNN), which disentangles invariant and variant subgraphs through conflict-based structure analysis, infers latent environments using the variant components, and regularizes semantic consistency of node representations across inferred environments. Extensive experiments on both real-world and synthetic benchmarks show that NSRGNN consistently outperforms strong OOD baselines and exhibits robust generalization under diverse structural shifts.},
+  archive      = {J_TAI},
+  author       = {Jiaxing Li and Jiayi Gao and Binhao Gu and Youyong Kong},
+  doi          = {10.1109/TAI.2025.3605894},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Let invariant learning inspire neighbor-shift generalization on graphs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Wasserstein distance based multi-source heterogeneous graph adaptation for cross-network node classification. <em>TAI</em>, 1-14. (<a href='https://doi.org/10.1109/TAI.2025.3606456'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cross-network node classification seeks to leverage labeled source networks to assist node classification in an unlabeled target network. However, existing heterogeneous graph adaptation methods often rely on restrictive assumptions, such as the presence of a single source network or strong correlations between source and target nodes, which rarely hold in practice. To address this, we propose a novel Wasserstein Distance Based Multi-Source Heterogeneous Graph Adaptation framework (WMHGA), which aims to learn transferable node representations across networks in order to improve the accuracy of node classification tasks. Specifically, we propose a Wasserstein Distance Based Heterogeneous Graph Adaptation (WHGA) approach to learn node representations that are invariant to domain variations. Then, we propose two Wasserstein distance-based knowledge distillation approaches to identify more valuable samples from the source graph and learn label-discriminative node representations of these samples for knowledge transfer. In addition, we devise a Wasserstein distance-based aggregated prediction to prioritize highly relevant source nodes while suppressing irrelevant ones, thereby ensuring more accurate node classification in the target network. Extensive experiments have been conducted on three real-world datasets, demonstrating that the proposed WMHGA model outperforms the state-of-the-art baselines.},
+  archive      = {J_TAI},
+  author       = {Hongwei Yang and Jiaoxuan Lin and Hui He and Weizhe Zhang and Letu Suya},
+  doi          = {10.1109/TAI.2025.3606456},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Wasserstein distance based multi-source heterogeneous graph adaptation for cross-network node classification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual thinking and logical processing in human vision and multi-modal large language models. <em>TAI</em>, 1-15. (<a href='https://doi.org/10.1109/TAI.2025.3606452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The dual thinking framework considers fast, intuitive, and slower logical processing. The perception of dual thinking in vision requires images where inferences from intuitive and logical processing differ, and the latter is under-explored in current studies. We introduce a novel adversarial dataset to provide evidence for the dual thinking framework in human vision, which also facilitates the study of the qualitative behavior of deep learning models. Our psychophysical studies show the presence of multiple inferences in rapid succession, and analysis of errors shows that the early stopping of visual processing can result in missing relevant information. MLLMs (Multi-modal Large Language Models) and VLMs (Vision Language Models) have made significant progress in correcting errors in intuitive processing in human vision and showed enhanced performance on images requiring logical processing. However, their improvements in logical processing have not kept pace with their advancements in intuitive processing. In contrast, segmentation models exhibit errors similar to those seen in intuitive human processing and lack understanding of sub-structures, as indicated by errors related to sub-components in identified instances. As AI (Artificial Intelligence)-based systems find increasing applications in safety-critical domains like autonomous driving, the integration of logical processing capabilities becomes essential. This not only enhances performance but also addresses the limitations of scaling-based approaches while ensuring robustness and reliability in real-world environments. The code for this paper is available at https://github.com/kailasdayanandan/dual thinking/},
+  archive      = {J_TAI},
+  author       = {Kailas Dayanandan and Nikhil Kumar and Anand Sinha and Brejesh Lall},
+  doi          = {10.1109/TAI.2025.3606452},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Dual thinking and logical processing in human vision and multi-modal large language models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Context guided multiscale attention for real-time semantic segmentation of road scene. <em>TAI</em>, 1-14. (<a href='https://doi.org/10.1109/TAI.2025.3606904'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lightweight deep neural networks have played a pivotal role in real-time semantic segmentation for autonomous driving in resource-constrained devices, which need to effectively learn the local semantics and global context at multiple scales due to varying object sizes. Recent methods design shallow and lightweight backbones with a small receptive field for faster inference, along with additional mechanisms such as attention to compensate for the accuracy loss due to the lightweight design. While some methods have exploited multi-scale feature learning by attaching pyramid modules at the encoder end, it is often neglected at the fundamental block level due to increased inference time. Furthermore, the attention weights are mostly generated at a single object scale by only using the high-level feature representations. To solve the first problem, a key module for the basic block, the Fast Hybrid Module (FHM), has been proposed. This module uses a hybrid approach to learn multi-scale features by combining dilated kernels and downsampling operations in a parallel three-branch structure. To solve the second problem, a novel attention module, the Multi-Scale Attention Module (MSAM), is proposed. MSAM uniquely generates context weights at varying scales from the low-level features rich in object boundary and edge information and multiplies them by the high-level semantic features obtained from the encoder. With these modules, a novel encoder-decoder network named Context Guided Multi-scale Attention Network (CGMA-Net) is proposed. With only 0.54 Million parameters, the network achieves 73.4% and 68.1% mean IoU accuracy at 128.24 and 85.5 FPS on the Cityscapes and CamVid datasets, respectively. In addition, the network can run in real-time on embedded GPUs with resource constraints. Through extensive ablation studies, the effectiveness of the proposed modules and network is shown. The qualitative results on unseen data demonstrate the robustness of the method. Code available at: https://github.com/saquibmazhar/SemanticSegmentation-CGMANet.},
+  archive      = {J_TAI},
+  author       = {Saquib Mazhar and Nadeem Atif and M.K. Bhuyan and Shaik Rafi Ahamed},
+  doi          = {10.1109/TAI.2025.3606904},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Context guided multiscale attention for real-time semantic segmentation of road scene},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multirate distributed receding horizon reinforcement learning for optimal UAV-UGV formation control. <em>TAI</em>, 1-16. (<a href='https://doi.org/10.1109/TAI.2025.3607722'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The coordination of unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs) is valuable in many applications, such as emergency search and rescue, and has received increasing attention in recent years. Given their distinct tasks and dynamic characteristics, the UAV team is typically controlled with higher maneuverability for rapid searching, while the UGV team is operated on roads at lower speeds to ensure stability and performance. This discrepancy naturally results in a multirate control problem, which has not been adequately addressed in previous works. Therefore, we present a multirate distributed receding horizon reinforcement learning (RHRL) framework to solve the optimal UAV-UGV formation control problem on fast and slow time scales. The proposed approach includes a distributed RHRL algorithm operating at a slower time scale for the formation control of UGV teams, and another distributed RHRL algorithm functioning at a faster time scale for the formation control of UAV teams. The state information among homogeneous UAV/UGV agents and heterogeneous agents across different teams are exchanged at different frequencies to balance control performance and communication load. Notably, our approach integrates the receding horizon strategy to enhance learning efficiency and provides theoretical guarantees in multirate distributed RL. Theoretically, learning convergence at different time scales and closed-loop stability are guaranteed. Comparative numerical validations are conducted to demonstrate the effectiveness of our approach in heterogeneous UAV-UGV formation control under different time scales and tasks.},
+  archive      = {J_TAI},
+  author       = {Xinglong Zhang and Cong Li and Ronghua Zhang and Quan Xiong and Wei Jiang and Xin Xu},
+  doi          = {10.1109/TAI.2025.3607722},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Multirate distributed receding horizon reinforcement learning for optimal UAV-UGV formation control},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed reinforcement learning optimal cluster consensus control for takagi-sugeno fuzzy multi-agent systems. <em>TAI</em>, 1-10. (<a href='https://doi.org/10.1109/TAI.2025.3607790'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the distributed optimal cluster consensus control problem with a data-driven value iteration (VI) algorithm for Takagi-Sugeno (T-S) fuzzy multi-agent systems (MASs) with unknown system dynamics. In distributed optimal cluster consensus control design, we view each agent’s control policy and its neighboring followers’ control policy as rival players, then a fuzzy distributed optimal cluster consensus control policy is proposed by applying differential graphical game theory and acyclic partition. Since the analytical optimal cluster consensus control solutions are reduced to solving the distributed game algebraic Riccati equations (GAREs), which is difficult to obtain their analytical solutions, a data-driven VI algorithm is presented. It is proved that the developed algorithm can converge to the approximation solutions of optimal controllers, and the proposed fuzzy distributed optimal cluster consensus control scheme not only guarantees the followers in each cluster to asymptotically track their corresponding leaders but also achieves the Nash equilibrium of differential graphical game. Finally, we apply the developed fuzzy distributed optimal cluster consensus control method with a data-driven VI algorithm to multiple nonlinear unmanned surface vehicle (USV) systems, the computer simulation results verify the effectiveness of the developed optimal control approach.},
+  archive      = {J_TAI},
+  author       = {Hui Li and Jun Ning and Shaocheng Tong},
+  doi          = {10.1109/TAI.2025.3607790},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Distributed reinforcement learning optimal cluster consensus control for takagi-sugeno fuzzy multi-agent systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CIBLS-PLS: A class-incremental broad learning system with pseudo-label-guided stacked structure. <em>TAI</em>, 1-15. (<a href='https://doi.org/10.1109/TAI.2025.3606902'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Class-incremental learning (CIL) with the Broad Learning System (BLS) has emerged as a computationally efficient alternative to deep incremental models. However, existing BLS-based CIL methods struggle with complex data distributions and are highly sensitive to hyperparameter tuning, leading to suboptimal knowledge retention. To address these challenges, we propose CIBLS-PLS (Class-Incremental Broad Learning System with Pseudo-Label-Guided Stacked Structure), which enhances knowledge retention and adaptability. Different from traditional stacked BLS, where blocks are strictly chained through input-output dependencies, CIBLS-PLS adopts a more flexible stacking structure, allowing each block to independently contribute to knowledge preservation. Each BLS layer integrates dual-storage modules that retain key features from previous data, while pseudo-labels are generated to facilitate seamless knowledge integration within the stacked residual learning framework. Model parameters are updated efficiently via closed-form ridge regression, significantly reducing computational overhead while maintaining high accuracy. Additionally, to further enhance model generalization, an adaptive scaling mechanism dynamically regulates the contribution of residual blocks, effectively preventing overfitting as the number of blocks increases. This property is rigorously validated through both theoretical analysis and extensive experiments. Results on seven large-scale image datasets demonstrate that CIBLS-PLS achieves state-of-the-art performance in accuracy and knowledge retention while maintaining competitive computational efficiency, paving the way for robust and scalable broad learning-based incremental models.},
+  archive      = {J_TAI},
+  author       = {Xin Liu and Zhaoyin Shi and Shuanghao Zhang and Long Chen and Weiping Ding and Xiaopin Zhong and Zongze Wu and C. L. Philip Chen},
+  doi          = {10.1109/TAI.2025.3606902},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {CIBLS-PLS: A class-incremental broad learning system with pseudo-label-guided stacked structure},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FCA-HLP: Multi-layer feature cross-activation network with high- and low-level prototypes for few-shot segmentation. <em>TAI</em>, 1-12. (<a href='https://doi.org/10.1109/TAI.2025.3607850'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot segmentation (FSS) strives to segment novel categories using merely a limited number of labeled images. Current prototype learning and correlation learning approaches struggle to effectively harness both high- and low-level information from support and query images, leading to suboptimal segmentation results. In this work, we propose a multi-layer feature cross-activation (FCA) network with high- and low-level prototypes (HLP), which fully utilizes support and query information from both features and prototypes perspectives. Specifically, for the FCA module, we design a simple activation method that uses all the pixel-level support foreground features to activate query features, thereby obtaining activation maps without losing pixel-level detail information of support features. For the HLP module, we combine image-level prototypes with pixel-level prototypes to fully utilize high-level category information and low-level attribute information of support features. Besides, the prototype generation method integrates query information, which further enables the prototypes to better match target query features, especially when there are great differences between query and support images. Extensive experiments on PASCAL-5i and COCO-20i under 1-shot and 5-shot settings validate the effectiveness of our FCA-HLP. Our method establishes new state-of-the-art performance. Additionally, we analyze the performance of the multi-layer feature cross-activation network in the absence of the HLP module. The results indicate that even without prototypes, the FCA module can still deliver strong performance. Codes are available at https://github.com/Jiaguang-NEU/FCA-HLP.},
+  archive      = {J_TAI},
+  author       = {Jiaguang Li and Ying Wei and Zihan Gao and Yubo Wang},
+  doi          = {10.1109/TAI.2025.3607850},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {FCA-HLP: Multi-layer feature cross-activation network with high- and low-level prototypes for few-shot segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AdU-net: Glacial lake extraction and outburst risk assessment using satellite imagery. <em>TAI</em>, 1-14. (<a href='https://doi.org/10.1109/TAI.2025.3608120'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Glacial lake outburst floods (GLOFs) threaten downstream communities and infrastructure in high-mountain regions. Accurate extraction of glacial lakes and assessment of their susceptibility to outbursts are crucial for early warning systems and risk mitigation strategies. The proposed framework, named AdU-Net, combines a dilated U-Net with nested connections and an adaptable vision transformer encoder (AVi-TE) for glacial lake extraction. It also introduces a modified spiking neural network (SNN) to model the evolution of GLOF (Glacial Lake Outburst Flood) risk. This approach utilizes Landsat 8 satellite imagery for analysis of the Imja, Chandra, and Bhaga glacial regions. The AdU-Net efficiently captures spatial dependencies and hierarchies within satellite imagery, enabling precise delineation of glacial lakes. Subsequently, the extracted lake features are analyzed using the SNN, which excels at processing temporal information and detecting dynamic patterns indicative of outburst susceptibility. Combining spatial and temporal analyses, the proposed integrated approach provides comprehensive insight into glacial lake dynamics and improves understanding of factors influencing outburst susceptibility.},
+  archive      = {J_TAI},
+  author       = {Jagadeesh Thati and Allam Jaya Prakash and Samit Ari},
+  doi          = {10.1109/TAI.2025.3608120},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {AdU-net: Glacial lake extraction and outburst risk assessment using satellite imagery},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CamoX: A diffusion-based method with few-shot learning for environment-guided camouflage pattern generation. <em>TAI</em>, 1-16. (<a href='https://doi.org/10.1109/TAI.2025.3608758'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Effective camouflage is needed for defense personnel and assets to blend seamlessly with the complex and dynamic environments. The camouflage technique must maintain the concealment capability across various environments and geographic regions. However, existing approaches, including manual design, computer-aided techniques, and deep learning methods, face significant challenges in achieving automation, scalability, and generalization across diverse and uncalibrated scenes. To address these limitations, we propose a novel diffusion-based method with few-shot learning to generate environment-guided camouflage patterns. Our method, called CamoX, consists of two major stages: meta learning and few-shot learning. In the meta learning stage, our method introduces a latent diffusion-based architecture that automatically generates camouflage patterns from noise, eliminating manual intervention and enabling scalable production. In the few-shot learning stage, our approach enforces similarity between the latent features of the camouflage patterns and target scenes by optimizing the guided mean absolute error loss. This innovation allows the generated camouflage patterns to adapt seamlessly to multiple environments with minimal retraining. Furthermore, this paper introduces a comprehensive camouflage dataset, called Camo-Meta, comprising 144,750 realistic camouflage patterns and associated metadata to support research in camouflage generation. Experimental results on multiple datasets demonstrate that CamoX outperforms existing state-of-the-art methods in key metrics.},
+  archive      = {J_TAI},
+  author       = {Tran Thanh Phong Nguyen and Tauseef Gulrez and Joanne B. Culpepper and Son Lam Phung and Hoang Thanh Le},
+  doi          = {10.1109/TAI.2025.3608758},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {CamoX: A diffusion-based method with few-shot learning for environment-guided camouflage pattern generation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A conceptual framework of AI transparency from sociotechnical perspective. <em>TAI</em>, 1-14. (<a href='https://doi.org/10.1109/TAI.2025.3608735'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transparency serves as a cornerstone principle in artificial intelligence (AI) ethics and governance, playing a crucial role in upholding ethical standards and ensuring responsible AI deployment. Despite its critical importance, the concept of AI transparency remains fragmented in literature, highlighting the necessity for a unified and comprehensive understanding. This paper addresses this imperative by firstly conducting a systematic literature review about existing varied definitions of transparency to deepen our understanding of AI transparency. Then, the three key aspects of AI transparency, that is, transparent to whom, transparent of what, and how to be transparent, are examined. Building upon this groundwork, we propose a novel sociotechnical framework that uniquely integrates both intrinsic and extrinsic dimensions of AI transparency while accounting for the roles of internal and external stakeholders, resulting in a three-layered AI transparency framework encompassing intrinsic, internal, and external transparency. This comprehensive framework not only deepens our understanding of AI transparency but also provides a structured roadmap for navigating the complex sociotechnical landscape of AI systems. Our main contribution lies in developing this novel conceptual framework that enriches both the theory and practice of AI transparency and provides guidelines for designing and deploying transparent AI systems in the future.},
+  archive      = {J_TAI},
+  author       = {Changwu Huang and Ziming Wang and Xingnan Wen and Xiaozhen Wang and Xin Yao},
+  doi          = {10.1109/TAI.2025.3608735},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {A conceptual framework of AI transparency from sociotechnical perspective},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Offline inverse constrained reinforcement learning for safe-critical decision making in healthcare. <em>TAI</em>, 1-10. (<a href='https://doi.org/10.1109/TAI.2025.3610390'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One important application of Reinforcement Learning (RL) is optimizing treatment decisions in healthcare. However, a na¨ıve RL policy can lead to unsafe medical decisions, such as excessive dosages or abrupt treatment changes, often because agents fail to account for common-sense constraints. To mitigate these problems, Constrained Reinforcement Learning (CRL) naturally emerges as a promising approach for safer decision-making by optimizing policies under predefined constraints. To extend CRL to healthcare applications, a fundamental challenge lies in accurately specifying the constraint function for different healthcare scenarios. Recent Inverse Constrained Reinforcement Learning (ICRL) is a promising approach that infers constraints from expert demonstrations. However, ICRL algorithms model Markovian decisions and rely on real-time interactive environments. These settings do not align with the practical requirement of a decision-making system in healthcare, where decisions rely on historical treatment recorded in an offline dataset. To tackle these issues, we propose the Constraint Transformer (CT). Specifically, 1) we utilize a causal attention mechanism to incorporate historical decisions and observations into the constraint modeling, while employing a Non-Markovian layer for weighted constraints to capture critical states. 2) A generative world model is used for exploratory data augmentation, enabling offline RL methods to simulate unsafe decision sequences. In multiple medical scenarios, empirical results demonstrate that CT can capture unsafe states and achieve strategies that approximate lower mortality rates, reducing the occurrence probability of unsafe behaviors.},
+  archive      = {J_TAI},
+  author       = {Nan Fang and Guiliang Liu and Wei Gong},
+  doi          = {10.1109/TAI.2025.3610390},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Offline inverse constrained reinforcement learning for safe-critical decision making in healthcare},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attention-guided encoder-decoder design for efficient RIS phase configuration in time-varying IoT networks. <em>TAI</em>, 1-12. (<a href='https://doi.org/10.1109/TAI.2025.3610389'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The integration of Artificial Intelligence (AI) into wireless communication has enabled adaptive, efficient, robust, and scalable system designs. Reconfigurable Intelligent Surfaces (RIS) offer a promising paradigm for AI-driven control by dynamically adjusting the wireless environment through Phase Configuration Sequence (PCS) bits sent from the Base Station (BS). By steering signals intelligently, RIS can improve coverage and direct transmissions to specific locations. However, the increasing size of RIS and rapidly changing IoT device positions in dynamic environments impose significant feedback bandwidth constraints due to frequent PCS bits updates. To address this, we propose a novel Attention-Guided Encoder-Decoder with Normalization Enhancement (AGENE) framework that compresses PCS bits at the BS using a lightweight encoder and reconstructs them at the RIS controller using a decoder. Our design incorporates a custom attention mechanism and Generalized Divisive Normalization (GDN)/Inverse GDN layers to enhance feature extraction and normalization. We also evaluate our method under different noise models, including Gaussian and Rician noise, to test robustness in practical scenarios. Finally, to evaluate the effectiveness of our proposed method (AGENE), we compared its performance with existing methods across different compression ratios and noise conditions, focusing on loss reduction and Normalized Mean Square Error (NMSE). In Additive White Gaussian Noise (AWGN) conditions, AGENE achieved a loss reduction of 28.12% compared to PSC-DN, 43.9% compared to DL-CsiNet, and 58.18% compared to CsiNet at a compression ratio of 2/9. Under Rician noise, AGENE showed a reduction of 19.39% compared to PSC-DN, 37.01% compared to DL-CsiNet, and 45.21% compared to CsiNet, again at the same compression ratio. These results consistently demonstrate that AGENE outperforms existing methods by a significant margin across both metrics and noise conditions.},
+  archive      = {J_TAI},
+  author       = {Vikash Kumar Bhardwaj and Abhisekh Singh and Omm Prakash Sahoo and Mahendra K. Shukla and Om Jee Pandey},
+  doi          = {10.1109/TAI.2025.3610389},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Attention-guided encoder-decoder design for efficient RIS phase configuration in time-varying IoT networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Counterfactual causal inference of biomedical signals: Unveiling causal EEG patterns for ASD evaluation. <em>TAI</em>, 1-15. (<a href='https://doi.org/10.1109/TAI.2025.3610394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The examination of complex diseases has greatly benefited from machine-learning techniques for interpreting biomedical signals. However, for diseases with multifactorial etiologies, such as Autism Spectrum Disorders (ASD), the inability of associative methods to distinguish between causal relationships and mere correlations often leads to unreliable outcomes. In contrast, causal models require well-defined causal structures, demanding a thorough understanding of their contributing factors. This study proposes a Generative Adversarial Network framework for Counterfactual Causal Inference (C2I-GAN) to uncover causal patterns from biomedical signals without a predefined causal structure. The framework leverages graph attention network to identify key features for directing counterfactual generation, applies generative adversarial learning to produce task-oriented counterfactuals, and supports inference by evaluating how modifications to specific features affect diagnostic outcomes. A case study of ASD evaluation is conducted on a resting-state EEG dataset (74 ASD and 143 TD children) using C2I-GAN against state-of-the-art methods (Associative: GAT; Counterfactual: CounteRGAN, Omnixai, and CXGAN). The findings show that C2I-GAN identified T3, T4, O1, and O2 channels as causal patterns while recognizing C3 and C4 as merely associative, aligning with the latest neuroscience evidence where counterpart methods failed. In terms of performance, the model improved actionability by 30E and accuracy by 10E compared to other counterfactual methods, and increased accuracy by 5E while reducing training loss by 20E against associative method, demonstrating enhanced precision and efficiency.},
+  archive      = {J_TAI},
+  author       = {Yaodong Wang and Yiping Zuo and Dan Chen and Albert Y. Zomaya and Rajiv Ranjan and Jingying Chen and Tengfei Gao},
+  doi          = {10.1109/TAI.2025.3610394},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Counterfactual causal inference of biomedical signals: Unveiling causal EEG patterns for ASD evaluation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mitigating label noise in federated learning with regularized features and robust loss. <em>TAI</em>, 1-12. (<a href='https://doi.org/10.1109/TAI.2025.3609745'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning enables decentralized model training across distributed devices while preserving data privacy and reducing communication overhead. However, the presence of heterogeneous client data and noisy labels poses significant challenges, often leading to degraded model performance, especially in communication-constrained environments. In this work, we propose FedRFRL, a robust federated learning framework designed to mitigate the adverse effects of label noise by combining feature regularization and a robust loss function. Specifically, FedRFRL introduces a representation regularization strategy that leverages a high-dimensional projection layer to promote the learning of diverse and discriminative features across clients. Additionally, we incorporate adaptive sharpness-aware minimization (ASAM) to encourage flatter minima for improved generalization under non-IID and noisy settings. Extensive experiments on benchmark datasets, including CIFAR-10, CIFAR-100, SVHN, Fashion-MNIST, and the real-world noisy datasets CIFAR-N and Clothing1M, demonstrate that FedRFRL consistently outperforms existing methods, achieving strong robustness against both symmetric and asymmetric label noise. These results highlight the effectiveness and scalability of FedRFRL in real-world federated learning scenarios with imperfect supervision.},
+  archive      = {J_TAI},
+  author       = {Girum Fitihamlak Ejigu and Kitae Kim and Choong Seon Hong},
+  doi          = {10.1109/TAI.2025.3609745},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Mitigating label noise in federated learning with regularized features and robust loss},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Air quality prediction with a meteorology-guided modality-decoupled spatio-temporal network. <em>TAI</em>, 1-14. (<a href='https://doi.org/10.1109/TAI.2025.3610393'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Air quality prediction plays a crucial role in public health and environmental protection. Accurate air quality prediction is a complex spatiotemporal problem, that involves pollutant spatiotemporal dependencies and meteorological influences that govern pollutant dispersion and transformation. However, existing predictive models often underestimate the critical influence of atmospheric conditions by treating air quality and meteorological data as a single, homogeneous modality or by using only limited surface-level features, which impairs performance. To overcome this, we propose MDSTNet, an encoder-decoder framework that takes historical air quality observations and multi-pressure-level meteorological data as input, explicitly modeling them as distinct modalities, while uniquely leveraging multi-step weather forecasts as dynamic prompts to guide prediction. Meantime, we construct ChinaAirNet, the first nationwide dataset combining air quality records with multi-pressure-level meteorological observations. Experimental results on ChinaAirNet and a public dataset KDDCUP-Beijing demonstrate MDSTNet’s superiority, substantially reducing 48-hour prediction errors by 17.54’ compared to the state-of-the-art model, showcasing the significant advantage of our meteorology-guided, modality-decoupled design. Code is available at this repository1, and dataset is available at here2.},
+  archive      = {J_TAI},
+  author       = {Hang Yin and Yan-Ming Zhang and Jian Xu and Jian-Long Chang and Yin Li and Cheng-Lin Liu},
+  doi          = {10.1109/TAI.2025.3610393},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Air quality prediction with a meteorology-guided modality-decoupled spatio-temporal network},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fully adaptive multi-scale spatial-temporal recurrent networks for traffic flow prediction. <em>TAI</em>, 1-14. (<a href='https://doi.org/10.1109/TAI.2025.3610568'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traffic flow prediction is one of the most fundamental tasks of intelligent transportation systems. The complex and dynamic spatial-temporal dependencies make the traffic flow prediction quite challenging. Although existing spatial-temporal graph neural networks hold prominent, they often encounter challenges of using a static graph with the same set of edge weights across different time points, which greatly limits the representational power of spatial graph structures, as well as lacking capability of capturing spatial-temporal patterns at different time scales from a single time point to multiple time points. In this paper, we propose a fully adaptive Multi-Scale Spatial-Temporal Recurrent Network for traffic flow prediction, namely MSSTRN, which consists of two different recurrent neural networks: the single-step gate recurrent unit and the multi-step gate recurrent unit to fully capture the complex spatial-temporal information in the traffic data under different time steps. We integrate node embeddings with temporal position information at multiple scales to construct fully adaptive graphs and propose adaptive position graph convolution networks for capturing spatial dependencies in specific temporal contexts. Moreover, we propose a spatial-temporal position-aware attention mechanism that unifies adaptive graph convolutions and self-attention for joint spatial-temporal dependency learning. simultaneously capture spatialtemporal dependencies. Extensive experiments on four real-world traffic datasets show that our model outperforms 23 baselines with significant margins in prediction accuracy.},
+  archive      = {J_TAI},
+  author       = {Haiyang Liu and Chunjiang Zhu and Detian Zhang and Qing Li},
+  doi          = {10.1109/TAI.2025.3610568},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Fully adaptive multi-scale spatial-temporal recurrent networks for traffic flow prediction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards sample-efficiency and generalization of transfer and inverse reinforcement learning: A comprehensive literature review. <em>TAI</em>, 1-16. (<a href='https://doi.org/10.1109/TAI.2025.3610590'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning (RL) is a sub-domain of machine learning, mainly concerned with solving sequential decision-making problems by a learning agent that interacts with the decision environment to improve its behaviour through the reward it receives from the environment. This learning paradigm is, however, well-known for being time-consuming due to the necessity of collecting a large amount of data, making RL suffer from sample inefficiency and difficult generalization. Furthermore, the construction of an explicit reward function that accounts for the trade-off between multiple desiderata of a decision problem is often a laborious task. These challenges have been recently addressed utilizing transfer and inverse RL (T-IRL). In this regard, this paper is devoted to a comprehensive review of realizing the sample efficiency and generalization of RL algorithms through T-IRL. Following a brief introduction to RL, the fundamental T-IRL methods are presented and the most recent advancements in each research field have been extensively reviewed. Our findings denote that a majority of recent research works have dealt with the aforementioned challenges by utilizing human-in-the-loop and sim-to-real strategies for the efficient transfer of knowledge from source domains to the target domain under the transfer learning scheme. Under the IRL structure, training schemes that require a low number of experience transitions and extension of such frameworks to multi-agent and multi-intention problems have been the priority of researchers in recent years. This survey first reviews the theoretical foundations of RL and its challenges, then presents recent advances in T-IRL, and concludes with a discussion of open research directions and future trends.},
+  archive      = {J_TAI},
+  author       = {Hossein Hassani and Ehsan Hallaji and Roozbeh Razavi-Far and Mehrdad Saif and Liang Lin},
+  doi          = {10.1109/TAI.2025.3610590},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Towards sample-efficiency and generalization of transfer and inverse reinforcement learning: A comprehensive literature review},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal control of unknown nonlinear systems via a multi-model-based multi-step reinforcement learning framework. <em>TAI</em>, 1-13. (<a href='https://doi.org/10.1109/TAI.2025.3608776'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimal control of unknown nonlinear systems is challenging due to the absence of the underlying dynamics model. Reinforcement learning (RL) has become an effective framework for such control by optimizing policies with measurement data of the system. However, RL often suffers from (i) low sample efficiency due to the absence of domain knowledge (e.g., dynamics model) and (ii) low learning efficiency due to slow propagation of the reward signal. Model-based RL methods and multi-step RL methods were proposed to address these two challenges, respectively. It is natural to combine these two methods to take advantage of both benefits. However, this combination requires the learned single one-step dynamics model, commonly used in model-based settings, to perform multi-step prediction in a recursive manner, leading to the error accumulation (also known as compounding error) problem. This work presents a multi-model dynamics learning framework to address the error accumulation challenge for general model-based multi-step RL methods by circumventing the recursive prediction. We also present a specific multi-model-based multi-step RL algorithm and validate it on benchmark nonlinear systems. It is shown that the multi-model framework improves multi-step prediction of dynamics and that the presented multi-model-based multi-step RL mostly outperforms model-free, single-model, and one-step counterparts, respectively. We also discuss the limitations of this work and potential future work.},
+  archive      = {J_TAI},
+  author       = {Shanwu Li and Yongchao Yang},
+  doi          = {10.1109/TAI.2025.3608776},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Optimal control of unknown nonlinear systems via a multi-model-based multi-step reinforcement learning framework},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Investigating primacy bias in multi-agent reinforcement learning: An empirical study. <em>TAI</em>, 1-10. (<a href='https://doi.org/10.1109/TAI.2025.3560617'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the past two years, the phenomenon of primacy bias in reinforcement learning has been extensively investigated, sparking discussions within the community regarding the plasticity of reinforcement learning. This study represents the first comprehensive exploration of primacy bias in multiagent reinforcement learning. Building on our previous works, we demonstrate that multi-agent reinforcement learning also encounters the challenge of primacy bias. We then provide a comparative analysis across various settings, including different evaluation methods, the sharing of policy parameters, and the adaptability of decentralized policies. We conducted extensive experiments on multiple multi-agent benchmarks. Our findings reveal specific characteristics of primacy bias in multi-agent learning, showing the difference between them with those in single-agent reinforcement learning. While, we discuss the limitations and challenges encountered when directly applying existing solutions from the reinforcement learning domain to multi-agent scenarios.},
+  archive      = {J_TAI},
+  author       = {Jingchen Li and Yusen Yang and Ziming He and Huarui Wu and Chunjiang Zhao and Kao-Shing Hwang},
+  doi          = {10.1109/TAI.2025.3560617},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Investigating primacy bias in multi-agent reinforcement learning: An empirical study},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive successor features composition for transfer reinforcement learning. <em>TAI</em>, 1-12. (<a href='https://doi.org/10.1109/TAI.2025.3610392'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transfer reinforcement learning (TRL) aims to build a policy for a unseen target task by reusing previously found optimal policies from a fixed set of source tasks. Successor features (SFs) and Generalised Policy Improvement (GPI) have been adopted as a robust framework to achieve TRL expressing rewards as a linear combination of a shared feature function and a task-specific vector weights. SF-GPI are used for reusing, fast learning, and composing a fixed set of policies derived from SFs through two-level decision-making, which can be understood as a hierarchical method. However, SF-GPI performance on target tasks is related to the distance from the source tasks’ vector weights, limiting their ability to ensure optimal policies for more distant tasks. In this paper, we introduce a novel composition mechanism by defining a new Markov decision process involving high-level states and actions constructed of SFs, resulting in a high-level policy which adaptively selects high-level actions. This approach facilitates knowledge transfer across a varied-distance set of tasks without performance degradation. Finally, we empirically demonstrate that our approach learns and composes SF representations, outperforming SF-GPI by maintaining the performance across a varied-distance set of tasks in 3 widely-used problems in the SFs literature.},
+  archive      = {J_TAI},
+  author       = {Kiyoshige Garces and Junyu Xuan and Hua Zuo},
+  doi          = {10.1109/TAI.2025.3610392},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Adaptive successor features composition for transfer reinforcement learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards vox populi in federated learning: A fair and inclusive client selection framework. <em>TAI</em>, 1-15. (<a href='https://doi.org/10.1109/TAI.2025.3609733'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) enables distributed model training without centralizing raw data, but existing client selection methods frequently marginalize resource-limited devices. To address this imbalance, we propose a novel Stackelberg-game-based framework that shifts decision-making from a server-centric model to a client-to-client paradigm. Resource-rich leaders form coalitions with resource-limited followers, allowing every client, regardless of capacity, to contribute to and benefit from the global model. We further introduce a comprehensive data scoring mechanism that evaluates the quality and diversity of each client’s dataset, ensuring that coalition formation is both fair and inclusive. Experiments on diverse benchmarks demonstrate that our approach outperforms the state-of-the-art, as well as different baselines on multiple metrics while promoting fairness. Our proposed strategy effectively tackles heterogeneous data distributions and uneven resource availability, offering a scalable, equitable solution for real-world FL scenarios.},
+  archive      = {J_TAI},
+  author       = {Sarhad Arisdakessian and Osama Wehbi and Omar Abdel Wahab and Azzam Mourad and Hadi Otrok},
+  doi          = {10.1109/TAI.2025.3609733},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Towards vox populi in federated learning: A fair and inclusive client selection framework},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

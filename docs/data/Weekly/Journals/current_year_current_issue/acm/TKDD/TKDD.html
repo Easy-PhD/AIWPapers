@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TKDD</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tkdd">TKDD - 18</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Causal meta-learning with multi-view graphs for cold-start recommendation. <em>TKDD</em>, <em>19</em>(7), 1-29. (<a href='https://doi.org/10.1145/3732943'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cold-start recommendation is a well-known problem in practical application scenarios. Generating reliable recommendations can be challenging when interactions are typically sparse. To mitigate the cold-start problem, some methods incorporate auxiliary information about users and items, and others adopt meta-learning to improve recommendation accuracy. However, these approaches overlook the fact that items are interdependent and likely to be related or similar. Moreover, user preference distributions in the meta-training and meta-testing phases are different in the cold-start scenario. To address these problems, we present a novel strategy called Causal Meta-learning with Multi-view Graphs (CausalMMG). Specifically, we first construct multi-view item-item graphs to explore the correlations and similarities between items from multiple perspectives. A multi-view item representer is then used to learn item representations, exploiting graph convolution neural networks to capture the structure of these different item–item graphs. We then resort to the structural causal models of causal inference and further develop a causality-enhanced bi-level adaptive meta-learner to eliminate bias caused by the different distributions of user preferences. Moreover, the meta-learner learns the user preferences for items in different orders through hierarchical and task-level adaptations. Finally, we evaluate CausalMMG on several real-world datasets, demonstrating its effectiveness in various scenarios. The results show that the proposed CausalMMG is significantly superior to competitive baseline methods for cold-start recommendation on all datasets, highlighting the importance of incorporating the multiple relationships between items and modeling different user preference distributions in recommender systems.},
+  archive      = {J_TKDD},
+  author       = {Huiting Liu and Wei Zhang and Peipei Li and Peng Zhao and Xindong Wu},
+  doi          = {10.1145/3732943},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Causal meta-learning with multi-view graphs for cold-start recommendation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Latent representation learning for attributed graph anomaly detection. <em>TKDD</em>, <em>19</em>(7), 1-22. (<a href='https://doi.org/10.1145/3733604'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Anomaly detection in attributed graph data has been widely applied in real applications. However, the intricate topology of graph data, high-dimensional attributes, and class imbalance inherent in anomaly detection tasks render attributed graph anomaly detection a challenging task. To detect anomalies using the intricate topology information of graph data, a dual-masked autoencoders is proposed for attributed graph anomaly detection, denoted as MAGAD. Specifically, in the MAGAD, the class imbalance in attributed graph data is dealt with by randomly masking the original graph data to obtain masked graph data for the anomaly detection task. And then, a latent representation of the graph data is obtained by training dual autoencoders, where one autoencoder is developed for reconstructing the original graph data, and another for reconstructing randomly masked graph data. This assists in identifying abnormal nodes in the attributed graph data. Subsequently, to capture anomalous information from relevant features, MAGAD uses a random re-masking strategy for latent representations learned from the masked graph. Finally, the anomaly scores of the nodes are calculated using the learned latent representations from the decoders of the dual autoencoders. Experimental results on five real-world datasets demonstrate that the MAGAD algorithm outperforms state-of-the-art anomaly detection algorithms.},
+  archive      = {J_TKDD},
+  author       = {Shichao Zhang and Penghui Xi and Mengqi Jiang and Guixian Zhang and Debo Cheng},
+  doi          = {10.1145/3733604},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Latent representation learning for attributed graph anomaly detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph self-attention mechanism for interpretable multi-hop knowledge graph link prediction. <em>TKDD</em>, <em>19</em>(7), 1-22. (<a href='https://doi.org/10.1145/3737702'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge Graphs (KGs) are extensively used in recommendation systems and information retrieval but often suffer from incompleteness. A popular solution to this problem is multi-hop inference through a reinforcement learning framework, which provides an interpretable path for predicting missing links in KGs. Most previous work focuses on improving the performance of multi-hop link prediction. However, it has been observed that many multi-hop paths generated by these methods are irrational; they often fail to reasonably explain the predicted answer entities. To address this challenge, we introduce the Joint Multi-hop Link Prediction (JMLP) framework. The framework consists of a relation attention network and an entity attention network, which collaboratively generate the reasoning paths. The relation attention module utilizes an induction network to encode historical paths and employs the graph self-attention mechanism to refine the interaction of relation contextual information. The entity attention module uses the graph attention mechanism to obtain the aggregated contextual features and leverages self-attention to strengthen the correlation between local and global contextual entity features. Extensive experiments on five datasets validate the effectiveness of our approach, demonstrating significant improvements both in predictive performance and interpretability compared to state-of-the-art methods.},
+  archive      = {J_TKDD},
+  author       = {Hao Liu and Dong Li and Bing Zeng and Wei Liang and Dongjie Li},
+  doi          = {10.1145/3737702},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Graph self-attention mechanism for interpretable multi-hop knowledge graph link prediction},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding and guiding weakly supervised entity alignment with potential isomorphism propagation. <em>TKDD</em>, <em>19</em>(7), 1-28. (<a href='https://doi.org/10.1145/3742436'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weakly Supervised Entity Alignment (EA) is the task of identifying equivalent entities across diverse knowledge graphs (KGs) using only a limited number of seed alignments. Despite substantial advances in aggregation-based weakly supervised EA, the underlying mechanisms in this setting remain unexplored. In this article, we present a propagation perspective to analyze weakly supervised EA and explain the existing aggregation-based EA models. Our theoretical analysis reveals that these models essentially seek propagation operators for pairwise entity similarities. We further prove that, despite the structural heterogeneity across different KGs, the potentially aligned entities within aggregation-based EA models exhibit isomorphic subgraphs, a fundamental yet underexplored premise of EA. Leveraging this insight, we introduce a potential isomorphism propagation operator to enhance the propagation of neighborhood information across KGs. We develop a general EA framework, PipEA, incorporating this operator to improve the accuracy of every type of aggregation-based model without altering the learning process. Extensive experiments substantiate our theoretical findings and demonstrate PipEA’s significant performance gains over state-of-the-art weakly supervised EA methods. Our work advances the field and enhances our comprehension of aggregation-based weakly supervised EA.},
+  archive      = {J_TKDD},
+  author       = {Haifeng Sun and Yuanyi Wang and Han Li and Wei Tang and Zirui Zhuang and Qi Qi and Jingyu Wang},
+  doi          = {10.1145/3742436},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Understanding and guiding weakly supervised entity alignment with potential isomorphism propagation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MagiNet: Mask-aware graph imputation network for incomplete traffic data. <em>TKDD</em>, <em>19</em>(7), 1-20. (<a href='https://doi.org/10.1145/3743141'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to detector malfunctions and communication failures, missing data is ubiquitous during the collection of traffic data. Therefore, it is of vital importance to impute the missing values to facilitate data analysis and decision-making for Intelligent Transportation System (ITS) . However, existing imputation methods generally perform zero pre-filling techniques to initialize missing values, introducing inevitable noise. Moreover, we observe prevalent over-smoothed interpolations, falling short in revealing the intrinsic spatio-temporal correlations of incomplete traffic data. To this end, we propose Mask-Aware Graph Imputation Network (MagiNet) . Our method designs an adaptive mask spatio-temporal encoder to learn the latent representations of incomplete data, eliminating the reliance on pre-filling missing values. Furthermore, we devise a spatio-temporal decoder that stacks multiple blocks to capture the inherent spatial and temporal dependencies within incomplete traffic data, alleviating over-smoothed imputation. Extensive experiments demonstrate that our method outperforms state-of-the-art imputation methods on five real-world traffic datasets, yielding an average improvement of 4.31% in RMSE and 3.72% in MAPE under Missing Completely at Random (MCAR) pattern. Code is available at https://github.com/JeremyChou28/MagiNet .},
+  archive      = {J_TKDD},
+  author       = {Jianping Zhou and Bin Lu and Zhanyu Liu and Siyu Pan and Xuejun Feng and Hua Wei and Guanjie Zheng and Xinbing Wang and Chenghu Zhou},
+  doi          = {10.1145/3743141},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {MagiNet: Mask-aware graph imputation network for incomplete traffic data},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Convergence-guaranteed federated learning through gradient trajectory smoothing with triple-objective decomposition. <em>TKDD</em>, <em>19</em>(7), 1-31. (<a href='https://doi.org/10.1145/3743142'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning (FL) has been widely adopted as a distributed machine learning paradigm aiming to derive a global model without transferring local data to the server. In the context of heterogeneous environments typical of many FL deployments, our research has identified the performance oscillation problem in existing FL methods, resulting in slow convergence and severe performance drop. In this article, we first investigate the global optimizing objective in FL and demonstrate that, due to data heterogeneity and partial client participation, the global updates in a single training epoch may diverge from the intended objectives of conventional FL methods. To address this problem, we introduce a triple-objective decomposition mechanism to decompose the overarching global objective into three distinct local objectives aimed at aligning client gradients. Subsequently, we propose a gradient trajectory smoothing technique known as FedGTS, which refines local updates by estimating a pseudo-gradient leveraging historical global update trajectories. This approach is designed to mitigate performance oscillations and enhance the stability of the learning process. We theoretically demonstrate that our approach reduces variance of local updates and achieves a guaranteed convergence rate. We experimentally show that the proposed method outperforms the baselines with faster convergence and higher accuracy. Extensive experiments validate the effectiveness of the proposed approach across various heterogeneity settings. Our codes are publicly available at GitHub ( https://github.com/ZongHR/FedGTS ).},
+  archive      = {J_TKDD},
+  author       = {Haoran Zong and Xiao Zhang and Ruichen Li and Jianhui Duan and Derun Zou and Wenzhong Li},
+  doi          = {10.1145/3743142},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Convergence-guaranteed federated learning through gradient trajectory smoothing with triple-objective decomposition},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CAT-LLM: Style-enhanced large language models with text style definition for chinese article-style transfer. <em>TKDD</em>, <em>19</em>(7), 1-33. (<a href='https://doi.org/10.1145/3744250'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Text style transfer plays a vital role in online entertainment and social media. However, existing models struggle to handle the complexity of Chinese long texts, such as rhetoric, structure, and culture, which restricts their broader application. To bridge this gap, we propose a Chinese Article-style Transfer (CAT-LLM) framework, which addresses the challenges of style transfer in complex Chinese long texts. At its core, CAT-LLM features a bespoke pluggable Text Style Definition (TSD) module that integrates machine learning algorithms to analyze and model article styles at both word and sentence levels. This module acts as a bridge, enabling large language models (LLMs) to better understand and adapt to the complexities of Chinese article styles. Furthermore, it supports the dynamic expansion of internal style trees, enabling the framework to seamlessly incorporate new and diverse style definitions, enhancing adaptability and scalability for future research and applications. Additionally, to facilitate robust evaluation, we created 10 parallel datasets using a combination of ChatGPT and various Chinese texts, each corresponding to distinct writing styles, significantly improving the accuracy of the model evaluation and establishing a novel paradigm for text style transfer research. Extensive experimental results demonstrate that CAT-LLM, combined with GPT-3.5-Turbo, achieves state-of-the-art performance, with a transfer accuracy F1 score of 79.36% and a content preservation F1 score of 96.47% on the “Fortress Besieged” dataset. These results highlight CAT-LLM’s innovative contributions to style transfer research, including its ability to preserve content integrity while achieving precise and flexible style transfer across diverse Chinese text domains. Building on these contributions, CAT-LLM presents significant potential for advancing Chinese digital media and facilitating automated content creation. Source code is available at GitHub ( https://github.com/TaoZhen1110/CAT-LLM ).},
+  archive      = {J_TKDD},
+  author       = {Zhen Tao and Dinghao Xi and Zhiyu Li and Liumin Tang and Wei Xu},
+  doi          = {10.1145/3744250},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {CAT-LLM: Style-enhanced large language models with text style definition for chinese article-style transfer},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PRIME: Pretraining for patient condition representation with irregular multimodal electronic health records. <em>TKDD</em>, <em>19</em>(7), 1-39. (<a href='https://doi.org/10.1145/3744251'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the increasing collection of electronic health records (EHRs), deep learning has become a crucial tool for real-time treatment analysis. However, due to patient privacy concerns, the scarcity of labeled data limits the end-to-end models that rely on large training data. Self-supervised pretraining offers a promising solution. Nevertheless, applying pretraining to EHRs faces two key issues: (1) EHRs exhibit multimodality, including monitoring data and recorded clinical note. For multimodal pretraining, designing a self-supervised task that can establish cross-modal associations while preserving all modal-unique information remains challenging. (2) Both modalities are sequential and irregular, with varying intervals between monitoring or records. Aligning monitoring times with recorded times poses a significant issue for fine-grained cross-modal pretraining. Existing pretraining models either focus on a single modality or only models regular data, failing to address them together. To fill this gap and fully utilize unlabel EHR data, we propose a p retraining model to learn patient r epresentation using unlabel i rregular m ultimodal E HRs, named PRIME. We first utilize a multi-element encoding module to extract patient condition snapshots from both modalities. Then, to construct multiple aligned cross-modal positive sample pairs that span the entire treatment process from irregular data, we employ patient condition alignment modules that integrate time-aware and feature-aware components to transfer snapshots to the aligned timestamps. Next, to preserve both shared and unique information of each modality, our decoupled representation learning strategy first uses a constraint matrix to separate shared information. We then employ contrastive-based cross-modal learning and reconstruction-based intra-modal learning to model shared and complete information, respectively. Extensive experiments on two real-world tasks demonstrate the superiority of PRIME over the state-of-the-art models, especially with limited labels.},
+  archive      = {J_TKDD},
+  author       = {Bohao Li and Bowen Du and Junchen Ye},
+  doi          = {10.1145/3744251},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-39},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {PRIME: Pretraining for patient condition representation with irregular multimodal electronic health records},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards sequence utility maximization under utility occupancy measure. <em>TKDD</em>, <em>19</em>(7), 1-27. (<a href='https://doi.org/10.1145/3744344'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The discovery of utility-driven patterns is a valuable and difficult research topic. It can extract significant and interesting information from specific and varied databases, increasing the value of the services provided. In practice, the utility measure is often used to reflect the importance, profit, or risk of an object or pattern. In the database, while utility is a flexible criterion for patterns, it is also a somewhat limited criterion due to the overlook of utility sharing. This leads to the derived patterns only exploring partial and local knowledge in the database. Utility occupancy considers the problem of mining with high utility but low occupancy. However, existing studies are focused on itemsets that cannot reveal the temporal relationship of object occurrences. Therefore, this article first defines the concept of utility occupancy of sequence data and raises the problem of High-Utility Occupancy Sequential Pattern Mining (HUOSPM). Three dimensions, including frequency, utility, and occupancy, are comprehensively evaluated in HUOSPM. An algorithm called Sequence Utility Maximization with Utility occupancy measure (SUMU) is proposed. Furthermore, two data structures for storing pattern-related information, including Utility-Occupancy-List-Chain (UOL-Chain) and Utility-Occupancy-Table (UO-Table), are designed, and six upper bounds are proposed to improve efficiency. Extensive experiments are conducted to evaluate the efficiency and effectiveness of the novel algorithm. A specific case study is provided, and the effects of different upper bounds and pruning strategies are analyzed. The comprehensive results suggest that the HUOSPM task is useful and efficient.},
+  archive      = {J_TKDD},
+  author       = {Gengsen Huang and Wensheng Gan and Philip S. Yu},
+  doi          = {10.1145/3744344},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Towards sequence utility maximization under utility occupancy measure},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hierarchical spatial decompositions under local differential privacy. <em>TKDD</em>, <em>19</em>(7), 1-37. (<a href='https://doi.org/10.1145/3744569'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The popularity of smartphones, GPS-enabled devices, social networks, and connected vehicles all contribute to the increasing volume of spatial data. Spatial decompositions assist in handling big spatial data, and they have been commonly used in the Differential Privacy (DP) literature for range query answering, spatial indexing, count-of-counts histograms, data summarization, and visualization. However, their applications under the emerging Local DP (LDP) notion are scarce. In this article, we study the problem of building hierarchical spatial decompositions under LDP, focusing on two methods: quadtrees and kd-trees. We develop two solutions for quadtrees: a baseline solution that is inspired by the centralized DP literature, and a proposed solution that utilizes a single data collection step from users, propagates density estimates to remaining nodes, and performs structural corrections to the quadtree. Since kd-trees rely on node medians which are data-dependent, we observe that it is not feasible to build kd-trees using a single data collection step. We therefore propose an iterative solution that constructs kd-trees in top-down fashion by utilizing a novel algorithm for estimating node medians at each tree depth. We experimentally evaluate our quadtree and kd-tree algorithms using four real-world spatial datasets, multiple utility metrics, varying privacy budgets, and tree parameters. Results demonstrate that our algorithms enable the building of accurate spatial decompositions that provide high utility in practice. Notably, our quadtrees and kd-trees achieve substantially lower errors in answering spatial density queries (up to 10-fold improvement) when compared with a state-of-the-art method.},
+  archive      = {J_TKDD},
+  author       = {Ece Alptekin and Berkay Kemal Balioglu and M. Emre Gursoy},
+  doi          = {10.1145/3744569},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Hierarchical spatial decompositions under local differential privacy},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding the robustness of deep recommendation under adversarial attacks. <em>TKDD</em>, <em>19</em>(7), 1-46. (<a href='https://doi.org/10.1145/3744570'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It has been shown that deep recommendation models are susceptible to adversarial attacks, with this vulnerability potentially leading to significant economic losses in the e-commerce field. However, the robustness of deep recommendation models in response to adversarial attacks has not been systematically investigated. In this article, therefore, we comprehensively evaluate the adversarial robustness of various representative deep models in different settings, aiming to analyze their performance impact under adversarial attacks and compare it with traditional collaborative filtering models. Notably, we examine poisoning attacks under different proportions of fake users and various popularity conditions to understand why certain deep recommendation models perform exceptionally or sub-optimally. On this basis, we further proposed practical robustness improvement strategy for the problems found in the evaluation and fully verified it through rigorous experiments. Key findings include: (1) the sparser the training dataset, the weaker the robustness of a recommendation model’s performance under adversarial attacks; (2) deep recommendation models exhibit greater robustness in recommending popular items under adversarial attacks, while they are more vulnerable when attacked with non-popular items; (3) the robustness of deep recommendation models is not consistently weaker than that of traditional collaborative filtering models across all attack settings. These findings highlight the security concerns in deep recommendation systems and contribute to developing more reliable models.},
+  archive      = {J_TKDD},
+  author       = {Fulan Qian and Wenbin Chen and Hai Chen and Yan Cui and Shu Zhao and Yanping Zhang},
+  doi          = {10.1145/3744570},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-46},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Understanding the robustness of deep recommendation under adversarial attacks},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interactive fusion label enhancement for multi-label learning. <em>TKDD</em>, <em>19</em>(7), 1-23. (<a href='https://doi.org/10.1145/3744571'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-Label Learning (MLL) involves the task of assigning a set of relevant labels to a given instance. Recently, Label Enhancement (LE) has gained significant attention in various MLL tasks, as it allows for effective mining the implicit relative importance information of different labels. However, in existing LE-based MLL methods, the LE process is decoupled from the MLL process. Consequently, the label distribution recovered by the LE process may not be suitable for training the predictive model, thus affecting the overall learning system. In this study, we propose a novel approach named interactive Fusion Label Enhancement for Multi-Label Learning ( Flem ) that seamlessly integrates the LE process with the MLL process. Specifically, we introduce a matching and interaction mechanism comprising a novel interaction label enhancement loss and a contrastive alignment approach to prevent object mismatch. Furthermore, we present a unified label distribution loss that establishes the relationship between the recovered label distribution and the training of the predictive model. By leveraging these losses, the label distributions obtained from the LE process can be efficiently utilized for training the predictive model. Experimental results on multiple benchmark datasets demonstrate the effectiveness of the proposed method.},
+  archive      = {J_TKDD},
+  author       = {Xingyu Zhao and Yuexuan An and Ning Xu and Lei Qi and Xin Geng},
+  doi          = {10.1145/3744571},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Interactive fusion label enhancement for multi-label learning},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Framework for variable-lag motif following relation inference in time series using matrix profile analysis. <em>TKDD</em>, <em>19</em>(7), 1-24. (<a href='https://doi.org/10.1145/3744652'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowing who follows whom and what patterns they are following are crucial steps to understand collective behaviors (e.g., a group of human, a school of fish, or a stock market). Time series is one of the resources that can be used to get insight regarding following relations. However, the concept of following patterns or motifs and the solution to find them in time series are not obvious. In this work, we formalize a concept of following motifs between two time series and present a framework to infer following patterns between two time series. The framework utilizes one of the efficient and scalable methods to retrieve motifs from time series called the Matrix Profile Inference Method. We compare our proposed framework with several baselines. The framework performs better than baselines in the simulation datasets. In the dataset of sound recording, the framework is able to retrieve the following motifs within a pair of time series in which two singers sing following each other. In the cryptocurrency dataset, the framework is capable of capturing the following motifs within a pair of time series from two digital currencies, which implies that the values of one currency follow the values of another currency patterns. Our framework can be utilized in any field of time series to get insight regarding following patterns between time series. The code and datasets can be found at https://github.com/hughnaaek/Following-Motif-Relation .},
+  archive      = {J_TKDD},
+  author       = {Naaek Chinpattanakarn and Chainarong Amornbunchornvej},
+  doi          = {10.1145/3744652},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Framework for variable-lag motif following relation inference in time series using matrix profile analysis},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Knowledge graph fine-grained modeling network with contrastive learning for recommendation. <em>TKDD</em>, <em>19</em>(7), 1-18. (<a href='https://doi.org/10.1145/3744926'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge graph (KG) is often introduced into recommendation systems because of its large amount of edge information. The method based on graph neural networks (GNNs) has gradually become the mainstream of KG-aware recommendation. However, traditional KG-aware recommendation models based on GNNs fail to utilize the dependencies of items and item attributes to model user preferences at a fine-grained level, which will result in a lack of interpretability in the model’s recommendations to users. In addition, traditional KG-aware recommendation models based on GNNs fail to mine supervision signals from the perspective of user preferences and item attributes, which will result in a lack of effective supervision signals in the model. In this study, we utilize a combination of items and attributes behind the items to model user preferences at a fine-grained level, so as to achieve independence between different user preferences. Furthermore, we utilize the KG and the user–item interaction graph (UIIG) to construct the user-specific preference similarity view and the item-specific attribute correlation views, respectively, and then apply the contrastive learning framework to effectively mine the association signals between users and between items. Based on this, we propose a novel model named Knowledge Graph Fine-grained Modeling Network with Contrastive Learning (KGFM-CL). Extensive experiments conducted on two real-world datasets demonstrate that KGFM-CL significantly outperforms state-of-the-art baseline models.},
+  archive      = {J_TKDD},
+  author       = {Xiya Bu and Yu Liu},
+  doi          = {10.1145/3744926},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Knowledge graph fine-grained modeling network with contrastive learning for recommendation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Raker: A relation-aware knowledge reasoning model for inductive relation prediction. <em>TKDD</em>, <em>19</em>(7), 1-20. (<a href='https://doi.org/10.1145/3745029'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Inductive relation prediction, an important task for knowledge graph completion, is to predict the relations between entities that are unseen at the training stage. The latest methods use Pre-Trained Language Models (PLMs) to encode the paths between the head entity and tail entity and achieve state-of-the-art prediction performance. However, these methods cannot handle no-path scenarios well and lack the capability to learn comprehensive relation representations for distinguishing different relations. To tackle this issue, we propose a novel R elation- a ware k nowledg e r easoning model entitled Raker, which introduces an adaptive reasoning information extraction method to identify relation-aware reasoning neighbors of entities in the target triple to handle no-path scenarios and enables the PLM to better distinguish different relations via the relation-specific soft prompting. Raker is evaluated on three public datasets and achieves SOTA performance in inductive relation prediction when compared with the baseline methods. Notably, the absolute improvement of Raker is even more than 5% on the FB15k-237 dataset in the inductive setting. Moreover, Raker also demonstrates the superiority in transductive, few-shot, and unseen relation settings. The code of Raker is available at https://github.com/ADMIS-TONGJI/Raker .},
+  archive      = {J_TKDD},
+  author       = {Jiaqi Wang and Wengen Li and Yulou Shu and Jihong Guan and Yichao Zhang and Shuigeng Zhou},
+  doi          = {10.1145/3745029},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Raker: A relation-aware knowledge reasoning model for inductive relation prediction},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards recommendation on good quality data science solutions. <em>TKDD</em>, <em>19</em>(7), 1-19. (<a href='https://doi.org/10.1145/3746235'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data science aims to solve real-world problems with the knowledge derived from data. Successfully tackling a data science problem requires practitioners to choose an appropriate solution, which potentially comprises various components such as pre-processing techniques, learning algorithms, hyper-parameters, and so on. Therefore, a problem-driven recommendation for the promising solution is invaluable, as it facilitates efficient and convenient problem-solving. However, existing solution recommendation approaches confront notable challenges when dealing with limited and sparse prior experience in practical applications. Learning from such prior easily leads to overfitting and poor generalization in solution recommendations. To address this issue, we propose a novel solution recommendation method that can predict a good-quality data science solution, including the pre-processing, the learning algorithm, and hyper-parameters, for a given problem. The foundation of our method is a carefully designed ranking model that exploits a weight-sharing structure and a newly proposed loss. The ranking model focuses on incorporating relative ranking information into the predicted performance score of each solution. With these techniques, our method can recommend the solution with the highest score and effectively mitigate the limitations of using sparse prior experience. Our experiments demonstrate the superiority of our method in predicting solutions with higher accuracy and rank, even trained on highly sparse historical performance records. It also reduces recommendation time significantly compared to the baselines, offering remarkable efficiency and convenience for practitioners.},
+  archive      = {J_TKDD},
+  author       = {Jian Chen and Yile Chen and Zeyi Wen and Yawen Chen and Jin Huang},
+  doi          = {10.1145/3746235},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-19},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Towards recommendation on good quality data science solutions},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weakly supervised open-domain aspect-based sentiment analysis. <em>TKDD</em>, <em>19</em>(7), 1-29. (<a href='https://doi.org/10.1145/3747849'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aspect-Based Sentiment Analysis (ABSA) comprises several subtasks: aspect term extraction (ATE), opinion term extraction (OTE), aspect term sentiment extraction (ATSE), aspect-opinion pair extraction (AOPE), and aspect sentiment triplet extraction (ASTE). Existing unified frameworks for ABSA rely heavily on large-scale annotated data, limiting scalability across domains. We propose UAOS, a double-layer unified span extraction framework that performs all five ABSA subtasks under weak supervision. Our approach first extracts aspect-opinion pairs using universal dependency-based rules from unannotated corpora. Sentiment labels for these pairs are generated via a novel zero-shot, domain-agnostic prompt-based method. The resulting weak labels train a unified span extraction architecture equipped with canonical correlation analysis for early stopping and a self-training mechanism to mitigate noise and bias in supervision. Extensive experiments on four ABSA benchmarks demonstrate that UAOS achieves competitive or superior performance compared to fully supervised baselines. It improves upon the state-of-the-art ODAO by +1.54 F1 for ATE, +0.56 for OTE, and +0.82 for AOPE. In ATSE and ASTE, where no weakly supervised baselines exist, UAOS outperforms several supervised models, setting new benchmarks. To assess domain generalizability, we evaluate UAOS on a psychology/education-domain dataset of student reflections spanning four instructional conditions. Without in-domain fine-tuning, it achieves macro F1 scores of 71.05 (ATE), 74.39 (OTE), 68.24 (AOPE), and 60.56 (ASTE). These results highlight the model’s ability to generalize to out-of-distribution, non-commercial text, underscoring its scalability for low-resource ABSA applications.},
+  archive      = {J_TKDD},
+  author       = {Mohna Chakraborty and Adithya Kulkarni and Qi Li},
+  doi          = {10.1145/3747849},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Weakly supervised open-domain aspect-based sentiment analysis},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spatial-temporal data mining for ocean science: Data, methodologies and opportunities. <em>TKDD</em>, <em>19</em>(7), 1-47. (<a href='https://doi.org/10.1145/3748259'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid amassing of spatial-temporal (ST) ocean data, many spatial-temporal data mining (STDM) studies have been conducted to address various oceanic issues, including climate forecasting and disaster warning. Compared with typical ST data (e.g., traffic data), ST ocean data presents some unique characteristics, e.g., diverse regionality and high sparsity. These characteristics make it difficult to design and train STDM models on ST ocean data. To the best of our knowledge, a comprehensive survey of existing studies remains missing in the literature, which hinders not only computer scientists from identifying the research issues in ocean data mining but also ocean scientists to apply advanced STDM techniques. In this article, we provide a comprehensive survey of existing STDM studies for ocean science. Concretely, we first review the widely used ST ocean datasets and highlight their unique characteristics. Then, typical ST ocean data quality enhancement techniques are discussed. Next, we classify existing STDM studies for ocean science into four types of tasks, i.e., prediction, event detection, pattern mining, and anomaly detection, and elaborate the techniques for these tasks. Finally, promising research opportunities are discussed. This survey can help scientists from both computer science and ocean science better understand the fundamental concepts, key techniques, and open challenges of STDM for ocean science.},
+  archive      = {J_TKDD},
+  author       = {Hanchen Yang and Jiannong Cao and Wengen Li and Shuyu Wang and Hui Li and Jihong Guan and Shuigeng Zhou},
+  doi          = {10.1145/3748259},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {8},
+  number       = {7},
+  pages        = {1-47},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Spatial-temporal data mining for ocean science: Data, methodologies and opportunities},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

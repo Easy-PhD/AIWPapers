@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JPDC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jpdc">JPDC - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2026). A scalable tensor-based MDTW approach for multi-modal time series patterns clustering. <em>JPDC</em>, <em>207</em>, 105173. (<a href='https://doi.org/10.1016/j.jpdc.2025.105173'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal Time Series (MTS) is a vital ingredient to Predictive Multi-modal Artificial Intelligence (PMAI). MTS systems capture varying temporal modalities and their inherent dependencies for their accurate analytics. However, efficiently exploring these cross-modalities relationships is a challenging research due to their complexity facets and information redundancies. MTS patterns' pairwise similarity measures precede PMAI. Multi-modal Dynamic Time Warping (MDTW) is frequently explored to quantify similar MTS. Yet, it's reliant on the orthogonal conditioned local similarity measures that ignore the contributions of MTS' underlying structural relationships in the warping process and, hence, susceptible to unrealistic matching. This paper addresses the setbacks by recommending a scalable MTS recognition model, named Tensor-Slices Distance (TSD)-based MDTW (TSD-MDTW), that's subsequently advanced to two more distinct models termed Weighted modality and TSD (WmTSD-MDTW) and TSD-Mahalanobis (TSDMaha-MDTW). To quantify an alignment's cost, TSD-MDTW incorporates intrinsic spatial dependencies between modalities' coordinates, while WmTSD-MDTW relaxes information redundancies through weighing modalities based on information richness, whereas TSDMaha-MDTW embodies modalities dependencies and their coordinates' innate spatial dependencies. Besides, it proposes a scalable Tensor-based DTW (TDTW) model that re-formulates MDTW into multiple dimensions that are found paralleling warping processes. Theoretical and empirical experimental results on MTS multi-modal datasets encompassing load patterns and meteorological modalities reveal TDTW's efficiency and proposals' superior performances in terms of cluster compactness and separation over MDTW employing the state-of-the-art local similarity measures.},
+  archive      = {J_JPDC},
+  author       = {Bahati Alam Sanga and Laurence T. Yang and Shunli Zhang and Zecan Yang and Nicholaus Gati},
+  doi          = {10.1016/j.jpdc.2025.105173},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {1},
+  pages        = {105173},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {A scalable tensor-based MDTW approach for multi-modal time series patterns clustering},
+  volume       = {207},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

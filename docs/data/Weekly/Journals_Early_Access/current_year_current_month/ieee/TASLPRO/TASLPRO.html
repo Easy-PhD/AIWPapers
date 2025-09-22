@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TASLPRO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="taslpro">TASLPRO - 18</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Utilizing contextual clues and role correlations for enhancing document-level event argument extraction. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3598644'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Document-level event argument extraction is a crucial yet challenging task within the field of information extraction. Current mainstream approaches primarily focus on the information interaction between event triggers and their arguments, facing two limitations: insufficient context interaction and the ignorance of event correlations. Here, we introduce a novel framework named CARG (Contextual Aggregation of Clues and Role-based Latent Guidance), comprising two innovative components: the Contextual Clues Aggregation (CCA) and the Role-based Latent Information Guidance (RLIG) 1 The CCA module leverages the attention weights derived from a pretrained encoder to adaptively assimilate broader contextual information, while the RLIG module aims to capture the semantic correlations among event roles. We then instantiate the CARG framework into two variants based on two types of mainstream EAE approaches. Notably, our CARG framework introduces less than 1% new parameters yet significantly improves the performance. Comprehensive experiments across the RAMS, WikiEvents, MLEE and ACE 2005 datasets confirm the superiority of CARG, showing significant superiority in terms of both performance and inference speed compared to major benchmarks. Further analyses demonstrate the effectiveness of the proposed modules.},
+  archive  = {J},
+  author   = {Wanlong Liu and Dingyi Zeng and Li Zhou and Wenyu Chen and Malu Zhang and Dan Liu and Xiaodong He and Haizhou Li},
+  doi      = {10.1109/TASLPRO.2025.3598644},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-16},
+  title    = {Utilizing contextual clues and role correlations for enhancing document-level event argument extraction},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-domain dialogue state tracking with large language model rationale and disentangled domain-slot attention. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3604650'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Dialogue state tracking (DST) is a core component of task-oriented dialogue systems. A significant challenge in this task is multi-domain DST, which involves considering dialogue states across multiple domains. Recent advancements have addressed this challenge by exploring various approaches to model the correlations among different domains with domain-slot-specific representations derived from dialogue context and aggregating domain-slot queries using sorts of attention mechanisms. However, existing models still exhibit deficiencies in handling these correlations, either by overlooking or overestimating them. In this paper, we propose a multi-domain DST framework with large language model (LLM) rationale and Disentangled Domain-Slot Attention to address this challenge. Specifically, we introduce a multi-domain aware instruction prompt to guide the LLM to generate the corresponding rationale to dialogue history, realizing these correlations along with the robustness against sorts of variations in spoken conversation. Additionally, we present a novel mechanism, termed Disentangled Domain-Slot Attention. This mechanism enables a dynamic, flexible, and context-dependent manner to extract domain-slot-specific information by disentangling domain-slot queries within the attention mechanism. Through extensive experiments on the MultiWOZ 2.0 and MultiWOZ 2.4 datasets, the results present that the proposed approaches improve the performance of multi-domain DST. In addition, we conducted empirical analyses to comprehensively understand the effectiveness of our proposed approaches.},
+  archive  = {J},
+  author   = {Longfei Yang and Jiyi Li and Sheng Li and Takahiro Shinozaki},
+  doi      = {10.1109/TASLPRO.2025.3604650},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-14},
+  title    = {Multi-domain dialogue state tracking with large language model rationale and disentangled domain-slot attention},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-sinkhorn teacher knowledge aggregation framework for adaptive audio anti-spoofing. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3606191'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Audio anti-spoofing algorithms are widely deployed to defend against spoofing attacks, yet they often fail to detect unseen attacks. Although unsupervised domain adaptation (UDA) offers the potential to address this challenge, existing methods struggle with the large intra-class variability and complex distribution structures in target domains caused by the diversity of speech and attack types. In contrast, optimal transport (OT) leverages the geometric structure of intra-class distributions to measure discrepancies between probability distributions. The effectiveness of OT relies on the discriminability of data within target domains. However, in real-world scenarios involving multiple target domains, these domains often overlap in feature space, leading to the negative transport problem in OT. To overcome these domain mismatches in anti-spoofing, we propose the Multi-Sinkhorn Teacher Knowledge Aggregation (MSTKA) framework. Initially, to avoid interference between target domains during alignment, we use OT to adapt the source model to each target domain independently, thereby reducing negative transport. This adaptation involves constructing an OT cost matrix based on sentence-level representations of cross-domain samples and training an expert model for each target domain. Subsequently, we aggregate the knowledge from these expert models into a unified student model, enabling it to generalize across multiple target domains. Since spoofing cues could be distributed across different temporal scales, we align the student model's representations at multiple time scales with the teacher model's sentence-level representations to enhance the effectiveness of knowledge distillation. Multi-target adaptation experiments on eleven data sets demonstrate that our framework achieves state-of-the-art performance in audio anti-spoofing.},
+  archive  = {J},
+  author   = {Ruiteng Zhang and Jianguo Wei and Xugang Lu and Lin Zhang and Di Jin and Wenhuan Lu and Junhai Xu},
+  doi      = {10.1109/TASLPRO.2025.3606191},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-16},
+  title    = {Multi-sinkhorn teacher knowledge aggregation framework for adaptive audio anti-spoofing},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring self-supervised audio models for generalized anomalous sound detection. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3606200'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Machine anomalous sound detection (ASD) is a valuable technique across various applications. However, its generalization performance is often limited due to challenges in data collection and the complexity of acoustic environments. Inspired by the success of large pre-trained models in numerous fields, this paper introduces a robust ASD model that leverages self-supervised pre-trained models trained on large-scale speech and audio datasets. Although there are inconsistencies between the pre-training datasets and the ASD task, our findings indicate that pre-training still provides substantial benefits for ASD. To mitigate overfitting and retain learned knowledge when fine-tuning with limited data, we explore Fully-Connected Low-Rank Adaptation (LoRA) as an alternative to full fine-tuning. Additionally, we propose a Machine-aware Group Adapter module, which enables the model to capture differences between various machines within a unified framework, thereby enhancing the generalization performance of ASD systems. To address the challenge of missing attribute labels, we design a novel objective function that dynamically clusters unattributed data using vector quantization and optimizes through a dual-level contrastive learning loss. The proposed methods are evaluated on all benchmark datasets, including the DCASE 2020-2024 five ASD challenges, and the experimental results show significant improvements of our new approach and demonstrate the effectiveness of our proposed strategies.},
+  archive  = {J},
+  author   = {Bing Han and Anbai Jiang and Xinhu Zheng and Wei-Qiang Zhang and Jia Liu and Pingyi Fan and Yanmin Qian},
+  doi      = {10.1109/TASLPRO.2025.3606200},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-15},
+  title    = {Exploring self-supervised audio models for generalized anomalous sound detection},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring cross-utterance speech contexts for conformer-transducer speech recognition systems. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3606235'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper investigates four types of cross-utterance speech contexts modeling approaches for streaming and non-streaming Conformer-Transformer (C-T) ASR systems: i) input audio feature concatenation; ii) cross-utterance Encoder embeddings concatenation; iii) cross-utterance Encoder embeddings pooling projection; or iv) a novel chunk-based approach applied to C-T models for the first time. An efficient batch training scheme is proposed for contextual C-Ts that uses spliced speech utterances within each minibatch to minimize the synchronization overhead while preserving the sequential order of cross-utterance speech contexts. Experiments are conducted on four benchmark speech datasets across three languages: the English GigaSpeech and Mandarin Wenetspeech corpora used in contextual C-T models pre-training; and the English DementiaBank Pitt and Cantonese JCCOCC MoCA elderly speech datasets used in domain fine-tuning. The best performing contextual C-T systems consistently outperform their respective baselines using no cross-utterance speech contexts in pre-training and fine-tuning stages with statistically significant average word error rate (WER) or character error rate (CER) reductions up to 0.9%, 1.1%, 0.51%, and 0.98% absolute (6.0%, 5.4%, 2.0%, and 3.4% relative) on the four tasks respectively. Their performance competitiveness against Wav2vec2.0-Conformer, XLSR-128, and Whisper models highlights the potential benefit of incorporating cross-utterance speech contexts into current speech foundation models.},
+  archive  = {J},
+  author   = {Mingyu Cui and Mengzhe Geng and Jiajun Deng and Chengxi Deng and Jiawen Kang and Shujie Hu and Guinan Li and Tianzi Wang and Zhaoqing Li and Xie Chen and Xunying Liu},
+  doi      = {10.1109/TASLPRO.2025.3606235},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-14},
+  title    = {Exploring cross-utterance speech contexts for conformer-transducer speech recognition systems},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). General quality evaluation metric towards demonstrations for in-context learning. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3606230'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Recently, Large Language Models (LLMs) have demonstrated strong capabilities to perform multiple tasks through in-context learning (ICL), which is a new paradigm allowing LLMs to learn by observing a few demonstrations. Previous studies have revealed that ICL is highly variable to a range of factors, such as the quality, the quantity and the order of the demonstrations. Though they conduct qualitative analyses, they still lack comprehensive quantitative analyses to evaluate the quality of demonstrations. Previous studies assume that demonstrations exhibiting high similarity to the test query indicate high quality. We argue that high-quality demonstrations should also align with the preferences of the inference model. However, there lacks a comprehensive method to define how good a demonstration is to the inference model. Aiming at this, we propose a General quality Evaluation Metric of demonstrations to the inference model for In-Context learning, named Gemic, without any human-annotation or extra training cost. To verify the effectiveness of Gemic, we take demonstration retrieval task as an illustrative case. Experiments are conducted on a variety of datasets under different LLMs with multiple scales. The results with a relative improvement of up to 56.7% highlight the effectiveness of Gemic.},
+  archive  = {J},
+  author   = {Huazheng Wang and Jinming Wu and Haifeng Sun and Zixuan Xia and Daixuan Cheng and Jingyu Wang and Qi Qi and Jianxin Liao},
+  doi      = {10.1109/TASLPRO.2025.3606230},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-14},
+  title    = {General quality evaluation metric towards demonstrations for in-context learning},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards understanding of frequency dependence on sound event detection. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3603891'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this work, we conduct an in-depth analysis of two frequency-dependent methods for sound event detection (SED): FilterAugment and frequency dynamic convolution (FDY conv). The goal is to better understand their characteristics and behaviors in the context of SED. While SED has been rapidly advancing through the adoption of various deep learning techniques from other pattern recognition fields, such adopted techniques are often not suitable for SED. To address this issue, two frequency-dependent SED methods were previously proposed: FilterAugment, a data augmentation randomly weighting frequency bands, and FDY conv, an architecture applying frequency adaptive convolution kernels. These methods have demonstrated superior performance in SED, and we aim to further analyze their detailed effectiveness and characteristics in SED. We compare class-wise performance to find out specific pros and cons of FilterAugment and FDY conv. We apply Gradient-weighted Class Activation Mapping (Grad-CAM), which highlights time-frequency region that is more inferred by the model, on SED models with and without frequency masking and two types of FilterAugment to observe their detailed characteristics. We propose simpler frequency dependent convolution methods and compare them with FDY conv to further understand which components of FDY conv affects SED performance. Lastly, we apply PCA to show how FDY conv adapts dynamic kernel across frequency dimensions on different sound event classes. The results and discussions demonstrate that frequency dependency plays a significant role in sound event detection and further confirms the effectiveness of frequency dependent methods on SED.},
+  archive  = {J},
+  author   = {Hyeonuk Nam and Seong-Hu Kim and Deokki Min and Byeong-Yun Ko and Yong-Hwa Park},
+  doi      = {10.1109/TASLPRO.2025.3603891},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-14},
+  title    = {Towards understanding of frequency dependence on sound event detection},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Determined blind source separation with sinkhorn divergence-based optimal allocation of the source power. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3609150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Blind source separation (BSS) refers to the process of recovering multiple source signals from observations recorded by an array of sensors. Common methods performing BSS, including independent vector analysis (IVA), and independent low-rank matrix analysis (ILRMA), typically rely on second-order models to capture the statistical independence of source signals for separation. However, these methods generally do not account for the implicit structural information across frequency bands, which may lead to model mismatches between the assumed source distributions and the distributions of the separated source signals estimated from the observed mixtures. To tackle these limitations, this paper shows that conventional methods such as IVA and ILRMA can easily be leveraged by the Sinkhorn divergence, incorporating an optimal transport (OT) framework to adaptively adjust the estimated power spectral density (PSD) of the sources. This allows for the recovery of the source PSD while modeling the inter-band signal dependence and reallocating spectral power across frequency bands. As a result, enhanced versions of these methods are developed, integrating a Sinkhorn iterative scheme into their standard implementations. Extensive simulations demonstrate that the proposed methods consistently enhance BSS performance.},
+  archive  = {J},
+  author   = {Jianyu Wang and Shanzheng Guan and Nicolas Dobigeon and Jingdong Chen},
+  doi      = {10.1109/TASLPRO.2025.3609150},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-14},
+  title    = {Determined blind source separation with sinkhorn divergence-based optimal allocation of the source power},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new method for speech enhancement based on harmonic distortion. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3608964'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A near-end listening enhancement (NELE) method that combines harmonic (non-linear) distortion with linear distortion for improving speech intelligibility in noisy conditions without altering the signal-to-noise ratio (SNR) is proposed. Parameters were optimized across noise types, SNRs, and reverberation using a Genetic Algorithm with Speech Intelligibility in Bits (SIIB) as the loss function. Subjective experiments confirmed that, on average, the odds of correctly recognizing a word treated with the proposed method were 18.8 higher relative to plain speech when presented at $-9$ dB SNR, averaged over the results of Cafeteria and Speech-Shaped Noise (SSN). In Cafeteria noise, the odds of correct recognition were 16.4 times higher compared to plain speech, while in SSN they were about 8.4 times higher, averaged across SNRs ranging from $-9$ to $-3$ dB. Objective evaluation further confirmed its superiority to alternative approaches in reverberant maskers. These results demonstrate that combining harmonic and linear distortions can substantially improve intelligibility in adverse listening conditions.},
+  archive  = {J},
+  author   = {Julián Villegas},
+  doi      = {10.1109/TASLPRO.2025.3608964},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-12},
+  title    = {A new method for speech enhancement based on harmonic distortion},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-perspective inductive answering of subjective questions on products. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3608961'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article focuses on the topic of answering subjective questions about products by multi-perspective induction. Unlike traditional factoid QA, whose answers are unique and can be extracted directly from the text, the answers to subjective QA are not a simple text span, but involve various viewpoints and facts. A good answer should incorporate both objective facts and subjective opinions from various sources. Facts often involve multiple fine-grained product aspects, some of which are implicit and not explicitly mentioned. The opinions are complex, hidden, and scattered. Questions may be vague, sometimes requiring commonsense inference. This challenging task has wide-ranging applications, but limited research has studied it. To address this problem, we propose a new model to answer subjective questions in an inductive way. Given a question, we first retrieve the missing but necessary commonsense knowledge to supplement its implicit aspects and hidden relations, to better understand the ask points and users' needs. We then parse and build an aspect tree from the factual data, such as product descriptions, to incorporate all aspects and their parent-child relations. Based on the tree, we infer the question-related aspects from the retrieved content. For each aspect, we aggregate its scattered opinions and objective facts to yield a summary. To deal with diverse types adaptively, we construct an aspect-controlled generation model. Each aspect summary would add a prefix that is learned through a trainable gating mechanism and fused into a multi-aspect decoder to derive a comprehensive answer. The whole model with a retriever and generator is jointly trained by a reinforced framework. Extensive experiments are conducted on our created large-scale SupQA dataset, and the results show the effectiveness of our approach.},
+  archive  = {J},
+  author   = {Jianxing Yu and Yufeng Zhang and Hanjiang Lai and Wenqing Chen and Yanghui Rao and Jian Yin},
+  doi      = {10.1109/TASLPRO.2025.3608961},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-15},
+  title    = {Multi-perspective inductive answering of subjective questions on products},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Disentangling speech representations learning with latent diffusion for speaker verification. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3610023'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Disentangled speech representation learning for speaker verification aims to separate spoken content and speaker timbre into distinct representations. However, existing variational autoencoder (VAE)–based methods for speech disentanglement rely on latent variables that lack semantic meaning, limiting their effectiveness for speaker verification. To address this limitation, we propose a diffusion-based method that disentangles and separates speaker features and speech content in the latent space. Building upon the VAE framework, we employ a speaker encoder to learn latent variables representing speaker features while using frame-specific latent variables to capture content. Unlike previous sequential VAE approaches, our method utilizes a conditional diffusion model in the latent space to derive speaker-aware representations. Experiments on the VoxCeleb and CN-Celeb datasets demonstrate that our method effectively isolates speaker features from speech content using pre-trained speech representations. The learned embeddings are robust to language mismatches since the speaker embeddings become content-invariant after content removal. Additionally, we design contrastive learning experiments showing that our training objective can enhance the learning of speaker-discriminative embeddings without relying on classification-based loss.},
+  archive  = {J},
+  author   = {Zhe Li and Man-Wai Mak and Jen-Tzung Chien and Mert Pilanci and Zezhong Jin and Helen Meng},
+  doi      = {10.1109/TASLPRO.2025.3610023},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-12},
+  title    = {Disentangling speech representations learning with latent diffusion for speaker verification},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Few-shot class-incremental audio classification using PseudoIncrementally trained embedding learner and continually updated stochastic classifier. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3610050'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Few-shot Class-incremental Audio Classification (FCAC) aims to progressively recognize incremental classes with few tagged samples and meanwhile memorize base classes. To achieve satisfactory FCAC performance, the model needs to have high stability (memorizing base classes) and strong plasticity (adapting to incremental classes). In this work, we design a model which can be decoupled into two independent modules, namely an embedding learner and a stochastic classifier. The former is the backbone of a residual convolutional network, while the latter is composed of distributions and each distribution consists of a mean vector and a variance vector for representing one class. After being trained in the base session, the embedding learner is not updated in each incremental session and thus can memorize the knowledge of base classes. To make the embedding learner possess strong representation ability for incremental classes, we propose a strategy to pseudo-incrementally train the embedding learner using data augmentation in the base session. On the other hand, the stochastic classifier is continually updated in each incremental session and thus can adapt to incremental classes. Our model which consists of a pseudo-incrementally trained embedding learner and a continually updated stochastic classifier can increasingly identify incremental classes without forgetting base classes. Three datasets (FSC-89, NSynth-100 and LS-100) are used to verify the effectiveness of our method. Experiments show that our method exceeds the comparison methods in accuracy, and has lower complexity than most of the comparison methods. The code is at https://github.com/vinceasvp/PITEL-CUSC.},
+  archive  = {J},
+  author   = {Yanxiong Li and Wenchang Cao and Jiaxin Tan and Qianqian Li and Guoqing Chen},
+  doi      = {10.1109/TASLPRO.2025.3610050},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-15},
+  title    = {Few-shot class-incremental audio classification using PseudoIncrementally trained embedding learner and continually updated stochastic classifier},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AWaveFormer: Audio wavelet transformer network for generalized audio deepfake detection. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611229'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Rapid advancements in speech synthesis technology have made it easier to produce realistic synthetic speech, which poses serious threats to public privacy and security. Recent studies have investigated pre-trained models for feature extraction and adopted advanced architectures, including convolutional and graph neural networks, for deepfake detection. Although these methods improve detection performance to some extent, their generalization and robustness still face challenges. To address this issue, in this paper, we propose a forgery detection method based on the fusion of dual pre-trained features and an optimized Transformer architecture. Specifically, we use a cross-attention mechanism to fuse the audio features extracted from pre-trained Wav2vec 2.0 and WavLM, and replace the token mixer in the traditional Transformer architecture with wavelet transform and multi-scale pooling operations. By combining dual pre-trained features, we extract more comprehensive and discriminative features while optimizing the Transformer architecture, which not only reduces time complexity but also enhances detection performance. We conducted experiments on several datasets, and the results show that our model achieves impressive detection performance with EERs of 0.13%, 2.33%, 3.63%, 10.25%, 5.15%, and 0.21% on the ASVspoof 2019LA, ASVspoof 2021LA, ASVspoof 2021DF, In-the-Wild, Fake-or-Real, and ASVspoof 2015LA evaluation datasets, respectively.},
+  archive  = {J},
+  author   = {Rui Wang and Zirui Chen and Bo Wang and Zhongjie Ba and Kui Ren},
+  doi      = {10.1109/TASLPRO.2025.3611229},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-13},
+  title    = {AWaveFormer: Audio wavelet transformer network for generalized audio deepfake detection},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active impulsive noise control with adaptive robust kernels. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611274'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Traditional active noise control (ANC) algorithms suffer significant performance degradation when addressing impulsive noise. Recent advancements in robust ANC algorithms have focused on the design and application of effective cost functions. A class of ANC algorithms based on the maximum correntropy criterion (MCC), which uses entropy as a robust adaptive cost function, has shown promising capability in handing heavy-tailed impulsive noise. However, the performance of these algorithms heavily relies on empirically manual parameter tuning, which poses challenges for practical applications. To address this, this paper proposes a filtered-x generalized adaptive robust function (FxGARF) algorithm. The robustness is quantified by a continuous parameter that can adaptively adjust based on the residual distribution. Additionally, to enhance the control precision of the algorithm, the scale parameter involved in the generalized robust kernel family is determined by the mean value of the noise signal filtered through Hampel filter. Thus, the proposed algorithm can adapt to noise characteristics, eliminating the need for manual kernel parameter tuning. Moreover, the mean convergence and mean-square performance of the FxGARF algorithm are analyzed. Finally, simulation results demonstrate that the proposed algorithm adaptively selects kernel parameters for impulsive noise of varying characteristics and achieves superior noise reduction performance compared to benchmark algorithms.},
+  archive  = {J},
+  author   = {Yang Zhou and Haiquan Zhao and Dongxu Liu},
+  doi      = {10.1109/TASLPRO.2025.3611274},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-13},
+  title    = {Active impulsive noise control with adaptive robust kernels},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring visual information enhancement for multimodal customized opinion generation. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611282'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a novel task called customized opinion generation, which aims to generate a customized review that a specific user would give to a product that has not been yet reviewed by the user. This task can assist users in writing a high-quality review of an unreviewed product. Furthermore, the customized review of a product is useful to reduce the time it takes for users to learn about the product, which ideally should be tailored to the reader. To this end, we study the customized opinion generation task under the approach of pretrained language models. In particular, we first introduce a visual information enhancement module. In this module, we generate pseudo input words and image captions based on the images, and we introduce various prompt strategies to fully exploit the semantics of the model input text. Besides, we design an interaction model to explicitly capture the influence of input text and product images during customized opinion generation. Experimental results indicate that the proposed model can generate customized reviews, which in many cases are high quality. The results also show that the proposed model gives better results compared to several strong baselines. To our knowledge, we are the first to generate a customized review for an unreviewed product.},
+  archive  = {J},
+  author   = {Minjie Qiang and Zhongqing Wang and Guodong Zhou},
+  doi      = {10.1109/TASLPRO.2025.3611282},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-12},
+  title    = {Exploring visual information enhancement for multimodal customized opinion generation},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A steered response power method for sound source localization with generic acoustic models. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611789'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The steered response power (SRP) method is one of the most popular approaches for acoustic source localization with microphone arrays. It is often based on simplifying acoustic assumptions, such as an omnidirectional sound source in the far field of the microphone array(s), free field propagation, and spatially uncorrelated noise. In reality, however, there are many acoustic scenarios where such assumptions are violated. This paper proposes a generalization of the conventional SRP method that allows to apply generic acoustic models for localization with arbitrary microphone constellations. These models may consider, for instance, level differences in distributed microphones, the directivity of sources and receivers, or acoustic shadowing effects. Moreover, also measured acoustic transfer functions may be applied as acoustic model. We show that the delay-and-sum beamforming of the conventional SRP is not optimal for localization with generic acoustic models. To this end, we propose a generalized SRP beamforming criterion that considers generic acoustic models and spatially correlated noise, and derive an optimal SRP beamformer. Furthermore, we propose and analyze appropriate frequency weightings. Unlike the conventional SRP, the proposed method can jointly exploit observed level and time differences between the microphone signals to infer the source location. Realistic simulations of three different microphone setups with speech under various noise conditions indicate that the proposed method can significantly reduce the mean localization error compared to the conventional SRP and, in particular, a reduction of more than 60% can be archived in noisy conditions.},
+  archive  = {J},
+  author   = {Kaspar Müller and Markus Buck and Simon Doclo and Jan Østergaard and Tobias Wolff},
+  doi      = {10.1109/TASLPRO.2025.3611789},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-16},
+  title    = {A steered response power method for sound source localization with generic acoustic models},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MSFPLC: Trend-aware multiscale stack fusion packet loss concealment for linear prediction-based speech codecs. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611813'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper proposes a Packet Loss Concealment (PLC) method for speech codecs based on linear predictive coding, utilizing attention mechanisms and Long Short-Term Memory networks to reconstruct the Linear Predictive Coefficients. A novel multiscale trend-aware multi-head self-attention network is designed to capture the long-term global correlations and short-term local dependencies of speech signals across different time scales, enabling effective global and local receptive fields during the reconstruction of lost packets. A new multiscale Stack Fusion method is introduced to further enhance reconstruction performance. It assigns higher weights to speech frames closer to the lost packets and lower weights to distant ones, enabling effective integration of global and local features across various time scales. Additionally, a tailored loss function is proposed to guide model training by balancing the numerical precision, structural periodicity, and perceptual fidelity. Objective and subjective evaluations consistently indicate that the proposed method sustains robust performance across varying packet loss rates and speaker variability, underscoring its enhanced generalization. The alignment of improvements across multiple evaluation metrics demonstrates that these advancements are architectural rather than dataset-specific. Notably, the proposed method reveals that integrating codec-internal parameters with multiscale temporal modeling provides intrinsic robustness than post-processing PLC methods. Furthermore, the proposed model requires only 0.16 Giga Multiply-Accumulate Operations per second, underscoring its strong potential for high-quality real-time speech communication applications.},
+  archive  = {J},
+  author   = {Haohan Shi and Xiyu Shi and Safak Dogan},
+  doi      = {10.1109/TASLPRO.2025.3611813},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-15},
+  title    = {MSFPLC: Trend-aware multiscale stack fusion packet loss concealment for linear prediction-based speech codecs},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PerceiverS: A multi-scale perceiver with effective segmentation for long-term expressive symbolic music generation. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611836'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {AI-based music generation has made significant progress in recent years. However, generating symbolic music that is both long-structured and expressive remains a significant challenge. In this paper, we propose PerceiverS (Segmentation and Scale), a novel architecture designed to address this issue by leveraging both Effective Segmentation and Multi-Scale attention mechanisms. Our approach enhances symbolic music generation by simultaneously learning long-term structural dependencies and short-term expressive details. By combining cross-attention and self-attention in a Multi-Scale setting, PerceiverS captures long-range musical structure while preserving performance nuances. The proposed model has been evaluated using the Maestro dataset and has demonstrated improvements in generating coherent and diverse music, characterized by both structural consistency and expressive variation. The project demos and the generated music samples can be accessed through the link: https://perceivers.github.io.},
+  archive  = {J},
+  author   = {Yungang Yi and Weihua Li and Matthew Kuo and Quan Bai},
+  doi      = {10.1109/TASLPRO.2025.3611836},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {9},
+  pages    = {1-13},
+  title    = {PerceiverS: A multi-scale perceiver with effective segmentation for long-term expressive symbolic music generation},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

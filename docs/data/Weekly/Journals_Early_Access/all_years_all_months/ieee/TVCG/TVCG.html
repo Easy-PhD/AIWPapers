@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TVCG</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tvcg">TVCG - 42</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Upright-net+: Enhanced learning of upright orientation for 3D point clouds. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3605201'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic 3D shape analysis is heavily influenced by the pose of input 3D models, as the continuous nature of pose space introduces complexities that usually exceed the encoding capacities of standard deep learning frameworks. To tackle this challenge, we present Upright-Net+, an enhancement of our previous model, Upright-Net, specifically developed for estimating upright orientation in 3D point clouds. Our approach is grounded in the design principle that ”form ever follows function,” treating the natural base of an object as a functional structure that stabilizes it in its typical pose, influenced by physical laws and geometric properties. We reformulate the continuous orientation problem into a discrete classification task, focusing on learning the points that constitute the natural base of a 3D model. The upright orientation is determined by aligning the normal orientation of this base towards the mass center. To mitigate over-smoothing in the global feature embeddings from stacked graph convolutional layers, we introduce a Global Positional Encoding Module using Relative Distance Histogram Statistics Embedding (GPE-RDHS), which reduces structural ambiguity and enhances orientation estimation. We also enhanced a weighted residual loss term to penalize false positive predictions, enhancing overall model performance. Our method demonstrates exceptional performance in upright orientation estimation and reveals that the learned orientation-aware features significantly benefit downstream tasks, particularly in classification.},
+  archive      = {J_TVCG},
+  author       = {Xufang Pang and Feng Li and Hongjie Zhuang and Ning Ding and Xiaopin Zhong and Shengfeng He and Wenxi Liu and Bo Jiang},
+  doi          = {10.1109/TVCG.2025.3605201},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Upright-net+: Enhanced learning of upright orientation for 3D point clouds},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spectrum alignment for robust 3D point cloud correspondences estimation. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3605711'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Estimating dense point-to-point correspondences between two isometric shapes represented as 3D point clouds is a fundamental problem in geometry processing, with applications in texture and motion transfer. However, this task becomes particularly challenging when the shapes undergo non-rigid transformations, as is often the case with approximately isometric point clouds. Most existing algorithms address this challenge by establishing correspondences between functions defined on the shapes, rather than directly between points, because function mappings admit a linear representation in the spectral domain. State-of-the-art methods compute this linear representation using the eigenfunctions of the Laplace–Beltrami Operator (LBO) along with a small set of initial corresponding functions between the shapes. However, for approximately isometric point clouds, two key issues arise: (1) the eigenfunctions of the LBO may become misaligned, and (2) the initial corresponding functions may include outliers, both of which degrade the quality of the resulting correspondences. In this work, we propose an efficient approach to align the spectra of the LBOs of the two shapes, enabling the eigenfunctions to remain compatible even for approximately isometric 3D point clouds. Additionally, we introduce a technique to make function correspondence estimation robust to outliers. We validate our approach by comparing it with state-of-the-art 3D shape-matching algorithms on benchmark datasets, demonstrating its effectiveness.},
+  archive      = {J_TVCG},
+  author       = {Deepanshu Solanki and Rajendra Nagar},
+  doi          = {10.1109/TVCG.2025.3605711},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Spectrum alignment for robust 3D point cloud correspondences estimation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Time-multiplexing and filtering holography: Enhancing depth cues and robustness against noise. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3606509'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Holography is a promising approach to recreate lifelike 3D scenes. However, due to the current Spatial Light Modulators (SLMs) lacking sufficient pixels, the defocused planes of holograms always exhibit obvious interference phenomena. The methods based on random phase can alleviate this problem, but they always affect the imaging quality of the focal plane. Meanwhile, direct current (DC) noise of nondiffracted light in SLMs, coupled with ubiquitous dynamic noise, has long been a fundamental issue affecting holographic display quality. In this study, we proposed a method based on static high-pass filtering and time-multiplexing that overcomes the traditional tradeoff between divergence capability of holograms and display quality in focal planes. Simultaneously, the proposed method can eliminate DC and dynamic noise with a simple and robust structure. Moreover, we further extended artificial intelligencedriven algorithms to achieve higher-quality on-axis amplitudeonly holograms. The Simulations and experiments demonstrated that the developed method is a promising and easily generalized solution for time-multiplexing holography},
+  archive      = {J_TVCG},
+  author       = {Chenhang Shen and Yuhang Zheng and Yifei Xie and Zhu Wang and Yulang Peng and Weilong Zhou and Junming Zhu and Zichun Le},
+  doi          = {10.1109/TVCG.2025.3606509},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Time-multiplexing and filtering holography: Enhancing depth cues and robustness against noise},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Perceived weight of mediated reality sticks. <em>TVCG</em>, 1-11. (<a href='https://doi.org/10.1109/TVCG.2025.3591181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mediated reality, where augmented reality (AR) and diminished reality (DR) meet, enables visual modifications to real-world objects. A physical object with a mediated reality visual change retains its original physical properties. However, it is perceived differently from the original when interacted with. We present such a mediated reality object, a stick with different lengths or a stick with a missing portion in the middle, to investigate how users perceive its weight and center of gravity. We conducted two user studies ($N=10$), each of which consisted of two substudies. We found that the length of mediated reality sticks influences the perceived weight. A longer stick is perceived as lighter, and vice versa. The stick with a missing portion tends to be recognized as one continuous stick. Thus, its weight and center of gravity (COG) remain the same. We formulated the relationship between inertia based on the reported COG and perceived weight in the context of dynamic touch.},
+  archive      = {J_TVCG},
+  author       = {Satoshi Hashiguchi and Yuta Kataoka and Asako Kimura and Shohei Mori},
+  doi          = {10.1109/TVCG.2025.3591181},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-11},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Perceived weight of mediated reality sticks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Taming high-resolution auxiliary G-buffers for deep supersampling of rendered content. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3609456'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-resolution images come with rich color information and texture details. Due to the rapid upgrading of display devices and rendering technologies, high-resolution real-time rendering faces the computational overhead challenge. To address this, the current mainstream solution is to render at a lower resolution and then upsample to the target resolution by supersampling techniques. However, while many prior supersampling approaches have attempted to exploit rich rendered data such as color, depth, motion vectors at low resolution, there is little discussion on how to harness high-frequency information that is readily available in the high-resolution (HR) G-buffers of modern renders. In this paper, we seek to investigate how to fully leverage information from HR G-buffers to maximize the visual quality of supersampling results. We propose a neural network for real-time supersampling of rendered content, which is based on several core designs, including gated G-buffers encoder, G-buffers attended encoder and reflection-aware loss. These designs are especially made for the sake of effectively using HR G-buffers, enabling faithful recovery of a variety of high-frequency scene details from low-resolution, highly aliased inputs. Furthermore, a simple occlusion-aware blender is proposed to efficiently rectify invalid features in the warped previous frame, allowing us to better exploit history information to improve temporal stability. The experiments show that our method, equipped with strong ability to harness HR G-buffer information, significantly improves the visual fidelity of high-resolution reconstructions upon previous state-of-the-art methods, even for challenging $4 \times 4$ upsampling, while still being compute-efficient.},
+  archive      = {J_TVCG},
+  author       = {Pengjie Wang and Chengzhi Yuan and Jie Guo and Xiaosong Yang and Houjie Li and Ian Stephenson and Jian Chang and Ying Cao},
+  doi          = {10.1109/TVCG.2025.3609456},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Taming high-resolution auxiliary G-buffers for deep supersampling of rendered content},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). D-FRAME: Direction-field-based wireframe extraction for complex CAD models. <em>TVCG</em>, 1-15. (<a href='https://doi.org/10.1109/TVCG.2025.3609350'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Extracting wireframes from CAD models represented by point cloud remains a significant challenge in computer graphics. This difficulty arises from two main factors: first, imperfections in the point cloud data, such as lack of orientation, noise, and sparsity; and second, the inherent complexity of geometric shapes, which often feature a high density of sharp edges in close proximity. In this paper, we propose D-FRAME, a multi-stage wireframe extraction framework that incorporates a novel direction field to improve edge detection quality and connectivity, a refinement strategy to address sparse or noisy edge points, and a final coarse-to-fine connection module to extract a robust wireframe. The direction field not only facilitates connectivity but also enhances the precision of extracted edges by mitigating the impact of misclassified points. By combining the Restricted Voronoi Diagram (RVD) with the extracted wireframes and the original point cloud, our approach also achieves highly faithful reconstruction of CAD model. Experiments conducted on synthetic and real-world scanned CAD datasets demonstrate that D-FRAME effectively manages noise, sparsity, and complex geometries, yielding high-fidelity wireframes. Code is available at https://github.com/yuanfeng-01/D-FRAME-test.},
+  archive      = {J_TVCG},
+  author       = {Yuan Feng and Honghao Dai and Guangshun Wei and Long Ma and Pengfei Wang and Yuanfeng Zhou and Ying He},
+  doi          = {10.1109/TVCG.2025.3609350},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {D-FRAME: Direction-field-based wireframe extraction for complex CAD models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cognitive affordances in visualization: Related constructs, design factors, and framework. <em>TVCG</em>, 1-17. (<a href='https://doi.org/10.1109/TVCG.2025.3610803'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Classically, affordance research investigates how the shape of objects communicates actions to potential users. Cognitive affordances, a subset of this research, characterize how the design of objects influences cognitive actions, such as information processing. Within visualization, cognitive affordances inform how graphs' design decisions communicate information to their readers. Although several related concepts exist in visualization, a formal translation of affordance theory to visualization is still lacking. In this paper, we review and translate affordance theory to visualization by formalizing how cognitive affordances operate within a visualization context. We also review common methods and terms, and compare related constructs to cognitive affordances in visualization. Based on a synthesis of research from psychology, human-computer interaction, and visualization, we propose a framework of cognitive affordances in visualization that enumerates design decisions and reader characteristics that influence a visualization's hierarchy of communicated information. Finally, we demonstrate how this framework can guide the evaluation and redesign of visualizations.},
+  archive      = {J_TVCG},
+  author       = {Racquel Fygenson and Lace Padilla and Enrico Bertini},
+  doi          = {10.1109/TVCG.2025.3610803},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Cognitive affordances in visualization: Related constructs, design factors, and framework},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analytical texture mapping. <em>TVCG</em>, 1-10. (<a href='https://doi.org/10.1109/TVCG.2025.3611315'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Resampling of warped images has been a topic of research for a long time but only seldomly has focused on theoretically exact resampling. We present a resampling method for minification, applied on the texture mapping function of a 3D graphics pipeline, that is derived from sampling theory without making any approximations. Our method supports freely selectable 2D integratable prefilter (anti-aliasing) functions and uses a 2D box reconstruction filter. We have implemented our method both for CPU and GPU (OpenGL) using multiple prefilter functions defined by piece-wise polynomials. The correctness of our exact resampling method has been made plausible by comparing texture mapping results of our method with those of extreme supersampling. We additionally show how the prefilter of our method can also be applied for high quality polygon edge anti-aliasing. Since our proposed method does not use any approximations, up to numerical precision, it can be used as a reference for approximate texture mapping methods.},
+  archive      = {J_TVCG},
+  author       = {Koen Meinds and Elmar Eisemann},
+  doi          = {10.1109/TVCG.2025.3611315},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Analytical texture mapping},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LucidDreamer: Domain-free generation of 3D gaussian splatting scenes. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3611489'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generating high-quality 3D scenes is a critical challenge in computer vision, driven by advances in 3D graphics and the growing demand for immersive environments. While object-centric 3D generation has achieved significant progress, scene generation remains difficult due to the scarcity of large-scale 3D scene datasets and scalability constraints of conventional 3D representations, which hinder efficient large-scale expansion. To address these challenges, we propose LucidDreamer, a novel pipeline that synthesizes diverse, high-quality, and expandable 3D scenes using a unified 3D Gaussian splatting representation. Our approach employs an iterative Navigation-Dreaming-Alignment process, leveraging 2D image generation and depth estimation to construct photorealistic, scalable 3D environments. By iteratively generating images and navigating through the scene, LucidDreamer fully utilizes the power of image generation models, enabling the creation of highly detailed and expandable 3D scenes. LucidDreamer supports various input modalities, including text, RGB, and RGBD, and enables dynamic modifications during generation. Experimental results demonstrate that LucidDreamer outperforms existing methods in generating high-quality, diverse, structurally consistent, and navigable 3D scenes. The project page is available on: https://luciddreamer-cvlab.github.io/.},
+  archive      = {J_TVCG},
+  author       = {Jaeyoung Chung and Suyoung Lee and Hyeongjin Nam and Jaerin Lee and Kyoung Mu Lee},
+  doi          = {10.1109/TVCG.2025.3611489},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {LucidDreamer: Domain-free generation of 3D gaussian splatting scenes},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic importance monte carlo SPH vortical flows with lagrangian samples. <em>TVCG</em>, 1-15. (<a href='https://doi.org/10.1109/TVCG.2025.3612190'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a Lagrangian dynamic importance Monte Carlo method without non-trivial random walks for solving the Velocity-Vorticity Poisson Equation (VVPE) in Smoothed Particle Hydrodynamics (SPH) for vortical flows. Key to our approach is the use of the Kinematic Vorticity Number (KVN) to detect vortex cores and to compute the KVN-based importance of each particle when solving the VVPE. We use Adaptive Kernel Density Estimation (AKDE) to extract a probability density distribution from the KVN for the the Monte Carlo calculations. Even though the distribution of the KVN can be non-trivial, AKDE yields a smooth and normalized result which we dynamically update at each time step. As we sample actual particles directly, the Lagrangian attributes of particle samples ensure that the continuously evolved KVN-based importance, modeled by the probability density distribution extracted from the KVN by AKDE, can be closely followed. Our approach enables effective vortical flow simulations with significantly reduced computational overhead and comparable quality to the classic Biot-Savart law that in contrast requires expensive global particle querying.},
+  archive      = {J_TVCG},
+  author       = {Xingyu Ye and Xiaokun Wang and Yanrui Xu and Alexandru C. Telea and Jiří Kosinka and Lihua You and Jian Jun Zhang and Jian Chang},
+  doi          = {10.1109/TVCG.2025.3612190},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Dynamic importance monte carlo SPH vortical flows with lagrangian samples},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From simple to polychromatic: An empirical study on optimal color schemes for optical see-through head-mounted displays. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3590876'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optical see-through head-mounted displays (OHMDs) blend digital content with the physical world, presenting unique color management challenges. Previous literature suggests using green as the main color, but this severely limits creative freedom. To address this, we conducted an empirical study with 30 participants, evaluating 216 colors under various OHMD usage conditions. Based on the results, we propose color guidelines indicating each hue's clear and comfortable saturation and brightness ranges, along with clarity and comfort scores across hues for different devices and lighting conditions. Our color guidelines expand the usable color palette, offering designers a wider range of color options. These guidelines were used and iteratively refined through feedback in a workshop with 12 designers, integrating them into practical design workflows. The resulting comprehensive color guide provides a valuable resource for OHMD interface designers, enhancing both the aesthetic possibilities and functional effectiveness of augmented reality experiences.},
+  archive      = {J_TVCG},
+  author       = {Yue Gu and Runze Cai and Ashwin Ram and Yuxuan Li and Haimo Zhang and Shengdong Zhao},
+  doi          = {10.1109/TVCG.2025.3590876},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {From simple to polychromatic: An empirical study on optimal color schemes for optical see-through head-mounted displays},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PointDreamer: Zero-shot 3D textured mesh reconstruction from colored point cloud. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3595987'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Faithfully reconstructing textured meshes is crucial for many applications. Compared to text or image modalities, leveraging 3D colored point clouds as input (colored-PC-to-mesh) offers inherent advantages in comprehensively and precisely replicating the target object's $360^{\circ }$ characteristics. While most existing colored-PC-to-mesh methods suffer from blurry textures or require hard-to-acquire 3D training data, we propose PointDreamer, a novel framework that harnesses 2D diffusion prior for superior texture quality. Crucially, unlike prior 2D-diffusion-for-3D works driven by text or image inputs, PointDreamer successfully adapts 2D diffusion models to 3D point cloud data by a novel project-inpaint-unproject pipeline. Specifically, it first projects the point cloud into sparse 2D images and then performs diffusion-based inpainting. After that, diverging from most existing 3D reconstruction or generation approaches that predict texture in 3D/UV space thus often yielding blurry texture, PointDreamer achieves high-quality texture by directly unprojecting the inpainted 2D images to the 3D mesh. Furthermore, we identify for the first time a typical kind of unprojection artifact appearing in occlusion borders, which is common in other multiview-image-to-3D pipelines but less-explored. To address this, we propose a novel solution named the Non-Border-First (NBF) unprojection strategy. Extensive qualitative and quantitative experiments on various synthetic and real-scanned datasets demonstrate that PointDreamer, though zero-shot, exhibits SoTA performance ( 30% improvement on LPIPS score from 0.118 to 0.068), and is robust to noisy, sparse or even incomplete input data. Code at: https://github.com/YuQiao0303/PointDreamer.},
+  archive      = {J_TVCG},
+  author       = {Qiao Yu and Xianzhi Li and Yuan Tang and Xu Han and Jinfeng Xu and Long Hu and Min Chen},
+  doi          = {10.1109/TVCG.2025.3595987},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {PointDreamer: Zero-shot 3D textured mesh reconstruction from colored point cloud},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 3DFaceSculptor: A common framework for image-guided 3D face deformation. <em>TVCG</em>, 1-18. (<a href='https://doi.org/10.1109/TVCG.2025.3596482'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose 3DFaceSculptor, a general-purpose framework for interactive 3D face editing. Given a source 3D face mesh with semantic materials, and a user-specified semantic image, 3DFaceSculptor can accurately edit the source mesh following the shape guidance of the semantic image, while preserving the source topology as rigid as possible. Recent studies on generating 3D faces focus on learning neural networks to predict 3D shapes, which requires high-cost 3D training datasets. These learning-based methods are limited in compatibility and can only handle face styles involved in the training datasets. Unlike these methods, our 3DFaceSculptor is a non-training and common framework, which only requires supervision from readily-available semantic images, and is compatible with producing various face styles unlimited by datasets. In 3DFaceSculptor, based on the differentiable renderer technique, we deform the source face mesh according to the correspondences between semantic images and mesh materials. However, guiding complex 3D shapes with a simple 2D image incurs extra challenges, that is, the deformation accuracy, surface smoothness, geometric rigidity, and global synchronization of the edited mesh must be guaranteed. To address these challenges, we propose a hierarchical optimization architecture to balance the global and local shape features, and further propose various strategies and losses to improve properties of accuracy, smoothness, rigidity, and so on. Extensive experiments show that our 3DFaceSculptor is able to produce impressive results and has reached the state-of-the-art level.},
+  archive      = {J_TVCG},
+  author       = {Hao Su and Xuxi Wang and Jianwei Niu and Xuefeng Liu and Xinghao Wu and Nana Wang},
+  doi          = {10.1109/TVCG.2025.3596482},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {3DFaceSculptor: A common framework for image-guided 3D face deformation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Thunderstruck: Visually simulating electrical storms. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3596334'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thunderstorms are complex multiphysics phenomena driven by charge transfer processes arising from interactions between ice and water particles in the atmosphere. We present a physically grounded model for simulating cloud electrification and lightning discharge, capable of generating diverse lightning types as emergent responses to evolving atmospheric conditions. Our approach requires only a minimal set of atmospheric parameters and no user-defined triggers. Charge separation is modeled at the microphysical level using a statistical mechanics framework, while discharges are captured through a novel gauge-invariant dielectric breakdown model that accounts for bipolar channels, dynamic electric fields, and air resistance. We validate our method through comparisons with observational data and prior models, demonstrating its ability to simulate distinct discharge types and the full life cycle of thunderstorms. Beyond scientific accuracy, our framework supports real-time nowcasting, civil engineering assessments, virtual environment generation, and the simulation of complex dielectric breakdown in varied contexts.},
+  archive      = {J_TVCG},
+  author       = {Jorge Alejandro Amador Herrera and Jonathan Klein and Daniel T. Banuti and Wojtek Pałubicki and Sören Pirk and Dominik L. Michels},
+  doi          = {10.1109/TVCG.2025.3596334},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Thunderstruck: Visually simulating electrical storms},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uncertainty visualization for biomolecular structures: An empirical evaluation. <em>TVCG</em>, 1-14. (<a href='https://doi.org/10.1109/TVCG.2025.3596385'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Uncertainty is an intrinsic property of almost all data, regardless of the data being measured, simulated, or generated. It can significantly influence the results and reliability of subsequent analysis steps. Clearly communicating uncertainties is crucial for informed decision-making and understanding, especially in biomolecular data, where uncertainty is often difficult to infer. Uncertainty visualization (UV) is a powerful tool for this purpose. However, previously proposed UV methods lack sufficient empirical evaluation. We collected and categorized visualization methods for portraying positional uncertainty in biomolecular structures. We then organized the methods into metaphorical groups and extracted nine representatives: color, clouds, ensemble, hulls, sausages, contours, texture, waves, and noise. We assessed their strengths and weaknesses in a twofold approach: expert assessments with six domain experts and three perceptual evaluations involving 1,756 participants. Through the expert assessments, we aimed to highlight the advantages and limitations of the individual methods for the application domain and discussed areas for necessary improvements. Through the perceptual evaluation, we investigated whether the visualizations are intuitively associated with uncertainty and whether the directionality of the mapping is perceived as intended. We also assessed the accuracy of inferring uncertainty values from the visualizations. Based on our results, we judged the appropriateness of the metaphors for encoding uncertainty and suggest further areas for improvement.},
+  archive      = {J_TVCG},
+  author       = {Anna Sterzik and Michael Krone and Daniel Baum and Douglas W. Cunningham and Kai Lawonn},
+  doi          = {10.1109/TVCG.2025.3596385},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Uncertainty visualization for biomolecular structures: An empirical evaluation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DiffCap: Diffusion-based real-time human motion capture using sparse IMUs and a monocular camera. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3596403'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Combining sparse IMUs and a monocular camera is a new promising setting to perform real-time human motion capture. This paper proposes a diffusion-based solution to learn human motion priors and fuse the two modalities of signals together seamlessly in a unified framework. By delicately considering the characteristics of the two signals, the sequential visual information is considered as a whole and transformed into a condition embedding, while the inertial measurement is concatenated with the noisy body pose frame by frame to construct a sequential input for the diffusion model. Firstly, we observe that the visual information may be unavailable in some frames due to occlusions or subjects moving out of the camera view. Thus incorporating the sequential visual features as a whole to get a single feature embedding is robust to the occasional degenerations of visual information in those frames. On the other hand, the IMU measurements are robust to occlusions and always stable when signal transmission has no problem. So incorporating them frame-wisely could better explore the temporal information for the system. Experiments have demonstrated the effectiveness of the system design and its state-of-the-art performance in pose estimation compared with the previous works. The code will be released.},
+  archive      = {J_TVCG},
+  author       = {Shaohua Pan and Xinyu Yi and Yan Zhou and Weihua Jian and Yuan Zhang and Pengfei Wan and Feng Xu},
+  doi          = {10.1109/TVCG.2025.3596403},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {DiffCap: Diffusion-based real-time human motion capture using sparse IMUs and a monocular camera},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DeSC: Learning deep semantic descriptor for NeRF registration. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3596289'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {NeRF registration has gained increasing attention recently. While existing research demonstrates considerable potential for this task, most methods primarily focus on either global geometric or rendering photometric information during feature learning, overlooking the rich cross-modal information inherent in the NeRF embedding feature space. In this paper, we propose DeSC, a novel NeRF registration approach that leverages the rich cross-modal features from NeRF to learn robust semantic descriptors. In particular, we propose a Deep Semantic Aggregation module, which employs a weighted graph convolution network to capture high-frequency texture details in NeRF patches. This approach reveals the underlying semantics shared across different NeRFs of the same scene, thereby yielding more robust global feature descriptors that lead to better alignment accuracy and robustness. In addition, we design a density-aware photometric consistency loss that facilitates the learning of robust features. Extensive experimental results on Objaverse datasets demonstrate that our approach produces superior registration performance to state-of-the-art techniques.},
+  archive      = {J_TVCG},
+  author       = {Sheldon Fung and Wei Pan and Kui Su and Hui Cui and Xinkui Zhao and Xuequan Lu},
+  doi          = {10.1109/TVCG.2025.3596289},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {DeSC: Learning deep semantic descriptor for NeRF registration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). More like vis, less like vis: Comparing interactions for integrating user preferences into partial specification recommenders. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3596541'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visualization recommendation systems make data exploration less tedious by automating the process of visualization generation. They are particularly helpful for non-expert users who may not be familiar with a data set or the process of visualization specification. These systems allow users to input their preferences in the form of partial specifications to steer the recommendations made. However, the interaction approaches for partial specification input and their trade-offs have not been explored in prior work. In this paper, we compare three different combinations of interaction approaches and granularities for users to indicate a preferred partial specification: 1) manual input, 2) inferring preferred partial specifications from binary like/dislike ratings for a visualization as a whole, or 3) inferring preferred partial specifications from binary like/dislike ratings for granular components of a visualization specification. In a between-subjects study, participants were assigned to one of three conditions and asked to complete a data exploration task. Our results indicate that manual input led to a greater coverage of data dimensions, while like/dislike ratings led to a greater diversity of marks and channels used. Qualitative participant feedback also reveals differences in user strategy and visualization comprehension across the three interaction conditions. Finally, we conclude with a discussion on implications for multiplicity and visualization comprehension during visual data exploration.},
+  archive      = {J_TVCG},
+  author       = {Grace Guo and Subhajit Das and Jian Zhao and Alex Endert},
+  doi          = {10.1109/TVCG.2025.3596541},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {More like vis, less like vis: Comparing interactions for integrating user preferences into partial specification recommenders},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic changes of latency perception threshold in virtual reality: Behavioral and EEG evidence. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3596919'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Virtual Reality (VR) technologies in fields such as telehealth, teleconferencing, and virtual education are significantly affected by end-to-end latency, which notably impacts users' interactive experience and performance. Previous research suggests that a perceptual threshold may exist—once latency is reduced below a certain level, users no longer perceive it, and their interactive performance remains largely unaffected. However, there is no consensus on the exact value of this absolute latency perception threshold. In this study, we employed an experimental design based on Fitts' law to investigate whether interaction strategies and task difficulty can alter the latency perception threshold (LPT), and how variations in this threshold influence users' interactive performance. The results show that the LPT is approximately 130-170 ms, and that when interaction strategies prioritize speed or when tasks become more challenging, users exhibit heightened sensitivity to latency. Due to the presence of the LPT, the effect of latency on interactive performance follows a nonlinear pattern, and building on this finding, we refined a Fitts' law model to incorporate the influence of latency. Notably, electroencephalogram (EEG) signals can still capture users' perception of latency when they are unaware of minor latency, demonstrating a level of sensitivity that exceeds conscious awareness. Our findings provide insights into latency effects on performance and perception, guiding the design of more responsive VR interaction systems.},
+  archive      = {J_TVCG},
+  author       = {Songyue Yang and Kang Yue and Haolin Gao and Mei Guo and Yu Liu and Dan Zhang and Yue Liu},
+  doi          = {10.1109/TVCG.2025.3596919},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Dynamic changes of latency perception threshold in virtual reality: Behavioral and EEG evidence},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PKSS-align: Robust point cloud registration on pre-kendall shape space. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3597017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point cloud registration is a classical topic in the field of 3D Vision and Computer Graphics. Generally, the implementation of registration is typically sensitive to similarity transformations (translation, scaling, and rotation), noisy points, and incomplete geometric structures. Especially, the non-uniform scales and defective parts of point clouds increase probability of struck local optima in registration task. In this paper, we propose a robust point cloud registration PKSS-Align that can handle various influences, including similarity transformations, non-uniform densities, random noisy points, and defective parts. The proposed method measures shape feature-based similarity between point clouds on the Pre-Kendall shape space (PKSS), which is a shape measurement-based scheme and doesn't require point-to-point or point-to-plane metric. The employed measurement can be regarded as the manifold metric that is robust to various representations in the Euclidean coordinate system. Benefited from the measurement, the transformation matrix can be directly generated for point clouds with mentioned influences at the same time. The proposed method does not require data training and complex feature encoding. Based on a simple parallel acceleration, it can achieve significant improvement for efficiency and feasibility in practice. Experiments demonstrate that our method outperforms the relevant state-of-the-art methods. Project link: https://github.com/vvvwo/PKSS-Align.},
+  archive      = {J_TVCG},
+  author       = {Chenlei Lv and Hui Huang},
+  doi          = {10.1109/TVCG.2025.3597017},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {PKSS-align: Robust point cloud registration on pre-kendall shape space},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Immersive ecological virtual environment for inducing balance disturbances. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3598464'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study aims to assess the impact of different visual perturbations on user balance within an immersive Virtual Environment (VE), emphasising ecological validity. Utilising a Virtual Reality headset, the researchers implemented various visual perturbations to discern their effects. The objective was to create a versatile tool featuring animations simulating diverse indoor and outdoor settings within a typical household, providing a range of ecological scenarios for evaluating user balance in the context of these visual disturbances. Participants were exposed to unpredictable visual disturbances within the VE, and their responses were captured using a combination of inertial sensors, electromyography and galvanic skin response. A comprehensive dataset replicating real-world fall scenarios on balance disturbances was collected. Throughout the trials, participants moved around the house, unaware of the timing or nature of visual perturbations. Statistical analysis identified variables with significant mean changes when visual disturbances were introduced. Muscle groups crucial for balance recovery following external disturbances exhibited the most substantial associations, akin to kinematic variables linked to loss of balance. Visual disturbances alone could induce balance disturbances, which were further categorized based on a statistical analysis. This tool offered a versatile platform for assessing balance under various challenging scenarios, facilitating research into balance control and training methods. The dataset generated through this protocol enabled a wide understanding of the impact of visual disturbances on balance and the associated compensatory reactions, shedding light on their potential applications in clinical and rehabilitative settings.},
+  archive      = {J_TVCG},
+  author       = {Nuno Ferrete Ribeiro and André Veloso and Henrique Pires and Cristina P. Santos},
+  doi          = {10.1109/TVCG.2025.3598464},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Immersive ecological virtual environment for inducing balance disturbances},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VIVA: Virtual healthcare interactions using visual analytics, with controllability through configuration. <em>TVCG</em>, 1-18. (<a href='https://doi.org/10.1109/TVCG.2025.3599458'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {At the beginning of the COVID-19 pandemic, HealthLink BC (HLBC) rapidly integrated physicians into the triage process of their virtual healthcare service to improve patient outcomes and satisfaction with this service and preserve health care system capacity. We present the design and implementation of a visual analytics tool, VIVA (Virtual healthcare Interactions using Visual Analytics), to support HLBC in analysing various forms of usage data from the service. We abstract HLBC's data and data analysis tasks, which we use to inform our design of VIVA. We also present the interactive workflow abstraction of Scan, Act, Adapt. We validate VIVA's design through three case studies with stakeholder domain experts. We also propose the Controllability Through Configuration model to conduct and analyze design studies, and discuss architectural evolution of VIVA through that lens. It articulates configuration, both that specified by a developer or technical power user and that constructed automatically through log data from previous interactive sessions, as a bridge between the rigidity of hardwired programming and the time-consuming implementation of full end-user interactivity. Availability: Supplemental materials at https://osf.io/wv38n.},
+  archive      = {J_TVCG},
+  author       = {Jürgen Bernard and Mara Solen and Helen Novak Lauscher and Kurtis Stewart and Kendall Ho and Tamara Munzner},
+  doi          = {10.1109/TVCG.2025.3599458},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {VIVA: Virtual healthcare interactions using visual analytics, with controllability through configuration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pseudo label learning for partial point cloud registration. <em>TVCG</em>, 1-18. (<a href='https://doi.org/10.1109/TVCG.2025.3600395'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Partial point cloud registration plays a crucial role in computer vision and has widespread applications in 3D map construction, pose estimation, and high-precision localization. However, the collected point clouds often contain missing data due to hardware limitations and complex environments. Various partial registration algorithms have been proposed, most of which rely on estimating overlap regions. However, a significant proportion of these algorithms rely heavily on ground truth labels. Manual labeling is both time-consuming and labor-intensive, whereas algorithmic automatic labeling lacks sufficient accuracy. To tackle this issue, we present PSEudo Label learning for unsupervised partial point cloud registration (PSEL). This method utilizes complementary tasks to learn reliable pseudo labels for overlap regions and correspondences without depending on ground truth labels. The key idea is to use the complementarity between overlap estimation and registration to generate two types of pseudo labels based on the nearest points in pairs of aligned point clouds. These pseudo labels are then employed to supervise the learning of overlap regions and correspondences, gradually enhancing their accuracy throughout the learning process and ultimately establishing an unsupervised learning framework. PSEL consists of an overlap estimation module and a correspondence filtering module. The pseudo labels generated after registration are used to supervise both modules. Notably, the correspondence filtering module has two pipelines. The similarity and difference of the corresponding point features are used to eliminate false correspondences during the training and inference stages, respectively, with only the latter being optimized with pseudo labels. To validate the effectiveness of our registration method, we conducted experiments using the synthetic dataset ModelNet40, the indoor dataset 3DMatch, and the outdoor dataset KITTI. The code is available at https://github.com/yifans923/PSEL.},
+  archive      = {J_TVCG},
+  author       = {Wenping Ma and Yifan Sun and Yue Wu and Yue Zhang and Hao Zhu and Biao Hou and Licheng Jiao},
+  doi          = {10.1109/TVCG.2025.3600395},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Pseudo label learning for partial point cloud registration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). StrucADT: Generating structure-controlled 3D point clouds with adjacency diffusion transformer. <em>TVCG</em>, 1-18. (<a href='https://doi.org/10.1109/TVCG.2025.3600392'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of 3D point cloud generation, numerous 3D generative models have demonstrated the ability to generate diverse and realistic 3D shapes. However, the majority of these approaches struggle to generate controllable 3D point cloud shapes that meet user-specific requirements, hindering the large-scale application of 3D point cloud generation. To address the challenge of lacking control in 3D point cloud generation, we are the first to propose controlling the generation of point clouds by shape structures that comprise part existences and part adjacency relationships. We manually annotate the adjacency relationships between the segmented parts of point cloud shapes, thereby constructing a StructureGraph representation. Based on this StructureGraph representation, we introduce StrucADT, a novel structure-controllable point cloud generation model, which consists of StructureGraphNet module to extract structure-aware latent features, cCNF Prior module to learn the distribution of the latent features controlled by the part adjacency, and Diffusion Transformer module conditioned on the latent features and part adjacency to generate structure-consistent point cloud shapes. Experimental results demonstrate that our structure-controllable 3D point cloud generation method produces high-quality and diverse point cloud shapes, enabling the generation of controllable point clouds based on user-specified shape structures and achieving state-of-the-art performance in controllable point cloud generation on the ShapeNet dataset.},
+  archive      = {J_TVCG},
+  author       = {Zhenyu Shu and Jiajun Shen and Zhongui Chen and Xiaoguang Han and Shiqing Xin},
+  doi          = {10.1109/TVCG.2025.3600392},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {StrucADT: Generating structure-controlled 3D point clouds with adjacency diffusion transformer},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey on annotations in information visualization: Empirical studies, applications and challenges. <em>TVCG</em>, 1-20. (<a href='https://doi.org/10.1109/TVCG.2025.3600957'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Annotations are widely used in information visualization to guide attention, clarify patterns, and support interpretation. We present a comprehensive survey of 191 research papers describing empirical studies, tools, techniques, and systems that incorporate annotations across various visualization contexts. Based on a structured analysis, we characterize annotations by their types, generation methods, and targets, and examine their use across four primary application domains: user engagement, storytelling, collaboration, and exploratory data analysis. We also discuss key trends, practical challenges, and open research directions. These findings offer a foundation for designing more effective annotation systems and advancing future research on annotation in visualization. An interactive web resource detailing the surveyed papers is available at https://shape-vis.github.io/annotation_star/.},
+  archive      = {J_TVCG},
+  author       = {Md Dilshadur Rahman and Bhavana Doppalapudi and Ghulam Jilani Quadri and Paul Rosen},
+  doi          = {10.1109/TVCG.2025.3600957},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {A survey on annotations in information visualization: Empirical studies, applications and challenges},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TransGI: Real-time dynamic global illumination with object-centric neural transfer model. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3596146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural rendering algorithms have revolutionized computer graphics, yet their impact on real-time rendering under arbitrary lighting conditions remains limited due to strict latency constraints in practical applications. The key challenge lies in formulating a compact yet expressive material representation. To address this, we propose TransGI, a novel neural rendering method for real-time, high-fidelity global illumination. It comprises an object-centric neural transfer model for material representation and a radiance-sharing lighting system for efficient illumination. Traditional BSDF representations and spatial neural material representations lack expressiveness, requiring thousands of ray evaluations to converge to noise-free colors. Conversely, realtime methods trade quality for efficiency by supporting only diffuse materials. In contrast, our object-centric neural transfer model achieves compactness and expressiveness through an MLPbased decoder and vertex-attached latent features, supporting glossy effects with low memory overhead. For dynamic, varying lighting conditions, we introduce local light probes capturing scene radiance, coupled with an across-probe radiance-sharing strategy for efficient probe generation. We implemented our method in a real-time rendering engine, combining compute shaders and CUDA-based neural networks. Experimental results demonstrate that our method achieves real-time performance of less than 10 ms to render a frame and significantly improved rendering quality compared to baseline methods.},
+  archive      = {J_TVCG},
+  author       = {Yijie Deng and Lei Han and Lu Fang},
+  doi          = {10.1109/TVCG.2025.3596146},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {TransGI: Real-time dynamic global illumination with object-centric neural transfer model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GECO: Fast generative image-to-3D within one SECOnd. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3602405'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in single-image 3D generation have produced two main categories of methods: reconstruction-based and generative methods. Reconstruction-based methods are efficient but lack uncertainty handling, leading to blurry artifacts in unseen regions. Generative approaches that based on score distillation [47], [71] are slow due to scene-specific optimization. Other methods, like InstantMesh [76], use a two-stage process - generating multi-view images with a diffusion model and then reconstructing 3D - which is inefficient due to multiple denoising steps of the diffusion model. To overcome these limitations, we introduce GECO, a feed-forward method for fast and high-quality single-image-to-3D generation within one second on a single GPU. Our approach resolves uncertainty and inefficiency issues through a two-stage distillation process. In the first stage, we distill a multi-step diffusion model [56] into a one-step model using score distillation for single-image-to-multi-view synthesis. To mitigate the synthesis quality degradation caused by the one-step model, we introduce a second distillation stage to learn to predict high-quality 3D from imperfect multi-view generated images by performing distillation directly on 3D representations. Experiments demonstrate that GECO offers significant speed improvements and comparable reconstruction quality compared to prior two-stage methods. Code: https://cwchenwang.github.io/geco.},
+  archive      = {J_TVCG},
+  author       = {Chen Wang and Jiatao Gu and Xiaoxiao Long and Yuan Liu and Lingjie Liu},
+  doi          = {10.1109/TVCG.2025.3602405},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {GECO: Fast generative image-to-3D within one SECOnd},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). UMATO: Bridging local and global structures for reliable visual analytics with dimensionality reduction. <em>TVCG</em>, 1-18. (<a href='https://doi.org/10.1109/TVCG.2025.3602735'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the intrinsic complexity of high-dimensional (HD) data, dimensionality reduction (DR) techniques cannot preserve all the structural characteristics of the original data. Therefore, DR techniques focus on preserving either local neighborhood structures (local techniques) or global structures such as pairwise distances between points (global techniques). However, both approaches can mislead analysts to erroneous conclusions about the overall arrangement of manifolds in HD data. For example, local techniques may exaggerate the compactness of individual manifolds, while global techniques may fail to separate clusters that are well-separated in the original space. In this research, we provide a deeper insight into Uniform Manifold Approximation with Two-phase Optimization (UMATO), a DR technique that addresses this problem by effectively capturing local and global structures. UMATO achieves this by dividing the optimization process of UMAP into two phases. In the first phase, it constructs a skeletal layout using representative points, and in the second phase, it projects the remaining points while preserving the regional characteristics. Quantitative experiments validate that UMATO outperforms widely used DR techniques, including UMAP, in terms of global structure preservation, with a slight loss in local structure. We also confirm that UMATO outperforms baseline techniques in terms of scalability and stability against initialization and subsampling, making it more effective for reliable HD data analysis. Finally, we present a case study and a qualitative demonstration that highlight UMATO's effectiveness in generating faithful projections, enhancing the overall reliability of visual analytics using DR.},
+  archive      = {J_TVCG},
+  author       = {Hyeon Jeon and Kwon Ko and Soohyun Lee and Jake Hyun and Taehyun Yang and Gyehun Go and Jaemin Jo and Jinwook Seo},
+  doi          = {10.1109/TVCG.2025.3602735},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {UMATO: Bridging local and global structures for reliable visual analytics with dimensionality reduction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CausalChat: Interactive causal model development and refinement using large language models. <em>TVCG</em>, 1-15. (<a href='https://doi.org/10.1109/TVCG.2025.3602448'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Causal networks are widely used in many fields to model the complex relationships between variables. A recent approach has sought to construct causal networks by leveraging the wisdom of crowds through the collective participation of humans. While this can yield detailed causal networks that model the underlying phenomena quite well, it requires a large number of individuals with domain understanding. We adopt a different approach: leveraging the causal knowledge that large language models, such as OpenAI's GPT-4, have learned by ingesting massive amounts of literature. Within a dedicated visual analytics interface, called CausalChat, users explore single variables or variable pairs recursively to identify causal relations, latent variables, confounders, and mediators, constructing detailed causal networks through conversation. Each probing interaction is translated into a tailored GPT-4 prompt and the response is conveyed through visual representations which are linked to the generated text for explanations. We demonstrate the functionality of CausalChat across diverse data contexts and conduct user studies involving both domain experts and laypersons.},
+  archive      = {J_TVCG},
+  author       = {Yanming Zhang and Akshith Kota and Eric Papenhausen and Klaus Mueller},
+  doi          = {10.1109/TVCG.2025.3602448},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {CausalChat: Interactive causal model development and refinement using large language models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ChronoDeck: A visual analytics approach for hierarchical time series analysis. <em>TVCG</em>, 1-15. (<a href='https://doi.org/10.1109/TVCG.2025.3602273'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hierarchical time series data comprises a collection of time series aggregated at multiple levels based on categorical, geographical, or physical constraints, the analysis of which aids analysts across various domains like retail, finance, and energy, in gaining valuable insights and making informed decisions. However, existing interactive exploratory analysis approaches for hierarchical time series data fall short in analyzing time series across different aggregation levels and supporting more complex analytical tasks beyond common ones like summarize and compare. These limitations motivate us to develop a new visual analytics approach. We first generalize a taxonomy to delineate various tasks in hierarchical time series analysis, derived from literature survey and expert interviews. Based on this taxonomy, we develop ChronoDeck, an interactive system that incorporates a multi-column hierarchical time series visualization for implementing various analytical tasks and distilling insights from the data. ChronoDeck visualizes each aggregation level of hierarchical time series with a combination of coordinated dimensionality reduction and small multiples visualizations, alongside interactions including highlight, align, filter, and select, assisting users in the visualization, comparison, and transformation of hierarchical time series, as well as identifying the entities of interest. The effectiveness of ChronoDeck is demonstrated by case studies on three real-world datasets and expert interviews.},
+  archive      = {J_TVCG},
+  author       = {Lingyu Meng and Shuhan Liu and Keyi Yang and Jiabin Xu and Zikun Deng and Di Weng and Yingcai Wu},
+  doi          = {10.1109/TVCG.2025.3602273},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {ChronoDeck: A visual analytics approach for hierarchical time series analysis},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust and efficient preservation of high-order continuous geometric validity. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3603025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a novel method to robustly and efficiently compute the maximum allowable step sizes so that the 3D high-order finite elements continuously preserve geometric validity when moving along the given directions with positive step sizes smaller than the computed ones. We transform the problem of finding the maximum allowable step sizes to one of solving roots of cubic polynomials. To use interval arithmetic to avoid numerical issues in cubic equation solving, we completely enumerate the roots of cubic polynomials and apply the interval version of the Newton-Raphson iteration. The effectiveness of our algorithm is demonstrated through extensive testing. Compared to the state-of-the-art method, our algorithm achieves higher efficiency.},
+  archive      = {J_TVCG},
+  author       = {Wei Du and Shibo Liu and Jia-Peng Guo and Ligang Liu and Xiao-Ming Fu},
+  doi          = {10.1109/TVCG.2025.3603025},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Robust and efficient preservation of high-order continuous geometric validity},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analysis of the sense of embodiment in virtual co-embodiment rehabilitation: A structural equation modeling approach. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3589111'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sense of embodiment (SoE) refers to the participant's perception of a virtual avatar as an extension of their own body, involving both physical and functional aspects. Research has highlighted the importance of SoE for the effectiveness of virtual rehabilitation. Virtual co-embodiment technology, an emerging virtual reality (VR) application, has the potential to enhance users' engagement and SoE, which demonstrates significant promise for motor rehabilitation. However, the exploration of factors influencing embodiment in virtual co-embodiment is still limited, particularly regarding both internal and external factors, which constrains its rehabilitation applications. This study investigates factors influencing SoE changes in Virtual Co-embodiment Rehabilitation by developing a theoretical model, based on 859 valid trials collected from 40 healthy participants, and analyzing the data using Structural Equation Modeling (SEM) and Partial Least Squares Structural Equation Modeling (PLS-SEM). The results suggest that both “visual consistency” (external factor) and “individual sensitivity” (internal factor) may influence changes in SoE, with “visual consistency” appearing to have a predominant effect. These findings contribute to understanding changes in SoE in virtual co-embodiment and offer insights for optimizing the technology in rehabilitation.},
+  archive      = {J_TVCG},
+  author       = {Chengjie Zhang and Suiran Yu},
+  doi          = {10.1109/TVCG.2025.3589111},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {7},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Analysis of the sense of embodiment in virtual co-embodiment rehabilitation: A structural equation modeling approach},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From air to wear: Personalized 3D digital fashion with AR/VR immersive 3D sketching. <em>TVCG</em>, 1-9. (<a href='https://doi.org/10.1109/TVCG.2025.3593504'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the era of immersive consumer electronics, such as AR/VR headsets and smart devices, people increasingly seek ways to express their identity through virtual fashion. However, existing 3D garment design tools remain inaccessible to everyday users due to steep technical barriers and limited data. In this work, we introduce a 3D sketch-driven 3D garment generation framework that empowers ordinary users — even those without design experience — to create high-quality digital clothing through simple 3D sketches in AR/VR environments. By combining a conditional diffusion model, a sketch encoder trained in a shared latent space, and an adaptive curriculum learning strategy, our system interprets imprecise, free-hand input and produces realistic, personalized garments. To address the scarcity of training data, we also introduce KO3DClothes, a new dataset of paired 3D garments and user-created sketches. Extensive experiments and user studies confirm that our method significantly outperforms existing baselines in both fidelity and usability, demonstrating its promise for democratized fashion design on next-generation consumer platforms.},
+  archive      = {J_TVCG},
+  author       = {Ying Zang and Yuanqi Hu and Xinyu Chen and Suhui Wang and Yuxia Xu and Chunan Yu and Lanyun Zhu and Deyi Ji and Xin Xu and Tianrun Chen},
+  doi          = {10.1109/TVCG.2025.3593504},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {7},
+  pages        = {1-9},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {From air to wear: Personalized 3D digital fashion with AR/VR immersive 3D sketching},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). STAR: Skeleton-aware text-based 4D avatar generation with in-network motion retargeting. <em>TVCG</em>, 1-13. (<a href='https://doi.org/10.1109/TVCG.2025.3559988'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The creation of 4D avatars (i.e., animated 3D avatars) from text description typically uses text-to-image (T2I) diffusion models to synthesize 3D avatars in the canonical space and subsequently animates them with target motions. However, such an optimization-by-animation paradigm has several drawbacks. (1) For pose-agnostic optimization, the rendered images in canonical pose for na¨ıve Score Distillation Sampling (SDS) exhibit domain gap and cannot preserve view-consistency using only T2I priors, and (2) For post hoc animation, simply applying the source motions to target 3D avatars leads to translation artifacts and misalignment. To address these issues, we propose Skeletonaware Text-based 4D Avatar generation with in-network motion Retargeting (STAR). STAR considers the geometry and skeleton differences between the template mesh and target avatar, and corrects the mismatched source motion by resorting to the pretrained motion retargeting techniques. With the informatively retargeted and occlusion-aware skeleton, we embrace the skeleton-conditioned T2I and text-to-video (T2V) priors, and propose a hybrid SDS module to coherently provide multiview and frame-consistent supervision signals. Hence, STAR can progressively optimize the geometry, texture, and motion in an end-to-end manner. The quantitative and qualitative experiments demonstrate our proposed STAR can synthesize high-quality 4D avatars with vivid animations that align well with the text description. Additional ablation studies show the contributions of each component in STAR. The source code and demos are available at: https://star-avatar.github.io.},
+  archive      = {J_TVCG},
+  author       = {Zenghao Chai and Chen Tang and Yongkang Wong and Mohan Kankanhalli},
+  doi          = {10.1109/TVCG.2025.3559988},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {4},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {STAR: Skeleton-aware text-based 4D avatar generation with in-network motion retargeting},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Visualizing causality in mixed reality for manual task learning: A study. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3542949'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mixed Reality (MR) is gaining prominence in manual task skill learning due to its in-situ, embodied, and immersive experience. To teach manual tasks, current methodologies break the task into hierarchies (tasks into subtasks) and visualize not only the current subtasks but also the future ones that are causally related. We investigate the impact of visualizing causality within an MR framework on manual task skill learning. We conducted a user study with 48 participants, experimenting with how presenting tasks in hierarchical causality levels (no causality, event-level, interaction-level, and gesture-level causality) affects user comprehension and performance in a complex assembly task. The research finds that displaying all causality levels enhances user understanding and task execution, with a compromise of learning time. Based on the results, we further provide design recommendations and in-depth discussions for future manual task learning systems.},
+  archive      = {J_TVCG},
+  author       = {Rahul Jain and Jingyu Shi and Andrew Benton and Moiz Rasheed and Hyungjun Doh and Subramanian Chidambaram and Karthik Ramani},
+  doi          = {10.1109/TVCG.2025.3542949},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {2},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Visualizing causality in mixed reality for manual task learning: A study},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diffusion-CAD: Controllable diffusion model for generating computer-aided design models. <em>TVCG</em>, 1-12. (<a href='https://doi.org/10.1109/TVCG.2025.3535797'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative methods for creating computer-aided design (CAD) models have gained significant attention over the past two years. However, existing methods lack fine-grained control over the generated CAD models, making it difficult to manage details such as model dimensions and the relative structure of components. To address these limitations, this study introduces Diffusion-CAD, a diffusion-based generative approach that outputs CAD construction sequences. Diffusion-CAD iteratively denoises Gaussian noise into continuous CAD vectors, which are then transformed into discrete CAD sequences. We designed classifier-free and classifier-guided methods to control the distribution of Gaussian noise, CAD sequences, and noisy CAD vectors separately, thereby achieving a variety of fine-grained control tasks. Extensive experiments demonstrated the superior performance and novel capabilities of the proposed method for conditional generation tasks.},
+  archive      = {J_TVCG},
+  author       = {Aijia Zhang and Weiqiang Jia and Qiang Zou and Yixiong Feng and Xiaoxiang Wei and Ye Zhang},
+  doi          = {10.1109/TVCG.2025.3535797},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {1},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Diffusion-CAD: Controllable diffusion model for generating computer-aided design models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Trajectory vorticity - Computation and visualization of rotational trajectory behavior in an objective way. <em>TVCG</em>, 1-14. (<a href='https://doi.org/10.1109/TVCG.2024.3421555'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trajectory data consisting of a low number of smooth parametric curves are standard data sets in visualization. For a visual analysis, not only the behavior of the individual trajectories is of interest but also the relation of the trajectories to each other. Moving objects represented by the trajectories may rotate around each other or around a moving center. We present an approach to compute and visually analyze such rotational behavior in an objective way. We introduce trajectory vorticity (TRV), a measure of rotational behavior of a low number of trajectories. We show that it is objective and that it can be introduced in two independent ways: by approaches for unsteadiness minimization and by considering the relative spin tensor. We compare TRV against single-trajectory methods and apply it to a number of constructed and real trajectory data sets, including drifting buoys in the Atlantic, midge swarm tracking data, pedestrian tracking data, pigeon flocks, and a simulated vortex street},
+  archive      = {J_TVCG},
+  author       = {Anke Friederici and Holger Theisel and Tobias Gunther},
+  doi          = {10.1109/TVCG.2024.3421555},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {7},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Trajectory vorticity - Computation and visualization of rotational trajectory behavior in an objective way},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). IMetaTown: A metaverse system with multiple interactive functions based on virtual reality. <em>TVCG</em>, 1-10. (<a href='https://doi.org/10.1109/TVCG.2024.3372055'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work aims to pioneer the development of a real-time interactive and immersive Metaverse Human-Computer Interaction (HCI) system leveraging Virtual Reality (VR). The system incorporates a three-dimensional (3D) face reconstruction method, grounded in weakly supervised learning, to enhance player-player interactions within the Metaverse. The proposed method, two-dimensional (2D) face images, are effectively employed in a 2D Self-Supervised Learning (2DASL) approach, significantly optimizing 3D model learning outcomes and improving the quality of 3D face alignment in HCI systems. The work outlines the functional modules of the system, encompassing user interactions such as hugs and handshakes and communication through voice and text via blockchain. Solutions for managing multiple simultaneous online users are presented. Performance evaluation of the HCI system in a 3D reconstruction scene indicates that the 2DASL face reconstruction method achieves noteworthy results, enhancing the system's interaction capabilities by aiding 3D face modeling through 2D face images. The experimental system achieves a maximum processing speed of 18 frames of image data on a personal computer, meeting real-time processing requirements. User feedback regarding social acceptance, action interaction usability, emotions, and satisfaction with the VR interactive system reveals consistently high scores. The designed VR HCI system exhibits outstanding performance across diverse applications.},
+  archive      = {J_TVCG},
+  author       = {Zhihan Lyu and Mikael Fridenfalk},
+  doi          = {10.1109/TVCG.2024.3372055},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {3},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {IMetaTown: A metaverse system with multiple interactive functions based on virtual reality},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Viewpoint recommendation for point cloud labeling through interaction cost modeling. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2024.3376951'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic segmentation of 3D point clouds is important for many applications, such as autonomous driving. To train semantic segmentation models, labeled point cloud segmentation datasets are essential. Meanwhile, point cloud labeling is time-consuming for annotators, which typically involves tuning the camera viewpoint and selecting points with a lasso tool. To reduce the time cost of point cloud labeling, we propose a viewpoint recommendation approach to reduce annotators' labeling time costs. We adapt Fitts' law to model the time cost of lasso selection in point clouds. Using the modeled time cost, the viewpoint that minimizes the lasso selection time cost is recommended to the annotator. We build a data labeling system for semantic segmentation of 3D point clouds that integrates our viewpoint recommendation approach. The system enables users to navigate to recommended viewpoints for efficient annotation. Through a user study, we observed that our approach effectively reduced the data labeling time cost. We also qualitatively compare our approach with previous viewpoint selection approaches on different datasets.},
+  archive      = {J_TVCG},
+  author       = {Yu Zhang and Xinyi Zhao and Chongke Bi and Siming Chen},
+  doi          = {10.1109/TVCG.2024.3376951},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Viewpoint recommendation for point cloud labeling through interaction cost modeling},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Subspace-map: Interactive visual analysis for subspace data with a map metaphor. <em>TVCG</em>, 1-15. (<a href='https://doi.org/10.1109/TVCG.2024.3368094'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Subspace analysis of high-dimensional data is extremely challenging due to the huge exploration space. We propose Subspace-Map, a novel approach with a map metaphor for interactive exploration of various subspaces. We utilize a subspace search algorithm to identify a moderate number of potentially valuable subspaces, each visualized as a city on the map. Similar cities are clustered into provinces and countries, highlighting common data and dimensional patterns that can guide users in constructing desired subspaces. With the map, users can grasp an overview of the exploration space and explore different subspaces via recommended tour routes in more detail. We demonstrate the effectiveness of Subspace-Map through cases with real-world data, experiments with user feedback, and a comparison with state-of-the-art subspace data visualizations.},
+  archive      = {J_TVCG},
+  author       = {Jincheng Li and Chufan Lai and Xiaoru Yuan},
+  doi          = {10.1109/TVCG.2024.3368094},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {2},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Subspace-map: Interactive visual analysis for subspace data with a map metaphor},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). RankFIRST: Visual analysis for factor investment by ranking stock timeseries. <em>TVCG</em>, 1-10. (<a href='https://doi.org/10.1109/TVCG.2022.3209414'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the era of quantitative investment, factor-based investing models are widely adopted in the construction of stock portfolios. These models explain the performance of individual stocks by a set of financial factors, e.g., market beta and company size. In industry, open investment platforms allow the online building of factor-based models, yet set a high bar on the engineering expertise of end-users. State-of-the-art visualization systems integrate the whole factor investing pipeline, but do not directly address domain users' core requests on ranking factors and stocks for portfolio construction. The current model lacks explainability, which downgrades its credibility with stock investors. To fill the gap in modeling, ranking, and visualizing stock time series for factor investment, we designed and implemented a visual analytics system, namely RankFIRST. The system offers built-in support for an established factor collection and a cross-sectional regression model viable for human interpretation. A hierarchical slope graph design is introduced according to the desired characteristics of good factors for stock investment. A novel firework chart is also invented extending the well-known candlestick chart for stock time series. We evaluated the system on the full-scale Chinese stock market data in the recent 30 years. Case studies and controlled user evaluation demonstrate the superiority of our system on factor investing, in comparison to both passive investing on stock indices and existing stock market visual analytics tools.},
+  archive      = {J_TVCG},
+  author       = {Huijie Guo and Meijun Liu and Bowen Yang and Ye Sun and Huamin Qu and Lei Shi},
+  doi          = {10.1109/TVCG.2022.3209414},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {RankFIRST: Visual analysis for factor investment by ranking stock timeseries},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). LoopGrafter: Visual support for the grafting workflow of protein loops. <em>TVCG</em>, 1. (<a href='https://doi.org/10.1109/TVCG.2021.3114755'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the process of understanding and redesigning the function of proteins in modern biochemistry, protein engineers are increasingly focusing on the exploration of regions in proteins called loops. Analyzing various characteristics of these regions helps the experts to design the transfer of the desired function from one protein to another. This process is denoted as loop grafting. As this process requires extensive manual treatment and currently there is no proper visual support for it, we designed LoopGrafter: a web-based tool that provides experts with visual support through all the loop grafting pipeline steps. The tool is logically divided into several phases, starting with the definition of two input proteins and ending with a set of grafted proteins. Each phase is supported by a specific set of abstracted 2D visual representations of loaded proteins and their loops that are interactively linked with the 3D view onto proteins. By sequentially passing through the individual phases, the user is shaping the list of loops that are potential candidates for loop grafting. In the end, the actual in-silico insertion of the loop candidates from one protein to the other is performed and the results are visually presented to the user. In this way, the fully computational rational design of proteins and their loops results in newly designed protein structures that can be further assembled and tested through in-vitro experiments. LoopGrafter was designed in tight collaboration with protein engineers, and its final appearance reflects many testing iterations. We showcase the contribution of LoopGrafter on a real case scenario and provide the readers with the experts' feedback, confirming the usefulness of our tool.},
+  archive      = {J_TVCG},
+  author       = {Filip Opaleny and Pavol Ulbrich and Joan Planas-Iglesias and Jan Byska and Gaspar P. Pinto and David Bednar and Katarina FurmanovA and Barbora KozlikovA},
+  doi          = {10.1109/TVCG.2021.3114755},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {LoopGrafter: Visual support for the grafting workflow of protein loops},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

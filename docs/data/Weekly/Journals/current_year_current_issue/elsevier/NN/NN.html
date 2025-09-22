@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NN</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="nn">NN - 31</h2>
+<ul>
+<li><details>
+<summary>
+(2026). DGSSA: Domain generalization with structural and stylistic augmentation for retinal vessel segmentation. <em>NN</em>, <em>194</em>, 108118. (<a href='https://doi.org/10.1016/j.neunet.2025.108118'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Retinal vascular morphology plays a crucial role in diagnosing diseases such as diabetes, glaucoma, and hypertension, making accurate segmentation of retinal vessels essential for early intervention. Traditional segmentation methods assume that training and testing data share similar distributions, which can lead to poor performance on unseen domains due to domain shifts caused by variations in imaging devices and patient demographics. This paper presents a novel approach, DGSSA, for retinal vessel image segmentation that enhances model generalization by combining structural and stylistic augmentation strategies. We utilize a space colonization algorithm to generate diverse vascular-like structures that closely mimic actual retinal vessels, which are then used to generate pseudo-retinal images with an improved Pix2Pix model, allowing the segmentation model to learn a broader range of structure distributions. Additionally, we utilize PixMix to apply random photometric augmentations and introduce uncertainty perturbations, enriching the stylistic diversity of fundus images and further improving the model’s robustness and generalization across varying imaging conditions. Our framework, which employs a DeepLabv3+ model with a MobileNetV2 backbone as its segmentation network, has been rigorously evaluated on four challenging datasets—DRIVE, CHASEDB1, HRF, and STARE—achieving Dice Similarity Coefficient (DSC) of 78.45%, 78.62%, 72.66% and 82.17%, respectively, with an average DSC of 77.98%. These results demonstrate that our method surpasses existing approaches, validating its effectiveness and highlighting its potential for clinical application in automated retinal vessel analysis.},
+  archive      = {J_NN},
+  author       = {Bo Liu and Yudong Zhang and Shuihua Wang and Siyue Li and Jin Hong},
+  doi          = {10.1016/j.neunet.2025.108118},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108118},
+  shortjournal = {Neural Netw.},
+  title        = {DGSSA: Domain generalization with structural and stylistic augmentation for retinal vessel segmentation},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). LCA-med: A lightweight cross-modal adaptive feature processing module for detecting imbalanced medical image distribution. <em>NN</em>, <em>194</em>, 108116. (<a href='https://doi.org/10.1016/j.neunet.2025.108116'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data distribution discrepancy across datasets is one of the major obstacles hindering the improvement of the accuracy of cross-domain adaptive detection of medical images. To address this challenge, we propose a novel lightweight cross-modal adaptive detection module named LCA-Med (LCaM). The proposed module boasts a lightweight structure and a minimalistic parameter count, thereby facilitating its integration into the anterior segment of a diverse array of foundational and downstream networks. It is adept at serving as a feature preprocessor, proficiently extracting pertinent information regrading pathologies from a array of images (image modality) produced through varied medical imaging techniques, all guided by the input of prompts (text modality). We also propose a novel cross-modal medical image adaptive detection method, LCA-Med CNX (LCaM-CNX), and a novel cross-domain adaptive detection training paradigm that incorporates generated dataset groups, an attention module, and a meta-heuristic algorithm. Experimental results on six medical image datasets compared with ten state-of-the-art methods demonstrate that the LCaM-CNX trained following the proposed paradigm achieves the best performance on five datasets and competitive performance on the other dataset. Notably, our method outperforms the state-of-the-art methods more when the data distribution is more imbalanced.},
+  archive      = {J_NN},
+  author       = {Xiang Li and Long Lan and Husam Lahza and Shaowu Yang and Shuihua Wang and Yong Liang and Hudan Pan and Wenjing Yang and Hengzhu Liu and Yudong Zhang},
+  doi          = {10.1016/j.neunet.2025.108116},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108116},
+  shortjournal = {Neural Netw.},
+  title        = {LCA-med: A lightweight cross-modal adaptive feature processing module for detecting imbalanced medical image distribution},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Counterfactual causal inference for robust visual question answering. <em>NN</em>, <em>194</em>, 108115. (<a href='https://doi.org/10.1016/j.neunet.2025.108115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visual Question Answering (VQA) systems have seen remarkable progress with the incorporation of multimodal data. However, their performance is still hampered by biases ingrained in language and vision modalities, frequently resulting in subpar generalization. In this study, we introduce a novel counterfactual causal framework (CC-VQA). This framework utilizes Counterfactual Sample Synthesis (CSS) and causal inference to tackle cross-modality biases. Our approach innovatively employs a strategy based on causal graphs, which effectively disentangles spurious correlations in multimodal data. This ensures a balanced and precise multimodal reasoning process, enabling the model to make more accurate and unbiased decisions. Moreover, we propose a contrastive loss mechanism. By contrasting the embeddings of positive and negative samples, this mechanism significantly enhances the robustness of VQA models. Additionally, we develop a robust training strategy that improves both the visual-explainable and question-sensitive capabilities of these models. Our experimental evaluations on benchmark datasets, such as VQA-CP v2 and VQA v2, demonstrate substantial improvements in bias mitigation and overall accuracy. The proposed CC-VQA framework outperforms state-of-the-art methods, highlighting its effectiveness in enhancing the performance of VQA systems.},
+  archive      = {J_NN},
+  author       = {Wei Li and Zhixin Li and Fuyun Deng and Kun Zeng and Canlong Zhang},
+  doi          = {10.1016/j.neunet.2025.108115},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108115},
+  shortjournal = {Neural Netw.},
+  title        = {Counterfactual causal inference for robust visual question answering},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). On the theoretical expressive power of graph transformers for solving graph problems. <em>NN</em>, <em>194</em>, 108112. (<a href='https://doi.org/10.1016/j.neunet.2025.108112'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, Transformers have become the dominant neural architecture in the fields of natural language processing and computer vision. The generalization of Transformers to graphs, so-called Graph Transformers, have recently emerged as a promising alternative to the successful message passing Graph Neural Networks (MPNNs). While the expressive power of MPNNs has been intensively studied in the past years, that of Graph Transformers is still underexplored. Existing results mostly rely on the employed structural/positional encodings and not on the pure architecture itself. However, gaining an understanding of the strengths and limitations of Graph Transformers would be very useful both for the scientific community and the practitioners. In this paper, we derive a connection between Graph Transformers and the Congested clique , a popular model in distributed computing. This connection allows us to translate theoretical results for different graph problems from the latter to the former. We show that under certain conditions, Graph Transformers with depth 2 are Turing universal. We also show that there exist Graph Transformers that can solve problems which cannot be solved by MPNNs. We empirically investigate whether Graph Transformers and MPNNs with depth 2 can solve graph problems on some molecular datasets. Our results demonstrate that Graph Transformers can generally address the underlying tasks, while MPNNs are incapable of learning any information about the graph.},
+  archive      = {J_NN},
+  author       = {Giannis Nikolentzos and Dimitrios Kelesis and Michalis Vazirgiannis},
+  doi          = {10.1016/j.neunet.2025.108112},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108112},
+  shortjournal = {Neural Netw.},
+  title        = {On the theoretical expressive power of graph transformers for solving graph problems},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MAN-GNN: An interpretable biomarker architecture for neurodevelopmental disorders. <em>NN</em>, <em>194</em>, 108110. (<a href='https://doi.org/10.1016/j.neunet.2025.108110'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neurodevelopmental disorders exhibit highly similar behavioral characteristics in clinical assessments, heavily relying on subjective behavioral reports, leading to insufficient understanding of the neurobiological mechanisms behind inter-patient heterogeneity and symptom overlap between diseases. To address this issue, this study proposes a graph neural network framework that integrates neuroimaging data, focusing on three key problems: Firstly, enhance the nonlinear features in brain neural activity by introducing the Neurodynamics Rössler system. Transform raw static neural signals into simulated signals with nonlinear, temporal, and dynamic features, thereby more accurately reflecting the process of brain neural activity. Secondly, improve feature discrimination by integrating the spatial adjacency characteristics of local brain regions with the topological structure information of the global brain network to highlight key features. Thirdly, improve noise resistance and generalization ability. Introducing adaptive controllers and cross-site adversarial learning mechanisms, the interference of heterogeneous noise is effectively reduced. This study conducted experimental validation on data from neurodevelopmental disorders such as ADHD and ASD. The results indicate that this framework not only has advantages in classification accuracy but also possesses good interpretability, making it a promising tool for imaging biomarker research and auxiliary diagnosis.},
+  archive      = {J_NN},
+  author       = {Qiulei Han and Hongbiao Ye and Miaoshui Bai and Lili Wang and Yan Sun and Ze Song and Jian Zhao and Lijuan Shi and Zhejun Kuang},
+  doi          = {10.1016/j.neunet.2025.108110},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108110},
+  shortjournal = {Neural Netw.},
+  title        = {MAN-GNN: An interpretable biomarker architecture for neurodevelopmental disorders},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Stability of large-scale probabilistic boolean networks via network aggregation. <em>NN</em>, <em>194</em>, 108108. (<a href='https://doi.org/10.1016/j.neunet.2025.108108'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale probabilistic Boolean networks (LSPBNs) are a modeling tool used to simulate and analyze the dynamics of complex systems with uncertainty. However, due to its high computational complexity, previous research methods cannot be directly applied to study such systems. Inspired by network aggregation, this paper conducts network aggregation on LSPBNs to investigate its global stability with probability 1. It is worth mentioning that the stability conclusion proposed in this article holds for any form of network aggregation. First, the entire network is partitioned and the algebraic expressions for each subnetwork are given through the semi-tensor product of matrices. And then, a set of iterative formulas is constructed to describe and reflect the input-output coordination relationship among the subnetworks, and based on which, a sufficient condition for the global stability of LSPBNs is derived, greatly reducing computational complexity. The feasibilities of the proposed method and results are verified through examples.},
+  archive      = {J_NN},
+  author       = {Wen Liu and Shihua Fu and Jianjun Wang and Renato De Leone and Jianwei Xia},
+  doi          = {10.1016/j.neunet.2025.108108},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108108},
+  shortjournal = {Neural Netw.},
+  title        = {Stability of large-scale probabilistic boolean networks via network aggregation},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). SPC: Self-supervised point cloud completion. <em>NN</em>, <em>194</em>, 108107. (<a href='https://doi.org/10.1016/j.neunet.2025.108107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Shape incompleteness is a common issue in point clouds acquired by depth sensors. Point cloud completion aims to restore partial point clouds to their complete form. However, most existing point cloud completion methods rely on complete point clouds or multi-view information of the same object during training, which is not practical for real-world scenarios with high information acquisition costs. To overcome the above limitation, a self-supervised point cloud completion (SPC) method is proposed, which uses the training set consisting of only a single partial point cloud for each object. Specifically, an autoencoder-like network architecture that includes a two-step strategy is developed. First, a compression-reconstruction strategy is proposed to enable the network to learn the representation of complete point clouds from existing knowledge. Then, considering the potential problem of overfitting in self-supervised training, a global enhancement strategy is further designed to maintain the positional coherence of predicted points. Comprehensive experiments are conducted on the ScanNet, MatterPort3D, KITTI, and ShapeNet datasets. On real-world datasets, the unidirectional Chamfer distance (UCD) and the unidirectional Hausdorff distance (UHD) of the method are reduced by an average of 2.3 and 2.4, respectively, compared to the state-of-the-art method. In addition to its excellent completion capabilities, the proposed method has a positive impact on downstream tasks. In point cloud classification, applying the proposed method improves classification accuracy by an average of 14 %. Extensive experimental results demonstrate that the proposed SPC has a high practical value.},
+  archive      = {J_NN},
+  author       = {Jie Song and Xing Wu and Junfeng Yao and Qi Zhang and Chenhao Shang and Quan Qian and Jun Song},
+  doi          = {10.1016/j.neunet.2025.108107},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108107},
+  shortjournal = {Neural Netw.},
+  title        = {SPC: Self-supervised point cloud completion},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MINIGE-MNER: A multi-stage interaction network inspired by gene editing for multimodal named entity recognition. <em>NN</em>, <em>194</em>, 108106. (<a href='https://doi.org/10.1016/j.neunet.2025.108106'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multimodal Named Entity Recognition (MNER) integrates complementary information from both text and images to identify named entities within text. However, existing methods face three key issues: imbalanced handling of modality noise, the cascading effect of semantic mismatch, and information loss resulting from the lack of text dominance. To address these issues, this paper proposes a M ulti-stage I nteraction N etwork I nspired by G ene E diting for MNER (MINIGE-MNER). The core innovations of this method include: A gene knockout module based on the variational information bottleneck, which removes inferior genes (modality noise) from the text, raw image, and generated image features. This approach retains the superior genes, achieving balanced filtering of modality noise. A determination of gene recombination sites module that maximizes the mutual information between superior genes across modalities, reducing the spatial distance between them and ensuring precise, fine-grained semantic alignment. This helps to prevent the cascading effect of semantic mismatch. A text-guided gene recombination module that implements a “text-dominant, vision-supplementary” cross-modal fusion paradigm. This module dynamically filters out visual noise unrelated to the text while avoiding excessive reliance on visual information that could obscure the unique contextual information of the text, effectively mitigating information loss. Experimental results show that MINIGE-MNER achieves F1 scores of 76.45 % and 88.67 % on the Twitter-2015 and Twitter-2017 datasets, respectively, outperforming existing state-of-the-art methods by 0.83 % and 0.42 %. In addition, this paper presents comprehensive experiments that demonstrate the superiority of MINIGE-MNER and the effectiveness of its individual modules.},
+  archive      = {J_NN},
+  author       = {Bo Kong and Shengquan Liu and Liruizhi Jia and Yi Liang and Dongfang Han and Xu Zhang},
+  doi          = {10.1016/j.neunet.2025.108106},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108106},
+  shortjournal = {Neural Netw.},
+  title        = {MINIGE-MNER: A multi-stage interaction network inspired by gene editing for multimodal named entity recognition},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A unified gradient regularization method for heterogeneous graph neural networks. <em>NN</em>, <em>194</em>, 108104. (<a href='https://doi.org/10.1016/j.neunet.2025.108104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heterogeneous Graph Neural Networks (HGNNs) are advanced deep learning methods widely applied for learning representations of heterogeneous graphs. However, they face challenges such as over-smoothing and non-robustness. Existing methods can mitigate these issues by applying gradient regularization to one of the three information dimensions: node, edge, or propagation message. However, these methods have problems such as unstable training, difficulty in parameter convergence, and inadequate utilization of heterogeneous information. We propose a novel gradient regularization method called Grug, which iteratively applies regularization to the gradients derived from both node type and message matrix during the message-passing process. A detailed theoretical analysis demonstrates its advantages in Stability and Diversity. Notably, Grug potentially exceeds the theoretical upper bounds set by DropMessage. In addition, Grug offers a unified gradient regularization framework that integrates the existing dropping and adversarial training methods, and provides theoretical guidance for their further optimization in different data and tasks. We validate Grug through extensive experiments on six public datasets, showing significant improvements in performance and effectiveness.},
+  archive      = {J_NN},
+  author       = {Xiao Yang and Xuejiao Zhao and Zhiqi Shen},
+  doi          = {10.1016/j.neunet.2025.108104},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108104},
+  shortjournal = {Neural Netw.},
+  title        = {A unified gradient regularization method for heterogeneous graph neural networks},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Cross-level graph contrastive learning for community value prediction. <em>NN</em>, <em>194</em>, 108103. (<a href='https://doi.org/10.1016/j.neunet.2025.108103'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Community Value Prediction (CVP) is an important emerging task in the field of social commerce, which aims to predict the community values. However, due to the complex structure of communities and individuals, previous graph machine learning methods have struggled to adequately address this task. This study endeavors to bridge this gap by introducing a cross-level graph contrastive learning method called Cross-level Community Contrastive Learning (CCCL) to handle such subgraph-level tasks. Specifically, we generate two views that describe different levels of social connections, the augmented node-level graph and the community-level graph that is produced by graph coarsening. Subsequently, CCCL captures the mutual information between the two views through a cross-view contrastive loss. The learned embeddings utilize community and node information at various levels, making them capable of handling subgraph-level regression problems. To the best of our knowledge, CCCL is the first graph contrastive learning method that addresses the CVP problem. We theoretically show that CCCL maximizes a lower bound of the mutual information shared between node-view and community-view representations. Experimental results demonstrate that our proposed approach is highly effective for the CVP task, outperforming both end-to-end and self-supervised baselines. Furthermore, our model also exhibits robust resistance to edge perturbation attacks.},
+  archive      = {J_NN},
+  author       = {Wenjie Yang and Shengzhong Zhang and Zengfeng Huang},
+  doi          = {10.1016/j.neunet.2025.108103},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108103},
+  shortjournal = {Neural Netw.},
+  title        = {Cross-level graph contrastive learning for community value prediction},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Radiology report generation via visual-semantic ambivalence-aware network and focal self-critical sequence training. <em>NN</em>, <em>194</em>, 108102. (<a href='https://doi.org/10.1016/j.neunet.2025.108102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Radiology report generation, which aims to provide accurate descriptions of both normal and abnormal regions, has been attracting growing research attention. Recently, despite considerable progress, data-driven deep-learning based models still face challenges in capturing and describing the abnormalities, due to the data bias problem. To address this problem, we propose to generate radiology reports via the Visual-Semantic Ambivalence-Aware Network (VSANet) and the Focal Self-Critical Sequence Training (FSCST). In detail, our VSANet follows the encoder-decoder framework. In the encoder part, we first deploy a multi-grained abnormality extractor and a visual extractor to capture both semantic and visual features from given images, and then introduce a Parameter Shared Dual-way Encoder (PSDwE) to delve into the inter- and intra-relationships among these features. In the decoder part, we propose the Visual-Semantic Ambivalence-Aware (VSA) module to generate the abnormality-aware visual features to mitigate the data bias problem. In implementation, our VSA introduces three sub-modules: Dual-way Attention (DwA), introduced to generate both the word-related visual and semantic features; Dual-way Attention on Attention (DwAoA), designed to mitigate redundant information; Score-based Feature Fusion (SFF), constructed to fuse the visual and semantic features in an ambivalence way. We further introduce the FSCST to enhance the overall performance of our VSANet by allocating more attention toward difficult samples. Experimental results demonstrate that our proposal achieves superior performance on various evaluation metrics. Source code have released at https://github.com/SKD-HPC/VSANet .},
+  archive      = {J_NN},
+  author       = {Xiulong Yi and You Fu and Enxu Bi and Jianguo Liang and Hao Zhang and Jianzhi Yu and Qianqian Li and Rong Hua and Rui Wang},
+  doi          = {10.1016/j.neunet.2025.108102},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108102},
+  shortjournal = {Neural Netw.},
+  title        = {Radiology report generation via visual-semantic ambivalence-aware network and focal self-critical sequence training},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Discriminative representation learning via attention-enhanced contrastive learning for short text clustering. <em>NN</em>, <em>194</em>, 108101. (<a href='https://doi.org/10.1016/j.neunet.2025.108101'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contrastive learning has gained significant attention in short text clustering, yet it has an inherent drawback of mistakenly identifying samples from the same category as negatives and separating them in the feature space (i.e., the false negative separation problem). To generate discriminative representations for short text clustering, we propose a novel clustering method, called Discriminative Representation learning via A ttention- E nhanced C ontrastive L earning for Short Text Clustering ( AECL ). The AECL consists of two modules which are the contrastive learning module and the pseudo-label assisting module. Both modules utilize a sample-level attention mechanism to extract similarities between samples, based on which cross-sample features are aggregated to form a consistent representation for each sample. The contrastive learning module explores the similarity relationships and the consistent representations to form positive samples, effectively addressing the false negative separation issue, and the pseudo-label assisting module utilizes the consistent representations to produce reliable supervision information to assist the clustering task. Experimental results demonstrate that AECL outperforms state-of-the-art methods. The code is available at https://github.com/YZH0905/AECL-STC .},
+  archive      = {J_NN},
+  author       = {Zhihao Yao and Bo Li and Yufei Liao},
+  doi          = {10.1016/j.neunet.2025.108101},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108101},
+  shortjournal = {Neural Netw.},
+  title        = {Discriminative representation learning via attention-enhanced contrastive learning for short text clustering},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Fixed/prescribed-time synchronization of state-dependent switching neural networks with stochastic disturbance and impulsive effects. <em>NN</em>, <em>194</em>, 108100. (<a href='https://doi.org/10.1016/j.neunet.2025.108100'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the fixed-time synchronization (FXTS) and prescribed-time synchronization (PSTS) problems of state-dependent switching neural networks (SDSNNs) with stochastic disturbances and impulsive effects. By leveraging the average impulsive interval, comparison principle, and interval matrix methodology, this study advances a novel analytical framework. Departing from conventional approaches, we reformulate stochastic disturbed and impulsive SDSNNs as interval-parameter systems through rigorous interval matrix transformation. Consequently, we derive some sufficient conditions in the form of linear matrix inequalities (LMIs) to ensure the realization of FXTS and PSTS. Since impulsive effects can potentially compromise synchronization stability, careful controller design becomes critical. To address this challenge, we develop a unified proportional integral (PI) control framework. Through proper adjustment of its control parameters, this framework enables the system to achieve both FXTS and PSTS. Moreover, by reasonably configuring the relationship between the impulsive intensity and the prescribed time, the synchronization performance can be balanced. Finally, we demonstrate the effectiveness of the theoretical results through two examples.},
+  archive      = {J_NN},
+  author       = {Guici Chen and Houxuan Zhang and Shiping Wen and Junhao Hu and Leimin Wang},
+  doi          = {10.1016/j.neunet.2025.108100},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108100},
+  shortjournal = {Neural Netw.},
+  title        = {Fixed/prescribed-time synchronization of state-dependent switching neural networks with stochastic disturbance and impulsive effects},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). EKDSC: Long-tailed recognition based on expert knowledge distillation for specific categories. <em>NN</em>, <em>194</em>, 108099. (<a href='https://doi.org/10.1016/j.neunet.2025.108099'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of long-tail visual recognition, the imbalance in data distribution leads to a significant performance gap between head and tail classes. Improving the tail-class performance and alleviating the decline in head class are two critical questions. Although many methods have proposed solutions for the former, most of them fall short in the latter. Introducing additional knowledge is a novel view to address the problem, however, how to attain useful knowledge and further transfer the knowledge to the target model is the core. This paper proposes a novel method called Expert Knowledge Distillation for Specific Categories (EKDSC). Firstly, we propose a kind of well-trained teacher model ensuring each expert concentrates on its specialized field while being less affected by other interference. Furthermore, the teacher model including three categories of experts: head, mid, and tail classes, is utilized to distill their specialized knowledge to the student model. Experimental results demonstrate that EKDSC effectively improves the accuracy of tail classes, and mitigates the common decreases of head classes’ performance. Our proposed method achieves a high accuracy, exceeding the current state-of-the-art (SOTA) by 1–5 % on benchmark datasets including the small-scale CIFAR-10 LT and CIFAR-100 LT. Furthermore, it demonstrates outstanding performance on large-scale datasets such as ImageNet-LT, iNaturalist 2018, and Places-LT.},
+  archive      = {J_NN},
+  author       = {Yaping Bai and Jinghua Li and Dehui Kong and Suqiao Yang and Baocai Yin},
+  doi          = {10.1016/j.neunet.2025.108099},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108099},
+  shortjournal = {Neural Netw.},
+  title        = {EKDSC: Long-tailed recognition based on expert knowledge distillation for specific categories},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Weakly supervised multi-modal imitation learning from incompletely labeled demonstrations. <em>NN</em>, <em>194</em>, 108098. (<a href='https://doi.org/10.1016/j.neunet.2025.108098'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal imitation learning enables the agent to learn demonstrations of multiple modes at the same time. However, as expert demonstrations in practice tend to have incomplete labels for behavior modes, most methods are inefficient. To address this issue, an approach capable of imitation learning from incompletely labeled expert demonstrations, referred to as Weakly Supervised Multi-modal Imitation Learning (WSMIL), is proposed. WSMIL incorporates weakly supervised learning into multi-modal imitation learning by adding a behavior mode classifier to the adversarial network, thus forming adversaries among three players (generator, classifier and discriminator). Both labeled and unlabeled data are fully utilized in this adversarial process where fake state-action-label pairs generated by the generator and the classifier try to deceive the discriminator that tries to identify them and limited labeled expert demonstrations. Additionally, in order to ensure the data distribution of classifier and generator individually to converge to the expert’s real distribution, three extra losses are employed, where simulated annealing behavioral cloning is also added to the generator network to improve the generalization of policy. Experiments show that WSMIL accurately distinguishes modes with incomplete modal labels in demonstrations, learns close to the expert standard for each mode, and is more stable than other multi-modal methods.},
+  archive      = {J_NN},
+  author       = {Sijia Gu and Fei Zhu},
+  doi          = {10.1016/j.neunet.2025.108098},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108098},
+  shortjournal = {Neural Netw.},
+  title        = {Weakly supervised multi-modal imitation learning from incompletely labeled demonstrations},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Hybrid aggregation strategy with double inverted residual blocks for lightweight salient object detection. <em>NN</em>, <em>194</em>, 108097. (<a href='https://doi.org/10.1016/j.neunet.2025.108097'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lightweight salient object detection (SOD) is widely used in various downstream applications due to its low resource requirements and fast inference speed. The use of hybrid encoders offers the potential to achieve a better balance between efficiency and accuracy for SOD task. However, the aggregation of features from convolutional neural networks (CNNs) and transformers remains challenging, and most existing lightweight SOD models rarely explore the efficient aggregation of cross-architecture features derived from hybrid encoders. In this paper, we propose a hybrid aggregation strategy network (HASNet) that balances accuracy and efficiency for lightweight SOD by grouping and aggregating features to leverage salient information across different architectures. Specifically, the features obtained after hybrid encoder processing are divided into convolutional and transformer features for shallow and deep aggregation respectively. Deep aggregation uses the global inverted residual block (GIRB) to facilitate the transfer of salient information encoded within transformer features across various levels. Meanwhile, shallow aggregation uses the lightweight inverted residual block (LIRB) to efficiently integrate the spatial information inherent in convolutional features. The GIRB incorporates an efficient global operation to extract channel semantic information from the high-dimensional transformer features. The LIRB fuses low-level features by efficiently exploiting the spatial information in features at extremely low computational cost. Comprehensive experiments conducted across five datasets demonstrate that our HASNet significantly outperform existing methods in a thorough evaluation encompassing parameter sizes, inference speed, and accuracy. The source code will be publicly available at https://github.com/LitterMa-820/HASNet .},
+  archive      = {J_NN},
+  author       = {Jianhua Ma and Mingfeng Jiang and Xian Fang and Jiatong Chen and Yaming Wang and Guang Yang},
+  doi          = {10.1016/j.neunet.2025.108097},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108097},
+  shortjournal = {Neural Netw.},
+  title        = {Hybrid aggregation strategy with double inverted residual blocks for lightweight salient object detection},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Enhancing image restoration through learning context-rich and detail-accurate features. <em>NN</em>, <em>194</em>, 108096. (<a href='https://doi.org/10.1016/j.neunet.2025.108096'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image restoration aims to recover high-quality images from their degraded counterparts, necessitating a delicate balance between preserving spatial details and capturing contextual information. Although some methods attempt to address this trade-off, they tend to focus primarily on spatial features while overlooking the importance of understanding frequency variations. Moreover, these approaches commonly utilize skip connections–implemented via addition or concatenation–to fuse encoder and decoder features for improved restoration. However, since encoder features may still carry degradation artifacts, such direct fusion strategies risk introducing implicit noise, ultimately hindering restoration performance. In this paper, we present a multi-scale design that optimally balances these competing objectives, seamlessly integrating spatial and frequency domain knowledge to selectively recover the most informative information. Specifically, we develop a hybrid scale frequency selection block (HSFSBlock), which not only captures multi-scale information from the spatial domain, but also selects the most informative components for image restoration in the frequency domain. Furthermore, to mitigate the inherent noise introduced by skip connections employing only addition or concatenation, we introduce a skip connection attention mechanism (SCAM) to selectively determines the information that should propagate through skip connections. The resulting tightly interlinked architecture, named as LCDNet. Extensive experiments conducted across diverse image restoration tasks showcase that our model attains performance levels that are either superior or comparable to those of state-of-the-art algorithms. The code and the pre-trained models are released at https://github.com/Tombs98/LCDNet .},
+  archive      = {J_NN},
+  author       = {Hu Gao and Xiaoning Lei and Depeng Dang},
+  doi          = {10.1016/j.neunet.2025.108096},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108096},
+  shortjournal = {Neural Netw.},
+  title        = {Enhancing image restoration through learning context-rich and detail-accurate features},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). La-LoRA: Parameter-efficient fine-tuning with layer-wise adaptive low-rank adaptation. <em>NN</em>, <em>194</em>, 108095. (<a href='https://doi.org/10.1016/j.neunet.2025.108095'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Parameter-efficient fine-tuning (PEFT) has emerged as a critical paradigm for adapting large pre-trained models to downstream tasks, offering a balance between computational efficiency and model performance. Among these methods, Low-Rank Adaptation (LoRA) has gained significant popularity due to its efficiency; it freezes the pre-trained weights and decomposes the incremental matrices into two trainable low-rank matrices. However, a critical limitation of LoRA lies in its uniform rank assignment across all layers, which fails to account for the heterogeneous importance of different layers in contributing to task performance, potentially resulting in suboptimal adaptation. To address this limitation, we propose Layer-wise Adaptive Low-Rank Adaptation (La-LoRA), a novel approach that dynamically allocates rank to each layer based on Dynamic Contribution-Driven Parameter Budget (DCDPB) and Truncated Norm Weighted Dynamic Rank Allocation (TNW-DRA) during training. By treating each layer as an independent unit and progressively adjusting its rank allocation, La-LoRA ensures optimal model performance while maintaining computational efficiency and adapting to the complexity of diverse tasks. We conducted extensive experiments across multiple tasks and models to evaluate the effectiveness of La-LoRA. The results demonstrate that La-LoRA consistently outperforms existing benchmarks, validating its effectiveness in diverse scenarios.},
+  archive      = {J_NN},
+  author       = {Jiancheng Gu and Jiabin Yuan and Jiyuan Cai and Xianfa Zhou and Lili Fan},
+  doi          = {10.1016/j.neunet.2025.108095},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108095},
+  shortjournal = {Neural Netw.},
+  title        = {La-LoRA: Parameter-efficient fine-tuning with layer-wise adaptive low-rank adaptation},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Dual-level dynamic heterogeneous graph network for video question answering. <em>NN</em>, <em>194</em>, 108094. (<a href='https://doi.org/10.1016/j.neunet.2025.108094'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, Video Question Answering (VideoQA) has garnered considerable research interest as a pivotal task within the realm of vision-language understanding. However, existing Video Question Answering datasets often lack sufficient entity and event information. Thus, the Vision Language Models (VLMs) struggle to complete intricate grounding and reasoning among multi-modal entities or events and heavily rely on language short-cut or irrelevant visual context. To address these challenges, we make improvements from both data and model perspectives. In terms of VideoQA data, we focus on supplementing the missing specific entities and events with the proposed event and entity augmentation strategies. Based on the augmented data, we propose a Dual-Level Dynamic Heterogeneous Graph Network (DDHG) for Video Question Answering. DDHG incorporates transformer layers to capture the dynamic temporal-spatial changes of visual entities. Then, DDHG establishes multi-modal semantic grounding ability between vision and text with entity-level and event-level heterogeneous graphs. Finally, the Dual-level Cross-modal Interaction Module integrates the dual-level features to predict correct answers. Our method not only significantly outperforms existing VideoQA models on two complex event-based benchmark datasets (Causal-VidQA and NExT-QA) but also demonstrates superior event content prediction ability over several state-of-the-art approaches.},
+  archive      = {J_NN},
+  author       = {Zefan Zhang and Yanhui Li and Weiqi Zhang and Tian Bai},
+  doi          = {10.1016/j.neunet.2025.108094},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108094},
+  shortjournal = {Neural Netw.},
+  title        = {Dual-level dynamic heterogeneous graph network for video question answering},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). HMT-DTI: Hierarchical meta-path learning with transformer for drug–target interaction prediction. <em>NN</em>, <em>194</em>, 108093. (<a href='https://doi.org/10.1016/j.neunet.2025.108093'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Drug–target interaction (DTI) prediction plays a crucial role in drug discovery and repurposing by efficiently and accurately identifying potential therapeutic targets. Existing methods face challenges in capturing high-order semantic relationships in heterogeneous graphs and effectively integrating multi-meta-path information while also suffering from low computational efficiency. To address these challenges, a pre-computation-style hierarchical meta-path learning framework named HMT-DTI is proposed. HMT-DTI can effectively capture rich semantic information about drugs and targets while ensuring high computational efficiency. Specifically, during the pre-collection stage, HMT-DTI employs a Transformer-based message passing mechanism to evaluate neighbors’ importance and adaptively collect meta-path information. The incorporation of even-relation propagation reduces redundant iterations and improves efficiency. During training, HMT-DTI adopts a hierarchical knowledge extraction strategy to evaluate the importance of multi-hop neighbors and different meta-path patterns, capturing fine-grained semantic representations of drugs and targets. HMT-DTI is evaluated on three heterogeneous biological datasets and compared with several state-of-the-art methods. The results demonstrate the superiority of HMT-DTI in DTI prediction.},
+  archive      = {J_NN},
+  author       = {Dianlei Gao and Fei Zhu},
+  doi          = {10.1016/j.neunet.2025.108093},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108093},
+  shortjournal = {Neural Netw.},
+  title        = {HMT-DTI: Hierarchical meta-path learning with transformer for drug–target interaction prediction},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Multi-modal orthogonal fusion network via cross-layer guidance for alzheimer’s disease diagnosis. <em>NN</em>, <em>194</em>, 108091. (<a href='https://doi.org/10.1016/j.neunet.2025.108091'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal neuroimaging techniques are widely employed for the accurate diagnosis of Alzheimer’s Disease (AD). Existing fusion methods typically focus on capturing semantic correlations between modalities through feature-level interactions. However, they fail to suppress redundant cross-modal information, resulting in sub-optimal multi-modal representation. Moreover, these methods ignore subject-specific differences in modality contributions. To address these challenges, we propose a novel Multi-modal Orthogonal Fusion Network via cross-layer guidance (MOFNet) to effectively fuse multi-modal information for AD diagnosis. We first design a Cross-layer Guidance Interaction module (CGI), leveraging high-level features to guide the learning of low-level features, thereby enhancing the fine-grained representations on disease-relevant regions. Then, we introduce a Multi-modal Orthogonal Compensation module (MOC) to realize bidirectional interaction between modalities. MOC encourages each modality to compensate for its limitations by learning orthogonal components from other modalities. Finally, a Feature Enhancement Fusion module (FEF) is developed to adaptively fuse multi-modal features based on the contributions of different modalities. Extensive experiments on the ADNI dataset demonstrate that MOFNet achieves superior performance in AD classification tasks.},
+  archive      = {J_NN},
+  author       = {Yumiao Zhao and Bo Jiang and Yuan Chen and Ye Luo and Jin Tang},
+  doi          = {10.1016/j.neunet.2025.108091},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108091},
+  shortjournal = {Neural Netw.},
+  title        = {Multi-modal orthogonal fusion network via cross-layer guidance for alzheimer’s disease diagnosis},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). ClickAttention: Click region similarity guided interactive segmentation. <em>NN</em>, <em>194</em>, 108090. (<a href='https://doi.org/10.1016/j.neunet.2025.108090'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Interactive segmentation algorithms based on click points have attracted significant attention from researchers in recent years. However, most existing methods rely on sparse click maps as model inputs to segment specific target objects. These clicks primarily affect local regions, limiting the model’s ability to focus on the entire target object and often resulting in a higher number of required clicks. Additionally, many current algorithms struggle to balance performance and efficiency effectively. To address these challenges, we propose a click attention algorithm that expands the influence of positive clicks by leveraging the similarity between positively-clicked regions and the entire input. We further introduce a discriminative affinity loss to reduce attention coupling between positive and negative click regions, minimizing accuracy degradation caused by mutual interference. On the DAVIS dataset, our method achieves a 2 % performance gain (NoC@90) over the state-of-the-art SimpleClick-ViT-L, while using only 15.6 % of its parameters. Extensive experiments demonstrate that our approach outperforms existing methods and achieves state-of-the-art performance with fewer parameters. Data and code are published.},
+  archive      = {J_NN},
+  author       = {Long Xu and Yongquan Chen and Shanghong Li and Junkang Chen and Ziyuan Tang},
+  doi          = {10.1016/j.neunet.2025.108090},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108090},
+  shortjournal = {Neural Netw.},
+  title        = {ClickAttention: Click region similarity guided interactive segmentation},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A vision-language model for multitask classification of memes. <em>NN</em>, <em>194</em>, 108089. (<a href='https://doi.org/10.1016/j.neunet.2025.108089'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The emergence of social media and online memes has led to an increasing demand for automated systems that can analyse and classify multimodal data, particularly in online forums. Memes blend text and graphics to express complicated ideas, sometimes containing emotions, satire, or inappropriate material. Memes often represent cultural prejudices such as objectification, sexism, and bigotry, making it difficult for artificial intelligence to classify these components. Our solution is the vision-language model ViT-BERT CAMT (cross-attention multitask), which is intended for multitask meme categorization. Our model uses a linear self-attentive fusion mechanism to combine vision transformer (ViT) features for image analysis and bidirectional encoder representations from transformers (BERT) for text interpretation. In this way, we can see how text and images relate to space and meaning. We tested the ViT-BERT CAMT on two difficult datasets: the SemEval 2020 Memotion dataset, which contains a multilabel classification of sentiment, sarcasm, and offensiveness in memes, and the MIMIC dataset, which focuses on detecting sexism, objectification, and prejudice. The findings show that the ViT-BERT CAMT achieves good accuracy on both datasets and outperforms many current baselines in multitask settings. These results highlight the importance of combined image-text modelling for correctly deciphering nuanced meanings in memes, particularly when spotting abusive and discriminatory content. By improving multimodal categorization algorithms, this study helps better monitor and comprehend online conversation.},
+  archive      = {J_NN},
+  author       = {Md. Mithun Hossain and Md. Shakil Hossain and M.F. Mridha and Nilanjan Dey},
+  doi          = {10.1016/j.neunet.2025.108089},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108089},
+  shortjournal = {Neural Netw.},
+  title        = {A vision-language model for multitask classification of memes},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Multi-view learning meets state-space model: A dynamical system perspective. <em>NN</em>, <em>194</em>, 108088. (<a href='https://doi.org/10.1016/j.neunet.2025.108088'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-view learning exploits the complementary nature of multiple modalities to enhance performance across diverse tasks. While deep learning has significantly advanced these fields by enabling sophisticated modeling of intra-view and cross-view interactions, many existing approaches still rely on heuristic architectures and lack a principled framework to capture the dynamic evolution of feature representations. This limitation hampers interpretability and theoretical understanding. To address these challenges, this paper introduces the Multi-view State-Space Model (MvSSM), which formulates multi-view representation learning as a continuous-time dynamical system inspired by control theory. In this framework, view-specific features are treated as external inputs, and a shared latent representation evolves as the internal system state, driven by learnable dynamics. This formulation unifies feature integration and label prediction within a single interpretable model, enabling theoretical analysis of system stability and representational transitions. Two variants, MvSSM-Lap and MvSSM-iLap, are further developed using Laplace and inverse Laplace transformations to derive system dynamics representations. These solutions exhibit structural similarities to graph convolution operations in deep networks, supporting efficient feature propagation and theoretical interpretability. Experiments on benchmark datasets such as IAPR-TC12, and ESP demonstrate the effectiveness of the proposed method, achieving up to 4.31 % improvement in accuracy and 4.27 % in F1-score over existing state-of-the-art approaches.},
+  archive      = {J_NN},
+  author       = {Weibin Chen and Ying Zou and Zhiyong Xu and Li Xu and Shiping Wang},
+  doi          = {10.1016/j.neunet.2025.108088},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108088},
+  shortjournal = {Neural Netw.},
+  title        = {Multi-view learning meets state-space model: A dynamical system perspective},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Graph convolutional network with adaptive grouping aggregation strategy. <em>NN</em>, <em>194</em>, 108086. (<a href='https://doi.org/10.1016/j.neunet.2025.108086'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The performance of graph convolutional networks (GCNs) with naive aggregation functions on nodes has reached the bottleneck, rendering a gap between practice and theoretical expressity. Some learning-based aggregation strategies have been proposed to improve the performance. However, few of them focus on how these strategies affect the expressity and evaluate their performance in an equal experimental setting. In this paper, we point out that the generated features lack discrimination because naive aggregation functions cannot retain sufficient node information, largely leading to the performance gap. Accordingly, a novel Adaptive Grouping Aggregation (AGA) strategy is proposed to remedy this drawback. Inspired by the label histogram in the Weisfeiler-Lehman (WL) Test, this strategy assigns each node to a unique group to retain more node information, which is proven to have a strictly more powerful expressity. In this work setting, the nodes are grouped according to a modified Student’s t-Distribution between node features and a set of learnable group labels, where the Gumbel Softmax is employed to implement this strategy in an end-to-end trainable pipeline. As a result, such a design can generate more discriminative features and offer a plug-in module in most architectures. Extensive experiments have been conducted on several benchmarks to compare our method with other aggregation strategies. The proposed method improves the performance in all control groups of all benchmarks and achieves the best result in most cases. Additional ablation studies and comparisons with state-of-the-art methods on the large-scale benchmark also indicate the superiority of our method.},
+  archive      = {J_NN},
+  author       = {Ruixiang Wang and Chunxia Zhang and Chunhong Pan},
+  doi          = {10.1016/j.neunet.2025.108086},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108086},
+  shortjournal = {Neural Netw.},
+  title        = {Graph convolutional network with adaptive grouping aggregation strategy},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Adaptive behavior with stable synapses. <em>NN</em>, <em>194</em>, 108082. (<a href='https://doi.org/10.1016/j.neunet.2025.108082'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Behavioral changes in animals and humans, triggered by errors or verbal instructions, can occur extremely rapidly. While learning theories typically attribute improvements in performance to synaptic plasticity, recent findings suggest that such fast adaptations may instead result from dynamic reconfiguration of the networks involved without changes to synaptic weights. Recently, similar capabilities have been observed in transformers, foundational architecture in machine learning widely used in applications such as natural language and image processing. Transformers are capable of in-context learning, the ability to adapt and acquire new information dynamically within the context of the task or environment they are currently engaged in, without changing their parameters. We argue that this property may stem from gain modulation–a feature widely observed in biological networks, such as pyramidal neurons through input segregation and dendritic amplification. We propose a constructive approach to induce in-context learning in an architecture composed of recurrent networks with gain modulation, demonstrating abilities inaccessible to standard networks. In particular, we show that, such architecture can dynamically implement standard gradient-based by encoding weight changes in the activity of another network. We argue that, while these algorithms are traditionally associated with synaptic plasticity, their reliance on non-local terms suggests that they may be more naturally realized in the brain at the level of neural circuits. We demonstrate that we can extend our approach to temporal tasks and reinforcement learning. We further validate our approach in a MuJoCo ant navigation task, showcasing a neuromorphic control paradigm via real-time network reconfiguration.},
+  archive      = {J_NN},
+  author       = {Cristiano Capone and Luca Falorsi},
+  doi          = {10.1016/j.neunet.2025.108082},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108082},
+  shortjournal = {Neural Netw.},
+  title        = {Adaptive behavior with stable synapses},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Disentangled self-supervised video camouflaged object detection and salient object detection. <em>NN</em>, <em>194</em>, 108077. (<a href='https://doi.org/10.1016/j.neunet.2025.108077'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video tasks play an important role in multimedia fields. In various video tasks, such as video camouflaged/salient object detection (VCOD/VSOD), motion and context information are two important aspects. Despite the fact that many existing works have already achieved promising results in VCOD and VSOD tasks, they still have limitations when it comes to leveraging motion and context information. In this paper, we propose a new disentangled perspective to treat motion and context information in VCOD and VSOD tasks. Our proposed model can respectively utilize context and motion information in ContextNet and MotionNet, without conflicting with each other as there can be biases between these two types of information in certain circumstances. Moreover, we further explore how to apply disentangled perspective in the self-supervised manner, which can reduce annotation costs. Specifically, we first design a self-supervised adaptive frame routing mechanism to determine whether each video frame belongs to ContextNet or MotionNet. Then we design a cross-supervision for ContextNet and MotionNet to train these two segmentation networks in self-supervised mechanism. In experiments, our proposed self-supervised disentangled model consistently outperforms state-of-the-art unsupervised methods on VCOD and VSOD datasets.},
+  archive      = {J_NN},
+  author       = {Haoke Xiao and Lv Tang and Bo Li and Zhiming Luo and Shaozi Li},
+  doi          = {10.1016/j.neunet.2025.108077},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108077},
+  shortjournal = {Neural Netw.},
+  title        = {Disentangled self-supervised video camouflaged object detection and salient object detection},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). WPDA: Frequency-based backdoor attack with wavelet packet decomposition. <em>NN</em>, <em>194</em>, 108074. (<a href='https://doi.org/10.1016/j.neunet.2025.108074'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work explores backdoor attack, which is an emerging security threat against deep neural networks (DNNs). The adversary aims to inject a backdoor into the model by manipulating a portion of training samples, such that the backdoor could be activated by a particular trigger to make a target prediction at inference. Currently, existing backdoor attacks often require moderate or high poisoning ratios to achieve the desired attack performance, but making them susceptible to some advanced backdoor defenses ( e . g . , poisoned sample detection). One possible solution to this dilemma is enhancing the attack performance at low poisoning ratios, which has been rarely studied due to its high challenge. To achieve this goal, we propose an innovative frequency-based backdoor attack via wavelet packet decomposition (WPD), which could finely decompose the original image into multiple sub-spectrograms with semantic information. It facilitates us to accurately identify the most critical frequency regions to effectively insert the trigger into the victim image, such that the trigger information could be sufficiently learned to form the backdoor. The proposed attack stands out for its exceptional effectiveness, stealthiness, and resistance at an extremely low poisoning ratio. Notably, it achieves the 98.12 % attack success rate on CIFAR-10 with an extremely low poisoning ratio of 0.004 % ( i.e. , only 2 poisoned samples among 50,000 training samples), and bypasses several advanced backdoor defenses. Besides, we provide more extensive experiments to demonstrate the efficacy of the proposed method, as well as in-depth analyses to explain its underlying mechanism.},
+  archive      = {J_NN},
+  author       = {Zhengyao Song and Yongqiang Li and Danni Yuan and Li Liu and Shaokui Wei and Baoyuan Wu},
+  doi          = {10.1016/j.neunet.2025.108074},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108074},
+  shortjournal = {Neural Netw.},
+  title        = {WPDA: Frequency-based backdoor attack with wavelet packet decomposition},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). DA-MoE: Addressing depth-sensitivity in graph-level analysis through mixture of experts. <em>NN</em>, <em>194</em>, 108064. (<a href='https://doi.org/10.1016/j.neunet.2025.108064'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph neural networks (GNNs) are gaining popularity for processing graph data. In real-world scenarios, graph data within the same dataset can vary significantly in scale. This variability leads to depth-sensitivity, where the optimal depth of GNN layers depends on the scale of the graph data. Empirically, fewer layers are sufficient for message passing in smaller graphs, while larger graphs typically require deeper networks to capture long-range dependencies and global features. However, existing methods generally use a fixed number of GNN layers to generate representations for all graphs, overlooking the depth-sensitivity issue in graph data. To address this challenge, we propose the depth adaptive mixture of expert (DA-MoE) method, which incorporates two main improvements to GNN backbone: 1) DA-MoE employs different GNN layers, each considered an expert with its own parameters. Such a design allows the model to flexibly aggregate information at different scales, effectively addressing the depth-sensitivity issue in graph data. 2) DA-MoE utilizes GNN to capture the structural information instead of the linear projections in the gating network. Thus, the gating network enables the model to capture complex patterns and dependencies within the data. By leveraging these improvements, each expert in DA-MoE specifically learns distinct graph patterns at different scales. Furthermore, comprehensive experiments on the TU dataset and open graph benchmark (OGB) have shown that DA-MoE consistently surpasses existing baselines on various tasks, including graph, node, and link-level analyses. The code are available at https://github.com/Celin-Yao/DA-MoE .},
+  archive      = {J_NN},
+  author       = {Zelin Yao and Mukun Chen and Chuang Liu and Xianke Meng and Yibing Zhan and Jia Wu and Shirui Pan and Huiting Xu and Wenbin Hu},
+  doi          = {10.1016/j.neunet.2025.108064},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108064},
+  shortjournal = {Neural Netw.},
+  title        = {DA-MoE: Addressing depth-sensitivity in graph-level analysis through mixture of experts},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Dynamic graph representation learning with disentangled information bottleneck. <em>NN</em>, <em>194</em>, 108056. (<a href='https://doi.org/10.1016/j.neunet.2025.108056'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic graph representation learning recently garnered enormous research attention. Despite the notable successes of existing methods, they usually characterize dynamic graphs as a perceptual whole and learn dynamic graph representations within an entangled feature space, which overlook different temporal dependencies inherent in the data. Specifically, the evolution of dynamic graphs is usually decided by a dichotomy in properties: time-invariant properties and time-varying properties. Existing holistic works fail to distinguish these temporal properties and may suffer suboptimal performance in downstream tasks. To tackle this problem, we propose to learn macro-disentangled dynamic graph representations based on the Information Bottleneck theory, leading to a novel dynamic graph representation learning method, Disentangled Dynamic Graph Information Bottleneck (DDGIB). Our DDGIB explicitly embeds the dynamic graphs into a time-invariant representation space and a time-varying representation space. The time-invariant representation space encapsulates stable properties across the temporal span of dynamic graphs, whereas the time-varying representation space encapsulates time-fluctuating properties. The macro disentanglement on the temporal dependencies facilitates the representations’ performance on downstream tasks. Furthermore, we theoretically prove the sufficiency and macro disentanglement of DDGIB. The sufficiency demonstrates that DDGIB can achieve sufficient representations for any possible downstream tasks, while the macro disentanglement certifies that DDGIB can embed the different temporal properties into their corresponding temporal representation space. Extensive experimental results on various datasets and downstream tasks demonstrate the superiority of our method.},
+  archive      = {J_NN},
+  author       = {Jihong Wang and Yuxin Bai and Chunqiang Zhu and Hao Qian and Ziqi Liu and Minnan Luo},
+  doi          = {10.1016/j.neunet.2025.108056},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108056},
+  shortjournal = {Neural Netw.},
+  title        = {Dynamic graph representation learning with disentangled information bottleneck},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Tailoring knowledge for empowered cooperative actions in multi-agent reinforcement learning. <em>NN</em>, <em>194</em>, 108023. (<a href='https://doi.org/10.1016/j.neunet.2025.108023'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Behavioral diversity emerges as a crucial factor for achieving effective collaboration in Multi-Agent Reinforcement Learning (MARL). Current methods often use partial parameter sharing, such as sharing the same representation layer, to balance behavioral diversity and algorithmic scalability. However, this approach ignores that different agents need different decision knowledge, causing training conflicts and knowledge redundancy. To solve these, we propose Tailoring Knowledge for Empowered Cooperative Actions in Multi-Agent Reinforcement Learning (TKCA). Specially, we employ a set of Knowledge Encoders to encode different environment types of knowledge and utilize a Knowledge Selector network to assist each agent in decision-making by selecting the corresponding knowledge. We evaluated TKCA in challenging StarCraftII micromanagement games and Google Research Football games, and the results demonstrate the superior performance of TKCA.},
+  archive      = {J_NN},
+  author       = {Hu Fu and Yihua Tan and Hao Chen and Pengyi Li},
+  doi          = {10.1016/j.neunet.2025.108023},
+  journal      = {Neural Networks},
+  month        = {2},
+  pages        = {108023},
+  shortjournal = {Neural Netw.},
+  title        = {Tailoring knowledge for empowered cooperative actions in multi-agent reinforcement learning},
+  volume       = {194},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TMLR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tmlr">TMLR - 39</h2>
+<ul>
+<li><details>
+<summary>
+(2025). MoReact: Generating reactive motion from textual descriptions. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=4zuT73heqm'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modeling and generating human reactions poses a significant challenge with broad applications for computer vision and human-computer interaction. Existing methods either treat multiple individuals as a single entity, directly generating interactions, or rely solely on one person's motion to generate the other's reaction, failing to integrate the rich semantic information that underpins human interactions. Yet, these methods often fall short in adaptive responsiveness, \ie, the ability to accurately respond to diverse and dynamic interaction scenarios. Recognizing this gap, our work introduces an approach tailored to address the limitations of existing models by focusing on text-driven human reaction generation. Our model specifically generates realistic motion sequences for individuals that responding to the other's actions based on a descriptive text of the interaction scenario. The goal is to produce motion sequences that not only complement the opponent's movements but also semantically fit the described interactions. To achieve this, we present MoReact, a diffusion-based method designed to disentangle the generation of global trajectories and local motions sequentially. This approach stems from the observation that generating global trajectories first is crucial for guiding local motion, ensuring better alignment with given action and text. Furthermore, we introduce a novel interaction loss to enhance the realism of generated close interactions. Our experiments, utilizing data adapted from a two-person motion dataset, demonstrate the efficacy of our approach for this novel task, which is capable of producing realistic, diverse, and controllable reactions that not only closely match the movements of the counterpart but also adhere to the textual guidance. Please find our webpage at https://xiyan-xu.github.io/MoReactWebPage.},
+  archive      = {J_TMLR},
+  author       = {Xiyan Xu and Sirui Xu and Yu-Xiong Wang and Liangyan Gui},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {MoReact: Generating reactive motion from textual descriptions},
+  url          = {https://openreview.net/forum?id=4zuT73heqm},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning equivalence classes of bayesian network structures with GFlowNet. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=FAcc7oAdaa'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding the causal graph underlying a system is essential for enabling causal inference, particularly in fields such as medicine and genetics. Identifying a causal Directed Acyclic Graph (DAG) from observational data alone is challenging because multiple DAGs can encode the same set of conditional independencies. These equivalent DAGs form a Markov Equivalence Class (MEC), which is represented by a Completed Partially Directed Acyclic Graph (CPDAG). Effectively approximating the CPDAG is crucial because it facilitates narrowing down the set of possible causal graphs underlying the data. We introduce CPDAG-GFN, a novel approach that uses a Generative Flow Network (GFlowNet) to learn a posterior distribution over CPDAGs. From this distribution, we sample high-reward CPDAG candidates that approximate the ground truth, with rewards determined by a score function that quantifies how well each graph fits the data. Additionally, CPDAG-GFN incorporates a sparsity-preferring filter to enhance the set of CPDAG candidates and improve their alignment with the ground truth. Experimental results on both simulated and real-world datasets demonstrate that CPDAG-GFN performs competitively with established methods for learning CPDAG candidates from observational data.},
+  archive      = {J_TMLR},
+  author       = {Michelle Liu and Zhaocheng Zhu and Olexa Bilaniuk and Emmanuel Bengio},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Learning equivalence classes of bayesian network structures with GFlowNet},
+  url          = {https://openreview.net/forum?id=FAcc7oAdaa},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SELU: Self-learning embodied multimodal large language models in unknown environments. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=G5gROx8AVi'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, multimodal large language models (MLLMs) have demonstrated strong visual understanding and decision-making capabilities, enabling the exploration of autonomously improving MLLMs in unknown environments. However, external feedback like human or environmental feedback is not always available. To address this challenge, existing methods primarily focus on enhancing the decision-making capabilities of MLLMs through voting and scoring mechanisms, while little effort has been paid to improving the environmental comprehension of MLLMs in unknown environments. To fully unleash the self-learning potential of MLLMs, we propose a novel actor-critic self-learning paradigm, dubbed SELU, inspired by the actor-critic paradigm in reinforcement learning. The critic employs self-asking and hindsight relabeling to extract knowledge from interaction trajectories collected by the actor, thereby augmenting its environmental comprehension. Simultaneously, the actor is improved by the self-feedback provided by the critic, enhancing its decision-making. We evaluate our method in the AI2-THOR and VirtualHome environments, and SELU achieves critic improvements of approximately 28% and 30%, and actor improvements of about 20% and 24% via self-learning.},
+  archive      = {J_TMLR},
+  author       = {Boyu Li and Haobin Jiang and Ziluo Ding and Xinrun Xu and Haoran Li and Dongbin Zhao and Zongqing Lu},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {SELU: Self-learning embodied multimodal large language models in unknown environments},
+  url          = {https://openreview.net/forum?id=G5gROx8AVi},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Behaviour discovery and attribution for explainable reinforcement learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=JbHtpOIH9l'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Building trust in reinforcement learning (RL) agents requires understanding why they make certain decisions, especially in high-stakes applications like robotics, healthcare, and finance. Existing explainability methods often focus on single states or entire trajectories, either providing only local, step-wise insights or attributing decisions to coarse, episodelevel summaries. Both approaches miss the recurring strategies and temporally extended patterns that actually drive agent behavior across multiple decisions. We address this gap by proposing a fully offline, reward-free framework for behavior discovery and segmentation, enabling the attribution of actions to meaningful and interpretable behavior segments that capture recurring patterns appearing across multiple trajectories. Our method identifies coherent behavior clusters from state-action sequences and attributes individual actions to these clusters for fine-grained, behavior-centric explanations. Evaluations on four diverse offline RL environments show that our approach discovers meaningful behaviors and outperforms trajectory-level baselines in fidelity, human preference, and cluster coherence. Our code is publicly available.},
+  archive      = {J_TMLR},
+  author       = {Rishav Rishav and Somjit Nath and Vincent Michalski and Samira Ebrahimi Kahou},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Behaviour discovery and attribution for explainable reinforcement learning},
+  url          = {https://openreview.net/forum?id=JbHtpOIH9l},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FlowBench: Benchmarking optical flow estimation methods for reliability and generalization. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Kh4bj6YDNm'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optical flow estimation is a crucial computer vision task often applied to safety-critical real-world scenarios like autonomous driving and medical imaging. While optical flow estimation accuracy has greatly benefited from the emergence of deep learning, learning-based methods are also known for their lack of generalization and reliability. However, reliability is paramount when optical flow methods are employed in the real world, where safety is essential. Furthermore, a deeper understanding of the robustness and reliability of learning-based optical flow estimation methods is still lacking, hindering the research community from building methods safe for real-world deployment. Thus, we propose FlowBench, a robustness benchmark and evaluation tool for learning-based optical flow methods. FlowBench facilitates streamlined research into the reliability of optical flow methods by benchmarking their robustness to adversarial attacks and out-of-distribution samples. With FlowBench, we benchmark 57 checkpoints across 3 datasets under 9 diverse adversarial attacks and 23 established common corruptions, making it the most comprehensive robustness analysis of optical flow methods to date. Across this wide range of methods, we consistently find that methods with state-of-the-art performance on established standard benchmarks lack reliability and generalization ability. Moreover, we find interesting correlations between the performance, reliability, and generalization ability of optical flow estimation methods, under various lenses such as design choices used, number of parameters, etc. The open-source code and weights for FlowBench are available in this GitHub repository: https://github.com/shashankskagnihotri/FlowBench.},
+  archive      = {J_TMLR},
+  author       = {Shashank Agnihotri and Julian Yuya Caspary and Luca Schwarz and Xinyan Gao and Jenny Schmalfuss and Andres Bruhn and Margret Keuper},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {FlowBench: Benchmarking optical flow estimation methods for reliability and generalization},
+  url          = {https://openreview.net/forum?id=Kh4bj6YDNm},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Communication cost reduction for subgraph counting under local differential privacy via hash functions. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=N1J236mepp'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We suggest the use of hash functions to cut down the communication costs when counting subgraphs under edge local differential privacy. While various algorithms exist for computing graph statistics --- including the count of subgraphs --- under the edge local differential privacy, many suffer with high communication costs, making them less efficient for large graphs. Though data compression is a typical approach in differential privacy, its application in local differential privacy requires a form of compression that every node can reproduce. In our study, we introduce linear congruence hashing. Leveraging amplification by sub-sampling, with a sampling size of $s$, our method can cut communication costs by a factor of $s^2$, albeit at the cost of increasing variance in the published graph statistic by a factor of $s$. The experimental results indicate that, when matched for communication costs, our method achieves a reduction in the $\ell_2$-error by up to 1000 times for triangle counts and by up to $10^3$ times for 4-cycles counts compared to the performance of leading algorithms.},
+  archive      = {J_TMLR},
+  author       = {Quentin Hillebrand and Vorapong Suppakitpaisarn and Tetsuo Shibuya},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Communication cost reduction for subgraph counting under local differential privacy via hash functions},
+  url          = {https://openreview.net/forum?id=N1J236mepp},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Leveraging fully-observable solutions for improved partially-observable offline reinforcement learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=e9p4TDPy6A'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Offline reinforcement learning (RL) is a popular learning framework for control problems where online interactions with the environment are expensive, risky, or otherwise impractical. Existing offline RL methods commonly assume full observability of the state, and therefore there is a lack of offline RL methods that are specialized for the more general case of partially-observable control. To address this gap, we propose Cross-Observability Conservative Q-Learning (CO-CQL), an offline RL algorithm for partially-observable control that leverages fully-observable expert policies in an asymmetric learning setting. To motivate the use of fully-observable experts for partially-observable control, we formalize Cross-Observability Optimality Ratio (COOR), a theoretical measure of cross-observability that quantifies the benefit of learning asymmetrically from a fully-observable expert, and Cross-Observability Approximation Ratio (COAR), an estimation of COOR computable from trained policies. Our empirical evaluation on a wide variety of partially-observable challenges demonstrates that CO-CQL is able to exploit the guidance of fully-observable experts to outperform other state-of-the-art offline algorithms.},
+  archive      = {J_TMLR},
+  author       = {Chulabhaya Wijesundara and Andrea Baisero and Gregory David Castanon and Alan S Carlin and Robert Platt and Christopher Amato},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Leveraging fully-observable solutions for improved partially-observable offline reinforcement learning},
+  url          = {https://openreview.net/forum?id=e9p4TDPy6A},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unbiased loss functions for multilabel classification with missing labels. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=hMq1hUhLqp'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers binary and multilabel classification problems in a setting where labels are missing independently and with a known rate. Missing labels are a ubiquitous phenomenon in extreme multi-label classification (XMC) tasks, such as matching Wikipedia articles to a small subset out of the hundreds of thousands of possible tags, where no human annotator can possibly check the validity of all the negative samples. For this reason, propensity-scored precision---an unbiased estimate for precision-at-k under a known noise model---has become one of the standard metrics in XMC. Few methods take this problem into account already during the training phase, and all of these are limited to loss functions that can be decomposed into a sum of contributions from each individual label. A typical approach to training is to reduce the multilabel problem into a series of binary or multiclass problems, and it has been shown that if the surrogate task should be consistent for optimizing recall, the resulting loss function is not decomposable over labels. Therefore, this paper develops unbiased estimators for generic, potentially non-decomposable loss functions. These estimators suffer from increased variance and may lead to ill-posed optimization problems, which we address by switching to convex upper-bounds. The theoretical considerations are further supplemented by an experimental study showing that the switch to unbiased estimators significantly alters the bias-variance trade-off and thus requires stronger regularization.},
+  archive      = {J_TMLR},
+  author       = {Erik Schultheis and Rohit Babbar},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Unbiased loss functions for multilabel classification with missing labels},
+  url          = {https://openreview.net/forum?id=hMq1hUhLqp},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Statistical test for saliency maps of graph neural networks via selective inference. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=5NkXTCVa7F'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Neural Networks (GNNs) have gained prominence for their ability to process graph-structured data across various domains. However, interpreting GNN decisions remains a significant challenge, leading to the adoption of saliency maps for identifying salient subgraphs composed of influential nodes and edges. Despite their utility, the reliability of GNN saliency maps has been questioned, particularly in terms of their robustness to input noise. In this study, we propose a statistical testing framework to rigorously evaluate the significance of saliency maps. Our main contribution lies in addressing the inflation of the Type I error rate caused by double-dipping of data, leveraging the framework of Selective Inference. Our method provides statistically valid $p$-values while controlling the Type I error rate, ensuring that identified salient subgraphs contain meaningful information rather than random artifacts. The method is applicable to a variety of saliency methods with piecewise linearity (e.g., Class Activation Mapping). We validate our method on synthetic and real-world datasets, demonstrating its capability in assessing the reliability of GNN interpretations.},
+  archive      = {J_TMLR},
+  author       = {Shuichi Nishino and Tomohiro Shiraishi and Teruyuki Katsuoka and Ichiro Takeuchi},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Statistical test for saliency maps of graph neural networks via selective inference},
+  url          = {https://openreview.net/forum?id=5NkXTCVa7F},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Certified robustness to data poisoning in gradient-based training. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=9WHifn9ZVX'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern machine learning pipelines leverage large amounts of public data, making it infeasible to guarantee data quality and leaving models open to poisoning and backdoor attacks. Provably bounding the behavior of learning algorithms under such attacks remains an open problem. In this work, we address this challenge by developing the first framework providing provable guarantees on the behavior of models trained with potentially manipulated data without modifying the model or learning algorithm. In particular, our framework certifies robustness against untargeted and targeted poisoning, as well as backdoor attacks, for bounded and unbounded manipulations of the training inputs and labels. Our method leverages convex relaxations to over-approximate the set of all possible parameter updates for a given poisoning threat model, allowing us to bound the set of all reachable parameters for any gradient-based learning algorithm. Given this set of parameters, we provide bounds on worst-case behavior, including model performance and backdoor success rate. We demonstrate our approach on multiple real-world datasets from applications including energy consumption, medical imaging, and autonomous driving.},
+  archive      = {J_TMLR},
+  author       = {Philip Sosnin and Mark Niklas Mueller and Maximilian Baader and Calvin Tsay and Matthew Robert Wicker},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Certified robustness to data poisoning in gradient-based training},
+  url          = {https://openreview.net/forum?id=9WHifn9ZVX},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HalluEntity: Benchmarking and understanding entity-level hallucination detection. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=494k7e9R5D'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To mitigate the impact of hallucination nature of LLMs, many studies propose detecting hallucinated generation through uncertainty estimation. However, these approaches predominantly operate at the sentence or paragraph level, failing to pinpoint specific spans or entities responsible for hallucinated content. This lack of granularity is especially problematic for long-form outputs that mix accurate and fabricated information. To address this limitation, we explore entity-level hallucination detection. We propose a new data set, HalluEntity, which annotates hallucination at the entity level. Based on the dataset, we comprehensively evaluate uncertainty-based hallucination detection approaches across 17 modern LLMs. Our experimental results show that uncertainty estimation approaches focusing on individual token probabilities tend to over-predict hallucinations, while context-aware methods show better but still suboptimal performance. Through an in-depth qualitative study, we identify relationships between hallucination tendencies and linguistic properties and highlight important directions for future research. HalluEntity: https://huggingface.co/datasets/samuelyeh/HalluEntity},
+  archive      = {J_TMLR},
+  author       = {Min-Hsuan Yeh and Max Kamachee and Seongheon Park and Yixuan Li},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {HalluEntity: Benchmarking and understanding entity-level hallucination detection},
+  url          = {https://openreview.net/forum?id=494k7e9R5D},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). System-2 mathematical reasoning via enriched instruction tuning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Cl9Uox031k'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solving complex mathematical problems via system-2 reasoning is a natural human skill, yet it remains a significant challenge for current large language models (LLMs). We identify the scarcity of deliberate multi-step reasoning data as a primary limiting factor. To this end, we introduce Enriched Instruction Tuning (EIT), a method that enriches existing human-annotated mathematical datasets by augmenting human-annotated data with AI-generated feedback to create fine-grained reasoning trajectories. These datasets are then used to fine-tune open-source LLMs, enhancing their mathematical reasoning abilities without reliance on any symbolic verification program. Concretely, EIT is composed of two critical steps: Enriching with Reasoning Plan (ERP) and Enriching with Reasoning Step (ERS). The former generates a high-level plan that breaks down complex instructions into a sequence of simpler objectives, while ERS fills in reasoning contexts often overlooked by human annotators, creating a smoother reasoning trajectory for LLM fine-tuning. Unlike existing CoT prompting methods that generate reasoning chains only depending on LLM's internal knowledge, our method leverages human-annotated initial answers as ``meta-knowledge'' to help LLMs generate more detailed and precise reasoning processes, leading to a more trustworthy LLM expert for complex mathematical problems. In experiments, EIT achieves an accuracy of 84.1% on GSM8K and 32.5% on MATH, surpassing state-of-the-art fine-tuning and prompting methods, and even matching the performance of tool-augmented methods.},
+  archive      = {J_TMLR},
+  author       = {Huanqia Cai and Yijun Yang and Zhifeng Li},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {System-2 mathematical reasoning via enriched instruction tuning},
+  url          = {https://openreview.net/forum?id=Cl9Uox031k},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement learning from human feedback with active queries. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=EScatQaRxz'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aligning large language models (LLM) with human preference plays a key role in building modern generative models and can be achieved by reinforcement learning from human feedback (RLHF). Despite their superior performance, current RLHF approaches often require a large amount of human-labelled preference data, which is expensive to collect. In this paper, inspired by the success of active learning, we address this problem by proposing query-efficient RLHF methods. We first formalize the alignment problem as a contextual dueling bandit problem and design an active-query-based proximal policy optimization (APPO) algorithm with an $\tilde{O}(d^2/\Delta)$ instance-dependent regret bound and an $\tilde{O}(d^2/\Delta^2)$ query complexity, where $d$ is the dimension of feature space and $\Delta$ is the sub-optimality gap over all the contexts. We then propose ADPO, a practical version of our algorithm based on direct preference optimization (DPO) and apply it to fine-tuning LLMs. Our experiments show that ADPO, while only making about half of queries for human preference, matches the performance of DPO, establishing it as a data-efficient alternative to DPO. The codes are available at https://github.com/jkx19/ActiveQuery.},
+  archive      = {J_TMLR},
+  author       = {Kaixuan Ji and Jiafan He and Quanquan Gu},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Reinforcement learning from human feedback with active queries},
+  url          = {https://openreview.net/forum?id=EScatQaRxz},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tree search for language model agents. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=QF0N3x2XVm'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous agents powered by language models (LMs) have demonstrated promise in their ability to perform decision-making tasks such as web automation. However, a key limitation remains: LMs, primarily optimized for natural language understanding and generation, struggle with multi-step reasoning, planning, and using environmental feedback when attempting to solve realistic computer tasks. Towards addressing this, we propose an inference-time search algorithm for LM agents to explicitly perform exploration and multi-step planning in interactive web environments. Our approach is a form of best-first tree search that operates within the actual environment space, and is complementary with most existing state-of-the-art agents. It is the first tree search algorithm for LM agents that shows effectiveness on realistic web tasks. On the challenging VisualWebArena benchmark, applying our search algorithm on top of a GPT-4o agent yields a 39.7% relative increase in success rate compared to the same baseline without search, setting a state-of-the-art success rate of 26.4%. On WebArena, search also yields a 28.0% relative improvement over a baseline agent, setting a competitive success rate of 19.2%. Our experiments showcase the effectiveness of search for web agents, and we demonstrate that performance scales with increased test-time compute.},
+  archive      = {J_TMLR},
+  author       = {Jing Yu Koh and Stephen Marcus McAleer and Daniel Fried and Ruslan Salakhutdinov},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Tree search for language model agents},
+  url          = {https://openreview.net/forum?id=QF0N3x2XVm},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Effect of random learning rate: Theoretical analysis of SGD dynamics in non-convex optimization via stationary distribution. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=RPtKkNx9ZK'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a variant of the stochastic gradient descent (SGD) with a random learning rate and reveal its convergence properties. SGD is a widely used stochastic optimization algorithm in machine learning, especially deep learning. Numerous studies reveal the convergence properties of SGD and its theoretically favorable variants. Among these, the analysis of convergence using a stationary distribution of updated parameters provides generalizable results. However, to obtain a stationary distribution, the update direction of the parameters must not degenerate, which limits the applicable variants of SGD. In this study, we consider a novel SGD variant, Poisson SGD, which has degenerated parameter update directions and instead utilizes a random learning rate. Consequently, we demonstrate that a distribution of a parameter updated by Poisson SGD converges to a stationary distribution under weak assumptions on a loss function. Based on this, we further show that Poisson SGD finds global minima in non-convex optimization problems and also evaluate the generalization error using this method. As a proof technique, we approximate the distribution by Poisson SGD with that of the bouncy particle sampler (BPS) and derive its stationary distribution, using the theoretical advance of the piece-wise deterministic Markov process (PDMP).},
+  archive      = {J_TMLR},
+  author       = {Naoki Yoshida and Shogo Nakakita and Masaaki Imaizumi},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Effect of random learning rate: Theoretical analysis of SGD dynamics in non-convex optimization via stationary distribution},
+  url          = {https://openreview.net/forum?id=RPtKkNx9ZK},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning the language of protein structure. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=SRRPQIOS4w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Representation learning and \emph{de novo} generation of proteins are pivotal computational biology tasks. Whilst natural language processing (NLP) techniques have proven highly effective for protein sequence modelling, structure modelling presents a complex challenge, primarily due to its continuous and three-dimensional nature. Motivated by this discrepancy, we introduce an approach using a vector-quantized autoencoder that effectively tokenizes protein structures into discrete representations. This method transforms the continuous, complex space of protein structures into a manageable, discrete format with a codebook ranging from 4096 to 64000 tokens, achieving high-fidelity reconstructions with backbone root mean square deviations (RMSD) of approximately 1-4 \AA. To demonstrate the efficacy of our learned representations, we show that a simple GPT model trained on our codebooks can generate novel, diverse, and designable protein structures. Our approach not only provides representations of protein structure, but also mitigates the challenges of disparate modal representations and sets a foundation for seamless, multi-modal integration, enhancing the capabilities of computational methods in protein design.},
+  archive      = {J_TMLR},
+  author       = {Jérémie DONA and Benoit Gaujac and Timothy Atkinson and Liviu Copoiu and Thomas Pierrot and Thomas D Barrett},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Learning the language of protein structure},
+  url          = {https://openreview.net/forum?id=SRRPQIOS4w},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Beyond ordinary lipschitz constraints: Differentially private optimization with TNC. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=SZCygcrGng'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study Stochastic Convex Optimization in Differential Privacy model (DP-SCO). Unlike previous studies, here we assume the population risk function satisfies the Tsybakov Noise Condition (TNC) with some parameter $\theta>1$, where the Lipschitz constant of the loss could be extremely large or even unbounded, but the $\ell_2$-norm gradient of the loss has bounded $k$-th moment with $k\geq 2$. For the Lipschitz case with $\theta\geq 2$, we first propose an $(\epsilon, \delta)$-DP algorithms whose utility bound is $\tilde{O}\left(\left(\tilde{r}_{2k}(\frac{1}{\sqrt{n}}+(\frac{\sqrt{d}}{n\epsilon}))^\frac{k-1}{k}\right)^\frac{\theta}{\theta-1}\right)$ in high probability, where $n$ is the sample size, $d$ is the model dimension, and $\tilde{r}_{2k}$ is a term that only depends on the $2k$-th moment of the gradient. It is notable that such an upper bound is independent of the Lipschitz constant. We then extend to the case where $\theta\geq \bar{\theta}> 1$ for some known constant $\bar{\theta}$. Moreover, when the privacy budget $\epsilon$ is small enough, we show an upper bound of $\tilde{O}\left(\left(\tilde{r}_{k}(\frac{1}{\sqrt{n}}+(\frac{\sqrt{d}}{n\epsilon}))^\frac{k-1}{k}\right)^\frac{\theta}{\theta-1}\right)$ even if the loss function is not Lipschitz. For the lower bound, we show that for any $\theta\geq 2$, the private minimax rate for $\rho$-zero Concentrated Differential Privacy is lower bounded by $\Omega\left(\left(\tilde{r}_{k}(\frac{1}{\sqrt{n}}+(\frac{\sqrt{d}}{n\sqrt{\rho}}))^\frac{k-1}{k}\right)^\frac{\theta}{\theta-1}\right)$.},
+  archive      = {J_TMLR},
+  author       = {Difei Xu and Meng Ding and Zihang Xiang and Jinhui Xu and Di Wang},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Beyond ordinary lipschitz constraints: Differentially private optimization with TNC},
+  url          = {https://openreview.net/forum?id=SZCygcrGng},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Complementarity: Toward better metrics and optimizing data efficiency in LLMs. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=feAbrMXGMh'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generalist Large Language Models (LLMs) are trained with an immense amount of data from across different domains. However, not all data contribute to model performance equally, and prioritizing data quality can improve domain-specific performance. We suggest that quality is not merely an independent feature of datasets, but rather the manner in which data samples interfere with or complement one another. Furthermore, existing performance metrics for language models are computationally expensive, while also frequently suffering from being mathematically ill-defined and poorly suited to generative AI. Toward improving general performance while reducing the amount of training data, and quantifying how data contributes to downstream tasks vis-a-vis their relation with other data, we introduce a new metric, Complementarity. We first establish a strong correlation between Complementarity and domain-specific task performance. Without reliance on heavy instruction-tuning and text scraping, Complementarity is significantly less expensive to compute and is applicable to a wide variety of potential target domains. Most interestingly, we demonstrate that the Complementarity taken over a training validation set provides a better predictor of generalization to future test sets than directly measuring performance on a test validation set. With this, we introduce an algorithm that carefully selects the data to fine-tune upon, leading to a high-performing fine-tuned generalist model while using only a fraction of the data, and without requiring data from the test domain. Overall, Complementarity may serve as a key metric in future analysis of data utility and design of datasets, and help facilitate the goal of a truly generalist model.},
+  archive      = {J_TMLR},
+  author       = {Roy Siegelmann},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Complementarity: Toward better metrics and optimizing data efficiency in LLMs},
+  url          = {https://openreview.net/forum?id=feAbrMXGMh},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring the limitations of layer synchronization in spiking neural networks. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=mfmAVwtMIk'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural-network processing in machine learning applications relies on layer synchronization. This is practiced even in artificial Spiking Neural Networks (SNNs), which are touted as consistent with neurobiology, in spite of processing in the brain being in fact asynchronous. A truly asynchronous system however would allow all neurons to evaluate concurrently their threshold and emit spikes upon receiving any presynaptic current. Omitting layer synchronization is potentially beneficial, for latency and energy efficiency, but asynchronous execution of models previously trained with layer synchronization may entail a mismatch in network dynamics and performance. We present and quantify this problem, and show that models trained with layer synchronization either perform poorly in absence of the synchronization, or fail to benefit from any energy and latency reduction, when such a mechanism is in place. We then explore a potential solution direction, based on a generalization of backpropagation-based training that integrates knowledge about an asynchronous execution scheduling strategy, for learning models suitable for asynchronous processing. We experiment with 2 asynchronous neuron execution scheduling strategies in datasets that encode spatial and temporal information, and we show the potential of asynchronous processing to use less spikes (up to 50\%), complete inference faster (up to 2x), and achieve competitive or even better accuracy (up to $\sim$10\% higher). Our exploration affirms that asynchronous event-based AI processing can be indeed more efficient, but we need to rethink how we train our SNN models to benefit from it. (Source code available at: \url{https://github.com/RoelMK/asynctorch})},
+  archive      = {J_TMLR},
+  author       = {Roel Koopman and Amirreza Yousefzadeh and Mahyar Shahsavari and Guangzhi Tang and Manolis Sifalakis},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Exploring the limitations of layer synchronization in spiking neural networks},
+  url          = {https://openreview.net/forum?id=mfmAVwtMIk},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiple noises in diffusion model for semi-supervised multi-domain translation. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=vYdT26kDYM'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we address the challenge of multi-domain translation, where the objective is to learn mappings between arbitrary configurations of domains within a defined set (such as $(D_1, D_2)\rightarrow{}D_3$, $D_2\rightarrow{}(D_1, D_3)$, $D_3\rightarrow{}D_1$, etc. for three domains) without the need for separate models for each specific translation configuration, enabling more efficient and flexible domain translation. We introduce Multi-Domain Diffusion (MDD), a method with dual purposes: i) reconstructing any missing views for new data objects, and ii) enabling learning in semi-supervised contexts with arbitrary supervision configurations. MDD achieves these objectives by exploiting the noise formulation of diffusion models, specifically modeling one noise level per domain. Similar to existing domain translation approaches, MDD learns the translation between any combination of domains. However, unlike prior work, our formulation inherently handles semi-supervised learning without modification by representing missing views as noise in the diffusion process. We evaluate our approach through domain translation experiments on BL3NDT, a multi-domain synthetic dataset designed for challenging semantic domain inversion, the BraTS2020 dataset, and the CelebAMask-HQ dataset.},
+  archive      = {J_TMLR},
+  author       = {Tsiry Mayet and Simon Bernard and Romain HÉRAULT and Clement Chatelain},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Multiple noises in diffusion model for semi-supervised multi-domain translation},
+  url          = {https://openreview.net/forum?id=vYdT26kDYM},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Continuous language model interpolation yields dynamic and controllable text generation. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=xD9Nu2Wah4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As large language models (LLMs) have gained popularity for a variety of use cases, making them adaptable and controllable has become increasingly important, especially for user-facing applications. In particular, linear interpolation between model parameters forms the backbone for many recent approaches to adapting models to user preferences. While the existing literature on LLM adaptation primarily focuses on finding methods that optimize for some set of performance criteria or user preferences, here we instead seek to better understand and characterize the behavior of dense, continuous interpolation between models. Specifically, we use low-rank updates to fine-tune a base model to various different domains, yielding a set of anchor models with distinct generation profiles. Then, we use the weight updates of these anchor models to parametrize the entire (infinite) class of models contained within their convex hull. We empirically show that varying the interpolation weights yields predictable and consistent change in the model outputs with respect to all of the controlled attributes simultaneously. We find that there is little entanglement between most attributes and identify and discuss the pairs of attributes for which this is not the case. Our results suggest that parameter merging facilitates flexible model adaptation due to its predictable behavior within the full interpolation region.},
+  archive      = {J_TMLR},
+  author       = {Sara Kangaslahti and David Alvarez-Melis},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Continuous language model interpolation yields dynamic and controllable text generation},
+  url          = {https://openreview.net/forum?id=xD9Nu2Wah4},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Auto-regressive vs flow-matching: A comparative study of modeling paradigms for text-to-music generation. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=xXc5DeaBYw'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent progress in text-to-music generation has enabled models to synthesize high-quality musical segments, full compositions, and even respond to fine-grained control signals, e.g. chord progressions. State-of-the-art (SOTA) systems differ significantly in many dimensions, such as training datasets, modeling paradigms, and architectural choices. This diversity complicates efforts to evaluate models fairly and identify which design choices influence performance the most. While factors like data and architecture are important, in this study we focus exclusively on the modeling paradigm. We conduct a systematic empirical analysis to isolate its effects, offering insights into associated trade-offs and emergent behaviors that can guide future text-to-music generation systems. Specifically, we compare the two arguably most common modeling paradigms: auto-regressive decoding and conditional flow-matching. We conduct a controlled comparison by training all models from scratch using identical datasets, training configurations, and similar backbone architectures. Performance is evaluated across multiple axes, including generation quality, robustness to inference configurations, scalability, adherence to both textual and temporally aligned conditioning, and editing capabilities in the form of audio inpainting. This comparative study sheds light on distinct strengths and limitations of each paradigm, providing actionable insights that can inform future architectural and training decisions in the evolving landscape of text-to-music generation. Audio sampled examples are available at: https://huggingface.co/spaces/ortal1602/ARvsFM},
+  archive      = {J_TMLR},
+  author       = {Or Tal and Felix Kreuk and Yossi Adi},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Auto-regressive vs flow-matching: A comparative study of modeling paradigms for text-to-music generation},
+  url          = {https://openreview.net/forum?id=xXc5DeaBYw},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mean-field RL for large-scale unit-capacity pickup-and-delivery problems. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=E8JRswdyDR'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solving large-scale vehicle routing problems (VRPs) is NP-hard and poses a computational challenge in numerous applications such as logistics. Meanwhile, mean-field control (MFC) provides a tractable and rigorous approach to controlling many agents. We provide a solution to pickup-and-delivery VRPs via scalable MFC. In combination with reinforcement learning (RL) and clustering, our MFC approach efficiently scales to large-scale VRPs. We perform a theoretical analysis of our MFC-based approximation, giving convergence results for large VRP instances and error bounds for clustering-based approximations. We verify our algorithms on different datasets and compare them against solutions such as OR-Tools, PyVRP and heuristics, showing scalability in terms of speed for mean-field methods, for the first time in discrete optimization. Overall, our work establishes a novel synthesis of MFC-based RL techniques, vehicle routing problems and clustering approximations, to solve a hard discrete optimization problem of practical use in a scalable way.},
+  archive      = {J_TMLR},
+  author       = {Kai Cui and Sharif Azem and Christian Fabian and Kirill Kuroptev and Ramin Khalili and Osama Abboud and Florian Steinke and Heinz Koeppl},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Mean-field RL for large-scale unit-capacity pickup-and-delivery problems},
+  url          = {https://openreview.net/forum?id=E8JRswdyDR},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Doubly robust uncertainty quantification for quantile treatment effects in sequential decision making. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=F0BwbieVws'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider multi-stage sequential decision making, where the treatment at any stage may depend on the subject’s entire treatment and covariate history. We introduce a general framework for doubly robust uncertainty quantification for the quantiles of cumulative outcomes under a sequential treatment rule. While previous studies focused on mean effects, quantile effects offer unique insights into the distributional properties and are more robust for heavy-tailed outcomes. It is known that, doubly robust inference is significantly more challenging and largely unexplored for quantile treatment effects. More importantly, for mean effects, doubly robust estimation does not ensure doubly robust inference. Our approach first provides a doubly robust estimator for any quantile of interest based on pre-collected data, achieving semi-parametric efficiency. We then propose a novel doubly robust estimator for the asymptotic variance, enabling the construction of a doubly robust confidence interval. To overcome the challenges in parameter-dependent nuisance functions, we leverage deep conditional generative learning techniques. We demonstrate advantages of our approach via both simulation and real data from a short video platform. Additionally, we observe that our proposed approach leads to another mean effect estimator that outperforms existing estimators with heavy-tailed outcomes.},
+  archive      = {J_TMLR},
+  author       = {Yang Xu and Chengchun Shi and Shikai Luo and Lan Wang and Rui Song},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Doubly robust uncertainty quantification for quantile treatment effects in sequential decision making},
+  url          = {https://openreview.net/forum?id=F0BwbieVws},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The overcooked generalisation challenge: Evaluating cooperation with novel partners in unknown environments using unsupervised environment design. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=K2KtcMlW6j'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the Overcooked Generalisation Challenge (OGC) – a new benchmark for evaluating reinforcement learning (RL) agents on their ability to cooperate with unknown partners in unfamiliar environments. Existing work typically evaluated cooperative RL only in their training environment or with their training partners, thus seriously limiting our ability to understand agents’ generalisation capacity – an essential requirement for future collaboration with humans. The OGC extends Overcooked-AI to support dual curriculum design (DCD). It is fully GPU-accelerated, open-source, and integrated into the minimax DCD benchmark suite. Compared to prior DCD benchmarks, where designers manipulate only minimal elements of the environment, OGC introduces a significantly richer design space: full kitchen layouts with multiple objects that require the designer to account for interaction dynamics between agents. We evaluate state-of-the-art DCD algorithms alongside scalable neural architectures and find that current methods fail to produce agents that generalise effectively to novel layouts and unfamiliar partners. Our results indicate that both agents and curriculum designers struggle with the joint challenge of partner and environment generalisation. These findings establish OGC as a demanding testbed for cooperative generalisation and highlight key directions for future research. We open-source our code.},
+  archive      = {J_TMLR},
+  author       = {Constantin Ruhdorfer and Matteo Bortoletto and Anna Penzkofer and Andreas Bulling},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {The overcooked generalisation challenge: Evaluating cooperation with novel partners in unknown environments using unsupervised environment design},
+  url          = {https://openreview.net/forum?id=K2KtcMlW6j},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Solving inverse problems using diffusion with iterative colored renoising. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=RZv8FcQDPW'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Imaging inverse problems can be solved in an unsupervised manner using pre-trained diffusion models, but doing so requires approximating the gradient of the measurement-conditional score function in the diffusion reverse process. We show that the approximations produced by existing methods are relatively poor, especially early in the reverse process, and so we propose a new approach that iteratively reestimates and ``renoises'' the estimate several times per diffusion step. This iterative approach, which we call Fast Iterative REnoising (FIRE), injects colored noise that is shaped to ensure that the pre-trained diffusion model always sees white noise, in accordance with how it was trained. We then embed FIRE into the DDIM reverse process and show that the resulting ``DDfire'' offers state-of-the-art accuracy and runtime on several linear inverse problems, as well as phase retrieval.},
+  archive      = {J_TMLR},
+  author       = {Matthew C Bendel and Saurav K Shastri and Rizwan Ahmad and Philip Schniter},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Solving inverse problems using diffusion with iterative colored renoising},
+  url          = {https://openreview.net/forum?id=RZv8FcQDPW},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). COMMA: A communicative multimodal multi-agent benchmark. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=TIGQIem1na'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid advances of multimodal agents built on large foundation models have largely overlooked their potential for language-based communication between agents in collaborative tasks. This oversight presents a critical gap in understanding their effectiveness in real-world deployments, particularly when communicating with humans. Existing agentic benchmarks fail to address key aspects of inter-agent communication and collaboration, particularly in scenarios where agents have unequal access to information and must work together to achieve tasks beyond the scope of individual capabilities. To fill this gap, we introduce COMMA: a novel puzzle benchmark designed to evaluate the collaborative performance of multimodal multi-agent systems through language communication. Our benchmark features a variety of multimodal puzzles, providing a comprehensive evaluation across four key categories of agentic capability in a communicative collaboration setting. Our findings reveal surprising weaknesses in state-of-the-art models, including strong proprietary models like GPT-4o and reasoning models like o4-mini. Many chain of thought reasoning models such as R1-Onevision and LLaVA-CoT struggle to outperform even a random baseline in agent-agent collaboration, indicating a potential growth area in their communication abilities.},
+  archive      = {J_TMLR},
+  author       = {Timothy Ossowski and Danyal Maqbool and Jixuan Chen and Zefan Cai and Tyler J. Bradshaw and Junjie Hu},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {COMMA: A communicative multimodal multi-agent benchmark},
+  url          = {https://openreview.net/forum?id=TIGQIem1na},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Single-positive multi-label learning with label cardinality. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=XEPPXH2nKu'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study learning a multi-label classifier from partially labeled data, where each instance has only a single positive label. We explain how auxiliary information available on the label cardinality, the number of positive labels per instance, can be used for improving such methods. We consider auxiliary information of varying granularity, ranging from knowing just the maximum number of labels over all instances to knowledge on the distribution of label cardinalities and even the exact cardinality of each instance. We introduce methods leveraging the different types of auxiliary information, study how close to the fully labeled accuracy we can get under different scenarios, and show that an easy-to-implement method only assuming the knowledge of the maximum cardinality is comparable to the state-of-the-art single-positive multi-label learning methods when using the same base model. Our implementation is publicly available at https://github.com/shayangharib/SPMLL_with_Label_Cardinality.},
+  archive      = {J_TMLR},
+  author       = {Shayan Gharib and Pierre-Alexandre Murena and Arto Klami},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Single-positive multi-label learning with label cardinality},
+  url          = {https://openreview.net/forum?id=XEPPXH2nKu},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Text to stealthy adversarial face masks. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=XYqCx026AI'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent studies have demonstrated that modern facial recognition systems, which are based on deep neural networks, are vulnerable to adversarial attacks, including the use of accessories, makeup patterns, or precision lighting. However, developing attacks that are both robust (resilient to changes in viewing angles and environmental conditions) and stealthy (do not attract suspicion by, for example, incorporating obvious facial features) remains a significant challenge. In this context, we introduce a novel diffusion-based method (DAFR) capable of generating robust and stealthy face masks for dodging recognition systems (where the system fails to identify the attacker). Specifically our approach is capable of producing high-fidelity printable textures using the guidance of textual prompts to determine the style. This method can also be adapted for impersonation purposes, where the system misidentifies the attacker as a specific other individual. Finally, we address a gap in the existing literature by presenting a comprehensive benchmark (FAAB) for evaluating adversarial accessories in three dimensions, assessing their robustness and stealthiness.},
+  archive      = {J_TMLR},
+  author       = {Ben Lewis and Thomas Moyse and James Parkinson and Elizabeth Telford and Callum Whitfield and Ranko Lazic},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Text to stealthy adversarial face masks},
+  url          = {https://openreview.net/forum?id=XYqCx026AI},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LAPP: Large language model feedback for preference-driven reinforcement learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=cq76wx7T9F'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce Large Language Model-Assisted Preference Prediction (LAPP), a novel framework for robot learning that enables efficient, customizable, and expressive behavior acquisition with minimum human effort. Unlike prior approaches that rely heavily on reward engineering, human demonstrations, motion capture, or expensive pairwise preference labels, LAPP leverages large language models (LLMs) to automatically generate preference labels from raw state-action trajectories collected during reinforcement learning (RL). These labels are used to train an online preference predictor, which in turn guides the policy optimization process toward satisfying high-level behavioral specifications provided by humans. Our key technical contribution is the integration of LLMs into the RL feedback loop through trajectory-level preference prediction, enabling robots to acquire complex skills including subtle control over gait patterns and rhythmic timing. We evaluate LAPP on a diverse set of quadruped locomotion and dexterous manipulation tasks and show that it achieves efficient learning, higher final performance, faster adaptation, and precise control of high-level behaviors. Notably, LAPP enables robots to master highly dynamic and expressive tasks such as quadruped backflips, which remain out of reach for standard LLM-generated or handcrafted rewards. Our results highlight LAPP as a promising direction for scalable preference-driven robot learning.},
+  archive      = {J_TMLR},
+  author       = {Pingcheng Jian and Xiao Wei and Yanbaihui Liu and Samuel A. Moore and Michael M. Zavlanos and Boyuan Chen},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {LAPP: Large language model feedback for preference-driven reinforcement learning},
+  url          = {https://openreview.net/forum?id=cq76wx7T9F},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Studying memorization of large language models using answers to stack overflow questions. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ddocn44Kaq'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models (LLMs) are capable of answering many software related questions and supporting developers by generating code snippets. These capabilities originate from training on massive amounts of data from the Internet, including information from Stack Overflow. This raises the question whether answers to software related questions are simply memorized from the training data, which might raise problems as this often requires attribution (e.g., CC-BY license), sharing with a similar license (e.g., GPL licenses) or may even be prohibited (proprietary license). To study this, we compare responses to questions from Stack Overflow for questions that were known during LLM pre-training and questions that were not included in the pre-training data. We then calculate the overlap both with answers marked as accepted on Stack Overflow as well as other texts we can find on the internet. We further explore the impact of the popularity of programming languages, the complexity of the prompts used, and the randomization of the text generation process on the memorization of answers to Stack Overflow. We find that many generated answers are to some degree collages of memorized content and that this does not dependent on whether the questions were seen during training or not. However, many of the memorized snippets are common phrases or code and, therefore, not copyrightable. Still, we also have clear evidence that copyright violation happens and is likely when LLMs are used at large scales.},
+  archive      = {J_TMLR},
+  author       = {Laura Caspari and Alexander Trautsch and Michael Granitzer and Steffen Herbold},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Studying memorization of large language models using answers to stack overflow questions},
+  url          = {https://openreview.net/forum?id=ddocn44Kaq},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HandsOnVLM: Vision-language models for hand-object interaction prediction. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ehhMFjKnWm'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {How can we predict future interaction trajectories of human hands in a scene given high-level colloquial task specifications in the form of natural language? In this paper, we extend the classic hand trajectory prediction task to several tasks involving explicit and implicit language queries. Our proposed tasks require extensive understanding of human daily activities and reasoning abilities about what is happening next given cues from the current scene. We also develop new benchmarks to evaluate the proposed two tasks, Vanilla Hand Prediction (VHP) and Reasoning-Based Hand Prediction (RBHP). We enable solving these tasks by integrating high-level world knowledge and reasoning capabilities of Vision-Language Models (VLMs) with the auto-regressive nature of low-level ego-centric hand trajectories. Our model, HandsOnVLM is a novel VLM that can generate textual responses and produce future hand trajectories through natural-language conversations. Our experiments show that HandsOnVLM outperforms existing task-specific methods and other VLM baselines on proposed tasks, and demonstrates its ability to effectively utilize world knowledge for reasoning about low-level human hand trajectories based on the provided context. More details can be found at https://www.chenbao.tech/handsonvlm/.},
+  archive      = {J_TMLR},
+  author       = {Chen Bao and Jiarui Xu and Xiaolong Wang and Abhinav Gupta and Homanga Bharadhwaj},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {HandsOnVLM: Vision-language models for hand-object interaction prediction},
+  url          = {https://openreview.net/forum?id=ehhMFjKnWm},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Discrete audio tokens: More than a survey!. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=eqNchtvc6v'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Discrete audio tokens are compact representations that aim to preserve perceptual quality, phonetic content, and speaker characteristics while enabling efficient storage and inference, as well as competitive performance across diverse downstream tasks. They provide a practical alternative to continuous features, enabling the integration of speech and audio into modern large language models (LLMs). As interest in token-based audio processing grows, various tokenization methods have emerged, and several surveys have reviewed the latest progress in the field. However, existing studies often focus on specific domains or tasks and lack a unified comparison across various benchmarks. This paper presents a systematic review and benchmark of discrete audio tokenizers, covering three domains: speech, music, and general audio. We propose a taxonomy of tokenization approaches based on encoder-decoder, quantization techniques, training paradigm, streamability, and application domains. We evaluate tokenizers on multiple benchmarks for reconstruction, downstream performance, and acoustic language modeling, and analyze trade-offs through controlled ablation studies. Our findings highlight key limitations, practical considerations, and open challenges, providing insight and guidance for future research in this rapidly evolving area. For more information, including our main results and tokenizer database, please refer to our website: https://poonehmousavi.github.io/dates-website/.},
+  archive      = {J_TMLR},
+  author       = {Pooneh Mousavi and Gallil Maimon and Adel Moumen and Darius Petermann and Jiatong Shi and Haibin Wu and Haici Yang and Anastasia Kuznetsova and Artem Ploujnikov and Ricard Marxer and Bhuvana Ramabhadran and Benjamin Elizalde and Loren Lugosch and Jinyu Li and Cem Subakan and Phil Woodland and Minje Kim and Hung-yi Lee and Shinji Watanabe and Yossi Adi and Mirco Ravanelli},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Discrete audio tokens: More than a survey!},
+  url          = {https://openreview.net/forum?id=eqNchtvc6v},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding the learned look-ahead behavior of chess neural networks. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=np4Bg2zIxL'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate the look-ahead capabilities of chess-playing neural networks, specifically focusing on the Leela Chess Zero policy network. We build on the work of Jenner et al. (2024) by analyzing the model's ability to consider future moves and alternative sequences beyond the immediate next move. Our findings reveal that the network's look-ahead behavior is highly context-dependent, varying significantly based on the specific chess position. We demonstrate that the model can process information about board states up to seven moves ahead, utilizing similar internal mechanisms across different future time steps. Additionally, we provide evidence that the network considers multiple possible move sequences rather than focusing on a single line of play. These results offer new insights into the emergence of sophisticated look-ahead capabilities in neural networks trained on strategic tasks, contributing to our understanding of AI reasoning in complex domains. Our work also showcases the effectiveness of interpretability techniques in uncovering cognitive-like processes in artificial intelligence systems.},
+  archive      = {J_TMLR},
+  author       = {Diogo Cruz},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Understanding the learned look-ahead behavior of chess neural networks},
+  url          = {https://openreview.net/forum?id=np4Bg2zIxL},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FlowKac: An efficient neural fokker-planck solver using temporal normalizing flows and the feynman-kac formula. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=paeyQFa5or'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solving the Fokker-Planck equation for high-dimensional complex dynamical systems remains a pivotal yet challenging task due to the intractability of analytical solutions and the limitations of traditional numerical methods. In this work, we present FlowKac, a novel approach that reformulates the Fokker-Planck equation using the Feynman-Kac formula, allowing to query the solution at a given point via the expected values of stochastic paths. A key innovation of FlowKac lies in its adaptive stochastic sampling scheme which significantly reduces the computational complexity while maintaining high accuracy. This sampling technique, coupled with a time-indexed normalizing flow, designed for capturing time-evolving probability densities, enables robust sampling of collocation points, resulting in a flexible and mesh-free solver. This formulation mitigates the curse of dimensionality and enhances computational efficiency and accuracy, which is particularly crucial for applications that inherently require dimensions beyond the conventional three. We validate the robustness and scalability of our method through various experiments on a range of stochastic differential equations, demonstrating significant improvements over existing techniques.},
+  archive      = {J_TMLR},
+  author       = {Naoufal EL BEKRI and Lucas Drumetz and Franck Vermet},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {FlowKac: An efficient neural fokker-planck solver using temporal normalizing flows and the feynman-kac formula},
+  url          = {https://openreview.net/forum?id=paeyQFa5or},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient object-centric representation learning using masked generative modeling. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=t9KvOYPeL3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning object-centric representations from visual inputs in an unsupervised manner has drawn focus to solve more complex tasks, such as reasoning and reinforcement learning. However, current state-of-the-art methods, relying on autoregressive transformers or diffusion models to generate scenes from object-centric representations, suffer from computational inefficiency due to their sequential or iterative nature. This computational bottleneck limits their practical application and hinders scaling to more complex downstream tasks. To overcome this, we propose MOGENT, an efficient object-centric learning framework based on masked generative modeling. MOGENT conditions a masked bidirectional transformer on learned object slots and employs a parallel iterative decoding scheme to generate scenes, enabling efficient compositional generation. Experiments show that MOGENT significantly improves computational efficiency, accelerating the generation process by up to 67x and 17x compared to autoregressive models and diffusion-based models, respectively. Importantly, the efficiency is attained while maintaining strong or competitive performance on object segmentation and compositional generation tasks.},
+  archive      = {J_TMLR},
+  author       = {Akihiro Nakano and Masahiro Suzuki and Yutaka Matsuo},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Efficient object-centric representation learning using masked generative modeling},
+  url          = {https://openreview.net/forum?id=t9KvOYPeL3},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedComLoc: Communication-efficient distributed training of sparse and quantized models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=vYQPLytQsj'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning (FL) has garnered increasing attention due to its unique characteristic of allowing heterogeneous clients to process their private data locally and interact with a central server, while being respectful of privacy. A critical bottleneck in FL is the communication cost. A pivotal strategy to mitigate this burden is Local Training, which involves running multiple local stochastic gradient descent iterations between communication phases. Our work is inspired by the innovative Scaffnew algorithm, which has considerably advanced the reduction of communication complexity in FL. We introduce FedComLoc (Federated Compressed and Local Training), integrating practical and effective compression into Scaffnew to further enhance communication efficiency. Extensive experiments, using the popular Top-K compressor and quantization, demonstrate its prowess in substantially reducing communication overheads in heterogeneous settings.},
+  archive      = {J_TMLR},
+  author       = {Kai Yi and Georg Meinhardt and Laurent Condat and Peter Richtárik},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {FedComLoc: Communication-efficient distributed training of sparse and quantized models},
+  url          = {https://openreview.net/forum?id=vYQPLytQsj},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Label embedding via low-coherence matrices. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=vrcWXcr4On'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Label embedding is a framework for multiclass classification problems where each label is represented by a distinct vector of some fixed dimension, and training involves matching model output to the vector representing the correct label. While label embedding has been successfully applied in extreme classification and zero-shot learning, and offers both computational and statistical advantages, its theoretical foundations remain poorly understood. This work presents an analysis of label embedding in the context of extreme multiclass classification, where the number of classes $C$ is very large. We present an excess risk bound that reveals a trade-off between computational and statistical efficiency, quantified via the coherence of the embedding matrix. We further show that under the Massart noise condition, the statistical penalty for label embedding vanishes with sufficiently low coherence. Our analysis supports an algorithm that is simple, scalable, and easily parallelizable, and experimental results demonstrate its effectiveness in large-scale applications.},
+  archive      = {J_TMLR},
+  author       = {Jianxin Zhang and Clayton Scott},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Label embedding via low-coherence matrices},
+  url          = {https://openreview.net/forum?id=vrcWXcr4On},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DNR-pruning: Sparsity-aware pruning via dying neuron reactivation in convolutional neural networks. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ymUjGCNPYa'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we challenge the conventional view of dead neurons—neurons that cease to activate—during deep neural network training. Traditionally regarded as problematic due to their association with optimization challenges and reduced model adaptability over training epochs, dead neurons are often seen as a hindrance. However, we present a novel perspective, demonstrating that they can be effectively leveraged to enhance network sparsity. Specifically, we propose DNR-Pruning, dying neuron reactivation based sparsity-aware pruning approach for convolutional neural networks (CNNs) that exploits the behavior of individual neurons during training. Through a systematic exploration of hyperparameter configurations, we show that dying neurons can be harnessed to improve pruning algorithms. Our method dynamically monitors the occurrence of dying neurons, enabling adaptive sparsification throughout CNN training. Extensive experiments on diverse datasets demonstrate that DNR-Pruning outperforms existing sparsity-aware pruning techniques while achieving competitive results compared to state-of-the-art methods. These findings suggest that dying neurons can serve as an efficient mechanism for network compression and resource optimization in CNNs, opening new avenues for more efficient and high-performance deep learning models.},
+  archive      = {J_TMLR},
+  author       = {Boyuan Wang and Richard Jiang},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {DNR-pruning: Sparsity-aware pruning via dying neuron reactivation in convolutional neural networks},
+  url          = {https://openreview.net/forum?id=ymUjGCNPYa},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

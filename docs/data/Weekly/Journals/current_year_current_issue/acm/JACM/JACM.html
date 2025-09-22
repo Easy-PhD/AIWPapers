@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JACM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jacm">JACM - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Expected constant round byzantine broadcast under dishonest majority. <em>JACM</em>, <em>72</em>(4), 1-39. (<a href='https://doi.org/10.1145/3748254'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Byzantine Broadcast (BB) is a central question in distributed systems, and an important challenge is to understand its round complexity. Under the honest majority setting, it is long known that there exist randomized protocols that can achieve BB in expected constant rounds, regardless of the number of nodes n . However, whether we can match the expected constant round complexity in the corrupt majority setting —or more precisely, when \(f \ge n/2 + \omega (1)\) —remains unknown, where f denotes the number of corrupt nodes. In this article, we are the first to resolve this long-standing question. We show how to achieve BB in expected \(O((n/(n-f))^2)\) rounds. Our results hold under a weakly adaptive adversary who cannot perform “after-the-fact removal” of messages already sent by a node before it becomes corrupt. We also assume trusted setup and the Decision Linear (DLIN) assumption in bilinear groups.},
+  archive      = {J_JACM},
+  author       = {Jun Wan and Hanshen Xiao and Elaine Shi and Srinivas Devadas},
+  doi          = {10.1145/3748254},
+  journal      = {Journal of the ACM},
+  month        = {8},
+  number       = {4},
+  pages        = {1-39},
+  shortjournal = {J. ACM},
+  title        = {Expected constant round byzantine broadcast under dishonest majority},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

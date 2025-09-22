@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds">TPDS - 15</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Chameleon: An efficient FHE scheme switching acceleration on GPUs. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3604866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fully homomorphic encryption (FHE) enables direct computation on encrypted data, making it a crucial technology for privacy protection. However, FHE suffers from significant performance bottlenecks. In this context, GPU acceleration offers a promising solution to bridge the performance gap. Existing efforts primarily focus on single-class FHE schemes, which fail to meet the diverse requirements of data types and functions, prompting the development of hybrid multi-class FHE schemes. However, studies have yet to thoroughly investigate specific GPU optimizations for hybrid FHE schemes. In this paper, we present an efficient GPU-based FHE scheme switching acceleration named Chameleon. First, we propose a scalable NTT acceleration design that adapts to larger CKKS polynomials and smaller TFHE polynomials. Specifically, Chameleon tackles synchronization issues by fusing stages to reduce synchronization, employing polynomial coefficient shuffling to minimize synchronization scale, and utilizing an SM-aware combination strategy to identify the optimal switching point. Second, Chameleon is the first to comprehensively analyze and optimize critical switching operations. It introduces CMux-level parallelization to accelerate LUT evaluation and a homomorphic rotation-free matrixvector multiplication to improve repacking efficiency. Finally, Chameleon outperforms the state-of-the-art GPU implementations by 1.23× in CKKS HMUL and 1.15× in bootstrapping. It also achieves up to 4.87× and 1.51× speedups for TFHE bootstrapping compared to CPU and GPU versions, respectively, and delivers a 67.3× average speedup for scheme switching over CPU-based implementation.},
+  archive      = {J_TPDS},
+  author       = {Zhiwei Wang and Haoqi He and Lutan Zhao and Peinan Li and Zhihao Li and Dan Meng and Rui Hou},
+  doi          = {10.1109/TPDS.2025.3604866},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Chameleon: An efficient FHE scheme switching acceleration on GPUs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3604815'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic resource allocation guarantees the performance of CGRA multi-task, but incurs a wide range of incompatible contexts (config & data) to the CGRA architecture. However, traditional context switch approaches including online config transformation and data reloading may significantly block the task to process inputs under new resource allocation decisions, resulting in the limited task throughput. To address this issue, online config transformation can be avoided if compatible configs have been prepared through offline pre-mapping, but traditional CGRA mappers require days to achieve comprehensive pre-mapping with considerable quality. Besides, online data reloading can also be eliminated through memory sharing, but the traditional arbiter-based approach has the difficulty of trading off physical complexity and memory access parallelism. PreTrans is the first system design to achieve the efficient CGRA multi-task context switch. PreTrans first avoids the online config transformation through a software incremental pre-mapper, which re-utilizes the previously finished pre-mapping results to dramatically accelerate the pre-mapping of subsequent resource allocation decisions with negligible mapping quality loss. Secondly, PreTrans replaces the traditional arbiter with a hardware data transceiver to better support the memory sharing that eliminates data reloading, which allows each tile to possess an individual memory that maximizes the access parallelism without introducing significant physical overhead. The overall evaluation demonstrates that PreTrans achieves 1.13$\sim 2.46\times$ throughput improvement on pipeline and parallel multi-task scenarios, and can reach the target throughput immediately after the new resource allocation decision takes effect. Ablation study further shows that the pre-mapper is more than 3 magnitudes faster than the traditional CGRA mapper while maintaining more than 99% of the optimal mapping quality, and the data transceiver only introduces 9.02% hardware area overhead under 16×16 CGRA.},
+  archive      = {J_TPDS},
+  author       = {Yufei Yang and Chenhao Xie and Liansheng Liu and Xiyuan Peng and Yu Peng and Hailong Yang and Depei Qian},
+  doi          = {10.1109/TPDS.2025.3604815},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3605272'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task scheduling for parallel computing is strongly NP-hard even without precedence constraints $P||C_{max}$. With any kind of precedence constraints and communication delays the problem becomes less manageable still. We look at the specific case of scheduling under the precedence constraints of a fork-join structure (including communication delays) $P[Q]|fork-join, c_{ij}|C_{max}$. This represents any kind of computation that divides into sub-computations with the end results being processed together. Looking at special cases where computation costs are equal, we propose polynomial time approximations and exact algorithms for them, considering homogenous and (related) heterogenous processors. Having those algorithms allows us to study the quality of heuristics in a large experimental evaluation. This demonstrates that heuristic schedulers perform well enough in most cases.},
+  archive      = {J_TPDS},
+  author       = {Huijun Wang and Oliver Sinnen},
+  doi          = {10.1109/TPDS.2025.3605272},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximation algorithms for scheduling with/without deadline constraints where rejection costs are proportional to processing times. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3605674'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study two offline job scheduling problems where tasks can be processed on a limited number of energy-efficient edge machines or offloaded to an unlimited supply of energy-inefficient cloud machines (called rejected). The objective is to minimize total energy consumption. First, we consider scheduling without deadlines, formulating it as a scheduling problem with rejection, where rejection costs are proportional to processing times. We propose a novel $\frac{5}{4}(1+\epsilon )$-approximation algorithm, $\mathcal{BEKP}$, by associating it to a Multiple Subset Sum problem, improving upon the existing $(\frac{3}{2} - \frac{1}{2m})$-approximation for arbitrary rejection costs. Next, we address scheduling with deadlines, aiming to minimize the weighted number of rejected jobs. We position this problem within the literature and introduce a new $(1-\frac{(m-1)^{m}}{m^{m}})$-approximation algorithm, $\mathcal{MDP}$, inspired by an interval selection algorithm with a $(1-\frac{m^{m}}{(m+1)^{m}})$-approximation for arbitrary rejection costs. Experimental results demonstrate that $\mathcal{BEKP}$ and $\mathcal{MDP}$ obtain better results (lower costs or higher profits) than other state-of-the-art algorithms while maintaining a competitive or better time complexity.},
+  archive      = {J_TPDS},
+  author       = {Olivier Beaumont and Rémi Bouzel and Lionel Eyraud-Dubois and Esragul Korkmaz and Laércio Lima Pilla and Alexandre Van Kempen},
+  doi          = {10.1109/TPDS.2025.3605674},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Approximation algorithms for scheduling with/without deadline constraints where rejection costs are proportional to processing times},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DynPipe: Towards dynamic end-to-end pipeline parallelism for interference-aware DNN training. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3605491'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pipeline parallelism has emerged as an indispensable technique for training large deep neural networks. While existing asynchronous pipeline systems address the time bubbles inherent in synchronous architectures, they continue to suffer from inefficiency and susceptibility to volatile hardware environment due to their suboptimal and static configurations. In this paper, we propose DynPipe, an interference-aware asynchronous pipeline framework to optimize the end-to-end training performance in highly dynamic computing environments. By characterizing the non-overlapped communication overheads and convergence rate conditioned on stage-wise staleness, DynPipe carefully crafts an optimized pipeline partition that harmonizes the hardware speed with statistical convergence. Moreover, DynPipe deploys a non-intrusive random forest model that utilizes runtime stage statistics to evaluate the impact of environmental changes, such as task interference and network jitter, on the training efficiency. Following the evaluation guidance, DynPipe adaptively adjusts partition plan to restore both intra and inter-stage load balancing, thereby facilitating seamless pipeline reconfiguration in dynamic environments. Extensive experiments show that DynPipe outperforms state-of-the-art systems, accelerating the time-to-accuracy by 1.5-3.4×.},
+  archive      = {J_TPDS},
+  author       = {Zhengyi Yuan and Xiong Wang and Yuntao Nie and Yufei Tao and Yuqing Li and Zhiyuan Shao and Xiaofei Liao and Bo Li and Hai Jin},
+  doi          = {10.1109/TPDS.2025.3605491},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {DynPipe: Towards dynamic end-to-end pipeline parallelism for interference-aware DNN training},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3605780'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Approximate membership query (AMQ) data structures can approximately determine whether an element exists in a given dataset. They are widely used in parallel and distributed systems (e.g., high-performance databases, distributed cache systems, and bioinformatics systems) to avoid unnecessary dataset accesses, thereby accelerating massive data processing. For AMQ data structures used in the above systems, achieving high throughput, low false positive rate, and large capacity objectives simultaneously is critical but challenging. Porting AMQ data structures from DRAM to persistent memory makes it possible to achieve the above three objectives simultaneously, but this porting is not a trivial task. Specifically, existing AMQ data structures generate numerous random accesses and/or sequential writes on persistent memory, resulting in poor throughput. Therefore, in the conference version of this paper, we proposed a novel AMQ data structure called wormhole filter, which achieves high throughput on persistent memory, thereby achieving the above three objectives simultaneously. In this journal version, we extend our prior work by introducing parallel wormhole filters to enhance parallel performance. Additionally, we integrate parallel wormhole filters into the LevelDB database system to show that porting AMQ data structures to persistent memory significantly improves system endto-end throughput. Theoretical analysis and experimental results show that wormhole filters significantly outperform state-of-theart AMQ data structures. For example, wormhole filters achieve 12.06× insertion throughput, 1.98× positive lookup throughput, and 8.82× deletion throughput of the best competing baseline.},
+  archive      = {J_TPDS},
+  author       = {Hancheng Wang and Haipeng Dai and Shusen Chen and Meng Li and Rong Gu and Youyou Lu and Chengxun Wu and Jiaqi Zheng and Lexi Xu and Guihai Chen},
+  doi          = {10.1109/TPDS.2025.3605780},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3606001'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Computation offloading utilizes powerful cloud and edge resources to process workflow applications offloaded from Mobile Devices (MDs), effectively alleviating the resource constraints of MDs. In end-edge-cloud environments, workflow applications typically exhibit complex task dependencies. Meanwhile, parallel tasks from multi-MDs result in an expansive solution space for offloading decisions. Therefore, determining optimal offloading plans for highly dynamic and complex end-edge-cloud environments presents significant challenges. The existing studies on offloading tasks for multi-MD workflows often adopt centralized decision-making methods, which suffer from prolonged decision time, high computational overhead, and inability to identify suitable offloading plans in large-scale scenarios. To address these challenges, we propose a Multi-agent Collaborative method for Workflow Task offloading in end-edge-cloud environments with the Actor-Critic algorithm called MCWT-AC. First, each MD is modeled as an agent and independently makes offloading decisions based on local information. Next, each MD's workflow task offloading decision model is obtained through the Actor-Critic algorithm. At runtime, an effective workflow task offloading plan can be gradually developed through multi-agent collaboration. Extensive simulation results demonstrate that the MCWT-AC exhibits superior adaptability and scalability. Moreover, the MCWT-AC outperforms the state-of-art methods and can quickly achieve optimal/near-optimal performance.},
+  archive      = {J_TPDS},
+  author       = {Bohuai Xiao and Chujia Yu and Xing Chen and Zheyi Chen and Geyong Min},
+  doi          = {10.1109/TPDS.2025.3606001},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ToT: Triangle counting on tensor cores. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3606878'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Triangle counting is a fundamental graph algorithm used to identify the number of triangles within a graph. This algorithm can be reformulated into linear algebraic operations, including sparse matrix multiplication, intersection and reduction. Modern GPUs, equipped with Tensor Cores, offer massive parallelism that can significantly accelerate graph algorithms. However, leveraging Tensor Cores, originally designed for dense matrix multiplication, to handle sparse workloads for triangle counting presents non-trivial challenges. In this paper, we conduct an in-depth analysis of the state-of-the-art techniques that utilize Tensor Cores for matrix operations, identifying critical performance shortfalls. Based on these insights, we introduce ToT, which enhances the utilization of Tensor Cores and expands their functionalities for diverse sparse matrix operations. In experiments, ToT is evaluated against state-of-the-art methods. ToT outperforms the second-fastest method with a 3.81× speedup in end-to-end execution. Also, it achieves up to 17.00× memory savings. This work represents a pioneering exploration into utilizing Tensor Cores for accelerating the triangle counting algorithm.},
+  archive      = {J_TPDS},
+  author       = {YuAng Chen and Jeffrey Xu Yu},
+  doi          = {10.1109/TPDS.2025.3606878},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {ToT: Triangle counting on tensor cores},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MIST: Towards MPI instant startup and termination on tianhe HPC systems. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3608434'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the size of MPI programs grows with expanding HPC resources and parallelism demands, the overhead of MPI startup and termination escalates due to the inclusion of less scalable global operations. Global operations involving extensive cross-machine communication and synchronization are crucial for ensuring semantic correctness. The current focus is on optimizing and accelerating these global operations rather than removing them, as the latter involves systematic changes to the system software stack and may impact program semantics. Given this background, we propose a systematic solution named MIST to safely eliminate global operations in MPI startup and termination. Through optimizing the generation of communication addresses, designing reliable communication protocols, and exploiting the resource release mechanism, MIST eliminates all global operations to achieve MPI instant startup and termination while ensuring correct program execution. Experiments on Tianhe-2A supercomputer demonstrate that MIST can reduce the MPI_Init() time by 32.5-77.6% and the MPI_Finalize() time by 28.9-85.0%.},
+  archive      = {J_TPDS},
+  author       = {Yiqin Dai and Ruibo Wang and Yong Dong and Min Xie and Juan Chen and Wenzhe Zhang and Huijun Wu and Mingtian Shao and Kai Lu},
+  doi          = {10.1109/TPDS.2025.3608434},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {MIST: Towards MPI instant startup and termination on tianhe HPC systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3609152'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph neural network (GNN) is a state-of-the-art technique for learning structural information from graph data. However, training GNNs on large-scale graphs is very challenging due to the size of real-world graphs and the message-passing architecture of GNNs. One promising approach for scaling GNNs is distributed training across multiple accelerators, where each accelerator holds a partitioned subgraph that fits in memory to train the model in parallel. Existing distributed GNN training methods require frequent and prohibitive embedding exchanges between partitions, leading to substantial communication overhead and limited the training efficiency. To address this challenge, we propose XDGNN, a novel distributed GNN training method that eliminates the forward communication bottleneck and thus accelerates training. Specifically, we design an explanation-guided subgraph expansion technique that incorporates important structures identified by eXplanation AI (XAI) methods into local partitions, mitigating information loss caused by graph partitioning. Then, XDGNN conducts communication-free distributed training on these self-contained partitions through training the model in parallel without communicating node embeddings in the forward phase. Extensive experiments demonstrate that XDGNN significantly improves training efficiency while maintaining the model accuracy compared with current distributed GNN training methods.},
+  archive      = {J_TPDS},
+  author       = {Jie Gao and Jia Hu and Geyong Min and Fei Hao},
+  doi          = {10.1109/TPDS.2025.3609152},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedBiF: Communication-efficient federated learning via bits freezing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3610224'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) is an emerging distributed machine learning paradigm that enables collaborative model training without sharing local data. Despite its advantages, FL suffers from substantial communication overhead, which can affect training efficiency. Recent efforts have mitigated this issue by quantizing model updates to reduce communication costs. However, most existing methods apply quantization only after local training, introducing quantization errors into the trained parameters and potentially degrading model accuracy. In this paper, we propose Federated Bit Freezing (FedBiF), a novel FL framework that directly learns quantized model parameters during local training. In each communication round, the server first quantizes the model parameters and transmits them to the clients. FedBiF then allows each client to update only a single bit of the multi-bit parameter representation, freezing the remaining bits. This bit-by-bit update strategy reduces each parameter update to one bit while maintaining high precision in parameter representation. Extensive experiments are conducted on five widely used datasets under both IID and Non-IID settings. The results demonstrate that FedBiF not only achieves superior communication compression but also promotes sparsity in the resulting models. Notably, FedBiF attains accuracy comparable to FedAvg, even when using only 1 bit-per-parameter (bpp) for uplink and 3 bpp for downlink communication. The code is available at https://github.com/Leopold1423/fedbif-tpds25.},
+  archive      = {J_TPDS},
+  author       = {Shiwei Li and Qunwei Li and Haozhao Wang and Ruixuan Li and Jianbin Lin and Wenliang Zhong},
+  doi          = {10.1109/TPDS.2025.3610224},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FedBiF: Communication-efficient federated learning via bits freezing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3610354'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Exascale high-performance computing (HPC) systems face critical resource management challenges such as massive energy consumption in megawatts per facility, performance variability for identical jobs, and resource utilization inefficiencies. Traditional single-objective schedulers cannot address these multifaceted challenges effectively. This paper introduces HARMONIC (Holistic Adaptive Resource Management Optimizing Next-generation Interconnected Computing), a novel framework that simultaneously optimizes performance, energy efficiency, and resilience through uncertainty-aware multi-objective optimization. Our approach distinguishes aleatoric uncertainty (inherent system variability) from epistemic uncertainty (modeling limitations) using Bayesian neural networks and employs graphbased representations to capture complex system dependencies. Experimental validation in both simulated environments and controlled testbeds demonstrates significant improvements over state-of-the-art schedulers: 10-19% energy reduction, 16-25% throughput improvement and 18-32% performance variability reduction. These results translate to potential annual savings of multimillion dollars per exascale facility while enhancing scientific productivity through improved experimental reproducibility.},
+  archive      = {J_TPDS},
+  author       = {Kyrian C. Adimora and Hongyang Sun},
+  doi          = {10.1109/TPDS.2025.3610354},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedSR: A semi-decentralized federated learning framework for non-IID data based on incremental subgradient optimization. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3611304'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the Industrial Internet of Things (IoT), data heterogeneity across different devices poses a huge challenge to federated learning techniques, significantly reducing the performance of federated learning models. Additionally, the large number of devices participating in IoT federated learning and training imposes a substantial computational burden on cloud servers. Current federated learning research primarily adopts centralized or discentralized learning architectures, which cannot fundamentally solve these issues. To address this, we propose a novel semi-centralized cloud-edge-device hierarchical federate learning framework that integrated both centralized and decentralized federated learning approaches. Specifically, only a subset of adjacent devices forms small-scale ring clusters, and the cloud server aggregates the ring models to construct a global model. To mitigate the impact of data heterogeneity across devices, we use an incremental subgradient optimization algorithm within each ring cluster to enhance the generalization ability of the ring cluster models. Extensive experiments demonstrate that our approach effectively reduces the impact of data heterogeneity, improves model performance, and significantly alleviates the communication burden on cloud servers compared to centralized and discentralized federated learning frameworks. Indeed, the framework proposed in this paper aims to balance the strengths of centralized federated learning and ring federated learning. It achieves superior performance in addressing the data non-IID problem compared to centralized federated learning architectures while also mitigating issues associated with excessively large rings in ring architectures.},
+  archive      = {J_TPDS},
+  author       = {Jianjun Huang and Hao Huang and Li Kang and Lixin Ye},
+  doi          = {10.1109/TPDS.2025.3611304},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FedSR: A semi-decentralized federated learning framework for non-IID data based on incremental subgradient optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). New scheduling algorithm and analysis for partitioned periodic DAG tasks on multiprocessors. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3611446'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time systems are increasingly shifting from single processors to multiprocessors, where software must be parallelized to fully exploit the additional computational power. While the scheduling of real-time parallel tasks modeled as directed acyclic graphs (DAGs) has been extensively studied in the context of global scheduling, the scheduling and analysis of real-time DAG tasks under partitioned scheduling remain far less developed compared to the traditional scheduling of sequential tasks. Existing approaches primarily target plain fixed-priority partitioned scheduling and often rely on self-suspension–based analysis, which limits opportunities for further optimization. In particular, such methods fail to fully leverage fine-grained scheduling management that could improve schedulability. In this paper, we propose a novel approach for scheduling periodic DAG tasks, in which each DAG task is transformed into a set of real-time transactions by incorporating mechanisms for enforcing release offsets and intra-task priority assignments. We further develop corresponding analysis techniques and partitioning algorithms. Through comprehensive experiments, we evaluate the real-time performance of the proposed methods against state-of-the-art scheduling and analysis techniques. The results demonstrate that our approach consistently outperforms existing methods for scheduling periodic DAG tasks across a wide range of parameter settings.},
+  archive      = {J_TPDS},
+  author       = {Haochun Liang and Xu Jiang and Junyi Liu and Xiantong Luo and Songran Liu and Nan Guan and Wang Yi},
+  doi          = {10.1109/TPDS.2025.3611446},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {New scheduling algorithm and analysis for partitioned periodic DAG tasks on multiprocessors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3611388'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data locality is crucial for distributed computing systems (e.g., Spark and Hadoop), which is the main factor considered in the task scheduling. Simultaneously, the effects of data locality on reduce tasks are determined by the intermediate data partitioning. While suffering from the problem of data skew, the existing intermediate data partitioning methods only achieves load balancing for reduce tasks. To address the problem, this paper optimizes the data locality for reduce tasks by integrating intermediate data partitioning and task scheduling in Spark framework. First, it presents a distribution skew model to divide the key clusters into skewed and non-skewed distribution. Then, a data locality and load balancing-aware intermediate data partitioning method is proposed, where a priority allocation strategy for the key clusters with skewed distribution is presented, and a balanced allocation strategy for the key clusters with non-skewed distribution is presented. Finally, it proposes a data locality-aware reduce task scheduling algorithm, where an online self-adaptive NARX (nonlinear autoregressive with external input) model is developed to predict the idle time of node. It can ensure that the delayed scheduling decision made can complete the data transmission of reduce tasks earlier. We implement our proposals in Spark-3.5.1 and evaluate the performance using several representative benchmarks. Experimental results indicate that the proposed method and algorithm can reduce the job/application running time by approximately 4% to 46% and decrease the total volume of data transmission by approximately 8% to 54%.},
+  archive      = {J_TPDS},
+  author       = {Mengsi He and Zhongming Fu and Zhuo Tang},
+  doi          = {10.1109/TPDS.2025.3611388},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

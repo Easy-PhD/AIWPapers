@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ICOMPUT</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="icomput">ICOMPUT - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Graph-enhanced spatiotemporal trajectory similarity learning. <em>ICOMPUT</em>, <em>4</em>, 0169. (<a href='https://doi.org/10.34133/icomputing.0169'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advent of location information platforms based on global positioning systems has led to a proliferation of spatiotemporal trajectory data, which has, in turn, made the analysis of such data available to a broad range of applications, including traffic prediction, route planning, and trajectory similarity computation. Traditional methods for calculating trajectory similarity often suffer from high computational costs due to quadratic time complexity, particularly when dealing with large datasets. To this end, deep learning-based approaches to trajectory similarity learning have been proposed, with a view to offering enhanced efficiency and adaptability in comparison with traditional methods. However, these methods primarily focus on spatial trajectory similarity and fail to capture important temporal periodicity. Moreover, most of them directly use recurrent neural networks to obtain trajectory representations, while ignoring the spatial proximity information between neighboring regions. To address these limitations, we propose a graph-enhanced spatiotemporal trajectory network, named GST, which integrates both spatial and temporal information to effectively learn trajectory similarity. Specifically, our model incorporates a graph neural network to capture the spatial proximity relationships and a time-embedding module to model the temporal periodicity information, thereby providing a more comprehensive spatiotemporal trajectory representation learning paradigm. Extensive experiments on 2 real-life datasets demonstrate that our model outperforms existing state-of-the-art methods in terms of accuracy. In addition, ablation studies demonstrate the effectiveness of the proposed spatiotemporal learning mechanism.},
+  archive      = {J_ICOMPUT},
+  author       = {Xijuan Liu and Zhangyi Xu and Haobo Wei and Peilun Yang},
+  doi          = {10.34133/icomputing.0169},
+  journal      = {Intelligent Computing},
+  month        = {9},
+  pages        = {0169},
+  shortjournal = {Intell. Comput.},
+  title        = {Graph-enhanced spatiotemporal trajectory similarity learning},
+  volume       = {4},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

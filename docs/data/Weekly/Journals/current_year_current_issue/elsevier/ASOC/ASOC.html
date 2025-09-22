@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ASOC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="asoc">ASOC - 32</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Detail-aware semantic segmentation network for brain tumor MRI images combining multi-frequency directional filtering and lifting wavelets. <em>ASOC</em>, <em>185</em>, 113969. (<a href='https://doi.org/10.1016/j.asoc.2025.113969'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Brain tumors segmentation in Magnetic Resonance Imaging (MRI) images poses significant challenges owing to the uncertain location and size of the tumors, the difficulty in describing their boundaries, and the fuzzy demarcation of diseased tissues. Although U-Net and its recent variants have emerged as leading models for semantic segmentation in medical imaging, they still face structural limitations. These limitations cause the erosion of detail information during downsampling and poor performance in segmenting small lesions when handling targets of varying sizes, indicating a lack of detail handling capability. To counteract these issues, we designed a segmentation model that enhances detail features using frequency information. To reduce the loss of feature information during downsampling, we developed a downsampling module based on lifting wavelets. By lifting wavelets to group and integrate features according to frequency from high to low, we reduce feature resolution while enhancing information transmission and minimizing feature information loss. In our designed multi-frequency directional filtering edge feature extraction module, we extract low-frequency and high-frequency features and construct a dual-channel multi-directional filtering combination. This combination extracts directional information from low-frequency and high-frequency features separately, increasing the multi-angle directional information of the features and enriching the detailed information such as direction and position within the features. On the BraTS2018, BraTS2020, and BraTS2024 brain tumor datasets, our model demonstrated optimal results compared to 14 other advanced models. The average Dice Similarity Coefficients are 78.48 %, 79.80 %, and 74.35 %, while the 95th percentile Hausdorff Distances are 5.75, 6.60, and 7.72. Our code link is https://github.com/Eric-H8/BraTS_Seg_Model .},
+  archive      = {J_ASOC},
+  author       = {Xin Hua and Zhijiang Du and Hongjian Yu and Zibo Li and Qiaohui Lu and Hui Zhao},
+  doi          = {10.1016/j.asoc.2025.113969},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113969},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Detail-aware semantic segmentation network for brain tumor MRI images combining multi-frequency directional filtering and lifting wavelets},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DT and LLM driven intelligent maintenance system for L-DED and DAG-based LLM fault diagnosis evaluation framework. <em>ASOC</em>, <em>185</em>, 113942. (<a href='https://doi.org/10.1016/j.asoc.2025.113942'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Metal additive manufacturing (AM) has revolutionized industries such as aerospace and automotive manufacturing due to its ability to rapidly prototype complex structures. Laser Directed Energy Deposition (L-DED) is a key AM technique, offering high deposition rates and superior mechanical properties. However, the inherent complexity and high cost of L-DED equipment demand reliable maintenance management to minimize downtime. Traditional maintenance approaches struggle to keep pace with escalating production demands and to cope with growing equipment complexity. To address this, we propose a dual-driven intelligent maintenance system for L-DED, integrating Digital Twins (DT) and Large Language Models (LLMs). The system features a comprehensive DT framework that synchronizes the virtual entity with the physical one in real time, it also incorporates an intelligent maintenance Q&A assistant powered by Retrieval-Augmented Generation (RAG), leveraging L-DED maintenance knowledge bases to provide accurate operational support. Additionally, we propose a Directed Acyclic Graphs (DAG)-based framework to assess LLMs’ ability to guide users through complete fault diagnosis. Our work aims to enhance the reliability and efficiency of L-DED maintenance through advanced digital technologies, ultimately improving productivity and reducing downtime in additive manufacturing.},
+  archive      = {J_ASOC},
+  author       = {Jian Tang and Shitong Peng and Jianan Guo and Danya Song and Dongna Gao and Weiwei Liu and Fengtao Wang},
+  doi          = {10.1016/j.asoc.2025.113942},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113942},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {DT and LLM driven intelligent maintenance system for L-DED and DAG-based LLM fault diagnosis evaluation framework},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new large model with multi-scale feature fusion for fault diagnosis based on unified time series model. <em>ASOC</em>, <em>185</em>, 113941. (<a href='https://doi.org/10.1016/j.asoc.2025.113941'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large model technology exemplified by large language models has been applied in the field of industrial fault diagnosis. However, existing large models are optimized for specific equipment types and have yet to fully exploit the potential of time-series monitoring data to enable widespread application across diverse mechanical equipment in various industrial scenarios. To address this challenge, a fault diagnosis large model (UniTS-FD) is designed based on unified time series model (UniTS). First, a multi-scale feature fusion backbone network is developed based on UniTS backbone to capture general mechanical fault features. Second, the fault classification head integrates the Pearson correlation coefficient to assess the similarity of class information within linear space for enabling adaptive classification. Third, P-LoRA fine-tuning approach incorporating LoRA and prompt technology is proposed to fine-tune the fault classification head, which enhances the generalization ability of the UniTS-FD model for fault diagnosis tasks of various mechanical equipment. Finally, the UniTS-FD model is pre-trained on 11 fault datasets and fine-tuning experiments were conducted on four different fault datasets to achieve cross-machine fault diagnosis. Experimental results demonstrate the effectiveness of the UniTS-FD in fault diagnosis tasks.},
+  archive      = {J_ASOC},
+  author       = {Zhiwei Zhang and Chengbin Wei and Weimin Zhang and Long Wen},
+  doi          = {10.1016/j.asoc.2025.113941},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113941},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {A new large model with multi-scale feature fusion for fault diagnosis based on unified time series model},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards agentic smart design: An industrial large model-driven human-in-the-loop agentic workflow for geometric modelling. <em>ASOC</em>, <em>185</em>, 113920. (<a href='https://doi.org/10.1016/j.asoc.2025.113920'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Agentic workflows, powered by Industrial Large Models (ILMs), represent a significant development emphasizing collaboration between humans and intelligent systems. This paper presents a structured perspective on the role of agentic workflows for smart design and manufacturing, grounded in integrating ILMs. We define an agentic workflow as a labeled Activity-on-Vertex (AOV) graph, where each node represents a functionally closed subtask and is executed by an ILM-based agent, a human operator, or an automated system. This formalism supports analyzable, modular, and hybrid execution, offering a foundation for modeling complex, mixed-initiative processes in manufacturing environments. To support real-world deployment, we introduce a set of reusable agentic workflow patterns that describe how ILM agents perceive, plan, and act in coordination with other components. Besides, a proof-of-concept case study illustrates the practical application of the human-in-the-loop framework through the agentic generation of CAD models. The study covers task decomposition, workflow implementation, and benchmarking, providing evidence for the feasibility of agentic workflows. Building upon these findings, this work contributes to advancing the development and application of agentic workflows in smart manufacturing contexts.},
+  archive      = {J_ASOC},
+  author       = {Keyou Zheng and Yuanwei Zhong and Xuyang Su and Jiewu Leng and Qiang Liu and Xin Chen},
+  doi          = {10.1016/j.asoc.2025.113920},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113920},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Towards agentic smart design: An industrial large model-driven human-in-the-loop agentic workflow for geometric modelling},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time traffic flow optimization using large language models and reinforcement learning for smart urban mobility. <em>ASOC</em>, <em>185</em>, 113917. (<a href='https://doi.org/10.1016/j.asoc.2025.113917'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The exponential growth of metropolitan populations causes transportation network congestion, which increases fuel usage, travel time, and environmental damage. Traditional traffic management systems (TMS) seldom handle these issues in real time. Recently developed Large Language Models (LLMs), especially those using Reinforcement Learning (RL), may enhance urban transportation systems. Traffic management technology's real-time flexibility and shifting congestion patterns provide improved potential. Traditional approaches cannot estimate traffic flow or adapt to urban settings. A strong AI-driven method is needed to improve urban mobility and traffic flow. This paper introduces the LLM-RL Traffic Optimization Framework (LLM-RL-TOF). LLMs analyze real-time traffic data and give predictive insights in this context. Due to these new insights, the RL algorithm can improve traffic flow in real time and reduce congestion via dynamic traffic management. IoT sensors and urban traffic cameras capture real-time traffic data, including traffic volume and incidents. This data helps the LLM estimate bottlenecks, accidents, and traffic congestion. An RL agent uses LLM outputs to adjust traffic signal timing and suggest alternate routes. With real-time alternatives, traffic flow and urban mobility may be optimized. The junction throughput rate rose 17.5 %, the queue length accumulation index fell 22.3 %, and the average vehicle delay fell 18.6 %. The decrease in average vehicle delay enabled all these gains.},
+  archive      = {J_ASOC},
+  author       = {Arvind R. Singh and Muhammad Wasim Abbas Ashraf and Rajkumar Singh Rathore and Bin Li and M.S. Sujatha},
+  doi          = {10.1016/j.asoc.2025.113917},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113917},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Real-time traffic flow optimization using large language models and reinforcement learning for smart urban mobility},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Wind turbine blades defect detection based on global and local attention with multi-feature fusion. <em>ASOC</em>, <em>185</em>, 113914. (<a href='https://doi.org/10.1016/j.asoc.2025.113914'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Wind turbine blades are prone to small-scale defects—such as cracks, corrosion, and contamination—during long-term operation. Accurate detection of these defects is essential for ensuring the safety and efficiency of wind power systems. However, small-object detection remains challenging due to limited feature representation and weak discriminative cues. To address this, an enhanced YOLOX-s-based framework called Global-Frequency Dual-aware YOLOX (GFD-YOLOX) is proposed. GFD-YOLOX introduces three main improvements. First, the Path Aggregation Feature Pyramid Network (PAFPN) in the neck is replaced with Dual-Frequency Fused Bidirectional Feature Pyramid Network (DFF-BiFPN) to strengthen multi-scale contextual representation. Second, the backbone bottleneck is redesigned with a lightweight structure, improving computational efficiency and convergence speed. Third, a Hierarchical Frequency-Adaptive Fusion (HFAF) module is integrated to enhance cross-scale feature interaction by combining fine-grained and global information. On the self-constructed WTBlade-Defect dataset (3570 annotated images, five defect types: corrosion, hide-craze, surface-eye, thunderstrike, dirt), GFD-YOLOX achieves mAP@0.5 and mAP@0.5:0.95 scores of 94.5 % and 68.9 %, respectively, with 44.3 FPS inference—improving by 13.6 % and 14.4 % over state-of-the-art models. On the public dataset of Ashley Foster et al., it achieves 94.8 % and 69.3 %, with gains of 10.4 % and 10.9 %. These results demonstrate that GFD-YOLOX delivers substantial accuracy gains while maintaining real-time speed and strong cross-dataset generalization, indicating high potential for deployment in operational wind turbine inspection systems.},
+  archive      = {J_ASOC},
+  author       = {Dandan Liu and Mingjie Liu},
+  doi          = {10.1016/j.asoc.2025.113914},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113914},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Wind turbine blades defect detection based on global and local attention with multi-feature fusion},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interval multi-feature sparse transformer-CNN: A synergistic approach to precise and efficient spatio-temporal wind speed interval-value prediction. <em>ASOC</em>, <em>185</em>, 113910. (<a href='https://doi.org/10.1016/j.asoc.2025.113910'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate and reliable wind speed prediction is critical for stabilizing wind power integration. However, current methods are limited by accuracy and stability issues, hindering their large-scale application in wind farms. To overcome these problems, this study innovatively proposes an IMFSformer-CNN model integrating three core components. First, the spatio-temporal and multi-factor feature extraction technology comprehensively captures the spatio-temporal patterns and complex dependencies of wind speed dynamics, incorporating multiple factors such as meteorological variables and spatial correlation. Second, the multi-feature sparse attention mechanism reduces computational complexity by combining sparse attention with multi-feature attention, enhancing representation ability and scalability for precise interval value prediction. Finally, the enhanced interval spatio-temporal prediction fusion model combines the global dependency modeling capabilities of the improved Transformer architecture with the local receptive field advantages of CNN. This hybrid design facilitates the simultaneous capture of both macro-scale atmospheric patterns and micro-scale wind speed fluctuations. The model achieved prediction interval coverage probabilities of 0.921 and 0.899, and coverage width criteria of 1.493 and 3.776, outperforming other models on both datasets. This significantly enhances accuracy and practical value for wind farm cluster forecasting, supporting more reliable and efficient wind energy integration into power grids.},
+  archive      = {J_ASOC},
+  author       = {Weiyi Jiang and Jujie Wang and Xuecheng He},
+  doi          = {10.1016/j.asoc.2025.113910},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113910},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Interval multi-feature sparse transformer-CNN: A synergistic approach to precise and efficient spatio-temporal wind speed interval-value prediction},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-granularity spatiotemporal fusion neural network with denoising reconstruction for human motion prediction. <em>ASOC</em>, <em>185</em>, 113909. (<a href='https://doi.org/10.1016/j.asoc.2025.113909'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human motion prediction has significant application value in many fields. However, existing methods often fail to fully capture the spatial relationships between joints and the temporal flow of information when modeling complex spatiotemporal dependencies. Additionally, these methods are prone to overfitting dominant features while neglecting other important aspects, and struggle with perceiving contour features effectively. To address these issues, this study introduces a novel encoder-decoder framework. The encoder generates a dual-layer adaptive adjacency matrix using a distance partition strategy to parameterize joint relationships, while incorporating a gating mechanism to control the temporal flow of information. The decoder then employs separate spatiotemporal attention modules to decode temporal and spatial features independently. These features are subsequently reconstructed through a spatiotemporal fusion strategy, effectively decoupling and modeling complex spatiotemporal dependencies. To address the issue of overfitting to dominant features, we introduce a denoising reconstruction strategy that allows the model to learn richer combinations of spatiotemporal features under multiple constraints. Furthermore, a multi-granularity information adaptive fusion module is incorporated to achieve adaptive fusion of both local and contour features. Experimental results across several benchmark datasets demonstrate that our method significantly outperforms the state-of-the-art approaches, showcasing its effectiveness in human motion prediction tasks.},
+  archive      = {J_ASOC},
+  author       = {Yong Li and Linfeng Zhu and Haofei Xie and Xinchang Yi},
+  doi          = {10.1016/j.asoc.2025.113909},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113909},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Multi-granularity spatiotemporal fusion neural network with denoising reconstruction for human motion prediction},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prediction of the risk level of saltwater intrusion in the modaomen waterway of the pearl river estuary based on the deep temporal clustering model. <em>ASOC</em>, <em>185</em>, 113897. (<a href='https://doi.org/10.1016/j.asoc.2025.113897'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, extreme events caused by global climate change have intensified the phenomenon of saltwater intrusion (SWI) in estuaries. The nonlinear and non-stationary characteristics of estuarine SWI have led to an exponential decline in the timeliness of traditional regression prediction models, making it difficult to meet the operational needs of SWI forecasting. To address this, this study proposed a technical framework for SWI risk level forecasting based on temporal clustering, with its core innovation lying in algorithmic improvements for accurately characterizing complex disaster systems. The key challenges in forecasting SWI risk levels involved capturing the dynamic nonlinear relationships between multidimensional disaster factors (such as runoff, tide level, and wind) and SWI severity, as well as enhancing feature discriminability in label-limited scenarios. Accordingly, this study optimized algorithms through dual-path supervised and unsupervised learning: In the supervised learning framework, LightGBM, RF, XGBoost, and Extra trees were introduced as base learners into the Deep Forest (DF) model. The complementary feature-space partitioning of diverse learners was leveraged to improve the model’s ability to distinguish risk -level boundaries, achieving an average performance gain of 7.8 %. In the unsupervised learning framework, discriminative regularization was incorporated into the Extreme Learning Machine-Autoencoder (ELM-AE) model. By forcing features of samples from the same class to cluster toward the class center, the model’s feature separability for rare events (e.g., severe SWI) was enhanced, leading to an average performance improvement of 11 %. Finally, the optimal model was used to extract dynamic evolution patterns between multidimensional disaster factors and SWI risk levels, with interpretability analysis conducted for real-world forecasting. Notably, upstream flow sequences exhibited high distinguishability between no-SWI and severe-SWI, while mild and moderate SWI showed similar flow patterns, with tidal sequences being the primary differentiator. The algorithmic advancements not only enhanced the accuracy and efficiency of SWI forecasting but also provided a generalizable framework for risk classification in nonlinear hydrological systems.},
+  archive      = {J_ASOC},
+  author       = {Qingqing Tian and Hongyu Yang and Yu Tian and Peiyao Weng},
+  doi          = {10.1016/j.asoc.2025.113897},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113897},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Prediction of the risk level of saltwater intrusion in the modaomen waterway of the pearl river estuary based on the deep temporal clustering model},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Contrastive learning with mirror-task for multimodal sentiment analysis. <em>ASOC</em>, <em>185</em>, 113896. (<a href='https://doi.org/10.1016/j.asoc.2025.113896'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-Task Learning (MTL) in Multimodal Sentiment Analysis (MSA) involves implementing various parameter-sharing strategies among tasks. Currently, MSA primarily focuses on hard parameter-sharing mechanisms based on encoder sharing, while soft parameter-sharing is often neglected. To explore a reasonable combination of soft and hard mechanisms in MSA and optimize multimodal representations, along with multimodal contrastive learning, we propose D 3 MSA. It consists of D ouble network (primaryNet and MirrorNet), D ouble parameter-sharing strategies and D ouble contrastive learning modes for multimodal sentiment analysis. D 3 MSA utilizes hard-sharing to consolidate correlations between positive samples of intra-sample contrastive learning. In soft-sharing, we propose a pre-trained MirrorNet (MN) that generates negative samples by the learned inverse distributions. This optimizes the feature space of negative samples. MN interacts with the MSA task through soft-sharing during inter-sample contrastive learning. Experimental results demonstrate that our proposed method can achieve advanced performance on the CMU-MOSI and CMU-MOSEI datasets with lightweight training that requires only a small number of parameters.},
+  archive      = {J_ASOC},
+  author       = {Hang Shi and Lianmin Zhou and Yuanyuan Pu and Zhengpeng Zhao and Jinjing Gu and Dan Xu},
+  doi          = {10.1016/j.asoc.2025.113896},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113896},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Contrastive learning with mirror-task for multimodal sentiment analysis},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A nearest-best neighbors optimization algorithm for constrained multimodal multiobjective problems. <em>ASOC</em>, <em>185</em>, 113895. (<a href='https://doi.org/10.1016/j.asoc.2025.113895'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constrained multimodal multiobjective problems (CMMOPs) have multiple equivalent constrained Pareto optimal sets in the decision space corresponding to the identical constrained Pareto front in the objective space. The key to solving CMMOPs is how to balance feasibility, convergence, and diversity of solutions in both the decision and objective spaces. In view of this, this paper proposes a Nearest-Best neighbors optimization algorithm with constraint-based fitness (NBNOA) to solve CMMOPs. First, a constraint-based fitness assignment scheme is designed to assign specific fitness values to individuals in the population. Then, the Nearest-better-neighbor clustering method is adopted to identify the nearest-better neighbor and best neighbor of each individual according to the specific fitness values. On this basis, a Nearest-Best neighbors guided strategy is developed to guide the search direction of individuals, striking a better balance between exploration and exploitation capabilities. Moreover, a CDP-density elite selection mechanism is constructed to obtain feasible Pareto optimal solutions with higher precision and better diversity. Extensive experiments on two CMMOPs test suites demonstrated that the proposed NBNOA significantly outperforms nine state-of-the-art algorithms. Notably, NBNOA ranks first among all ten algorithms and achieves the best values for 23 out of 31 benchmark functions regarding the reciprocal of Pareto sets proximity and inverted generational distance. Furthermore, NBNOA is applied to a real-world CMMOP, verifying its effective practical application capability. Additionally, NBNOA is tested on two high-dimensional constrained multiobjective optimization problems test suites, further proving its competitive performance in solving complex problems.},
+  archive      = {J_ASOC},
+  author       = {Xuming Han and Ting Zhou and Limin Wang and Yali Chu},
+  doi          = {10.1016/j.asoc.2025.113895},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113895},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {A nearest-best neighbors optimization algorithm for constrained multimodal multiobjective problems},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Frequency decomposition and patch modeling framework for time-series forecasting. <em>ASOC</em>, <em>185</em>, 113890. (<a href='https://doi.org/10.1016/j.asoc.2025.113890'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Time series forecasting is widely applied across diverse fields, including finance, transportation, and energy, and has made significant contributions in these areas. However, in real-world applications, time series data can be complex and dynamic. Current methodologies still encounter several challenges in managing high-dimensional data, extracting intricate features, and making long-term forecasts. In this study, we propose a Frequency Decomposition and Patch Modeling Framework (FPF). Our FPF consists of the Frequency Domain Decomposition Block (FDB) and the Dual Patch Modeling Block (DPMB). DPMB consists of Patch Enhancement Block and Patch Mixing Block. First, FDB transforms the input sequence to the frequency domain through the Fast Fourier Transform and designs frequency masks to decompose the data into high-frequency and low-frequency components, to extract fast-changing patterns and trend information respectively. Subsequently, DPMB divides the components into patches, where the high-frequency components are modeled by MLP-based Patch Enhancement Block to capture local features, and the low-frequency components are modeled by Transformer-based Patch Mixing Block to capture global dependencies and cross-patch correlations. We conducted comprehensive experiments using seven real-world time series forecasting datasets, including ETT, Traffic, Electricity, and Weather. The findings indicate that this method demonstrates superior performance in the field of time series forecasting.},
+  archive      = {J_ASOC},
+  author       = {Denghui Xu and Hua Wang and Fan Zhang},
+  doi          = {10.1016/j.asoc.2025.113890},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113890},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Frequency decomposition and patch modeling framework for time-series forecasting},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Density peak clustering algorithm based on boundary elimination and backbone construction. <em>ASOC</em>, <em>185</em>, 113880. (<a href='https://doi.org/10.1016/j.asoc.2025.113880'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Density peak clustering (DPC) is an effective clustering algorithm, but it still has some problems and faces some challenges. For instance, it cannot identify the variable density datasets, the assignment strategy is easy to produce domino phenomenon, and the clustering results of DPC and its improved algorithms are easily affected by the intersection points between clusters. To solve these problems, in this paper, we propose a novel density peak clustering algorithm based on boundary elimination and backbone construction, called BEBC-DPC. A new local density is defined based on the natural neighbor search, and the boundary degree is defined by the position relationship between each point and its neighbors, which accurately describes the local distribution information of the point. The boundary points of clusters are eliminated by fusing the density and the boundary degree, which reduces the influence of the intersection points on the cluster division. In addition, the cluster backbone construction method based on representative points and representative sets is proposed. The density relationship among non-boundary points is used to form representative sets, and the similarity between representative sets is used to construct the cluster backbones, which can effectively describe the overall distribution structure characteristics of the clusters. Moreover, the adjacency degree of each boundary point is defined by using the neighbor information and distance information, and the boundary points are gradually assigned to the most appropriate cluster backbone based on it to complete the clustering. Finally, sufficient experiments are performed on synthetic, UCI and image datasets, and the proposed BEBC-DPC is compared with DPC and its improved algorithms. Experimental results show the effectiveness of the proposed BEBC-DPC on various types of datasets.},
+  archive      = {J_ASOC},
+  author       = {Zhizhong Zhao and Sugen Chen and Cong Hu},
+  doi          = {10.1016/j.asoc.2025.113880},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113880},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Density peak clustering algorithm based on boundary elimination and backbone construction},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reliable type 2 fuzzy Min–Max neural networks for pattern classification. <em>ASOC</em>, <em>185</em>, 113875. (<a href='https://doi.org/10.1016/j.asoc.2025.113875'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Fuzzy Min–Max (FMM) algorithm is a powerful classification method capable of handling non-linear class boundaries and making both hard and soft decisions while learning from online data. However, it faces significant challenges, including sensitivity to the expansion coefficient, information loss during the contraction stage, and the overlap problem. To address these limitations, we propose a Reliable Type-2 Fuzzy Min–Max (RT2FMM) algorithm, which incorporates type-2 fuzzy logic to consider hyperbox uncertainty and effectively resolve the overlap problem. By assigning distinct certainties to overlapping regions, RT2FMM eliminates the need for the contraction stage and the overlap test. Additionally, we introduce weighted factors for hyperboxes, which enhances the reliability of membership values and models their mutual effects. Our comprehensive experimental evaluation across twenty datasets demonstrates that RT2FMM significantly outperforms existing FMM-based models in terms of robustness and accuracy. The Friedman test further confirms the superior performance of RT2FMM compared to commonly used classifiers, highlighting its potential as a robust solution for complex classification tasks.},
+  archive      = {J_ASOC},
+  author       = {Ali Nik-Khorasani and Mohammad-R. Akbarzadeh-T.},
+  doi          = {10.1016/j.asoc.2025.113875},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113875},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Reliable type 2 fuzzy Min–Max neural networks for pattern classification},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fortifying vision models: A comprehensive survey of defences against adversarial examples. <em>ASOC</em>, <em>185</em>, 113874. (<a href='https://doi.org/10.1016/j.asoc.2025.113874'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Artificial Intelligence and Machine learning (ML) have seen many advancements in the past two decades. It has led to the creation of several techniques, including Deep Neural Networks (DNN), Convolution Neural Networks (CNN), Autoencoders, Generative Adversarial Networks (GAN) and Diffusion models. These techniques have been applied to various real-world applications, such as self-driving cars, medical diagnosis and voice assistants. Despite these advancements, a carefully crafted input can fool the ML model. Such attacks are known as adversarial examples. It is a serious threat to safety critical systems. This survey provides a comprehensive review of defences against adversarial examples by tracing their evolution from early empirical methods to more principled, theoretically grounded approaches. We systematically categorise defences based on their underlying mechanisms. In addition to surveying state-of-the-art techniques, we spotlight emerging trends such as generative defences and diffusion-based purification. Finally, we identify persistent vulnerabilities and outline promising directions for future research towards building truly resilient vision models. This work aims to equip researchers and practitioners with a deep understanding of current defences and inspire innovation in adversarial robustness for the next generation of vision applications.},
+  archive      = {J_ASOC},
+  author       = {Siddheshwar Kumar and Shashank Srivastava and Shashwati Banerjea},
+  doi          = {10.1016/j.asoc.2025.113874},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113874},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Fortifying vision models: A comprehensive survey of defences against adversarial examples},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AOT-PixelNet: Lightweight and interpretable detection of forged images via adaptive orthogonal transform. <em>ASOC</em>, <em>185</em>, 113873. (<a href='https://doi.org/10.1016/j.asoc.2025.113873'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative image detection faces persistent challenges in terms of generalization and interpretability, limiting its reliability in complex scenarios. To address these issues, we propose AOT-PixelNet, a lightweight and interpretable detection framework that integrates an Adaptive Orthogonal Transform (AOT) module with a streamlined 1 × 1 convolution-based PixelNet architecture. The AOT module leverages diverse orthogonal transforms, such as FFT and DCT, to extract informative frequency-domain features, thereby enhancing sensitivity to medium- and high-frequency artifacts. Meanwhile, PixelNet minimizes parameter count (only 0.98 million) while effectively capturing cross-channel inconsistencies and mitigating overfitting. Experimental evaluations on multiple unseen GAN and diffusion-based datasets demonstrate that AOT-PixelNet achieves superior performance with minimal computational cost. Specifically, it outperforms the NPR method by 0.6% and 11.76% on the ForenSynths and GenImage datasets, respectively, validating the framework’s robustness, effectiveness, and interpretability.},
+  archive      = {J_ASOC},
+  author       = {Dengtai Tan and Deyi Yang and Boao Tan and Chengyu Niu and Yang Yang and Shichao Li},
+  doi          = {10.1016/j.asoc.2025.113873},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113873},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {AOT-PixelNet: Lightweight and interpretable detection of forged images via adaptive orthogonal transform},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Status prediction using attentive and cascaded deep network by fault tolerant and priority-based scheduling for load balancing in cloud. <em>ASOC</em>, <em>185</em>, 113872. (<a href='https://doi.org/10.1016/j.asoc.2025.113872'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The cloud facilitates the user to complete their work utilizing the cost strategy of pay-as-you-go, which is based on the consumed Virtual Machine (VM) hours. Thus, the scheduler must offer the highest throughput to attain efficient allocation of resources in the cloud paradigm. Cloud services are dependent on characteristics such as fault tolerance, security, scalability, and availability. Hence, an effective scheduler is necessary to arrange the scheduling tasks and adjust the server loads. Typically, a load-balancing task focuses on detecting the overloaded and under-loaded nodes and adjusting the load between them. When considering the significant role of fault-tolerance in load-balancing algorithms, it seems to suffer from poor organization and a lack of in-depth experiments in this sector. This paper proposes a new task for the load-balancing operation. Initially, task scheduling is performed where the fault tolerance and the priority-aided scheduling approach are adopted. Furthermore, resource optimization is carried out in the scheduling task using Randomly Improved Electric Fish Optimization (RIEFO). To validate the load balancing operation, several multi-objective functions such as resource utilization, delay, time, makespan, active servers, throughput, success rate, fault tolerance rate, and energy consumption are derived. Moreover, because of the system’s dynamic environment, the status of the server varies simultaneously. The server status prediction is significant in allocating the tasks to the server or the VM resources. Thus, the Attention-based Cascaded Residual Bidirectional Long Short-Term Memory (ACRes-BiLSTM) is employed to predict the server status before performing the resource allocation. Finally, the tasks are scheduled effectively using the predicted server status. The performance is estimated using numerous performance metrics.},
+  archive      = {J_ASOC},
+  author       = {Gudivada Lokesh and Kasarapu Ramani and K.K. Baseer},
+  doi          = {10.1016/j.asoc.2025.113872},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113872},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Status prediction using attentive and cascaded deep network by fault tolerant and priority-based scheduling for load balancing in cloud},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A hybrid deep learning framework for detecting grape leaf diseases by integrating ResNeSt-50 and CBAM attention into DeepLabv3 +. <em>ASOC</em>, <em>185</em>, 113871. (<a href='https://doi.org/10.1016/j.asoc.2025.113871'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Grape leaf diseases, such as black rot, powdery mildew, and downy mildew, pose a significant threat to global viticulture, leading to substantial yield losses and reduced fruit quality. Early and accurate identification of these diseases is essential for precision agriculture and sustainable crop management. This study presents a comprehensive comparison of traditional and deep learning-based image segmentation methods for detecting grape leaf lesions. A series of classical segmentation techniques, including Mean Shift, Fuzzy C-Means (FCM), Normalized Cut, K-Means, and Fuzzy K-Means (FKM), were evaluated alongside an advanced DeepLabv3 + model. The baseline DeepLabv3 + architecture was further enhanced by integrating a ResNeSt-50 backbone with various attention mechanisms, including Squeeze-and-Excitation (SE) Block, Convolutional Block Attention Module (CBAM), Bottleneck Attention Module (BAM), Self-Attention, and Dual Attention Network (DANet). Among all models, DeepLabv3 + with ResNeSt-50 and CBAM achieved the highest performance, attaining 98.2 % accuracy, 97.1 % precision, 96.7 % recall, 96.6 % mean Intersection over Union (mIoU), and a 96.8 % Dice Score. The results demonstrate that attention-augmented deep networks significantly outperform classical methods, especially in handling complex lesion structures under diverse environmental conditions. While traditional algorithms remain useful in resource-constrained scenarios, deep learning models, particularly those enhanced with spatial and channel-wise attention, offer greater accuracy and robustness, making them ideal for integration into intelligent agricultural platforms such as drones, mobile scanners, and automated disease monitoring systems. Future work will focus on incorporating temporal and multimodal data, expanding dataset diversity, and optimizing lightweight models for real-time deployment on edge devices.},
+  archive      = {J_ASOC},
+  author       = {Kittipol Wisaeng},
+  doi          = {10.1016/j.asoc.2025.113871},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113871},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {A hybrid deep learning framework for detecting grape leaf diseases by integrating ResNeSt-50 and CBAM attention into DeepLabv3 +},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A stochastic proportional–differential TLBO algorithm and its applications for wafer transfer finger. <em>ASOC</em>, <em>185</em>, 113870. (<a href='https://doi.org/10.1016/j.asoc.2025.113870'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Teaching-Learning-Based optimization (TLBO) algorithm, which includes teacher phase and learner phase, is a widely used method for global optimization. However, TLBO will experience premature convergence and get stuck in local optimum when faced with complex optimization challenges. Especially when tackling complex problems in practical engineering applications, which involves multiple variables and numerous constraints. To address this issue, a new variant termed Stochastic Proportional–Differential TLBO (SPD-TLBO) has been developed. The SPD phase allows students to learn not only from the current population but also from previous stochastic errors and their generation differences using adaptive random operators. By incorporating an SPD operator into the original TLBO framework, the algorithm’s search diversity is enhanced, reducing the likelihood of premature convergence to local optimum. The experimental results conducted at the IEEE Conference on Evolutionary Computation 2014 (CEC 2014) indicated that the proposed SPD-TLBO algorithm achieved an effective balance between exploration and exploitation capabilities. Specifically, the SPD-TLBO algorithm achieves the highest ranking in 21 out of 30 cases (70%) for 30-dimensional problems and 18 out of 30 cases (60%) for 50-dimensional problems. Statistical tests and convergence analyses show that the SPD-TLBO algorithm outperforms other algorithms in solving global optimization problems. Additionally, when applied to engineering optimization problems, the SPD-TLBO algorithm shows significant advantages over other algorithms. Therefore, the SPD-TLBO algorithm is further applied to optimize the structure of a wafer transfer finger in semiconductor manufacturing.},
+  archive      = {J_ASOC},
+  author       = {Jinfeng Sun and Yunlang Xu and Haibo Zhou},
+  doi          = {10.1016/j.asoc.2025.113870},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113870},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {A stochastic proportional–differential TLBO algorithm and its applications for wafer transfer finger},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prediction of the health effects of COVID using hybrid classifier with attention-based LSTM-deep temporal convolution network. <em>ASOC</em>, <em>185</em>, 113867. (<a href='https://doi.org/10.1016/j.asoc.2025.113867'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Coronavirus Disease 2019 (COVID-19) is an infectious illness that affects both humans and animals. Individuals infected with COVID-19 are prone to lung complications during the recovery phase . Radiography and Computed Tomography (CT) are the most commonly used methods for diagnosing lung-related diseases. The primary aim of this paper is to assess the impact of COVID-19 on patients’ lungs, heart, and blood sugar levels using a deep learning-based approach. Initially, data related to the heart, blood sugar levels, and lungs of COVID-19-infected individuals are collected. From this dataset, three types of features are extracted. Deep features are obtained using Iterated Dilated Convolutional Neural Networks (IDCNN). From these deep features, which are obtained from the IDCNN, the optimal weighted features are derived by implementing the Hybrid Dolphin Pod Cuttlefish Optimization (HDPCO) algorithm. Subsequently, the HDPCO algorithm is also employed for optimal feature extraction. In addition, dimensionality reduction is performed using Principal Component Analysis (PCA). These three sets of features from the IDCNN, HDPCO, and PCA, are then fused into a single feature set . This fused feature set is fed into a hybrid classifier composed of a Deep Temporal Convolutional Network (DTCN) and an Attention-based Long Short-Term Memory (ALSTM) network . The classifier parameters are optimized using the HDPCO algorithm. The output from the hybrid classifier provides the final prediction result. Experimental results demonstrate that the proposed COVID-19 impact prediction model significantly outperforms existing models in terms of prediction accuracy and efficiency.},
+  archive      = {J_ASOC},
+  author       = {Sadanandam Kalvala and B. Baranidharan},
+  doi          = {10.1016/j.asoc.2025.113867},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113867},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Prediction of the health effects of COVID using hybrid classifier with attention-based LSTM-deep temporal convolution network},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quantum fuzzy logic for edge detection: A demonstration on NISQ hardware. <em>ASOC</em>, <em>185</em>, 113866. (<a href='https://doi.org/10.1016/j.asoc.2025.113866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum computing offers the potential to enhance computational efficiency beyond classical methods, but practical implementation remains challenging due to the limitations of Noisy Intermediate-Scale Quantum (NISQ) hardware, namely, restricted qubit counts, limited connectivity, and the presence of noise and decoherence. This study presents a novel approach to edge detection by leveraging a recently developed Quantum Fuzzy Inference Engine, implemented on a NISQ device. We introduce an optimized quantum circuit for its implementation, reducing qubit requirements and gate depth to improve execution on NISQ hardware. To overcome constraints related to large-scale image processing, a hybrid quantum–classical lookup table approach is employed. Edge detection performance is evaluated on the Berkeley Segmentation Data Set and Benchmarks 500 dataset under different conditions, including classical execution, ideal quantum simulation, noisy quantum simulation, and NISQ hardware calculation. Results demonstrate that the quantum fuzzy logic-based edge detection achieves outcomes comparable to classical methods by using fewer operations, marking a step toward practical quantum-enhanced image processing.},
+  archive      = {J_ASOC},
+  author       = {G. Nunziata and S. Crisci and G. De Gregorio and R. Schiattarella and G. Acampora and L. Coraggio and N. Itaco},
+  doi          = {10.1016/j.asoc.2025.113866},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113866},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Quantum fuzzy logic for edge detection: A demonstration on NISQ hardware},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prompted complex context generation guided fine-grained ship recognition. <em>ASOC</em>, <em>185</em>, 113856. (<a href='https://doi.org/10.1016/j.asoc.2025.113856'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fine-grained ship recognition in complex marine environments is challenged by background interference, high inter-class similarity, and limited labeled data. Existing methods often rely on inefficient cascades or holistic feature extraction, which limits both accuracy and efficiency. To address these issues, we propose a Prompted Complex Context Generation Guided Fine-Grained Ship Recognition framework, consisting of two core modules. The Cross-Attention Context Generation Module utilizes a diffusion model to generate diverse background images from prompts, maintaining target consistency and enriching the training data to mitigate data scarcity. It also employs a cross-attention map to highlight target-relevant regions, guiding the Attention Map Guided Fusion Module. The Attention Map Guided Fusion Module adopts a dual-branch transformer architecture: one branch extracts global features from background-enhanced images, and the other captures local features through attention-guided cropping of target-specific regions. By integrating both global and local features, our method effectively identifies key target characteristics. Experimental results demonstrate that our approach achieves 97.04% accuracy on the publicly available MAR-ships dataset and 84.57% accuracy on the challenging GCS dataset, outperforming state-of-the-art methods.},
+  archive      = {J_ASOC},
+  author       = {Runtian Wang and Kejun Wu and Renjie Qiao and Chunsheng Yang and Chengtao Cai},
+  doi          = {10.1016/j.asoc.2025.113856},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113856},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Prompted complex context generation guided fine-grained ship recognition},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A multi-granularity decision tree algorithm based on variable precision rough sets and zentropy. <em>ASOC</em>, <em>185</em>, 113851. (<a href='https://doi.org/10.1016/j.asoc.2025.113851'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The existing decision tree algorithms often use a single-layer measure to process data, which cannot fully consider the complex interactions and dependencies between different granularity levels. In addition, decision tree algorithms inevitably face the issue of multi-value preference, which may lead to the selection of unreasonable attributes in the process of partition, thereby affecting the performance of the algorithms. Therefore, this paper proposes an improved decision tree algorithm, called Ze-VNDT, which combines variable precision rough sets with Zentropy. First, to avoid the information loss caused by data discretization, this paper introduces variable precision neighborhood rough sets for data processing. Second, by analyzing the granularity level structure within the variable precision neighborhood rough set model, knowledge uncertainty is analyzed from three granularity levels: decision classes, approximate relations, and similarity classes. We describe the uncertain knowledge from the overall to the internal using the idea of going from coarse to fine, and design a Zentropy to measure uncertainty. To address the issue of multi-value preference, an adaptive weighted Zentropy uncertainty measure is designed based on the definition of uncertainty measure based on Zentropy. Third, when constructing the improved decision tree algorithm, the optimal attributes are selected based on the designed uncertainty measure. Finally, numerical experiments on 18 UCI datasets validated the effectiveness and rationality of the proposed algorithm. The experimental results showed that, compared to traditional algorithms and the latest improved algorithms, the proposed algorithm achieved an average accuracy of 94.79%, an average precision of 85.77%, an average recall rate of 84.68%, and an F1-score of 84.97% across the 18 datasets. It ranked first in all five evaluation metrics, demonstrating higher stability and accuracy.},
+  archive      = {J_ASOC},
+  author       = {Hui Dong and Caihui Liu and Xiying Chen and Duoqian Miao},
+  doi          = {10.1016/j.asoc.2025.113851},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113851},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {A multi-granularity decision tree algorithm based on variable precision rough sets and zentropy},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Skin lesion classification with mini-batch sampling and deep metric learning. <em>ASOC</em>, <em>185</em>, 113850. (<a href='https://doi.org/10.1016/j.asoc.2025.113850'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Skin lesion image classification based on deep learning has recently garnered significant attention. However, directly applying methods that perform well in general computer vision tasks to skin lesion image classification is not ideal, as skin lesion image datasets possess intrinsic characteristics, such as class imbalance, intra-class variability, and inter-class similarity. To tackle these challenges simultaneously, we propose a novel unified learning framework, named mBSML, which integrates mini-batch sampling and deep metric learning. In this framework, mini-batch sampling re-samples data in real-time during each iteration of learning, while a new loss function combines mini-batch distance metric-based loss with cross-entropy loss. Through the alternating training procedure on both imbalanced training data and balanced re-sampling data, mBSML effectively learns from global distribution information and local similarity information, not only from the original dataset but also from the minority classes. Extensive experiments conducted on two publicly available datasets demonstrate the effectiveness of mBSML for skin lesion image classification.},
+  archive      = {J_ASOC},
+  author       = {Shengdan Hu and Zhifei Zhang and Li Ying and Guangming Lang},
+  doi          = {10.1016/j.asoc.2025.113850},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113850},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Skin lesion classification with mini-batch sampling and deep metric learning},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AOD-YOLO: A self-modulating multi-scale feature aggregation mechanism for small object detection in airport surface scenes. <em>ASOC</em>, <em>185</em>, 113849. (<a href='https://doi.org/10.1016/j.asoc.2025.113849'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object detection in airport surface scenes is crucial for enhancing safety. However, the coexistence of objects with significant scale disparities within the same region complicates feature representation, limiting existing models’ ability to capture fine-grained details, especially for small objects. To address this challenge, we propose AOD-YOLO, an Airport Object Detection (AOD) model incorporating a Self-Modulating Multi-Scale Feature Aggregation Mechanism. This model introduces two key innovations: (1) Enhanced Context Modeling: By leveraging large-kernel convolution, frequency-domain modulation, and statistical feature analysis, our approach effectively adjusts feature contributions across different object scales, improving contextual understanding in complex scenes; (2) Optimized Small Object Representation: A dynamic gradient gain allocation strategy refines small-object features, enhancing detection accuracy and overall feature presentation. AOD-YOLO consistently improves performance across model scales. On our self-constructed Airport dataset and the public VisDrone-DET2019 dataset, it achieves mean Average Precision (mAP 0.5 ) of 87.9% and 44.9%, respectively—outperforming state-of-the-art models like YOLOv11 and Gold-YOLO by substantial margins. Additionally, through optimized network module placement, AOD-YOLO achieves 112 FPS, striking a balance between computational efficiency and accuracy, making it well-suited for real-time airport object detection.},
+  archive      = {J_ASOC},
+  author       = {Yingqing Wang and Weili Zeng and Ziyu Zhao and Baogeng Li and Zhibin Quan},
+  doi          = {10.1016/j.asoc.2025.113849},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113849},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {AOD-YOLO: A self-modulating multi-scale feature aggregation mechanism for small object detection in airport surface scenes},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient mathematical-based optimization method to optimize multi-hydropower operating rules. <em>ASOC</em>, <em>185</em>, 113846. (<a href='https://doi.org/10.1016/j.asoc.2025.113846'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimizing hydropower multi-reservoir systems requires both effective operating rules and efficient optimization techniques. The main contribution of this paper is offering a unique approach that elegantly combines two important parts: creating an efficient optimization method and developing hydropower operating rules. In this regard, a nonlinear rule curve (NLRC) and a linear rule curve (LRC), are tailored for the coordination of a hydropower multi-reservoir system (HMRS) in Iran. To optimize operating rules, the study fabricates a novel algorithm termed the multi-operator weighted mean of vectors (MINFO). The algorithm combines a powerful global search strategy (GSS) that thoroughly searches the solution space with an efficient local search (LS), striking a balance between solution diversity and convergence speed. To fine-tune this balance, an adaptive parameter-tuning strategy is applied. Furthermore, the active-set sequential quadratic programming (ASQP) serves as a localized escaping operator to enhance the algorithm's convergence speed. The effectiveness of the proposed MINFO algorithm is first evaluated through a nonlinear five-reservoir problem. The findings indicate that the MINFO algorithm outperforms a set of 14 distinct optimization methods. Subsequently, the MINFO algorithm is applied to identify optimal NLRC and LRC for a six-reservoir hydropower system. The results underscore the superiority of optimized NLRC, yielding a potential power augmentation of up to 17 % in comparison to the LRC approach. In summation, this study constitutes a seminal contribution by cultivating an efficient rule curve framework for the management of HMRSs.},
+  archive      = {J_ASOC},
+  author       = {Shuguang Li and Iman Ahmadianfar and Aitazaz A. Farooque and Zaher Mundher Yaseen},
+  doi          = {10.1016/j.asoc.2025.113846},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113846},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {An efficient mathematical-based optimization method to optimize multi-hydropower operating rules},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advanced YOLOv4 for real-time underwater object detection: An application-oriented approach. <em>ASOC</em>, <em>185</em>, 113837. (<a href='https://doi.org/10.1016/j.asoc.2025.113837'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Detecting debris and monitoring marine life in sea aquaculture face challenges due to limited visibility and the presence of diverse. Underwater object detection by Autonomous Unmanned Vehicle(AUV) is inherently more challenging than land due to light attenuation and water turbidity, especially for small and dense objects in murky images, where extracting high-quality features is hindered. In this paper, we present an efficient approach for real-time underwater object detection through improvements in image enhancement, data augmentation, and feature aggregation. Initially, U-Shape Transformer is applied to enhance the original images. For data augmentation, it is observable that while Mosaic data augmentation enhances complex images but fails to improve small-object detection due generation of less number of images with small objects. To address this limitation, we propose Underwater-Mosaic (U-Mosaic), a modified Mosaic data augmentation technique designed to enhance small-object detection. Additionally, it was noted that existing YOLOv4 struggles with detecting small and densely populated objects in underwater images as unable to get sufficient features for small objects due to downsampling, image quality and also found difficulty in selecting anchor box size. Therefore, we propose a model called Advanced YOLOv4, tailored for underwater object detection. The proposed Advanced YOLOv4 aims to improve object detection efficiency by altering the neck and prediction layers of YOLOv4. Moreover, we introduce an additional spatial pyramid pooling layer to aggregate features and reduce feature dimensions thereby improving object detection rates. Also, the proposed work concentrates on very large object detection and for this purpose used downsampling during the detection of large objects. The proposed approach is validated through two distinct application areas: (i) detecting and locating debris (ii) detecting fish from underwater images. For validation, the Trash ICRA19 dataset is used for debris detection, while the Brackish dataset is employed for fish detection. UIQM and UCIQE, image enhancement assessment metrics are used to measure quality of enhanced images and found more than 20% better result for both the datasets. The proposed real-time underwater object detection model outperformed single-stage object detectors like YOLOv3, YOLOv4, YOLOv5, YOLOv7, and KPE-YOLOv5 by 5% in terms of mean Average Precision(mAP). Also proposed work compared with two-stage detector RCNN and found 8% better mAP than RCNN.},
+  archive      = {J_ASOC},
+  author       = {Pratima Sarkar and Sourav De and Prasenjit Dey and Sandeep Gurung},
+  doi          = {10.1016/j.asoc.2025.113837},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113837},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Advanced YOLOv4 for real-time underwater object detection: An application-oriented approach},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). UniCon: Unified image-guiding generation with noise consistency. <em>ASOC</em>, <em>185</em>, 113832. (<a href='https://doi.org/10.1016/j.asoc.2025.113832'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion models have demonstrated remarkable capabilities in image-to-image tasks. However, existing methods typically focus either on structural (e.g., layout, content) or stylistic guidance, with few approaches effectively excel at both. On the other hand, many methods require time-consuming fine-tuning or high inference latency, making interactive generation applications challenging to realize. To address these issues, we propose a two-stage framework referred as UniCon ( Uni fied Image-guiding Generation with Noise Con sistency). To improve time efficiency, we follow the paradigm of inversion-based image manipulation and introduce a novel method called Noise Consistency Inversion . Leveraging the nature of Consistency Models, this inversion process is highly efficient, requiring only a single neural function evaluation (NFE) in the inversion process. To achieve high consistency and finer control, we introduce a unified attention-based guidance mechanism that supports structural, stylistic, or joint reference inputs, without any additional fine-tuning. Experiments with structure- and style-specific methods show that our approach performs competitively or better in each individual aspect. In comparison of style transfer tasks that demand both structure and style, our method outperforms state-of-the-art baselines, confirming the effectiveness of our union control strategy. And overall, our approach also achieves the best efficiency in terms of runtime performance.},
+  archive      = {J_ASOC},
+  author       = {Yuanjun Liao and Yuning Gong and Yanci Zhang},
+  doi          = {10.1016/j.asoc.2025.113832},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113832},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {UniCon: Unified image-guiding generation with noise consistency},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evaluation of the financial performance of the textile and apparel industry in interval type-2 fuzzy environment. <em>ASOC</em>, <em>185</em>, 113830. (<a href='https://doi.org/10.1016/j.asoc.2025.113830'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Turkish textile and apparel sector plays a crucial role in the national economy through employment, exports, and investment. The financial performance of companies is a key determinant of their sustainability and competitiveness, especially in global markets. The Turkish textile and apparel sector is one of the essential industries in terms of macro-economic indicators such as net foreign exchange inflow, employment and investment. This sector is also one of the critical actors in world trade. A robust performance evaluation model is essential for stakeholders such as investors, creditors, and managers. However, the assessment of firms is a very critical decision involving uncertainty due to various conflicting criteria based on judgements. In this study, an integrated multi-criteria decision-making (MCDM) model including interval type-2 fuzzy hierarchy process (IT2FAHP) and Compromise Ranking of Alternatives from Distance to Ideal Solution (CRADIS) approaches are proposed to assess the financial performance of Turkish textile and clothing firms that are traded in Borsa İstanbul (BİST) in the period from 2006 to 2020. In line with the determined purpose, the arithmetic average of the determined financial ratios during the analysis period covering 15 years is computed to obtain long-term performance indicators. The importance weights of the selected financial criteria for the performance evaluation model are identified by employing the IT2FAHP approach. Then, the firms are ranked according to their financial performances with the CRADIS method. In addition, the results from the sensitivity analysis validate the proposed approach and prove that it is practical. Moreover, practical and managerial implications are discussed based on the results. The results offer valuable insights for strategic decision-making and can support efforts to enhance financial stability in the textile and apparel sector. According to the results, "LUKSK" had the highest long-term financial performance among the 11 companies discussed. This company is followed by BOSSA, YATAS, and ATEKS companies. The alternatives confirm the robustness of the proposed model in maintaining its place in the ranking in 190 scenarios. In addition, the comparative analysis confirms the consistency of the proposed ranking framework.},
+  archive      = {J_ASOC},
+  author       = {Ömer Faruk Görçün and Mohsin Shabir and Ahmet Çalık and Özcan Işık},
+  doi          = {10.1016/j.asoc.2025.113830},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113830},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Evaluation of the financial performance of the textile and apparel industry in interval type-2 fuzzy environment},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An interpretable dual-output multivariate wind speed interval prediction scheme using hyper-heuristic optimization algorithm and deep neural networks. <em>ASOC</em>, <em>185</em>, 113829. (<a href='https://doi.org/10.1016/j.asoc.2025.113829'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Uncertainty analysis of wind speed forecasting using the Lower Upper Bound Estimation (LUBE) represents an advanced interval prediction method that does not require assumptions about data distribution. Previous studies, however, have exclusively focused on univariate prediction models, neglecting the information from other variables, and have not fully exploited the prediction errors in their loss function during training. To address these issues, an interpretable dual-output multivariate wind speed interval prediction scheme (IMWSIPS) that utilizes a hyper-heuristic optimization algorithm and a deep neural network is proposed, along with a novel loss function for training. The system initially takes multiple inputs such as historical wind speed and other influencing factors including wind direction, density, temperature, and pressure into a deep neural network. The actual wind speeds are then scaled up and down by factors of 1 + θ 1 (0 <θ 1 <1) and 1 + θ 2 (-1 <θ 2 <0), respectively, to produce two outputs from the network. On this basis, an optimization problem to minimize interval width under a given coverage probability is formulated and solved using the developed hyper-heuristic algorithm, yielding optimal values for θ 1 and θ 2 and the prediction intervals for sub-models. Subsequently, the advantages of five deep neural network models are leveraged to construct an ensemble model, with weights optimized by the hyper-heuristic algorithm to derive the final prediction intervals. Ultimately, the system's interpretability is analyzed at both variable and sub-model levels. Experimental and discussion results demonstrate that the introduction of IMWSIPS not only signifies enhancements in forecasting performance but also implies improvements in wind energy utilization efficiency and reductions in operational costs for power systems.},
+  archive      = {J_ASOC},
+  author       = {Mengzheng Lv and Jianzhou Wang and Shuai Wang and Yang Zhao and Jialu Gao and Yuansheng Qian},
+  doi          = {10.1016/j.asoc.2025.113829},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113829},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {An interpretable dual-output multivariate wind speed interval prediction scheme using hyper-heuristic optimization algorithm and deep neural networks},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bridging the semantic-numerical gap: A numerical reasoning method of cross-modal knowledge graph for material property prediction. <em>ASOC</em>, <em>185</em>, 113776. (<a href='https://doi.org/10.1016/j.asoc.2025.113776'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Material properties are illustrated by numerical data and semantic factors. In general, existing methods typically adopt machine learning (ML) algorithms to regress numerical properties or transfer other pre-trained knowledge graphs (KGs) to the material, due to the limitations of small-sample datasets. However, integrating semantic and numerical information from multi-modal data which across diverse experimental conditions remains a significant challenge in materials science. In this paper, a numerical reasoning method for material KGs (NR-KG) 1 was proposed, which constructs a cross-modal KG using semantic nodes and numerical proxy nodes. Both types of information by projecting KG into a canonical KG were captured and a graph neural network to predict material properties was utilized. In process, a novel projection prediction loss is proposed to extract semantic features from numerical information. NR-KG facilitates end-to-end processing of cross-modal data, mining relationships and cross-modal information in small-sample datasets, and fully utilizes effective experimental data to enhance the accuracy of material prediction. We propose two new high-entropy alloys (HEA) property datasets with semantic descriptions. NR-KG outperforms state-of-the-art (SOTA) methods on two material datasets, with MSE values of 3520 and 2.210, and achieving relative improvements of 25.9% and 16.1%, respectively, over the second-best methods, KANO and PCHMLP (semantic). It also achieves RMSE values of 0.584 and 0.521 on the FreeSolv and ESOL public molecular datasets, surpassing SOTA methods by 48.8% and 22.2% over KANO, highlighting its potential application and generalizability.},
+  archive      = {J_ASOC},
+  author       = {Guangxuan Song and Dongmei Fu and Zhongwei Qiu and Zijiang Yang and Jiaxin Dai and Lingwei Ma and Dawei Zhang},
+  doi          = {10.1016/j.asoc.2025.113776},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113776},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Bridging the semantic-numerical gap: A numerical reasoning method of cross-modal knowledge graph for material property prediction},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transformer-based actor–critic for adaptive cryptocurrency portfolio rebalancing. <em>ASOC</em>, <em>185</em>, 113697. (<a href='https://doi.org/10.1016/j.asoc.2025.113697'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-frequency trading in volatile markets, such as cryptocurrencies, requires portfolio models that can swiftly adapt to regime shifts while controlling risk. We propose a novel approach that frames portfolio management as a dynamic strategy-selection problem. Instead of directly predicting asset weights, our agent selects from a pool of expert strategies based on recent market trends. We introduce a Transformer-based Variational Autoencoder (VAE) to extract disentangled trend representations, and a trend-aware actor–critic model to perform expert selection. Experiments demonstrate that this modular, strategy-level control mechanism outperforms existing methods in risk-sensitive crypto portfolio management.},
+  archive      = {J_ASOC},
+  author       = {Ahmad Asadi and Reza Safabakhsh},
+  doi          = {10.1016/j.asoc.2025.113697},
+  journal      = {Applied Soft Computing},
+  month        = {12},
+  pages        = {113697},
+  shortjournal = {Appl. Soft. Comput.},
+  title        = {Transformer-based actor–critic for adaptive cryptocurrency portfolio rebalancing},
+  volume       = {185},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

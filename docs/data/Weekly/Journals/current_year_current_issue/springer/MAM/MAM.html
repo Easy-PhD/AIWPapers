@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MAM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mam">MAM - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Designing with uncertainty: LLM interfaces as transitional spaces for democratic revival. <em>MAM</em>, <em>35</em>(4), 1-23. (<a href='https://doi.org/10.1007/s11023-025-09736-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The integration of large language models (LLMs) into our conversational infrastructure presents a critical inflection point for democratic practice. While contemporary digital platforms systematically erode transitional conversational spaces—interfaces between private intuition and public deliberation where tentative thoughts can be explored—this paper argues that specialized LLM interfaces could potentially reconstruct these essential democratic environments. I propose a design framework for ‘transitional conversational spaces’ that leverages uncertainty expression not merely to prevent unwarranted epistemic confidence but to create communicative environments conducive to democratic capability development. Drawing on theories of democratic deliberation and moral perception, this paper distinguishes between epistemic uncertainty (addressable through additional information) and hermeneutic uncertainty (concerning the inherently contestable nature of interpretation). The proposed framework emphasizes ‘ensemble interfaces’ that make visible the contingent nature of value judgments by presenting outputs from multiple models trained on different datasets. The design principles outlined challenge tokenistic participation by advocating for substantive participatory infrastructure with features like ‘tinkerability’—enabling communities to experiment with system configurations—and mechanisms that counter designer-centric development models. These principles stand in contrast to conventional ‘participatory AI’ approaches that treat engagement as merely instrumental to system optimization rather than as constitutive of democratic practice. This paper does not claim to solve all challenges of democratic participation but rather identifies one valuable design direction that could potentially enhance our collective capacity for exploratory dialogue. Implementation would require institutional transformations that align technological development with democratic values beyond current procedural approaches to AI governance.},
+  archive      = {J_MAM},
+  author       = {Delacroix, Sylvie},
+  doi          = {10.1007/s11023-025-09736-x},
+  journal      = {Minds and Machines},
+  month        = {12},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {Minds Mach.},
+  title        = {Designing with uncertainty: LLM interfaces as transitional spaces for democratic revival},
+  volume       = {35},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

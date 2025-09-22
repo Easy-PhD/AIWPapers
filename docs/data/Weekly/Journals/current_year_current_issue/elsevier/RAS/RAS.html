@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RAS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ras">RAS - 4</h2>
+<ul>
+<li><details>
+<summary>
+(2026). Neuromorphic visuotactile slip perception for robotic manipulation. <em>RAS</em>, <em>195</em>, 105191. (<a href='https://doi.org/10.1016/j.robot.2025.105191'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visuotactile sensing technology has received extensive attention in the tactile sensing community due to its stable high-resolution deformation sensing capabilities. However, the existing visuotactile sensing methods are far from humanoid neural information processing mechanism. To address this gap, we propose a neuromorphic visuotactile slip detection method named VT-SNN using Tactile Address-Event Representation (TAER) encoding combined with brain-inspired Spiking Neural Network (SNN) modeling in this paper. Our extensive experimental results demonstrate that the VT-SNN achieves slip detection accuracy of 99.59% and F1 score of 99.28%, which is comparable to Artificial Neural Networks (ANNs) while exhibiting significant advantages in power dissipation and inference time. Furthermore, we deployed the VT-SNN on Intel neuromorphic computing chip–Loihi and performed closed-loop slip-feedback robotic manipulation tasks such as bottle-cap tightening and loosening. Our closed-loop neuromorphic visuotactile sensing system shows significant promise for high accuracy, low latency, and low power dissipation for robotic dexterous manipulation.},
+  archive      = {J_RAS},
+  author       = {Yiming Qiao and Chaofan Zhang and Shaowei Cui and Lu Cao and Zhigang Wang and Peng Wang and Shuo Wang},
+  doi          = {10.1016/j.robot.2025.105191},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {1},
+  pages        = {105191},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Neuromorphic visuotactile slip perception for robotic manipulation},
+  volume       = {195},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). RRT-based CPC: A configuration planning method for continuum robots using rapidly-exploring random tree algorithm. <em>RAS</em>, <em>195</em>, 105190. (<a href='https://doi.org/10.1016/j.robot.2025.105190'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Obstacle-aware configuration control represents a critical challenge in the deployment of continuum robots for advanced applications such as robotic-assisted laparoscopic surgery and intelligent industrial grasping systems. At present, in order to realize the obstacle avoidance function of flexible robots, inverse kinematic calculations are usually unavoidable. The problems of large amount of computation, long solution time, and non-convergence of results make the configuration control for flexible robots still challenging. Most of the current studies use the inverse kinematics calculation of end tracking, and for flexible robots with multiple degrees of freedom, the success rate of obstacle avoidance is low and the computational cost is large. In this paper, a three-segment continuum configuration planning method based on Rapidly-exploring Random Tree (RRT) algorithm is proposed, in which the rough obstacle avoidance path is obtained by RRT algorithm, then the three-segment fitting is carried out by using the second-order Bézier curve, and the length error is evaluated to meet the planning requirements. Experiments such as obstacle avoidance tests, the arrival of target endpoints at different positions and different obstacle environments show that the proposed method can effectively map the feasible solution to the actual configuration. Compared with the inverse kinematics method, the proposed approach improves the success rate of obtaining feasible solutions by at least 14.8% and reduces the solution time by at least 55%. In addition, no prior curvature information and traditional inverse kinematics calculation are needed for the configuration control.},
+  archive      = {J_RAS},
+  author       = {Qiqi Pan and Hongbo Wang and Yongfei Feng and Shijie Guo and Jingjing Luo},
+  doi          = {10.1016/j.robot.2025.105190},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {1},
+  pages        = {105190},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {RRT-based CPC: A configuration planning method for continuum robots using rapidly-exploring random tree algorithm},
+  volume       = {195},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). The sequences of bundles of line segments for autonomous robots with limited vision range to escape from blind alley regions. <em>RAS</em>, <em>195</em>, 105185. (<a href='https://doi.org/10.1016/j.robot.2025.105185'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Consider the following problem: A robot operating in a 2D environment with a limited vision range finds a path to a goal in an unknown environment containing obstacles. In this paper, we propose a novel algorithm to solve the problem. In some special cases, our algorithm is convergent with respect to ‖ . ‖ . The problem involves discovering the environmental map and blind alley regions, that are bounded by obstacles, and it provides no possible passage for robots except in and out of their path entry occur, the robot has to return back to some positions outside to escape from such regions such that the returned path is not longer than the path entry (Blind Alley Region problem, (BAR) problem, in short). To solve the (BAR) problem, sequences of bundles of line segments during the robot’s traveling are constructed in our algorithm. Some advantages of our algorithm are that (a) It reduces search space in blind alley regions because it only works on the sequences of bundles of the line segments built by the robot’s limited vision range. (b) Our algorithm ensures that the returned path to escape from the regions is not longer than the previous path of the robot. (c) Due to the construction of the sequences of bundles of line segments, our paths are not always “close” obstacles and the number of turns of such paths is smaller ones determined by other shortest path algorithms (e.g., A*, RRT*). Our algorithm is implemented in Python and we experience the algorithm on some autonomous robots with different vision ranges in real environment. We also compare our result with RRTX, a state-of-art local path-planning algorithm, and A ∗ , a basic one. The experimental results show that our algorithm provides better solutions than RRTX and A* results in some specific circumstances.},
+  archive      = {J_RAS},
+  author       = {Phan Thanh An and Pham Hoang Anh and Tran Thanh Binh and Tran Van Hoai},
+  doi          = {10.1016/j.robot.2025.105185},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {1},
+  pages        = {105185},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {The sequences of bundles of line segments for autonomous robots with limited vision range to escape from blind alley regions},
+  volume       = {195},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Improved prescribed performance control for multi-quadrotor payload transport under unknown disturbances. <em>RAS</em>, <em>195</em>, 105184. (<a href='https://doi.org/10.1016/j.robot.2025.105184'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a robust and enhanced control strategy for a multi-quadrotor suspended payload system, which is characterized by complex nonlinear dynamics and unknown external disturbances. A precise dynamic model of the system is formulated using the Udwadia–Kalaba method. A distributed cooperative planning framework, based on graph theory, is employed to enable effective information exchange and cooperative control among multiple quadrotors. To mitigate the impact of unknown disturbances, such as wind fields and variations in payload mass, a disturbance observer is developed to estimate and compensate for these disturbances, thereby enhancing system robustness. Furthermore, an improved prescribed performance control method is proposed to address the issue of exceeding performance boundaries. The steady-state error of the system is effectively reduced by adaptively adjusting the prescribed performance boundary and combining it with integral backstepping, and real-time constraints on tracking errors and closed-loop stability are achieved. Simulation results validate that the proposed control strategy significantly enhances the control performance and disturbance rejection capability of the multi-quadrotor suspended payload system, demonstrating superior robustness.},
+  archive      = {J_RAS},
+  author       = {Xinyu Chen and Yunsheng Fan and Guofeng Wang and Dongdong Mu},
+  doi          = {10.1016/j.robot.2025.105184},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {1},
+  pages        = {105184},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Improved prescribed performance control for multi-quadrotor payload transport under unknown disturbances},
+  volume       = {195},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

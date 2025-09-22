@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TETC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tetc">TETC - 22</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Efficient training and neuro-encoding for bridging hybrid ANN and SNN computation. <em>TETC</em>, 1-14. (<a href='https://doi.org/10.1109/TETC.2025.3607104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The complementary strengths of Spiking Neural Networks (SNNs) and Artificial Neural Networks (ANNs) have promoted interest in leveraging hybrid ANN/SNN computation. While most existing efforts focus on ANN-SNN conversion for pure SNN inference, hybrid ANN/SNN inference present unique challenges where complexity and performance in both domains are critical. Key limitations include achieving ultra-low latency, maintaining unified training parameters for resource sharing, and developing efficient neural and encoding models for hybrid data interactions. To address these challenges, We introduce the Adaptive Clip-Floor-Shift (ACFS) activation to bridge the ANN-SNN gap with unified parameters, balancing inference accuracy and complexity across both domains. Our Hybrid NeuroEncoding Bridge (HNEB) integrating Clipped-ReLU for ANNs, proposed Selective Integrate-and-Fire (SIF) model for enhanced SNN sparsity, and a Stateless Spike Encoding (SSE) mechanism for resource-efficient activation-spike conversion. Experimental results on VGG16 and ResNet demonstrate SNNs achieving competitive accuracy (≤ 0.89% loss) versus ANNs at ultra-low latency (e.g., T ≤ 4 for CIFAR10, T ≤ 8 for CIFAR100). Experimental analysis reveals Hybrid Neural Netwroks (HNNs) provide superior energy-accuracy trade-offs, improving energy efficiency by up to 84.13% over pure SNNs while maintaining accuracy through layer-wise ANN/SNN partitioning and minimized encoding overhead.},
+  archive      = {J_TETC},
+  author       = {Musheer Abdullah and De Xu and Zhaoqi Miao and Yuhao Tai and Sawsan Alhabashi and Chen Zhao and Wu Gao},
+  doi          = {10.1109/TETC.2025.3607104},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Efficient training and neuro-encoding for bridging hybrid ANN and SNN computation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). OER-miner: One-off episode rule mining for process event logs. <em>TETC</em>, 1-13. (<a href='https://doi.org/10.1109/TETC.2025.3607892'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Episode mining is an active subfield of data mining in which the aim is to retrieve important knowledge from temporal data and can be used to analyze fault reports and web navigation logs. However, existing methods generally do not consider time gap constraints, and overestimate the frequency of episodes, which may lead to mining a large number of episodes that users are not interested in. To tackle this problem, this paper investigates one-off episode rule (OER) mining with time gap constraints for process event logs and proposes a one-off episode rule mining algorithm called OER-Miner that can mine frequent one-off episodes and the implicit relationship among them. To generate fewer and prune unpromising candidate episodes, OERMiner utilizes episode join and pruning strategies, respectively. To efficiently calculate the candidate episode support, position indexes, and depth-first search and backtracking strategies are applied to calculate the number of occurrences. Experimental results verify that OER-Miner yields a better performance than seven other competitive algorithms on nine publicly available event logs. More importantly, OER-Miner can be applied to a real-industrial log to identify rework phenomena in the production process by mining strong one-off episode rules, to discover the optimal processes and deficiencies of the system, and provide recommendations for further improvement. All algorithms can be downloaded from https://github.com/wuc567/PatternMining/tree/master/OER-Miner},
+  archive      = {J_TETC},
+  author       = {Youxi Wu and Zhihong Dong and Jing Liu and Yan Li and Cong Liu and Lijie Wen and Xindong Wu},
+  doi          = {10.1109/TETC.2025.3607892},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {OER-miner: One-off episode rule mining for process event logs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A genetic approach for automatic AxC design exploration at RTL based on assertion mining and fault analysis. <em>TETC</em>, 1-15. (<a href='https://doi.org/10.1109/TETC.2025.3609050'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In Approximate Computing (AxC), design exploration methods have been introduced to automatically identify approximation targets at the gate level. However, only some of them are applicable at at Register Transfer Level (RTL); furthermore, the benefits of combining information from assertions and fault analysis have not been fully explored. This paper proposes a novel methodology for guiding AxC design exploration at RTL considering two approximation techniques: bit-width reduction and statement reduction. Then, it employs fault injection to mimic the approximation effect on the design under approximation. To guide the designer while assessing the approximation choices, assertions, which formally capture the behaviors implemented in the design, are dynamically generated from the RTL simulation traces. Then, the impact of fault injections on the truth values of the assertions is employed as a proxy for measuring the functional accuracy of the corresponding approximations. Based on this evaluation, a genetic algorithm is finally used to rank and cluster the approximation targets, thus providing the designer with an efficient and effective way to automatically analyze AxC variants in terms of the trade-off between accuracy and performance. The experiments carried out on state-of-the-art benchmarks show that the proposed approach represents a promising solution for the automation of AxC design exploration at RTL.},
+  archive      = {J_TETC},
+  author       = {Alberto Bosio and Samuele Germiniani and Graziano Pravadelli and Marcello Traiola},
+  doi          = {10.1109/TETC.2025.3609050},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {A genetic approach for automatic AxC design exploration at RTL based on assertion mining and fault analysis},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). D-TV-DBN: A hierarchical and distributed architecture for scalable cyber-physical anomaly detection with bayesian networks. <em>TETC</em>, 1-12. (<a href='https://doi.org/10.1109/TETC.2025.3573051'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The wide availability of diverse data from monitoring industrial cyber-physical systems enables data-driven anomaly detection. In particular, the scientific literature has addressed explainable cyber-physical anomaly detection using Bayesian networks, involving decision fusion from an ensemble of detectors. However, the aggregation of multiple decisions from different detectors within a single Bayesian network may negatively affect anomaly detection performance due to the heterogeneity of distributed environments. Furthermore, such decision fusion may be affected by scalability issues due to Bayesian inference being NP-hard. To address these issues, we present d-TV-DBN, a hierarchical and distributed architecture to scale cyber-physical anomaly detection with the state-of-the-art ensemble decision fusion technique based on Time-Varying Dynamic Bayesian networks. We provide a Proof-of-Concept evaluation of d-TV-DBN and evaluate its scalability and detection performance, comparing the results with several ensemble decision fusion approaches. The results demonstrate that the proposed d-TV-DBN outperforms the current state-of-the-art decision fusion techniques while maintaining a remarkably low mean inference time for reaching the final decision.},
+  archive      = {J_TETC},
+  author       = {Simone Guarino and Francesco Vitale and Ernesto Del Prete and Luca Faramondi and Nicola Mazzocca and Roberto Setola},
+  doi          = {10.1109/TETC.2025.3573051},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {5},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {D-TV-DBN: A hierarchical and distributed architecture for scalable cyber-physical anomaly detection with bayesian networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HyperXArray: Low-power and compact memristive architecture for in-memory encryption on edge. <em>TETC</em>, 1-14. (<a href='https://doi.org/10.1109/TETC.2025.3562136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Encryption on large-scale memristor crossbars proves to be challenging due to the spatial and temporal fluctuations of the signals coming from numerous non-idealities. To address this, we utilize Hyperlock, a memristive vector-matrix multiplication accelerator employing hyperdimensional computing for encryption. We demonstrate that stochasticity generated on TiOx memristor crossbars with passive 0T1R arrangement can be decryptable under the appropriate training of a neural network. We present HyperXArray, an architecture for Hyperlock's encryption scheme, that is capable of weight regeneration, and analog/digital encryption without the need for high-resolution Analog-to-Digital Converters (ADCs) and Digital-to-Analog Converters (DACs). We demonstrate 100% decryption accuracy for digital encryption and show that HyperXArray is capable of encryption during analog to digital conversion that reduces the power consumption of ADC by $50\times$. In digital encryption, we show that HyperXArray reduces energy consumption by up to $10\times$ and footprint by $10-100\times$ compared to Field Programmable Gate Array (FPGA) implementations of Advanced Encryption Standard (AES), while maintaining the same level of throughput. Overall, HyperXArray demonstrates its capability to fill the niche for lightweight, noise-resilient encryption on edge with only $0.1mm^{2}$ footprint and $60 pJ/bit$ energy efficiency.},
+  archive      = {J_TETC},
+  author       = {Jack Cai and Mostafa Rahimi Azghadi and Roman Genov and Amirali Amirsoleimani},
+  doi          = {10.1109/TETC.2025.3562136},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {4},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {HyperXArray: Low-power and compact memristive architecture for in-memory encryption on edge},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AI4FIDS: Multimodal federated intrusion detection. <em>TETC</em>, 1-15. (<a href='https://doi.org/10.1109/TETC.2025.3562346'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid progression of smart technologies creates several advantages like enhanced connectivity, personalisation solutions and environmental sustainability. However, this revolution creates also several cyber risks. In particular, the attackers have the ability to synthesise and automate advanced attack scenarios over time, while it is evident that Artificial Intelligence (AI) allows the composition of intelligent attack vectors that can adapt in real-time to conventional countermeasures. Despite the fact that AI can also benefit defensive mechanisms, there are still functional and privacy issues that need to be resolved. First, AI requires appropriate datasets that can differ from environment to environment. In addition, these datasets usually are not available due to privacy issues. Finally, adversarial attacks have the ability to target and affect the AI-based decision-making process. Therefore, in light of the previous remarks, we provide AI4FIDS, a multimodal Intrusion Detection System (IDS) for critical infrastructures. AI4FIDS leverages Federated learning (FL) and combines multiple data sources, thus allowing cooperative intelligence across multiple domains in a private manner and minimising the impact of potential adversarial attacks. In this paper, we present in detail the architectural design and specifications of AI4FIDS, while the evaluation results demonstrate their detection performance, taking into account several datasets and aggregation strategies. Finally, based on the evaluation results, we discuss how the overall reliability and detection capabilities (in terms of detecting multi-step attack scenarios) of AI4FIDS can be improved by combining the detection outcomes of the components behind AI4FIDS.},
+  archive      = {J_TETC},
+  author       = {Panagiotis Radoglou-Grammatikis and Pavlos S. Bouzinis and Ioannis Makris and Thomas Lagkas and Vasileios Argyriou and Georgios Th. Papadopoulos and Panagiotis Fouliras and George Seritan and Panagiotis Sarigiannidis},
+  doi          = {10.1109/TETC.2025.3562346},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {4},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {AI4FIDS: Multimodal federated intrusion detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CAM4: In-memory viral pathogen genome classification using similarity search dynamic content-addressable memory. <em>TETC</em>, 1-15. (<a href='https://doi.org/10.1109/TETC.2025.3563201'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present CAM4, a novel embedded dynamic storage-based similarity search content addressable memory. CAM4 is designated for in-memory computational genomics applications, particularly the identification and classification of pathogen DNA. CAM4 employs a novel gain cell design and one-hot encoding of DNA bases to address retention time variations, and mitigate potential data loss from pulldown leakage and soft errors in embedded DRAM. CAM4 features performance overhead-free refresh and data upload, allowing simultaneous search and refresh without performance degradation. CAM4 offers approximate search versatility in scenarios with a variety of industrial sequencers with different error profiles. When classifying DNA reads with a 10% error rate, it achieves, on average, a 25% higher $F_{1}$ score compared to MetaCache-GPU and Kraken2 DNA classification tools. Simulated at 1GHz, CAM4 provides $1,412\times$ and $1,040\times$ average speedup over MetaCache-GPU and Kraken2 respectively.},
+  archive      = {J_TETC},
+  author       = {Zuher Jahshan and Itay Merlin and Esteban Garzón and Leonid Yavits},
+  doi          = {10.1109/TETC.2025.3563201},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {4},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {CAM4: In-memory viral pathogen genome classification using similarity search dynamic content-addressable memory},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LIONHEART: A layer-based mapping framework for heterogeneous systems with analog in-memory computing tiles. <em>TETC</em>, 1-13. (<a href='https://doi.org/10.1109/TETC.2025.3546128'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When arranged in a crossbar configuration, resistive memory devices can be used to execute Matrix-Vector Multiplications (MVMs), the most dominant operation of many Machine Learning (ML) algorithms, in constant time complexity. Nonetheless, when performing computations in the analog domain, novel challenges are introduced in terms of arithmetic precision and stochasticity, due to non-ideal circuit and device behaviour. Moreover, these non-idealities have a temporal dimension, resulting in a degrading application accuracy over time. Facing these challenges, we propose a novel framework, named LionHeart, to obtain hybrid analog-digital mappings to execute Deep Learning (DL) inference workloads using heterogeneous accelerators. The accuracy-constrained mappings derived by LionHeart showcase, across different Convolutional Neural Networks (CNNs) and one transformer-based network, high accuracy and potential for speedup. The results of the full system simulations highlight runtime reductions and energy efficiency gains that exceed 6×, with a user-defined accuracy threshold for a fully digital floating point implementation.},
+  archive      = {J_TETC},
+  author       = {Corey Lammie and Yuxuan Wang and Flavio Ponzina and Joshua Klein and Hadjer Benmeziane and Marina Zapater and Irem Boybat and Abu Sebastian and Giovanni Ansaloni and David Atienza},
+  doi          = {10.1109/TETC.2025.3546128},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {3},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {LIONHEART: A layer-based mapping framework for heterogeneous systems with analog in-memory computing tiles},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive ELM-based time-constrained control of uncertain robotic manipulators with minimum learning computation. <em>TETC</em>, 1-12. (<a href='https://doi.org/10.1109/TETC.2025.3546241'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the extreme learning machine (ELM)-based time-constrained trajectory tracking control of a class of robotic manipulator systems with model/input uncertainties, matched and mismatched disturbances. A uniform robust exact differentiator (URED) is developed to construct a multi-layer virtual control framework of the robotic manipulator system. Under the control framework, adaptive ELM-based control strategies are proposed to suppress the influence of the uncertainties and disturbances layer-by-layer, combining with the minimum learning parameter (MLP) technique which is employed to reduce the calculation complexity of ELM parameters. The significance of this study is that general model/input uncertainties, matched and mismatched disturbances can be effectively compensated within a limited time, so that bounded trajectory tracking of the robotic manipulator can be achieved avoiding the complexity explosion issue. The time-constrained stability of the closed-loop robotic error systems is proved through Lyapunov stability theory. Finally, comparative simulations are employed to display the feasibility and superiority of the designed robust adaptive ELM-based control schemes of a robotic manipulator system.},
+  archive      = {J_TETC},
+  author       = {Xiaozheng Jin and Yuhan Hou and Xiaoming Wu and Jing Chi},
+  doi          = {10.1109/TETC.2025.3546241},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Adaptive ELM-based time-constrained control of uncertain robotic manipulators with minimum learning computation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Vector field-guided circumnavigation for an unmanned surface vehicle with boundary and obstacle constraints. <em>TETC</em>, 1-12. (<a href='https://doi.org/10.1109/TETC.2025.3547104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article aims to tackle the challenge of rapid target circumnavigation by unmanned surface vehicles (USVs) under boundary and obstacle constraints through leveraging an emerging computing architecture specifically tailored for unmanned systems. Owing to the underactuation of USV dynamic systems and the presence of various time-varying surface disturbances, attaining rapid and accurate position control along with maneuverability poses a significant challenge to USVs. Therefore, when an USV maneuvers around a target in a confined search area with obstacles, it is essential for the guidance law to consider collision risks and environmental disturbances. This paper proposes a modified Lyapunov vector field with heading deviation compensation to circle the target in complex search regions. The vector field is designed to increase the radial velocity of the USV and accelerate convergence towards the target circle during the pursuit phase. By combining the proposed Lyapunov vector field with a boundary vector field, the USV can swiftly avoid boundaries and dynamic obstacles and then continue circling the target. The proposed computing architecture extends the application scope of the target circumnavigation to practical water surface environments, which is validated by extensive simulations and rigorous experiments.},
+  archive      = {J_TETC},
+  author       = {Nailong Wu and Jigang Wang and Yueying Wang and Shuping He},
+  doi          = {10.1109/TETC.2025.3547104},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Vector field-guided circumnavigation for an unmanned surface vehicle with boundary and obstacle constraints},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FHEmem: A processing in-memory accelerator for fully homomorphic encryption. <em>TETC</em>, 1-16. (<a href='https://doi.org/10.1109/TETC.2025.3528862'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fully Homomorphic Encryption (FHE) is a technique that allows arbitrary computations to be performed on encrypted data without the need for decryption, making it ideal for secure computation outsourcing. However, computation on FHE-encrypted data is significantly slower than that on plain data, primarily due to the explosive increases in data size and computation complexity after encryption. To enable real-world FHE applications, recent research has proposed several custom hardware accelerators that provide orders of magnitude speedup over conventional systems. However, the performance of existing FHE accelerators is severely bounded by memory bandwidth, even with expensive on-chip buffers. Processing In-Memory (PIM) is a promising technology that can accelerate data-intensive workloads with extensive internal bandwidth. Unfortunately, existing PIM accelerators cannot efficiently support FHE due to the limited throughput to support FHE's complex computing and data movement operations. To tackle such challenges, we propose FHEmem, an FHE accelerator using a novel PIM architecture for high- throughput FHE acceleration. Furthermore, we present an optimized end-to-end processing flow with an automated mapping framework to maximize the hardware utilization of FHEmem. Our evaluation shows that FHEmem achieves at least 4.0× speedup and 6.9× energy-delay-area efficiency improvement over state-of-the-art FHE accelerators on popular FHE applications.},
+  archive      = {J_TETC},
+  author       = {Minxuan Zhou and Yujin Nam and Pranav Gangwar and Weihong Xu and Arpan Dutta and Chris Wilkerson and Rosario Cammarota and Saransh Gupta and Tajana Rosing},
+  doi          = {10.1109/TETC.2025.3528862},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {1},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {FHEmem: A processing in-memory accelerator for fully homomorphic encryption},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bi-layer deep learning with neural networks and large language models for cognitive biometrics. <em>TETC</em>, 1-13. (<a href='https://doi.org/10.1109/TETC.2025.3528874'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The paper focuses on cognitive biometrics and their application in user authentication. To be more precise, this work aims at investigating if the inference logic of Neural Networks can be combined with the contextual analysis of Large Language Models to create a composite metric, able to accurately reflect a user's Keystroke Dynamic and text-based Stylometrics in response to an arbitrary visual stimulus. The created artefact showed that this strategy is viable for real-world usage, having tested the solution on real participants and industry-standard datasets. In some cases, the performance testing showed superior accuracy and speed in some performance metrics compared to other contemporary solutions that exist in this area.},
+  archive      = {J_TETC},
+  author       = {Matthew Swann and Stavros Shiaeles and Nicholas Kolokotronis},
+  doi          = {10.1109/TETC.2025.3528874},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {1},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Bi-layer deep learning with neural networks and large language models for cognitive biometrics},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BCIM: Constant-time and high-throughput block-cipher-in-memory with massively-parallel bit-serial execution. <em>TETC</em>, 1-13. (<a href='https://doi.org/10.1109/TETC.2025.3529842'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In-memory computing (IMC) emerges as one of the most promising computing technologies for data-intensive applications to ameliorate the “memory wall” bottleneck in von Neumann computer systems. Meanwhile, IMC also shows promising prospects towards high- throughput and energy-efficient processing of cryptographic workloads. This paper presents Block-Cipher-In-Memory (BCIM), a constant-time, high- throughput, bit-serial in-memory cryptography scheme to support versatile Substitution-Permutation and Feistel network based block ciphers, such as standard ciphers like Advanced Encryption Standard (AES), and lightweight block ciphers like RECTANGLE and Simon. In addition, BCIM employs a processor-assisted key loading scheme and prudent memory management strategies to minimize the memory footprint needed for cryptographic algorithms to improve the peak operating frequency and energy efficiency. Built upon these, BCIM can also support alternative block cipher modes of operation like counter mode beyond electronic-codebook. Furthermore, the bit-serial operation of BCIM inherently ensures constant-time execution and exploits column- wise single instruction multiple data (SIMD) processing, thereby providing strong resistance to side-channel timing attacks, and achieves high- throughput encryption and decryption via massively-parallel compact round function implementation. Experimental results suggest that BCIM shows substantial performance and energy improvements over state-of-the-art bit-parallel IMC ciphers. Additionally, BCIM show competitive performance and orders of magnitude energy advantages over the bitsliced software implementations on MCU/CPU platforms. BCIM is available at https://github.com/adervay1/BCIM and open source.},
+  archive      = {J_TETC},
+  author       = {Andrew Dervay and Wenfeng Zhao},
+  doi          = {10.1109/TETC.2025.3529842},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {1},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {BCIM: Constant-time and high-throughput block-cipher-in-memory with massively-parallel bit-serial execution},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Processing in-memory PUF watermark embedding with cellular memristor network. <em>TETC</em>, 1-12. (<a href='https://doi.org/10.1109/TETC.2025.3528336'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The cellular neural network (CNN or CeNN) is known to be useful because of its suitability in real-time processing, parallel processing, robustness, flexibility, and energy efficiency. CeNNs have a large number of interconnected processing elements, which can be programmed to produce a wide range of patterns, including regular and irregular patterns, random patterns, and more. When implemented in memristive hardware, the pattern generator ability and inherent variability of memristive devices can be explored to create Physical Unclonable Functions (PUFs). This work reports a method of using memristive CeNNs to perform image processing tasks along with PUF image generation. The CeNN-PUF has dual mode capability combining data processing and encryption using PUF image watermarking. The proposed method provides unique device-specific image watermarks, following a two-stage process of (1) device-specific secret mask generation and (2) watermark embedding. The system is evaluated using multiple CeNN cloning templates and the robustness of the method is validated against ML attacks. A detailed analysis is presented to evaluate the uniqueness, randomness and reliability against different environmental changes. The experimental validation of the proposed model is done on FPGA Xilinx Zynq-7010 processor and benchmarked the system against quantization noise.},
+  archive      = {J_TETC},
+  author       = {Alex James and Chithra Reghuvaran and Leon Chua},
+  doi          = {10.1109/TETC.2025.3528336},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {1},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Processing in-memory PUF watermark embedding with cellular memristor network},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SiPT: Signature-based predictive testing of RRAM crossbar arrays for deep neural networks. <em>TETC</em>, 1-15. (<a href='https://doi.org/10.1109/TETC.2025.3533895'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Resistive Random-Access Memory (RRAM) crossbar array-based Deep Neural Networks (DNNs) are increasingly attractive for implementing ultra-low-power computing for AI. However, RRAM-based DNNs face inherent challenges from manufacturing process variability, which can compromise their performance (classification accuracy) and functional safety. One way to test these DNNs is to apply the exhaustive set of test images to each DNN to ascertain its performance; however, this is expensive and time-consuming. We propose a signature-based predictive testing (SiPT) in which a small subset of test images is applied to each DNN and the classification accuracy of the DNN is predicted directly from observations of the intermediate and final layer outputs of the network. This saves the test cost while allowing binning of RRAM-based DNNs for performance. To further improve the test efficiency of SiPT, we create the optimized compact set of test images, leveraging image filters and enhancements to synthesize images and develop a cascaded test structure, incorporating multiple sets of SiPT modules trained on compact test subsets of varying sizes. Through experimentation across diverse test cases, we demonstrate the viability of our SiPT framework under the RRAM process variations, showing test efficiency improvements up to 48X over testing with the exhaustive image dataset.},
+  archive      = {J_TETC},
+  author       = {Kwondo Ma and Anurup Saha and Chandramouli Amarnath and Abhijit Chatterjee},
+  doi          = {10.1109/TETC.2025.3533895},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {1},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {SiPT: Signature-based predictive testing of RRAM crossbar arrays for deep neural networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Traffic network socialization: An adaptive spatio-temporal graph convolutional network for traffic prediction. <em>TETC</em>, 1-16. (<a href='https://doi.org/10.1109/TETC.2024.3471629'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate traffic prediction is important for developing intelligent transportation system (ITS). We take inspiration from the graph convolutional network (GCN) technology of link prediction in social networks. Traffic and social networks are similar in the link prediction structure. Link prediction in social networks is related to user information and topology information; moreover, the future traffic flow of nodes is related to neighbor nodes and historical traffic flow. This study proposes an adaptive spatio-temporal GCN for traffic prediction based on similarities in the link prediction structure. First, considering the traffic flow data socialization problem, the road network nodes are compared to users in social networks, and the relationship between users is mapped to spatial correlation in traffic flow data. Furthermore, because of the hidden spatial dependence between road network nodes, an enhancing GCN based on an adaptive adjacency matrix is developed to enhance system robustness. Second, aiming at the dynamic spatio-temporal correlation of traffic data, the dynamic spatio-temporal graph module (DST-graph module) is proposed, which is based on the modeling ability of the transformer for long time series. The module captures the dynamic spatio-temporal correlation and the long-term temporal dependence. Finally, a gate fusion module is designed to effectively integrate the learned temporal-spatial features of traffic flow to improve system robustness and prediction accuracy. Multiple experiments have been performed on four real-world datasets. The results show that, compared with other baseline methods, the proposed model achieves additional accuracy for long-term traffic flow under complex traffic conditions.},
+  archive      = {J_TETC},
+  author       = {Rong Wang and Miaofei Li and Jiankuan Zhao and Anyu Cheng and Chaolong Jia},
+  doi          = {10.1109/TETC.2024.3471629},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Traffic network socialization: An adaptive spatio-temporal graph convolutional network for traffic prediction},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). HiT-CIM: A high-throughput compute-in-memory SRAM architecture with simultaneous weight Loading/Computing and balance capabilities. <em>TETC</em>, 1-15. (<a href='https://doi.org/10.1109/TETC.2024.3471176'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the post-Moore's era, compute-in-memory (CIM) techniques are promising to break the memory wall. In particular, SRAM-based CIMs (SRAM-CIMs) have attracted widespread attention owing to its good scalability with advanced process. At present, a rich variety of works focus on energy-efficiency improvement by either designing different bit-cell structures or optimizing circuit/chip architectures. However, owing to the CIM's primitive property to store one of the operands in the memory bit-cells, substantial computing resource is wasted by suspension during the operands loading procedure. In this paper, a high-throughput SRAM-CIM (HiT-CIM) architecture with simultaneous weight loading and computing capabilities is proposed by integrating on-chip nonvolatile MRAM (magnetic random-access memory). Meanwhile, both the mainstream current-domain and charge-domain SRAM bit-cell structures are optimized to support such an architecture. Furthermore, a reconfigurable fully-pipelined MRAM is designed to provide fast data loading in HiT-CIM, which can finetune weight loading strategy rapidly for different neural network models. Afterwards, an optimal evaluation and configuration strategy is proposed to improve the macro-level performance by considering the key components and parameters in terms of SRAM array, ADC, MRAM structure and frequency. Finally, the HiT-CIM's feasibility is verified under a 40-nm foundry's process. The results show that a multiple-fold speed improvement can be obtained on VGG19, ResNet18 and MobileNetV1, respectively. In specific, the area efficiency of HiT-CIM on VGG19 achieves 1124 GOPS/mm2 and 1880.12 GOPS/mm2 for the current-domain and chargedomain SRAM-CIMs, respectively. Up to 5.3× improvement is realized compared with prior works},
+  archive      = {J_TETC},
+  author       = {Junzhan Liu and Sifan Sun and Liang Zhang and Lichuan Luo and Liang Ran and He Zhang and Wang Kang and Weisheng Zhao},
+  doi          = {10.1109/TETC.2024.3471176},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {10},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {HiT-CIM: A high-throughput compute-in-memory SRAM architecture with simultaneous weight Loading/Computing and balance capabilities},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). APRIS: Approximate processing ReRAM in-sensor architecture enabling artificial-intelligence-powered edge. <em>TETC</em>, 1-11. (<a href='https://doi.org/10.1109/TETC.2024.3480700'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Artificial-intelligence-powered edge devices are inspiring interest in always-on, intelligent, and self-powered visual perception systems. Due to the high energy cost of converting raw data and the limited computing and energy resources available, designing energy-efficient and low bandwidth CMOS vision sensors is vital as these emerging systems require continuous sensing and instant processing. This paper proposes a low-power integrated sensing and computing engine, namely APRIS , including a novel software/hardware co-design technique. This method provides a highly parallel analog multiplication and accumulation-in-pixel scheme, which realizes low-precision quantized weight neural networks to mitigate the overhead of analog-to-digital converters and analog buffers. Moreover, in order to reduce the size and power consumption, we propose the implementation of an approximate ADC in the readout circuit. Our system utilizes eight memory banks to increase computation parallelism, which has a dramatic effect on its speed and efficiency. Moreover, the proposed structure supports a zero-skipping scheme to reduce power consumption further. Our circuit-to-application co-simulation results demonstrate a comparable accuracy for our platform to the full-precision baseline on various object classification tasks while reaching an efficiency of $\sim$ 3.48 TOp/s/W.},
+  archive      = {J_TETC},
+  author       = {Sepehr Tabrizchi and Rebati Gaire and Mehrdad Morsali and Maximilian Liehr and Nathaniel Cady and Shaahin Angizi and Arman Roohi},
+  doi          = {10.1109/TETC.2024.3480700},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {10},
+  pages        = {1-11},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {APRIS: Approximate processing ReRAM in-sensor architecture enabling artificial-intelligence-powered edge},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). PABLO: A variation-robust PIM architecture for bulk bitwise logical operations in DRAM. <em>TETC</em>, 1-16. (<a href='https://doi.org/10.1109/TETC.2024.3486348'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The significant data movement between processing units and DRAM adversely affects the performance and energy efficiency of the systems to process bulk bitwise logical operations (BLOs). Researchers have addressed the problem by employing processing-in-memory (PIM) techniques, where bulk bitwise operations are processed in DRAM. Among existing techniques, semi-digital PIMs, which support bulk BLOs by utilizing DRAM core circuits, are one of the most viable designs due to their moderate area penalties. However, our study reveals that state-of-the-art (SOTA) semi-digital PIMs suffer from considerable computation errors caused by process variations. This paper presents PABLO, a novel PIM architecture based on DRAM, to address the challenge. The essential contribution is to develop a generic bitwise unit integrated with the conventional local sense amplifier, enabling bulk BLOs with minimal overhead and modifications of commodity DRAM. As a result, the proposed design allows for simplified bitwise operations while hardly affecting conventional DRAM core operations. We comprehensively demonstrate the enhanced variation tolerance of PABLO compared to SOTA semi-digital PIMs through Monte Carlo simulations. Furthermore, our evaluation results indicate that PABLO achieves a speedup of up to ∼3.97× and energy savings of up to ∼3.87× compared to existing solutions},
+  archive      = {J_TETC},
+  author       = {Minh-Son Le and Thanh-Dat Nguyen and Jeong Hoan Park and Seungkyu Choi and Ik-Joon Chang},
+  doi          = {10.1109/TETC.2024.3486348},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {PABLO: A variation-robust PIM architecture for bulk bitwise logical operations in DRAM},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Enabling obfuscation detection in binary software through eXplainable AI. <em>TETC</em>, 1-12. (<a href='https://doi.org/10.1109/TETC.2024.3439884'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Binary obfuscation techniques are commonly employed to protect code against reverse engineering and piracy. Unfortunately, besides being used for legitimate purposes, virus writers also resort to obfuscation to evade antivirus detection mechanisms based on signature scanning. Consequently, the detection of obfuscated code in executables may be a precious resource to prevent the execution of malicious programs. Detecting obfuscation is a task fraught with difficulties owing to the wide range of possible obfuscation transformations and the indistinguishability of obfuscated code. In this paper, we venture into the not-so-explored world of obfuscation detection, gaining a deeper comprehension of what happens - from a statistical perspective - to a binary program when obfuscation transformations are applied to it. We accomplish this goal by leveraging eXplainable Artificial Intelligence, which allows us to discern the altered features from the invariant ones, which in turn can then be used for obfuscation-resilient malware detection. The present study has been carried out utilizing diverse datasets, not only to examine the detection of obfuscation but also to classify the specific obfuscating transformations employed. The investigation encompasses binaries compiled for various architectures, and we propose an effective methodology for identifying both the existence of obfuscation and isolating invariant patterns that can facilitate the creation of obfuscation-resistant signatures for antivirus detection.},
+  archive      = {J_TETC},
+  author       = {Claudia Greco and Michele Ianni and Antonella Guzzo and Giancarlo Fortino},
+  doi          = {10.1109/TETC.2024.3439884},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Enabling obfuscation detection in binary software through eXplainable AI},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Vehicle-assisted RSU caching using deep reinforcement learning. <em>TETC</em>, 1. (<a href='https://doi.org/10.1109/TETC.2021.3068014'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vehicular communication is a crucial component of intelligent transportation systems (ITS) upon which many services are based starting with relaying traffic conditions up to enabling autonomous driving. Using a backhaul link, a road side unit (RSU) is assumed to fetch content from the Internet to serve the requests of incoming vehicles while they are within its range. Unless an effective caching mechanism is employed at the RSU, popular content might be unnecessarily retrieved from the network backhaul repeatedly especially in scenarios with large number of vehicles. This incurs significant capital and operating expenditures to RSU operators due to backhaul leasing and utilization. In this work, we explore cost-effective solutions for RSU operators by leveraging the content that is readily available on vehicles within the RSU's coverage range to intelligently cache popular content and serve newly arriving vehicles. However, due to the limited RSUs storage capacity and continuous flow of contents, the problem of establishing an RSU caching strategy to maximize the serving rate of incoming vehicles in an energy-efficient manner is challenging. Thus, we propose a technique based on deep reinforcement learning and demonstrate its effectiveness compared to the state-of-the-art.},
+  archive      = {J_TETC},
+  author       = {Ahmed Al-Hilo and Dariush Ebrahimi and Sanaa Sharafeddine and Chadi Assi},
+  doi          = {10.1109/TETC.2021.3068014},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {3},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Vehicle-assisted RSU caching using deep reinforcement learning},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2016). Notice of violation of IEEE publication principles: An energy-efficient heterogeneous memory architecture for future dark silicon embedded chip-multiprocessors. <em>TETC</em>, 1. (<a href='https://doi.org/10.1109/TETC.2016.2563323'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Notice of Violation of IEEE Publication Principles "An Energy-efficient Heterogeneous Memory Architecture for Future Dark Silicon Embedded Chip-Multiprocessors" by Salman Onsori, Arghavan Asad, Kaamran Raahemifar in the IEEE Transactions on Emerging Topics in Computing, (Early Access), May 2016 After careful and considered review of the content and authorship of this paper by a duly constituted expert committee, this paper has been found to be in violation of IEEE's Publication Principles. This paper contains text and a figure copied from the paper cited below. The original content was copied without attribution (including appropriate references to the original author(s) and/or paper title) and without permission. "Retention Time Aware STT-RAM based L1-Cache in Multi-Core Processors" by Bahar Asgari, Mahdi Fazeli, Ahmad Patooghy, Mostafa Kajouian; Farzaneh Rabiee submitted to Elsevier Microprocessors and Microsystems, November 2015 Main memories play an important role in overall energy consumption of embedded systems. Using conventional memory technologies in future designs in nanoscale era causes a drastic increase in leakage power consumption and temperature-related problems. Emerging non-volatile memory (NVM) technologies offer many desirable characteristics such as near-zero leakage power, high density and non-volatility. They can significantly mitigate the issue of memory leakage power in future embedded chip-multiprocessor (eCMP) systems. However, they suffer from challenges such as limited write endurance and high write energy consumption which restrict them for adoption in modern memory systems. In this article, we present a convex optimization model to design a 3D stacked hybrid memory architecture in order to minimize the future embedded systems energy consumption in the dark silicon era. This proposed approach satisfies endurance constraint in order to design a reliable memory system. Our convex model optimizes numbers and placement of eDRAM and STT-RAM memory banks on the memory layer to exploit the advantages of both technologies in future eCMPs. Energy consumption, the main challenge in the dark silicon era, is represented as a major target in this work and it is minimized by the detailed optimization model in order to design a dark silicon aware 3D Chip-Multiprocessor. Experimental results show that in comparison with the Baseline memory design, the proposed architecture improves the energy consumption and performance of the 3D CMP on average about 61.33% and 9% respectively.},
+  archive      = {J_TETC},
+  author       = {Salman Onsori and Arghavan Asad and Kaamran Raahemifar and Mahmood Fathy},
+  doi          = {10.1109/TETC.2016.2563323},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {5},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Notice of violation of IEEE publication principles: An energy-efficient heterogeneous memory architecture for future dark silicon embedded chip-multiprocessors},
+  year         = {2016},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

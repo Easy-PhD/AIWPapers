@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOSEM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tosem">TOSEM - 30</h2>
+<ul>
+<li><details>
+<summary>
+(2025). JSimpo: Structural deobfuscation of JavaScript programs. <em>TOSEM</em>, <em>34</em>(7), 1-28. (<a href='https://doi.org/10.1145/3714460'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {JavaScript (JS) obfuscation is now prevalent among popular websites and introduces challenges for malware detection and code review. Given an obfuscated JS program, existing deobfuscation techniques aim to recover the original JS program. However, these techniques overlook structural obfuscation (e.g., control-flow flattening), which causes deobfuscation to have a sub-optimal success rate. To address these challenges, in this article, we propose the first approach of structural deobfuscation named JSimpo for JS programs with two novel techniques: slice symbolic execution and dynamic code execution. We implement our JSimpo approach and evaluate it on 2,000 JS programs from the top 100 JS projects on GitHub. The evaluation results show that JSimpo can effectively conduct structural deobfuscation, boosting the average structural similarity to 78.41% (from 39.33%) between obfuscated programs and their original programs, whereas the best of the state-of-the-art/practice deobfuscators can achieve only 62.64%. The results also show JSimpo's generalization ability over programs obfuscated by various obfuscators. Additionally, JSimpo preserves the semantics of deobfuscated programs by passing all test cases that obfuscated programs have passed.},
+  archive      = {J_TOSEM},
+  author       = {Tianyu Chen and Ding Li and Ying Zhang and Tao Xie},
+  doi          = {10.1145/3714460},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {JSimpo: Structural deobfuscation of JavaScript programs},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring parameter-efficient fine-tuning techniques for code generation with large language models. <em>TOSEM</em>, <em>34</em>(7), 1-25. (<a href='https://doi.org/10.1145/3714461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large language models (LLMs) demonstrate impressive capabilities to generate accurate code snippets given natural language intents in a zero-shot manner, i.e., without the need for specific fine-tuning. While prior studies have highlighted the advantages of fine-tuning LLMs, this process incurs high computational costs, making it impractical in resource-scarce environments, particularly for models with billions of parameters. To address these challenges, previous research explored in-context learning (ICL) and retrieval-augmented generation (RAG) as strategies to guide the LLM generative process with task-specific prompt examples. However, ICL and RAG introduce inconveniences, such as the need for designing contextually relevant prompts and the absence of learning task-specific parameters, thereby limiting downstream task performance. In this context, we foresee parameter-efficient fine-tuning (PEFT) as a promising approach to efficiently specialize LLMs to task-specific data while maintaining reasonable resource consumption. In this article, we deliver a comprehensive study of PEFT techniques for LLMs in the context of automated code generation. Our comprehensive investigation of PEFT techniques for LLMs reveals their superiority and potential over ICL and RAG across a diverse set of LLMs and three representative Python code generation datasets: Conala, CodeAlpacaPy, and APPS. Furthermore, our study highlights the potential for tuning larger LLMs and significant reductions in memory usage by combining PEFT with quantization. Therefore, this study opens opportunities for broader applications of PEFT in software engineering scenarios.},
+  archive      = {J_TOSEM},
+  author       = {Martin Weyssow and Xin Zhou and Kisub Kim and David Lo and Houari Sahraoui},
+  doi          = {10.1145/3714461},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Exploring parameter-efficient fine-tuning techniques for code generation with large language models},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Teaching code LLMs to use autocompletion tools in repository-level code generation. <em>TOSEM</em>, <em>34</em>(7), 1-27. (<a href='https://doi.org/10.1145/3714462'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent code large language models (LLMs) have shown promising performance in generating standalone functions. However, they face limitations in repository-level code generation due to their lack of awareness of repository - level dependencies (e.g., user-defined attributes), resulting in dependency errors such as undefined-variable and no-member errors. In this work, we introduce ToolGen , an approach that integrates autocompletion tools into the code LLM generation process to address these dependencies. ToolGen comprises two main phases: Trigger Insertion and Model Fine-tuning (Offline), and Tool-integrated Code Generation (Online). During the offline phase, ToolGen augments functions within a given code corpus with a special mark token, indicating positions to trigger autocompletion tools. These augmented functions, along with their corresponding descriptions, are then used to fine-tune a selected code LLM. In the online phase, ToolGen iteratively generates functions by predicting tokens step-by-step using the fine-tuned LLM. Whenever a mark token is encountered, ToolGen invokes the autocompletion tool to suggest code completions and selects the most appropriate one through constrained greedy search. We conduct comprehensive experiments to evaluate ToolGen ’s effectiveness in repository-level code generation across three distinct code LLMs: CodeGPT, CodeT5, and CodeLlama. To facilitate this evaluation, we create a benchmark comprising 671 real-world code repositories and introduce two new dependency-based metrics: Dependency Coverage and Static Validity Rate . The results demonstrate that ToolGen significantly improves Dependency Coverage by 31.4% to 39.1% and Static Validity Rate by 44.9% to 57.7% across the three LLMs, while maintaining competitive or improved performance in widely recognized similarity metrics such as BLEU-4, CodeBLEU, Edit Similarity, and Exact Match. On the CoderEval dataset, ToolGen achieves improvements of 40.0% and 25.0% in test pass rate (Pass@1) for CodeT5 and CodeLlama, respectively, while maintaining the same pass rate for CodeGPT. ToolGen also demonstrates high efficiency in repository-level code generation, with latency ranging from 0.63 to 2.34 seconds for generating each function. Furthermore, our generalizability evaluation confirms ToolGen ’s consistent performance when applied to diverse code LLMs, encompassing various model architectures and scales.},
+  archive      = {J_TOSEM},
+  author       = {Chong Wang and Jian Zhang and Yebo Feng and Tianlin Li and Weisong Sun and Yang Liu and Xin Peng},
+  doi          = {10.1145/3714462},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Teaching code LLMs to use autocompletion tools in repository-level code generation},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TAEFuzz: Automatic fuzzing for image-based deep learning systems via transferable adversarial examples. <em>TOSEM</em>, <em>34</em>(7), 1-31. (<a href='https://doi.org/10.1145/3714463'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep Learning (DL) components have been broadly applied in diverse applications. Similar to traditional software engineering, effective test case generation methods are needed by industry to enhance the quality and robustness of these DL components. To this end, we propose a novel automatic software testing technique, Fuzz-testing via T ransferable A dversarial E xamples ( TAEFuzz ), which aims to automatically assess and enhance the robustness of image-based DL systems based on test cases generated by transferable adversarial examples. TAEFuzz alleviates the over-fitting problem during optimized test case generation and prevents test cases from prematurely falling into local optima. In addition, TAEFuzz enhances the visual quality of test cases through constraining perturbations inserted into sensitive areas of the images. For a system with low robustness, TAEFuzz trains a low-cost denoising module to reduce the impact of perturbations in transferable adversarial examples on the system. Experimental results demonstrate that the test cases generated by TAEFuzz can discover up to 46.1% more errors in the targeted systems and ensure the visual quality of test cases. Compared to existing techniques, TAEFuzz also enhances the robustness of the target systems against transferable adversarial examples with the perturbation denoising module.},
+  archive      = {J_TOSEM},
+  author       = {Shunhui Ji and Changrong Huang and Bin Ren and Hai Dong and Lars Grunske and Yan Xiao and Pengcheng Zhang},
+  doi          = {10.1145/3714463},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {TAEFuzz: Automatic fuzzing for image-based deep learning systems via transferable adversarial examples},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Signal feature coverage and testing for CPS dataflow models. <em>TOSEM</em>, <em>34</em>(7), 1-37. (<a href='https://doi.org/10.1145/3714467'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Design of cyber-physical systems (CPS) typically involves dataflow modeling. The structure of dataflow models differs from the traditional software, making standard coverage metrics not appropriate for measuring the thoroughness of testing. To address this limitation, this article proposes signal feature coverage as a new coverage metric for systematically testing CPS dataflow models. We derive signal feature coverage by leveraging signal features. We developed a testing framework in Simulink, a popular dataflow modeling and simulation environment, that automates the generation and execution of test cases based on the defined coverage metric. We evaluated the effectiveness of our approach by carrying out experiments on five Simulink models tested against ten Signal Temporal Logic specifications. We compared our coverage-based testing approach to adaptive random testing, falsification testing, output diversity-based approaches, and testing using MathWorks’ Simulink Design Verifier. The results demonstrate that our coverage-based testing approach outperforms the conventional techniques regarding fault detection capability.},
+  archive      = {J_TOSEM},
+  author       = {Ezio Bartocci and Leonardo Mariani and Dejan Nickovic and Drishti Yadav},
+  doi          = {10.1145/3714467},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Signal feature coverage and testing for CPS dataflow models},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Faster and better quantum software testing through specification reduction and projective measurements. <em>TOSEM</em>, <em>34</em>(7), 1-39. (<a href='https://doi.org/10.1145/3714468'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum computing (QC) promises polynomial and exponential speedups in many domains, such as unstructured search and prime number factoring. However, quantum programs yield probabilistic outputs from exponentially growing distributions and are vulnerable to quantum-specific faults. Existing quantum software testing (QST) approaches treat quantum superpositions as classical distributions. This leads to two major limitations when applied to quantum programs: (1) an exponentially growing sample space distribution and (2) failing to detect quantum-specific faults such as phase flips. To overcome these limitations, we introduce a QST approach, which applies a reduction algorithm to a quantum program specification. The reduced specification alleviates the limitations (1) by enabling faster sampling through quantum parallelism and (2) by performing projective measurements in the mixed Hadamard basis. Our evaluation of 143 quantum programs across four categories demonstrates significant improvements in test runtimes and fault detection with our reduction approach. Average test runtimes improved from 169.9 s to 11.8 s, with notable enhancements in programs with large circuit depths (383.1 s to 33.4 s) and large program specifications (464.8 s to 7.7 s). Furthermore, our approach increases mutation scores from \(54.5\%\) to \(74.7\%\) , effectively detecting phase flip faults that non-reduced specifications miss. These results underline our approach's importance to improve QST efficiency and effectiveness.},
+  archive      = {J_TOSEM},
+  author       = {Noah H. Oldfield and Christoph Laaber and Tao Yue and Shaukat Ali},
+  doi          = {10.1145/3714468},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-39},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Faster and better quantum software testing through specification reduction and projective measurements},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introducing phylogenetics in search-based software engineering: Phylogenetics-aware SBSE. <em>TOSEM</em>, <em>34</em>(7), 1-38. (<a href='https://doi.org/10.1145/3715002'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Phylogenetics studies the relationships, in terms of biological history and kinship, of a set of taxa (e.g., species). We argue that in Search-based Software Engineering (SBSE), the individuals of an evolutionary computation-driven population could be considered as taxa for which the leverage of Phylogenetic Inference might be beneficial. In this work, we present our Phylogenetics-aware SBSE approach. Our approach introduces a novel Phylogenetic Operation to promote results which are sufficiently aligned (in terms of lineage) with a certain reference given by the domain expert. Our approach is evaluated in two heterogeneous industrial case studies: Procedural Content Generation from Game Software Engineering, and Feature Location from Software Maintenance. The results are analyzed using quality-of-the-solution and acceptance-by-developers measurements. We performed a statistical analysis to determine whether the impact on the results is significant compared to baselines that do not leverage Phylogenetics. The results show that our approach significantly outperforms two baselines in both case studies. Furthermore, two focus groups confirmed the acceptance of our approach and stressed that solution acceptance may make the difference in industrial environments. Our work has the potential to motivate a new breed of research work on Phylogenetics awareness to produce better results in Software Engineering.},
+  archive      = {J_TOSEM},
+  author       = {Daniel Blasco and Antonio Iglesias and Jorge Echeverría and Francisca Pérez and Carlos Cetina},
+  doi          = {10.1145/3715002},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-38},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Introducing phylogenetics in search-based software engineering: Phylogenetics-aware SBSE},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hybrid automated program repair by combining large language models and program analysis. <em>TOSEM</em>, <em>34</em>(7), 1-28. (<a href='https://doi.org/10.1145/3715004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated Program Repair (APR) has garnered significant attention due to its potential to streamline the bug repair process for human developers. Recently, LLM-based APR methods have shown promise in repairing real-world bugs. However, existing APR methods often utilize patches generated by LLMs without further optimization, resulting in reduced effectiveness due to the lack of program-specific knowledge. Furthermore, the evaluations of these APR methods have typically been conducted under the assumption of perfect fault localization, which may not accurately reflect their real-world effectiveness. To address these limitations, this article introduces an innovative APR approach called G iant R epair . Our approach leverages the insight that LLM-generated patches, although not necessarily correct, offer valuable guidance for the patch generation process. Based on this insight, G iant R epair first constructs patch skeletons from LLM-generated patches to confine the patch space, and then generates high-quality patches tailored to specific programs through context-aware patch generation by instantiating the skeletons. To evaluate the performance of our approach, we conduct two large-scale experiments. The results demonstrate that G iant R epair not only effectively repairs more bugs (an average of 27.78% on Defects4J v1.2 and 23.40% on Defects4J v2.0) than using LLM-generated patches directly, but also outperforms state-of-the-art APR methods by repairing at least 42 and 7 more bugs under perfect and automated fault localization scenarios, respectively.},
+  archive      = {J_TOSEM},
+  author       = {Fengjie Li and Jiajun Jiang and Jiajun Sun and Hongyu Zhang},
+  doi          = {10.1145/3715004},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Hybrid automated program repair by combining large language models and program analysis},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The good, the bad, and the monstrous: Predicting highly change-prone source code methods at their inception. <em>TOSEM</em>, <em>34</em>(7), 1-29. (<a href='https://doi.org/10.1145/3715006'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The cost of software maintenance often surpasses the initial development expenses, making it a significant concern for the software industry. A key strategy for alleviating future maintenance burdens is the early prediction and identification of change-prone code components, which allows for timely optimizations. While prior research has largely concentrated on predicting change-prone files and classes—an approach less favored by practitioners—this article shifts focus to predicting highly change-prone methods, aligning with the preferences of both practitioners and researchers. We analyzed 774,051 source code methods from 49 prominent open source Java projects. Our findings reveal that approximately 80% of changes are concentrated in just 20% of the methods, demonstrating the Pareto 80/20 principle. Moreover, this subset of methods is responsible for the majority of the identified bugs in these projects. After establishing their critical role in mitigating software maintenance costs, our study shows that machine learning models can effectively identify these highly change-prone methods from their inception. Additionally, we conducted a thorough manual analysis to uncover common patterns (or concepts) among the more difficult-to-predict methods. These insights can help future research develop new features and enhance prediction accuracy.},
+  archive      = {J_TOSEM},
+  author       = {Shaiful Chowdhury},
+  doi          = {10.1145/3715006},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {The good, the bad, and the monstrous: Predicting highly change-prone source code methods at their inception},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An empirical study on challenges for LLM application developers. <em>TOSEM</em>, <em>34</em>(7), 1-37. (<a href='https://doi.org/10.1145/3715007'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, large language models (LLMs) have seen rapid advancements, significantly impacting various fields such as computer vision, natural language processing, and software engineering. These LLMs, exemplified by OpenAI's ChatGPT, have revolutionized the way we approach language understanding and generation tasks. However, in contrast to traditional software development practices, LLM development introduces new challenges for AI developers in design, implementation, and deployment. These challenges span different areas (such as prompts, APIs, and plugins), requiring developers to navigate unique methodologies and considerations specific to LLM application development. Despite the profound influence of LLMs, to the best of our knowledge, these challenges have not been thoroughly investigated in previous empirical studies. To fill this gap, we present the first comprehensive study on understanding the challenges faced by LLM developers. Specifically, we crawl and analyze 29,057 relevant questions from a popular OpenAI developer forum. We first examine their popularity and difficulty. After manually analyzing 2,364 sampled questions, we construct a taxonomy of challenges faced by LLM developers. Based on this taxonomy, we summarize a set of findings and actionable implications for LLM-related stakeholders, including developers and providers (especially the OpenAI organization).},
+  archive      = {J_TOSEM},
+  author       = {Xiang Chen and Chaoyang Gao and Chunyang Chen and Guangbei Zhang and Yong Liu},
+  doi          = {10.1145/3715007},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {An empirical study on challenges for LLM application developers},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automated detection and repair of floating-point precision problems in convolutional neural network operators. <em>TOSEM</em>, <em>34</em>(7), 1-32. (<a href='https://doi.org/10.1145/3715104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional Neural Network (CNN) operators, mostly based on mathematical linear computations, are of vital importance to developing CNN-based software. Existing studies reveal that these operators are prone to floating-point precision problems (FPPs). In a CNN-based application, such problems can be propagated and result in catastrophic consequences. Thus, it is highly desired to detect and repair the FPPs in CNN operators. Considering the FPPs in CNN operators are mainly caused by accumulated floating-point errors and diverse floating-point tensors instead of wrong codes or bad implementations, it requires much time cost and is difficult to tackle these FPPs. In this article, we propose the first method for the automated detection and repair of FPPs in CNN operators from the perspective of floating-point tensors. To generate diverse tensors with floating-point numbers, we design two levels of mutation rules, namely computation-level mutation and input-level mutation, containing a total of five mutation methods. To detect the FPPs caused by the accumulated floating-point errors, our method uses a weight matrix to guide the progressive mutation. To repair the detected FPPs, our method transforms the error-prone floating-point tensors based on the mathematical rewriting of the floating-point linear computational properties without destroying the original computation. Experimental results show that our methods can detect and repair FPPs in CNN operators effectively and efficiently and could reduce 93.32% to 100% of the FPPs in CNN operators. We conduct a case study on six different widely used CNN models and confirm that the proposed FPP method is generalizable and effective across a variety of tasks and architectures. Our detection and repair method offers an intuitive way to handle FPPs during development, allowing users to continue building and fine-tuning their models without being slowed down by numerical precision errors. We believe that our method could open up a new way to enhance the quality of CNN operators and CNN-based software.},
+  archive      = {J_TOSEM},
+  author       = {Jiawei Liu and Xufan Zhang and Lurong Xu and Chunrong Fang and Mingzheng Gu and Weisi Luo and Dong Chai and Jiang Wang and Zhihong Zhao and Zhenyu Chen},
+  doi          = {10.1145/3715104},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-32},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Automated detection and repair of floating-point precision problems in convolutional neural network operators},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Finding safety violations of AI-enabled control systems through the lens of synthesized proxy programs. <em>TOSEM</em>, <em>34</em>(7), 1-35. (<a href='https://doi.org/10.1145/3715105'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given the increasing adoption of modern AI-enabled control systems, ensuring their safety and reliability has become a critical task in software testing. One prevalent approach to testing control systems is falsification, which aims to find an input signal that causes the control system to violate a formal safety specification using optimization algorithms. However, applying falsification to AI-enabled control systems poses two significant challenges: (1) it requires the system to execute numerous candidate test inputs, which can be time-consuming, particularly for systems with AI models that have many parameters, and (2) multiple safety requirements are typically defined as a conjunctive specification, which is difficult for existing falsification approaches to comprehensively cover. This article introduces Synthify , a falsification framework tailored for AI-enabled control systems, i.e., control systems equipped with AI controllers. Our approach performs falsification in a two-phase process. At the start, Synthify synthesizes a program that implements one or a few linear controllers to serve as a proxy for the AI controller. This proxy program mimics the AI controller’s functionality but is computationally more efficient. Then, Synthify employs the \(\epsilon\) -greedy strategy to sample a promising sub-specification from the conjunctive safety specification. It then uses a Simulated Annealing-based falsification algorithm to find violations of the sampled sub-specification for the control system. To evaluate Synthify , we compare it to PSY-TaLiRo , a state-of-the-art and industrial-strength falsification tool, on eight publicly available control systems. On average, Synthify achieves a 83.5% higher success rate in falsification compared to PSY-TaLiRo with the same budget of falsification trials. Additionally, our method is 12.8 \(\times\) faster in finding a single safety violation than the baseline. The safety violations found by Synthify are also more diverse than those found by PSY-TaLiRo , covering 137.7% more sub-specifications.},
+  archive      = {J_TOSEM},
+  author       = {Jieke Shi and Zhou Yang and Junda He and Bowen Xu and Dongsun Kim and Donggyun Han and David Lo},
+  doi          = {10.1145/3715105},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-35},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Finding safety violations of AI-enabled control systems through the lens of synthesized proxy programs},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Assessing and analyzing the correctness of GitHub copilot’s code suggestions. <em>TOSEM</em>, <em>34</em>(7), 1-32. (<a href='https://doi.org/10.1145/3715108'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {AI programming has become a popular topic in recent years. Code suggestion, with code suggestion being a key capability of AI programming. Copilot, an “AI programmer” that provides code suggestions from natural language descriptions, has been launched by GitHub and OpenAI. By far, Copilot has been widely used by millions of developers. However, little work has systematically evaluated the correctness of Copilot’s suggestions. We conducted an empirical study on all 2,033 LeetCode problems to assess Copilot’s code generation across four mainstream languages: C, Java, JavaScript, and Python. We have found that: (1) 70.0% of problems received at least one correct suggestion, with language-specific rates of 29.7% (C), 57.7% (Java), 54.1% (JavaScript), and 41.0% (Python); (2) correctness decreases as problem difficulty increases, with acceptance rates of 89.3% (easy), 72.1% (medium), and 43.4% (hard); (3) acceptance rates vary across problem domains from 49.5% to 90.1%, while Graph problems challenge C and Python most, and Prefix Sum and Heap challenge Java and JavaScript most; (4) for the incorrect suggestions, we further summarize 17 types of error reasons accounting for their incorrectness and analyzed possible causes for why these errors occur. We believe our study can provide valuable insights into Copilot’s capabilities and limitations.},
+  archive      = {J_TOSEM},
+  author       = {Ran Mo and Dongyu Wang and Wenjing Zhan and Yingjie Jiang and Yepeng Wang and Yuqi Zhao and Zengyang Li and Yutao Ma},
+  doi          = {10.1145/3715108},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-32},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Assessing and analyzing the correctness of GitHub copilot’s code suggestions},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HumanEvalComm: Benchmarking the communication competence of code generation for LLMs and LLM agents. <em>TOSEM</em>, <em>34</em>(7), 1-42. (<a href='https://doi.org/10.1145/3715109'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large language models (LLMs) have significantly improved their ability to perform tasks in the field of code generation. However, there is still a gap between LLMs being capable coders and being top-tier software engineers. The most recent trend is using LLM-based agents to iterate the code generation process. Based on the observation that top-level software engineers often ask clarifying questions to reduce Ambiguity in both requirements and coding solutions, we argue that the same should be applied to LLMs for code generation tasks. For this purpose, we define the communication skills of LLMs as “being able to ask clarifying questions when the description of the code generation problem has issues.” In this study, we restrict these issues to three matters from the software requirement engineering field: inconsistent requirements, ambiguous requirements, and incomplete requirements. By asking probing questions about the requirements of problem descriptions before generating the final code, the challenges of programming with LLMs such as unclear intent specification may be alleviated, resulting to a correct code in the initial iterations. In this work, we conducted an empirical study on the benchmark and analysis of the communication skills of LLMs for code generation. We created a new benchmark, HumanEvalComm, by modifying problem descriptions according to three issues mentioned above, Inconsistency , Ambiguity , and Incompleteness . We then experimented on HumanEvalComm with different Code LLMs, and a new LLM agent approach, Code Clarification and Generation Agent (Okanagan), to identify and ask questions in ambiguous parts from code and descriptions for further refining the generated code. In the evaluation, we introduced an LLM-based evaluator and created Communication Rate and Good Question Rate as the evaluation metrics to represent the ratio of questions asked and questions with good quality in responses. We found that more than 60% of responses from Code LLMs still generate code rather than ask questions when the problem descriptions are manually modified according to different clarification categories. The Pass@1 and Test Pass Rate of most Code LLMs drop by 35% — 52% and by 17% — 35%, respectively, with statistical significance in each category for over 75% numbers. Okanagan, as an LLM agent approach that uses LLM such as ChatGPT 3.5, effectively increases the Communication Rate and Good Question Rate by an absolute 58% and 38%, respectively. Thus, Okanagan boosts Pass@1 and Test Pass Rate by an absolute 8% and 7%, respectively, when the problem descriptions are modified based on given clarification categories. This result indicates the potential for achieving more effective communication capability using LLM agent. Our benchmark and full code are publicly available at https://github.com/jie-jw-wu/human-eval-comm .},
+  archive      = {J_TOSEM},
+  author       = {Jie JW Wu and Fatemeh H. Fard},
+  doi          = {10.1145/3715109},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-42},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {HumanEvalComm: Benchmarking the communication competence of code generation for LLMs and LLM agents},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Assessing the robustness of test selection methods for deep neural networks. <em>TOSEM</em>, <em>34</em>(7), 1-26. (<a href='https://doi.org/10.1145/3715693'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Regularly testing deep learning-powered systems on newly collected data is critical to ensure their reliability, robustness, and efficacy in real-world applications. This process is demanding due to the significant time and human effort required for labeling new data. While test selection methods alleviate manual labor by labeling and evaluating only a subset of data while meeting testing criteria, we observe that such methods with reported promising results are simply evaluated, e.g., testing on original test data. The question arises: are they always reliable? In this article, we explore when and to what extent test selection methods fail. First, we identify potential pitfalls of 11 selection methods based on their construction. Second, we conduct a study to empirically confirm the existence of these pitfalls. Furthermore, we demonstrate how pitfalls can break the reliability of these methods. Concretely, methods for fault detection suffer from data that are: (1) correctly classified but uncertain or (2) misclassified but confident. Remarkably, the test relative coverage achieved by such methods drops by up to 86.85%. Besides, methods for performance estimation are sensitive to the choice of intermediate-layer output. The effectiveness of such methods can be even worse than random selection when using an inappropriate layer.},
+  archive      = {J_TOSEM},
+  author       = {Qiang Hu and Yuejun Guo and Xiaofei Xie and Maxime Cordy and Wei Ma and Mike Papadakis and Lei Ma and Yves Le Traon},
+  doi          = {10.1145/3715693},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Assessing the robustness of test selection methods for deep neural networks},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Large language model-aware in-context learning for code generation. <em>TOSEM</em>, <em>34</em>(7), 1-33. (<a href='https://doi.org/10.1145/3715908'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models (LLMs) have shown impressive In-Context Learning (ICL) ability in code generation. LLMs take a prompt context consisting of a few demonstration examples and a new requirement as input, and output new programs without any parameter update. Existing studies have found that the performance of ICL-based code generation heavily depends on the quality of demonstration examples and thus arises research on selecting demonstration examples: given a new requirement, a few demonstration examples are selected from a candidate pool, where LLMs are expected to learn the pattern hidden in these selected demonstration examples. Existing approaches are mostly based on heuristics or randomly selecting examples. However, the distribution of randomly selected examples usually varies greatly, making the performance of LLMs less robust. The heuristics retrieve examples by only considering textual similarities of requirements, leading to sub-optimal performance. To fill this gap, we propose a L arge language model- A ware selection approach for I n-context- L earning-based code generation named LAIL. LAIL uses LLMs themselves to select examples. It requires LLMs themselves to label a candidate example as a positive example or a negative example for a requirement. Positive examples are helpful for LLMs to generate correct programs, while negative examples are trivial and should be ignored. Based on the labeled positive and negative data, LAIL trains a model-aware retriever to learn the preference of LLMs and select demonstration examples that LLMs need. During the inference, given a new requirement, LAIL uses the trained retriever to select a few examples and feed them into LLMs to generate desired programs. We apply LAIL to four widely used LLMs and evaluate it on five code generation datasets. Extensive experiments demonstrate that LAIL outperforms the State-of-the-Art (SOTA) baselines by 11.58%, 3.33%, and 5.07% on CodeGen-Multi-16B, 1.32%, 2.29%, and 1.20% on CodeLlama-34B, and achieves 4.38%, 2.85%, and 2.74% improvements on Text-davinci-003 in terms of Pass@1 at MBJP, MBPP, and MBCPP, respectively. In addition to function-level code generation, LAIL improves the performance of LLMs on DevEval, a repository-level code generation dataset, which achieves 10.04%, 8.12%, and 4.63% improvements compared to the SOTA baselines at Pass@1, 3, and 5 on CodeLlama-7B. Human evaluation further verifies that the generated programs of LAIL are superior in correctness, code quality, and maintainability. Besides, LAIL has satisfactory transferability across different LLMs and datasets, where the retriever learned on one LLM (dataset) can be transferred to other LLMs (datasets).},
+  archive      = {J_TOSEM},
+  author       = {Jia Li and Chongyang Tao and Jia Li♂ and Ge Li and Zhi Jin and Huangzhao Zhang and Zheng Fang and Fang Liu},
+  doi          = {10.1145/3715908},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Large language model-aware in-context learning for code generation},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Beyond decision: Android malware description generation through profiling malicious behavior trajectory. <em>TOSEM</em>, <em>34</em>(7), 1-39. (<a href='https://doi.org/10.1145/3715909'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Malware family labels and key features used for the decision-making of Android malware detection models fall short of precise comprehension of malicious behaviors due to their coarse granularity. To solve these problems, in this article, we first introduce the concept of the malicious behavior trajectory ( MBT ) and propose an innovative approach called ProMal . ProMal aims to automatically generate malware descriptions with fine granularity through extracted MBTs from malware for users. Specifically, a labeled dataset of MBTs is constructed through substantial human efforts to build a behavioral knowledge graph ( BxKG ). The BxKG is scalable and can be automatically updated using two strategies to ensure its completeness and timeliness: (1) taking into consideration the evolution of Android SDKs and (2) mining new MBTs by leveraging the widely-used malware datasets. We highlight that the knowledge graph is essential in ProMal , which can reason new MBTs based on existing MBTs because of its structured data representation and semantic relation modeling, and thus helps effectively extract real MBTs in Android malware. We evaluated ProMal on a recent malware dataset where researcher-crafted malware descriptions are available, and the Precision, Recall, and F1-Score of MBT identification based on BxKG reached 96.97%, 91.43%, and 0.94, respectively, outperforming the state-of-the-art approaches. Taking MBTs identified from Android malware as inputs, precise, fine-grained, and human-readable descriptions can be generated using the large language model, whose readability and usability are verified through a user study. The generated descriptions play a significant role in interpreting and comprehending malware behaviors.},
+  archive      = {J_TOSEM},
+  author       = {Chunlian Wu and Sen Chen and Jiaming Li and Renchao Chai and Lingling Fan and Xiaofei Xie and Ruitao Feng},
+  doi          = {10.1145/3715909},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-39},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Beyond decision: Android malware description generation through profiling malicious behavior trajectory},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards reliable evaluation of neural program repair with natural robustness testing. <em>TOSEM</em>, <em>34</em>(7), 1-44. (<a href='https://doi.org/10.1145/3716167'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated program repair (APR) has recently gained ground, with numerous research efforts being conducted in the area that have been adopted in the industry. One notable class of APR is neural program repair (NPR), which typically employs deep learning techniques that are trained on vast amounts of historical data to fix bugs that have not been seen in the past. To study the true effectiveness of NPR on existing limited datasets, recent work augments the evaluation data by employing semantics-preserving transformations to convert original buggy programs to semantically equivalent ones. Experiments show that NPR techniques are not robust; e.g., NPR cannot repair semantically equivalent counterparts of 20%–35% of bugs that they can repair in the original dataset. However, we found that many of these transformations are unnatural, that are unlikely to occur in real-world scenarios, leading to misleading conclusions about NPR effectiveness and misguide the improvement on unrobust behaviors, which have minimal real-world impact. In this article, we propose shifting the focus of robustness evaluation for NPR techniques towards naturally occurring data transformations. To accomplish this, we first examine the naturalness of semantic-preserving transformations through a two-stage human study. This study includes: (i) interviews with senior software developers to establish concrete criteria for evaluating the naturalness of these transformations and (ii) a survey involving 10 developers to assess the naturalness of 1,178 transformations, i.e., pairs of original and transformed programs, applied to 225 real-world bugs. Our findings show that only 60% of these transformations are considered natural, while 20% are considered unnatural, with strong agreement among the annotators. Moreover, the unnaturalness of these transformations significantly impacts both their applicability to benchmarks and the conclusions drawn from robustness testing. Next, we conduct natural robustness tests on NPR techniques to assess their true effectiveness against real-world data variations. Our experimental results reveal a substantial number of prediction changes in NPR techniques, leading to significant reductions in both plausible and correct patch rates when comparing performance on the original and transformed datasets. Furthermore, we observe notable differences in performance improvements between NPR techniques, suggesting potential biases in the evaluation of NPR introduced by limited datasets. Finally, we explore automating the assessment of transformation naturalness by developing a new naturalness metric, namely RNC, using large language models. This metric effectively evaluates naturalness with an AUC of 0.7, offering a promising direction for automating the naturalness assessment of code transformations.},
+  archive      = {J_TOSEM},
+  author       = {Thanh Le-Cong and Dat Nguyen and Bach Le and Toby Murray},
+  doi          = {10.1145/3716167},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-44},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Towards reliable evaluation of neural program repair with natural robustness testing},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An empirical study on vulnerability disclosure management of open source software systems. <em>TOSEM</em>, <em>34</em>(7), 1-31. (<a href='https://doi.org/10.1145/3716822'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vulnerability disclosure is critical for ensuring the security and reliability of open source software (OSS). However, in practice, many vulnerabilities are reported and discussed on public platforms before being formally disclosed, posing significant risks to vulnerability management. Inadequate vulnerability disclosure can expose users to security threats and severely impact the stability and reliability of software systems. For example, prior work shows that over 21% of CVEs are publicly discussed before a patch is released. Despite its importance, we still lack clarity on the vulnerability disclosure practices adopted by open source communities and the preferences of practitioners regarding vulnerability management. To fill this gap, we analyzed the vulnerability disclosure practices of 8,073 OSS projects spanning from 2017 to 2023. We then conducted an empirical study by surveying practitioners about their preferences and recommendations in vulnerability disclosure management. Finally, we compared the survey results with the actual vulnerability practice observed within the OSS projects. Our results show that while over 80% of practitioners support Coordinated Vulnerability Disclosure (CVD), only 55% of vulnerabilities conform to CVD in practice. Although only 20% of practitioners advocate discussions before disclosure, 42% of vulnerabilities are discussed in issue reports before their disclosure. This study reveals the vulnerability management practices in OSS, provides valuable guidance to OSS owners, and highlights potential directions to improve the security of OSS platforms.},
+  archive      = {J_TOSEM},
+  author       = {Shuhan Liu and Jiayuan Zhou and Xing Hu and Filipe Roseiro Cogo and Xin Xia and Xiaohu Yang},
+  doi          = {10.1145/3716822},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {An empirical study on vulnerability disclosure management of open source software systems},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weighted suspiciousness and balanced aggregation to boost spectrum-based fault localization of deep learning models. <em>TOSEM</em>, <em>34</em>(7), 1-28. (<a href='https://doi.org/10.1145/3716849'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning (DL) models have proven to be highly successful and are now essential to our everyday routines. However, DL models, like traditional software, inevitably contain bugs that affect their performance in real-world scenarios. Effective software engineering techniques are necessary to ensure their dependability. In recent years, fault localization methods for DL models have gained significant attention as a valuable tool for improving the reliability of DL models. Owing to the data-driven programming paradigm, traditional fault localization techniques are challenging to apply directly to DL programs. Previous studies have shown that neuron errors within models can lead to abnormal behavior, and they fix the DL model errors from the perspective of neurons. Nonetheless, there remains a significant gap between the DL program statement and model errors. To tackle this problem, this article proposes a novel fault localization method for DL models, named weiGhted sUspIciousness anD balancEd aggRegation ( GUIDER ) that revisits the idea and challenge of spectrum-based fault localization in the context of DL models. For pre-trained DL models, GUIDER utilizes neuron coverage information and test case confidence to compute weighted neuron suspiciousness values and employs balanced aggregation methods to elevate these values from the neuron level to the layer level, which establishes a bridge between the DL model and the DL program, facilitating the developers’ debugging process. We evaluate GUIDER using 161 real model bugs collected from StackOverflow and five state-of-the-art fault localization methods for DL models as baselines. The results indicate that (a) our method successfully localizes 67% of the model bugs by ranking the buggy layer to the first place (i.e., top-1), significantly outperforming all five baselines, and (b) our method maintains an acceptable time overhead compared with all baseline methods.},
+  archive      = {J_TOSEM},
+  author       = {Wenjie Xu and Yanhui Li and Mingliang Ma and Lin Chen and Yuming Zhou},
+  doi          = {10.1145/3716849},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Weighted suspiciousness and balanced aggregation to boost spectrum-based fault localization of deep learning models},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An empirical study of retrieval-augmented code generation: Challenges and opportunities. <em>TOSEM</em>, <em>34</em>(7), 1-28. (<a href='https://doi.org/10.1145/3717061'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Code generation aims to automatically generate code snippets of specific programming language according to natural language descriptions. The continuous advancements in deep learning, particularly pre-trained models, have empowered the code generation task to achieve remarkable performance. One main challenge of pre-trained models for code generation is the semantic gap between developers’ natural language requirements and source code. To address the issue, prior studies typically adopt a retrieval-augmented framework for the task, where the similar code snippets collected by a retrieval process can be leveraged to help understand the requirements and provide guidance for the generation process. In a retrieval-augmented framework, similar data can be retrieved from the database using a retrieval algorithm, and original input data can be fused with retrieved data by different fusion strategies. However, there is a lack of systematic study on the application of this framework for code generation, including the impact of the final generated results and the specific usage of the framework. In this article, we choose three popular pre-trained code models, namely CodeGen, UniXcoder, and CodeT5, to assess the impact of the quality and utilization of retrieved code on the retrieval-augmented framework. Our analysis shows that the retrieval-augmented framework is beneficial for improving the performance of the existing pre-trained models. We also provide suggestions on the utilization of the retrieval-augmented code generation framework: BM25 and Sequential Integration Fusion are recommended due to their convenience and superior performance. Sketch Filling Fusion, which extracts a sketch of relevant code, could help the model improve its performance further. Additionally, we conduct experiments to investigate the influence of the retrieval-augmented framework on large language models for code generation, showing the effectiveness of the framework, and we discuss the tradeoff between performance improvement and computational costs in each phase within the framework.},
+  archive      = {J_TOSEM},
+  author       = {Zezhou Yang and Sirong Chen and Cuiyun Gao and Zhenhao Li and Xing Hu and Kui Liu and Xin Xia},
+  doi          = {10.1145/3717061},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {An empirical study of retrieval-augmented code generation: Challenges and opportunities},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive study of governance issues in decentralized finance applications. <em>TOSEM</em>, <em>34</em>(7), 1-31. (<a href='https://doi.org/10.1145/3717062'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decentralized Finance (DeFi) is a prominent application of smart contracts, representing a novel financial paradigm in contrast to centralized finance. While DeFi applications are rapidly emerging on mainstream blockchain platforms, their quality varies greatly, presenting numerous challenges, particularly in terms of their governance mechanisms. In this article, we present a comprehensive study of governance issues in DeFi applications. Initially, we collected 3,165 academic papers and numerous industry reports. After thorough screening, we selected 44 academic papers and 11 industry reports for detailed analysis. Drawing upon insights from industry reports and academic research articles, we develop a taxonomy to categorize these governance issues. We collect and build a dataset of 4,446 audit reports from 17 Web3 security companies, categorizing their governance issues according to our constructed taxonomy. We conducted a thorough analysis of governance issues and identified vulnerabilities in the governance design and implementation, e.g., voting sybil attack and proposal front-running. Our statistical analysis indicates that a significant portion (35.48%) of governance-related issues is classified as severe. Within these, ownership-related problems constitute the largest share (65.38%). Despite DeFi governance being essential for the long-term success of DeFi projects, our data shows that both auditors and development teams have not fully grasped its significance. Based on audit reports, we also analyzed common vulnerabilities and issues in the governance domain. Our research identifies two primary categories of DeFi governance issues: technology-centric and human-centric. Technology-centric issues can be addressed through technology updates and iterations, whereas human-centric issues are influenced not only by the development team’s technical skills but also by their understanding of DeFi governance. Data analysis reveals that design and implementation issues are frequently overlooked; although not directly associated with vulnerabilities, these issues can impact the equitable distribution of project benefits. Furthermore, our analysis of 104 projects’ tokenomics configurations, including 15 collected from DeFi platforms, uncovered 27 inconsistent configurations, with only two projects exhibiting no issues. This suggests that such issues are relatively common. We therefore advise project teams to ensure consistency between their tokenomics design and the actual code. Our study culminates in providing several key practical implications for various DeFi stakeholders, including developers, users, researchers, and regulators, aiming to deepen the understanding of DeFi governance issues and contribute to the robust growth of DeFi systems.},
+  archive      = {J_TOSEM},
+  author       = {Wei Ma and Chenguang Zhu and Ye Liu and Xiaofei Xie and Yi Li},
+  doi          = {10.1145/3717062},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {A comprehensive study of governance issues in decentralized finance applications},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward understanding FPGA synthesis tool bugs. <em>TOSEM</em>, <em>34</em>(7), 1-37. (<a href='https://doi.org/10.1145/3718737'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Field Programmable Gate Array (FPGA) synthesis tools are crucial for hardware development and AI acceleration, and their bugs could compromise hardware reliability and risk downstream applications. However, it remains unknown in understanding the characteristics of these bugs. What are the root causes that trigger bugs in FPGA synthesis tools? What are the characteristics of these bugs? What are the challenges in detecting and addressing them? This article takes the first step toward answering these questions by conducting a comprehensive study of FPGA synthesis tool bugs. We analyze 551 confirmed bugs in both commercial and open-source FPGA synthesis tools, i.e., Vivado, Quartus Prime, and Yosys, covering root causes, symptoms, bug-prone components, fix characteristics, and achieve 17 valuable findings. We find that, on average, around 46.2% of bugs result from Hardware Description Language (HDL) standard non-compliance across the three tools. However, it is hard for current formal validations to fully test HDL standards compliance. Additionally, on average, over 25.8% bugs show domain-specific optimization traits due to inappropriate optimization and mapping. Meanwhile, beyond 28% of bugs trigger unexpected behavior without clear signs, making the formulation of effective test oracles challenging. These findings help addressing FPGA synthesis tool bugs and guide further research.},
+  archive      = {J_TOSEM},
+  author       = {Yi Zhang and He Jiang and Shikai Guo and Xiaochen Li and Hui Liu and Chongyang Shi},
+  doi          = {10.1145/3718737},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Toward understanding FPGA synthesis tool bugs},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Characterizing smart contract evolution. <em>TOSEM</em>, <em>34</em>(7), 1-22. (<a href='https://doi.org/10.1145/3719004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smart contracts are programs that permanently store and automatically execute on the blockchain system such as Ethereum. Due to the non-tamperable nature of the underlying blockchain, smart contracts are difficult to update once deployed, which requires redeploying the contracts and migrating the data. It means that the observation of smart contract evolution in the real world makes more sense. Hence, in this article, we conducted the first large-scale empirical study to characterize the evolution of smart contracts in Ethereum. For evolution identification, we presented a contract similarity-based search algorithm, digEvolution, and evaluated its effectiveness with five different search strategies. Then we applied this algorithm to 80,152 on-chain contracts we collected from Ethereum, to dig out the evolution among these contracts. We then explored three research questions. We first studied whether the evolution of smart contracts is common (RQ1), then we studied how do the Gas consumption (RQ2) and the vulnerability (RQ3) of smart contracts vary during the evolution. Our research results show that the evolution of smart contracts is not very common. There are some contract components that have vulnerability but still be called by users. The Gas consumption of most smart contracts doesn’t vary during the evolution, contract is Gas-efficient before and after the evolution. The vulnerability of most smart contracts doesn’t vary during the evolution, both are secure before and after the evolution.},
+  archive      = {J_TOSEM},
+  author       = {Xiangping Chen and Ziang Qian and Peiyong Liao and Yuan Huang and Changlin Yang and Zibin Zheng},
+  doi          = {10.1145/3719004},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Characterizing smart contract evolution},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving deep assertion generation via fine-tuning retrieval-augmented pre-trained language models. <em>TOSEM</em>, <em>34</em>(7), 1-23. (<a href='https://doi.org/10.1145/3721128'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unit testing validates the correctness of the units of the software system under test and serves as the cornerstone in improving software quality and reliability. To reduce manual efforts in writing unit tests, some techniques have been proposed to generate test assertions automatically, including Deep Learning (DL)-based, retrieval-based, and integration-based ones. Among them, recent integration-based approaches inherit from both DL-based and retrieval-based approaches and are considered state-of-the-art. Despite being promising, such integration-based approaches suffer from inherent limitations, such as retrieving assertions with lexical matching while ignoring meaningful code semantics and generating assertions with a limited training corpus. In this article, we propose a novel Retrieval-Augmented Deep Assertion Generation (RetriGen) approach based on a hybrid assertion retriever and a Pre-Trained Language Model (PLM)-based assertion generator. Given a focal-test, RetriGen first builds a hybrid assertion retriever to search for the most relevant test–assert pair from external codebases. The retrieval process takes both lexical similarity and semantical similarity into account via a token-based and an embedding-based retriever, respectively. RetriGen then treats assertion generation as a sequence-to-sequence task and designs a PLM-based assertion generator to predict a correct assertion with historical test–assert pairs and the retrieved external assertion. Although our concept is general and can be adapted to various off-the-shelf encoder–decoder PLMs, we implement RetriGen to facilitate assertion generation based on the recent CodeT5 model. We conduct extensive experiments to evaluate RetriGen against six state-of-the-art approaches across two large-scale datasets and two metrics. The experimental results demonstrate that RetriGen achieves 57.66% and 73.24% in terms of accuracy and CodeBLEU, outperforming all baselines with an average improvement of 50.66% and 14.14%, respectively. Furthermore, RetriGen generates 1,598 and 1,818 unique correct assertions that all baselines fail to produce, 3.71X and 4.58X more than the most recent approach EditAS . We also demonstrate that adopting other PLMs can provide substantial advancement, e.g., four additionally utilized PLMs outperform EditAS by 7.91%–12.70% accuracy improvement, indicating the generalizability of RetriGen. Overall, our study highlights the promising future of fine-tuning off-the-shelf PLMs to generate accurate assertions by incorporating external knowledge sources.},
+  archive      = {J_TOSEM},
+  author       = {Quanjun Zhang and Chunrong Fang and Yi Zheng and Yaxin Zhang and Yuan Zhao and Rubing Huang and Jianyi Zhou and Yun Yang and Tao Zheng and Zhenyu Chen},
+  doi          = {10.1145/3721128},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Improving deep assertion generation via fine-tuning retrieval-augmented pre-trained language models},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Experimental evaluation of parameter-efficient fine-tuning for software engineering tasks. <em>TOSEM</em>, <em>34</em>(7), 1-34. (<a href='https://doi.org/10.1145/3722107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pre-trained models (PTMs) have succeeded in various software engineering (SE) tasks following the “pre-train then fine-tune” paradigm. As fully fine-tuning all parameters of PTMs can be computationally expensive, a potential solution is parameter-efficient fine-tuning (PEFT), which freezes PTMs while introducing extra parameters. Although PEFT methods have been applied to SE tasks, researchers often focus on specific scenarios and lack a comprehensive comparison of PTMs from different aspects such as field, size, and architecture. To fill this gap, we have conducted an empirical study on six PEFT methods, eight PTMs, and four SE tasks. The experimental results reveal several noteworthy findings. For example, model architecture has little impact on PTM performance when using PEFT methods. Additionally, we provide a comprehensive discussion of PEFT methods from three perspectives. First, we analyze the effectiveness and efficiency of PEFT methods. Second, we explore the impact of the scaling factor hyperparameter. Finally, we investigate the application of PEFT methods on the latest open source large language model, Llama 3.2. These findings provide valuable insights to guide future researchers in effectively applying PEFT methods to SE tasks.},
+  archive      = {J_TOSEM},
+  author       = {Wentao Zou and Zongwen Shen and Qi Li and Jidong Ge and Chuanyi Li and Xiang Chen and Xiaoyu Shen and Liguo Huang and Bin Luo},
+  doi          = {10.1145/3722107},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-34},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Experimental evaluation of parameter-efficient fine-tuning for software engineering tasks},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Leveraging risk models to improve productivity for effective code un-freeze at scale. <em>TOSEM</em>, <em>34</em>(7), 1-24. (<a href='https://doi.org/10.1145/3722216'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Changing software is essential to add needed functionality and to fix problems, but changes may introduce defects that lead to outages. This motivates one of the oldest software quality control techniques: a temporary prevention of non-critical changes to the codebase—code freeze. Despite its widespread use in practice, research literature is scant. Historically, code freezes were used as a way to improve software quality by preventing changes during periods before software releases, but code freezes significantly slow down development. To address this shortcoming, we develop and evaluate a family of code un-freeze (permitting changes) strategies tailored to different occasions and products at Meta. They are designed to un-freeze the maximum amount of code without compromising quality. The three primary dimensions to un-freeze involve (a) the exact timing of (and the reasoning behind it) the code freezes, (b) the parts of the organization or the codebase where the codebase freeze is applied to, and (c) the method of screening of the code diffs during the code freeze with the aim to allow low risk diffs and prevent only the most risky diffs. To operationalize the drivers of outages, we consider the entire network of interdependencies among different parts of the source code, the engineers that modify the code, code complexity, and the coordination dependencies and authors’ expertise. Since the code freeze is a balancing act between reducing outages and allowing software development to proceed unimpeded, the performance of the various approaches to code un-freeze is evaluated based on the fraction of flagged/gated changes to measure overhead and the fraction of all outage-causing changes contained within the set of flagged set of changes to measure the ability of the code un-freeze to delay (or prevent) outages. We found that taking into account the risk posed by modifying individual files and the properties of the change we could un-freeze 2 and 2.5 times more changes correspondingly. The change level model is used by Meta in production. For example, during the winter 2023 code freeze, we see that only 16% of changes are gated. Although 42% more changes landed (were integrated into the codebase) compared to the prior year, there was a 52% decrease in outages. This reduction meant less impact on users and less strain on engineers during the holiday period. The risk model has been enormously effective at allowing low-risk changes to proceed while gating high-risk changes and reducing outages.},
+  archive      = {J_TOSEM},
+  author       = {Audris Mockus and Rui Abreu and Peter C. Rigby and David Amsallem and Parveen Bansal and Kaavya Chinniah and Brian Ellis and Peng Fan and Jun Ge and Bingjie He and Kelly Hirano and Sahil Kumar and Ajay Lingapuram and Andrew Loe and Megh Mehta and Venus Montes and Maher Saba and Gursharan Singh and Matt Steiner and Weiyan Sun and Siri Uppalapati and Nachiappan Nagappan},
+  doi          = {10.1145/3722216},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Leveraging risk models to improve productivity for effective code un-freeze at scale},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Wenwang: Toward effectively generating code beyond standalone functions via generative pre-trained models. <em>TOSEM</em>, <em>34</em>(7), 1-27. (<a href='https://doi.org/10.1145/3725213'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Code generation models based on the pre-training and fine-tuning paradigm have been increasingly attempted by both academia and industry, resulting in well-known industrial models such as Codex, CodeGen, and PanGu-Coder. After being pre-trained on a large-scale corpus of code, a model is further fine-tuned with datasets specifically for the target downstream task, e.g., generating code from natural language description. The target code being generated can be classified into two types: a standalone function, i.e., a function that invokes or accesses only built-in functions and standard libraries, and a non-standalone function, i.e., a function that invokes or accesses user-defined functions or third-party libraries. To effectively generate code especially non-standalone functions (largely ignored by existing work), in this article, we present Wenwang, an approach to improving the capability of a pre-trained model on generating code beyond standalone functions. Wenwang consists of two components: a fine-tuning dataset named WenwangData and a fine-tuned model named WenwangCoder. Compared with existing fine-tuning datasets, WenwangData additionally covers non-standalone functions. Besides the docstring and code snippet for a function, WenwangData also includes its contextual information collected via program analysis. Based on PanGu-Coder, we produce WenwangCoder by fine-tuning PanGu-Coder on WenwangData with our context-aware fine-tuning technique so that the contextual information can be fully leveraged during code generation. On CoderEval and HumanEval, WenwangCoder outperforms three state-of-the-art models with similar parameter sizes (at the scale of around 300 M), namely CodeGen, PanGu-Coder, and PanGu-FT. Although WenwangCoder does not outperform ChatGPT on HumanEval, WenwangCoder with smaller model parameter sizes can achieve similar effects to ChatGPT on CoderEval. Our experimental results also shed light on a number of promising optimization directions based on existing pre-trained models.},
+  archive      = {J_TOSEM},
+  author       = {Hao Yu and Bo Shen and Jiaxin Zhang and Shaoxin Lin and Lin Li and Guangtai Liang and Ying Li and Qianxiang Wang and Tao Xie},
+  doi          = {10.1145/3725213},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Wenwang: Toward effectively generating code beyond standalone functions via generative pre-trained models},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autonomous driving system testing via diversity-oriented driving scenario exploration. <em>TOSEM</em>, <em>34</em>(7), 1-28. (<a href='https://doi.org/10.1145/3727875'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Testing Autonomous Driving Systems (ADS) is critical for validating their safety in operational environments. High-fidelity simulators enable the testing of ADS through virtual driving scenarios, especially those that are hazardous to replicate in real-world settings. However, existing testing approaches suffer from inadequate coverage of real-world traffic situations due to over-simplified modeling of vehicle movements (e.g., insufficient diversity in driving styles), resulting in undetected critical ADS failures. In this article, we propose a testing framework to discover diverse failures of ADS in driving scenarios that embody real-world traffic complexity. The framework leverages advanced traffic simulation methods to encode vehicle movements and generates realistic yet safety-critical driving scenarios for ADS by mutating vehicle movements. To efficiently explore driving scenarios that pose different challenges for ADS and expose diverse ADS failures, this framework further leverages a dynamic prioritization mechanism that prioritizes vehicle movements likely to trigger unique ADS behaviors. Specifically, we propose a method to estimate the possibility based on encoded vehicle movements. We implement this framework and evaluate it with three representative ADS from the famous CARLA Leaderboard. Empirical evaluation demonstrates that the proposed approach discovers more unique failures of ADS than existing testing frameworks.},
+  archive      = {J_TOSEM},
+  author       = {Xinyu Ji and Lei Xue and Zhijian He and Xiapu Luo},
+  doi          = {10.1145/3727875},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Autonomous driving system testing via diversity-oriented driving scenario exploration},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Privacy in chatbot conversation-driven development: A comprehensive review and requirements proposal. <em>TOSEM</em>, <em>34</em>(7), 1-44. (<a href='https://doi.org/10.1145/3730578'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ensuring data privacy is a major challenge for software developers, especially in chatbots, where balancing privacy protection with response quality is key, given the need for conversation-driven development and data protection regulations. This research identifies privacy requirements and techniques for chatbot development through a literature review, privacy policy analysis, and a practitioner survey. The methodology includes a Systematic Literature Review (SLR), an adapted Gray Literature Review (GLR), privacy requirement formulation, and validation via a survey. Based on the SLR and GLR, eight privacy requirements are proposed, covering personal information protection, user authentication, access control, secure communication, database safety, user rights empowerment, decentralized storage, and reliable infrastructure. Survey results highlight foundational measures like secure communication and scalable infrastructures as priorities, while advanced measures such as decentralized storage or privacy rights implementation scored lower due to complexity and cost. Practitioners also stressed clarity and verifiability, citing gaps in definitions, examples, and validation criteria as challenges to adoption.},
+  archive      = {J_TOSEM},
+  author       = {Geovana Ramos Sousa Silva and Edna Dias Canedo},
+  doi          = {10.1145/3730578},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {8},
+  number       = {7},
+  pages        = {1-44},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Privacy in chatbot conversation-driven development: A comprehensive review and requirements proposal},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

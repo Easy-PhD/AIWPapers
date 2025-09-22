@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>EVOLS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="evols">EVOLS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Continual learning approaches for anomaly detection. <em>EVOLS</em>, <em>16</em>(4), 1-20. (<a href='https://doi.org/10.1007/s12530-025-09732-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Anomaly detection (AD) is a relevant problem in numerous real-world applications, especially when dealing with images. However, in real-world applications, it is common that the input data distribution can change over time, decreasing performance significantly. Therefore, in this study, we investigate the problem of Visual Anomaly Detection at Pixel-Level in the Continual Learning setting, where the model adapts to the new data while maintaining the knowledge of old data. We implement and test several AD techniques and adapt them to work in the CL setting using the Replay approach. We evaluate them using the well-known MVTec AD Dataset, where each object corresponds to a new learning task. Moreover, a significant challenge when dealing with the Replay approach is the memory occupied to store a portion of past images, which could be too heavy for many resource-constrained systems. Therefore, we propose a novel approach called SCALE, which performs high compression levels while preserving image quality through Super-Resolution techniques. Using the SCALE method to compress replay memory, in conjunction with the AD technique Inpaint, allows for obtaining the best AD results while significantly reducing memory consumption.},
+  archive      = {J_EVOLS},
+  author       = {Pezze, Davide Dalle and Anello, Eugenia and Masiero, Chiara and Susto, Gian Antonio},
+  doi          = {10.1007/s12530-025-09732-7},
+  journal      = {Evolving Systems},
+  month        = {12},
+  number       = {4},
+  pages        = {1-20},
+  shortjournal = {Evol. Syst.},
+  title        = {Continual learning approaches for anomaly detection},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

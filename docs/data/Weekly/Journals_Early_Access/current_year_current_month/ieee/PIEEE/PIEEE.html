@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PIEEE</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="pieee">PIEEE - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Protecting the mixed-signal domain: Secure ADCs for internet of things devices. <em>PIEEE</em>, 1-19. (<a href='https://doi.org/10.1109/JPROC.2025.3605535'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Analog-to-digital converters (ADCs) are a standard building block of most Internet of Things (IoT) devices, used to convert between analog signals of the physical world and digital values for efficient storage and computation. While decades of research have explored methods to optimize the traditional power, performance, and area parameters of these circuits, a new requirement has emerged in the last five years for ADCs—security. Due to the deployment of these devices at the edge outside of a trusted computing base, there is a potential for various eavesdropping and tampering attacks. This can have a severe impact on the privacy and integrity of sensor data, which cannot be corrected for through the secure design of other blocks that follow the front end. In this article, we explore the recent work in ADC security and analyze what has been accomplished as well as what remains to be done for the successful deployment of secure ADCs in commercial systems.},
+  archive      = {J_PIEEE},
+  author       = {Maitreyi Ashok and Ruicong Chen and Taehoon Jeong and Anantha P. Chandrakasan and Hae-Seung Lee},
+  doi          = {10.1109/JPROC.2025.3605535},
+  journal      = {Proceedings of the IEEE},
+  month        = {9},
+  pages        = {1-19},
+  shortjournal = {Proc. IEEE},
+  title        = {Protecting the mixed-signal domain: Secure ADCs for internet of things devices},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>
