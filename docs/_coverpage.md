@@ -1,9 +1,9 @@
-# Artificial Intelligence Weekly Data
+# Artificial Intelligence Weekly Papers
 
-> AI Weekly Data.
+> AI Weekly Papers.
 
 - Simple
 - Comprehensive
 
-[GitHub](https://github.com/NextArtifIntell/AIWeeklyData)
-[Getting Started](#AIWeeklyData)
+[GitHub](https://github.com/Easy-PhD/AIWPapers)
+[Getting Started](#AIWPapers)

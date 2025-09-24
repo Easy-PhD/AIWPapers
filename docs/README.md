@@ -1,4 +1,4 @@
-# AIWeeklyData
+# AIWPapers
 
 ## Docsify
 
