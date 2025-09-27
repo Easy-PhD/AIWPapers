@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="natcs">NATCS - 12</h2>
+<h2 id="natcs">NATCS - 20</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Privacy-preserving multicenter differential protein abundance analysis with FedProt. <em>NATCS</em>, <em>5</em>(8), 675-688. (<a href='https://doi.org/10.1038/s43588-025-00832-7'>www</a>)
+(2025). Confidential computing for population-scale genome-wide association studies with SECRET-GWAS. <em>NATCS</em>, <em>5</em>(9), 825-835. (<a href='https://doi.org/10.1038/s43588-025-00856-z'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Quantitative mass spectrometry has revolutionized proteomics by enabling simultaneous quantification of thousands of proteins. Pooling patient-derived data from multiple institutions enhances statistical power but raises serious privacy concerns. Here we introduce FedProt, the first privacy-preserving tool for collaborative differential protein abundance analysis of distributed data, which utilizes federated learning and additive secret sharing. In the absence of a multicenter patient-derived dataset for evaluation, we created two: one at five centers from E. coli experiments and one at three centers from human serum. Evaluations using these datasets confirm that FedProt achieves accuracy equivalent to the DEqMS method applied to pooled data, with completely negligible absolute differences no greater than 4 × 10−12. By contrast, −log10P computed by the most accurate meta-analysis methods diverged from the centralized analysis results by up to 25–26. In this Resource, the authors present FedProt, a tool that enables privacy-preserving, federated differential protein abundance analysis across multiple institutions. Its results match the results of centralized analysis, enabling secure, collaborative proteomics without sensitive data sharing.},
+  abstract     = {Genomic data from a single institution lacks global diversity representation, especially for rare variants and diseases. Confidential computing can enable collaborative genome-wide association studies (GWAS) without compromising privacy or accuracy. However, due to limited secure memory space and performance overheads, previous solutions fail to support widely used regression methods. Here we present SECRET-GWAS—a rapid, privacy-preserving, population-scale, collaborative GWAS tool. We discuss several system optimizations, including streaming, batching, data parallelization and reducing trusted hardware overheads to efficiently scale linear and logistic regression to over a thousand processor cores on an Intel SGX-based cloud platform. In addition, we protect SECRET-GWAS against several hardware side-channel attacks. SECRET-GWAS is an open-source tool and works with the widely used Hail genomic analysis framework. Our experiments on Azure’s Confidential Computing platform demonstrate that SECRET-GWAS enables multivariate linear and logistic regression GWAS queries on population-scale datasets from ten independent sources in just 4.5 and 29 minutes, respectively. Secure collaborative genome-wide association studies (GWAS) with population-scale datasets address gaps in genomic data. This work proposes SECRET-GWAS and system optimizations that overcome resource constraints and exploit parallelism, while maintaining privacy and accuracy.},
   archive      = {J_NATCS},
-  author       = {Burankova, Yuliya and Abele, Miriam and Bakhtiari, Mohammad and von Toerne, Christine and Barth, Teresa K. and Schweizer, Lisa and Giesbertz, Pieter and Schmidt, Johannes R. and Kalkhof, Stefan and Müller-Deile, Janina and van Veelen, Peter A. and Mohammed, Yassene and Hammer, Elke and Arend, Lis and Adamowicz, Klaudia and Laske, Tanja and Hartebrodt, Anne and Frisch, Tobias and Meng, Chen and Matschinske, Julian and Späth, Julian and Röttger, Richard and Schwämmle, Veit and Hauck, Stefanie M. and Lichtenthaler, Stefan F. and Imhof, Axel and Mann, Matthias and Ludwig, Christina and Kuster, Bernhard and Baumbach, Jan and Zolotareva, Olga},
-  doi          = {10.1038/s43588-025-00832-7},
+  author       = {Rosenblum, Jonah and Dong, Juechu and Narayanasamy, Satish},
+  doi          = {10.1038/s43588-025-00856-z},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {675-688},
+  month        = {9},
+  number       = {9},
+  pages        = {825-835},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Privacy-preserving multicenter differential protein abundance analysis with FedProt},
+  title        = {Confidential computing for population-scale genome-wide association studies with SECRET-GWAS},
   volume       = {5},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A comprehensive mapping of zeolite–template chemical space. <em>NATCS</em>, <em>5</em>(8), 661-674. (<a href='https://doi.org/10.1038/s43588-025-00842-5'>www</a>)
+(2025). Analog in-memory computing attention mechanism for fast and energy-efficient large language models. <em>NATCS</em>, <em>5</em>(9), 813-824. (<a href='https://doi.org/10.1038/s43588-025-00854-1'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Zeolites are industrially important catalysts and adsorbents, typically synthesized using specific molecules known as organic structure-directing agents (OSDAs). The templating effect of the OSDAs is pivotal in determining the zeolite polymorph formed and its physicochemical properties. However, de novo design of selective OSDAs is challenging because of the diversity and size of the zeolite–OSDA chemical space. Here we present ZeoBind, a computational workflow powered by machine learning that enables an exhaustive exploration of the OSDA space. We design predictive tasks that capture zeolite–molecule matching, train predictive models for these tasks on hundreds of thousands of datapoints and curate a library of 2.3 million synthetically accessible, hypothetical OSDA-like molecules enumerated from commercially available precursors. We use ZeoBind to screen nearly 500 million zeolite–molecule pairs and identified and experimentally validated two new OSDAs that template zeolites with novel compositions. The scale of the OSDA library, along with the open-access tools and data, has the potential to accelerate OSDA design for zeolite synthesis. ZeoBind is developed for high-throughput molecule screening in zeolite synthesis. Here 2.3 million organic structure-directing agents are enumerated and predictive models for binding affinity are developed; the screening is experimentally validated for two zeolites.},
+  abstract     = {Transformer networks, driven by self-attention, are central to large language models. In generative transformers, self-attention uses cache memory to store token projections, avoiding recomputation at each time step. However, graphics processing unit (GPU)-stored projections must be loaded into static random-access memory for each new generation step, causing latency and energy bottlenecks. Here we present a custom self-attention in-memory computing architecture based on emerging charge-based memories called gain cells, which can be efficiently written to store new tokens during sequence generation and enable parallel analog dot-product computation required for self-attention. However, the analog gain-cell circuits introduce non-idealities and constraints preventing the direct mapping of pre-trained models. To circumvent this problem, we design an initialization algorithm achieving text-processing performance comparable to GPT-2 without training from scratch. Our architecture reduces attention latency and energy consumption by up to two and four orders of magnitude, respectively, compared with GPUs, marking a substantial step toward ultrafast, low-power generative transformers. Leveraging in-memory computing with emerging gain-cell devices, the authors accelerate attention—a core mechanism in large language models. They train a 1.5-billion-parameter model, achieving up to a 70,000-fold reduction in energy consumption and a 100-fold speed-up compared with GPUs.},
   archive      = {J_NATCS},
-  author       = {Xie, Mingrou and Schwalbe-Koda, Daniel and Semanate-Esquivel, Yolanda Marcela and Bello-Jurado, Estefanía and Hoffman, Alexander and Santiago-Reyes, Omar and Paris, Cecilia and Moliner, Manuel and Gómez-Bombarelli, Rafael},
-  doi          = {10.1038/s43588-025-00842-5},
+  author       = {Leroux, Nathan and Manea, Paul-Philipp and Sudarshan, Chirag and Finkbeiner, Jan and Siegel, Sebastian and Strachan, John Paul and Neftci, Emre},
+  doi          = {10.1038/s43588-025-00854-1},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {661-674},
+  month        = {9},
+  number       = {9},
+  pages        = {813-824},
   shortjournal = {Nat. Comput. Sci},
-  title        = {A comprehensive mapping of zeolite–template chemical space},
+  title        = {Analog in-memory computing attention mechanism for fast and energy-efficient large language models},
   volume       = {5},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). RNA–ligand interaction scoring via data perturbation and augmentation modeling. <em>NATCS</em>, <em>5</em>(8), 648-660. (<a href='https://doi.org/10.1038/s43588-025-00820-x'>www</a>)
+(2025). Deep active optimization for complex systems. <em>NATCS</em>, <em>5</em>(9), 801-812. (<a href='https://doi.org/10.1038/s43588-025-00858-x'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Despite recent advances in RNA-targeting drug discovery, the development of data-driven deep learning models remains challenging owing to limited validated RNA–small molecule interaction data and scarce known RNA structures. In this context, we introduce RNAsmol, a sequence-based deep learning framework that incorporates data perturbation with augmentation, graph-based molecular feature representation and attention-based feature fusion modules to predict RNA–small molecule interactions. RNAsmol employs perturbation strategies to balance the bias between the true negative and unknown interaction space, thereby elucidating the intrinsic binding patterns between RNA and small molecules. The resulting model demonstrates accurate predictions of the binding between RNA and small molecules, outperforming other methods in ten-fold cross-validation, unseen evaluation and decoy evaluation. Moreover, we use case studies to visualize molecular binding profiles and the distribution of learned weights, providing interpretable insights into RNAsmol’s predictions. In particular, without requiring structural input, RNAsmol can generate reliable predictions and be adapted to various drug design scenarios. RNAsmol is a sequence-based deep learning framework for predicting RNA–small molecule interactions, integrating perturbation and augmentation to achieve robust predictions under limited data and adaptability to diverse drug discovery scenarios.},
+  abstract     = {Inferring optimal solutions from limited data is considered the ultimate goal in scientific discovery. Artificial intelligence offers a promising avenue to greatly accelerate this process. Existing methods often depend on large datasets, strong assumptions about objective functions, and classic machine learning techniques, restricting their effectiveness to low-dimensional or data-rich problems. Here we introduce an optimization pipeline that can effectively tackle complex, high-dimensional problems with limited data. This approach utilizes a deep neural surrogate to iteratively find optimal solutions and introduces additional mechanisms to avoid local optima, thereby minimizing the required samples. Our method finds superior solutions in problems with up to 2,000 dimensions, whereas existing approaches are confined to 100 dimensions and need considerably more data. It excels across varied real-world systems, outperforming current algorithms and enabling efficient knowledge discovery. Although focused on scientific problems, its benefits extend to numerous quantitative fields, paving the way for advanced self-driving laboratories. This study introduces a deep active optimization pipeline that effectively tackles high-dimensional, complex problems with limited data. The approach minimizes sample size and surpasses existing methods, achieving optimal solutions in up to 2,000 dimensions.},
   archive      = {J_NATCS},
-  author       = {Ma, Hongli and Gao, Letian and Jin, Yunfan and Ma, Jianwei and Bai, Yilan and Liu, Xiaofan and Bao, Pengfei and Liu, Ke and Xu, Zhenjiang Zech and Lu, Zhi John},
-  doi          = {10.1038/s43588-025-00820-x},
+  author       = {Wei, Ye and Peng, Bo and Xie, Ruiwen and Chen, Yangtao and Qin, Yu and Wen, Peng and Bauer, Stefan and Tung, Po-Yen and Raabe, Dierk},
+  doi          = {10.1038/s43588-025-00858-x},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {648-660},
+  month        = {9},
+  number       = {9},
+  pages        = {801-812},
   shortjournal = {Nat. Comput. Sci},
-  title        = {RNA–ligand interaction scoring via data perturbation and augmentation modeling},
+  title        = {Deep active optimization for complex systems},
   volume       = {5},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Investigating the volume and diversity of data needed for generalizable antibody–antigen ΔΔG prediction. <em>NATCS</em>, <em>5</em>(8), 635-647. (<a href='https://doi.org/10.1038/s43588-025-00823-8'>www</a>)
+(2025). Digital twin for chemical science: A case study on water interactions on the ag(111) surface. <em>NATCS</em>, <em>5</em>(9), 793-800. (<a href='https://doi.org/10.1038/s43588-025-00857-y'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Antibody–antigen binding affinity lies at the heart of therapeutic antibody development: efficacy is guided by specific binding and control of affinity. Here we present Graphinity, an equivariant graph neural network architecture built directly from antibody–antigen structures that achieves test Pearson’s correlations of up to 0.87 on experimental change in binding affinity (ΔΔG) prediction. However, our model, like previous methods, appears to be overtraining on the few hundred experimental data points available and performance is not robust to train–test cut-offs. To investigate the amount and type of data required to generalizably predict ΔΔG, we built synthetic datasets of nearly 1 million FoldX-generated and &gt;20,000 Rosetta Flex ddG-generated ΔΔG values. Our results indicate that there are currently insufficient experimental data to accurately and robustly predict ΔΔG, with orders of magnitude more likely needed. Dataset size is not the only consideration; diversity is also an important factor for model predictiveness. These findings provide a lower bound on data requirements to inform future method development and data collection efforts. Predicting the effects of mutations on antibody–antigen binding is a key challenge in therapeutic antibody development. Orders of magnitude more data will be needed to unlock accurate, robust prediction.},
+  abstract     = {Directly visualizing chemical trajectories offers insights into catalysis, gas-phase reactions and photoinduced dynamics. Tracking the transformation of chemical species is best achieved by coupling theory and experiment. Here we developed Digital Twin for Chemical Science (DTCS) v.01, which integrates theory, experiment and their bidirectional feedback loops into a unified platform for chemical characterization. DTCS addresses a core question: given a set of experimental conditions, what is the expected outcome and why? It consists of a forward solver that takes a chemical reaction network and predicts spectra under experimental conditions, and an inverse solver that infers kinetics from measured spectra. We applied DTCS to ambient-pressure X-ray photoelectron spectroscopy measurements of the Ag–H2O interface as an example. This approach enables real-time knowledge extraction and guides experiments until a stopping condition is met based on accuracy and degeneracy. As a step toward autonomous chemical characterization, DTCS provides mechanistic knowledge in a verified, standardized manner. Interpreting spectroscopic data in real time remains a challenge in chemical characterization. Here a digital twin framework is developed that links first-principles theory and experimental data via a bidirectional feedback loop, enabling on-the-fly decision-making and insights into reaction mechanisms based on measured spectra during chemical experiments.},
   archive      = {J_NATCS},
-  author       = {Hummer, Alissa M. and Schneider, Constantin and Chinery, Lewis and Deane, Charlotte M.},
-  doi          = {10.1038/s43588-025-00823-8},
+  author       = {Qian, Jin and Jana, Asmita and Menon, Siddarth and Bogdan, Andrew E. and Hamlyn, Rebecca and Mahl, Johannes and Crumlin, Ethan J.},
+  doi          = {10.1038/s43588-025-00857-y},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {635-647},
+  month        = {9},
+  number       = {9},
+  pages        = {793-800},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Investigating the volume and diversity of data needed for generalizable antibody–antigen ΔΔG prediction},
+  title        = {Digital twin for chemical science: A case study on water interactions on the ag(111) surface},
   volume       = {5},
   year         = {2025},
 }
@@ -113,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A large-scale replication of scenario-based experiments in psychology and management using large language models. <em>NATCS</em>, <em>5</em>(8), 627-634. (<a href='https://doi.org/10.1038/s43588-025-00840-7'>www</a>)
+(2025). SurFF: A foundation model for surface exposure and morphology across intermetallic crystals. <em>NATCS</em>, <em>5</em>(9), 782-792. (<a href='https://doi.org/10.1038/s43588-025-00839-0'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We conducted a large-scale study replicating 156 psychological experiments from top social science journals using three state-of-the-art large language models (LLMs). Our results reveal that, while LLMs demonstrated high replication rates for main effects (73–81%) and moderate to strong success with interaction effects (46–63%), they consistently produced larger effect sizes than human studies. Notably, LLMs showed significantly lower replication rates for studies involving socially sensitive topics such as race, gender and ethics. When original studies reported null findings, LLMs produced significant results at remarkably high rates (68–83%); while this could reflect cleaner data with less noise, it also suggests potential risks of effect size overestimation. Our results demonstrate both the promises and the challenges of LLMs in psychological research: while LLMs are efficient tools for pilot testing and rapid hypothesis validation, enriching rather than replacing traditional human-participant studies, they require more nuanced interpretation and human validation for complex social phenomena and culturally sensitive research questions. Researchers replicated 156 psychological experiments using three large language models (LLMs) instead of human participants. LLMs achieved 73–81% replication rates but showed amplified effect sizes and challenges with socially sensitive topics.},
+  abstract     = {With approximately 90% of industrial reactions occurring on surfaces, the role of heterogeneous catalysts is paramount. Currently, accurate surface exposure prediction is vital for heterogeneous catalyst design, but it is hindered by the high costs of experimental and computational methods. Here we introduce a foundation force-field-based model for predicting surface exposure and synthesizability (SurFF) across intermetallic crystals, which are essential materials for heterogeneous catalysts. We created a comprehensive intermetallic surface database using an active learning method and high-throughput density functional theory calculations, encompassing 12,553 unique surfaces and 344,200 single points. SurFF achieves density-functional-theory-level precision with a prediction error of 3 meV Å−2 and enables large-scale surface exposure prediction with a 105-fold acceleration. Validation against computational and experimental data both show strong alignment. We applied SurFF for large-scale predictions of surface energy and Wulff shapes for over 6,000 intermetallic crystals, providing valuable data for the community. A foundation machine learning model, SurFF, enables DFT-accurate predictions of surface energies and morphologies in intermetallic catalysts, achieving over 105-fold acceleration for high-throughput materials screening.},
   archive      = {J_NATCS},
-  author       = {Cui, Ziyan and Li, Ning and Zhou, Huaikang},
-  doi          = {10.1038/s43588-025-00840-7},
+  author       = {Yin, Jun and Chen, Honghao and Qiu, Jiangjie and Li, Wentao and He, Peng and Li, Jiali and Karimi, Iftekhar A. and Lan, Xiaocheng and Wang, Tiefeng and Wang, Xiaonan},
+  doi          = {10.1038/s43588-025-00839-0},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {627-634},
+  month        = {9},
+  number       = {9},
+  pages        = {782-792},
   shortjournal = {Nat. Comput. Sci},
-  title        = {A large-scale replication of scenario-based experiments in psychology and management using large language models},
+  title        = {SurFF: A foundation model for surface exposure and morphology across intermetallic crystals},
   volume       = {5},
   year         = {2025},
 }
@@ -134,20 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A formally exact method for high-throughput absolute binding-free-energy calculations. <em>NATCS</em>, <em>5</em>(8), 621-626. (<a href='https://doi.org/10.1038/s43588-025-00821-w'>www</a>)
+(2025). Exploiting pleiotropy to enhance variant discovery with functional false discovery rates. <em>NATCS</em>, <em>5</em>(9), 769-781. (<a href='https://doi.org/10.1038/s43588-025-00852-3'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Here we introduce a high-throughput, formally exact method for absolute binding-free-energy calculations that enhances computational efficiency and accuracy. At the core of this method is a thermodynamic cycle that minimizes protein ligand relative motion, thereby reducing system perturbations and driving a fourfold gain in efficiency over the traditional double-decoupling method. By combining this strategy with double-wide sampling and hydrogen-mass repartitioning algorithms, the efficiency is further boosted to eightfold. The presented method is applied to 45 diverse protein–ligand complexes. For 34 complexes with validated force-field accuracy, our method achieves an average unsigned error of less than 1 kcal mol−1 and a hysteresis below 0.5 kcal mol−1, showcasing exceptional reliability. Moreover, it efficiently manages flexible peptide ligands through a potential-of-mean-force calculation, adding less than 5% extra simulation time. For 11 challenging cases, the presented method also shows an improvement compared with previously published results. Put together, this method has potential for advancing research in physical, biological and medicinal chemistry. A thermodynamic cycle is proposed that limits protein–ligand relative motion and boosts the efficiency of absolute binding-free-energy calculations four- to eightfold, without compromising theoretical rigor.},
+  abstract     = {The cost of recruiting participants for genome-wide association studies (GWASs) can limit sample sizes and hinder the discovery of genetic variants. Here we introduce the surrogate functional false discovery rate (sfFDR) framework that integrates summary statistics of related traits to increase power. The sfFDR framework provides estimates of FDR quantities such as the functional local FDR and q value, and uses these estimates to derive a functional P value for type I error rate control and a functional local Bayes’ factor for post-GWAS analyses. Compared with a standard analysis, sfFDR substantially increased power (equivalent to a 52% increase in sample size) in a study of obesity-related traits from the UK Biobank and discovered eight additional lead SNPs near genes linked to immune-related responses in a rare disease GWAS of eosinophilic granulomatosis with polyangiitis. Collectively, these results highlight the utility of exploiting related traits in both small and large studies. This study introduces a cost-effective strategy called surrogate functional false discovery rates to increase power in genome-wide association studies by leveraging genetic correlations (or pleiotropy) between related traits.},
   archive      = {J_NATCS},
-  author       = {Bian, Hengwei and Shao, Xueguang and Chipot, Christophe and Cai, Wensheng and Fu, Haohao},
-  doi          = {10.1038/s43588-025-00821-w},
+  author       = {Bass, Andrew J. and Wallace, Chris},
+  doi          = {10.1038/s43588-025-00852-3},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {621-626},
+  month        = {9},
+  number       = {9},
+  pages        = {769-781},
   shortjournal = {Nat. Comput. Sci},
-  title        = {A formally exact method for high-throughput absolute binding-free-energy calculations},
+  title        = {Exploiting pleiotropy to enhance variant discovery with functional false discovery rates},
   volume       = {5},
   year         = {2025},
 }
@@ -155,20 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Quantifying batch effects for individual genes in single-cell data. <em>NATCS</em>, <em>5</em>(8), 612-620. (<a href='https://doi.org/10.1038/s43588-025-00824-7'>www</a>)
+(2025). Virtual brain twins for stimulation in epilepsy. <em>NATCS</em>, <em>5</em>(9), 754-768. (<a href='https://doi.org/10.1038/s43588-025-00841-6'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Batch effects substantially impede the comparison of multiple single-cell experiment batches. Existing methods for batch effect removal and quantification primarily emphasize cell alignment across batches, often overlooking gene-level batch effects. Here we introduce group technical effects (GTE)—a quantitative metric to assess batch effects on individual genes. Using GTE, we show that batch effects unevenly impact genes within the dataset. A portion of highly batch-sensitive genes (HBGs) differ between datasets and dominate the batch effects, whereas non-HBGs exhibit low batch effects. We demonstrate that as few as three HBGs are sufficient to introduce substantial batch effects. Our method also enables the assessment of cell-level batch effects, outperforming existing batch effect quantification methods. We also observe that biologically similar cell types undergo similar batch effects, informing the development of data integration strategies. The GTE method is versatile and applicable to various single-cell omics data types. Group technical effects, a metric to quantify gene-level batch effects in single-cell data, is proposed. The analysis based on group technical effects reveals the unbalanced batch effects across genes.},
+  abstract     = {Estimating the epileptogenic zone network (EZN) is an important part of the diagnosis of drug-resistant focal epilepsy and has a pivotal role in treatment and intervention. Virtual brain twins provide a modeling method for personalized diagnosis and treatment. They integrate patient-specific brain topography with structural connectivity from anatomical neuroimaging such as magnetic resonance imaging, and dynamic activity from functional recordings such as electroencephalography (EEG) and stereo-EEG (SEEG). Seizures show rich spatial and temporal features in functional recordings, which can be exploited to estimate the EZN. Stimulation-induced seizures can provide important and complementary information. Here we consider invasive SEEG stimulation and non-invasive temporal interference stimulation as a complementary approach. This paper offers a high-resolution virtual brain twin framework for EZN diagnosis based on stimulation-induced seizures. It provides an important methodological and conceptual basis to make the transition from invasive to non-invasive diagnosis and treatment of drug-resistant focal epilepsy. A high-resolution virtual brain twin approach is proposed using stimulation-induced seizures to estimate the epileptogenic network, offering a step toward non-invasive diagnosis and treatment of drug-resistant focal epilepsy.},
   archive      = {J_NATCS},
-  author       = {Zhou, Yang and Sheng, Qiongyu and Wang, Guohua and Xu, Li and Jin, Shuilin},
-  doi          = {10.1038/s43588-025-00824-7},
+  author       = {Wang, Huifang E. and Dollomaja, Borana and Triebkorn, Paul and Duma, Gian Marco and Williamson, Adam and Makhalova, Julia and Lemarechal, Jean-Didier and Bartolomei, Fabrice and Jirsa, Viktor},
+  doi          = {10.1038/s43588-025-00841-6},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {612-620},
+  month        = {9},
+  number       = {9},
+  pages        = {754-768},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Quantifying batch effects for individual genes in single-cell data},
+  title        = {Virtual brain twins for stimulation in epilepsy},
   volume       = {5},
   year         = {2025},
 }
@@ -176,19 +176,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Unbalanced gene-level batch effects in single-cell data. <em>NATCS</em>, <em>5</em>(8), 610-611. (<a href='https://doi.org/10.1038/s43588-025-00829-2'>www</a>)
+(2025). On the compatibility of generative AI and generative linguistics. <em>NATCS</em>, <em>5</em>(9), 745-753. (<a href='https://doi.org/10.1038/s43588-025-00861-2'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We developed group technical effects (GTE) as a quantitative metric for evaluating gene-level batch effects in single-cell data. It identifies highly batch-sensitive genes — the primary contributors to batch effects — that vary across datasets, and whose removal effectively mitigates the batch effects.},
+  abstract     = {Chomsky’s generative linguistics has made substantial contributions to cognitive science and symbolic artificial intelligence. With the rise of neural language models, however, the compatibility between generative artificial intelligence and generative linguistics has come under debate. Here we outline three ways in which generative artificial intelligence aligns with and supports the core ideas of generative linguistics. In turn, generative linguistics can provide criteria to evaluate and improve neural language models as models of human language and cognition. This Perspective discusses that generative AI aligns with generative linguistics by showing that neural language models (NLMs) are formal generative models. Furthermore, generative linguistics offers a framework for evaluating and improving NLMs.},
   archive      = {J_NATCS},
-  doi          = {10.1038/s43588-025-00829-2},
+  author       = {Portelance, Eva and Jasbi, Masoud},
+  doi          = {10.1038/s43588-025-00861-2},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {610-611},
+  month        = {9},
+  number       = {9},
+  pages        = {745-753},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Unbalanced gene-level batch effects in single-cell data},
+  title        = {On the compatibility of generative AI and generative linguistics},
   volume       = {5},
   year         = {2025},
 }
@@ -196,20 +197,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Diving deep into zeolite space. <em>NATCS</em>, <em>5</em>(8), 608-609. (<a href='https://doi.org/10.1038/s43588-025-00831-8'>www</a>)
+(2025). Arti-‘fickle’ intelligence: Using LLMs as a tool for inference in the political and social sciences. <em>NATCS</em>, <em>5</em>(9), 737-744. (<a href='https://doi.org/10.1038/s43588-025-00843-4'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {A recent study proposed ZeoBind, an AI-accelerated workflow enabling the discovery and experimental verification of hits within chemical spaces containing hundreds of millions of zeolites.},
+  abstract     = {To promote the scientific use of large language models (LLMs), we suggest that researchers in the political and social sciences refocus on the scientific goal of inference. We suggest that this refocus will improve the accumulation of shared scientific knowledge about these tools and their uses in the social sciences. We discuss the challenges and opportunities related to scientific inference with LLMs, using validation of model output as an illustrative case for discussion. We then propose a set of guidelines related to establishing the failure and success of LLMs when completing particular tasks and discuss how to make inferences from these observations. Large language models are increasingly important in social science research. The authors provide guidance on how best to validate and use these models as rigorous tools to further scientific inference.},
   archive      = {J_NATCS},
-  author       = {Balcells, David},
-  doi          = {10.1038/s43588-025-00831-8},
+  author       = {Argyle, Lisa P. and Busby, Ethan C. and Gubler, Joshua R. and Hepner, Bryce and Lyman, Alex and Wingate, David},
+  doi          = {10.1038/s43588-025-00843-4},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {608-609},
+  month        = {9},
+  number       = {9},
+  pages        = {737-744},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Diving deep into zeolite space},
+  title        = {Arti-‘fickle’ intelligence: Using LLMs as a tool for inference in the political and social sciences},
   volume       = {5},
   year         = {2025},
 }
@@ -217,20 +218,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). What’s so hard about RNA-targeting drug discovery?. <em>NATCS</em>, <em>5</em>(8), 606-607. (<a href='https://doi.org/10.1038/s43588-025-00853-2'>www</a>)
+(2025). Urban planning in the era of large language models. <em>NATCS</em>, <em>5</em>(9), 727-736. (<a href='https://doi.org/10.1038/s43588-025-00846-1'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {An artificial intelligence model leverages language models and molecular perturbations to tackle the data scarcity problem in the RNA drug world.},
+  abstract     = {City plans are the product of integrating human creativity with emerging technologies, which continuously evolve and reshape urban morphology and environments. Here we argue that large language models hold large untapped potential in addressing the growing complexities of urban planning and enabling a more holistic, innovative and responsive approach to city design. By harnessing their advanced generation and simulation capabilities, large language models can contribute as an intelligent assistant for human planners in synthesizing conceptual ideas, generating urban designs and evaluating the outcomes of planning efforts. Large language models remain largely unexplored is the design of cities. In this Perspective, the authors discuss the potential opportunities brought by these models in assisting urban planning.},
   archive      = {J_NATCS},
-  author       = {Oliver, Carlos and Waldispühl, Jérôme},
-  doi          = {10.1038/s43588-025-00853-2},
+  author       = {Zheng, Yu and Xu, Fengli and Lin, Yuming and Santi, Paolo and Ratti, Carlo and Wang, Qi R. and Li, Yong},
+  doi          = {10.1038/s43588-025-00846-1},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {606-607},
+  month        = {9},
+  number       = {9},
+  pages        = {727-736},
   shortjournal = {Nat. Comput. Sci},
-  title        = {What’s so hard about RNA-targeting drug discovery?},
+  title        = {Urban planning in the era of large language models},
   volume       = {5},
   year         = {2025},
 }
@@ -238,20 +239,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Experimenting on AI can (sometimes) teach us about ourselves. <em>NATCS</em>, <em>5</em>(8), 604-605. (<a href='https://doi.org/10.1038/s43588-025-00838-1'>www</a>)
+(2025). Rethinking chemical research in the age of large language models. <em>NATCS</em>, <em>5</em>(9), 715-726. (<a href='https://doi.org/10.1038/s43588-025-00811-y'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {A recent study sought to replicate published experimental research using large language models, finding that human behavior is replicated surprisingly well overall, but deviates in important ways that could lead social scientists astray.},
+  abstract     = {Large language models (LLMs) offer opportunities for advancing chemical research, including planning, optimization, data analysis, automation and knowledge management. Deploying LLMs in active environments, where they interact with tools and data, can greatly enhance their capabilities. However, challenges remain in evaluating their performance and addressing ethical issues such as reproducibility, data privacy and bias. Here we discuss ongoing and potential integrations of LLMs in chemical research, highlighting existing challenges to guide the effective use of LLMs as active scientific partners. This Perspective highlights the potential integrations of large language models (LLMs) in chemical research and provides guidance on the effective use of LLMs as research partners, noting the ethical and performance-based challenges that must be addressed moving forward.},
   archive      = {J_NATCS},
-  author       = {van Loon, Austin and Heidenry, Zoe},
-  doi          = {10.1038/s43588-025-00838-1},
+  author       = {MacKnight, Robert and Boiko, Daniil A. and Regio, Jose Emilio and Gallegos, Liliana C. and Neukomm, Théo A. and Gomes, Gabe},
+  doi          = {10.1038/s43588-025-00811-y},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {604-605},
+  month        = {9},
+  number       = {9},
+  pages        = {715-726},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Experimenting on AI can (sometimes) teach us about ourselves},
+  title        = {Rethinking chemical research in the age of large language models},
   volume       = {5},
   year         = {2025},
 }
@@ -259,19 +260,186 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Pushing the frontiers in computational chemistry. <em>NATCS</em>, <em>5</em>(8), 603. (<a href='https://doi.org/10.1038/s43588-025-00862-1'>www</a>)
+(2025). A digital twin that interprets and refines chemical mechanisms. <em>NATCS</em>, <em>5</em>(9), 713-714. (<a href='https://doi.org/10.1038/s43588-025-00859-w'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We reflect on ongoing topics and discussions at conferences in the field of computational chemistry.},
+  abstract     = {An integrated platform, Digital Twin for Chemical Science (DTCS), is developed to connect first-principles theory with spectroscopic measurements through a bidirectional feedback loop. By predicting and refining chemical reaction mechanisms before, during and after experiments, DTCS enables the interpretation of spectra and supports real-time decision-making in chemical characterization.},
   archive      = {J_NATCS},
-  doi          = {10.1038/s43588-025-00862-1},
+  doi          = {10.1038/s43588-025-00859-w},
   journal      = {Nature Computational Science},
-  month        = {8},
-  number       = {8},
-  pages        = {603},
+  month        = {9},
+  number       = {9},
+  pages        = {713-714},
   shortjournal = {Nat. Comput. Sci},
-  title        = {Pushing the frontiers in computational chemistry},
+  title        = {A digital twin that interprets and refines chemical mechanisms},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Overcoming computational bottlenecks in large language models through analog in-memory computing. <em>NATCS</em>, <em>5</em>(9), 711-712. (<a href='https://doi.org/10.1038/s43588-025-00860-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A recent study demonstrates the potential of using in-memory computing architecture for implementing large language models for an improved computational efficiency in both time and energy while maintaining a high accuracy.},
+  archive      = {J_NATCS},
+  author       = {Lin, Yudeng and Tang, Jianshi},
+  doi          = {10.1038/s43588-025-00860-3},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {711-712},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Overcoming computational bottlenecks in large language models through analog in-memory computing},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neuromorphic principles in self-attention hardware for efficient transformers. <em>NATCS</em>, <em>5</em>(9), 708-710. (<a href='https://doi.org/10.1038/s43588-025-00868-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Strong barriers remain between neuromorphic engineering and machine learning, especially with regard to recent large language models (LLMs) and transformers. This Comment makes the case that neuromorphic engineering may hold the keys to more efficient inference with transformer-like models.},
+  archive      = {J_NATCS},
+  author       = {Leroux, Nathan and Finkbeiner, Jan and Neftci, Emre},
+  doi          = {10.1038/s43588-025-00868-9},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {708-710},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Neuromorphic principles in self-attention hardware for efficient transformers},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using LLMs to advance the cognitive science of collectives. <em>NATCS</em>, <em>5</em>(9), 704-707. (<a href='https://doi.org/10.1038/s43588-025-00848-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large language models (LLMs) are already transforming the study of individual cognition, but their application to studying collective cognition has been underexplored. We lay out how LLMs may be able to address the complexity that has hindered the study of collectives and raise possible risks that warrant new methods.},
+  archive      = {J_NATCS},
+  author       = {Sucholutsky, Ilia and Collins, Katherine M. and Jacoby, Nori and Thompson, Bill D. and Hawkins, Robert D.},
+  doi          = {10.1038/s43588-025-00848-z},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {704-707},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Using LLMs to advance the cognitive science of collectives},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Threats to scientific software from over-reliance on AI code assistants. <em>NATCS</em>, <em>5</em>(9), 701-703. (<a href='https://doi.org/10.1038/s43588-025-00845-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The adoption of generative artificial intelligence (AI) code assistants in scientific software development is promising, but user studies across an array of programming contexts suggest that programmers are at risk of over-reliance on these tools, leading them to accept undetected errors in generated code. Scientific software may be particularly vulnerable to such errors because most research code is untested and scientists are undertrained in software development skills. This Comment outlines the factors that place scientific code at risk and suggests directions for research groups, educators, publishers and funders to counter these liabilities.},
+  archive      = {J_NATCS},
+  author       = {O’Brien, Gabrielle},
+  doi          = {10.1038/s43588-025-00845-2},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {701-703},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Threats to scientific software from over-reliance on AI code assistants},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computational challenges arising in algorithmic fairness and health equity with generative AI. <em>NATCS</em>, <em>5</em>(9), 698-700. (<a href='https://doi.org/10.1038/s43588-025-00806-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The use of generative artificial intelligence (AI) in healthcare is advancing, but understanding its potential challenges for fairness and health equity is still in its early stages. This Comment investigates how to define fairness and measure it, and highlights research that can help address challenges in the field.},
+  archive      = {J_NATCS},
+  author       = {Suriyakumar, Vinith M. and Zink, Anna and Hightower, Maia and Ghassemi, Marzyeh and Beaulieu-Jones, Brett},
+  doi          = {10.1038/s43588-025-00806-9},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {698-700},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Computational challenges arising in algorithmic fairness and health equity with generative AI},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The impact of language models on the humanities and vice versa. <em>NATCS</em>, <em>5</em>(9), 695-697. (<a href='https://doi.org/10.1038/s43588-025-00819-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many humanists are skeptical of language models and concerned about their effects on universities. However, researchers with a background in the humanities are also actively engaging with artificial intelligence — seeking not only to adopt language models as tools, but to steer them toward a more flexible, contextual representation of written culture.},
+  archive      = {J_NATCS},
+  author       = {Underwood, Ted},
+  doi          = {10.1038/s43588-025-00819-4},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {695-697},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {The impact of language models on the humanities and vice versa},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The other AI revolution: How the global south is building and repurposing language models that speak to billions. <em>NATCS</em>, <em>5</em>(9), 691-694. (<a href='https://doi.org/10.1038/s43588-025-00865-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While leading tech companies race to build ever-larger models, researchers in Brazil, India and Africa are using clever tricks to remix big labs’ LLMs to bring AI to billions of users.},
+  archive      = {J_NATCS},
+  author       = {Burgos, Pedro},
+  doi          = {10.1038/s43588-025-00865-y},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {691-694},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {The other AI revolution: How the global south is building and repurposing language models that speak to billions},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The rise of large language models. <em>NATCS</em>, <em>5</em>(9), 689-690. (<a href='https://doi.org/10.1038/s43588-025-00890-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This issue of Nature Computational Science features a Focus that highlights both the promises and perils of large language models, their emerging applications across diverse scientific domains, and the opportunities to overcome the challenges that lie ahead.},
+  archive      = {J_NATCS},
+  doi          = {10.1038/s43588-025-00890-x},
+  journal      = {Nature Computational Science},
+  month        = {9},
+  number       = {9},
+  pages        = {689-690},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {The rise of large language models},
   volume       = {5},
   year         = {2025},
 }

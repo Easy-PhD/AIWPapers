@@ -25,27 +25,8 @@
 </head>
 <body>
 
-<h2 id="tip">TIP - 73</h2>
+<h2 id="tip">TIP - 65</h2>
 <ul>
-<li><details>
-<summary>
-(2025). Instance-adaptive spatial-temporal enhancement for efficient video compression. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602648'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Efficiently compressing HD/UHD content has long been challenging due to high bitrate costs. Instance-adaptive enhancement methods try to tackle this issue by compressing a video at reduced resolution and enhancing it using a neural model specifically overfitted for this video. However, existing methods focus solely on spatial super-resolution (SR) and under-utilize the videos’ temporal redundancy. Their limited management of the model’s updated parameters also causes excessive overfitting overheads. Therefore, this paper introduces IASTE, the first instance-adaptive enhancement method based on spatial-temporal enhancement (STE), and incorporates low-rank adaptation (LoRA) for efficient model overfitting. Specifically, we downscale videos spatially and temporally to reduce the data volume and achieve efficient video compression. Then, we overfit a specific STE model for each video and use it to enhance the decoded video’s spatiotemporal resolution. Leveraging the video swin transformer’s strong capability in capturing spatiotemporal correlations, we design a lightweight and efficient model to implement video STE. The model is overfitted for each video using LoRA. By freezing the pre-trained model and selectively updating a few low-rank matrices, the bitrate overhead for model storage can be mitigated. Experiments prove that compared to directly compressing high-frame-rate (HFR), high-resolution (HR) videos, our method achieves around 30% BD-Rate gains on the CTC and UVG datasets, about 15% gains on the YoutubeUGC dataset, and about 10% gains on the ultra-long videos in the Xiph dataset.},
-  archive      = {J_TIP},
-  author       = {Yan Zhao and Zhengxue Cheng and Jiangchuan Li and Donghui Feng and Qunshan Gu and Qi Wang and Guo Lu and Li Song},
-  doi          = {10.1109/TIP.2025.3602648},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Instance-adaptive spatial-temporal enhancement for efficient video compression},
-  year         = {2025},
-}
-</textarea>
-</details></li>
 <li><details>
 <summary>
 (2025). Zero-shot image recognition via learning dual prototype accordance across meta-domains. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607588'>www</a>)
@@ -61,63 +42,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
   title        = {Zero-shot image recognition via learning dual prototype accordance across meta-domains},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Motion and appearance decoupling representation for event cameras. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607632'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Event cameras, with high temporal resolution and high dynamic range, have shown great potential under extreme scenarios such as high-speed movement and low illumination. However, previous event representation methods typically aggregate event data into a single dense tensor, often overlooking the dynamic changes of events within a given time unit. This limitation can introduce historical artifacts and semantic inconsistencies, ultimately degrading model performance. Inspired by human visual prior, we propose a motion and appearance decoupling (MAD) event representation to disentangle the mixed spatial-temporal event tensor into two independent branches. This bio-inspired design helps the network extract discriminative temporal (i.e., motion) and spatial (i.e., appearance) information, thus reducing the network’s learning burden toward complex high-level interpretation tasks. In our method, the event motion guided attention module (EMGA) is designed to achieve temporal and spatial feature interaction and fusion sequentially. Based on EMGA, three specially designed decoder heads are proposed for several representative event-based tasks (i.e., object detection, semantic segmentation, and human pose estimation). Experimental results demonstrate that our method achieves state-of-the-art performance on the above three tasks, which reveals that our method is an easy-to-implement replacement for currently event-based methods. Our code is available at: https://github.com/ChenYichen9527/MAD-representation.},
-  archive      = {J_TIP},
-  author       = {Nuo Chen and Boyang Li and Yingqian Wang and Xinyi Ying and Longguang Wang and Chushu Zhang and Yulan Guo and Miao Li and Wei An},
-  doi          = {10.1109/TIP.2025.3607632},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Motion and appearance decoupling representation for event cameras},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Rethinking generalized zero-shot learning: A synthesized per-instance attribute perspective. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607612'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Generalized zero-shot learning (GZSL) shows great potential for improving generalization to unseen classes in real-world scenarios. However, most GZSL methods depend on benchmark datasets with per-class attribute annotations, which creates a large semantic gap and worsens the domain shift problem in the visual-semantic space. To address these challenges, instance-level attributes offer an intuitive solution, but they require expensive manual annotation. In this paper, we propose a simple yet effective approach called per-instance attribute synthesis (PIAS) to generate diverse semantic representations for each instance. Our method first uses the Vision Transformer (ViT) model to extract visual features and then generates per-instance attributes. The patch splitting, positional embedding, and multi-head self-attention mechanisms in ViT improve the discriminability of both visual and semantic representations. Next, we define the generated attributes of class-average images as class anchor points. These anchor points are calibrated in the semantic space by minimizing the cosine similarity between the anchor points and per-class attribute annotations. Finally, we improve the diversity of generated per-instance attributes by aligning the topological structure between per-class attribute annotations and synthesized per-instance attributes with that between class-average visual features and per-instance visual features. We conduct comprehensive experiments on three challenging ZSL datasets: AWA2, CUB, and SUN. The results show that PIAS significantly outperforms state-of-the-art methods under both ZSL and GZSL settings. We further demonstrate the generalization ability of PIAS by applying it to attribute-based zero-shot image retrieval tasks.},
-  archive      = {J_TIP},
-  author       = {Chenwei Tang and Ying Wang and Wei Xie and Qianjun Zhang and Rong Xiao and Zhenan He and Jiancheng Lv},
-  doi          = {10.1109/TIP.2025.3607612},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Rethinking generalized zero-shot learning: A synthesized per-instance attribute perspective},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MSP: Multimodal self-attention prompt learning. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607613'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal prompt learning has emerged as an effective strategy for adapting vision-language models such as CLIP to downstream tasks. However, conventional approaches typically operate at the input level, forcing learned prompts to propagate through a sequence of frozen Transformer layers. This indirect adaptation introduces cumulative geometric distortions, a limitation that we formalize as the indirect learning dilemma (ILD), leading to overfitting of the base class and reduced generalization to novel classes. To overcome this challenge, we propose the Multimodal Self-Attention Prompt (MSP) framework, which shifts adaptation into the semantic core of the model by injecting learnable prompts directly into the key and value sequences of attention blocks. This direct modulation preserves the pretrained embedding geometry while enabling more precise downstream adaptation. MSP further incorporates distance-aware optimization to maintain semantic consistency with CLIP’s original representation space, and partial prompt learning via stochastic dimension masking to improve robustness and prevent over-specialization. Extensive evaluations across 11 benchmarks demonstrate the effectiveness of MSP. It achieves a state-of-the-art harmonic mean accuracy of 80.67%, with 77.32% accuracy on novel classes—representing a 2.18% absolute improvement over prior methods—while requiring only 0.11M learnable parameters. Notably, MSP surpasses CLIP’s zero-shot performance on 10 out of 11 datasets, establishing a new paradigm for efficient and generalizable prompt-based adaptation. Our implementation is available at https://github.com/laixinyi023/ Multimodal-Self-Attention-Prompt.},
-  archive      = {J_TIP},
-  author       = {Xinyi Lai and Xiao Ke and Huangbiao Xu and Shanghui Wu and Wenzhong Guo},
-  doi          = {10.1109/TIP.2025.3607613},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {MSP: Multimodal self-attention prompt learning},
   year         = {2025},
 }
 </textarea>
@@ -162,120 +86,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). MambaDiff: Mamba-enhanced diffusion model for 3D medical image segmentation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607615'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Accurate 3D medical image segmentation is crucial for diagnosis and treatment. Diffusion models demonstrate promising performance in medical image segmentation tasks due to the progressive nature of the generation process and the explicit modeling of data distributions. However, the weak guidance of conditional information and insufficient feature extraction in diffusion models lead to the loss of fine-grained features and structural consistency in the segmentation results, thereby affecting the accuracy of medical image segmentation. To address this challenge, we propose a Mamba-Enhanced Diffusion Model for 3D Medical Image Segmentation. We extract multilevel semantic features from the original images using an encoder and tightly integrate them with the denoising process of the diffusion model through a Semantic Hierarchical Embedding (SHE) mechanism, to capture the intricate relationship between the noisy label and image data. Meanwhile, we design a Global-Slice Perception Mamba (GSPM) layer, which integrates multi-dimensional perception mechanisms to endow the model with comprehensive spatial reasoning and feature extraction capabilities. Experimental results show that our proposed MambaDiff achieves more competitive performance compared to prior arts with substantially fewer parameters on four public medical image segmentation datasets including BraTS 2021, BraTS 2024, LiTS and MSD Hippocampus. The source code of our method is available at https://github.com/yuliu316316/MambaDiff.},
-  archive      = {J_TIP},
-  author       = {Yu Liu and Yan Feng and Juan Cheng and Haolin Zhan and Zhiqin Zhu},
-  doi          = {10.1109/TIP.2025.3607615},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {MambaDiff: Mamba-enhanced diffusion model for 3D medical image segmentation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). 3DFACENet: 3D facial attractiveness computation and enhancement network. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607629'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The development of facial editing, virtual makeup, AR/VR technologies and 3D games applications underscore the need for advanced 3D facial attractiveness research. However, due to the lack of 3D beauty face data and the complexity of handling 3D face data, 3D facial aesthetics research remains largely unexplored. To fill this gap, we propose 3DFACENet, an innovative system designed for the computation and enhancement of 3D facial attractiveness. Our approach employs a 3D facial reconstruction encoder to generate encoded vectors from images and a render module to obtain 3D face models. To minimize computational load, we innovatively propose an attractiveness computation module which leverage 3D shape and texture coefficients rather than 3D mesh models to access facial attractiveness, achieving state-of-the-art results. To balance aesthetic enhancement and identity preservation, we design a controllable beautification decoder. For the first time, we introduce the concept of “attractive centers”, demonstrating that an individual’s distance to these centers is significantly negatively correlated with their beauty scores. Our beautification decoder edits 3D facial coefficients towards these centers, achieving a significant and controllable enhancement in facial attractiveness. Extensive experiments on the SCUT-FBP5500 and MEBeauty dataset validate the effectiveness and feasibility of 3DFACENet.},
-  archive      = {J_TIP},
-  author       = {Yuan Xie and Tianhao Peng and Mu Li and Baoyuan Wu and David Zhang},
-  doi          = {10.1109/TIP.2025.3607629},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {3DFACENet: 3D facial attractiveness computation and enhancement network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Generalized multi-feature-guided progressive fringe order correction for fringe projection profilometry. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607619'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Phase unwrapping is a critical step in fringe projection profilometry, essential for achieving accurate and efficient three-dimension (3D) imaging. Temporal phase unwrapping is the most widely utilized to improve robustness and the reconstruction quality. Unfortunately, due to abrupt phase discontinuities at boundaries, misalignment between the wrapped phases, and unreliable shadow regions, fringe order errors may occur. To address these challenges, this study presents a generalized multi-feature-guided progressive order correction algorithm (GMP-OCA) for high-quality 3D imaging. The algorithm integrates global coarse detection, incremental line-wise optimization, and regional precision scanning to progressively correct fringe orders. Static and dynamic experimental results demonstrate that GMP-OCA effectively eliminates the systematic errors inherent in various phase unwrapping methods, producing high-quality 3D imaging results.},
-  archive      = {J_TIP},
-  author       = {Jiayi Qin and Yansong Jiang and Yiping Cao},
-  doi          = {10.1109/TIP.2025.3607619},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Generalized multi-feature-guided progressive fringe order correction for fringe projection profilometry},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Exploring multimodal knowledge for image compression via large foundation models. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607616'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Knowledge is an abstraction of factual principles of the physical world. Large foundation models encapsulate extensive multimodal knowledge into the parameters and thus invoke machine intelligence on various tasks. How to invoke the knowledge in these models to facilitate image compression lacks in-depth exploration. In this work, we aim to harness multi-modal knowledge into ultra-low bitrate compression and propose Multimodal Knowledge-aware Image Compression (MKIC). Our key insight is that under the context of ultra-low bitrate compression, where the encoded representation is too sparse to represent enough information of the input signal, knowledge from the physical world is required to be incorporated into the compression. Thus, more shared patterns can be stored in the model together with sparse unique features also embedded into the bitstream. In light of two kinds of knowledge, namely natural visual knowledge and human language knowledge, we propose a novel Alternating Rate-Distortion Optimization to enhance the accuracy and compactness of global semantic text representation extraction, extract the local feature map that captures visual details, and integrate these multimodal representations into a large generative foundation model to achieve high-quality reconstruction. The proposed method relights the path of learned image coding, leveraging decoupled knowledge from large foundation models. Extensive experiments show that our proposed method achieves superior comprehensive performance compared to various methods and shows great potential for ultra-low bitrate image compression.},
-  archive      = {J_TIP},
-  author       = {Junlong Gao and Zhimeng Huang and Qi Mao and Siwei Ma and Chuanmin Jia},
-  doi          = {10.1109/TIP.2025.3607616},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Exploring multimodal knowledge for image compression via large foundation models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Prospective layout-guided multi-modal online hashing. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607626'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In real-world scenarios, the data usually appears in a streaming fashion. To achieve remarkable retrieval performance in such scenarios, online multi-modal hashing has drawn great research attention due to its high retrieval speed and low storage cost. However, existing online multi-modal hashing methods still fail to achieve satisfactory retrieval performance in the scenarios where the new streaming datapoints all belong to the new classes. Therefore, to further improve the retrieval performance in these scenarios, we propose a novel Prospective Layout-Guided Multi-modal Online Hashing, termed PLG-MOH. Specifically, PLG-MOH first establishes the layout of the Hamming space by generating a series of hashing centers to split the space. Each hashing center will be gradually assigned to a new appearing class, and these assigned centers correspond one-to-one with the classes. Moreover, we propose a novel prospective layout-guided loss, which leverages all the hashing centers, including those not yet assigned to the classes, to supervise the training of hashing model. As the unassigned hashing centers will be designated to the new classes emerging in the future, it signifies that during each round of training, PLG-MOH has already considered the forthcoming data from new classes in the future rounds. Consequently, PLG-MOH can effectively adapt its hashing functions to address the new arriving samples and learn semantic similarity-preserved hash codes for them, meanwhile it can effectively retain the information learned from the old data. Extensive experiments on two public datasets demonstrate that the proposed PLG-MOH achieves better retrieval performance than state-of-the-art baselines on online scenarios.},
-  archive      = {J_TIP},
-  author       = {Rong-Cheng Tu and Xian-Ling Mao and Jin-Yu Liu and Zi-Ao Ma and Tian Lan and Heyan Huang},
-  doi          = {10.1109/TIP.2025.3607626},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Prospective layout-guided multi-modal online hashing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Perceptually-guided VR style transfer. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607611'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Virtual reality (VR) makes it possible to provide immersive multimedia content composed of omnidirectional videos (ODVs). Towards enabling more immersive and satisfying VR content, methods are needed to manipulate VR scenes, taking into account perceptual factors related to viewers’ quality of experience (QoE). For example, style transfer methods can be applied to VR content, allowing users to create artistic or surreal effects in their immersive environments. Here, we study perceptual factors that affect the sensation of stylized immersiveness, including color dynamics and spatio-temporal consistency. To do this, we introduce an immersiveness sensitivity model of luminance and color perception, and use it to measure the color dynamics and spatio-temporal consistency of stylized VR contents. We subsequently use this model to construct a perceptually-guided VR style transfer model called VR Style Transfer GAN (VRST-GAN). VRST-GAN learns to transfer a desired style into VR to enhance immersiveness by considering color dynamics while preserving spatio-temporal consistency. We demonstrate the effectiveness of VRST-GAN via qualitative and quantitative experiments. We also develop a VR Immersiveness Predictor (VR-IP) that is able to predict the sensation of immersiveness using the perceptual model. In our experiments, VR-IP predicts immersiveness with an accuracy of 91%.},
-  archive      = {J_TIP},
-  author       = {Seonghwa Choi and Jungwoo Huh and Sanghoon Lee and Alan Conrad Bovik},
-  doi          = {10.1109/TIP.2025.3607611},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Perceptually-guided VR style transfer},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Adaptive anchor-guided representation learning for efficient multi-view subspace clustering. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607587'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -295,44 +105,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). HOPE: Enhanced position image priors via high-order implicit representations. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607582'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Deep Image Prior (DIP) has shown that networks with stochastic initialization and custom architectures can effectively address inverse imaging challenges. Despite its potential, DIP requires significant computational resources, whereas the lighter Implicit Neural Positional Image Prior (PIP) often yields overly smooth solutions due to exacerbated spectral bias. Research on lightweight, high-performance solutions for inverse imaging remains limited. This paper proposes a novel framework, Enhanced Positional Image Priors through High-Order Implicit Representations (HOPE), incorporating high-order interactions between layers within a conventional cascade structure. This approach reduces the spectral bias commonly seen in PIP, enhancing the model’s ability to capture both low- and high-frequency components for optimal inverse problem performance. We theoretically demonstrate that HOPE’s expanded representational space, narrower convergence range, and improved Neural Tangent Kernel (NTK) diagonal properties enable more precise frequency representations than PIP. Comprehensive experiments across tasks such as signal representation (audio, image, volume) and inverse image processing (denoising, super-resolution, CT reconstruction, inpainting) confirm that HOPE establishes new benchmarks for recovery quality and training efficiency.},
-  archive      = {J_TIP},
-  author       = {Yang Chen and Ruituo Wu and Junhui Hou and Ce Zhu and Yipeng Liu},
-  doi          = {10.1109/TIP.2025.3607582},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {HOPE: Enhanced position image priors via high-order implicit representations},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Synergistic prompting learning for human-object interaction detection. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607614'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Human-Object Interaction (HOI) detection, as a foundational task in human-centric understanding, aims to detect interactive triplets in real-world scenarios. To better distinguish diverse HOIs within an open-world context, current HOI detectors utilize pre-trained Visual-Language Models (VLMs) to extract prior knowledge through textual prompts (i.e., descriptive texts for each HOI instance). However, relying on predetermined descriptive texts, such approaches only acquire a fixed set of textual knowledge for HOI prediction, consequently resulting in inferior performance and limited generalization. To remedy this, we propose a novel VLM-based method, which jointly performs prompting learning from both visual and textual perspectives and synergizes visual-textual prompting for HOI detection. Initially, we design a hierarchical adaptation architecture to perform progressive prompting: visual prompting is facilitated through gradual token migration from VLM’s image encoder, while textual prompting is initialized with progressively leveled interaction descriptions. In addition, to synergize the visual-textual prompting learning, a text-supervising and image-tuning loop is introduced, in which the text-supervising stage guides visual prompting learning through contrastive learning and the image-tuning stage refines textual prompting by modal matching. Finally, we employ an interaction-aware knowledge merging mechanism to effectively transfer visual-textual knowledge encapsulated within synergistic prompting for HOI detection. Extensive experiments on two benchmarks demonstrate that our proposed method outperforms the state-of-the-art ones, under both supervised and zero-shot settings.},
-  archive      = {J_TIP},
-  author       = {Jinguo Luo and Weihong Ren and Zhiyong Wang and Xi’ai Chen and Huijie Fan and Zhi Han and Honghai Liu},
-  doi          = {10.1109/TIP.2025.3607614},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Synergistic prompting learning for human-object interaction detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). A multi-category anomaly editing network with correlation exploration and voxel-level attention for unsupervised surface anomaly detection. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607638'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -346,63 +118,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
   title        = {A multi-category anomaly editing network with correlation exploration and voxel-level attention for unsupervised surface anomaly detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). URFusion: Unsupervised unified degradation-robust image fusion network. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607628'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {When dealing with low-quality source images, existing image fusion methods either fail to handle degradations or are restricted to specific degradations. This study proposes an unsupervised unified degradation-robust image fusion network, termed as URFusion, in which various types of degradations can be uniformly eliminated during the fusion process, leading to high-quality fused images. URFusion is composed of three core modules: intrinsic content extraction, intrinsic content fusion, and appearance representation learning and assignment. It first extracts degradation-free intrinsic content features from images affected by various degradations. These content features then provide feature-level rather than image-level fusion constraints for optimizing the fusion network, effectively eliminating degradation residues and reliance on ground truth. Finally, URFusion learns the appearance representation of images and assign the statistical appearance representation of high-quality images to the content-fused result, producing the final high-quality fused image. Extensive experiments on multi-exposure image fusion and multi-modal image fusion tasks demonstrate the advantages of URFusion in fusion performance and suppression of multiple types of degradations. The code is available at https://github.com/hanna-xu/URFusion.},
-  archive      = {J_TIP},
-  author       = {Han Xu and Xunpeng Yi and Chen Lu and Guangcan Liu and Jiayi Ma},
-  doi          = {10.1109/TIP.2025.3607628},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {URFusion: Unsupervised unified degradation-robust image fusion network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Streaming view classification with noisy label. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607610'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In many image processing tasks, e.g., 3D reconstruction of dynamic scenes, different types of descriptions, a.k.a., views, of an object are emerging in a streaming way. Streaming view learning provides an effective solution to this dynamic view problem. In this paradigm, existing streaming view learning methods typically assume that all labels are accurate. However, in many real-world applications, the initial views may be not good enough for characterizing, leading to noisy labels that degrade classification performance. How to learn a model for simultaneous view evolving and label ambiguity is critical yet unexplored. In this paper, we propose a novel method called Streaming View Classification with Noisy Label (SVCNL). We calibrate noisy labels according to the emerging of new views, thereby reflecting the dynamic changes in the data more accurately. Leveraging the sequential and non-revisitable nature of views, the method tunes existing models to inherit information from previous stages by utilizing current-stage data. It reconstructs noisy labels through a label transition matrix and establishes relationships between true labels and samples using a graph embedding strategy, progressively correcting noisy labels. Together with the theoretical analyses about generalization bounds, extensive experiments demonstrate the effectiveness of the proposed approach.},
-  archive      = {J_TIP},
-  author       = {Xiao Ouyang and Ruidong Fan and Hong Tao and Chenping Hou},
-  doi          = {10.1109/TIP.2025.3607610},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Streaming view classification with noisy label},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Source-free object detection with detection transformer. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607621'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Source-Free Object Detection (SFOD) enables knowledge transfer from a source domain to an unsupervised target domain for object detection without access to source data. Most existing SFOD approaches are either confined to conventional object detection (OD) models like Faster R-CNN or designed as general solutions without tailored adaptations for novel OD architectures, especially Detection Transformer (DETR). In this paper, we introduce Feature Reweighting ANd Contrastive Learning NetworK (FRANCK), a novel SFOD framework specifically designed to perform query-centric feature enhancement for DETRs. FRANCK comprises four key components: (1) an Objectness Score-based Sample Reweighting (OSSR) module that computes attention-based objectness scores on multi-scale encoder feature maps, reweighting the detection loss to emphasize less-recognized regions; (2) a Contrastive Learning with Matching-based Memory Bank (CMMB) module that integrates multi-level features into memory banks, enhancing class-wise contrastive learning; (3) an Uncertainty-weighted Query-fused Feature Distillation (UQFD) module that improves feature distillation through prediction quality reweighting and query feature fusion; and (4) an improved self-training pipeline with a Dynamic Teacher Updating Interval (DTUI) that optimizes pseudo-label quality. By leveraging these components, FRANCK effectively adapts a source-pretrained DETR model to a target domain with enhanced robustness and generalization. Extensive experiments on several widely used benchmarks demonstrate that our method achieves state-of-the-art performance, highlighting its effectiveness and compatibility with DETR-based SFOD models.},
-  archive      = {J_TIP},
-  author       = {Huizai Yao and Sicheng Zhao and Shuo Lu and Hui Chen and Yangyang Li and Guoping Liu and Tengfei Xing and Chenggang Yan and Jianhua Tao and Guiguang Ding},
-  doi          = {10.1109/TIP.2025.3607621},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Source-free object detection with detection transformer},
   year         = {2025},
 }
 </textarea>
@@ -441,101 +156,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
   title        = {Cycle translation-based collaborative training for hyperspectral-RGB multimodal change detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Spatio-temporal evolutionary graph learning for brain network analysis using medical imaging. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607633'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Dynamic functional brain network (DFBN) can flexibly describe the time-varying topological connectivity patterns of the brain, and show great potential in brain disease diagnosis. However, most of the existing DFBN analysis methods focus on capturing the dynamic interaction at the brain region level, ignoring the spatio-temporal topological evolution across time windows. Moreover, they are difficult to suppress interfering connections in DFBNs, which leads to a diminished capacity for discerning the intrinsic structures that are intimately linked to brain disorders. To address these issues, we propose a topological evolution graph learning model to capture disease-related spatio-temporal topological features in DFBNs. Specifically, we first take the hubness of adjacent DFBN as the source domain and the target domain in turn, and then use Wasserstein distance (WD) and Gromov-Wasserstein distance (GWD) to capture the brain’s evolution law at the node and edge levels, respectively. Furthermore, we introduce the principle of relevant information to guide the topology evolution graph to learn the structures that are most relevant to brain diseases yet least redundant information between adjacent DFBNs. On this basis, we develop a high-order spatio-temporal model with multi-hop graph convolution to collaboratively extract long-range spatial and temporal dependencies from the topological evolution graph. Extensive experiments show that the proposed method outperforms the current state-of-the-art methods, and can effectively reveal the information evolution mechanism between brain regions across windows.},
-  archive      = {J_TIP},
-  author       = {Shengrong Li and Qi Zhu and Chunwei Tian and Li Zhang and Bo Shen and Chuhang Zheng and Daoqiang Zhang and Wei Shao},
-  doi          = {10.1109/TIP.2025.3607633},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Spatio-temporal evolutionary graph learning for brain network analysis using medical imaging},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Fast video recoloring via curve-based palettes. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607584'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Color grading, as a crucial step in film post-production, plays an important role in emotional expression and artistic enhancement. Recently, a geometric palette-based approach to video recoloring has been introduced with impressive results. It offers an intuitive interface that allows users to alter the color of a video by manipulating a limited set of representative colors. However, this method has two primary limitations. Firstly, palette extraction is computationally expensive, often taking more than one hour to generate palettes even for medium-length videos, which significantly limits the practical application of color editing for longer videos. Secondly, the palette colors are less representative, and some primary colors may be omitted from the resulting palettes during topological simplification, making it less intuitive in color editing. To overcome these limitations, in this paper, we propose a novel approach to video recoloring. The core of our method is a set of Bézier curves that connect the dominant colors throughout the input video. By slicing these Bézier curves in RGBT space, per-frame palette can be naturally derived. During recoloring, users can select several frames of interest and modify their corresponding palettes to change the color of the video. Our method is simple and intuitive, enabling compelling time-varying recoloring results. Compared to existing methods, our approach is more efficient in palette extraction and can effectively capture the dominant colors of the video. Extensive experiments demonstrate the effectiveness of our method.},
-  archive      = {J_TIP},
-  author       = {Zheng-Jun Du and Jia-Wei Zhou and Kang Li and Jian-Yu Hao and Zi-Kang Huang and Kun Xu},
-  doi          = {10.1109/TIP.2025.3607584},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Fast video recoloring via curve-based palettes},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Structure-aware generative point cloud compression for visual perception. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607630'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In recent years, there has been a rapid growth in applications that rely on point clouds to represent the 3D world, driven by the increasing demand for immersive and other related scenarios. However, compressing the large and high-precision point cloud data efficiently while maintaining high perceptual quality for human vision remains a challenge. To solve the problem, we propose a new structure-aware generative point cloud compression framework for human vision. In the encoder, we focus on information that is more sensitive to the human vision and obtain this type of information from different scale. This allows us to capture structural importance information from global scale and local scale, which are more difficult to reconstruct. For the decoder, we introduce a progressive generative reconstruction approach that utilizes acquired information from the encoder to guide the generation of point cloud surfaces. Moreover, we propose a novel probability cloud-based discriminator. Instead of directly assessing the authenticity of the generated point clouds, our discriminator evaluates the probability distribution of the existence of points within the generated point cloud. This approach reduces the difficulty of discrimination while effectively improving the accuracy of the generator in generating probability distributions. According to the correct probability, we can obtain a high accuracy point cloud by pruning the points with low probability. Through comprehensive experiments, we demonstrate the effectiveness and superiority of our proposed framework in terms of encoding efficiency, high perceptual quality, and generation quality.},
-  archive      = {J_TIP},
-  author       = {Yichen Zhou and Xinfeng Zhang and Yingzhan Xu and Kai Zhang and Li Zhang and Qingming Huang},
-  doi          = {10.1109/TIP.2025.3607630},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Structure-aware generative point cloud compression for visual perception},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Semi-supervised text-based person search. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607637'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Text-based person search (TBPS) aims to retrieve images of a specific person from a large image gallery based on a natural language description. Existing methods rely on massive annotated image-text data to achieve satisfactory performance in fully-supervised learning. This presents a substantial practical challenge, given the difficulty in obtaining annotated texts for person images. This work undertakes a pioneering initiative to explore TBPS under the semi-supervised setting, where only a limited number of person images are annotated with textual descriptions while the majority of images lack annotations. We present a two-stage basic solution based on generation-then-retrieval for semi-supervised TBPS. The generation stage enriches annotated data by applying an image captioning model to generate pseudo-texts for unannotated images. Later, the retrieval stage performs fully-supervised retrieval learning using the augmented data. Crucially, considering the noise interference of the pseudo-texts on retrieval learning, we propose a noise-robust retrieval framework that enhances the ability of the retrieval model to handle noisy data. The framework integrates two key strategies: Hybrid Patch-Channel Masking (PC-Mask) to refine the model architecture, and Noise-Guided Progressive Training (NP-Train) to enhance the training process. PC-Mask performs masking on the input data at both the patch-level and the channel-level to prevent overfitting noisy supervision. NP-Train introduces a progressive training schedule based on the noise level of pseudo-texts to facilitate noise-robust learning. Extensive experiments on multiple TBPS benchmarks show that the proposed framework achieves promising performance under the semi-supervised setting.},
-  archive      = {J_TIP},
-  author       = {Daming Gao and Yang Bai and Min Cao and Hao Dou and Mang Ye and Min Zhang},
-  doi          = {10.1109/TIP.2025.3607637},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Semi-supervised text-based person search},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Harmonized domain enabled alternate search for infrared and visible image alignment. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607585'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Infrared and visible image alignment is essential and critical to the fusion and multi-modal perception applications. It addresses discrepancies in position and scale caused by spectral properties and environmental variations, ensuring precise pixel correspondence and spatial consistency. Existing manual calibration requires regular maintenance and exhibits poor portability, challenging the adaptability of multi-modal application in dynamic environments. In this paper, we propose a harmonized representation based infrared and visible image alignment, achieving both high accuracy and scene adaptability. Specifically, with regard to the disparity between multi-modal images, we develop an invertible translation process to establish a harmonized representation domain that effectively encapsulates the feature intensity and distribution of both infrared and visible modalities. Building on this, we design a hierarchical framework to correct deformations inferred from the harmonized domain in a coarse-to-fine manner. Our framework leverages advanced perception capabilities alongside residual estimation to enable accurate regression of sparse offsets, while an alternate correlation search mechanism ensures precise correspondence matching. Furthermore, we propose the first ground truth available misaligned infrared and visible image benchmark for evaluation. Extensive experiments validate the effectiveness of the proposed method against the state-of-the-arts, advancing the subsequent applications further.},
-  archive      = {J_TIP},
-  author       = {Zhiying Jiang and Zengxi Zhang and Jinyuan Liu},
-  doi          = {10.1109/TIP.2025.3607585},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Harmonized domain enabled alternate search for infrared and visible image alignment},
   year         = {2025},
 }
 </textarea>
@@ -612,25 +232,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
   title        = {Pull pole points to text contour by magnetism: A real-time scene text detector},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HUNTNet: Homomorphic unified nexus topology for camouflaged object detection. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607635'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Camouflaged object detection (COD) is challenging for both human and computer vision, as targets often blend into the background by sharing similar color, texture, or shape. While many feature enhancement techniques exist, single-view methods tend to overemphasize certain Recognizing that camouflaged objects exhibit different concealment strategies under varying observational perspectives, we propose HUNTNet, a network that establishes a dynamic detection mechanism to decouple target features from RGB images and perform topological decamouflage across multiple homomorphic feature spaces through a unified feature focusing architecture. We adopt PVTv2 as the backbone to extract multi-perspective spatial features. Detail representation is enhanced via a feature module that integrates Dual-Channel Recursive (DCR), Wavelet-Gabor Transform (WGT), and Anisotropic Gradient Responding (AGR), which together improve boundary discrimination and edge contour detection. To further boost performance, the Simplicial Feature Integration (SFI) module recursively fuses multi-layer features, enabling high-resolution focus on target regions. Experiments show that HUNTNet surpasses state-of-the-art methods in both accuracy and generalization, offering a robust solution for COD and improving segmentation in complex scenes. Our code is available at https://github.com/HaolinJi817/HUNTNet.},
-  archive      = {J_TIP},
-  author       = {Haolin Ji and Fengying Xie and Linpeng Pan and Yushan Zheng and Zhenwei Shi},
-  doi          = {10.1109/TIP.2025.3607635},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {HUNTNet: Homomorphic unified nexus topology for camouflaged object detection},
   year         = {2025},
 }
 </textarea>
@@ -732,19 +333,285 @@
 </details></li>
 <li><details>
 <summary>
-(2025). COLA: Context-aware language-driven test-time adaptation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607634'>www</a>)
+(2025). No-reference image quality assessment leveraging GenAI images. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3610238'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Test-time adaptation (TTA) has gained increasing popularity due to its efficacy in addressing “distribution shift” issue while simultaneously protecting data privacy. However, most prior methods assume that a paired source domain model and target domain sharing the same label space coexist, heavily limiting their applicability. In this paper, we investigate a more general source model capable of adaptation to multiple target domains without needing shared labels. This is achieved by using a pre-trained vision-language model (VLM), e.g., CLIP, that can recognize images through matching with class descriptions. While the zero-shot performance of VLMs is impressive, they struggle to effectively capture the distinctive attributes of a target domain. To that end, we propose a novel method – Context-aware Language-driven TTA (COLA). The proposed method incorporates a lightweight context-aware module that consists of three key components: a task-aware adapter, a context-aware unit, and a residual connection unit for exploring task-specific knowledge, domain-specific knowledge from the VLM and prior knowledge of the VLM, respectively. It is worth noting that the context-aware module can be seamlessly integrated into a frozen VLM, ensuring both minimal effort and parameter efficiency. Additionally, we introduce a Class-Balanced Pseudo-labeling (CBPL) strategy to mitigate the adverse effects caused by class imbalance. We demonstrate the effectiveness of our method not only in TTA scenarios but also in class generalisation tasks. The source code is available at https://github.com/NUDT-Bai-Group/COLA-TTA.},
+  abstract     = {In recent years, deep learning-based methods have made significant progress on the image quality assessment problem; however, challenges remain arising from the lack of annotated, real-world training data and consequent poor generalization ability. Towards addressing these challenges, we propose a no-reference image quality assessment (NR-IQA) method based on generative AI (GenAI) images. Specifically, we use GenAI images as reference images, employing a cold diffusion model to generate distorted images of four different distortion types, and we label these distorted images using a full-reference model, thereby making it possible to construct a large-scale pre-training dataset. We use this resource generation method to facilitate NR-IQA model building. We deploy a Multi-scale Cross Attention Block (MCAB) and a Scale Simple Attention Module (SSAM) to enhance feature representation by extracting multi-scale feature information from both the channel and spatial dimensions that are predictive of image quality. Extensive experiments on eight public databases demonstrate that the proposed method achieves state-of-the-art (SOTA) performance. A public release of all the codes associated with this work will be made available on GitHub.},
   archive      = {J_TIP},
-  author       = {Aiming Zhang and Tianyuan Yu and Liang Bai and Jun Tang and Yanming Guo and Yirun Ruan and Yun Zhou and Zhihe Lu},
-  doi          = {10.1109/TIP.2025.3607634},
+  author       = {Qingbing Sang and Qian Li and Lixiong Liu and Zhaohong Deng and Xiaojun Wu and Alan C. Bovik},
+  doi          = {10.1109/TIP.2025.3610238},
   journal      = {IEEE Transactions on Image Processing},
   month        = {9},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {COLA: Context-aware language-driven test-time adaptation},
+  title        = {No-reference image quality assessment leveraging GenAI images},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Volume fusion-based self-supervised pretraining for 3D medical image segmentation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3610249'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The performance of deep learning models for medical image segmentation is often limited in scenarios where training data or annotations are limited. Self-Supervised Learning (SSL) is an appealing solution for this dilemma due to its feature learning ability from a large amount of unannotated images. Existing SSL methods have focused on pretraining either an encoder for global feature representation or an encoder-decoder structure for image restoration, where the gap between pretext and downstream tasks limits the usefulness of pretrained decoders in downstream segmentation. In this work, we propose a novel SSL strategy named Volume Fusion (VolF) for pretraining 3D segmentation models. It minimizes the gap between pretext and downstream tasks by introducing a pseudo-segmentation pretext task, where two sub-volumes are fused by a discretized block-wise fusion coefficient map. The model takes the fused result as input and predicts the category of fusion coefficient for each voxel, which can be trained with standard supervised segmentation loss functions without manual annotations. Experiments with an abdominal CT dataset for pretraining and both in-domain and out-domain downstream datasets showed that VolF led to large performance gain from training from scratch with faster convergence speed, and outperformed several state-of-the-art SSL methods. In addition, it is general to different network structures, and the learned features have high generalizability to different body parts and modalities.},
+  archive      = {J_TIP},
+  author       = {Guotai Wang and Jia Fu and Jianghao Wu and Xiangde Luo and Yubo Zhou and Xinglong Liu and Kang Li and Jingsheng Lin and Baiyong Shen and Shaoting Zhang},
+  doi          = {10.1109/TIP.2025.3610249},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Volume fusion-based self-supervised pretraining for 3D medical image segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Privacy-preserving visual localization with event cameras. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607640'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of client-server localization, where edge device users communicate visual data with the service provider for locating oneself against a pre-built 3D map. This localization paradigm is a crucial component for location-based services in AR/VR or mobile applications, as it is not trivial to store large-scale 3D maps and process fast localization on resource-limited edge devices. Nevertheless, conventional client-server localization systems possess numerous challenges in computational efficiency, robustness, and privacy-preservation during data transmission. Our work aims to jointly solve these challenges with a localization pipeline based on event cameras. By using event cameras, our system consumes low energy and maintains small memory bandwidth. Then during localization, we propose applying event-to-image conversion and leverage mature image-based localization, which achieves robustness even in low-light or fast-moving scenes. To further enhance privacy protection, we introduce privacy protection techniques at two levels. Network level protection aims to hide the entire user’s view in private scenes using a novel split inference approach, while sensor level protection aims to hide sensitive user details such as faces with light-weight filtering. Both methods involve small client-side computation and localization performance loss, while significantly mitigating the feeling of insecurity as revealed in our user study. We thus project our method to serve as a building block for practical location-based services using event cameras.},
+  archive      = {J_TIP},
+  author       = {Junho Kim and Young Min Kim and Ramzi Zahreddine and Weston A. Welge and Gurunandan Krishnan and Sizhuo Ma and Jian Wang},
+  doi          = {10.1109/TIP.2025.3607640},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Privacy-preserving visual localization with event cameras},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiscale segmentation-guided fusion network for hyperspectral image classification. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolution Neural Networks (CNNs) have demonstrated strong feature extraction capabilities in Euclidean spaces, achieving remarkable success in hyperspectral image (HSI) classification tasks. Meanwhile, Graph convolution networks (GCNs) effectively capture spatial-contextual characteristics by leveraging correlations in non-Euclidean spaces, uncovering hidden relationships to enhance the performance of HSI classification (HSIC). Methods combining GCNs with CNNs have achieved excellent results. However, existing GCN methods primarily rely on single-scale graph structures, limiting their ability to extract features across different spatial ranges. To address this issue, this paper proposes a multiscale segmentation-guided fusion network (MS2FN) for HSIC. This method constructs pixel-level graph structures based on multiscale segmentation data, enabling the GCN to extract features across various spatial ranges. Moreover, effectively utilizing features extracted from different spatial scales is crucial for improving classification performance. This paper adopts distinct processing strategies for different feature types to enhance feature representation. Comparative experiments demonstrate that the proposed method outperforms several state-of-the-art (SOTA) approaches in accuracy. The source code will be released at https://github.com/shengrunhua/MS2FN.},
+  archive      = {J_TIP},
+  author       = {Hongmin Gao and Runhua Sheng and Yuanchao Su and Zhonghao Chen and Shufang Xu and Lianru Gao},
+  doi          = {10.1109/TIP.2025.3611146},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Multiscale segmentation-guided fusion network for hyperspectral image classification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward better than pseudo-reference in underwater image enhancement. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611138'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Since degraded underwater images are not always accompanied with distortion-free counterparts in real-world situations, existing underwater image enhancement (UIE) methods are mostly learned on a paired set consisting of raw underwater images and their corresponding pseudo-reference labels. Although the existing UIE datasets manually select the best model-generated results as pseudo-references, such pseudo-reference labels do not always exhibit perfect visual quality. Therefore, it would be interesting to investigate whether it is possible to break through the performance bottleneck of UIE networks trained with imperfect pseudo-references. Motivated by these facts, this paper focuses on innovating more advanced loss functions rather than designing more complex network architectures. Specifically, a plug-and-play hybrid Performance SurPassing Loss (PSPL), consisting of a Quality Score Comparison Loss (QSCL) and a scene Depth-aware Unpaired Contrastive Loss (DUCL), is formulated to guide the training of UIE network. Functionally, QSCL aims to guide the UIE network to generate enhanced results with better visual quality than pseudo-references by constructing image quality score comparison losses from both image-level and region-level. Nevertheless, only using QSCL cannot guarantee obtaining desired results for those severely degraded distant regions. Therefore, we also design a tailored DUCL to handle this challenging issue from the scene depth perspective, i.e., DUCL encourages the distant regions of the enhanced results to be closer to the high-quality nearby regions (pull) and far away from the low-quality distant regions (push) of the pseudo-references. Extensive experimental results demonstrate the advantage of using PSPL over the state-of-the-arts even with an extremely simple and lightweight UIE network. The source code will be released at https://github.com/lewis081/PSPL.},
+  archive      = {J_TIP},
+  author       = {Yi Liu and Qiuping Jiang and Xingbo Li and Ting Luo and Wenqi Ren},
+  doi          = {10.1109/TIP.2025.3611138},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Toward better than pseudo-reference in underwater image enhancement},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HOVER: Hyperbolic video-text retrieval. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611174'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video-text retrieval is a crucial task in numerous computer vision applications. In this paper, we focus on video-text retrieval involving complex action compositions, where a single video encompasses multiple primitive actions such as “sitting up”, “opening door”, “cooking food”, and “eating.” Despite the common occurrences in real-world scenarios, such action-compositional videos have received limited research attention, often leading to significant performance degradations in existing retrieval methods. To address this challenge, we present Hyperbolic Video-tExt Retrieval (HOVER), which models the hierarchical semantic relationships between videos and texts by embedding them in a low-dimensional hyperbolic space. Since hyperbolic space provides a geometric prior that naturally aligns with hierarchical data, it allows for more efficient and generalizable representations of video-text semantic hierarchies. HOVER first longitudinally decomposes each video into a hierarchical action tree, where primitive mono-actions are represented as leaf nodes and increasingly complex action compositions as parent nodes. The semantic structures and temporal dependencies of videos/texts are then encoded in hyperbolic space by exploiting hyperbolic distance, norm, and relative cosine similarity. Experimental results show that HOVER significantly outperforms traditional Euclidean-based methods, particularly in scenarios with limited training labels, achieving a notable performance improvement of 28.83%. Additionally, the hyperbolic video-text embeddings learned by HOVER demonstrate strong generalization across new datasets containing videos with varying levels of action complexity. The source code is available at https://github.com/shi-rq/HOVER.},
+  archive      = {J_TIP},
+  author       = {Jun Wen and Yufeng Chen and Ruiqi Shi and Wei Ji and Menglin Yang and Difei Gao and Junsong Yuan and Roger Zimmermann},
+  doi          = {10.1109/TIP.2025.3611174},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {HOVER: Hyperbolic video-text retrieval},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PCE-GAN: A generative adversarial network for point cloud attribute quality enhancement based on optimal transport. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611178'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point cloud compression significantly reduces data volume but sacrifices reconstruction quality, highlighting the need for advanced quality enhancement techniques. Most existing approaches focus primarily on point-to-point fidelity, often neglecting the importance of perceptual quality as interpreted by the human visual system. To address this issue, we propose a generative adversarial network for point cloud quality enhancement (PCE-GAN), grounded in optimal transport theory, with the goal of simultaneously optimizing both data fidelity and perceptual quality. The generator consists of a local feature extraction (LFE) unit, a global spatial correlation (GSC) unit and a feature squeeze unit. The LFE unit uses dynamic graph construction and a graph attention mechanism to efficiently extract local features, placing greater emphasis on points with severe distortion. The GSC unit uses the geometry information of neighboring patches to construct an extended local neighborhood and introduces a transformer-style structure to capture long-range global correlations. The discriminator computes the deviation between the probability distributions of the enhanced point cloud and the original point cloud, guiding the generator to achieve high quality reconstruction. Experimental results show that the proposed method achieves state-of-the-art performance. Specifically, when applying PCE-GAN to the latest geometry-based point cloud compression (G-PCC) test model, it achieves an average BD-rate of -19.2% compared with the PredLift coding configuration and -18.3% compared with the RAHT coding configuration. Subjective comparisons show a significant improvement in texture clarity and color transitions, revealing finer details and more natural color gradients.},
+  archive      = {J_TIP},
+  author       = {Tian Guo and Hui Yuan and Qi Liu and Honglei Su and Raouf Hamzaoui and Sam Kwong},
+  doi          = {10.1109/TIP.2025.3611178},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {PCE-GAN: A generative adversarial network for point cloud attribute quality enhancement based on optimal transport},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VisionHub: Learning task-plugins for efficient universal vision model. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611645'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Building on the success of universal language models in natural language processing (NLP), researchers have recently sought to develop methods capable of tackling a broad spectrum of visual tasks within a unified foundation framework. However, existing universal vision models face significant challenges when adapting to the rapidly expanding scope of downstream tasks. These challenges stem not only from the prohibitive computational and storage expenses associated with training such models but also from the complexity of their workflows, which makes efficient adaptations difficult. Moreover, these models often fail to deliver the required performance and versatility for a broad spectrum of applications, largely due to their incomplete visual generation and perception capabilities, limiting their generalizability and effectiveness in diverse settings. In this paper, we present VisionHub, a novel universal vision model designed to concurrently manage multiple visual restoration and perception tasks, while offering streamlined transferability to downstream tasks. Our model leverages the frozen denoising U-Net architecture from Stable Diffusion as the backbone, fully exploiting its inherent potential for both visual restoration and perception. To further enhance the model’s flexibility, we propose the incorporation of lightweight task-plugins and the task router, which are seamlessly integrated onto the U-Net backbone. This architecture enables VisionHub to efficiently handle various vision tasks according to user-provided natural language instructions, all while maintaining minimal storage costs and operational overhead. Extensive experiments across 11 different vision tasks showcase both the efficiency and effectiveness of our approach. Remarkably, VisionHub achieves competitive performance across a variety of benchmarks, including 53.3% mIoU on ADE20K semantic segmentation, 0.253 RMSE on NYUv2 depth estimation, and 74.2 AP on MS-COCO pose estimation.},
+  archive      = {J_TIP},
+  author       = {Haolin Wang and Yixuan Zhu and Wenliang Zhao and Jie Zhou and Jiwen Lu},
+  doi          = {10.1109/TIP.2025.3611645},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {VisionHub: Learning task-plugins for efficient universal vision model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MAFS: Masked autoencoder for infrared-visible image fusion and semantic segmentation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611602'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Infrared-visible image fusion methods aim at generating fused images with good visual quality and also facilitate the performance of high-level tasks. Indeed, existing semantic-driven methods have considered semantic information injection for downstream applications. However, none of them investigates the potential for reciprocal promotion between pixel-wise image fusion and cross-modal feature fusion perception tasks from a macroscopic task-level perspective. To address this limitation, we propose a unified network for image fusion and semantic segmentation. MAFS is a parallel structure, containing a fusion sub-network and a segmentation sub-network. On the one hand, We devise a heterogeneous feature fusion strategy to enhance semantic-aware capabilities for image fusion. On the other hand, by cascading the fusion sub-network and a segmentation backbone, segmentation-related knowledge is transferred to promote feature-level fusion-based segmentation. Within the framework, we design a novel multi-stage Transformer decoder to aggregate fine-grained multi-scale fused features efficiently. Additionally, a dynamic factor based on the max-min fairness allocation principle is introduced to generate adaptive weights of two tasks and guarantee smooth training in a multi-task manner. Extensive experiments demonstrate that our approach achieves competitive results compared with state-of-the-art methods.},
+  archive      = {J_TIP},
+  author       = {Liying Wang and Xiaoli Zhang and Chuanmin Jia and Siwei Ma},
+  doi          = {10.1109/TIP.2025.3611602},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {MAFS: Masked autoencoder for infrared-visible image fusion and semantic segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Revisiting RGBT tracking benchmarks from the perspective of modality validity: A new benchmark, problem, and solution. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611687'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {RGBT tracking draws increasing attention because of its robustness in multi-modal warranting (MMW) scenarios, such as nighttime and adverse weather conditions, where relying on a single sensing modality fails to ensure stable tracking results. However, existing benchmarks predominantly contain videos collected in common scenarios where both RGB and thermal infrared (TIR) information are of sufficient quality. This weakens the representativeness of existing benchmarks in severe imaging conditions, leading to tracking failures in MMW scenarios. To bridge this gap, we present a new benchmark considering the modality validity, MV-RGBT, captured specifically from MMW scenarios where either RGB (extreme illumination) or TIR (thermal truncation) modality is invalid. Hence, it is further divided into two subsets according to the valid modality, offering a new compositional perspective for evaluation and providing valuable insights for future designs. Moreover, MV-RGBT is the most diverse benchmark of its kind, featuring 36 different object categories captured across 19 distinct scenes. Furthermore, considering severe imaging conditions in MMW scenarios, a new problem is posed in RGBT tracking, named ‘when to fuse’, to stimulate the development of fusion strategies for such scenarios. To facilitate its discussion, we propose a new solution with a mixture of experts, named MoETrack, where each expert generates independent tracking results along with a confidence score. Extensive results demonstrate the significant potential of MV-RGBT in advancing RGBT tracking and elicit the conclusion that fusion is not always beneficial, especially in MMW scenarios. Besides, MoETrack achieves state-of-the-art results on several benchmarks, including MV-RGBT, GTOT, and LasHeR. Source codes and benchmarks are available at https://github.com/Zhangyong-Tang/MVRGBT.},
+  archive      = {J_TIP},
+  author       = {Zhangyong Tang and Tianyang Xu and Xiao-Jun Wu and Xuefeng Zhu and Chunyang Cheng and Zhenhua Feng and Josef Kittler},
+  doi          = {10.1109/TIP.2025.3611687},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Revisiting RGBT tracking benchmarks from the perspective of modality validity: A new benchmark, problem, and solution},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An explanation method based on interpretable linear model with four key characteristics. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611593'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For the interpretability of deep neural networks (DNNs) in visual-related tasks, existing explanation methods commonly generate a saliency map based on the linear relation between output results and input features. However, when the explanation conflicts with a human visual examination, these methods do not provide further evidence to analyze the saliency explanation. Most may fail to provide feature attribution with identifiable semantics or produce misleading explanations due to their insufficient robustness. In this paper, we first propose four key characteristics (richness, adaptivity, exclusiveness, and fairness) to evaluate the existing linear relation-based explanation method, and then construct an interpretable linear model to satisfy them. We formalize the characteristics and develop a novel explanation method based on this. We extract and reconstruct key exclusive semantic features from the feature map using the Nonnegative Matrix Factorization (NMF) algorithm, utilize the information entropy model to determine the number of features adaptively and their richness, and then linearly combine each feature with fairly assigned weights using an approximate Shapley algorithm to generate the saliency map. Compared with the state-of-the-art methods, our explanations of different datasets and DNNs are more convincing and robust in terms of Average drop (AD), Average increase (AI), Deletions (Del), and Insertions (Ins). Our supplementary experiments provide sufficient evidence that the four characteristics guarantee the feasibility of feature attribution analysis and enhance the quality of the resulting explanations.},
+  archive      = {J_TIP},
+  author       = {Yuecan Yuan and Zhan Ao Huang and Peng Li and Ying Fu and Xuemin Zhao and Canghong Shi and Xiaojie Li and Xi Wu},
+  doi          = {10.1109/TIP.2025.3611593},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {An explanation method based on interpretable linear model with four key characteristics},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Consistent assistant domains transformer for source-free domain adaptation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611799'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Source-free domain adaptation (SFDA) aims to address the challenge of adapting to a target domain without accessing the source domain directly. However, due to the inaccessibility of source domain data, deterministic invariable features cannot be obtained. Current mainstream methods primarily focus on evaluating invariant features in the target domain that closely resemble those in the source domain, subsequently aligning the target domain with the source domain. However, these methods are susceptible to hard samples and influenced by domain bias. In this paper, we propose a Consistent Assistant Domains Transformer for SFDA, abbreviated as CADTrans, which solves the issue by constructing invariable feature representations of domain consistency. Concretely, we develop an assistant domain module for CADTrans to obtain diversified representations from the intermediate aggregated global attentions, which addresses the limitation of existing methods in adequately representing diversity. Based on assistant and target domains, invariable feature representations are obtained by multiple consistent strategies, which can be used to distinguish easy and hard samples. Finally, to align the hard samples to the corresponding easy samples, we construct a conditional multi-kernel max mean discrepancy (CMK-MMD) strategy to distinguish between samples of the same category and those of different categories. Extensive experiments are conducted on various benchmarks such as Office-31, Office-Home, VISDA-C, and DomainNet-126, proving the significant performance improvements achieved by our proposed approaches. Code is available at https://github.com/RoryShao/CADTrans.git.},
+  archive      = {J_TIP},
+  author       = {Renrong Shao and Wei Zhang and Kangyang Luo and Qin Li and Jun Wang},
+  doi          = {10.1109/TIP.2025.3611799},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Consistent assistant domains transformer for source-free domain adaptation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptor for triggering semi-supervised learning to out-of-box serve deep image clustering. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3611144'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, some works integrate SSL techniques into deep clustering frameworks to enhance image clustering performance. However, they all need pre-training, clustering learning, or a trained clustering model as prerequisites, limiting the flexible and out-of-box application of SSL learners in the image clustering task. This work introduces ASD, an adaptor that enables the cold-start of SSL learners for deep image clustering without any prerequisites. Specifically, we first randomly sample pseudo-labeled data from all unlabeled data, and set an instance-level classifier to learn them with semantically aligned instance-level labels. With the ability of instance-level classification, we track the class transitions of predictions on unlabeled data to extract high-level similarities of instance-level classes, which can be utilized to assign cluster-level labels to pseudo-labeled data. Finally, we use the pseudo-labeled data with assigned cluster-level labels to trigger a general SSL learner trained on the unlabeled data for image clustering. We show the superior performance of ASD across various benchmarks against the latest deep image clustering approaches and very slight accuracy gaps compared to SSL methods using ground-truth, e.g., only 1.33% on CIFAR-10. Moreover, ASD can also further boost the performance of existing SSL-embedded deep image clustering methods.},
+  archive      = {J_TIP},
+  author       = {Yue Duan and Lei Qi and Yinghuan Shi and Yang Gao},
+  doi          = {10.1109/TIP.2025.3611144},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {An adaptor for triggering semi-supervised learning to out-of-box serve deep image clustering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hyperbolic self-paced multi-expert network for cross-domain few-shot facial expression recognition. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3612281'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, cross-domain few-shot facial expression recognition (CF-FER), which identifies novel compound expressions with a few images in the target domain by using the model trained only on basic expressions in the source domain, has attracted increasing attention. Generally, existing CF-FER methods leverage the multi-dataset to increase the diversity of the source domain and alleviate the discrepancy between the source and target domains. However, these methods learn feature embeddings in the Euclidean space without considering imbalanced expression categories and imbalanced sample difficulty in the multi-dataset. Such a way makes the model difficult to capture hierarchical relationships of facial expressions, resulting in inferior transferable representations. To address these issues, we propose a hyperbolic self-paced multi-expert network (HSM-Net), which contains multiple mixture-of-experts (MoE) layers located in the hyperbolic space, for CF-FER. Specifically, HSM-Net collaboratively trains multiple experts in a self-distillation manner, where each expert focuses on learning a subset of expression categories from the multi-dataset. Based on this, we introduce a hyperbolic self-paced learning (HSL) strategy that exploits sample difficulty to adaptively train the model from easy-to-hard samples, greatly reducing the influence of imbalanced expression categories and imbalanced sample difficulty. Our HSM-Net can effectively model rich hierarchical relationships of facial expressions and obtain a highly transferable feature space. Extensive experiments on both in-the-lab and in-the-wild compound expression datasets demonstrate the superiority of our proposed method over several state-of-the-art methods. Code will be released at https://github.com/cxtjl/HSM-Net.},
+  archive      = {J_TIP},
+  author       = {Xueting Chen and Yan Yan and Jing-Hao Xue and Chang Shu and Hanzi Wang},
+  doi          = {10.1109/TIP.2025.3612281},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Hyperbolic self-paced multi-expert network for cross-domain few-shot facial expression recognition},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep sparse-to-dense inbetweening for multi-view light fields. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3612257'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Light field (LF) imaging, which captures both intensity and directional information of light rays, extends the capabilities of traditional imaging techniques. In this paper, we introduce a task in the field of LF imaging, sparse-to-dense inbetweening, which focuses on generating dense novel views from sparse multi-view LFs. By synthesizing intermediate views from sparse inputs, this task enhances LF view synthesis through filling in interperspective gaps within an expanded field of view and increasing data robustness by leveraging complementary information between light rays from different perspectives, which are limited by non-robust single-view synthesis and the inability to handle sparse inputs effectively. To address these challenges, we construct a high-quality multi-view LF dataset, consisting of 60 indoor scenes and 59 outdoor scenes. Building upon this dataset, we propose a baseline method. Specifically, we introduce an adaptive alignment module to dynamically align information by capturing relative displacements. Next, we explore angular consistency and hierarchical information using a multi-level feature decoupling module. Finally, a multi-level feature refinement module is applied to enhance features and facilitate reconstruction. Additionally, we introduce a universally applicable artifact-aware loss function to effectively suppress visual artifacts. Experimental results demonstrate that our method outperforms existing approaches, establishing a benchmark for sparse-to-dense inbetweening. The code is available at https://github.com/Starmao1/MutiLF.},
+  archive      = {J_TIP},
+  author       = {Yifan Mao and Zeyu Xiao and Ping An and Deyang Liu and Caifeng Shan},
+  doi          = {10.1109/TIP.2025.3612257},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Deep sparse-to-dense inbetweening for multi-view light fields},
   year         = {2025},
 }
 </textarea>
@@ -783,25 +650,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
   title        = {Exploring the coordination of frequency and attention in masked image modeling},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). OSFormer: One-step transformer for infrared video small object detection. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3598426'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Infrared video small object detection is pivotal in numerous security and surveillance applications. However, existing deep learning-based methods, which typically rely on a two-step paradigm of frame-by-frame detection followed by temporal refinement, struggle to effectively utilize temporal information. This is particularly challenging when detecting small objects against complex backgrounds. To address these issues, we introduce the One-Step Transformer (OSFormer), a novel method that pioneeringly integrates a small-object-friendly transformer with a one-step detection paradigm. Unlike traditional methods, OSFormer processes the video sequence only through a single inference, encoding the sequence into cube format data and tracking object motion trajectories. Additionally, we propose the Varied-Size Patch Attention (VPA) module, which generates patches of varying sizes to capture adaptive attention features, bridging the gap between transformer architectures and small object detection. To further enhance detection accuracy, OSFormer incorporates a Doppler Adaptive Filter, which integrates traditional filtering techniques into an end-to-end neural network to suppress background noise and accentuate small objects. OSFormer outperforms YOLOv8-s on both the AntiUAV dataset (+3.1% mAP50, -35.1% Params) and the InfraredUAV dataset (+4.0% mAP50−95, -51.0% FLOPs), demonstrating superior efficiency and effectiveness in small object detection.},
-  archive      = {J_TIP},
-  author       = {Haolin Qin and Tingfa Xu and Yuan Tang and Fengxiang Xu and Jianan Li},
-  doi          = {10.1109/TIP.2025.3598426},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {8},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {OSFormer: One-step transformer for infrared video small object detection},
   year         = {2025},
 }
 </textarea>
