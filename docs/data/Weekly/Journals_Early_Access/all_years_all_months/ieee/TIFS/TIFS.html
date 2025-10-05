@@ -25,23 +25,118 @@
 </head>
 <body>
 
-<h2 id="tifs">TIFS - 54</h2>
+<h2 id="tifs">TIFS - 49</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Mind the faulty keccak: A practical fault injection attack scheme apply to all phases of ML-KEM and ML-DSA. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3607242'>www</a>)
+(2025). Amplifying training data exposure through fine-tuning with pseudo-labeled memberships. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3613882'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {ML-KEM and ML-DSA are NIST-standardized lattice-based post-quantum cryptographic algorithms. In both algorithms, KECCAK is the designated hash algorithm extensively used for deriving sensitive information, making it a valuable target for attackers. In the field of fault injection attacks, few works targeted KECCAK, and they have not fully explored its impact on the security of ML-KEM and ML-DSA. Consequently, many attacks remain undiscovered. In this article, we first identify various fault vulnerabilities of KECCAK that determine the (partial) output by manipulating the control flow under a practical loop-abort model. Then, we systematically analyze the impact of a faulty KECCAK output and propose six attacks against ML-KEM and five attacks against ML-DSA, including key recovery, signature forgery, and verification bypass. These attacks cover the key generation, encapsulation, decapsulation, signing, and verification phases, making our scheme the first to apply to all phases of ML-KEM and ML-DSA. The proposed attacks are validated on the C implementations of the PQClean library’s ML-KEM and ML-DSA running on embedded devices. Experiments show that the required loop-abort faults can be realized on ARM Cortex-M0+, M3, M4, and M33 microprocessors with low-cost electromagnetic fault injection settings, achieving a success rate of 89.5%. Once the fault injection is successful, all proposed attacks can succeed with a probability of 100%.},
+  abstract     = {Large language models (LLMs) are vulnerable to training data extraction attacks due to data memorization. This paper introduces a novel attack scenario wherein an attacker adversarially fine-tunes pre-trained LLMs to amplify the exposure of the original training data. Unlike prior TDE methods that mainly rely on post-hoc querying or prompt selection to elicit memorized content from a fixed model, our strategy directly alters the model’s parameters to intensify its retention of the pre-training dataset. To achieve this, the attacker needs to collect generated texts that are closely aligned with the pre-training data. However, without knowledge of the actual dataset, quantifying the amount of pre-training data within generated texts is challenging. To address this, we propose the use of pseudo-labels for these generated texts, leveraging membership approximations indicated by machine-generated probabilities from the target LLMusing DetectGPT. We subsequently fine-tune the LLM via reinforcement learning from human feedback (RLHF) to favor generations with higher likelihoods of originating from the pre-training data, based on these membership probabilities. Our empirical findings indicate a remarkable outcome: LLMs with over 1B parameters exhibit a four to eight-fold increase in training data exposure. We discuss potential mitigations and suggest future research directions.},
   archive      = {J_TIFS},
-  author       = {Yuxuan Wang and Jintong Yu and Shipei Qu and Xiaolin Zhang and Xiaowei Li and Chi Zhang and Dawu Gu},
-  doi          = {10.1109/TIFS.2025.3607242},
+  author       = {Myunggyo Oh and Hong Eun Ahn and Leo Hyun Park and Taekyoung Kwon},
+  doi          = {10.1109/TIFS.2025.3613882},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
+  month        = {10},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Mind the faulty keccak: A practical fault injection attack scheme apply to all phases of ML-KEM and ML-DSA},
+  title        = {Amplifying training data exposure through fine-tuning with pseudo-labeled memberships},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VSecNN: Verifiable and privacy-preserving neural network inference in cloud service. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3616623'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural network inference in cloud service offers tangible benefits to users, from individuals and small institutions to large companies. However, two crucial concerns must be addressed. The first arises in satisfying the privacy of the model, the input data, and the inference results throughout the inference process. The second pertains to verifying that the inferences are derived from the designated neural network model. Although Secure Multi-Party Computation (MPC) and Zero-Knowledge Proof (ZKP) are typically adopted to mitigate such issues, the major challenge lies in achieving privacy preservation and verifiability simultaneously. In this study, we address both issues by proposing VSecNN, a verifiable and privacy-preserving neural network inference scheme. Specifically, we integrate MPC with the Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARK) protocol to achieve zero-knowledge proof generation for multiple parties. Subsequently, we perform adaptive optimizations on the multi-party proof generation approach to align with the neural network, thereby achieving both privacy-preserving capabilities and verifiability. Experimental results demonstrate an improvement in the efficiency. For example, the computation time for completing our multi-party proof generation could be as low as 1.7 times that of the single-party proof generation, while the verification requires only 169ms on the MNIST dataset.},
+  archive      = {J_TIFS},
+  author       = {Wenti Yang and Xuan Li and Meng Li and Zijian Zhang and Zhitao Guan and Liehuang Zhu},
+  doi          = {10.1109/TIFS.2025.3616623},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {VSecNN: Verifiable and privacy-preserving neural network inference in cloud service},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A non-markovian game approach on labeled attack graphs for security decision-making in industrial control systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3616599'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As industrial control systems become increasingly interconnected with information networks, attackers could exploit vulnerabilities across different system layers to create complex exploit chains to compromise field control elements. As such, security decision-making is of essential importance to maintain the operational security of critical industrial infrastructures. In this paper, we consider the problem of designing cost-effective defense strategies to minimize the risk of successful attack paths. To this end, we propose a non-Markovian security game framework on labeled attack graphs to simulate the attack-defense process in industrial control systems. Compared with existing methods, where the cost of exploiting a vulnerability is considered constant, we consider a more dynamic and realistic case where the exploitation cost is discounted with the number of exploitations. Moreover, a state-decomposition based multi-agent reinforcement learning algorithm is developed to obtain the Nash equilibrium of the proposed non-Markovian security game. A case study on a simulated industrial control system is presented to illustrate the feasibility of the proposed approach. The results demonstrate that the discounting exploitation cost could greatly alter the attack and subsequently the defense strategies. In comparison to traditional static intrusion response approaches, our non-Markovian approach offers a more realistic and adaptive framework to anticipate evolving attack paths and allocate defense resources.},
+  archive      = {J_TIFS},
+  author       = {Yiqun Yue and Shaolin Tan and Ye Tao and Nian Liu and Jinhu Lü},
+  doi          = {10.1109/TIFS.2025.3616599},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {A non-markovian game approach on labeled attack graphs for security decision-making in industrial control systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving password guessing with isomorphism modeling. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3616595'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Passwords remain one of the most widely used forms of authentication in modern systems. However, their inherent predictability, stemming from common user behaviors in password creation, renders password-based authentication vulnerable to guessing attacks. To balance memorability and security, users often construct isomorphic variants of a base password by altering its structure, such as transforming 123abc into 1a2b3c. These variants pose significant challenges to traditional password guessing models. In particular, mainstream approaches such as Markov model and Probabilistic Context-Free Grammar (PCFG) model struggle to capture the structural relationships among these variants. To address this challenge, we propose PassGIN, a password guessing framework based on Graph Isomorphism Networks (GIN). By modeling a password as a graph, PassGIN captures both local adjacency and character rearrangement patterns, enabling the model to distinguish subtle structural differences between base passwords and their isomorphic variants. To further enhance performance, we introduce PassCluster, a dynamic edge-weighting mechanism that leverages adjacency frequencies observed in large-scale password datasets. This allows GIN to more effectively learn structural variations and generate accurate guesses. Extensive experiments on eight real-world datasets demonstrate that PassGIN consistently outperforms state-of-the-art models in both intra-site and cross-site password guessing scenarios, achieving relative improvements of 23.49% and 74.53%, respectively.},
+  archive      = {J_TIFS},
+  author       = {Xudong Yang and Zhenjia Xiao and Xiaoyu Wu and Kaiwen Xing and He Tang and Tao Yang and Kaitai Liang and Hu Xiong},
+  doi          = {10.1109/TIFS.2025.3616595},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Improving password guessing with isomorphism modeling},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Jump routing: Towards scalable and lightweight anonymous network. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3616618'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Including TOR, most of the anonymous communication systems adopt source routing, that the source has to share the globally consistent view of all relays and maintain the up-to-date information. To increase the scalability of TOR, researchers mainly utilize hop-by-hop routing during circuit extension. However, hop-by-hop routing has not been widely deployed since it suffers from route capture attacks, and most of the countermeasures require the source participate in the route extension indirectly, help verify the selection of next hop by intermediate nodes, thus introduces communication overhead. In this paper, we introduce a novel routing scheme called Jump Routing. In jump routing, the route extension follows the jumping way, that each relay chooses the successor of the next hop rather than the next hop itself. In particular, to the best of our knowledge, we are the first to route in the jumping way. In addition, to defend route capture attacks, enhance data privacy, and defend collusion attacks, we propose multiple schemes including jump verification, jump encryption, and corporative jump verification. Different from previous measures on route capture attacks, jump routing does not need the participation of the source, but deals with the attack by intermediate nodes only. We manage to realize the full jump routing prototype, and the evaluation results show that our jump routing is scalable, lightweight, and resilient.},
+  archive      = {J_TIFS},
+  author       = {Yusheng Xia and Jinshu Su and Rongmao Chen and Congxi Song},
+  doi          = {10.1109/TIFS.2025.3616618},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Jump routing: Towards scalable and lightweight anonymous network},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mixed-bit sampling marking: Towards unifying document authentication in copy-sensitive graphical codes. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3616619'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Combating counterfeit products is crucial for maintaining a healthy market. Recently, Copy Sensitive Graphical Codes (CSGC) have garnered significant attention due to their high sensitivity to illegal physical copying. Copy Detection Patterns (CDP) and Two-Level QR Codes (2LQR code) are two representative methods. CDP offers high efficiency and low cost, enabling use in document authentication and product anti-counterfeiting, and has achieved broad commercial adoption. In contrast, 2LQR code, as a consumer-grade document authentication solution, provides additional private message sharing functionalities. We observe that both the CDP and 2LQR code can be synthesized using textured patterns. To this end, we propose a flexible framework that integrates the stochastic anti-counterfeiting properties of CDP with the private message sharing of 2LQR code. Specifically, we model CDP as a random noise image composed of multiple textured patterns similar to those in 2LQR code, where each pattern represents an informative digit. Thus, both codes can be generated through textured pattern design. We formulate this as a constrained optimization framework called Mixed-Bit Sampling Marking (MSM). The objective incorporates white pixel ratio and spatial randomness, with constraints defined by a flexible modulation function (e.g., DCT or Pearson similarity), customizable to user needs. A two-step sampling algorithm solves the optimization. We demonstrate CDP and 2LQR codes generated via MSM and validate their ability to inherit advantages from both approaches. Experiments show that MSM-generated texture patterns effectively synthesize both CDPs and 2LQR codes, preserving their advantages while offering a novel, flexible solution for document authentication.},
+  archive      = {J_TIFS},
+  author       = {Jiale Chen and Li Dong and Wei Wang and Rangding Wang and Weiwei Sun and Yushu Zhang and Jiantao Zhou},
+  doi          = {10.1109/TIFS.2025.3616619},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Mixed-bit sampling marking: Towards unifying document authentication in copy-sensitive graphical codes},
   year         = {2025},
 }
 </textarea>
@@ -86,25 +181,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SightCVC: An efficient and compatible multi-chain transaction protocol in heterogeneous blockchain systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3607247'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the popularity of cross-chain transactions in heterogeneous blockchain systems, scalability has become a critical challenge. To overcome this, researchers propose to establish virtual channels, which move cross-chain transactions off the blockchain, enabling instant transaction confirmation between users and improving the system throughput. However, existing off-chain cross-chain transaction schemes encounter the following issues: (i) they are incompatible with non-Turing complete blockchain systems; (ii) they are incapable of accessing authentic information from blockchain systems. These issues have a dual impact on the cross-chain transaction, affecting its compatibility and dispute resolutions among mutually distrustful users. To alleviate these issues, this paper introduces SightCVC, a novel cross-chain payment protocol. The core of SightCVC is a new smart contract, which facilitates unrestricted off-chain transactions among mutually distrustful users in heterogeneous blockchain systems. It only requires off-chain protocol of the blockchain system involved in the transactions to support a Turing complete scripting language, which resolves the compatibility issue. Meanwhile, it can securely retrieve the real information from the blockchain systems, significantly improving the effectiveness of dispute resolution and enforcing the privacy of cross-chain transactions. We conduct a thorough security analysis within the Universal Composability framework to validate that SightCVC can achieve consensus at each stage. We implement and deploy SightCVC on the experimental networks of Ripple and Ethereum. Comprehensive evaluations demonstrate that SightCVC is able to effectively handle the disputes and reduce the system costs by approximately 64% compared to existing solutions. Its superiority becomes more evidence when the number of transactions increases.},
-  archive      = {J_TIFS},
-  author       = {Haonan Yang and Tianwei Zhang and Zuobin Ying and Runjie Yang and Wanlei Zhou},
-  doi          = {10.1109/TIFS.2025.3607247},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {SightCVC: An efficient and compatible multi-chain transaction protocol in heterogeneous blockchain systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). The gradient puppeteer: Adversarial domination in gradient leakage attacks through model poisoning. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3607271'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -118,25 +194,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {The gradient puppeteer: Adversarial domination in gradient leakage attacks through model poisoning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing the security of one-tap authentication services via dynamic application identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3607232'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The One-Tap Authentication (OTAuth) service enables users to quickly log in or sign up for app accounts using their phone number. OTAuth provides a more secure and convenient alternative to password-based and Short Message Service (SMS)-based authentication schemes. Consequently, the OTAuth service has been adopted by numerous Mobile Network Operators (MNOs) worldwide. However, a high severity vulnerability remains unaddressed in the OTAuth service, which allows an attacker to access a victim’s various app accounts, posing a significant risk to user privacy and data security. In this paper, we present LoadShow, which, to the best of our knowledge, is the first security-enhanced OTAuth scheme to address this vulnerability. We propose a novel dynamic application identification technique that aims to address the root cause of this vulnerability, i.e., the inability of MNOs to distinguish between different applications on the same device. Specifically, application identification is based on the hardware load side-channel and captures the unique CPU and GPU load characteristics of applications through the sequence of timing values of fingerprinting functions. We evaluate the effectiveness of LoadShow by accuracy, False Positive Rate (FPR), and True Positive Rate (TPR). We also evaluate its multi-platform compatibility on devices with different architectures and models. LoadShow achieves over 90% accuracy, with a TPR exceeding 90% and an FPR below 1%. The evaluation results demonstrate LoadShow’s capability to effectively differentiate between applications on a device, defend against app impersonation attacks, and reliably identify legitimate applications.},
-  archive      = {J_TIFS},
-  author       = {Di Liu and Dawei Li and Yuxiao Guo and Ying Guo and Ruinan Hu and Jianwei Liu and Song Bian and Xuhua Ding and Yizhong Liu and Zhenyu Guan},
-  doi          = {10.1109/TIFS.2025.3607232},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Enhancing the security of one-tap authentication services via dynamic application identification},
   year         = {2025},
 }
 </textarea>
@@ -200,25 +257,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). BESA: Boosting encoder stealing attack with perturbation recovery. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3608665'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {To boost the encoder stealing attack under the perturbation-based defense that hinders the attack performance, we propose a boosting encoder stealing attack with perturbation recovery named BESA. It aims to overcome perturbation-based defenses. The core of BESA consists of two modules: perturbation detection and perturbation recovery, which can be combined with canonical encoder stealing attacks. The perturbation detection module utilizes the feature vectors obtained from the target encoder to infer the defense mechanism employed by the service provider. Once the defense mechanism is detected, the perturbation recovery module leverages the well-designed generative model to restore a clean feature vector from the perturbed one. Through extensive evaluations based on various datasets, we demonstrate that BESA significantly enhances the surrogate encoder accuracy of existing encoder stealing attacks by up to 24.63% when facing state-of-the-art defenses and combinations of multiple defenses.},
-  archive      = {J_TIFS},
-  author       = {Xuhao Ren and Haotian Liang and Yajie Wang and Chuan Zhang and Zehui Xiong and Liehuang Zhu},
-  doi          = {10.1109/TIFS.2025.3608665},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {BESA: Boosting encoder stealing attack with perturbation recovery},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Privacy-preserving universal adversarial defense for black-box models. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3609104'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -232,25 +270,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Privacy-preserving universal adversarial defense for black-box models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Tactics and techniques text classification based on adversarial contrastive learning and meta-path. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3609218'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Tactics and techniques information in Cyber Threat Intelligence (CTI) represent the objectives of attackers and the means through which these objectives are achieved. The classification of tactics and techniques descriptions in CTI has been extensively studied to assist security experts in interpreting attack patterns. Although many recent studies have applied various deep learning methods to enhance classification performance, they mainly focus on improving performance from an average or top perspective. However, the imbalance between tactical and technical tag samples, as well as text sparsity, may lead to poor model performance, which has been under-explored. To address these issues, we propose a new tactics and techniques classification model based on adversarial contrastive learning and meta-path (TTC-ACLM). In TTC-ACLM, a novel text representation learning module is first designed. It includes pre-trained language model (PLM) and contrastive adversarial methods, which can better adapt to categories with smaller sample sizes while obtaining better text representations. Then, heterogeneous information networks are used to model the rich relationships between texts and labels (tactics and techniques), which can merge additional information, e.g., processes and tools, to address text sparsity. Next, we defined a meta-path based classifier learning module that maps text, tactics, and meta-path based context to a set of classifiers, which are applied to the text representation generated by the text representation module for better classification. Finally, the classification performance is further improved through the tactics and techniques correlation enhancement matrix. Through in-depth research, we demonstrate that the proposed model can effectively address the impact of sample imbalance and text sparsity. Extensive experimental results indicate that TTC-ACLM achieves state-of-the-art performance.},
-  archive      = {J_TIFS},
-  author       = {Yuchun Han and Weiping Wang and Zhe Qu and Shigeng Zhang},
-  doi          = {10.1109/TIFS.2025.3609218},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Tactics and techniques text classification based on adversarial contrastive learning and meta-path},
   year         = {2025},
 }
 </textarea>
@@ -276,82 +295,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ArcGen: Generalizing neural backdoor detection across diverse architectures. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3610254'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Backdoor attacks pose a significant threat to the security and reliability of deep learning models. To mitigate such attacks, one promising approach is to learn to extract features from the target model and use these features for backdoor detection. However, we discover that existing learning-based neural backdoor detection methods do not generalize well to new architectures not seen during the learning phase. In this paper, we analyze the root cause of this issue and propose a novel black-box neural backdoor detection method called ARCGEN. Our method aims to obtain architecture-invariant model features, i.e., aligned features, for effective backdoor detection. Specifically, in contrast to existing methods directly using model outputs as model features, we introduce an additional alignment layer in the feature extraction function to further process these features. This reduces the direct influence of architecture information on the features. Then, we design two alignment losses to train the feature extraction function. These losses explicitly require that features from models with similar backdoor behaviors but different architectures are aligned at both the distribution and sample levels. With these techniques, our method demonstrates up to 42.5% improvements in detection performance (e.g., AUC) on unseen model architectures. This is based on a large-scale evaluation involving 16,896 models trained on diverse datasets, subjected to various backdoor attacks, and utilizing different model architectures. Our code is available at https://github.com/SeRAlab/ArcGen.},
-  archive      = {J_TIFS},
-  author       = {Zhonghao Yang and Cheng Luo and Daojing He and Yiming Li and Yu Li},
-  doi          = {10.1109/TIFS.2025.3610254},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {ArcGen: Generalizing neural backdoor detection across diverse architectures},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SSME: A semi-supervised specific emitter identification method with manifold enhancement. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3610246'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The proliferation of Internet of Things (IoT) devices generates substantial data that supports deep learning, significantly advancing intelligent specific emitter identification (SEI) technology. However, challenges such as labeling costs and privacy concerns limit the availability of labeled samples, thereby constraining deep model training. To address this problem, this paper focuses on enhancing the data manifold structure through deep feature information, proposing a semi-supervised SEI method named SSME. A well-structured manifold makes the model capture underlying patterns and relationships within the data more effectively, leading to more accurate and generalizable classification boundaries. First, to maximize the use of supervision information from limited labeled samples, we design a supervised cross-class contrastive (SCCC) loss, which increases the feature distance between anchor samples and cross-class samples based on their labels, achieving better manifold separation of different categories. Second, we propose an instance neighborhood matching regularization (INMR) loss that captures the neighborhood of weakly and strongly augmented samples of unlabeled instances within the feature space. By aligning these neighborhood representations, neighborhood-to-neighborhood consistency learning is achieved, enhancing the structural consistency and smoothness of local manifolds. Evaluated on ADS-B and XSRP datasets across diverse settings, our method demonstrates superior performance over existing approaches. Notably, even with only five labeled samples per class, it surpasses supervised baselines by 24.82% and 12.55% on the respective datasets.},
-  archive      = {J_TIFS},
-  author       = {Hanlin Wang and Shuyuan Yang and Zhixi Feng},
-  doi          = {10.1109/TIFS.2025.3610246},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {SSME: A semi-supervised specific emitter identification method with manifold enhancement},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Diffusion prediction and control of negative information on simplicial complexes using physics-informed neural networks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611070'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The inadequacy of traditional binary interaction networks in characterizing information flow processes within higher-order structures has driven growing research focus toward higher-order networks. Considering reporting mechanism and the dynamics of network scale, this paper proposes a susceptible-infected-quarantine-removed-empty (SIQRE) negative information diffusion model on simplicial complexes. An optimal control strategy, taking into account the system gain, is then implemented. The existence and stability of equilibria, and bi-stability between invasion threshold and persistence threshold are derived. Experiments on synthetic and empirical simplicial complexes reveal the dynamic behavior of the system with discontinuous phase transitions, backward bifurcation and periodic oscillations. An increase in the birth rate makes the system more susceptible to outbreaks of negative information, while the opposite is true for the death rate. Reporting mechanism suppresses discontinuous phase transition. And the synergistic application of preventive and corrective strategies demonstrates superior cost-effectiveness in system control compared to their isolated implementation. Additionally, an identifiability analysis of the model is conducted. Finally, the model parameters are inversely estimated and the diffusion dynamics are predicted using physics-informed neural networks (PINNs) across three instances, and the optimal control is subsequently performed, validating the effectiveness of both the proposed model and the control strategy.},
-  archive      = {J_TIFS},
-  author       = {Ying Jing and Youguo Wang and Qiqing Zhai and Zhangfei Zhou and Haojie Hou},
-  doi          = {10.1109/TIFS.2025.3611070},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Diffusion prediction and control of negative information on simplicial complexes using physics-informed neural networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PREXP: Uncovering and exploiting security-sensitive objects in the linux kernel. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611149'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Security-Sensitive Objects (SSOs) are often critical components in the exploitation of Linux kernel memory corruption vulnerabilities. While existing research has advanced SSOs identification and classification, there remains a significant gap in systematically understanding how these objects can be effectively exploited in real-world security analysis. To address this challenge, we present PREXP, a novel approach to analyzing SSOs exploitability and automating the transformation of Proof-of-Concept (PoC) into exploitable states. Our approach encompasses three key techniques: (1) capability analysis and attribute modeling of vulnerable object (2) extraction and filtering of target SSOs and (3) automatically augmenting PoCs with SSO-specific code to create exploitation capabilities. To evaluate our approach, we tested our prototype on 30 public CVEs, successfully parsing vulnerable object in 22 cases (73.3%) and achieving accurate SSO matches in 18 (60.0%). PREXP outperformed state-of-the-art tools such as SCAVY and AlphaEXP in structure-matching, and enabled the generation of new Control Flow Hijacking Primitives (CFHPs) for 3 previously unexploited vulnerabilities, demonstrating its practical value in real-world exploit development.},
-  archive      = {J_TIFS},
-  author       = {Zuxin Chen and Yaowen Zheng and Hong Li and Siyuan Li and Weijie Wang and Dongliang Fang and Zhiqiang Shi and Limin Sun},
-  doi          = {10.1109/TIFS.2025.3611149},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {PREXP: Uncovering and exploiting security-sensitive objects in the linux kernel},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Channel-robust RF fingerprint identification for multi-antenna 5G user equipments. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611154'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -365,25 +308,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Channel-robust RF fingerprint identification for multi-antenna 5G user equipments},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Optimized sparse vector aggregation under local differential privacy. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611115'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In crowdsourcing applications, gathering and analyzing users’ strong positive (1) or negative (-1) reactions to a large number of items is crucial for improving service quality, particularly in recommendation systems. However, protecting users’ privacy while handling diverse sparse patterns in contexts with a large dimension size d poses significant challenges for efficient and privacy-preserving data aggregation. To address these challenges, in this paper, we propose an optimized k-sparse vector mean estimation scheme under Local Differential Privacy (LDP), ensuring that each user’s entire set of up to k private values from {−1, 1} satisfies ε-LDP. Specifically, our proposed scheme employs a seed mining technique in conjunction with PRNG Randomizer, which allows users to send their data only once while enabling the server to accurately estimate any value’s mean in the domain. Our scheme achieves an asymptotically optimal error of O( 1/ε√n ), equivalent to that of a 1-sparse case, while also ensuring efficient communication costs. The communication cost remains at a minimal level of O(1) (only 2 bytes per user’s report) for smaller k values and scales to O(k) for larger k, due to efficient binning strategies. Extensive experimental results confirm that our results align with theoretical expectations, demonstrating that our scheme not only preserves user privacy but also ensures higher accuracy compared to other schemes.},
-  archive      = {J_TIFS},
-  author       = {Ellen Z. Zhang and Yunguo Guan and Rongxing Lu and Harry Zhang},
-  doi          = {10.1109/TIFS.2025.3611115},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Optimized sparse vector aggregation under local differential privacy},
   year         = {2025},
 }
 </textarea>
@@ -428,44 +352,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Data-centric robust training for defending against transfer-based adversarial attacks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611148'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Transfer-based adversarial attacks pose a severe threat to real-world deep learning systems since they do not require access to target models. Adversarial training (AT), which is recognized as the most effective defense against white-box attacks, also ensures high robustness against (black-box) transfer-based attacks. However, AT suffers from significant computational overhead because it repeatedly generates adversarial examples (AEs) throughout the entire training process. In this paper, we demonstrate that such repeated generation is unnecessary to achieve robustness against transfer-based attacks. Instead, pre-generating AEs all at once before training is sufficient, as proposed in our new defense paradigm called Data-Centric Robust Training (DCRT). DCRT employs clean data augmentation and adversarial data augmentation techniques to enhance the dataset before training. Our experimental results show that DCRT outperforms widely-used AT techniques (e.g., PGD-AT, TRADES, EAT, and FAT) in terms of transfer-based black-box robustness and even surpasses the top-1 defense on RobustBench when combined with common model-centric techniques. We also highlight additional benefits of DCRT, such as improved training efficiency and class-wise fairness. Our code will be available on GitHub.},
-  archive      = {J_TIFS},
-  author       = {Yulong Yang and Ruiqi Cao and Xiang Ji and Qiwei Tian and Chenhao Lin and Zhengyu Zhao and Qian Li and Le Yang and Hongshan Yang and Chao Shen},
-  doi          = {10.1109/TIFS.2025.3611148},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Data-centric robust training for defending against transfer-based adversarial attacks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Traceable access control encryption with parallel multiple sanitizers. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611076'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Access control encryption (ACE) is an innovative cryptographic primitive that realizes fine-grained read/write control of data and protects data privacy and security while facilitating the effective flow of information. However, existing ACE schemes face several limitations: 1) Inability to adequately mitigate the risks of a single point of failure in the sanitizer. 2) Lack of an effective accountability mechanism for disputes arising during the sanitization process. To solve these problems, this paper proposes the notion of traceable access control encryption with parallel multiple sanitizers for the first time and designs a specific structure of traceable parallel ACE to prevent the single point of failure, effectively deter abnormal sanitizer behaviors, and optimize system performance. Additionally, computationally intensive operations in the encryption and decryption processes are outsourced to third-party servers, resulting in a significant reduction of computational overhead. Furthermore, theoretical analysis and experimental simulations validate the effectiveness of the proposed scheme. Comprehensive security analysis demonstrates its no-read security under the decisional q-parallel Bilinear Diffie-Hellman Exponent (BDHE) assumption and its no-write security under the Discrete Logarithm (DL) assumption, ensuring its reliability in practical applications.},
-  archive      = {J_TIFS},
-  author       = {Wei Luo and Qinghe Duan and Chengzhe Lai},
-  doi          = {10.1109/TIFS.2025.3611076},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Traceable access control encryption with parallel multiple sanitizers},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). DPDeno: A post-processing framework for releasing differentially private spatio-temporal mobility features. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611106'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -485,44 +371,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Exploring causal information bottleneck for adversarial defense. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611108'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Information bottleneck (IB) is a promising defense solution against adversarial attacks on deep neural networks. However, these methods often suffer from spurious correlations. A correlation exists between the prediction and the non-robust features, yet it does not reflect the causal relationship well. Such spurious correlations induce the neural networks to learn fragile and incomprehensible (non-robust) features. This issue limits its potential for further improving adversarial robustness. This paper addresses this issue by incorporating causal inference into the IB-based defense framework. Specifically, we propose a novel defense method that use the instrumental variables to enhance the adversarial robustness. Our proposed method divides the features into two parts for causal effect estimation: robust and non-robust features. The robust features relate to understanding semantic information, and the non-robust features link to the vulnerable style information. By employing this framework, the IB method can mitigate the influence of non-robust features and extract the robust features linking to the semantic information of objects. We conduct a thorough analysis of the effectiveness of our proposed method. Notably, the experiments on MNIST, FashionMNIST, CIFAR-10, CIFAR-100, and Tiny-ImageNet demonstrate that our method significantly boosts the adversarial robustness against multiple adversarial attacks compared to previous methods. Our regularization method can improve adversarial robustness in both natural and adversarial training frameworks. Besides, CausalIB can be applied to both Convolutional Neural Networks and Vision Transformers as a plug-and-play module. Our code is available at https://github.com/HydrogenWasser/CausalIB.},
-  archive      = {J_TIFS},
-  author       = {Jun Yan and Huan Hua and Weiquan Huang and Xi Fang and Wancheng Ge and Jiancheng Yang and Yongwei Wang},
-  doi          = {10.1109/TIFS.2025.3611108},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Exploring causal information bottleneck for adversarial defense},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SF2Net: Sequence feature fusion network for palmprint verification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611692'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Currently global features are usually extracted directly from local patterns in palmprint verification. Furthermore, sequence features for palmprint verification are only used as local features, but the properties of sequence features are not fully utilized. To solve this issue, this paper introduces Sequence Feature Fusion Network (SF2Net) for palmprint verification. SF2Net proposes a new paradigm: using stable and spatially correlated sequence features as an intermediate bridge to generate robust global representations. SF2Net’s core mechanism is to first extract fine-grained local features that are then converted into sequence features by a sequence feature extractor (SFE). Finally, the sequence features are used as a superior input to capture high-quality global features. By fusing multi-order texture-based local features with globally extracted sequence features, SF2Net achieves superior discrimination. To ensure high accuracy even with limited training data, a hybrid loss function is proposed, which integrate a cross-entropy loss and a triplet loss. Triplet loss effectively optimizes feature separation by explicitly considering negative samples. Extensive experiments on multiple publicly available palmprint datasets demonstrate that SF2Net achieves state-of-the-art (SOTA) performance. Remarkably, even with a small training-to-testing ratio (1:9), SF2Net achieves 100% accuracy, surpassing SOTA methods under several benchmark datasets. The code is released at https://github.com/20201422/SF2Net.},
-  archive      = {J_TIFS},
-  author       = {Yunlong Liu and Lu Leng and Ziyuan Yang and Andrew Beng Jin Teoh and Bob Zhang},
-  doi          = {10.1109/TIFS.2025.3611692},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {SF2Net: Sequence feature fusion network for palmprint verification},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Digital scapegoat: An incentive deception model for resisting unknown APT stealing attacks on critical data resource. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611653'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -536,63 +384,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Digital scapegoat: An incentive deception model for resisting unknown APT stealing attacks on critical data resource},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Feature reconstruction: Far field EM side-channel attacks in complex environment. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611788'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Far Field EM Side-Channel Attacks (FEM-SCAs) have emerged as a realistic security threat to widely deployed RF-integrated IoT edge devices. In mixed-signal chips, side-channel leakage may unintentionally couple with transmission signals and be emitted via the on-chip antenna, potentially allowing adversaries to extract sensitive information from the victim at long distances. However, in practical scenarios, far field EM traces captured at long distances usually suffer from noise and interference, which makes the attack less efficient or sometimes even unfeasible. In this paper, we propose a Domain-Adversarial ReFeature Nueral Network (DAR-NN) to facilitate “noisy-clean” adaptation for far field EM traces captured at long distances. By integrating a DAE model with two deep-learning classifiers as regularization terms, the proposed DAR-NN model can reconstruct features of traces obtained remotely in complex environments, thereby achieving a more efficient FEM-SCA. We first test our model by using a publicly available dataset and show that it is feasible to extract the AES key from 141 traces captured at 15 m distance to the victim, which is 58.7% more efficient than existing methods with 80% less profiling data. Afterwards, we set up a more complex experimental environment with a HackRF radio serving as an interference source. We show that the proposed model can still extract the key by using around 2K traces at 15 m even in the presence of 25% active interference, while the state-of-the-art model fails under same conditions.},
-  archive      = {J_TIFS},
-  author       = {Huanyu Wang and Dalin He and Deng Tuo and Junnian Wang},
-  doi          = {10.1109/TIFS.2025.3611788},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Feature reconstruction: Far field EM side-channel attacks in complex environment},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Unveiling malware visual patterns: A self-analysis perspective. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611649'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The widespread usage of Microsoft Windows has unfortunately led to a surge in malware, posing a serious threat to the security and privacy of millions of users. In response, the research community has mobilized, with numerous efforts dedicated to strengthening defenses against these threats. The primary goal of these techniques is to detect malicious software early, preventing attacks before any damage occurs. However, many of these methods either claim that packing has minimal impact on malware detection or fail to address the reliability of their approaches when applied to packed samples. Consequently, they are not capable of assisting victims in handling packed programs or recovering from the damages caused by untimely malware detection. To address these challenges, we propose VisUnpac, a static analysis-based data visualization framework for bolstering attack prevention while aiding recovery post-attack by unveiling malware patterns and offering more detailed information including both malware class and family. Our method includes unpacking packed malware programs, calculating local similarity descriptors based on basic blocks, enhancing correlations between descriptors, and refining them by minimizing noises to obtain self-analysis descriptors. Moreover, we employ machine learning to learn the correlations of self-analysis descriptors through architectural learning for final classification. Our comprehensive evaluation of VisUnpac based on a freshly gathered dataset with over 27,106 samples confirms its capability in accurately classifying malware programs with a precision of 99.7%. Additionally, VisUnpac reveals that most antivirus products in VirusTotal can not handle packed samples properly or provide precise malware classification information. We also achieve over 97% space savings compared to existing data visualization based methods.},
-  archive      = {J_TIFS},
-  author       = {Fangtian Zhong and Qin Hu and Yili Jiang and Jiaqi Huang and Xiuzhen Cheng},
-  doi          = {10.1109/TIFS.2025.3611649},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Unveiling malware visual patterns: A self-analysis perspective},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing model generalization for efficient cross-device side-channel analysis. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611696'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Deep learning (DL)-based techniques have garnered significant attention as an innovative method for profiled side-channel analysis (SCA). Despite their proven effectiveness, recent studies have highlighted challenges faced by DL-based profiled attacks in a more realistic portability threat model, where two devices are used respectively for profiling and the attack. In this paper, we propose a novel approach for cross-device attack by incorporating the Denoising Diffusion Probabilistic Model (DDPM) to develop a generalized model. Additionally, an adaptive multi-task loss is employed to balance multiple training objectives that respectively focus on model generalization and precision. We evaluate our strategy on five cross-device SCA datasets. The experimental results show that, compared to baseline methods, our approach achieves significantly enhanced performance, as measured by the number of traces required to recover the secret key. Specifically, on a more challenging dataset obtained from three SAKURA-G evaluation boards, our method successfully recovers the secret key using approximately 300 traces, whereas baseline methods fail to guarantee a successful cross-device attack even with 5,000 traces. Furthermore, our method demonstrates remarkably enhanced attack efficiency, reducing attack time by over an hour compared to the baselines.},
-  archive      = {J_TIFS},
-  author       = {Yimeng Chen and Bo Wang and Changshan Su and Ao Li and Yuxing Tang and Gen Li},
-  doi          = {10.1109/TIFS.2025.3611696},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Enhancing model generalization for efficient cross-device side-channel analysis},
   year         = {2025},
 }
 </textarea>
@@ -637,25 +428,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Fine-grained and class-incremental malicious account detection in ethereum via dynamic graph learning. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3612194'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Ethereum serves as the cornerstone for value transfer in Web 3.0, providing a decentralized and efficient trust mechanism for global connectivity. However, the anonymity of Ethereum undermines market regulatory capabilities, leading to frequent malicious behaviors such as Ponzi Scheme, Money Laundering, and Phishing. Therefore, in the face of the diverse and continuously emerging malicious behaviors, implementing fine-grained detection is crucial for maintaining the prosperous development of the blockchain ecosystem. In this paper, we propose FiMAD, a fine-grained and class-incremental malicious account detection framework based on dynamic graph learning. Specifically, we first propose a general graph structure called Dynamic Account Relation Graph (DARG), which dynamically models Ethereum accounts from a continuous-time perspective. Then, we design a cascade graph feature extraction method to capture deep temporal evolution patterns and neighbor interaction features in DARG. Next, we construct a pre-training universal encoder to transform account features into high-dimensional embeddings, followed by fine-tuning the model classifier with a few labeled samples, enabling accurate fine-grained detection and rapid updates for incremental classes. We conduct extensive experiments using real Ethereum data. The results demonstrate that FiMAD outperforms state-of-the-art (SOTA) methods in fine-grained detection across five typical scenarios: class-incremental, full data, new malicious accounts, imbalanced data, and binary classification. In the class-incremental scenario, FiMAD improves the Macro-F1 by up to 26.4% compared to SOTA methods.},
-  archive      = {J_TIFS},
-  author       = {Hanbiao Du and Meng Shen and Yang Liu and Zheng Che and Jinhe Wu and Wei Wang and Liehuang Zhu},
-  doi          = {10.1109/TIFS.2025.3612194},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Fine-grained and class-incremental malicious account detection in ethereum via dynamic graph learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Detection of unknown attacks through encrypted traffic: A gaussian prototype-aided variational autoencoder framework. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3612141'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -669,44 +441,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Detection of unknown attacks through encrypted traffic: A gaussian prototype-aided variational autoencoder framework},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Detecting DeFi fraud with a graph-transformer language model. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3612184'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rapid development of blockchain technology, the widespread adoption of smart contracts—particularly in decentralized finance (DeFi) applications—has introduced significant security challenges, such as reentrancy attacks, phishing, and Sybil attacks. To address these issues, we propose a novel model called TrxGNNBERT, which combines Graph Neural Network (GNN) and the Transformer architecture to effectively handle both graph-structured and textual data. This combination enhances the detection of suspicious transactions and accounts on blockchain platforms like Ethereum. TrxGNNBERT was pre-trained using a masked language model (MLM) on a dataset of 60,000 Ethereum transactions by randomly masking the attributes of nodes and edges, thereby capturing deep semantic relationships and structural information. In this work, we constructed transaction subgraphs, using a GNN module to enrich the embedding representations, which were then fed into a Transformer encoder. The experimental results demonstrate that TrxGNNBERT outperforms various baseline models—including DeepWalk, Trans2Vec, Role2Vec, GCN, GAT, GraphSAGE, CodeBERT, GraphCodeBERT, Zipzap and BERT4ETH—in detecting suspicious transactions and accounts. Specifically, TrxGNNBERT achieved an accuracy of 0.755 and an F1 score of 0.756 on the TrxLarge dataset; an accuracy of 0.903 and an F1 score of 0.894 on the TrxSmall dataset; and an accuracy of 0.790 and an F1 score of 0.781 on the AddrDec dataset. We also explored different pre-training configurations and strategies, comparing the performance of encoder-based versus decoder-based Transformer structures. The results indicate that pre-training improves downstream task performance, with encoder-based structures outperforming decoder-based ones. Through ablation studies, we found that node-level information and subgraph structures are critical for achieving optimal performance in transaction classification tasks. When key features were removed, the model performance declined considerably, demonstrating the importance of each component of our method. These findings offer valuable insights for future research, suggesting further improvements in node attribute representation and subgraph extraction.},
-  archive      = {J_TIFS},
-  author       = {Wei Ma and Junjie Shi and Jiaxi Qiu and Cong Wu and Jing Chen and Lingxiao Jiang and Shangqing Liu and Yang Liu and Xiang Yang},
-  doi          = {10.1109/TIFS.2025.3612184},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Detecting DeFi fraud with a graph-transformer language model},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LMAE4Eth: Generalizable and robust ethereum fraud detection by exploring transaction semantics and masked graph embedding. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3612149'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {As Ethereum confronts increasingly sophisticated fraud threats, recent research seeks to improve fraud account detection by leveraging advanced pre-trained Transformer or self-supervised graph neural network. However, current Transformer-based methods rely on context-independent, numerical transaction sequences, failing to capture semantic of account transactions. Furthermore, the pervasive homogeneity in Ethereum transaction records renders it challenging to learn discriminative account embeddings. Moreover, current self-supervised graph learning methods primarily learn node representations through graph reconstruction, resulting in suboptimal performance for node-level tasks like fraud account detection, while these methods also encounter scalability challenges. To tackle these challenges, we propose LMAE4Eth, a multi-view learning framework that fuses transaction semantics, masked graph embedding, and expert knowledge. We first propose a transaction-token contrastive language model (TxCLM) that transforms context-independent numerical transaction records into logically cohesive linguistic representations, and leverages language modeling to learn transaction semantics. To clearly characterize the semantic differences between accounts, we also use a token-aware contrastive learning pre-training objective, which, together with the masked transaction model pre-training objective, learns high-expressive account representations. We then propose a masked account graph autoencoder (MAGAE) using generative self-supervised learning, which achieves superior node-level account detection by focusing on reconstructing account node features rather than graph structure. To enable MAGAE to scale for large-scale training, we propose to integrate layer-neighbor sampling into the graph, which reduces the number of sampled vertices by several times without compromising training quality. Additionally, we initialize the account nodes in the graph with expert-engineered features to inject empirical and statistical knowledge into the model. Finally, using a cross-attention fusion network, we unify the embeddings of TxCLM and MAGAE to leverage the benefits of both. We evaluate our method against 15 baseline approaches on three datasets. Experimental results show that our method outperforms the best baseline by over 10% in F1-score on two of the datasets. Furthermore, we observe from three datasets that the proposed method demonstrates strong generalization ability compared to previous work. Our source code is avaliable at: https://github.com/lmae4eth/LMAE4Eth.},
-  archive      = {J_TIFS},
-  author       = {Yifan Jia and Yanbin Wang and Jianguo Sun and Ye Tian and Peng Qian},
-  doi          = {10.1109/TIFS.2025.3612149},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {LMAE4Eth: Generalizable and robust ethereum fraud detection by exploring transaction semantics and masked graph embedding},
   year         = {2025},
 }
 </textarea>
@@ -764,63 +498,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Differentially-private collaborative online personalized mean estimation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). RLP-ABE: Puncturable CP-ABE for efficient user revocation from lattices in cloud storage. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3613055'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Cloud computing has become the predominant platform for data sharing due to its adaptability, cost-effectiveness, and ability to scale resources according to user demand. Ensuring secure and efficient data sharing has long been a central research focus, with attribute-based encryption (ABE) serving as a key cryptographic primitive. In real-world scenarios, user attributes often change, necessitating timely revocation of access rights. Common user revocation methods include direct and indirect revocation. Direct revocation is controlled by the data owner, who adds revocation information to a list and embeds it into ciphertext to revoke permissions. Indirect revocation is managed by an authorized authority or delegated third party, dynamically publishing revocation information and generating new keys and ciphertexts. Conventional direct and indirect revocation methods incur substantial communication and computation overheads, limiting their practical effectiveness, particularly in environments with frequent user access terminations. To address these challenges, we propose a novel puncturable ciphertext-policy ABE scheme based on lattice cryptography for user revocation, eliminating the need for key regeneration and revocation-list maintenance. The proposed approach effectively resists collusion, quantum, and chosen-plaintext attacks, and experimental evaluations demonstrate its advantages in storage consumption, communication cost, and computational overhead.},
-  archive      = {J_TIFS},
-  author       = {Mengxue Yang and Huaqun Wang and Debiao He and Jiankuo Dong},
-  doi          = {10.1109/TIFS.2025.3613055},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {RLP-ABE: Puncturable CP-ABE for efficient user revocation from lattices in cloud storage},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FedAMM: Federated learning against majority malicious clients using robust aggregation. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3607273'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {As a collaborative framework designed to safeguard privacy, Federated Learning (FL) seeks to protect participants’ data throughout the training process. However, the framework still faces security risks from poisoning attacks, arising from the unmonitored process of client-side model updates. Most existing solutions address scenarios where less than half of clients are malicious, i.e., which leaves a significant challenge to defend against attacks when more than half of participants are malicious. In this paper, we propose a FL scheme, named FedAMM, that resists backdoor attacks across various data distributions and malicious client ratios. We develop a novel backdoor defense mechanism to filter out malicious models, aiming to reduce the performance degradation of the model. The proposed scheme addresses the challenge of distance measurement in high-dimensional spaces by applying Principal Component Analysis (PCA) to improve clustering effectiveness. We borrow the idea of critical parameter analysis to enhance discriminative ability in non-iid data scenarios, via assessing the benign or malicious nature of models by comparing the similarity of critical parameters across different models. Finally, our scheme employs a hierarchical noise perturbation to improve the backdoor mitigation rate, effectively eliminating the backdoor and reducing the adverse effects of noise on task accuracy. Through evaluations conducted on multiple datasets, we demonstrate that the proposed scheme achieves superior backdoor defense across diverse client data distributions and different ratios of malicious participants. With 80% malicious clients, FedAMM achieves low backdoor attack success rates of 1.14%, 0.28%, and 5.53% on MNIST, FMNIST, and CIFAR-10, respectively, demonstrating enhanced robustness of FL against backdoor attacks.},
-  archive      = {J_TIFS},
-  author       = {Keke Gai and Dongjue Wang and Jing Yu and Liehuang Zhu and Weizhi Meng},
-  doi          = {10.1109/TIFS.2025.3607273},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {FedAMM: Federated learning against majority malicious clients using robust aggregation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Secure beamforming for integrated sensing, NOMA communication and over-the-air computation networks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3614008'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rapid evolution of wireless technologies, the deep integration of sensing, communication and computation has heralded a novel and promising paradigm. In this paper, we propose a secure beamforming design framework for integrated sensing, non-orthogonal multiple access (NOMA) communication and over-the-air computation (AirComp) networks, which can provide multi-functional intelligent services for communication-intensive, computation-intensive, delay-sensitive and security-sensitive applications. In the considered network, each dual-functional intelligent device engages in NOMA information transmission and AirComp. Meanwhile, the triple-functional base station conducts target sensing, NOMA signal decoding and data aggregation simultaneously. Our aim is to maximize the sum secrecy rate (SSR) of NOAM devices while ensuring that the quality of service requirements for both sensing and AirComp are met within the transmit power constraints imposed on all nodes. The formulated optimization problem involves coupled variables and logarithmic determinant, thus it is highly non-convex. To solve it, we propose an efficient matrix-extended generalized Lagrangian dual transformation based algorithm with penalty method, which can obtain the Karush-Kuhn-Tucker (KKT) solution to the original problem with low-complexity and convergence guarantee. Additionally, the well-known successive convex approximation based algorithm is also employed to address the formulated SSR maximization problem. However, its computational complexity significantly exceeds that of our proposed algorithm. Finally, extensive experiments demonstrate the performance improvement of our proposal compared with the benchmark approaches.},
-  archive      = {J_TIFS},
-  author       = {Changjie Hu and Quanzhong Li and Qi Zhang and Qiang Li},
-  doi          = {10.1109/TIFS.2025.3614008},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Secure beamforming for integrated sensing, NOMA communication and over-the-air computation networks},
   year         = {2025},
 }
 </textarea>
@@ -903,25 +580,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). MOJO: MOtion pattern learning and JOint-based fine-grained mining for person re-identification based on 4D LiDAR point clouds. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3614500'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Person Re-identification (ReID) primarily involves the extraction of discriminative representations derived from morphological characteristics, gait patterns, and related attributes. While camera-based Person ReID methods yield notable results, their reliability diminishes in scenarios involving long distances and limited illumination. LiDAR enables the precise acquisition of human point cloud sequences across extended distances, unaffected by variations in lighting or similar factors. Nevertheless, current LiDAR-based Person ReID techniques are limited to static measurements, rendering them susceptible to perturbations from attire variations, occlusions, and similar confounding factors. To address these issues, this manuscript introduces MOJO, which is applied to 4D LiDAR point clouds to extract unique motion patterns specific to individuals. To characterize the motion patterns across two consecutive point cloud frames, MOJO employs optimal transport to compute point-wise motion vectors, thereby enabling the identification of discriminative implicit motion information. To mitigate the attenuation of point cloud density induced by self-occlusion during dynamic motion, MOJO leverages inverse point-wise flow information to integrate forward frames, thereby yielding a comprehensive representation, whilst concurrently ameliorating the effects of heterogeneous density distribution within localized regions of the 4D point cloud data. Additionally, the inherent unordered nature and sparsity of 4D point clouds present significant obstacles to capturing discriminative features. We develop the 3D joint graph to extract scalable fine-grained traits and employ the joint pyramid pooling module to conduct hierarchical spatiotemporal aggregation across the 4D point clouds. Extensive experimental evaluations demonstrate that MOJO achieves state-of-the-art (SOTA) accuracy on the LReID dataset (for LiDAR-based Person Re-identification) and SUSTech1k dataset (for LiDAR-based Gait Recognition) without any pre-training while exhibiting robust performance across various point cloud densities. Our code will be available at https://github.com/O-VIGIA/MOJO.},
-  archive      = {J_TIFS},
-  author       = {Zhiyang Lu and Chenglu Wen and Ming Cheng and Cheng Wang},
-  doi          = {10.1109/TIFS.2025.3614500},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {9},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {MOJO: MOtion pattern learning and JOint-based fine-grained mining for person re-identification based on 4D LiDAR point clouds},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Tensor-based joint hybrid beamforming and artificial noise design for secure mmWave MU-MIMO-OFDM communication systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3614447'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -998,19 +656,266 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Finite-time nonfragile h∞ consensus fuzzy filtering for multi-UAV target estimation against selective-data-based network attacks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3598938'>www</a>)
+(2025). CELEST: Federated learning for globally coordinated threat detection. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3614442'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Complex environments pose significant challenges to the consensus estimation of ground targets by multiple unmanned aerial vehicles (multi-UAVs) with limited sensing capabilities. This paper addresses the design of an H∞ consensus fuzzy filter over a finite-time horizon, that is subject to selective network attacks and stochastic incomplete measurements. First, a novel selective-data-based (SDB) network attack model is proposed. Unlike conventional models, this model is constructed from the attacker’s perspective to mimic attacks that target high-value data, thereby maximizing its destructive potential. Second, incomplete measurements, arising from factors such as limited UAV sensing ranges and target motion, are modeled by using a set of random variables to characterize the stochastic nature of data loss. Furthermore, an H∞ consensus fuzzy filter is developed to achieve precise consensus estimation of the target with finite-time performance, thereby forming a unified attack-defense architecture. Sufficient conditions for the existence of such a filter are established in the form of linear matrix inequalities (LMIs), from which the filter gains can be derived. Finally, the effectiveness and superiority of the proposed design are validated through both numerical simulations and physical experiments.},
+  abstract     = {The cyber-threat landscape has evolved tremendously in recent years, with new threat variants emerging daily and large-scale coordinated campaigns becoming more prevalent. In this study, we propose CELEST (CollaborativE LEarning for Scalable Threat detection), a federated machine learning framework for global threat detection over HTTP, which is one of the most commonly used protocols for malware dissemination and communication. CELEST leverages federated learning in order to collaboratively train a global model across multiple clients who keep their data locally. Through a novel active learning component integrated with the federated learning technique, our system continuously discovers and learns the behavior of new, evolving, and globally-coordinated cyber threats. We show that CELEST is able to expose attacks that are largely invisible to individual organizations. For instance, in one challenging attack scenario with data exfiltration malware, the global model achieves a three-fold increase in Precision-Recall AUC compared to the local model. We also design a poisoning detection and mitigation method, DTrust, for federated learning in the collaborative threat detection domain. We deploy CELEST on two university networks and show that it is able to detect the malicious HTTP communication with high precision and low false positive rates. Furthermore, during its deployment, CELEST detected a set of 42 previously unknown malicious URLs and 20 malicious domains in one day, which were confirmed to be malicious by VirusTotal.},
   archive      = {J_TIFS},
-  author       = {Kunzhong Miao and Chang Wang and Yifeng Niu and Hong Zhang and Huangzhi Yu},
-  doi          = {10.1109/TIFS.2025.3598938},
+  author       = {Talha Ongun and Simona Boboila and Alina Oprea and Tina Eliassi-Rad and Jason Hiser and Jack Davidson},
+  doi          = {10.1109/TIFS.2025.3614442},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {8},
+  month        = {9},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Finite-time nonfragile h∞ consensus fuzzy filtering for multi-UAV target estimation against selective-data-based network attacks},
+  title        = {CELEST: Federated learning for globally coordinated threat detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Privacy-preserving authentication for unlinkable avatars in the metaverse. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615515'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The metaverse is a virtual world that mirrors real life, allowing users to engage in activities and access services without the constraints of time and space. In the metaverse, users can create one or more avatars that reflect their personal preferences, enabling them to participate in activities that match their tastes and needs. To protect users’ freedom and anonymity, it is imperative for metaverse platforms to support the creation of unlinkable avatars. This ensures that the different avatars a user creates cannot be connected, keeping their virtual identities separate and reducing the risk of retaliation for their actions. In this paper, we propose an unlinkable avatar authentication scheme, UAVA, which leverages cryptographic group signatures to enable metaverse users to create and certify their avatars without interaction with service providers. These certified avatars can then be anonymously authenticated, ensuring unlinkability between multiple avatars belonging to the same user. UAVA maintains anonymity between users and their avatars, while allowing service providers to trace malicious avatars back to their users. We formally define and prove the security properties of UAVA, and implement the protocol using socket programming, and report on its cryptographic overheads. We also evaluate its cryptographic overhead and compare it to related protocols in terms of efficiency, security, and scalability.},
+  archive      = {J_TIFS},
+  author       = {Mohamed Mobarak and Riham AlTawy and Amr Youssef},
+  doi          = {10.1109/TIFS.2025.3615515},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Privacy-preserving authentication for unlinkable avatars in the metaverse},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Targeted vaccine: Safety alignment for large language models against harmful fine-tuning via layer-wise perturbation. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615412'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Harmful fine-tuning attack poses a serious threat to the online fine-tuning service. Vaccine, a recent alignment-stage defense, applies uniform perturbation to all layers of embedding to make the model robust to the simulated embedding drift. However, applying layer-wise uniform perturbation may lead to excess perturbations for some particular non-safety-critical layers, resulting in defense performance degradation and unnecessary memory consumption. To address this limitation, we propose a Targeted Vaccine (T-Vaccine), a memory-efficient safety alignment method that applies perturbation to only selected layers of the model. T-Vaccine follows two core steps: First, it uses the harmful gradient norm as a statistical metric to identify the safety-critical layers. Second, instead of applying uniform perturbation across all layers, T-Vaccine only applies perturbation to the safety-critical layers while keeping other layers frozen during training. Results show that T-Vaccine outperforms Vaccine in terms of both defense effectiveness and resource efficiency. Comparison with other defense baselines, e.g., RepNoise and TAR also demonstrate the superiority of T-Vaccine. Notably, T-Vaccine is the first defense that enables a fine-tuning-based alignment method for 7B pre-trained models trained on consumer GPUs with limited memory (e.g., RTX 4090).},
+  archive      = {J_TIFS},
+  author       = {Guozhi Liu and Weiwei Lin and Qi Mu and Tiansheng Huang and Ruichao Mo and Yuren Tao and Li Shen},
+  doi          = {10.1109/TIFS.2025.3615412},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Targeted vaccine: Safety alignment for large language models against harmful fine-tuning via layer-wise perturbation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cross-modal driven object restoration for 3D point cloud backdoor defense. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615416'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D point cloud recognition plays a critical role in autonomous driving, robotics, and medical diagnostics. However, its vulnerability to backdoor attacks remains underexplored, posing significant security risks in real-world applications. Current defense mechanisms against 3D point cloud backdoor attacks are still in their infancy and lacking effective solutions. To address this, we propose a cross-modal driven object restoration framework that leverages 3D reconstruction to mitigate backdoor attacks. Specifically, we introduce a cross-modal semantic encoding module that projects 3D point clouds into multi-view depth maps and utilizes CLIP to extract aligned text-image features, providing semantic guidance for 3D reconstruction. Furthermore, we leverage cross-modal information as conditional guidance to drive dynamic diffusion-based 3D reconstruction and adaptively fuse semantic and geometric features through a gated self-conditioned modulator. This module dynamically selects features for fusion, effectively mitigating noise interference and distribution shifts during latent diffusion, significantly enhancing robustness to noise, and thereby achieving precise restoration of clean point clouds. Extensive experiments on ModelNet40, and ShapeNetPart datasets demonstrate that our method robustly defends against adaptive attacks under varying noise levels and significantly restores classification performance degraded by backdoor triggers.},
+  archive      = {J_TIFS},
+  author       = {Jiawei Lian and Xia Du and Jianghua Liu and Le Hui and Jian Yang},
+  doi          = {10.1109/TIFS.2025.3615416},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Cross-modal driven object restoration for 3D point cloud backdoor defense},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hinge: An environment-varying adaptive physical-layer key generation scheme. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615510'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {On low-power, low-cost Internet of Things (IoT) edges, coarse-grained entropy source-based physical-layer key generation (PKG) is often used, which results in a very low bit generation rate (BGR). In this paper, a novel PKG scheme, Hinge, designed to adapt to varying environmental conditions is introduced to optimize the trade-off between the bit mismatch rate (BMR) and BGR using fine-grained entropy sources on IoT devices. Hinge predicts channel reciprocity levels from one side and dynamically adjusts the quantization strategy, maintaining a low BMR while maximizing BGR. Compared with existing PKG solutions on Bluetooth devices, Hinge yields significant improvements in BGR, with a comparable BMR. Through extensive experiments, Hinge showcases its potential for providing a secure and efficient key generation mechanism for IoT devices in complex real-world scenarios.},
+  archive      = {J_TIFS},
+  author       = {Zihao Yang and Lin Wang and Yawen Zheng and Fan Dang and Xikai Sun and Zijuan Liu and Yunhao Liu},
+  doi          = {10.1109/TIFS.2025.3615510},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Hinge: An environment-varying adaptive physical-layer key generation scheme},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing federated learning with differentially private continuous data release via k-ary trees. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615460'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Applying differential privacy (DP) to federated learning (FL) effectively safeguards participants’ training data against privacy threats, yet the stringent availability requirements of FL present a significant challenge in optimizing accuracy while ensuring privacy. Integrating differential privacy continuous data release (DPCR) into private FL mitigates the errors accumulating on intermediate parameter models securely, thereby enhancing accuracy, with performance gains driven by developing advanced DPCR models. In this context, we propose a k-ary Tree-based DPCR (kTCR) model to provide deeper and more flexible error optimization, thereby promoting a robust accuracy enhancement for private FL. Our kTCR model introduces Variance Optimal Estimation (VOE) and privacy budget allocation (PBA) methods to optimize accuracy, posing significant efficiency challenges simultaneously. With rigorous mathematical analysis, we reduce the computational complexity of VOE from O(t3) to O(lg t), then introduce a meta-factor method that transforms the challenging PBA issues into a convex optimization problem with significantly reduced variables (e.g., a 3-ary tree with 5.23 × 109 nodes requiring only 61 variables), thus yielding high efficiencies. Our experiments on classical datasets demonstrate that our kTCR model with appropriate k outperforms the state-of-the-art ABCRG by 0.7% ~ 2.0% in accuracy and traditional private FL by 5.5% ~ 18.7%. Further experiments demonstrate that adjusting the arity k effectively reduces the Pre-aggregation Error, leading to a further 2.09% accuracy gain. Our achievements both improve the accuracy of private FL and provide new insights into building high-availability FL with DP.},
+  archive      = {J_TIFS},
+  author       = {Jianping Cai and Tianqing Zhu and Qingqing Ye and Zuobin Ying and Wanlei Zhou},
+  doi          = {10.1109/TIFS.2025.3615460},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Enhancing federated learning with differentially private continuous data release via k-ary trees},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An image robust batch steganography framework with minimum embedding signs. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615446'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The flourishing online social networks provide natural and ideal channels for covert communication, especially image batch steganography, which is characterized by high capacity and efficiency. To address the challenges of covert and reliable messaging, an image robust batch steganography framework (Multi-Stega) is proposed. Utilizing separable steganalysis feature selection and difference measurement, Multi-Stega first designs an embedding sign function to describe steganographic distortion, aiming directly at improving resistance against steganalysis. Then, Multi-Stega applies a cover selection algorithm based on steganographic fitness and a payload distribution strategy based on multi-stage decision optimization, to realize message allocation with minimum embedding signs. On this basis, Multi-Stega can employ any image robust steganography algorithm and universal joint source-channel code to facilitate message embedding and extraction. To analyze its validity, instances are implemented and compared with some state-of-the-art algorithms. Experimental results demonstrate that the separable feature selection provides strong support for precise embedding signs measurement, and Multi-Stega can enhance the detection resistance of representative robust steganography algorithms by 35.10% on average. Covert communication tests on Facebook and Weibo also indicate the concealment and reliability of Multi-Stega, which shows the prospect of practical applications.},
+  archive      = {J_TIFS},
+  author       = {Yi Zhang and Yuanyuan Ma and QianQian Zhang and Yang Pei and Xiangyang Luo},
+  doi          = {10.1109/TIFS.2025.3615446},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {An image robust batch steganography framework with minimum embedding signs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Perfectly secure key agreement over a full duplex wireless channel. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3611162'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Secret key generation (SKG) between authenticated devices is a pivotal task for secure communications. Diffie-Hellman (DH) is de-facto standard but not post-quantum secure. In this paper, we shall invent and analyze a new security primitive that is specifically designed for WPAN. For WPAN, wireless channel-based SKG has been proposed but was not widely deployed due to its critical dependence on the channel’s entropy which is uncontrollable. We formulate a different approach: We still exploit channel properties but mainly hinge on the reciprocity of the wireless channel and not on the channel’s entropy. The radio advantage comes from the use of full duplex communication. We show that in this situation both legitimate parties can agree on a common secret key even without ever probing the channel at all. At the core is a new bisparse blind deconvolution scheme for which we prove correctness and information-theoretic, i.e. perfect, security. We show that, ultimately, a secret key can be extracted and give a lower bound for the number of secret key bits which is then verified by experiments.},
+  archive      = {J_TIFS},
+  author       = {Gerhard Wunder and Axel Flinth and Daniel Becker and Benedikt Groß},
+  doi          = {10.1109/TIFS.2025.3611162},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Perfectly secure key agreement over a full duplex wireless channel},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prototype-based diversity and integrity learning for all-day multi-modal person re-identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615708'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent multi-modal person re-identification methods have improved model performance by leveraging complementary information from multiple spectra. However, existing methods cannot ensure feature stability under varying illumination and rely on inflexible paired data, remaining inadequate against real-world cross-time retrieval and modality-missing challenges. To solve these, we first propose diversity representation that augments illumination-sensitive images to simulate diverse lighting conditions via illumination augmentation and enriches instance features using modality-specific prototypes via multiple interaction modules. Secondly, we propose integrity reconstruction that leverages prototypes and available instance features to recover information, the reconstruction module effectively utilizes identity and modality cues to address unpredictable missing problems. In addition, we build a more comprehensive dataset (AllDay843) to alleviate the inadequate dataset diversity, which comprises 91,371 images of 843 identities captured by multi-modal cameras across various periods throughout the day, while incorporating numerous real-world challenges. By integrating diversity representation and integrity reconstruction, the proposed Prototype-Based Diversity and Integrity learning network (PDINet) establishes excellence on the AllDay843 dataset, surpassing existing state-of-the-art approaches. The data and codes are available in https://github.com/ziwang1121/PDINet.},
+  archive      = {J_TIFS},
+  author       = {Zi Wang and Chenglong Li and Pengyu Li and Aihua Zheng and Jin Tang and Bin Luo},
+  doi          = {10.1109/TIFS.2025.3615708},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Prototype-based diversity and integrity learning for all-day multi-modal person re-identification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PRADA: Proactive risk assessment and mitigation of misinformed demand attacks on navigational route recommendations. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615726'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Leveraging recent advances in wireless communication, IoT, and AI, intelligent transportation systems (ITS) played an important role in reducing traffic congestion and enhancing user experience. Within ITS, navigational recommendation systems (NRS) are essential for helping users simplify route choices in urban environments. However, NRS are vulnerable to information-based attacks that can manipulate both the NRS and users to achieve the objectives of the malicious entities. This study aims to assess the risks of misinformed demand attacks, where attackers use techniques like Sybil-based attacks to manipulate the demands of certain origins and destinations considered by the NRS. We propose a game-theoretic framework for proactive risk assessment of demand attacks (PRADA) and treat the interaction between attackers and the NRS as a Stackelberg game. Specifically, we consider the case of local-targeted attacks, in which the attacker aims to make the NRS recommend the authentic users towards a specific road that favors certain groups. Our analysis unveils the equivalence between users’ incentive compatibility and Wardrop equilibrium recommendations and shows that the NRS and its users are at high risk when encountering intelligent attackers who can significantly alter user routes by strategically fabricating non-existent demands. To mitigate these risks, we introduce a trust mechanism that leverages users’ confidence in the integrity of the NRS, and show that it can effectively reduce the impact of misinformed demand attacks. Numerical experiments are used to corroborate the results and support our discussion of the Resilience Paradox, where locally targeted attacks can sometimes benefit the overall traffic conditions. Our framework not only assists risk assessment in automating the evaluation process and estimating potential impacts but also aligns with standards like ISO/IEC 27005, offering a proactive approach to managing risks in ITS.},
+  archive      = {J_TIFS},
+  author       = {Ya-Ting Yang and Haozhe Lei and Quanyan Zhu},
+  doi          = {10.1109/TIFS.2025.3615726},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {PRADA: Proactive risk assessment and mitigation of misinformed demand attacks on navigational route recommendations},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Trust in a decentralized world: Data governance from faithful, private, verifiable, and traceable data feeds. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615705'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Blockchain technology autonomously executes smart contracts that require external data to facilitate specific applications, underscoring the necessity for Authenticated Data Feeds (ADF). Existing solutions fall short in providing genuine authentication of data, lack private and verifiable computations across multiple data sources, and overlook data traceability, rendering current systems inadequate for complex applications. We present WuKong (WK), a data governance system that offers authenticated, privately verifiable, and traceable data feeds. WK enables a server to collect faithful data through an oracle committee and to prove computation correctness in zero-knowledge proofs, and empowers legal entities to trace a leakage source conditionally. We formally define and prove the security of WK in the universal composability framework. We implement three applications that seamlessly integrate with WK. Experimental results indicate that WK effectively liberates sensitive data from distributed, untrusted, and anonymous providers, making it accessible to various services and establishing trust in a decentralized world.},
+  archive      = {J_TIFS},
+  author       = {Meng Li and Yifei Chen and Yan Qiao and Guixin Ye and Zijian Zhang and Liehuang Zhu and Mauro Conti},
+  doi          = {10.1109/TIFS.2025.3615705},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Trust in a decentralized world: Data governance from faithful, private, verifiable, and traceable data feeds},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A zero-latency website identification for QUIC traffic based on feature alignment. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615743'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the deployment of the QUIC protocol, website fingerprinting attacks targeting QUIC traffic are becoming a growing concern. Since the deployment is incremental, attackers must continuously crawl the QUIC traffic of new QUIC-enabled websites to update their attack models. For the latency caused by data crawling and classifier training, existing few-shot website fingerprinting (FSWF) attacks rely on representation learning to mitigate data dependency. To further achieve zero-latency identification, TCP traffic can be applied to construct the attack model before QUIC deployment. However, the different protocol semantics of TCP and QUIC lead to differences in the latent features. As representation learning models cannot eliminate the website feature differences, classifiers trained on TCP-based features are difficult to adapt to QUIC traffic. To address the issue, we propose a novel cross-protocol FSWF attack method to fuse cross-protocol website features. The proposed method forces TCP features and QUIC features to be in the same feature space by sharing model parameters, and reduces cross-protocol website feature differences through inter-protocol adversarial representation learning. Meanwhile, it utilizes a non-linear classifier to fit the fused features. The proposed method enables zero-latency identification for QUIC traffic based on a few TCP traffic. We conducted comprehensive evaluation experiments on public datasets from both closed-world and open-world settings. The proposed method outperforms state-of-the-art methods in zero-latency identification.},
+  archive      = {J_TIFS},
+  author       = {Jingwen Tan and Wei Zhao and Huanran Wang and Shuai Han and Mingzhu Lai and Wu Yang},
+  doi          = {10.1109/TIFS.2025.3615743},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {A zero-latency website identification for QUIC traffic based on feature alignment},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Three birds with one arrow: Symmetric two-factor authentication protocol based on puncturable pseudorandom function. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615710'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The combination of smart cards and passwords has given birth to one of the most prevalent two-factor authentication (2FA) approaches. Numerous 2FA schemes have been proposed, nevertheless, most of them either do not possess critical security properties or are not efficient for implementation on smart cards. It is generally considered that asymmetric cryptographic primitives are indispensable to achieve security goals, which are burdensome for resource-limited devices. That is, the literature is being stuck with the security-efficiency tension. In this paper, we propose a 2FA protocol only resorting to symmetric primitives. Specifically, with the puncturable pseudorandom function, the proposed protocol hits three birds: it achieves three subtle security goals, i.e., resisting offline password guessing attacks, perfect forward secrecy and anonymity. It alleviates the long-standing security-efficiency conflict that is considered intractable in the literature. The proposed protocol is provably secure within the harshest adversary model to date. Furthermore, the evaluation results demonstrate that our protocol is the optimal choice when considering both security and efficiency.},
+  archive      = {J_TIFS},
+  author       = {Xiaomin Zhao and Qi Jiang and Xin Gong and Meng Li and Xindi Ma and Jianfeng Ma},
+  doi          = {10.1109/TIFS.2025.3615710},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Three birds with one arrow: Symmetric two-factor authentication protocol based on puncturable pseudorandom function},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). F2Attack: Two-factors scoring method for query-efficient hard-label black-box textual adversarial attacks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615475'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the hard-label black-box setting, existing attack methods randomly select words for perturbation, generating invalid word replacement operations, resulting in low attack success rate. Recent works alleviate this problem by evaluating the impact of words on model predictions, but they can only evaluate the impact of words on model predictions, not the impact of words on attack. If the attacker replaces too many words that have significant impact on the text semantics during the attack process, the adversarial example has poor semantics and the attack behavior is easily detected. To address the above issues, this paper proposes a two-factor word scoring method, which uses the attention score output by the pre-attack model and the semantic similarity after word replacement to evaluate the impact of the word on attack. Based on the scoring method, this paper proposes a query-efficient hard-label black-box adversarial attack method called F2Attack. F2Attack uses the two-factors method to score words, and then replaces words have great impact on the model prediction but small impact on text semantics based on scoring results to generate the initialized adversarial example. Then, F2Attack adopts the simulated annealing algorithm to optimize the semantic similarity of the adversarial example. We conduct experiments on four representative natural language models, seven text classification datasets, two natural language inference datasets, and four commercial APIs, and compared them with baseline methods. When the number of queries is limited to 100, F2Attack increases the attack success rate by an average of 15.165%, and the semantic similarity by 0.067, which is significantly better than the baseline methods.},
+  archive      = {J_TIFS},
+  author       = {Jiahui Wang and Hua Zhang and Yongji Wang and Haoran Gao and Qi Li and Huiyu Zhou},
+  doi          = {10.1109/TIFS.2025.3615475},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {F2Attack: Two-factors scoring method for query-efficient hard-label black-box textual adversarial attacks},
   year         = {2025},
 }
 </textarea>

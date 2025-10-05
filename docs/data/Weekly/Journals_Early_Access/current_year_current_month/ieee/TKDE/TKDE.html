@@ -25,1068 +25,118 @@
 </head>
 <body>
 
-<h2 id="tkde">TKDE - 56</h2>
+<h2 id="tkde">TKDE - 6</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Semi-supervised short text stream classification based on drift-aware incremental deep learning. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3605389'>www</a>)
+(2025). Approximately unimodal likelihood models for ordinal regression. <em>TKDE</em>, 1-11. (<a href='https://doi.org/10.1109/TKDE.2025.3617386'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Real-world applications have produced massive short text streams. Contrary to the traditional normal texts, they present the characteristics such as short length, only having few labeled data, high-velocity, high-volume and dynamic data distributions, which deteriorate the issues of data sparseness, label missing and concept drift. Obviously, it is a huge challenge for existing short text (stream) classification algorithms due to the poor effectiveness, where they always assume all short texts are completely labeled and little attention is paid on the concept drift issue hidden in short text streams. Therefore, we propose a novel semi-supervised short text steam classification method based on the drift-aware incremental deep learning ensemble model. Specifically, with the sliding window mechanism, we firstly fuse three types of statistical, semantic and structure information to solve the data sparseness issue. Secondly, a semi-supervised incremental deep learning ensemble model based on GCN and the refined LSTM is developed to adapt to the high-volume, high-velocity and label missing short text streams. Thirdly, a label-probability distribution based concept drift detector is introduced to distinguish concept drifts. Finally, as compared with eleven well-known classification methods, extensive experiments demonstrate the effectiveness of the proposed method in the handling of short text streams with limited labeled data.},
+  abstract     = {Ordinal regression (OR, also called ordinal classification) is classification of ordinal data, in which the underlying target variable is categorical and considered to have a natural ordinal relation for the underlying explanatory variable. A key to successful OR models is to find a data structure ‘natural ordinal relation’ common to many ordinal data and reflect that structure into the design of those models. A recent OR study found that many real-world ordinal data show a tendency that the conditional probability distribution (CPD) of the target variable given a value of the explanatory variable will often be unimodal. Several previous studies thus developed unimodal likelihood models, in which a predicted CPD is guaranteed to become unimodal. However, it was also observed experimentally that many real-world ordinal data partly have values of the explanatory variable where the underlying CPD will be non-unimodal, and hence unimodal likelihood models may suffer from a bias for such a CPD. Therefore, motivated to mitigate such a bias, we propose approximately unimodal likelihood models, which can represent up to a unimodal CPD and a CPD that is close to be unimodal. We also verify experimentally that a proposed model can be effective for statistical modeling of ordinal data and OR tasks.},
   archive      = {J_TKDE},
-  author       = {Peipei Li and Shiying Yu and Jiajun Li and Xuegang Hu},
-  doi          = {10.1109/TKDE.2025.3605389},
+  author       = {Ryoya Yamasaki},
+  doi          = {10.1109/TKDE.2025.3617386},
   journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
+  month        = {10},
+  pages        = {1-11},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Semi-supervised short text stream classification based on drift-aware incremental deep learning},
+  title        = {Approximately unimodal likelihood models for ordinal regression},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Incremental multi-view clustering: Exploring stream-view correlations to learn consistency and diversity. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3605594'>www</a>)
+(2025). ASSM: Adaptive subject-focused modeling for multimodal summarization via semantic matching. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3610544'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Multi-view clustering (MVC) has demonstrated impressive performance due to its ability to capture both consistency and diversity information among views. However, most existing techniques assume that all views are available in advance, making them inadequate for stream-view data, such as in intelligent transportation systems and medical imaging analysis, where memory constraints or privacy concerns prevent storing all previous views. Although some methods attempt to address this issue by capturing consistency information, they often fail to effectively extract diversity information and cross-view relationships. We argue that these limitations are inherent to incremental multi-view clustering (IMVC), as the inability to retain all previous views inevitably leads to insufficient information utilization, thereby compromising performance. To address these challenges, we propose a novel algorithm, termed Incremental Multi-View Clustering with Cross-View Correlation and Diversity (CDIMVC). Unlike existing methods that only retain consistency information, CDIMVC also preserves diversity information and utilizes similarity matrices to capture cross-view relationships. To implement this method, we develop three key modules: the dynamic view correlation analysis module (DVCAM), the knowledge extraction module (KEM), and the knowledge transfer module (KTM). When a new data view arrives, DVCAM first assesses its importance and correlation with historical views. Subsequently, KEM computes its consistency and diversity information by comparing it to those in the knowledge base. Finally, KTM facilitates the effective transmission of past knowledge, preventing the loss of historical information. By integrating these modules, CDIMVC can effectively capture cross-view relationships and diversity information, facilitating efficient knowledge updating and maintenance. An alternating procedure is also designed to optimize the resulting optimization problem. Experimental results show that CDIMVC exceeds state-of-the-art methods, demonstrating its effectiveness in handling stream-view data.},
+  abstract     = {Multimodal Summarization aims to use multimodal data to generate accurate and concise summaries for long sentences. While previous work has achieved promising success, they have overlooked the mismatching among multimodal semantics and lacked subject information guidance for adaptive referential images. Motivated by this observation, we propose ASSM, an Adaptive Subject-focused modeling for multimodal summarization via Semantic Matching. The novelty of ASSM lies in two aspects. First, we propose a multimodal semantic matching module that projects multimodal inputs into a shared joint embedding semantic space to determine whether the semantics between multimodalities are mismatching. Second, we propose an adaptive subject-focused guide module, which adaptively references images to learn subject tokens based on the multimodal semantic matching results. With these subject tokens, we are able to focus on the subject information, providing precise guidance for summary generation. We conduct extensive experiments on two standard benchmarks and compare ASSM with 17 existing models. The experimental results regarding ROUGE, BERTScore, and MoverScore show that the proposed ASSM model outperforms all competitors, achieving state-of-the-art performance and suggesting the effectiveness of our proposal. In addition, we provide a case study to further demonstrate the usability of ASSM.},
   archive      = {J_TKDE},
-  author       = {Yu Feng and Weixuan Liang and Xinhang Wan and Jiyuan Liu and Miaomiao Li and Xinwang Liu},
-  doi          = {10.1109/TKDE.2025.3605594},
+  author       = {Xujian Zhao and Chuanpeng Deng and Peiquan Jin},
+  doi          = {10.1109/TKDE.2025.3610544},
   journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Incremental multi-view clustering: Exploring stream-view correlations to learn consistency and diversity},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Personalized review summarization by using graph-based retrieval augmemted generation. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3605824'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Review summarization aims to provide a summary that covers the main aspect of the product review and reflects personal preference. Existing methods employ the historical reviews of customer and product to provide useful clues for the target summary generation. However, most of the existing methods indiscriminately model the historical reviews of customer and product. Since the historical customer reviews provide the personal information while the historical product reviews provide the commonly focused aspect of the product, these two types of heterogeneous information should be separately modeled. Moreover, the review rating of the historical reviews can be seen as a high-level abstraction of the customer preference and product which have been ignored by most of the existing methods. In this paper, we propose the Heterogeneous Historical Review aware Review Summarization (HHRRS) which separately models the two types of historical reviews with the rating information by a graph reasoning module with a contrastive loss. We employ a multi-task paradigm that conducts the review sentiment classification and summarization (GRARS) to model the two types of heterogeneous information in a fine-grained manner. We conduct extensive experiments on four benchmark datasets, and demonstrate the superiority of HHRRS on both tasks.},
-  archive      = {J_TKDE},
-  author       = {Shuo Shang and Xin Cheng and Yiren Xiong and Feng Guo and Shen Gao and Xiuying Chen and Feng Wang and Yongbo Wang and Dongyan Zhao and Rui Yan},
-  doi          = {10.1109/TKDE.2025.3605824},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Personalized review summarization by using graph-based retrieval augmemted generation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A diffusive data augmentation framework for reconstruction of complex network evolutionary history. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3605795'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The evolutionary dynamics of complex systems encode critical information about their functional organization. In particular, the generation times of edges reveal key aspects of historical development in networked systems such as protein-protein interaction networks, ecosystems, and social networks. Accurately recovering these temporal processes is of significant scientific value-for example, in elucidating the mechanisms underlying protein interaction evolution. However, existing methods typically assume access to partially time-stamped networks and often struggle to generalize across domains. They perform poorly in recovering edge generation times in static networks without temporal annotations. To address this challenge, we propose a comparative paradigm that enables cross-network learning by jointly training on multiple temporal networks. This framework captures structural-temporal correlations that generalize across networks and improves accuracy by 16.98% on average compared to separate training strategies. Furthermore, to mitigate the scarcity of real temporal data, we introduce a novel diffusion-based generative model for producing Augmented Temporal Networks (ATNs) . By integrating both real and generated samples during training, our joint strategy yields an additional 5.46% improvement in predictive accuracy, demonstrating the effectiveness of data augmentation in enhancing generalization.},
-  archive      = {J_TKDE},
-  author       = {En Xu and Can Rong and Jingtao Ding and Yong Li},
-  doi          = {10.1109/TKDE.2025.3605795},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {A diffusive data augmentation framework for reconstruction of complex network evolutionary history},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Large language models meet causal inference: Semantic-rich dual propensity score for sequential recommendation. <em>TKDE</em>, 1-12. (<a href='https://doi.org/10.1109/TKDE.2025.3606149'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Sequential recommender systems (SRSs) are designed to suggest relevant items to users by analyzing their interaction sequences. However, SRSs often suffer from exposure bias in these sequences due to imbalanced item exposure and varied user activity levels, creating a self-reinforcing loop favoring popular items regardless of their true relevance. Most SRSs only focus on item dependencies to address exposure bias, while overlooking user-side exposure bias and the rich semantics behind interactions. These oversights result in a limited understanding of less active users' preferences and inaccurate preference capture for less exposed items, exacerbating exposure biases. Towards this end, we propose a novel method LLM-enhanced Dual Propensity Score Estimation (LDPE), which synergistically integrates Large Language Models (LLMs) and causal inference. First, LDPE leverages LLMs' superior ability in capturing rich semantics from textual data and then integrates collaborative information to generate debiased semantic-rich LLM-based user/item embeddings. With these debiased item/user embeddings, LDPE estimates time-aware debiased propensity scores from both the item and user sides. These dual propensity scores can fully mitigate exposure bias by considering item popularity, user activity levels, and temporal dynamics. Lastly, LDPE employs the transformer as the backbone of our method, incorporating estimated dual propensity scores for accurately predicting users' true preferences. Extensive experiments show that our LDPE outperforms state-of-the-art baselines in terms of recommendation performance.},
-  archive      = {J_TKDE},
-  author       = {Dianer Yu and Qian Li and Sirui Huang and Jie Cao and Guandong Xu},
-  doi          = {10.1109/TKDE.2025.3606149},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Large language models meet causal inference: Semantic-rich dual propensity score for sequential recommendation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Rethinking oversampling with class alliance constraints from data complexity perspective. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3606036'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Class overlap is a major factor of data complexity that hampers classifier performance, particularly in imbalanced learning scenarios. Most existing oversampling methods rely on conservative seed sample selection and decoupled synthesis strategies, which limit sample diversity and fail to effectively control overlap risk. This paper proposes a novel oversampling framework called TMACO (Class Alliance-Constrained Oversampling), which integrates data complexity considerations into both seed selection and sample generation. First, TMACO selects seed sample units using a class alliance constraint that jointly considers spatial geometry and class distribution to enhance diversity and representativeness. Second, it generates synthetic samples based on three-point units to ensure regional stability. Third, a region-level filtering mechanism is applied to prevent synthetic samples from intruding into majority class areas. Extensive experiments on benchmark and real-world datasets demonstrate that TMACO consistently improves minority class performance and overall classification accuracy compared to state-of-the-art oversampling techniques. The proposed method also offers interpretable parameter control and adapts well to varying task objectives.},
-  archive      = {J_TKDE},
-  author       = {Mingming Han and Husheng Guo and Gaoxia Jiang and Wenjian Wang},
-  doi          = {10.1109/TKDE.2025.3606036},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Rethinking oversampling with class alliance constraints from data complexity perspective},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Distributional shortest-path graph kernels. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3606566'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Traditional shortest-path graph kernels generate for each graph a histogram-like feature map, whose elements represent the number of occurrences of non-isomorphic shortest paths in this graph. The histogram-like feature map does not contain the distributions of the shortest paths within and across graphs, causing inaccurate graph similarities. To this end, we propose a novel graph kernel called the Distributional Shortest-Path (DSP) graph kernel to embrace both types of distribution information. Since the distribution of substructures (e.g., the shortest paths) follows a power law like that of words in natural language, we utilize neural language models to learn each node's distributional shortest-path feature map, encompassing the distributions and dependencies of the shortest paths in each graph. Moreover, we design the Partition Kernel (PK) to capture the dataset-wide distribution information of the shortest paths. PK projects similar (i.e., belonging to the same partition) distributional shortest-path node feature maps to the same point in the Reproducing Kernel Hilbert Space. Finally, Kernel Mean Embedding (KME) is applied to compute graph feature maps and efficiently construct the DSP graph kernel. Empirical experiments demonstrate that DSP outperforms state-of-the-art graph kernels on most benchmark datasets.},
-  archive      = {J_TKDE},
-  author       = {Wei Ye and Wengang Guo and Shuhao Tang and Hao Tian and Xin Sun and Xiaofeng Cao and Heng Tao Shen},
-  doi          = {10.1109/TKDE.2025.3606566},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Distributional shortest-path graph kernels},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SAQE: Complex logical query answering via semantic-aware representation learning. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3603877'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Performing complex First-Order Logic (FOL) queries on knowledge graphs is crucial for advancing knowledge reasoning. Knowledge graphs encapsulate rich semantic interactions among entities, encompassing both explicit structural knowledge represented by triples $(e_{1}, r, e_{2})$ and implicit relational knowledge through multi-hop paths $(e_{1} \stackrel{r_{1}}{\rightarrow } \cdots e_{3} \cdots \stackrel{r_{2}}{\rightarrow } e_{2})$. Traditional models often focus solely on either triple-level or path-level knowledge, overlooking the benefits of integrating both to enhance logic query answering. This oversight leads to suboptimal representation learning and inefficient query reasoning. To overcome these challenges, we introduce a new Semantic-Aware representation learning model for Query-answering Embeddings (SAQE). Specifically, SAQE employs a joint learning approach that integrates triple-level and path-level knowledge semantics and captures both explicit and implicit contextual nuances within the knowledge graph, yielding more accurate and contextually relevant representations. To efficiently handle the large combinatorial search spaces in FOL reasoning, we propose a novel hierarchical reasoning optimization strategy by a multi-hop tree thus optimizing subqueries rooted at variable nodes in a divide-and-conquer manner. Theoretical analysis confirms that SAQE effectively supports various types of FOL reasoning and enhances generalizations for query answering. Extensive experiments demonstrate that our model achieves state-of-the-art performance across several established datasets.},
-  archive      = {J_TKDE},
-  author       = {Zongsheng Cao and Qianqian Xu and Zhiyong Yang and Yuan He and Xiaochun Cao and Qingming Huang},
-  doi          = {10.1109/TKDE.2025.3603877},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
+  month        = {10},
   pages        = {1-15},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {SAQE: Complex logical query answering via semantic-aware representation learning},
+  title        = {ASSM: Adaptive subject-focused modeling for multimodal summarization via semantic matching},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Personalized recommendation models in federated settings: A survey. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3606643'>www</a>)
+(2025). A survey of large language models on generative graph analytics: Query, learning, and applications. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3609877'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Federated recommender systems (FedRecSys) have emerged as a pivotal solution for privacy-aware recommendations, balancing growing demands for data security and personalized experiences. Current research efforts predominantly concentrate on adapting traditional recommendation architectures to federated environments, optimizing communication efficiency, and mitigating security vulnerabilities. However, user personalization modeling, which is essential for capturing heterogeneous preferences in this decentralized and non-IID data setting, remains underexplored. This survey addresses this gap by systematically exploring personalization in FedRecSys, charting its evolution from centralized paradigms to federated-specific innovations. We establish a foundational definition of personalization in a federated setting, emphasizing personalized models as a critical solution for capturing fine-grained user preferences. The work critically examines the technical hurdles of building personalized FedRecSys and synthesizes promising methodologies to meet these challenges. As the first consolidated study in this domain, this survey serves as both a technical reference and a catalyst for advancing personalized FedRecSys research.},
+  abstract     = {A graph is a fundamental data model to represent various entities and their complex relationships in society and nature, such as social networks, transportation networks, financial networks, and biomedical systems. Recently, large language models (LLMs) have showcased a strong generalization ability to handle various natural language processing tasks to answer users' arbitrary questions and generate specific-domain content. Compared with graph learning models, LLMs enjoy superior advantages in addressing the challenges of generalizing graph tasks by eliminating the need for training graph learning models and reducing the cost of manual annotation. However, LLMs are sequential models for textual data, but graphs are non-sequential topological data. It is challenging to adapt LLMs to tackle graph analytics tasks. In this survey, we conduct a comprehensive investigation of existing LLM studies on graph data, which summarizes the relevant graph analytics tasks solved by advanced LLM models and points out the existing challenges and future directions. Specifically, we study the key problems of LLM-based generative graph analytics (LLM-GGA) in terms of three categories: LLM-based graph query processing (LLM-GQP), LLM-based graph inference and learning (LLM-GIL), and graph-LLM-based applications. LLM-GQP focuses on an integration of graph analytics techniques and LLM prompts, including graph understanding and knowledge graphs and LLMs, while LLM-GIL focuses on learning and reasoning over graphs, including graph learning, graph-formed reasoning, and graph representation. We summarize the useful prompts incorporated into LLM to handle different graph downstream tasks. Moreover, we give a summary of LLM model evaluation, benchmark datasets/tasks, and a deep pro and cons analysis of the discussed LLM-GGA models. We also explore open problems and future directions in this exciting interdisciplinary research area of LLMs and graph analytics.},
   archive      = {J_TKDE},
-  author       = {Chunxu Zhang and Guodong Long and Zijian Zhang and Zhiwei Li and Honglei Zhang and Qiang Yang and Bo Yang},
-  doi          = {10.1109/TKDE.2025.3606643},
+  author       = {Wenbo Shang and Xin Huang},
+  doi          = {10.1109/TKDE.2025.3609877},
   journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Personalized recommendation models in federated settings: A survey},
+  title        = {A survey of large language models on generative graph analytics: Query, learning, and applications},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). COIN-GNN: Inductive spatial-temporal prediction for continuous distribution shifts via graph neural networks. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3606629'>www</a>)
+(2025). Adaptive hyper-box granulation with justifiable granularity for feature selection. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3617583'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Distribution shifts from external events and new entities can significantly compromise spatial-temporal prediction accuracy, potentially leading to severe outcomes like traffic accidents. Existing methods often fail under these conditions due to two main limitations: they focus on invariant patterns, missing the diversity required to capture the evolving dynamics of distribution shifts; they rely on often inaccessible future knowledge, such as spatial information of new entities, limiting their generalizability. To address these limitations, we formally define the problem of inductive spatial-temporal prediction under continuous distribution shifts and introduce the Contrastive Learning Based Inductive Graph Neural Network (COIN-GNN) as a solution. We develop a novel metric, Relation Importance (RI), to effectively select stable entities and distinct spatial relationships, forming an informative subgraph. Additionally, we construct an informative temporal memory buffer to store and review influential timestamps identified using influence functions. COIN-GNN then generates pseudo-observations for unstable and uninformative entities during these influential timestamps, simulating potential distribution shifts. By applying contrastive learning, the network learns stable and informative representations that can effectively counter distribution shifts without relying on future knowledge. Our extensive experiments on several real-world datasets-from traffic to weather-demonstrate COIN-GNN's superior performance across different domains without requiring future knowledge.},
+  abstract     = {Clustering as a fundamental technique in data mining and machine learning, aims to partition data into meaningful groups based on the inherent relationships among data. However, traditional clustering algorithms typically assume convex hyperspherical geometry of data, where the clusters have clearly defined boundaries and do not overlap. In contrast, real-world data often exhibits complex and non-convex geometries, which makes these assumptions ineffective and lead to inaccurate clustering results that fail to capture the intrinsic structure. To address this challenge, the paper proposes a novel granular clustering based on an enhanced granularity representation, which further refines the principle of justifiable granularity. By introducing a more precise and flexible hyper-box granulation mechanism, the method dynamically adapts to the topology of data, thereby improving clustering accuracy. By defining the degree of aggregation and discreteness between data points, the importance of attributes in the feature space is quantified, leading to the design of a novel hyper-box feature selection (HBFS) algorithm. This algorithm integrates the granular clustering principle to optimize the feature selection process, reducing the impact of redundant features and noise, thus improving clustering efficiency and interpretability. To validate the superiority and effectiveness of the proposed method, extensive experiments were conducted on fifteen publicly available datasets, comparing the performance of HBFS algorithm with classical and state-of-art feature selection methods. The results and the statistical significance tests show that HBFS significantly outperforms existing feature selection methods across various evaluation metrics.},
   archive      = {J_TKDE},
-  author       = {Jialun Zheng and Divya Saxena and Jiannong Cao},
-  doi          = {10.1109/TKDE.2025.3606629},
+  author       = {Wentao Li and Bowen Yang and Witold Pedrycz and Chao Zhang and Tao Zhan},
+  doi          = {10.1109/TKDE.2025.3617583},
   journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {COIN-GNN: Inductive spatial-temporal prediction for continuous distribution shifts via graph neural networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Financial time series prediction with multi-granularity graph augmented learning. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3607005'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Financial time series prediction is an important and challenging data mining task for quantitative investment. The inherent non-linearity, high noise, and susceptibility to various factors, such as macroeconomic conditions and market sentiment in the stock market, increase the difficulty of prediction. Existing financial industries mainly employ time series models or fundamental analysis methods for prediction. However, these methods fail to effectively capture the complex interrelationships between equity. In recent years, graph neural networks (GNNs), due to their powerful relational modeling capabilities, have been applied to stock prediction. However, with the advances of recent digital power, such as widely-used high-frequency trading techniques, existing graph-based methods still have shortcomings in effectively learning multi-granularity temporal relations as they cannot effectively learn the patterns in different frequencies, e.g., minute-level, daily, weekly, etc. Therefore, in this paper, we propose a multi-granularity graph augmented learning framework for interrelated financial time series forecasting. We first construct a temporal return relationship graph with multi-granularity financial time series, including weekly, daily, and minute-level, to comprehensively capture the dynamic relations of equities, including both medium-term trends and short-term fluctuations. Then, to further augment the node relations, we devise an attentional graph augment module to improve the graph learning with fundamental data, which are jointly optimized in the prediction layer. We conduct extensive empirical studies on multiple datasets from both the Chinese and U.S. stock markets. The results demonstrate that our proposed model consistently outperforms existing baseline methods across four key financial metrics, including ARR, ASR, CR, and IR, thereby validating its effectiveness and superiority. The model has been applied and empirically tested in commercial-grade trading platforms, further demonstrating its efficiency and robustness in real-world trading environments.},
-  archive      = {J_TKDE},
-  author       = {Peng Zhu and Yuante Li and Qinyuan Liu and Dawei Cheng and Changjun Jiang},
-  doi          = {10.1109/TKDE.2025.3607005},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Financial time series prediction with multi-granularity graph augmented learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A knowledge-guided pre-training temporal data analysis foundation model for urban computing. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3607026'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Temporal data analysis plays a pivotal role in applications such as weather forecasting, traffic flow management, energy consumption monitoring, and other areas of urban computing. In recent years, temporal data modeling has transitioned from traditional deep learning methods to pretrained models. However, existing approaches often exhibit significant task-specific limitations, requiring bespoke model designs and extensive domain data for training. To address these challenges, this study introduces KPT, a novel foundation model for temporal data analysis in urban computing. By leveraging temporal competitive attention and feature interaction attention mechanisms, KPT can effectively capture global context, integrate cross-variable features precisely, and achieve universal feature learning across diverse time series tasks. Additionally, the knowledge prompt network facilitates the deep fusion of crosslayer features via an intricate interaction mechanism, enabling the model to identify and align shared temporal patterns across different time series data. These patterns then transformed into knowledge prompts, thereby enhancing the universal feature learning capabilities of the pre-trained model. Experimental results demonstrate that KPT excels in four core temporal analysis tasks within urban computing, outperforming taskspecific models. This highlights KPT's ability to generalize across tasks and underscores its potential as a foundation model for multi-task scenarios in urban computing.},
-  archive      = {J_TKDE},
-  author       = {Haochen Shi and Shengdong Du and Yan Yang and Junbo Zhang and Tianrui Li and Yu Zheng},
-  doi          = {10.1109/TKDE.2025.3607026},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {A knowledge-guided pre-training temporal data analysis foundation model for urban computing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Balancing act: MDGAN for imbalanced tabular data synthesis. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3607862'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Addressing the persistent challenge of learning from imbalanced datasets is crucial in advancing machine learning applications. Standard machine learning algorithms typically assume that the input data is balanced, and they often struggle to effectively learn the distribution of minority class data when dealing with imbalanced data. To address this, our study designed an improved Generative Adversarial Networks (GANs) model, named MDGAN, for tabular sample synthesis to augment samples and balance the data distribution. MDGAN employs a multi-generator and multi-discriminator structure to capture non-connected subspace manifolds, thereby better fitting the complete data distribution. To enhance the diversity among the multiple generators, an exclusive loss among generators was designed, ensuring that each generator produces data of different modalities. Additionally, a contrastive loss was introduced to ensure that the generated samples better fit the minority class distribution and are separated from the majority class distribution, preventing blurred classification boundaries. Qualitative and quantitative tests were conducted on 25 real datasets, and the experimental results indicate that MDGAN outperforms traditional classical models and current advanced oversampling models.},
-  archive      = {J_TKDE},
-  author       = {Hongwei Ding and Nana Huang and Qi Tao and Jiaqi Liang and Xiaohui Cui},
-  doi          = {10.1109/TKDE.2025.3607862},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Balancing act: MDGAN for imbalanced tabular data synthesis},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient and effective adaptation of multimodal foundation models in sequential recommendation. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3608071'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal foundation models (MFMs) have revolutionized sequential recommender systems through advanced representation learning. While Parameter-efficient Fine-tuning (PEFT) is commonly used to adapt these models, studies often prioritize parameter efficiency, neglecting GPU memory and training speed. To address this, we introduced the IISAN framework, significantly enhancing efficiency. However, IISAN was limited to symmetrical MFMs and identical text and image encoders, preventing the use of state-of-the-art Large Language Models. To overcome this, we developed IISAN-Versa, a versatile plug-and-play architecture compatible with both symmetrical and asymmetrical MFMs. IISAN-Versa employs a Decoupled PEFT structure and utilizes both intra- and inter-modal adaptation. It effectively handles asymmetry through a simple yet effective combination of group layer-dropping and dimension transformation alignment. Our research demonstrates that IISAN-Versa effectively adapts large text encoders, and we further identify a scaling effect where larger text encoders generally perform better. IISAN-Versa also demonstrates strong versatility in our defined multimodal scenarios, which include raw titles and captions generated from images and videos. Additionally, IISAN-Versa achieved state-of-the-art performance on the MicroLens public benchmark. We will release our code and datasets to support future research.},
-  archive      = {J_TKDE},
-  author       = {Junchen Fu and Xuri Ge and Xin Xin and Alexandros Karatzoglou and Ioannis Arapakis and Kaiwen Zheng and Yongxin Ni and Joemon M. Jose Joemon},
-  doi          = {10.1109/TKDE.2025.3608071},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Efficient and effective adaptation of multimodal foundation models in sequential recommendation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). DiST: Efficient distributed spatio-temporal clustering with automatic parameter optimization. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3607744'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rapid advancements in positioning technologies, the volume of spatio-temporal data has grown significantly. Analyzing the spatial and temporal characteristics of these data is imperative for uncovering underlying associations and deriving insights into natural and societal mechanisms. Clustering is a widely utilized technique for data analysis, which groups data with similar characteristics for further investigation. However, current clustering methodologies usually inadequately address temporal properties that are vital in numerous scenarios. Additionally, traditional spatio-temporal clustering approaches are constrained to standalone environments, which struggle to handle large-scale spatio-temporal datasets. To this end, we introduce DiST, the first distributed spatio-temporal clustering method, which simultaneously considers both temporal and spatial proximity. DiST comprises data partition, local clustering, and global merging stages, along with an auto-tuning framework for parameter optimization. DiST addresses key challenges, including the integration of temporal and spatial attributes, managing data duplication across distributed nodes, and selecting appropriate parameters for diverse data characteristics. Comparative experiments on two real-world datasets validate the performance and scalability of DiST, demonstrating its effectiveness in spatio-temporal data analysis. The source codes are released at https://github.com/Spatio-Temporal-Lab/stdbscan.},
-  archive      = {J_TKDE},
-  author       = {Jiajun Li and Shuxiang Gou and Ruiyuan Li and Huajun He and Wenhui Li and Yu Zheng},
-  doi          = {10.1109/TKDE.2025.3607744},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {DiST: Efficient distributed spatio-temporal clustering with automatic parameter optimization},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Federated graph neural networks with equivalent hypergraph construction for traffic flow prediction. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3607895'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Traffic flow prediction is essential for intelligent transportation systems, yet privacy concerns and limited cross-regional data sharing hinder accurate modeling of global traffic patterns. This paper proposes a Federated Graph Neural Network with Equivalent Hypergraph (FGNNEH) framework to address these challenges by preserving privacy and enhancing cross-client collaboration. FGNNEH consists of two key stages. First, local traffic networks are transformed into high-dimensional hypernodes through an integrated process of backbone network extraction, kernel matrix analysis, and multilayer perceptrons. The backbone network extraction simplifies graph structures by isolating critical nodes and edges based on topological centrality, ensuring computational efficiency while retaining key spatial dependencies. Kernel matrix analysis captures complex nonlinear correlations among traffic flow features, including spatial-temporal dependencies and region-specific dynamics, enabling more effective feature representation. The multilayer perceptrons further fuse these features into robust hypernode embeddings that encapsulate both structural and traffic flow characteristics. Second, a global hypergraph construction mechanism is introduced to optimize inter-client collaboration. This mechanism employs an iterative performance feedback loop to dynamically add or remove edges between hypernodes, addressing the issue of lost inter-client connections and enabling effective cross-regional information exchange. Together, these components reconstruct a global traffic model that balances local privacy with holistic accuracy. Experiments on real-world traffic datasets, including PeMSD4, METR-LA and Guangzhou, demonstrate that FGNNEH outperforms existing methods in prediction accuracy, computational efficiency, and scalability.},
-  archive      = {J_TKDE},
-  author       = {Feng Wang and Yuhang Cao and Li Liu and Qi Kang and Jun Chen},
-  doi          = {10.1109/TKDE.2025.3607895},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Federated graph neural networks with equivalent hypergraph construction for traffic flow prediction},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SandwichSketch: A more accurate sketch for frequent object mining in data streams. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3607691'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Frequent object mining has gained considerable interest in the research community and can be split into frequent item mining and frequent set mining depending on the type of object. While existing sketch-based algorithms have made significant progress in addressing these two tasks concurrently, they also possess notable limitations. They either support only software platforms with low throughput or compromise accuracy for faster processing speed and better hardware compatibility. In this paper, we make a substantial stride towards supporting frequent object mining by designing SandwichSketch, which draws inspiration from sandwich making and proposes two techniques including the double fidelity enhancement and hierarchical hot locking to guarantee high fidelity on both two tasks. We implement SandwichSketch on three platforms (CPU, Redis, and FPGA) and show that it enhances accuracy by 38.4× and 5× for two tasks on three real-world datasets, respectively. Additionally, it supports a distributed measurement scenario with less than a 0.01% decrease in Average Relative Error (ARE) when the number of nodes increases from 1 to 16.},
-  archive      = {J_TKDE},
-  author       = {Zhuochen Fan and Ruixin Wang and Zihan Jiang and Ruwen Zhang and Tong Yang and Sha Wang and Yuhan Wu and Ruijie Miao and Kaicheng Yang and Bui Cui},
-  doi          = {10.1109/TKDE.2025.3607691},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
+  month        = {10},
   pages        = {1-15},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {SandwichSketch: A more accurate sketch for frequent object mining in data streams},
+  title        = {Adaptive hyper-box granulation with justifiable granularity for feature selection},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). KnobCF: Uncertainty-aware knob tuning. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3608030'>www</a>)
+(2025). Graph2Region: Efficient graph similarity learning with structure and scale restoration. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3617461'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The knob tuning aims to optimize database performance by searching for the most effective knob configuration under a certain workload. Existing works suffer from two significant problems. First, there exist multiple useless evaluations of knob tuning even with diverse searching methods because of the different sensitivities of knobs on a certain workload. Second, the single evaluation of knob configurations may bring overestimation or underestimation because of query performance uncertainty. To solve the above problems, we propose a query uncertainty-aware knob classifier, called KnobCF, to enhance knob tuning. Our method has three contributions: (1) We propose uncertainty-aware configuration estimation to improve the tuning process. (2) We design a few-shot uncertainty estimator that requires no extra data collection, ensuring high efficiency in practical tasks. (3) We provide a flexible framework that can be integrated into existing knob tuners and DBMSs without modification. Our experiments on four open-source benchmarks demonstrate that our method effectively reduces useless evaluations and improves the tuning results. Especially in TPCC, our method achieves competitive tuning results with only 60% to 70% time consumption compared to the full workload evaluations.},
+  abstract     = {Graph similarity is critical in graph-related tasks such as graph retrieval, where metrics like maximum common subgraph (MCS) and graph edit distance (GED) are commonly used. However, exact computations of these metrics are known to be NP-Hard. Recent neural network-based approaches approximate the similarity score in embedding spaces to alleviate the computational burden, but they either involve expensive pairwise node comparisons or fail to effectively utilize structural and scale information of graphs. To tackle these issues, we propose a novel geometric-based graph embedding method called Graph2Region (G2R). G2R represents nodes as closed regions and recovers their adjacency patterns within graphs in the embedding space. By incorporating the node features and adjacency patterns of graphs, G2R summarizes graph regions, i.e., graph embeddings, where the shape captures the underlying graph structures and the volume reflects the graph size. Consequently, the overlap between graph regions can serve as an approximation of MCS, signifying similar node regions and adjacency patterns. We further analyze the relationship between MCS and GED and propose using disjoint parts as a proxy for GED similarity. This analysis enables concurrent computation of MCS and GED, incorporating local and global structural information. Experimental evaluation highlights G2R's competitive performance in graph similarity computation. It achieves up to a 60.0% relative accuracy improvement over state-of-the-art methods in MCS similarity learning, while maintaining efficiency in both training and inference. Moreover, G2R showcases remarkable capability in predicting both MCS and GED similarities simultaneously, providing a holistic assessment of graph similarity.},
   archive      = {J_TKDE},
-  author       = {Yu Yan and Junfang Huang and Hongzhi Wang and Jian Geng and Kaixin Zhang and Tao Yu},
-  doi          = {10.1109/TKDE.2025.3608030},
+  author       = {Zhouyang Liu and Yixin Chen and Ning Liu and Jiezhong He and Dongsheng Li},
+  doi          = {10.1109/TKDE.2025.3617461},
   journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {KnobCF: Uncertainty-aware knob tuning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A survey and experimental study on neural trajectory-user linking models. <em>TKDE</em>, 1-17. (<a href='https://doi.org/10.1109/TKDE.2025.3607902'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The popularity of location-aware devices has boosted urban systems with massive volumes of anonymous trajectory data, presenting both challenges and opportunities for enhancing smart city initiatives through Trajectory-User Linking (TUL). Typically, TUL aims to match anonymous trajectories with specific users by exploring spatiotemporal patterns and insightful mobility behaviors. However, current TUL models face significant limitations due to their reliance on singular data sources and insufficient consideration of real-world scenarios. Furthermore, these models often lack evaluation in fair and comprehensive environments, hindering accurate assessment of their performance and applicability. This paper systematically investigates prevalent challenges encountered by existing TUL models, conducts a comprehensive review of state-of-the-art models, and proposes a structured framework that encompasses three core components: point-level representation learning, trajectory-level representation learning, and user linking. Through meticulously designed experiments, we examine the effectiveness and efficiency of leading TUL models in handling the complexities of real-world data, such as data imbalance, sparsity, new users, and scalability. This in-depth analysis uncovers limitations in existing methodologies and offers guidance for future advancements, contributing to the development of robust TUL solutions for urban mobility analysis and smart city technologies.},
-  archive      = {J_TKDE},
-  author       = {Hua Shi and Dan He and Fengmei Jin and Wen Hua and Jiwon Kim and Qilin Wang and Xiaofang Zhou},
-  doi          = {10.1109/TKDE.2025.3607902},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {A survey and experimental study on neural trajectory-user linking models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Document-level relation extraction with low entity redundancy feature map. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3607566'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Document-level relation extraction (RE) aims to determine the relations between entities scattered across different sentences through reading and reasoning. Existing methods use semantic segmentation to obtain global information among triples by analyzing entity-level matrices. However, complete document input may introduce certain interference, making it challenging to express the underlying relationships. To address this, we propose a novel approach introducing a low-entity redundancy feature map, achieved by removing certain entities. The proposed optimal path filtering (OPF) selects entity-related sentences using heuristic rules and formulates sentence selection as a set cover problem, solved via backtracking pruning. U-Net is then applied to obtain global features. Our experiment achieves state-of-the-art results on two common document-level RE datasets, Re-DocRED and CDR, outperforming previous methods. The code is available at https://github.com/dadadaray/document-RE-feature-map.},
-  archive      = {J_TKDE},
-  author       = {Rongen Yan and Depeng Dang and Keqin Peng and Yakun Li and Ye Tao and Lei Hou and Juanzi Li and Jie Tang},
-  doi          = {10.1109/TKDE.2025.3607566},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
+  month        = {10},
   pages        = {1-13},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Document-level relation extraction with low entity redundancy feature map},
+  title        = {Graph2Region: Efficient graph similarity learning with structure and scale restoration},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Accelerating spherical K-means clustering for large-scale sparse document data. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3608264'>www</a>)
+(2025). Learning accurate representation to nonstandard tensors via a mode-aware tucker network. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3617894'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper presents an accelerated spherical Kmeans clustering algorithm for large-scale and high-dimensional sparse document data sets. We design an algorithm working in an architecture-friendly manner (AFM), which is a way of suppressing performance-degradation factors such as the numbers of instructions, branch mispredictions, and cache misses in CPUs of a computer system. For the AFM operation, we leverage universal characteristics (UCs) of the data, which are skewed distributions on data relationships. The UCs indicate that the most part of multiplications for similarity calculations is executed on high-document-frequency terms and the most part of a similarity is obtained by the multiplications regarding a few high mean-feature values. To extract the foregoing specific region on terms and mean-feature values, we construct a mean-inverted index partitioned into three regions by two structural parameters. Our algorithm optimizes the parameters by minimizing the approximate number of the multiplications corresponding to the instructions based on our efficient pruning method, reduces conditional branches by sharing the index structure with all the objects, and keeps in the caches the frequently used data in the foregoing specific region. We experimentally demonstrate that our algorithm efficiently achieves superior speed performance in large-scale documents compared with algorithms using the stateof-the-art techniques},
+  abstract     = {A nonstandard tensor is frequently adopted to model a large-sale complex dynamic network. A Tensor Representation Learning (TRL) model enables extracting valuable knowledge form a dynamic network via learning low-dimensional representation of a target nonstandard tensor. Nevertheless, the representation learning ability of existing TRL models are limited for a nonstandard tensor due to its inability to accurately represent the specific nature of the nonstandard tensor, i.e., mode imbalance, high-dimension, and incompleteness. To address this issue, this study innovatively proposes a Mode-Aware Tucker Networkbased Tensor Representation Learning (MTN-TRL) model with three-fold ideas: a) designing a mode-aware Tucker network to accurately represent the imbalanced mode of a nonstandard tensor, b) building an MTN-based high-efficient TRL model that fuses both data density-oriented modeling principle and adaptive parameters learning scheme, and c) theoretically proving the MTN-TRL model's convergence. Extensive experiments on eight nonstandard tensors generating from real-world dynamic networks demonstrate that MTN-TRL significantly outperforms state-of-the-art models in terms of representation accuracy.},
   archive      = {J_TKDE},
-  author       = {Kazuo Aoyama and Kazumi Saito},
-  doi          = {10.1109/TKDE.2025.3608264},
+  author       = {Hao Wu and Qu Wang and Xin Luo and Zidong Wang},
+  doi          = {10.1109/TKDE.2025.3617894},
   journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
+  month        = {10},
   pages        = {1-14},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Accelerating spherical K-means clustering for large-scale sparse document data},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing robustness and generalization capability for multimodal recommender systems via sharpness-aware minimization. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3604242'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal recommender systems utilize a variety of information types to model user preferences and item properties, aiding in the discovery of items that align with user interests. Rich multimodal information alleviates inherent challenges in recommendation systems, such as data sparsity and cold start problems. However, multimodal information further introduces challenges in terms of robustness and generalization capability. Regarding robustness, multimodal information magnifies the risks associated with information adjustment and inherent noise, posing severe challenges to the stability of recommendation models. For generalization capability, multimodal recommender systems are more complex and difficult to train, making it harder for models to handle data beyond the training set, posing significant challenges to model generalization capability. In this paper, we analyze the shortcomings of existing robustness and generalization capability enhancement strategies in the multimodal recommendation field. We propose a sharpness-aware minimization strategy focused on batch data (BSAM), which effectively enhances the robustness and generalization capability of multimodal recommender systems without requiring extensive hyper-parameter tuning. Furthermore, we introduce a mixed loss variant strategy (BSAM+), which accelerates convergence and achieves remarkable performance improvement. We provide rigorous theoretical proofs and conduct experiments with nine advanced models on five widely used datasets to validate the superiority of our strategies. Moreover, our strategies can be integrated with existing robust training and data augmentation strategies to achieve further improvement, providing a superior training paradigm for multimodal recommendations.},
-  archive      = {J_TKDE},
-  author       = {Jinfeng Xu and Zheyu Chen and Jinze Li and Shuo Yang and Wei Wang and Xiping Hu and Raymond Chi-Wing Wong and Edith C. H. Ngai},
-  doi          = {10.1109/TKDE.2025.3604242},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Enhancing robustness and generalization capability for multimodal recommender systems via sharpness-aware minimization},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GOIO: Generative oversampling approach to class imbalance and overlap of tabular data. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3608246'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Class imbalance, which is common in real-world classification tasks, often leads to biased models favoring majority classes. Data oversampling is a widely used strategy to address this issue. However, traditional oversampling methods often generate incorrect or redundant instances when class overlap occurs, increasing decision boundary complexity. To this end, we propose a novel Generative Oversampling approach to addressing Class Imbalance and Overlap (GOIO) in the classification of tabular data. GOIO combines a Metric-Learning-based Variational Autoencoder (MLVAE) and a Conditional Latent Diffusion Model (CLDM) to handle class imbalance and overlap effectively. The MLVAE employs a triplet-center loss to the adverse effects of class overlap by transforming the data distribution into a more separable latent feature space. Following this, the CLDM is trained with class-center feature prompting and classifier-free guidance strategy to capture class-specific latent distributions accurately. Minority class samples are synthesized in the latent space using the CLDM and then reconstructed into the data space via the MLVAE decoder. Comprehensive experiments on 18 real-world and five synthetic datasets demonstrate that GOIO outperforms the state-of-the-art oversampling methods in F1-score, MCC, and Accuracy. Ablation studies further validate the effectiveness of the proposed contributions in addressing class imbalance and overlap.},
-  archive      = {J_TKDE},
-  author       = {Shiqi Ren and Jinliang Ding and Cuie Yang and Yiu-ming Cheung},
-  doi          = {10.1109/TKDE.2025.3608246},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {GOIO: Generative oversampling approach to class imbalance and overlap of tabular data},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Atomic fact decomposition helps attributed question answering. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3608716'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Attributed Question Answering (AQA) aims to provide both a trustworthy answer and a reliable attribution report for a given question. Retrieval is a widely adopted approach, including two general paradigms: Retrieval-Then-Read (RTR) and post-hoc retrieval. Recently, Large Language Models (LLMs) have shown remarkable proficiency, prompting growing interest in AQA among researchers. However, RTR-based AQA often suffers from irrelevant knowledge and rapidly changing information, even when LLMs are adopted, while post-hoc retrievalbased AQA struggles with comprehending long-form answers with complex logic, and precisely identifying the content needing revision and preserving the original intent. To tackle these problems, this paper proposes an Atomic fact decompositionbased Retrieval and Editing (ARE) framework, which decomposes the generated long-form answers into molecular clauses and atomic facts by the instruction-tuned LLMs. Notably, the instruction-tuned LLMs are fine-tuned using a well-constructed dataset, generated from large scale Knowledge Graphs (KGs). This process involves extracting one-hop neighbors from a given set of entities and transforming the result into coherent long-form text. Subsequently, ARE leverages a search engine to retrieve evidences related to atomic facts, inputting these evidences into an LLM-based verifier to determine whether the facts require expansion for re-retrieval or editing. Furthermore, the edited facts are backtracked into the original answer, with evidence aggregated based on the relationship between molecular clauses and atomic facts. Extensive evaluations demonstrate the superior performance of our proposed method over the state-of-the-arts on several datasets, with an additionally proposed new metric Attrp for evaluating the precision of evidence attribution.},
-  archive      = {J_TKDE},
-  author       = {Zhichao Yan and Jiapu Wang and Jiaoyan Chen and Xiaoli Li and Jiye Liang and Ru Li and Jeff Z. Pan},
-  doi          = {10.1109/TKDE.2025.3608716},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Atomic fact decomposition helps attributed question answering},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Large-scale storage location assignment via hierarchical reinforcement learning: A rank and assign approach. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3609173'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The storage location assignment problem for export containers (EC-SLAP) is crucial to the efficiency of cargo turnover in ports. Existing methods fall short in real-world applications due to the challenges of the unpredictability of container arrival sequences and the large-scale problem. We propose a new buffer-wise framework based on hierarchical reinforcement learning for EC-SLAP, aimed at optimizing container turnover efficiency. The framework comprises two processes: 1) Ranking Agent ranks containers in the buffer, reducing the uncertainty of random arrival sequences compared to the immediate assignment. 2) Assigning Agents assign storage locations in a two-step process by block and slot, diminishing the dimensionality of the large-scale discrete action space. We iteratively optimize agents by asynchronously obtaining rewards from the environment. In addition, to address the challenge of sparse rewards in long-sequence decision-making, we have developed a novel immediate reward function to enhance learning efficiency and accelerate convergence. We propose a new large-scale dataset, NZP-SLAD, collected from real-world historical data from the terminal operating system of Ningbo-Zhoushan Port and develop a realistic container terminal simulator. We conducted numerous offline simulations and tests with this dataset. The experimental results demonstrate that our proposed method achieves rapid convergence and significantly surpasses expert methods used in real-world production.},
-  archive      = {J_TKDE},
-  author       = {Weihang Pan and Minghao Chen and Binbin Lin and Yafei Wang and Xinkui Zhao and Xiaofei He and Jieping Ye},
-  doi          = {10.1109/TKDE.2025.3609173},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Large-scale storage location assignment via hierarchical reinforcement learning: A rank and assign approach},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Towards effective and transferable detection for multi-modal fake news in the social media stream. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3609045'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The rapid proliferation of multimedia fake news on social media has raised significant concerns in recent years. Existing studies on fake news detection predominantly adopt an instance-based paradigm, where the detector evaluates a single post to determine its veracity. Despite notable advancements achieved in this domain, we argue that the instance-based approach is misaligned with real-world deployment scenarios. In practice, detectors typically operate on servers that process incoming posts in temporal order, striving to assess their authenticity promptly. Instance-based detectors lack awareness of temporal information and contextual relationships between surrounding posts, therefore fail to capture long-range dependencies from the timeline. To bridge this gap, we introduce a more practical stream-based multi-modal fake news detection paradigm, which assumes that social media posts arrive continuously over time and allows the utilization of previously seen posts to aid in the classification of incoming ones. To enable effective and transferable fake news detection under this novel paradigm, we propose maintaining historical knowledge as a collection of incremental high-level forgery patterns. Based on this principle, we design a novel framework called Incremental Forgery Pattern Learning and Clues Refinement (IPLCR). IPLCR incrementally learns high-level forgery patterns as the stream evolves, leveraging this knowledge to improve the detection of newly arrived posts. At the core of IPLCR is the Incremental Forgery Pattern Bank (IPB), which dynamically summarizes historical posts into a set of latent forgery patterns. IPB is designed to continuously incorporate timely knowledge and actively discard obsolete information, even during inference. When a new post arrives, IPLCR retrieves the most relevant forgery pattern knowledge from IPB and refines the clues for fake news detection. The refined clues are subsequently incorporated into IPB to enrich its knowledge base. Extensive experiments validate IPLCR's effectiveness as a robust stream-based detector. Moreover, IPLCR addresses several critical issues relevant to industrial applications, including seamless context transfer and efficient model upgrading, making it a practical solution for realworld deployment.},
-  archive      = {J_TKDE},
-  author       = {Jingyi Xie and Jiawei Liu and Zheng-Jun Zha},
-  doi          = {10.1109/TKDE.2025.3609045},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Towards effective and transferable detection for multi-modal fake news in the social media stream},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Uncertain priors for graphical causal models: A multi-objective optimization perspective. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3608723'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Learning graphical causal models from observational data can effectively elucidate the underlying causal mechanism behind the variables. In the context of limited datasets, modelers often incorporate prior knowledge, which is assumed to be correct, as a penalty in single-objective optimization. However, this approach struggles to adapt complex and uncertain priors effectively. This paper introduces UpCM, which tackles the issue from a multi-objective optimization perspective. Instead of focusing exclusively on the DAG as the optimization goal, UpCM methodically evaluate the effect of uncertain priors on specific structures, merging data-driven and knowledge-driven objectives. Utilizing the MOEA/D framework, it achieve a balanced tradeoff between these objectives. Furthermore, since uncertain priors may introduce erroneous constraints, resulting in PDAGs lacking consistent extensions, the minimal non-consistent extension is explored. This extension, which separately incorporates positive and negative constraints, aims to approximate the true causality of the PDAGs. Experimental results demonstrate that UpCM achieves significant structural accuracy improvements compared to baseline methods. It reduces the SHD by 7.94%, 13.23%, and 12.8% relative to PC stable, GES, and MAHC, respectively, when incorporating uncertain priors. In downstream inference tasks, UpCM outperforms domain-expert knowledge graphs, owing to its ability to learn explainable causal relationships that balance data-driven evidence with prior knowledge},
-  archive      = {J_TKDE},
-  author       = {Zidong Wang and Xiaoguang Gao and Qingfu Zhang},
-  doi          = {10.1109/TKDE.2025.3608723},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Uncertain priors for graphical causal models: A multi-objective optimization perspective},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Flexible keyword-aware top-k route search. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3609302'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rise of Large Language Models (LLMs), tourists increasingly use it for route planning by entering keywords for attractions, instead of relying on traditional manual map services. LLMs provide generally reasonable suggestions, but often fail to generate optimal plans that account for detailed user requirements, given the vast number of potential POIs and possible routes based on POI combinations within a real-world road network. In this case, a route-planning API could serve as an external tool, accepting a sequence of keywords and returning the top-k best routes tailored to user requests. To address this need, this paper introduces the Keyword-Aware Top-k Routes (KATR) query that provides a more flexible and comprehensive semantic to route planning that caters to various user's preferences including flexible POI visiting order, flexible travel distance budget, and personalized POI ratings. Subsequently, we propose an explore-and-bound paradigm to efficiently process KATR queries by eliminating redundant candidates based on estimated score bounds from global to local levels. Extensive experiments demonstrate our approach's superior performance over existing methods across different scenarios.},
-  archive      = {J_TKDE},
-  author       = {Ziqiang Yu and Xiaohui Yu and Yueting Chen and Wei Liu and Anbang Song and Bolong Zheng},
-  doi          = {10.1109/TKDE.2025.3609302},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Flexible keyword-aware top-k route search},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Modeling temporal dependencies within the target for long-term time series forecasting. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3609415'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Long-term time series forecasting (LTSF) is a critical task across diverse domains. Despite significant advancements in LTSF research, we identify a performance bottleneck in existing LTSF methods caused by the inadequate modeling of Temporal Dependencies within the Target (TDT). To address this issue, we propose a novel and generic temporal modeling framework, Temporal Dependency Alignment (TDAlign), that equips existing LTSF methods with TDT learning capabilities. TDAlign introduces two key innovations: 1) a loss function that aligns the change values between adjacent time steps in the predictions with those in the target, ensuring consistency with variation patterns, and 2) an adaptive loss balancing strategy that seamlessly integrates the new loss function with existing LTSF methods without introducing additional learnable parameters. As a plug-and-play framework, TDAlign enhances existing methods with minimal computational overhead, featuring only linear time complexity and constant space complexity relative to the prediction length. Extensive experiments on six strong LTSF baselines across seven real-world datasets demonstrate the effectiveness and flexibility of TDAlign. On average, TDAlign reduces baseline prediction errors by 1.47% to 9.19% and change value errors by 4.57% to 15.78%, highlighting its substantial performance improvements.},
-  archive      = {J_TKDE},
-  author       = {Qi Xiong and Kai Tang and Minbo Ma and Ji Zhang and Jie Xu and Tianrui Li},
-  doi          = {10.1109/TKDE.2025.3609415},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Modeling temporal dependencies within the target for long-term time series forecasting},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Next-generation database interfaces: A survey of LLM-based text-to-SQL. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3609486'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Generating accurate SQL from users' natural language questions (text-to-SQL) remains a long-standing challenge due to the complexities involved in user question understanding, database schema comprehension, and SQL generation. Traditional text-to-SQL systems, which combine human engineering and deep neural networks, have made significant progress. Subsequently, pre-trained language models (PLMs) have been developed for text-to-SQL tasks, achieving promising results. However, as modern databases and user questions grow more complex, PLMs with a limited parameter size often produce incorrect SQL. This necessitates more sophisticated and tailored optimization methods, which restrict the application of PLM-based systems. Recently, large language models (LLMs) have shown significant capabilities in natural language understanding as model scale increases. Thus, integrating LLM-based solutions can bring unique opportunities, improvements, and solutions to text-to-SQL research. In this survey, we provide a comprehensive review of existing LLM-based text-to-SQL studies. Specifically, we offer a brief overview of the technical challenges and evolutionary process of text-to-SQL. Next, we introduce the datasets and metrics designed to evaluate text-to-SQL systems. Subsequently, we present a systematic analysis of recent advances in LLM-based text-to-SQL. Finally, we make a summary and discuss the remaining challenges in this field and suggest expectations for future research directions.},
-  archive      = {J_TKDE},
-  author       = {Zijin Hong and Zheng Yuan and Qinggang Zhang and Hao Chen and Junnan Dong and Feiran Huang and Xiao Huang},
-  doi          = {10.1109/TKDE.2025.3609486},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Next-generation database interfaces: A survey of LLM-based text-to-SQL},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A region-aware dual latent state mining framework for service recommendation in large-scale service networks. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3609553'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In large-scale service networks, Quality of Service (QoS) data is vital for tasks such as resource provisioning, real-time service recommendation, and user experience optimization; yet effectively predicting QoS often faces two key obstacles: data sparsity and highly imbalanced distributions (where most response times cluster near small values while a minority grow disproportionately large). Existing approaches typically rely on individual object (user/service) features, overlooking the phenomenon that users or services within the same region (physical or virtual) exhibit similar network states. This paper presents a Region-Aware Dual-Latent State Learning (R2SL) framework that tackles these challenges by explicitly modeling regional network latent states. Specifically, we propose to learn physical-region (city-level) and virtual-region (AS-level) latent states from historical QoS records through a joint EM-gradient descent strategy, thereby alleviating data sparsity. Furthermore, to mitigate label imbalance in QoS data, we introduce a Smooth Huber (S-Huber) loss function that appropriately reweights extreme errors, preventing the training process from being dominated by outliers. We also develop a sparsely activated mixture-of-experts module, dynamically routing regional latent features based on each prediction task's context. Experiments on real-world QoS datasets show that R2SL substantially outperforms state-of-the-art baselines, including the newly introduced FRLN. On throughput tasks, R2SL reduces MAE by an average of 18.8% and RMSE by 12.9%, while on response time tasks, it achieves 26.4% lower MAE and 24.2% lower RMSE. These findings indicate that dual-latent state modeling, combined with a distribution-aware loss, effectively captures complex regional patterns and mitigates long-tail label effects, making R2SL a powerful and scalable framework for large-scale QoS data mining in service networks.},
-  archive      = {J_TKDE},
-  author       = {Ziliang Wang and Xiaohong Zhang and Ze Shi Li and Meng Yan},
-  doi          = {10.1109/TKDE.2025.3609553},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {A region-aware dual latent state mining framework for service recommendation in large-scale service networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PRIME: A phishing detection framework with quantitative and fuzzy-based dual validation. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3609320'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Phishing attacks continue to pose a significant cybersecurity threat, especially as social engineering (SE) tactics become more contextually embedded and difficult to detect. To address the limitations of traditional rule-based framework and AI-driven classifiers, we propose PRIME, a phishing email evaluation framework that leverages large language models (LLMs) to assess manipulative intent across six interpretable criteria. Three risk scoring strategies, namely equal weighting, semantically weighted scoring, and fuzzy logic-based classification, are applied to aggregate the criterion scores into multi-level risk assessments. Qualitative comparisons with established frameworks demonstrate PRIME's broad coverage and conceptual soundness. Quantitative experiments validate its effectiveness, with the fuzzy-based method achieving perfect recall on a phishing-only dataset and consistent performance across multiple years. An ablation study, where each criterion is removed in turn, highlights the critical role of the Context and Content dimension in detecting both explicit and subtle SE cues. By separating LLMs interpretation from final decision-making, PRIME enhances transparency, robustness, and adaptability in phishing detection systems.},
-  archive      = {J_TKDE},
-  author       = {Yicun Tian and Youyang Qu and Ming Ding and Shigang Liu and Pei-Wei Tsai and Jun Zhang},
-  doi          = {10.1109/TKDE.2025.3609320},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {PRIME: A phishing detection framework with quantitative and fuzzy-based dual validation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Similarity and dissimilarity guided co-association matrix construction for ensemble clustering. <em>TKDE</em>, 1-23. (<a href='https://doi.org/10.1109/TKDE.2025.3608721'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Ensemble clustering aggregates multiple weak clusterings to achieve a more accurate and robust consensus result. The Co-Association matrix (CA matrix) based method is the mainstream ensemble clustering approach that constructs the similarity relationships between sample pairs according the weak clustering partitions to generate the final clustering result. However, the existing methods neglect that the quality of cluster is related to its size, i.e., a cluster with smaller size tends to higher accuracy. Moreover, they also do not consider the valuable dissimilarity information in the base clusterings which can reflect the varying importance of sample pairs that are completely disconnected. To this end, we propose the Similarity and Dissimilarity Guided Co-association matrix (SDGCA) to achieve ensemble clustering. First, we introduce normalized ensemble entropy to estimate the quality of each cluster, and construct a similarity matrix based on this estimation. Then, we employ the random walk to explore high-order proximity of base clusterings to construct a dissimilarity matrix. Finally, the adversarial relationship between the similarity matrix and the dissimilarity matrix is utilized to construct a promoted CA matrix for ensemble clustering. We compared our method with 13 state-of-the-art methods across 12 datasets, and the results demonstrated the superior clustering ability and robustness of the proposed approach. The code is available at https://github.com/xuz2019/SDGCA.},
-  archive      = {J_TKDE},
-  author       = {Xu Zhang and Yuheng Jia and Mofei Song and Ran Wang},
-  doi          = {10.1109/TKDE.2025.3608721},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-23},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Similarity and dissimilarity guided co-association matrix construction for ensemble clustering},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). CryptIF: Towards cloud-based IoT anomaly detection over encrypted feature streams. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3609407'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the proliferation and extensive use of the Internet of Things (IoT), it is vital to ensure the secure operation of IoT devices. However, due to limited computing power and lightweight system design, IoT devices often remain unprotected and are vulnerable to a myriad of attacks. Directly outsourcing the computationally intensive anomaly detection work to some middleboxes or cloud servers seems to solve this problem, but it can raise severe privacy concerns. To tackle these problems, we propose CryptIF, a scalable, privacy-preserving approach to detecting IoT anomalies from the cloud. By leveraging the Extended isolation forest (EIForest) and ciphertext comparison algorithms, CryptIF inspects features encrypted by fully homomorphic encryption (FHE) to detect various IoT anomalies. Furthermore, CryptIF parallelizes computing tasks by taking advantage of the single instruction, multiple data (SIMD) property of Cheon, Kim, Kim and Song (CKKS) homomorphic encryption to accelerate the detection process, thereby significantly increasing its scalability and operating efficiency. The evaluations demonstrate that CryptIF outperforms the state-of-the-art ciphertext-based anomaly detection approach in both detection accuracy and time efficiency. Additionally, CryptIF achieves comparable detection performance to plaintext-based IForest algorithms.},
-  archive      = {J_TKDE},
-  author       = {Teng Li and Zejian Lin and Yebo Feng and Chong Wang and Zhuo Ma and Bin Xiao and Jianfeng Ma and Yang Liu},
-  doi          = {10.1109/TKDE.2025.3609407},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {CryptIF: Towards cloud-based IoT anomaly detection over encrypted feature streams},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Orthogonal keys high precision and recall for mining database keys from inconsistent and incomplete relations. <em>TKDE</em>, 1-12. (<a href='https://doi.org/10.1109/TKDE.2025.3608680'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We introduce the notion of orthogonality between column sets as a means to eliminate accidental keys during data driven key discovery. This becomes particularly important for inconsistent relations, where keys that almost hold need to be considered as well. Here we employ the classic $g_{3}$ metric for dirtiness, which can be applied to a variety of key semantics for incomplete relations, although the difficulty in computing the metric under different semantics varies greatly. Efficient algorithms for orthogonal mining and measuring dirtiness are proposed and evaluated on a real-world database. Additionally, we propose the notion of partial key, which turns out to be particularly useful for dealing with incomplete data in a key discovery context.},
-  archive      = {J_TKDE},
-  author       = {Henning Koehler and Sebastian Link},
-  doi          = {10.1109/TKDE.2025.3608680},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Orthogonal keys high precision and recall for mining database keys from inconsistent and incomplete relations},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Adaptive information fusion-based concept drift learning for evolving multiple data streams. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3610184'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Concept drift arises from unpredictable data distribution shifts, degrading model performance. In evolving multiple data streams, these drifts pose greater challenges due to dynamic changes and uncertain inter-stream correlations, demanding robust accuracy and generalization. To address this issue, in this article, we propose a novel multiple data stream learning method, called the adaptive information fusion-based concept drift learning (AIF-CD) method, to adaptively handle multiple data streams with heterogeneous feature spaces and complex drift situations. First, a real-time learning method with a cooperation scheme is proposed to handle multiple data streams. Second, an information fusion-based augmentation process is designed to help enhance the learning efficiency of each stream. Next, a drift severity identification-based adaptation strategy and a process to selectively use the previous timestamps' data are introduced to enhance learning robustness in both synchronous and asynchronous scenarios. Moreover, a detailed runtime complexity and theoretical analysis further explains the learning efficiency of our method. Our key innovation combines real-time adaptation with theoretical guarantees for complex, evolving multi-stream learning. The experiment results in various scenarios under synchronous and asynchronous settings show that the proposed method is more efficient than other benchmark methods.},
-  archive      = {J_TKDE},
-  author       = {Kun Wang and Jie Lu and Anjin Liu},
-  doi          = {10.1109/TKDE.2025.3610184},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Adaptive information fusion-based concept drift learning for evolving multiple data streams},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Empowering explainable artificial intelligence through case-based reasoning: A comprehensive exploration. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3609825'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Artificial intelligence (AI) advancements have significantly broadened its application across various sectors, simultaneously elevating concerns regarding the transparency and understandability of AI-driven decisions. Addressing these concerns, this paper embarks on an exploratory journey into Case-Based Reasoning (CBR) and Explainable Artificial Intelligence (XAI), critically examining their convergence and the potential this synergy holds for demystifying the decision-making processes of AI systems. We employ the concept of Explainable CBR (XCBR) system that leverages CBR to acquire case-based explanations or generate explanations using CBR methodologies to enhance AI decision explainability. Though the literature has few surveys on XCBR, recognizing its potential necessitates a detailed exploration of the principles for developing effective XCBR systems. We present a cycle-aligned perspective that examines how explainability functions can be embedded throughout the classical CBR phases: Retrieve, Reuse, Revise, and Retain. Drawing from a comprehensive literature review, we propose a set of six functional goals that reflect key explainability needs. These goals are mapped to six thematic categories, forming the basis of a structured XCBR taxonomy. The discussion extends to the broader challenges and prospects facing the CBR-XAI arena, setting the stage for future research directions. This paper offers design guidance and conceptual grounding for future XCBR research and system development.},
-  archive      = {J_TKDE},
-  author       = {Preeja Pradeep and Marta Caro-Martínez and Anjana Wijekoon},
-  doi          = {10.1109/TKDE.2025.3609825},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Empowering explainable artificial intelligence through case-based reasoning: A comprehensive exploration},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). AEFS: Adaptive early feature selection for deep recommender systems. <em>TKDE</em>, 1-12. (<a href='https://doi.org/10.1109/TKDE.2025.3610351'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The quality of features plays an important role in the performance of recommender systems. Recognizing this, feature selection has emerged as a crucial technique in refining recommender systems. Recent advancements leveraging Automated Machine Learning (AutoML) has drawn significant attention, particularly in two main categories: early feature selection and late feature selection, differentiated by whether the selection occurs before or after the embedding layer. The early feature selection selects a fixed subset of features and retrains the model, while the late feature selection, known as adaptive feature selection, dynamically adjusts feature choices for each data instance, recognizing the variability in feature significance. Although adaptive feature selection has shown remarkable improvements in performance, its main drawback lies in its post-embedding layer feature selection. This process often becomes cumbersome and inefficient in large-scale recommender systems with billions of ID-type features, leading to a highly sparse and parameter-heavy embedding layer. To overcome this, we introduce Adaptive Early Feature Selection (AEFS), a very simple method that not only adaptively selects informative features for each instance, but also significantly reduces the activated parameters of the embedding layer. AEFS employs a dual-model architecture, encompassing an auxiliary model dedicated to feature selection and a main model responsible for prediction. To ensure effective alignment between these two models, we incorporate two collaborative training loss constraints. Our extensive experiments on three benchmark datasets validate the efficiency and effectiveness of our approach. Notably, AEFS matches the performance of current state-of-theart Adaptive Late Feature Selection methods while achieving a significant reduction of 37. 5% in the activated parameters of the embedding layer. We believe that this work opens up new possibilities for feature selection.},
-  archive      = {J_TKDE},
-  author       = {Fan Hu and Gaofeng Lu and Jun Chen and Channan Guo and Yuekui Yang and Xirong Li},
-  doi          = {10.1109/TKDE.2025.3610351},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {AEFS: Adaptive early feature selection for deep recommender systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GDiffMAE: Guided diffusion enhanced mask graph AutoEncoder for recommendation. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3611270'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Despite advancements using graph neural networks (GNNs) to capture complex user-item interactions, challenges persist due to data sparsity and noise. To address these, self-supervised learning (SSL) methods, particularly recent generative approaches, have gained attention due to their ability to augment graph data without requiring complex view constructions and unstable negative sampling. However, existing generative SSL solutions often focus on structural rather than semantic (refer to collaborative signals in recommendation scenarios) reconstruction, limiting their potential as comprehensive recommender. This paper explores the untapped potential of generative SSL for graph-based recommender systems. We highlight two critical challenges: firstly, designing effective diffusion mechanisms to enhance semantic information and collaborative signals while avoiding optimization biases; and secondly, developing adaptive structural masking mechanisms within graph diffusion to improve overall model performance. Motivated by these challenges, we propose a novel approach: the Guided Diffusion enhanced Mask graph AutoEncoder (GDiffMAE). GDiffMAE integrates an adaptive mask encoder for structural reconstruction and a guided diffusion model for semantic reconstruction, addressing the limitations of current methods. Experimental results on diverse datasets demonstrate that GDiffMAE consistently outperforms powerful baseline models, particularly in handling noisy data scenarios. By enhancing both structural and semantic dimensions through guided diffusion, our model advances the state-of-the-art in graph-based recommender systems.},
-  archive      = {J_TKDE},
-  author       = {Lei Zhang and Zihao Chen and Wuji Zhang and Hongke Zhao and Likang Wu},
-  doi          = {10.1109/TKDE.2025.3611270},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {GDiffMAE: Guided diffusion enhanced mask graph AutoEncoder for recommendation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Numerical data collection under input-discriminative local differential privacy. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3610932'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Input-discriminative local differential privacy (ID-LDP) protects user data with a different range of values, which improves the utility of the estimated data compared to traditional LDP. However, the existing ID-LDP methods are used for categorical data and cannot be directly applied to numerical data. In this paper, we propose a numerical data collection (NDC) framework with ID-LDP to provide discriminative protection for the data with different inputs. This framework uses a piecewise mechanism to divide the numerical data into several segments and designs two perturbation methods to minimize the mean value of numerical data based on values submitted by users. We first create an NDC-UE method that encodes the raw data into a binary vector. This method sets the uploaded data bit as 1 and the rest as zero and perturbs each bit with a given probability. We further propose an NDC-GRR algorithm to perturb the numerical data with an optimal privacy budget. To reduce the complexity of NDC-GRR, we apply a greedy algorithm-based spanner to shorten the computation time and improve the accuracy. Theoretical analysis proves that our schemes satisfy the definition of ID-LDP. Experimental results based on two real-world datasets and a synthetic dataset show that the proposed schemes have less mean square error compared with the benchmarks.},
-  archive      = {J_TKDE},
-  author       = {Youwen Zhu and Shibo Dai and Pengfei Zhang and Xiqi Kuang},
-  doi          = {10.1109/TKDE.2025.3610932},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Numerical data collection under input-discriminative local differential privacy},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A multi-objective explanation framework for graph neural networks. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3611170'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph Neural Networks (GNNs) hold promise in various application domains, but their limited explainability hinders widespread adoption, impacting customer satisfaction and loyalty. This issue intensifies when addressing diverse explanation needs of different user groups. Current GNN explanation models focus on a single objective, neglecting varied and potential conflicting user requirements, resulting in suboptimal outcomes. Moreover, existing models prioritize explanation objectives during multi-objective explanations, disrupting the intrinsic hierarchical structures and distant relationships within the graphs, further diminishing their effectiveness. To tackle these challenges, this paper introduces a novel multi-objective explanatory framework with hierarchical structure attribution for GNNs, termed HM-Explainer. This framework constructs a multi-objective explanation generation module based on Pareto theory to balance different and potentially conflicting explanatory objectives. Additionally, to embed hierarchical information into explanations, HM-Explainer designs node-level and cluster-level attribution modules to analyze the impact of input data on GNN decisions hierarchically. Furthermore, a self-attention mechanism is integrated into the node-level attribution module to account for the influence of distant neighbors. Ultimately, the efficacy of HM-Explainer is validated across multiple datasets for different GNN models through experimentation.},
-  archive      = {J_TKDE},
-  author       = {Yibowen Zhao and Yonghui Xu and Di Wang and Yixin Zhang and Qingzhong Li and Lizhen Cui},
-  doi          = {10.1109/TKDE.2025.3611170},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {A multi-objective explanation framework for graph neural networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MSC-DOLES: Multi-view subspace clustering in diverse orthogonal latent embedding spaces. <em>TKDE</em>, 1-12. (<a href='https://doi.org/10.1109/TKDE.2025.3610659'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In the domain of Multi-view Subspace Clustering (MSC) in Latent Embedding Space (LES), existing methods aim to capture and leverage critical multi-view information by mapping it into a low-dimensional LES. However, several aspects can be further improved: (i) Fusion Strategy: Existing methods adopt either early fusion or late fusion to integrate multi-view information, limiting the effectiveness of the fusion. (ii) Diversity: Current methods often overlook the inherent diversity in the multi-view data by focusing on a single LES. (iii) Efficiency: LES-based methods exhibit high computational complexity, with cubic time and quadratic space requirements based on the number of samples. To address these issues, we propose a novel framework called MSC-DOLES (Multi-view Subspace Clustering in Diverse Orthogonal Latent Embedding Spaces), a novel framework designed to tackle these challenges. MSC-DOLES incorporates a two-stage fusion approach that generates and learns from multiple LES to maximize cross-view diversity. Orthogonality constraints on individual LES ensure view-internal diversity, resulting in a set of Diverse Orthogonal Latent Embedding Spaces (DOLES). The DOLES are then fused into a consensus anchor graph using learnable anchors. The final clustering is induced by partitioning the obtained graph without pre-processing. We develop an eight-step optimization algorithm for MSC-DOLES, which exhibits nearly linear time and space complexities relative to the number of samples. Extensive experiments demonstrate the superiority of MSC-DOLES over state-of-the-art methods.},
-  archive      = {J_TKDE},
-  author       = {Yuan Fang and Geping Yang and Ruichu Cai and Yiyang Yang and Zhiguo Gong and Can Chen and Zhifeng Hao},
-  doi          = {10.1109/TKDE.2025.3610659},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {MSC-DOLES: Multi-view subspace clustering in diverse orthogonal latent embedding spaces},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Contrastive and dual adversarial representation learning for multi-view clustering. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3611368'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multi-View Clustering (MVC) has gained increasing attention due to its ability to effectively leverage the complementary information of multi-view data. Despite the success of existing MVC methods in many real-world applications, they often overlook the discrepancy of view-specific latent distribution and struggle to ensure the completeness of the multi-view data. To address these challenges and harness the powerful feature extraction capability of deep networks, we propose a novel Contrastive and Dual Adversarial Representation Learning method for Multi-view Clustering, termed as CDARL, to solve multi-view clustering problems with both complete and incomplete multi-view data. Specifically, CDARL employs alternating adversarial and contrastive learning to align the view-specific representations, driving them into the same semantic latent space to minimize the discrepancy in view-specific distributions. In addition, a consensus latent representation is learned by an adaptive fusion block that integrates information from multiple views. The consensus representation is further refined through adversarial learning modeling the transformation of the standard Gaussian distribution to the original data distribution. Moreover, the proposed method incorporates an imputation strategy designed to handle the incomplete multi-view data clustering task. This strategy utilizes both reconstructed samples and cross-view neighbors to impute missing views from the latent space and the original space, thereby preserving clustering information, which ensures the quality and feasibility of the imputed samples. Experimental results on six widely used datasets have verified the competitiveness of the proposed CDARL method against state-of-the-art methods in MVC problems with complete and incomplete multi-view data. Code is available at https://github.com/xywy220/CDARL-MVC.},
-  archive      = {J_TKDE},
-  author       = {Yanwanyu Xi and Chang Tang and Jun-Jie Huang and Xingchen Hu and Yuanyuan Liu and Xinwang Liu},
-  doi          = {10.1109/TKDE.2025.3611368},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Contrastive and dual adversarial representation learning for multi-view clustering},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Diversifying graph augmentation for learning to solve graph optimization problems. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3611663'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recently, many machine learning-based approaches that effectively solve graph optimization problems have been proposed. The graph optimization problem is the problem that aims to optimize (maximize or minimize) a quantity that is associated with a graph, such as the Minimum Vertex Cover (MVC) and Maximum Independent Set (MIS) problems. These approaches are usually trained on graphs randomly generated with graph generators or sampled from existing datasets. However, we observe that such training graphs lead to poor testing performance if the testing graphs are not generated analogously, i.e., the generalizability of the models trained on those randomly generated training graphs is very limited. To address this critical issue, in this paper, we propose a new framework, named Learning with Iterative Graph Diversification (LIGD), and formulate a new research problem, named Diverse Graph Modification Problem (DGMP), that iteratively generate diversified training graphs and train the models that solve graph optimization problems to improve their performance significantly. We propose three approaches to solve DGMP by considering both the performance of the machine learning approaches and the structural properties of the training graphs. In addition, we study a practical case of DGMP, named Diverse Graph Modification Problem with XOR Diversity (DGMP-XDiv), which considers an XOR-based diversity function. We propose a polynomial-time algorithm named Structure Diversifying Modification on Edge Score (DMES) to obtain the optimal solution. We also propose DMES with Efficiency-Boosting Strategies (DMES-EB) to enhance the efficiency of DMES significantly. Experimental results on well-known problems show that our proposed approaches significantly boost the performance of both supervised and reinforcement learning approaches. They produce near-optimal results and significantly outperform the baseline approaches, such as graph augmentation and diffusion-based approaches.},
-  archive      = {J_TKDE},
-  author       = {Bay-Yuan Hsu and Chen-Hsu Yang and Chia-Hsun Lu and Ming-Yi Chang and Lo-Yao Yeh and Chih-Ya Shen},
-  doi          = {10.1109/TKDE.2025.3611663},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Diversifying graph augmentation for learning to solve graph optimization problems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PiTruss community search for multilayer graphs. <em>TKDE</em>, 1-15. (<a href='https://doi.org/10.1109/TKDE.2025.3610998'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Community search on multilayer graphs has significant applications in fields such as bioinformatics, social network analysis, and financial fraud detection, offering deeper insights compared to traditional community search on single-layer graphs. However, existing approaches often suffer from several key limitations, including inefficiency and a lack of flexibility in accommodating query requirements. To address these challenges, we investigate the problem of community search over large multilayer graphs. Specifically, we introduce a novel multilayer community model called PivotTruss Community (PiTC) with provably nice structural guarantees. We formalize the PiTC search (PiTCS) problem, which aims to efficiently identify personalized PiTCs for a given query vertex. To solve the PiTCS problem, we propose an efficient algorithm and design an elegant index to accelerate the search process. In addition, we propose a parameter recommendation method to improve the usability of PiTCS. To further optimize performance, we introduce a method to compact the index by making a trade-off between search time and index size. Extensive experiments on real-world datasets demonstrate the effectiveness and efficiency of our proposed algorithms.},
-  archive      = {J_TKDE},
-  author       = {Run-An Wang and Zhaonian Zou and Dandan Liu and Xudong Liu},
-  doi          = {10.1109/TKDE.2025.3610998},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {PiTruss community search for multilayer graphs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Long-term urban flow prediction against data distribution shift: A causal perspective. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3612033'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The demand for more precise and timely urban resource allocation and management has driven the extension of urban flow prediction from short-term to long-term horizons. As the time scale expands, the issue of urban flow distribution shift becomes increasingly prominent due to various impact factors, such as weather, events, city changes, etc. Traditionally, comprehensively analyzing and addressing the causal relationships underlying the distribution shift caused by these factors has been challenging. In this paper, we propose that these impact factors can be partitioned in two major types, i.e., context factors and structural factors. We then present a decomposition-based model for long-term urban flow prediction from a causal perspective, named DeCau, which can discriminate between the two types of factors for effectively solving the problem of urban flow distribution shift. First, we employ a decomposition module to decompose urban flow into seasonal part and trend part. The seasonal part contains high frequency irregular variations caused by context factors. We advise a shared distribution estimator to approximate the unavailable prior distributions of context factors, and then apply causal intervention to mitigate the confounding impact of context factors. The distribution shift in the trend part is induced by structural factors. We design a dual causal dependency extractor to model the causality between POIs distribution and urban flow, and then eliminate spurious correlations through causal adjustment. Finally, we design an end-to-end framework for long-term urban flow prediction by combining the embeddings from two parts, enabling the model to generalize to unseen distribution. Extensive experimental results demonstrate DeCau outperforms state-of-the-art baselines.},
-  archive      = {J_TKDE},
-  author       = {Yuting Liu and Qiang Zhou and Hanzhe Li and Fuzhen Zhuang and Jingjing Gu},
-  doi          = {10.1109/TKDE.2025.3612033},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Long-term urban flow prediction against data distribution shift: A causal perspective},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Structural clustering for bipartite graphs. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3612290'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Bipartite graphs are widely used in many real-world applications, where discovering clusters is crucial for understanding their underlying structure. However, most existing clustering methods for bipartite graphs enforce the assignment of all vertices to clusters, often neglecting the important roles of outliers and hubs. To address this limitation, we plan to extend the structural clustering model from unipartite to bipartite graphs. This extension is non-trivial due to the lack of common neighbors in bipartite graphs, which renders traditional similarity measures less effective. Recognizing that similarity is key to structural clustering, we resort to butterflies—the fundamental building blocks of bipartite graphs—to define a more effective similarity measure. Building on this, we further propose a novel structural clustering model, SBC, tailored for bipartite graphs. To enable clustering under this model, we develop efficient online and index-based methods, along with a dynamic maintenance method to accommodate graph updates over time. Extensive experiments on real-world bipartite graphs demonstrate that: (1) The SBC model greatly enhances clustering quality, achieving higher modularity while effectively identifying outliers and hubs. (2) Our proposed clustering methods are highly scalable, enabling the processing of graphs with up to 12.2 million edges within 2 seconds},
-  archive      = {J_TKDE},
-  author       = {Mingyu Yang and Wentao Li and Wei Wang and Dong Wen and Min Gao and Lu Qin},
-  doi          = {10.1109/TKDE.2025.3612290},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Structural clustering for bipartite graphs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Towards balanced denoising: Building a structural and textual denoiser for table understanding. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3612217'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recently, large language models (LLMs) have made remarkable progress in table understanding, yet they remain vulnerable to the structural noise (SN) and the textual noise (TN). Existing methods usually employ biased denoising strategies such as structural matching and textual filtering, or overzealous denoising strategies such as introducing supplementary tasks like text-to-SQL and table-to-text to reduce these two types of noise. However, these methods either neglect one type of noise or introduce substantial external noise. Therefore, how to simultaneously mitigate the structural and textual noise without introducing extra noise and improve the performance of LLMs in table understanding is still an unresolved issue. In this paper, we rethink the bottlenecks in table understanding from the perspective of noise reduction and propose a novel dual-denoiser-reasoner model, called TabDDR, for balanced and effective denoising. Specially, our model consists of a structural-and-textual denoiser and a task-adaptive reasoner. The former removes two types of noise via triplet alignment and planning extraction to seek an interpretable balance between breaking structural barriers and preserving structural characteristics, eliminating textual noise and retaining maximal information; the latter ensures a simple but effective reasoning process which can adapt to various downstream tasks. To highlight the presence and impact of the structural and textual noise, we construct the WTQ-SN and WTQ-TN datasets based on the WikiTableQuestion (WTQ) dataset. Extensive experiments on these self-constructed datasets and two other public datasets demonstrate that our proposed method performs better than state-of-the-art baselines.},
-  archive      = {J_TKDE},
-  author       = {Shu-Xun Yang and Xian-Ling Mao and Yu-Ming Shang and Heyan Huang},
-  doi          = {10.1109/TKDE.2025.3612217},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Towards balanced denoising: Building a structural and textual denoiser for table understanding},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Answering subset query over multi-attribute data streams using hyper-USS. <em>TKDE</em>, 1-18. (<a href='https://doi.org/10.1109/TKDE.2025.3611502'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Approximate queries offer an efficient means of analyzing massive data streams under acceptable errors. Among these, subset queries over multiple attributes are common in many real-world applications. While sketches offer promising approximate solutions for massive data streams, efficiently supporting subset queries over multiple statistical attributes remains a significant challenge. To address this, we propose Hyper-USS, a novel sketching solution that accurately and efficiently supports subset queries over data streams involving multiple statistical attributes. With Joint Variance Optimization, Hyper-USS provides unbiased estimation and optimizes estimation variance jointly, addressing the challenge of accurately estimating multiple statistical attributes in the sketch design. The algorithm records the information of keys and all attributes in one sketch, ensuring high insertion efficiency. Furthermore, its three speed-optimized versions are introduced to handle the growing number of statistical attributes in data streams. Experimental results show that Hyper-USS and its three speed-optimized versions consistently surpass state-of-the-art methods that support subset queries in both estimation accuracy and insertion throughput. Specifically, Hyper-USS improves accuracy by at least 38%, while the algorithm and its three speed-optimized versions achieve throughput improvements of up to $31.90\times$, $45.31\times$, $49.21\times$, and $58.03\times$, respectively.},
-  archive      = {J_TKDE},
-  author       = {Ce Zheng and Zhouran Shi and Ruijie Miao and Wenpu Liu and Tong Yang and Bin Cui and Steve Uhlig},
-  doi          = {10.1109/TKDE.2025.3611502},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Answering subset query over multi-attribute data streams using hyper-USS},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Unsupervised entity alignment based on personalized discriminative rooted tree. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3607765'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Entity Alignment (EA) is to link potential equivalent entities across different knowledge graphs (KGs). Most existing EA methods are supervised as they require the supervision of seed alignments, i.e., manually specified aligned entity pairs. Very recently, several EA studies have made some attempts to get rid of seed alignments. Despite achieving preliminary progress, they still suffer two limitations: (1) The entity embeddings produced by their GNN-like encoders lack personalization since some of the aggregation subpaths are shared between different entities. (2) They cannot fully alleviate the distribution distortion issue between candidate KGs due to the absence of supervised signals. In this work, we propose a novel unsupervised entity alignment approach called UNEA to address the above two issues. First, we parametrically sample a tree neighborhood rooted at each entity, and accordingly develop a tree attention aggregation mechanism to extract a personalized embedding for each entity. Second, we introduce an auxiliary task of maximizing the mutual information between the input and the output of the KG encoder, which serves as a regularization to prevent the distribution distortion. Extensive experiments show that our UNEA achieves a new state-of-the-art for the unsupervised EA task, and can even outperform many existing supervised EA baselines.},
-  archive      = {J_TKDE},
-  author       = {Yaming Yang and Zhe Wang and Ziyu Guan and Wei Zhao and Xinyan Huang and Xiaofei He},
-  doi          = {10.1109/TKDE.2025.3607765},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Unsupervised entity alignment based on personalized discriminative rooted tree},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Online billboard auction with social welfare maximization. <em>TKDE</em>, 1-12. (<a href='https://doi.org/10.1109/TKDE.2025.3613148'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Outdoor billboard advertising has proven effective for commercial promotions, attracting potential customers, and boosting product sales. Auction serves as a popular method for leasing billboard usage rights, enabling a seller to rent billboards to winning users for predefined periods according to their bids. An effective auction algorithm is of great significance to maximize the efficiency of the billboard ecosystem. In contrast to a rich literature on Internet advertising auctions, well-crafted algorithms tailored for outdoor billboard auctions remain rare. In this work, we investigate the problem of outdoor billboard auctions, in the practical setting where bids are received and processed on the fly. Our goal is to maximize social welfare, namely the total benefits of auction participants, including the billboard service provider and the bidding users. To this end, we first formulate the billboard social welfare maximization problem into an Integer Linear Problem (ILP), and then reformulate the ILP into a compact form with a reduced size of constraints (at the cost of involving exponentially many primal variables), based on which we derive the dual problem. Furthermore, we design a dual oracle to handle the exponentially many dual constraints, avoiding exhaustive enumeration. We present a primal-dual online algorithm with an incentive-compatible pricing mechanism. Theoretical analysis proves the individual rationality, incentive compatibility, and computational efficiency of our online algorithm. Extensive experimental results show that the online algorithm is both effective and efficient, and achieves a good competitive ratio.},
-  archive      = {J_TKDE},
-  author       = {Hao Huang and Mingxin Wang and Mengqi Shan and Zhigao Zheng and Ting Gan and Jiawei Jiang and Zongpeng Li},
-  doi          = {10.1109/TKDE.2025.3613148},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Online billboard auction with social welfare maximization},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Preference aware item cold-start recommendation with hierarchical item alignment. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3613263'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Existing cold-start recommendation methods typically use item-level alignment strategies to align the content feature and collaborative feature of warm items during model training. However, these methods are less effective for cold items with low semantic similarity to the warm items when they first appear in the test stage, as they have no historical interactions to obtain the collaborative feature. In this paper, we propose a preference aware recommendation (PARec) model with hierarchical item alignment to solve the item cold-start issue. Our approach exploits user preference from historical records to achieve group-level alignment with item content feature, enhancing recommendation performance. Specifically, our hierarchical item alignment strategy improves recommendations for both high and low similarity cold items by using item-level alignment for high similarity cold items and introducing group-level alignment for low similarity cold items. Low similarity cold items can be successfully recommended through relationships among items, captured by our group-level alignment, based on their co-occurrence possibilities and semantic similarities. For model training, a hierarchical contrastive objective function is presented to balance the performance of warm and cold items, achieving better overall performance. Extensive experiments demonstrate the effectiveness of our method, with results showing its superiority compared to state-of-the-art approaches.},
-  archive      = {J_TKDE},
-  author       = {Wenbo Wang and Ben Chen and Bingquan Liu and Lili Shan and Chengjie Sun and Qian Chen and Feiyang Xiao and Jian Guan},
-  doi          = {10.1109/TKDE.2025.3613263},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Preference aware item cold-start recommendation with hierarchical item alignment},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FELEMN: Toward efficient feature-level machine unlearning for exact privacy protection. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3613659'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Data privacy protection legislation around the world has increasingly enforced the “right to be forgotten” regulation, generating a surge in research interest in machine unlearning (MU), which aims to remove the impact of training data from machine learning models upon receiving revocation requests from data owners. There exist two major challenges for the performance of MU: the execution efficiency and the inference interference. The former requires minimizing the computational overhead for each execution of the MU mechanism, while the latter calls for reducing the execution frequency to minimize interference with normal inference services. Nowadays most MU studies focus on the sample-level unlearning setting, leaving the other paramount feature-level setting under-explored. Adapting these existing techniques to the latter turns out to be non-trivial. The only known feature-level work achieves an approximate unlearning guarantee, but suffers from degraded model accuracy and still leaves the inference interference challenge unsolved. We are therefore motivated to propose FELEMN, the first FEature-Level Exact Machine uNlearning method that overcomes both of the above-mentioned hurdles. For the MU execution efficiency challenge, we explore the impact of different feature partitioning strategies on the preservation of semantic relationships for maintaining model accuracy and MU efficiency. For the inference interference challenge, we propose two batching mechanisms to combine as many individual unlearning requests to be processed together as possible, while avoiding potential privacy issues coming with falsely postponing unlearning requests, which is grounded on theoretical analysis. Experiments on five real datasets show that our FELEMN outperforms up-to-date competitors with up to $3\times$ speedup for each MU execution, and 50% runtime reduction by mitigating inference interference.},
-  archive      = {J_TKDE},
-  author       = {Zhigang Wang and Yizhen Yu and Mingxin Li and Jian Lou and Ning Wang and Yu Gu and Shen Su and Yuan Liu and Hui Jiang and Zhihong Tian},
-  doi          = {10.1109/TKDE.2025.3613659},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {FELEMN: Toward efficient feature-level machine unlearning for exact privacy protection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LBF-VQA: Towards language bias-free visual question answering with multi-space collaborative debiasing. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3613421'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Visual Question Answering (VQA), aimed at improving AI-driven interactions and solving complex visual-linguistic tasks, has increasingly garnered attention as a pivotal research domain in both academic and industrial spheres. Despite progress in VQA, current studies still suffer from the challenge of language bias posed by spurious semantic correlations and minority class collapse, leading to semantic ambiguities and distribution shifts that hinder robust performance across challenging scenarios. To address these challenges, we propose a robust multi-space collaborative debiasing paradigm, termed “LBF-VQA” which systematically leverages multi-space collaborative debiasing strategies to achieve language bias-free VQA, encompassing both Euclidean space debiasing (ESD) and Spherical space debiasing (SSD). By strategically introducing bias-examples and their corresponding counter-examples, the ESD strategy focuses on uncovering hidden prior correlations and the complex interactions between modality and semantics within the Euclidean space. Benefiting from the infinite contrastive and distribution debiasing learning mechanisms, the SSD strategy is devoted to effectively preventing the collapse of minority classes while enhancing the manifold representations of instance de-bias and distribution de-dependence in the Spherical space. Furthermore, we meticulously constructed a specialized medical dataset intentionally embedded with deliberate language bias to comprehensively examine the negative effects of language bias on medical VQA systems. Extensive experiments on multiple general and medical VQA benchmarks consistently verify the effectiveness and generalizability of our LBF-VQA in handling various complex VQA scenarios than state-of-the-art baselines.},
-  archive      = {J_TKDE},
-  author       = {Yishu Liu and Huanjia Zhu and Bingzhi Chen and Xiaozhao Fang and Guangming Lu and Shengli Xie},
-  doi          = {10.1109/TKDE.2025.3613421},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {LBF-VQA: Towards language bias-free visual question answering with multi-space collaborative debiasing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Cross-task collaborative meta-learning for cold-start recommendations. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3613366'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Optimizer-based meta-learning, specifically model-agnostic meta-learning (MAML), has emerged as a powerful tool for tackling the cold-start recommendation problem. In these meta-learning-based methods, recommendations for individual users are typically treated as separate tasks and learned independently. However, this task-by-task learning paradigm presents several observable limitations. First, learning one task at a time ignores inter-task correlations, i.e., collaborative signals, which limits the meta-model's receptive field and prevents it from leveraging valuable shared information, ultimately leading to subpar performance. Second, the meta-model is susceptible to the task distribution, i.e., the varied preference distributions among different users, which in turn introduces biases and inconsistencies, resulting in a less robust model that may perform well on certain user groups while underperforming on others. In this paper, we explore the correlations among different tasks in cold-start recommendations and develop a novel strategy termed cross-task collaborative meta-learning (CCML). More specifically, we propose a collaborative task sampling module designed to mitigate the adverse impact of irrelevant tasks during meta-model learning. This module adaptively identifies tasks that are both similar and beneficial to the primary task, ensuring that the meta-model learns from relevant and supportive information. Additionally, to harness collaborative information across relevant tasks, we introduce a bi-level cross-task meta-training strategy. This strategy leverages multi-task learning to capture collaborative knowledge simultaneously and enhance user profiling with pertinent information. Extensive experiments on four public benchmark datasets demonstrate the advantages of CCML over many state-of-the-art cold-start recommendation methods. Our results show significant improvements in recommendation accuracy and robustness, highlighting the potential of cross-task collaboration in enhancing meta-learning-based recommender systems. The code is available at https://anonymous.4open.science/r/CCML-F064.},
-  archive      = {J_TKDE},
-  author       = {Yantong Du and Rui Chen and Qiaoyu Tan and Qilong Han and Shenjie Wang and Xiangyu Zhao},
-  doi          = {10.1109/TKDE.2025.3613366},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Cross-task collaborative meta-learning for cold-start recommendations},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient distributed graph neural network training with source chunking and moving aggregation. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3613787'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph neural networks (GNNs) are effective models for analyzing graph-structured data, but encounter challenges when training on large distributed graphs. Existing GNN training frameworks use sampling parallelism and historical embedding methods to support distributed training and enhance efficiency. However, these methods suffer from issues like stale historical embeddings, imbalanced communication messages, and redundant storage and computation costs. In this paper, we present Emma, a distributed GNN training framework that incorporates source node centric chunking for frequent updates of embeddings and balanced communication, as well as a moving message aggregation technique to boost training efficiency and reduce storage costs. Experimental results show that Emma significantly enhances training efficiency by reducing computation and communication overhead, leading to a notable speedup while maintaining convergence accuracy compared to state-of-the-art distributed GNN training methods.},
-  archive      = {J_TKDE},
-  author       = {Wenjie Huang and Tongya Zheng and Rui Wang and Tongtian Zhu and Bingde Hu and Shuibing He and Mingli Song and Xinyu Wang and Sai Wu and Chun Chen},
-  doi          = {10.1109/TKDE.2025.3613787},
-  journal      = {IEEE Transactions on Knowledge and Data Engineering},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Knowl. Data Eng.},
-  title        = {Efficient distributed graph neural network training with source chunking and moving aggregation},
+  title        = {Learning accurate representation to nonstandard tensors via a mode-aware tucker network},
   year         = {2025},
 }
 </textarea>

@@ -25,256 +25,130 @@
 </head>
 <body>
 
-<h2 id="taslpro">TASLPRO - 14</h2>
+<h2 id="taslpro">TASLPRO - 7</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Multi-domain dialogue state tracking with large language model rationale and disentangled domain-slot attention. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3604650'>www</a>)
+(2025). Robust detection of partially spoofed audio using semantic-aware inconsistency learning. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617241'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Dialogue state tracking (DST) is a core component of task-oriented dialogue systems. A significant challenge in this task is multi-domain DST, which involves considering dialogue states across multiple domains. Recent advancements have addressed this challenge by exploring various approaches to model the correlations among different domains with domain-slot-specific representations derived from dialogue context and aggregating domain-slot queries using sorts of attention mechanisms. However, existing models still exhibit deficiencies in handling these correlations, either by overlooking or overestimating them. In this paper, we propose a multi-domain DST framework with large language model (LLM) rationale and Disentangled Domain-Slot Attention to address this challenge. Specifically, we introduce a multi-domain aware instruction prompt to guide the LLM to generate the corresponding rationale to dialogue history, realizing these correlations along with the robustness against sorts of variations in spoken conversation. Additionally, we present a novel mechanism, termed Disentangled Domain-Slot Attention. This mechanism enables a dynamic, flexible, and context-dependent manner to extract domain-slot-specific information by disentangling domain-slot queries within the attention mechanism. Through extensive experiments on the MultiWOZ 2.0 and MultiWOZ 2.4 datasets, the results present that the proposed approaches improve the performance of multi-domain DST. In addition, we conducted empirical analyses to comprehensively understand the effectiveness of our proposed approaches.},
+  abstract = {Partially spoofed technology subtly manipulates interested parts in an audio to alter the original meaning, with its fine-grained forgery posing great challenges to existing fully spoofed detection countermeasures. Existing partially spoofed audio detection methods have shown excellent effectiveness in distinguishing clean and long-duration spoofed segments. However, their robustness remains limited when malicious attackers manipulate a finer-grained segment (e.g., only a single phoneme) and employ post-processing operations to reduce detectable discontinuities. To face these challenges, we propose the Semantic-Aware Inconsistency Learning (SAIL) method for robust frame-level detection. It incorporates a robust augmentation module (RAM), a Multi-Scale Semantic Inconsistency Learning (MSIL) module, and a Semantic Separation Module (SSM) to learn robust discriminative features by capturing multi-segment discontinuities and semantic inconsistencies introduced by partially spoofed manipulations. Specifically, the RAM is applied to suppress the model's erroneous attention to additional interference caused by post-processing operations on the subtle spoofed artifacts. Then, the MSIL module is proposed to extract semantic inconsistency features after manipulations, using attention mechanisms at different scales to highlight forgery differences at various granularities. Finally, the SSM is devised to refine these features for robust frame-level detection, utilizing contrastive learning to ensure a clear distinction of inconsistent semantic features in the feature space. Extensive experiments are conducted on three public datasets, including ASVS2019PS, HAD, and LAV-DF, showing that our proposed method achieves the best performance under various noisy scenarios.},
   archive  = {J},
-  author   = {Longfei Yang and Jiyi Li and Sheng Li and Takahiro Shinozaki},
-  doi      = {10.1109/TASLPRO.2025.3604650},
+  author   = {Jialu Cao and Hui Tian and Peng Tian and Haizhou Li and Jianzong Wang},
+  doi      = {10.1109/TASLPRO.2025.3617241},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
+  month    = {10},
   pages    = {1-14},
-  title    = {Multi-domain dialogue state tracking with large language model rationale and disentangled domain-slot attention},
+  title    = {Robust detection of partially spoofed audio using semantic-aware inconsistency learning},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Exploring self-supervised audio models for generalized anomalous sound detection. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3606200'>www</a>)
+(2025). VPVID: Variance-preserving velocity-guided interpolant diffusion for speech enhancement and dereverberation. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617254'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Machine anomalous sound detection (ASD) is a valuable technique across various applications. However, its generalization performance is often limited due to challenges in data collection and the complexity of acoustic environments. Inspired by the success of large pre-trained models in numerous fields, this paper introduces a robust ASD model that leverages self-supervised pre-trained models trained on large-scale speech and audio datasets. Although there are inconsistencies between the pre-training datasets and the ASD task, our findings indicate that pre-training still provides substantial benefits for ASD. To mitigate overfitting and retain learned knowledge when fine-tuning with limited data, we explore Fully-Connected Low-Rank Adaptation (LoRA) as an alternative to full fine-tuning. Additionally, we propose a Machine-aware Group Adapter module, which enables the model to capture differences between various machines within a unified framework, thereby enhancing the generalization performance of ASD systems. To address the challenge of missing attribute labels, we design a novel objective function that dynamically clusters unattributed data using vector quantization and optimizes through a dual-level contrastive learning loss. The proposed methods are evaluated on all benchmark datasets, including the DCASE 2020-2024 five ASD challenges, and the experimental results show significant improvements of our new approach and demonstrate the effectiveness of our proposed strategies.},
+  abstract = {Diffusion-based generative models for speech enhancement often face challenges in balancing performance and inference efficiency. To address this, we propose a model of Variance-Preserving Velocity-guided Interpolant Diffusion (VPVID), a novel framework that achieves competitive enhancement performance while maintaining high computational efficiency. Our approach incorporates a scalable interpolant framework that reconstructs the reverse diffusion process using velocity terms and state variables. Unlike traditional score-matching objectives, we employ a velocity-based loss function that directly estimates the instantaneous rate of change, providing more stable training and efficient data distribution learning. We further combine stochastic diffusion sampling with probability flow ordinary differential equations, augmented by an adaptive corrector mechanism, creating a flexible sampling strategy that balances quality and efficiency. Extensive experiments on VoiceBank-DEMAND and WSJ0-CHiME3 datasets demonstrate that VPVID significantly outperforms existing baselines across multiple metrics, particularly excelling in noise separation with SI-SIR improvement up to 4.7 dB. Furthermore, VPVID achieves up to 7× faster inference than existing diffusion-based methods while maintaining excellent speech enhancement and dereverberation performance.},
   archive  = {J},
-  author   = {Bing Han and Anbai Jiang and Xinhu Zheng and Wei-Qiang Zhang and Jia Liu and Pingyi Fan and Yanmin Qian},
-  doi      = {10.1109/TASLPRO.2025.3606200},
+  author   = {Gang Yang and Yangjie Wei and Ben Niu and Yuqiao Wang},
+  doi      = {10.1109/TASLPRO.2025.3617254},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-15},
-  title    = {Exploring self-supervised audio models for generalized anomalous sound detection},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Exploring cross-utterance speech contexts for conformer-transducer speech recognition systems. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3606235'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {This paper investigates four types of cross-utterance speech contexts modeling approaches for streaming and non-streaming Conformer-Transformer (C-T) ASR systems: i) input audio feature concatenation; ii) cross-utterance Encoder embeddings concatenation; iii) cross-utterance Encoder embeddings pooling projection; or iv) a novel chunk-based approach applied to C-T models for the first time. An efficient batch training scheme is proposed for contextual C-Ts that uses spliced speech utterances within each minibatch to minimize the synchronization overhead while preserving the sequential order of cross-utterance speech contexts. Experiments are conducted on four benchmark speech datasets across three languages: the English GigaSpeech and Mandarin Wenetspeech corpora used in contextual C-T models pre-training; and the English DementiaBank Pitt and Cantonese JCCOCC MoCA elderly speech datasets used in domain fine-tuning. The best performing contextual C-T systems consistently outperform their respective baselines using no cross-utterance speech contexts in pre-training and fine-tuning stages with statistically significant average word error rate (WER) or character error rate (CER) reductions up to 0.9%, 1.1%, 0.51%, and 0.98% absolute (6.0%, 5.4%, 2.0%, and 3.4% relative) on the four tasks respectively. Their performance competitiveness against Wav2vec2.0-Conformer, XLSR-128, and Whisper models highlights the potential benefit of incorporating cross-utterance speech contexts into current speech foundation models.},
-  archive  = {J},
-  author   = {Mingyu Cui and Mengzhe Geng and Jiajun Deng and Chengxi Deng and Jiawen Kang and Shujie Hu and Guinan Li and Tianzi Wang and Zhaoqing Li and Xie Chen and Xunying Liu},
-  doi      = {10.1109/TASLPRO.2025.3606235},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
+  month    = {10},
   pages    = {1-14},
-  title    = {Exploring cross-utterance speech contexts for conformer-transducer speech recognition systems},
+  title    = {VPVID: Variance-preserving velocity-guided interpolant diffusion for speech enhancement and dereverberation},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Determined blind source separation with sinkhorn divergence-based optimal allocation of the source power. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3609150'>www</a>)
+(2025). MASKSER: A robust emotion recognition model based on voice data and noisy transcripts. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617234'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Blind source separation (BSS) refers to the process of recovering multiple source signals from observations recorded by an array of sensors. Common methods performing BSS, including independent vector analysis (IVA), and independent low-rank matrix analysis (ILRMA), typically rely on second-order models to capture the statistical independence of source signals for separation. However, these methods generally do not account for the implicit structural information across frequency bands, which may lead to model mismatches between the assumed source distributions and the distributions of the separated source signals estimated from the observed mixtures. To tackle these limitations, this paper shows that conventional methods such as IVA and ILRMA can easily be leveraged by the Sinkhorn divergence, incorporating an optimal transport (OT) framework to adaptively adjust the estimated power spectral density (PSD) of the sources. This allows for the recovery of the source PSD while modeling the inter-band signal dependence and reallocating spectral power across frequency bands. As a result, enhanced versions of these methods are developed, integrating a Sinkhorn iterative scheme into their standard implementations. Extensive simulations demonstrate that the proposed methods consistently enhance BSS performance.},
+  abstract = {In recent years, emotion recognition has become an increasingly vital tool for enhancing customer service applications. Especially in telephonic interactions, detecting emotions accurately is crucial for improving human-computer interaction experiences. Despite significant advances in deep learning, current emotion recognition systems that integrate voice and text face challenges such as noise interference in transcripts and inadequate multimodal fusion, which hinder precise emotion detection. In this paper, we introduce MASKSER, a methodology that combines vocal signals and transcribed text in a robust manner. Our approach involves pretraining noisy transcripts with ChatGPT-4 using few-shot learning based on techniques such as masking and sentiment word replacement. This enhances emotion discernment significantly by leveraging the strengths of both modalities. To address the challenges posed by noisy data, we propose a mask-based noise generation model and use it to pretrain the transcript-based model, which helps mitigate inaccuracies. Additionally, we introduce a novel loss function that evaluates the Kullback-Leibler divergence between text and voice encoder distributions, ensuring balanced contributions from both modalities. Experiments are conducted in both English and Korean to validate the language independence and robustness of the proposed approach in different linguistic contexts. The results demonstrate substantial improvements in emotion recognition capabilities, achieving high performance metrics while reducing reliance on costly speech recognition resources.},
   archive  = {J},
-  author   = {Jianyu Wang and Shanzheng Guan and Nicolas Dobigeon and Jingdong Chen},
-  doi      = {10.1109/TASLPRO.2025.3609150},
+  author   = {Yeo-Chan Yoon and Sookyun Kim},
+  doi      = {10.1109/TASLPRO.2025.3617234},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
+  month    = {10},
   pages    = {1-14},
-  title    = {Determined blind source separation with sinkhorn divergence-based optimal allocation of the source power},
+  title    = {MASKSER: A robust emotion recognition model based on voice data and noisy transcripts},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Multi-perspective inductive answering of subjective questions on products. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3608961'>www</a>)
+(2025). Cross-lingual embedding clustering for hierarchical softmax in low-resource multilingual speech recognition. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617233'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {This article focuses on the topic of answering subjective questions about products by multi-perspective induction. Unlike traditional factoid QA, whose answers are unique and can be extracted directly from the text, the answers to subjective QA are not a simple text span, but involve various viewpoints and facts. A good answer should incorporate both objective facts and subjective opinions from various sources. Facts often involve multiple fine-grained product aspects, some of which are implicit and not explicitly mentioned. The opinions are complex, hidden, and scattered. Questions may be vague, sometimes requiring commonsense inference. This challenging task has wide-ranging applications, but limited research has studied it. To address this problem, we propose a new model to answer subjective questions in an inductive way. Given a question, we first retrieve the missing but necessary commonsense knowledge to supplement its implicit aspects and hidden relations, to better understand the ask points and users' needs. We then parse and build an aspect tree from the factual data, such as product descriptions, to incorporate all aspects and their parent-child relations. Based on the tree, we infer the question-related aspects from the retrieved content. For each aspect, we aggregate its scattered opinions and objective facts to yield a summary. To deal with diverse types adaptively, we construct an aspect-controlled generation model. Each aspect summary would add a prefix that is learned through a trainable gating mechanism and fused into a multi-aspect decoder to derive a comprehensive answer. The whole model with a retriever and generator is jointly trained by a reinforced framework. Extensive experiments are conducted on our created large-scale SupQA dataset, and the results show the effectiveness of our approach.},
+  abstract = {We present a novel approach centered on the decoding stage of Automatic Speech Recognition (ASR) that enhances multilingual performance, especially for low-resource languages. It utilizes a cross-lingual embedding clustering method to construct a hierarchical Softmax (H-Softmax) decoder, which enables similar tokens across different languages to share similar decoder representations. It addresses the limitations of the previous Huffman-based H-Softmax method, which relied on shallow features in token similarity assessments. Through experiments on a downsampled dataset of 15 languages, we demonstrate the effectiveness of our approach in improving low-resource multilingual ASR accuracy.},
   archive  = {J},
-  author   = {Jianxing Yu and Yufeng Zhang and Hanjiang Lai and Wenqing Chen and Yanghui Rao and Jian Yin},
-  doi      = {10.1109/TASLPRO.2025.3608961},
+  author   = {Zhengdong Yang and Qianying Liu and Sheng Li and Fei Cheng and Chenhui Chu},
+  doi      = {10.1109/TASLPRO.2025.3617233},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-15},
-  title    = {Multi-perspective inductive answering of subjective questions on products},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). AWaveFormer: Audio wavelet transformer network for generalized audio deepfake detection. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611229'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Rapid advancements in speech synthesis technology have made it easier to produce realistic synthetic speech, which poses serious threats to public privacy and security. Recent studies have investigated pre-trained models for feature extraction and adopted advanced architectures, including convolutional and graph neural networks, for deepfake detection. Although these methods improve detection performance to some extent, their generalization and robustness still face challenges. To address this issue, in this paper, we propose a forgery detection method based on the fusion of dual pre-trained features and an optimized Transformer architecture. Specifically, we use a cross-attention mechanism to fuse the audio features extracted from pre-trained Wav2vec 2.0 and WavLM, and replace the token mixer in the traditional Transformer architecture with wavelet transform and multi-scale pooling operations. By combining dual pre-trained features, we extract more comprehensive and discriminative features while optimizing the Transformer architecture, which not only reduces time complexity but also enhances detection performance. We conducted experiments on several datasets, and the results show that our model achieves impressive detection performance with EERs of 0.13%, 2.33%, 3.63%, 10.25%, 5.15%, and 0.21% on the ASVspoof 2019LA, ASVspoof 2021LA, ASVspoof 2021DF, In-the-Wild, Fake-or-Real, and ASVspoof 2015LA evaluation datasets, respectively.},
-  archive  = {J},
-  author   = {Rui Wang and Zirui Chen and Bo Wang and Zhongjie Ba and Kui Ren},
-  doi      = {10.1109/TASLPRO.2025.3611229},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
+  month    = {10},
   pages    = {1-13},
-  title    = {AWaveFormer: Audio wavelet transformer network for generalized audio deepfake detection},
+  title    = {Cross-lingual embedding clustering for hierarchical softmax in low-resource multilingual speech recognition},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Exploring visual information enhancement for multimodal customized opinion generation. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611282'>www</a>)
+(2025). Exploring width-adaptive transformers for automatic speech recognition. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617232'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {We present a novel task called customized opinion generation, which aims to generate a customized review that a specific user would give to a product that has not been yet reviewed by the user. This task can assist users in writing a high-quality review of an unreviewed product. Furthermore, the customized review of a product is useful to reduce the time it takes for users to learn about the product, which ideally should be tailored to the reader. To this end, we study the customized opinion generation task under the approach of pretrained language models. In particular, we first introduce a visual information enhancement module. In this module, we generate pseudo input words and image captions based on the images, and we introduce various prompt strategies to fully exploit the semantics of the model input text. Besides, we design an interaction model to explicitly capture the influence of input text and product images during customized opinion generation. Experimental results indicate that the proposed model can generate customized reviews, which in many cases are high quality. The results also show that the proposed model gives better results compared to several strong baselines. To our knowledge, we are the first to generate a customized review for an unreviewed product.},
+  abstract = {Transformer architectures with multiple heads with wide attention dimensions (widths) are over-parameterized. This leads to parameter redundancy and high correlations across attention heads with only a minority of heads actively contributing to the task. In this study, we quantitatively analyze the parameter redundancy by comparing the linear centered kernel alignment (CKA) similarity of learned representations extracted across attention layers and heads. Observing that widening the network can exacerbate these correlations, leading to representations with high CKA similarity, we question the design choice with uniform attention widths across all attention heads or layers and investigate how this choice impacts correlations across heads in the same layer. We design a width-adaptive training method to dynamically tune the model to keep the main contributing widths in each attention head and layer while no knowledge distillation or re-training process is needed. Experimental results on both English and Dutch corpora show our adaptive training method effectively reduces cross-head correlations and improves accuracy in automatic speech recognition. We also demonstrate the effectiveness of width-adaptive training by finetuning the OWSM speech foundation model.},
   archive  = {J},
-  author   = {Minjie Qiang and Zhongqing Wang and Guodong Zhou},
-  doi      = {10.1109/TASLPRO.2025.3611282},
+  author   = {Pu Wang and Hugo Van Hamme},
+  doi      = {10.1109/TASLPRO.2025.3617232},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-12},
-  title    = {Exploring visual information enhancement for multimodal customized opinion generation},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A steered response power method for sound source localization with generic acoustic models. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611789'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {The steered response power (SRP) method is one of the most popular approaches for acoustic source localization with microphone arrays. It is often based on simplifying acoustic assumptions, such as an omnidirectional sound source in the far field of the microphone array(s), free field propagation, and spatially uncorrelated noise. In reality, however, there are many acoustic scenarios where such assumptions are violated. This paper proposes a generalization of the conventional SRP method that allows to apply generic acoustic models for localization with arbitrary microphone constellations. These models may consider, for instance, level differences in distributed microphones, the directivity of sources and receivers, or acoustic shadowing effects. Moreover, also measured acoustic transfer functions may be applied as acoustic model. We show that the delay-and-sum beamforming of the conventional SRP is not optimal for localization with generic acoustic models. To this end, we propose a generalized SRP beamforming criterion that considers generic acoustic models and spatially correlated noise, and derive an optimal SRP beamformer. Furthermore, we propose and analyze appropriate frequency weightings. Unlike the conventional SRP, the proposed method can jointly exploit observed level and time differences between the microphone signals to infer the source location. Realistic simulations of three different microphone setups with speech under various noise conditions indicate that the proposed method can significantly reduce the mean localization error compared to the conventional SRP and, in particular, a reduction of more than 60% can be archived in noisy conditions.},
-  archive  = {J},
-  author   = {Kaspar Müller and Markus Buck and Simon Doclo and Jan Østergaard and Tobias Wolff},
-  doi      = {10.1109/TASLPRO.2025.3611789},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
+  month    = {10},
   pages    = {1-16},
-  title    = {A steered response power method for sound source localization with generic acoustic models},
+  title    = {Exploring width-adaptive transformers for automatic speech recognition},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). MSFPLC: Trend-aware multiscale stack fusion packet loss concealment for linear prediction-based speech codecs. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611813'>www</a>)
+(2025). Enhance the saliency: Synthesize text noise samples for few-shot out-of-distribution intent detection. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617229'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {This paper proposes a Packet Loss Concealment (PLC) method for speech codecs based on linear predictive coding, utilizing attention mechanisms and Long Short-Term Memory networks to reconstruct the Linear Predictive Coefficients. A novel multiscale trend-aware multi-head self-attention network is designed to capture the long-term global correlations and short-term local dependencies of speech signals across different time scales, enabling effective global and local receptive fields during the reconstruction of lost packets. A new multiscale Stack Fusion method is introduced to further enhance reconstruction performance. It assigns higher weights to speech frames closer to the lost packets and lower weights to distant ones, enabling effective integration of global and local features across various time scales. Additionally, a tailored loss function is proposed to guide model training by balancing the numerical precision, structural periodicity, and perceptual fidelity. Objective and subjective evaluations consistently indicate that the proposed method sustains robust performance across varying packet loss rates and speaker variability, underscoring its enhanced generalization. The alignment of improvements across multiple evaluation metrics demonstrates that these advancements are architectural rather than dataset-specific. Notably, the proposed method reveals that integrating codec-internal parameters with multiscale temporal modeling provides intrinsic robustness than post-processing PLC methods. Furthermore, the proposed model requires only 0.16 Giga Multiply-Accumulate Operations per second, underscoring its strong potential for high-quality real-time speech communication applications.},
+  abstract = {Few-shot out-of-distribution (OOD) detection is a critical yet under explored scenario in dialogue systems. Existing data augmentation techniques either incorporate external data or generate hard negative samples within the feature space, which often leads to issues such as introducing knowledge bias, failing to align with the discrete nature of text, and inadequately addressing the problem of under-representation caused by in-distribution (IND) overfitting. Motivated by the recent findings that enhancing intra-class discrimination can mitigate IND overfitting, and the class of a sentence is predominantly determined by salient words, we propose EnSal, a method designed to strengthen the features of salient words in order to enhance the correlation between intent features and their corresponding classes. To achieve this, we jointly train k-nearest neighbors contrastive learning (KCL) alongside cross-entropy (CE) to improve the intra-class discrimination of intent features. Salient words are identified using both the k-nearest neighbors condition and the prediction probability condition. These words are retained as templates for synthesizing text samples, thereby avoiding the introduction of knowledge bias while preserving consistency with the discrete characteristics of text. Furthermore, we treat the synthetic text as noise samples associated with their corresponding training samples and perform denoising autoencoder (DAE) training on the augmented dataset. This process enables the identification of common and significant class features, effectively alleviating the under-representation issue. Extensive experimental results demonstrate that our method surpasses the current state-of-the-art in few-shot OOD intent detection. The code and models will be made available at https://github.com/wangpei2009job/EnSal.},
   archive  = {J},
-  author   = {Haohan Shi and Xiyu Shi and Safak Dogan},
-  doi      = {10.1109/TASLPRO.2025.3611813},
+  author   = {Pei Wang and Jiangtao Ren},
+  doi      = {10.1109/TASLPRO.2025.3617229},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-15},
-  title    = {MSFPLC: Trend-aware multiscale stack fusion packet loss concealment for linear prediction-based speech codecs},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PerceiverS: A multi-scale perceiver with effective segmentation for long-term expressive symbolic music generation. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611836'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {AI-based music generation has made significant progress in recent years. However, generating symbolic music that is both long-structured and expressive remains a significant challenge. In this paper, we propose PerceiverS (Segmentation and Scale), a novel architecture designed to address this issue by leveraging both Effective Segmentation and Multi-Scale attention mechanisms. Our approach enhances symbolic music generation by simultaneously learning long-term structural dependencies and short-term expressive details. By combining cross-attention and self-attention in a Multi-Scale setting, PerceiverS captures long-range musical structure while preserving performance nuances. The proposed model has been evaluated using the Maestro dataset and has demonstrated improvements in generating coherent and diverse music, characterized by both structural consistency and expressive variation. The project demos and the generated music samples can be accessed through the link: https://perceivers.github.io.},
-  archive  = {J},
-  author   = {Yungang Yi and Weihua Li and Matthew Kuo and Quan Bai},
-  doi      = {10.1109/TASLPRO.2025.3611836},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
+  month    = {10},
   pages    = {1-13},
-  title    = {PerceiverS: A multi-scale perceiver with effective segmentation for long-term expressive symbolic music generation},
+  title    = {Enhance the saliency: Synthesize text noise samples for few-shot out-of-distribution intent detection},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Emilia: A large-scale, extensive, multilingual, and diverse dataset for speech generation. <em>TASLPRO</em>, 1-10. (<a href='https://doi.org/10.1109/TASLPRO.2025.3612835'>www</a>)
+(2025). A temporal-spatial joint high-gain beamforming method in the STFT domain based on kronecker product filters. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617242'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Recent advancements in speech generation have been driven by large-scale training datasets. However, current models struggle to capture the spontaneity and variability inherent in real-world human speech, as they are primarily trained on audio-book datasets limited to formal, read-aloud speaking styles. To address this limitation, we introduce Emilia-Pipe, an open-source preprocessing pipeline designed to extract high-quality training data from valuable yet under-explored in-the-wild sources that capture spontaneous human speech in real-world contexts. Using Emilia-Pipe, we construct Emilia, which comprises over 101k hours of speech across six languages: English, Chinese, German, French, Japanese, and Korean. Furthermore, we expand Emilia to Emilia-Large, a dataset exceeding 216k hours, making it one of the largest open-source speech generation resources available. Extensive experiments show that Emilia-trained models produce markedly more spontaneous, human-like speech than those trained on traditional audio-book datasets, while matching their intelligibility. These models better capture diverse speaker timbres and the full spectrum of real-world conversational styles. Our work also highlights the importance of scaling dataset size for advancing speech generation performance and validates the effectiveness of Emilia for both multilingual and crosslingual speech generation tasks.},
+  abstract = {Superdirective beamformers are highly appealing for their superior directivity and effectiveness in suppressing diffuse noise. However, their sensitivity to sensor noise and array imperfections poses significant challenges in practice. Achieving higher robustness often necessitates a trade-off in directivity, thereby reducing their ability to suppress directional and diffuse noises. A key concern, therefore, is how to improve noise suppression while maintaining robustness. To address this, we propose in this paper a novel temporal-spatial joint high-gain beamforming method based on a Kronecker product decomposition, making use of the inter-frame correlation to improve performance. The signal model in the proposed work uses recent pairs of time frames and employs the Kronecker product of the steering vector with a frequency- and angle-dependent inter-frame correlation vector. The high-gain beamformers are formulated as Kronecker product filters, where the temporal filter is optimized to maximize the white noise gain (WNG) and the spatial filter is optimized to enhance the directivity factor (DF). With accurate estimation of the correlation vector, Kronecker product high-gain beamformers can simultaneously improve both WNG and DF. The proposed method offers flexibility and can be extended to design other types of beamformers, with a maximum WNG (MWNG) beamformer presented as an example within the same framework. This paper also explores three approaches to estimating the correlation vector: time-invariant, time-varying, and data-driven estimations. Simulation results show notable improvements in noise suppression performance across various scenarios, highlighting the practical effectiveness of the proposed method.},
   archive  = {J},
-  author   = {Haorui He and Zengqiang Shang and Chaoren Wang and Xuyuan Li and Yicheng Gu and Hua Hua and Liwei Liu and Chen Yang and Jiaqi Li and Peiyang Shi and Yuancheng Wang and Kai Chen and Pengyuan Zhang and Zhizheng Wu},
-  doi      = {10.1109/TASLPRO.2025.3612835},
+  author   = {Xiaoran Yang and Hanchen Pei and Jacob Benesty and Gongping Huang and Jingdong Chen},
+  doi      = {10.1109/TASLPRO.2025.3617242},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-10},
-  title    = {Emilia: A large-scale, extensive, multilingual, and diverse dataset for speech generation},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LatentVoiceGrad: Nonparallel voice conversion with latent Diffusion/Flow-matching models. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3613926'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Previously, we introduced VoiceGrad, a nonparallel voice conversion (VC) technique enabling mel-spectrogram conversion from source to target speakers using a score-based diffusion model. The concept involves training a score network to predict the gradient of the log density of mel-spectrograms from various speakers. VC is executed by iteratively adjusting an input mel-spectrogram until resembling the target speaker's. However, challenges persist: audio quality needs improvement, and conversion is slower compared to modern VC methods designed to operate at very high speeds. To address these, we introduce latent diffusion models into VoiceGrad, proposing an improved version with reverse diffusion in the autoencoder bottleneck. Additionally, we propose using a flow matching model as an alternative to the diffusion model to further speed up the conversion process without compromising the conversion quality. Experimental results show enhanced speech quality and accelerated conversion compared to the original.},
-  archive  = {J},
-  author   = {Hirokazu Kameoka and Takuhiro Kaneko and Kou Tanaka and Yuto Kondo},
-  doi      = {10.1109/TASLPRO.2025.3613926},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-15},
-  title    = {LatentVoiceGrad: Nonparallel voice conversion with latent Diffusion/Flow-matching models},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Separate and transcribe: Deep guitar string separation and its application for tablature transcription enhancement. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3614466'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Guitar string separation constitutes a source separation task in which the individual stems to be retrieved are the signals produced by each distinct guitar string. Certain hardware solutions for string-wise signal manipulation are gaining traction among the guitarist community for applications such as MIDI control and string-level sound effects. However, software techniques for string separation are lagging behind, even though they could form a competitive alternative. This work applies established deep learning architectures commonly used for standard music source separation, to address the task of guitar string separation. It opts for a waveform-to-waveform approach using a multi-channel version of Wave-U-Net. It further suggests that this model can serve as a bridge from separation to transcription by facilitating guitar tablature inference. Tablature transcription enhancement proved feasible using a method that relies on feeding the separated signals to standard tablature inference models, by simply modifying their initial convolution layer to handle multi-source input. Moreover, this work seeks to address the challenges encountered in the more specific string separation scenario where no target signals are readily available for training, meaning that these signals are not provided directly through sophisticated hardware equipment such as polyphonic pickups. Instead, data manipulation and augmentation techniques that produce sample-level synthesized targets are proposed. Thus, two newly created datasets are introduced, namely GS-Aux and ADGP, based on standard guitar datasets: GuitarSet and DadaGP.},
-  archive  = {J},
-  author   = {Grigoris Bastas and Vassilis Katsouros and Petros Maragos},
-  doi      = {10.1109/TASLPRO.2025.3614466},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-12},
-  title    = {Separate and transcribe: Deep guitar string separation and its application for tablature transcription enhancement},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). M4SER: Multimodal, multirepresentation, multitask, and multistrategy learning for speech emotion recognition. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3614428'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Multimodal speech emotion recognition (SER) has emerged as pivotal for improving human–machine interaction. Researchers are increasingly leveraging both speech and textual information obtained through automatic speech recognition (ASR) to comprehensively recognize emotional states from speakers. Although this approach reduces reliance on human-annotated text data, ASR errors possibly degrade emotion recognition performance. To address this challenge, in our previous work, we introduced two auxiliary tasks, namely, ASR error detection and ASR error correction, and we proposed a novel multimodal fusion (MF) method for learning modality-specific and modality-invariant representations across different modalities. Building on this foundation, in this paper, we introduce two additional training strategies. First, we propose an adversarial network to enhance the diversity of modality-specific representations. Second, we introduce a label-based contrastive learning strategy to better capture emotional features. We refer to our proposed method as M4SER and validate its superiority over state-of-the-art methods through extensive experiments using IEMOCAP and MELD datasets.},
-  archive  = {J},
-  author   = {Jiajun He and Xiaohan Shi and Cheng-Hung Hu and Jinyi Mi and Xingfeng Li and Tomoki Toda},
-  doi      = {10.1109/TASLPRO.2025.3614428},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {9},
-  pages    = {1-16},
-  title    = {M4SER: Multimodal, multirepresentation, multitask, and multistrategy learning for speech emotion recognition},
+  month    = {10},
+  pages    = {1-13},
+  title    = {A temporal-spatial joint high-gain beamforming method in the STFT domain based on kronecker product filters},
   year     = {2025},
 }
 </textarea>

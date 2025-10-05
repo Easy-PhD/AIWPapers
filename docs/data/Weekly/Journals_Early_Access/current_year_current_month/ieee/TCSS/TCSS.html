@@ -25,555 +25,137 @@
 </head>
 <body>
 
-<h2 id="tcss">TCSS - 29</h2>
+<h2 id="tcss">TCSS - 7</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Predicting user tipping in online social networks with temporal graph neural networks. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3588804'>www</a>)
+(2025). ProMNER: Prompt-guided unimodal and multimodal named entity recognition in a generative way. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3603878'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Combating misinformation in the digital age has been a challenging subject with significant social implications, as misinformation continues to shape public responses to elections, pandemics, and other critical events. Despite extensive research efforts, traditional mitigation approaches have fallen short, largely due to their narrow focus on detection accuracy while overlooking the social and emotional influences that drive user behavior. This article proposes to frame information belief as a social norm, enabling us to track and predict its evolution at the individual user level. By operating on an individual level, we can identify and target specific users susceptible to adopting certain norms ahead of time, providing a more powerful approach to mitigating the effects of misinformation. To accomplish this, we develop a temporal graph neural network equipped with projection operators capable of forecasting arbitrary time horizons. The network is trained to predict individual users’ tipping points—the moments when they transition from resistance to acceptance of particular information norms. We conduct rigorous analysis of the temporal smoothness of our predictions, leading to an algorithm that queries the model to identify critical moments before users reach their tipping points, enabling preemptive action. To our knowledge, this represents the first successful attempt at predicting individual tipping points in real-world information networks, marking a significant advance in our ability to address misinformation through preventive rather than reactive measures.},
+  abstract     = {Multimodal named entity recognition (MNER) on social media is a challenging task that uses corresponding images to aid in recognizing entities in short and noisy texts. Most existing methods suffer from two major drawbacks: weak image-text semantic correlation and the hybridity of entity types in intermodality alignment. To this end, a general framework ProMNER is proposed for unimodal and multimodal NER tasks, which includes text-driven visual-modality enhancement (TVE) and prompt-guided type-related refinement and interaction (PTRI). Specifically, to alleviate the bias caused by irrelevant visual content, TVE employs cross-modal translation to generate visual representations that replace the original ones. Furthermore, the generated can serve directly as an additional input modality for NER, enabling the framework to be generalized to unimodal and multimodal NER tasks. Subsequently, to tackle the hybridity problem of intermodality entity alignment, type-filled question prompts are designed as guidance information to explicitly refine type-related visual representations. PTRI obtains type-specific multimodal representations by capturing semantic intermodality interactions for each type, and learns a comprehensive multimodal representation through dynamic weighting. Experimental results on five benchmark datasets demonstrate the superiority and generality of ProMNER in unimodal and multimodal NER tasks.},
   archive      = {J_TCSS},
-  author       = {Youval Kashuv and Raed Alharbi and My T. Thai},
-  doi          = {10.1109/TCSS.2025.3588804},
+  author       = {Xinyu Liu and Fei Lang and Chao Gao and Guanglu Sun},
+  doi          = {10.1109/TCSS.2025.3603878},
   journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Predicting user tipping in online social networks with temporal graph neural networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Graph-enhanced long-term indoor behavior prediction with attention mechanisms. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3595908'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The development of Internet of Things (IoT) technology has driven the widespread adoption of smart homes. Predicting indoor behavior patterns is of great significance for planning future life, guiding daily habits, and detecting abnormal behaviors. However, current indoor behavior prediction methods primarily focus on predicting individual-specific actions or activities, lacking a comprehensive approach to forecasting overall behavior patterns and exhibiting lower stability and accuracy in long-term prediction tasks. To achieve precise and long-term prediction of complex indoor human behaviors, this article proposes a novel method for behavior prediction with attention mechanism (BPAM), designed to predict users’ behavioral models while enabling timely detection of abnormal behaviors. Specifically, 1) we use passive infrared (PIR) sensors to capture the trajectory of a person moving indoors every day and model it as a directed graph; 2) we use graph convolutional networks (GCNs) to capture the features of a person’s daily behavior patterns and fuse the temporal information into the features; and 3) we develop an inference module that combines attention mechanism and long short-term memory (LSTM) networks to infer behavior patterns for the next days. Experimental results demonstrate that this method outperforms traditional approaches across multiple evaluation metrics, offering an effective solution for indoor behavior prediction.},
-  archive      = {J_TCSS},
-  author       = {Wenlong Chen and Yumeng Jin and Leilei Lin and Xingchi Peng},
-  doi          = {10.1109/TCSS.2025.3595908},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Graph-enhanced long-term indoor behavior prediction with attention mechanisms},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). DFCD: Density-based fuzzy community detection approach with biased random walk guided node sampling. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3593200'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Research on overlapping community detection is still significant due to the rapid growth of different types of complex networks. Among the types of community detection, density-based clustering approaches did not get much attention in the field of overlapping community detection. We found two main drawbacks of the density-based approaches: 1) lack of research in computing the proper long-range distance (up to several hops) among the nodes in graph dataset; and 2) difficulty in computing overlapping belonging coefficients of the nodes in terms of diverse and irregular shaped clusters of graph datasets where distances among few nodes are available only (even not the positions of the nodes). In this article, we propose a novel overlapping community detection approach which we term as “density-based fuzzy community detection (DFCD)”, based on local densities of the nodes. Here, we capture the network topology in the form of bulk node-streams (node sampling) by employing biased random walk. We propose a novel way to compute long range distances among the nodes by utilizing the nodes-streams to find fixed number of global neighbors for each node, and accordingly we compute local densities of the nodes. We propose three relations between nodes and communities, where local densities and distances among the nodes are known only. Finally, we propose a novel belonging computation function based on the three relations, local densities, distances among the nodes. Our proposed approach is judged considering a number of real-life and synthetic datasets, where we consider ten state-of-the-art competitors. The experimental analysis shows superiority of the proposed approach over its competitors based on both accuracy and quality evaluations. Moreover, the detailed complexity analysis of the proposed approach shows linearly growth of the time complexity in terms of number of nodes and average degree, which is less than the same of majority overlapping community detection approaches.},
-  archive      = {J_TCSS},
-  author       = {Uttam K. Roy and Pranab K. Muhuri},
-  doi          = {10.1109/TCSS.2025.3593200},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
+  month        = {10},
   pages        = {1-14},
   shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {DFCD: Density-based fuzzy community detection approach with biased random walk guided node sampling},
+  title        = {ProMNER: Prompt-guided unimodal and multimodal named entity recognition in a generative way},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). FedHeGA: A federated learning framework for enhanced node classification on heterogeneous graphs. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3599195'>www</a>)
+(2025). Evolutionary dynamics of an other-regarding preferences-based involution game in networked and well-mixed populations. <em>TCSS</em>, 1-18. (<a href='https://doi.org/10.1109/TCSS.2025.3605883'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Heterogeneous graph neural networks (HGNNs) have proven effective at capturing complex relationships in graphs with diverse node and edge types. However, centralized training in HGNNs raises privacy concerns, as sensitive data can be exposed during model training. This risk is further exacerbated when the data is distributed across multiple clients. Federated learning (FL) offers a potential solution by enabling collaborative training without sharing local data. However, existing FL methods for heterogeneous graphs fail to effectively address challenges such as data imbalance and the handling of private edge types. Moreover, existing methods designed for homogeneous graphs are ineffective at addressing the data sparsity issue in heterogeneous graphs. In this article, we propose FedHeGA, a FL framework for heterogeneous graphs that enhances node classification performance while preserving privacy. We tackle data imbalance by integrating heterogeneous graph reconstruction with differential autoencoders to generate semantically coherent node features, improving feature propagation in sparse or imbalanced data. To preserve privacy, we propose a parameter decomposition mechanism that uploads only edge-type-independent global parameters, protecting sensitive local data. Additionally, we address dataset skewness by employing a contrastive learning strategy to align local and global model parameters, which enhances convergence. Experimental results demonstrate that FedHeGA significantly outperforms existing methods on node classification benchmarks, offering an effective solution for federated heterogeneous graph learning.},
+  abstract     = {Involution, characterized by intensified competition for limited social resources without generating additional societal value, has become a critical issue in modern social systems. This study aims to investigate effective mechanisms to mitigate involution by incorporating other-regarding preferences (ORP) into evolutionary game dynamics on complex networks and in well-mixed populations. Through numerical simulations conducted on square lattices and small-world networks, we systematically analyze the combined effects of crucial parameters including total social resources, the cost of more effort, fairness in resource distribution, and the intensity of ORP on the evolutionary dynamics of involution. Our findings reveal that increasing social resources generally exacerbates involution, whereas greater fairness in resource distribution alleviates it. Notably, the influence of more effort costs on involution is nonlinear and context-dependent, modulated by the interaction between resource abundance and ORP intensity. Critically, ORP emerges as a decisive factor: stronger ORP substantially suppresses involution, promotes the emergence and spatial stability of cooperative clusters, and reduces the equilibrium proportion of defectors. Theoretical analysis based on replicator dynamics validate our simulation results, providing robust theoretical benchmarks for the observed phenomena. This study not only advances the theoretical understanding of involution dynamics but also offers practical insights for addressing involution in real-world social systems. It highlights the importance of cultivating altruistic social norms and ensuring fairness in resource allocation to effectively mitigate involution.},
   archive      = {J_TCSS},
-  author       = {Rongbin Deng and Jinyan Wang and Qiyu Li and Jie Li and Peng Liu and Xianxian Li},
-  doi          = {10.1109/TCSS.2025.3599195},
+  author       = {Hao Chen and Weikun Li and Le Hong and Anlan Sun and Weicheng Cui},
+  doi          = {10.1109/TCSS.2025.3605883},
   journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {FedHeGA: A federated learning framework for enhanced node classification on heterogeneous graphs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MMInfluencer: A multimodal AI framework for influencer marketing tasks using large language models. <em>TCSS</em>, 1-12. (<a href='https://doi.org/10.1109/TCSS.2025.3597544'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Influencer marketing involves brands partnering with influencers to promote products, often through combined text and image posts on social media platforms. This multimodal data is critical for identifying suitable products for effective marketing practice. In this study, we presented MMInfluencer, a novel framework that addressed the critical upstream challenge of knowledge extraction from unstructured multimodal social media data. Our framework operationalized communication theories, the heuristic-systematic model (HSM) and dual coding theory (DCT), to guide large language models (LLMs) in constructing a high-quality knowledge graph (KG) from the multimodal posts and biographies of 1000 Instagram influencers. Human assessment of the KG confirmed its relevance and completeness with accuracy scores of 0.89 and 0.75, respectively. We then examined the KG’s efficacy in various influencer marketing tasks using graph-based learning methods and retrieval-augmented generation (RAG) technology. The KG derived from multimodal data significantly improved product category prediction and recommendation tasks, with the Node2Vec model showing improvements of 20.47% (AUROC, p $&lt;$ 0.0001) and 1142.15% (NDCG@20, p $&lt;$ 0.0001), respectively. In contrast, the RAG method was ineffective, yielding an accuracy of just 0.1195 ($\pm$ 0.0162). Furthermore, the LLM-extracted KG significantly improved performance in challenging scenarios, where the best model achieved improvements of 155.51% (NDCG@20, p $=$ 0.0170) for emerging influencers (zero-shot) and 1144.51% (NDCG@20, p $&lt;$ 0.0001) for influencers with scarce data (cold-start). Our research underscores the potential of leveraging multimodal data, LLMs, and graph-based learning methods for effective influencer marketing.},
-  archive      = {J_TCSS},
-  author       = {Jiannan Yang and Duorong Wang and Lei Zhu and Houmin Yan and Qingpeng Zhang},
-  doi          = {10.1109/TCSS.2025.3597544},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {MMInfluencer: A multimodal AI framework for influencer marketing tasks using large language models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Why do opinions and actions diverge? a dynamic framework to explore the impact of subjective norms. <em>TCSS</em>, 1-12. (<a href='https://doi.org/10.1109/TCSS.2025.3598697'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Socio-psychological studies have identified a common phenomenon where an individual’s public actions do not necessarily coincide with their private opinions, yet most existing models fail to capture the dynamic interplay between these two aspects. To bridge this gap, we propose a novel agent-based modeling framework that integrates opinion dynamics with a decision-making mechanism. More precisely, our framework generalizes the classical Hegselmann-Krause (HK) model by combining it with a utility maximization problem. Preliminary results from our model demonstrate that the degree of opinion-action divergence within a population can be effectively controlled by adjusting two key parameters that reflect agents’ personality traits, while the presence of social network amplifies the divergence. In addition, we study the social diffusion process by introducing a small number of committed agents into the model, and identify three key outcomes: adoption of innovation, rejection of innovation, and the enforcement of unpopular norms, consistent with findings in socio-psychological literature. The strong relevance of the results to real-world phenomena highlights our framework’s potential for future applications in understanding and predicting complex social behaviors.},
-  archive      = {J_TCSS},
-  author       = {Chen Song and Vladimir Cvetkovic and Rong Su},
-  doi          = {10.1109/TCSS.2025.3598697},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Why do opinions and actions diverge? a dynamic framework to explore the impact of subjective norms},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Knowledge-aware graph prompt tuning for cross-domain recommendation. <em>TCSS</em>, 1-15. (<a href='https://doi.org/10.1109/TCSS.2025.3594667'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Cross-domain recommendation (CDR) has received attention to solve the cold-start and data sparsity problems. Existing methods mainly focus on the information about overlapping users or items, neglecting to effectively and efficiently utilize the information about nonoverlapping users or items in the source domain. Currently, graph prompt learning is proposed to bridge the gap between the pretrained tasks and downstream tasks, which can fully use the information of the source domain. However, existing graph prompt based CDR methods are rare and solely focus on the user-item interaction graphs without considering extra auxiliary information. Therefore, in this article, we construct knowledge graphs (KGs) as auxiliary information and propose a novel knowledge-aware graph prompt tuning for CDR (KGP-CDR) model. First, the KGs of the source and target domains are constructed, respectively, and a graph encoder is pretrained on the KG of the source domain. In addition, two types of graph prompts are designed: soft graph prompts and personalized graph prompts. These prompts are finetuned in the target domain along with the pretrained graph encoder. Ultimately, the predicted rating can be acquired through the finetuned graph prompts. Experiments on five real-world datasets show that the proposed method performs better than the state-of-the-art methods.},
-  archive      = {J_TCSS},
-  author       = {Xiao-Dong Huang and Ling Huang and Yuefang Gao and Zhe-Yuan Li and Pei-Yuan Lai and Chang-Dong Wang and Philip S. Yu},
-  doi          = {10.1109/TCSS.2025.3594667},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Knowledge-aware graph prompt tuning for cross-domain recommendation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Adaptive and robust wheel-legged biped robot for semistructured community tasks. <em>TCSS</em>, 1-11. (<a href='https://doi.org/10.1109/TCSS.2025.3595520'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article presents the development and optimization of a wheel-legged biped robot designed for community inspection tasks. The robot combines the efficiency of wheeled robots with the adaptability of legged systems, making it suitable for navigating diverse terrains in semistructured environments. The main innovations of this research include the development of an integrated control system that combines balance control, state estimation, and terrain adaptation using multisensor fusion. The robot’s mechanical structure is designed to withstand jumps and falls, while its electronic hardware and software architecture ensure real-time control and robust performance. Experiments demonstrate the robot’s capabilities including tracking velocity as high as 2 m/s, resisting severe disturbance or slippage, and traversing steps over 10 cm automatically. The results show that the proposed control methods and hardware design effectively ensure the robot’s robustness and adaptability, validating its potential for practical community inspection applications. This work contributes to the growing field of autonomous robots in public service and provides a foundation for future research and development.},
-  archive      = {J_TCSS},
-  author       = {Bowen Lan and Hailong Huang},
-  doi          = {10.1109/TCSS.2025.3595520},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-11},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Adaptive and robust wheel-legged biped robot for semistructured community tasks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Modeling emotional dynamics in social networks: Uncovering the positive role of information cocoons in group emotional stabilization. <em>TCSS</em>, 1-9. (<a href='https://doi.org/10.1109/TCSS.2025.3593424'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Information cocooning—amplified by algorithmic filtering—poses complex challenges for emotional dynamics in online social networks. This study explores how algorithmically reinforced information cocooning shapes information diffusion and group emotional dynamics in online social networks. We propose a viewpoint-based network evolution model that simulates structural transformations driven by user preferences. To model the hidden influence of personalized comment recommendations, we introduce the hidden comment area cocoon (H-CAC)—a novel higher-order structure that captures cocooning at the comment level. This structure is integrated into an emotion spreading model, enabling the quantification of how cocooning affects collective sentiment. By defining recommendation accuracy as a tunable parameter, we systematically evaluate its impact on emotional volatility and polarization. Extensive simulations, validated with real-world data, reveal that while cocooning reduces content diversity, it can significantly enhance emotional resilience within groups. Our findings offer a new computational lens on the dual role of cocooning and provide actionable insights for designing emotionally stable, algorithmically governed social platforms.},
-  archive      = {J_TCSS},
-  author       = {Jinhu Ren and Xifei Fu and Tianlong Fan and Linyuan Lü},
-  doi          = {10.1109/TCSS.2025.3593424},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-9},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Modeling emotional dynamics in social networks: Uncovering the positive role of information cocoons in group emotional stabilization},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). ERBMA-net: Enhanced random binary multilevel attention network for facial depression recognition. <em>TCSS</em>, 1-19. (<a href='https://doi.org/10.1109/TCSS.2025.3596047'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Depression is a major contributor to the global disease burden and is closely associated with variations in facial expressions, making them a critical biomarker for its recognition. Traditional local binary convolutional neural networks (LBCNN) rely on fixed binary weights, which fail to capture complex and nuanced features, limiting their adaptability and generalization. Existing methods often lack extracting spatial hierarchies and model long-range dependencies within facial expressions. To address these gaps, an enhanced random binary multilevel attention network (ERBMA-Net) is proposed for facial depression recognition, which employs a multibranch architecture to extract global (face) and local (eyes and mouth) features. Subsequently, the enhanced random binary convolutional neural network (ERBCNN) introduces random binary filters and a refinement layer to improve adaptability over LBCNN. Furthermore, multilevel attention mechanisms, including spatial attention are applied independently to global and local features and self-attention on concatenated features to capture critical spatial and relational patterns. Comprehensive evaluations on the Audio-Visual Emotion Challenge 2014 (AVEC2014) and the Changzhou No. 2 People’s Hospital (CZ2024) datasets demonstrate the superior performance of ERBMA-Net, achieving mean absolute error and root mean square error: 6.80/8.18 and 6.37/8.08, respectively. These results establish ERBMA-Net as a robust framework for artificial intelligence-assisted mental health diagnostics. The code is available at: https://github.com/DrTuryalai/ERBMA-Net.},
-  archive      = {J_TCSS},
-  author       = {Muhammad Turyalai Khan and Yin Cao and Faisal Shafait and Wu Jun},
-  doi          = {10.1109/TCSS.2025.3596047},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-19},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {ERBMA-net: Enhanced random binary multilevel attention network for facial depression recognition},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). DeepVerifier: Robust watermarking of deep neural networks based on black-box and white-box reasoning. <em>TCSS</em>, 1-10. (<a href='https://doi.org/10.1109/TCSS.2025.3601855'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recently, deep learning models have become the backbone of critical applications, serving as a key asset across various domains such as social media, healthcare, finance, and retail. Consequently, the market for these models has expanded exponentially, with platforms emerging to facilitate secure transactions and collaborations between model developers and end users. However, this convenience has also given rise to significant challenges, particularly copyright infringement and ownership conflicts. To address these issues, we propose a unified framework, DeepVerifier, which integrates black-box and white-box watermarking. Cryptographic hash functions (SHA) and chaotic maps are utilized to generate a unique secret message. This message, called the watermark, is then divided into $k$ blocks. We determine the optimal embedding locations as the model parameters with the lowest gradient weights, after which the blocks are imperceptibly concealed within selected weights. To evaluate the effectiveness of DeepVerifier, we assess the watermarked model in both black-box and white-box scenarios on the receiver’s end. Experimental results demonstrate that DeepVerifier enables two-stage ownership verification of notable models against various attacks while deteriorating the original task accuracy by less than 0.5% on average. To the best of our knowledge, this is the first attempt to develop a method for the copyright protection of deep neural network (DNN) models using the lowest-gradient-based embedding of a generated fused watermark and two-stage ownership verification via watermarking.},
-  archive      = {J_TCSS},
-  author       = {Twinkle Tyagi and Kedar Nath Singh and Amit Kumar Singh and Brij B. Gupta},
-  doi          = {10.1109/TCSS.2025.3601855},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-10},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {DeepVerifier: Robust watermarking of deep neural networks based on black-box and white-box reasoning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A hybrid metaheuristic algorithm for multiobjective scheduling in distributed heterogeneous flexible job shops. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3601624'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {To address the issues of insufficient population diversity and the tendency to fall into local convergence in the NSGA-II algorithm for distributed heterogeneous flexible job shop scheduling, a dual-population improved algorithm, D3QN-NSGA-II, based on D3QN is proposed. By introducing a dual-population evolution strategy, the breeding population and the regular population are divided using a reproductive capacity assessment mechanism, with differentiated crossover and mutation operators designed for each. A hybrid strategy, consisting of 12 types of local search operators across 3 categories, is constructed, and the innovative application of D3QN deep reinforcement learning for dynamic operator selection is introduced. Additionally, an energy-efficient scheduling strategy is applied to optimize machine idle time. Finally, the effectiveness of the D3QN-NSGA-II algorithm is evaluated using 20 instances, with experimental results demonstrating its superiority over several other advanced algorithms in solving the DHFJS problem.},
-  archive      = {J_TCSS},
-  author       = {Lijun Wang and Chengguang Wang and Xiangyang Li and Ruixue Cheng and Xiao Ma and Dong Liu},
-  doi          = {10.1109/TCSS.2025.3601624},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {A hybrid metaheuristic algorithm for multiobjective scheduling in distributed heterogeneous flexible job shops},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A guided topic dissemination model based on cognitive differences. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3602669'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In social networks, studying the propagation patterns of guided topics helps to understand their dissemination trends, thereby adjusting the direction of topic evolution. To address the issue of users’ cognitive closure in topic propagation, this article proposes a guided topic propagation model based on cognitive differences. First, considering the complex factors influencing topic propagation, this article explores the benefits of a multifactor model through multiple linear regression analysis. It proposes a method to measure guided topics influence, accounting for both internal and external factors, to effectively quantify their impact on propagation. Second, considering the symbiosis and antagonism of different guided topics, this article examines the impact of game theory on user behavior, proposing a driving mechanism based on cognitive game theory. It quantifies the forces behind message forwarding, analyzes the relationships between topics, and explores the cognitive game states of users. Finally, considering the heterogeneity of user cognition and the advantages of cognitive difference theory in modeling state transitions, along with the strengths of mean-field theory for large-scale information dissemination, this article incorporates known, rational, and irrational states into the susceptible-infectious-recovered (SIR) model. An susceptible-exposed-rational information/irrational-immune guided topic propagation model is then constructed to analyze topic propagation patterns. Experiments demonstrate that this model effectively analyzes the impact of cognitive differences on the dissemination of guided topics, exploring the dissemination patterns of guided topics within social networks.},
-  archive      = {J_TCSS},
-  author       = {Shihong Wei and Weirui Zeng and Rong Wang and Qian Li and Tun Li and Yunpeng Xiao},
-  doi          = {10.1109/TCSS.2025.3602669},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {A guided topic dissemination model based on cognitive differences},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MCFM: Multimodal competitive fusion mechanism for sentiment analysis. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3598637'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the popularity of social media, users are able to express their opinions in multiple forms, such as text, audio, and video. Traditional unimodal sentiment analysis methods can no longer meet the processing requirements of such multisource heterogeneous data, which makes multimodal sentiment analysis a research hotspot. However, most existing methods rely on simple feature splicing or weighted fusion, neglecting the differences in the reliability of different modalities and failing to fully explore the intermodality consistency and difference information. In this article, we propose a multimodal competitive fusion mechanism and construct multimodal competitive fusion model (MCFM). The model first dynamically evaluates the reliability of each modality through the competition mechanism and adaptively assigns weights accordingly. Then it decomposed the modality representations into similar and dissimilar features through modality feature decomposition, supplemented by the overlap of orthogonal traffic channel attention constraints, to achieve the collaborative learning of consistency and dissimilarity features. We evaluate the proposed model on several datasets. In our experiments, we used textual modality data from the dataset with audio modality data for the experiments. The experimental results show that MCFM has 2%–3% higher binary accuracy (ACC2) than the baseline model on the sentiment classification task (with 2% higher binary accuracy under the negative/nonnegative metrics and 3% higher binary accuracy under the positive/negative metrics), and that on the regression task, MCFM’s mean absolute error on the test dataset is 3% lower than that of the baseline model.},
-  archive      = {J_TCSS},
-  author       = {Mali Xing and Zilang Zhai and Muqing Deng and Qianqian Cai and Hongru Ren and Tian Wang},
-  doi          = {10.1109/TCSS.2025.3598637},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {MCFM: Multimodal competitive fusion mechanism for sentiment analysis},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A new model for key node identification in heterogeneous multilayer networks with overlapping communities. <em>TCSS</em>, 1-18. (<a href='https://doi.org/10.1109/TCSS.2025.3598232'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The identification of key nodes in multilayer networks has garnered significant attention in recent years. However, existing approaches often neglect two critical aspects: overlapping community structures and the heterogeneity of network layers. In practice, multilayer networks with overlapping communities more accurately capture the complexities of real-world systems, where nodes typically belong to multiple communities and may act as bridges between them, facilitating intercommunity interactions. Simultaneously, the impact of each network layer on node importance varies due to differences in topology and semantics, yet many existing studies assume uniformity across layers. To address these limitations, this article proposes a novel model for key node identification in heterogeneous multilayer networks with overlapping communities, termed overlapping communities and layer heterogeneity (OCLH). First, OCLH constructs a multilayer network model that explicitly incorporates overlapping community structures. It then introduces a community influence metric and employs overlapping modular centrality to segment each layer into local subnetworks and a global subnetwork. This segmentation enables the quantification of both local and global node influence. Next, OCLH calculates the intralayer influence of a node by considering its affiliated communities and the subnetworks it participates. Furthermore, the model evaluates the heterogeneity across layers by measuring each layer’s structural distinctiveness and its contribution to the overall network, thereby assigning an adaptive importance score to each layer. Finally, the overall node impact is computed by integrating the node’s intralayer influence with its corresponding layer-wise significance. Overall, the OCLH algorithm enhances key node identification by jointly modeling overlapping communities and interlayer heterogeneity. Extensive experiments on two synthetic and ten real-world datasets demonstrate that the nodes identified by OCLH exhibit superior performance in terms of diffusion capability and their impact on network connectivity, outperforming several state-of-the-art baseline methods.},
-  archive      = {J_TCSS},
-  author       = {Xianghui Hu and Ruixia Jiang and Zhengyi An and Yichuan Jiang},
-  doi          = {10.1109/TCSS.2025.3598232},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
+  month        = {10},
   pages        = {1-18},
   shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {A new model for key node identification in heterogeneous multilayer networks with overlapping communities},
+  title        = {Evolutionary dynamics of an other-regarding preferences-based involution game in networked and well-mixed populations},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). TCL: Trustworthy contrastive learning for web API recommendation via exploring textual and structural semantics. <em>TCSS</em>, 1-12. (<a href='https://doi.org/10.1109/TCSS.2025.3602629'>www</a>)
+(2025). A blockchain-based fine-grained reputation-enhanced consensus mechanism for secure health data trading. <em>TCSS</em>, 1-15. (<a href='https://doi.org/10.1109/TCSS.2025.3605234'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {With the development of service-oriented computing, software developers increasingly rely on diverse Web application programming interfaces (APIs, also known as Web services) from unmanned Web API markets. This trend aims to expedite the development of feature-rich Mashup applications while simultaneously reducing time and costs. However, the growing abundance of Web APIs presents a challenge in service discovery. Consequently, Web API recommendation is proposed as a vital strategy for facilitating service discovery. Nonetheless, existing approaches to Web API recommendation suffer from limitations in effectively extracting rich semantics from description documents and service networks, leading to suboptimal recommendation performance. To address this issue, this article proposes trustworthy contrastive learning (TCL) for Web API recommendation via exploring textual and structural semantics, named TCL. TCL takes the trustworthiness of both the textual and structural representations into account to differentiate the loss of contrastive learning so that both textual and structural representation learning can be mutually improved. Empirical evaluations conducted on a real-world dataset crawled from ProgrammableWeb.com demonstrate the effectiveness of the proposed approach, showcasing its superiority over baseline methods.},
+  abstract     = {With the deep integration of wearable devices and information technology, health data collection has become more efficient and accurate. This has brought about significant changes to health management and public health. However, due to the high sensitivity and privacy of health data, data sharing faces major challenges. Most existing studies focus on encryption algorithms and access control to ensure data security. They often ignore the credibility of data providers, which affects data quality and reduces user participation. To address these issues, this article proposes a blockchain-based and reputation-enhanced health data trading model. A fine-grained reputation value calculation method based on the Beta distribution is introduced to objectively evaluate the behavior of data providers. Based on this, a consensus mechanism linked to reputation value is designed to improve consensus efficiency and avoid centralization of node selection. Furthermore, this article uses evolutionary game theory to analyze the reward and punishment mechanism in the trading process. It explores the dynamic balance between platform cost and user willingness to share. Experimental results show that the model ensures secure health data sharing, while effectively improving data usability, system fairness, and user participation.},
   archive      = {J_TCSS},
-  author       = {Guosheng Kang and Hongshuai Ren and Jianxun Liu and Buqing Cao and Yu Xu and Pei Li},
-  doi          = {10.1109/TCSS.2025.3602629},
+  author       = {Sijie Shen and Taochun Wang and Guodong Zhang and Fulong Chen and Dong Xie and Chuanxin Zhao},
+  doi          = {10.1109/TCSS.2025.3605234},
   journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {TCL: Trustworthy contrastive learning for web API recommendation via exploring textual and structural semantics},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Next point of interest recommendation based on graph structure and sequential pattern. <em>TCSS</em>, 1-17. (<a href='https://doi.org/10.1109/TCSS.2025.3602413'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In location-based social networks, next point of interest (POI) recommendation predicts the next-visited POIs of users by mining their behavioral patterns. However, existing POI recommendation methods based on graph neural networks and attention mechanisms fail to adequately capture: 1) the local structural features influenced by the trajectories of other users (i.e., the relationships between POIs visited by users); and 2) the dynamic visitation preferences and channel relationships among POIs (i.e., interdependencies between contextual features). We propose a next-POI recommendation model based on graph structure and sequential pattern to address these limitations. The model generates graph representations that reflect the real-time preferences of users by extracting local structures from a global POI graph. In addition, we design a temporal-aware self-attentive graph convolutional network and a channel attention mechanism to capture the structural features of users’ sequential visitation tendencies and the latent feature-channel relationships between POIs, respectively. These components enhance the ability of the model to characterize dynamic user preferences and behavioral changes. The results demonstrate that our model outperforms baseline methods on three real-world datasets, validating its effectiveness in capturing both global and local information.},
-  archive      = {J_TCSS},
-  author       = {Liangmin Guo and Shuai Zhao and Haiyue Tang and Xiaoyao Zheng and Liping Sun and Yonglong Luo},
-  doi          = {10.1109/TCSS.2025.3602413},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Next point of interest recommendation based on graph structure and sequential pattern},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multicalibration in fair link prediction. <em>TCSS</em>, 1-16. (<a href='https://doi.org/10.1109/TCSS.2025.3600263'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this work, we expand the multicalibration fairness metric to graph-structured data. Machine learning models, including graph neural networks (GNNs), have been demonstrated to generate unfair results when trained on data containing biases towards certain demographic groups. Consequently, several fairness enhancing methods have been proposed to deal with such biases in the model predictions. To evaluate the performance of these methods, metrics such as demographic parity and equalized odds have been proposed, which aim to ensure equal treatment across groups. However, these metrics do not take into consideration the diverse underlying distribution of the data across the different demographic groups. Hence, fairness is only achieved at the cost of utility. Multicalibration, on the other hand, aims to generate calibrated predictions for each group, thereby providing much stronger fairness guarantees. However, multicalibration is only defined for tabular data. Consequently, in this work, we provide a novel formulation of multicalibration fairness metric for graph-structured data, specifically for the task of link prediction. We demonstrate that the existing fairness enhancing methods are unable to achieve multicalibration, which leads us to define a simple quadratic program-based postprocessing method. Experiments across several real-world datasets demonstrate the effectiveness of our method, consistently outperforming the existing approaches. Our method is model agnostic and can seamlessly adapt to scenarios with single or multiple sensitive attributes.},
-  archive      = {J_TCSS},
-  author       = {Manjish Pal and Sandipan Sikdar and Niloy Ganguly},
-  doi          = {10.1109/TCSS.2025.3600263},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Multicalibration in fair link prediction},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LLM-augmented contrastive learning for misinformation detection in social networks. <em>TCSS</em>, 1-16. (<a href='https://doi.org/10.1109/TCSS.2025.3599080'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Misinformation detection in social networks faces challenges due to complex semantics, scarcity of labeled data, and rapidly evolving false narratives. To address these issues, we present large language model (LLM)-augmented contrastive learning (LACL), a novel framework that integrates LLMs with contrastive learning (CL) for robust and accurate misinformation detection. We begin with an LLM-driven social media data augmentation strategy, utilizing prompt orchestration to generate diverse yet semantically consistent misinformation samples. These augmented samples are integrated into a CL-based detector, where the semantic richness and diversity introduced by the LLM enhance the CL’s discriminative feature extraction and predictive capability, thus improving generalization beyond the original training data. To align with CL’s discriminative goal, we develop a contrastive loss-aware joint training and fine-tuning approach where CL’s discriminative feature learning actively constrains the LLM’s hallucinations and guides the quality of augmentation. Through this closed-loop optimization, the CL-based detector progressively absorbs latent semantic knowledge from the LLM, effectively overcoming semantic complexity and reducing erroneous generations. Experimental results on four benchmark datasets (Twitter15, Twitter16, Weibo, and PHEME) demonstrate that LACL outperforms mainstream deep learning methods and surpasses approaches that apply commercial LLMs for detection without task-specific adaptation. These results hold consistently across different backbone LLMs (qwen and llama), highlighting LACL’s enhanced robustness, adaptability to varying language contexts, and superior generalization capability.},
-  archive      = {J_TCSS},
-  author       = {Hang Shen and Xiang Li and Xu Wang and Yuanfei Dai and Tianjing Wang and Guangwei Bai},
-  doi          = {10.1109/TCSS.2025.3599080},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {LLM-augmented contrastive learning for misinformation detection in social networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). AI bots and the distortion of online social opinions. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3599531'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study explores how proactive AI bots distort online opinion dynamics through strategic behavior in social networks. Extending the bounded confidence model, we simulate heterogeneous bot strategies along two dimensions: activeness and interaction preference. We introduce three distortion metrics including entropy, tendency, and polarization to quantify systemic effects. Simulations on scale-free networks show that even 5–15% bot presence can significantly alter opinion patterns, increasing fragmentation, bias, and convergence time, and random interaction strategies were found to generate consistently higher entropy, tendency, and polarization across various bot ratios, and moderate bot activeness (around 2–3 times that of humans) achieved peak distortion before diminishing returns set in. Validation using a real-world Twitter/X dataset confirms alignment between simulated and actual bot behavior. Findings suggest bot influence stems from behavioral nuance rather than volume, underscoring the need for detection mechanisms targeting dynamic interaction patterns. This work advances computational modeling by revealing how algorithmic agents reshape collective beliefs.},
-  archive      = {J_TCSS},
-  author       = {Fei Meng and Jiamin Yang and Wei Du and Jianliang Wei},
-  doi          = {10.1109/TCSS.2025.3599531},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {AI bots and the distortion of online social opinions},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Exchange networks with quantum superposition and entanglement. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3601189'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We investigate bargaining within a quantum matching market, where agent pairings are governed by quantum principles such as superposition and entanglement, providing a novel perspective on market interactions. Our analysis addresses four scenarios: convergent and divergent expectations, each under conditions of both nonrisk- and risk-sharing. The Quantum Bargaining Game, modeled as an agent-based model, is augmented using a machine learning technique, specifically employing the random forest regressor. Our model demonstrates that in a quantum environment, the bargaining solutions are both stable and balanced, aligning with generalized Nash solutions. This alignment is influenced by key factors such as the minimum edge weight threshold within the network and the degree of quantum entanglement. The results provide evidence of a consistent convergence toward a fixed point that incorporates agents’ outside options, signifying a transition from quantum-enhanced consensus-building to classical strategic solution. This shift, driven by the process of decoherence, underscores the need for institutions to replicate the coordination benefits once facilitated by quantum mechanisms.},
-  archive      = {J_TCSS},
-  author       = {Arnaud Z. Dragicevic},
-  doi          = {10.1109/TCSS.2025.3601189},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Exchange networks with quantum superposition and entanglement},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Propagation motifs as codewords for fake news detection. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3599119'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Social media facilitates information sharing but also enables the spread of fake news, which erodes social trust and compromises public safety. Detecting fake news is thus essential for social media supervision. Compared with fake news detection methods that rely on textual content and social context, methods that only leveraging propagation structure features exhibit distinct strengths. However, they face challenges including high computational complexity, limited ability to uncover propagation mechanisms, and low detection accuracy. In this study, we propose an efficient fake news detection method based on propagation motifs, which not only uncovers the mechanisms of information spread but also achieves high detection accuracy. Specifically, we introduce the concept of a 3–5 node propagation motif family and design a higher-order motif counting algorithm to reduce computational complexity in fake news detection. We then define higher-order propagation motif degree features, analyzing two types of three-node motif degrees to distinguish between true and fake news propagation patterns. Results indicate that real news primarily follows a broadcast propagation pattern, while fake news relies more on a viral propagation pattern. Finally, we propose the multiorder propagation Motif degree (MPMD) method, which incorporates features derived from 3-to 5-node propagation motif degrees. Experimental results on three real-world datasets show that our method achieves superior performance compared with state-of-the-art detection methods.},
-  archive      = {J_TCSS},
-  author       = {Jiaxuan Xia and Weiwen Jia and Ping Li and Xiaoke Xu},
-  doi          = {10.1109/TCSS.2025.3599119},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Propagation motifs as codewords for fake news detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multi-attributeSD: An adaptive self-knowledge distillation method for financial time series prediction. <em>TCSS</em>, 1-15. (<a href='https://doi.org/10.1109/TCSS.2025.3593625'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Intelligent financial forecasting models play a crucial role in warnings of market crashes, market recovery, portfolio optimization, and risk control. Among deep learning methods, graph neural networks have achieved remarkable results in time series prediction due to their ability to model complex relationship between nodes, but they still have limitation in capturing dynamic associations within attribute features, which restricts their ability to fully understand financial data. On the other hand, most deep learning methods are difficult to quantify the relationship between different financial data attributes (e.g., closing price, highest price, and lowest price), which prevents them from comprehensively analysing the attribute features, which in turn affects the prediction accuracy. To address this gap, this study proposes a new self-knowledge distillation model for multi-attribute financial time series data. This approach constructs an adaptive graph to represent different attribute features, performs self-distillation across mixed attributes, and integrates these techniques into a teacher network. Furthermore, this study introduces a novel multi-attribute feature attention fusion module to capture and integrate key features from multiple attributes, thereby enhancing the model’s predictive effectiveness and robustness. This research validates the superiority of the proposed method using time series data from three different financial markets: futures, cryptocurrency, and stock, demonstrating superior prediction performance. Given the cross-market and cross-asset correlations present in financial data, we have decided to open-source this dataset for time series prediction, data imputation, and correlation studies.},
-  archive      = {J_TCSS},
-  author       = {Jiayi Wu and Wei Zhang and Yulu Liu and Yibin Wang and Yong Zhang and Baocai Yin},
-  doi          = {10.1109/TCSS.2025.3593625},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
+  month        = {10},
   pages        = {1-15},
   shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Multi-attributeSD: An adaptive self-knowledge distillation method for financial time series prediction},
+  title        = {A blockchain-based fine-grained reputation-enhanced consensus mechanism for secure health data trading},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Dimension expansion for learning money laundering activities hidden in transaction network. <em>TCSS</em>, 1-12. (<a href='https://doi.org/10.1109/TCSS.2025.3599534'>www</a>)
+(2025). From niche to mainstream: Community size and engagement in social media conversations. <em>TCSS</em>, 1-8. (<a href='https://doi.org/10.1109/TCSS.2025.3604221'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Due to the anonymity and decentralization inherent in blockchains, they have gradually become a new breeding ground for money laundering. Anti-money laundering (AML) in blockchains is urgently needed. A conventional AML method involves analyzing transaction features derived from blockchain records that define money transfers within a transaction network. However, this method often fails to identify all illicit transactions, as some are obscured within the network due to their indistinguishable features compared to both known licit and illicit transactions. Fortunately, all transactions involve at least two addresses (accounts), and the account features of illicit transactions are distinguishable because they reflect the social information of the parties involved. This insight provides a pathway to uncover hidden illicit transactions. In this article, we propose the account enhanced transactions classification ($\mathsf{ATC}$) model to enhance the performance of illicit transaction detection. The $\mathsf{ATC}$ expands the dimensionality of transaction feature vectors by concatenating the corresponding accounts, represented as a variable number of high-dimensional feature vectors. In addition, $\mathsf{ATC}$ employs clustering, pooling, and persistent homology techniques to address the challenges associated with learning from these dimension-expanded features. Experimental results on the Elliptic++ dataset demonstrate the advantages of $\mathsf{ATC}$ with an accuracy of 98.28%, precision of 99.64%, recall of 91.85%, and an F1 score of 95.59%, significantly outperforming other comparative methods.},
+  abstract     = {The architecture of public discourse has been profoundly reshaped by social media platforms, which mediate interactions at an unprecedented scale and complexity. This study analyzes user behavior across six platforms over 33 years, exploring how the size of conversations and communities influences dialogue dynamics. Our findings reveal that smaller platforms foster richer, more sustained interactions, while larger platforms drive broader but shorter participation. Moreover, we observe that the propensity for users to reengage in a conversation decreases as community size grows, with niche environments as a notable exception, where participation remains robust. These findings show an interdependence between platform architecture, user engagement, and community dynamics, shedding light on how digital ecosystems shape the structure and quality of public discourse.},
   archive      = {J_TCSS},
-  author       = {Jie Song and Sijia Zhang and Junghoon Park and Yu Gu and Ge Yu},
-  doi          = {10.1109/TCSS.2025.3599534},
+  author       = {Jacopo Nudo and Matteo Cinelli and Andrea Baronchelli and Walter Quattrociocchi},
+  doi          = {10.1109/TCSS.2025.3604221},
   journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-12},
+  month        = {10},
+  pages        = {1-8},
   shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Dimension expansion for learning money laundering activities hidden in transaction network},
+  title        = {From niche to mainstream: Community size and engagement in social media conversations},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Emotion-aware conversational music recommendation with multiagent system. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3599008'>www</a>)
+(2025). Motives and spread pattern in focus for rumor source detection using class-balanced embedded MLP. <em>TCSS</em>, 1-20. (<a href='https://doi.org/10.1109/TCSS.2025.3591846'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Most existing music recommendation systems struggle to perceive users’ implicit emotional states and fail to adapt dynamically to evolving preferences in emotionally rich, context-sensitive scenarios. To address this limitation, we propose an emotion-aware conversational music recommender built on a multiagent system. The system incorporates specialized agents for emotion recognition, semantic intent analysis, and contextual understanding. It distinguishes between explicit emotions, which are directly expressed by the user (e.g., “I feel anxious”), and implicit emotions inferred from contextual cues such as time, environment, or behaviors the user may not be fully aware of. A dual-memory mechanism models long-term musical preferences using a linear decay function and captures short-term, emotion-driven preferences using exponential decay. To enrich music content understanding, multisource information fusion combines streaming platform suggestions with rich metadata from external repositories. The system employs a large language model (LLM) to conduct multiturn dialogues and generate personalized, explainable recommendations. Experimental results show that the proposed approach significantly outperforms existing platforms (e.g., Spotify and Last.fm) in recommendation accuracy, ranking performance, and Hit Ratio@K. These findings underscore the effectiveness of integrating multiagent collaboration, emotion modeling, memory-augmented user profiling, and multisource data fusion for adaptive, user-centric music recommendation.},
+  abstract     = {Misinformation contributes to significant societal issues, necessitating efficient control measures to curb its spread. While much research focuses on differentiating false rumors from authentic information, identifying the source of misinformation is critical to halting its dissemination. This work introduces a novel deep learning framework for rumor source detection, employing a hybrid technique with oversampling and weighted dynamic loss estimation to address imbalanced node classification in large networks. Unlike previous approaches that rely solely on network topology or diffusion patterns, our model integrates user motives, topic interests through keyword template-based topic distribution, and influence metrics within communities. Combining these with rumor propagation statistics, structural characteristics, and neighborhood connectivity provides a robust input to the graph neural network (GNN) model. Experiments on three real-world social media datasets demonstrate the model’s effectiveness, achieving an average F1-score of 0.92. An extensive ablation study further highlights the significance of user characteristics in improving rumor source detection.},
   archive      = {J_TCSS},
-  author       = {Jiarong Wang and Jiaji Wu and Mingzhou Tan and Lingxuan Zhu},
-  doi          = {10.1109/TCSS.2025.3599008},
+  author       = {Greeshma N. Gopal and Binsu C. Kovoor},
+  doi          = {10.1109/TCSS.2025.3591846},
   journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
+  month        = {10},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Motives and spread pattern in focus for rumor source detection using class-balanced embedded MLP},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Can contrastive learning always be trusted? privacy leakage evaluation of contrastive learning for graph neural networks. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3602790'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contrastive learning, as an efficient unsupervised learning, has been extensively studied for improving graph neural network (GNN) in graph-structured data mining. With the wider application of GNN, recent work has revealed that it is vulnerable toward privacy leakage (e.g., property inference). How dose contrastive learning influence privacy leakage of GNN? To address the issue, for the first time we comprehensively evaluate the privacy leakage of contrastive learning for GNN. Specifically, we conduct property inference attack on GNN and evaluate the leakage from the perspective of graph augmentation, encoders, negative sampling and privacy preservation on seven graph contrastive learning (GCL) models with five datasets. Based on extensive experiments, several important insights are gained. 1) Contrastive learning will make GNN more vulnerable to property inference attack than supervised GNNs, e.g., the inference accuracy on GCL models is $\boldsymbol{\times\sim}$1.42 of that of supervised GNNs. 2) The strategy of node augmentation in contrastive learning will make the property of the graph easier to steal among all strategies, e.g., it achieves average inference accuracy (ACC) of 83.89% on the node augmentation. 3) Negative sampling based on rationale-aware will lead to easier leakage of graph properties than other strategies, e.g., the ACC of property inference attack is 100% when using rationale-aware. 4) The better performance results of the graph encoder, the more privacy leakage of the graph property, e.g., the ACC of property inference attack reaches 83.89% on average, and reaches 84.40% when GIN is used as the encoder. 5) The simpler the structure of the graph, the more vulnerable its graph properties are, i.e., the AIDS dataset achieved the highest ACC of 90.96 with the simplest structure. 6) Existing privacy-preserving methods for supervised GNN are deficient for GCL, e.g., the ACC of property inference attack after defence maintains 96% of the nondefensive ones. Furthermore, we make an in-depth analyze of the reasons behind these observations for better understanding of robust contrastive learning for GNN.},
+  archive      = {J_TCSS},
+  author       = {Jinyin Chen and Wenbo Mu and Haonan Ma and Chengyi Wang and Haibin Zheng and Hang Du},
+  doi          = {10.1109/TCSS.2025.3602790},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {10},
   pages        = {1-14},
   shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Emotion-aware conversational music recommendation with multiagent system},
+  title        = {Can contrastive learning always be trusted? privacy leakage evaluation of contrastive learning for graph neural networks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). CDC: Enhancing scene graph generation for IoST-driven social behavioral modeling with cooperative dual classifier. <em>TCSS</em>, 1-14. (<a href='https://doi.org/10.1109/TCSS.2025.3600391'>www</a>)
+(2025). A spectral-temporal refined attention network via contrastive mutual learning for closed-loop motor imagery BCI. <em>TCSS</em>, 1-13. (<a href='https://doi.org/10.1109/TCSS.2025.3607894'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Scene graph generation (SGG) plays an important role in the intelligence of social things (IoST) framework by extracting structured semantic representations from social device data, thereby supporting advanced scene understanding and behavioral-cultural modeling. However, the intrinsic long-tail nature of real-world social device data, coupled with the semantic entanglement between head and tail categories (e.g., “on” versus “standing on”), presents significant challenges for fine-grained SGG. This often results in biased models and suboptimal generalization to rare but semantically informative relations. To address these issues, we propose a novel cooperative dual classifier (CDC) framework for fine-grained SGG in IoST-driven social systems. CDC introduces a cooperative learning mechanism that combines two classifiers. The frozen prototype classifier is designed with maximum interclass margins to alleviate class imbalance. In parallel, a learnable classifier dynamically adjusts decision boundaries to improve discriminative precision. To further enhance the integration between the two classifiers, we introduce a weight knowledge transfer (WKT) module and a collaborative constraint term, facilitating robust adaptation to tail categories. Extensive experiments on the Visual Genome and GQA datasets demonstrate that CDC outperforms state-of-the-art SGG methods, particularly in modeling fine-grained relations under long-tail distributions. These results highlight the capability of CDC to advance semantic understanding of complex behavioral and cultural patterns within computational social systems.},
+  abstract     = {The motor imagery (MI) based brain–computer interface (BCI) holds broad application prospects in human–machine interaction. However, current MI recognition approaches primarily utilize complex attention modules for higher recognition accuracy, consequently hindering real-time BCI implementation. Furthermore, existing methods often overlook inter-subject variability, leading to inadequate generalization of model. Additionally, traditional BCI systems lack closed-loop feedback from the machine to the brain. To address these limitations, we develop a novel closed-loop motor imagery BCI system, which encompasses a spectral-temporal refined attention network via contrastive mutual learning (STRA-CML) and a brain-controlled perceived hand exoskeleton. Specifically, we first design a spectral temporal refined attention block to capture the most discriminative spectral and temporal features. Second, we investigate a contrastive mutual learning strategy incorporating supervised-contrastive learning to enhance the generalization of our STRA-CML. Finally, a brain–machine closed-loop interaction platform based on perceived hand exoskeleton is developed to validate the feasibility of the proposed STRA-CML and provide kinesthetic and visual feedback synchronized with MI. Competitive experimental results on two public datasets and a self-collected dataset demonstrate the effectiveness of our STRA-CML, indicating that our STRA-CML achieves superior classification performance of 83.89% on BCI IV 2a dataset, 86.93% on BCI IV 2b dataset, and 82.79% on self-collected dataset.},
   archive      = {J_TCSS},
-  author       = {Zhaodi Wang and Yangyan Zeng and Biao Leng and Xiaokang Zhou},
-  doi          = {10.1109/TCSS.2025.3600391},
+  author       = {Weidong Yan and Jingyu Liu and Zeyu Zhang and Qinge Zhang and Yang Li},
+  doi          = {10.1109/TCSS.2025.3607894},
   journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-14},
+  month        = {10},
+  pages        = {1-13},
   shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {CDC: Enhancing scene graph generation for IoST-driven social behavioral modeling with cooperative dual classifier},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FC-AEN: Fully convolutional adaptive ensemble network for automatic depression detection. <em>TCSS</em>, 1-16. (<a href='https://doi.org/10.1109/TCSS.2025.3602264'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal automatic depression detection (ADD) has garnered significant research interest due to its potential for providing fast, objective, and reliable assessments. Despite advancements in the field, several challenges persist. First, many existing methods employ fixed-size feature modeling, which fails to adapt to temporal variations in depressive emotional expression, resulting in the loss of critical depressive behavior information. Second, while attention-based detection methods effectively extract features, they incur substantial computational overhead. Finally, multimodal ensemble processes often encounter modality inertia and modality forgetting issues, which compromise model stability and performance. We propose an innovative multimodal ADD network called the fully convolutional adaptive ensemble network (FC-AEN) to address these challenges. This approach comprises three key modules. The first module, deformable patch embedding (DPE), dynamically adjusts the time range of feature segments during training to ensure comprehensive capture of depressive behaviors. The second module, fully convolutional spatiotemporal detector (FCSTD), enhances computational efficiency to manage larger data scales effectively. The third module, adaptive dynamic ensemble (ADE), addresses the multimodal unbalanced ensemble problem through alternating training and gradient adjustment. We conducted experiments on four datasets (AVEC2013, AVEC2014, AVEC2019, and CMDep) and achieved new state-of-the-art (SOTA) performance across three benchmarks. Specifically, on the AVEC2019 dataset, we achieved a mean absolute error (MAE) of 4.91, representing a relative reduction of 14.9%; on the AVEC2013 dataset, we achieved an MAE of 5.11 and a relative reduction of 5.0%; and on the CMDep dataset, we achieved an MAE of 6.04 and a relative reduction of 3.4%.},
-  archive      = {J_TCSS},
-  author       = {Yaowei Wang and Zulong Lin and Yan Teng and Yuqi Cheng and Hongyan Jiang and Yun Yang},
-  doi          = {10.1109/TCSS.2025.3602264},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {FC-AEN: Fully convolutional adaptive ensemble network for automatic depression detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing explainable sequential recommendation with disentangled representations and auxiliary review explanations. <em>TCSS</em>, 1-16. (<a href='https://doi.org/10.1109/TCSS.2025.3603087'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In recent years, there has been a growing focus on enhancing the explainability of recommendation systems. Most sequential recommenders embed item features and capture user sequential preference with entangled, low-transparency methods. While effective, these approaches often lack transparency and explainability. In addition to explaining user preferences as general recommendations, the challenge of explainable sequential recommendations extends to explaining the evolution of users’ preferences. This article has proposed an explainable sequential recommendation framework with a disentangled heterogeneous graph network and auxiliary review explanations, named DisenAre. First, we disentangle and refine heterogeneous graph embeddings to enhance transparency in explaining user preferences. Second, we introduce a preference evolution module to explore the relationships among user behaviors. Third, for user-friendly explanations, we propose a posthoc auxiliary review explainer that extracts keywords and key sentences as supplementary explanations. The framework is evaluated on two datasets, TMALL and Goodreads, and consistently outperforms existing state-of-the-art methods. Additionally, we conduct a case study to analyze explainability and experiments to determine the optimal disentangled coefficient. The results affirm the effectiveness and explainability of the proposed approach.},
-  archive      = {J_TCSS},
-  author       = {Jinpeng Chen and Huachen Guan and Hongbo Gao and Huan Li and Zhenye Yang and Fan Zhang and Kaimin Wei and Feifei Kou and Xindong Wu},
-  doi          = {10.1109/TCSS.2025.3603087},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Enhancing explainable sequential recommendation with disentangled representations and auxiliary review explanations},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Where to go next day: Multiscale Spatial–Temporal decoupled model for mid-term human mobility prediction. <em>TCSS</em>, 1-15. (<a href='https://doi.org/10.1109/TCSS.2025.3601154'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Predicting individual mobility patterns is crucial across various applications. While current methods mainly focus on predicting the next location for personalized services like recommendations, they often fall short in supporting broader applications such as traffic management and epidemic control, which require longer period forecasts of human mobility. This study addresses mid-term mobility prediction, aiming to capture daily travel patterns and forecast trajectories for the upcoming day or week. We propose a novel multiscale spatial–temporal decoupled predictor (MSTDP) designed to efficiently extract spatial and temporal information by decoupling daily trajectories into distinct location-duration chains. Our approach employs a hierarchical encoder to model multiscale temporal patterns, including daily recurrence and weekly periodicity, and utilizes a transformer-based decoder to globally attend to predicted information in the location or duration chain. In addition, we introduce a spatial heterogeneous graph learner to capture multiscale spatial relationships, enhancing semantic-rich representations. Extensive experiments, including statistical physics analysis, are conducted on large-scale mobile phone records in five cities (Boston, Los Angeles, SF Bay Area, Shanghai, and Tokyo), to demonstrate MSTDP’s advantages. Applied to epidemic modeling in Boston, MSTDP significantly outperforms the best-performing baseline, achieving a remarkable 62.8% reduction in mean absolute error (MAE) for cumulative new cases.},
-  archive      = {J_TCSS},
-  author       = {Zongyuan Huang and Weipeng Wang and Shaoyu Huang and Marta C. González and Yaohui Jin and Yanyan Xu},
-  doi          = {10.1109/TCSS.2025.3601154},
-  journal      = {IEEE Transactions on Computational Social Systems},
-  month        = {9},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Comput. Social Syst.},
-  title        = {Where to go next day: Multiscale Spatial–Temporal decoupled model for mid-term human mobility prediction},
+  title        = {A spectral-temporal refined attention network via contrastive mutual learning for closed-loop motor imagery BCI},
   year         = {2025},
 }
 </textarea>

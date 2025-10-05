@@ -25,61 +25,23 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 45</h2>
+<h2 id="tpds">TPDS - 29</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Chameleon: An efficient FHE scheme switching acceleration on GPUs. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3604866'>www</a>)
+(2025). SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3616981'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Fully homomorphic encryption (FHE) enables direct computation on encrypted data, making it a crucial technology for privacy protection. However, FHE suffers from significant performance bottlenecks. In this context, GPU acceleration offers a promising solution to bridge the performance gap. Existing efforts primarily focus on single-class FHE schemes, which fail to meet the diverse requirements of data types and functions, prompting the development of hybrid multi-class FHE schemes. However, studies have yet to thoroughly investigate specific GPU optimizations for hybrid FHE schemes. In this paper, we present an efficient GPU-based FHE scheme switching acceleration named Chameleon. First, we propose a scalable NTT acceleration design that adapts to larger CKKS polynomials and smaller TFHE polynomials. Specifically, Chameleon tackles synchronization issues by fusing stages to reduce synchronization, employing polynomial coefficient shuffling to minimize synchronization scale, and utilizing an SM-aware combination strategy to identify the optimal switching point. Second, Chameleon is the first to comprehensively analyze and optimize critical switching operations. It introduces CMux-level parallelization to accelerate LUT evaluation and a homomorphic rotation-free matrixvector multiplication to improve repacking efficiency. Finally, Chameleon outperforms the state-of-the-art GPU implementations by 1.23× in CKKS HMUL and 1.15× in bootstrapping. It also achieves up to 4.87× and 1.51× speedups for TFHE bootstrapping compared to CPU and GPU versions, respectively, and delivers a 67.3× average speedup for scheme switching over CPU-based implementation.},
+  abstract     = {Sparse-Dense Matrix-Matrix Multiplication (SpMM) has emerged as a foundational primitive in HPC and AI. Recent advancements have aimed to accelerate SpMM by harnessing the powerful Tensor Cores found in modern GPUs. However, despite these efforts, existing methods frequently encounter performance degradation when ported across different Tensor Core architectures. Recognizing that scalable SpMM across multiple generations of Tensor Cores relies on the effective use of general-purpose instructions, we have meticulously developed a SpMM library named SSpMM. However, a significant conflict exists between granularity and performance in current Tensor Core instructions. To resolve this, we introduce the innovative Transpose Mapping Scheme, which elegantly implements fine-grained kernels using coarse-grained instructions. Additionally, we propose the Register Shuffle Method to further enhance performance. Finally, we introduce Sparse Vector Compression, a technique that ensures our kernels are scalable with both structured and unstructured sparsity. Our experimental results, conducted on four generations of Tensor Core GPUs using over 3,000 sparse matrices from well established matrix collections, demonstrate that SSpMM achieves an average speedup of 2.04×, 2.81×, 2.07×, and 1.87×, respectively, over the state-of-the-art SpMM solution. Furthermore, we have integrated SSpMM into PyTorch, achieving a 1.81× speedup in end-to-end Transformer inference compared to cuDNN.},
   archive      = {J_TPDS},
-  author       = {Zhiwei Wang and Haoqi He and Lutan Zhao and Peinan Li and Zhihao Li and Dan Meng and Rui Hou},
-  doi          = {10.1109/TPDS.2025.3604866},
+  author       = {Zeyu Xue and Mei Wen and Jianchao Yang and Minjin Tang and Zhongdi Luo and Jing Feng and Yang Shi and Zhaoyun Chen and Junzhong Shen and Johannes Langguth},
+  doi          = {10.1109/TPDS.2025.3616981},
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-18},
+  month        = {10},
+  pages        = {1-17},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Chameleon: An efficient FHE scheme switching acceleration on GPUs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3604815'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Dynamic resource allocation guarantees the performance of CGRA multi-task, but incurs a wide range of incompatible contexts (config & data) to the CGRA architecture. However, traditional context switch approaches including online config transformation and data reloading may significantly block the task to process inputs under new resource allocation decisions, resulting in the limited task throughput. To address this issue, online config transformation can be avoided if compatible configs have been prepared through offline pre-mapping, but traditional CGRA mappers require days to achieve comprehensive pre-mapping with considerable quality. Besides, online data reloading can also be eliminated through memory sharing, but the traditional arbiter-based approach has the difficulty of trading off physical complexity and memory access parallelism. PreTrans is the first system design to achieve the efficient CGRA multi-task context switch. PreTrans first avoids the online config transformation through a software incremental pre-mapper, which re-utilizes the previously finished pre-mapping results to dramatically accelerate the pre-mapping of subsequent resource allocation decisions with negligible mapping quality loss. Secondly, PreTrans replaces the traditional arbiter with a hardware data transceiver to better support the memory sharing that eliminates data reloading, which allows each tile to possess an individual memory that maximizes the access parallelism without introducing significant physical overhead. The overall evaluation demonstrates that PreTrans achieves 1.13$\sim 2.46\times$ throughput improvement on pipeline and parallel multi-task scenarios, and can reach the target throughput immediately after the new resource allocation decision takes effect. Ablation study further shows that the pre-mapper is more than 3 magnitudes faster than the traditional CGRA mapper while maintaining more than 99% of the optimal mapping quality, and the data transceiver only introduces 9.02% hardware area overhead under 16×16 CGRA.},
-  archive      = {J_TPDS},
-  author       = {Yufei Yang and Chenhao Xie and Liansheng Liu and Xiyuan Peng and Yu Peng and Hailong Yang and Depei Qian},
-  doi          = {10.1109/TPDS.2025.3604815},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3605272'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Task scheduling for parallel computing is strongly NP-hard even without precedence constraints $P||C_{max}$. With any kind of precedence constraints and communication delays the problem becomes less manageable still. We look at the specific case of scheduling under the precedence constraints of a fork-join structure (including communication delays) $P[Q]|fork-join, c_{ij}|C_{max}$. This represents any kind of computation that divides into sub-computations with the end results being processed together. Looking at special cases where computation costs are equal, we propose polynomial time approximations and exact algorithms for them, considering homogenous and (related) heterogenous processors. Having those algorithms allows us to study the quality of heuristics in a large experimental evaluation. This demonstrates that heuristic schedulers perform well enough in most cases.},
-  archive      = {J_TPDS},
-  author       = {Huijun Wang and Oliver Sinnen},
-  doi          = {10.1109/TPDS.2025.3605272},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors},
+  title        = {SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores},
   year         = {2025},
 }
 </textarea>
@@ -105,63 +67,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). DynPipe: Towards dynamic end-to-end pipeline parallelism for interference-aware DNN training. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3605491'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Pipeline parallelism has emerged as an indispensable technique for training large deep neural networks. While existing asynchronous pipeline systems address the time bubbles inherent in synchronous architectures, they continue to suffer from inefficiency and susceptibility to volatile hardware environment due to their suboptimal and static configurations. In this paper, we propose DynPipe, an interference-aware asynchronous pipeline framework to optimize the end-to-end training performance in highly dynamic computing environments. By characterizing the non-overlapped communication overheads and convergence rate conditioned on stage-wise staleness, DynPipe carefully crafts an optimized pipeline partition that harmonizes the hardware speed with statistical convergence. Moreover, DynPipe deploys a non-intrusive random forest model that utilizes runtime stage statistics to evaluate the impact of environmental changes, such as task interference and network jitter, on the training efficiency. Following the evaluation guidance, DynPipe adaptively adjusts partition plan to restore both intra and inter-stage load balancing, thereby facilitating seamless pipeline reconfiguration in dynamic environments. Extensive experiments show that DynPipe outperforms state-of-the-art systems, accelerating the time-to-accuracy by 1.5-3.4×.},
-  archive      = {J_TPDS},
-  author       = {Zhengyi Yuan and Xiong Wang and Yuntao Nie and Yufei Tao and Yuqing Li and Zhiyuan Shao and Xiaofei Liao and Bo Li and Hai Jin},
-  doi          = {10.1109/TPDS.2025.3605491},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {DynPipe: Towards dynamic end-to-end pipeline parallelism for interference-aware DNN training},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3605780'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Approximate membership query (AMQ) data structures can approximately determine whether an element exists in a given dataset. They are widely used in parallel and distributed systems (e.g., high-performance databases, distributed cache systems, and bioinformatics systems) to avoid unnecessary dataset accesses, thereby accelerating massive data processing. For AMQ data structures used in the above systems, achieving high throughput, low false positive rate, and large capacity objectives simultaneously is critical but challenging. Porting AMQ data structures from DRAM to persistent memory makes it possible to achieve the above three objectives simultaneously, but this porting is not a trivial task. Specifically, existing AMQ data structures generate numerous random accesses and/or sequential writes on persistent memory, resulting in poor throughput. Therefore, in the conference version of this paper, we proposed a novel AMQ data structure called wormhole filter, which achieves high throughput on persistent memory, thereby achieving the above three objectives simultaneously. In this journal version, we extend our prior work by introducing parallel wormhole filters to enhance parallel performance. Additionally, we integrate parallel wormhole filters into the LevelDB database system to show that porting AMQ data structures to persistent memory significantly improves system endto-end throughput. Theoretical analysis and experimental results show that wormhole filters significantly outperform state-of-theart AMQ data structures. For example, wormhole filters achieve 12.06× insertion throughput, 1.98× positive lookup throughput, and 8.82× deletion throughput of the best competing baseline.},
-  archive      = {J_TPDS},
-  author       = {Hancheng Wang and Haipeng Dai and Shusen Chen and Meng Li and Rong Gu and Youyou Lu and Chengxun Wu and Jiaqi Zheng and Lexi Xu and Guihai Chen},
-  doi          = {10.1109/TPDS.2025.3605780},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3606001'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Computation offloading utilizes powerful cloud and edge resources to process workflow applications offloaded from Mobile Devices (MDs), effectively alleviating the resource constraints of MDs. In end-edge-cloud environments, workflow applications typically exhibit complex task dependencies. Meanwhile, parallel tasks from multi-MDs result in an expansive solution space for offloading decisions. Therefore, determining optimal offloading plans for highly dynamic and complex end-edge-cloud environments presents significant challenges. The existing studies on offloading tasks for multi-MD workflows often adopt centralized decision-making methods, which suffer from prolonged decision time, high computational overhead, and inability to identify suitable offloading plans in large-scale scenarios. To address these challenges, we propose a Multi-agent Collaborative method for Workflow Task offloading in end-edge-cloud environments with the Actor-Critic algorithm called MCWT-AC. First, each MD is modeled as an agent and independently makes offloading decisions based on local information. Next, each MD's workflow task offloading decision model is obtained through the Actor-Critic algorithm. At runtime, an effective workflow task offloading plan can be gradually developed through multi-agent collaboration. Extensive simulation results demonstrate that the MCWT-AC exhibits superior adaptability and scalability. Moreover, the MCWT-AC outperforms the state-of-art methods and can quickly achieve optimal/near-optimal performance.},
-  archive      = {J_TPDS},
-  author       = {Bohuai Xiao and Chujia Yu and Xing Chen and Zheyi Chen and Geyong Min},
-  doi          = {10.1109/TPDS.2025.3606001},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). ToT: Triangle counting on tensor cores. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3606878'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -181,44 +86,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). MIST: Towards MPI instant startup and termination on tianhe HPC systems. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3608434'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {As the size of MPI programs grows with expanding HPC resources and parallelism demands, the overhead of MPI startup and termination escalates due to the inclusion of less scalable global operations. Global operations involving extensive cross-machine communication and synchronization are crucial for ensuring semantic correctness. The current focus is on optimizing and accelerating these global operations rather than removing them, as the latter involves systematic changes to the system software stack and may impact program semantics. Given this background, we propose a systematic solution named MIST to safely eliminate global operations in MPI startup and termination. Through optimizing the generation of communication addresses, designing reliable communication protocols, and exploiting the resource release mechanism, MIST eliminates all global operations to achieve MPI instant startup and termination while ensuring correct program execution. Experiments on Tianhe-2A supercomputer demonstrate that MIST can reduce the MPI_Init() time by 32.5-77.6% and the MPI_Finalize() time by 28.9-85.0%.},
-  archive      = {J_TPDS},
-  author       = {Yiqin Dai and Ruibo Wang and Yong Dong and Min Xie and Juan Chen and Wenzhe Zhang and Huijun Wu and Mingtian Shao and Kai Lu},
-  doi          = {10.1109/TPDS.2025.3608434},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {MIST: Towards MPI instant startup and termination on tianhe HPC systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3609152'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph neural network (GNN) is a state-of-the-art technique for learning structural information from graph data. However, training GNNs on large-scale graphs is very challenging due to the size of real-world graphs and the message-passing architecture of GNNs. One promising approach for scaling GNNs is distributed training across multiple accelerators, where each accelerator holds a partitioned subgraph that fits in memory to train the model in parallel. Existing distributed GNN training methods require frequent and prohibitive embedding exchanges between partitions, leading to substantial communication overhead and limited the training efficiency. To address this challenge, we propose XDGNN, a novel distributed GNN training method that eliminates the forward communication bottleneck and thus accelerates training. Specifically, we design an explanation-guided subgraph expansion technique that incorporates important structures identified by eXplanation AI (XAI) methods into local partitions, mitigating information loss caused by graph partitioning. Then, XDGNN conducts communication-free distributed training on these self-contained partitions through training the model in parallel without communicating node embeddings in the forward phase. Extensive experiments demonstrate that XDGNN significantly improves training efficiency while maintaining the model accuracy compared with current distributed GNN training methods.},
-  archive      = {J_TPDS},
-  author       = {Jie Gao and Jia Hu and Geyong Min and Fei Hao},
-  doi          = {10.1109/TPDS.2025.3609152},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). FedBiF: Communication-efficient federated learning via bits freezing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3610224'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -232,25 +99,6 @@
   pages        = {1-12},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedBiF: Communication-efficient federated learning via bits freezing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3610354'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Exascale high-performance computing (HPC) systems face critical resource management challenges such as massive energy consumption in megawatts per facility, performance variability for identical jobs, and resource utilization inefficiencies. Traditional single-objective schedulers cannot address these multifaceted challenges effectively. This paper introduces HARMONIC (Holistic Adaptive Resource Management Optimizing Next-generation Interconnected Computing), a novel framework that simultaneously optimizes performance, energy efficiency, and resilience through uncertainty-aware multi-objective optimization. Our approach distinguishes aleatoric uncertainty (inherent system variability) from epistemic uncertainty (modeling limitations) using Bayesian neural networks and employs graphbased representations to capture complex system dependencies. Experimental validation in both simulated environments and controlled testbeds demonstrates significant improvements over state-of-the-art schedulers: 10-19% energy reduction, 16-25% throughput improvement and 18-32% performance variability reduction. These results translate to potential annual savings of multimillion dollars per exascale facility while enhancing scientific productivity through improved experimental reproducibility.},
-  archive      = {J_TPDS},
-  author       = {Kyrian C. Adimora and Hongyang Sun},
-  doi          = {10.1109/TPDS.2025.3610354},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management},
   year         = {2025},
 }
 </textarea>
@@ -295,44 +143,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3611388'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Data locality is crucial for distributed computing systems (e.g., Spark and Hadoop), which is the main factor considered in the task scheduling. Simultaneously, the effects of data locality on reduce tasks are determined by the intermediate data partitioning. While suffering from the problem of data skew, the existing intermediate data partitioning methods only achieves load balancing for reduce tasks. To address the problem, this paper optimizes the data locality for reduce tasks by integrating intermediate data partitioning and task scheduling in Spark framework. First, it presents a distribution skew model to divide the key clusters into skewed and non-skewed distribution. Then, a data locality and load balancing-aware intermediate data partitioning method is proposed, where a priority allocation strategy for the key clusters with skewed distribution is presented, and a balanced allocation strategy for the key clusters with non-skewed distribution is presented. Finally, it proposes a data locality-aware reduce task scheduling algorithm, where an online self-adaptive NARX (nonlinear autoregressive with external input) model is developed to predict the idle time of node. It can ensure that the delayed scheduling decision made can complete the data transmission of reduce tasks earlier. We implement our proposals in Spark-3.5.1 and evaluate the performance using several representative benchmarks. Experimental results indicate that the proposed method and algorithm can reduce the job/application running time by approximately 4% to 46% and decrease the total volume of data transmission by approximately 8% to 54%.},
-  archive      = {J_TPDS},
-  author       = {Mengsi He and Zhongming Fu and Zhuo Tang},
-  doi          = {10.1109/TPDS.2025.3611388},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). The megapixel approach for efficient execution of irregular wavefront algorithms on GPUs. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3612696'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Morphological operations are critical in high-resolution biomedical image processing. Their efficient execution relies on an irregular flood-filling strategy consolidated in the Irregular Wavefront Propagation Pattern (IWPP). IWPP was designed for GPUs and achieved significant gains compared to previous work. Here, however, we have revisited IWPP to identify the key limitations of its GPU implementation and proposed a novel more efficient strategy. In particular, the IWPP most demanding phase consists of tracking active pixels, those contributing to the output, that are the ones processed during the execution. This computational strategy leads to irregular memory access, divergent execution, and high storage (queue) management costs. To address these aspects, we have proposed the novel execution strategy called Irregular Wavefront Megapixel Propagation Pattern (IWMPP). IWMPP introduces a coarse-grained execution approach based on fixed-size square regions (instead of pixels in IWPP), referred to as megapixels (MPs). This design reduces the number of elements tracked and enables a regular processing within MPs that, in turn, improves thread divergence and memory accesses. IWMPP introduces optimizations, such as Duplicate Megapixel Removal (DMR) to avoid MPs recomputation and Tiled-Ordered (TO) execution that enforces a semistructured MPs execution sequence to improve data propagation efficiency. Experimental results using large tissue cancer images demonstrated that the IWMPP GPU attains significant gains over the state-of-the-art (IWPP). For morphological reconstruction, fill holes, and h-maxima operations, on the RTX 4090, the IWMPP GPU is up to 17.9×, 45.6×, and 14.9× faster than IWPP GPU, respectively, while at the same time reducing memory demands. IWMPP is an important step to enable quick processing of large imaging datasets.},
-  archive      = {J_TPDS},
-  author       = {Mathias Oliveira and Willian Barreiros and Renato Ferreira and Alba C. M. A. Melo and George Teodoro},
-  doi          = {10.1109/TPDS.2025.3612696},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {The megapixel approach for efficient execution of irregular wavefront algorithms on GPUs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). Atomic smart contract interoperability with high efficiency via cross-chain integrated execution. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3614374'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -346,6 +156,25 @@
   pages        = {1-17},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Atomic smart contract interoperability with high efficiency via cross-chain integrated execution},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GAP-DCCS: A generic acceleration paradigm for data-intensive applications with efficient data compression and caching strategy over CPU-GPU clusters. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3615283'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Seismic exploration is a geophysical method used for imaging subsurface structures, capable of providing high-resolution images of the underground. In seismic data processing, Kirchhoff Pre-Stack Depth Migration (KPSDM) serves as one of the key techniques, playing a critical role in significantly enhancing the lateral resolution of imaging and providing accurate characterization of subsurface media. However, with the continuous growth in high-density seismic data volumes, the computational efficiency of KPSDM is primarily constrained by substantial computational loads, end-to-end I/O bottlenecks, and data storage pressures. To address the performance optimization challenges of computation-intensive applications that require frequent large-scale data transfers between the host and accelerator devices, this paper proposes GAP-DCCS, a GPU-based Generic Acceleration Paradigm with efficient Data Compression and Caching Strategy, which includes the following core strategies: (1) For compute-intensive modules, a GPU-based three-dimensional parallel acceleration is implemented, combined with memory access optimization techniques and overlapping strategies for data transfer and computation, to improve GPU resource utilization; (2) To alleviate the storage pressure of large-scale datasets, the BitComp compression algorithm is introduced to efficiently compress task data while maintaining output stability, significantly reducing storage requirements and end-to-end data transfer volume; (3) To tackle the I/O bottleneck caused by frequent large-scale data transfers between the host and devices, an adaptive dynamic caching data management mechanism is designed to effectively increase data reuse rates and markedly reduce end-to-end transfer frequency. Experimental results demonstrate that the proposed optimization method significantly enhances the computational performance of KPSDM, achieving a speedup of 123.51× on a single NVIDIA Tesla A800 GPU compared to a 16-core CPU. This optimization paradigm has not only been effectively validated in KPSDM but also offers a referable high-performance computing solution for other large-scale data processing tasks.},
+  archive      = {J_TPDS},
+  author       = {Jiangwei Xiao and Yingzhe Bai and Hanfei Diao and Guofeng Liu and Yuzhu Wang},
+  doi          = {10.1109/TPDS.2025.3615283},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {GAP-DCCS: A generic acceleration paradigm for data-intensive applications with efficient data compression and caching strategy over CPU-GPU clusters},
   year         = {2025},
 }
 </textarea>
@@ -384,120 +213,6 @@
   pages        = {1-12},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Online container caching for IoT data processing in serverless edge computing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Rethinking virtual machines live migration for memory disaggregation. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3597149'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Resource underutilization has troubled data centers for several decades. On the CPU front, live migration plays a crucial role in reallocating CPU resources. Nevertheless, contemporary Virtual Machine (VM) live migration methods are burdened by substantial resource consumption. In terms of memory management, disaggregated memory offers an effective solution to enhance memory utilization, but leaves a gap in addressing CPU underutilization. Our findings highlight a considerable opportunity to optimize live migration in the context of disaggregated memory systems. We introduce Anemoi, a resource management system that seamlessly integrates VM live migration with memory disaggregation to address the aforementioned gap. In the context of disaggregated memory, remote memory becomes accessible from destination nodes, effectively eliminating the need for extensive network transmission of memory pages, and thereby significantly reducing migration time. In addition, we propose using memory replicas as an optimization to the live migration system. To mitigate the overhead of potential excessive memory consumption, we develop a dedicated compression algorithm. Our evaluations demonstrate that Anemoi leads to a notable 69% reduction in network bandwidth utilization and an impressive 83% reduction in migration time compared to traditional VM live migration. Additionally, our compression algorithm achieves an outstanding space-saving rate of 83.6%.},
-  archive      = {J_TPDS},
-  author       = {Xingzi Yu and Xingguo Jia and Jin Zhang and Yun Wang and Senhao Yu and Zhengwei Qi},
-  doi          = {10.1109/TPDS.2025.3597149},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Rethinking virtual machines live migration for memory disaggregation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Exploiting fine-grained task-level parallelism for variant calling acceleration. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3600285'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Variant calling, which identifies genomic differences relative to a reference genome, is critical for understanding disease mechanisms, identifying therapeutic targets, and advancing precision medicine. However, as two critical stages in this process, serial processing in local assembly and the computational dependencies in Pair-HMM make variant calling highly time-consuming. Moreover, optimizing only one of these stages often shifts the performance bottleneck to the other. This paper observes that the similarity between reads allows parallel processing in the local assembly and that alignment information from the local assembly can significantly diminish the burdensome computations in Pair-HMM. Accordingly, this paper co-optimizes the software and hardware for both steps to achieve the best performance. First, we collect $k$-mer locations in each read during the local assembly process and utilize the similarity between reads to make it parallel. Second, we propose the mPair-HMM algorithm, leveraging location information to split a Pair-HMM computation task into multiple independent sub-tasks, improving the computation's parallelism. To fully exploit the parallelism stemming from the novel algorithms, we propose an end-to-end accelerator VCAx for variant calling that accelerates both stages in collaboration. Evaluation results demonstrate that our implementation achieves up to a 7× speedup over the GPU baseline for local assembly and a 3.16× performance improvement compared to the state-of-the-art ASIC implementation for Pair-HMM.},
-  archive      = {J_TPDS},
-  author       = {Menghao Guo and Longlong Chen and Yichi Zhang and Hongyi Guan and Shaojun Wei and Jianfeng Zhu and Leibo Liu},
-  doi          = {10.1109/TPDS.2025.3600285},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Exploiting fine-grained task-level parallelism for variant calling acceleration},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3598190'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Memory underutilization poses a significant challenge in cloud services, leading to performance inefficiencies and resource wastage. The tightly coupled computing and memory resources in cloud servers are identified as the root cause of this problem. To address this issue, memory pooling has been the subject of extensive research for decades, providing centralized or distributed shared memory pools as flexible memory resources for various applications running on different servers. However, existing memory disaggregation solutions sacrifice memory resources, add extra hardware (such as memory boxes/blades/drives), and degrade memory performance to achieve flexibility. To overcome these limitations, this paper proposes MemTunnel, a rack-scale host memory pooling architecture that provides a low-cost memory pooling solution based on Compute Express Link (CXL). MemTunnel is the first hardware and software architecture to offer symmetric, memory-semantic memory pooling over CXL, with an FPGA-based platform to demonstrate its feasibility in a real implementation. MemTunnel is orthogonal to the existing CXL-based memory pool and provides an additional layer of abstraction for memory disaggregation. Evaluation results show that MemTunnel achieves comparable performance to the existing CXL-based memory pool for a single machine and provides better rack-scale performance with minor hardware overheads.},
-  archive      = {J_TPDS},
-  author       = {Tianchan Guan and Yijin Guan and Zhaoyang Du and Jiacheng Ma and Boyu Tian and Zhao Wang and Teng Ma and Zheng Liu and Yang Kong and Yuan Xie and Mingyu Gao and Guangyu Sun and Hongzhong Zheng and Dimin Niu},
-  doi          = {10.1109/TPDS.2025.3598190},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3601993'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Neuromorphic hardware systems—designed as 2D-mesh structures with parallel neurosynaptic cores—have proven highly efficient at executing large-scale spiking neural networks (SNNs). A critical challenge, however, lies in mapping neurons efficiently to these cores. While existing approaches work well with regular, fully functional mesh structures, they falter in real-world scenarios where hardware has irregular shapes or non-functional cores caused by defects or resource fragmentation. To address these limitations, we propose a novel mapping method based on an innovative space-filling curve: the Adaptive Locality-Preserving (ALP) curve. Using a unique divide-and-conquer construction algorithm, the ALP curve ensures adaptability to meshes of any shape while maintaining crucial locality properties—essential for efficient mapping. Our method demonstrates exceptional computational efficiency, making it ideal for large-scale deployments. These distinctive characteristics enable our approach to handle complex scenarios that challenge conventional methods. Experimental results show that our method matches state-of-the-art solutions in regular-shape mapping while achieving significant improvements in irregular scenarios, reducing communication overhead by up to 57.1%.},
-  archive      = {J_TPDS},
-  author       = {Ouwen Jin and Qinghui Xing and Zhuo Chen and Ming Zhang and De Ma and Ying Li and Xin Du and Shuibing He and Shuiguang Deng and Gang Pan},
-  doi          = {10.1109/TPDS.2025.3601993},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3602521'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Containerized Edge computing offers lightweight, reliable, and quick solutions to latency-critical Machine Learning (ML) and Deep Learning (DL) applications. Existing solutions considering multiple Quality of Service (QoS) parameters either overlook the intricate relation of QoS parameters or pose significant scheduling overheads. Furthermore, reactive decisionmaking can damage Edge servers at peak load, incurring escalated costs and wasted computations. Resource provisioning, scheduling, and ML model selection substantially influence energy consumption, user-perceived accuracy, and delayoriented Service Level Agreement (SLA) violations. Addressing contrasting objectives and QoS simultaneously while avoiding server faults is highly challenging in the exposed heterogeneous and resource-constrained Edge continuum. In this work, we propose the EdgeAIBus framework that offers a novel joint container management and ML model selection algorithm based on Importance Weighted Actor-Learner Architecture to optimize energy, accuracy, SLA violations, and avoid server faults. Firstly, Patch Time Series Transformer (PatchTST) is utilized for CPU usage predictions of Edge servers for its 8.51% Root Mean Squared Error and 5.62% Mean Absolute Error. Leveraging pipelined predictions, EdgeAIBus conducts consolidation, resource oversubscription, and ML/DL model switching with possible migrations to conserve energy, maximize utilization and user-perceived accuracy, and reduce SLA violations. Simulation results show EdgeAIBus oversubscribed 110% cluster-wide CPU with real usage up to 70%, conserved 14 CPU cores, incurred less than 1% SLA violations with 2.54% drop in inference accuracy against industry-led Model Switching Balanced load and Google Kubernetes Optimized schedulers. Google Kubernetes Engine experiments demonstrate 80% oversubscription, 14 CPU cores conservation, 1% SLA violations, and 3.81% accuracy loss against the counterparts. Finally, constrained setting experiment analysis shows that PatchTST and EdgeAIBus can produce decisions within 100ms in a 1-core and 1 GB memory device.},
-  archive      = {J_TPDS},
-  author       = {Babar Ali and Muhammed Golec and Sukhpal Singh Gill and Felix Cuadrado and Steve Uhlig},
-  doi          = {10.1109/TPDS.2025.3602521},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3602440'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Serverless computing relies on keeping functions alive or pre-warming them before invocation to mitigate the cold start problem, stemming from the overhead of initializing function startup environments. However, under constrained cloud resources, accurately predicting the invocation patterns of sparse functions remains challenging. This limits the formulation of effective pre-warm and keep-alive strategies, leading to frequent cold starts and degraded user satisfaction. To address these challenges, we propose SPFaaS, a hybrid framework based on sparse function prediction. To enhance the learnability of sparse function invocation data, SPFaaS takes into account the characteristics of cloud service workloads along with the features of pre-warm and keep-alive strategies, transforming function invocation records into probabilistic data. It captures the underlying periodicity and temporal dependencies in the data through multiple rounds of sampling and the combined use of Gated Recurrent Units and Temporal Convolutional Networks for accurate prediction. Based on the final prediction outcome and real-time system states, SPFaaS determines adaptive pre-warm and keep-alive strategies for each function. Experiments conducted on two real-world serverless clusters demonstrate that SPFaaS outperforms state-of-the-art methods in reducing cold starts and improving user satisfaction.},
-  archive      = {J_TPDS},
-  author       = {Wang Zhang and Yuyang Zhu and Zhan Shi and Manyu Dang and Yutong Wu and Fang Wang and Dan Feng},
-  doi          = {10.1109/TPDS.2025.3602440},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless},
   year         = {2025},
 }
 </textarea>
@@ -574,25 +289,6 @@
   pages        = {1-17},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Elastic relaxation of concurrent data structures},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Doing more with less: Balancing probing costs and task offloading efficiency at the network edge. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3590368'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In decentralized edge computing environments, user devices need to perceive the status of neighboring devices, including computational availability and communication delays, to optimize task offloading decisions. However, probing the real-time status of all devices introduces significant overhead, and probing only a few devices can lead to suboptimal decision-making, considering the massive connectivity and non-stationarity of edge networks. Aiming to balance the status probing cost and task offloading performance, we study the joint transmission and computation status probing problem, where the status and offloading delay on edge devices are characterized by general, bounded, and non-stationary distributions. The problem is proved to be NP-hard, even with known offloading delay distributions. To handle this case, we design an efficient offline method that guarantees a $(1-1/e)$ approximation ratio via leveraging the submodularity of the expected offloading delay function. Furthermore, for scenarios with unknown and non-stationary offloading delay distributions, we reformulate the problem using the piecewise-stationary combinatorial multi-armed bandit framework and develop a change-point detection-based online status probing (CD-OSP) algorithm. CD-OSP can timely detect environmental changes and update probing strategies via using the proposed offline method and estimating offloading delay distributions. We prove that CD-OSP achieves a regret of $\mathcal {O}(NV\sqrt{T\ln T})$, with $N$, $V$, and $T$ denoting the numbers of stationary periods, edge devices, and time slots, respectively. Extensive simulations and testbed experiments demonstrate that CD-OSP significantly outperforms state-of-the-art baselines, which can reduce the probing cost by up to 16.18X with a 2.14X increase in the offloading delay.},
-  archive      = {J_TPDS},
-  author       = {Xishuo Li and Shan Zhang and Tie Ma and Zhiyuan Wang and Hongbin Luo},
-  doi          = {10.1109/TPDS.2025.3590368},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {7},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Doing more with less: Balancing probing costs and task offloading efficiency at the network edge},
   year         = {2025},
 }
 </textarea>
