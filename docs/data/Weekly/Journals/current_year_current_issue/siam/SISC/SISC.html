@@ -25,8 +25,29 @@
 </head>
 <body>
 
-<h2 id="sisc">SISC - 29</h2>
+<h2 id="sisc">SISC - 32</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Optimized sparse matrix operations for reverse mode automatic differentiation. <em>SISC</em>, <em>47</em>(5), C1115-C1143. (<a href='https://doi.org/10.1137/24M1711832'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Sparse matrices are ubiquitous in computational science, enabling significant reductions in both compute time and memory overhead for problems with local connectivity. Simultaneously, recent work in automatic differentiation has lead to explosive growth in the adoption of accessible frameworks, such as PyTorch, TensorFlow, and JAX, which allow for the rapid development of optimization problems in computational settings. However, these existing tools lack support for sparse linear algebra, severely limiting their use in settings such as scientific machine-learning (SciML) and numerical PDEs, where the use of sparsity is often a necessity for achieving efficient algorithms. In this paper, we develop a set of performant kernels that allow for efficient automatic differentiation of expressions with sparse matrix values; fine-grained parallelism is exploited and performance is highlighted on massively-parallel graphics processing units (GPUs). We also present several applications that are enhanced by the use of these kernels, such as computing optimal transmission conditions for optimized Schwarz methods or finding sparse preconditioners for conjugate gradients. The use of backpropagation with these sparse operations results in massive speed gains when compared to their dense counterparts, with speedups ranging from to (or more), and enabling computation on larger problems than is possible using dense operations. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/nicknytko/numml/tree/main and in the supplementary materials (numml-main.zip [85.0KB]).},
+  archive      = {J_SISC},
+  author       = {Nicolas Nytko and Ali Taghibakhshi and Tareq Uz Zaman and Scott MacLachlan and Luke N. Olson and Matthew West},
+  doi          = {10.1137/24M1711832},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {C1115-C1143},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Optimized sparse matrix operations for reverse mode automatic differentiation},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). A deep learning method for computing committor functions with adaptive sampling. <em>SISC</em>, <em>47</em>(5), C1091-C1114. (<a href='https://doi.org/10.1137/24M1654750'>www</a>)
@@ -274,6 +295,48 @@
   pages        = {B1001-B1025},
   shortjournal = {SIAM J. Sci. Comput.},
   title        = {Parallel computation of the phonon boltzmann transport equation for simulation of frequency domain thermo-reflectance (FDTR) experiments},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fully guaranteed and computable error bounds on the energy for periodic Kohn–Sham equations with convex density functionals. <em>SISC</em>, <em>47</em>(5), A2881-A2905. (<a href='https://doi.org/10.1137/25M1735676'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this article, we derive fully guaranteed error bounds for the energy of convex nonlinear mean-field models. These results apply in particular to Kohn–Sham equations with convex density functionals, which includes the reduced Hartree–Fock (rHF) model, as well as the Kohn–Sham model with exact exchange-density functional (which is unfortunately not explicit and therefore not usable in practice). We then decompose the obtained bounds into two parts, one depending on the chosen discretization and one depending on the number of iterations performed in the self-consistent algorithm used to solve the nonlinear eigenvalue problem, paving the way for adaptive refinement strategies. The accuracy of the bounds is demonstrated on a series of test cases, including a silicon crystal and a hydrogen fluoride molecule simulated with the rHF model and discretized with planewaves. We also show that, although not anymore guaranteed, the error bounds remain very accurate for a silicon crystal simulated with the Kohn–Sham model using nonconvex exchange-correlation functionals of practical interest. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://doi.org/10.18419/darus-4469 and in the supplementary materials (M173567_SM.pdf [287KB], aposteriori_kohn_sham.zip [190MB]).},
+  archive      = {J_SISC},
+  author       = {Andrea Bordignon and Eric Cancès and Geneviève Dusson and Gaspard Kemlin and Rafael Antonio Lainez Reyes and Benjamin Stamm},
+  doi          = {10.1137/25M1735676},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {A2881-A2905},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Fully guaranteed and computable error bounds on the energy for periodic Kohn–Sham equations with convex density functionals},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning stochastic reduced models from data: A nonintrusive approach. <em>SISC</em>, <em>47</em>(5), A2851-A2880. (<a href='https://doi.org/10.1137/24M1679756'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. A nonintrusive model order reduction method for bilinear stochastic differential equations with additive Gaussian noise is proposed. A reduced order model (ROM) is designed in order to approximate the statistical properties of high-dimensional systems. The drift and diffusion coefficients of the ROM are inferred from state observations by solving appropriate least-squares problems. The closeness of the ROM obtained by the presented approach to the intrusive ROM obtained by the proper orthogonal decomposition (POD) method is investigated. Two generalizations of the snapshot-based dominant subspace construction to the stochastic case are presented. Numerical experiments are provided to compare the developed approach to POD. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/JMNicolaus/OperatorInference_for_SDEs and in the supplementary materials (OperatorInference_for_SDEs-main.zip [73.5KB]).},
+  archive      = {J_SISC},
+  author       = {M. A. Freitag and J. M. Nicolaus and M. Redmann},
+  doi          = {10.1137/24M1679756},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {A2851-A2880},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Learning stochastic reduced models from data: A nonintrusive approach},
   volume       = {47},
   year         = {2025},
 }

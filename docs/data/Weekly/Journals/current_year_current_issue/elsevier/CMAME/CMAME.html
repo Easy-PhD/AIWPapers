@@ -25,8 +25,28 @@
 </head>
 <body>
 
-<h2 id="cmame">CMAME - 39</h2>
+<h2 id="cmame">CMAME - 42</h2>
 <ul>
+<li><details>
+<summary>
+(2026). A neo-yeoh hyperelastic interpolation model for stable multi-material topology optimization under geometric nonlinearity. <em>CMAME</em>, <em>448</em>, 118467. (<a href='https://doi.org/10.1016/j.cma.2025.118467'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current mainstream methods for addressing numerical instability in geometrically nonlinear topology optimization typically require mesh duplication and manual manipulation of the tangent stiffness matrix. Mesh duplication significantly hinders computing efficiency, while manual manipulation restricts their applicability in commercial solvers. To address these limitations, this study proposes a Neo-Yeoh hyperelastic interpolation (NYHI) material model to address numerical instability in geometrically nonlinear topology optimization. Integrating Neo-Hookean and second-order Yeoh hyperelastic materials with a Heaviside function, the model selectively enhances shear resistance in low-density regions while maintaining accurate deformation modeling in solid elements. The topology optimization framework for multi-material problems considering geometric nonlinearity is proposed. Numerical tests on single- and multi-material structures, including cantilever and two-side clamped beams, demonstrate the model’s efficacy in suppressing distortion in low-density regions and enabling stable optimization under large deformations. Key parameters in the NYHI material model are systematically analyzed, revealing their critical roles in balancing optimization stability and structural performance. The proposed model successfully addresses numerical instability issues with a single mesh, leading to a significant simplification of the topology optimization formulation.},
+  archive      = {J_CMAME},
+  author       = {Longlong Song and Fengwen Wang and Tong Gao and Weihong Zhang},
+  doi          = {10.1016/j.cma.2025.118467},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {1},
+  pages        = {118467},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A neo-yeoh hyperelastic interpolation model for stable multi-material topology optimization under geometric nonlinearity},
+  volume       = {448},
+  year         = {2026},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2026). Non-iterative method for reliability-based topology optimization of static and dynamic problems with uncertain-but-bounded parameters. <em>CMAME</em>, <em>448</em>, 118456. (<a href='https://doi.org/10.1016/j.cma.2025.118456'>www</a>)
@@ -42,6 +62,26 @@
   pages        = {118456},
   shortjournal = {Comput. Meth. Appl. Mech. Eng.},
   title        = {Non-iterative method for reliability-based topology optimization of static and dynamic problems with uncertain-but-bounded parameters},
+  volume       = {448},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Diff-FlowFSI: A GPU-optimized differentiable CFD platform for high-fidelity turbulence and FSI simulations. <em>CMAME</em>, <em>448</em>, 118455. (<a href='https://doi.org/10.1016/j.cma.2025.118455'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Turbulent flows and fluid-structure interactions (FSI) are ubiquitous in scientific and engineering applications, but their accurate and efficient simulation remains a major challenge due to strong nonlinearities, multiscale interactions, and high computational demands. Traditional CFD solvers, though effective, struggle with scalability and adaptability for tasks such as inverse modeling, optimization, and data assimilation. Recent advances in machine learning (ML) have inspired hybrid modeling approaches that integrate neural networks with physics-based solvers to enhance generality and capture unresolved dynamics. However, realizing this integration requires solvers that are not only physically accurate but also differentiable and GPU-efficient. In this work, we introduce Diff-FlowFSI, a GPU-accelerated, fully differentiable CFD platform designed for high-fidelity turbulence and FSI simulations. Implemented in JAX, Diff-FlowFSI features a vectorized finite volume solver combined with the immersed boundary method to handle complex geometries and fluid-structure coupling. The platform enables GPU-enabled fast forward simulations, supports automatic differentiation for gradient-based inverse problems, and integrates seamlessly with deep learning components for hybrid neural-CFD modeling. We validate Diff-FlowFSI across a series of benchmark turbulence and FSI problems, demonstrating its capability to accelerate scientific computing at the intersection of physics and machine learning.},
+  archive      = {J_CMAME},
+  author       = {Xiantao Fan and Xin-Yang Liu and Meng Wang and Jian-Xun Wang},
+  doi          = {10.1016/j.cma.2025.118455},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {1},
+  pages        = {118455},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Diff-FlowFSI: A GPU-optimized differentiable CFD platform for high-fidelity turbulence and FSI simulations},
   volume       = {448},
   year         = {2026},
 }
@@ -102,6 +142,26 @@
   pages        = {118443},
   shortjournal = {Comput. Meth. Appl. Mech. Eng.},
   title        = {Nonlinear projection-based model order reduction with machine learning regression for closure error modeling in the latent space},
+  volume       = {448},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Efficient bayesian multi-fidelity inverse analysis for expensive and non-differentiable physics-based simulations in high stochastic dimensions. <em>CMAME</em>, <em>448</em>, 118442. (<a href='https://doi.org/10.1016/j.cma.2025.118442'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-dimensional Bayesian inverse analysis ( dim ≫ 100 ) is mostly unfeasible for computationally demanding, nonlinear physics-based high-fidelity (HF) models. Usually, the use of more efficient gradient-based inference schemes is impeded if the multi-physics models are provided by complex legacy codes. Adjoint-based derivatives are either exceedingly cumbersome to derive or nonexistent for practically relevant large-scale nonlinear and coupled multi-physics problems. Similarly, holistic automated differentiation w. r. t. primary variables of multi-physics codes is usually not yet an option and requires extensive code restructuring if not considered from the outset in the software design. This absence of differentiability further exacerbates the already present computational challenges. To overcome the existing limitations, we propose a novel inference approach called Bayesian multi-fidelity inverse analysis (BMFIA) , which leverages simpler and computationally cheaper lower-fidelity (LF) models that are designed to provide model derivatives. BMFIA learns a simple, probabilistic dependence of the LF and HF models, which is then employed in an altered likelihood formulation to statistically correct the inaccurate LF response. From a Bayesian viewpoint, this dependence represents a multi-fidelity (MF) conditional density (discriminative model). We demonstrate how this MF conditional density can be learned robustly in the small data regime from only a few HF and LF simulations (50 to 300), which would not be sufficient for naive surrogate approaches. The formulation is fully differentiable and allows the flexible design of a wide range of LF models. We demonstrate that BMFIA solves Bayesian inverse problems for scenarios that used to be prohibitive, such as finely-resolved and hence high-dimensional spatial reconstruction problems in two-dimensional Euclidean domains with static posteriors, given nonlinear and transient coupled poro-elastic media physics. We show that the resulting static MF posteriors are in excellent agreement with the (usually inaccessible) HF posteriors or ground-truth data and note that extending the framework to arbitrary three-dimensional domains is a natural and important direction for future work.},
+  archive      = {J_CMAME},
+  author       = {Jonas Nitzler and Buğrahan Z. Temür and Phaedon-S. Koutsourelakis and Wolfgang A. Wall},
+  doi          = {10.1016/j.cma.2025.118442},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {1},
+  pages        = {118442},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Efficient bayesian multi-fidelity inverse analysis for expensive and non-differentiable physics-based simulations in high stochastic dimensions},
   volume       = {448},
   year         = {2026},
 }
