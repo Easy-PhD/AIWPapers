@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 29</h2>
+<h2 id="tpds">TPDS - 32</h2>
 <ul>
 <li><details>
 <summary>
@@ -42,6 +42,63 @@
   pages        = {1-17},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Popularity-aware data placement in erasure coding-based edge storage systems. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3619273'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Edge computing allows app vendors to store popular data on edge servers, enabling users to retrieve data with low latency. However, edge servers may become unavailable at runtime due to expected exceptions. Data requests are routed to cloud servers, resulting in increased data retrieval latency. To address this issue, erasure coding (EC) has been employed to improve data availability, aiming to ensure full data access for all the users in an edge storage system (ESS). However, in real-world scenarios, data popularity differs and varies. Existing approaches for edge data placement place coded blocks across the entire system without considering data popularity. As a result, they often suffer from high data retrieval latency. In addition, they are designed to process data items individually. Data placed earlier will limit the placement options for subsequent files because edge servers with the most neighbors in the system can be easily exhausted. Some files cannot be placed properly to accommodate user demands. This increases users' data retrieval latency further. This paper tries to study the placement of multiple files in an edge storage system, considering their popularity. We first model the edge data placement (EDP) problem as a mixed-integer programming problem and prove its $\mathcal {NP}$-hardness. Then, we present an optimal algorithm named EDP-O, decoupling the EDP problem into three convex optimization subproblems for solving with an iterative algorithm. In addition, we propose an approximation algorithm named EDP-A that quickly solves the EDP problem in large-scale scenarios with a guaranteed approximation ratio of $\ln N$. The results of experiments conducted on a real-world dataset show that EDP-O and EDP-A reduce the average data retrieval latency against four representative approaches by an average of 18.4% and 15.6% in small-scale scenarios. EDP-A reduces the average data retrieval latency against four representative approaches by an average of 54.7% and reduces the data discard rate by an average of 34.9% in large-scale scenarios.},
+  archive      = {J_TPDS},
+  author       = {Ruikun Luo and Jiadong Zhao and Qiang He and Feifei Chen and Song Wu and Hai Jin and Yun Yang},
+  doi          = {10.1109/TPDS.2025.3619273},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Popularity-aware data placement in erasure coding-based edge storage systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cache partition management for improving fairness and I/O responsiveness in NVMe SSDs. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3619866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {NVMe SSDs have become mainstream storage devices thanks to their compact size and ultra-low latency. It has been observed that the impact of interference among all concurrently running streams (i.e., I/O workloads) on their overall responsiveness differs significantly, thus leading to unfairness. The intensity and access locality of streams are the primary factors contributing to interference. A small-sized data cache is commonly equipped in the front-end of SSDs to improve I/O performance and extend the device's lifetime. The degree of parallelism at this level, however, is limited compared to that of the SSD back end, which consists of multiple channels, chips, and planes. Therefore, the impact of interference can be more significant at the data cache level. In this paper, we propose a cache division management scheme that not only contributes to fairness but also boosts I/O responsiveness across all workloads in NVMe SSDs. Specifically, our proposal supports long-term data cache partitioning and short-term cache adjustment with global sharing, ensuring better fairness and further enhancing cache utilization efficiency in multi-stream scenarios. Trace-driven simulation experiments show that our proposal improves fairness by an average of 66.0% and reduces overall I/O response time by between 3.8% and 18.0%, compared to existing cache management schemes for NVMe SSDs.},
+  archive      = {J_TPDS},
+  author       = {Jiaojiao Wu and Fan Yang and Zhibing Sha and Li Cai and Zhigang Cai and Balazs Gerofi and Yuanquan Shi and Jianwei Liao},
+  doi          = {10.1109/TPDS.2025.3619866},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Cache partition management for improving fairness and I/O responsiveness in NVMe SSDs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3619775'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid growth of AIoT devices brings huge demands for DNNs deployed on resource-constrained devices. However, the intensive computation and high memory footprint of DNN inference make it difficult for the AIoT devices to execute the inference tasks efficiently. In many widely deployed AIoT use cases, multiple local AIoT devices launch DNN inference tasks randomly. Although local collaborative inference has been proposed to accelerate DNN inference on local devices with limited resources, multitasking local collaborative inference, which is common in AIoT scenarios, has not been fully studied in previous works. We consider multitasking local client-server collaborative inference (MLCCI), which achieves efficient DNN inference by offloading the inference tasks from multiple AIoT devices to a more powerful local server with parallel pipelined execution streams through Wi-Fi 6. Our optimization goal is to minimize the mean end-to-end latency of MLCCI. Based on the experiment results, we identify three key challenges: high communication costs, high model initialization latency, and congestion delay brought by task interference. We analyze congestion delay in MLCCI and its stochastic fluctuations with queuing theory and propose Chorus, a high-performance adaptive MLCCI framework for AIoT devices, to minimize the mean end-to-end latency of MLCCI against stochastic congestion delay. Chorus generates communication-efficient model partitions with heuristic search, uses a prefetch-enabled two-level LRU cache to accelerate model initialization on the server, reduces congestion delay and its short-term fluctuations with execution stream allocation based on the cross-entropy method, and finally achieves efficient computation offloading with reinforcement learning. We established a system prototype, which statistically simulated many virtual clients with limited physical client devices to conduct performance evaluations, for Chorus with real devices. The evaluation results for various workload levels show that Chorus achieved an average of $1.4\times$, $1.3\times$, and $2\times$ speedup over client-only inference, and server-only inference with LRU and MLSH, respectively.},
+  archive      = {J_TPDS},
+  author       = {Yuzhe Luo and Ji Qi and Ling Li and Ruizhi Chen and Xiaoyu Wu and Limin Cheng and Chen Zhao},
+  doi          = {10.1109/TPDS.2025.3619775},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay},
   year         = {2025},
 }
 </textarea>

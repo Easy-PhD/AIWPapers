@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="sisc">SISC - 24</h2>
+<h2 id="sisc">SISC - 29</h2>
 <ul>
 <li><details>
 <summary>
@@ -85,6 +85,69 @@
   pages        = {C1033-C1058},
   shortjournal = {SIAM J. Sci. Comput.},
   title        = {Sparsifying dimensionality reduction of PDE solution data with bregman learning},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fast and scalable FFT-based GPU-accelerated algorithms for block-triangular toeplitz matrices with application to linear inverse problems governed by autonomous dynamical systems. <em>SISC</em>, <em>47</em>(5), B1201-B1226. (<a href='https://doi.org/10.1137/24M1683172'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present an efficient and scalable algorithm for performing matrix-vector multiplications (matvecs) for block Toeplitz matrices. Such matrices, which are shift-invariant with respect to their blocks, arise in the context of solving inverse problems governed by autonomous systems, and time-invariant systems in particular. In this article, we consider inverse problems that infer unknown parameters from observational data of a linear time-invariant dynamical system given in the form of partial differential equations (PDEs). Matrix-free Newton-conjugate-gradient methods are often the gold standard for solving these inverse problems, but they require numerous actions of the Hessian on a vector. Matrix-free adjoint-based Hessian matvecs require solution of a pair of linearized forward/adjoint PDE solves per Hessian action, which may be prohibitive for large-scale inverse problems. Time invariance of the forward PDE problem leads to a block Toeplitz structure of the discretized parameter-to-observable (p2o) map defining the mapping from inputs (parameters) to outputs (observables) of the PDEs. This block Toeplitz structure enables us to exploit two key properties: (1) compact storage of the p2o map and its adjoint, and (2) efficient fast Fourier transform–based Hessian matvecs. The proposed algorithm is mapped onto large multi-GPU clusters and achieves more than 80% of peak bandwidth on NVIDIA A100 GPUs. Excellent weak scaling is shown for up to 48 A100 GPUs. For the targeted problems, the implementation executes Hessian matvecs within fractions of a second, which is orders of magnitude faster than can be achieved by conventional matrix-free Hessian matvecs via forward/adjoint PDE solves. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/s769/FFTMatvec and in the supplementary materials (FFTMatvec-main.zip [1.05MB]).},
+  archive      = {J_SISC},
+  author       = {Sreeram Venkat and Milinda Fernando and Stefan Henneking and Omar Ghattas},
+  doi          = {10.1137/24M1683172},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {B1201-B1226},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Fast and scalable FFT-based GPU-accelerated algorithms for block-triangular toeplitz matrices with application to linear inverse problems governed by autonomous dynamical systems},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A nonnested augmented subspace method for the Poisson–Boltzmann equation. <em>SISC</em>, <em>47</em>(5), B1175-B1200. (<a href='https://doi.org/10.1137/25M1725280'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we propose a nonnested augmented subspace algorithm for solving Poisson–Boltzmann equations which have curved interfaces. The augmented subspace algorithm is designed with the help of low dimension finite element space, which is defined on a coarse mesh. Since the appearance of curved interfaces, the coarse and finest meshes have no nested property, which leads to the low-dimensional finite element space not being a subset of the one defined on the finest mesh. Even though there is no nested property, the nonnested augmented subspace method can transfer the solution of the Poisson–Boltzmann equation on the finest mesh to solving a linear equation on the same mesh and a small scale semilinear problem on a low-dimensional augmented subspace. The corresponding theoretical analysis and numerical experiments are provided to demonstrate the efficiency of the proposed algorithm.},
+  archive      = {J_SISC},
+  author       = {Sheng Gui and Haikun Dang and Hehu Xie},
+  doi          = {10.1137/25M1725280},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {B1175-B1200},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {A nonnested augmented subspace method for the Poisson–Boltzmann equation},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Element-wise multiplication of tensor trains. <em>SISC</em>, <em>47</em>(5), B1158-B1174. (<a href='https://doi.org/10.1137/24M1714149'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present the tensor train multiplication (TTM) algorithm for the elementwise multiplication of two tensor trains with bond dimension . The computational complexity and memory requirements of the TTM algorithm scale as and , respectively. This represents a significant improvement compared with the conventional approach, where the computational complexity scales as and memory requirements scale as . We benchmark the TTM algorithm using flows obtained from artificial turbulence generation and numerically demonstrate its improved runtime and memory scaling compared with the conventional approach. The TTM algorithm paves the way toward GPU accelerated tensor network simulations of computational fluid dynamics problems with large bond dimensions due to its dramatic improvement in memory scaling.},
+  archive      = {J_SISC},
+  author       = {Alexios A. Michailidis and Christian Fenton and Martin Kiffner},
+  doi          = {10.1137/24M1714149},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {B1158-B1174},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Element-wise multiplication of tensor trains},
   volume       = {47},
   year         = {2025},
 }
@@ -211,6 +274,48 @@
   pages        = {B1001-B1025},
   shortjournal = {SIAM J. Sci. Comput.},
   title        = {Parallel computation of the phonon boltzmann transport equation for simulation of frequency domain thermo-reflectance (FDTR) experiments},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A preconditioner for spectral collocation. <em>SISC</em>, <em>47</em>(5), A2828-A2850. (<a href='https://doi.org/10.1137/24M1712539'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We develop a preconditioner for spectral collocation discretizations of ordinary differential equations. The preconditioner approximates integration, as a convolution with the unit step function, yielding a lower triangular matrix of quadrature weights. Each column of the matrix is constant below the diagonal, making it possible to approximate the entirety of linear integration operators (variable coefficients included) with a mapping whose inverse requires operations to apply, where is the number of collocation nodes. We set the collocation nodes to the Chebyshev points, in which case the preconditioner provides efficient iterative solutions that scale beyond one million nodes. We show that the preconditioner approximates the spectral integration matrix to an accuracy of , which implies that the eigenvalues of the preconditioned system converge to 1.},
+  archive      = {J_SISC},
+  author       = {Aurya Javeed and Drew P. Kouri and Denis Ridzal and John D. Steinman},
+  doi          = {10.1137/24M1712539},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {A2828-A2850},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {A preconditioner for spectral collocation},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Randomized sketched TT-GMRES for linear systems with tensor structure. <em>SISC</em>, <em>47</em>(5), A2801-A2827. (<a href='https://doi.org/10.1137/24M1694999'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In the past decade, tensors have shown their potential as valuable tools for various tasks in numerical linear algebra. While most of the research has been focusing on how to compress a given tensor in order to maintain information as well as reducing the storage demand for its allocation, the solution of linear tensor equations is a less explored venue. Even if many of the routines available in the literature are based on alternating minimization schemes (ALS), we pursue a different path and utilize Krylov methods instead. The use of Krylov methods in the tensor realm is not new. However, these routines often turn out to be rather expensive in terms of computational cost, and ALS procedures are preferred in practice. We enhance Krylov methods for linear tensor equations with a panel of diverse randomization-based strategies which remarkably increase the efficiency of these solvers, making them competitive with state-of-the-art ALS schemes. The up-to-date randomized approaches we employ range from sketched Krylov methods with incomplete orthogonalization and structured sketching transformations to streaming algorithms for tensor rounding. The promising performance of our new solver for linear tensor equations is demonstrated by many numerical results. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/numpi/tt-sgmres and in the supplementary materials (tt-sgmres-main.zip [25.5KB]).},
+  archive      = {J_SISC},
+  author       = {Alberto Bucci and Davide Palitta and Leonardo Robol},
+  doi          = {10.1137/24M1694999},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {A2801-A2827},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Randomized sketched TT-GMRES for linear systems with tensor structure},
   volume       = {47},
   year         = {2025},
 }

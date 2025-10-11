@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="alg">Alg - 5</h2>
+<h2 id="alg">Alg - 7</h2>
 <ul>
 <li><details>
 <summary>
-(2025). On the parameterized complexity of eulerian strong component arc deletion. <em>Alg</em>, <em>87</em>(11), 1669-1709. (<a href='https://doi.org/10.1007/s00453-025-01336-6'>www</a>)
+(2025). A clique-based separator for intersection graphs of geodesic disks in $$\mathbb {R}^2$$. <em>Alg</em>, <em>87</em>(12), 1997-2017. (<a href='https://doi.org/10.1007/s00453-025-01337-5'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this paper, we study the Eulerian Strong Component Arc Deletion problem, where the input is a directed multigraph and the goal is to delete the minimum number of arcs to ensure every strongly connected component of the resulting digraph is Eulerian. This problem is a natural extension of the Directed Feedback Arc Set problem and is also known to be motivated by certain scenarios arising in the study of housing markets. The complexity of the problem, when parameterized by solution size (i.e., size of the deletion set), has remained unresolved and has been highlighted in several papers. In this work, we answer this question by ruling out (subject to the usual complexity assumptions) a fixed-parameter algorithm (FPT algorithm) for this parameter and conduct a broad analysis of the problem with respect to other natural parameterizations. We prove both positive and negative results. Among these, we demonstrate that the problem is also hard (W[1]-hard or even para-NP-hard) when parameterized by either treewidth or maximum degree alone. Complementing our lower bounds, we establish that the problem is in XP when parameterized by treewidth and FPT when parameterized either by both treewidth and maximum degree or by both treewidth and solution size. We show that on simple digraphs, these algorithms have near-optimal asymptotic dependence on the treewidth assuming the Exponential Time Hypothesis.},
+  abstract     = {Let d be a (well-behaved) shortest-path metric defined on a path-connected subset of $$\mathbb {R}^2$$ and let $$\mathcal {D}=\{D_1,\ldots,D_n\}$$ be a set of geodesic disks with respect to the metric d. We prove that $$\mathcal {G}^{\times }(\mathcal {D})$$ , the intersection graph of the disks in $$\mathcal {D}$$ , has a clique-based separator consisting of $$O(n^{3/4+\varepsilon })$$ cliques. This significantly extends the class of objects whose intersection graphs have small clique-based separators. Our clique-based separator yields an algorithm for q-Coloring that runs in time $$2^{O(n^{3/4+\varepsilon })}$$ , assuming the boundaries of the disks $$D_i$$ can be computed in polynomial time. We also use our clique-based separator to obtain a simple, efficient, and almost exact distance oracle for intersection graphs of geodesic disks. Our distance oracle uses $$O(n^{7/4+\varepsilon })$$ storage and can report the hop distance between any two nodes in $$\mathcal {G}^{\times }(\mathcal {D})$$ in $$O(n^{3/4+\varepsilon })$$ time, up to an additive error of one. So far, distance oracles with an additive error of one that use subquadratic storage and sublinear query time were not known for such general graph classes.},
   archive      = {J_Alg},
-  author       = {Blažej, Václav and Jana, Satyabrata and Ramanujan, M. S. and Strulo, Peter},
-  doi          = {10.1007/s00453-025-01336-6},
+  author       = {Aronov, Boris and de Berg, Mark and Theocharous, Leonidas},
+  doi          = {10.1007/s00453-025-01337-5},
   journal      = {Algorithmica},
-  month        = {11},
-  number       = {11},
-  pages        = {1669-1709},
+  month        = {12},
+  number       = {12},
+  pages        = {1997-2017},
   shortjournal = {Algorithmica},
-  title        = {On the parameterized complexity of eulerian strong component arc deletion},
+  title        = {A clique-based separator for intersection graphs of geodesic disks in $$\mathbb {R}^2$$},
   volume       = {87},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ShockHash: Near optimal-space minimal perfect hashing beyond brute-force. <em>Alg</em>, <em>87</em>(11), 1620-1668. (<a href='https://doi.org/10.1007/s00453-025-01321-z'>www</a>)
+(2025). Reconfiguration of multisets with applications to bin packing. <em>Alg</em>, <em>87</em>(12), 1933-1996. (<a href='https://doi.org/10.1007/s00453-025-01324-w'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {A minimal perfect hash function (MPHF) maps a set S of n keys to the first n integers without collisions. There is a lower bound of $$n\log _2e-\mathcal {O}(\log n) \approx 1.44n$$ bits needed to represent an MPHF. This can be reached by a brute-force algorithm that tries $$e^n$$ hash function seeds in expectation and stores the first seed that leads to an MPHF. The most space-efficient previous algorithms for constructing MPHFs all use such a brute-force approach as a basic building block. In this paper, we introduce ShockHash – Small, heavily overloaded cuckoo hash tables for minimal perfect hashing. ShockHash uses two hash functions $$h_0$$ and $$h_1$$ , hoping for the existence of a function $$f : S \rightarrow \{0,1\}$$ such that $$x \mapsto h_{f(x)}(x)$$ is an MPHF on S. It then uses a 1-bit retrieval data structure to store f using $$n + o(n)$$ bits. In graph terminology, ShockHash generates n-edge random graphs until stumbling on a pseudoforest – where each component contains as many edges as nodes. Using cuckoo hashing, ShockHash then derives an MPHF from the pseudoforest in linear time. We show that ShockHash needs to try only about $$(e/2)^n \approx 1.359^n$$ seeds in expectation. This reduces the space for storing the seed by roughly n bits (maintaining the asymptotically optimal space consumption) and speeds up construction by almost a factor of $$2^n$$ compared to brute-force. Bipartite ShockHash reduces the expected construction time again to about $$1.166^n$$ by maintaining a pool of candidate hash functions and checking all possible pairs. Using ShockHash as a building block within the RecSplit framework we obtain ShockHash-RS, which can be constructed up to 3 orders of magnitude faster than competing approaches. ShockHash-RS can build an MPHF for 10 million keys with 1.489 bits per key in about half an hour. When instead using ShockHash after an efficient k-perfect hash function, it achieves space usage similar to the best competitors, while being significantly faster to construct and query.},
+  abstract     = {We use the reconfiguration framework to analyze problems that involve the rearrangement of items among groups. In various applications, a group of items could correspond to the files or jobs assigned to a particular machine, and the goal of rearrangement could be improving efficiency or increasing locality. To cover problems arising in a wide range of application areas, we define the general Repacking problem as the rearrangement of multisets of multisets. We present hardness results for the general case and algorithms for various restricted classes of instances. By limiting the total size of items in each multiset, our results can be viewed as an offline approach to Bin Packing, in which each bin is represented as a multiset. In addition to providing the first results on reconfiguration of multisets, our contributions open up several research avenues: the interplay between reconfiguration and online algorithms and parallel algorithms; the use of the tools of linear programming in reconfiguration; and, in the longer term, a focus on extra resources in reconfiguration. A preliminary version of this paper appeared in the proceedings of the 18th International Conference and Workshops on Algorithms and Computation (WALCOM 2024).},
   archive      = {J_Alg},
-  author       = {Lehmann, Hans-Peter and Sanders, Peter and Walzer, Stefan},
-  doi          = {10.1007/s00453-025-01321-z},
+  author       = {Kam, Jeffrey and Kamali, Shahin and Miller, Avery and Nishimura, Naomi},
+  doi          = {10.1007/s00453-025-01324-w},
   journal      = {Algorithmica},
-  month        = {11},
-  number       = {11},
-  pages        = {1620-1668},
+  month        = {12},
+  number       = {12},
+  pages        = {1933-1996},
   shortjournal = {Algorithmica},
-  title        = {ShockHash: Near optimal-space minimal perfect hashing beyond brute-force},
+  title        = {Reconfiguration of multisets with applications to bin packing},
   volume       = {87},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Achieving tight $$O(4^k)$$ runtime bounds on jumpk by proving that genetic algorithms evolve near-maximal population diversity. <em>Alg</em>, <em>87</em>(11), 1564-1619. (<a href='https://doi.org/10.1007/s00453-025-01323-x'>www</a>)
+(2025). Log-diameter MST verification and sensitivity in MPC. <em>Alg</em>, <em>87</em>(12), 1899-1932. (<a href='https://doi.org/10.1007/s00453-025-01332-w'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The $$\textsc {Jump} _k$$ benchmark was the first problem for which crossover was proven to give a speed-up over mutation-only evolutionary algorithms. Jansen and Wegener (Algorithmica 2002) proved an upper bound of $$O(\textrm{poly}(n) + 4^k/p_c)$$ for the ( $$\mu $$ +1) Genetic Algorithm (( $$\mu $$ +1) GA), but only for unrealistically small crossover probabilities $$p_c$$ . To this date, it remains an open problem to prove similar upper bounds for realistic $$p_c$$ ; the best known runtime bound, in terms of function evaluations, for $$p_c = \Omega (1)$$ is $$O((n/\chi )^{k-1})$$ , $$\chi $$ a positive constant. We provide a novel approach and analyse the evolution of the population diversity, measured as sum of pairwise Hamming distances, for a variant of the ( $$\mu $$ +1) GA on $$\textsc {Jump} _k$$ . The ( $$\mu $$ +1)- $${\lambda _c}$$ -GA creates one offspring in each generation either by applying mutation to one parent or by applying crossover $${\lambda _c}$$ times to the same two parents (followed by mutation), to amplify the probability of creating an accepted offspring in generations with crossover. We show that population diversity in the ( $$\mu $$ +1)- $${\lambda _c}$$ -GA converges to an equilibrium of near-perfect diversity. This yields an improved time bound of $$O(\mu n \log (\mu ) + 4^k)$$ function evaluations for a range of k under the mild assumptions $$p_c = O(1/k)$$ and $$\mu \in \Omega (kn)$$ . For all constant k, the restriction is satisfied for some $$p_c = \Omega (1)$$ and it implies that the expected runtime for all constant k and an appropriate $$\mu = \Theta (kn)$$ is bounded by $$O(n^2 \log n)$$ , irrespective of k. For larger k, the expected time of the ( $$\mu $$ +1)- $${\lambda _c}$$ -GA is $$\Theta (4^k)$$ , which is tight for a large class of unbiased black-box algorithms and faster than the original ( $$\mu $$ +1) GA by a factor of $$\Omega (1/p_c)$$ . We also show that our analysis can be extended to other unitation functions such as $$\textsc {Jump} _{k, \delta }$$ and Hurdle.},
+  abstract     = {We consider two natural variants of the problem of minimum spanning tree ( $$\text {MST}$$ ) of a graph in the parallel setting: MST verification (verifying if a given tree is an $$\text {MST}$$ ) and the sensitivity analysis of an MST (finding the lowest cost replacement edge for each edge of the $$\text {MST}$$ ). These two problems have been studied extensively for sequential algorithms and for parallel algorithms in the $$\textrm{PRAM}$$ model of computation. In this paper, we extend the study to the standard model of Massive Parallel Computation ( $$\textrm{MPC}$$ ). It is known that for graphs of diameter D, the connectivity problem can be solved in $$O(\log D + \log \log n)$$ rounds on an $$\textrm{MPC}$$ with low local memory (each machine can store only $$O(n^{\delta })$$ words for an arbitrary constant $$\delta > 0$$ ) and with linear global memory, that is, with optimal utilization. However, for the related task of finding an $$\text {MST}$$ , we need $$\Omega (\log D_{\text {MST}})$$ rounds, where $$D_{\text {MST}}$$ denotes the diameter of the minimum spanning tree. The state of the art upper bound for $$\text {MST}$$ is $$O(\log n)$$ rounds; the result follows by simulating existing $$\textrm{PRAM}$$ algorithms. While this bound may be optimal for general graphs, the benchmark of connectivity and lower bound for $$\text {MST}$$ suggest the target bound of $$O(\log D_\text {MST})$$ rounds, or possibly $$O(\log D_\text {MST} + \log \log n)$$ rounds. As for now, we do not know if this bound is achievable for the $$\text {MST}$$ problem on an $$\textrm{MPC}$$ with low local memory and linear global memory. In this paper, we show that two natural variants of the $$\text {MST}$$ problem: $$\text {MST}$$ verification and sensitivity analysis of an $$\text {MST}$$ , can be completed in $$O(\log D_T)$$ rounds on an $$\textrm{MPC}$$ with low local memory and with linear global memory, that is, with optimal utilization; here $$D_T$$ is the diameter of the input “candidate $$\text {MST}$$ ” T. The algorithms asymptotically match our lower bound, conditioned on the 1-vs-2-cycle conjecture.},
   archive      = {J_Alg},
-  author       = {Opris, Andre and Lengler, Johannes and Sudholt, Dirk},
-  doi          = {10.1007/s00453-025-01323-x},
+  author       = {Coy, Sam and Czumaj, Artur and Mishra, Gopinath and Mukherjee, Anish},
+  doi          = {10.1007/s00453-025-01332-w},
   journal      = {Algorithmica},
-  month        = {11},
-  number       = {11},
-  pages        = {1564-1619},
+  month        = {12},
+  number       = {12},
+  pages        = {1899-1932},
   shortjournal = {Algorithmica},
-  title        = {Achieving tight $$O(4^k)$$ runtime bounds on jumpk by proving that genetic algorithms evolve near-maximal population diversity},
+  title        = {Log-diameter MST verification and sensitivity in MPC},
   volume       = {87},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Smoothed analysis of the 2-opt heuristic for the TSP under gaussian noise. <em>Alg</em>, <em>87</em>(11), 1518-1563. (<a href='https://doi.org/10.1007/s00453-025-01335-7'>www</a>)
+(2025). Parameterized complexity of path set packing. <em>Alg</em>, <em>87</em>(12), 1864-1898. (<a href='https://doi.org/10.1007/s00453-025-01329-5'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The 2-opt heuristic is a very simple local search heuristic for the traveling salesperson problem. In practice it usually converges quickly to solutions within a few percentages of optimality. In contrast to this, its running-time is exponential and its approximation performance is poor in the worst case. Englert, Röglin, and Vöcking (Algorithmica, 2014) provided a smoothed analysis in the so-called one-step model in order to explain the performance of 2-opt on d-dimensional Euclidean instances, both in terms of running-time and in terms of approximation ratio. However, translating their results to the classical model of smoothed analysis, where points are perturbed by Gaussian distributions with standard deviation $$\sigma $$ , yields only weak bounds. We prove bounds that are polynomial in n and $$1/\sigma $$ for the smoothed running-time with Gaussian perturbations. In addition, our analysis for Euclidean distances is much simpler than the existing smoothed analysis. Furthermore, we prove a smoothed approximation ratio of $$O(\log (1/\sigma ))$$ . This bound is almost tight, as we also provide a lower bound of $$\Omega (\frac{\log n}{\log \log n})$$ for $$\sigma = O(1/\sqrt{n})$$ . Our main technical novelty here is that, different from existing smoothed analyses, we do not separately analyze objective values of the global and local optimum on all inputs (which only allows for a bound of $$O(1/\sigma )$$ ), but simultaneously bound them on the same input.},
+  abstract     = {In Path Set Packing, the input is an undirected graph G, a collection $$\mathcal{P}$$ of simple paths in G, and a positive integer k. The problem is to decide whether there exist k edge-disjoint paths in $$\mathcal{P}$$ . We study the parameterized complexity of Path Set Packing with respect to both natural and structural parameters. We show that the problem is W[1]-hard with respect to vertex cover number, and W[1]-hard respect to pathwidth plus solution size when input graph is a grid. These results answer an open question raised in Xu and Zhang (in: Wang L, Zhu D (eds) Computing and combinatorics—24th international conference, COCOON 2018, Qing Dao, China, July 2–4, 2018, proceedings. Lecture notes in computer science, vol 10976, pp 305–315. Springer, 2018, https://doi.org/10.1007/978-3-319-94776-1_26 ). On the positive side, we present an FPT algorithm parameterized by feedback vertex number plus maximum degree, and present an FPT algorithm parameterized by treewidth plus maximum degree plus maximum length of a path in $$\mathcal{P}$$ . These positive results complement the hardness of Path Set Packing with respect to any subset of the parameters used in the FPT algorithms. We also give a 4-approximation algorithm for maximum path set packing problem which runs in FPT time when parameterized by feedback edge number.},
   archive      = {J_Alg},
-  author       = {Künnemann, Marvin and Manthey, Bodo and Veenstra, Rianne},
-  doi          = {10.1007/s00453-025-01335-7},
+  author       = {Aravind, N. R. and Saxena, Roopam},
+  doi          = {10.1007/s00453-025-01329-5},
   journal      = {Algorithmica},
-  month        = {11},
-  number       = {11},
-  pages        = {1518-1563},
+  month        = {12},
+  number       = {12},
+  pages        = {1864-1898},
   shortjournal = {Algorithmica},
-  title        = {Smoothed analysis of the 2-opt heuristic for the TSP under gaussian noise},
+  title        = {Parameterized complexity of path set packing},
   volume       = {87},
   year         = {2025},
 }
@@ -113,20 +113,62 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Boosting double coverage for k-server via imperfect predictions. <em>Alg</em>, <em>87</em>(11), 1477-1517. (<a href='https://doi.org/10.1007/s00453-025-01333-9'>www</a>)
+(2025). Comma selection outperforms plus selection on OneMax with randomly planted optima. <em>Alg</em>, <em>87</em>(12), 1804-1863. (<a href='https://doi.org/10.1007/s00453-025-01330-y'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We study the online k-server problem in a learning-augmented setting. While in the traditional online model, an algorithm has no information about the request sequence, we assume that there is given some advice (for example, machine-learned predictions) on an algorithm’s decision. There is, however, no guarantee on the quality of the prediction, and it might be far from being correct. Our main result is a learning-augmented variation of the well-known Double Coverage algorithm for k-server on the line (Chrobak et al. in SIAM J Discret Math 4(2):172–181, 1991) in which we integrate predictions as well as our trust into their quality. We give an error-dependent worst-case performance guarantee, which is a function of a user-defined confidence parameter, and which interpolates smoothly between an optimal performance in case that all predictions are correct, and the best-possible performance regardless of the prediction quality. When given good predictions, we improve upon known lower bounds for online algorithms without advice. We further show that our algorithm achieves for any k almost optimal guarantees, within a class of deterministic learning-augmented algorithms respecting local and memoryless properties. Our algorithm outperforms a previously proposed (more general) learning-augmented algorithm. It is noteworthy that the previous algorithm crucially exploits memory, whereas our algorithm is memoryless. Finally, we demonstrate in experiments the practicability and the superior performance of our algorithm on real-world data.},
+  abstract     = {Evolutionary algorithms (EAs) are general-purpose optimisation algorithms that maintain a population (multiset) of candidate solutions and apply variation operators to create new solutions called offspring. A new population is typically formed using one of two strategies: a $$(\mu +\lambda )$$ EA (plus selection) keeps the best $$\mu $$ search points out of the union of $$\mu $$ parents in the old population and $$\lambda $$ offspring, whereas a $$(\mu ,\lambda )$$ EA (comma selection) discards all parents and only keeps the best $$\mu $$ out of $$\lambda $$ offspring. Comma selection may help to escape from local optima, however when and how it is beneficial is subject to an ongoing debate. We propose a new benchmark function to investigate the benefits of comma selection: the well known benchmark function OneMaxwith randomly planted local optima, generated by frozen noise. We show that comma selection (the $${(1,\lambda )}$$ EA) is faster than plus selection (the $${(1+\lambda )}$$ EA) on this benchmark, in a fixed-target scenario, and for offspring population sizes $$\lambda $$ for which both algorithms behave differently. For certain parameters, the $${(1,\lambda )}$$ EAfinds the target in $$\Theta (n \ln n)$$ evaluations, with high probability (w.h.p.), while the $${(1+\lambda )}$$ EAw.h.p. requires $$\omega (n^2)$$ evaluations. We further show that the advantage of comma selection is not arbitrarily large: w.h.p. comma selection outperforms plus selection at most by a factor of $$O(n \ln n)$$ for most reasonable parameter choices. We develop novel methods for analysing frozen noise and give powerful and general fixed-target results with tail bounds that are of independent interest.},
   archive      = {J_Alg},
-  author       = {Lindermayr, Alexander and Megow, Nicole and Simon, Bertrand},
-  doi          = {10.1007/s00453-025-01333-9},
+  author       = {Jorritsma, Joost and Lengler, Johannes and Sudholt, Dirk},
+  doi          = {10.1007/s00453-025-01330-y},
   journal      = {Algorithmica},
-  month        = {11},
-  number       = {11},
-  pages        = {1477-1517},
+  month        = {12},
+  number       = {12},
+  pages        = {1804-1863},
   shortjournal = {Algorithmica},
-  title        = {Boosting double coverage for k-server via imperfect predictions},
+  title        = {Comma selection outperforms plus selection on OneMax with randomly planted optima},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decidability of fully quantum nonlocal games with noisy maximally entangled states. <em>Alg</em>, <em>87</em>(12), 1732-1803. (<a href='https://doi.org/10.1007/s00453-025-01339-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers the decidability of fully quantum nonlocal games with noisy maximally entangled states. Fully quantum nonlocal games are a generalization of nonlocal games, where both questions and answers are quantum and the referee performs a binary POVM measurement to decide whether they win the game after receiving the quantum answers from the players. The quantum value of a fully quantum nonlocal game is the supremum of the probability that they win the game, where the supremum is taken over all the possible entangled states shared between the players and all the valid quantum operations performed by the players. The seminal work $$\text {MIP}^*=\text {RE}$$ ( Ji et al. MIP ∗ = RE, 2020; Ji et al. Quantum soundness of the classical low individual degree test, 2020) implies that it is undecidable to approximate the quantum value of a fully nonlocal game. This still holds even if the players are only allowed to share (arbitrarily many copies of) maximally entangled states. This paper investigates the case that the shared maximally entangled states are noisy. We prove that there is a computable upper bound on the copies of noisy maximally entangled states for the players to win a fully quantum nonlocal game with a probability arbitrarily close to the quantum value. This implies that it is decidable to approximate the quantum values of these games. Hence, the hardness of approximating the quantum value of a fully quantum nonlocal game is not robust against the noise in the shared states. This paper is built on the framework for the decidability of non-interactive simulations of joint distributions (Ghazi et al. in: 2016 IEEE 57th Annual Symposium on Foundations of Computer Science (FOCS), Los Alamitos, 2016; De et al. in: Proceedings of the Twenty-Ninth Annual ACM-SIAM Symposium on Discrete Algorithms, Philadelphia, 2018; Ghazi et al. Proceedings of the 33rd Computational Complexity Conference, 2018) and generalizes the analogous result for nonlocal games in Qin and Yao (SIAM J Comput 50(6):1800–1891, 2021). We extend the theory of Fourier analysis to the space of super-operators and prove several key results including an invariance principle and a dimension reduction for super-operators. These results are interesting in their own right and are believed to have further applications.},
+  archive      = {J_Alg},
+  author       = {Qin, Minglong and Yao, Penghui},
+  doi          = {10.1007/s00453-025-01339-3},
+  journal      = {Algorithmica},
+  month        = {12},
+  number       = {12},
+  pages        = {1732-1803},
+  shortjournal = {Algorithmica},
+  title        = {Decidability of fully quantum nonlocal games with noisy maximally entangled states},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On equivalence of parameterized inapproximability of k-median, k-max-coverage, and 2-CSP. <em>Alg</em>, <em>87</em>(12), 1711-1731. (<a href='https://doi.org/10.1007/s00453-025-01338-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Parameterized Inapproximability Hypothesis ( $$\textsf{PIH}$$ ) is a central question in the field of parameterized complexity. $$\textsf{PIH}$$ asserts that given as input a 2- $$\textsf{CSP}$$ on k variables and alphabet size n, it is $$\textsf{W}$$ [1]-hard parameterized by k to distinguish if the input is perfectly satisfiable or if every assignment to the input violates 1% of the constraints. An important implication of $$\textsf{PIH}$$ is that it yields the tight parameterized inapproximability of the $$k$$ - $$\textsf{maxcoverage}$$ problem. In the $$k$$ - $$\textsf{maxcoverage}$$ problem, we are given as input a set system, a threshold $$\tau >0$$ , and a parameter k and the goal is to determine if there exist k sets in the input whose union is at least $$\tau $$ fraction of the entire universe. $$\textsf{PIH}$$ is known to imply that it is $$\textsf{W}$$ [1]-hard parameterized by k to distinguish if there are k input sets whose union is at least $$\tau $$ fraction of the universe or if the union of every k input sets is not much larger than $$\tau \cdot (1-\frac{1}{e})$$ fraction of the universe. In this work we present a gap preserving $$\textsf{FPT}$$ reduction (in the reverse direction) from the $$k$$ - $$\textsf{maxcoverage}$$ problem to the aforementioned 2- $$\textsf{CSP}$$ problem, thus showing that the assertion that approximating the $$k$$ - $$\textsf{maxcoverage}$$ problem to some constant factor is $$\textsf{W}$$ [1]-hard implies $$\textsf{PIH}$$ . In addition, we present a gap preserving $$\textsf{FPT}$$ reduction from the $$k$$ - $$\textsf{median}$$ problem (in general metrics) to the $$k$$ - $$\textsf{maxcoverage}$$ problem, further highlighting the power of gap preserving $$\textsf{FPT}$$ reductions over classical gap preserving polynomial time reductions.},
+  archive      = {J_Alg},
+  author       = {C.S., Karthik and Lee, Euiwoong and Manurangsi, Pasin},
+  doi          = {10.1007/s00453-025-01338-4},
+  journal      = {Algorithmica},
+  month        = {12},
+  number       = {12},
+  pages        = {1711-1731},
+  shortjournal = {Algorithmica},
+  title        = {On equivalence of parameterized inapproximability of k-median, k-max-coverage, and 2-CSP},
   volume       = {87},
   year         = {2025},
 }

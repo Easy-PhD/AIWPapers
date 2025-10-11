@@ -25,128 +25,24 @@
 </head>
 <body>
 
-<h2 id="taas">TAAS - 7</h2>
+<h2 id="taas">TAAS - 10</h2>
 <ul>
 <li><details>
 <summary>
-(2025). An evaluation of self-adaptive mechanisms for misconfigurations in small uncrewed aerial systems. <em>TAAS</em>, <em>20</em>(2), 1-35. (<a href='https://doi.org/10.1145/3707643'>www</a>)
+(2025). Adaptive scheduling of high-availability drone swarms for congestion alleviation in connected automated vehicles. <em>TAAS</em>, <em>20</em>(3), 1-19. (<a href='https://doi.org/10.1145/3673905'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Small uncrewed aerial systems (sUAS) provide an invaluable resource for performing a variety of surveillance, search, and delivery tasks in remote or hostile terrains which may not be accessible by other means. Due to the critical role sUAS play in these situations, it is vital that they are well configured in order to ensure a safe and stable flight. However, it is not uncommon for mistakes to occur in configuration and calibration, leading to failures or incomplete missions. To address this problem, we propose a set of self-adaptive mechanisms and implement them into a self-adaptive framework, Controller Instability-preventing Configuration-Aware Drone Adaptation (CICADA). CICADA dynamically detects unstable drone behavior during flight and adapts to mitigate this threat. We have built a prototype of CICADA using a popular open source sUAS flight control software and experimented with a large number of different configurations in simulation. We then performed a case study with physical drones to determine if our framework will work in practice. Experimental results show that CICADA ’s adaptations reduce controller instability and enable the sUAS to recover from up to 33.8% of poor configurations. In cases where we cannot complete the intended mission, invoking alternative adaptations may still help by allowing the vehicle to loiter or land safely in place, avoiding potentially catastrophic crashes. These safety-focused adaptations can mitigate unsafe behavior in 52.9% to 64.7% of dangerous configurations. We further show that rule-based approaches can be leveraged to automatically select an appropriate adaptation strategy based on the severity of instability encountered, with up to a 14.2% improvement over direct adaptation. Finally, we introduce a variation of our primary adaptation strategy designed to allow more cautious adaptation with limited configuration information, which gets within 6.7% of our primary adaptation strategy despite not requiring an optimal knowledge base.},
+  abstract     = {The Intelligent Transportation System (ITS) serves as a pivotal element within urban networks, offering decision support to users and connected automated vehicles through comprehensive information gathering, sensing, device control, and data processing. Presently, ITS predominantly relies on sensors embedded in fixed infrastructure, notably Roadside Units (RSUs). However, RSUs are confined by coverage limitations and may encounter challenges in prompt emergency responses. On-demand resources, such as drones, present a viable option to supplement these deficiencies effectively. This article introduces an approach where Software-Defined Networking and Mobile Edge Computing technologies are integrated to formulate a high-availability drone swarm control and communication infrastructure framework comprising the cloud layer, edge layer, and device layer. Drones confront limitations in flight duration attributed to battery limitations, posing a challenge in sustaining continuous monitoring of road conditions over extended periods. Effective drone scheduling stands as a promising solution to overcome these constraints. To tackle this issue, we initially utilized Graph WaveNet, a specialized graph neural network structure tailored for spatial-temporal graph modeling, for training a congestion prediction model using real-world dataset inputs. Building upon this, we further propose an algorithm for drone scheduling based on congestion prediction. Our simulation experiments using real-world data demonstrate that, compared to the baseline method, the proposed scheduling algorithm not only yielded superior scheduling gains but also mitigated drone idle rates.},
   archive      = {J_TAAS},
-  author       = {Salil Purandare and Md Nafee Al Islam and Urjoshi Sinha and Jane Cleland-Huang and Myra B. Cohen},
-  doi          = {10.1145/3707643},
+  author       = {Shengye Pang and Yi Li and Zhen Qin and Xinkui Zhao and Jintao Chen and Fan Wang and Jianwei Yin},
+  doi          = {10.1145/3673905},
   journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-35},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {An evaluation of self-adaptive mechanisms for misconfigurations in small uncrewed aerial systems},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An extended study of the performance of flexible controllers composed of micro-controllers. <em>TAAS</em>, <em>20</em>(2), 1-41. (<a href='https://doi.org/10.1145/3715145'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Generic controllers for self-adaptive systems can be configured parametrically according to system needs, even though their reuse is restricted because of the wide range of services that may be provided by each stage of a feedback control loop, like MAPE-K. Rainbow is a typical example of such a generic, monolithic controller. This article revisits and extends prior work that advocates structurally flexible controllers, as ensembles of micro-controllers each providing specific services. We experimented with our approach with three different architectural configurations for the controller—monolithic, decentralised and decentralised with a meta-controller. Our results indicate that despite the decentralised configuration with a meta-controller demanding more computational resources, it performed comparatively well compared to the other configurations, including when measuring the target system’s response time. Moreover, we found that variations of the control loop timing at the different layers of the controller impact the stability of the target system. We have also evolved the controller by adding a new micro-controller, which caused no impact on the other micro-controllers, and mostly kept the target system’s performance. We conclude that a multi-layered controller design, based on micro-controllers, provides the basis for defining structurally flexible controllers at operational-time and may promote reuse at development-time.},
-  archive      = {J_TAAS},
-  author       = {Bento Rafael Siqueira and Fabiano Cutigi Ferrari and Rogério de Lemos},
-  doi          = {10.1145/3715145},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-41},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {An extended study of the performance of flexible controllers composed of micro-controllers},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Many-objective self-adaptation under model uncertainty. <em>TAAS</em>, <em>20</em>(2), 1-28. (<a href='https://doi.org/10.1145/3719349'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The field of uncertainty quantification and mitigation in software-intensive and self-adaptive systems is garnering increased interest, especially with the rise of statistical inference methodologies like Bayesian reasoning. These methods typically address uncertain quality attributes embedded within system models by adjusting model parameters. However, the uncertainty related to selecting a specific system model over plausible alternatives has received limited attention. Our work focuses on self-adaptation, exploring methods to tackle uncertainty in model selection. This includes scenarios where one model is chosen over competing alternatives to encapsulate the system’s understanding and anticipate future observations. Our proposed solution augments the conventional feedback loop of self-adaptive systems by combining Bayesian model averaging to mitigate uncertainty and many-objective optimization to take into account multiple, possibly many, dependability requirements at the same time. We carry out an empirical evaluation to study the effectiveness, cost, and scalability of the proposed approach using two case studies with increasing structural complexity and number of dependability requirements. Results show that our approach based on model averaging is significantly better than model selection in terms of satisfied requirements after adaptation (adaptation success frequency). We also show that our approach can deal with large model spaces ( \(\sim 10^{19}\) ) using efficient sampling methods rather than exhaustive model space exploration.},
-  archive      = {J_TAAS},
-  author       = {Matteo Camilli and Raffaela Mirandola and Patrizia Scandurra},
-  doi          = {10.1145/3719349},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-28},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Many-objective self-adaptation under model uncertainty},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient training approaches for performance anomaly detection models in edge computing environments. <em>TAAS</em>, <em>20</em>(2), 1-27. (<a href='https://doi.org/10.1145/3725736'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Microservice architectures are increasingly used to modularize IoT applications and deploy them in distributed and heterogeneous edge computing environments. Over time, these microservice-based IoT applications are susceptible to performance anomalies caused by resource hogging (e.g., CPU or memory), resource contention, etc., which can negatively impact their Quality of Service and violate their Service Level Agreements. Existing research on performance anomaly detection for edge computing environments focuses on model training approaches that either achieve high accuracy at the expense of a time-consuming and resource-intensive training process or prioritize training efficiency at the cost of lower accuracy. To address this gap, while considering the resource constraints and the large number of devices in modern edge platforms, we propose two clustering-based model training approaches: (1) intra-cluster parameter transfer learning (ICPTL)-based model training and (2) cluster-level model (CM) training. These approaches aim to find a tradeoff between the training efficiency of anomaly detection models and their accuracy. We compared the models trained under ICPTL and CM to models trained for specific devices (most accurate, least efficient) and a single general model trained for all devices (least accurate, most efficient). Our findings show that ICPTL’s model accuracy is comparable to that of the model per device approach while requiring only 40% of the training time. In addition, CM further improves training efficiency by requiring 23% less training time and reducing the number of trained models by approximately 66% compared to ICPTL, yet achieving a higher accuracy than a single general model.},
-  archive      = {J_TAAS},
-  author       = {Duneesha Fernando and Maria A. Rodriguez and Patricia Arroba and Leila Ismail and Rajkumar Buyya},
-  doi          = {10.1145/3725736},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Efficient training approaches for performance anomaly detection models in edge computing environments},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Introduction to the SEAMS 2023 special issue. <em>TAAS</em>, <em>20</em>(2), 1-2. (<a href='https://doi.org/10.1145/3725987'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  archive      = {J_TAAS},
-  author       = {Raffaela Mirandola and Radu Calinescu and Pooyan Jamshidi},
-  doi          = {10.1145/3725987},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-2},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Introduction to the SEAMS 2023 special issue},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Vehicle dynamics and interaction for trajectory prediction and traffic control. <em>TAAS</em>, <em>20</em>(2), 1-19. (<a href='https://doi.org/10.1145/3727342'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Trajectory prediction is a crucial challenge in autonomous vehicle motion planning and decision-making techniques. However, existing methods face limitations in accurately capturing vehicle dynamics and interactions. To address this issue, this article proposes a novel approach to extracting vehicle velocity and acceleration, enabling the learning of vehicle dynamics and encoding them as auxiliary information. The VDI-LSTM model is designed, incorporating graph convolution and attention mechanisms to capture vehicle interactions using trajectory data and dynamic information. Specifically, a dynamics encoder is designed to capture the dynamic information, a dynamic graph is employed to represent vehicle interactions, and an attention mechanism is introduced to enhance the performance of LSTM and graph convolution. To demonstrate the effectiveness of our model, extensive experiments are conducted, including comparisons with several baselines and ablation studies on real-world highway datasets. Experimental results show that VDI-LSTM outperforms other baselines compared, which obtains a 3% improvement on the average RMSE indicator over the five prediction steps.},
-  archive      = {J_TAAS},
-  author       = {Jian Chen and Shaorui Zhou and Wei Wang and Yuzhu Hu and Jianqing Li and Ben-guo He and Junxin Chen and Marwan Omar and Ali Kashif Bashir and Xiping Hu},
-  doi          = {10.1145/3727342},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-19},
   shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Vehicle dynamics and interaction for trajectory prediction and traffic control},
+  title        = {Adaptive scheduling of high-availability drone swarms for congestion alleviation in connected automated vehicles},
   volume       = {20},
   year         = {2025},
 }
@@ -154,20 +50,187 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Model checking of workflow nets with tables and constraints. <em>TAAS</em>, <em>20</em>(2), 1-38. (<a href='https://doi.org/10.1145/3736177'>www</a>)
+(2025). Secure collaborative learning for self-adaptive systems on connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-30. (<a href='https://doi.org/10.1145/3690768'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Many operations in workflow systems are dependent on database tables. The classical workflow nets and their extensions (e.g., workflow nets with data) cannot model these operations, so that they cannot find some related errors. Recently, workflow nets with tables (WFT-nets) were proposed to remedy such a flaw. However, existing methods for constructing the reachability graph of the WFT-nets can generate pseudo states because they do not take into account the guards that constrain the enabling and firing of transitions. Additionally, only the soundness property of WFT-nets is considered that represents a single design requirement, while many other requirements, especially those related to tables, cannot be analyzed. In this article, we re-define the formalism of WFT-nets by augmenting the constraints of guards to them and re-name them as workflow nets with tables and constraints (WFTC-nets). We propose a new method to generate the state reachability graph (SRG) of WFTC-nets such that the SRG can avoid pseudo states by considering the guard constraints. To represent design requirements related to database operations, we define database-oriented computation tree logic (DCTL). We design the model checking algorithms of DCTL based on the SRG of WFTC-nets and develop a tool. Experiments on several public benchmarks show the usefulness of our methods.},
+  abstract     = {As an advanced carrier of on-board sensors, connected autonomous vehicle (CAV) can be viewed as an aggregation of self-adaptive systems with monitor-analyze-plan-execute (MAPE) for vehicle-related services. Meanwhile, machine learning (ML) has been applied to enhance analysis and plan functions of MAPE so that self-adaptive systems have optimal adaption to changing conditions. However, most of ML-based approaches don’t utilize CAVs’ connectivity to collaboratively generate an optimal learner for MAPE, because of sensor data threatened by gradient leakage attack (GLA). In this article, we first design an intelligent architecture for MAPE-based self-adaptive systems on web 3.0-based CAVs, in which a collaborative machine learner supports the capabilities of managing systems. Then, we observe by practical experiments that importance sampling of sparse vector technique (SVT) approaches cannot defend GLA well. Next, we propose a fine-grained SVT approach to secure the learner in MAPE-based self-adaptive systems that uses layer and gradient sampling to select uniform and important gradients. At last, extensive experiments show that our private learner spends a slight utility cost for MAPE (e.g., \(0.77\%\) decrease in accuracy) defending GLA and outperforms the typical SVT approaches in terms of defense (increased by \(10\) – \(14\%\) attack success rate) and utility (decreased by \(1.29\%\) accuracy loss).},
   archive      = {J_TAAS},
-  author       = {Jian Song and Guanjun Liu and Miaomiao Wang},
-  doi          = {10.1145/3736177},
+  author       = {Xiaotong Wu and Yuwen Liu and Xiaoxiao Chi and Rong Jiang and Xiaokang Zhou and Wajid Rafique and Maqbool Khan},
+  doi          = {10.1145/3690768},
   journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-38},
+  month        = {9},
+  number       = {3},
+  pages        = {1-30},
   shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Model checking of workflow nets with tables and constraints},
+  title        = {Secure collaborative learning for self-adaptive systems on connected autonomous vehicles},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A consortium blockchain-based edge task offloading method for connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-27. (<a href='https://doi.org/10.1145/3696004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, the proliferation of Connected Autonomous Vehicles (CAV) has revolutionized the transportation industry. However, these vehicles often face limitations in terms of local computing resources, leading to the need for offloading interactive-intensive application tasks to servers for processing. Traditional paradigm has its limitations in meeting the demands of massive task processing. The combination of Web3.0 and edge computing offers users high-reliable, low-latency, and highly flexible services. Nevertheless, the new paradigm also presents its own challenges such as ensuring privacy data protection, and reducing the time and energy costs associated with task offloading. To tackle these challenges, an edge task offloading framework based on consortium blockchain for CAVs has been developed. Within this framework, a consortium blockchain-based interaction-intensive task offloading method, called CBIToMe, has been designed. CBIToMe specifically addresses the multi-stage nature of interactive-intensive CAV tasks and aims to minimize task completion time and offloading costs, particularly when the waiting time for interaction is uncertain. Additionally, CBIToMe effectively utilizes consortium blockchain technology to safeguard the CAV privacy data. Results from experiments conducted in various scenarios demonstrate that CBIToMe outperforms three representative methods, showcasing its superior performance.},
+  archive      = {J_TAAS},
+  author       = {Bowen Liu and Hao Tian and Zhijie Shen and Yueyue Xu and Wanchun Dou},
+  doi          = {10.1145/3696004},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {A consortium blockchain-based edge task offloading method for connected autonomous vehicles},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-agent reinforcement learning based edge content caching for connected autonomous vehicles in IoV. <em>TAAS</em>, <em>20</em>(3), 1-26. (<a href='https://doi.org/10.1145/3699431'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Connected Autonomous Vehicle (CAV) Driving, as a data-driven intelligent driving technology within the Internet of Vehicles (IoV), presents significant challenges to the efficiency and security of real-time data management. The combination of Web3.0 and edge content caching holds promise in providing low-latency data access for CAVs’ real-time applications. Web3.0 enables the reliable pre-migration of frequently requested content from content providers to edge nodes. However, identifying optimal edge node peers for joint content caching and replacement remains challenging due to the dynamic nature of traffic flow in IoV. Addressing these challenges, this article introduces GAMA-Cache, an innovative edge content caching methodology leveraging Graph Attention Networks (GAT) and Multi-Agent Reinforcement Learning (MARL). GAMA-Cache conceptualizes the cooperative edge content caching issue as a constrained Markov decision process. It employs a MARL technique predicated on cooperation effectiveness to discern optimal caching decisions, with GAT augmenting information extracted from adjacent nodes. A distinct collaborator selection mechanism is also developed to streamline communication between agents, filtering out those with minimal correlations in the vector input to the policy network. Experimental results demonstrate that, in terms of service latency and delivery failure, the GAMA-Cache outperforms other state-of-the-art MARL solutions for edge content caching in IoV.},
+  archive      = {J_TAAS},
+  author       = {Xiaolong Xu and Linjie Gu and Muhammad Bilal and Maqbool Khan and Yiping Wen and Guoqiang Liu and Yuan Yuan},
+  doi          = {10.1145/3699431},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Multi-agent reinforcement learning based edge content caching for connected autonomous vehicles in IoV},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combining personalized federated hypernetworks and shared residual learning for distributed QoS prediction. <em>TAAS</em>, <em>20</em>(3), 1-25. (<a href='https://doi.org/10.1145/3709141'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Connected vehicles due to the high mobility and dynamic network topologies of connected vehicles require accurate QoS that includes high throughput and low latency to assess satisfactory QoE. Existing methods mainly focus on centralized QoS prediction while paying little attention to distributed mobile QoS prediction, making it challenging to protect user privacy information when invoking Web services. Moreover, even though some advanced centralized methods can be transformed into federated architectures, they often face difficulty in capturing latent feature representations of users and services and learning personalized prediction layers between them due to the heterogeneity of the QoS dataset. To address the above issues, we propose a novel framework for distributed QoS prediction, called Combining Personalized Federated Hypernetworks and Shared Residual Learning for Distributed QoS Prediction (FHR-DQP) . FHR-DQP adopts the federated averaging (FedAvg) to aggregate location-aware residual shared feature information across all clients. Additionally, a hypernetwork is leveraged to generate personalized networks for user-service QoS prediction in each client. These components are integrated as a hybrid framework that performs training using a federated approach and makes personalized QoS predictions within each client. Extensive experiments are conducted on a real-world benchmark QoS dataset called WS-DREAM, containing nearly 2,000,000 historical QoS invocation records. Compared with both centralized and federated competing baselines, the results demonstrate that FHR-DQP achieves the highest performance for distributed QoS prediction, when it provides privacy-preserving of users’ QoS invocations.},
+  archive      = {J_TAAS},
+  author       = {Guobing Zou and Shiyi Lin and Shaogang Wu and Shengxiang Hu and Song Yang and Yanglan Gan and Bofeng Zhang and Yixin Chen},
+  doi          = {10.1145/3709141},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Combining personalized federated hypernetworks and shared residual learning for distributed QoS prediction},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LyDRL: Lyapunov-guided deep reinforcement learning for stable task offloading in connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-29. (<a href='https://doi.org/10.1145/3715333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task offloading is recognized as a promising approach to enhance the computational performance of Connected Autonomous Vehicles (CAVs). Some applications of CAVs, such as metaverse applications, require substantial resources, posing significant challenges to CAVs with limited computing and storage capacities. CAVs can offload resource-intensive applications to the Vehicular Edge Computing (VEC) server, which has strong computing capabilities. To fully utilize the resources in the CAV system, partial offloading is employed. However, the local computing resources are limited for continuously generated partial offloading tasks. This results in many partially locally executed tasks experiencing long processing times or being discarded, which is detrimental to delay-sensitive tasks on CAVs. This article proposes Lyapunov function-guided reinforcement learning for the CAVs task offloading computational framework, LyDRL. Specifically, LyDRL first uses the Lyapunov function to transform the long-term objective optimization problem into subproblems determined at each time slot. In each time slot, deep reinforcement learning is used to obtain the optimal task offloading decision while satisfying the constraints. Simulation results show that compared with the existing algorithms, the proposed strategy can ensure the stability of the CAVs system and achieve the lowest system overhead.},
+  archive      = {J_TAAS},
+  author       = {Yanming Chen and Ziyang Huang and Yiwen Zhang and Weiwei Fang and Neal N. Xiong},
+  doi          = {10.1145/3715333},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {LyDRL: Lyapunov-guided deep reinforcement learning for stable task offloading in connected autonomous vehicles},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Web 3.0-enabled microservice re-scheduling for heterogenous resources co-optimization in metaverse-integrated edge networks. <em>TAAS</em>, <em>20</em>(3), 1-26. (<a href='https://doi.org/10.1145/3715700'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Web 3.0 and metaverse can empower intelligent application of Connected Autonomous Vehicles (CAVs). The adoption of edge computing can contribute to the low latency interaction between CAVs and the metaverse. Microservices are widely deployed on edge networks and the cloud nowadays. User’s requests from CAVs are typically fulfilled through the composition of microservices, which may be hosted by contiguous edge nodes. Requests may differ on their required resources at runtime. Consequently, when requests are continuously injected into edge networks, the usage of heterogenous resources, including CPU, memory, and network bandwidth, may not be the same, or differ significantly, on certain edge nodes. This happens especially when burst requests are injected into the network to be satisfied concurrently. Therefore, the usage of heterogenous resources provided by edge nodes should be co-optimized through re-scheduling microservices. To address this challenge, this article proposes a Web 3.0-enabled M icroservice R e- S cheduling approach (called MRS ), which is a migration-based mechanism integrating a placement strategy. Specifically, we formulate the MRS task as a multi-objective and multi-constraint optimization problem, which can be solved through a penalty signal-integrated framework and an improved pointer network. Extensive experiments are conducted on two real-world datasets. Evaluation results show that our MRS performs better than the counterparts with improvements of at least 7.7%, 2.4%, and 2.2% in terms of network throughput, latency, and energy consumption, respectively.},
+  archive      = {J_TAAS},
+  author       = {Yihong Yang and Zhangbing Zhou and Lei Shu and Feng Zhou and Walid Gaaloul and Arif Ali Khan},
+  doi          = {10.1145/3715700},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Web 3.0-enabled microservice re-scheduling for heterogenous resources co-optimization in metaverse-integrated edge networks},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). QSTMF: Quantum-secured trust management framework for VANETs in web 3.0 and metaverse. <em>TAAS</em>, <em>20</em>(3), 1-29. (<a href='https://doi.org/10.1145/3735672'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Connected Autonomous Vehicles (CAVs) need a reliable communication structure which enables the complete evolution of transportation systems. Our proposed trust management strategy implements Quantum Key Distribution (QKD) and blockchain technology for solving CAV network security and coherence problems. The system applies QKD to produce unbreakable quantum keys which defend vehicle communication networks and blockchain systems strengthen governing networks by decentralizing operations and ensuring transparency and credibility. This framework employs QKD together with blockchain technology through a structure that demonstrates adaptability to changing networking conditions and cyber dangers within CAV environments. The independent operational mindset allows for automatic security rule updates that result in steady improvements to the encryption standards and system protocols. The framework demonstrates its functionality through simulations performed on multiple traffic conditions featuring different speeds together with density levels. The analysis included evaluation of energy efficiency together with overhead ratio performance as well as QKD success rates and blockchain verification duration. The testing results demonstrate that this system performs effectively under different operational scenarios while demonstrating strong defense capabilities against Sybil and Wormhole security attacks. Under dense traffic scenarios, Quantum-Secured Trust Management Framework (QSTMF) delivered improved network throughput reaching 15% above current models while high-speed traffic circumstances led to 20% diminished blockchain verification times. Attack detection rate performance of the framework exceeded 90% throughout multiple attack simulations indicating its robust capabilities for vehicle communication protection.},
+  archive      = {J_TAAS},
+  author       = {Kamran Ahmad Awan and Ikram Ud Din and Ahmad Almogren and Joel J. P. C. Rodrigues},
+  doi          = {10.1145/3735672},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {QSTMF: Quantum-secured trust management framework for VANETs in web 3.0 and metaverse},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). INSYTE: A classification framework for traditional to agentic AI systems. <em>TAAS</em>, <em>20</em>(3), 1-39. (<a href='https://doi.org/10.1145/3760424'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing classification frameworks for AI and autonomous systems are being outpaced by recent advancements in AI technologies. This limits their applicability to modern intelligent systems, particularly agentic AI systems (autonomous systems that leverage foundation models to achieve wide-ranging, multi-layered goals). To address this deficiency, we introduce INSYTE, a multi-faceted framework that supports the classification of AI systems ranging from traditional rule-based systems to cutting-edge embodied AI and agentic systems. To that end, INSYTE considers the essential characteristics of an AI system across eight key dimensions grouped into four categories: system design ( underspecification and adaptiveness ); functionality ( breadth and depth ); operating environment ( diversity and dynamism ); and independence from human operational control ( intervention and oversight ). Different AI systems (or versions of systems) yield different ‘patterns’ on an eight-axis radar chart that INSYTE uses to provide an immediate visual summary of an AI system’s overall capability and a detailed representation of its individual characteristics. The INSYTE framework aligns with OECD’s definition of deployed AI systems, which is becoming the standard definition used by legislators and developers worldwide.},
+  archive      = {J_TAAS},
+  author       = {Zoe Porter and Radu Calinescu and Ernest Lim and Victoria Hodge and Philippa Ryan and Simon Burton and Ibrahim Habli and Tom Lawton and John McDermid and John Molloy and Helen Monkhouse and Phillip Morgan and Paul Noordhof and Colin Paterson and Isobel Standen and Jie Zou},
+  doi          = {10.1145/3760424},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-39},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {INSYTE: A classification framework for traditional to agentic AI systems},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special issue on intelligent applications of web 3.0 and metaverse for connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-4. (<a href='https://doi.org/10.1145/3761817'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TAAS},
+  author       = {Lianyong Qi and Burak Kantarci and Houbing Song and Anna Maria Vegni},
+  doi          = {10.1145/3761817},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-4},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Introduction to the special issue on intelligent applications of web 3.0 and metaverse for connected autonomous vehicles},
   volume       = {20},
   year         = {2025},
 }

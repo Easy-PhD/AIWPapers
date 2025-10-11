@@ -25,289 +25,213 @@
 </head>
 <body>
 
-<h2 id="trob">TROB - 15</h2>
+<h2 id="trob">TROB - 11</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Integration of robot and scene kinematics for sequential mobile manipulation planning. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3605261'>www</a>)
+(2025). MARG: MAstering risky gap terrains for legged robots with elevation mapping. <em>TROB</em>, 1-17. (<a href='https://doi.org/10.1109/TRO.2025.3619041'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We present a Sequential Mobile Manipulation Planning (SMMP) framework that can solve long-horizon multi-step mobile manipulation tasks with coordinated whole-body motion, even when interacting with articulated objects. By abstracting environmental structures as kinematic models and integrating them with the robot's kinematics, we construct an Augmented Configuration Apace (A-Space) that unifies the previously separate task constraints for navigation and manipulation, while accounting for the joint reachability of the robot base, arm, and manipulated objects. This integration facilitates efficient planning within a tri-level framework: a task planner generates symbolic action sequences to model the evolution of A-Space, an optimization-based motion planner computes continuous trajectories within A-Space to achieve desired configurations for both the robot and scene elements, and an intermediate plan refinement stage selects action goals that ensure long-horizon feasibility. Our simulation studies first confirm that planning in A-Space achieves an 84.6% higher task success rate compared to baseline methods. Validation on real robotic systems demonstrates fluid mobile manipulation involving (i) seven types of rigid and articulated objects across 17 distinct contexts, and (ii) long-horizon tasks of up to 14 sequential steps. Our results highlight the significance of modeling scene kinematics into planning entities, rather than encoding task-specific constraints, offering a scalable and generalizable approach to complex robotic manipulation.},
+  abstract     = {Deep Reinforcement Learning (DRL) controllers for quadrupedal locomotion have demonstrated impressive performance on challenging terrains, allowing robots to execute complex skills such as climbing, running, and jumping. However, existing blind locomotion controllers often struggle to ensure safety and efficient traversal through risky gap terrains, which are typically highly complex, requiring robots to perceive terrain information and select appropriate footholds during locomotion accurately. Meanwhile, existing perception-based controllers still present several practical limitations, including a complex multisensor deployment system and expensive computing resource requirements. This paper proposes a DRL controller named MAstering Risky Gap Terrains (MARG), which integrates terrain maps and proprioception to dynamically adjust the action and enhance the robot's stability in these tasks. During the training phase, our controller accelerates policy optimization by selectively incorporating privileged information (e.g., center of mass, friction coefficients) that are available in simulation but unmeasurable directly in real-world deployments due to sensor limitations. We also designed three foot-related rewards to encourage the robot to explore safe footholds. More importantly, a terrain map generation (TMG) model is proposed to reduce the drift existing in mapping and provide accurate terrain maps using only one LiDAR, providing a foundation for zero-shot transfer of the learned policy. The experimental results indicate that MARG maintains stability in various risky terrain tasks.},
   archive      = {J_TROB},
-  author       = {Ziyuan Jiao and Yida Niu and Zeyu Zhang and Yangyang Wu and Yao Su and Yixin Zhu and Hangxin Liu and Song-Chun Zhu},
-  doi          = {10.1109/TRO.2025.3605261},
+  author       = {Yinzhao Dong and Ji Ma and Liu Zhao and Wanyue Li and Peng Lu},
+  doi          = {10.1109/TRO.2025.3619041},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-20},
+  month        = {10},
+  pages        = {1-17},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Integration of robot and scene kinematics for sequential mobile manipulation planning},
+  title        = {MARG: MAstering risky gap terrains for legged robots with elevation mapping},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Anytime probabilistically constrained provably convergent online belief space planning. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3610176'>www</a>)
+(2025). PG-SLAM: Photo-realistic and geometry-aware RGB-D SLAM in dynamic environments. <em>TROB</em>, 1-18. (<a href='https://doi.org/10.1109/TRO.2025.3619073'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Taking into account future risk is essential for an autonomously operating robot to find online not only the best but also a safe action to execute. In this paper, we build upon the recently introduced formulation of probabilistic belief-dependent constraints. In our methodology safety can be materialized with any general belief-dependent operator we call payoff. We present an anytime approach employing the Monte Carlo Tree Search (MCTS) method in continuous domains in terms of states, actions and observations and general-belief dependent reward and payoff operators. Unlike previous approaches, our method ensures safety anytime with respect to the currently expanded search tree without relying on the convergence of the search. We prove convergence in probability with an exponential rate of a version of our algorithms and study proposed techniques via extensive simulations. Even with a tiny number of tree queries, the best action found by our approach is much safer than the baseline. Moreover, our approach constantly yields better than the baseline action in terms of objective function. This is because we revise the values and statistics maintained in the search tree and remove from them the contribution of the pruned actions. We rigorously show that our cleaning routine is necessary. Without it, at the limit of convergence of MCTS, an infinite amount of sampled dangerous actions can be detrimental to the objective function.},
+  abstract     = {Simultaneous localization and mapping (SLAM) has achieved impressive performance in static environments. However, SLAM in dynamic environments remains an open question. Many methods directly filter out dynamic objects, resulting in incomplete scene reconstruction and limited accuracy of camera localization. The other works express dynamic objects by point clouds, sparse joints, or coarse meshes, which fails to provide a photo-realistic representation. To overcome the above limitations, we propose a photo-realistic and geometry-aware RGB-D SLAM method based on Gaussian splatting. Our method is composed of three main modules to 1) map the dynamic foreground including non-rigid humans/quadrupeds and rigid items, 2) reconstruct the static background, and 3) localize the camera. To map the foreground, we focus on modeling the deformations and/or motions. We consider the shape priors of humans/quadrupeds and exploit the geometric and appearance constraints of dynamic Gaussians. For background mapping, we design an optimization strategy between neighboring local maps by integrating appearance constraint into geometric alignment. As to camera localization, we leverage both static background and dynamic foreground to increase the number of observations and introduce more constraints. We explore the geometric and appearance constraints by associating 3D Gaussians with 2D optical flows and pixel patches. Experiments on extensive realworld datasets demonstrate that our method outperforms stateof-the-art approaches in terms of camera localization and scene mapping.},
   archive      = {J_TROB},
-  author       = {Andrey Zhitnikov and Vadim Indelman},
-  doi          = {10.1109/TRO.2025.3610176},
+  author       = {Haoang Li and Xiangqi Meng and Xingxing Zuo and Zhe Liu and Hesheng Wang and Daniel Cremers},
+  doi          = {10.1109/TRO.2025.3619073},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Anytime probabilistically constrained provably convergent online belief space planning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Towards accurate, efficient and robust RGB-D simultaneous localization and mapping in challenging environments. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3610173'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Visual Simultaneous Localization and Mapping (SLAM) is crucial to many applications such as self-driving vehicles and robot tasks. However, it is still challenging for existing visual SLAM approaches to achieve good performance in low-texture or illumination-changing scenes. In recent years, some researchers have turned to edge-based SLAM approaches to deal with the challenging scenes, which are more robust than feature-based and direct SLAM methods. Nevertheless, existing edge-based methods are computationally expensive and inferior than other visual SLAM systems in terms of accuracy. In this study, we propose EdgeSLAM, a novel RGB-D edge-based SLAM approach to deal with challenging scenarios that is efficient, accurate, and robust. EdgeSLAM is built on two innovative modules: efficient edge selection and adaptive robust motion estimation. The edge selection module can efficiently select a small set of edge pixels, which significantly improves the computational efficiency without sacrificing the accuracy. The motion estimation module improves the system's accuracy and robustness by adaptively handling outliers in motion estimation. Extensive experiments were conducted on TUM RGBD, ICL-NUIM and ETH3D datasets, and experimental results show that EdgeSLAM significantly outperforms five state-of-the-art (SOTA) methods in terms of efficiency, accuracy, and robustness, which achieves 29.17% accuracy improvements with a high processing speed of up to 120 FPS and a high positioning success rate of 97.06%.},
-  archive      = {J_TROB},
-  author       = {Hui Zhao and Fuqiang Gu and Jianga Shang and Xianlei Long and Jiarui Dou and Chao Chen and Huayan Pu and Jun Luo},
-  doi          = {10.1109/TRO.2025.3610173},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Towards accurate, efficient and robust RGB-D simultaneous localization and mapping in challenging environments},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Time-varying foot placement control for humanoid walking on swaying rigid surface. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3612326'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Locomotion on dynamic rigid surface (i.e., rigid surface accelerating in an inertial frame) presents complex challenges for controller design, which are essential to address for deploying humanoid robots in dynamic real-world environments such as moving trains, ships, and airplanes. This paper introduces a real-time, provably stabilizing control approach for humanoid walking on periodically swaying rigid surface. The first key contribution is an analytical extension of the classical angular momentum-based linear inverted pendulum model from static to swaying grounds whose motion period may be different than the robot's gait period. This extension results in a time-varying, nonhomogeneous robot model, which is fundamentally different from the existing pendulum models. We synthesize a discrete footstep control law for the model and derive a new set of sufficient stability conditions that verify the controller's stabilizing effect. Finally, experiments conducted on a Digit humanoid robot, both in simulations and on hardware, demonstrate the framework's effectiveness in addressing bipedal locomotion on swaying ground, even under uncertain surface motions and unknown external pushes.},
-  archive      = {J_TROB},
-  author       = {Yuan Gao and Victor Paredes and Yukai Gong and Zijian He and Ayonga Hereid and Yan Gu},
-  doi          = {10.1109/TRO.2025.3612326},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Time-varying foot placement control for humanoid walking on swaying rigid surface},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Traffic-rule-compliant trajectory repair via satisfiability modulo theories and reachability analysis. <em>TROB</em>, 1-18. (<a href='https://doi.org/10.1109/TRO.2025.3613550'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Complying with traffic rules is challenging for automated vehicles, as numerous rules need to be considered simultaneously. If a planned trajectory violates traffic rules, it is common to replan a new trajectory from scratch. We instead propose a trajectory repair technique to save computation time. By coupling satisfiability modulo theories with set-based reachability analysis, we determine if and in what manner the initial trajectory can be repaired. Experiments in high-fidelity simulators and in the real world demonstrate the benefits of our proposed approach in various scenarios. Even in complex environments with intricate rules, we efficiently and reliably repair rule-violating trajectories, enabling automated vehicles to swiftly resume legally safe operation in real time.},
-  archive      = {J_TROB},
-  author       = {Yuanfei Lin and Zekun Xing and Xuyuan Han and Matthias Althoff},
-  doi          = {10.1109/TRO.2025.3613550},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-18},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Traffic-rule-compliant trajectory repair via satisfiability modulo theories and reachability analysis},
+  title        = {PG-SLAM: Photo-realistic and geometry-aware RGB-D SLAM in dynamic environments},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Stability and transparency in mixed reality bilateral human teleoperation. <em>TROB</em>, 1-16. (<a href='https://doi.org/10.1109/TRO.2025.3613464'>www</a>)
+(2025). CCRobot-S: A robotic cable-climbing squad collaborating for fast inspection and heavy-duty maintenance. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619048'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent work introduced the concept of human teleoperation (HT), where the remote robot typically considered in conventional bilateral teleoperation is replaced by a novice person wearing a mixed reality head-mounted display and tracking the motion of a virtual tool controlled by an expert. HT has advantages in cost, complexity, and patient acceptance for telemedicine in low-resource communities or remote locations. However, the stability, transparency, and performance of bilateral HT are unexplored. In this paper, we therefore develop a mathematical model of the HT system using test data. We then analyze various control architectures with this model and implement them with the HT system, testing volunteer operators and a virtual fixture-based simulated patient to find the achievable performance, investigate stability, and determine the most promising teleoperation scheme in the presence of time delays. We show that instability in HT, while not destructive or dangerous, makes the system impossible to use. However, stable and transparent teleoperation are possible with small time delays ($&lt; 200$ ms) through 3-channel teleoperation, or with large time delays through model-mediated teleoperation with local pose and force feedback for the novice.},
+  abstract     = {This study introduces a novel climbing strategy, reconfigurable parallel-type cable-driven climbing designed for long-span, large-scale bridge stay cable robotic applications, which has the potential to revolutionize the stay cable inspection and maintenance practice. The proposed methodology features the development of a Collaborative Climbing Robot Squad (CCRobot-S), which builds upon the design principles of the previous CCRobot series. In this study, CCRobot-S implements a parallel-type cable-driven manipulation design, allowing for reconfigurable kinematic morphology by its movable anchor bases and realizing the capacity of crossing over the stay cables for its flying platform. The collaborative robot squad design liberates the dimensions and scales of the robot's reachable workspace and moves the part of the robotic system that indeed needs to be moved, enhancing the working efficiency and climbing agility. This strategy also utilizes controllable adhesion instead of friction to interact with the bridge cable surface for the flying platform, realizing force multiplication for forceful manipulation. Toward bringing high efficiency and heavy-duty capacity, we propose the applicable climbing frameworks (zero-downtime climbing gait for cable inspection and spider-like climbing gait for cable maintenance) and the optimization frameworks (optimal anchor configuration for the movable anchor bases and optimal grasp arrangement for the flying gripper). This article includes the exploration of the design and climbing gaits of CCRobotS, the formulation of the CCRobot-S model, a comprehensive analysis of its workspace, and its climbing strategy and optimization. Extensive experiments have assessed the proposed climbing strategy's effectiveness and showcased CCRobot-S' capabilities.},
   archive      = {J_TROB},
-  author       = {David Black and Septimiu Salcudean},
-  doi          = {10.1109/TRO.2025.3613464},
+  author       = {Zhenliang Zheng and Ning Ding and Herbert Werner and Feng Ren and Yongyuan Xu and Wenchao Zhang and Xiaoli Hu and Jianguo Zhang and Tin Lun Lam},
+  doi          = {10.1109/TRO.2025.3619048},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {CCRobot-S: A robotic cable-climbing squad collaborating for fast inspection and heavy-duty maintenance},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HiMo: High-speed objects motion compensation in point clouds. <em>TROB</em>, 1-16. (<a href='https://doi.org/10.1109/TRO.2025.3619042'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {LiDAR point cloud is essential for autonomous vehicles, but motion distortions from dynamic objects degrade the data quality. While previous work has considered distortions caused by ego motion, distortions caused by other moving objects remain largely overlooked, leading to errors in object shape and position. This distortion is particularly pronounced in high-speed environments such as highways and in multi-LiDAR configurations, a common setup for heavy vehicles. To address this challenge, we introduce HiMo, a pipeline that repurposes scene flow estimation for non-ego motion compensation, correcting the representation of dynamic objects in point clouds. During the development of HiMo, we observed that existing self-supervised scene flow estimators often produce degenerate or inconsistent estimates under high-speed distortion. We further propose SeFlow++, a real-time scene flow estimator that achieves state-of-the-art performance on both scene flow and motion compensation. Since well-established motion distortion metrics are absent in the literature, we introduce two evaluation metrics: compensation accuracy at a point level and shape similarity of objects. We validate HiMo through extensive experiments on Argoverse 2, ZOD and a newly collected real-world dataset featuring highway driving and multi-LiDAR-equipped heavy vehicles. Our findings show that HiMo improves the geometric consistency and visual fidelity of dynamic objects in LiDAR point clouds, benefiting downstream tasks such as semantic segmentation and 3D detection. See https://kin-zhang.github.io/HiMo for more details.},
+  archive      = {J_TROB},
+  author       = {Qingwen Zhang and Ajinkya Khoche and Yi Yang and Li Ling and Sina Sharif Mansouri and Olov Andersson and Patric Jensfelt},
+  doi          = {10.1109/TRO.2025.3619042},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {10},
   pages        = {1-16},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Stability and transparency in mixed reality bilateral human teleoperation},
+  title        = {HiMo: High-speed objects motion compensation in point clouds},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Grasp like humans: Learning generalizable multi-fingered grasping from human proprioceptive sensorimotor integration. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613541'>www</a>)
+(2025). OKVIS2-X: Open keyframe-based visual-inertial SLAM configurable with dense depth or LiDAR, and GNSS. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619051'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Tactile and kinesthetic perceptions are crucial for human dexterous manipulation, enabling reliable grasping of objects via proprioceptive sensorimotor integration. For robotic hands, even though acquiring such tactile and kinesthetic feedback is feasible, establishing a direct mapping from this sensory feedback to motor actions remains challenging. In this paper, we propose a novel glove-mediated tactile-kinematic perception-prediction framework for grasp skill transfer from human intuitive and natural operation to robotic execution based on imitation learning, and its effectiveness is validated through generalized grasping tasks, including those involving deformable objects. Firstly, we integrate a data glove to capture tactile and kinesthetic data at the joint level. The glove is adaptable for both human and robotic hands, allowing data collection from natural human hand demonstrations across different scenarios. It ensures consistency in the raw data format, enabling evaluation of grasping for both human and robotic hands. Secondly, we establish a unified representation of multi-modal inputs based on graph structures with polar coordinates. We explicitly integrate the morphological differences into the designed representation, enhancing the compatibility across different demonstrators and robotic hands. Furthermore, we introduce the Tactile-Kinesthetic Spatio-Temporal Graph Networks (TK-STGN), which leverage multidimensional subgraph convolutions and attention-based LSTM layers to extract spatio-temporal features from graph inputs to predict node-based states for each hand joint. These predictions are then mapped to final commands through a force-position hybrid mapping. Comparative experiments and ablation studies demonstrate that our approach surpasses other methods in grasp success rate, finger coordination, contact force management, and both grasp and computational efficiency, achieving results most akin to human grasping. The robustness of our approach is also validated through multiple randomized experimental setups, and its generalization capability is tested across diverse objects and robotic hands. The dataset and additional supporting videos are accessible via https://grasplikehuman.github.io/.},
+  abstract     = {To empower mobile robots with usable maps as well as highest state estimation accuracy and robustness, we present OKVIS2-X: a state-of-the-art multi-sensor Simultaneous Localization and Mapping (SLAM) system building dense volumetric occupancy maps, while scalable to large environments and operating in realtime. Our unified SLAM framework seamlessly integrates different sensor modalities: visual, inertial, measured or learned depth, LiDAR and Global Navigation Satellite System (GNSS) measurements. Unlike most state-of-the-art SLAM systems, we advocate using dense volumetric map representations when leveraging depth or range-sensing capabilities. We employ an efficient submapping strategy that allows our system to scale to large environments, showcased in sequences of up to 9 kilometers. OKVIS2-X enhances its accuracy and robustness by tightly-coupling the estimator and submaps through map alignment factors. Our system provides globally consistent maps, directly usable for autonomous navigation. To further improve the accuracy of OKVIS2-X, we also incorporate the option of performing online calibration of camera extrinsics. Our system achieves the highest trajectory accuracy in EuRoC against stateof-the-art alternatives, outperforms all competitors in the Hilti22 VI-only benchmark, while also proving competitive in the LiDAR version, and showcases state of the art accuracy in the diverse and large-scale sequences from the VBR dataset. Code available at: https://github.com/ethz-mrl/OKVIS2-X},
   archive      = {J_TROB},
-  author       = {Ce Guo and Xieyuanli Chen and Zhiwen Zeng and Zirui Guo and Yihong Li and Haoran Xiao and Dewen Hu and Huimin Lu},
-  doi          = {10.1109/TRO.2025.3613541},
+  author       = {Simon Boche and Jaehyung Jung and Sebastian Barbas Laina and Stefan Leutenegger},
+  doi          = {10.1109/TRO.2025.3619051},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Grasp like humans: Learning generalizable multi-fingered grasping from human proprioceptive sensorimotor integration},
+  title        = {OKVIS2-X: Open keyframe-based visual-inertial SLAM configurable with dense depth or LiDAR, and GNSS},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). GeoVINS: Geographic-visual-inertial navigation system for large-scale drift-free aerial state estimation. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613467'>www</a>)
+(2025). Continual learning of regions for efficient robot localization on large maps. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619058'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This article introduces GeoVINS, a vision-based navigation framework designed for large-scale global state estimation. By utilizing geographic information from satellite orthoimagery, GeoVINS tackles scale ambiguity and accumulative drift problems inherent in standard visual-inertial simultaneous localization and mapping (VI-SLAM) systems, and provides accurate, robust, and real-time global localization. In particular, to address the challenge of memory explosion issue for large-scale localization, we propose a novel aerial ‘classify-then-retrieve’ aerial VPR approach, where geographic locations can be efficiently identified and memory usage can be reduced by 3 to 4 orders of magnitude compared to classical retrieval-based approaches. In addition, a hierarchical geographic data association scheme, enhanced by state-of-the-art deep learning-based feature matching, guarantees high efficiency and robustness against variations in appearance and viewpoint. Relying on the obtained three-dimensional (3D) geographic information, GeoVINS achieves efficient global state initialization and precise motion tracking. To address GPU limitations in embedded devices, a collaborative CPU-GPU utilization approach is proposed, seamlessly integrating asynchronous global information to eliminate accumulative errors. Relying solely on satellite imagery and without requiring any other prior information, GeoVINS achieves rapid place recognition in unseen environments of city-scale (e.g., 2500${\mathrm{km}}^{2}$) on an embedded computing device with an inference time of 43 ms, and performs state estimation at a frequency of 25 Hz. The system enables autonomous UAV navigation as an alternative to GNSS.},
+  abstract     = {Most of today's SLAM approaches learn the map of the environment in the first stage (referred to as mapping) and subsequently use this static map for planning and navigation. This method is suboptimal in dynamic contexts because changes in the environment can result in poor performance of the localization components essential for loop closure detection and relocalization. To address the limitations of the mapping-navigation dualism, continual SLAM has been proposed, which focuses on methods that can continually update the knowledge of the environment and the corresponding map. However, continual SLAM poses challenges, particularly for real-time navigation of large maps, and many of the existing techniques are not yet mature for practical application. In this paper, we present a continual learning approach aimed at accurate and efficient robot localization on large maps, advancing the goal of continual SLAM. Our approach incrementally trains a region prediction neural network to recognize familiar places and preselect a subset of map nodes for localization and map optimization. We integrate this method into RTAB-Map, a well-known graph-based SLAM system, and validate its practical applicability through assessments on several real-world SLAM datasets.},
   archive      = {J_TROB},
-  author       = {Chunyu Li and Mengfan He and Chao Chen and Jiacheng Liu and Xu Lyu and Guoquan Huang and Ziyang Meng},
-  doi          = {10.1109/TRO.2025.3613467},
+  author       = {Matteo Scucchia and Davide Maltoni},
+  doi          = {10.1109/TRO.2025.3619058},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {GeoVINS: Geographic-visual-inertial navigation system for large-scale drift-free aerial state estimation},
+  title        = {Continual learning of regions for efficient robot localization on large maps},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). VINGS-mono: Visual-inertial gaussian splatting monocular SLAM in large scenes. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613536'>www</a>)
+(2025). Non-submodular visual attention for robot navigation. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619067'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {VINGS-Mono is a monocular (inertial) Gaussian Splatting (GS) SLAM framework designed for large scenes. The framework comprises four main components: VIO Front End, 2D Gaussian Map, NVS Loop Closure, and Dynamic Eraser. In the VIO Front End, RGB frames are processed through dense bundle adjustment and uncertainty estimation to extract scene geometry and poses. Based on this output, the mapping module incrementally constructs and maintains a 2D Gaussian map. Key components of the 2D Gaussian Map include a Sample-based Rasterizer, Score Manager, and Pose Refinement, which collectively improve mapping speed and localization accuracy. This enables the SLAM system to handle large-scale urban environments with up to 50 million Gaussian ellipsoids. To ensure global consistency in large-scale scenes, we design a Loop Closure module, which innovatively leverages the Novel View Synthesis (NVS) capabilities of Gaussian Splatting for loop closure detection and correction of the Gaussian map. Additionally, we propose a Dynamic Eraser to address the inevitable presence of dynamic objects in real-world outdoor scenes. Extensive evaluations in indoor and outdoor environments demonstrate that our approach achieves localization performance on par with Visual-Inertial Odometry while surpassing recent GS/NeRF SLAM methods. It also significantly outperforms all existing methods in terms of mapping and rendering quality. Furthermore, we developed a mobile app and verified that our framework can generate high-quality Gaussian maps in real time using only a smartphone camera and a low-frequency IMU sensor. To the best of our knowledge, VINGS-Mono is the first monocular Gaussian SLAM method capable of operating in outdoor environments and supporting kilometer-scale large scenes.},
+  abstract     = {This paper presents a task-oriented computational framework to enhance Visual-Inertial Navigation (VIN) in robots, addressing challenges such as limited time and energy resources. The framework strategically selects visual features using a Mean Square Error (MSE)-based, non-submodular objective function and a simplified dynamic anticipation model. To address the NP-hardness of this problem, we introduce four polynomial-time approximation algorithms: a classic greedy method with constant-factor guarantees; a low-rank greedy variant that significantly reduces computational complexity; a randomized greedy sampler that balances efficiency and solution quality; and a linearization-based selector based on a first-order Taylor expansion for near-constant-time execution. We establish rigorous performance bounds by leveraging submodularity ratios, curvature, and element-wise curvature analyses. Extensive experiments on both standardized benchmarks and a custom control-aware platform validate our theoretical results, demonstrating that these methods achieve strong approximation guarantees while enabling real-time deployment.},
   archive      = {J_TROB},
-  author       = {Ke Wu and Zicheng Zhang and Muer Tie and Ziqing Ai and Zhongxue Gan and Wenchao Ding},
-  doi          = {10.1109/TRO.2025.3613536},
+  author       = {Reza Vafaee and Kian Behzad and Milad Siami and Luca Carlone and Ali Jadbabaie},
+  doi          = {10.1109/TRO.2025.3619067},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {VINGS-mono: Visual-inertial gaussian splatting monocular SLAM in large scenes},
+  title        = {Non-submodular visual attention for robot navigation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Object-centric kinodynamic planning for nonprehensile robot rearrangement manipulation. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613532'>www</a>)
+(2025). Impedance control design framework using commutative map between $SE(3)$ and $\mathfrak {se}(3)$. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619066'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Nonprehensile actions such as pushing are crucial for addressing multi-object rearrangement problems. Many traditional methods generate robot-centric actions, which differ from intuitive human strategies and are typically inefficient. To this end, we adopt an object-centric planning paradigm and propose a unified framework for addressing a range of large-scale, physics-intensive nonprehensile rearrangement problems challenged by modeling inaccuracies and real-world uncertainties. By assuming each object can actively move without being driven by robot interactions, our planner first computes desired object motions, which are then realized through robot actions generated online via a closed-loop pushing strategy. Through extensive experiments and in comparison with state-of-the-art baselines in both simulation and on a physical robot, we show that our object-centric planning framework can generate more intuitive and task-effective robot actions with significantly improved efficiency. In addition, we propose a benchmarking protocol to standardize and facilitate future research in nonprehensile rearrangement.},
+  abstract     = {Impedance control is a widely adopted approach that ensures the compliant behavior of robot manipulators as they interact with their environment according to specifically designed dynamics. For tasks involving six degrees of freedom (DoF), it is crucial to appropriately manage the position and orientation of the end-effector by controlling dynamic behavior. However, describing orientational displacement and designing the corresponding rotational impedance can be challenging, especially when we use a minimal representation. The well-known minimal representation for orientation, the Euler angle, suffers from representation singularity. As a remedy, the quaternion or dual quaternion can be an alternative, but with non-minimal representations. This lack of minimal representation, which does not suffer from the representation singularity, often leads to handling the impedance design by directly defining the potential energy function in the matrix Lie group. This paper proposes a framework for the six-DoF impedance control design that takes advantage of Lie group theory with minimal representation, known as the exponential coordinate. Since the exponential coordinate can be treated as the Euclidean variable within the injectivity radius, it allows for the formulation of the impedance control more systematically and familiarly. In our framework, a detour strategy is utilized; the impedance is designed in the Lie group $SE(3)$, and the control is designed in the Lie algebra $\mathfrak {se}(3)$, which is isomorphic to the vector space $\mathbb {R}^{6}$. The group structure of $SE(3)$ can be maintained using the proposed conversion formula between the Lie group and the Lie algebra, called the differential of the exponential map and its time derivative, with a closed-form expression. Experiments with a 6-DoF robot manipulator verified that the proposed impedance control framework effectively reflects the $SE(3)$ group structure and achieves the desired dynamic behavior as the functionality of the impedance control with minimal parameters.},
   archive      = {J_TROB},
-  author       = {Kejia Ren and Gaotian Wang and Andrew S. Morgan and Lydia E. Kavraki and Kaiyu Hang},
-  doi          = {10.1109/TRO.2025.3613532},
+  author       = {Jonghyeok Kim and Minchang Sung and Youngjin Choi and Jonghoon Park and Wan Kyun Chung},
+  doi          = {10.1109/TRO.2025.3619066},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Object-centric kinodynamic planning for nonprehensile robot rearrangement manipulation},
+  title        = {Impedance control design framework using commutative map between $SE(3)$ and $\mathfrak {se}(3)$},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Online multi-robot coordination and cooperation with task precedence relationships. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613558'>www</a>)
+(2025). Contact planning for multi-legged robots under constraints through parallel MCTS. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619054'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We propose a new formulation for the multi-robot task allocation problem that incorporates (a) complex precedence relationships between tasks, (b) efficient intra-task coordination, and (c) cooperation through the formation of robot coalitions. A task graph specifies the tasks and their relationships, and a set of reward functions models the effects of coalition size and preceding task performance. Maximizing task rewards is NP-hard; hence, we propose network flow-based algorithms to approximate solutions efficiently. A novel online algorithm performs iterative re-allocation, providing robustness to task failures and model inaccuracies to achieve higher performance than offline approaches. We comprehensively evaluate the algorithms in a testbed with random missions and reward functions and compare them to a mixed- integer solver and a greedy heuristic. Additionally, we validate the overall approach in an advanced simulator, modeling reward functions based on realistic physical phenomena and executing the tasks with realistic robot dynamics. Results establish efficacy in modeling complex missions and efficiency in generating high-fidelity task plans while leveraging task relationships.},
+  abstract     = {Contact planning for multi-legged robots is a challenging sequential decision-making problem due to the interplay of gaits, footholds, configurations, and physical constraints from both the robot and the environment. Existing multi-contact planners often fail to find feasible sequences within a limited time in complex scenarios and to ensure physical possibility. We propose a parallel Monte Carlo Tree Search (MCTS)-based planner that leverages multi-constraint reachability to efficiently generate physically valid contact sequences. The method accelerates planning through a hash-driven parallel approach, prioritizing promising candidates while pruning trapped nodes via valueless node evaluation. It employs depth-first backup for long-horizon planning and uses virtual loss to balance parallel exploration. To ensure feasible transitions between contact states, we establish comprehensive reachability conditions for multi-legged robots, incorporating stability, collision avoidance, kinematics, joint torques, and contact constraints into the planning framework. In experiments in sparse foothold environments, our planner outperforms mainstream contact planning approaches in traversability, solution quality and physical feasibility, while achieving a competitive planning speed. Furthermore, simulation and hardware validation on hexapod and humanoid robots exhibit successful locomotion across various terrains while satisfying constraints.},
   archive      = {J_TROB},
-  author       = {Walker Gosrich and Saurav Agarwal and Kashish Garg and Siddharth Mayya and Matthew Malencia and Mark Yim and Vijay Kumar},
-  doi          = {10.1109/TRO.2025.3613558},
+  author       = {Peng Xu and Liang Ding and Lei Ye and Tengwei Pang and Tie Liu and Huaiguang Yang and Haibo Gao and Zongquan Deng and Joni Pajarinen},
+  doi          = {10.1109/TRO.2025.3619054},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Online multi-robot coordination and cooperation with task precedence relationships},
+  title        = {Contact planning for multi-legged robots under constraints through parallel MCTS},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Privacy–Preserving robotic perception for object detection in curious cloud robotics. <em>TROB</em>, 1-19. (<a href='https://doi.org/10.1109/TRO.2025.3613551'>www</a>)
+(2025). Asymmetric information enhanced mapping framework for multirobot exploration based on deep reinforcement learning. <em>TROB</em>, 1-17. (<a href='https://doi.org/10.1109/TRO.2025.3619045'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Cloud robotics allows low–power robots to perform computationally intensive inference tasks by offloading them to the cloud, raising privacy concerns when transmitting sensitive images. Although end–to–end encryption secures data in transit, it does not prevent misuse by inquisitive third–party services since data must be decrypted for processing. This paper tackles these privacy issues in cloud–based object detection tasks for service robots. We propose a co–trained encoder–decoder architecture that retains only task–specific features while obfuscating sensitive information, utilizing a novel weak loss mechanism with proposal selection for privacy preservation. A theoretical analysis of the problem is provided, along with an evaluation of the trade–off between detection accuracy and privacy preservation through extensive experiments on public datasets and a real robot.},
+  abstract     = {Despite significant advancements in multirobot technologies, efficiently and collaboratively exploring an unknown environment remains a major challenge. In this paper, we propose AIM-Mapping, an Asymmetric InforMation enhanced Mapping framework based on deep reinforcement learning. The framework fully leverages the privileged information to help construct the environmental representation as well as the supervised signal in an asymmetric actor-critic training framework. Specifically, privileged information is used to evaluate exploration performance through an asymmetric feature representation module and a mutual information evaluation module. The decision-making network employs the trained feature encoder to extract structural information of the environment and integrates it with a topological map constructed based on geometric distance. By leveraging this topological map representation, we apply topological graph matching to assign corresponding boundary points to each robot as long-term goal points. We conduct experiments in both iGibson simulation environments and real-world scenarios. The results demonstrate that the proposed method achieves significant performance improvements compared to existing approaches.},
   archive      = {J_TROB},
-  author       = {Michele Antonazzi and Matteo Alberti and Alex Bassot and Matteo Luperto and Nicola Basilico},
-  doi          = {10.1109/TRO.2025.3613551},
+  author       = {Jiyu Cheng and Junhui Fan and Xiaolei Li and Paul L. Rosin and Yibin Li and Wei Zhang},
+  doi          = {10.1109/TRO.2025.3619045},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-19},
+  month        = {10},
+  pages        = {1-17},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Privacy–Preserving robotic perception for object detection in curious cloud robotics},
+  title        = {Asymmetric information enhanced mapping framework for multirobot exploration based on deep reinforcement learning},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). AUTO-IceNav: A local navigation strategy for autonomous surface ships in broken ice fields. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613472'>www</a>)
+(2025). LPAC: Learnable perception-action-communication loops with applications to coverage control. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619047'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Ice conditions often require ships to reduce speed and deviate from their main course to avoid damage to the ship. In addition, broken ice fields are becoming the dominant ice conditions encountered in the Arctic, where the effects of collisions with ice are highly dependent on where contact occurs and on the particular features of the ice floes. In this paper, we present AUTO-IceNav, a framework for the autonomous navigation of ships operating in ice floe fields. Trajectories are computed in a receding-horizon manner, where we frequently replan given updated ice field data. During a planning step, we assume a nominal speed that is safe with respect to the current ice conditions, and compute a reference path. We formulate a novel cost function that minimizes the kinetic energy loss of the ship from ship-ice collisions and incorporate this cost as part of our lattice-based path planner. The solution computed by the lattice planning stage is then used as an initial guess in our proposed optimization-based improvement step, producing a locally optimal path. Extensive experiments were conducted both in simulation and in a physical testbed to validate our approach.},
+  abstract     = {Coverage control is the problem of navigating a robot swarm to collaboratively monitor features or a phenomenon of interest not known a priori. The problem is challenging in decentralized settings with robots that have limited communication and sensing capabilities. We propose a learnable Perception-Action-Communication (LPAC) architecture for the problem, wherein a convolutional neural network (CNN) processes localized perception; a graph neural network (GNN) facilitates robot communications; finally, a shallow multi-layer perceptron (MLP) computes robot actions. The GNN enables collaboration in the robot swarm by computing what information to communicate with nearby robots and how to incorporate received information. Evaluations show that the LPAC models—trained using imitation learning—outperform standard decentralized and centralized coverage control algorithms. The learned policy generalizes to environments different from the training dataset, transfers to larger environments with more robots, and is robust to noisy position estimates. The results indicate the suitability of LPAC architectures for decentralized navigation in robot swarms to achieve collaborative behavior.},
   archive      = {J_TROB},
-  author       = {Rodrigue de Schaetzen and Alexander Botros and Ninghan Zhong and Kevin Murrant and Robert Gash and Stephen L. Smith},
-  doi          = {10.1109/TRO.2025.3613472},
+  author       = {Saurav Agarwal and Ramya Muthukrishnan and Walker Gosrich and Vijay Kumar and Alejandro Ribeiro},
+  doi          = {10.1109/TRO.2025.3619047},
   journal      = {IEEE Transactions on Robotics},
-  month        = {9},
+  month        = {10},
   pages        = {1-20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {AUTO-IceNav: A local navigation strategy for autonomous surface ships in broken ice fields},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient decentralised parallel task allocation for multiple robots. <em>TROB</em>, 1-18. (<a href='https://doi.org/10.1109/TRO.2025.3613566'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper deals with large-scale decentralised task allocation problems for multiple heterogeneous robots. One of the grand challenges with decentralised task allocation problems is the NP-hardness for computation and communication. This paper proposes a decentralised Decreasing Threshold Task Allocation (DTTA) algorithm that enables parallel allocation by leveraging a decreasing threshold to handle the NP-hardness. DTTA can release both computation and communication burdens for multiple robots in a decentralised network. Additionally, DTTA provides a theoretical guarantee of the quality of the solution for maximising submodular utility functions. Theoretical analysis indicates that DTTA can provide an optimality guarantee of $(1-\epsilon)/2$ with computation complexity of $O(\min (r^{2}, \frac{r}{\epsilon }\ln \frac{r}{\epsilon }))$ for each robot, where $\epsilon$ is the parameter controlling the decreasing speed of the threshold, $r$ is the number of tasks. To examine the performance of the proposed algorithm, we conduct numerical simulations based on a multi-target surveillance scenario. Simulation results demonstrate that DTTA delivers comparable solution quality significantly faster than state-of-the-art task allocation algorithms. Its advantages are particularly pronounced in large-scale missions with thousands of tasks and robots.},
-  archive      = {J_TROB},
-  author       = {Teng Li and Hyo-Sang Shin and Antonios Tsourdos},
-  doi          = {10.1109/TRO.2025.3613566},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Efficient decentralised parallel task allocation for multiple robots},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Learning-based motion planning leveraging multivariate deep evidential regression. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3613568'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Learning-based motion planning methods have shown significant promise in enhancing the efficiency of traditional algorithms. However, they often face performance degradation in novel environments with drastic scene changes due to the limited generalization ability of deep neural networks (DNNs). This paper introduces a confidence-driven motion planning network (CDMPNet), comprising a feature extraction autoencoder and a confidence-driven sampling network (CDSNet). The autoencoder compresses point clouds into latent vectors. The CDSNet is a closed-form continuous-time neural network, which predicts hyperparameters of an evidential distribution over the subsequent state's mean and covariance for robot configuration sampling. We also present a CDMPNet-based neural planner and a CDMPNet-guided RRTConnect algorithm. Simulations and ablation studies are conducted on 2-D, 3-D, and 7-D planning tasks to validate the generalization ability of our method. Furthermore, we transfer the approach to a 7-DOF Sawyer robotic arm to demonstrate the potential for real-world deployment.},
-  archive      = {J_TROB},
-  author       = {Rixin Wang and Shuopeng Wang and Jintao Ye and Ying Zhang and Lina Hao},
-  doi          = {10.1109/TRO.2025.3613568},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {9},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Learning-based motion planning leveraging multivariate deep evidential regression},
+  title        = {LPAC: Learnable perception-action-communication loops with applications to coverage control},
   year         = {2025},
 }
 </textarea>

@@ -1111,128 +1111,24 @@
 </details></li>
 </ul>
 
-<h2 id="taas">TAAS - 7</h2>
+<h2 id="taas">TAAS - 10</h2>
 <ul>
 <li><details>
 <summary>
-(2025). An evaluation of self-adaptive mechanisms for misconfigurations in small uncrewed aerial systems. <em>TAAS</em>, <em>20</em>(2), 1-35. (<a href='https://doi.org/10.1145/3707643'>www</a>)
+(2025). Adaptive scheduling of high-availability drone swarms for congestion alleviation in connected automated vehicles. <em>TAAS</em>, <em>20</em>(3), 1-19. (<a href='https://doi.org/10.1145/3673905'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Small uncrewed aerial systems (sUAS) provide an invaluable resource for performing a variety of surveillance, search, and delivery tasks in remote or hostile terrains which may not be accessible by other means. Due to the critical role sUAS play in these situations, it is vital that they are well configured in order to ensure a safe and stable flight. However, it is not uncommon for mistakes to occur in configuration and calibration, leading to failures or incomplete missions. To address this problem, we propose a set of self-adaptive mechanisms and implement them into a self-adaptive framework, Controller Instability-preventing Configuration-Aware Drone Adaptation (CICADA). CICADA dynamically detects unstable drone behavior during flight and adapts to mitigate this threat. We have built a prototype of CICADA using a popular open source sUAS flight control software and experimented with a large number of different configurations in simulation. We then performed a case study with physical drones to determine if our framework will work in practice. Experimental results show that CICADA ’s adaptations reduce controller instability and enable the sUAS to recover from up to 33.8% of poor configurations. In cases where we cannot complete the intended mission, invoking alternative adaptations may still help by allowing the vehicle to loiter or land safely in place, avoiding potentially catastrophic crashes. These safety-focused adaptations can mitigate unsafe behavior in 52.9% to 64.7% of dangerous configurations. We further show that rule-based approaches can be leveraged to automatically select an appropriate adaptation strategy based on the severity of instability encountered, with up to a 14.2% improvement over direct adaptation. Finally, we introduce a variation of our primary adaptation strategy designed to allow more cautious adaptation with limited configuration information, which gets within 6.7% of our primary adaptation strategy despite not requiring an optimal knowledge base.},
+  abstract     = {The Intelligent Transportation System (ITS) serves as a pivotal element within urban networks, offering decision support to users and connected automated vehicles through comprehensive information gathering, sensing, device control, and data processing. Presently, ITS predominantly relies on sensors embedded in fixed infrastructure, notably Roadside Units (RSUs). However, RSUs are confined by coverage limitations and may encounter challenges in prompt emergency responses. On-demand resources, such as drones, present a viable option to supplement these deficiencies effectively. This article introduces an approach where Software-Defined Networking and Mobile Edge Computing technologies are integrated to formulate a high-availability drone swarm control and communication infrastructure framework comprising the cloud layer, edge layer, and device layer. Drones confront limitations in flight duration attributed to battery limitations, posing a challenge in sustaining continuous monitoring of road conditions over extended periods. Effective drone scheduling stands as a promising solution to overcome these constraints. To tackle this issue, we initially utilized Graph WaveNet, a specialized graph neural network structure tailored for spatial-temporal graph modeling, for training a congestion prediction model using real-world dataset inputs. Building upon this, we further propose an algorithm for drone scheduling based on congestion prediction. Our simulation experiments using real-world data demonstrate that, compared to the baseline method, the proposed scheduling algorithm not only yielded superior scheduling gains but also mitigated drone idle rates.},
   archive      = {J_TAAS},
-  author       = {Salil Purandare and Md Nafee Al Islam and Urjoshi Sinha and Jane Cleland-Huang and Myra B. Cohen},
-  doi          = {10.1145/3707643},
+  author       = {Shengye Pang and Yi Li and Zhen Qin and Xinkui Zhao and Jintao Chen and Fan Wang and Jianwei Yin},
+  doi          = {10.1145/3673905},
   journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-35},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {An evaluation of self-adaptive mechanisms for misconfigurations in small uncrewed aerial systems},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An extended study of the performance of flexible controllers composed of micro-controllers. <em>TAAS</em>, <em>20</em>(2), 1-41. (<a href='https://doi.org/10.1145/3715145'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Generic controllers for self-adaptive systems can be configured parametrically according to system needs, even though their reuse is restricted because of the wide range of services that may be provided by each stage of a feedback control loop, like MAPE-K. Rainbow is a typical example of such a generic, monolithic controller. This article revisits and extends prior work that advocates structurally flexible controllers, as ensembles of micro-controllers each providing specific services. We experimented with our approach with three different architectural configurations for the controller—monolithic, decentralised and decentralised with a meta-controller. Our results indicate that despite the decentralised configuration with a meta-controller demanding more computational resources, it performed comparatively well compared to the other configurations, including when measuring the target system’s response time. Moreover, we found that variations of the control loop timing at the different layers of the controller impact the stability of the target system. We have also evolved the controller by adding a new micro-controller, which caused no impact on the other micro-controllers, and mostly kept the target system’s performance. We conclude that a multi-layered controller design, based on micro-controllers, provides the basis for defining structurally flexible controllers at operational-time and may promote reuse at development-time.},
-  archive      = {J_TAAS},
-  author       = {Bento Rafael Siqueira and Fabiano Cutigi Ferrari and Rogério de Lemos},
-  doi          = {10.1145/3715145},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-41},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {An extended study of the performance of flexible controllers composed of micro-controllers},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Many-objective self-adaptation under model uncertainty. <em>TAAS</em>, <em>20</em>(2), 1-28. (<a href='https://doi.org/10.1145/3719349'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The field of uncertainty quantification and mitigation in software-intensive and self-adaptive systems is garnering increased interest, especially with the rise of statistical inference methodologies like Bayesian reasoning. These methods typically address uncertain quality attributes embedded within system models by adjusting model parameters. However, the uncertainty related to selecting a specific system model over plausible alternatives has received limited attention. Our work focuses on self-adaptation, exploring methods to tackle uncertainty in model selection. This includes scenarios where one model is chosen over competing alternatives to encapsulate the system’s understanding and anticipate future observations. Our proposed solution augments the conventional feedback loop of self-adaptive systems by combining Bayesian model averaging to mitigate uncertainty and many-objective optimization to take into account multiple, possibly many, dependability requirements at the same time. We carry out an empirical evaluation to study the effectiveness, cost, and scalability of the proposed approach using two case studies with increasing structural complexity and number of dependability requirements. Results show that our approach based on model averaging is significantly better than model selection in terms of satisfied requirements after adaptation (adaptation success frequency). We also show that our approach can deal with large model spaces ( \(\sim 10^{19}\) ) using efficient sampling methods rather than exhaustive model space exploration.},
-  archive      = {J_TAAS},
-  author       = {Matteo Camilli and Raffaela Mirandola and Patrizia Scandurra},
-  doi          = {10.1145/3719349},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-28},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Many-objective self-adaptation under model uncertainty},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient training approaches for performance anomaly detection models in edge computing environments. <em>TAAS</em>, <em>20</em>(2), 1-27. (<a href='https://doi.org/10.1145/3725736'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Microservice architectures are increasingly used to modularize IoT applications and deploy them in distributed and heterogeneous edge computing environments. Over time, these microservice-based IoT applications are susceptible to performance anomalies caused by resource hogging (e.g., CPU or memory), resource contention, etc., which can negatively impact their Quality of Service and violate their Service Level Agreements. Existing research on performance anomaly detection for edge computing environments focuses on model training approaches that either achieve high accuracy at the expense of a time-consuming and resource-intensive training process or prioritize training efficiency at the cost of lower accuracy. To address this gap, while considering the resource constraints and the large number of devices in modern edge platforms, we propose two clustering-based model training approaches: (1) intra-cluster parameter transfer learning (ICPTL)-based model training and (2) cluster-level model (CM) training. These approaches aim to find a tradeoff between the training efficiency of anomaly detection models and their accuracy. We compared the models trained under ICPTL and CM to models trained for specific devices (most accurate, least efficient) and a single general model trained for all devices (least accurate, most efficient). Our findings show that ICPTL’s model accuracy is comparable to that of the model per device approach while requiring only 40% of the training time. In addition, CM further improves training efficiency by requiring 23% less training time and reducing the number of trained models by approximately 66% compared to ICPTL, yet achieving a higher accuracy than a single general model.},
-  archive      = {J_TAAS},
-  author       = {Duneesha Fernando and Maria A. Rodriguez and Patricia Arroba and Leila Ismail and Rajkumar Buyya},
-  doi          = {10.1145/3725736},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Efficient training approaches for performance anomaly detection models in edge computing environments},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Introduction to the SEAMS 2023 special issue. <em>TAAS</em>, <em>20</em>(2), 1-2. (<a href='https://doi.org/10.1145/3725987'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  archive      = {J_TAAS},
-  author       = {Raffaela Mirandola and Radu Calinescu and Pooyan Jamshidi},
-  doi          = {10.1145/3725987},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-2},
-  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Introduction to the SEAMS 2023 special issue},
-  volume       = {20},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Vehicle dynamics and interaction for trajectory prediction and traffic control. <em>TAAS</em>, <em>20</em>(2), 1-19. (<a href='https://doi.org/10.1145/3727342'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Trajectory prediction is a crucial challenge in autonomous vehicle motion planning and decision-making techniques. However, existing methods face limitations in accurately capturing vehicle dynamics and interactions. To address this issue, this article proposes a novel approach to extracting vehicle velocity and acceleration, enabling the learning of vehicle dynamics and encoding them as auxiliary information. The VDI-LSTM model is designed, incorporating graph convolution and attention mechanisms to capture vehicle interactions using trajectory data and dynamic information. Specifically, a dynamics encoder is designed to capture the dynamic information, a dynamic graph is employed to represent vehicle interactions, and an attention mechanism is introduced to enhance the performance of LSTM and graph convolution. To demonstrate the effectiveness of our model, extensive experiments are conducted, including comparisons with several baselines and ablation studies on real-world highway datasets. Experimental results show that VDI-LSTM outperforms other baselines compared, which obtains a 3% improvement on the average RMSE indicator over the five prediction steps.},
-  archive      = {J_TAAS},
-  author       = {Jian Chen and Shaorui Zhou and Wei Wang and Yuzhu Hu and Jianqing Li and Ben-guo He and Junxin Chen and Marwan Omar and Ali Kashif Bashir and Xiping Hu},
-  doi          = {10.1145/3727342},
-  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-19},
   shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Vehicle dynamics and interaction for trajectory prediction and traffic control},
+  title        = {Adaptive scheduling of high-availability drone swarms for congestion alleviation in connected automated vehicles},
   volume       = {20},
   year         = {2025},
 }
@@ -1240,20 +1136,187 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Model checking of workflow nets with tables and constraints. <em>TAAS</em>, <em>20</em>(2), 1-38. (<a href='https://doi.org/10.1145/3736177'>www</a>)
+(2025). Secure collaborative learning for self-adaptive systems on connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-30. (<a href='https://doi.org/10.1145/3690768'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Many operations in workflow systems are dependent on database tables. The classical workflow nets and their extensions (e.g., workflow nets with data) cannot model these operations, so that they cannot find some related errors. Recently, workflow nets with tables (WFT-nets) were proposed to remedy such a flaw. However, existing methods for constructing the reachability graph of the WFT-nets can generate pseudo states because they do not take into account the guards that constrain the enabling and firing of transitions. Additionally, only the soundness property of WFT-nets is considered that represents a single design requirement, while many other requirements, especially those related to tables, cannot be analyzed. In this article, we re-define the formalism of WFT-nets by augmenting the constraints of guards to them and re-name them as workflow nets with tables and constraints (WFTC-nets). We propose a new method to generate the state reachability graph (SRG) of WFTC-nets such that the SRG can avoid pseudo states by considering the guard constraints. To represent design requirements related to database operations, we define database-oriented computation tree logic (DCTL). We design the model checking algorithms of DCTL based on the SRG of WFTC-nets and develop a tool. Experiments on several public benchmarks show the usefulness of our methods.},
+  abstract     = {As an advanced carrier of on-board sensors, connected autonomous vehicle (CAV) can be viewed as an aggregation of self-adaptive systems with monitor-analyze-plan-execute (MAPE) for vehicle-related services. Meanwhile, machine learning (ML) has been applied to enhance analysis and plan functions of MAPE so that self-adaptive systems have optimal adaption to changing conditions. However, most of ML-based approaches don’t utilize CAVs’ connectivity to collaboratively generate an optimal learner for MAPE, because of sensor data threatened by gradient leakage attack (GLA). In this article, we first design an intelligent architecture for MAPE-based self-adaptive systems on web 3.0-based CAVs, in which a collaborative machine learner supports the capabilities of managing systems. Then, we observe by practical experiments that importance sampling of sparse vector technique (SVT) approaches cannot defend GLA well. Next, we propose a fine-grained SVT approach to secure the learner in MAPE-based self-adaptive systems that uses layer and gradient sampling to select uniform and important gradients. At last, extensive experiments show that our private learner spends a slight utility cost for MAPE (e.g., \(0.77\%\) decrease in accuracy) defending GLA and outperforms the typical SVT approaches in terms of defense (increased by \(10\) – \(14\%\) attack success rate) and utility (decreased by \(1.29\%\) accuracy loss).},
   archive      = {J_TAAS},
-  author       = {Jian Song and Guanjun Liu and Miaomiao Wang},
-  doi          = {10.1145/3736177},
+  author       = {Xiaotong Wu and Yuwen Liu and Xiaoxiao Chi and Rong Jiang and Xiaokang Zhou and Wajid Rafique and Maqbool Khan},
+  doi          = {10.1145/3690768},
   journal      = {ACM Transactions on Autonomous and Adaptive Systems},
-  month        = {6},
-  number       = {2},
-  pages        = {1-38},
+  month        = {9},
+  number       = {3},
+  pages        = {1-30},
   shortjournal = {ACM Trans. Auton. Adapt. Syst.},
-  title        = {Model checking of workflow nets with tables and constraints},
+  title        = {Secure collaborative learning for self-adaptive systems on connected autonomous vehicles},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A consortium blockchain-based edge task offloading method for connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-27. (<a href='https://doi.org/10.1145/3696004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, the proliferation of Connected Autonomous Vehicles (CAV) has revolutionized the transportation industry. However, these vehicles often face limitations in terms of local computing resources, leading to the need for offloading interactive-intensive application tasks to servers for processing. Traditional paradigm has its limitations in meeting the demands of massive task processing. The combination of Web3.0 and edge computing offers users high-reliable, low-latency, and highly flexible services. Nevertheless, the new paradigm also presents its own challenges such as ensuring privacy data protection, and reducing the time and energy costs associated with task offloading. To tackle these challenges, an edge task offloading framework based on consortium blockchain for CAVs has been developed. Within this framework, a consortium blockchain-based interaction-intensive task offloading method, called CBIToMe, has been designed. CBIToMe specifically addresses the multi-stage nature of interactive-intensive CAV tasks and aims to minimize task completion time and offloading costs, particularly when the waiting time for interaction is uncertain. Additionally, CBIToMe effectively utilizes consortium blockchain technology to safeguard the CAV privacy data. Results from experiments conducted in various scenarios demonstrate that CBIToMe outperforms three representative methods, showcasing its superior performance.},
+  archive      = {J_TAAS},
+  author       = {Bowen Liu and Hao Tian and Zhijie Shen and Yueyue Xu and Wanchun Dou},
+  doi          = {10.1145/3696004},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {A consortium blockchain-based edge task offloading method for connected autonomous vehicles},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-agent reinforcement learning based edge content caching for connected autonomous vehicles in IoV. <em>TAAS</em>, <em>20</em>(3), 1-26. (<a href='https://doi.org/10.1145/3699431'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Connected Autonomous Vehicle (CAV) Driving, as a data-driven intelligent driving technology within the Internet of Vehicles (IoV), presents significant challenges to the efficiency and security of real-time data management. The combination of Web3.0 and edge content caching holds promise in providing low-latency data access for CAVs’ real-time applications. Web3.0 enables the reliable pre-migration of frequently requested content from content providers to edge nodes. However, identifying optimal edge node peers for joint content caching and replacement remains challenging due to the dynamic nature of traffic flow in IoV. Addressing these challenges, this article introduces GAMA-Cache, an innovative edge content caching methodology leveraging Graph Attention Networks (GAT) and Multi-Agent Reinforcement Learning (MARL). GAMA-Cache conceptualizes the cooperative edge content caching issue as a constrained Markov decision process. It employs a MARL technique predicated on cooperation effectiveness to discern optimal caching decisions, with GAT augmenting information extracted from adjacent nodes. A distinct collaborator selection mechanism is also developed to streamline communication between agents, filtering out those with minimal correlations in the vector input to the policy network. Experimental results demonstrate that, in terms of service latency and delivery failure, the GAMA-Cache outperforms other state-of-the-art MARL solutions for edge content caching in IoV.},
+  archive      = {J_TAAS},
+  author       = {Xiaolong Xu and Linjie Gu and Muhammad Bilal and Maqbool Khan and Yiping Wen and Guoqiang Liu and Yuan Yuan},
+  doi          = {10.1145/3699431},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Multi-agent reinforcement learning based edge content caching for connected autonomous vehicles in IoV},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combining personalized federated hypernetworks and shared residual learning for distributed QoS prediction. <em>TAAS</em>, <em>20</em>(3), 1-25. (<a href='https://doi.org/10.1145/3709141'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Connected vehicles due to the high mobility and dynamic network topologies of connected vehicles require accurate QoS that includes high throughput and low latency to assess satisfactory QoE. Existing methods mainly focus on centralized QoS prediction while paying little attention to distributed mobile QoS prediction, making it challenging to protect user privacy information when invoking Web services. Moreover, even though some advanced centralized methods can be transformed into federated architectures, they often face difficulty in capturing latent feature representations of users and services and learning personalized prediction layers between them due to the heterogeneity of the QoS dataset. To address the above issues, we propose a novel framework for distributed QoS prediction, called Combining Personalized Federated Hypernetworks and Shared Residual Learning for Distributed QoS Prediction (FHR-DQP) . FHR-DQP adopts the federated averaging (FedAvg) to aggregate location-aware residual shared feature information across all clients. Additionally, a hypernetwork is leveraged to generate personalized networks for user-service QoS prediction in each client. These components are integrated as a hybrid framework that performs training using a federated approach and makes personalized QoS predictions within each client. Extensive experiments are conducted on a real-world benchmark QoS dataset called WS-DREAM, containing nearly 2,000,000 historical QoS invocation records. Compared with both centralized and federated competing baselines, the results demonstrate that FHR-DQP achieves the highest performance for distributed QoS prediction, when it provides privacy-preserving of users’ QoS invocations.},
+  archive      = {J_TAAS},
+  author       = {Guobing Zou and Shiyi Lin and Shaogang Wu and Shengxiang Hu and Song Yang and Yanglan Gan and Bofeng Zhang and Yixin Chen},
+  doi          = {10.1145/3709141},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Combining personalized federated hypernetworks and shared residual learning for distributed QoS prediction},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LyDRL: Lyapunov-guided deep reinforcement learning for stable task offloading in connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-29. (<a href='https://doi.org/10.1145/3715333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task offloading is recognized as a promising approach to enhance the computational performance of Connected Autonomous Vehicles (CAVs). Some applications of CAVs, such as metaverse applications, require substantial resources, posing significant challenges to CAVs with limited computing and storage capacities. CAVs can offload resource-intensive applications to the Vehicular Edge Computing (VEC) server, which has strong computing capabilities. To fully utilize the resources in the CAV system, partial offloading is employed. However, the local computing resources are limited for continuously generated partial offloading tasks. This results in many partially locally executed tasks experiencing long processing times or being discarded, which is detrimental to delay-sensitive tasks on CAVs. This article proposes Lyapunov function-guided reinforcement learning for the CAVs task offloading computational framework, LyDRL. Specifically, LyDRL first uses the Lyapunov function to transform the long-term objective optimization problem into subproblems determined at each time slot. In each time slot, deep reinforcement learning is used to obtain the optimal task offloading decision while satisfying the constraints. Simulation results show that compared with the existing algorithms, the proposed strategy can ensure the stability of the CAVs system and achieve the lowest system overhead.},
+  archive      = {J_TAAS},
+  author       = {Yanming Chen and Ziyang Huang and Yiwen Zhang and Weiwei Fang and Neal N. Xiong},
+  doi          = {10.1145/3715333},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {LyDRL: Lyapunov-guided deep reinforcement learning for stable task offloading in connected autonomous vehicles},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Web 3.0-enabled microservice re-scheduling for heterogenous resources co-optimization in metaverse-integrated edge networks. <em>TAAS</em>, <em>20</em>(3), 1-26. (<a href='https://doi.org/10.1145/3715700'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Web 3.0 and metaverse can empower intelligent application of Connected Autonomous Vehicles (CAVs). The adoption of edge computing can contribute to the low latency interaction between CAVs and the metaverse. Microservices are widely deployed on edge networks and the cloud nowadays. User’s requests from CAVs are typically fulfilled through the composition of microservices, which may be hosted by contiguous edge nodes. Requests may differ on their required resources at runtime. Consequently, when requests are continuously injected into edge networks, the usage of heterogenous resources, including CPU, memory, and network bandwidth, may not be the same, or differ significantly, on certain edge nodes. This happens especially when burst requests are injected into the network to be satisfied concurrently. Therefore, the usage of heterogenous resources provided by edge nodes should be co-optimized through re-scheduling microservices. To address this challenge, this article proposes a Web 3.0-enabled M icroservice R e- S cheduling approach (called MRS ), which is a migration-based mechanism integrating a placement strategy. Specifically, we formulate the MRS task as a multi-objective and multi-constraint optimization problem, which can be solved through a penalty signal-integrated framework and an improved pointer network. Extensive experiments are conducted on two real-world datasets. Evaluation results show that our MRS performs better than the counterparts with improvements of at least 7.7%, 2.4%, and 2.2% in terms of network throughput, latency, and energy consumption, respectively.},
+  archive      = {J_TAAS},
+  author       = {Yihong Yang and Zhangbing Zhou and Lei Shu and Feng Zhou and Walid Gaaloul and Arif Ali Khan},
+  doi          = {10.1145/3715700},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Web 3.0-enabled microservice re-scheduling for heterogenous resources co-optimization in metaverse-integrated edge networks},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). QSTMF: Quantum-secured trust management framework for VANETs in web 3.0 and metaverse. <em>TAAS</em>, <em>20</em>(3), 1-29. (<a href='https://doi.org/10.1145/3735672'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Connected Autonomous Vehicles (CAVs) need a reliable communication structure which enables the complete evolution of transportation systems. Our proposed trust management strategy implements Quantum Key Distribution (QKD) and blockchain technology for solving CAV network security and coherence problems. The system applies QKD to produce unbreakable quantum keys which defend vehicle communication networks and blockchain systems strengthen governing networks by decentralizing operations and ensuring transparency and credibility. This framework employs QKD together with blockchain technology through a structure that demonstrates adaptability to changing networking conditions and cyber dangers within CAV environments. The independent operational mindset allows for automatic security rule updates that result in steady improvements to the encryption standards and system protocols. The framework demonstrates its functionality through simulations performed on multiple traffic conditions featuring different speeds together with density levels. The analysis included evaluation of energy efficiency together with overhead ratio performance as well as QKD success rates and blockchain verification duration. The testing results demonstrate that this system performs effectively under different operational scenarios while demonstrating strong defense capabilities against Sybil and Wormhole security attacks. Under dense traffic scenarios, Quantum-Secured Trust Management Framework (QSTMF) delivered improved network throughput reaching 15% above current models while high-speed traffic circumstances led to 20% diminished blockchain verification times. Attack detection rate performance of the framework exceeded 90% throughout multiple attack simulations indicating its robust capabilities for vehicle communication protection.},
+  archive      = {J_TAAS},
+  author       = {Kamran Ahmad Awan and Ikram Ud Din and Ahmad Almogren and Joel J. P. C. Rodrigues},
+  doi          = {10.1145/3735672},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {QSTMF: Quantum-secured trust management framework for VANETs in web 3.0 and metaverse},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). INSYTE: A classification framework for traditional to agentic AI systems. <em>TAAS</em>, <em>20</em>(3), 1-39. (<a href='https://doi.org/10.1145/3760424'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing classification frameworks for AI and autonomous systems are being outpaced by recent advancements in AI technologies. This limits their applicability to modern intelligent systems, particularly agentic AI systems (autonomous systems that leverage foundation models to achieve wide-ranging, multi-layered goals). To address this deficiency, we introduce INSYTE, a multi-faceted framework that supports the classification of AI systems ranging from traditional rule-based systems to cutting-edge embodied AI and agentic systems. To that end, INSYTE considers the essential characteristics of an AI system across eight key dimensions grouped into four categories: system design ( underspecification and adaptiveness ); functionality ( breadth and depth ); operating environment ( diversity and dynamism ); and independence from human operational control ( intervention and oversight ). Different AI systems (or versions of systems) yield different ‘patterns’ on an eight-axis radar chart that INSYTE uses to provide an immediate visual summary of an AI system’s overall capability and a detailed representation of its individual characteristics. The INSYTE framework aligns with OECD’s definition of deployed AI systems, which is becoming the standard definition used by legislators and developers worldwide.},
+  archive      = {J_TAAS},
+  author       = {Zoe Porter and Radu Calinescu and Ernest Lim and Victoria Hodge and Philippa Ryan and Simon Burton and Ibrahim Habli and Tom Lawton and John McDermid and John Molloy and Helen Monkhouse and Phillip Morgan and Paul Noordhof and Colin Paterson and Isobel Standen and Jie Zou},
+  doi          = {10.1145/3760424},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-39},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {INSYTE: A classification framework for traditional to agentic AI systems},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special issue on intelligent applications of web 3.0 and metaverse for connected autonomous vehicles. <em>TAAS</em>, <em>20</em>(3), 1-4. (<a href='https://doi.org/10.1145/3761817'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TAAS},
+  author       = {Lianyong Qi and Burak Kantarci and Houbing Song and Anna Maria Vegni},
+  doi          = {10.1145/3761817},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-4},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Introduction to the special issue on intelligent applications of web 3.0 and metaverse for connected autonomous vehicles},
   volume       = {20},
   year         = {2025},
 }
@@ -1261,45 +1324,24 @@
 </details></li>
 </ul>
 
-<h2 id="taco">TACO - 23</h2>
+<h2 id="taco">TACO - 37</h2>
 <ul>
 <li><details>
 <summary>
-(2025). LitTLS: Lightweight thread-level speculation on little cores. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3719655'>www</a>)
+(2025). HopScotch: A holistic approach to data layout-aware mapping on NPUs for high-performance DNN inference. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3711821'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Thread-Level Speculation (TLS) utilizes speculative parallelization to accelerate hard-to-parallelize serial codes on multi-cores. As the heterogeneous multi-core architecture is becoming ubiquitous, it presents an opportunity for TLS to reorganize little cores for the acceleration of these serial codes instead of a big core with similar or more area and power. However, previous TLS designs significantly suffer from extended hardware overhead and costly speculative forwarding. We present LitTLS, a lightweight TLS design with versioning caches to eliminate significant extended hardware overhead by storing versions in caches without speculative write buffers and memory undo-logs. Additionally, LitTLS introduces the Speculative Address Table, a novel component to accelerate speculative forwarding with a central structure to trace memory dependencies. Evaluations on four little cores show that LitTLS achieves an average performance speedup of 2.87× compared to a little core, outperforming a big core by 94% with similar area and less power. The extended area size is only 0.07 mm 2 , and the maximum increase in dynamic power consumption is limited to 0.3%, compared to four little cores.},
+  abstract     = {Modern deep neural networks (DNNs) are widely utilized across a broad range of domains, scaling rapidly and often comprising hundreds of diverse layers with varying types and configurations. To accelerate DNN execution, specialized hardware solutions, known as neural processing units (NPUs), have been developed. However, this heterogeneity of layers in a DNN model may cause performance degradation on NPUs. For example, while a layer’s execution or dataflow is generally associated with a specific data access order, the data layout in on-chip memory may not be well aligned with it, introducing bubble cycles for layout reordering. Given the hundreds of diverse layers in DNNs, this layout reordering overhead presents a new challenge for achieving efficient end-to-end DNN inference on NPUs. To address this problem, this article introduces HopScotch, a holistic approach to data layout-aware mapping of DNNs on NPUs. First, HopScotch adopts a routing interconnect between the on-chip memory and the systolic array utilizing three-input multiplexers, paired with an on-chip programmable vector processor to manage arbitrary data layout reordering at runtime. Additionally, it introduces a tailored data layout to accommodate a variety of convolutional configurations within the proposed microarchitecture. Second, HopScotch presents a novel layout mapping solver that employs a top-k selection strategy based on a beam search algorithm, facilitating the efficient exploration of the vast layout mapping space at compile time. Third, the proposed layout mapping solver is integrated into the HopScotch mapping framework (HMF) to explore the layout mapping space and evaluate the resulting performance. Experiments with popular DNN models show that HopScotch reduces layout reordering costs by up to 98.2% and 90.3%, resulting in speedups of 2.62× and 1.64× in end-to-end latency, compared to XLA and GCD 2 , respectively.},
   archive      = {J_TACO},
-  author       = {Xin Cheng and Jinpeng Ye and Haoyu Deng and Tingting Zhang and Tianyi Liu and Jian Wang},
-  doi          = {10.1145/3719655},
+  author       = {Suhong Lee and Boyeal Kim and Yongseok Choi and Hyuk-Jae Lee},
+  doi          = {10.1145/3711821},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {LitTLS: Lightweight thread-level speculation on little cores},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). TSN cache: Exploiting data localities in graph computing applications. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3721286'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article finds that the reusability of vertices in the same graph in graph processing differs, and the high-reuse and low-reuse vertices are stored together. These phenomena lead to the inability of existing GPU architectures to capture the reusability of graph processing. The most advanced cache optimization strategies cannot implement different management strategies for data with different reusability, which is an essential reason for graph processing’s poor performance. Therefore, we propose a TSN cache scheme for the GPU platform. This scheme employs distinct management strategies for data with varying reusability in the cache, effectively leveraging the locality of these different data types. In addition, the TSN cache scheme can also reduce the probability of cache thrashing caused by low-reuse data. This article evaluates multiple graph algorithms and datasets and shows that the TSN cache scheme achieves an average speedup of 1.38 compared with the baseline scheme.},
-  archive      = {J_TACO},
-  author       = {Chaoyang Jia and Jingyu Liu and Shi Chen and Kai Lu and Li Shen},
-  doi          = {10.1145/3721286},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-26},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {TSN cache: Exploiting data localities in graph computing applications},
+  title        = {HopScotch: A holistic approach to data layout-aware mapping on NPUs for high-performance DNN inference},
   volume       = {22},
   year         = {2025},
 }
@@ -1307,146 +1349,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). PANDA: Adaptive prefetching and decentralized scheduling for dataflow architectures. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3721288'>www</a>)
+(2025). LarQucut: A new cutting and mapping approach for large-sized quantum circuits in distributed quantum computing (DQC) environments. <em>TACO</em>, <em>22</em>(3), 1-24. (<a href='https://doi.org/10.1145/3730585'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Dataflow architectures are considered promising architecture, offering a commendable balance of performance, efficiency, and flexibility. Abundant prior works have been proposed to improve the performance of dataflow architectures. Nevertheless, these solutions can be further improved due to the lack of efficient data prefetching and flexible task scheduling. In this article, we propose a novel dataflow architecture with adaptive p refetching an d d ecentr a lized scheduling (PANDA). First, we present an application-adaptive data prefetching method and on-chip memory microarchitecture designed to overlap memory access latency. Second, we introduce a decentralized dataflow scheduling approach and processing element (PE) microarchitecture aimed at improving hardware utilization. Experimental results show that in a wide range of real-world applications, PANDA attains up to 2.53× performance improvement and 1.79× energy efficiency improvement over the state-of-the-art dataflow architectures.},
+  abstract     = {Distributed quantum computing (DQC) is a promising way to achieve large-scale quantum computing. However, mapping large-sized quantum circuits in DQC is a challenging job; for example, it is difficult to find an ideal cutting and mapping solution when many qubits, complicated qubit operations, and diverse QPUs are involved. In this study, we propose LarQucut, a new quantum circuit cutting and mapping approach for large-sized circuits in DQC. LarQucut has several new designs. (1) LarQucut can have cutting solutions that use fewer cuts, and it does not cut a circuit into independent sub-circuits, therefore reducing the overall cutting and computing overheads. (2) LarQucut finds isomorphic sub-circuits and reuses their execution results. So, LarQucut can reduce the number of sub-circuits that need to be executed to reconstruct the large circuit's output, reducing the time spent on sampling the sub-circuits. (3) We design an adaptive quantum circuit mapping approach, which identifies qubit interaction patterns and accordingly enables the best-fit mapping policy in DQC. The experimental results show that, for large circuits with hundreds to thousands of qubits in DQC, LarQucut can provide a better cutting and mapping solution with lower overall overheads and achieves results closer to the ground truth.},
   archive      = {J_TACO},
-  author       = {Shantian Qin and Zhihua Fan and Wenming Li and Zhen Wang and Xuejun An and Xiaochun Ye and Dongrui Fan},
-  doi          = {10.1145/3721288},
+  author       = {Xinglei Dou and Lei Liu and Zhuohao Wang and Pengyu Li},
+  doi          = {10.1145/3730585},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {PANDA: Adaptive prefetching and decentralized scheduling for dataflow architectures},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). BridgeGC: An efficient cross-level garbage collector for big data frameworks. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3722110'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Popular big data frameworks commonly run atop Java Virtual Machine (JVM) and rely on garbage collection (GC) mechanism to automatically allocate/reclaim in-memory objects. Existing garbage collectors are designed based on the hypothesis that most objects are short lived. However, big data frameworks usually generate many long-lived data objects, which can cause heavy GC overhead. Recent approaches have reduced GC overhead in big data frameworks but still suffer from heavy human efforts, additional runtime overhead, or suboptimal GC efficiency. This article describes the design of BridgeGC , a big-data-friendly garbage collector that significantly reduces GC overhead introduced by long-lived data objects. BridgeGC follows a cross-level co-design. At the big data framework level, BridgeGC provides two annotations for framework developers to denote the creation and release of data objects. Based on the annotations, BridgeGC tracks the lifecycles of annotated data objects and optimizes their allocation/reclamation at the GC level. At the GC level, we design a label-based allocator that stores data objects separately from other objects and balances their memory usage in the same JVM, leading to fewer GC cycles. We further design an efficient collector to eliminate unnecessary marking and copying of data objects during GC cycles, lowering the GC time. We have integrated BridgeGC into OpenJDK ZGC. The extensive evaluation, using two popular big data frameworks (Flink and Spark) and a key–value database (Cassandra), shows that BridgeGC achieves 31–82% GC time reduction compared to the baseline ZGC. BridgeGC also outperforms other traditional and academic garbage collectors in end-to-end performance.},
-  archive      = {J_TACO},
-  author       = {Yicheng Wang and Lijie Xu and Tian Guo and Wensheng Dou and Hongbin Zeng and Wei Wang and Jun Wei and Tao Huang},
-  doi          = {10.1145/3722110},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {BridgeGC: An efficient cross-level garbage collector for big data frameworks},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SEED: Speculative security metadata updates for low-latency secure memory. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3722111'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Securing systems’ main memory is important for building trusted data centers. To ensure memory security, encryption and integrity verification techniques update the security metadata (e.g., encryption counters and integrity trees) during memory data writes. Existing studies are optimistic about the effect of data writes on system performance since they regard all data writes as background operations. However, we show that security metadata updates significantly increase data write latency. High-latency data writes frequently fill up write buffers in the system, forcing the system to perform the writes in the critical path. As a result, performance-critical data reads need to wait for the execution of these writes, which increases data read latency and degrades system performance. In this article, we propose SEED that improves the performance of secure memory systems by speculatively updating security metadata in the background before data writes arrive. To enable speculative updates, SEED predicts which dirty cache lines will be written to memory through natural evictions. We find that cache evictions depend on multiple factors. To decouple the dependencies for accurate predictions, we devise a two-step eviction prediction method based on our observation that the next eviction victim rarely changes in a set. The first step predicts which cache sets will evict cache lines, whereas the second step predicts which cache lines will be evicted by finding the next eviction victims in the sets. For predicted evictions, we develop a speculative updater to perform speculative updates. We analyze the invariants that must be followed by the updater to ensure the correctness of speculative updates. The updater rolls back the speculatively updated security metadata of inaccurate predictions. To reduce the rollback overhead, we devise a rollback batching and an update pausing optimization for the updater. Experimental results show that SEED reduces data write latency by 39.8%, data read latency by 44.9%, and improves performance by 40.0% on average compared with the state-of-the-art secure memory design.},
-  archive      = {J_TACO},
-  author       = {Xueliang Wei and Dan Feng and Wei Tong and Bing Wu and Xu Jiang},
-  doi          = {10.1145/3722111},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {SEED: Speculative security metadata updates for low-latency secure memory},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A lock-free RDMA-friendly index in CPU-parsimonious environments. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3722112'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In CPU-parsimonious environments, such as disaggregated memory systems, the limited CPU power on the memory side constrains the ability to perform more operations. Thus, reducing CPU usage and enhancing concurrency performance are critical for indexing key-value storage in these scenarios. Current hash indexes support one-sided RDMA access and lock-free concurrency control with good performance but lack range query support. In contrast, existing tree indexes support range query but only implement expensive locks for concurrency control. Therefore, designing a tree index that supports lock-free concurrent access and one-sided RDMA is a significant challenge. To address these issues, this paper proposes a lock-free tree index based on the van Emde Boas (vEB) tree, called vBoost. vBoost inherits the vEB tree’s characteristics of index nodes without splitting or merging, and simplifies concurrency control by managing changes at a single node. It redesigns tree nodes with an 8-byte compact data structure, allowing each key-value pair to support RDMA_CAS atomic operations for lock-free concurrency. Additionally, vBoost leverages the RDMA Doorbell technique to reduce RTTs, enhancing range query and write performance. Evaluation results show that, vBoost achieves up to 3.85× higher throughput and better scalability under YCSB workloads compared to state-of-the-art tree indexes.},
-  archive      = {J_TACO},
-  author       = {Yuting Li and Yun Xu and Pengcheng Wang and Yonghui Xu and Weiguang Wang},
-  doi          = {10.1145/3722112},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-25},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {A lock-free RDMA-friendly index in CPU-parsimonious environments},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Koala: Efficient pipeline training through automated schedule searching on domain-specific language. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3722113'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Pipeline parallelism is a crucial technique for large-scale model training, enabling parameter splitting and performance enhancement. However, creating effective pipeline schedules often requires significant manual effort and coding skills, leading to practical inconveniences and complex debugging. Major frameworks such as DeepSpeed and ColossalAI simplify the process by adopting predefined pipeline schedule strategies, such as GPipe and 1F1B. The use of predefined schedules offers limited flexibility and suboptimal training efficiency, as the limited number of manually set candidates cannot provide the optimal strategy for arbitrary model training. To deal with the issue, this article aims to automatically search for the optimal strategy with high efficiency. Since current frameworks only support a limited set of fixed strategies, lacking the technical capability to create a comprehensive strategy search space, we first design a novel domain-specific language (DSL) for pipeline schedule development. The DSL exhibits great understandability, agility, and reusability, supporting the development of all known pipeline schedule strategies and their variants. Second, we are the first to model the complete pipeline schedule strategy space via the DSL, enabling an automated end-to-end globally optimal pipeline schedule searching, while past work may get stuck in a local optimum. Finally, we propose to optimize pipeline performance by modeling and solving the pipeline schedule as a Binary-Tree-Traversing (BTT) optimization problem. Based on the formalization, we further adopt a Dynamic Try-Test Genetic Algorithm to search for the best pipeline schedule strategy, which overwhelms a variety of pre-defined ones. Experimental results show that Koala achieves an enhanced performance by up to \(1.53\times\) over state-of-the-art approaches. Besides, the pipeline schedule strategy searched by Koala outperforms pre-defined pipeline schedule strategies by \(1.10\times \sim 1.55\times\) . Moreover, Koala has superior scalability and effectiveness in combining with data parallelism and tensor parallelism.},
-  archive      = {J_TACO},
-  author       = {Yu Tang and Lujia Yin and Qiao Li and Hongyu Zhu and Hengjie Li and Xingcheng Zhang and Linbo Qiao and Dongsheng Li and Jiaxin Li},
-  doi          = {10.1145/3722113},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-25},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Koala: Efficient pipeline training through automated schedule searching on domain-specific language},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SRSparse: Generating codes for high-performance sparse matrix-vector semiring computations. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3722114'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Sparse matrix-vector semiring computation is a key operation in sparse matrix computations, with performance strongly dependent on both program design and the features of the sparse matrices. Given the diversity of sparse matrices, designing a tailored program for each matrix is challenging. To address this, we propose SRSparse, 1 a program generator that creates tailored programs by automatically combining program designing methods to fit specific input matrices. It provides two components: the problem definition configuration , which declares the computation, and the scheduling language , which can be leveraged by an auto-tuner to specify the program designs. The two are lowered to the intermediate representations of SRSparse, the Format IR and Kernel IR , which respectively generate format conversion routine and kernel code. We evaluate SRSparse on four representative sparse kernels and three format conversion routines. For sparse kernels, SRSparse achieves median speedups over handwritten programs: COO (3.50×), CSR-Adaptive (5.36×), CSR5 (2.06×), ELL (1.63×), Gunrock (1.57×), and GraphBLAST (1.96×); over an auto-tuner: AlphaSparse (1.16×); and over a compiler: TACO (1.71×). For format conversion routines, SRSparse achieves median speedups over handwritten implementations: Intel MKL (7.60×), SPARSKIT (2.61×), CUSP (2.77×), and Ginkgo (1.74×); and over a compiler: TACO (4.04×).},
-  archive      = {J_TACO},
-  author       = {Zhen Du and Ying Liu and Ninghui Sun and Huimin Cui and Xiaobing Feng and Jiajia Li},
-  doi          = {10.1145/3722114},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-26},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {SRSparse: Generating codes for high-performance sparse matrix-vector semiring computations},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Gator: Accelerating graph attention networks by jointly optimizing attention and graph processing. <em>TACO</em>, <em>22</em>(2), 1-24. (<a href='https://doi.org/10.1145/3722219'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph attention networks (GATs) have advanced performance in various application domains by introducing the attention mechanism into the graph neural networks (GNNs). The inefficiency of running GATs on CPUs or GPUs necessitates specialized hardware designs. Unfortunately, previous specialized architecture designs have focused on either the GNN architecture or the attention mechanism, resulting in limited performance and leaving ample room for improvement. This article presents Gator , a joint optimization approach with software–hardware co-designs for GAT inference. On the software level, Gator leverages degree-weighted graph partitioning and parameter-adaptive feature selection techniques to preprocess the input graph data, mining subgraph-level parallelism and mitigating the computation bottleneck of the dedicated dataflow. On the hardware level, Gator designs a unified processing engine to support various kernels by extracting a common computation pattern and a dimension-aware microarchitecture for efficient partial sum reduction. Extensive experiments show that our approach can achieve 11.5× more efficiency compared to NVIDIA RTX 4090 and provide a speedup of 3× to 9.4×, along with a 2.6× to 4.7× reduction in memory traffic, when compared to six state-of-the-art methods, with minimal accuracy loss.},
-  archive      = {J_TACO},
-  author       = {Xiaobo Lu and Jianbin Fang and Lin Peng and Chun Huang and Zixiao Yu and Tiejun Li},
-  doi          = {10.1145/3722219},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-24},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Gator: Accelerating graph attention networks by jointly optimizing attention and graph processing},
+  title        = {LarQucut: A new cutting and mapping approach for large-sized quantum circuits in distributed quantum computing (DQC) environments},
   volume       = {22},
   year         = {2025},
 }
@@ -1454,20 +1370,104 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SnsBooster: Enhancing sampling-based μArch evaluation efficiency through online performance sensitivity analysis. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3727637'>www</a>)
+(2025). Towards optimizing learned index for high performance, memory efficiency and NUMA awareness. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3736168'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Sampling-based methods, such as SimPoint, are widely used for efficient pre-silicon μ Arch evaluations, where the costs are the number of simulation points multiplied by the number of evaluated μ Arch designs. However, these costs keep growing with an increasing number of simulation points and expanding μ Arch design space. Although techniques have been developed to accelerate the μ Arch design space exploration, less attention has been given to further reducing the simulation budget of each μ Arch evaluation. Common strategies like reducing simulation coverage or sampling fewer simulation points typically compromise estimation accuracy. Therefore, further reducing the simulation budget without compromising estimation accuracy remains a critical research problem. In this work, we propose SnsBooster to enhance sampling-based μ Arch evaluation efficiency, based on two insights: (a) large portions of simulation points’ performance changes are typically insensitive to the evaluated μ Arch changes, and (b) simulation points’ performance sensitivities under specific μ Arch change correlate with their inherent characteristics. By online building a μ Arch-specific performance sensitivity classifier via progressive simulation and continuous validation, SnsBooster can identify and selectively evaluate only performance-sensitive points, thus reducing the simulation budget without compromising estimation accuracy. When applied across various μ Arch changes, SnsBooster achieves an average simulation budget reduction of 39.04% with an accuracy loss of only 0.14%, compared to simulating all the sampled points. Under the same accuracy loss, SnsBooster’s simulation budgets are only 64.73% and 65.60% of those required by methods of reducing simulation coverage or sampling fewer points. Besides, under identical simulation budgets, the average accuracy losses of these methods are 1.41% and 1.23%, which is substantially higher than that of SnsBooster.},
+  abstract     = {Learned indexes provide significant performance advantages over classical ordered indexes. However, current learned indexes face challenges regarding tradeoffs between performance and space, as well as scalability issues in platforms with multiple NUMA nodes. These limitations hinder the practical application of learned indexes in production environments. This article presents DiffLex, a learned index with high-performance, memory-efficiency, and NUMA-awareness. The core design of DiffLex is to perform differentiated management based on the popularity of data. For optimal performance, DiffLex stores newly inserted data in sparse delta arrays and frequently accessed data in sparse hot cache arrays. However, for cold data that occupy a majority of the storage space, DiffLex stores them in dense arrays and conducts compression to reduce memory costs. DiffLex ensures NUMA-awareness by partitioning sparse deltas and replicating the hot cache arrays across multiple NUMA nodes. Additionally, we propose a persistent version of DiffLex tailored for emerging persistent memory devices. Our evaluation results demonstrate that DiffLex achieving 3.88× and 1.82× performance improvements compared to state-of-the-art learned indexes, while maintaining a compact index size.},
   archive      = {J_TACO},
-  author       = {Chenji Han and Zifei Zhang and Feng Xue and Xinyu Li and Yuxuan Wu and Tingting Zhang and Tianyi Liu and Qi Guo and Fuxin Zhang},
-  doi          = {10.1145/3727637},
+  author       = {Lixiao Cui and Kedi Yang and Yusen Li and Gang Wang and Xiaoguang Liu},
+  doi          = {10.1145/3736168},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Towards optimizing learned index for high performance, memory efficiency and NUMA awareness},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Benchmarking WebAssembly for embedded systems. <em>TACO</em>, <em>22</em>(3), 1-21. (<a href='https://doi.org/10.1145/3736169'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {WebAssembly is a modern, low-level virtual machine with designed for improved application performance in web browsers. Recently, WebAssembly gained interest for its use outside the web, for example as a replacement for serverless container runtimes. A number of non-web WebAssembly implementations are actively supported, some of which target microcontrollers, IoT devices, and embedded systems. Such hardware platforms have strict resource constraints which may render the usage of WebAssembly impossible or too costly, for example, due to its performance overhead and memory requirements. However, it is currently unclear what performance to expect of WebAssembly on low-resource microcontrollers compared with machine code and alternative application virtual machines. To answer this question, we evaluated the processing overhead and memory characteristics of WebAssembly application virtual machines on microcontrollers, and compared it to native execution, and the established application virtual machines: MicroPython and Lua. Furthermore, we analyzed the feature-set and architecture of the WebAssembly implementations in more detail, and measured the performance impact different runtime features have. We found that WebAssembly, despite its high extensibility and versatility in supported source languages, application paradigms, and target hardware, delivers very competitive performance. We conclude that WebAssembly can find wider industry usage for embedded systems and could replace other more costly or less flexible virtualization techniques, such as Java.},
+  archive      = {J_TACO},
+  author       = {Konrad Moron and Stefan Wallentowitz},
+  doi          = {10.1145/3736169},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Benchmarking WebAssembly for embedded systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BigLittleMCA: A spatially-optimal tiled hardware accelerator for MCMC image processing. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3736171'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Markov-Chain Monte-Carlo (MCMC) algorithms offer a general framework for performing interpretable inference but have high overheads due to the computational complexity of the sampling process and the large number of samples required to produce an accurate result. Computer Vision is a common class of workloads that can be performed using MCMC methods. As computer vision workloads trend toward high-resolution real-time inference, it becomes challenging to perform inference in contexts such as edge computing, which operates under strict power and area budgets. Previous work explores hardware techniques for efficient sampling; however, MCMC algorithms still require many samples. We reduce the overheads of Gibbs Sampling, an MCMC algorithm, using an approach we call mixed-resolution sampling. This approach uses low-resolution inference to provide a starting point for full-resolution sampling. We evaluate this approach on three important computer vision tasks: stereo matching, optical flow, and blind source separation. Mixed-resolution sampling reduces root mean square error (RMSE) by an average of 19.6% for stereo-matching tasks, 13% for optical flow tasks, and 6.3% for blind source separation relative to traditional Gibbs Sampling. To enable real-time, explainable MCMC inference under edge power constraints, we exploit the structure of mixed-resolution sampling to architect and implement a hardware-software co-designed accelerator architecture, BigLittleMCA ( Big - Little MC MC A ccelerator). BigLittleMCA is a tiled MCMC accelerator architecture that uses a small sampler for low-resolution sampling and a large sampler for full-resolution sampling. Our results show that the architecture sustains real-time 720p inference at 30 FPS (frames per second) using 48.5% less power than prior work.},
+  archive      = {J_TACO},
+  author       = {Chris Kjellqvist and Lisa Wills and Alvin Lebeck},
+  doi          = {10.1145/3736171},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {BigLittleMCA: A spatially-optimal tiled hardware accelerator for MCMC image processing},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attack and defense: Enhancing robustness of binary hyper-dimensional computing. <em>TACO</em>, <em>22</em>(3), 1-25. (<a href='https://doi.org/10.1145/3736172'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyper-Dimensional Computing (HDC) has emerged as a lightweight computational model, renowned for its robust and efficient learning capabilities, particularly suitable for resource-constrained hardware. As HDC often finds its application in edge devices, the associated security challenges pose a critical concern that cannot be ignored. In this work, we aim to quantitatively delve into the robustness of binary HDC, which is widely recognized for its robustness. Employing the bit-flip attack as our initial focal point, we meticulously devise both an attack mechanism and a corresponding defense mechanism. Our objective is to comprehensively explore the robustness of the binary hyper-dimensional computation model, aiming to gain a deeper understanding of its security vulnerabilities and potential defenses. Specifically, we introduce a novel attack framework for HDC, named HyperAttack, which is capable of compromising a robust binary HDC model by maliciously flipping a minimal number of bits within its memory system (specifically, the DRAM) that houses the associative memory. The bit-flip operation is executed through the well-known Row Hammer attack, and HyperAttack optimizes the accuracy degradation by pinpointing the most vulnerable bits in the hyper-dimensional vectors (represented as binary vectors within the associative memory) of the HDC model. The proposed HyperAttack framework is grounded in the principles of fuzziness, seamlessly integrating dimensional ranking and feature similarity analysis within hypervectors to precisely identify the bits to be flipped. Furthermore, we have developed a defense mechanism named HyperDefense, designed to bolster the robustness of binary hyper-dimensional computational models against bit-flip attacks. This defense scheme is tailored specifically for HDC models, providing a robust safeguard against potential threats. HyperDefense operates directly on the associative memory of HDC models, strengthening their defenses. By meticulously modifying selected bits, HyperDefense maintains a high level of accuracy close to the original model, even in the face of increased bit flip rates. This defense mechanism leverages redundant dimensions as backups for critical information. Through a thorough analysis of dimension importance, HyperDefense achieves superior robustness by gracefully sacrificing non-critical dimensions, thus ensuring the model’s robustness against potential attacks.},
+  archive      = {J_TACO},
+  author       = {Haomin Li and Fangxin Liu and Zongwu Wang and Ning Yang and Shiyuan Huang and Xiaoyao Liang and Haibing Guan and Li Jiang},
+  doi          = {10.1145/3736172},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Attack and defense: Enhancing robustness of binary hyper-dimensional computing},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GECC: A GPU-based high-throughput framework for elliptic curve cryptography. <em>TACO</em>, <em>22</em>(3), 1-27. (<a href='https://doi.org/10.1145/3736176'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Elliptic Curve Cryptography (ECC) is an encryption method that provides security comparable to traditional techniques like Rivest–Shamir–Adleman (RSA) but with lower computational complexity and smaller key sizes, making it a competitive option for applications such as blockchain, secure multi-party computation, and database security. However, the throughput of ECC is still hindered by the significant performance overhead associated with elliptic curve (EC) operations, which can affect their efficiency in real-world scenarios. This article presents gECC, a versatile framework for ECC optimized for GPU architectures, specifically engineered to achieve high-throughput performance in EC operations. To maximize throughput, gECC incorporates batch-based execution of EC operations and microarchitecture-level optimization of modular arithmetic. It employs Montgomery’s trick [ 40 ] to enable batch EC computation and incorporates novel computation parallelization and memory management techniques to maximize the computation parallelism and minimize the access overhead of GPU global memory. Furthermore, we analyze the primary bottleneck in modular multiplication by investigating how the user codes of modular multiplication are compiled into hardware instructions and what these instructions’ issuance rates are. We identify that the efficiency of modular multiplication is highly dependent on the number of Integer Multiply-Add (IMAD) instructions. To eliminate this bottleneck, we propose novel techniques to minimize the number of IMAD instructions by leveraging predicate registers to pass the carry information and using addition and subtraction instructions (IADD3) to replace IMAD instructions. Our experimental results show that, for ECDSA and ECDH, the two commonly used ECC algorithms, gECC can achieve performance improvements of 5.56 × and 4.94 ×, respectively, compared to the state-of-the-art GPU-based system. In a real-world blockchain application, we can achieve performance improvements of 1.56 ×, compared to the state-of-the-art CPU-based system. gECC is completely and freely available at https://github.com/CGCL-codes/gECC .},
+  archive      = {J_TACO},
+  author       = {Qian Xiong and Weiliang Ma and Xuanhua Shi and Yongluan Zhou and Hai Jin and Kaiyi Huang and Haozhou Wang and Zhengru Wang},
+  doi          = {10.1145/3736176},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
   pages        = {1-27},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {SnsBooster: Enhancing sampling-based μArch evaluation efficiency through online performance sensitivity analysis},
+  title        = {GECC: A GPU-based high-throughput framework for elliptic curve cryptography},
   volume       = {22},
   year         = {2025},
 }
@@ -1475,20 +1475,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Supporting dynamic program sizes in deep learning-based cost models for code optimization. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3727638'>www</a>)
+(2025). Leveraging iterative applications to improve the scalability of task-based programming models on distributed systems. <em>TACO</em>, <em>22</em>(3), 1-27. (<a href='https://doi.org/10.1145/3743134'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Automatic code optimization enables developers to write high-level code relying on compilers to optimize it and generate efficient code for target hardware. State-of-the-art methods for automatic code optimization leverage deep learning to build cost models that predict the impact of code optimizations on execution time. However, these models are typically limited in terms of the size and complexity of the programs they support. This research presents a novel approach to developing deep learning-based cost models that address these limitations. Our approach introduces a new program representation that efficiently represents programs with complex structures and large sizes such as varying loop depths, buffer numbers, and dimensions. Furthermore, we propose a novel deep learning architecture, that can handle this dynamic program representation. This allows the model to work on larger and more complex programs than those it was trained on. We implemented this model in Tiramisu, a state-of-the-art compiler. Our evaluation shows that our proposed model can generalize to programs larger than those seen during training, while the original Tiramisu cost model cannot. We also show that such generality does not lead to a significant increase in our proposed model’s Mean Absolute Percentage Error or a decrease in the quality of code optimizations found when the model is used for automatic code optimization. In contrast, our proposed model on average achieves a 41.89% improvement in speed compared to the original cost model when both models are trained on the same dataset, showing better generalization over unseen programs. This is a significant advantage over previous approaches, which typically do not support program sizes beyond those seen during the training.},
+  abstract     = {Distributed tasking models such as OmpSs-2@Cluster, StarPU-MPI, and PaRSEC express HPC applications as task graphs with explicit dependencies. The single task graph unifies the representation of parallelism across CPU cores, accelerators, and distributed-memory nodes, offering higher programmer productivity compared to traditional MPI + X. Most task-based models construct the task graph sequentially, which provides a clear and familiar programming model, simplifying code development, maintenance, and porting. However, this design introduces a bottleneck in task creation and dependency management, limiting performance and scalability. As a result, unless the tasks are very coarse-grained, current distributed sequential tasking models cannot match the performance of MPI + X. Many scientific applications, however, are iterative in nature, constructing the same directed acyclic task graph at each timestep. We exploit this structure to eliminate the sequential bottleneck and control message overhead in a sequentially-constructed distributed tasking model, while preserving its simplicity and productivity. Our approach builts on the recently proposed taskiter directive for OpenMP and OmpSs-2, allowing a single iteration to be expressed as a cyclic graph. The runtime partitions the cyclic graph across nodes, precomputes the MPI transfers, and then executes the loop body at low overhead. By integrating the MPI communications directly into the application’s task graph, our approach naturally overlaps computation and communication, in some cases exposing dramatically more parallelism than fork–join MPI + OpenMP. We define the programming model and describe the full runtime implementation, and integrate our proposal into OmpSs-2@Cluster. We evaluate it using five benchmarks on up to 128 nodes of the MareNostrum 5 supercomputer. For applications with fork–join parallelism, our approach has performance similar to fork–join MPI + OpenMP, making it a viable productive alternative, unlike the existing OmpSs-2@Cluster model, which is up to 7.7 times slower than MPI + OpenMP. For a 2D Gauss–Seidel stencil computation, our approach enables 3D wavefront computation, giving performance up to 22 times faster than fork–join MPI + OpenMP and on-a-par with state-of-the-art TAMPI + OmpSs-2. All software, comprising the compiler, runtime, and benchmarks, is released open source. 1},
   archive      = {J_TACO},
-  author       = {Yacine Hakimi and Riyadh Baghdadi and Yacine Challal},
-  doi          = {10.1145/3727638},
+  author       = {Omar Shaaban Ibrahim ali and Juliette Fournis d'Albiat and Isabel Piedrahita and Vicenç Beltran and Xavier Martorell and Paul Carpenter and Eduard Ayguadé and Jesus Labarta},
+  doi          = {10.1145/3743134},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-25},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Supporting dynamic program sizes in deep learning-based cost models for code optimization},
+  title        = {Leveraging iterative applications to improve the scalability of task-based programming models on distributed systems},
   volume       = {22},
   year         = {2025},
 }
@@ -1496,20 +1496,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Unleashing parallelism with elastic-barriers. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3727639'>www</a>)
+(2025). Scheduling language chronology: Past, present, and future. <em>TACO</em>, <em>22</em>(3), 1-31. (<a href='https://doi.org/10.1145/3743135'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {With the rise of multi-core processors, parallel programming has become essential, and managing synchronization overheads has become crucial for efficiency. Barriers, commonly used to synchronize threads, divide the program into different phases. Existing scheduling schemes address intra-phase load imbalance to some extent but do not fully resolve the issue of thread idling, especially in the context of programs with irregular parallel for-loops. This article proposes an innovative solution called the elastic-barrier , where threads that arrive early at a barrier can execute iterations of the parallel-loop from the next phase, thereby reducing the idle time, and reduce load imbalance. The approach guarantees safety by ensuring that before executing any work W from the subsequent phase, all the works in the current phase that W depends on have been executed. The article presents a compilation scheme that integrates compile-time and runtime techniques to optimize execution. We implemented our proposed scheme in the IMOP framework. Experimental results on graph-based benchmarks show that our approach improves the performance significantly.},
+  abstract     = {Scheduling languages express to a compiler—or equivalently, a code generator—a sequence of optimizations to apply. Performance tools that support a scheduling language interface allow exploration of optimizations, i.e., exploratory compilers . While scheduling languages have become a common feature of tools for experts, the proliferation of these languages without unifying common features may be confusing to users. Moreover, we recognize a need to organize the compiler developer community around common exploratory compiler infrastructure, and future advances to address, for example, data layout and data movement. To support a broader set of users may require raising the level of abstraction. This article provides a chronology of scheduling languages, discussing their origins in iterative compilation and autotuning, noting the common features that are used in existing frameworks, and calling for changes to increase their utility and portability.},
   archive      = {J_TACO},
-  author       = {Amit Tiwari and V. Krishna Nandivada},
-  doi          = {10.1145/3727639},
+  author       = {Mary Hall and Cosmin E. Oancea and Anne C. Elster and Ari Rasch and Sameeran Joshi and Amir Mohammad Tavakkoli and Richard Schulze},
+  doi          = {10.1145/3743135},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-26},
+  month        = {9},
+  number       = {3},
+  pages        = {1-31},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Unleashing parallelism with elastic-barriers},
+  title        = {Scheduling language chronology: Past, present, and future},
   volume       = {22},
   year         = {2025},
 }
@@ -1517,20 +1517,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ModNEF: An open source modular neuromorphic emulator for FPGA for low-power in-edge artificial intelligence. <em>TACO</em>, <em>22</em>(2), 1-24. (<a href='https://doi.org/10.1145/3730581'>www</a>)
+(2025). In-SRAM parallel data shuffle. <em>TACO</em>, <em>22</em>(3), 1-24. (<a href='https://doi.org/10.1145/3743136'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Neuromorphic computing is a novel computational paradigm that draws inspiration from the structure and function of the human brain. Spiking Neural Networks (SNNs) are a promising approach for implementing energy-efficient Artificial Neural Networks (ANNs) in embedded systems. In this article, we present ModNEF, an open-source, neuromorphic digital hardware architecture designed for Field Programmable Gate Arrays (FPGAs). ModNEF is based on a modular architecture, where independent modules communicate via point-to-point connections to emulate SNNs. Our architecture offers two neuron models based on the Leaky Integrate and Fire (LIF) model, with a different emulation strategy. The modular nature of ModNEF allows researchers to extend the architecture by developing new modules to emulate different types of neurons or implement online learning rules. ModNEF is a clock-driven emulator, meaning that the neuron state is updated at regular intervals, even in the absence of input data. We evaluated the performance of the emulator using the MNIST and NMNIST datasets, with offline, full-precision training.},
+  abstract     = {While Single Instruction Multiple Data (SIMD) units are widely employed in processors for neural networks, signal processing, and high-performance computing, they suffer from expensive shuffle operations dedicated to data alignment. In fact, shuffle operations only change the layout of data and ideally should be done entirely within memory. To this end, we propose Shuffle SRAM in this article, which can shuffle multiple data elements simultaneously across SRAM banks. The key idea is exploiting inter-bank word line wise data movement to shuffle data in parallel, where all data elements on the same word line of SRAM can be shuffled simultaneously, achieving a high level of parallelism. Through suitable data layout preparation and proper control, Shuffle SRAM efficiently supports a wide range of commonly used shuffle operations. Our evaluation results show that the Shuffle SRAM can reap performance benefits of 14.3× for data reorganization only applications and 1.97× for data reorganization + computation applications over conventional shuffle architecture on general-purpose processors. With Shuffle SRAM, the state-of-the-art vector processor can obtain 2.58× energy efficiency. Compared with traditional SRAM, Shuffle SRAM only increases 3.5% additional area overhead.},
   archive      = {J_TACO},
-  author       = {Aurélie Saulquin and Mazdak Fatahi and Pierre Boulet and Samy Meftali},
-  doi          = {10.1145/3730581},
+  author       = {Chaoyang Jia and Zhang Dunbo and Qingjie Lang and Ruoxi Wang and Li Shen},
+  doi          = {10.1145/3743136},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-24},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {ModNEF: An open source modular neuromorphic emulator for FPGA for low-power in-edge artificial intelligence},
+  title        = {In-SRAM parallel data shuffle},
   volume       = {22},
   year         = {2025},
 }
@@ -1538,125 +1538,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). DCMA: Accelerating parallel DMA transfers with a multi-port direct cached memory access in a massive-parallel vector processor. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3730582'>www</a>)
+(2025). EDAS: Enabling fast data loading for GPU serverless computing. <em>TACO</em>, <em>22</em>(3), 1-23. (<a href='https://doi.org/10.1145/3743137'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {State-of-the-art applications, such as convolutional neural networks, demand specialized hardware accelerators that address performance and efficiency constraints. An efficient memory hierarchy is mandatory for such hardware systems. While the memory architectures of general-purpose processors (e.g., CPU or GPUs) are based on cache systems, dedicated accelerators have mostly adopted the DMA (Direct Memory Access) concept due to the application field of image processing. DMA features like 2D data transfers or data padding can optimize the memory accesses of image processing. However, DMA lacks the capability to exploit temporal and spatial data reuse, a feature common in cache systems, particularly when multiple DMAs operate in parallel. This article proposes a novel Direct Cached Memory Access (DCMA) architecture, combining both DMA and cache methodologies and their respective advantages. Optimized for image-based AI algorithms, the DCMA architecture facilitates enhanced memory access by integrating multiple, parallel DMA ports with caching capabilities. This design allows for efficient data reuse and parallel memory access. Optimal parameters for the DCMA are determined through a comprehensive design space exploration. The DCMA is evaluated on a state-of-the-art Xilinx UltraScale+ FPGA board coupled with a massive-parallel vertical vector co-processor, called V 2 PRO. The results show the mitigation of the vector processor’s memory bottleneck. By using the proposed DCMA, speedups of up to ×17 for the ResNet-50 CNN can be achieved.},
+  abstract     = {Integrating GPUs into serverless computing platforms is crucial for improving efficiency. Many GPU functions, such as DNN inferences and scientific services, benefit from GPU usage, which requires only tens to hundreds of milliseconds for pure computation. Under these circumstances, fast data loading is imperative for function performance. However, existing GPU serverless systems face significant data stall issues, leading to extremely low GPU efficiency. Faced with the above problems, we observe opportunities to optimize data loading, such as data preloading and deduplicated data loading. However, these optimizations are impossible in existing GPU serverless systems due to the lack of insights into data information, such as data sizes and read-write attributes of function inputs. To address this, we propose a novel GPU serverless system, EDAS. EDAS first enhances user request specifications, allowing users to annotate data retrieved by GPU functions from the database with additional attributes. Based on this, EDAS takes over data loading from GPU functions and proposes two innovative data loading management schemes: a parallelized data loading scheme and a multi-stage resource exit scheme. Our experimental results show that EDAS reduces function duration by 16.2× and improves system throughput by 1.91× compared with the state-of-the-art serverless platform.},
   archive      = {J_TACO},
-  author       = {Gia Bao Thieu and Sven Gesper and Guillermo Payá-Vayá},
-  doi          = {10.1145/3730582},
+  author       = {Han Zhao and Weihao Cui and Quan Chen and Zijun Li and Zhenhua Han and Nan Wang and Yu Feng and Jieru Zhao and Chen Chen and Jingwen Leng and Minyi Guo},
+  doi          = {10.1145/3743137},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-25},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {DCMA: Accelerating parallel DMA transfers with a multi-port direct cached memory access in a massive-parallel vector processor},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GOLDYLOC: Global optimizations & lightweight dynamic logic for concurrency. <em>TACO</em>, <em>22</em>(2), 1-28. (<a href='https://doi.org/10.1145/3730584'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Modern accelerators like GPUs increasingly execute independent operations concurrently to improve the device’s compute utilization. However, effectively harnessing it on GPUs for important primitives such as general matrix multiplications (GEMMs) remains challenging. Although modern GPUs have significant hardware and software GEMM support, their kernel implementations and optimizations typically assume each kernel executes in isolation and can utilize all GPU resources. This approach is highly efficient when kernels execute in isolation, but causes significant resource contention and slowdowns when kernels execute concurrently. Moreover, current approaches often only statically expose and control parallelism within an application, without considering runtime information such as varying input size and concurrent applications—often exacerbating contention. These issues limit performance benefits from concurrently executing independent operations. Accordingly, we propose GOLDYLOC, which considers the global resources across all concurrent operations to identify performant GEMM kernels, which we call globally optimized (GO)-Kernels. GOLDYLOC also introduces a lightweight dynamic logic which considers the dynamic execution environment for available parallelism and input sizes to execute performant combinations of concurrent GEMMs on the GPU. Overall, GOLDYLOC improves the performance of concurrent GEMMs on a real GPU by up to 2× (18% geomean per workload) versus the default concurrency approach and provides up to 2.5× (43% geomean per workload) speedup over sequential execution.},
-  archive      = {J_TACO},
-  author       = {Suchita Pati and Shaizeen Aga and Nuwan Jayasena and Matthew Sinclair},
-  doi          = {10.1145/3730584},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-28},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {GOLDYLOC: Global optimizations & lightweight dynamic logic for concurrency},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GNNPilot: A holistic framework for high-performance graph neural network computations on GPUs. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3730586'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph Neural Networks (GNNs) have emerged as powerful tools for graph-based machine learning tasks, but their performance is often constrained by inefficient sparse operators and limited hardware utilization during multi-operator workflows. This article presents GNNPilot, a holistic optimization framework that addresses these challenges through three key innovations. First, we introduce two packing strategies for gather operators, including neighbor packing for load balancing in sparser graphs, and bin packing with a new sparse format for enhanced data locality in denser graphs. Second, we propose dynamic parallelization methods and a novel row panel-based kernel fusion technique to optimize complex multi-operator GNN models. Third, we develop a lightweight sampling-based auto-tuning mechanism that adapts the framework’s optimization strategies to varying input characteristics. Built upon tensor expression-based intermediate representations, GNNPilot maintains the flexibility to optimize both popular and customized GNN models. Extensive experiments across diverse GNN models and graph datasets demonstrate that GNNPilot achieves substantial speedups over state-of-the-art implementations in both the performance of single operators and the efficiency of end-to-end inference. These results establish GNNPilot as an efficient and adaptive solution for accelerating GNN computations on modern GPU architectures.},
-  archive      = {J_TACO},
-  author       = {Zhengding Hu and Jingwei Sun and Guangzhong Sun},
-  doi          = {10.1145/3730586},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-26},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {GNNPilot: A holistic framework for high-performance graph neural network computations on GPUs},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). 9Ring: A 3D-stacked memory-based accelerator for flexible and efficient deep CNN applications. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3732940'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The massive computational and memory requirements of deep convolutional neural networks (DCNNs) have led to the development of neural network (NN) accelerators. However, as DCNN models grow in size, the demands on NN accelerators in terms of performance, memory bandwidth, and power efficiency continue to increase. We, therefore, present 9Ring , a flexible and efficient DCNN accelerator that takes full advantage of 3D-stacked memory, focusing on its hardware architecture, software scheduling, and optimization strategy. In particular, we first show that the mismatch between DCNN accelerators and DCNN models can lead to increased energy consumption and performance bottlenecks. We then present three flexible dataflow scheduling strategies to mitigate this mismatch. Afterward, we introduce an energy efficiency analysis tool that can automatically search for the optimal scheduling scheme with respect to different DCNN models for energy efficiency. Finally, we conduct an empirical study showing that 9Ring can reduce energy consumption by 31.4% and 43.9% on average, and improve performance by 12% and 10% on average, compared with Tetris and the NN accelerators on conventional low-power DRAM memory systems, respectively.},
-  archive      = {J_TACO},
-  author       = {Wen Cheng and Qianya Cheng and Yi Liu and Lingfang Zeng and Andre Brinkmann and Yang Wang},
-  doi          = {10.1145/3732940},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-26},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {9Ring: A 3D-stacked memory-based accelerator for flexible and efficient deep CNN applications},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). ShuffleInfer: Disaggregate LLM inference for mixed downstream workloads. <em>TACO</em>, <em>22</em>(2), 1-24. (<a href='https://doi.org/10.1145/3732941'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Transformer-based large language model (LLM) inference serving is now the backbone of many cloud services. LLM inference consists of a prefill phase and a decode phase. However, existing LLM deployment practices often overlook the distinct characteristics of these phases, leading to significant interference. To mitigate interference, our insight is to carefully schedule and group inference requests based on their characteristics. We realize this idea in ShuffleInfer through three pillars. First, it partitions prompts into fixed-size chunks so that the accelerator always runs close to its computation-saturated limit. Second, it disaggregates prefill and decode instances so each can run independently. Finally, it uses a smart two-level scheduling algorithm augmented with predicted resource usage to avoid decode scheduling hotspots. Results show that ShuffleInfer improves time-to-first-token (TTFT), job completion time (JCT), and inference efficiency in terms of performance per dollar by a large margin, e.g., it uses 38% less resources all the while lowering average TTFT and average JCT by 97% and 47%, respectively.},
-  archive      = {J_TACO},
-  author       = {Cunchen Hu and Heyang Huang and Liangliang Xu and Xusheng Chen and Chenxi Wang and Jiang Xu and Shuang Chen and Hao Feng and Sa Wang and Yungang Bao and Ninghui Sun and Yizhou Shan},
-  doi          = {10.1145/3732941},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-24},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {ShuffleInfer: Disaggregate LLM inference for mixed downstream workloads},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HEngine: A high performance optimization framework on a GPU for homomorphic encryption. <em>TACO</em>, <em>22</em>(2), 1-23. (<a href='https://doi.org/10.1145/3732942'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Homomorphic encryption (HE) represents an encryption technology that allows for direct computation on encrypted data without requiring decryption. However, the substantial computational complexity and significant latency associated with HE has impeded its broader adoption in practical applications. To address these challenges, we propose a GPU-based acceleration framework, namely HEngine, tailored for homomorphic encryption tasks. Specifically, we first propose a warp shuffle-based optimization method for two key phases, i.e., inverse Chinese Remainder Theorem (ICRT) and number theoretic transformation (NTT), to mitigate synchronization overhead in homomorphic encryption. Secondly, we propose to fuse the NTT kernel with the inner product kernel to address the imbalance between memory access and computation. Thirdly, considering the potential difference in the amount of tasks of users in the real-world, we design two different encoding methods for small batch and large batch inference tasks to improve computational efficiency. Finally, experiments demonstrate that our proposed framework achieves a 218× speedup on homomorphic multiplication tasks compared with the CPU-based SEAL library. In addition, for convolutional neural network inference tasks on shallow network structures, our proposed framework achieves amortized inference performance at the millisecond level and sub-millisecond level on small batch and large batch data, respectively. For convolutional neural network inference tasks on deeper network structures (i.e., ResNet-20), our proposed framework achieves second-level inference.},
-  archive      = {J_TACO},
-  author       = {Jinghao Zhao and Hongwei Yang and Meng Hao and Weizhe Zhang and Hui He and Desheng Wang},
-  doi          = {10.1145/3732942},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-23},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {HEngine: A high performance optimization framework on a GPU for homomorphic encryption},
+  title        = {EDAS: Enabling fast data loading for GPU serverless computing},
   volume       = {22},
   year         = {2025},
 }
@@ -1664,41 +1559,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). AOBO: A fast-switching online binary optimizer on AArch64. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3736170'>www</a>)
+(2025). CGCGraph: Efficient CPU-GPU co-execution for concurrent dynamic graph processing. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3744904'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {As the complexity of real-world server applications continues to grow, performance optimizations for large-scale applications are becoming increasingly challenging. The success of online optimization offered by OCOLOS and Dynimize proves that binary rewriting based on edge profiling data can significantly accelerate these applications. However, no similar online binary optimizer is currently available on the AArch64 platform. In response to the growing adoption of the AArch64 platform, this article introduces AOBO, a fast-switching online binary optimizer specifically designed for AArch64. In addition to providing practical and efficient engineering support for AArch64-specific features, AOBO overcomes the challenge of lacking hardware counters for edge profiling on most commercially available AArch64 servers. In particular, AOBO embraces a novel edge weight estimation scheme to deliver more accurate edge estimation, which in turn allows AOBO’s binary rewriter to generate more efficient code. Furthermore, time spent on AOBO’s online code replacement stage is optimized to work at a subsecond level, thus enabling a fast switch from running the original binary to running the optimized one. We evaluate AOBO with CINT2017, GCC, MySQL and MongoDB, measuring the accuracy and coverage of the estimated edge weights, the performance improvements of the optimized binaries, and the online optimization cost. To make a fair comparison, we are using the performance data of the binaries generated by the default compilation scripts in the software packages as a baseline. Experimental data shows that AOBO can offer a more accurate edge weight estimation and generate binaries with superior performance. Furthermore, AOBO achieves online optimization with a very small overhead and significantly improves the performance of large-scale applications. Compared with the baselines, AOBO’s online optimization can achieve 24.7% and 31.11% performance improvement respectively for MySQL and MongoDB. Notably, application pause time is reduced from 1,599.8 milliseconds to 462.1 milliseconds for MySQL, and from 1,765.9 milliseconds to 507.1 milliseconds for MongoDB.},
+  abstract     = {With the continuous growth of user scale and application data, the demand for large-scale concurrent graph processing is increasing. Typically, large-scale concurrent graph processing jobs need to process corresponding snapshots of dynamically changing graph data to obtain information at different time points. To enhance the throughput of such applications, current solutions concurrently process multiple graph snapshots on the GPU. However, when dealing with rapidly changing graph data, transferring multiple snapshots of concurrent jobs to the GPU results in high data transfer overhead between CPU and GPU. Additionally, the execution mode of existing work suffers from underutilization of GPU computational resources. In this work, we introduce CGCGraph, which can be integrated into existing GPU graph processing systems like Subway, to enable efficient concurrent graph snapshot processing jobs and enhance overall system resource utilization. The key idea is to offload unshared graph data of multiple concurrent snapshots to the CPU, reducing CPU-GPU transfer overhead. By implementing CPU-GPU co-execution, there is potential for enhanced utilization of GPU computing resources. Specifically, CGCGraph leverages kernel fusion to process shared graph data concurrently on the GPU, while executing all snapshots in parallel on the CPU, with each snapshot assigned a dedicated thread. This approach enables efficient concurrent processing within a novel CPU-GPU co-execution model, incorporating three optimization strategies targeting storage, computation, and synchronization. We integrate CGCGraph with Subway, an existing system designed for out-of-GPU-memory static graph processing. Experimental results show that the integration of CGCGraph with current GPU-based systems obtains performance improvements ranging from 1.7 to 4.5 times.},
   archive      = {J_TACO},
-  author       = {Wenlong Mu and Yue Tang and Bo Huang and Jianmei Guo},
-  doi          = {10.1145/3736170},
+  author       = {Yiming Sun and Jie Zhang and Huawei Cao and Yuan Zhang and Xuejun An and Junying Huang and Xiaochun Ye},
+  doi          = {10.1145/3744904},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
-  pages        = {1-27},
-  shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {AOBO: A fast-switching online binary optimizer on AArch64},
-  volume       = {22},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Cheetah: Accelerating dynamic graph mining with grouping updates. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3736173'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph pattern mining is essential for deciphering complex networks. In the real world, graphs are dynamic and evolve over time, necessitating updates in mining patterns to reflect these changes. Traditional methods use fine-grained incremental computation to avoid full re-mining after each update, which improves speed but often overlooks potential gains from examining inter-update interactions holistically, thus missing out on overall efficiency improvements. In this article, we introduce Cheetah, a dynamic graph mining system that processes updates in a coarse-grained manner by leveraging exploration domains . These domains exploit the community structure of real-world graphs to uncover data reuse opportunities typically missed by existing approaches. Exploration domains, which encapsulate extensive portions of the graph relevant to updates, allow multiple updates to explore the same regions efficiently. Cheetah dynamically constructs these domains using a management module that identifies and maintains areas of redundancy as the graph changes. By grouping updates within these domains and employing a neighbor-centric expansion strategy, Cheetah minimizes redundant data accesses. Our evaluation of Cheetah across five real-world datasets shows it outperforms current leading systems by an average factor of 2.63×.},
-  archive      = {J_TACO},
-  author       = {Yi Zhang and Xiaomeng Yi and Yu Huang and Jingrui Yuan and Chuangyi Gui and Dan Chen and Long Zheng and Jianhui Yue and Xiaofei Liao and Hai Jin and Jingling Xue},
-  doi          = {10.1145/3736173},
-  journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-26},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Cheetah: Accelerating dynamic graph mining with grouping updates},
+  title        = {CGCGraph: Efficient CPU-GPU co-execution for concurrent dynamic graph processing},
   volume       = {22},
   year         = {2025},
 }
@@ -1706,20 +1580,125 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Performance, energy and NVM lifetime-aware data structure refinement and placement for heterogeneous memory systems. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3736174'>www</a>)
+(2025). MetaEC: An efficient and resilient erasure-coded KV store on disaggregated memory. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3744905'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The need for increased memory capacity, which also needs to be affordable and sustainable, leads to the adoption of heterogeneous memory hierarchies, combining DRAM and NVM technologies. This work proposes a memory management methodology that relies on multi-objective optimization in terms of performance, energy consumption and impact on NVM’s lifetime, for applications deployed on heterogeneous (i.e., DRAM/NVM) memory systems. We propose a scalable and lightweight data structure exploration flow for supporting data type refinement based on access pattern analysis, enhanced with a weighted-based data placement decision support for multi-objective exploration and optimization. The evaluation of the methodology was performed both on emulated and real DRAM/NVM hardware for different applications and data placement algorithms. The experimental results show up to 58.7% lower execution time and 48.3% less energy consumption compared with the results obtained by the initial versions of the applications. Moreover, we observed 72.6% less NVM write operations, which can significantly extend the lifetime of the NVM memory. Finally, thorough evaluation shows that the methodology is flexible and scalable, as it can integrate different data placement algorithms and NVM technologies and requires reasonable exploration time.},
+  abstract     = {In-memory KV stores have recently been migrated from traditional monolithic servers to disaggregated memory (DM) for higher resource utilization and elasticity. These works use replication-based schemes for fault tolerance, which can be replaced with erasure coding (EC) for space efficiency. However, existing EC schemes designed in KV stores on traditional monolithic architectures encounter performance constraints when directly implemented in DM due to the challenges in EC metadata management and consistent parity updating. This article proposes MetaEC, an erasure-coded KV store on DM with high efficiency and resilience. First, for organizing KV pairs to stripes, MetaEC logically forms data chunks and leverages lazy coding to remove the accumulating and coding latency from the critical path. Second, for efficient EC metadata management, MetaEC designs EC metadata structures based on accessing features, and employs a hybrid redundancy schema with deterministic distribution to provide fault tolerance with high storage efficiency. Third, for consistent parity updating, we design a parity updating protocol based on parity logging and co-design EC metadata structures to handle concurrent conflicts by allowing only concurrent reads or writes. Experimental results show that compared with the state-of-the-art replication-based KV stores on DM, MetaEC achieves up to 53.33% latency reduction, up to 31.01% throughput improvement, and 58.17% memory consumption savings.},
   archive      = {J_TACO},
-  author       = {Manolis Katsaragakis and Christos Baloukas and Lazaros Papadopoulos and Francky Catthoor and Dimitrios Soudris},
-  doi          = {10.1145/3736174},
+  author       = {Qiliang Li and Min Lyu and Tian Liu and Liangliang Xu and Wei Wang and Yinlong Xu},
+  doi          = {10.1145/3744905},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {MetaEC: An efficient and resilient erasure-coded KV store on disaggregated memory},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerating parallel structures in DNNs via parallel fusion and operator co-optimization. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3744906'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Parallel structures have become a key pattern in deep neural networks (DNNs), offering improved efficiency and scalability. However, existing machine learning compilers (MLCs) face challenges in optimizing these structures due to limited parallel fusion scope and insufficient analysis of intra-operator characteristics. This article introduces Magneto, a framework designed to accelerate DNN inference by co-optimizing parallel operators. Magneto broadens the fusion scope and incorporates a specialized co-tuning algorithm to optimize operators jointly. Our approach addresses the unique challenges inherent in optimizing parallel structures, enabling significant performance improvements across various hardware platforms. Experimental results show that Magneto outperforms state-of-the-art NVIDIA TensorRT and AMD MIGraphX, achieving geometric mean speedups of 2.27× and 2.88×, respectively.},
+  archive      = {J_TACO},
+  author       = {Zhanyuan Di and Leping Wang and Zhaojia Ma and En Shao and Jie Zhao and Ziyi Ren and Siyuan Feng and Dingwen Tao and Guangming Tan and Ninghui Sun},
+  doi          = {10.1145/3744906},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Accelerating parallel structures in DNNs via parallel fusion and operator co-optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A two-stage degradation-based topology reconfiguration algorithm for fault-tolerant multiprocessor arrays. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3744907'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the integration density of multiprocessor arrays increases, the likelihood of permanent faults in processing elements (PEs) rises, requiring effective topology reconfiguration for system reliability. However, existing router-based multiprocessor arrays reconfiguration methods predominantly rely on redundancy techniques and lack effective degradation strategies for applications of varying sizes. To address this, we propose a two-stage degradation-based topology reconfiguration algorithm to construct a maximized and high-performance logical array. First, we introduce a novel fault compensation mechanism by defining a set of faulty PE candidates to identify locally optimal fault-free PEs for compensation, minimizing the compensation path. Building upon this, we develop a greedy bidirectional column reconfiguration algorithm that constructs an initial fault-free logical array with short interconnects and prove its maximality. Lastly, we propose a satisfiability-based reconfiguration algorithm, transforming the topology reconfiguration problem into a satisfiability problem via a SAT model, reducing interconnect redundancy, and further optimizing array performance. Experimental results demonstrate that the proposed algorithm consistently outperforms state-of-the-art methods in reducing communication latency and alleviating link congestion, especially under high fault density conditions. Furthermore, as array size and fault density increase, the effectiveness of the proposed method becomes more pronounced, showcasing excellent scalability and robustness.},
+  archive      = {J_TACO},
+  author       = {Hao Ding and Peiling Song and Yelin Li and Junyan Qian},
+  doi          = {10.1145/3744907},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A two-stage degradation-based topology reconfiguration algorithm for fault-tolerant multiprocessor arrays},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Address/Data instruction steering in clustered general purpose processors. <em>TACO</em>, <em>22</em>(3), 1-24. (<a href='https://doi.org/10.1145/3744908'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although they differentiate between integer and floating-point datum, modern Instruction Set Architectures and their implementations do not differentiate integer datum used to address memory from integer datum used in purely arithmetic and logical computations. This is a perfectly reasonable choice as addresses are, in fact, integral quantities. However, in many cases, there is already a fundamental difference between addresses and integer data: Their width. As computer systems moved from 16 to 32, then to 64-bit pointers, with a potential future where 128-bit might be used for specific systems, the data width required to compute a given output with a given algorithm has remained the same, e.g., an ASCII character is still represented on a byte. This work aims to leverage this dichotomy to revisit hardware clustering, a well-known microarchitectural technique used to mitigate the cost of scaling processor backend structures by dividing the backend into several mostly independent execution clusters. We show that by treating instructions as manipulating addresses or data and steering them to a “data” or an “address” cluster accordingly, reasonable cluster load balancing can be achieved without the need for complex steering policies that can lead to performance on par with the baseline with limited hardware overhead. Moreover, we highlight two possible optimizations stemming from this distribution. First, the registers of the “address” cluster can easily be compressed thanks to address spatial and temporal locality. Second, if a processor requires a large address space but only processes narrow data (e.g., 32-bit data with 64-bit pointers or 64-bit data with 128-bit pointers), the “data” cluster datapath can be kept narrower than the “address” cluster datapath.},
+  archive      = {J_TACO},
+  author       = {Chandana S. Deshpande and Arthur Perais and Frédéric Pétrot},
+  doi          = {10.1145/3744908},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Address/Data instruction steering in clustered general purpose processors},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 3D GNLM: Efficient 3D non-local means kernel with nested reuse strategies for embedded GPUs. <em>TACO</em>, <em>22</em>(3), 1-22. (<a href='https://doi.org/10.1145/3744909'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The 3D Non-Local Means (NLM) algorithm has become a crucial preprocessing technique for 3D image datasets due to its effectiveness in denoising while preserving fine details. This method has been proven to be highly efficient in high-demand tasks within industrial applications such as medical imaging and remote sensing. The 3D NLM algorithm computes the filtered value for each voxel by calculating the weighted average of all voxels within a 3D search window, where the weights are determined by the similarity between pairs of 3D template windows. Therefore, the computational burden becomes significant, especially in embedded GPUs with limited computational power and memory resources. To address this issue, we propose an efficient GPU parallel kernel to minimize redundant computations and memory accesses. The kernel integrates three nested reuse strategies to handle redundant computations in three dimensions: for columns, we leverage the fast data exchange mechanism to reuse column computation results via on-chip registers; for rows, we use a sliding window strategy, utilizing GPU global memory as an intermediary to store and reuse similarity values between filtered rows; and for channels, we introduce a zigzag scanning strategy that enables simultaneous computation across multiple channels and employs on-chip registers to facilitate channel computation reuse. Experimental results demonstrate that our kernel achieves an average speedup of 7.7x on the embedded Jetson AGX Xavier platform across a range of 3D image datasets compared to existing methods, showcasing exceptional performance.},
+  archive      = {J_TACO},
+  author       = {Xiang Li and Qiong Chang and Yun Li and Jun Miyazaki},
+  doi          = {10.1145/3744909},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {3D GNLM: Efficient 3D non-local means kernel with nested reuse strategies for embedded GPUs},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ZNSFQ: An efficient and high-performance fair queue scheduling scheme for ZNS SSDs. <em>TACO</em>, <em>22</em>(3), 1-27. (<a href='https://doi.org/10.1145/3746230'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Zoned Namespace (ZNS) interface transfers most storage maintenance responsibilities from the underlying Solid-State Drives (SSDs) to the host. This shift creates new opportunities to ensure fairness and high performance in multi-tenant cloud computing environments at both hardware and software levels. However, when applications with different workloads share a single ZNS SSD hardware, traditional fair queueing schedulers fail to achieve fairness due to their limited awareness of workload characteristics. Moreover, allowing multiple outstanding requests to access the device simultaneously improves resource utilization but often leads to significant I/O interference among these requests. This interference results in over-throttling, which subsequently degrades the performance of existing fair queueing schedulers. To address the above problems, this article proposes an efficient and high-performance fair queueing scheduling scheme for ZNS SSD (ZNSFQ) on the host side. Firstly, ZNSFQ introduces a workload-aware fair scheduler that enhances fairness by accurately estimating the I/O cost for each application based on its workload characteristics. Secondly, to optimize performance while ensuring fairness, ZNSFQ designs a request dispatch parallelism adjuster. This adjuster manages the channel-level request dispatch parallelism for each application to minimize I/O interference. Finally, ZNSFQ employs a global adaptive coordinator to alleviate device-level I/O blocking, reducing tail latency and CPU consumption while satisfying fairness and performance. A comprehensive evaluation demonstrates that ZNSFQ significantly enhances fairness and performance compared to the latest fair queuing schedulers. In sequential access scenarios, ZNSFQ enhances fairness by over 38.13% and increases I/O bandwidth by more than 49.24%. Furthermore, in random access scenarios, it reduces CPU utilization by 70.22% while maintaining both fairness and high performance.},
+  archive      = {J_TACO},
+  author       = {Yachun Liu and Dan Feng and Jianxi Chen and Jing Hu and Zhouxuan Peng and Jinlei Hu},
+  doi          = {10.1145/3746230},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
   pages        = {1-27},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Performance, energy and NVM lifetime-aware data structure refinement and placement for heterogeneous memory systems},
+  title        = {ZNSFQ: An efficient and high-performance fair queue scheduling scheme for ZNS SSDs},
   volume       = {22},
   year         = {2025},
 }
@@ -1727,20 +1706,398 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Deep learning workload mapping optimization on jetson platforms. <em>TACO</em>, <em>22</em>(2), 1-23. (<a href='https://doi.org/10.1145/3736175'>www</a>)
+(2025). Performance implications of pipelining the data transfer in CPU-GPU heterogeneous systems. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3746231'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {To improve the performance and energy efficiency of deep learning (DL) applications, recent edge computing platforms have built-in heterogeneous accelerators, such as general-purpose graphics processing units (GPUs) and neural processing units (NPUs). For example, widely used NVIDIA Jetson platforms contain CPU, GPU, and deep learning accelerator (DLA), a type of NPU. It is non-trivial to map DL workloads to suitable accelerators to improve performance, energy efficiency, or even both. This article presents JDIMO, 1 a Jetson-aware deep-learning inference workload mapping optimization framework, to simultaneously improve energy efficiency and performance. JDIMO first measures energy-performance data of the fundamental nodes and the sub-networks with energy-efficiency improvement potential according to the topology structure of a DL network. Then, under the guidance of an analytical energy-performance model, the framework exploits an algorithm based on the variable-length sliding window to find the optimal mapping configuration and the optimal number of CUDA streams. We evaluate JDIMO by applying it to seven DL applications on a Jetson Orin NX (16GB) platform. JDIMO saves 47.5% EDP (energy delay product) and 22.6% energy and improves 138.3% QPS (queries per second) on average compared to the DLA-possible configuration. JDIMO saves 22.5% EDP and 12.6% energy and improves 13.5% QPS on average compared to JEDI, the most similar work to ours. Meanwhile, JDIMO also reduces 93.8% optimization time on average compared to JEDI.},
+  abstract     = {Driven by the increasing demands of machine learning, heterogeneous systems combining CPUs and GPUs have emerged as the dominant architecture for parallel computing in recent years. To optimize memory management and data transfer between CPUs and GPUs, Nvidia GPUs have introduced unified virtual memory ( UVM ) and pinned memory ( PM ) over the last decade. UVM can avoid explicit memory copies and potentially overlap GPU kernel computations with CPU-GPU data transfer. PM ensures that data with high locality remains in the main memory, preventing it from being paged out. In addition to these two techniques, asynchronous memory copy ( Async Memcpy ) was introduced recently in Nvidia GPUs to improve the CPU-GPU pipeline further. By utilizing Async Memcpy , the data transfer from GPU global memory to shared memory can be overlapped with GPU computations, adding an additional stage to the CPU-GPU data transfer pipeline. A thorough performance analysis of how Async Memcpy affects the current UVM and PM CPU-GPU data transfer scheme is desired. In this article, we provide performance implications of the combined effect of UVM , PM , and Async Memcpy , exploring which applications benefit from which combination of these features. We implement all these features on a suite of 25 workloads, including microbenchmarks and realworld applications. We observe an average performance gain of 24% when utilizing UVM and a 34% gain when employing PM on realworld applications, compared to not applying any data transfer optimization techniques. The performance benefits of Async Memcpy vary across different workloads. For workloads featuring extensive shared memory usage and high compute density (e.g., kmeans and lud ), Async Memcpy delivers around a 20% performance improvement over using UVM or PM alone. In other workloads like knn , we note a 20% performance degradation when using Async Memcpy . Furthermore, we conduct an in-depth investigation of the GPU kernel using performance counters to uncover the root causes of performance differences among various data transfer models. We also perform sensitivity analyses to examine how the number of blocks and threads, as well as the L1-cache/shared memory partitioning, impact performance. We explore future research directions aimed at enhancing the data transfer pipeline by overlapping memory allocation with data transfer and computation across GPU kernels.},
   archive      = {J_TACO},
-  author       = {Farui Wang and Meng Hao and Siyu Yang and Weizhe Zhang},
-  doi          = {10.1145/3736175},
+  author       = {Ruihao Li and Bagus Hanindhito and Sanjana Yadav and Qinzhe Wu and Krishna Kavi and Gayatri Mehta and Neeraja J. Yadwadkar and Lizy K. John},
+  doi          = {10.1145/3746231},
   journal      = {ACM Transactions on Architecture and Code Optimization},
-  month        = {7},
-  number       = {2},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Performance implications of pipelining the data transfer in CPU-GPU heterogeneous systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Partitioned scheduling and analysis for a typed DAG task on heterogeneous multi-cores. <em>TACO</em>, <em>22</em>(3), 1-24. (<a href='https://doi.org/10.1145/3746232'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heterogeneous multi-core architectures are gaining popularity in recent years as they combine the benefits of different processors, resulting in improved execution capacity and energy efficiency. However, analyzing response times and allocating resources for the typed directed acyclic graph (DAG) task, which has complex execution logic, on heterogeneous multi-core systems poses significant challenges. Major approaches may yield overly pessimistic worst-case response time (WCRT) estimates in certain scenarios while failing to adequately address critical structural characteristics inherent to typed DAG tasks. To address these limitations, this article explores the WCRT analysis and core allocations for the typed DAG task under partitioned scheduling. In this work, we first delve into the characteristics of the topology structure of the typed DAG task and propose a novel WCRT upper bound to enhance the accuracy of WCRT analysis. Then, a subtask allocation strategy is presented, which enables an effectively utilization of the resources of multi-cores. Finally, the performance of the proposed analysis algorithm and allocation strategy are tested by implementing a verification system on a real heterogeneous multi-core platform. Experimental results demonstrate that our proposed WCRT analysis algorithm exhibits substantial improvements of 38.7% and 37.43% in the theoretical analysis performance and actual analysis accuracy, respectively. Similarly, our proposed core allocation strategy improves the theoretical and the actual execution efficiency of the system by 10.6% and 7.41%, respectively. These results substantiate the practical value of our enhanced WCRT derivation methodology and allocation scheme in improving system resource utilization efficiency.},
+  archive      = {J_TACO},
+  author       = {Yulong Wu and Yehan Ma and Mingdong Xie and Weizhe Zhang},
+  doi          = {10.1145/3746232},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Partitioned scheduling and analysis for a typed DAG task on heterogeneous multi-cores},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DCSolver: Accelerating sparse iterative solvers via divide-and-conquer on GPUs. <em>TACO</em>, <em>22</em>(3), 1-25. (<a href='https://doi.org/10.1145/3746233'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse iterative solvers are commonly used in various fields. However, certain essential kernels of these solvers, such as sparse triangular solves (SpTRSV), present significant challenges for efficient parallelization due to data dependencies . Previous methods, like level-scheduling or multi-coloring, typically involve creating a Task Dependency Graph (TDG) to represent data dependencies and identify independent sets from the TDG for parallel execution. However, these approaches often result in limited parallelism with substantial synchronization overheads or negatively impact the solver convergence rate. This article introduces DCSolver , a Divide-and-Conquer (DC) framework designed to efficiently parallelize sparse solvers with data dependencies on GPUs. To achieve this, we break down the solver TDG into independent subgraphs, allowing us to exploit both coarse-grained and fine-grained parallelism. To efficiently allocate GPU threads for subgraphs with varying degrees of parallelism, we have developed an adaptive in-warp scheduling strategy. Additionally, we propose a hybrid parallelization scheme in DCSolver, which involves employing different parallel approaches for different DC recursions to achieve a more optimal balance between parallelism and convergence for solvers. To evaluate the effectiveness of DCSolver, we apply it to two preconditioned Krylov subspace solvers and an unstructured mesh Computational Fluid Dynamics (CFD) solver. Our results show that when compared with the state-of-the-art methods, DCSolver accelerates the time-to-solution of solvers by an average speedup of up to 26.19X.},
+  archive      = {J_TACO},
+  author       = {Haozhong Qiu and Chuanfu Xu and Jianbin Fang and Jian Zhang and Liang Deng and Zhe Dai and Yue Ding and Yue Wang and Zhimeng Han and Yonggang Che and Jie Liu},
+  doi          = {10.1145/3746233},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {DCSolver: Accelerating sparse iterative solvers via divide-and-conquer on GPUs},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cppless: Single-source and high-performance serverless programming in c++. <em>TACO</em>, <em>22</em>(3), 1-27. (<a href='https://doi.org/10.1145/3747841'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rise of serverless computing introduced a new class of scalable, elastic, and widely available parallel workers in the cloud. Many systems and applications benefit from offloading computations and parallel tasks to dynamically allocated resources. However, the developers of C++ applications find it difficult to integrate functions due to complex deployment, lack of compatibility between client and cloud environments, and loosely typed input and output data. To enable single-source and efficient serverless acceleration in C++, we introduce Cppless , an end-to-end framework for implementing remote functions which handles the creation, deployment, and invocation of serverless functions. Cppless is built on top of LLVM and requires only two compiler extensions to automatically extract C++ function objects and deploy them to the cloud. We demonstrate that offloading parallel computations, such as from a C++ application to serverless workers, can provide up to 59x speedup with minimal cost increase while requiring only minor code modifications.},
+  archive      = {J_TACO},
+  author       = {Marcin Copik and Lukas Möller and Alexandru Calotoiu and Torsten Hoefler},
+  doi          = {10.1145/3747841},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Cppless: Single-source and high-performance serverless programming in c++},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mobile-3DCNN: An acceleration framework for ultra-real-time execution of large 3D CNNs on mobile devices. <em>TACO</em>, <em>22</em>(3), 1-22. (<a href='https://doi.org/10.1145/3747842'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is challenging to deploy 3D Convolutional Neural Networks (3D CNNs) on mobile devices, specifically if both real-time execution and high inference accuracy are in demand, because the increasingly large model size and complex model structure of 3D CNNs usually require tremendous computation and memory resources. Weight pruning is proposed to mitigate this challenge. However, existing pruning is either not compatible with modern parallel architectures, resulting in long inference latency or subject to significant accuracy degradation. This article proposes an end-to-end 3D CNN acceleration framework based on pruning/compilation co-design called Mobile-3DCNN that consists of two parts: a novel, fine-grained structured pruning enhanced by a prune/Winograd adaptive selection (that is mobile-hardware-friendly and can achieve high pruning accuracy), and a set of compiler optimization and code generation techniques enabled by our pruning (to fully transform the pruning benefit to real performance gains). The evaluation demonstrates that Mobile-3DCNN outperforms state-of-the-art end-to-end DNN acceleration frameworks that support 3D CNN execution on mobile devices, Alibaba Mobile Neural Networks and Pytorch-Mobile with speedup up to 34× with minor accuracy degradation, proving it is possible to execute high-accuracy large 3D CNNs on mobile devices in real-time (or even ultra-real-time).},
+  archive      = {J_TACO},
+  author       = {Wei Niu and Mengshu Sun and Zhengang Li and Jou-An Chen and Jiexiong Guan and Xipeng Shen and Jun Liu and Mei Zhang and Yanzhi Wang and Xue Lin and Bin Ren},
+  doi          = {10.1145/3747842},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Mobile-3DCNN: An acceleration framework for ultra-real-time execution of large 3D CNNs on mobile devices},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TRACED: A temporal graph neural networks-based model for data prefetching. <em>TACO</em>, <em>22</em>(3), 1-25. (<a href='https://doi.org/10.1145/3747843'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In modern microarchitectures, machine-learning-based prefetchers use past memory requests to learn access patterns and predict memory addresses, thereby prefetching data into the cache to mitigate the processor-memory speed gap. However, they face two key challenges in capturing irregular access patterns generated by complex data structures and algorithms. One is data dispersion: the disorderliness of memory addresses makes it difficult for prefetchers to extract meaningful data features. The other is temporal and spatial complexity: existing prefetchers fail to effectively learn temporal and spatial characteristics, and thus are unable to explore more complex access patterns. To resolve these challenges, we propose TRACED, a novel temporal graph neural network-based prefetcher aimed at learning access patterns of memory addresses. TRACED consists of two key components: a dynamic clustering component and a temporal graph neural network component. In the dynamic clustering component, we introduce a similarity function to quantify the similarity of memory addresses. Based on the quantified similarity, we dynamically group unordered memory addresses into different clusters. This ensures that the memory addresses in each cluster are ordered and change smoothly, thus resolving the first challenge. The temporal graph neural network component constructs a spatiotemporal graph to represent relationships among memory addresses. This helps capture temporal and spatial characteristics both across and within clusters, thus resolving the second challenge. This article demonstrates the effectiveness of the proposed prefetcher through experiments. Specifically, in terms of accuracy, TRACED outperforms BO, SPP, DOMINO, Delta-LSTM, and VOYAGER by 2.29%–40.83% on average. Furthermore, TRACED attains remarkable coverage of 55.67% and IPC of 43.75%, outperforming all competing approaches in both metrics.},
+  archive      = {J_TACO},
+  author       = {He Jiang and Liuwei Fu and Dong Liu and Zhilei Ren and Yuting Chen and Lei Qiao},
+  doi          = {10.1145/3747843},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {TRACED: A temporal graph neural networks-based model for data prefetching},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GenCNN: A partition-aware multi-objective mapping framework for CNN accelerators based on genetic algorithm. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3747844'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional Neural Networks (CNNs) require partitioning to efficiently run on CNN accelerators, which offer multiple parallel processing dimensions, such as Processing Element (PE) array topologies and Single Instruction Multiple Data (SIMD) execution. The choice of parallelization strategy directly impacts accelerator performance. However, the vast search space for CNN partitioning and parallelization makes manual optimization costly and complex, especially when addressing both aspects simultaneously. This highlights the need for an automated framework to efficiently map CNNs onto accelerators. Our key insight is that existing approaches suffer from inadequate accelerator performance modeling and a lack of multi-objective optimization strategies that jointly consider task partitioning and convolution parallelization. To address this, we propose GenCNN, a multi-objective genetic algorithm-based mapping framework for CNN accelerators. GenCNN first constructs a fine-grained performance model that captures both off-chip data access and on-chip data processing. It then applies the Non-dominated Sorting Genetic Algorithm II improved by Multi-Objective Bayesian Optimization to derive a Pareto-optimal partitioning and parallelization strategy that balances off-chip latency and PE utilization. Finally, GenCNN optimizes scheduling and routing to minimize data transfers. Experimental results show that GenCNN achieves up to 17.66× speedup in compilation and 6.47× in execution compared with state-of-the-art mapping frameworks.},
+  archive      = {J_TACO},
+  author       = {Yudong Mu and Zhihua Fan and Wenming Li and Zhiyuan Zhang and Xuejun An and Dongrui Fan and Xiaochun Ye},
+  doi          = {10.1145/3747844},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {GenCNN: A partition-aware multi-objective mapping framework for CNN accelerators based on genetic algorithm},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Supports of data cache division for computational solid-state drives. <em>TACO</em>, <em>22</em>(3), 1-20. (<a href='https://doi.org/10.1145/3747845'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The computational SSD ( CompSSD ), with high computing capabilities, can function not only as a storage device but also as a computing node. The data cache of the CompSSD device stores both the output data from host-side tasks and the input data for tasks executed on the CompSSD . However, current cache management strategies are optimized for traditional SSDs and are incompatible with the unique requirements of CompSSD . To address the issue of cache management for CompSSD , this article proposes a novel cache division scheme, to dynamically divide the cache into two parts, for separately buffering output data from host-side tasks and input data used by CompSSD -side tasks. To this end, we construct a mathematical model that periodically estimate an optimal cache division ratio, by considering the factors of the ratios of read/write data amount, the cache hits, and the overhead of data transfer between the storage device and the host. Besides, we propose a scheme of proactive data flushing to write the output data to the underlying flash arrays, without impacts on I/O responsiveness. The trace-driven experiments show that our scheme can improve the overall I/O latency by 35.4% on average, in contrast to existing cache management schemes for CompSSD devices.},
+  archive      = {J_TACO},
+  author       = {Zhibing Sha and Shuaiwen Yu and Chengyong Tang and Zhigang Cai and Peng Tang and Ming Huang and Jun Li and Jianwei Liao},
+  doi          = {10.1145/3747845},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Supports of data cache division for computational solid-state drives},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ephemera: Accelerating I/O-intensive serverless workloads with a harvested in-memory file system. <em>TACO</em>, <em>22</em>(3), 1-24. (<a href='https://doi.org/10.1145/3747846'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless computing has gained popularity for its ability to shift the burden of server management from developers to cloud providers, which allows providers to exercise greater control over resource management, optimizing configurations to enhance efficiency and performance. The diversity of serverless computing tasks, from short-lived, event-driven tasks to more complex workloads, highlights the growing importance of efficient file I/O performance for I/O-intensive workloads, yet effectively handling ephemeral storage for I/O-intensive tasks remains a challenge. Traditional file system approaches often introduce substantial latency and fail to fully leverage available memory resources within the execution environment, limiting performance and efficiency. Our work stems from the observation of the under-utilization of memory resources in serverless computing platforms and the potential efficiency improvement of I/O operations using an in-memory file system. Based on this observation, we propose Ephemera , a system designed to enhance ephemeral storage efficiency and memory utilization. Ephemera satisfies three design goals: transparent memory I/O integration , heterogeneous tasks resource synergy , and harmonized cluster workload orchestration . Ephemera integrates three components: the Runtime Daemon, responsible for managing a container’s in-memory file system; the Tenant Manager, facilitating memory configuration sharing across containers; and the Cluster Controller, optimizing workload balancing. Our experiments demonstrate that Ephemera significantly improves performance for I/O-intensive tasks compared to traditional file systems. Specifically, Ephemera decreases I/O processing time by 50% on average and reduces latency by up to 95.73% in certain scenarios with negligible overhead.},
+  archive      = {J_TACO},
+  author       = {Lingxiao Jin and Zinuo Cai and Haoxin Wang and Zongpu Zhang and Ruhui Ma and Haibing Guan and Yuan Liu and Buyya Rajkumar},
+  doi          = {10.1145/3747846},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Ephemera: Accelerating I/O-intensive serverless workloads with a harvested in-memory file system},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SpMARD: A sparse-sparse matrix multiplication accelerator with reconfigurable dataflow for DNN workloads. <em>TACO</em>, <em>22</em>(3), 1-23. (<a href='https://doi.org/10.1145/3747847'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning becomes increasingly popular, and its main workload is Sparse-Sparse Matrix Multiplication (SpMSpM). Most SpMSpM accelerators usually only support a single dataflow. Different dataflows have different performance in different computing environments. Therefore, the single-dataflow accelerator cannot maintain the highest performance in all environments. Compared with single-dataflow accelerators, multi-dataflow accelerators provide flexible options for different workloads and improve the overall performance. Flexagon, Sparm, and SPADA are state-of-the-art multi-dataflow accelerators. However, the computation process of Flexagon and Sparm is not fully pipelined, and SPADA cannot support inner product dataflow. Additionally, Flexagon, Sparm, and SPADA cannot switch dataflows quickly and accurately. Inspired by these observations, we present SpMARD, a SpMSpM accelerator with reconfigurable dataflow. The computation process of SpMARD is fully pipelined, and SpMARD can support six dataflow variants simultaneously. Through the design of a Two-stage Pipeline Adder Network (TPAN) and a Position-based Psum Array (PPA), SpMARD can execute element-level merging, which can hide the merging overhead. Through the quantitative analysis of dataflows, we implement a Dataflow Switcher (DSwitcher), which can switch dataflows more efficiently. For the SpMSpM workload, the performance (GOPS) of the SpMARD we proposed is 1.27 times that of Flexagon, 1.18 times that of Sparm, and 1.22 times that of SPADA.},
+  archive      = {J_TACO},
+  author       = {Bo Wang and Sheng Ma and Yunping Zhao and Shengbai Luo and Lizhou Wu and Jianmin Zhang and Dongsheng Li and Tiejun Li and Zhuojun Chen},
+  doi          = {10.1145/3747847},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
   pages        = {1-23},
   shortjournal = {ACM Trans. Archit. Code Optim.},
-  title        = {Deep learning workload mapping optimization on jetson platforms},
+  title        = {SpMARD: A sparse-sparse matrix multiplication accelerator with reconfigurable dataflow for DNN workloads},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HAKV: A hotness-aware zone management approach to optimizing performance of LSM-tree-based key-value stores. <em>TACO</em>, <em>22</em>(3), 1-26. (<a href='https://doi.org/10.1145/3747848'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Log-Structured Merge tree-based key-value (KV) stores, like LevelDB and RocksDB, are extensively applied in large-scale data storage systems. This design excels in write-intensive environments by converting random writes into sequential append operations. Despite its advantages, KV stores struggle with real-world workloads where most updates in KV pairs are infrequent. The compaction process and hierarchical data organization result in high write and read amplification. To mitigate these issues, we propose HAKV – a hotness-aware zone management approach to optimizing performance of KV stores. HAKV first separates hot KV pairs from cold KV pairs, storing hot KV pairs in dedicated zones within persistent memory (PM), enabling centralized and lightweight compaction. Second, we propose a storage zone structure in PM to achieve space optimization for cold KV pairs. Third, to bolster cache hit ratio in PM, we provide a hierarchical data framework for hot KV pairs – and a recycling strategy for invalid hot KV pairs in a zone to enhance the space utilization of PM for hot KV pairs. Finally, we design a dynamic window-based adaptive adjustment mechanism for zone pool in PM to optimize the space utilization. Thus, HAKV significantly reduces write amplification while boosting overall read and write performance. The experimental results demonstrate that HAKV achieves write amplification reduction by up to 92.3%, 79.2%, 90.2%, 41.1%, 80.6%, and 62.4% compared with LevelDB, RocksDB, NoveLSM, LightKV, Wisckey, and UniKV, respectively, with average reduction rates of 89.6%, 74.4%, 84.9% 32.3%, 63.7%, and 42.5%. Furthermore, HAKV boosts random write performance by up to 54.2×, 51.5×, 44.2×, 4.3×, 3.1×, and 4.3×, respectively—and the average improvement reaches 25.8×, 20.9×, 23.9×, 2.7×, 2.5×, and 3.4×.},
+  archive      = {J_TACO},
+  author       = {Hui Sun and Qianli Yue and Guanzhong Chen and Yi Zou and Yinliang Yue and Xiao Qin},
+  doi          = {10.1145/3747848},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {HAKV: A hotness-aware zone management approach to optimizing performance of LSM-tree-based key-value stores},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Matrix: Multi-cipher structures dataflow for parallel and pipelined TFHE accelerator. <em>TACO</em>, <em>22</em>(3), 1-23. (<a href='https://doi.org/10.1145/3750446'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fully homomorphic encryption over torus (TFHE) enables the execution of arbitrary functions on encrypted data through programmable bootstrapping (PBS). However, performing all operations on ciphertext during PBS results in high computational and memory requirements, limiting the deployment of PBS in real-world scenarios. Previous TFHE accelerator designs have attempted to improve performance by employing specific dataflow and functional units, but these techniques may require large off-chip bandwidth or on-chip storage when scaling up computation capacity. Additionally, the design of specialized functional units may limit the utilization of computation units when facing dynamic secure parameter settings. To address these challenges and further improve PBS throughput in TFHE, we propose Matrix , an ASIC-based architecture that balances off-chip bandwidth and on-chip storage according to the execution flow of PBS. In Matrix , we utilize a unified special-prime-based processing element (PE) that achieves high utilization with minimal resource overhead. Furthermore, we propose a hybrid PBS dataflow that can efficiently reduce computation complexity and memory requirements. Compared to state-of-the-art TFHE accelerators, Matrix achieves 1.43 × -5.66 × throughput improvement for PBS. For ZAMA Deep-NN benchmark, we achieve 525.60× and 68.06× speedup compared to CPU and GPU, respectively. 1},
+  archive      = {J_TACO},
+  author       = {Ling Liang and Zhen Gu and Fahong Zhang and Zhaohui Chen and Zhirui Li and Xin Fan and Dimin Niu and Meng Li and Zhiyong Li and Zongwei Wang and Hongzhong Zheng and Yimao Cai and Yuan Xie},
+  doi          = {10.1145/3750446},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Matrix: Multi-cipher structures dataflow for parallel and pipelined TFHE accelerator},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SampDedup: Sampling prediction for efficient inline data deduplication on non-volatile memory. <em>TACO</em>, <em>22</em>(3), 1-25. (<a href='https://doi.org/10.1145/3750447'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data deduplication is an effective technique for reducing redundant data storage space in various storage systems. Generally, deduplication consists of four steps: chunking, fingerprinting, fingerprint lookup, and data management. Recently, Non-volatile Memory (NVM) as an emerging storage device has received widespread attention. Directly applying the deduplication technique on NVM for storage cost savings faces many challenges: (a) deduplication on NVM devices suffers from computation bottleneck instead of the I/O bottleneck faced by deduplication on traditional storage devices (such as HDD and SSD); (b) new fingerprint indexes and metadata are required to be re-designed to adapt to NVM characteristics; (c) inline deduplication on NVM is more sensitive to the latency. To solve these challenges, we propose a novel Samp ling prediction-based inline data Dedup lication method ( SampDedup ) on NVM devices. It aims to ensure high deduplication ratios while reducing computation costs and latency by optimizing data chunking , fingerprinting , and fingerprint lookup . (a) For data chunking , a sampling prediction-based chunking method ( SampChunk ) is proposed to leverage chunk similarity to distinguish duplicate chunks and skip them for chunking. This method can be easily integrated into most sliding-window based and non-window based CDC chunking algorithms. (b) For fingerprinting , the commonly used SHA-1 algorithm is further optimized to reduce the extra computational overhead introduced by SampChunk, and an asynchronous fingerprinting method is proposed to reduce the fingerprinting latency of unique chunks. (c) For fingerprint lookup , we design a header fingerprint index and metadata table for each data chunk constructed by SampChunk on NVM, and we use a fast-read buffer to replace the traditional slow LRU cache to improve search efficiency. Experiments on four real-world datasets demonstrate that SampDedup consistently presents high inline data deduplication ratios on NVM with different workloads and data partitioning algorithms while saving more than 90% chunking time compared with state-of-the-art deduplication baselines.},
+  archive      = {J_TACO},
+  author       = {Ziyue Xu and Yichen Li and Ranzhe Deng and Liping Yi and Yusen Li and Gang Wang and Xiaoguang Liu},
+  doi          = {10.1145/3750447},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SampDedup: Sampling prediction for efficient inline data deduplication on non-volatile memory},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RACER: Avoiding end-to-end slowdowns in accelerated chip multi-processors. <em>TACO</em>, <em>22</em>(3), 1-22. (<a href='https://doi.org/10.1145/3750448'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent chip multiprocessors incorporate several on-chip accelerators, marking the beginning of the Accelerated Chip Multi-Processor (XMP) era in datacenters. Despite the close proximity of accelerators and general-purpose cores, offloading functions to accelerators may not always be beneficial. Offloading to hardware accelerators can introduce several end-to-end overheads that can negate the speedup of the accelerable function. In this article, we design RACER, a hardware architecture and runtime system that evades the danger of end-to-end slowdowns when using hardware acceleration. RACER leverages a low-overhead interface between general-purpose cores and on-chip accelerators, fine-grained context switching, accelerator-initiated preemption, and seamless data motion between general-purpose cores and accelerators to improve the performance of workloads that use on-chip accelerators. We evaluate RACER on five representative request processing workloads featuring diverse memory access patterns, accelerable functions, and compute intensities. RACER improves the performance of hardware acceleration on a real XMP by an average of 1.31× on a range of diverse workloads and guarantees that accelerator offloads never cause slowdowns.},
+  archive      = {J_TACO},
+  author       = {Neel Patel and Ren Wang and Mohammad Alian},
+  doi          = {10.1145/3750448},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {RACER: Avoiding end-to-end slowdowns in accelerated chip multi-processors},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A sparsity-aware autonomous path planning accelerator with HW/SW co-design and multi-level dataflow optimization. <em>TACO</em>, <em>22</em>(3), 1-25. (<a href='https://doi.org/10.1145/3750449'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Path planning is a critical task for autonomous driving, aiming to generate smooth, collision-free, and feasible paths based on input perception and localization information. The planning task is both highly time-sensitive and computationally intensive, posing significant challenges to resource-constrained autonomous driving hardware. In this article, we propose an end-to-end framework for accelerating path planning on FPGA platforms. This framework focuses on accelerating quadratic programming (QP) solving, which is the core of optimization-based path planning and has the most computationally-intensive workloads. Our method leverages a hardware-friendly alternating direction method of multipliers (ADMM) to solve QP problems while employing a highly parallelizable preconditioned conjugate gradient (PCG) method for solving the associated linear systems. We analyze the sparse patterns of matrix operations in QP and design customized storage schemes along with efficient sparse matrix multiplication and sparse matrix-vector multiplication units. Our customized design significantly reduces resource consumption for data storage and computation while dramatically speeding up matrix operations. Additionally, we propose a multi-level dataflow optimization strategy. Within individual operators, we achieve acceleration through parallelization and pipelining. For different operators in an algorithm, we analyze inter-operator data dependencies to enable fine-grained pipelining. At the system level, we map different steps of the planning process to the CPU and FPGA and pipeline these steps to enhance end-to-end throughput. We implement and validate our design on the AMD ZCU102 platform. Our implementation achieves state-of-the-art performance in both latency and energy efficiency compared with existing works, including an average 1.48× speedup over the best FPGA-based design, a 2.89× speedup compared with the state-of-the-art QP solver on an Intel i7-11800H CPU, a 5.62× speedup over an ARM Cortex-A57 embedded CPU, and a 1.56× speedup over state-of-the-art GPU-based work. Furthermore, our design delivers a 2.05× improvement in throughput compared with the state-of-the-art FPGA-based design.},
+  archive      = {J_TACO},
+  author       = {Yifan Zhang and Xiaoyu Niu and Hongzheng Tian and Yanjun Zhang and Bo Yu and Shaoshan Liu and Sitao Huang},
+  doi          = {10.1145/3750449},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A sparsity-aware autonomous path planning accelerator with HW/SW co-design and multi-level dataflow optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TianheGraph: Topology-aware graph processing. <em>TACO</em>, <em>22</em>(3), 1-24. (<a href='https://doi.org/10.1145/3750450'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many real-world graph data can have billions to trillions of edges. Processing graphs at such scales requires the efficient use of parallel computing systems. However, current graph processing engines and methods struggle to scale beyond a few dozen computing nodes because they (i) cannot efficiently store and process graph data on this scale due to the huge memory footprint incurred and (ii) do not account for the variations in communication costs across different levels of the interconnection hierarchy. We introduce TianheGraph, a software approach to reduce the memory footprint of graphs and optimize graph processing on large-scale parallel systems with complex hardware interconnection components. TianheGraph integrates a new space-time-efficient graph compression technique to reduce the memory footprint of large-scale graphs. It provides a novel graph partitioning method to improve load balancing and minimize communication overhead across various levels of the interconnection hierarchy. We evaluate TianheGraph by applying it to fundamental graph operations on synthetic and real-world graphs, using up to 79,024 computing nodes and over 1.2 million processor cores. Our extensive experiments show that TianheGraph outperforms state-of-the-art parallel graph processing engines in throughput and scalability. Moreover, TianheGraph outperformed the top-ranked systems on the Graph 500 list at the time of submission.},
+  archive      = {J_TACO},
+  author       = {Xinbiao Gan},
+  doi          = {10.1145/3750450},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {TianheGraph: Topology-aware graph processing},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A low-latency on-chip cache hierarchy for load-to-use stall reduction in GPUs. <em>TACO</em>, <em>22</em>(3), 1-27. (<a href='https://doi.org/10.1145/3760782'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memory hierarchy in Graphics Processing Units (GPUs) is conventionally designed to provide high bandwidth rather than low latency. In particular, because of the high tolerance to load-to-use latency (i.e., the time that warps wait for data fetched by memory loads), GPU L1D caches are optimized for density, capacity, and low power with latencies that are often orders of magnitude longer than conventional CPU caches. However, there are many important classes of data-parallel applications (e.g., graph, tree, priority queue processing, and sparse deep learning applications) that benefit from lower load-to-use latency than that offered by modern GPUs due to their inherent divergence and low effective Thread-Level Parallelism (TLP). This article introduces an innovative on-chip cache hierarchy that incorporates a decoupled L1D cache with reduced latency (LoTUS) and its management scheme. LoTUS is a minimally sized fully associative cache placed in each GPU subcore that captures the primary working set of data-parallel applications. It exploits conventional high-performance low-density SRAM cells and dramatically reduces load-to-use latency. We also propose an intelligent extension of LoTUS, called LoTUSage, which employs a lightweight learning-based model to predict the utility of caching requests in LoTUS. Evaluation results show that LoTUS and LoTUSage improve the average performance by 23.9% and 35.4% and reduce the average energy consumption by 27.8% and 38.5%, respectively, for the applications suffering from high load-to-use stalls with negligible area and power overheads.},
+  archive      = {J_TACO},
+  author       = {Negin (Sadat) (Nematollahi zadeh) Mahani and Hajar Falahati and Sina Darabi and Ahmad Javadi-Nezhad and Yunho Oh and Mohammad Sadrosadati and Hamid Sarbazi-Azad and Babak Falsafi},
+  doi          = {10.1145/3760782},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A low-latency on-chip cache hierarchy for load-to-use stall reduction in GPUs},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ecmas+: Efficient circuit mapping and scheduling for surface code encoded circuit on quantum cloud platform. <em>TACO</em>, <em>22</em>(3), 1-25. (<a href='https://doi.org/10.1145/3760783'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the leading candidate for quantum error correction, the surface code faces substantial overhead, such as redundant physical qubits and prolonged execution time. Reducing the space-time cost of circuit execution can significantly improve the throughput of modern quantum cloud platforms. While utilizing more physical qubits can reduce execution time, different quantum circuits vary in their ability to leverage chip resources. Therefore, optimizing the compilation of surface code circuits on quantum chips becomes critical. In this work, we address the mapping and scheduling problem in compiling surface code to reduce the cost. First, we introduce a novel metric Circuit Parallelism Degree to characterize circuit properties in detail and select the most suitable chip from a list of available options. Next, we will quantitatively assess the resources to determine if they are sufficient for the circuit. We then propose a resource-adaptive mapping and scheduling method called Ecmas+ , which customizes the initialization of chip resources for each circuit. Ecmas+ significantly reduces execution time in the double defect and lattice surgery models. Extensive numerical tests on practical datasets demonstrate that Ecmas+ outperforms state-of-the-art methods, reducing execution time by an average of 46% for the double defect model and 29.7% for the lattice surgery model.},
+  archive      = {J_TACO},
+  author       = {Mingzheng Zhu and Hao Fu and Haishan Song and Jun Wu and Chi Zhang and Wei Xie and Xiangyang Li},
+  doi          = {10.1145/3760783},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Ecmas+: Efficient circuit mapping and scheduling for surface code encoded circuit on quantum cloud platform},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Augur: Semantics-aware temporal prefetching for linked data structure. <em>TACO</em>, <em>22</em>(3), 1-27. (<a href='https://doi.org/10.1145/3762997'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Linked data structures (LDS), such as lists and trees, are widely used in modern applications. Traversing LDS typically involves a significant amount of pointer chasing. Due to the serial nature of memory access in pointer chasing, the incurred long memory latency of traversing LDS has become a critical performance bottleneck. Furthermore, the poor spatial locality in LDS makes it difficult for spatial prefetchers to predict access addresses. Although temporal prefetchers can handle irregular memory access patterns, hindered by the challenges of collecting semantic information, current state-of-the-art temporal prefetchers suffer from significant metadata redundancy and frequent metadata conflicts. Consequently, there remain substantial opportunities to enhance the LDS prefetching. To solve this problem, we propose Augur, a semantics-aware temporal prefetcher to enhance LDS performance. Augur utilizes a novel pruning method to obtain semantic information and effectively extracts node address correlations from the perspective of nodes in LDS, thereby diminishing the metadata redundancy and conflicts. Additionally, Augur employs efficient metadata management strategies that guarantee a minimal storage overhead. Evaluated on LDS workloads, Augur achieves an average performance speedup of 17.8% and 11.7% over the baseline stride prefetcher and state-of-the-art spatial prefetcher Berti, respectively. Furthermore, Augur outperforms the state-of-the-art temporal prefetcher MISB, Triage, and Triangel, by 17.4%, 12.8%, and 6.3%, respectively, with a significantly lower storage overhead of only 1.26 KB.},
+  archive      = {J_TACO},
+  author       = {Feng Xue and Junliang Wu and Chenji Han and Xinyu Li and Tingting Zhang and Tianyi Liu and Fuxin Zhang},
+  doi          = {10.1145/3762997},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Augur: Semantics-aware temporal prefetching for linked data structure},
   volume       = {22},
   year         = {2025},
 }

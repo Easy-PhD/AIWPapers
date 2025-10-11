@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="tc">TC - 22</h2>
+<h2 id="tc">TC - 25</h2>
 <ul>
 <li><details>
 <summary>
-(2025). TeeRollup: Efficient rollup design using heterogeneous TEE. <em>TC</em>, <em>74</em>(10), 3546-3558. (<a href='https://doi.org/10.1109/TC.2025.3596698'>www</a>)
+(2025). Optimizing multi-DNN parallel inference performance in MEC networks: A resource-aware and dynamic DNN deployment scheme. <em>TC</em>, <em>74</em>(11), 3938-3952. (<a href='https://doi.org/10.1109/TC.2025.3605749'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Rollups have emerged as a promising approach to improving blockchains’ scalability by offloading transaction execution off-chain. Existing rollup solutions either leverage complex zero-knowledge proofs or optimistically assume execution correctness unless challenged. However, these solutions suffer from high gas costs and significant withdrawal delays, hindering their adoption in decentralized applications. This paper introduces TeeRollup, an efficient rollup protocol that leverages Trusted Execution Environments (TEEs) to achieve both low gas costs and short withdrawal delays. Sequencers (i.e., system participants) execute transactions within TEEs and upload signed execution results to the blockchain with confidential keys of TEEs. Unlike most TEE-assisted blockchain designs, TeeRollup adopts a practical threat model where the integrity and availability of TEEs may be compromised. To address these issues, we first introduce a distributed system of sequencers with heterogeneous TEEs, ensuring system security even if a certain proportion of TEEs are compromised. Second, we propose a challenge mechanism to solve the redeemability issue caused by TEE unavailability. Furthermore, TeeRollup incorporates Data Availability Providers (DAPs) to reduce on-chain storage overhead and uses a laziness penalty mechanism to regulate DAP behavior. We implement a prototype of TeeRollup in Golang, using the Ethereum test network, Sepolia. Our experimental results indicate that TeeRollup outperforms zero-knowledge rollups (ZK-rollups), reducing on-chain verification costs by approximately 86% and withdrawal delays to a few minutes.},
+  abstract     = {The advent of Multi-access Edge Computing (MEC) has empowered Internet of Things (IoT) devices and edge servers to deploy sophisticated Deep Neural Network (DNN) applications, enabling real-time inference. Many concurrent inference requests and intricate DNN models demand efficient multi-DNN inference in MEC networks. However, the resource-limited IoT device/edge server and expanding model size force models to be dynamically deployed, resulting in significant undesired energy consumption. In addition, parallel multi-DNN inference on the same device complicates the inference process due to the resource competition among models, increasing the inference latency. In this paper, we propose a Resource-aware and Dynamic DNN Deployment (R3D) scheme with the collaboration of end-edge-cloud. To mitigate resource competition and waste during multi-DNN parallel inference, we develop a Resource Adaptive Management (RAM) algorithm based on the Roofline model, which dynamically allocates resources by accounting for the impact of device-specific performance bottlenecks on inference latency. Additionally, we design a Deep Reinforcement Learning (DRL)-based online optimization algorithm that dynamically adjusts DNN deployment strategies to achieve fast and energy-efficient inference across heterogeneous devices. Experiment results demonstrate that R3D is applicable in MEC environments and performs well in terms of inference latency, resource utilization, and energy consumption.},
   archive      = {J_TC},
-  author       = {Xiaoqing Wen and Quanbi Feng and Hanzheng Lyu and Jianyu Niu and Yinqian Zhang and Chen Feng},
-  doi          = {10.1109/TC.2025.3596698},
+  author       = {Tong Zheng and Yuanguo Bi and Guangjie Han and Xingwei Wang and Yuheng Liu and Yufei Liu and Xiangyi Chen},
+  doi          = {10.1109/TC.2025.3605749},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3546-3558},
+  month        = {11},
+  number       = {11},
+  pages        = {3938-3952},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {TeeRollup: Efficient rollup design using heterogeneous TEE},
+  title        = {Optimizing multi-DNN parallel inference performance in MEC networks: A resource-aware and dynamic DNN deployment scheme},
   volume       = {74},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallelization strategies for DeepMD-kit using OpenMP: Enhancing efficiency in machine learning-based molecular simulations. <em>TC</em>, <em>74</em>(10), 3534-3545. (<a href='https://doi.org/10.1109/TC.2025.3595078'>www</a>)
+(2025). SCC: Synchronization congestion control for multi-tenant learning over geo-distributed clouds. <em>TC</em>, <em>74</em>(11), 3911-3924. (<a href='https://doi.org/10.1109/TC.2025.3604486'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {DeepMD-kit enables deep learning-based molecular dynamics (MD) simulations that require efficient parallelization to leverage modern HPC architectures. In this work, we optimize DeepMD-kit using advanced OpenMP strategies to improve scalability and computational efficiency on an ARMv8 processor-based server. Our optimizations include data parallelism for neural network inference, force calculation acceleration, NUMA-aware memory management, and synchronization reductions, leading to up to $4.1\boldsymbol{\times}$ speedup and 82% higher memory bandwidth efficiency compared to the baseline implementation. Strong scaling analysis demonstrates superlinear speedup at mid-range core counts, with improved workload balancing and vectorized computations. However, challenges remain at ultra-large scales due to increasing synchronization overhead.},
+  abstract     = {Distributed machine learning over geo-distributed clouds enables joint training of data located in different regions, alleviating the burden of transferring large volumes of training datasets, which greatly saves bandwidth. However, the limited capacity of WAN links slows down the inter-cloud communications, which significantly decelerates the synchronization of distributed machine learning over geo-distributed clouds. Besides, the multi-tenancy in clouds results in multiple training tasks running simultaneously, whose synchronizations consistently compete for the limited WAN bandwidth with each other, which further aggravates the training performance of each task. While existing works optimize synchronizations through techniques like gradient compression, multi-resource interleaving and so on, none of them targets at the synchronization congestion especially due to multi-tenant learning, which results in inferior training performance. To solve these problems, we propose a simple but effective scheme, SCC, for fast and efficient multi-tenant learning via synchronization congestion control. SCC monitors the cross-cloud network conditions and evaluates the synchronization congestion level based on the round-trip transmission time for each synchronization. Then SCC alleviates synchronization congestion via controlling the synchronization frequency according to the synchronization congestion level in a probabilistic way. Extensive experiments are conducted within our testbeds consisted of 16 NVIDIA V100 GPUs to evaluate the performance of SCC, and comparison results show that SCC can reduce the average training completion time and makespan by up to 28.6% and 43.2% over SAP-SGD [1]. Targeted experiments are conducted to demonstrate the effectiveness and robustness of SCC.},
   archive      = {J_TC},
-  author       = {Qi Du and Feng Wang and Chengkun Wu},
-  doi          = {10.1109/TC.2025.3595078},
+  author       = {Chengxi Gao and Fuliang Li and Kejiang Ye and Yang Wang and Pengfei Wang and Xingwei Wang and Chengzhong Xu},
+  doi          = {10.1109/TC.2025.3604486},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3534-3545},
+  month        = {11},
+  number       = {11},
+  pages        = {3911-3924},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Parallelization strategies for DeepMD-kit using OpenMP: Enhancing efficiency in machine learning-based molecular simulations},
+  title        = {SCC: Synchronization congestion control for multi-tenant learning over geo-distributed clouds},
   volume       = {74},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). High-Radix/Mixed-radix NTT multiplication Algorithm/Architecture co-design over fermat modulus. <em>TC</em>, <em>74</em>(10), 3519-3533. (<a href='https://doi.org/10.1109/TC.2025.3590972'>www</a>)
+(2025). A reputation-based energy-efficient transaction propagation mechanism for blockchain-enabled multi-access edge computing. <em>TC</em>, <em>74</em>(11), 3897-3910. (<a href='https://doi.org/10.1109/TC.2025.3604480'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Polynomial multiplication using Number Theoretic Transform (NTT) is crucial in lattice-based post-quantum cryptography (PQC) and fully homomorphic encryption (FHE), with modulus $q$ significantly affecting performance. Fermat moduli of the form $2^{2^{n}}+1$, such as 65537, offer efficiency gains due to simplified modular reduction and powers-of-2 twiddle factors in NTT. While Fermat moduli have been directly applied or explored for incorporation into existing schemes, Fermat NTT-based polynomial multiplication designs remain underexplored in fully exploiting the benefits of Fermat moduli. This work presents a high-radix/mixed-radix NTT architecture tailored for Fermat moduli, which improves the utilization of the powers-of-2 twiddle factors in large transform sizes. In most cases, our design achieves a 30%–85% reduction in DSP area-time product (ATP) and a 70%–100% reduction in BRAM ATP compared to state-of-the-art designs with smaller or equivalent modulus, while maintaining competitive LUT and FF ATP, underscoring the potential of Fermat NTT-based polynomial multipliers in lattice-based cryptography.},
+  abstract     = {Blockchain strengthens reliable collaboration among entities through its transparency, immutability, and traceability, leading to its integration into Multi-access Edge Computing (MEC) and promoting the development of a trusted JointCloud. However, existing transaction propagation mechanisms require MEC devices to consume significant computing resources for complex transaction verification, increasing their vulnerability to malicious attacks. Adversaries can exploit this by flooding the blockchain network with spam transactions, aiming to deplete device energy and disrupt system performance. To cope with these issues, this paper proposes a reputation-based energy-efficient transaction propagation mechanism that alleviates spam transaction attacks while reducing computing resources and energy consumption. Firstly, we design a subjective logic-based reputation scheme that assesses node trust by integrating local and recommended opinions and incorporates opinion acceptance to counteract false evidence. Then, we optimize the transaction verification method by adjusting transaction discard and verification probabilities based on the proposed reputation scheme to curb the propagation of spam transactions and reduce verification consumption. Finally, we enhance the transaction transmission strategy by prioritizing nodes with higher reputations, enhancing both resilience to spam transactions and transmission reliability. A series of simulations demonstrates the effectiveness of the proposed mechanism.},
   archive      = {J_TC},
-  author       = {Yile Xing and Guangyan Li and Zewen Ye and Ryan W. L. Luk and Donglong Chen and Hong Yan and Ray C. C. Cheung},
-  doi          = {10.1109/TC.2025.3590972},
+  author       = {Xijia Lu and Qiang He and Xingwei Wang and Jaime Lloret and Peichen Li and Ying Qian and Min Huang},
+  doi          = {10.1109/TC.2025.3604480},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3519-3533},
+  month        = {11},
+  number       = {11},
+  pages        = {3897-3910},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {High-Radix/Mixed-radix NTT multiplication Algorithm/Architecture co-design over fermat modulus},
+  title        = {A reputation-based energy-efficient transaction propagation mechanism for blockchain-enabled multi-access edge computing},
   volume       = {74},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). EC2P: Cost-effective cross-chain payments via hubs resisting the abort attack. <em>TC</em>, <em>74</em>(10), 3504-3518. (<a href='https://doi.org/10.1109/TC.2025.3590960'>www</a>)
+(2025). Low-power multiplier designs by leveraging correlations of 2$\times$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mo>×</mml:mo></mml:math>2 encoded partial products. <em>TC</em>, <em>74</em>(11), 3888-3896. (<a href='https://doi.org/10.1109/TC.2025.3604478'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Cross-chain technology facilitates the interoperability among isolated blockchains, where users can transfer and exchange coins. While the heterogeneity between Turing-complete (TC) blockchains like Ethereum and non-Turing-complete (NTC) blockchains like Bitcoin presents a significant challenge for cross-chain transactions. Payment Channel Hubs (PCHs) offer a promising solution for enabling TC-NTC cross-chain payments with high throughput and low confirmation delays. However, existing schemes still face two key challenges: (i) significant computation and communication overhead for variable-amount payment, and (ii) limited unlinkability, i.e., vulnerable to the abort attack. This paper proposes EC2P, the first TC-NTC cross-chain PCH that achieves variable-amount payment unlinkability while resisting the abort attack and minimizing reliance on non-interactive zero-knowledge (NIZK) proofs. EC2P introduces two protocols: the NTC-to-TC and TC-to-NTC payment protocols. The NTC-to-TC payment protocol replaces the traditional puzzle-promise and puzzle-solve paradigm with a semi-blind approach, where only one side is blinded and the blinded side’s interactions are eliminated. This achieves unlinkability and resists the abort attack without NIZK. The TC-to-NTC payment protocol enhances the paradigm by utilizing Turing-complete functionality to constrain the inability to carry out an abort attack. Through rigorous security analysis, we show that EC2P is secure and variable-amount payment unlinkable while resisting the abort attack. We implement EC2P on Ethereum and Bitcoin test networks. Our evaluation demonstrates that EC2P outperforms both in terms of communication and computation overhead and reduces communication costs by 3 orders of magnitude compared to existing variable-amount methods.},
+  abstract     = {Multipliers, particularly those with small bit widths, are essential for modern neural network (NN) applications. In addition, multiple-precision multipliers are in high demand for efficient NN accelerators; therefore, recursive multipliers used in low-precision fusion schemes are gaining increasing attention. In this work, we design exact recursive multipliers based on customized approximate full adders (AFAs) for low-power purposes. Initially, the partial products (PPs) encoded by 2$\times$2 multiplications are analyzed, which reveals the correlations among adjacent PPs. Based on these correlations, we propose 4$\times$4 recursive multiplier architectures where certain full adders (FAs) can be simplified without affecting the correctness of the multiplication. Manually and synthesis tool-based FA simplifications are performed separately. The obtained 4$\times$4 multipliers are then used to construct 8$\times$8 multipliers based on a low-power recursive architecture. Finally, the proposed signed and unsigned 4$\times$4 and 8$\times$8 multipliers are evaluated using a 28nm CMOS technology. Compared with DesignWare (DW) multipliers, the proposed signed and unsigned 4$\times$4 multipliers achieve power reductions of 16.5% and 11.6%, respectively, without compromising area or delay; alternatively, the delay can be reduced by 20.9% and 39.4%, respectively, without compromising power or area. For signed and unsigned 8$\times$8 multipliers, the maximum power reductions are 9.7% and 13.7%, respectively, albeit with a trade-off in area.},
   archive      = {J_TC},
-  author       = {Danlei Xiao and Shaobo Xu and Chuan Zhang and Licheng Wang and Xiulong Liu and Liehuang Zhu},
-  doi          = {10.1109/TC.2025.3590960},
+  author       = {Ao Liu and Siting Liu and Hui Wang and Qin Wang and Fabrizio Lombardi and Zhigang Mao and Honglan Jiang},
+  doi          = {10.1109/TC.2025.3604478},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3504-3518},
+  month        = {11},
+  number       = {11},
+  pages        = {3888-3896},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {EC2P: Cost-effective cross-chain payments via hubs resisting the abort attack},
+  title        = {Low-power multiplier designs by leveraging correlations of 2$\times$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mo>×</mml:mo></mml:math>2 encoded partial products},
   volume       = {74},
   year         = {2025},
 }
@@ -113,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). LAShards: Low-overhead and self-adaptive MRC construction for non-stack algorithms. <em>TC</em>, <em>74</em>(10), 3490-3503. (<a href='https://doi.org/10.1109/TC.2025.3590811'>www</a>)
+(2025). Multi-path bound for parallel tasks with conditional branches. <em>TC</em>, <em>74</em>(11), 3873-3887. (<a href='https://doi.org/10.1109/TC.2025.3604469'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Shared cache systems have become increasingly crucial, especially in cloud services, where the Miss Ratio Curve (MRC) is a widely used tool for evaluating cache performance. The MRC depicts the relationship between the cache miss ratio and cache size, indicating how cache performance trends with varying cache sizes. Recent advancements have enabled efficient MRC construction for stack replacement policies. For non-stack policies, miniature simulation downsizes the actual cache size and data stream through spatially hashed sampling, providing a general method for MRC construction. However, this approach still faces significant challenges. Firstly, constructing an MRC requires numerous mini-caches to obtain miss ratios, consuming significant cache resources, leading to tremendous memory and computing overhead. Secondly, it cannot adapt to the dynamic I/O workloads, resulting in less precise MRC. To address these issues, we propose LAShards, a low-overhead and self-adaptive MRC construction method for non-stack replacement policies. The key idea behind LAShards is to exploit the locality and burstiness in access patterns. It can statically reduce memory usage and dynamically adapt to workloads. Compared to previous works, LAShards can save up to $20\boldsymbol{\times}$ of memory resources, and increase throughput by up to $10\boldsymbol{\times}$.},
+  abstract     = {Parallel execution and conditional execution are increasingly prevalent in modern embedded systems. In real-time scheduling, a fundamental problem is how to upper-bound the response times of a task. Recent work applied the multi-path technique to reduce the response time bound for tasks with parallel execution, but left tasks with conditional execution as an open problem. This paper focuses on upper-bounding response times for tasks with both parallel execution and conditional execution using the multi-path technique. By designing a delicate abstraction regarding the multiple paths of various conditional branches, we derive a new response time bound. We further apply this response time bound into the scheduling of multiple parallel tasks with conditional branches. Experiments demonstrate that the proposed bound significantly advances the state-of-the-art, reducing the response time bound by 9.4% and improving the schedulability by 31.2% on average.},
   archive      = {J_TC},
-  author       = {Sanle Zhao and Yujuan Tan and Zhaoyang Zeng and Jing Yu and Zhuoxin Bai and Ao Ren and Xianzhang Chen and Duo Liu},
-  doi          = {10.1109/TC.2025.3590811},
+  author       = {Qingqiang He and Nan Guan and Zhe Jiang and Mingsong Lv},
+  doi          = {10.1109/TC.2025.3604469},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3490-3503},
+  month        = {11},
+  number       = {11},
+  pages        = {3873-3887},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {LAShards: Low-overhead and self-adaptive MRC construction for non-stack algorithms},
+  title        = {Multi-path bound for parallel tasks with conditional branches},
   volume       = {74},
   year         = {2025},
 }
@@ -134,20 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). PRECIOUS: Approximate real-time computing in MLC-MRAM based heterogeneous CMPs. <em>TC</em>, <em>74</em>(10), 3476-3489. (<a href='https://doi.org/10.1109/TC.2025.3590809'>www</a>)
+(2025). The metric relationship between extra connectivity and extra diagnosability of multiprocessor systems. <em>TC</em>, <em>74</em>(11), 3860-3872. (<a href='https://doi.org/10.1109/TC.2025.3604468'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Enhancing quality of service (QoS) in approximate-computing (AC) based real-time systems, without violating power limits is becoming increasingly challenging due to contradictory constraints, i.e., power consumption and time criticality, as multicore computing platforms are becoming heterogeneous. To fulfill these constraints and optimise system QoS, AC tasks should be judiciously mapped on such platforms. However, prior approaches rarely considered the problem of AC task deployment on heterogeneous platforms. Moreover, the majority of prior approaches typically neglect the runtime architectural phenomena, which can be accounted for along with the approximation tolerance of the applications to enhance the QoS. We present PRECIOUS, a novel hybrid offline-online approach that first schedules AC real-time tasks on a heterogeneous multicore with an objective to maximise QoS and determines the appropriate cluster for each task constrained by a system-wide power limit, deadline, and task-dependency. At runtime, PRECIOUS introduces novel architectural techniques for the AC tasks, where tasks are executed on a heterogeneous platform equipped with multilevel-cell (MLC)-MRAM based last-level cache to improve energy efficiency and performance by prudentially leveraging storage density of MLC-MRAM while ameliorating associated high write latency and write energy. Our novel block management for the MLC-MRAM cache further improves performance of the system, which we exploit opportunistically to enhance system QoS, and turn off processor cores during the dynamically generated slacks. PRECIOUS-Offline achieves up to 76% QoS for a specific task-set, surpassing prior art, whereas PRECIOUS-Online enhances QoS by 9.0% by reducing cache miss-rate by 19% on a 64-core heterogeneous system without incurring any energy overhead over a conventional MRAM based cache design.},
+  abstract     = {As multiprocessor systems scale up, $h$-extra connectivity and $h$-extra diagnosability serve as two pivotal metrics for assessing the reliability of the underlying interconnection networks. To ensure that each component of the survival graph holds no fewer than $h + 1$ vertices, the $h$-extra connectivity and $h$-extra diagnosability have been proposed to characterize the fault tolerability and self-diagnosing capability of networks, respectively. Many efforts have been made to establish the quantifiable relationship between these metrics but it is less than optimal. This work addresses the flaws of the existing results and proposes a novel proof to determine the metric relationship between $h$-extra connectivity and $h$-extra diagnosability under the PMC and MM* models. Our approach overcomes the defect of previous results by abandoning the network’s regularity and independence number. Furthermore, we apply the suggested metric to establish the $h$-extra diagnosability of a new network class, named generalized exchanged X-cube-like network $GEXC(s,t)$, which takes dual-cube-like network, generalized exchanged hypercube, generalized exchanged crossed cube, and locally generalized exchanged twisted cube as special cases. Finally, we propose the $h$-extra diagnosis strategy ($h$-EDS) and design two self-diagnosis algorithms AhED-PMC and AhED-MM*, and then conduct experiments on $GEXC(s,t)$ and the real-world network DD-$g648$ to show the high accuracy and superior performance of the proposed algorithms.},
   archive      = {J_TC},
-  author       = {Sangeet Saha and Shounak Chakraborty and Sukarn Agarwal and Magnus Själander and Klaus McDonald-Maier},
-  doi          = {10.1109/TC.2025.3590809},
+  author       = {Yifan Li and Shuming Zhou and Sun-Yuan Hsieh and Qifan Zhang},
+  doi          = {10.1109/TC.2025.3604468},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3476-3489},
+  month        = {11},
+  number       = {11},
+  pages        = {3860-3872},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {PRECIOUS: Approximate real-time computing in MLC-MRAM based heterogeneous CMPs},
+  title        = {The metric relationship between extra connectivity and extra diagnosability of multiprocessor systems},
   volume       = {74},
   year         = {2025},
 }
@@ -155,20 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A highly reliable multiplexing scheme in hypercube-structured hierarchical networks. <em>TC</em>, <em>74</em>(10), 3462-3475. (<a href='https://doi.org/10.1109/TC.2025.3589732'>www</a>)
+(2025). Efficient sketching for heavy item-oriented data stream mining with memory constraints. <em>TC</em>, <em>74</em>(11), 3845-3859. (<a href='https://doi.org/10.1109/TC.2025.3604467'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The design and optimization of network topologies play a critical role in ensuring the performance and efficiency of high-performance computing (HPC) systems. Traditional topology designs often fall short in satisfying the stringent requirements of HPC environments, particularly with respect to fault tolerance, latency, and bandwidth. To address these limitations, we propose a novel class of hierarchical networks, termed Hypercube-Structured Hierarchical Networks (HHNs). This architecture generalizes and extends existing architectures such as half hypercube networks and complete cubic networks, while also introducing previously unexplored hierarchical designs. HHNs exhibit several advantages, particularly in high-performance computing. Most notably, their high connectivity enables efficient parallel data processing, and their hierarchical structure supports scalability to accommodate growing computational demands. Furthermore, we present a unicast routing strategy and a broadcast algorithm for HHNs. A fault-tolerant algorithm is also designed based on the construction of disjoint paths. Experimental evaluations demonstrate that HHNs consistently outperform mainstream architectures in critical performance metrics, including scalability, latency, and robustness to failures.},
+  abstract     = {Accurate and fast data stream mining is critical to many tasks, including real-time series analysis for mobile sensor data, big data management and machine learning. Various heavy-oriented item detection tasks, such as identifying heavy hitters, heavy changers, persistent items, and significant items, have garnered considerable attention from both industry and academia. Unfortunately, as data stream speeds continue to increase and the available memory, particularly in L1 cache, remains limited for real-time processing, existing schemes face challenges in simultaneously achieving high detection accuracy, memory efficiency, and fast update throughput, as we reveal. To tackle this conundrum, we propose a versatile and elegant sketch framework named Tight-Sketch, which supports a spectrum of heavy-based detection tasks. Recognizing that, in practice, most items are cold (non-heavy/persistent/significant), we implement distinct eviction strategies for different item types. This approach allows us to swiftly discard potentially cold items while offering enhanced protection to hot ones (heavy/persistent/significant). Additionally, we introduce an eviction method based on stochastic decay, ensuring that Tight-Sketch incurs only small one-sided errors without overestimation. To further enhance detection accuracy under extremely constrained memory allocations, we introduce Tight-Opt, a variant incorporating two optimization strategies. We conduct extensive experiments across various detection tasks to demonstrate that Tight-Sketch significantly outperforms existing methods in terms of both accuracy and update speed. Furthermore, by utilizing Single Instruction Multiple Data (SIMD) instructions, we enhance Tight-Sketch’s update throughput by up to 36%. We also implement Tight-Sketch on FPGA to validate its practicality and low resource overhead in hardware deployments.},
   archive      = {J_TC},
-  author       = {Xuanli Liu and Zhenjiang Dong and Weibei Fan and Mengjie Lv and Xueli Sun and Jin Qi and Sun-Yuan Hsieh},
-  doi          = {10.1109/TC.2025.3589732},
+  author       = {Weihe Li and Paul Patras},
+  doi          = {10.1109/TC.2025.3604467},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3462-3475},
+  month        = {11},
+  number       = {11},
+  pages        = {3845-3859},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {A highly reliable multiplexing scheme in hypercube-structured hierarchical networks},
+  title        = {Efficient sketching for heavy item-oriented data stream mining with memory constraints},
   volume       = {74},
   year         = {2025},
 }
@@ -176,20 +176,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The case for secure miniservers beyond the edge. <em>TC</em>, <em>74</em>(10), 3448-3461. (<a href='https://doi.org/10.1109/TC.2025.3589691'>www</a>)
+(2025). Reliability-aware optimization of task offloading for UAV-assisted edge computing. <em>TC</em>, <em>74</em>(11), 3832-3844. (<a href='https://doi.org/10.1109/TC.2025.3604463'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Beyond edge devices can function off the power grid and without batteries, making them suitable for deployment in hard-to-reach environments. As the energy budget is extremely tight, energy-hungry long-distance communication required for offloading computation or reporting results to a server becomes a significant limitation. Based on the observation that the energy required for communication decreases with shorter distances, this paper makes a case for the deployment of secure beyond edge miniservers. These are strategically positioned, lightweight local servers designed to support beyond edge devices without compromising the privacy of sensitive information. We demonstrate that even for relatively small scale representative computations – which are more likely to fit into the tight power budget of a beyond edge device for local processing – deploying a beyond edge miniserver can lead to higher performance. To this end, we consider representative deployment scenarios of practical importance, including but not limited to agricultural systems or building structures, where beyond edge miniservers enable highly energy-efficient real-time data processing.},
+  abstract     = {Uncrewed aerial vehicles (UAV) are widely used for edge computing in poor infrastructure scenarios due to their deployment flexibility and mobility. In UAV-assisted edge computing systems, multiple UAVs can cooperate with the cloud to provide superior computing capability for diverse innovative services. However, many service-related computational tasks may fail due to the unreliability of UAVs and wireless transmission channels. Diverse solutions were proposed, but most of them employ time-driven strategies which introduce unwanted decision waiting delays. To address this problem, this paper focuses on a task-driven reliability-aware cooperative offloading problem in UAV-assisted edge-enhanced networks. The issue is formulated as an optimization problem which jointly optimizes UAV trajectories, offloading decisions, and transmission power, aiming to maximize the long-term average task success rate. Considering the discrete-continuous hybrid action space of the problem, a dependence-aware latent-space representation algorithm is proposed to represent discrete-continuous hybrid actions. Furthermore, we design a novel deep reinforcement learning scheme by combining the representation algorithm and a twin delayed deep deterministic policy gradient algorithm. We compared our proposed algorithm with four alternative solutions via simulations and a realistic Kubernetes testbed-based setup. The test results show how our scheme outperforms the other methods, ensuring significant improvements in terms of task success rate.},
   archive      = {J_TC},
-  author       = {Salonik Resch and Hüsrev Cılasun and Zamshed I. Chowdhury and Masoud Zabihi and Yang Lv and Jian-Ping Wang and Sachin S. Sapatnekar and Ismail Akturk and Ulya R. Karpuzcu},
-  doi          = {10.1109/TC.2025.3589691},
+  author       = {Hao Hao and Changqiao Xu and Wei Zhang and Xingyan Chen and Shujie Yang and Gabriel-Miro Muntean},
+  doi          = {10.1109/TC.2025.3604463},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3448-3461},
+  month        = {11},
+  number       = {11},
+  pages        = {3832-3844},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {The case for secure miniservers beyond the edge},
+  title        = {Reliability-aware optimization of task offloading for UAV-assisted edge computing},
   volume       = {74},
   year         = {2025},
 }
@@ -197,20 +197,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A highly scalable network architecture for optical data centers. <em>TC</em>, <em>74</em>(10), 3433-3447. (<a href='https://doi.org/10.1109/TC.2025.3589688'>www</a>)
+(2025). A computation-quantized training framework to generate accuracy lossless QNNs for one-shot deployment in embedded systems. <em>TC</em>, <em>74</em>(11), 3818-3831. (<a href='https://doi.org/10.1109/TC.2025.3603732'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Optical Data Center Networks (ODCNs) are high-performance interconnect architectures in parallel and distributed computing, providing higher bandwidth and lower power consumption. However, current optical DCNs struggle to achieve both high scalability and incremental scalability simultaneously. In this paper, we propose an extended Exchanged hyperCube, denoted by ExCube, which is a highly scalable network architecture for optical data centers. Firstly, we detail the address scheme and constructing method for ExCube, including exponential, linear, and composite scalability, which can adapt to different scalability requirements. ExCube boasts flexible scalability modes, including exponential, linear, and composite scalability, meeting diverse scalability requirements. In particular, the diameter of ExCube remains unchanged as its size increases linearly, indicating superior incremental scalability. Secondly, an efficient routing algorithm with linear time complexity is presented to determine the shortest path between any two different ToRs in ExCube. Additionally, we propose a per-flow scheduling algorithm based on the disjoint paths to enhance the performance of ExCube. The optical devices in ExCube are identical to those in existing optical DCNs, such as WaveCube and OSA, facilitating its construction. Experimental results demonstrate that ExCube outperforms WaveCube in terms of throughput and reduces data transmission time by 5%-35%. Further analysis reveals that ExCube maintains comparable performance to WaveCube across several critical metrics, including low diameter and link complexity. Compared with advanced networks, the overall cost-effectiveness and energy efficiency of ExCube have been reduced by 36.7% and 46.5%, respectively.},
+  abstract     = {Quantized Neural Networks (QNNs) have received increasing attention, since they can enrich intelligent applications deployed on embedded devices with limited resources, such as mobile devices and AIoT systems. Unfortunately, the numerical and computational discrepancies between training systems (i.e., servers) and deployment systems (e.g., embedded ends) may lead to large accuracy drop for QNNs in real deployments. We propose a Computation-Quantized Training Framework (CQTF), which simulates deployment-time fixed-point computation during training to enable one-shot, lossless deployment. The training procedure of CQTF is built upon a well-formulated quantization-specific numerical representation that quantifies both numerical and computational discrepancies between training and deployment. Leveraging this representation, forward propagation executes all computations in quantization mode to simulate deployment-time inference, while backward propagation identifies and mitigates gradient vanishing through an efficient floating-point gradient update scheme. Benchmark-based experiments demonstrate the efficiency of our approach, which can achieve no accuracy loss from training to deployment. Compared with existing five frameworks, the deployed accuracy of CQTF can be improved by up to 18.41%.},
   archive      = {J_TC},
-  author       = {Weibei Fan and Yao Pan and Fu Xiao and Pinchang Zhang and Lei Han and Sun-Yuan Hsieh},
-  doi          = {10.1109/TC.2025.3589688},
+  author       = {Xingzhi Zhou and Wei Jiang and Jinyu Zhan and Lingxin Jin and Lin Zuo},
+  doi          = {10.1109/TC.2025.3603732},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3433-3447},
+  month        = {11},
+  number       = {11},
+  pages        = {3818-3831},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {A highly scalable network architecture for optical data centers},
+  title        = {A computation-quantized training framework to generate accuracy lossless QNNs for one-shot deployment in embedded systems},
   volume       = {74},
   year         = {2025},
 }
@@ -218,20 +218,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). GATe: Efficient graph attention network acceleration with near-memory processing. <em>TC</em>, <em>74</em>(10), 3419-3432. (<a href='https://doi.org/10.1109/TC.2025.3588317'>www</a>)
+(2025). Enhancing in-network computing deployment via collaboration across planes. <em>TC</em>, <em>74</em>(11), 3805-3817. (<a href='https://doi.org/10.1109/TC.2025.3603730'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Graph Attention Network (GAT) has gained widespread adoption thanks to its exceptional performance in processing non-Euclidean graphs. The critical components of a GAT model involve aggregation and attention, which cause numerous main-memory access, occupying significant inference time. Recently, much research has proposed near-memory processing (NMP) architectures to accelerate aggregation. However, graph attention requires additional operations distinct from aggregation, making previous NMP architectures less suitable for supporting GAT, as they typically target aggregation-only workloads. In this paper, we propose GATe, a practical and efficient GAT accelerator with NMP architecture. To the best of our knowledge, this is the first time that accelerates both attention and aggregation computation on DIMM. We unify feature vector access to eliminate the two repetitive memory accesses to source nodes caused by the sequential phase-by-phase execution of attention and aggregation. Next, we refine the computation flow to reduce data dependencies in concatenation and softmax, which lowers on-chip memory usage and communication overhead. Additionally, we introduce a novel sharding method that enhances data reusability of high-degree nodes. Experiments show that GATe achieves substantial speedup of GAT attention and aggregation phases up to 6.77${\boldsymbol\times}$ and 2.46${\boldsymbol\times}$, with average to 3.69${\boldsymbol\times}$ and 2.24${\boldsymbol\times}$, respectively, compared to state-of-the-art NMP works GNNear and GraNDe.},
+  abstract     = {The new paradigm of In-network computing (INC) permits service computation to be executed within network paths, rather than solely on dedicated servers. Although the programmable data plane has showcased notable performance advantages for INC application deployments, its effectiveness is constrained by resource limitations, potentially impeding the expressiveness and scalability of these deployments. Conversely, delegating computational tasks to the control plane, supported by general-purpose servers with abundant resources, offers increased flexibility. Nonetheless, this strategy compromises efficiency to a considerable extent, particularly when the system operates under heavy load. To simultaneously exploit the efficiency of data plane and the flexibility of control plane, we propose Carlo, a cross-plane collaborative optimization framework to support the network-wide deployment of multiple INC applications across both the control and data plane. Carlo first analyzes resource requirements of various INC applications across different planes. It then establishes mathematical models for resource allocation in cross-plane and automatically generates solutions using proposed algorithms. We have implemented the prototype of Carlo on Intel Tofino ASIC switches and DPDK. Experimental results demonstrate that Carlo can effectively trade off between computation time and deployment performance while avoiding performance degradation.},
   archive      = {J_TC},
-  author       = {Shiyan Yi and Yudi Qiu and Guohao Xu and Lingfei Lu and Xiaoyang Zeng and Yibo Fan},
-  doi          = {10.1109/TC.2025.3588317},
+  author       = {Xiaoquan Zhang and Lin Cui and WaiMing Lau and Fung Po Tso and Yuhui Deng and Weijia Jia},
+  doi          = {10.1109/TC.2025.3603730},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3419-3432},
+  month        = {11},
+  number       = {11},
+  pages        = {3805-3817},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {GATe: Efficient graph attention network acceleration with near-memory processing},
+  title        = {Enhancing in-network computing deployment via collaboration across planes},
   volume       = {74},
   year         = {2025},
 }
@@ -239,20 +239,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Trajectory optimization and power allocation for multi-UAV wireless networks: A communication-based multi-agent deep reinforcement learning approach. <em>TC</em>, <em>74</em>(10), 3404-3418. (<a href='https://doi.org/10.1109/TC.2025.3587976'>www</a>)
+(2025). Load balancing scheduling for batch-ordered job-store: Online vs. offline. <em>TC</em>, <em>74</em>(11), 3778-3791. (<a href='https://doi.org/10.1109/TC.2025.3603725'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Uncrewed Aerial Vehicles (UAVs) play a crucial role in next-generation mobile communication systems, serving as aerial base stations to provide services when ground base stations fail to meet coverage requirements. However, trajectory planning and power allocation for collaborative UAVs as Aerial Base Stations (UAV-ABSs) face several challenges, including energy limitations, flight time constraints, high optimization complexity due to dynamic environment interactions, and insufficient decision-making information. To address these challenges, this paper proposes a multi-agent reinforcement learning algorithm, namely Communication Actor Centralized Attention Critic Algorithm (CATEN), to jointly optimize the flight trajectory and power allocation strategies of UAV-ABSs. The proposed algorithm aims to maximize the number of users meeting Quality of Service (QoS) requirements while minimizing UAV-ABSs energy consumption. To achieve this, firstly, an information sharing mechanism is designed to improve the collaboration efficiency among UAV-ABSs. It leverages distributed storage, intelligent scheduling of UAV-ABSs interaction experiences, and gating units to enhance information screening and fusion. Secondly, a multi-head attention critic network is proposed to capture correlations among UAV-ABSs from different subspaces. This allows the network to prioritize value information, reduce redundancy, and strengthen UAV-ABSs collaboration and decision-making capabilities. Simulation results demonstrate that CATEN achieves better performance in terms of the number of served users and energy consumption compared to existing algorithms, exhibiting good robustness and adaptability in dynamic environments.},
+  abstract     = {Efficient resource utilization is crucial in real-world applications, especially for balancing loads across machines handling specific job types. This paper introduces a novel batch-ordered job-store scheduling model, where jobs in a batch are scheduled sequentially, with their operations allocated in a round-robin fashion across two scenarios. We establish that this problem is NP-hard and analyze it in both online and offline settings. In the online case, we first examine the exclusive scenario, where operations within the same job must be scheduled on different machines, and show that a load greedy (LG) algorithm achieves a tight competitive ratio of $2-\frac{1}{m}$, with $m$ representing the number of machines. Next, we consider the circular scenario, which requires maintaining the circular order of operations across ordered machines. In this context, we analyze potential anomalies in load distribution during local optimality achieved by the ordered load greedy (OLG) algorithm and provide bounds on the occurrence of these anomalies and the maximum load in each local scheduling round. In the offline case, we abstract each OLG scheduling process as a generalized circular sequence alignment (CSA) problem and develop a dynamic programming-based matching (DPM) algorithm to solve it. To further enhance load balancing, we develop a dynamic programming-based optimization (DPO) algorithm to schedule multiple jobs simultaneously in both scenarios. Experimental results confirm the efficiency of DPM for the CSA problem, and we validate the load balancing effectiveness of both online and offline algorithms using real traffic datasets. These theoretical findings and algorithmic implementations lay a solid groundwork for future practical advancements.},
   archive      = {J_TC},
-  author       = {Zimeng Yuan and Yuanguo Bi and Yanbo Fan and Yuheng Liu and Lianbo Ma and Liang Zhao and Qiang He},
-  doi          = {10.1109/TC.2025.3587976},
+  author       = {Mengbing Zhou and Yang Wang and Bocong Zhao and Chengzhong Xu},
+  doi          = {10.1109/TC.2025.3603725},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3404-3418},
+  month        = {11},
+  number       = {11},
+  pages        = {3778-3791},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Trajectory optimization and power allocation for multi-UAV wireless networks: A communication-based multi-agent deep reinforcement learning approach},
+  title        = {Load balancing scheduling for batch-ordered job-store: Online vs. offline},
   volume       = {74},
   year         = {2025},
 }
@@ -260,20 +260,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). WOLF: Weight-level OutLier and fault integration for reliable LLM deployment. <em>TC</em>, <em>74</em>(10), 3390-3403. (<a href='https://doi.org/10.1109/TC.2025.3587957'>www</a>)
+(2025). Information sharing in multi-tenant metaverse via intent-driven multicasting. <em>TC</em>, <em>74</em>(11), 3763-3777. (<a href='https://doi.org/10.1109/TC.2025.3603720'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The rapid advancement of Transformer-based large language models (LLMs) is presenting significant challenges for their deployment, primarily due to their enormous parameter sizes and intermediate results, which create a bottleneck in memory capacity for effective inference. Compared to traditional DRAM, Non-Volatile Memory (NVM) technologies such as Resistive Random-Access Memory (RRAM) and Phase-Change Memory (PCM) offer higher integration density, making them promising alternatives. However, before NVM can be widely adopted, its reliability issues, particularly manufacturing defects and endurance faults, must be addressed. In response to the limited memory capacity and reliability challenges of deploying LLMs in NVM, we introduce a novel low-overhead weight-level map, named Wolf. Wolf not only integrates the addresses of faulty weights to support efficient fault tolerance but also includes the addresses of outlier weights in LLMs. This allows for tensor-wise segmented quantization of both outliers and regular weights, enabling lower-bitwidth quantization. The Wolf framework uses a Bloom Filter-based map to efficiently manage outliers and faults. By employing shared hashes for outliers and faults and specific hashes for faults, Wolf significantly reduces the area overhead. Building on Wolf, we propose a novel fault tolerance method that resolves the observed issue of clustering critical incorrect outliers and fully leverages the inherent resilience of LLMs to improve fault tolerance capabilities. As a result, Wolf achieves segment-wise INT4 quantization with enhanced accuracy. Moreover, Wolf can adeptly handle Bit Error Rates as high as $1 {\boldsymbol{\times}} 10^{-2}$ without compromising accuracy, in stark contrast to the state-of-the-art approach where accuracy declines by more than 20%.},
+  abstract     = {A multi-tenant metaverse enables multiple users in a common virtual world to interact with each other online. Information sharing will occur when interactions between a user and the environment are multicast to other users by an interactive metaverse (IM) service. However, ineffective information-sharing strategies intensify competitions among users for limited resources in networks, and fail to interpret optimization intent prompts conveyed in high-level natural languages, ultimately diminishing user immersion. In this paper, we explore reliable information sharing in a multi-tenant metaverse with time-varying resource capacities and costs, where IM services are unreliable and alter the volumes of data processed by them, while the service provider dynamically adjusts global intent to minimize multicast delays and costs. To this end, we first formulate the information sharing problem as a Markov decision process and show its NP-hardness. Then, we propose a learning-based system GTP, which combines the proximal policy optimization reinforcement learning with feature extraction networks, including graph attention network and gated recurrent unit, and a Transformer encoder for multi-feature comparison to process a sequence of incoming multicast requests without the knowledge of future arrival information. The GTP operates through three modules: a deployer that allocates primary and backup IM services across the network to minimize a weighted goal of server computation costs and communication distances between users and services, an intent extractor that dynamically infers provider intent conveyed in natural language, and a router that constructs on-demand multicast routing trees adhering to users, the provider, and network constraints. We finally conduct theoretical and empirical analysis on the proposed algorithms for the system. Experimental results show that the proposed algorithms are promising, and superior to their comparison baseline algorithms.},
   archive      = {J_TC},
-  author       = {Chong Wang and Wanyi Fu and Jiangwei Zhang and Shiyao Li and Rui Hou and Jian Yang and Yu Wang},
-  doi          = {10.1109/TC.2025.3587957},
+  author       = {Yu Qiu and Min Chen and Weifa Liang and Lejun Ai and Dusit Niyato},
+  doi          = {10.1109/TC.2025.3603720},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3390-3403},
+  month        = {11},
+  number       = {11},
+  pages        = {3763-3777},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {WOLF: Weight-level OutLier and fault integration for reliable LLM deployment},
+  title        = {Information sharing in multi-tenant metaverse via intent-driven multicasting},
   volume       = {74},
   year         = {2025},
 }
@@ -281,20 +281,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A high-efficiency parallel mechanism for canonical polyadic decomposition on heterogeneous computing platform. <em>TC</em>, <em>74</em>(10), 3377-3389. (<a href='https://doi.org/10.1109/TC.2025.3587623'>www</a>)
+(2025). EABE-PUFPH: Efficient attribute-based encryption with reliable policy updating under full policy hiding. <em>TC</em>, <em>74</em>(11), 3750-3762. (<a href='https://doi.org/10.1109/TC.2025.3603717'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Canonical Polyadic decomposition (CPD) obtains the low-rank approximation for high-order multidimensional tensors through the summation of a sequence of rank-one tensors, greatly reducing storage and computation overhead. It is increasingly being used in the lightweight design of artificial intelligence and big data processing. The existing CPD technology exhibits inherent limitations in simultaneously achieving high accuracy and high efficiency. In this paper, a heterogeneous computing method for CPD is proposed to optimize computing efficiency with guaranteed convergence accuracy. Specifically, a quasi-convex decomposition loss function is constructed and the extreme points of the Kruskal matrix rows have been solved. Further, the massively parallelized operators in the algorithm are extracted, a software-hardware integrated scheduling method is designed, and the deployment of CPD on heterogeneous computing platforms is achieved. Finally, the memory access strategy is optimized to improve memory access efficiency. We tested the algorithm on real-world and synthetic sparse tensor datasets, numerical experimental results show that compared with the state-of-the-art method, the proposed method has a higher convergence accuracy and computing efficiency. Compared to the standard CPD parallel library, the method achieves efficiency improvements of tens to hundreds of times while maintaining the same accuracy.},
+  abstract     = {Ciphertext-policy attribute-based encryption (CP-ABE) has garnered significant attention for enabling fine-grained access control over encrypted data in cloud environments. However, in traditional CP-ABE schemes, access policies are transmitted in plaintext, which can lead to sensitive information leakage. To mitigate this risk, hiding access policies has become essential. Under the condition of full hidden access policies, realizing efficient and accurate decryption and dynamic policy updating has become an urgent challenge. To tackle these challenges, we present an efficient attribute-based encryption with reliable policy updating under full policy hiding (EABE-PUFPH) scheme, which effectively integrates full policy hiding with policy updating capabilities. Furthermore, we conduct a rigorous security analysis and performance evaluation of the EABE-PUFPH scheme. Evaluation results show that the EABE-PUFPH scheme achieves full hidden access policies without affecting decryption efficiency, and its efficiency surpasses other similar schemes that achieve full policy hiding.},
   archive      = {J_TC},
-  author       = {Xiaosong Peng and Laurence T. Yang and Xiaokang Wang and Debin Liu and Jie Li},
-  doi          = {10.1109/TC.2025.3587623},
+  author       = {Chenghao Gu and Jiguo Li and Yichen Zhang and Yang Lu and Jian Shen},
+  doi          = {10.1109/TC.2025.3603717},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3377-3389},
+  month        = {11},
+  number       = {11},
+  pages        = {3750-3762},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {A high-efficiency parallel mechanism for canonical polyadic decomposition on heterogeneous computing platform},
+  title        = {EABE-PUFPH: Efficient attribute-based encryption with reliable policy updating under full policy hiding},
   volume       = {74},
   year         = {2025},
 }
@@ -302,20 +302,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Reliable and efficient multi-path transmission based on disjoint paths in data center networks. <em>TC</em>, <em>74</em>(10), 3362-3376. (<a href='https://doi.org/10.1109/TC.2025.3587618'>www</a>)
+(2025). FSA-hash: Flow-size-aware sketch hashing for software switches. <em>TC</em>, <em>74</em>(11), 3736-3749. (<a href='https://doi.org/10.1109/TC.2025.3603716'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Multi-path transmission enables load balancing and improves network performance in data center networks (DCNs). It increases the possibility of network congestion and makes traditional network traffic engineering methods inefficient due to the uneven distribution of network traffic in data centers. In this paper, we present a reliable and efficient Disjoint paths based Multi-Path Transmission scheme (DMPT) that selects distributed requests through topology awareness. Firstly, we propose disjoint path construction algorithms through rigorous theoretical proof, aiming at the different transmission requirements of DCNs. Secondly, we offer an optimal solution to the disjoint multi-path selection problem, which is aimed at the trade-off between link load and transmission time. Furthermore, DMPT can split the flow over multiple transmission paths based on the link status. Finally, extensive experiments are executed for DMPT on a novel EHDC of DCN that is based on exchanged hypercube. The experimental results show that DMPT can reduce the average running time by 18.6%, and the average path length is close to the optimal path. Furthermore, it achieves significant improvements in balancing network link traffic and facilitating deployment, which also reflects the advantages of topology aware multiplexing in practice.},
+  abstract     = {In modern data centers and enterprise networks, software switches have become critical components for achieving flexible and efficient network management. Due to resource constraints in software switches, sketches have emerged as a promising approach for network traffic measurement. However, their accuracy is often impacted by hash collisions. Existing hash functions treat all collisions equally, failing to account for the differing impacts of collisions involving elephant flows versus mouse flows. We propose FSA-Hash, a novel flow-size-aware hashing scheme that separates elephant flows from each other and from mouse flows, minimizing the most detrimental collisions. FSA-Hash is designed based on two insights: separating elephant flows from mouse flows avoids overestimating mouse flows, while separating elephant flows from each other enables accurate heavy-hitter detection. We implement FSA-Hash using machine learning models trained on network traffic data (LFSA-Hash), and also design a lightweight online variant (OLFSA-Hash) that learns the hash model solely from sketch queries on the software switch, obviating traffic collection overheads. Evaluations across four sketches and two tasks demonstrate FSA-Hash’s superior accuracy over standard hash functions. Moreover, OLFSA-Hash closely matches LFSA-Hash’s performance, making it an attractive option for adaptively refining the hash model without monitoring traffic.},
   archive      = {J_TC},
-  author       = {Weibei Fan and Yao Pan and Fu Xiao and Mengjie Lv and Lei Han and Shui Yu},
-  doi          = {10.1109/TC.2025.3587618},
+  author       = {Fuliang Li and Kejun Guo and Yiming Lv and Jiaxing Shen and Yuting Liu and Xingwei Wang and Jiannong Cao},
+  doi          = {10.1109/TC.2025.3603716},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3362-3376},
+  month        = {11},
+  number       = {11},
+  pages        = {3736-3749},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Reliable and efficient multi-path transmission based on disjoint paths in data center networks},
+  title        = {FSA-hash: Flow-size-aware sketch hashing for software switches},
   volume       = {74},
   year         = {2025},
 }
@@ -323,20 +323,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Towards a unified framework for modeling and analyzing user-defined online non-preemptive scheduling policies. <em>TC</em>, <em>74</em>(10), 3347-3361. (<a href='https://doi.org/10.1109/TC.2025.3587514'>www</a>)
+(2025). NetKG: Synthesizing interpretable network router configurations with knowledge graph. <em>TC</em>, <em>74</em>(11), 3722-3735. (<a href='https://doi.org/10.1109/TC.2025.3603712'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper presents a unified formal framework, called ReTA, that allows users to define scheduling problems using a user-friendly domain-specific language (DSL) and automatically obtain response times of jobs in return. ReTA supports user-defined online scheduling policies (beyond work-conserving or priority-based scheduling) for heterogeneous computing resource types with multiple instances per type (e.g., multiple CPU cores, GPUs, DSPs, and FPGAs on one single chip), thus supporting global, partitioned, and clustered scheduling. In the current version of ReTA, we focus on non-preemptive periodic tasks as these are susceptible to scheduling anomalies and hence harder to analyze. ReTA performs response-time analysis by constructing a timed labeled transition system (TLTS) from the domain model as a basis for performing a reachability analysis enriched with efficient state-space reduction techniques. Our empirical evaluations show that ReTA identifies up to 50 times more schedulable task sets than fixed-point iteration-based analyses. With a runtime on the order of a few minutes, ReTA produces highly accurate results two-orders of magnitude faster than an exact Timed Automata-based analysis in UPPAAL (e.g., for systems with 16 cores and 32 tasks).},
+  abstract     = {Advanced router configuration synthesizers aim to prevent network outages by automatically synthesizing configurations that implement routing protocols. However, the lack of interpretability makes operators uncertain about how low-level configurations are synthesized and whether the automatically generated configurations correctly align with routing intents. This limitation restricts the practical deployment of synthesizers. In this paper, we present NetKG, an interpretable configuration synthesis tool. $(i)$ NetKG leverages a knowledge graph as the intermediate representation for configurations, reformulating the configuration synthesis problem as a configuration knowledge completion task; $(ii)$ NetKG regards network intents as query tasks that need to be satisfied in the current configuration space, achieving this through knowledge reasoning and completion; $(iii)$ NetKG explains the synthesis process and the consistency between configuration and intent through the configuration knowledge involved in reasoning and completion. We show that NetKG can scale to realistic networks and automatically synthesize intent-compliant configurations for static routes, OSPF, and BGP. It can explain the consistency between configuration and intent at different granularities through a visual interface. Experimental results indicate that NetKG synthesizes configurations in 2 minutes for a network with up to 197 routers, which is 7.37x faster than the SMT-based synthesizer.},
   archive      = {J_TC},
-  author       = {Pourya Gohari and Jeroen Voeten and Mitra Nasri},
-  doi          = {10.1109/TC.2025.3587514},
+  author       = {Zhenbei Guo and Fuliang Li and Peng Zhang and Xingwei Wang and Jiannong Cao},
+  doi          = {10.1109/TC.2025.3603712},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3347-3361},
+  month        = {11},
+  number       = {11},
+  pages        = {3722-3735},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Towards a unified framework for modeling and analyzing user-defined online non-preemptive scheduling policies},
+  title        = {NetKG: Synthesizing interpretable network router configurations with knowledge graph},
   volume       = {74},
   year         = {2025},
 }
@@ -344,20 +344,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Scavenger+: Revisiting space-time tradeoffs in key-value separated LSM-trees. <em>TC</em>, <em>74</em>(10), 3332-3346. (<a href='https://doi.org/10.1109/TC.2025.3587513'>www</a>)
+(2025). Scalable encrypted deduplication based on location-hiding secret sharing of data keys. <em>TC</em>, <em>74</em>(11), 3710-3721. (<a href='https://doi.org/10.1109/TC.2025.3603710'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Key-Value Stores (KVS) based on log-structured merge-trees (LSM-trees) are widely used in storage systems but face significant challenges, such as high write amplification caused by compaction. KV-separated LSM-trees address write amplification but introduce significant space amplification, a critical concern in cost-sensitive scenarios. Garbage collection (GC) can reduce space amplification, but existing strategies are often inefficient and fail to account for workload characteristics. Moreover, current key-value (KV) separated LSM-trees overlook the space amplification caused by the index LSM-tree. In this paper, we systematically analyze the sources of space amplification in KV-separated LSM-trees and propose Scavenger+, which achieves a better performance-space trade-off. Scavenger+ introduces (1) an I/O-efficient garbage collection scheme to reduce I/O overhead, (2) a space-aware compaction strategy based on compensated size to mitigate index-induced space amplification, and (3) a dynamic GC scheduler that adapts to system load to make better use of CPU and storage resources. Extensive experiments demonstrate that Scavenger+ significantly improves write performance and reduces space amplification compared to state-of-the-art KV-separated LSM-trees, including BlobDB, Titan, and TerarkDB.},
+  abstract     = {Encrypted deduplication is attractive because it can provide high storage efficiency while protecting data privacy. Most existing schemes achieve encrypted deduplication against brute-force attacks (BFAs) based on server-aided encryption. Unfortunately, the centralized key server in server-aided encryption can potentially become a single point of failure. To this end, distributed server-aided encryption is presented, which splits a system-level master key into multiple shares and distributes them across several key servers. However, it is hard to improve security and scalability with this method simultaneously. This paper presents a secure and scalable encrypted deduplication scheme ScalaDep. ScalaDep achieves a new design paradigm centered on location-hiding secret sharing of data keys. As the number of deployed key servers increases, the attack cost of adversaries increases while the number of requests handled by each key server decreases, enhancing both scalability and security. Furthermore, we propose a two-phase duplicate detection method for our paradigm, which utilizes short hashes and key identifiers to achieve secure duplicate detection against BFAs. Additionally, based on the allreduce algorithm, ScalaDep enables all key servers to collaboratively record the number of client requests and resist online BFAs by enforcing rate limiting. Security analysis and performance evaluation demonstrate the security and efficiency of ScalaDep.},
   archive      = {J_TC},
-  author       = {Jianshun Zhang and Fang Wang and Jiaxin Ou and Yi Wang and Ming Zhao and Sheng Qiu and Junxun Huang and Baoquan Li and Peng Fang and Dan Feng},
-  doi          = {10.1109/TC.2025.3587513},
+  author       = {Guanxiong Ha and Yuchen Chen and Chunfu Jia and Keyan Chen and Rongxi Wang and Qiaowen Jia},
+  doi          = {10.1109/TC.2025.3603710},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3332-3346},
+  month        = {11},
+  number       = {11},
+  pages        = {3710-3721},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Scavenger+: Revisiting space-time tradeoffs in key-value separated LSM-trees},
+  title        = {Scalable encrypted deduplication based on location-hiding secret sharing of data keys},
   volume       = {74},
   year         = {2025},
 }
@@ -365,20 +365,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ML-PTA: A two-stage ML-enhanced framework for accelerating nonlinear DC circuit simulation with pseudo-transient analysis. <em>TC</em>, <em>74</em>(10), 3319-3331. (<a href='https://doi.org/10.1109/TC.2025.3587470'>www</a>)
+(2025). An on-board executable pareto-based iterated local search algorithm for embedded multi-core processor task scheduling. <em>TC</em>, <em>74</em>(11), 3696-3709. (<a href='https://doi.org/10.1109/TC.2025.3603699'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Direct current (DC) analysis lies at the heart of integrated circuit design in seeking DC operating points. Although pseudo-transient analysis (PTA) methods have been widely used in DC analysis in both industry and academia, their initial parameters and stepping strategy require expert knowledge and labor tuning to deliver efficient performance, which hinders their further applications. In this paper, we leverage the latest advancements in machine learning to deploy PTA with more efficient setups for different problems. More specifically, active learning, which automatically draws knowledge from other circuits, is used to provide suitable initial parameters for PTA solver, and then calibrate on-the-fly to further accelerate the simulation process using TD3-based reinforcement learning (RL). To expedite model convergence, we introduce dual agents and a public sampling buffer in our RL method to enhance sample utilization. To further improve the learning efficiency of the RL agent, we incorporate imitation learning to improve reward function and introduce supervised learning to provide a better dual-agent rotation strategy. We make the proposed algorithm a general out-of-the-box SPICE-like solver and assess it on a variety of circuits, demonstrating up to 3.10$\boldsymbol\times$ reduction in NR iterations for the initial stage and 285.71$\boldsymbol\times$ for the RL stage.},
+  abstract     = {The advancement of wearable electronic technology has facilitated the integration of smart wearable devices into artificial intelligence (AI)-driven medical assisted diagnosis. Embedded multi-core processors (MPs) have gradually emerged as pivotal hardware components for smart wearable medical diagnostic devices due to their high performance and flexibility. However, embedded MPs face the challenge of balancing performance, power consumption, and load-balancing. In response, we introduce a Pareto-based iterated local search (PILS) algorithm for task scheduling, which systematically optimizes multiple objectives, alongside a task list model to reduce the dimension of the decision space and enhance scheduling performance. In addition, we present a two-stage discretization scheme to ensure that the proposed algorithm offers meaningful guidance throughout the scheduling process. Simulation and on-board testing results show that the proposed algorithm effectively optimizes energy consumption, task execution time, and load-balancing in embedded MPs task scheduling, indicating the potential of the proposed algorithm in enhancing the performance of smart wearable medical diagnostic devices powered by embedded MPs.},
   archive      = {J_TC},
-  author       = {Zhou Jin and Wenhao Li and Haojie Pei and Xiaru Zha and Yichao Dong and Xiang Jin and Xiao Wu and Dan Niu and Wei W. Xing},
-  doi          = {10.1109/TC.2025.3587470},
+  author       = {Qinglin Zhao and Lixin Zhang and Qi Pan and Kunbo Cui and Mingqi Zhao and Fuze Tian and Bin Hu},
+  doi          = {10.1109/TC.2025.3603699},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3319-3331},
+  month        = {11},
+  number       = {11},
+  pages        = {3696-3709},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {ML-PTA: A two-stage ML-enhanced framework for accelerating nonlinear DC circuit simulation with pseudo-transient analysis},
+  title        = {An on-board executable pareto-based iterated local search algorithm for embedded multi-core processor task scheduling},
   volume       = {74},
   year         = {2025},
 }
@@ -386,20 +386,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). UKFaaS: Lightweight, high-performance and secure FaaS communication with unikernel. <em>TC</em>, <em>74</em>(10), 3305-3318. (<a href='https://doi.org/10.1109/TC.2025.3586031'>www</a>)
+(2025). Thermal elasticity-aware host resource provision for carbon efficiency on virtualized servers. <em>TC</em>, <em>74</em>(11), 3682-3695. (<a href='https://doi.org/10.1109/TC.2025.3603698'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Unikernel is a promising runtime for serverless computing with its lightweight and isolated architecture. It offers a secure and efficient environment for applications. However, famous serverless frameworks like Knative have introduced heavyweight component sidecars to assist function instance deployment in a non-intrusive manner. But the sidecar not only hinders the throughput of unikernel function services but also consumes excessive memory resources. Moreover, the intricate network communication pathways among various services pose significant challenges for deploying unikernels in production serverless environments. Although shared-memory based communication on the same server can solve the communication bottleneck of unikernel-based function instances. The situation where malicious programs on the server make the shared memory untrustworthy limits the deployment of such technologies. We propose UKFaaS, a lightweight and high-performance serverless framework. UKFaaS leverages the advantages of customized operating systems through unikernel and it non-intrusively integrates sidecar functionality into the unikernel, avoiding the overhead of sidecar request forwarding. Additionally, UKFaaS innovatively implements data communication between unikernels in the same server to eliminate VM-Exit bottlenecks in RPC (remote process call) based on VMFUNC without relying on memory sharing. The preliminary experimental results indicate that UKFaaS can realize $1.8\boldsymbol{\times}$-$3.5\boldsymbol{\times}$ request throughput per second (RPS) compared with the advanced serverless system FaasFlow, UaaF and Nightcore in the Google online boutique microservice benchmark.},
+  abstract     = {Servers in modern data centers face increasing challenges from energy inefficiency and thermal-related outages, both of which significantly contribute to their overall carbon footprint. These challenges often arise from a lack of coordination between computational resource provisioning and thermal management capabilities. This paper introduces the concept of thermal elasticity, a system’s intrinsic ability to absorb thermal stress without requiring additional cooling, as a guiding metric for sustainable thermal management. Building on this, we propose a collaborative in-band and out-of-band resource provisioning framework that adjusts CPU allocation based on real-time thermal feedback. By leveraging a machine learning model and runtime monitoring, the framework dynamically provisions CPU clusters to virtual machines co-located on the same host. Evaluations on real servers with multiple workloads show that our method reduces peak power consumption from 5.2% to 9.6%, and lowers peak temperatures between 4${^{\boldsymbol{\circ}}}$C and 6.5${^{\boldsymbol{\circ}}}$C (up to 40${^{\boldsymbol{\circ}}}$C in extreme cases). Carbon emissions are also reduced from 7% to 37% during SPEC benchmark runs. These results highlight the framework’s potential to alleviate stress on power and cooling infrastructure, thereby enhancing energy efficiency, reducing carbon footprint, and improving service continuity during thermal challenges.},
   archive      = {J_TC},
-  author       = {Zhenqian Chen and Yuchun Zhan and Peng Hu and Xinkui Zhao and Muyu Yang and Siwei Tan and Lufei Zhang and Liqiang Lu and Jianwei Yin and Zuoning Chen},
-  doi          = {10.1109/TC.2025.3586031},
+  author       = {Da Zhang and Haojun Xia and Xiaotong Wang and Yanchang Feng and Haohao Liu and Bibo Tu},
+  doi          = {10.1109/TC.2025.3603698},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3305-3318},
+  month        = {11},
+  number       = {11},
+  pages        = {3682-3695},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {UKFaaS: Lightweight, high-performance and secure FaaS communication with unikernel},
+  title        = {Thermal elasticity-aware host resource provision for carbon efficiency on virtualized servers},
   volume       = {74},
   year         = {2025},
 }
@@ -407,20 +407,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). RV-CURE: A RISC-V capability architecture for full memory safety. <em>TC</em>, <em>74</em>(10), 3291-3304. (<a href='https://doi.org/10.1109/TC.2025.3586029'>www</a>)
+(2025). TeraPool: A physical design aware, 1024 RISC-V cores shared-l1-memory scaled-up cluster design with high bandwidth main memory link. <em>TC</em>, <em>74</em>(11), 3667-3681. (<a href='https://doi.org/10.1109/TC.2025.3603692'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Memory-safety violations remain persistent in the real world. Although a tagged-pointer concept has demonstrated significant practical potential, prior work has shown scalability limitations in both performance and security. In this paper, we revisit the tagged-pointer design based on our observation that a pointer tag, stored in a pointer address, can be associated with security metadata and used as a hash to look up a hash table that stores associated metadata. To realize our idea as a new tagging-based memory-capability model, we investigate a hardware-software co-design approach. First, we develop a generalized tagging method, data-pointer tagging (DPT), to ensure full memory safety. DPT assigns a 16-bit tag to each memory object and associates that tag with the object’s capability metadata. On a memory access, DPT then performs a capability check using its associated metadata and validates the access. Furthermore, we design a RISC-V capability architecture, RV-CURE, that implements hardware extensions for DPT and thus enables robust, efficient capability enforcement. Altogether, we prototype a RISC-V evaluation framework, in which we launch FPGA instances running the Linux OS and conduct a full-system simulation. Our evaluation shows that RV-CURE imposes 9.5$-$ 19.6% runtime overhead for the SPEC 2017 C/C++ workloads while ensuring strong memory safety.},
+  abstract     = {Shared L1-memory clusters of streamlined instruction processors (processing elements - PEs) are commonly used as building blocks in modern, massively parallel computing architectures (e.g. GP-GPUs). Scaling out these architectures by increasing the number of clusters incurs computational and power overhead, caused by the requirement to split and merge large data structures in chunks and move chunks across memory hierarchies via the high-latency global interconnect. Scaling up the cluster reduces buffering, copy, and synchronization overheads. However, the complexity of a fully connected cores-to-L1-memory crossbar grows quadratically with Processing Element (PE)-count, posing a major physical implementation challenge. We present TeraPool, a physically implementable, ${\boldsymbol &gt;} 1000$ floating-point-capable RISC-V PEs scaled-up cluster design, sharing a Multi-MegaByte ${\boldsymbol &gt;} 4000$-banked L1 memory via a low latency hierarchical interconnect (1-7/9/11 cycles, depending on target frequency). Implemented in 12 nm FinFET technology, TeraPool achieves near-gigahertz frequencies (910 MHz) typical, 0.80 V/25 $^{\boldsymbol{\circ}}$C. The energy-efficient hierarchical PE-to-L1-memory interconnect consumes only 9-13.5 pJ for memory bank accesses, just 0.74-1.1${\boldsymbol \times}$ the cost of a FP32 FMA. A high-bandwidth main memory link is designed to manage data transfers in/out of the shared L1, sustaining transfers at the full bandwidth of an HBM2E main memory. At 910 MHz, the cluster delivers up to 1.89 single precision TFLOP/s peak performance and up to 200 GFLOP/s/W energy efficiency (at a high IPC/PE of 0.8 on average) in benchmark kernels, demonstrating the feasibility of scaling a shared-L1 cluster to a thousand PEs, four times the PE count of the largest clusters reported in literature.},
   archive      = {J_TC},
-  author       = {Yonghae Kim and Anurag Kar and Jaewon Lee and Jaekyu Lee and Hyesoon Kim},
-  doi          = {10.1109/TC.2025.3586029},
+  author       = {Yichao Zhang and Marco Bertuletti and Chi Zhang and Samuel Riedel and Diyou Shen and Bowen Wang and Alessandro Vanelli-Coralli and Luca Benini},
+  doi          = {10.1109/TC.2025.3603692},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3291-3304},
+  month        = {11},
+  number       = {11},
+  pages        = {3667-3681},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {RV-CURE: A RISC-V capability architecture for full memory safety},
+  title        = {TeraPool: A physical design aware, 1024 RISC-V cores shared-l1-memory scaled-up cluster design with high bandwidth main memory link},
   volume       = {74},
   year         = {2025},
 }
@@ -428,20 +428,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). AdaptDQC: Adaptive distributed quantum computing with quantitative performance analysis. <em>TC</em>, <em>74</em>(10), 3277-3290. (<a href='https://doi.org/10.1109/TC.2025.3586027'>www</a>)
+(2025). PRRQ: Privacy-preserving resilient RkNN query over encrypted outsourced multiattribute data. <em>TC</em>, <em>74</em>(11), 3652-3666. (<a href='https://doi.org/10.1109/TC.2025.3603688'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We present AdaptDQC, an adaptive compiler framework for optimizing distributed quantum computing (DQC) under diverse performance metrics and inter-chip communication (ICC) architectures. AdaptDQC leverages a novel spatial-temporal graph model to describe quantum circuits, model ICC architectures, and quantify critical performance metrics in DQC systems, yielding a systematic and adaptive approach to constructing circuit-partitioning and chip-mapping strategies that admit hybrid ICC architectures and are optimized against various objectives. Experimental results on a collection of benchmarks show that AdaptDQC outperforms state-of-the-art compiler frameworks: It reduces, on average, the communication cost by up to 35.4% and the latency by up to 38.4%.},
+  abstract     = {Traditional reverse k-nearest neighbor (RkNN) query schemes typically assume that users are available online in real-time for interactive key reception, overlooking scenarios where users might be offline. Moreover, existing privacy-preserving RkNN query schemes primarily focus on user features or spatial data, neglecting the significance of user reputation values. To address these limitations, we propose a privacy-preserving resilient RkNN query scheme over encrypted outsourced multi-attribute data (PRRQ). Specifically, to mitigate the challenges posed by resilient online presence (i.e., non-real-time online) of users for interactive key reception, we incorporate a non-interactive key exchange (NIKE) protocol and the Diffie-Hellman two-party key exchange algorithm to propose a multi-party NIKE algorithm (2K-NIKE), facilitating non-interactive key reception for multiple users. Considering the privacy leakage issues, PRRQ encodes original multi-attribute data (i.e., spatial, feature, and reputation values) alongside query requests based on formalized criteria. Additionally, we integrate the proposed 2K-NIKE and the improved symmetric homomorphic encryption (iSHE) algorithms to encrypt them. Furthermore, catering to the requirements of ciphertext-based RkNN queries, we propose a private RkNN query eligibility-checking (PREC) algorithm and a private reputation-verifying (PRRV) algorithm, which validate the compliance of encrypted outsourced multi-attribute data with query requests. Security analysis demonstrates that PRRQ achieves simulation-based security under an honest-but-curious model. Experimental results show that PRRQ offers superior computational efficiency compared to comparative schemes.},
   archive      = {J_TC},
-  author       = {Debin Xiang and Liqiang Lu and Siwei Tan and Xinghui Jia and Zhe Zhou and Guangyu Sun and Mingshuai Chen and Jianwei Yin},
-  doi          = {10.1109/TC.2025.3586027},
+  author       = {Jing Wang and Haiyong Bao and Na Ruan and Qinglei Kong and Cheng Huang and Hong-Ning Dai},
+  doi          = {10.1109/TC.2025.3603688},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3277-3290},
+  month        = {11},
+  number       = {11},
+  pages        = {3652-3666},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {AdaptDQC: Adaptive distributed quantum computing with quantitative performance analysis},
+  title        = {PRRQ: Privacy-preserving resilient RkNN query over encrypted outsourced multiattribute data},
   volume       = {74},
   year         = {2025},
 }
@@ -449,20 +449,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FlashDecoding++Next: High throughput LLM inference with latency and memory optimization. <em>TC</em>, <em>74</em>(10), 3263-3276. (<a href='https://doi.org/10.1109/TC.2025.3585339'>www</a>)
+(2025). Concurrent linguistic error detection (CLED): A new methodology for error detection in large language models. <em>TC</em>, <em>74</em>(11), 3638-3651. (<a href='https://doi.org/10.1109/TC.2025.3603682'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {As the Large Language Model (LLM) becomes increasingly important in various domains, the performance of LLM inference is crucial to massive LLM applications. However, centering around the computational efficiency and the memory utilization, the following challenges remain unsolved in achieving high-throughput LLM inference: (1) Synchronous partial softmax update. The softmax operation requires a synchronous update operation among each partial softmax result, leading to $\sim$20% overheads for the attention computation in LLMs. (2) Under-utilized computation of flat GEMM. The shape of matrices performing GEMM in LLM inference tends to be flat, leading to under-utilized computation and 50% performance loss after padding zeros in previous designs (e.g., cuBLAS, CUTLASS, etc.). (3) Memory redundancy caused by activations. Dynamic allocation of activations during inference leads to redundant storage of useless variables, bringing 22% more memory consumption. We present FlashDecoding++Next, a high-throughput inference engine supporting mainstream LLMs and hardware backends. To tackle the above challenges, FlashDecoding++Next creatively proposes: (1) Asynchronous softmax with unified maximum. FlashDecoding++Next introduces a unified maximum technique for different partial softmax computations to avoid synchronization. Based on this, a fine-grained pipelining is proposed, leading to 1.18$\boldsymbol{\times}$ and 1.14$\boldsymbol{\times}$ for the prefill and decode phases in LLM inference, respectively. (2) Flat GEMM optimization with double buffering. FlashDecoding++Next points out that flat GEMMs with different shapes face varied bottlenecks. Then, techniques like double buffering are introduced, resulting in up to 52% speedup for the flat GEMM operation. (3) Buffer reusing and unified memory management. FlashDecoding++Next reuses the pre-allocated activation buffers throughout the inference process to remove redundancy. Based on that, we unify the management of different types of storage to further exploit the reusing opportunity. The memory optimization enables up to 1.57$\boldsymbol{\times}$ longer sequence to be processed. FlashDecoding++Next demonstrates remarkable throughput improvement, delivering up to 68.88$\boldsymbol{\times}$ higher throughput compared to the HuggingFace [1] implementation. On average, FlashDecoding++Next achieves 1.25$\boldsymbol{\times}$ and 1.46$\boldsymbol{\times}$ higher throughput compared to vLLM [2] and TensorRT-LLM [3] on mainstream LLMs.},
+  abstract     = {The utilization of Large Language Models (LLMs) requires dependable operation in the presence of errors in the hardware (caused by for example radiation) as this has become a pressing concern. At the same time, the scale and complexity of LLMs limit the overhead that can be added to detect errors. Therefore, there is a need for low-cost error detection schemes. Concurrent Error Detection (CED) uses the properties of a system to detect errors, so it is an appealing approach. In this paper, we present a new methodology and scheme for error detection in LLMs: Concurrent Linguistic Error Detection (CLED). Its main principle is that the output of LLMs should be valid and generate coherent text; therefore, when the text is not valid or differs significantly from the normal text, it is likely that there is an error. Hence, errors can potentially be detected by checking the linguistic features of the text generated by LLMs. This has the following main advantages: 1) low overhead as the checks are simple and 2) general applicability, so regardless of the LLM implementation details because the text correctness is not related to the LLM algorithms or implementations. The proposed CLED has been evaluated on two LLMs: T5 and OPUS-MT. The results show that with a 1% overhead, CLED can detect more than 87% of the errors, making it suitable to improve LLM dependability at low cost.},
   archive      = {J_TC},
-  author       = {Guohao Dai and Ke Hong and Qiuli Mao and Xiuhong Li and Jiaming Xu and Haofeng Huang and Hongtu Xia and Xuefei Ning and Shengen Yan and Yun Liang and Yu Wang},
-  doi          = {10.1109/TC.2025.3585339},
+  author       = {Jinhua Zhu and Javier Conde and Zhen Gao and Pedro Reviriego and Shanshan Liu and Fabrizio Lombardi},
+  doi          = {10.1109/TC.2025.3603682},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3263-3276},
+  month        = {11},
+  number       = {11},
+  pages        = {3638-3651},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {FlashDecoding++Next: High throughput LLM inference with latency and memory optimization},
+  title        = {Concurrent linguistic error detection (CLED): A new methodology for error detection in large language models},
   volume       = {74},
   year         = {2025},
 }
@@ -470,20 +470,83 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Sifter: An efficient operator auto-tuner with speculative design space exploration for deep learning compiler. <em>TC</em>, <em>74</em>(10), 3251-3262. (<a href='https://doi.org/10.1109/TC.2024.3441820'>www</a>)
+(2025). Caravan: Incentive-driven account migration via transaction aggregation in sharded blockchain. <em>TC</em>, <em>74</em>(11), 3609-3622. (<a href='https://doi.org/10.1109/TC.2025.3603672'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep learning compiler can automatically optimize operators. It provides higher flexibility compared to vendor libraries. However, existing DNN operator tuning methods mostly rely on search-based approaches, which still face challenges such as large design spaces and long tuning times. To address these issues, we propose Sifter, an efficient DNN operator auto-tuner with speculative design space exploration. By training and analyzing decision trees, we extract shared characteristics of high-quality schedules and summarize them as pruning rules. Applying these rules during the optimization allows us to speculatively explore the design space, minimize unnecessary hardware measurements, and shorten the optimization time without compromising the optimization result. We conducted experiments on three different platforms with various operators and models. The results demonstrate that Sifter reduces 52% of redundant schedules and shortens the optimization time by 41% while maintaining operator optimization performance at the state-of-the-art level.},
+  abstract     = {Blockchain sharding is a promising solution for scalability but struggles to reach the expected performance due to the high ratio of cross-shard transactions. Account migration has emerged as a critical approach to optimizing shard performance. However, existing migration solutions suffer from inefficient handling of queued withdrawal transactions from a migrating account and inadequate priority mechanism for migration transaction, resulting in prolonged transaction makespan and reduced system throughput. This paper proposes Caravan, a novel blockchain sharding system for optimizing account migration. First, Caravan proposes a transaction aggregation-based migration scheme to efficiently handle withdrawal congestion post-migration. It incorporates a multi-level Merkle tree and cross-shard synchronization protocol to ensure cross-shard security. Second, Caravan presents an economic incentive-driven priority mechanism that motivates miners to perform transaction aggregation and prioritize migration transactions by increasing the associated revenue. Furthermore, its gas recycling strategy enables users to finance migration costs without awareness or extra expenses. Finally, we develop the Caravan prototype, deploy it on Alibaba Cloud, and experiment with real Ethereum transactions. The results show that compared to the state-of-the-art account migration schemes, Caravan significantly mitigates the transaction surge caused by migration, achieving up to a 3.2× throughput improvement and a 65% reduction in transaction confirmation latency. And users share considerable migration costs without extra expenses, significantly reduce system costs.},
   archive      = {J_TC},
-  author       = {Qianhe Zhao and Rui Wang and Yi Liu and Hailong Yang and Zhongzhi Luan and Depei Qian},
-  doi          = {10.1109/TC.2024.3441820},
+  author       = {Yu Tao and Shouchen Zhou and Lu Zhou and Zhe Liu},
+  doi          = {10.1109/TC.2025.3603672},
   journal      = {IEEE Transactions on Computers},
-  month        = {10},
-  number       = {10},
-  pages        = {3251-3262},
+  month        = {11},
+  number       = {11},
+  pages        = {3609-3622},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Sifter: An efficient operator auto-tuner with speculative design space exploration for deep learning compiler},
+  title        = {Caravan: Incentive-driven account migration via transaction aggregation in sharded blockchain},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic bin packing with heterogeneous dependent bins for regionless in geo-distributed clouds. <em>TC</em>, <em>74</em>(11), 3596-3608. (<a href='https://doi.org/10.1109/TC.2025.3602297'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud service providers use geo-distributed datacenters to provide resources and services to clients located in different regions. However, uneven population density leads to unbalanced development of geo-distributed datacenters and cloud service providers face a shortage of land resources to further develop datacenters in densely populated regions. Thus, it is a real challenge for cloud service providers to meet the increasing demand from clients in affluent regions with saturated resources and to better utilize underutilized data centers in other regions. To address this challenge, we study an online resource allocation problem in geo-distributed clouds, whose goal is to assign each user request upon arrival to an appropriate geographic cloud region to minimize the resulting peak utilization of resource pools with different cost coefficients. To this end, we formulate the problem as a dynamic bin packing problem with heterogeneous dependent bins where user requests correspond to items to be packed and heterogeneous cloud resources are bins. To solve this online problem with high uncertainty, we propose a simulation based memetic algorithm to generate robust offline proactive policies based on historical data, which enable fast decision making for online packing. Our experiments based on realistic data show that the proposed approach leads to a reduction in total costs of up to 15% compared to the current practice, while being much faster for decision making compared to a popular online method.},
+  archive      = {J_TC},
+  author       = {Yinuo Li and Jin-Kao Hao and Liwei Song},
+  doi          = {10.1109/TC.2025.3602297},
+  journal      = {IEEE Transactions on Computers},
+  month        = {11},
+  number       = {11},
+  pages        = {3596-3608},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Dynamic bin packing with heterogeneous dependent bins for regionless in geo-distributed clouds},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel indirect methodology based on execution traces for grading functional test programs. <em>TC</em>, <em>74</em>(11), 3582-3595. (<a href='https://doi.org/10.1109/TC.2025.3600005'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Developing functional test programs for hardware testing is time-consuming and experience-wise. A functional test program’s quality is usually assessed only through expensive fault simulation campaigns during early development. This paper presents indirect quality measurements of fault detection capabilities of functional test programs to reduce the total cost of fault simulation in the early development stages. We present a methodology that analyzes the instruction trace generated by running functional test programs on-chip and building its control and dataflow graph. We use the graph to identify potential flaws that affect the program’s fault detection capabilities. We present different graph-based techniques to measure the programs’ quality indirectly. By exploiting standard debugging formats, we individuate instructions in the source code that affect the graph-based measurements. We perform experiments on an automotive device manufactured by STMicroelectronics, running functional test programs of different natures. Our results show that our metric allows test engineers to develop better functional test programs without basing their development solely on fault simulation campaigns.},
+  archive      = {J_TC},
+  author       = {Francesco Angione and Paolo Bernardi and Andrea Calabrese and Lorenzo Cardone and Stefano Quer and Claudia Bertani and Vincenzo Tancorre},
+  doi          = {10.1109/TC.2025.3600005},
+  journal      = {IEEE Transactions on Computers},
+  month        = {11},
+  number       = {11},
+  pages        = {3582-3595},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A novel indirect methodology based on execution traces for grading functional test programs},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cost-efficient delay-bounded dependent task offloading with service caching at edges. <em>TC</em>, <em>74</em>(11), 3568-3581. (<a href='https://doi.org/10.1109/TC.2025.3598749'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are now embracing an era of edge computing and artificial intelligence, and the combination of the two has spawned a new field of research called edge intelligence. Massive amounts of data is generated at the edge of network, which relies on artificial intelligence to realize its potential. Meanwhile, artificial intelligence is able to flourish when processing diverse edge data. However, the computation and storage resources of edge servers are not unlimited. For some large-scale intelligent applications, it is difficult to meet their service quality requirements by directly offloading the entire application to a nearby server for processing. Due to the heterogeneity of server resources in edge environments, how to balance the workload among edge servers to provide better services also becomes complicated. The goal of this paper is to minimize the total cost of offloading large-scale applications consisting of many dependent tasks in an edge system. We formulate the Dependent task Offloading with Service Caching (DOSC) problem, which is proved to be NP-hard. A dynamic planning-based algorithm is introduced to solve fixed-DOSC, in which some services are pre-configured on the edge server, and other services can not be downloaded from the remote cloud. We also present a theoretical analysis on the performance guarantee of the dynamic planning-based algorithm. Then, we propose a near-optimal algorithm using the Gibbs sampling to solve the general DOSC problem. Testbed experiments and trace-driven simulations are conducted to verify the performance of our algorithm. Our algorithm, shown to be the most effective in terms of cost, considers both service caching and task dependencies when task offloading in comparison to other baseline algorithms.},
+  archive      = {J_TC},
+  author       = {Yu Liang and Sheng Zhang and Jie Wu},
+  doi          = {10.1109/TC.2025.3598749},
+  journal      = {IEEE Transactions on Computers},
+  month        = {11},
+  number       = {11},
+  pages        = {3568-3581},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Cost-efficient delay-bounded dependent task offloading with service caching at edges},
   volume       = {74},
   year         = {2025},
 }

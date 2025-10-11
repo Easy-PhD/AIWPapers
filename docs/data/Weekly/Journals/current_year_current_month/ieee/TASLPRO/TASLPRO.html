@@ -25,8 +25,134 @@
 </head>
 <body>
 
-<h2 id="taslpro">TASLPRO - 304</h2>
+<h2 id="taslpro">TASLPRO - 311</h2>
 <ul>
+<li><details>
+<summary>
+(2025). IWPO: Sample importance weight-based human preference optimization for large language models. <em>TASLPRO</em>, <em>33</em>, 4113-4125. (<a href='https://doi.org/10.1109/TASLPRO.2025.3615458'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Direct preference optimization (DPO) methods for Large Language Models (LLMs) have emerged as an efficient alternative to Reinforcement Learning from Human Feedback (RLHF), owing to the lightweight training pipeline and lower computational cost. However, these methods still face significant challenges in enhancing the capacity for generalized text generation of language models. First, offline approaches remove the reward model (RM) and learn directly from preferences; while this simplifies training, it also eliminates an effective check on whether samples follow the optimal policy distribution, thereby deviating from standard Maximum Likelihood Estimation (MLE). Second, the preference levels across tasks or attributes often overlap in mixed datasets, which can induce catastrophic reward hacking. To address these issues, we introduce a new offline learning framework that explicitly accounts for how strongly each sample conforms to the optimal policy. We propose an Importance Resampling-based Preferred Sample Sampling (IRPSS) algorithm to recover standard MLE for estimating the optimal policy, and introduce a Multi-Cluster-based Reward Model (MCRM) that leverages feature clustering to mitigate reward distribution overlap during training. Combining these components, we present a Sample Importance Weight-based Human Preference Optimization (IWPO) method, which emphasizes the importance of target samples and can be plugged into mainstream preference optimization methods. Built on standard DPO, we evaluate IWPO across multiple base models and datasets. On Mistral-7B model, IWPO improves AlpacaEval win rate against GPT-4 Turbo and text-davinci-003 by 6.3% and MT-Bench multi-turn score by 5.1%.},
+  archive  = {J},
+  author   = {Teng Ma and Xiong Luo and Yuqi Yuan},
+  doi      = {10.1109/TASLPRO.2025.3615458},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4113-4125},
+  title    = {IWPO: Sample importance weight-based human preference optimization for large language models},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MixPQ: Joint pruning and quantization for speech and language foundation models compression. <em>TASLPRO</em>, <em>33</em>, 4098-4112. (<a href='https://doi.org/10.1109/TASLPRO.2025.3613948'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Large speech and language foundation models are heavily parameterized. This paper introduces MixPQ, a unified framework for the efficient and robust compression of these models. First, we propose a Hessian-aware, layer-wise mixed-sparsity pruning algorithm designed for both language and speech models, yielding promising results even at high sparsity levels. This approach introduces improved saliency criteria for more accurate selection of pruning elements and dynamically assigns different sparsity ratios to weight matrices based on Hessian sensitivity. Second, we present an outlier-aware, column-level mixed-precision quantization framework. This framework introduces a novel quantization sensitivity metric based on the outlier ratio to assess parameter importance and incorporates a mixed outlier reservation strategy to adaptively preserve full-precision outliers across columns in weight matrices, achieving significant performance gains with minimal memory overhead. Experimental results show that our pruning algorithm achieves 2x compression while maintaining performance. And the quantization framework delivers 4-bit lossless compression. In lower-bit scenarios, MixPQ provides an equivalent 2.12-bit model, yielding approximately 16x compression but only with $&lt; $1% WER performance loss in speech recognition. Compared to previous methods, MixPQ demonstrates state-of-the-art performance in various models, particularly at high compression ratios. Moreover, the combination of pruning and quantization can achieve better performance with a higher compression ratio. Finally, the inference analysis highlight MixPQ’s practical benefits in speed and memory efficiency.},
+  archive  = {J},
+  author   = {Bei Liu and Tianteng Gu and Haoyu Wang and Yanmin Qian},
+  doi      = {10.1109/TASLPRO.2025.3613948},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4098-4112},
+  title    = {MixPQ: Joint pruning and quantization for speech and language foundation models compression},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Privacy-preserving parameter-efficient fine-tuning for large language model services. <em>TASLPRO</em>, <em>33</em>, 4085-4097. (<a href='https://doi.org/10.1109/TASLPRO.2025.3612842'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Parameter-Efficient Fine-Tuning (PEFT) provides a practical way for users to customize Large Language Models (LLMs) with their private data in LLM service scenarios. However, the inherently sensitive nature of private data demands robust privacy preservation measures during the customization of LLM services to ensure data security, maintain user trust, and comply with stringent regulatory standards. Based on PEFT, we propose Privacy-Preserving Parameter-Efficient Fine-Tuning (rapt), a framework that offers privacy protection for LLM services. rapt adopts a local privacy approach, enabling users to privatize their data locally using a text-to-text local differential privacy mechanism. Since PEFT performs poorly when directly trained on privatized data, we introduce a novel privatized token reconstruction task that is trained jointly with the downstream task, allowing LLMs to learn better task-dependent representations. Despite the simplicity of our framework, experiments show that rapt achieves competitive performance across tasks while providing privacy guarantees against adversaries.},
+  archive  = {J},
+  author   = {Yansong Li and Zhixing Tan and Paula Branco and Yang Liu},
+  doi      = {10.1109/TASLPRO.2025.3612842},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4085-4097},
+  title    = {Privacy-preserving parameter-efficient fine-tuning for large language model services},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LatentVoiceGrad: Nonparallel voice conversion with latent Diffusion/Flow-matching models. <em>TASLPRO</em>, <em>33</em>, 4071-4084. (<a href='https://doi.org/10.1109/TASLPRO.2025.3613926'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Previously, we introduced VoiceGrad, a nonparallel voice conversion (VC) technique enabling mel-spectrogram conversion from source to target speakers using a score-based diffusion model. The concept involves training a score network to predict the gradient of the log density of mel-spectrograms from various speakers. VC is executed by iteratively adjusting an input mel-spectrogram until resembling the target speaker’s. However, challenges persist: audio quality needs improvement, and conversion is slower compared to modern VC methods designed to operate at very high speeds. To address these, we introduce latent diffusion models into VoiceGrad, proposing an improved version with reverse diffusion in the autoencoder bottleneck. Additionally, we propose using a flow matching model as an alternative to the diffusion model to further speed up the conversion process without compromising the conversion quality. Experimental results show enhanced speech quality and accelerated conversion compared to the original.},
+  archive  = {J},
+  author   = {Hirokazu Kameoka and Takuhiro Kaneko and Kou Tanaka and Yuto Kondo},
+  doi      = {10.1109/TASLPRO.2025.3613926},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4071-4084},
+  title    = {LatentVoiceGrad: Nonparallel voice conversion with latent Diffusion/Flow-matching models},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). M4SER: Multimodal, multirepresentation, multitask, and multistrategy learning for speech emotion recognition. <em>TASLPRO</em>, <em>33</em>, 4055-4070. (<a href='https://doi.org/10.1109/TASLPRO.2025.3614428'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multimodal speech emotion recognition (SER) has emerged as pivotal for improving human–machine interaction. Researchers are increasingly leveraging both speech and textual information obtained through automatic speech recognition (ASR) to comprehensively recognize emotional states from speakers. Although this approach reduces reliance on human-annotated text data, ASR errors possibly degrade emotion recognition performance. To address this challenge, in our previous work, we introduced two auxiliary tasks, namely, ASR error detection and ASR error correction, and we proposed a novel multimodal fusion (MF) method for learning modality-specific and modality-invariant representations across different modalities. Building on this foundation, in this paper, we introduce two additional training strategies. First, we propose an adversarial network to enhance the diversity of modality-specific representations. Second, we introduce a label-based contrastive learning strategy to better capture emotional features. We refer to our proposed method as M$^{4}$SER and validate its superiority over state-of-the-art methods through extensive experiments using IEMOCAP and MELD datasets.},
+  archive  = {J},
+  author   = {Jiajun He and Xiaohan Shi and Cheng-Hung Hu and Jinyi Mi and Xingfeng Li and Tomoki Toda},
+  doi      = {10.1109/TASLPRO.2025.3614428},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4055-4070},
+  title    = {M4SER: Multimodal, multirepresentation, multitask, and multistrategy learning for speech emotion recognition},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Emilia: A large-scale, extensive, multilingual, and diverse dataset for speech generation. <em>TASLPRO</em>, <em>33</em>, 4044-4054. (<a href='https://doi.org/10.1109/TASLPRO.2025.3612835'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Recent advancements in speech generation have been driven by large-scale training datasets. However, current models struggle to capture the spontaneity and variability inherent in real-world human speech, as they are primarily trained on audio-book datasets limited to formal, read-aloud speaking styles. To address this limitation, we introduce Emilia-Pipe, an open-source preprocessing pipeline designed to extract high-quality training data from valuable yet under-explored in-the-wild sources that capture spontaneous human speech in real-world contexts. Using Emilia-Pipe, we construct Emilia, which comprises over 101 k hours of speech across six languages: English, Chinese, German, French, Japanese, and Korean. Furthermore, we expand Emilia to Emilia-Large, a dataset exceeding 216 k hours, making it one of the largest open-source speech generation resources available. Extensive experiments show that Emilia-trained models produce markedly more spontaneous, human-like speech than those trained on traditional audio-book datasets, while matching their intelligibility. These models better capture diverse speaker timbres and the full spectrum of real-world conversational styles. Our work also highlights the importance of scaling dataset size for advancing speech generation performance and validates the effectiveness of Emilia for both multilingual and crosslingual speech generation tasks.},
+  archive  = {J},
+  author   = {Haorui He and Zengqiang Shang and Chaoren Wang and Xuyuan Li and Yicheng Gu and Hua Hua and Liwei Liu and Chen Yang and Jiaqi Li and Peiyang Shi and Yuancheng Wang and Kai Chen and Pengyuan Zhang and Zhizheng Wu},
+  doi      = {10.1109/TASLPRO.2025.3612835},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4044-4054},
+  title    = {Emilia: A large-scale, extensive, multilingual, and diverse dataset for speech generation},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring visual information enhancement for multimodal customized opinion generation. <em>TASLPRO</em>, <em>33</em>, 4033-4043. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611282'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a novel task called customized opinion generation, which aims to generate a customized review that a specific user would give to a product that has not been yet reviewed by the user. This task can assist users in writing a high-quality review of an unreviewed product. Furthermore, the customized review of a product is useful to reduce the time it takes for users to learn about the product, which ideally should be tailored to the reader. To this end, we study the customized opinion generation task under the approach of pre-trained language models. In particular, we first introduce a visual information enhancement module. In this module, we generate pseudo input words and image captions based on the images, and we introduce various prompt strategies to fully exploit the semantics of the model input text. Besides, we design an interaction model to explicitly capture the influence of input text and product images during customized opinion generation. Experimental results indicate that the proposed model can generate customized reviews, which in many cases are high quality. The results also show that the proposed model gives better results compared to several strong baselines. To our knowledge, we are the first to generate a customized review for an unreviewed product.},
+  archive  = {J},
+  author   = {Minjie Qiang and Zhongqing Wang and Guodong Zhou},
+  doi      = {10.1109/TASLPRO.2025.3611282},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4033-4043},
+  title    = {Exploring visual information enhancement for multimodal customized opinion generation},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). AWaveFormer: Audio wavelet transformer network for generalized audio deepfake detection. <em>TASLPRO</em>, <em>33</em>, 4020-4032. (<a href='https://doi.org/10.1109/TASLPRO.2025.3611229'>www</a>)
