@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 32</h2>
+<h2 id="tpds">TPDS - 23</h2>
 <ul>
 <li><details>
 <summary>
@@ -105,19 +105,57 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Approximation algorithms for scheduling with/without deadline constraints where rejection costs are proportional to processing times. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3605674'>www</a>)
+(2025). FEditor: Consecutive task placement with adjustable shapes using FPGA state frames. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3620384'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We study two offline job scheduling problems where tasks can be processed on a limited number of energy-efficient edge machines or offloaded to an unlimited supply of energy-inefficient cloud machines (called rejected). The objective is to minimize total energy consumption. First, we consider scheduling without deadlines, formulating it as a scheduling problem with rejection, where rejection costs are proportional to processing times. We propose a novel $\frac{5}{4}(1+\epsilon )$-approximation algorithm, $\mathcal{BEKP}$, by associating it to a Multiple Subset Sum problem, improving upon the existing $(\frac{3}{2} - \frac{1}{2m})$-approximation for arbitrary rejection costs. Next, we address scheduling with deadlines, aiming to minimize the weighted number of rejected jobs. We position this problem within the literature and introduce a new $(1-\frac{(m-1)^{m}}{m^{m}})$-approximation algorithm, $\mathcal{MDP}$, inspired by an interval selection algorithm with a $(1-\frac{m^{m}}{(m+1)^{m}})$-approximation for arbitrary rejection costs. Experimental results demonstrate that $\mathcal{BEKP}$ and $\mathcal{MDP}$ obtain better results (lower costs or higher profits) than other state-of-the-art algorithms while maintaining a competitive or better time complexity.},
+  abstract     = {Field Programmable Gate Arrays (FPGAs) are widely adopted in datacenters, where each FPGA is exclusively assigned to a task. This strategy results in significant resource waste and increased task rejections. To address this issue, placement algorithms adjust the locations and shapes of tasks based on Dynamic Partial Reconfiguration, which partitions an FPGA into multiple rectangular areas for sharing. However, existing schemes are designed for static task sets without adjustable shapes, incapable of optimizing the placement problem in datacenters. In this paper, FEditor is proposed as the first consecutive task placement scheme with adjustable shapes. It expands the planar FPGA models into three-dimensional ones with timestamps to accommodate consecutive tasks. To reduce the complexity of three-dimensional resource management, State Frames (SFs) are designed to compress the models losslessly. Three metrics and a nested heuristic algorithm are used for task placement. Experimental results demonstrate that FEditor has improved resource utilization by at least $19.8\%$ and acceptance rate by at least $10\%$ compared to the referenced algorithms. SFs and the nested algorithm accelerate the task placement by up to $10.26\times$. The suitability of FEditor in datacenter environments is verified by its time efficiency trends.},
   archive      = {J_TPDS},
-  author       = {Olivier Beaumont and Rémi Bouzel and Lionel Eyraud-Dubois and Esragul Korkmaz and Laércio Lima Pilla and Alexandre Van Kempen},
-  doi          = {10.1109/TPDS.2025.3605674},
+  author       = {Yanyan Li and Yu Chen and Zhiqian Xu and Yawen Wang and Hai Jiang and Keqin Li},
+  doi          = {10.1109/TPDS.2025.3620384},
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {9},
-  pages        = {1-13},
+  month        = {10},
+  pages        = {1-14},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Approximation algorithms for scheduling with/without deadline constraints where rejection costs are proportional to processing times},
+  title        = {FEditor: Consecutive task placement with adjustable shapes using FPGA state frames},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autonomous model aggregation for decentralized learning on edge devices. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3621058'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Edge AI applications enable edge devices to collaboratively learn a model via repeated model aggregations, aiming to utilize the distributed data on the devices for achieving high model accuracy. Existing methods either leverage a centralized server to directly aggregate the model updates from edge devices or need a central coordinator to group the edge devices for localized model aggregations. The centralized server (or coordinator) has a performance bottleneck and a high cost of collecting the global state needed for making the grouping decision in large-scale networks. In this paper, we propose an Autonomous Model Aggregation (AMA) method for large-scale decentralized learning on edge devices. Instead of needing a central coordinator to group the edge devices, AMA allows the edge devices to autonomously form groups using a highly efficient protocol, according to model functional similarity and historical grouping information. Moreover, AMA adopts a reinforcement learning approach to optimize the size of each group. Evaluation results on our self-developed edge computing testbed demonstrate that AMA outperforms the benchmark approaches by up to 20.71% in accuracy and reduced the convergence time by 75.58%.},
+  archive      = {J_TPDS},
+  author       = {Jinru Chen and Jingke Tu and Lei Yang and Jiannong Cao},
+  doi          = {10.1109/TPDS.2025.3621058},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Autonomous model aggregation for decentralized learning on edge devices},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer. <em>TPDS</em>, 1-10. (<a href='https://doi.org/10.1109/TPDS.2025.3620251'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum many-body system can be solved with neural-network method. Nonetheless, the practical deployment of neural network quantum states (NNQS) in large-scale electronic structure analyses faces challenges, chiefly the high sampling cost and the complexity of local energy computations. To overcome these computational barriers, we present an innovative data-parallel NNQS-Transformer implementation. This implementation introduces a hybrid multi-layer workload balancing strategy that effectively addresses previous load imbalance issues while leveraging Julia's portability to achieve targeted performance optimizations. Through extensive testing, we validate our approach using comprehensive quantum chemistry calculations on systems containing up to 120 spin orbitals, where previous methods were limited to much smaller scales. The implementation demonstrates exceptional scalability on the Sunway platform, achieving 92% strong scaling and 98% weak scaling efficiencies when utilizing up to 37 million processor cores. These significant performance improvements mark a crucial step toward making NNQS calculations practical for real-world quantum chemistry applications.},
+  archive      = {J_TPDS},
+  author       = {Yangjun Wu and Wenhao Zhou and Li Shen and Hong Qian and Honghui Shang},
+  doi          = {10.1109/TPDS.2025.3620251},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer},
   year         = {2025},
 }
 </textarea>
@@ -251,215 +289,6 @@
   pages        = {1-17},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A non-intrusive multi-objective task scheduling method for JointCloud environment},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Online container caching for IoT data processing in serverless edge computing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3595965'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Serverless edge computing is an efficient way to execute event-driven, short-duration, and bursty IoT data processing tasks on resource-limited edge servers, using on-demand resource allocation and dynamic auto-scaling. In this paradigm, function requests are handled in virtualized environments, e.g., containers. When a function request arrives online, if there is no container in memory to execute it, the serverless platform will initialize such a container with non-negligible latency, known as cold start. Otherwise, it results in a warm start with no latency in previous studies. However, based on our experiments, we find there is a remarkable third case called Late-Warm, i.e., when a request arrives during the container initializing, its latency is less than a cold start but not zero. In this paper, we study online container caching in serverless edge computing to minimize the total latency with Late-Warm and other practical issues considered. We propose OnCoLa, a novel $O(T_{c}K)$-competitive algorithm supporting request relaying on multiple edge servers. Here, $T_{c}$ and $K$ are the maximum container cold start latency and the memory size, respectively. Extensive simulations on two real-world traces demonstrate that OnCoLa consistently outperforms the state-of-the-art container caching algorithms and reduces the latency by $23.33\%$. Experiments on Raspberry Pi and Jetson Nano show that OnCoLa reduces latency by up to $21.38\%$ compared with the representative lightweight policy.},
-  archive      = {J_TPDS},
-  author       = {Guopeng Li and Haisheng Tan and Chi Zhang and Xuan Zhang and Zhenhua Han and Guoliang Chen},
-  doi          = {10.1109/TPDS.2025.3595965},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {8},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Online container caching for IoT data processing in serverless edge computing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Scheduling with lightweight predictions in power-constrained HPC platforms. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3586723'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the increase of demand for computing resources and the struggle to provide the necessary energy, power-aware resource management is becoming a major issue for the High-performance computing (HPC) community. Including reliable energy management to a supercomputer's resource and job management system (RJMS) is not an easy task. The energy consumption of jobs is rarely known in advance and the workload of every machine is unique and different from the others. We argue that the first step towards properly managing power is to deeply understand the power consumption of the workload, which involves predicting the workload power consumption and exploiting it by using smart power-aware scheduling algorithms. Crucial questions are (i) how sophisticated a prediction method needs to be to provide accurate workload power predictions, and (ii) to what point an accurate workload's power prediction translates into efficient power management. In this work, we proposed a method to predict and exploit HPC workloads power consumption with the objective of reducing the supercomputers power consumption, while maintaining the management (scheduling) performance of the RJMS. Our method exploits workload submission logs with power monitoring data, and relies on a mix of lightweight power prediction methods and a classical EASY Backfillling inspired heuristic. Then, we model and solve the power capping scheduling as a greedy knapsack algorithm. This algorithm improves the Quality of Service and avoids starvation while keeping the solution lightweight. We base this study on logs of Marconi 100, a 980-node supercomputer. We show using simulation that a lightweight history-based prediction method can provide accurate enough power prediction to improve the energy management of a large scale supercomputer compared to energy-unaware scheduling algorithms. These improvements have no significant negative impact on performance.},
-  archive      = {J_TPDS},
-  author       = {Danilo Carastan-Santos and Georges Da Costa and Igor Fontana de Nardin and Millian Poquet and Krzysztof Rzadca and Patricia Stolf and Denis Trystram},
-  doi          = {10.1109/TPDS.2025.3586723},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {7},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Scheduling with lightweight predictions in power-constrained HPC platforms},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SEMSO: A secure and efficient multi-data source blockchain oracle. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3586450'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In recent years, blockchain oracle, as the key link between blockchain and real-world data interaction, has greatly expanded the application scope of blockchain. In particular, the emergence of the Multi-Data Source (MDS) oracle has greatly improved the reliability of the oracle in the case of untrustworthy data sources. However, the current MDS oracle scheme requires nodes to obtain data redundantly from multiple data sources to guarantee data reliability, which greatly increases the resource overhead and response time of the system. Therefore, in this paper, we propose a Secure and Efficient Multi-data Source Oracle framework (SEMSO), where nodes only need to access one data source to ensure the reliability of final data. First, we design a new off-chain data aggregation protocol TBLS, to guarantee data source diversity and reliability at low cost. Second, according to the rational man assumption, the data source selection task of nodes is modeled and solved based on the Bayesian game under incomplete information to maximize the node's revenue while improving the success rate of TBLS aggregation and system response speed. Security analysis verifies the reliability of the proposed scheme, and experiments show that under the same environmental assumptions, SEMSO takes into account data diversity while reducing the response time by 23.5%.},
-  archive      = {J_TPDS},
-  author       = {Youquan Xian and Xueying Zeng and Chunpei Li and Peng Wang and Dongcheng Li and Peng Liu and Xianxian Li},
-  doi          = {10.1109/TPDS.2025.3586450},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {7},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {SEMSO: A secure and efficient multi-data source blockchain oracle},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Streamline: Accelerating deployment and assessment of real-time big data systems. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3587641'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Real-time stream processing applications (e.g., IoT data analytics and fraud detection) are becoming integral to everyday life. A robust and efficient Big Data system, especially a streaming pipeline composed of producers, brokers, and consumers, is at the heart of the successful deployment of these applications. However, their deployment and assessment can be complex and costly due to the intricate interactions between pipeline components and the reliance on expensive hardware or cloud environments. Thus, we propose streamline, an agile, efficient, and dependable framework as an alternative to assess streaming applications without requiring a hardware testbed or cloud setup. To simplify the deployment, prototyping, and benchmarking of end-to-end stream processing applications involving distributed platforms (e.g., Apache Kafka, Spark, Flink), the framework provides a lightweight environment with a developer-friendly, high-level API for dynamically selecting and configuring pipeline components. Moreover, the modular architecture of streamline enables developers to integrate any required platform into their systems. The performance and robustness of a deployed pipeline can be assessed with varying network conditions and injected faults. Furthermore, it facilitates benchmarking event streaming platforms like Apache Kafka and RabbitMQ. Extensive evaluations of various streaming applications confirm the effectiveness and dependability of streamline.},
-  archive      = {J_TPDS},
-  author       = {Md. Monzurul Amin Ifath and Tommaso Melodia and Israat Haque},
-  doi          = {10.1109/TPDS.2025.3587641},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {7},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Streamline: Accelerating deployment and assessment of real-time big data systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Elastic relaxation of concurrent data structures. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3587888'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The sequential semantics of many concurrent data structures, such as stacks and queues, inevitably lead to memory contention in parallel environments, thus limiting scalability. Semantic relaxation has the potential to address this issue, increasing the parallelism at the expense of weakened semantics. Although prior research has shown that improved performance can be attained by relaxing concurrent data structure semantics, there is no one-size-fits-all relaxation that adequately addresses the varying needs of dynamic executions. In this paper, we first introduce the concept of elastic relaxation and consequently present the Lateral structure, which is an algorithmic component capable of supporting the design of elastically relaxed concurrent data structures. Using the Lateral, we design novel elastically relaxed, lock-free queues, stacks, a counter, and a deque, capable of reconfiguring relaxation during run-time. We establish linearizability and define worst-case bounds for relaxation errors in our designs. Experimental evaluations show that our elastic designs match the performance of state-of-the-art statically relaxed structures when no elastic changes are utilized. We develop a lightweight, contention-aware controller for adjusting relaxation in real time, and demonstrate its benefits both in a dynamic producer-consumer micro-benchmark and in a parallel BFS traversal, where it improves throughput and work-efficiency compared to static designs.},
-  archive      = {J_TPDS},
-  author       = {Kåre von Geijer and Philippas Tsigas},
-  doi          = {10.1109/TPDS.2025.3587888},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {7},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Elastic relaxation of concurrent data structures},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3593896'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Cross-Silo federated learning systems have been identified as an efficient approach to scaling DNN training across geographically-distributed data silos to preserve the privacy of the training data. Communication efficiency and fairness are two major issues that need to be both satisfied when federated learning systems are deployed in practice. Simultaneously guaranteeing both of them, however, is exceptionally difficult because simply combining communication reduction and fairness optimization approaches often causes non-converged training or drastic accuracy degradation. To bridge this gap, we propose FedEFsz. On the one hand, it integrates the state-of-the-art error-bounded lossy compressor SZ3 into cross-silo federated learning systems to significantly reduce communication traffic during the training. On the other hand, it achieves a high fairness (i.e., rather consistent model accuracy and performance across different clients) through a carefully designed heuristic algorithm that can tune the error-bound of SZ3 for different clients during the training. Extensive experimental results based on a GPU cluster with 65 GPU cards show that FedEFsz improves the fairness across different benchmarks by up to $60.88\%$ and meanwhile reduces the communication traffic by up to $315\times$.},
-  archive      = {J_TPDS},
-  author       = {Zhaorui Zhang and Sheng Di and Benben Liu and Zhuoran Ji and Guanpeng Li and Xiaoyi Lu and Amelie Chi Zhou and Khalid Ayed Alharthi and Jiannong Cao},
-  doi          = {10.1109/TPDS.2025.3593896},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {7},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A performance-balanced scheduling algorithm for diverse real-world TSN scenarios. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3580402'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Time-Sensitive Networking (TSN) achieves low-delay and low-jitter traffic transmission through different traffic scheduling mechanisms. However, despite numerous algorithms developed based on these mechanisms, most fail to concurrently support multipath, hybrid, and multicast traffic, which are prevalent in real-world scenarios. Moreover, balancing performance metrics such as success rate, bandwidth utilization, and computation overhead remains challenging for these algorithms, significantly limiting their application in diverse TSN scenarios. To solve this problem, this paper proposes a universal ultra-low-delay and zero-jitter traffic scheduling model. Based on this model, this paper further designs a performance-balanced algorithm. The algorithm improves traffic scheduling success rate through joint routing and scheduling, increases network bandwidth utilization through hybrid traffic scheduling, and achieves low computation overhead through policy-based searching. Finally, extensive experiments demonstrate that the algorithm effectively balances performance metrics across diverse real-world scenarios. It achieves high scheduling success rate under real-world traffic loads ($\gt $20% improvement over non-joint routing), increased bandwidth utilization in the presence of hybrid traffic (18.3% enhancement over non-hybrid traffic scheduling), and low computation overhead ($\lt $ 2 minutes).},
-  archive      = {J_TPDS},
-  author       = {Qian Yang and Xuyan Jiang and Rulin Liu and Tao Li and Hui Yang and Wei Quan and Zhigang Sun},
-  doi          = {10.1109/TPDS.2025.3580402},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {6},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {A performance-balanced scheduling algorithm for diverse real-world TSN scenarios},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A privacy-preserving IoT data access control scheme for cloud-edge computing. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3580407'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In Internet of Things(IoT), the combination of cloud computing and edge computing becomes a new computing paradigm to provide users with low-latency data services. However, for the limited resource, high dynamic, and wide distributed characteristics of IoT devices, it becomes a great challenge to realize the universal application of edge servers and the cloud-edge computing allocation. Meanwhile, most of the schemes ignore the leakage of data access pattern privacy when accessing data. Therefore, in this paper, we propose a privacy-preserving access control scheme for IoT data. Based on the cloud-edge-end framework, we design a pervasive edge computing protocol, which allows well-resourced devices to become edge servers at suitable geographic locations and users to outsource and access IoT data through the nearest edge server. It increases the flexibility of the cloud-edge collaborative system as well as the efficiency of data processing. Users do not need to interact beyond the network edge to enjoy the data services. Furthermore, a novel attribute-based encryption scheme is designed based on a modified Lightweight Secret Sharing Scheme to optimize computing task allocation and reduce the computation burden on end devices, without attribute information leakage. In addition, we also design a Transform algorithm and a Cloud-edge Interaction protocol to hide access pattern privacy efficiently. We analyze the feasibility of the scheme and demonstrate that the scheme is semantically secure and conceals access pattern privacy. Simulation experiments based on real IoT data show that the scheme is efficient and suitable for IoT scenarios.},
-  archive      = {J_TPDS},
-  author       = {Jingjing Wang and Na Wang and Wen Zhou and Jianwei Liu and Junsong Fu and Lunzhi Deng},
-  doi          = {10.1109/TPDS.2025.3580407},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {6},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {A privacy-preserving IoT data access control scheme for cloud-edge computing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3571470'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Mobile Edge Computing (MEC) effectively alleviates the pressure on limited in-vehicle computing resources and energy supply caused by computation-intensive vehicular applications. However, the uneven spatial distribution of users leads to load imbalance among adjacent MEC servers, significantly increase the latency and energy consumption costs for vehicles. Therefore, achieving optimal configuration of available computing resources in MEC servers to accomplish the goal of low-latency and low-energy task offloading has become a critical issue to address. To tackle this problem, this study proposes a Multi-RSU Load Balancing (MRLB) strategy based on multi-hop network technology. This strategy dynamically allocates computing tasks to neighboring RSU server clusters with available computing resources through task segmentation and computation offloading mechanisms. Meanwhile, adaptive resource allocation strategies are implemented based on task quantity and task scale characteristics. Specifically, this study designs a multi-RSU collaborative offloading algorithm based on Deep Deterministic Policy Gradient (DDPG) to solve the optimal offloading decision. Additionally, by integrating the Lagrange multiplier method and Sequential Quadratic Programming (SQP) algorithm, the joint optimization of imbalanced task segmentation decisions and optimal CPU frequency allocation decisions for RSU servers is achieved. Experimental results demonstrate that the proposed method can achieve efficient multi-RSU resource allocation and ensure coordinated optimization of both system latency and energy consumption costs across diverse device conditions and varying network scenarios, particularly in load-imbalanced situations.},
-  archive      = {J_TPDS},
-  author       = {Dun Cao and Shirui Huang and Ning Gu and Fayez Alqahtani and R. Simon Sherratt and Jin Wang},
-  doi          = {10.1109/TPDS.2025.3571470},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {5},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3568221'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Large volumes of data generated by scientific simulations, genome sequencing, and other applications need to be moved among clusters for data collection/analysis. Data compression techniques have effectively reduced data storage and transfer costs. However, users' requirements on interactively controlling both data quality and compression ratios are non-trivial to fulfill. We propose a novel Compression-as-a-Service (CaaS) platform called Ocelot with four important contributions: (1) It offers real-time visualization, interactive compression, and transfer of scientific datasets. (2) It incorporates new strategies for compressing diverse types of datasets more effectively than traditional methods. (3) It provides an effective method for estimating the compression ratio and execution time of compression tasks. (4) Experiments on multiple real-world datasets on geographically distributed computers show that Ocelot can significantly improve data transfer efficiency with a performance gain of more than 10x in computing clusters with relatively slow networks.},
-  archive      = {J_TPDS},
-  author       = {Yuanjian Liu and Sheng Di and Jiajun Huang and Zhaorui Zhang and Kyle Chard and Ian Foster},
-  doi          = {10.1109/TPDS.2025.3568221},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {5},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3564214'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {To address the challenges posed by the deployment of microservices of future end-user applications in the cloud continuum, a performance prediction model working together with a network elasticity controller will be needed. With that aim, this work introduces Layered Queuing-Graph Neural Networks (LQ-GNN), a novel Machine Learning (ML) approach to develop a generalized performance prediction model for microservicebased applications. Unlike previous works focused on individual applications, our proposal aims for a versatile model applicable to any microservice-based application, integrating the Layered Queueing Network (LQN) modeling with Graph Neural Networks (GNN). LQ-GNN allows to efficiently estimate the response time of applications under different resource allocations and placements on the computing continuum. The obtained evaluation results indicate that the proposed model achieves a prediction error below 10% when considering different evaluation scenarios. Compared to existing methodologies, our approach balances prediction accuracy and computational efficiency, making it viable for real-time deployments. Consequently, ML-based performance prediction can significantly enhance the resource management and elasticity control of microservice-based architectures, leading to more resilient and efficient systems.},
-  archive      = {J_TPDS},
-  author       = {Matías Richart and Juan-Luis Gorricho and Javier Baliosian and Luis M. Contreras and Alejandro Muñiz and Joan Serrat},
-  doi          = {10.1109/TPDS.2025.3564214},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {4},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum},
   year         = {2025},
 }
 </textarea>

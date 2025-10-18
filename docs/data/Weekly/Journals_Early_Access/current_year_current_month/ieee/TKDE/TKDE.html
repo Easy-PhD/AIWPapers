@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tkde">TKDE - 20</h2>
+<h2 id="tkde">TKDE - 42</h2>
 <ul>
 <li><details>
 <summary>
@@ -390,6 +390,25 @@
 </details></li>
 <li><details>
 <summary>
+(2025). Efficient and accurate cross-camera vehicle trajectory recovery. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3619943'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recovering trajectories of all moving vehicles from urban-scale cameras is an attractive but challenging topic for massive video data management. Existing solutions frame it as an iterative image clustering problem. The snapshots from the same vehicle are grouped within a cluster, which is further refined according to the spatial-temporal attributes. However, these approaches exhibit expensive iterative clustering overhead and ineffective exploitation of spatial-temporal clues. Moreover, they are designed for batch processing, facing performance degradation when handling newly collected surveillance data. In this paper, we propose a novel joint representation clustering framework, which recovers trajectories from vehicle snapshots in an efficient and accurate fashion and is inherently suited for processing video streaming data. Technically, spatial-temporal features are explicitly extracted to construct the joint representation, eliminating the need for iterative refinement, which significantly reduces computational overhead. Furthermore, we present a simple yet effective clustering scheme with one-pass scan on joint representations to generate large-scale clusters. To mitigate the dependency on external data, a joint training method based on self-supervised learning is introduced. We conduct extensive experiments in both batch and streaming modes. The results show that in the batch mode, TRACER achieves a speedup of at least 2.3× and yields recovery F1-score improvements of 1.7% − 19.6%. In the streaming experimental setup, it achieves 1.1%−27.6% improvement in F1-score, and reduces the average snapshot processing time by up to 84.8%.},
+  archive      = {J_TKDE},
+  author       = {Taihang Dong and Dingyu Yang and Dongping Zhang and Sai Wu and Shaojie Qiao and Dongxiang Zhang},
+  doi          = {10.1109/TKDE.2025.3619943},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Efficient and accurate cross-camera vehicle trajectory recovery},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2025). Few-shot knowledge graph completion with adaptive negative sampling mechanism. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3614171'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -403,6 +422,405 @@
   pages        = {1-16},
   shortjournal = {IEEE Trans. Knowl. Data Eng.},
   title        = {Few-shot knowledge graph completion with adaptive negative sampling mechanism},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient graph condensation via gaussian process. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3620158'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph condensation reduces the size of large graphs while preserving performance, addressing the scalability challenges of Graph Neural Networks caused by computational inefficiencies on large datasets. Existing methods often rely on bi-level optimization, requiring extensive GNN training and limiting their scalability. To tackle these issues, we propose Graph Condensation via Gaussian Process (GCGP), a novel and efficient framework that optimizes a compact, high-fidelity condensed graph, enabling effective training of various GNNs with reduced computational cost. GCGP utilizes a Gaussian Process (GP), with the condensed graph serving as observations, to estimate the posterior distribution of predictions. This approach eliminates the need for the iterative and resource-intensive training typically required by GNNs. To enhance the capability of the GCGP in capturing dependencies between function values, we derive a specialized covariance function that incorporates structural information. This covariance function broadens the receptive field of input nodes by local neighborhood aggregation, thereby facilitating the representation of intricate dependencies within the nodes. To address the challenge of optimizing binary structural information in condensed graphs, Concrete random variables are utilized to approximate the binary adjacency matrix in a continuous counterpart. This relaxation process allows the adjacency matrix to be represented in a differentiable form, enabling the application of gradient-based optimization techniques to discrete graph structures. Experimental results show that the proposed GCGP method efficiently condenses large-scale graph data while preserving predictive performance, addressing the scalability and efficiency challenges.},
+  archive      = {J_TKDE},
+  author       = {Lin Wang and Qing Li},
+  doi          = {10.1109/TKDE.2025.3620158},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Efficient graph condensation via gaussian process},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient $k$-plex mining in temporal graphs. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3620605'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A $k$-plex is a subgraph in which each vertex can miss edges to at most $k$ vertices, including itself. $k$-plex can find many real-world applications such as social network analysis and product recommendation. Previous studies about $k$-plex mainly focus on static graphs. However, in reality, relationships between two entities often occur at some specific timestamps, which can be modeled as temporal graphs. Directly extending the $k$-plex model may fail to find some critical groups in temporal graphs, which exhibit certain frequent occurring patterns. To fill the gap, in this paper, we develop a novel model, named $(k,l)$-plex, which is a vertex set that exists in no less than $l$ timestamps, at each of which the subgraph induced is a $k$-plex. To identify practical results, we propose and investigate two important problems, i.e., large maximal $(k,l)$-plex (MalKLP) enumeration and maximum $(k,l)$-plex (MaxKLP) identification. For the MalKLP enumeration problem, a reasonable baseline method is first proposed by extending the Bron-Kerbosch (BK) framework. To overcome the limitations in baseline and scale for large graphs, optimized strategies are developed, including novel graph reduction approach and search branch pruning techniques. For the MaxKLP identification task, we first design a baseline method by extending the proposed enumeration framework. Additionally, to accelerate the search, a new search framework with efficient branch pruning rules and refined graph reduction method is developed. Finally, comprehensive experiments are conducted on 14 real-world datasets to validate the efficiency and effectiveness of the proposed techniques.},
+  archive      = {J_TKDE},
+  author       = {Yanping Wu and Renjie Sun and Xiaoyang Wang and Ying Zhang and Lu Qin and Wenjie Zhang and Xuemin Lin},
+  doi          = {10.1109/TKDE.2025.3620605},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Efficient $k$-plex mining in temporal graphs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cross-lingual named entity recognition method based on multi-channel and multi-teacher models. <em>TKDE</em>, 1-11. (<a href='https://doi.org/10.1109/TKDE.2025.3620476'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Currently, cross-lingual named entity recognition tasks primarily rely on knowledge distillation as a key technique. The design of diverse teacher models aims to guide the training of the target student model, effectively addressing the scarcity of target language data. However, existing methods often overemphasize the design of teacher models, overlooking the crucial significance of high-quality hard-label data. To address this issue, this paper proposes a multi-channel, multi-teacher cross-lingual named entity recognition approach (TSH-MC), comprising a translation teacher, a similarity teacher, and a hard-label screening module, with the objective of enhancing the training effectiveness of the target model. To fully exploit intermediate layer information, we introduce multi-channel knowledge distillation techniques, facilitating information exchange between the intermediate layers of teacher and student models, resulting in performance improvement. The proposed TSH-MC method has been experimentally validated on six languages from the CoNLL2002, CoNLL2003, and WikiAnn datasets, successfully demonstrating its effectiveness.},
+  archive      = {J_TKDE},
+  author       = {Wenchao Gao and Li Yang and Chuanrui Cui and Yu Li},
+  doi          = {10.1109/TKDE.2025.3620476},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-11},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Cross-lingual named entity recognition method based on multi-channel and multi-teacher models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interest-aware graph contrastive learning for recommendation with diffusion-based augmentation. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3620600'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Contrastive Learning (GCL) has recently garnered significant attention for enhancing recommender systems. Most existing GCL-based methods perturb the raw data graph to generate views, performing contrastive learning across these views to learn generalizable representations. However, most of these methods rely on data- or model-based augmentation techniques that may disrupt interest consistency. In this paper, we propose a novel interest-aware augmentation approach based on diffusion models to address this issue. Specifically, we leverage a conditional diffusion model to generate interest-consistent views by conditioning on node interaction information, ensuring that the generated views align with the interests of the nodes. Based on this augmentation method, we introduce DiffCL, a graph contrastive learning framework for recommendation. Furthermore, we propose an easy-to-hard generation strategy. By progressively adjusting the starting point of the reverse denoising process, this strategy further enhances effective contrastive learning. We evaluate DiffCL on three public real-world datasets, and results indicate that our method outperforms state-of-the-art techniques, demonstrating its effectiveness.},
+  archive      = {J_TKDE},
+  author       = {Mengyuan Jing and Yanmin Zhu and Zhaobo Wang and Jiadi Yu and Feilong Tang},
+  doi          = {10.1109/TKDE.2025.3620600},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Interest-aware graph contrastive learning for recommendation with diffusion-based augmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fuzzy $k$NN entropy and its anomaly detection. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3620468'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the successful application of granular computing in anomaly detection, a variety of tools including fuzzy information entropy can achieve superior detection results. However, fuzzy information entropy calculates fuzzy similarity through a global strategy, ignoring the local information in the data. To address this deficiency, this paper constructs a fuzzy $k$NN entropy theory and applies it to identify anomalies. Firstly, fuzzy $k$-similarity and fuzzy $k$NN are defined, and $k$NN entropy theory and the related information-theoretic metrics are proposed. Then, the relevant definitions and propositions of fuzzy $k$NN entropy, fuzzy $k$-joint entropy, fuzzy $k$-conditional information entropy, as well as fuzzy $k$-mutual information are elaborated. Based on the proposed theory, an anomaly detection model is constructed. At first, the fuzzy $k$-similarity relation matrix is constructed based on the fuzzy $k$-similarity in the proposed theory, and the relative fuzzy $k$NN entropy is calculated. Based on the relative fuzzy $k$NN entropy, the fuzzy $k$-relation anomaly degree is defined to characterize the anomaly intensity of fuzzy $k$NN information granules. Then, the anomaly factor based on fuzzy $k$NN entropy is built to represent the anomaly degree of data objects. Finally, the corresponding Fuzzy $k$NN Entropy-based Anomaly Detection algorithm (F $k$ EAD) is designed. Comparative experiments are conducted with 11 state-of-the-art anomaly detection methods on thirty public datasets. The results reveal that the proposed method achieves better performance.},
+  archive      = {J_TKDE},
+  author       = {Chang Liu and Zhong Yuan and Yuan Yuan and Hongmei Chen and Dezhong Peng and Xiaomin Song},
+  doi          = {10.1109/TKDE.2025.3620468},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Fuzzy $k$NN entropy and its anomaly detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure and practical time series analytics with mixed model. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3620577'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Merging multi-source time series data in cloud servers significantly enhances the effectiveness of analyses. However, privacy concerns are hindering time series analytics in the cloud. Responsively, numerous secure time series analytics schemes have been designed to address privacy concerns. Unfortunately, existing schemes suffer from severe performance issues, making them impractical for real-world applications. In this work, we propose novel secure time series analytics schemes that break through the performance bottleneck by substantially improving both communication and computational efficiency without compromising security. To attain this, we open up a new technique roadmap that leverages the idea of mixed model. Specifically, we design a non-interactive secure Euclidean distance protocol by tailoring homomorphic secret sharing to suit subtractive secret sharing. Additionally, we devise a different approach to securely compute the minimum of three elements, simultaneously reducing computational and communication costs. Moreover, we delicately introduce a rotation concept, design a rotation-based hybrid comparison mode, and finally propose our fast secure top-$k$ protocol that can dramatically reduce comparison complexity. With the above secure protocols, we propose a practical secure time series analytics scheme with exceptional performance and a security-enhanced scheme that considers stronger adversaries. Formal security analyses demonstrate that our proposed schemes can achieve the desired security requirements, while the comprehensive experimental evaluations illustrate that our schemes outperform the state-of-the-art scheme in both computation and communication.},
+  archive      = {J_TKDE},
+  author       = {Songnian Zhang and Hao Yuan and Hui Zhu and Jun Shao and Yandong Zheng and Fengwei Wang},
+  doi          = {10.1109/TKDE.2025.3620577},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Secure and practical time series analytics with mixed model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Blending data and knowledge for process industrial modeling under riemannian preconditioned bayesian framework. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3621125'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Integrating graph neural networks (GNNs) with variational inference (VI) provides a promising direction for blending structured prior knowledge with observational empirical data for data-driven industrial process modeling. However, this task requires inference of the normalized adjacency matrix (NAM), where each row is normalized to be non-negative and to sum to one, matching the support of Dirichlet distribution. This requirement presents two main technical challenges: 1) intractable Kullback-Leibler (KL) divergence optimization between Dirichlet distributions, and 2) constrained optimization for standard- gradient-descent-based neural network parameter optimization. To handle issue 1), we first formulate the inference of the NAM as a differential equation simulation problem and derive an easy-to-implement expression to iteratively improve the KL divergence without explicitly computing it. Based on this, to alleviate issue 2), we involve Riemannian optimization to precondition this simulation procedure, which ensures that the inferred NAM conforms to the row-normalization constraint. After that, we collectively designate these approaches for NAM inference as Preconditioned-Simulation-Induced Variational Inference ($\psi$-VI), and provide theoretical guarantees of convergence. On this foundation, we propose a new graph neural network architecture, the Preconditioned-Simulation-Induced-based Variational Graph Neural Network ($\psi$-VGNN) for industrial process modeling. Finally, we validate the efficacy of $\psi$-VGNN through comprehensive experiments on industrial modeling tasks.},
+  archive      = {J_TKDE},
+  author       = {Zhichao Chen and Yulong Zhang and Odin Zhang and Fangyikang Wang and Le Yao and Hao Wang and Zhihuan Song},
+  doi          = {10.1109/TKDE.2025.3621125},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Blending data and knowledge for process industrial modeling under riemannian preconditioned bayesian framework},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive survey of dynamic graph neural networks: Models, frameworks, benchmarks, experiments and challenges. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3621291'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic Graph Neural Networks (GNNs) combine temporal information with GNNs to capture structural, temporal, and contextual relationships in dynamic graphs simultaneously, leading to enhanced performance in various applications. As the demand for dynamic GNNs continues to grow, numerous models and frameworks have emerged to cater to different application needs. There is a pressing need for a comprehensive survey that evaluates the performance, strengths, and limitations of various approaches in this domain. This paper aims to fill this gap by offering a thorough comparative analysis and experimental evaluation of dynamic GNNs. It covers 91 dynamic GNN models with a novel taxonomy, 17 dynamic GNN training frameworks, and commonly used benchmarks. We also evaluate the experimental results of ten representative dynamic GNN models and five frameworks on six datasets. Evaluation metrics focus on convergence accuracy, training efficiency, and GPU memory usage, enabling a thorough performance comparison across various models and frameworks. From the analysis and evaluation results, we identify key challenges and offer principles for future research to enhance the design of models and frameworks in the dynamic GNNs field. Our code is made publicly available at https://github.com/fengwudi/DGNN_model_and_data},
+  archive      = {J_TKDE},
+  author       = {ZhengZhao Feng and Rui Wang and TianXing Wang and Mingli Song and Sai Wu and Shuibing He},
+  doi          = {10.1109/TKDE.2025.3621291},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {A comprehensive survey of dynamic graph neural networks: Models, frameworks, benchmarks, experiments and challenges},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Survey of natural language processing for education: Taxonomy, systematic review, and future trends. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3621181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Natural Language Processing (NLP) aims to analyze text or speech via techniques in the computer science field. It serves applications in the domains of healthcare, commerce, education, and so on. Particularly, NLP has been widely applied to the education domain and its applications have enormous potential to help teaching and learning. In this survey, we review recent advances in NLP with a focus on solving problems relevant to the education domain. In detail, we begin with introducing the related background and the real-world scenarios in education to which NLP techniques could contribute. Then, we present a taxonomy of NLP in the education domain and highlight typical NLP applications including question answering, question construction, automated assessment, and error correction. Next, we illustrate the task definition, challenges, and corresponding cutting-edge techniques based on the above taxonomy. In particular, LLM-involved methods are included for discussion due to the wide usage of LLMs in diverse NLP applications. After that, we showcase some off-the-shelf demonstrations in this domain, which are designed for educators or researchers. At last, we conclude with five promising directions for future research, including generalization over subjects and languages, deployed LLM-based systems for education, adaptive learning for teaching and learning, interpretability for education, and ethical consideration of NLP techniques. We organize all relevant datasets and papers in the open-available Github Link for better review https://github.com/LiXinyuan1015/NLP-for-Education.},
+  archive      = {J_TKDE},
+  author       = {Yunshi Lan and Xinyuan Li and Hanyue Du and Xuesong Lu and Ming Gao and Weining Qian and Aoying Zhou},
+  doi          = {10.1109/TKDE.2025.3621181},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Survey of natural language processing for education: Taxonomy, systematic review, and future trends},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient algorithms for computing random walk centrality. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3621520'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Random walk centrality is a fundamental metric in graph mining for quantifying node importance and influence, defined as the weighted average of hitting times to a node from all other nodes. Despite its ability to capture rich graph structural information and its wide range of applications, computing this measure for large networks remains impractical due to the computational demands of existing methods. In this paper, we present a novel formulation of random walk centrality, underpinning two scalable algorithms: one leveraging approximate Cholesky factorization and sparse inverse estimation, while the other sampling rooted spanning trees. Both algorithms operate in near-linear time and provide strong approximation guarantees. Extensive experiments on large real-world networks, including one with over 10 million nodes, demonstrate the efficiency and approximation quality of the proposed algorithms.},
+  archive      = {J_TKDE},
+  author       = {Changan Liu and Zixuan Xie and Ahad N. Zehmakan and Zhongzhi Zhang},
+  doi          = {10.1109/TKDE.2025.3621520},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Efficient algorithms for computing random walk centrality},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TowerDNA: Fast and accurate graph retrieval with dividing, contrasting and alignment. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3621493'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph retrieval (GR), a ranking procedure that aims to sort the graphs in a database by their relevance to a query graph in decreasing order, has wide applications across diverse domains, such as visual object detection and myreddrug discovery. Existing Graph Retrieval (GR) approaches usually compare graph pairs at a detailed level and generate quadratic similarity scores. In realistic scenarios, conducting quadratic fine-grained comparisons is costly. However, coarse-grained comparisons would result in performance loss. Moreover, label scarcity in real-world data brings extra challenges. To tackle these issues, we investigate a more realistic GR problem, namely, efficient graph retrieval (EGR). Our key intuition is that, since there are numerous underutilized unlabeled pairs in realistic scenarios, by leveraging the additional information they provide, we can achieve speed-up while simplifying the model without sacrificing performance. Following our intuition, we propose an efficient model called Dual-Tower Model with Dividing, Contrasting and Alignment (TowerDNA). TowerDNA utilizes a GNN-based dual-tower model as a backbone to quickly compare graph pairs in a coarse-grained manner. In addition, to effectively utilize unlabeled pairs, TowerDNA first identifies confident pairs from unlabeled pairs to expand labeled datasets. It then learns from remaining unconfident pairs via graph contrastive learning with geometric correspondence. To integrate all semantics with reduced biases, TowerDNA generates prototypes using labeled pairs, which are aligned within both confident and unconfident pairs. Extensive experiments on diverse realistic datasets demonstrate that TowerDNA achieves comparable performance to fine-grained methods while providing a 10× speed-up.},
+  archive      = {J_TKDE},
+  author       = {Junwei Yang and Yiyang Gu and Yifang Qin and Xiao Luo and Zhiping Xiao and Kangjie Zheng and Wei Ju and Xian-Sheng Hua and Ming Zhang},
+  doi          = {10.1109/TKDE.2025.3621493},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {TowerDNA: Fast and accurate graph retrieval with dividing, contrasting and alignment},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic stochastic reorientation particle swarm optimization for adaptive latent factor analysis in high-dimensional sparse matrices. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3621469'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The latent factor analysis (LFA) model has been widely used to uncover latent relationships from high-dimensional sparse (HiDS) matrices. However, the performance of LFA depends largely on the hyper-parameter value used in the model training. Traditional hyper-parameter tuning methods such as grid search suffer from inefficiency and inaccuracy. In recent years, the particle swarm optimization (PSO) algorithm offers an intelligent approach to adaptively adjust the hyper-parameter of LFA. However, the global optimal solution of the hyper-parameter tuning problem is not fixed due to its dynamic decision space. Therefore, it is difficult for PSO to determine the best hyper-parameter for each training iteration. To address this problem, this paper proposes a novel hyper-parameter adaptive adjustment algorithm called dynamic stochastic reorientation PSO (DSR-PSO) that adapts to constantly changing decision spaces. By randomly adjusting the search directions of particles and perturbing the elite particles, the dynamic property of the DSR-PSO can be enhanced, so that the hyper-parameter can be adjusted in real time throughout the model training process. Furthermore, this paper proves the convergence of the DSR-PSO and gives its convergence condition by discussing the distribution of the characteristic roots. Finally, this paper proposes the DSR-PSO-based LFA (DPL) model by incorporating the DSR-PSO-based hyper-parameter adjustment into the LFA to promote its model training, and analyzes its complexity. Experimental results on benchmark datasets show that the proposed DPL surpasses state-of-the-art LFA models in terms of accuracy and efficiency.},
+  archive      = {J_TKDE},
+  author       = {Chao Lyu and Ziwen Ma and Xin Luo and Yuhui Shi},
+  doi          = {10.1109/TKDE.2025.3621469},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Dynamic stochastic reorientation particle swarm optimization for adaptive latent factor analysis in high-dimensional sparse matrices},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Consensus and computing integration for processing transactional graphs in consortium blockchain. <em>TKDE</em>, 1-16. (<a href='https://doi.org/10.1109/TKDE.2025.3621621'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent research and practical scenarios demonstrate that integrating transaction-based graph computing into blockchain has become a critical focus in consortium networks. The on-chain Transactional Graph Processing Applications (TGPAs) have become popular in the blockchain. TGPA leverages blockchain consensus mecha-nisms to prevent malicious peer attacks while utilizing graph computing to enable powerful analytical capabilities. However, a fundamental challenge exists: blockchain operates on a computation-before-consensus principle, while graph computing requires intermediate result-sharing based on mutual trust. This isolation between the two mechanisms fails to ensure both computational trustworthiness and consensus efficiency. Thus, TGPA necessitates an integrated solution combining consensus and graph computing. Besides, the trusted high-communication environment of graph computing conflicts with the untrusted high-communication environment of blockchain. Communication efficiency and data trustworthiness are existing challenges of the solution. This paper presents a Graph partitioning-based Byzantine Fault Tolerance (GBFT) mechanism for the computing-consensus integration. GBFT integrates graph computing's shuffling and merging phases with the consensus phase to achieve parallel computation and synchronized consensus. Additionally, GBFT incorporates a grouping-partitioning strategy and granular communication methods to enhance both trustworthiness and efficiency. Theoretical analysis proves that GBFT reduces communication and latency complexity to O(x) (x represents the number of peers). Experimental evaluations demonstrate that GBFT achieves superior consensus capacity, graph computing capacity, and communication scalability performance. It also supports various graph algorithms across different data scales.},
+  archive      = {J_TKDE},
+  author       = {Pengyi Zhang and Pengxuan Ma and Chaopeng Guo and Yu Gu and Jie Song},
+  doi          = {10.1109/TKDE.2025.3621621},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Consensus and computing integration for processing transactional graphs in consortium blockchain},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 1HIkDA: A novel privacy preserving framework for graph data publication. <em>TKDE</em>, 1-13. (<a href='https://doi.org/10.1109/TKDE.2025.3621678'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As graph-based data storage becomes increasingly prevalent, the demand for robust privacy protection during data publication has intensified. A fundamental tension, however, exists between the level of privacy protection and the utility of anonymized graph: achieving stronger privacy often necessitates substantial alterations to the original graph (e.g., adding or removing nodes or edges), which can compromise critical graph attributes and reduce practical value. Addressing this challenge, we propose a two-phase privacy protection framework, 1HIkDA, designed to ensure both1-hop indistinguishable and k-degree anonymity, thus offering enhanced resilience against unknown structural attacks. To optimize the usability of anonymized graphs, our framework integrates two distinct algorithms: the Greedy-based 1-hop Indistinguishable (G1HI) algorithm and the Wasserstein and Regularization-based k-degree Anonymity (WRkDA) algorithm. The G1HI algorithm achieves neighbor-hood indistinguishability with minimal modifications and low costs, while the WRkDA algorithm minimizes the Wasserstein dis-tance between degree distributions pre-and post-anonymization to meet k-degree anonymity requirements. Extensive experiments conducted on nine synthetic and real-world networks have demonstrated the effectiveness and efficiency of the proposed scheme.},
+  archive      = {J_TKDE},
+  author       = {Yudong Gong and Sanyang Liu and Yiguang Bai and Ziliang Wang},
+  doi          = {10.1109/TKDE.2025.3621678},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {1HIkDA: A novel privacy preserving framework for graph data publication},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SSD: Self-supervised distillation for heterophilic graph representation learning. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3621758'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Knowledge Distillation (GKD) has made remarkable progress in graph representation learning in recent years. Despite its great success, GKD often obeys the label-dependence manner, which heavily relies on a large number of labels. Besides, we observe that GKD encounters the issue of embedding collapse, as merely maximizing the consistency between the teacher and student is insufficient for heterophilic graphs. To tackle these challenges, we propose a Self-Supervised Distillation framework named SSD. To realize label independence, the framework is conducted based on contrastive learning. Specifically, we design a Topology Invariance Block (TIB) and a Feature Invariance Block (FIB) to distill semantic invariance from unlabeled data. Each block includes a teacher-student architecture, which is trained by a projection-based contrastive loss. To avoid embedding collapse, the loss pays attention to two critical aspects: (1) Preserving consistency maximization between the same node representations related to teacher and student (positive pairs). (2) Ensuring consistency minimization between negative pairs, which include the final teacher and final student representation pairs and hidden teacher representation pairs. Under the guidance of self-distillation in each block, TIB captures the topology invariance while FIB learns the feature invariance. Additionally, cross-distillation is applied between two blocks, allowing each block to gain additional contrastive knowledge from each other, resulting in improved feature representations and enhanced classification performance. Comprehensive experimental results on 10 datasets demonstrate that our model achieves superior performance in the node classification task. In summary, SSD offers a novel paradigm for self-supervised knowledge distillation on graph-structured data. The code is available at https://github.com/gaocodecell/DCGRL},
+  archive      = {J_TKDE},
+  author       = {Yuan Gao and Yuchen Li and Bingsheng He and Hezhe Qiao and Guoguo Ai and Hui Yan},
+  doi          = {10.1109/TKDE.2025.3621758},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {SSD: Self-supervised distillation for heterophilic graph representation learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). IMS: Incremental max-P regionalization with statistical constraints. <em>TKDE</em>, 1-18. (<a href='https://doi.org/10.1109/TKDE.2025.3621843'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spatial regionalization is the process of grouping a set of spatial areas into spatially contiguous and homogeneous regions. This paper introduces an Incremental Max-P regionalization with statistical constraints (IMS) problem; a regionalization process that supports enriched user-defined constraints based on statistical aggregate functions and supports incremental updates. In addition to enabling richer constraints, it allows users to employ multiple constraints simultaneously to significantly push the expressiveness and effectiveness of the existing regionalization literature. The IMS problem is NP-hard and significantly enriches the existing regionalization problems. Such a major enrichment introduces several challenges in both feasibility and scalability. To address these challenges, we propose the FaCT algorithm, a three-phase heuristic approach that finds a feasible set of spatial regions that satisfy IMS constraints while supporting large datasets compared to the existing literature. FaCT supports local and global incremental updates when there are changes in attribute values or constraints. In addition, we incorporate the Iterated Greedy algorithm with FaCT to further improve the solution quality of the IMS problem and the classical max-p regions problem. Our extensive experimental evaluation has demonstrated the effectiveness and scalability of our techniques on several real datasets.},
+  archive      = {J_TKDE},
+  author       = {Yunfan Kang and Yiyang Bian and Qinma Kang and Amr Magdy},
+  doi          = {10.1109/TKDE.2025.3621843},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {IMS: Incremental max-P regionalization with statistical constraints},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GADE+: A graph-based anchor-enhanced framework for targeted document detection. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3621835'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The documents mentioning a target entity are es sential prerequisites of various applications, such as market intelligence analysis, knowledge base enrichment, fact checking and retrieval augmented generation. A simple solution to acquire these documents is to exploit search engines via querying the name of the target entity. However, the name of the target entity appearing in a returned document does not necessarily mean it really refers to the target entity due to the name ambiguity, as it may refer to another entity sharing the same name as the target entity. Thus, in this paper, we explore a new task of targeted document detection, which aims to detect those targeted documents (i.e., documents really mentioning the target entity) from the given candidate documents each of which contains an ambiguous name of the target entity. We propose GADE+, a novel Graph-based Anchor-enhanced framework to solve the task of targeted Document dEtection by leveraging both the local relevance information (via a local relevance model) and the global cross-document interactions (via an anchor-based global interaction model) jointly. The framework GADE, as presented in our conference paper, relies on a complete graph to model global cross-document interactions, resulting in many useless interactions and limited scalability. To address the above issues, we first introduce virtual anchors representing virtual candidate documents, and construct a document interaction bipartite graph between candidate documents and virtual anchors. Then we apply a graph neural network over the graph to model the global cross-document interactions via anchor-based message passing mechanism. To further learn more discriminative representations of virtual anchors and candidate documents, an anchor-guided regularization is devised to explicitly improve the inter-class separability of virtual anchors and the intra-class compactness of candidate documents. We construct four labeled datasets for this task based on Wikipedia and Web documents respectively, and a thorough experimental study shows that our framework GADE+ significantly outperforms all the baseline methods in terms of F1-score.},
+  archive      = {J_TKDE},
+  author       = {Haixu Wen and Wei Shen and Guoliang Li},
+  doi          = {10.1109/TKDE.2025.3621835},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {GADE+: A graph-based anchor-enhanced framework for targeted document detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A causal perspective of stock prediction models. <em>TKDE</em>, 1-12. (<a href='https://doi.org/10.1109/TKDE.2025.3621851'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of stock prediction, machine learning models encounter considerable obstacles due to the inherent low signal-to-noise ratio and the nonstationary nature of financial markets. These challenges often result in spurious correlations and unstable predictive relationships, leading to poor performance of models when applied to out-of-sample (OOS) domains. To address these issues, we investigate Domain Generalization techniques, with a particular focus on causal representation learning to improve a prediction model's generalizability to OOS domains. By leveraging multi-factor models from econometrics, we introduce a novel error bound that explicitly incorporates causal relationships. In addition, we present the connection between the proposed error bound and market nonstationarity. We also develop a Causal Discovery technique to discover invariant feature representations, which effectively mitigates the proposed error bound, and the influence of spurious correlations on causal discovery is rigorously examined. Our theoretical findings are substantiated by numerical results, showcasing the effectiveness of our approach in enhancing the generalizability of stock prediction models.},
+  archive      = {J_TKDE},
+  author       = {Songci Xu and Qiangqiang Cheng and Chi-Guhn Lee},
+  doi          = {10.1109/TKDE.2025.3621851},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {A causal perspective of stock prediction models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From one comes two: A tensorized graph learning framework for clustering. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3622333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we focus on the task of learning the promising graph for clustering and present a novel Tensorized Graph Learning (TGL) framework, which synergizes the neighbor and self-expressiveness information. The main proposition is that the graph with neighbor information and the graph with self-expressiveness information describe the underlying clustering structure from two different perspectives and can be regarded as two views of data. To this end, our TGL converts a single-view graph learning task into a multi-view graph learning task. Specifically, it jointly learns these two graphs with a low-rank tensor constraint, which pursues the consistency in the high-order tensor space. Both the neighbor information and self-expressiveness information of data can be excavated during the graph learning process. Extensive experimental results show the promising performance of the proposed TGL in comparison to several state-of-the-art clustering algorithms.},
+  archive      = {J_TKDE},
+  author       = {Qinghai Zheng and Jihua Zhu and Yuanlong Yu and Haoyu Tang},
+  doi          = {10.1109/TKDE.2025.3622333},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {From one comes two: A tensorized graph learning framework for clustering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive survey on data augmentation. <em>TKDE</em>, 1-20. (<a href='https://doi.org/10.1109/TKDE.2025.3622600'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data augmentation is a series of techniques that generate high-quality artificial data by manipulating existing data samples. By leveraging data augmentation techniques, AI models can achieve significantly improved applicability in tasks involving scarce or imbalanced datasets, thereby substantially enhancing AI models' generalization capabilities. Existing literature surveys only focus on a certain type of specific modality data, and categorize these methods from modality-specific and operation centric perspectives, which lacks a consistent summary of data augmentation methods across multiple modalities and limits the comprehension of how existing data samples serve the data augmentation process. To bridge this gap, this survey proposes a more enlightening taxonomy that encompasses data aug mentation techniques for different common data modalities by investigating how to take advantage of the intrinsic relationship between and within instances. Additionally, it categorizes data augmentation methods across five data modalities through a unified inductive approach.},
+  archive      = {J_TKDE},
+  author       = {Zaitian Wang and Pengfei Wang and Kunpeng Liu and Pengyang Wang and Yanjie Fu and Chang-Tien Lu and Charu C. Aggarwal and Jian Pei and Yuanchun Zhou},
+  doi          = {10.1109/TKDE.2025.3622600},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {A comprehensive survey on data augmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SeaCQ: Secure and efficient authenticated conjunctive query in hybrid-storage blockchains. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3622591'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data has become a critical economic asset in recent years. To enable secure and reliable access to data assets, the combination of symmetric searchable encryption (SSE) and Hybrid-storage blockchains (HSB) offers a promising solution by storing the authenticated data structure (ADS) on-chain and encrypted data off-chain, thus enabling efficient and authenticated encrypted queries. However, existing encrypted query schemes in HSB either lack support for conjunctive queries, a commonly used and important query pattern in databases, or exhibit low query efficiency in conjunctive queries. vsChain was the first scheme to support secure and authenticated conjunctive queries in HSB but had drawbacks in terms of high query and authentication costs. To overcome these limitations, we introduce SeaCQ, a novel scheme for secure and efficient authenticated conjunctive queries. SeaCQ employs a meticulously designed two-stage authenticated query process to achieve optimal query efficiency. It also incorporates a customized double-layer authentication mechanism to ensure the correctness and completeness of query results efficiently while providing error localization. Additionally, we present an extension of SeaCQ, SeaCQ*, which is a gas-efficient version that utilizes a constant-size on-chain ADS. Our security analysis and experimental results validate the security and efficiency of the proposed schemes.},
+  archive      = {J_TKDE},
+  author       = {Xu Yang and Hongguang Zhao and Saiyu Qi and Yong Qi},
+  doi          = {10.1109/TKDE.2025.3622591},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {SeaCQ: Secure and efficient authenticated conjunctive query in hybrid-storage blockchains},
   year         = {2025},
 }
 </textarea>

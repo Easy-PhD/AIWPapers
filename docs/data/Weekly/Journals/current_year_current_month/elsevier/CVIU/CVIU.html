@@ -25,364 +25,104 @@
 </head>
 <body>
 
-<h2 id="cviu">CVIU - 18</h2>
+<h2 id="cviu">CVIU - 5</h2>
 <ul>
 <li><details>
 <summary>
-(2025). IP-CAM: Class activation mapping based on importance weights and principal-component weights for better and simpler visual explanations. <em>CVIU</em>, <em>261</em>, 104523. (<a href='https://doi.org/10.1016/j.cviu.2025.104523'>www</a>)
+(2025). Dynamic deep multi-label image data augmentation based on self-paced learning. <em>CVIU</em>, <em>262</em>, 104530. (<a href='https://doi.org/10.1016/j.cviu.2025.104530'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Visual explanations of deep neural networks (DNNs) have gained considerable importance in deep learning due to the lack of interpretability, which constrains human trust in DNNs. This paper proposes a new gradient-free class activation map (CAM) architecture called importance principal-component CAM (IP-CAM). The architecture not only improves the prediction accuracy of networks but also provides simpler and more reliable visual explanations. It adds importance weight layers before the classifier and assigns an importance weight to each activation map. After fine-tuning, it selects images with the highest prediction score for each class, performs principal component analysis (PCA) on activation maps of all channels, and regards the eigenvector of the first principal component as principal-component weights for that class. The final saliency map is obtained by linearly combining the activation maps, importance weights and principal-component weights. IP-CAM is evaluated on the ILSVRC 2012 dataset and RSD46-WHU dataset, whose results show that IP-CAM performs better than most previous CAM variants in recognition and localization tasks. Finally, the method is applied as a tool for interpretability, and the results illustrate that IP-CAM effectively unveils the decision-making process of DNNs through saliency maps.},
+  abstract     = {Multi-label classification is crucial in image recognition. However, data class imbalance can lead to poor performance in classification algorithms, particularly for minority classes, thereby impacting overall accuracy. Existing augmentation methods for minority class data typically adopt a dataset-wide approach, failing to enhance minority class samples based on the model’s performance for each class during training. In this paper, we propose an end-to-end Self-paced Deep Multi-label data Augmentation (SDMA) method which is capable of dynamically generating image data for minority classes in multi-label classification. Our method selects a batch of relatively simple samples as the training set during each training iteration. The number of samples from each category in this batch reflects the model’s training performance on those categories. By generating data for the minority classes within these samples, we can dynamically generate samples that better meet the model’s needs based on its training progress. Additionally, to mitigate the impact of noisy data in the generated set, we compute the predicted similarity of the generated data with the seed and reference instances, excluding low-similarity data from influencing the model. Extensive experiments on multi-label datasets demonstrate that SDMA is competitive compared to other state-of-the-art methods.},
   archive      = {J_CVIU},
-  author       = {Wenyi Zhang and Haoran Zhang and Xisheng Zhang and Xiaohua Shen and Lejun Zou},
-  doi          = {10.1016/j.cviu.2025.104523},
+  author       = {Bin Yu and Wei Li and Chen Zhang and Wenjie Mao and Yu Xie},
+  doi          = {10.1016/j.cviu.2025.104530},
   journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104523},
+  month        = {12},
+  pages        = {104530},
   shortjournal = {Comput. Vis. Image Understanding},
-  title        = {IP-CAM: Class activation mapping based on importance weights and principal-component weights for better and simpler visual explanations},
-  volume       = {261},
+  title        = {Dynamic deep multi-label image data augmentation based on self-paced learning},
+  volume       = {262},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). MSBATN: Multi-stage boundary-aware transformer network for action segmentation in untrimmed surgical videos. <em>CVIU</em>, <em>261</em>, 104521. (<a href='https://doi.org/10.1016/j.cviu.2025.104521'>www</a>)
+(2025). CCNeXt: An effective self-supervised stereo depth estimation approach. <em>CVIU</em>, <em>262</em>, 104529. (<a href='https://doi.org/10.1016/j.cviu.2025.104529'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Understanding actions within surgical workflows is critical for evaluating post-operative outcomes and enhancing surgical training and efficiency. Capturing and analysing long sequences of actions in surgical settings is challenging due to the inherent variability in individual surgeon approaches, which are shaped by their expertise and preferences. This variability complicates the identification and segmentation of distinct actions with ambiguous boundary start and end points. The traditional models, such as MS-TCN, which rely on large receptive fields, cause over-segmentation or under-segmentation, where distinct actions are incorrectly aligned. To address these challenges, we propose the Multi-Stage Boundary-Aware Transformer Network (MSBATN) with hierarchical sliding window attention to improve action segmentation. Our approach effectively manages the complexity of varying action durations and subtle transitions by accurately identifying start and end action boundaries in untrimmed surgical videos. MSBATN introduces a novel unified loss function that optimises action classification and boundary detection as interconnected tasks. Unlike conventional binary boundary detection methods, our innovative boundary weighing mechanism leverages contextual information to precisely identify action boundaries. Extensive experiments on three challenging surgical datasets demonstrate that MSBATN achieves state-of-the-art performance, with superior F1 scores at 25% and 50% thresholds and competitive results across other metrics.},
+  abstract     = {Depth Estimation plays a crucial role in recent applications in robotics, autonomous vehicles, and augmented reality. These scenarios commonly operate under constraints imposed by computational power. Stereo image pairs offer an effective solution for depth estimation since it only needs to estimate the disparity of pixels in image pairs to determine the depth in a known rectified system. Due to the difficulty in acquiring reliable ground-truth depth data across diverse scenarios, self-supervised techniques emerge as a solution, particularly when large unlabeled datasets are available. We propose a novel self-supervised convolutional approach that outperforms existing state-of-the-art Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) while balancing computational cost. The proposed CCNeXt architecture employs a modern CNN feature extractor with a novel windowed epipolar cross-attention module in the encoder, complemented by a comprehensive redesign of the depth estimation decoder. Our experiments demonstrate that CCNeXt achieves competitive metrics on the KITTI Eigen Split test data while being 10.18 × faster than the current best model and achieves state-of-the-art results in all metrics in the KITTI Eigen Split Improved Ground Truth and Driving Stereo datasets when compared to recently proposed techniques. To ensure complete reproducibility, our project is accessible at https://github.com/alelopes/CCNext .},
   archive      = {J_CVIU},
-  author       = {Rezowan Shuvo and M.S. Mekala and Eyad Elyan},
-  doi          = {10.1016/j.cviu.2025.104521},
+  author       = {Alexandre Lopes and Roberto Souza and Helio Pedrini},
+  doi          = {10.1016/j.cviu.2025.104529},
   journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104521},
+  month        = {12},
+  pages        = {104529},
   shortjournal = {Comput. Vis. Image Understanding},
-  title        = {MSBATN: Multi-stage boundary-aware transformer network for action segmentation in untrimmed surgical videos},
-  volume       = {261},
+  title        = {CCNeXt: An effective self-supervised stereo depth estimation approach},
+  volume       = {262},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). SVFFNet: A scale-aware voxel flow fusion network for video prediction. <em>CVIU</em>, <em>261</em>, 104520. (<a href='https://doi.org/10.1016/j.cviu.2025.104520'>www</a>)
+(2025). SDC-net: A novel selective dilated convolution network for medical images segmentation. <em>CVIU</em>, <em>262</em>, 104526. (<a href='https://doi.org/10.1016/j.cviu.2025.104526'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Video prediction is a challenging task due to the potential for various motion scales in the complex scene. The diversity of motion scales stems from the time-variant and object-dependent motion magnitudes, as well as the multiple image resolutions across datasets. However, the vast majority of frame forecasting networks do not distinguish between treatment of different motion scales. Therefore, their receptive field is normally insufficient to capture larger-scale motions. Those that do, often yield significant local distortions in the predicted images. The reasons lie in their fixed choice of scale factors and lack of cross-scale interaction between motion features. In this work, we propose a Scale-Aware Voxel Flow Fusion Network (SVFFNet) to address the motion scale inconsistency problem and fully integrate multi-scale feature. This network consists of a set of flow estimation blocks, each block containing a selector module and a fusion module. The selector module adaptively selects the appropriate scale-processing branch for the input frames, thus facilitating acquisition of more refined features for large-scale motion. The fusion module then combines these features with the original motion information via an attention mechanism, preserving the actually existing structural details. Experimental results on four widely used benchmark datasets demonstrate that our method outperforms previously published baselines for video prediction. The code is available at: https://github.com/zyaojlu/SVFFNet .},
+  abstract     = {Medical image segmentation is a critical technology that enables medical professional personnels to accurately identify lesions, organs, and other key structures from various medical images. In this area, deep learning-based methods have emerged as the mainstream approach for medical image segmentation. However, the inherent variability in lesion size and spatial dimensions still presents significant challenges for achieving precise medical segmentation, as current dilated convolution-based approaches exhibit limitations in effectively capturing and processing multi-scale pathological features. In order to overcome the shortcomings of the current techniques, this paper proposes a novel deep neural network (DNN) architecture, referred to as selective dilated convolution network (SDC-Net), to address the limitations of existing methods in multi-scale feature extraction, detail preservation, and feature fusion. Within the SDC-Net, the selective dilated convolution modules (SDCMs), the wavelet convolution module (WCM), and the feature fusion modules (FFMs) are proposed: The SDCMs capture multi-scale contextual information through cascaded dilated convolutions and dynamic weight adjustment. The WCM extracts multi-spectral features with wavelet transforms, enhancing the capture of complex shapes and boundaries. The FFMs optimize feature fusion with attention mechanisms, improving segmentation accuracy. Through carefully designed comparative experiments, the SDC-Net is shown to outperform the state-of-the-art methods including CE-Net, CPF-Net and Rolling U-Net, with the metrics of Dice, Average Symmetric Surface Distance (ASSD), and mean Intersection-over-Union (mIoU) reaching 94.55%, 0.40 pix and 89.57%, 95.21%, 0.29 pix and 91.11%, and 92.05%, 0.59 pix and 86.37%, on three publicly available medical image datasets: ISIC-2018 (melanoma dermoscopy), Kvasir-SEG (gastrointestinal disease polyp endoscopy) and Figshare (brain tumor magnetic resonance scans), respectively.},
   archive      = {J_CVIU},
-  author       = {Yao Zhou and Jinpeng Wei and Xueyong Zhang and Yusong Zhai and Jian Wei},
-  doi          = {10.1016/j.cviu.2025.104520},
+  author       = {Chaoqun Ma and Rongsheng Cui and Feng Liu and Chunli Cai},
+  doi          = {10.1016/j.cviu.2025.104526},
   journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104520},
+  month        = {12},
+  pages        = {104526},
   shortjournal = {Comput. Vis. Image Understanding},
-  title        = {SVFFNet: A scale-aware voxel flow fusion network for video prediction},
-  volume       = {261},
+  title        = {SDC-net: A novel selective dilated convolution network for medical images segmentation},
+  volume       = {262},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Generalization-preserving adaptation of vision-language models for open-vocabulary segmentation. <em>CVIU</em>, <em>261</em>, 104518. (<a href='https://doi.org/10.1016/j.cviu.2025.104518'>www</a>)
+(2025). D2PCFN: Dual domain progressive cross-fusion network for remote sensing image pansharpening. <em>CVIU</em>, <em>262</em>, 104525. (<a href='https://doi.org/10.1016/j.cviu.2025.104525'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent progress in large-scale Vision-Language Models (VLMs) has significantly advanced open-vocabulary segmentation. Previous works typically either generate class-agnostic masks and classify them with frozen VLMs, or align the mask generator features with VLM text features. These approaches face challenges of weak spatial discrimination ability of frozen VLMs and poor generalization due to unreliable vision-language alignment. This paper introduces a novel Generalization-Preserving Adaptation (GPA) of VLMs for open-vocabulary segmentation. GPA enhances the spatial discrimination capability of pre-trained VLMs through an efficient fine-tuning scheme, which incorporates a spatial adaptation module comprising spatial dependency modeling and low-rank feature modulation for preserving the feature space. Additionally, GPA proposes a context-aware feature aggregation module to extract mask features better aligned with the VLM features for mask classification. It performs decoupled context modeling that generates object-agnostic contextualized feature map and object-specific classification maps for accentuating discriminative and contextual clues. By maintaining the original VLM feature distribution for vision-language alignment, GPA effectively preserves the generalization capabilities of VLMs while enhancing segmentation performance. Extensive experiments on multiple open-vocabulary panoptic and semantic segmentation benchmarks demonstrate both superior effectiveness and generalization capabilities compared to previous works.},
+  abstract     = {High-resolution multispectral (HRMS) image generation through pansharpening requires effective integration of spatial details from panchromatic (PAN) images and spectral information from low-resolution multispectral (LRMS) images. Existing methods often overlook interactions between deep features across different depths and modalities, resulting in spectral distortion and loss of spatial detail. To address this, we propose a dual domain progressive cross-fusion network (D2PCFN) that progressively integrates features in both spatial and frequency domains. The network consists of a dual-branch feature generation module (DBFGM) for deep feature extraction, a dual domain cross-fusion module (D2CFM) for cross-interaction between spatial and frequency representations, and a deep feature reconstruction module (DFRM) for synthesizing high-quality outputs. Extensive experiments on GaoFen-2, QuickBird, WorldView-3, and WorldView-2 datasets demonstrate that our method achieves state-of-the-art accuracy, with average gains of 1.77% in SAM, 1.70% in ERGAS, 0.89% in PSNR, and 1.37% in HQNR over leading methods. Both quantitative and qualitative results confirm the effectiveness and generalization ability of the proposed D2PCFN. Source code will also be shared on https://github.com/MysterYxby/D2PCFN -website link after publication.},
   archive      = {J_CVIU},
-  author       = {Zhen Chen and Hao Tang and Shiliang Zhang},
-  doi          = {10.1016/j.cviu.2025.104518},
+  author       = {Biyun Xu and Yan Zheng and Suleman Mazhar and Zhenghua Huang},
+  doi          = {10.1016/j.cviu.2025.104525},
   journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104518},
+  month        = {12},
+  pages        = {104525},
   shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Generalization-preserving adaptation of vision-language models for open-vocabulary segmentation},
-  volume       = {261},
+  title        = {D2PCFN: Dual domain progressive cross-fusion network for remote sensing image pansharpening},
+  volume       = {262},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Beyond geometry: The power of texture in interpretable 3D person ReID. <em>CVIU</em>, <em>261</em>, 104517. (<a href='https://doi.org/10.1016/j.cviu.2025.104517'>www</a>)
+(2025). Learning multiscale residual prototypes and global–local correspondence for video anomaly detection. <em>CVIU</em>, <em>262</em>, 104524. (<a href='https://doi.org/10.1016/j.cviu.2025.104524'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper presents FusionTexReIDNet, a robust framework for 3D person re-identification that uniquely leverages UVTexture to enhance both performance and explainability. Unlike existing 3D person ReID approaches that simply overlay textures on point clouds, our method exploits the full potential of UVTexture through its high resolution and normalized coordinate properties. The framework consists of two main streams: a UVTexture stream that processes appearance features and a 3D stream that handles geometric information. These streams are fused through an effective combination of KNN, attribute-based, and explainable re-ranking strategies. Our approach introduces explainability to 3D person ReID through the visualization of activation maps on UVTextures, providing insights into the model’s decision-making process by highlighting discriminative regions. By incorporating the Intersection-Alignment Score derived from activation maps and visible clothing masks, we further improve the ReID accuracy. Extensive experiments demonstrate that FusionTexReIDNet achieves state-of-the-art performance across various scenarios, with Rank-1 accuracies of 98.5% and 89.7% Rank-1 on benchmark datasets, while providing interpretable results through its explainable component.},
+  abstract     = {With the powerful generalization ability of deep learning, existing video anomaly detection methods based on reconstruction or prediction can reconstruct not only normal but also abnormal frames. In response to this issue, numerous methods have been suggested to learn prototypes of normal events to suppress the generalization ability of networks towards anomalies. However, the majority of prototypes in these methods are single-scaling, which leads to an incomplete representation of the intricate complexity of normal events. Additionally, current methods tend to overemphasize global information while neglecting the importance of local information and its correspondence with local information. To address the aforementioned issues, we propose to learn Multiscale Residual Prototypes and Global–Local Correspondence (MRP-GLC) for video anomaly detection. Specifically, we introduce a Multiscale Residual Prototypes Fusion (MRPF) module that enables the learning and integration of multi-scale prototypes of normal events. The utilization of a residual design in this module ensures that the prototypes of normal events are learned while retaining the respective properties of each individual normal event. To facilitate global–local feature correspondence, we adopt a dual-encoder architecture to learn both local and global features, which are subsequently aggregated through our global–local fusion module and fed into the decoder for future frame prediction. The global–local fusion module leverages global features to prioritize attention on local features, enabling the capture of correspondence between global and local information. Extensive experiments conducted on three public datasets demonstrate the effectiveness of the proposed method.},
   archive      = {J_CVIU},
-  author       = {Huy Nguyen and Kien Nguyen and Akila Pemasiri and Sridha Sridharan and Clinton Fookes},
-  doi          = {10.1016/j.cviu.2025.104517},
+  author       = {Yongting Hu and Yuanhong Zhong and Jinkai Li and Xin Wang},
+  doi          = {10.1016/j.cviu.2025.104524},
   journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104517},
+  month        = {12},
+  pages        = {104524},
   shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Beyond geometry: The power of texture in interpretable 3D person ReID},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Synergistic dual and efficient additive attention network for no-reference image quality assessment. <em>CVIU</em>, <em>261</em>, 104516. (<a href='https://doi.org/10.1016/j.cviu.2025.104516'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {No-Reference Image Quality Assessment (NR-IQA) aims to evaluate the perceptual quality of images in alignment with human subjective judgments. However, most existing NR-IQA methods, while striving for high accuracy, often neglect computational complexity. To address this challenge, we propose a Synergistic Spatial and Channel and Efficient Additive Attention Network for NR-IQA. In our approach, we first employ a feature extraction module to derive features rich in both distortion and semantic information. Subsequently, we introduce a spatial-channel synergistic attention mechanism to enhance feature representations across spatial and channel dimensions. This attention module focuses on the most salient regions of the image and modulates feature responses accordingly, enabling the network to emphasize critical distortions and semantic features pertinent to perceptual quality assessment. Specifically, the spatial attention mechanism identifies significant regions that substantially contribute to quality perception, while the channel attention mechanism adjusts the importance of each feature channel, ensuring effective utilization of spatial and channel-specific information. Furthermore, to enhance the model’s robustness, we incorporate an Efficient Additive Attention mechanism alongside a Multi-scale Feed-forward Network, designed to reduce computational costs without compromising performance. Finally, a dual-branch structure for patch-weighted quality prediction is employed to derive the final quality score based on the weighted scores of individual patches. Extensive experimental evaluations on four widely used benchmark datasets demonstrate that the proposed method surpasses several state-of-the-art NR-IQA approaches in both performance and computational efficiency.},
-  archive      = {J_CVIU},
-  author       = {Zhou Fang and Baiming Feng and Ning Li},
-  doi          = {10.1016/j.cviu.2025.104516},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104516},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Synergistic dual and efficient additive attention network for no-reference image quality assessment},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Iterative caption generation with heuristic guidance for enhancing knowledge-based visual question answering. <em>CVIU</em>, <em>261</em>, 104515. (<a href='https://doi.org/10.1016/j.cviu.2025.104515'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The advent of large language models (LLMs) has significantly advanced Knowledge-based Visual Question Answering (KBVQA) by reducing the reliance on external knowledge bases. Traditional methods often generate captions in a single pass, which can struggle with complex questions due to difficulty in precisely identifying key visual components. This challenge undermines the reasoning capabilities of LLMs, which require accurate, semantically aligned captions to answer complex questions effectively. To address this limitation, we propose ICGHG I terative C aption G eneration with H euristic G uidance, a novel framework that refines captions iteratively. Our approach incorporates a dynamic loop where captions are continuously refined based on heuristic feedback from a set of candidate answers and the question itself, ensuring that the final caption provides accurate semantic alignment with both the visual content and the question. By leveraging this iterative process, ICGHG mitigates common issues such as hallucinations and improves the quality of the generated captions. Extensive experiments on OK-VQA, A-OKVQA, and FVQA datasets demonstrate that ICGHG significantly outperforms existing methods, achieving 57.5%, 60.2%, and 69.4% accuracy on their respective test sets, setting new benchmarks in KBVQA accuracy.},
-  archive      = {J_CVIU},
-  author       = {Fengyuan Liu and Zhongjian Hu and Peng Yang and Xingyu Liu},
-  doi          = {10.1016/j.cviu.2025.104515},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104515},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Iterative caption generation with heuristic guidance for enhancing knowledge-based visual question answering},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). KD-mamba: Selective state space models with knowledge distillation for trajectory prediction. <em>CVIU</em>, <em>261</em>, 104499. (<a href='https://doi.org/10.1016/j.cviu.2025.104499'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Trajectory prediction is a key component of intelligent mobility systems and human–robot interaction. The inherently stochastic nature of human behavior, coupled with external environmental influences, poses significant challenges for long-term prediction. However, existing approaches struggle to effectively model spatial interactions and accurately predict long-term destinations, while their high computational demands limit real-world applicability. To address these limitations, this paper presents KD-Mamba, the Selective State Space Models with Knowledge Distillation for trajectory prediction. The model incorporates the U-CMamba module, which features a U-shaped encoder–decoder architecture. By integrating convolutional neural networks (CNN) with the Mamba mechanism, this module effectively captures local spatial interactions and global contextual information of human motion patterns. Subsequently, we introduce a Bi-Mamba module, which captures long-term dependencies in human movement, ensuring a more accurate representation of trajectory dynamics. Knowledge distillation strengthens both modules by facilitating knowledge transfer across diverse scenarios. Compared to transformer-based approaches, KD-Mamba reduces computational complexity from quadratic to linear. Extensive experimental results from two real-world trajectory datasets indicate that KD-Mamba outperforms the existing mainstream baselines. The proposed method provides insights into the application of trajectory prediction in human-in-the-loop assistive systems.},
-  archive      = {J_CVIU},
-  author       = {Shaokang Cheng and Sourav Das and Shiru Qu and Lamberto Ballan},
-  doi          = {10.1016/j.cviu.2025.104499},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104499},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {KD-mamba: Selective state space models with knowledge distillation for trajectory prediction},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Gloss-free sign language translation: An unbiased evaluation of progress in the field. <em>CVIU</em>, <em>261</em>, 104498. (<a href='https://doi.org/10.1016/j.cviu.2025.104498'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Sign Language Translation (SLT) aims to automatically convert visual sign language videos into spoken language text and vice versa. While recent years have seen rapid progress, the true sources of performance improvements often remain unclear. Do reported performance gains come from methodological novelty, or from the choice of a different backbone, training optimizations, hyperparameter tuning, or even differences in the calculation of evaluation metrics? This paper presents a comprehensive study of recent gloss-free SLT models by re-implementing key contributions in a unified codebase. We ensure fair comparison by standardizing preprocessing, video encoders, and training setups across all methods. Our analysis shows that many of the performance gains reported in the literature often diminish when models are evaluated under consistent conditions, suggesting that implementation details and evaluation setups play a significant role in determining results. We make the codebase publicly available here 1 to support transparency and reproducibility in SLT research.},
-  archive      = {J_CVIU},
-  author       = {Ozge Mercanoglu Sincan and Jian He Low and Sobhan Asasi and Richard Bowden},
-  doi          = {10.1016/j.cviu.2025.104498},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104498},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Gloss-free sign language translation: An unbiased evaluation of progress in the field},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Two-stage attribute-guided dual attention network for fine-grained fashion retrieval. <em>CVIU</em>, <em>261</em>, 104497. (<a href='https://doi.org/10.1016/j.cviu.2025.104497'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Fine-grained clothing retrieval is essential for intelligent shopping and personalized recommendation systems. However, conventional methods often fail to capture subtle attribute variations. This paper proposes a novel two-stage attribute-guided dual attention network. The network combines global and local feature extraction with Attribute-aware Multi-Scale Spatial Attention (AMSA) and Attribute-guided Dynamic Channel Attention (ADCA). AMSA captures attribute-specific spatial details at multiple scales, while ADCA dynamically adjusts channel importance based on attribute embeddings, enabling precise attribute-level similarity modeling. A multi-level joint loss function further optimizes both global and local representations and enhances feature alignment. Experiments on FashionAI and the self-built FGDress dataset show that the proposed method achieves mAP scores of 66.01% and 73.98%, respectively, outperforming baseline approaches. Attribute-level analysis confirms robust recognition of both well-defined and challenging attributes. These results validate the practicality and generalizability of the proposed framework, with promising applications in personalized recommendation, fashion trend analysis, and design evaluation.},
-  archive      = {J_CVIU},
-  author       = {Bo Pan and Jun Xiang and Ning Zhang and Ruru Pan},
-  doi          = {10.1016/j.cviu.2025.104497},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104497},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Two-stage attribute-guided dual attention network for fine-grained fashion retrieval},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). JSF: A joint spatial-frequency domain network for low-light image enhancement. <em>CVIU</em>, <em>261</em>, 104496. (<a href='https://doi.org/10.1016/j.cviu.2025.104496'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The enhancement of low-light images remains a prominent focus in the field of image processing. The degree of lightness significantly influences vision-based intelligent recognition and analysis. Departing from conventional methods, this paper proposes an innovative joint spatial-frequency domain network for low-light image enhancement, referred to as JSF. In the spatial domain, brightness is optimized through the amalgamation of global and local information. In the frequency domain, noise is reduced and details are amplified using Fourier Transformation to carry out amplitude and phase enhancement. Additionally, the enhanced results from the aforementioned domains are fused by linear and nonlinear stretching. To validate the effectiveness of JSF, this paper presents both qualitative and quantitative comparison results, demonstrating its superiority over several existing state-of-the-art methods.},
-  archive      = {J_CVIU},
-  author       = {Yahong Wu and Feng Liu and Rong Wang},
-  doi          = {10.1016/j.cviu.2025.104496},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104496},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {JSF: A joint spatial-frequency domain network for low-light image enhancement},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FCNet: A feature complementary network for nighttime flare removal. <em>CVIU</em>, <em>261</em>, 104495. (<a href='https://doi.org/10.1016/j.cviu.2025.104495'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Nighttime image flare removal is a very challenging task due to the presence of various types of unfavorable degrading effects, including glare, shimmer, streak and saturated blobs. Most of the existing methods focus on the spatial domain and limited perception field, resulting in incomplete flare removal and severe artifacts. To address these challenges, we propose a two-stage feature complementary network for nighttime flare removal, which is used for flare perception and removal, respectively. In the first stage, a Spatial-Frequency Complementary Module (SFCM) is designed to perceive the flare region from different domains to get a mask of the flare. In the second stage, the flare mask and image are fed into the Spatial-Frequency Complementary Gating Module (SFCGM) to preserve the background information, while removing the flares from different angles and restoring the detailed features. Finally the flare and non-flare regions are modeled by the Flare Interactive Module (FIM) to refine the flare regions at a fine-grained level to suppress the artifact problem. Extensive experiments on Flare 7K++ validate the superiority of the proposed approach over state-of-the-arts, both qualitatively and quantitatively.},
-  archive      = {J_CVIU},
-  author       = {Kejing Qi and Bo Wang and Chongyi Li},
-  doi          = {10.1016/j.cviu.2025.104495},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104495},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {FCNet: A feature complementary network for nighttime flare removal},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GRE-net: A forgery image detection framework based on gradient feature and reconstruction error. <em>CVIU</em>, <em>261</em>, 104494. (<a href='https://doi.org/10.1016/j.cviu.2025.104494'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the continuous technological breakthroughs in Generative Adversarial Networks (GANs) and diffusion models, remarkable progress has been achieved in the field of image generation. These technologies enable the creation of highly realistic images, thereby intensifying the risk of spreading fake information. However, traditional image detectors face a growing challenge of inadequate generalization capabilities when confronted with images generated by models that were not included during the training phase. To tackle this challenge, we introduce a novel detection framework, named GRE-Net (Network integrating Gradient and Reconstruction Error), which extracts gradient feature through the DPG module and calculates the reconstruction error utilizing the DIRE method. By integrating these two aspects into a comprehensive feature representation, GRE-Net effectively detects the authenticity of images. Specifically, we devise a dual-branch model that leverages the proposed DPG (Discriminator of ProjectedGAN to extract Gradient) module to extract gradient feature from images and concurrently employs the DIRE (DIffusion Reconstruction Error) method to obtain the diffusion reconstruction error of images. By fusing the features extracted from these two modules as a universal representation, we describe the artifacts produced by generative models, crafting a comprehensive detector capable of identifying both GAN-generated and diffusion model-generated images. Notably, the DPG approach utilizes the discriminator of ProjectedGAN as an intermediary bridge, mapping all data into the gradient domain. This transformation process effectively captures the intrinsic feature differences during the image generation process. Subsequently, the gradient feature are fed into a classifier to achieve efficient discrimination between authentic and fake images. To validate the efficacy of our proposed detector, we conducted evaluations on a dataset comprising images generated by ten diverse diffusion models and GANs. Extensive experiments demonstrate that our detector exhibits stronger generalization capabilities and higher robustness, rendering it suitable for real-world generated image detection tasks.},
-  archive      = {J_CVIU},
-  author       = {Wenqing Wu and Xinyi Shi and Jinghai Ai and Xiaodong Wang},
-  doi          = {10.1016/j.cviu.2025.104494},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104494},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {GRE-net: A forgery image detection framework based on gradient feature and reconstruction error},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Mitigating forgetting in the adaptation of CLIP for few-shot classification. <em>CVIU</em>, <em>261</em>, 104493. (<a href='https://doi.org/10.1016/j.cviu.2025.104493'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Adapter-style efficient transfer learning has demonstrated outstanding performance in fine-tuning vision-language models, especially in scenarios with limited data. However, existing methods fail to effectively balance the prior knowledge acquired during the pre-training process and the training samples. To address this problem, we propose a method called Mitigating Forgetting in the Adaptation (MiFA) of CLIP. MiFA first employs class prototypes to represent the most prominent features of a class, and these prototypes provide a robust initialization for the classifier. To overcome the forgetting of prior knowledge, MiFA then leverages a memory module that retains the initial parameters and the parameters of training history by creating a memory weight through momentum. The weight is used to initialize a new classification layer, which, along with the original layer, guides each other to balance prior knowledge and feature adaptation. Similarly, in the text processing branch, a parallel initialization strategy is adopted to ensure that the model’s performance is improved. Text features are employed to initialize a text classification layer, and CLIP logits help prevent excessive forgetting of useful text information. Extensive experiments have demonstrated the effectiveness of our method.},
-  archive      = {J_CVIU},
-  author       = {Jiale Cao and Yuanheng Liu and Zhong Ji and Jingren Liu and Aiping Yang and Yanwei Pang},
-  doi          = {10.1016/j.cviu.2025.104493},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104493},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Mitigating forgetting in the adaptation of CLIP for few-shot classification},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Joint multi-dimensional dynamic attention and transformer for general image restoration. <em>CVIU</em>, <em>261</em>, 104491. (<a href='https://doi.org/10.1016/j.cviu.2025.104491'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Outdoor images often suffer from severe degradation due to rain, haze, and noise, impairing image quality and challenging high-level tasks. Current image restoration methods struggle to handle complex degradation while maintaining efficiency. This paper introduces a novel image restoration architecture that combines multi-dimensional dynamic attention and self-attention within a U-Net framework. To leverage the global modeling capabilities of transformers and the local modeling capabilities of convolutions, we integrate sole CNNs in the encoder–decoder and sole transformers in the latent layer. Additionally, we design convolutional kernels with selected multi-dimensional dynamic attention to capture diverse degraded inputs efficiently. A transformer block with transposed self-attention further enhances global feature extraction while maintaining efficiency. Extensive experiments demonstrate that our method achieves a better balance between performance and computational complexity across five image restoration tasks: deraining, deblurring, denoising, dehazing, and enhancement, as well as superior performance for high-level vision tasks. The source code will be available at https://github.com/House-yuyu/MDDA-former .},
-  archive      = {J_CVIU},
-  author       = {Huan Zhang and Xu Zhang and Nian Cai and Jianglei Di and Yun Zhang},
-  doi          = {10.1016/j.cviu.2025.104491},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104491},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Joint multi-dimensional dynamic attention and transformer for general image restoration},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LAM-YOLO: Drones-based small object detection on lighting-occlusion attention mechanism YOLO. <em>CVIU</em>, <em>261</em>, 104489. (<a href='https://doi.org/10.1016/j.cviu.2025.104489'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Drone-based target detection presents inherent challenges, including the high density and overlap of targets in drone images, as well as the blurriness of targets under varying lighting conditions, which complicates accurate identification. Traditional methods often struggle to detect numerous small, densely packed targets against complex backgrounds. To address these challenges, we propose LAM-YOLO, an object detection model specifically designed for drone-based applications. First, we introduce a light-occlusion attention mechanism to enhance the visibility of small targets under diverse lighting conditions. Additionally, we incorporate Involution modules to improve feature layer interactions. Second, we employ an improved SIB-IoU as the regression loss function to accelerate model convergence and enhance localization accuracy. Finally, we implement a novel detection strategy by introducing two auxiliary detection heads to better identify smaller-scale targets. Our quantitative results demonstrate that LAM-YOLO outperforms methods such as Faster R-CNN, YOLOv11, and YOLOv12 in terms of mAP@0.5 and mAP@0.5:0.95 on the VisDrone2019 public dataset. Compared to the original YOLOv8, the average precision increases by 7.1%. Additionally, the proposed SIB-IoU loss function not only accelerates convergence speed during training but also improves average precision compared to the traditional loss function.},
-  archive      = {J_CVIU},
-  author       = {Yuchen Zheng and Yuxin Jing and Jufeng Zhao and Guangmang Cui},
-  doi          = {10.1016/j.cviu.2025.104489},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104489},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {LAM-YOLO: Drones-based small object detection on lighting-occlusion attention mechanism YOLO},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Camera pose in SfT and NRSfM under isometric and weaker deformation models. <em>CVIU</em>, <em>261</em>, 104488. (<a href='https://doi.org/10.1016/j.cviu.2025.104488'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Camera pose is a very natural concept in 3D vision in the rigid setting. It is however much more difficult to work with in deformable settings. Consequently, numerous deformable reconstruction methods simply ignore camera pose. We analyse the concept of pose in deformable settings and prove that it is unconstrained with the existing formulations, properly justifying the existing pose-less methods reconstructing structure only. We explain this result intuitively by the impossibility to define an intrinsic coordinate frame to a general deforming object. The proposed analysis uses the isometric deformation model and extends to the weaker models including conformality and equiareality We propose a novel prior to rescue camera pose estimation in deformable settings, which attributes the deforming object’s dominant rigid-body motion to the camera. We show that adding this prior to any existing formulation fully constrains camera pose and leads to elegant two-step solution methods, involving deformable structure reconstruction using a base method in the first step, and absolute orientation or Procrustes analysis in the second step. We derive the proposed approach for the template-based and template-less settings, respectively implemented using Shape-from-Template (SfT) and Non-Rigid Structure-from-Motion (NRSfM) as base methods and validate them experimentally, showing that the computed pose is qualitatively and quantitatively plausible.},
-  archive      = {J_CVIU},
-  author       = {Adrien Bartoli and Agniva Sengupta},
-  doi          = {10.1016/j.cviu.2025.104488},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104488},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Camera pose in SfT and NRSfM under isometric and weaker deformation models},
-  volume       = {261},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Bi-granularity balance learning for long-tailed image classification. <em>CVIU</em>, <em>261</em>, 104469. (<a href='https://doi.org/10.1016/j.cviu.2025.104469'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In long-tailed datasets, the training of deep neural network-based models faces challenges, where the model may become biased towards the head classes with abundant training data, resulting in poor performance on tail classes with limited samples. Most current methods employ contrastive learning to learn more balanced representations by finding the class center. However, these methods use class centers to address local imbalance within a mini-batch, they overlook the global imbalance between batches throughout an epoch, caused by the long-tailed distribution of the dataset. In this paper, we propose bi-granularity balance learning to address the two-layer imbalance. We decouple the attraction–repulsion term in contrastive loss into two independent components: global and local balance. The global balance component focuses on capturing semantic information from different perspectives of the image and shifting learning attention from the head classes to the tail classes in the global perspective. The local balance component aims to learn inter-class separability from the local perspective. The proposed method efficiently learns the intra-class compactness and inter-class separability in long-tailed model training and improves the performance of the long-tailed model. Experimental results show that the proposed method achieves competitive performance on long-tailed benchmarks such as CIFAR-10/100-LT, TinyImageNet-LT, and iNaturalist 2018.},
-  archive      = {J_CVIU},
-  author       = {Ning Ren and Xiaosong Li and Yanxia Wu and Yan Fu},
-  doi          = {10.1016/j.cviu.2025.104469},
-  journal      = {Computer Vision and Image Understanding},
-  month        = {11},
-  pages        = {104469},
-  shortjournal = {Comput. Vis. Image Understanding},
-  title        = {Bi-granularity balance learning for long-tailed image classification},
-  volume       = {261},
+  title        = {Learning multiscale residual prototypes and global–local correspondence for video anomaly detection},
+  volume       = {262},
   year         = {2025},
 }
 </textarea>

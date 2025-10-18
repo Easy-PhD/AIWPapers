@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="taslpro">TASLPRO - 13</h2>
+<h2 id="taslpro">TASLPRO - 9</h2>
 <ul>
 <li><details>
 <summary>
@@ -59,96 +59,6 @@
   month    = {10},
   pages    = {1-14},
   title    = {VPVID: Variance-preserving velocity-guided interpolant diffusion for speech enhancement and dereverberation},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MASKSER: A robust emotion recognition model based on voice data and noisy transcripts. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617234'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {In recent years, emotion recognition has become an increasingly vital tool for enhancing customer service applications. Especially in telephonic interactions, detecting emotions accurately is crucial for improving human-computer interaction experiences. Despite significant advances in deep learning, current emotion recognition systems that integrate voice and text face challenges such as noise interference in transcripts and inadequate multimodal fusion, which hinder precise emotion detection. In this paper, we introduce MASKSER, a methodology that combines vocal signals and transcribed text in a robust manner. Our approach involves pretraining noisy transcripts with ChatGPT-4 using few-shot learning based on techniques such as masking and sentiment word replacement. This enhances emotion discernment significantly by leveraging the strengths of both modalities. To address the challenges posed by noisy data, we propose a mask-based noise generation model and use it to pretrain the transcript-based model, which helps mitigate inaccuracies. Additionally, we introduce a novel loss function that evaluates the Kullback-Leibler divergence between text and voice encoder distributions, ensuring balanced contributions from both modalities. Experiments are conducted in both English and Korean to validate the language independence and robustness of the proposed approach in different linguistic contexts. The results demonstrate substantial improvements in emotion recognition capabilities, achieving high performance metrics while reducing reliance on costly speech recognition resources.},
-  archive  = {J},
-  author   = {Yeo-Chan Yoon and Sookyun Kim},
-  doi      = {10.1109/TASLPRO.2025.3617234},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-14},
-  title    = {MASKSER: A robust emotion recognition model based on voice data and noisy transcripts},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Cross-lingual embedding clustering for hierarchical softmax in low-resource multilingual speech recognition. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617233'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {We present a novel approach centered on the decoding stage of Automatic Speech Recognition (ASR) that enhances multilingual performance, especially for low-resource languages. It utilizes a cross-lingual embedding clustering method to construct a hierarchical Softmax (H-Softmax) decoder, which enables similar tokens across different languages to share similar decoder representations. It addresses the limitations of the previous Huffman-based H-Softmax method, which relied on shallow features in token similarity assessments. Through experiments on a downsampled dataset of 15 languages, we demonstrate the effectiveness of our approach in improving low-resource multilingual ASR accuracy.},
-  archive  = {J},
-  author   = {Zhengdong Yang and Qianying Liu and Sheng Li and Fei Cheng and Chenhui Chu},
-  doi      = {10.1109/TASLPRO.2025.3617233},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-13},
-  title    = {Cross-lingual embedding clustering for hierarchical softmax in low-resource multilingual speech recognition},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Exploring width-adaptive transformers for automatic speech recognition. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617232'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Transformer architectures with multiple heads with wide attention dimensions (widths) are over-parameterized. This leads to parameter redundancy and high correlations across attention heads with only a minority of heads actively contributing to the task. In this study, we quantitatively analyze the parameter redundancy by comparing the linear centered kernel alignment (CKA) similarity of learned representations extracted across attention layers and heads. Observing that widening the network can exacerbate these correlations, leading to representations with high CKA similarity, we question the design choice with uniform attention widths across all attention heads or layers and investigate how this choice impacts correlations across heads in the same layer. We design a width-adaptive training method to dynamically tune the model to keep the main contributing widths in each attention head and layer while no knowledge distillation or re-training process is needed. Experimental results on both English and Dutch corpora show our adaptive training method effectively reduces cross-head correlations and improves accuracy in automatic speech recognition. We also demonstrate the effectiveness of width-adaptive training by finetuning the OWSM speech foundation model.},
-  archive  = {J},
-  author   = {Pu Wang and Hugo Van Hamme},
-  doi      = {10.1109/TASLPRO.2025.3617232},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-16},
-  title    = {Exploring width-adaptive transformers for automatic speech recognition},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhance the saliency: Synthesize text noise samples for few-shot out-of-distribution intent detection. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617229'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Few-shot out-of-distribution (OOD) detection is a critical yet under explored scenario in dialogue systems. Existing data augmentation techniques either incorporate external data or generate hard negative samples within the feature space, which often leads to issues such as introducing knowledge bias, failing to align with the discrete nature of text, and inadequately addressing the problem of under-representation caused by in-distribution (IND) overfitting. Motivated by the recent findings that enhancing intra-class discrimination can mitigate IND overfitting, and the class of a sentence is predominantly determined by salient words, we propose EnSal, a method designed to strengthen the features of salient words in order to enhance the correlation between intent features and their corresponding classes. To achieve this, we jointly train k-nearest neighbors contrastive learning (KCL) alongside cross-entropy (CE) to improve the intra-class discrimination of intent features. Salient words are identified using both the k-nearest neighbors condition and the prediction probability condition. These words are retained as templates for synthesizing text samples, thereby avoiding the introduction of knowledge bias while preserving consistency with the discrete characteristics of text. Furthermore, we treat the synthetic text as noise samples associated with their corresponding training samples and perform denoising autoencoder (DAE) training on the augmented dataset. This process enables the identification of common and significant class features, effectively alleviating the under-representation issue. Extensive experimental results demonstrate that our method surpasses the current state-of-the-art in few-shot OOD intent detection. The code and models will be made available at https://github.com/wangpei2009job/EnSal.},
-  archive  = {J},
-  author   = {Pei Wang and Jiangtao Ren},
-  doi      = {10.1109/TASLPRO.2025.3617229},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-13},
-  title    = {Enhance the saliency: Synthesize text noise samples for few-shot out-of-distribution intent detection},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A temporal-spatial joint high-gain beamforming method in the STFT domain based on kronecker product filters. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617242'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Superdirective beamformers are highly appealing for their superior directivity and effectiveness in suppressing diffuse noise. However, their sensitivity to sensor noise and array imperfections poses significant challenges in practice. Achieving higher robustness often necessitates a trade-off in directivity, thereby reducing their ability to suppress directional and diffuse noises. A key concern, therefore, is how to improve noise suppression while maintaining robustness. To address this, we propose in this paper a novel temporal-spatial joint high-gain beamforming method based on a Kronecker product decomposition, making use of the inter-frame correlation to improve performance. The signal model in the proposed work uses recent pairs of time frames and employs the Kronecker product of the steering vector with a frequency- and angle-dependent inter-frame correlation vector. The high-gain beamformers are formulated as Kronecker product filters, where the temporal filter is optimized to maximize the white noise gain (WNG) and the spatial filter is optimized to enhance the directivity factor (DF). With accurate estimation of the correlation vector, Kronecker product high-gain beamformers can simultaneously improve both WNG and DF. The proposed method offers flexibility and can be extended to design other types of beamformers, with a maximum WNG (MWNG) beamformer presented as an example within the same framework. This paper also explores three approaches to estimating the correlation vector: time-invariant, time-varying, and data-driven estimations. Simulation results show notable improvements in noise suppression performance across various scenarios, highlighting the practical effectiveness of the proposed method.},
-  archive  = {J},
-  author   = {Xiaoran Yang and Hanchen Pei and Jacob Benesty and Gongping Huang and Jingdong Chen},
-  doi      = {10.1109/TASLPRO.2025.3617242},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-13},
-  title    = {A temporal-spatial joint high-gain beamforming method in the STFT domain based on kronecker product filters},
   year     = {2025},
 }
 </textarea>
@@ -257,6 +167,24 @@
   month    = {10},
   pages    = {1-13},
   title    = {Combining deterministic enhanced conditions with dual-streaming encoding for diffusion-based speech enhancement},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Physics-informed neural network-driven sparse field discretization method for near-field acoustic holography. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3619768'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We propose the Physics-Informed Neural Network-driven Sparse Field Discretization method (PINN-SFD), a novel self-supervised, physics-informed deep learning approach for addressing the Near-Field Acoustic Holography (NAH) problem. Unlike existing deep learning methods for NAH, which are predominantly supervised by large datasets, our approach does not require a training phase and it is physics-informed. The wave propagation field is discretized into sparse regions, a process referred to as field discretization, which includes a series of set of source planes, to address the inverse problem. Our method employs the discretized Kirchhoff-Helmholtz integral as the wave propagation model. By incorporating virtual planes, additional constraints are enforced near the actual sound source, improving the reconstruction process. Sparse optimization is carried out using Physics-Informed Neural Networks (PINNs), where physics-based constraints are integrated into the loss functions to account for both direct (from equivalent source plane to hologram plane) and additional (from virtual planes to hologram plane) wave propagation paths. Our comprehensive validation across various rectangular and violin top plates, covering a wide range of vibrational modes, demonstrates that PINN-SFD consistently outperforms the conventional Compressive-Equivalent Source Method (C-ESM), particularly in terms of reconstruction accuracy for complex vibrational patterns.},
+  archive  = {J},
+  author   = {Xinmeng Luan and Mirco Pezzoli and Fabio Antonacci and Augusto Sarti},
+  doi      = {10.1109/TASLPRO.2025.3619768},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  month    = {10},
+  pages    = {1-13},
+  title    = {Physics-informed neural network-driven sparse field discretization method for near-field acoustic holography},
   year     = {2025},
 }
 </textarea>
