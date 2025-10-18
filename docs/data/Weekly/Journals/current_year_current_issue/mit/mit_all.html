@@ -806,7 +806,7 @@
 </details></li>
 </ul>
 
-<h2 id="tmlr">TMLR - 50</h2>
+<h2 id="tmlr">TMLR - 78</h2>
 <ul>
 <li><details>
 <summary>
@@ -1704,6 +1704,510 @@
   shortjournal = {Trans. Mach. Learn. Res.},
   title        = {On convolutions, intrinsic dimension, and diffusion models},
   url          = {https://openreview.net/forum?id=xSzBf1te4s},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Teaching diffusion models to ground alpha matte. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=2gNy9Yeg8J'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The power of visual language models is showcased in visual understanding tasks, where language-guided models achieve impressive flexibility and precision. In this paper, we extend this capability to the challenging domain of image matting by framing it as a soft grounding problem, enabling a single diffusion model to handle diverse objects, textures, and transparencies, all directed by descriptive text prompts. Our method teaches the diffusion model to ground alpha mattes by guiding it through a process of instance-level localization and transparency estimation. First, we introduce an intermediate objective that trains the model to accurately localize semantic components of the matte based on natural language cues, establishing a robust spatial foundation. Building on this, the model progressively refines its transparency estimation abilities, using the learned semantic structure as a prior to enhance the precision of alpha matte predictions. By treating spatial localization and transparency estimation as distinct learning objectives, our approach allows the model to fully leverage the semantic depth of diffusion models, removing the need for rigid visual priors. Extensive experiments highlight our model’s adaptability, precision, and computational efficiency, setting a new benchmark for flexible, text-driven image matting solutions.},
+  archive      = {J_TMLR},
+  author       = {Tianyi Xiang and Weiying Zheng and Yutao Jiang and Tingrui Shen and Hewei Yu and Yangyang Xu and Shengfeng He},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Teaching diffusion models to ground alpha matte},
+  url          = {https://openreview.net/forum?id=2gNy9Yeg8J},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recurrent natural policy gradient for POMDPs. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=6G01e0vgIf'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solving partially observable Markov decision processes (POMDPs) is a long-standing challenge in reinforcement learning (RL) due to the inherent curse of dimensionality arising from the non-stationarity of optimal policies. In this paper, we address this by integrating recurrent neural network (RNN) architectures into a natural policy gradient (NPG) method and a multi-step temporal difference (TD) method within a natural actor-critic (NAC) framework for computational efficiency. We establish non-asymptotic theoretical guarantees for this method, which demonstrate its effectiveness for solving POMDPs and identify the pathological cases that stem from long-term dependencies. By integrating RNNs into the NAC framework with theoretical guarantees, this work advances the theoretical foundation of RL for POMDPs and provides a scalable framework for solving complex decision-making problems.},
+  archive      = {J_TMLR},
+  author       = {Semih Cayci and Atilla Eryilmaz},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Recurrent natural policy gradient for POMDPs},
+  url          = {https://openreview.net/forum?id=6G01e0vgIf},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adapting chat language models using only target unlabeled language data. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=6IdoIKowfe'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vocabulary expansion (VE) is the de-facto approach to language adaptation of large language models (LLMs) by adding new tokens and continuing pre-training on target data. While this is effective for base models trained on unlabeled data, it poses challenges for chat models trained to follow instructions through labeled conversation data. Directly adapting the latter with VE on target unlabeled data may result in forgetting chat abilities. While ideal, target chat data is often unavailable or costly to create for low-resource languages, and machine-translated alternatives are not always effective. To address this issue, previous work proposed using a base and chat model from the same family. This method first adapts the base LLM with VE on target unlabeled data and then converts it to a chat model by adding a chat vector (CV) derived from the weight difference between the source base and chat models. We propose ElChat, a new language adaptation method for chat LLMs that adapts a chat model directly on target unlabeled data, without a base model. It elicits chat abilities by injecting information from the source chat model. ElChat offers more robust and competitive target language and safety performance while achieving superior English, chat, and instruction-following abilities compared to CV.},
+  archive      = {J_TMLR},
+  author       = {Atsuki Yamaguchi and Terufumi Morishita and Aline Villavicencio and Nikolaos Aletras},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Adapting chat language models using only target unlabeled language data},
+  url          = {https://openreview.net/forum?id=6IdoIKowfe},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning reward machines from partially observed policies. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=7bbYYNvhTE'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Inverse reinforcement learning is the problem of inferring a reward function from an optimal policy {or demonstrations by an expert}. In this work, it is assumed that the reward is expressed as a reward machine whose transitions depend on atomic propositions associated with the state of a Markov Decision Process (MDP). Our goal is to identify the true reward machine using finite information. To this end, we first introduce the notion of a prefix tree policy which associates a distribution of actions to each state of the MDP and each attainable finite sequence of atomic propositions. Then, we characterize an equivalence class of reward machines that can be identified given the prefix tree policy. Finally, we propose a SAT-based algorithm that uses information extracted from the prefix tree policy to solve for a reward machine. It is proved that if the prefix tree policy is known up to a sufficient (but finite) depth, our algorithm recovers the exact reward machine up to the equivalence class. This sufficient depth is derived as a function of the number of MDP states and (an upper bound on) the number of states of the reward machine.{These results are further extended to the case where we only have access to demonstrations from an optimal policy. Several examples, including discrete grid and block worlds, a continuous state-space robotic arm, and real data from experiments with mice, are used to demonstrate the effectiveness and generality of the approach.}},
+  archive      = {J_TMLR},
+  author       = {Mohamad Louai Shehab and Antoine Aspeel and Necmiye Ozay},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Learning reward machines from partially observed policies},
+  url          = {https://openreview.net/forum?id=7bbYYNvhTE},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing diversity in text-to-image generation without compromising fidelity. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=180S4tOpmx'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Effective text-to-image generation must synthesize images that are both realistic in appearance (sample fidelity) and have sufficient variations (sample diversity). Diffusion models have achieved promising results in generating high-fidelity images based on textual prompts, and recently, several diversity-focused works have been proposed to improve their demographic diversity by enforcing the generation of samples from various demographic groups. However, another essential aspect of diversity, sample diversity—which enhances prompt reusability to generate creative samples that reflect real-world variability—has been largely overlooked. Specifically, how to generate images that have sufficient demographic and sample diversity while preserving sample fidelity remains an open problem because increasing diversity comes at the cost of reduced fidelity in existing works. To address this problem, we first propose a bimodal low-rank adaptation of pretrained diffusion models, which decouples the text-to-image conditioning, and then propose a lightweight bimodal guidance method that introduces additional diversity to the generation process using reference images retrieved through a fairness strategy by separately controlling the strength of text and image conditioning. We conduct extensive experiments to demonstrate the effectiveness of our method in enhancing demographic diversity (Intersectional Diversity (Shrestha et al., 2024)) by 2.47× and sample diversity (Recall (Kynkäänniemi et al., 2019)) by 1.45× while preserving sample fidelity (Precision (Kynkäänniemi et al., 2019)) compared to the baseline diffusion model.},
+  archive      = {J_TMLR},
+  author       = {Jiazhi Li and Mi Zhou and Mahyar Khayatkhoei and Jingyu Shi and Xiang Gao and Jiageng Zhu and Hanchen Xie and Xiyun Song and Zongfang Lin and Heather Yu and Jieyu Zhao},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Enhancing diversity in text-to-image generation without compromising fidelity},
+  url          = {https://openreview.net/forum?id=180S4tOpmx},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Collaborative compressors in distributed mean estimation with limited communication budget. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=AtCKHCoMA7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Distributed high dimensional mean estimation is a common aggregation routine used often in distributed optimization methods. Most of these applications call for a communication-constrained setting where vectors, whose mean is to be estimated, have to be compressed before sharing. One could independently encode and decode these to achieve compression, but that overlooks the fact that these vectors are often close to each other. To exploit these similarities, recently Suresh et al., 2022, Jhunjhunwala et al., 2021, Jiang et al, 2023, proposed multiple *correlation-aware compression schemes*. However, in most cases, the correlations have to be known for these schemes to work. Moreover, a theoretical analysis of graceful degradation of these correlation-aware compression schemes with increasing *dissimilarity* is limited to only the $\ell_2$-error in the literature. In this paper, we propose four different collaborative compression schemes that agnostically exploit the similarities among vectors in a distributed setting. Our schemes are all simple to implement and computationally efficient, while resulting in big savings in communication. The analysis of our proposed schemes show how the $\ell_2$, $\ell_\infty$ and cosine estimation error varies with the degree of similarity among vectors.},
+  archive      = {J_TMLR},
+  author       = {Harsh Vardhan and Arya Mazumdar},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Collaborative compressors in distributed mean estimation with limited communication budget},
+  url          = {https://openreview.net/forum?id=AtCKHCoMA7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rethinking robustness in machine learning: A posterior agreement approach. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Bpc9uZ6kcg'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The robustness of algorithms against covariate shifts is a fundamental problem with critical implications for the deployment of machine learning algorithms in the real world. Current evaluation methods predominantly measure robustness through the lens of standard generalization, relying on task performance metrics like accuracy. This approach lacks a theoretical justification and underscores the need for a principled foundation of robustness assessment under distribution shifts. In this work, we set the desiderata for a robustness metric, and we propose a novel principled framework for the robustness assessment problem that directly follows the Posterior Agreement (PA) theory of model validation. Specifically, we extend the PA framework to the covariate shift setting and propose a metric for robustness evaluation. We assess the soundness of our metric in controlled environments and through an empirical robustness analysis in two different covariate shift scenarios: adversarial learning and domain generalization. We illustrate the suitability of PA by evaluating several models under different nature and magnitudes of shift, and proportion of affected observations. The results show that PA offers a reliable analysis of the vulnerabilities in learning algorithms across different shift conditions and provides higher discriminability than accuracy-based metrics, while requiring no supervision.},
+  archive      = {J_TMLR},
+  author       = {João B. S. Carvalho and Víctor Jiménez Rodríguez and Alessandro Torcinovich and Antonio Emanuele Cinà and Carlos Cotrini and Lea Schönherr and Joachim M. Buhmann},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Rethinking robustness in machine learning: A posterior agreement approach},
+  url          = {https://openreview.net/forum?id=Bpc9uZ6kcg},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Temporal test-time adaptation with state-space models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=HFETOmUtrV'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Distribution shifts between training and test data are inevitable over the lifecycle of a deployed model, leading to performance decay. Adapting a model on test samples can help mitigate this drop in performance. However, most test-time adaptation methods have focused on synthetic corruption shifts, leaving a variety of distribution shifts underexplored. In this paper, we focus on distribution shifts that evolve gradually over time, which are common in the wild but challenging for existing methods, as we show. To address this, we propose STAD, a Bayesian filtering method that adapts a deployed model to temporal distribution shifts by learning the time-varying dynamics in the last set of hidden features. Without requiring labels, our model infers time-evolving class prototypes that act as a dynamic classification head. Through experiments on real-world temporal distribution shifts, we show that our method excels in handling small batch sizes and label shift.},
+  archive      = {J_TMLR},
+  author       = {Mona Schirmer and Dan Zhang and Eric Nalisnick},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Temporal test-time adaptation with state-space models},
+  url          = {https://openreview.net/forum?id=HFETOmUtrV},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning to be cautious. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=NXvGOaYExG'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A key challenge in the field of reinforcement learning is to develop agents that behave cautiously in novel situations. It is generally impossible to anticipate all situations that an autonomous system may face or what behavior would best avoid bad outcomes. An agent that could learn to be cautious would overcome this challenge by discovering for itself when and how to behave cautiously. In contrast, current approaches typically embed task-specific safety information or explicitly cautious behaviors into the system, which is error-prone and imposes extra burdens on practitioners. In this paper, we present both a sequence of tasks where cautious behavior becomes increasingly non-obvious, as well as an algorithm to demonstrate that it is possible for a system to learn to be cautious. The essential features of our algorithm are that it characterizes reward function uncertainty without task-specific safety information and uses this uncertainty to construct a robust policy. Specifically, we construct robust policies with a $k$-of-$N$ counterfactual regret minimization (CFR) subroutine given a learned reward function uncertainty represented by a neural network ensemble belief. These policies exhibit caution in each of our tasks without any task-specific safety tuning. Our code is available at https://github.com/montaserFath/Learning-to-be-Cautious},
+  archive      = {J_TMLR},
+  author       = {Montaser Mohammedalamen and Dustin Morrill and Alexander Sieusahai and yash satsangi and Michael Bowling},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Learning to be cautious},
+  url          = {https://openreview.net/forum?id=NXvGOaYExG},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Concept siever: Towards controllable erasure of concepts from diffusion models without side-effect. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=O7zTvlSBZ9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion models' unprecedented success with image generation can largely be attributed to their large-scale pretraining on massive datasets. Yet, the necessity of forgetting specific concepts for regulatory or copyright compliance poses a critical challenge. Existing approaches in concept forgetting, although reasonably successful in forgetting a given concept, frequently fail to preserve generation quality or demand extensive domain expertise for preservation. To alleviate such issues, we introduce Concept Siever, an end-to-end framework for targeted concept removal within pre-trained text-to-image diffusion models. The foundation of Concept Siever rests on \textit{two key innovations}: First, an automatic technique to create paired dataset of target concept and its negations by utilizing the diffusion model’s latent space. A key property of these pairs is that they differ only in the target concept, enabling forgetting with \textit{minimal side effects} and \textit{without requiring domain expertise}. Second, we present Concept Sieve, a localization method for identifying and isolating the model components most responsible to the target concept. By retraining only these localized components on our paired dataset for a target concept, Concept Siever accurately removes the concept with \textit{negligible side-effects, preserving neighboring and unrelated concepts}. Moreover, given the subjective nature of forgetting a concept like nudity, we propose Concept Sieve which provides a \texit{fine-grained control over the forgetting strength at inference time}, catering to diverse deployment needs without any need of finetuning. We report state-of-the-art performance on the I2P benchmark, surpassing previous domain-agnostic methods by over $33\%$ while showing superior structure preservation. We validate our results through extensive quantitative and qualitative evaluation along with a user study.},
+  archive      = {J_TMLR},
+  author       = {Aakash Kumar Singh and Priyam Dey and Sribhav Srivatsa and Venkatesh Babu Radhakrishnan},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Concept siever: Towards controllable erasure of concepts from diffusion models without side-effect},
+  url          = {https://openreview.net/forum?id=O7zTvlSBZ9},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Emergent semantics beyond token embeddings: Transformer LMs with frozen visual unicode representations. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Odh8IynO1o'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding the locus of semantic representation in large language models (LLMs) is crucial for interpretability and architectural innovation. The dominant paradigm posits that trainable input embeddings serve as foundational "meaning vectors." This paper challenges that view. We construct Transformer models where the embedding layer is entirely frozen, with vectors derived not from data, but from the visual structure of Unicode glyphs. These non-semantic, precomputed visual embeddings are fixed throughout training. Our method is compatible with any tokenizer, including a novel Unicode-centric tokenizer we introduce to ensure universal text coverage. Despite the absence of trainable, semantically initialized embeddings, our models converge, generate coherent text, and, critically, outperform architecturally identical models with trainable embeddings on the MMLU reasoning benchmark. We attribute this to "representational interference" in conventional models, where the embedding layer is burdened with learning both structural and semantic features. Our results indicate that high-level semantics are not inherent to input embeddings but are an emergent property of the Transformer's compositional architecture and data scale. This reframes the role of embeddings from meaning containers to structural primitives. We release all code and models to foster further research.},
+  archive      = {J_TMLR},
+  author       = {Andrey Bochkov},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Emergent semantics beyond token embeddings: Transformer LMs with frozen visual unicode representations},
+  url          = {https://openreview.net/forum?id=Odh8IynO1o},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AuToMATo: An out-of-the-box persistence-based clustering algorithm. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Qd7H5mAbzV'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present AuToMATo, a novel clustering algorithm based on persistent homology. While AuToMATo is not parameter-free per se, we provide default choices for its parameters that make it into an out-of-the-box clustering algorithm that performs well across the board. AuToMATo combines the existing ToMATo clustering algorithm with a bootstrapping procedure in order to separate significant peaks of an estimated density function from non-significant ones. We perform a thorough comparison of AuToMATo (with its parameters fixed to their defaults) against many other state-of-the-art clustering algorithms. We find not only that AuToMATo compares favorably against parameter-free clustering algorithms, but in many instances also significantly outperforms even the best selection of parameters for other algorithms. AuToMATo is motivated by applications in topological data analysis, in particular the Mapper algorithm, where it is desirable to work with a clustering algorithm that does not need tuning of its parameters. Indeed, we provide evidence that AuToMATo performs well when used with Mapper. Finally, we provide an open-source implementation of AuToMATo in Python that is fully compatible with the standard scikit-learn architecture.},
+  archive      = {J_TMLR},
+  author       = {Marius Huber and Sara Kalisnik Hintz and Patrick Schnider},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {AuToMATo: An out-of-the-box persistence-based clustering algorithm},
+  url          = {https://openreview.net/forum?id=Qd7H5mAbzV},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving single-round active adaptation: A prediction variability perspective. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Vthqn5VE7L'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning models trained with offline data often suffer from distribution shifts in online environments and require fast adaptation to online data. The high volume of online data further stimulates the study of active adaptation approaches that achieve competitive adaptation performance by selectively annotating only 5%-10% of online data and using it to continuously train a model. Despite the reduction in data annotation cost, many prior active adaptations assume a multi-round data annotation procedure during continuous training, which hinders timely adaptation. In this work, we study a single-round active adaptation problem with a minimum data annotation turnaround time but require the selected subset of data samples to help the entire continuous training procedure until convergence. In our theoretical analysis, we find that the prediction variability of each data sample throughout the training is crucial, in addition to the conventional data diversity. The prediction variability measures how much the prediction could possibly change during the continuous training procedure. To this end, we introduce a novel approach called feature-norm scaled gradient embedding (FORGE), which incorporates prediction variability and improves the single-round active adaptation performance when combined with standard data selection strategies (e.g., k-center greedy). In addition, we provide efficient implementations to construct our FORGE embedding analytically without explicitly backpropagating gradients. Empirical results further demonstrate that our approach consistently outperforms the random selection baseline by up to 1.26% for various vision and language tasks while other competitors often underperform the random selection baseline.},
+  archive      = {J_TMLR},
+  author       = {Xiaoyang Wang and Yibo Jacky Zhang and Olawale Elijah Salaudeen and Mingyuan Wu and Hongpeng Guo and Chaoyang He and Klara Nahrstedt and Sanmi Koyejo},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Improving single-round active adaptation: A prediction variability perspective},
+  url          = {https://openreview.net/forum?id=Vthqn5VE7L},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rec-r1: Bridging generative large language models and user-centric recommendation systems via reinforcement learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=YBRU9MV2vE'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose Rec-R1, a general reinforcement learning framework that bridges large language models (LLMs) with recommendation systems through closed-loop optimization. Unlike prompting and supervised fine-tuning (SFT), Rec-R1 directly optimizes LLM generation using feedback from a fixed, black-box recommendation model—without relying on synthetic SFT data from proprietary models like GPT-4o. This avoids the substantial cost and effort required for data distillation. To verify the effectiveness of Rec-R1, we evaluate Rec-R1 on three representative tasks: product search, sequential recommendation, and product re-ranking. Experimental results demonstrate that Rec-R1 not only consistently outperforms prompting- and SFT-based methods, but also achieves remarkable gains over strong discriminative baselines, even when used with simple retrievers like BM25. More impressively, Rec-R1 preserves the general-purpose capabilities of the LLM, in contrast to SFT, which often impairs instruction-following and reasoning. These findings suggest Rec-R1 as a promising foundation for continual task-specific adaptation without catastrophic forgetting.},
+  archive      = {J_TMLR},
+  author       = {Jiacheng Lin and Tian Wang and Kun Qian},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Rec-r1: Bridging generative large language models and user-centric recommendation systems via reinforcement learning},
+  url          = {https://openreview.net/forum?id=YBRU9MV2vE},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing time series forecasting architectures: A hierarchical neural architecture search approach. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Ym2wqojm4e'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid development of time series forecasting research has brought many deep learning-based modules to this field. However, despite the increasing number of new forecasting architectures, it is still unclear if we have leveraged the full potential of these existing modules within a properly designed architecture. In this work, we propose a novel hierarchical neural architecture search space for time series forecasting tasks. With the design of a hierarchical search space, we incorporate many architecture types designed for forecasting tasks and allow for the efficient combination of different forecasting architecture modules. Results on long-term time series forecasting tasks show that our approach can search for lightweight, high-performing forecasting architectures across different forecasting tasks.},
+  archive      = {J_TMLR},
+  author       = {Difan Deng and Marius Lindauer},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Optimizing time series forecasting architectures: A hierarchical neural architecture search approach},
+  url          = {https://openreview.net/forum?id=Ym2wqojm4e},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bags of projected nearest neighbours: Competitors to random forests?. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ZKLj2U0CsO'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we introduce a simple and intuitive adaptive k nearest neighbours classifier, and explore its utility within the context of bootstrap aggregating (“bagging”). The approach is based on finding discriminant subspaces which are computationally efficient to compute, and are motivated by enhancing the discrimination of classes through nearest neighbour classifiers. This adaptiveness promotes diversity of the individual classifiers fit across different bootstrap samples, and so further leverages the variance reducing effect of bagging. Extensive experimental results are presented documenting the strong performance of the proposed approach in comparison with Random Forest classifiers, as well as other nearest neighbours based ensembles from the literature, plus other relevant benchmarks.},
+  archive      = {J_TMLR},
+  author       = {David P. Hofmeyr},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Bags of projected nearest neighbours: Competitors to random forests?},
+  url          = {https://openreview.net/forum?id=ZKLj2U0CsO},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On sparsity and sub-gaussianity in the johnson- lindenstrauss lemma. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Znaty8V3a3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide a simple proof of the Johnson-Lindenstrauss lemma for sub-Gaussian variables. We extend the analysis to identify how sparse projections can be, and what the cost of sparsity is on the target dimension. The Johnson-Lindenstrauss lemma is the theoretical core of the dimensionality reduction methods based on random projections. While its original formulation involves matrices with Gaussian entries, the computational cost of random projections can be drastically reduced by the use of simpler variables, especially if they vanish with a high probability. In this paper, we propose a simple and elementary analysis of random projections under classical assumptions that emphasizes the key role of sub-Gaussianity. Furthermore, we show how to extend it to sparse projections, emphasizing the limits induced by the sparsity of the data itself.},
+  archive      = {J_TMLR},
+  author       = {Aurélien Garivier and Emmanuel Pilliat},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {On sparsity and sub-gaussianity in the johnson- lindenstrauss lemma},
+  url          = {https://openreview.net/forum?id=Znaty8V3a3},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Step-controlled DPO: Leveraging stepwise errors for enhancing mathematical reasoning of language models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=jp1AdIcKTj'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Direct Preference Optimization (DPO) has proven effective at improving the performance of large language models (LLMs) on downstream tasks such as reasoning and alignment. In this work, we propose Step-Controlled DPO (SCDPO), a method for automatically providing stepwise error supervision by creating negative samples of mathematical reasoning rationales that start making errors at a specified step. By applying these samples in DPO training, SCDPO can better align the model to avoid reasoning errors and output accurate reasoning steps. Qualitative analysis of the credit assignment of SCDPO and DPO demonstrates the effectiveness of SCDPO at identifying errors in mathematical solutions. We then apply SCDPO to an InternLM2-20B model, resulting in a 20B model that achieves competitive scores of 88.5% on GSM8K and 58.1% on MATH, rivaling all other open-source LLMs, showing the great potential of our method. The code, models and data are released to inspire future work.},
+  archive      = {J_TMLR},
+  author       = {Zimu Lu and Aojun Zhou and Ke Wang and Houxing Ren and Weikang Shi and Yunqiao Yang and Junting Pan and Mingjie Zhan and Hongsheng Li},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Step-controlled DPO: Leveraging stepwise errors for enhancing mathematical reasoning of language models},
+  url          = {https://openreview.net/forum?id=jp1AdIcKTj},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FORTRESS: Fast, tuning-free retrieval ensemble for scalable LLM safety. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=lCn7RT9DGq'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid adoption of Large Language Models in user-facing applications has magnified security risks, as adversarial prompts continue to circumvent built-in safeguards with increasing sophistication. Current external safety classifiers predominantly rely on supervised fine-tuning—a computationally expensive approach that proves brittle against novel attacks and demands constant retraining cycles. We present FORTRESS, a Fast, Orchestrated Tuning-free Retrieval Ensemble for Scalable Safety that eliminates the need for costly, gradient-based fine-tuning. Our framework unifies semantic retrieval and dynamic perplexity analysis with a single instruction-tuned LLM, creating an efficient pipeline that adapts to emerging threats through simple data ingestion rather than model retraining. FORTRESS employs a novel dynamic ensemble strategy that intelligently weighs complementary signals: semantic similarity for known threat patterns and statistical anomaly detection for zero-day attacks. Extensive evaluation across nine safety benchmarks demonstrates that FORTRESS achieves state-of-the-art performance with an F1 score of 91.6\%, while operating over five times faster than leading fine-tuned classifiers. Its data-centric design enables rapid adaptation to new threats through simple data ingestion—a process we show improves performance without a latency trade-off—offering a practical, scalable, and robust approach to LLM safety.},
+  archive      = {J_TMLR},
+  author       = {Chi-Wei Chang and Richard Tzong-Han Tsai},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {FORTRESS: Fast, tuning-free retrieval ensemble for scalable LLM safety},
+  url          = {https://openreview.net/forum?id=lCn7RT9DGq},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AB-UPT: Scaling neural CFD surrogates for high- fidelity automotive aerodynamics simulations via anchored- branched universal physics transformers. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=nwQ8nitlTZ'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in neural surrogate modeling offer the potential for transformative innovations in applications such as automotive aerodynamics. Yet, industrial-scale problems often involve volumetric meshes with cell counts reaching 100 million, presenting major scalability challenges. Complex geometries further complicate modeling through intricate surface-volume interactions, while quantities such as vorticity are highly nonlinear and must satisfy strict divergence-free constraints. To address these requirements, we introduce AB-UPT as a novel modeling scheme for building neural surrogates for CFD simulations. AB-UPT is designed to: (i) decouple geometry encoding and prediction tasks via multi-branch operators; (ii) enable scalability to high-resolution outputs via neural simulation in a low-dimensional latent space, coupled with anchored neural field decoders to predict high-fidelity outputs; (iii) enforce physics consistency by a divergence-free formulation. We show that AB-UPT yields state-of-the-art predictive accuracy of surface and volume fields on automotive CFD simulations ranging from 33 thousand up to 150 million mesh cells. Furthermore, our anchored neural field architecture enables the enforcement of hard physical constraints on the physics predictions without degradation in performance, exemplified by modeling divergence-free vorticity fields. Notably, the proposed models can be trained on a single GPU in less than a day and predict industry-standard surface and volume fields within seconds. Additionally, we show that the flexible design of our method enables neural simulation from a CAD geometry alone, thereby eliminating the need for costly CFD meshing procedures for inference.},
+  archive      = {J_TMLR},
+  author       = {Benedikt Alkin and Maurits Bleeker and Richard Kurle and Tobias Kronlachner and Reinhard Sonnleitner and Matthias Dorfer and Johannes Brandstetter},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {AB-UPT: Scaling neural CFD surrogates for high- fidelity automotive aerodynamics simulations via anchored- branched universal physics transformers},
+  url          = {https://openreview.net/forum?id=nwQ8nitlTZ},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the problem of consistent anomalies in zero-shot industrial anomaly detection. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=o2MRb5QZ34'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Zero-shot image anomaly classification (AC) and anomaly segmentation (AS) play a crucial role in industrial quality control, where defects must be detected without prior training data. Current representation-based approaches rely on comparing patch features with nearest neighbors in unlabeled test images. However, these methods fail when faced with consistent anomalies—similar defects that consistently appear across multiple images—leading to poor AC/AS performance. We present Consistent-Anomaly Detection Graph (CoDeGraph), a novel algorithm that addresses this challenge by identifying and filtering consistent anomalies from similarity computations. Our key insight is that for industrial images, normal patches exhibit stable, gradually increasing similarity to other test images, whereas consistent-anomaly patches show abrupt spikes after exhausting a limited set of images with similar matches. We term this phenomenon ``neighbor-burnout'' and engineer a robust system to exploit it. CoDeGraph constructs an image-level graph, with images as nodes and edges linking those with shared consistent-anomaly patterns, using community detection to identify and filter out consistent-anomaly patches. To provide a theoretical explanation for this phenomenon, we develop a model grounded in Extreme Value Theory that explains why our approach is effective. Experimental results on MVTec AD using the ViT-L-14-336 backbone show 98.3\% AUROC for AC and AS performance of 66.8\% (+4.2\%) F1 and 68.1\% (+5.4\%) AP over state-of-the-art zero-shot methods. Additional experiments with the DINOv2 backbone further enhance segmentation, achieving a 69.1\% (+6.5\%) F1 and a 71.9\% (+9.2\%) AP, demonstrating the robustness of our approach across different architectures. We release our at \url{https://github.com/DumBringer/CoDeGraph}.},
+  archive      = {J_TMLR},
+  author       = {Tai Le Gia and Jaehyun Ahn},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {On the problem of consistent anomalies in zero-shot industrial anomaly detection},
+  url          = {https://openreview.net/forum?id=o2MRb5QZ34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TP‑Blend: Textual‑Prompt attention pairing for precise Object‑Style blending in diffusion models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=q6M73uOBZE'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current text–conditioned diffusion editors handle single object replacement well but struggle when a new object and a new style must be introduced simultaneously. We present Twin‑Prompt Attention Blend (TP‑Blend), a lightweight training‑free framework that receives two separate textual prompts, one specifying a blend object and the other defining a target style, and injects both into a single denoising trajectory. TP‑Blend is driven by two complementary attention processors. Cross‑Attention Object Fusion (CAOF) first averages head‑wise attention to locate spatial tokens that respond strongly to either prompt, then solves an entropy‑regularised optimal transport problem that reassigns complete multi‑head feature vectors to those positions. CAOF updates feature vectors at the full combined dimensionality of all heads (e.g., 640 dimensions in SD‑XL), preserving rich cross‑head correlations while keeping memory low. Self‑Attention Style Fusion (SASF) injects style at every self‑attention layer through Detail‑Sensitive Instance Normalization. A lightweight one‑dimensional Gaussian filter separates low‑ and high‑frequency components; only the high‑frequency residual is blended back, imprinting brush‑stroke‑level texture without disrupting global geometry. SASF further swaps the Key and Value matrices with those derived from the style prompt, enforcing context‑aware texture modulation that remains independent of object fusion. Extensive experiments show that TP‑Blend produces high‑resolution, photo‑realistic edits with precise control over both content and appearance, surpassing recent baselines in quantitative fidelity, perceptual quality, and inference speed.},
+  archive      = {J_TMLR},
+  author       = {xin jin and Yichuan Zhong and Yapeng Tian},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {TP‑Blend: Textual‑Prompt attention pairing for precise Object‑Style blending in diffusion models},
+  url          = {https://openreview.net/forum?id=q6M73uOBZE},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active prompt learning with vision-language model priors. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=qBeGCzD3Ij'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vision-language models (VLMs) have demonstrated remarkable zero-shot performance across various classification tasks. Nonetheless, their reliance on hand-crafted text prompts for each task hinders efficient adaptation to new tasks. While prompt learning offers a promising solution, most studies focus on maximizing the utilization of given few-shot labeled datasets, often overlooking the potential of careful data selection strategies, which enable higher accuracy with fewer labeled data. This motivates us to study a budget-efficient active prompt learning framework. Specifically, we introduce a class-guided clustering that leverages the pre-trained image and text encoders of VLMs, thereby enabling our cluster-balanced acquisition function from the initial round of active learning. Furthermore, considering the substantial class-wise variance in confidence exhibited by VLMs, we propose a budget-saving selective querying based on adaptive class-wise thresholds. Extensive experiments in active learning scenarios across seven datasets demonstrate that our method outperforms existing baselines.},
+  archive      = {J_TMLR},
+  author       = {Hoyoung Kim and Seokhee Jin and Changhwan Sung and Jaechang Kim and Jungseul Ok},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Active prompt learning with vision-language model priors},
+  url          = {https://openreview.net/forum?id=qBeGCzD3Ij},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pre-training representations of binary code using contrastive learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=qmfUL6D0iz'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Binary code analysis and comprehension is critical to applications in reverse engineering and computer security tasks where source code is not available. Unfortunately, unlike source code, binary code lacks semantics and is more difficult for human engineers to understand and analyze. In this paper, we present ContraBin, a contrastive learning technique that integrates source code and comment information along with binaries to create an embedding capable of aiding binary analysis and comprehension tasks. Specifically, we present three components in ContraBin: (1) a primary contrastive learning method for initial pre-training, (2) a simplex interpolation method to integrate source code, comments, and binary code, and (3) an intermediate representation learning algorithm to train a binary code embedding. We further analyze the impact of human-written and synthetic comments on binary code comprehension tasks, revealing a significant performance disparity. While synthetic comments provide substantial benefits, human-written comments are found to introduce noise, even resulting in performance drops compared to using no comments. These findings reshape the narrative around the role of comment types in binary code analysis. We evaluate the effectiveness of ContraBin through four indicative downstream tasks related to binary code: algorithmic functionality classification, function name recovery, code summarization, and reverse engineering. The results show that ContraBin considerably improves performance on all four tasks, measured by accuracy, mean of average precision, and BLEU scores as appropriate. ContraBin is the first language representation model to incorporate source code, binary code, and comments into contrastive code representation learning and is intended to contribute to the field of binary code analysis. The dataset used in this study is available for further research.},
+  archive      = {J_TMLR},
+  author       = {Yifan Zhang and Chen Huang and Yueke Zhang and Huajie Shao and Kevin Leach and Yu Huang},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Pre-training representations of binary code using contrastive learning},
+  url          = {https://openreview.net/forum?id=qmfUL6D0iz},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An asymptotically optimal algorithm for the convex hull membership problem. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=r8eAwBMtlN'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the convex hull membership (CHM) problem in the pure exploration setting where one aims to efficiently and accurately determine if a given point lies in the convex hull of means of a finite set of distributions. We give a complete characterization of the sample complexity of the CHM problem in the one-dimensional case. We present the first asymptotically optimal algorithm called Thompson-CHM, whose modular design consists of a stopping rule and a sampling rule. In addition, we extend the algorithm to settings that generalize several important problems in the multi-armed bandit literature. Furthermore, we discuss the extension of Thompson-CHM to higher dimensions. Finally, we provide numerical experiments to demonstrate the empirical behavior of the algorithm matches our theoretical results for realistic time horizons.},
+  archive      = {J_TMLR},
+  author       = {Gang Qiao and Ambuj Tewari},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {An asymptotically optimal algorithm for the convex hull membership problem},
+  url          = {https://openreview.net/forum?id=r8eAwBMtlN},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual caption preference optimization for diffusion models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ruZksIJBBd'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in human preference optimization, originally developed for Large Language Models (LLMs), have shown significant potential in improving text-to-image diffusion models. These methods aim to learn the distribution of preferred samples while distinguishing them from less preferred ones. However, within the existing preference datasets, the original caption often does not clearly favor the preferred image over the alternative, which weakens the supervision signal available during training. To address this issue, we introduce Dual Caption Preference Optimization (DCPO), a data augmentation and optimization framework that reinforces the learning signal by assigning two distinct captions to each preference pair. This encourages the model to better differentiate between preferred and less-preferred outcomes during training. We also construct Pick-Double Caption, a modified version of Pick-a-Pic v2 with separate captions for each image, and propose three different strategies for generating distinct captions: captioning, perturbation, and hybrid methods. Our experiments show that DCPO significantly improves image quality and relevance to prompts, outperforming Stable Diffusion (SD) 2.1, SFT_Chosen, Diffusion-DPO and MaPO across multiple metrics, including Pickscore, HPSv2.1, GenEval, CLIPscore, and ImageReward, fine-tuned on SD 2.1 as the backbone.},
+  archive      = {J_TMLR},
+  author       = {Amir Saeidi and Yiran Lawrence Luo and Agneet Chatterjee and Shamanthak Hegde and Bimsara Pathiraja and Yezhou Yang and Chitta Baral},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Dual caption preference optimization for diffusion models},
+  url          = {https://openreview.net/forum?id=ruZksIJBBd},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PixelWorld: Towards perceiving everything as pixels. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=uY5eDN2bML'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent agentic language models increasingly accept raw camera pixels rather than tokenized text, underscoring the need for a unified perception paradigm. We explore this idea through Perceive Everything as Pixels (PEAP) and release PixelWorld, a benchmark that renders natural-language, tabular, mathematical and diagrammatic inputs into a single pixel space. Experiments show that PEAP attains competitive accuracy on semantic-understanding tasks, indicating that a vision transformer can capture global textual semantics without explicit tokens. In contrast, reasoning-intensive benchmarks (math and code) exhibit sharp performance drops; however, Chain-of-Thought prompting partially mitigates this gap, hinting that explicit reasoning traces compensate for the missing token structure. We also observe that scenarios with tightly intertwined visual--text cues benefit from the unified pixel view, reducing preprocessing overhead and ambiguity relative to split-modality baselines. PixelWorld therefore provides a compact yet challenging yardstick and encourages wider adoption of PEAP for holistic evaluation of next-generation vision–language agents.},
+  archive      = {J_TMLR},
+  author       = {Zhiheng Lyu and Xueguang Ma and Wenhu Chen},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {PixelWorld: Towards perceiving everything as pixels},
+  url          = {https://openreview.net/forum?id=uY5eDN2bML},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Permissive information-flow analysis for large language models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ufYRO8y3mr'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models (LLMs) are rapidly becoming commodity components of larger software systems. This poses natural security and privacy problems: poisoned data retrieved from one component can change the model's behavior and compromise the entire system, including coercing the model to spread confidential data to untrusted components. Assuming each piece of information comes with an additional meta-label (such as low/high integrity labels), one promising approach is to tackle this problem at the system level via dynamic information flow (aka taint) tracking. Unfortunately, this approach of propagating the most restrictive input label to the output is too conservative for applications where LLMs operate on inputs retrieved from diverse sources. In this paper, we propose a novel, more permissive approach to propagate information flow labels through LLM queries. The key idea behind our approach is to propagate only the input labels that were \emph{influential} in generating the model output and to eliminate the labels of unnecessary inputs. We implement and investigate the effectiveness of two variations of this approach, based on (i) prompt-based retrieval augmentation, and (ii) a $k$-nearest-neighbors language model. We compare these with a baseline that uses introspection to predict the output label. Our experimental results in an LLM agent setting show that our label propagator assigns a more permissive label over the baseline in more than 85% of the cases, which underscores the practicality of our approach.},
+  archive      = {J_TMLR},
+  author       = {Shoaib Ahmed Siddiqui and Radhika Gaonkar and Boris Köpf and David Krueger and Andrew Paverd and Ahmed Salem and Shruti Tople and Lukas Wutschitz and Menglin Xia and Santiago Zanella-Beguelin},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Permissive information-flow analysis for large language models},
+  url          = {https://openreview.net/forum?id=ufYRO8y3mr},
   year         = {2025},
 }
 </textarea>
