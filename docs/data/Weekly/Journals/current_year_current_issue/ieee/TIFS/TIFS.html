@@ -25,8 +25,141 @@
 </head>
 <body>
 
-<h2 id="tifs">TIFS - 492</h2>
+<h2 id="tifs">TIFS - 499</h2>
 <ul>
+<li><details>
+<summary>
+(2025). An efficient and secure spatial keyword ciphertext retrieval scheme based on cloud-fog collaboration. <em>TIFS</em>, <em>20</em>, 10893-10908. (<a href='https://doi.org/10.1109/TIFS.2025.3618394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Location-Based Services are increasingly common in our lives. In order to reduce user overhead, the data owner stores the location information and text data on the cloud server, and the user completes the retrieval task with the help of the fog server. To protect the privacy of outsourced data, many secure spatial keyword retrieval schemes have been proposed. Most schemes use R-tree indexes to improve the efficiency of ciphertext retrieval, but the encrypted R-tree index is hard to update. Moreover, some indexes based on order-preserving encryption are vulnerable to frequency-revealing attacks. So how to balance efficiency and security is a problem. To solve the above problems, we propose an efficient and secure spatial keyword ciphertext retrieval scheme based on cloud-fog collaboration. First, we innovatively design the SK-tree. The Geohash algorithm and Simhash algorithm are used in SK-tree to compress information, achieving efficient retrieval. Secondly, our retrieval tree has the function of fuzzy order preservation, which can better hide the correspondence between plaintext and ciphertext compared to traditional index-based order-preserving encryption schemes. In addition, we design a cloud-fog-user interaction scheme for attribute-based encryption that can hide access control policies, which reduces the computational overhead for the user side. Finally, we prove through theoretical analysis that our scheme ensures cloud data security and query trap information privacy. We compare our scheme with others through simulation experiments to demonstrate its superiority in efficiency.},
+  archive      = {J_TIFS},
+  author       = {Na Wang and Yifan Guo and Junsong Fu and Lunzhi Deng and Jianwei Liu},
+  doi          = {10.1109/TIFS.2025.3618394},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10893-10908},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {An efficient and secure spatial keyword ciphertext retrieval scheme based on cloud-fog collaboration},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PRADA: Proactive risk assessment and mitigation of misinformed demand attacks on navigational route recommendations. <em>TIFS</em>, <em>20</em>, 10879-10892. (<a href='https://doi.org/10.1109/TIFS.2025.3615726'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Leveraging recent advances in wireless communication, IoT, and AI, intelligent transportation systems (ITS) played an important role in reducing traffic congestion and enhancing user experience. Within ITS, navigational recommendation systems (NRS) are essential for helping users simplify route choices in urban environments. However, NRS are vulnerable to information-based attacks that can manipulate both the NRS and users to achieve the objectives of the malicious entities. This study aims to assess the risks of misinformed demand attacks, where attackers use techniques like Sybil-based attacks to manipulate the demands of certain origins and destinations considered by the NRS. We propose a game-theoretic framework for proactive risk assessment of demand attacks (PRADA) and treat the interaction between attackers and the NRS as a Stackelberg game. Specifically, we consider the case of local-targeted attacks, in which the attacker aims to make the NRS recommend the authentic users towards a specific road that favors certain groups. Our analysis unveils the equivalence between users’ incentive compatibility and Wardrop equilibrium recommendations and shows that the NRS and its users are at high risk when encountering intelligent attackers who can significantly alter user routes by strategically fabricating non-existent demands. To mitigate these risks, we introduce a trust mechanism that leverages users’ confidence in the integrity of the NRS, and show that it can effectively reduce the impact of misinformed demand attacks. Numerical experiments are used to corroborate the results and support our discussion of the Resilience Paradox, where locally targeted attacks can sometimes benefit the overall traffic conditions. Our framework not only assists risk assessment in automating the evaluation process and estimating potential impacts but also aligns with standards like ISO/IEC 27005, offering a proactive approach to managing risks in ITS.},
+  archive      = {J_TIFS},
+  author       = {Ya-Ting Yang and Haozhe Lei and Quanyan Zhu},
+  doi          = {10.1109/TIFS.2025.3615726},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10879-10892},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {PRADA: Proactive risk assessment and mitigation of misinformed demand attacks on navigational route recommendations},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). InstructRepair: Instruct large language models with rich bug information for automated program repair. <em>TIFS</em>, <em>20</em>, 10864-10878. (<a href='https://doi.org/10.1109/TIFS.2025.3618407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated Program Repair (APR) repairs software bugs based on buggy code snippets automatically. It is instrumental in reducing the time and effort required for software maintenance. Recently, large language models (LLMs) have been utilized for APR and demonstrated promising results. Existing APR approaches adopt an LLM learning paradigm of either prompt engineering or fine-tuning to perform APR tasks. However, these prompt-based approaches underutilize the extensive high-quality bug-fix datasets available in the APR community, missing out on valuable repair knowledge. Conversely, fine-tuning-based APRs rely on LLMs to autonomously understand the entire complex APR tasks without the benefit of natural language guidance through a prompt. Additionally, the crucial bug information the bug-triggering test suites provided remains largely unexplored. Furthermore, while existing APRs focus only on repair effectiveness, they neglect the patch ranking effectiveness that also matters in real-world program repair scenarios. To address the above limitations, we propose InstructRepair, an innovative APR framework that integrates self-supervised instruction tuning with rich bug information to guide LLMs in generating high-quality patches. InstructRepair instructs APR tasks through detailed instructions and enhances repair performance by training LLMs over the first instructional APR dataset we construct. InstructRepair also extracts rich bug information (e.g., buggy line, bug’s context, bug’s diagnostics, test suites and meta-information) to provide fix-relevant tokens and insights into the root causes of bugs for LLMs during both instruction tuning and the repairing process. The human domain knowledge initiated instruction template that integrates this bug information is refined through prompt tuning, which learns task-specific knowledge and unleashes the hidden power stored in pre-trained LLMs automatically. We evaluate InstructRepair on the widely adopted Defects4J v1.2 and v2.0 benchmarks with Java programming language, demonstrating that our work outperforms seven state-of-the-art APR approaches by successfully fixing a total of 122 bugs (10 more than the best baseline) and repairing 19 unique bugs that previous work cannot. In terms of patch ranking effectiveness, InstructRepair also achieves the best performance with a fixing rate of 95.9% (60.0% as the best baseline). The ablation study further validates the contributions of each component to overall repairing performance. We also apply InstructRepair to the Python programming language and beat four state-of-the-art APR approaches, which demonstrates our method’s cross-language generalization capability.},
+  archive      = {J_TIFS},
+  author       = {Anmin Fu and Pengyu Xu and Jichunyang Li and Boyu Kuang and Yansong Gao},
+  doi          = {10.1109/TIFS.2025.3618407},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10864-10878},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {InstructRepair: Instruct large language models with rich bug information for automated program repair},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Three birds with one arrow: Symmetric two-factor authentication protocol based on puncturable pseudorandom function. <em>TIFS</em>, <em>20</em>, 10849-10863. (<a href='https://doi.org/10.1109/TIFS.2025.3615710'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The combination of smart cards and passwords has given birth to one of the most prevalent two-factor authentication (2FA) approaches. Numerous 2FA schemes have been proposed, nevertheless, most of them either do not possess critical security properties or are not efficient for implementation on smart cards. It is generally considered that asymmetric cryptographic primitives are indispensable to achieve security goals, which are burdensome for resource-limited devices. That is, the literature is being stuck with the security-efficiency tension. In this paper, we propose a 2FA protocol only resorting to symmetric primitives. Specifically, with the puncturable pseudorandom function, the proposed protocol hits three birds: it achieves three subtle security goals, i.e., resisting offline password guessing attacks, perfect forward secrecy and anonymity. It alleviates the long-standing security-efficiency conflict that is considered intractable in the literature. The proposed protocol is provably secure within the harshest adversary model to date. Furthermore, the evaluation results demonstrate that our protocol is the optimal choice when considering both security and efficiency.},
+  archive      = {J_TIFS},
+  author       = {Xiaomin Zhao and Qi Jiang and Xin Gong and Meng Li and Xindi Ma and Jianfeng Ma},
+  doi          = {10.1109/TIFS.2025.3615710},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10849-10863},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Three birds with one arrow: Symmetric two-factor authentication protocol based on puncturable pseudorandom function},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DPDeno: A post-processing framework for releasing differentially private spatio-temporal mobility features. <em>TIFS</em>, <em>20</em>, 10834-10848. (<a href='https://doi.org/10.1109/TIFS.2025.3611106'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The spatio-temporal (ST) mobility patterns derived from trajectory data are crucial for applications such as location-based services and urban analytics. However, releasing these mobility features raises significant privacy concerns, as they may expose sensitive personal location information. Differential privacy (DP) is widely used to safeguard individual privacy during data releases, but existing methods for releasing ST features often suffer from utility loss because their high dimensionality requires injecting substantial noise to meet privacy guarantees. Several recent approaches attempt to address this issue by reducing noise in differentially private spatio-temporal (DPST) features, but they either discard valuable information while compressing noisy data representations or rely solely on restrictive road network topology constraints, resulting in only modest utility improvements. In this paper, we present DPDeno, a post-processing framework designed to significantly enhance the utility of DPST features. First, DPDeno generates synthetic trajectory datasets using public information (e.g., road network data) and applies existing DP methods to create paired DPST (noisy) and ST (clean) features. It then trains a spatio-temporal graph autoencoder (STGAE), which models each feature as a graph, with road segments as nodes and transitions over time as edges. By minimizing node- and edge-level reconstruction losses between the noisy and clean pairs, STGAE learns to refine DPST inputs toward the structural consistency of their clean counterparts, thereby improving their practical utility. The trained model is then used to post-process real DPST features. Importantly, DPDeno preserves the original DP guarantee, as STGAE is trained solely on synthetic data generated from public sources without accessing any private information. Experimental results on two real-world trajectory datasets show that DPDeno significantly improves both the statistical accuracy and practical usability of released mobility features.},
+  archive      = {J_TIFS},
+  author       = {Xinyue Sun and Xiaoyu Liu and Qingqing Ye and Haibo Hu and Renyu Yang and Hui He and Weizhe Zhang},
+  doi          = {10.1109/TIFS.2025.3611106},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10834-10848},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {DPDeno: A post-processing framework for releasing differentially private spatio-temporal mobility features},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Trust in a decentralized world: Data governance from faithful, private, verifiable, and traceable data feeds. <em>TIFS</em>, <em>20</em>, 10818-10833. (<a href='https://doi.org/10.1109/TIFS.2025.3615705'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Blockchain technology autonomously executes smart contracts that require external data to facilitate specific applications, underscoring the necessity for Authenticated Data Feeds (ADF). Existing solutions fall short in providing genuine authentication of data, lack private and verifiable computations across multiple data sources, and overlook data traceability, rendering current systems inadequate for complex applications. We present $\textsf {WuKong}$ ( $\textsf {WK}$ ), a data governance system that offers authenticated, privately verifiable, and traceable data feeds. $\textsf {WK}$ enables a server to collect faithful data through an oracle committee and to prove computation correctness in zero-knowledge proofs, and empowers legal entities to trace a leakage source conditionally. We formally define and prove the security of $\textsf {WK}$ in the universal composability framework. We implement three applications that seamlessly integrate with WK. Experimental results indicate that $\textsf {WK}$ effectively liberates sensitive data from distributed, untrusted, and anonymous providers, making it accessible to various services and establishing trust in a decentralized world.},
+  archive      = {J_TIFS},
+  author       = {Meng Li and Yifei Chen and Yan Qiao and Guixin Ye and Zijian Zhang and Liehuang Zhu and Mauro Conti},
+  doi          = {10.1109/TIFS.2025.3615705},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10818-10833},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Trust in a decentralized world: Data governance from faithful, private, verifiable, and traceable data feeds},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tensor-based joint hybrid beamforming and artificial noise design for secure mmWave MU-MIMO-OFDM communication systems. <em>TIFS</em>, <em>20</em>, 10777-10791. (<a href='https://doi.org/10.1109/TIFS.2025.3614447'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A tensor-based approach is studied to address the challenging problem of joint hybrid beamforming (HBF) design and artificial noise (AN) injection in a physical layer secure multi-user (MU) multiple-input multiple-output (MIMO) communication system in the millimeter wave (mmWave) band. Specifically, a hybrid analog-digital MIMO architecture is adopted, and orthogonal frequency-division multiplexing (OFDM) is deployed for wideband communication over frequency-selective mmWave channels. The antenna array structure and frequency selectivity of the system under investigation inherently endow it with multi-dimensional channel characteristics spanning the space, frequency, and time domains, which can be efficiently processed with tensor-based multi-dimensional signal processing techniques. The problem, based on tensor modeling of the system, is decomposed into three subproblems, namely analog beamforming, digital beamforming, and AN precoding. A low-complexity two-stage procedure is proposed to conduct analog beamforming, where a Tucker2 tensor decomposition subproblem is formulated to determine the analog combiners and part of the analog precoding matrix, and the remaining part of the precoding matrix is composed of arbitrary vectors satisfying the constant modulus constraint. The block-diagonalization algorithm is employed to design the digital beamforming and combining matrices to mitigate interference. For the AN precoding part, a statistical null-space algorithm based on higher-order singular value decomposition (HOSVD) is proposed. Multiple AN precoding matrices on all subcarriers can be obtained simultaneously, and the AN-induced interference to the potential eavesdropper is maximized statistically to improve the secrecy of the communication. Simulation results show that, compared with existing matrix-based AN-aided secure HBF designs in the literature, the proposed tensor-based joint HBF and AN design leveraging multi-dimensional tensor signal processing provides improved secrecy performance with moderate complexity.},
+  archive      = {J_TIFS},
+  author       = {Dandan Mao and Ze Li and Shuangzhi Li and Wanming Hao and Ning Wang and Wei Xu},
+  doi          = {10.1109/TIFS.2025.3614447},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  pages        = {10777-10791},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Tensor-based joint hybrid beamforming and artificial noise design for secure mmWave MU-MIMO-OFDM communication systems},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Channel-robust RF fingerprint identification for multi-antenna 5G user equipments. <em>TIFS</em>, <em>20</em>, 10761-10776. (<a href='https://doi.org/10.1109/TIFS.2025.3611154'>www</a>)

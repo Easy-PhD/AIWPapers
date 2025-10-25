@@ -29,20 +29,83 @@
 <ul>
 <li><details>
 <summary>
-(2025). Algorithm 1055: HDSDP: Software for semidefinite programming. <em>TOMS</em>, <em>51</em>(2), 1-30. (<a href='https://doi.org/10.1145/3721123'>www</a>)
+(2025). A massively parallel performance portable free-space spectral poisson solver. <em>TOMS</em>, <em>51</em>(3), 1-23. (<a href='https://doi.org/10.1145/3748815'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {HDSDP is a numerical software solving semidefinite programming problems. The main framework of HDSDP resembles the dual-scaling interior point solver DSDP and several new features, including a dual method based on the simplified homogeneous self-dual embedding, have been implemented. The embedding technique enhances the stability of the dual method, and several new heuristics and computational techniques are designed to accelerate its convergence. HDSDP aims to show how the dual-scaling algorithm benefits from the self-dual embedding, and it is developed in parallel to DSDP 5.8. Numerical experiments over several classical benchmark datasets exhibit their robustness and efficiency, particularly their advantages on SDP instances featuring low-rank structure and sparsity. HDSDP is open sourced under an MIT license and available at https://github.com/Gwzwpxz/HDSDP .},
+  abstract     = {Vico et al. suggest a fast algorithm for computing volume potentials, beneficial to fields with problems requiring the solution of the free-space Poisson’s equation, such as beam and plasma physics. Currently, the standard is the algorithm of Hockney and Eastwood, with second order in convergence at best. The algorithm proposed by Vico et al. converges spectrally for sufficiently smooth functions, i.e., faster than any fixed order in the number of grid points. We implement a performance portable version of the traditional Hockney-Eastwood and the novel Vico-Greengard Poisson solver as part of the Independent Parallel Particle Layer (IPPL) library. For sufficiently smooth source functions, the Vico-Greengard algorithm achieves higher accuracy than the Hockney-Eastwood method with the same grid size, reducing the computational demands of high-resolution simulations since one could use coarser grids to achieve them. Additionally, we propose an improvement to the Vico-Greengard method which further reduces its memory footprint. This is important for GPUs, which have limited memory, and should be taken into account when selecting numerical algorithms for performance portable codes. Finally, we showcase performance through GPU and CPU scaling studies on the Perlmutter (NERSC) supercomputer, with efficiencies staying above 50% in the strong scaling case. To showcase portability, we also run the scaling studies on the Alps supercomputer at CSCS, Switzerland and the GPU partition of the Lumi supercomputer at CSC, Finland.},
   archive      = {J_TOMS},
-  author       = {Wenzhi Gao and Dongdong Ge and Yinyu Ye},
-  doi          = {10.1145/3721123},
+  author       = {Sonali Mayani and Veronica Montanaro and Antoine Cerfon and Matthias Frey and Sriramkrishnan Muralikrishnan and Andreas Adelmann},
+  doi          = {10.1145/3748815},
   journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
+  month        = {9},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {A massively parallel performance portable free-space spectral poisson solver},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FIAT: Improving performance and accuracy for high-order finite elements. <em>TOMS</em>, <em>51</em>(3), 1-17. (<a href='https://doi.org/10.1145/3748816'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {FIAT (the FInite element Automatic Tabulator) provides a powerful Python library for the generation and evaluation of finite element basis functions on a reference element. This release paper describes recent improvements to FIAT aimed at improving its run time and the accuracy and efficiency of code generated using FIAT-provided information. In the first category, we have greatly streamlined the implementation of orthogonal polynomials out of which finite element bases are built. The second category comprises several more advances. For one, we have built an interface to the recursivenodes package to enable more accurate Lagrange bases at high order. We have also implemented integral-type degrees of freedom for \(H(\operatorname{div})\) and \(H(\operatorname{curl})\) elements, which match the mathematical definitions of the elements more closely and also avoid loss of accuracy in interpolation. More fundamentally, we have included families of simplicial quadrature rules that require many fewer quadrature points than the Stroud rules previously used in FIAT. Finally, FIAT now provides support for fast diagonalization methods, which enable fast solution algorithms at very high order. In each case, we describe the new features in FIAT and illustrate some of the gains obtained through simple numerical tests.},
+  archive      = {J_TOMS},
+  author       = {Pablo D. Brubeck and Robert C. Kirby and Fabian Laakmann and Lawrence Mitchell},
+  doi          = {10.1145/3748816},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {FIAT: Improving performance and accuracy for high-order finite elements},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards seamless interoperability of MPI-OpenMP applications. <em>TOMS</em>, <em>51</em>(3), 1-13. (<a href='https://doi.org/10.1145/3757913'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A chasm exists between mathematical software libraries written for MPI-based applications and those written for OpenMP applications. Recently, however, PETSc enables the simple use of its MPI-based linear solvers from OpenMP applications. Separately, the MPICH MPI development team has started a new project to allow almost seamless MPI use in OpenMP applications. Both proposed approaches would result in a similar user experience. We discuss the reasons for these projects and their potential for providing more numerical library choices for OpenMP applications, including the unlimited assortment of linear solvers available in PETSc. In addition, we present the performance of an application using the first approach, demonstrating its efficacy.},
+  archive      = {J_TOMS},
+  author       = {Barry Smith and Marsha Berger and Junchao Zhang and Hui Zhou},
+  doi          = {10.1145/3757913},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {9},
+  number       = {3},
+  pages        = {1-13},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Towards seamless interoperability of MPI-OpenMP applications},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TorchBraid: High-performance layer-parallel training of deep neural networks with MPI and GPU acceleration. <em>TOMS</em>, <em>51</em>(3), 1-30. (<a href='https://doi.org/10.1145/3759244'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {TorchBraid is a high-performance implementation of layer-parallel training for deep neural networks (DNNs) supporting MPI-based parallelism and GPU acceleration. Layer-parallel training has been developed to overcome the serialization inherent in forward and backward propagation of DNNs that limits utilization of computational resources in the strong scaling limit. To achieve this, TorchBraid integrates the PyTorch neural network framework with the state-of-the-art XBraid time-parallel library. This article presents the use and performance of TorchBraid, in addition to solutions for overcoming the algorithmic challenges inherent in combining automatic differentiation with layer-parallel. Results are presented with and without GPU acceleration for the Tiny ImageNet and MNIST image classification data sets, as well as recurrent neural networks. Overall, TorchBraid enables fast training of DNNs, both in a strong and weak scaling context. In addition to the TorchBraid software, several new advances in applying layer-parallel algorithms are detailed. Integration of layer-parallel with data-parallel algorithms is presented for the first time, showing the computational advantages of the combination. Standard deep learning techniques, like batch-normalization, are developed for layer-parallel training. Finally, a new approach combining layer-parallel with spatial coarsening in order to accelerate training for 3D image classification shows roughly a 10× speedup over serial execution.},
+  archive      = {J_TOMS},
+  author       = {Eric C. Cyr and Jens Hahne and Nicholas S. Moore and Jacob B. Schroder and Ben S. Southworth and David A. Vargas},
+  doi          = {10.1145/3759244},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {9},
+  number       = {3},
   pages        = {1-30},
   shortjournal = {ACM Trans. Math. Softw.},
-  title        = {Algorithm 1055: HDSDP: Software for semidefinite programming},
+  title        = {TorchBraid: High-performance layer-parallel training of deep neural networks with MPI and GPU acceleration},
   volume       = {51},
   year         = {2025},
 }
@@ -50,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Approximating large-scale hessian matrices using secant equations. <em>TOMS</em>, <em>51</em>(2), 1-21. (<a href='https://doi.org/10.1145/3728460'>www</a>)
+(2025). Extending irksome: Improvements in automated Runge–Kutta time stepping for finite element methods. <em>TOMS</em>, <em>51</em>(3), 1-27. (<a href='https://doi.org/10.1145/3759245'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Large-scale optimization algorithms frequently require sparse Hessian matrices that are not readily available. Existing methods for approximating large sparse Hessian matrices either do not impose sparsity or are computationally prohibitive. To try and overcome these limitations, we propose a novel approach that seeks to satisfy as many componentwise secant equations as necessary to define each row of the Hessian matrix. A naive application of this approach is too expensive for Hessian matrices that have some relatively dense rows but, by carefully taking into account the symmetry and connectivity of the Hessian matrix, we are able devise an approximation algorithm that is fast and efficient with scope for parallelism. Example sparse Hessian matrices from the CUTEst test collection for optimization illustrate the effectiveness and robustness of our proposed method.},
+  abstract     = {Irksome is a library based on the Unified Form Language (UFL) that enables automated generation of Runge–Kutta methods for time-stepping finite element spatial discretizations of Partial Differential Equations (PDEs). Allowing users to express semidiscrete forms of PDEs, it generates UFL representations for the stage-coupled variational problems to be solved at each timestep. The Firedrake package then generates efficient code for evaluating these variational problems and allows users a wide range of options to deploy efficient algebraic solvers in PETSc. In this article, we describe several recent advances in Irksome . These include alternate formulations of the Runge–Kutta time-stepping methods and optimized support for diagonally implicit (DIRK) methods. Additionally, we present new and improved tools for building preconditioners for the resulting linear and linearized systems, demonstrating that these can lead to efficient approaches for solving fully implicit Runge–Kutta discretizations. The new features are demonstrated through a sequence of computational examples demonstrating the high-level interface and obtained solver performance.},
   archive      = {J_TOMS},
-  author       = {Jaroslav M. Fowkes and Nicholas I. M. Gould and Jennifer A. Scott},
-  doi          = {10.1145/3728460},
+  author       = {Robert C. Kirby and Scott P. MacLachlan},
+  doi          = {10.1145/3759245},
   journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
-  pages        = {1-21},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
   shortjournal = {ACM Trans. Math. Softw.},
-  title        = {Approximating large-scale hessian matrices using secant equations},
+  title        = {Extending irksome: Improvements in automated Runge–Kutta time stepping for finite element methods},
   volume       = {51},
   year         = {2025},
 }
@@ -71,62 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Intersection of tetrahedra. <em>TOMS</em>, <em>51</em>(2), 1-26. (<a href='https://doi.org/10.1145/3729532'>www</a>)
+(2025). Algorithm 1058: Computing the group of local dyadic square-classes the easy way. <em>TOMS</em>, <em>51</em>(3), 1-14. (<a href='https://doi.org/10.1145/3759246'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {When intersecting non-matching three-dimensional lattices, one needs to calculate the intersections of tetrahedra. The authors’ previously published two-dimensional triangle–triangle intersection algorithm suggests a novel approach in three dimensions based on parsimony. The algorithm presented here expands on this two-dimensional algorithm and introduces new strategies necessitated by the increase in dimension. An extensive proof is given for the consistency of the algorithm. Thus, the algorithm is shown to be robust to numerical error arising from floating-point arithmetic. Example problems demonstrate its use and effectiveness.},
-  archive      = {J_TOMS},
-  author       = {Conor McCoid and Martin J. Gander},
-  doi          = {10.1145/3729532},
-  journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
-  pages        = {1-26},
-  shortjournal = {ACM Trans. Math. Softw.},
-  title        = {Intersection of tetrahedra},
-  volume       = {51},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LevelSetPy: A GPU-accelerated package for hyperbolic Hamilton–Jacobi partial differential equations. <em>TOMS</em>, <em>51</em>(2), 1-14. (<a href='https://doi.org/10.1145/3730407'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article introduces a software package release for geometrically reasoning about the safety desiderata of (complex) dynamical systems via level set methods. In emphasis, safety is analyzed with the Hamilton–Jacobi equations. In scope, we provide implementations of numerical algorithms for the resolution of Hamilton–Jacobi–Isaacs equations: the spatial derivatives of the associated value function via upwinding, the Hamiltonian via Lax–Friedrichs schemes, and the integration of the Hamilton–Jacobi equation altogether via total variation diminishing Runge–Kutta schemes. Since computational speed and interoperability with other modern scientific computing libraries (typically written in the Python language) are of essence, we capitalize on modern computational frameworks such as CUPY and NUMPY and move heavy computations to GPU devices to aid parallelization and improve bring-up time in safety analysis. We hope that this package can aid users to quickly iterate on ideas and evaluate all possible safety desiderata of a system via geometrical simulation in modern engineering problems.},
-  archive      = {J_TOMS},
-  author       = {Lekan Molu},
-  doi          = {10.1145/3730407},
-  journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
-  pages        = {1-14},
-  shortjournal = {ACM Trans. Math. Softw.},
-  title        = {LevelSetPy: A GPU-accelerated package for hyperbolic Hamilton–Jacobi partial differential equations},
-  volume       = {51},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Algorithm 1056: QPoly—A magma package for working with quaternionic polynomials. <em>TOMS</em>, <em>51</em>(2), 1-14. (<a href='https://doi.org/10.1145/3731677'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The article presents the package for the computer algebra system Magma . It is a collection of functions for manipulating quaternionic polynomials over number fields. It provides nearly the same functionality for quaternionic polynomials as the ones provided by Magma for polynomials over fields.},
+  abstract     = {We propose a novel method for constructing a basis of the group of local square-classes of a dyadic completion of a number field. The described method has been implemented by the author in the computer algebra systems Magma and SageMath. It turned out to be substantially faster than the algorithm previously used. The article presents the algorithm itself, together with a time comparison with the preexisting solution.},
   archive      = {J_TOMS},
   author       = {Przemysław Koprowski},
-  doi          = {10.1145/3731677},
+  doi          = {10.1145/3759246},
   journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
+  month        = {9},
+  number       = {3},
   pages        = {1-14},
   shortjournal = {ACM Trans. Math. Softw.},
-  title        = {Algorithm 1056: QPoly—A magma package for working with quaternionic polynomials},
+  title        = {Algorithm 1058: Computing the group of local dyadic square-classes the easy way},
   volume       = {51},
   year         = {2025},
 }
@@ -134,41 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Algorithm 1057: FunC: A minimally invasive c++ library for the generation and analysis of univariate lookup tables. <em>TOMS</em>, <em>51</em>(2), 1-30. (<a href='https://doi.org/10.1145/3734692'>www</a>)
+(2025). Multilevel interior penalty methods on GPUs. <em>TOMS</em>, <em>51</em>(3), 1-27. (<a href='https://doi.org/10.1145/3765616'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {A Lookup Table (LUT) is a computationally inexpensive piecewise function used to approximate computationally expensive mathematical functions. Evaluating a LUT can be as quick as using Horner’s method to evaluate a polynomial after looking up its coefficients. A common choice of LUT is a piecewise constant or piecewise linear function; however, high-degree interpolating polynomials can also be valuable. Here, we describe the functionality of FunC 2.0, a C++ library designed to streamline the process of building, comparing, and implementing univariate LUTs in practical applications. In particular, FunC 2.0 can build relatively small LUTs satisfying user-provided absolute and relative tolerances for error. Furthermore, FunC 2.0 can build nonuniform LUTs, it provides utilities to quickly determine reasonable LUT bounds and tolerances for error, and it provides a way to quickly profile a set of LUTs. We demonstrate FunC ’s utility in application by reducing the total runtime of a simulation performed by the Canadian Hydrological Model (CHM). This simulation modeled the snow mass distribution across Western Canada over 1 month. Now, the CHM can evaluate the mathematical function of interest about 28 times faster, allowing the necessary algorithm to finish two times faster, and the overall simulation is about 9% faster.},
+  abstract     = {We present a matrix-free multigrid method for high-order Discontinuous Galerkin (DG) finite element methods with GPU acceleration. A performance analysis is conducted, comparing various data and compute layouts. Smoother implementations are optimized through localization and fast diagonalization techniques. Leveraging conflict-free access patterns in shared memory, arithmetic throughput of up to 40% of the peak performance on NVIDIA A100 GPUs are achieved. Experimental results affirm the effectiveness of mixed-precision approaches and Message Passing Interface (MPI) parallelization in accelerating algorithms. Furthermore, an assessment of solver efficiency and robustness is provided across both two and three dimensions, with applications to Poisson problems.},
   archive      = {J_TOMS},
-  author       = {Shawn S. C. McAdam and Raymond J. Spiteri},
-  doi          = {10.1145/3734692},
+  author       = {Cu Cui and Guido Kanschat},
+  doi          = {10.1145/3765616},
   journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
-  pages        = {1-30},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
   shortjournal = {ACM Trans. Math. Softw.},
-  title        = {Algorithm 1057: FunC: A minimally invasive c++ library for the generation and analysis of univariate lookup tables},
-  volume       = {51},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Symbolic and user-friendly geometric algebra routines (SUGAR) for computations in matlab. <em>TOMS</em>, <em>51</em>(2), 1-31. (<a href='https://doi.org/10.1145/3734693'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Geometric Algebra (GA) provides a unified, compact mathematical framework for geometric computing, simplifying relations typically handled with more complex tools like matrix multiplication. In fields like robotics, GA replaces conventional coordinate-based approaches with the multiplication of special elements called rotors, offering greater efficiency. Despite its advantages, GA’s complexity and the lack of symbolic tools hinder its broader adoption among applied mathematicians and engineers. To address this, this article introduces Symbolic and User-friendly Geometric Algebra Routines (SUGAR), an open source Matlab toolbox. SUGAR streamlines GA usage in Matlab through a collection of user-friendly functions that support both numeric and symbolic computations, even in high-dimensional algebras. Designed for applied mathematics and engineering, it enables intuitive manipulation of geometric elements and transformations in two- and three-dimensional projective and conformal GAs, consistent with established computational methods. Moreover, SUGAR manages multivector functions such as exponential, logarithmic, sinusoidal, and cosine operations, enhancing its applicability in domains like robotics, control systems, and power electronics. Finally, this article also presents three validation examples across these fields, showcasing SUGAR’s practical utility in solving real-world engineering and applied mathematics problems.},
-  archive      = {J_TOMS},
-  author       = {Manel Velasco and Isiah Zaplana and Arnau Dòria-Cerezo and Pau Martí},
-  doi          = {10.1145/3734693},
-  journal      = {ACM Transactions on Mathematical Software},
-  month        = {6},
-  number       = {2},
-  pages        = {1-31},
-  shortjournal = {ACM Trans. Math. Softw.},
-  title        = {Symbolic and user-friendly geometric algebra routines (SUGAR) for computations in matlab},
+  title        = {Multilevel interior penalty methods on GPUs},
   volume       = {51},
   year         = {2025},
 }

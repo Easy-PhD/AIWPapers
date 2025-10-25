@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tifs">TIFS - 41</h2>
+<h2 id="tifs">TIFS - 54</h2>
 <ul>
 <li><details>
 <summary>
@@ -156,44 +156,6 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Finding more Hints–Improved power analysis attacks on dilithium},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An efficient and secure spatial keyword ciphertext retrieval scheme based on cloud-fog collaboration. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3618394'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Location-Based Services are increasingly common in our lives. In order to reduce user overhead, the data owner stores the location information and text data on the cloud server, and the user completes the retrieval task with the help of the fog server. To protect the privacy of outsourced data, many secure spatial keyword retrieval schemes have been proposed. Most schemes use R-tree indexes to improve the efficiency of ciphertext retrieval, but the encrypted R-tree index is hard to update. Moreover, some indexes based on order-preserving encryption are vulnerable to frequency-revealing attacks. So how to balance efficiency and security is a problem. To solve the above problems, we propose an efficient and secure spatial keyword ciphertext retrieval scheme based on cloud-fog collaboration. First, we innovatively design the SK-tree. The Geohash algorithm and Simhash algorithm are used in SK-tree to compress information, achieving efficient retrieval. Secondly, our retrieval tree has the function of fuzzy order preservation, which can better hide the correspondence between plaintext and ciphertext compared to traditional index-based order-preserving encryption schemes. In addition, we design a cloud-fog-user interaction scheme for attribute-based encryption that can hide access control policies, which reduces the computational overhead for the user side. Finally, we prove through theoretical analysis that our scheme ensures cloud data security and query trap information privacy. We compare our scheme with others through simulation experiments to demonstrate its superiority in efficiency.},
-  archive      = {J_TIFS},
-  author       = {Na Wang and Yifan Guo and Junsong Fu and Lunzhi Deng and Jianwei Liu},
-  doi          = {10.1109/TIFS.2025.3618394},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {An efficient and secure spatial keyword ciphertext retrieval scheme based on cloud-fog collaboration},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). InstructRepair: Instruct large language models with rich bug information for automated program repair. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3618407'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Automated Program Repair (APR) repairs software bugs based on buggy code snippets automatically. It is instrumental in reducing the time and effort required for software maintenance. Recently, large language models (LLMs) have been utilized for APR and demonstrated promising results. Existing APR approaches adopt an LLM learning paradigm of either prompt engineering or fine-tuning to perform APR tasks. However, these prompt-based approaches underutilize the extensive high-quality bug-fix datasets available in the APR community, missing out on valuable repair knowledge. Conversely, fine-tuning-based APRs rely on LLMs to autonomously understand the entire complex APR tasks without the benefit of natural language guidance through a prompt. Additionally, the crucial bug information the bug-triggering test suites provided remains largely unexplored. Furthermore, while existing APRs focus only on repair effectiveness, they neglect the patch ranking effectiveness that also matters in real-world program repair scenarios. To address the above limitations, we propose InstructRepair, an innovative APR framework that integrates self-supervised instruction tuning with rich bug information to guide LLMs in generating high-quality patches. InstructRepair instructs APR tasks through detailed instructions and enhances repair performance by training LLMs over the first instructional APR dataset we construct. InstructRepair also extracts rich bug information (e.g., buggy line, bug’s context, bug’s diagnostics, test suites and meta-information) to provide fix-relevant tokens and insights into the root causes of bugs for LLMs during both instruction tuning and the repairing process. The human domain knowledge initiated instruction template that integrates this bug information is refined through prompt tuning, which learns task-specific knowledge and unleashes the hidden power stored in pre-trained LLMs automatically. We evaluate InstructRepair on the widely adopted Defects4J v1.2 and v2.0 benchmarks with Java programming language, demonstrating that our work outperforms seven state-of-the-art APR approaches by successfully fixing a total of 122 bugs (10 more than the best baseline) and repairing 19 unique bugs that previous work cannot. In terms of patch ranking effectiveness, InstructRepair also achieves the best performance with a fixing rate of 95.9% (60.0% as the best baseline). The ablation study further validates the contributions of each component to overall repairing performance. We also apply InstructRepair to the Python programming language and beat four state-of-the-art APR approaches, which demonstrates our method’s cross-language generalization capability.},
-  archive      = {J_TIFS},
-  author       = {Anmin Fu and Pengyu Xu and Jichunyang Li and Boyu Kuang and Yansong Gao},
-  doi          = {10.1109/TIFS.2025.3618407},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {InstructRepair: Instruct large language models with rich bug information for automated program repair},
   year         = {2025},
 }
 </textarea>
@@ -802,6 +764,291 @@
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
   title        = {Practical constant-time asynchronous distributed key generation with improved efficiency},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The early bird catches the leak: Unveiling timing side channels in LLM serving systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622954'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The wide deployment of Large Language Models (LLMs) has given rise to strong demands for optimizing their inference performance. Today’s techniques serving this purpose primarily focus on reducing latency and improving throughput through algorithmic and hardware enhancements, while largely overlooking their privacy side effects, particularly in a multi-user environment. In our research, for the first time, we discovered a set of new timing side channels in LLM systems, arising from shared caches and GPU memory allocations, which can be exploited to infer both confidential system prompts and those issued by other users. These vulnerabilities echo security challenges observed in traditional computing systems, highlighting an urgent need to address potential information leakage in LLM serving infrastructures. In this paper, we report novel attack strategies designed to exploit such timing side channels inherent in LLM deployments, specifically targeting the Key-Value (KV) cache and semantic cache widely used to enhance LLM inference performance. Our approach leverages timing measurements and classification models to detect cache hits, allowing an adversary to infer private prompts with high accuracy. We also propose a token-by-token search algorithm to efficiently recover shared prompt prefixes in the caches, showing the feasibility of stealing system prompts and those produced by peer users. Our experimental studies on black-box testing of popular online LLM services demonstrate that such privacy risks are completely realistic, with significant consequences. Our findings underscore the need for robust mitigation to protect LLM systems against such emerging threats.},
+  archive      = {J_TIFS},
+  author       = {Linke Song and Zixuan Pang and Wenhao Wang and Zihao Wang and XiaoFeng Wang and Hongbo Chen and Wei Song and Yier Jin and Dan Meng and Rui Hou},
+  doi          = {10.1109/TIFS.2025.3622954},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {The early bird catches the leak: Unveiling timing side channels in LLM serving systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gradient-aware adaptive meta-prompt learner for generalizable face forgery detection. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622981'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The misuse of AI-generated techniques in face forgery has raised significant concerns, driving advancements in detection methods. However, existing algorithms struggle with generalization in cross-domain scenarios due to domain shifts, limiting their practical applications. Prompt tuning, which learns soft prompts while freezing the backbone, enables the generalizable Vision-Language Models (VLMs) pre-trained on large-scale datasets to adapt to downstream tasks. Though effective, prompt tuning confronts challenges in face forgery detection, where its performance is sensitive to initialization and may undermine the generalizability of pre-trained VLMs. To address this issue, we propose a novel Gradient-aware Adaptive Meta-Prompt Learner (GAMP-Learner). The core idea is to learn a meta-general gradient from multiple source domains through the Direction-shared Gradient Pruning Module (DGPM) for efficient initialization in the inner-loop, while addressing gradient conflicts via the Adaptive Gradient Calibration Module (AdaGCM) to enhance generalization in the outer-loop. Notably, our GAMP-Learner can be seamlessly integrated into any prompt-based fine-tuning VLM in a model-agnostic way. Additionally, to capture fine-grained forgery clues, we design a Multi-Granularity Conditional Prompt Generator (MGCP), which constructs instance-level prompts by incorporating multi-scale content-style feature representations. Simulating practical scenarios, we devise three protocols which evaluate generalization performance trained on multiple source domains. Extensive experiments demonstrate that the proposed framework achieves competitive cross-domain detection performance compared to state-of-the-art methods.},
+  archive      = {J_TIFS},
+  author       = {Hanqing Liu and Hongxia Wang and Rui Zhang and Yang Zhou and Qiang Zeng},
+  doi          = {10.1109/TIFS.2025.3622981},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Gradient-aware adaptive meta-prompt learner for generalizable face forgery detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unlocking mobile phones by rolling wrists: A novel motion-based biometric recognition method. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622964'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of Internet of Things and the increasingly popularized smart devices, the biometric recognition becomes a crucial component of facilitating some basic activities of daily living, and the biometric recognition has the outstanding advantages in terms of reliability and convenience. Various biometric characteristics have been applied to realize the biometric recognition for basic human activities, and new biometric characteristics are worth exploring to further enhance the convenience of our daily lives. This paper explores a new biometric characteristic (the wrist-rolling motion). By taking the mobile phone unlocking as the typical application of the biometric recognition, we verify that the wrist-rolling motion can become an available biometric characteristic with the aid of our designed deep learning model termed RTimesNet. Specifically, RTimesNet is composed of TimesBlocks, decomposition modules, and a multi-head ProbSparse self-attention module, and it exploits the periodicity of wrist-rolling motion to extract the time series features. TimesBlocks extract the features hidden in the wrist-rolling motion, and the decomposition modules decompose the output data of TimesBlocks into the trend-cyclical data and seasonal data, which are then evenly divided and inputted into the multi-head ProbSparse self-attention module for concatenation. In addition, a federated learning manner is adopted for the motion-based biometric recognition, thus avoiding the exchange of local data and protecting the privacy of users. Extensive experiments have been conducted, and the results demonstrate that the wrist-rolling motion can become an available biometric characteristic. Compared with other biometric recognition methods, our proposed method shows a faster unlocking speed and requires less data storage with a satisfactory biometric recognition accuracy.},
+  archive      = {J_TIFS},
+  author       = {Yadi He and Sitan Chen and Linfeng Liu},
+  doi          = {10.1109/TIFS.2025.3622964},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Unlocking mobile phones by rolling wrists: A novel motion-based biometric recognition method},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Boosting parallel fuzzing with boundary-targeted task allocation and exploration. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622956'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As software systems grow in complexity, scale, and update frequency, parallel fuzzing has become essential for mitigating the efficiency limitations of traditional fuzzing. Effective task allocation is vital in maximizing parallel fuzzing efficiency and has garnered significant attention. However, current strategies often neglect critical code areas, treating all regions uniformly and resulting in suboptimal exploration. To address the limitations of current approaches, we present FlexFuzz, a novel parallel fuzzing system. First, we identify the boundary basic blocks that connect covered and uncovered areas, dynamically adapting them as fuzzing progresses. Second, we introduce a boundary-sensitive task allocation scheme that assigns fuzzing tasks based on the identified boundary basic blocks and their potential for exploration. Finally, to ensure focused exploration, we implement a multi-target, distance-guided approach that directs each instance to concentrate on its relevant task area. We have implemented a prototype of FlexFuzz and comprehensively evaluated it against the state-of-the-art parallel fuzzing systems. Across standard benchmarks, FlexFuzz surpasses other parallel tools: it increases coverage by 20.09% over the next best tool (PAFL), and identifies 33.75% more vulnerabilities than the next best tool (AFL++).},
+  archive      = {J_TIFS},
+  author       = {Hong Liang and Yijia Guo and Haotian Wu and Yifan Xia and Yi Xiang and Xiantao Jin and Hao Peng and Xuhong Zhang and Shouling Ji},
+  doi          = {10.1109/TIFS.2025.3622956},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Boosting parallel fuzzing with boundary-targeted task allocation and exploration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Task-oriented cloud-edge-device collaborative semantic communication: Trade-off between privacy-preserving and QoAIS. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622076'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we formulate a Secure Hierarchical Semantic Communication (SH-SC) framework that leverages cloud-edge-device collaboration to enable efficient, robust, and privacy-preserving semantic communications. Firstly, we propose a quantization-aware efficient semantic communication (SemCom) model pre-training scheme running in the cloud. In particular, a semantic quantization method is applied to reduce the data required for transmission, and a quantization-aware multi-splitting points training method is proposed to mitigate the accuracy loss caused by quantization. Secondly, we propose a robust SemCom model deployment strategy in local device and honest but curious edge server for privacy-preserving, where a post-training quantization method on the device is proposed to reduce the computational overhead and enhance privacy preservation. Thirdly, we propose a SemCom model based adaptive device-edge collaborative inferencing mechanism for SemCom quality of AI services (QoAIS), where a Joint Quantization Device-Edge Collaboration Semantic Communication (JQDESC) scheme is formulated. Moreover, we provide a theoretical analysis of the privacy preservation of the proposed quantization scheme against model inversion attack through back-propagation and quantization error accumulation. Experimental results demonstrate that our proposed JQDESC scheme effectively protects privacy under various adversarial capabilities, and has better performance in memory usage and end-to-end latency while maintaining similar accuracy.},
+  archive      = {J_TIFS},
+  author       = {Guanwu Jiang and Shujun Han and Xiaodong Xu and Wenzhao Zhang and Ping Zhang},
+  doi          = {10.1109/TIFS.2025.3622076},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Task-oriented cloud-edge-device collaborative semantic communication: Trade-off between privacy-preserving and QoAIS},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Game-theoretic machine unlearning: Mitigating extra privacy leakage. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623364'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the extensive use of machine learning technologies, data providers encounter increasing privacy risks. Recent legislation, such as GDPR, obligates organizations to remove requested data and its influence from a trained model. Machine unlearning is an emerging technique designed to enable machine learning models to erase users’ private information. Although several efficient machine unlearning schemes have been proposed, these methods still have limitations. First, removing the contributions of partial data may lead to model performance degradation. Second, discrepancies between the original and generated unlearned models can be exploited by attackers to obtain target sample’s information, resulting in additional privacy leakage risks. To address above challenges, we proposed a game-theoretic machine unlearning algorithm that simulates the competitive relationship between unlearning performance and privacy protection. This algorithm comprises unlearning and privacy modules. The unlearning module possesses a loss function composed of model distance and classification error, which is used to derive the optimal strategy. The privacy module aims to make it difficult for an attacker to infer membership information from the unlearned data, thereby reducing the privacy leakage risk during the unlearning process. Additionally, the experimental results on real-world datasets demonstrate that this game-theoretic unlearning algorithm’s effectiveness and its ability to generate an unlearned model with a performance similar to that of the retrained one while mitigating extra privacy leakage risks.},
+  archive      = {J_TIFS},
+  author       = {Hengzhu Liu and Tianqing Zhu and Lefeng Zhang and Ping Xiong},
+  doi          = {10.1109/TIFS.2025.3623364},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Game-theoretic machine unlearning: Mitigating extra privacy leakage},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Differentially private vertical federated learning with adaptive constraints and dynamic noise. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3620213'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vertical Federated Learning (VFL) has gained widespread attention due to its ability of enabling collaborative model training among participants with diverse data features. Differential Privacy (DP) offers provable privacy guarantees for VFL, but existing DP-based methods typically compromise accuracy for privacy protection. To address this issue, we propose a novel scheme, called Adaptive Differential Privacy-based Vertical Federated Learning (Ada-VFed), that enhances privacy of data features and labels by adding Gaussian noise separately to the transmitted intermediate results and gradients. To improve model accuracy, we incorporate adaptive constraints through regularization terms in the objective function to mitigate the impact of clipping operations. In addition, we propose a dynamic noise injection mechanism that adjusts noise according to the importance of each dimension, thereby balancing privacy protection and model accuracy. Our theoretical analysis provides privacy guarantees and convergence insights. Extensive experiments demonstrated that our scheme significantly outperforms state-of-the-art DP-based VFL methods in terms of accuracy. Even with a small privacy budget (e.g.,ϵ = 0.5), our method improves the accuracy on MNIST, FashionMNIST, and CIFAR-10 by 13.01%, 10.08%, and 3.40%, respectively, compared to traditional DP-based VFL methods.},
+  archive      = {J_TIFS},
+  author       = {Keke Gai and Mohan Wang and Jing Yu and Lei Xu and Peng Jiang and Liehuang Zhu and Bin Xiao},
+  doi          = {10.1109/TIFS.2025.3620213},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Differentially private vertical federated learning with adaptive constraints and dynamic noise},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secret-key generation from private identifiers under channel uncertainty. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623929'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study investigates secret-key generation for device authentication using physical identifiers, such as responses from physical unclonable functions (PUFs). The system includes two legitimate terminals (encoder and decoder) and an eavesdropper (Eve), each with access to different measurements of the identifier. From the device identifier, the encoder generates a secret key, which is securely stored in a private database, along with helper data that is saved in a public database accessible by the decoder for key reconstruction. Eve, who also has access to the public database, may use both her own measurements and the helper data to attempt to estimate the secret key and identifier. Our setup focuses on authentication scenarios where channel statistics are uncertain, with the involved parties employing multiple antennas to enhance signal reception. Our contributions include deriving inner and outer bounds on the optimal trade-off among secret-key, storage, and privacy-leakage rates for general discrete sources, and showing that these bounds are tight for Gaussian sources.},
+  archive      = {J_TIFS},
+  author       = {Vamoua Yachongka and Rémi A. Chou},
+  doi          = {10.1109/TIFS.2025.3623929},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Secret-key generation from private identifiers under channel uncertainty},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LPP-FL: A lightweight privacy-preserving federated learning against byzantine attacks on non-IID data. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623924'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a distributed computing paradigm, federated learning (FL) enables multiple clients to cooperatively train in edge scenarios without sharing raw training data. Nonetheless, FL is vulnerable to Byzantine attacks due to its distributed nature. While numerous solutions have been proposed, they ignore the inconsistency of local models among clients caused by data heterogeneity (i.e., Non-IID), which severely degrades the performance of FL. Moreover, to further protect client privacy, complex security algorithms are integrated into FL, which seriously increases the privacy computation overhead on edge nodes. To tackle the above issues, this paper proposes a lightweight privacy-preserving federated learning framework, named LPP-FL, significantly improving the performance of FL against Byzantine attacks with Non-IID data. Specifically, we incorporate a correction-term into local model training to mitigate the inconsistency of local models among clients caused by data heterogeneity. Moreover, we design a secure protocol that is deployed on two servers, which achieves Byzantine-robust aggregation results while providing lightweight privacy protection for clients. Theoretical analysis demonstrates the security and robustness of LPP-FL. Extensive experiments show that LPP-FL exhibits superior performance against Byzantine attacks across various data distributions.},
+  archive      = {J_TIFS},
+  author       = {Jiguo Yu and Hongliang Zhang and Qi Xia and Yifei Zou and Yangyang Liu},
+  doi          = {10.1109/TIFS.2025.3623924},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {LPP-FL: A lightweight privacy-preserving federated learning against byzantine attacks on non-IID data},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Privacy-preserving robotic-based multi-factor authentication scheme for secure automated delivery system. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623374'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Package delivery is a critical aspect of various industries, but it often incurs high financial costs and inefficiencies when relying solely on human resources. The last-mile transport problem, in particular, contributes significantly to the expenditure of human resources in major companies. Robot-based delivery systems have emerged as a potential solution for last-mile delivery to address this challenge. However, robotic delivery systems still face security and privacy issues, like impersonation, replay, man-in-the-middle attacks (MITM), unlinkability, and identity theft.In this context, we propose a privacy-preserving multi-factor authentication scheme specifically designed for robot delivery systems. Additionally, AI-assisted robotic delivery systems are susceptible to machine learning-based attacks (e.g. FGSM, PGD, etc.). We introduce the first transformer-based audio-visual fusion defender to tackle this issue, which effectively provides resilience against adversarial samples. Furthermore, we provide a rigorous formal analysis of the proposed protocol and also analyse the protocol security using a popular symbolic proof tool called ProVerif and Scyther. Finally, we present a real-world implementation of the proposed robotic system with the computation cost and energy consumption analysis. Code and pre-trained models are available at: https://github.com/YYangNUS/TIFS RobotMFA.},
+  archive      = {J_TIFS},
+  author       = {Yang Yang and Prosanta Gope and Aryan Pasikhani and Biplab Sikdar},
+  doi          = {10.1109/TIFS.2025.3623374},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Privacy-preserving robotic-based multi-factor authentication scheme for secure automated delivery system},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An obfuscator for securing ring confidential transactions’ signing keys of cryptocurrencies. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624550'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ring Confidential Transaction (RingCT) protocols are widely used in cryptocurrencies to protect user privacy. Consequently, a corresponding digital signature scheme, such as a ring signature scheme that hides the signers’ identities, is required. Accordingly, the security of a RingCT protocol depends on the confidentiality of the secret signing keys of the underlying ring signature scheme. However, existing solutions like hardware wallets, Trusted Execution Environments (TEEs), and threshold signature schemes have limitations such as specified expensive hardware, targeting attacks at CPUs on insufficiently secure hardware, and overheads caused by multiple parties. On the contrary, program obfuscation for signature schemes offers advantages over these existing approaches. Concretely, we propose a novel obfuscator that secures the secret keys of the concise linkable spontaneous anonymous group (CLSAG) signature scheme, which is the latest ring signature scheme used in Monero’s RingCT protocol. To achieve enhanced security, the proposed obfuscator leverages Paillier homomorphic encryption to transform secret keys into an obfuscated form resistant to attacks. The security of the proposed obfuscator has been formally proved. Computational efficiency has been both theoretically analyzed and experimentally evaluated with positive results on various testing platforms.},
+  archive      = {J_TIFS},
+  author       = {Yang Shi and Minyu Teng and Tianyuan Luo and Wenyuan Jiang and Jiayao Gao and Jiangfeng Li and Man Ho Au},
+  doi          = {10.1109/TIFS.2025.3624550},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {An obfuscator for securing ring confidential transactions’ signing keys of cryptocurrencies},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure and efficient data interoperability protocols for multi-blockchains systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3615418'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The proliferation of decentralized applications across different autonomous blockchains raises the need to enable cross-chain data interoperability (CCDI). However, prior approaches for supporting CCDI often hit scalability bottlenecks regarding critical metrics, e.g., memory, or remain prone to withholding and censorship attacks. This paper proposes two protocols to implement secure and efficient CCDI under adversarial conditions. The cross-chain token exchange (CCTE) protocol for atomic swaps is proposed. It adopts a deposit mechanism, a blockchain-of-blockchains (BoB), and Merkle proofs to ensure the completion of token exchanges even under withholding attacks. It utilizes a parallelized design to support concurrent token exchanges, thereby improving its efficiency and avoiding censorship attacks that target sequential token exchanges. The CCDI protocol is proposed to support any CCDI application. It authorizes a unique BoB to execute arbitrary CCDI application logic. It integrates a “transfer and in place data update” mechanism to improve its efficiency, and this mechanism enables a blockchain update its state data items using a single transaction, without requiring any information from other blockchains. Moreover, the CCDI protocol integrates a state data migration scheme, which supports a user to migrate its state data item to censorship-resilient blockchains, and incorporates a malicious user nodes elimination scheme, which enables the updates of state data items in a CCDI process even under withholding attacks. Systematic performance evaluations are conducted to compare the two protocols with existing ones. The CCTE protocol reduces latency by at least 52% compared to existing protocols under probabilistic consensus setting. The CCDI protocol outperforms prior protocols, lowering communication cost by 59%, computation overhead by 41%, memory burden by 12%, and latency cost by 33%.},
+  archive      = {J_TIFS},
+  author       = {Teng Yu and Fengji Luo and Gianluca Ranzi and Jianzhong Wu},
+  doi          = {10.1109/TIFS.2025.3615418},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Secure and efficient data interoperability protocols for multi-blockchains systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Coded robust aggregation for distributed learning under byzantine attacks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624620'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate the problem of distributed learning (DL) in the presence of Byzantine attacks. For this problem, various robust bounded aggregation (RBA) rules have been proposed at the central server to mitigate the impact of Byzantine attacks. However, current DL methods apply RBA rules for the local gradients from the honest devices and the disruptive information from Byzantine devices, and the learning performance degrades significantly when the local gradients of different devices vary considerably from each other. To overcome this limitation, we propose a new DL method to cope with Byzantine attacks based on coded robust aggregation (CRA-DL). Before training begins, the training data are allocated to the devices redundantly. During training, in each iteration, the honest devices transmit coded gradients to the server computed from the allocated training data, and the server then aggregates the information received from both honest and Byzantine devices using RBA rules. In this way, the global gradient can be approximately recovered at the server to update the global model. Compared with current DL methods applying RBA rules, the improvement of CRA-DL is attributed to the fact that the coded gradients sent by the honest devices are closer to each other. This closeness enhances the robustness of the aggregation against Byzantine attacks, since Byzantine messages tend to be significantly different from those of honest devices in this case. We theoretically analyze the convergence performance of CRA-DL. Finally, we present numerical results to verify the superiority of the proposed method over existing baselines, showing its enhanced learning performance under Byzantine attacks.},
+  archive      = {J_TIFS},
+  author       = {Chengxi Li and Ming Xiao and Mikael Skoglund},
+  doi          = {10.1109/TIFS.2025.3624620},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Coded robust aggregation for distributed learning under byzantine attacks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Trace your footprint: Efficient spatial keyword query over encrypted trajectory data. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624950'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the popularity of mobile devices, spatial-textual trajectory query has been deployed in applications such as trajectory-based navigation and travel route recommendation. Massive trajectory data have been outsourced to cloud servers for storage and sharing such as spatial keyword search. However, existing solutions only support similarity queries in the spatial dimension and still incur high storage and query costs, which cannot scale well in large-scale trajectory data scenarios. To solve the above issues, we first achieve an Efficient Range Query over Encrypted Trajectory Data (ERT) using Douglas-Peucker trajectory compression algorithm, random matrix multiplication, filtering-verification mechanism and polynomial fitting technology. Then, we further propose an enhanced Efficient Spatial Keyword Query over Encrypted Trajectory Data (ESKT) by constructing a unified spatial-textual index structure, which can find relevant trajectories that are within some arbitrary geometric range and contain all query keywords. Finally, we formally prove that our schemes are secure against chosen-plaintext-attack, and conduct extensive experiments to demonstrate that our schemes improve the query efficiency by almost 100× when compared with state-of-the-art solutions.},
+  archive      = {J_TIFS},
+  author       = {Yinbin Miao and Xin Wang and Shu Zhang and Xinghua Li and Shujiang Xu and Zhiquan Liu and Kim-Kwang Raymond Choo and Robert H. Deng},
+  doi          = {10.1109/TIFS.2025.3624950},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Trace your footprint: Efficient spatial keyword query over encrypted trajectory data},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Arena: Multi-leader synchronous byzantine fault tolerance. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624981'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Byzantine fault-tolerant state machine replication (BFT-SMR) replicates a deterministic state machine across a set of replicas, and processes requests as a single machine even in the presence of Byzantine faults. BFT-SMR is crucial for ensuring system reliability in distributed computing, where the integrity of data and the correct execution of operations are of utmost importance. Recently, synchronous BFT-SMRs have received tremendous attention due to their simple design and high fault-tolerance threshold. However, existing solutions are not efficient enough to achieve high throughput. In this paper, we propose Arena, the first multi-leader synchronous BFT-SMR. Thanks to the synchrony assumption, Arena gains high throughput benefit from multi-leader with a much simpler design (compared to other partially synchronous multi-leader designs). Furthermore, it is more robust: “no progress” of a leader will not trigger a view-change. Our experimental results show that Arena achieves a peak throughput of up to 7.7× higher than the state-of-the-art.},
+  archive      = {J_TIFS},
+  author       = {Hao Lu and Jian Liu and Jiaheng Zhang and Kui Ren},
+  doi          = {10.1109/TIFS.2025.3624981},
+  journal      = {IEEE Transactions on Information Forensics and Security},
+  month        = {10},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Inf. Forensics Security},
+  title        = {Arena: Multi-leader synchronous byzantine fault tolerance},
   year         = {2025},
 }
 </textarea>

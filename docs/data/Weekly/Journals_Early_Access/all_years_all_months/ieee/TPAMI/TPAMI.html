@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tpami">TPAMI - 265</h2>
+<h2 id="tpami">TPAMI - 272</h2>
 <ul>
 <li><details>
 <summary>
@@ -802,6 +802,139 @@
   pages        = {1-15},
   shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
   title        = {Examining the impact of optical aberrations to image classification and object detection models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fixing background misclassification in few-shot object detection via product of experts. <em>TPAMI</em>, 1-16. (<a href='https://doi.org/10.1109/TPAMI.2025.3622983'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot object detection (FSOD) poses a significant challenge due to the difficulty of learning robust and discriminative object representations under limited supervision. A widely adopted solution is the two-stage fine-tuning framework, wherein knowledge acquired from a large-scale base dataset is transferred to a novel dataset containing only a small number of labeled instances. However, this framework is prone to systematically misclassifying novel objects as background, primarily due to incorrect background label caused by the domain gap between base and novel datasets—an issue exacerbated by the sparse representation of novel categories. In this work, we show that this inherent weakness can be exploited by explicitly redefining the category structure and transferring the representations learned during the base training stage. Building on this insight, we propose a simple yet effective framework grounded in the Product of Experts (PoE) formulation, which estimates the joint distribution over background and novel categories by combining the unnormalized logits from independently trained classifiers. Notably, it does not require modifications of the base model or repetition of the base training phase. Furthermore, we introduce a strategy for identifying additional novel-category instances within the base dataset, which effectively augmenting the training set for fine-tuning. The resulting method is architecture-agnostic, imposes negligible overhead, and integrates seamlessly with existing two-stage fine-tuning pipelines. Extensive experiments on PASCAL VOC and COCO demonstrate that the proposed method yields consistent improvements across different baselines, achieving significant gains over state-of-the-art FSOD approaches.},
+  archive      = {J_TPAMI},
+  author       = {Ding Sheng Ong and Yi Liu and Changjing Shang and Guiguang Ding and Qiang Shen and Jungong Han},
+  doi          = {10.1109/TPAMI.2025.3622983},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Fixing background misclassification in few-shot object detection via product of experts},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RealCustom++: Representing images as real textual word for real-time customization. <em>TPAMI</em>, 1-18. (<a href='https://doi.org/10.1109/TPAMI.2025.3623025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a text and an image of a specific subject, text-to-image customization aims to generate new images that align with both the text and the subject's appearance. Existing works follow the pseudo-word paradigm, which represents the subject as a non-existent pseudo word and combines it with other text to generate images. However, the pseudo word causes semantic conflict from its different learning objective and entanglement from overlapping influence scopes with other texts, resulting in a dual-optimum paradox where subject similarity and text controllability cannot be optimal simultaneously. To address this, we propose RealCustom++, a novel real-word paradigm that represents the subject with a non-conflicting real word to firstly generate a coherent guidance image and corresponding subject mask, thereby disentangling the influence scopes of the text and subject for simultaneous optimization. Specifically, RealCustom++ introduces a train-inference decoupled framework: (1) during training, it learns a general alignment between visual conditions and all real words in the text; and (2) during inference, a dual-branch architecture is employed, where the Guidance Branch produces the subject guidance mask and the Generation Branch utilizes this mask to customize the generation of the specific real word exclusively within subject-relevant regions. In contrast to previous methods that excel in either controllability or similarity, RealCustom++ achieves superior performance in both, with improvements of 7.48% in controllability, 3.04% in similarity, and 76.43% in generation quality. For multi-subject customization, RealCustom++ further achieves improvements of 4.6% in controllability and 6.34% in multi-subject similarity. Our work has been applied in JiMeng of ByteDance, and codes are released at https://github.com/bytedance/RealCustom.},
+  archive      = {J_TPAMI},
+  author       = {Zhendong Mao and Mengqi Huang and Fei Ding and Mingcong Liu and Qian He and Yongdong Zhang},
+  doi          = {10.1109/TPAMI.2025.3623025},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {RealCustom++: Representing images as real textual word for real-time customization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural prediction errors as a unified cue for abstract visual reasoning. <em>TPAMI</em>, 1-17. (<a href='https://doi.org/10.1109/TPAMI.2025.3623461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Humans exhibit remarkable abilities in recognizing relationships and performing complex reasoning. In contrast, deep neural networks have long been critiqued for their limitations in abstract visual reasoning (AVR), a key challenge in achieving artificial general intelligence. Drawing on the well-known concept of prediction errors from neuroscience, we propose that prediction errors can serve as a unified mechanism for both supervised and self-supervised learning in AVR. In our novel supervised learning model, AVR is framed as a prediction-and-matching process, where the central component is the discrepancy (i.e., prediction error) between a predicted feature based on abstract rules and candidate features within a reasoning context. In the self-supervised model, prediction errors as a key component unify the learning and inference processes. Both supervised and self-supervised prediction-based models achieve state-of-the-art performance on a broad range of AVR datasets and task conditions. Most notably, hierarchical prediction errors in the supervised model automatically decrease during training, an emergent phenomenon closely resembling the decrease of dopamine signals observed in biological learning. These findings underscore the critical role of prediction errors in AVR and highlight the potential of leveraging neuroscience theories to advance computational models for high-level cognition in artificial intelligence. The code is available at https://github.com/ZjjConan/AVR-PredRNet.},
+  archive      = {J_TPAMI},
+  author       = {Lingxiao Yang and Xiaohua Xie and Wei-Shi Zheng and Fang Fang and Ru-Yuan Zhang},
+  doi          = {10.1109/TPAMI.2025.3623461},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Neural prediction errors as a unified cue for abstract visual reasoning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Orthogonal decoupling contrastive regularization: Towards uncorrelated feature decoupling for unpaired image restoration. <em>TPAMI</em>, 1-18. (<a href='https://doi.org/10.1109/TPAMI.2025.3620803'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unpaired image restoration (UIR) is a significant task due to the difficulty of acquiring paired degraded/clear images with identical backgrounds. In this paper, we propose a novel UIR method based on the assumption that an image contains both degradation-related features, which affect the level of degradation, and degradation-unrelated features, such as texture and semantic information. Our method aims to ensure that the degradation-related features of the restoration result closely resemble those of the clear image, while the degradation-unrelated features align with the input degraded image. Specifically, we introduce a Feature Orthogonalization Module optimized on Stiefel manifold to decouple image features, ensuring feature uncorrelation. A task-driven Depth-wise Feature Classifier is proposed to assign weights to uncorrelated features based on their relevance to degradation prediction. To avoid the dependence of the training process on the quality of the clear image in a single pair of input data, we propose to maintain several degradation-related proxies describing the degradation level of clear images to enhance the model's robustness. Finally, a weighted PatchNCE loss is introduced to pull degradation-related features in the output image toward those of clear images, while bringing degradation-unrelated features close to those of the degraded input.},
+  archive      = {J_TPAMI},
+  author       = {Zhongze Wang and Jingchao Peng and Haitao Zhao and Lujian Yao and Kaijie Zhao},
+  doi          = {10.1109/TPAMI.2025.3620803},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Orthogonal decoupling contrastive regularization: Towards uncorrelated feature decoupling for unpaired image restoration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving model fusion by training-time neuron alignment with fixed neuron anchors. <em>TPAMI</em>, 1-15. (<a href='https://doi.org/10.1109/TPAMI.2025.3624314'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model fusion aims to integrate several deep neural network (DNN) models' knowledge into one by fusing parameters, and it has promising applications, such as improving the generalization of foundation models and parameter averaging in federated learning. However, models under different settings (data, hyperparameter, etc.) have diverse neuron permutations; in other words, from the perspective of loss landscape, they reside in different loss basins, thus hindering model fusion performances. To alleviate this issue, previous studies highlighted the role of permutation invariance and have developed methods to find correct network permutations for neuron alignment after training. Orthogonal to previous attempts, this paper studies training-time neuron alignment, improving model fusion without the need for post-matching. Training-time alignment is cheaper than post-alignment and is applicable in various model fusion scenarios. Starting from fundamental hypotheses and theorems, a simple yet lossless algorithm called TNA-PFN is introduced. TNA-PFN utilizes partially fixed neuron weights as anchors to reduce the potential of training-time permutations, and it is empirically validated in reducing the barriers of linear mode connectivity and multi-model fusion. It is also validated that TNA-PFN can improve the fusion of pretrained models under the setting of model soup (vision transformers) and ColD fusion (pretrained language models). Based on TNA-PFN, two federated learning methods, FedPFN and FedPNU, are proposed, showing the prospects of training-time neuron alignment. FedPFN and FedPNU reach state-of-the-art performances in federated learning under heterogeneous settings and can be compatible with the server-side algorithm.},
+  archive      = {J_TPAMI},
+  author       = {Zexi Li and Zhiqi Li and Jie Lin and Tao Shen and Jun Xiao and Yike Guo and Tao Lin and Chao Wu},
+  doi          = {10.1109/TPAMI.2025.3624314},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Improving model fusion by training-time neuron alignment with fixed neuron anchors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SMC++: Masked learning of unsupervised video semantic compression. <em>TPAMI</em>, 1-18. (<a href='https://doi.org/10.1109/TPAMI.2025.3625063'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Most video compression methods focus on human visual perception, neglecting semantic preservation. This leads to severe semantic loss during the compression, hampering downstream video analysis tasks. In this paper, we propose a Masked Video Modeling (MVM)-powered compression framework that particularly preserves video semantics, by jointly mining and compressing the semantics in a self-supervised manner. While MVM is proficient at learning generalizable semantics through the masked patch prediction task, it may also encode non-semantic information like trivial textural details, wasting bitcost and bringing semantic noises. To suppress this, we explicitly regularize the non-semantic entropy of the compressed video in the MVM token space. The proposed framework is instantiated as a simple Semantic-Mining-then-Compression (SMC) model. Furthermore, we extend SMC as an advanced SMC++ model from several aspects. First, we equip it with a masked motion prediction objective, leading to better temporal semantic learning ability. Second, we introduce a Transformer-based compression module, to improve the semantic compression efficacy. Considering that directly mining the complex redundancy among heterogeneous features in different coding stages is non-trivial, we introduce a compact blueprint semantic representation to align these features into a similar form, fully unleashing the power of the Transformer-based compression module. Extensive results demonstrate the proposed SMC and SMC++ models show remarkable superiority over previous traditional, learnable, and perceptual quality-oriented video codecs, on three video analysis tasks and seven datasets.},
+  archive      = {J_TPAMI},
+  author       = {Yuan Tian and Xiaoyue Ling and Cong Geng and Qiang Hu and Guo Lu and Guangtao Zha},
+  doi          = {10.1109/TPAMI.2025.3625063},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {SMC++: Masked learning of unsupervised video semantic compression},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-resolution open-vocabulary object 6D pose estimation. <em>TPAMI</em>, 1-12. (<a href='https://doi.org/10.1109/TPAMI.2025.3624589'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The generalisation to unseen objects in the 6D pose estimation task is very challenging. While Vision-Language Models (VLMs) enable using natural language descriptions to support 6D pose estimation of unseen objects, these solutions underperform compared to model-based methods. In this work we present Horyon, an open-vocabulary VLM-based architecture that addresses relative pose estimation between two scenes of an unseen object, described by a textual prompt only. We use the textual prompt to identify the unseen object in the scenes and then obtain high-resolution multi-scale features. These features are used to extract cross-scene matches for registration. We evaluate our model on a benchmark with a large variety of unseen objects across four datasets, namely REAL275, Toyota Light, Linemod, and YCB-Video. Our method achieves state-of the-art performance on all datasets, outperforming by 12.6 in Average Recall the previous best-performing approach.},
+  archive      = {J_TPAMI},
+  author       = {Jaime Corsetti and Davide Boscaini and Francesco Giuliari and Changjae Oh and Andrea Cavallaro and Fabio Poiesi},
+  doi          = {10.1109/TPAMI.2025.3624589},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {10},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {High-resolution open-vocabulary object 6D pose estimation},
   year         = {2025},
 }
 </textarea>

@@ -25,8 +25,148 @@
 </head>
 <body>
 
-<h2 id="pr">PR - 223</h2>
+<h2 id="pr">PR - 242</h2>
 <ul>
+<li><details>
+<summary>
+(2026). Pseudo labels approach to interpretable self-guided subspace clustering. <em>PR</em>, <em>172</em>, 112618. (<a href='https://doi.org/10.1016/j.patcog.2025.112618'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Majority subspace clustering (SC) algorithms depend on one or more hyperparameters that need to be tuned for the SC algorithms to achieve high clustering performance. This is often performed using grid-search, assuming that held out set is available. In some domains, such as medicine, this assumption does not hold true in many cases. To address this problem, we propose an approach to label-independent hyperparameter optimization by applying the SC algorithm to the data and use the resulting cluster assignments as pseudo-labels to compute clustering quality metrics (e.g., accuracy (ACC) or normalized mutual information (NMI)) across a predefined hyperparameter grid. Assuming that ACC (or NMI) is a smooth function of hyperparameter values, it is possible to select subintervals of hyperparameters, which are then iteratively further split into halves or thirds until a relative error criterion is satisfied. In principle, the hyperparameters of any SC algorithm can be tuned using the proposed method. We demonstrate this approach on five single-view SC algorithms and two multi-view SC algorithms, comparing the achieved performance with their oracle versions across six datasets for single-view algorithms and three datasets for multi-view algorithms. The proposed method typically achieves clustering performance that is up to 7 % lower than that of the oracle versions. We also enhance the interpretability of the proposed method by visualizing subspace bases, estimated from the computed clustering partitions. This aids in the initial selection of the hyperparameter search space.},
+  archive      = {J_PR},
+  author       = {Ivica Kopriva},
+  doi          = {10.1016/j.patcog.2025.112618},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112618},
+  shortjournal = {Pattern Recognition},
+  title        = {Pseudo labels approach to interpretable self-guided subspace clustering},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Calibrated mixup for imbalanced regression on tabular data. <em>PR</em>, <em>172</em>, 112610. (<a href='https://doi.org/10.1016/j.patcog.2025.112610'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Imbalanced regression in tabular data, where target variables exhibit highly skewed distributions, causes standard models to perform poorly on rare but critical values. While recent deep learning approaches have addressed this challenge, they primarily employ distribution smoothing or loss reweighting and were designed for image data, showing limited effectiveness on tabular datasets. Unlike existing methods that rely solely on smoothing or reweighting, we propose Calibrated Mixup, a novel framework that generates high-fidelity synthetic samples for underrepresented regions through a dual refinement strategy. Our method first discretizes targets into bins and generates synthetic samples via targeted mixup using either target-proximity or feature-similarity for donor selection. The key innovation lies in our dual refinement: we ensure global statistical consistency via MMD-based calibration that matches sample moments, followed by local structural fidelity enforcement through Soft Nearest Neighbor (SNN) loss regularization. This combination guarantees synthetic samples are both statistically plausible and structurally coherent within the data manifold. Extensive experiments on seven tabular datasets demonstrate our method achieves 10–20 % MAE reduction compared to state-of-the-art baselines, with particularly strong improvements on highly imbalanced datasets. Our approach also enhances existing methods when used as preprocessing, validating its versatility.},
+  archive      = {J_PR},
+  author       = {Nathaniel Kang and Kibok Lee and Jongho Im},
+  doi          = {10.1016/j.patcog.2025.112610},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112610},
+  shortjournal = {Pattern Recognition},
+  title        = {Calibrated mixup for imbalanced regression on tabular data},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Prototype-based scatter learning for smoke segmentation. <em>PR</em>, <em>172</em>, 112605. (<a href='https://doi.org/10.1016/j.patcog.2025.112605'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smoke segmentation enables precise localization of smoke for firefighting and gas leak detection. While current approaches focus on multi-scale feature aggregation, challenges remain in handling blurred edges and diverse smoke patterns. We propose prototype scatter learning (PSL), which improves smoke segmentation through unified optimization of feature extractors and prototypes. PSL introduces two key innovations: bottomK eigenvalues scatter (BES) loss for enhanced discrimination, and prototype uncorrelated optimization (PUO) for maintaining prototype diversity. Experimental results show that PSL achieves state-of-the-art performance on mainstream smoke segmentation datasets (SmokeSeg and SMOKE5K). The code can be found at https://github.com/LujianYao/psl .},
+  archive      = {J_PR},
+  author       = {Lujian Yao and Haitao Zhao and Zhongze Wang and Kaijie Zhao and Jingchao Peng},
+  doi          = {10.1016/j.patcog.2025.112605},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112605},
+  shortjournal = {Pattern Recognition},
+  title        = {Prototype-based scatter learning for smoke segmentation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Adaptive sparse contrastive learning for unsupervised object re-identification. <em>PR</em>, <em>172</em>, 112604. (<a href='https://doi.org/10.1016/j.patcog.2025.112604'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Clustering-based contrastive learning offers a promising solution for unsupervised object re-identification but is hindered by challenges like the presence of ambiguous and redundant contrastive pairs generated from noisy pseudo labels and dense contrastive mechanisms. These issues mislead training and distract the learning focus, impeding the extraction of discriminative features. The efficiency-reliability trade-off commonly encountered in unsupervised learning also compromises representation learning. To address these drawbacks, we introduce a novel paradigm, dubbed adaptive sparse contrastive learning (ASCL), that sparsely constructs informative contrastive pairs for each pseudo-class in a mini-batch, rather than establishing dense pairs for every instance. To mitigate the efficiency-reliability trade-off, we propose two complementary sparse contrastive learning objectives: the composite sparse contrastive loss (CSCL) and the weighted sparse contrastive loss (WSCL). These objectives adaptively modulate the pulling strength within classes based on the changing intra-cluster discrepancies, balancing aggressive exploration and conservatism, thus facilitating the exploration of fine-grained and informative identity cues. Our proposed ASCL enhances representation learning without additional overhead. Extensive experiments on three large-scale object re-identification datasets demonstrate the superiority of the proposed ASCL. In particular, ASCL achieves new state-of-the-art results on the challenging MSMT17 dataset, with 46.6 % mAP and 76.4 % top-1 accuracy. Codes will be available at: https://github.com/Dingyuan-Zheng/ASCL .},
+  archive      = {J_PR},
+  author       = {Dingyuan Zheng and Yang Liu and Deyun Zhou and Jimin Xiao and Bingfeng Zhang and Lin Chen},
+  doi          = {10.1016/j.patcog.2025.112604},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112604},
+  shortjournal = {Pattern Recognition},
+  title        = {Adaptive sparse contrastive learning for unsupervised object re-identification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). SS-NeRF: Shine-sphere rendering for neural radiance fields. <em>PR</em>, <em>172</em>, 112601. (<a href='https://doi.org/10.1016/j.patcog.2025.112601'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural Radiance Fields (NeRF) is an implicit representation method for modeling scenes from multi-view images. NeRF synthesizes views by sampling rays within the scene and continuously integrating points along the ray paths. This approach represents the final color and density of each ray as pixel values in the view, enabling the generation of high-quality image compositions. Although this method can faithfully reconstruct scenes, it performs suboptimally for specular reconstruction. Inspired by probe techniques in game engines and spherical harmonics in computer graphics, our work introduces spherical harmonics probes to capture environmental lighting and specular anisotropic information, thereby efficiently reconstructing surface details. Additionally, we incorporate a spherical harmonics attention mechanism and an anisotropy loss function to enable the model to accurately represent view information from various angles. This method is referred to as SS-NeRF and has been validated on the Blender, Shiny Blender, Shiny Real, and Mip-NeRF 360 datasets. Experimental results demonstrate that SS-NeRF can effectively capture appearance details, simulate realistic lighting and reflection information, and more closely approximate the lighting details found in the real world.},
+  archive      = {J_PR},
+  author       = {Yihan Yang and Tongyuan Huang and Zhixing Zhang and Chunyuan Liu and Huayu Chen and Zipeng Wu},
+  doi          = {10.1016/j.patcog.2025.112601},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112601},
+  shortjournal = {Pattern Recognition},
+  title        = {SS-NeRF: Shine-sphere rendering for neural radiance fields},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Cromdbn: Dynamic brain network analysis for neuropsychiatric diseases classification via multi-knowledge integration. <em>PR</em>, <em>172</em>, 112597. (<a href='https://doi.org/10.1016/j.patcog.2025.112597'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding the neurobiology of Neuropsychiatric Diseases using resting-state functional magnetic resonance imaging (rs-fMRI) provides insights for improving treatment strategies and patient outcomes, but limitations remain in effectively modeling dynamic and cross-modal brain interactions. To address this gap, we propose Cro ss- M odal D ynamic B rain N etwork Classification for Neuropsychiatric Diseases ( CroMDBN ), a novel framework that leverages adaptive spatio-temporal encoding and multi-knowledge prompts to enhance classification performance in neuropsychiatric diseases. Unlike traditional models that rely on single-modality disease patterns, CroMDBN learns shared and distinct features across modalities, enabling robust cross-modal generalization. The framework introduces an adaptive sliding-window dual-path approach to capture temporal connectivity variations, enhanced by dynamic connectivity mapping and temporal attention. Additionally, CroMDBN integrates diverse knowledge sources, including knowledge graphs and insights from ChatGPT, to enhance classification through better brain connectivity modeling. Disease-specific positional encodings improve the representation of complex spatial and temporal dependencies. A contrastive learning-based clustering strategy broadens feature representations, improving generalization and robustness. Extensive experiments on ABIDE, ADNI, and Rest-meta-MDD datasets demonstrate that CroMDBN outperforms state-of-the-art methods, achieving mean AUC scores of 78.24 %, 85.56 %, and 70.04 %, and F1 scores of 73.15 %, 91.91 %, and 66.06 %, respectively. Ablation studies further highlight the model’s interpretability and potential for advancing cross-disease research.},
+  archive      = {J_PR},
+  author       = {Kai Wu and Hong Wang and Fulin Zheng and Feiyan Feng and Tianyu Liu and Yanshen Sun},
+  doi          = {10.1016/j.patcog.2025.112597},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112597},
+  shortjournal = {Pattern Recognition},
+  title        = {Cromdbn: Dynamic brain network analysis for neuropsychiatric diseases classification via multi-knowledge integration},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A comprehensive survey of image clustering based on deep learning. <em>PR</em>, <em>172</em>, 112590. (<a href='https://doi.org/10.1016/j.patcog.2025.112590'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep clustering refers to the integration of deep learning techniques with clustering. With the popularity of social media, deep clustering for image data has attracted widespread attention from researchers. This paper provides a comprehensive review of the latest research image clustering based on deep learning. First, image clustering is categorized into two main types: self-supervised learning-based and semi-supervised learning-based methods. The paper analyzes and summarizes the methods in each category, highlighting their advantages and disadvantages. Next, the paper compares and analyzes representative methods through experimental results, providing insights for future research and practical applications. Finally, the paper discusses existing challenges and presents potential directions for future research.},
+  archive      = {J_PR},
+  author       = {Haiwei Hou and Shifei Ding and Chuan Gui Cao and Xiao Xu and Lili Guo and Xuan Li},
+  doi          = {10.1016/j.patcog.2025.112590},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112590},
+  shortjournal = {Pattern Recognition},
+  title        = {A comprehensive survey of image clustering based on deep learning},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2026). EEG-driven natural image reconstruction with regional semantic awareness. <em>PR</em>, <em>172</em>, 112589. (<a href='https://doi.org/10.1016/j.patcog.2025.112589'>www</a>)
@@ -42,6 +182,46 @@
   pages        = {112589},
   shortjournal = {Pattern Recognition},
   title        = {EEG-driven natural image reconstruction with regional semantic awareness},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). DTFPNet: Temporal and frequency dynamic graph neural network for time series classification. <em>PR</em>, <em>172</em>, 112588. (<a href='https://doi.org/10.1016/j.patcog.2025.112588'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Time series analysis has potential to capture the essence of dynamic changes over time, and is widely used for analyzing and predicting future trends in data arranged in chronological order, such as Electroencephalogram (EEG) based cognitive workload monitoring and healthcare. One of the current research challenges lies in effectively extracting temporal and frequency features from global and local perspectives and efficiently fusing these features. This paper proposes a d ynamic t emporal- f requency p arallel graph neural net work (DTFPNet) that learns features from both the time and frequency domains, explicitly modeling the relationships among variables and capturing short-term and long-term interactions. Specifically, two types of learnable graphs are used to dynamically represent the relationships among different spatial nodes. These two types of learnable graphs are continually trained in an end-to-end manner throughout the entire training stage. For feature representation in the frequency domain, rather than adopting the mainstream Discrete Fourier Transform (DFT), which learns in the complex field and incurs greater computational complexity, an efficient Spectral Learning Module (SLM) based on the Discrete Cosine Transform (DCT) is applied in real-number field to explore global patterns in the frequency domain. In addition, to enhance feature representations, two different types of global filters—real-value-based and Gated-Recurrent-Unit-based, are tailored for datasets with significant variability. Importantly, we argue that time and frequency features extracted at the same time steps provide effective distinctive representations of sequence signals. Experimental results demonstrate that our DTFPNet achieves superior performance on 52 univariate and multivariate datasets. Specifically, compared to the current state-of-the-art, our DTFPNet on 23 univariate datasets shows a significant average improvement of 6.4 %.},
+  archive      = {J_PR},
+  author       = {Wuqing Yu and Bowen Fu and Zhan Li and Jian Zhou and Junhao Wang and Jiacai Zhang},
+  doi          = {10.1016/j.patcog.2025.112588},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112588},
+  shortjournal = {Pattern Recognition},
+  title        = {DTFPNet: Temporal and frequency dynamic graph neural network for time series classification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). SAR target recognition based on CNN with 2-D dual-tree complex wavelet transform decomposition. <em>PR</em>, <em>172</em>, 112585. (<a href='https://doi.org/10.1016/j.patcog.2025.112585'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Synthetic aperture radar (SAR) is an effective imaging and observation sensor that has been widely applied in both military and civilian fields. Deep learning approaches have gained prominence in SAR target recognition and received extensive attention. However, these methods often struggle when data is scarce, leading to insufficient training and challenges in effective feature extraction. To address this limitation, we propose a less data-dependent feature extraction framework. Specifically, we introduce the dual-tree complex wavelet transform (DTCWT) to capture multi-frequency feature details of SAR images, integrated with convolutional neural network. This approach enables effective extraction of high- and low-frequency information. By leveraging the characteristics of these frequency features, low-frequency subbands are used to emphasize the global structural features in the images, and high-frequency subbands are employed to identify the significance of different regions in the images. In response to the aforementioned characteristics, we introduced an attention mechanism to effectively incorporate high-frequency local information into low-frequency global information, thereby enhancing feature representation and recognition efficiency. Moreover, we propose an adaptive rotational convolution, and apply it to the high-frequency feature extraction. The adaptive rotational convolution can adapt to the directionally selective subbands with a single convolution kernel. Experiments conducted on the MSTAR and SAR car datasets demonstrate that the proposed method can achieve better recognition performance with fewer parameters, especially on small-scale datasets. The ablation study also confirms the effectiveness of the introduced DTCWT and rotational convolution.},
+  archive      = {J_PR},
+  author       = {Zhuangzhuang Tian and Wei Wang and Fengchuan Wu and Kai Zhou and Shengqi Liu and Huiqiang Zhang},
+  doi          = {10.1016/j.patcog.2025.112585},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112585},
+  shortjournal = {Pattern Recognition},
+  title        = {SAR target recognition based on CNN with 2-D dual-tree complex wavelet transform decomposition},
   volume       = {172},
   year         = {2026},
 }
@@ -69,6 +249,26 @@
 </details></li>
 <li><details>
 <summary>
+(2026). Action adversarial robust reinforcement learning via stackelberg game. <em>PR</em>, <em>172</em>, 112580. (<a href='https://doi.org/10.1016/j.patcog.2025.112580'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning (RL) has shown great potential in various domains such as robot control and autonomous driving, but its performance often degrades in practical deployments due to environmental uncertainties and external disturbances. Robust RL aims to improve policy stability under disturbances. However, existing methods are often based on simultaneous move games. This overlooks the asymmetry of real attack scenarios, where an attacker has a second-mover advantage and launches a disturbance after observing the agent’s action. To address this, we propose a robust method that models action space perturbations as a zero-sum Stackelberg game and propose a leader-follower actors-critic framework, with the agent as the leader and the adversary as the follower in a hierarchical structure. In this framework, the leader’s intended action will be perturbed by the follower before it is applied. The follower searches for worst-case perturbation in the action space after observing the leader’s action. Both are evaluated by a shared critic within a sequential structure. By leveraging the Stackelberg model, the leader can anticipate potential worst-case perturbations before acting, enabling the agent to maximize its reward while considering the adversarial response. Experiments in several continuous control tasks demostrate that our method improves robustness under action space attakcs and shows pretty good generalization capabilities under varying environmental dynamics.},
+  archive      = {J_PR},
+  author       = {Guofeng Zhu and Fei Zhu},
+  doi          = {10.1016/j.patcog.2025.112580},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112580},
+  shortjournal = {Pattern Recognition},
+  title        = {Action adversarial robust reinforcement learning via stackelberg game},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2026). MSTDNet: Multi-scale traffic object detection network with smooth information perception. <em>PR</em>, <em>172</em>, 112579. (<a href='https://doi.org/10.1016/j.patcog.2025.112579'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -89,6 +289,26 @@
 </details></li>
 <li><details>
 <summary>
+(2026). Branch-splitter multi-granularity feature fusion for local joint-angle estimation. <em>PR</em>, <em>172</em>, 112578. (<a href='https://doi.org/10.1016/j.patcog.2025.112578'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human joint-angle estimation predicts relative rotations between adjacent joints. While most existing methods emphasize global body orientation, they often overlook the fine-grained angular characteristics of individual joints. Such local features can be more decisive than global configurations in actions like archery. To address this gap, we present the Branch-Splitter Multi-Granularity Feature Fusion Network (BS-MFFN). First, a Body-Aware Attention module extracts multi-granularity body features within the backbone. The Branch Splitter module then decouples local features at each granularity, preserving their independence and adapting to movement inconsistencies across body parts. A Multi-Scale Perception module further enhances robustness to scale variations. Evaluations on Human3.6M, 3DPW, and UBody show substantial error reductions in local joint-angle estimation: from 20.39° to 12.13°, 15.49° to 11.60°, and 13.03° to 10.88°, respectively, surpassing existing methods.},
+  archive      = {J_PR},
+  author       = {Shi Wu and He Li and Shaojie Qiao and Gang Wang},
+  doi          = {10.1016/j.patcog.2025.112578},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112578},
+  shortjournal = {Pattern Recognition},
+  title        = {Branch-splitter multi-granularity feature fusion for local joint-angle estimation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2026). Land-cover prior diffusion probabilistic model for remote sensing image super resolution. <em>PR</em>, <em>172</em>, 112577. (<a href='https://doi.org/10.1016/j.patcog.2025.112577'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -102,6 +322,46 @@
   pages        = {112577},
   shortjournal = {Pattern Recognition},
   title        = {Land-cover prior diffusion probabilistic model for remote sensing image super resolution},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). OFVL-MS++: Once for visual localization across multiple scenes via a two-stage framework. <em>PR</em>, <em>172</em>, 112576. (<a href='https://doi.org/10.1016/j.patcog.2025.112576'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning-based scene coordinate regression (SCoRe) methods have demonstrated significant potential in visual localization. Recently, OFVL-MS has been proposed to resolve the issue of growing model size when the scene number increases. However, the alternating optimization of scene-shared and scene-specific parameters results in inadequate encoding of scene-general and scene-related attributes among scenes. Towards this end, we develop OFVL-MS++, a substantial extension of OFVL-MS, which decouples the localization of multiple scenes into two stages to achieve the maximum efficacy for scene-shared parameters and scene-specific parameters. The first stage seeks to learn the scene-general features by taking the images under various scene domains as inputs and outputting the coarse localization. The second stage aims to learn to adaptively expand the scene-specific parameters for each scene in the deep model, where the requisite positions for expanding scene-specific parameters are automatically learned. Comprehensive experiments show the excellent localization ability of OFVL-MS++ families.},
+  archive      = {J_PR},
+  author       = {Zhiqiang Jiang and Kun Dai and Chao Liu and Chunsheng Yang and Tao Xie and Ke Wang and Ruifeng Li and Lijun Zhao},
+  doi          = {10.1016/j.patcog.2025.112576},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112576},
+  shortjournal = {Pattern Recognition},
+  title        = {OFVL-MS++: Once for visual localization across multiple scenes via a two-stage framework},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Facial digital markers for hypomimia detection in parkinson’s disease: A systematic review. <em>PR</em>, <em>172</em>, 112573. (<a href='https://doi.org/10.1016/j.patcog.2025.112573'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hypomimia, or facial masking, is a clinical symptom characterized by decreased facial movement and emotional expressions, commonly seen in individuals with Parkinson’s disease (PD). This review provides a comprehensive analysis of the state of the art on automated hypomimia detection in PD. As studying PD through digital facial features is an emerging field, we conducted a broad review of the literature without imposing specific time limits, in order to capture both historical and current approaches to hypomimia analysis. The Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines were followed to systematically select and evaluate relevant studies. We examine hypomimia-detection approaches across various modalities, namely static images, video sequences, electromyography signals, and optoelectronic systems. Our review proposes several structured categorizations of research studies, based on the scenario type, whether emotional or non-emotional, considered to assess facial muscle movements, the types of facial features extracted, and the computational methods applied for hypomimia analysis, namely statistical tests, machine learning, or deep learning techniques. Additionally, we explore the interpretability of AI models for hypomimia detection, revealing patterns associated with the symptom. Finally, we investigate the link between hypomimia and other clinical symptoms of PD.},
+  archive      = {J_PR},
+  author       = {Anas Filali Razzouki and Laetitia Jeancolas and Dijana Petrovska-Delacrétaz and Mounim A. El-Yacoubi},
+  doi          = {10.1016/j.patcog.2025.112573},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112573},
+  shortjournal = {Pattern Recognition},
+  title        = {Facial digital markers for hypomimia detection in parkinson’s disease: A systematic review},
   volume       = {172},
   year         = {2026},
 }
@@ -309,6 +569,26 @@
 </details></li>
 <li><details>
 <summary>
+(2026). Generative image compression by prediction of optimal realism levels. <em>PR</em>, <em>172</em>, 112550. (<a href='https://doi.org/10.1016/j.patcog.2025.112550'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learned image compression (LIC) methods have demonstrated high-quality reconstruction, and even surpassed the traditional codec algorithms at rate-distortion performance. However, reconstructing natural and realistic textures remains a challenge. The main problem is the distortion-realism trade-off. Realism deteriorates quickly if we minimize distortion, and vice versa . The existing methods manually determine and apply a realism level, which is a degree of the trade-off, to an entire image, resulting in time-consuming training and suboptimal quality. In this paper, we propose a novel LIC model equipped with a predictor that automatically determines realism levels for regions of the image. Thus, we reconstruct images using the optimal realism levels. Moreover, we developed a two-stage training framework for stable training of the proposed model. The experimental results show that the proposed model achieved significant perceptual quality while the PSNR is comparable to the existing methods.},
+  archive      = {J_PR},
+  author       = {Hayato Fukuoka and Shoma Iwai and Tomo Miyazaki and Shinichiro Omachi},
+  doi          = {10.1016/j.patcog.2025.112550},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112550},
+  shortjournal = {Pattern Recognition},
+  title        = {Generative image compression by prediction of optimal realism levels},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2026). LGD: Leveraging generative descriptions for zero-shot referring image segmentation. <em>PR</em>, <em>172</em>, 112549. (<a href='https://doi.org/10.1016/j.patcog.2025.112549'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -342,6 +622,26 @@
   pages        = {112548},
   shortjournal = {Pattern Recognition},
   title        = {Continual deep multi-view clustering via contrastive knowledge replay},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). CAFCL: Class-aware flow-based contrastive learning for out-of-distribution detection. <em>PR</em>, <em>172</em>, 112547. (<a href='https://doi.org/10.1016/j.patcog.2025.112547'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing deployment of deep learning systems in real-world applications underscores the importance of identifying out-of-distribution (OOD) data. Prevailing post-hoc methods attempt to separate in-distribution from OOD samples by refining softmax scores or extracting intermediate features. Other approaches leverage diverse OOD samples to enhance separability. However, their efficacy often depends on the characteristics of presumed outliers. Density-based techniques, while modeling class-conditioned distributions, typically require extensive training or classifier retraining. To address these limitations, we introduce Class-Aware Flow-based Contrastive Learning (CAFCL), an advanced density-based OOD detection framework. The central contribution is a class-aware mapping module that strengthens the discriminative power of feature representations, complemented by an intra-class loss to promote greater compactness. These innovations enable more robust density estimation while preserving computational efficiency. Experiments on benchmark datasets, including CIFAR-10 and CIFAR-100 with ResNet18 and WideResNet backbones, substantiate the superior OOD detection performance of CAFCL. Furthermore, likelihood-based analyses and classification performance assessments demonstrate the robustness and effectiveness of the proposed method across diverse OOD scenarios.},
+  archive      = {J_PR},
+  author       = {Shiyu Peng and Jingzhu Li and Mingtao Wei and Shuai Yan and Gensheng Pei and Yazhou Yao},
+  doi          = {10.1016/j.patcog.2025.112547},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112547},
+  shortjournal = {Pattern Recognition},
+  title        = {CAFCL: Class-aware flow-based contrastive learning for out-of-distribution detection},
   volume       = {172},
   year         = {2026},
 }
@@ -449,6 +749,26 @@
 </details></li>
 <li><details>
 <summary>
+(2026). Compressed image super-resolution based on invertible degradation and restoration. <em>PR</em>, <em>172</em>, 112532. (<a href='https://doi.org/10.1016/j.patcog.2025.112532'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The past decade has witnessed the increasing popularity of images on the Internet. To save the storage space, Internet images are usually downscaled and compressed. However, traditional image super-resolution (SR) methods struggle to effectively handle the complex degradation introduced by compression. This paper introduces a novel compressed image SR (CISR) method based on invertible degradation and restoration, namely InvCISR, aiming to restore high-resolution images from their low-resolution counterparts via explicitly learning from the degradation process. Different from the existing CISR works, the proposed invertible architecture enables complete recovery of degradation information, facilitating degradation-aware restoration. Additionally, a new codec simulation module and dual feedback training protocol are developed to further improve the invertible CISR pipeline, by minimizing the gap between degradation and restoration processes. Extensive experiments demonstrate that our InvCISR outperforms 12 state-of-the-art methods on multiple scenarios, including non-blind and blind CISR for four image codecs and compressed image enhancement, achieving at least 0.3dB PSNR improvement on 5 public datasets.},
+  archive      = {J_PR},
+  author       = {Yichen Guo and Mai Xu and Lai Jiang and Xin Deng and Yue Zhang and Yufan Liu},
+  doi          = {10.1016/j.patcog.2025.112532},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112532},
+  shortjournal = {Pattern Recognition},
+  title        = {Compressed image super-resolution based on invertible degradation and restoration},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2026). W-EICMFusion: A fusion network for infrared and visible images utilising WOA hyperparameter optimisation. <em>PR</em>, <em>172</em>, 112531. (<a href='https://doi.org/10.1016/j.patcog.2025.112531'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -542,6 +862,26 @@
   pages        = {112527},
   shortjournal = {Pattern Recognition},
   title        = {Structure-aware spherical density steered cross-domain learning for effective point cloud understanding},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Hybrid texture-structural learning for hyperspectral image classification. <em>PR</em>, <em>172</em>, 112526. (<a href='https://doi.org/10.1016/j.patcog.2025.112526'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A hybrid network combining convolution and Transformer models leverages the advantages of each approach and improves the performance of hyperspectral image classification compared to using each model independently. However, such a network does not fully exploit the abundant texture-structural information presented in hyperspectral images, particularly neglecting the valuable texture-structural clues in the frequency domain. This limitation results in a lack of sufficient discrimination in the captured spectral-spatial features. To alleviate this deficiency, we elaborate a hybrid texture-structural learning network (HTLNet) for hyperspectral image classification. More specifically, texture dynamic convolution is proposed to dynamically aggregate high-frequency texture structure information into convolution kernels to improve local feature perception. To capture long-range dependencies, a multi-head texture spectral self-attention module is designed to improve model’s ability to perceive spectral and texture structure information. This approach also helps mitigate the information loss caused by use of down-sampling techniques, such as average pooling, used in multi-head self-attention to reduce computational costs. HTLNet can integrate the spectral and texture structure information into the parameter learning of the network when capturing the spectral-spatial features. Experimental results show that on the Indian Pines, Pavia University, Salinas, Houston, and WHU-Hi-LongKou datasets, the performance of HTLNet reaches respectively 0.48 %, 2.67 %, 1.32 %, 1.14 %, and 0.63 % higher than that of other representative peers.},
+  archive      = {J_PR},
+  author       = {Mingxin Jin and Cong Wang and Yuan Yuan},
+  doi          = {10.1016/j.patcog.2025.112526},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112526},
+  shortjournal = {Pattern Recognition},
+  title        = {Hybrid texture-structural learning for hyperspectral image classification},
   volume       = {172},
   year         = {2026},
 }
@@ -749,6 +1089,26 @@
 </details></li>
 <li><details>
 <summary>
+(2026). Conformal compressors. <em>PR</em>, <em>172</em>, 112515. (<a href='https://doi.org/10.1016/j.patcog.2025.112515'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Standard machine learning predictors become more effective as larger input datasets are made available. While this is desirable for enhancing predictive power, it often implies substantial computational costs. One feasible approach to mitigate this issue is to replace large datasets with smaller, carefully crafted representations that retain the essential properties of the original data. In this paper, we revisit the exploration of this approach through the interaction of coresets - small, provably correct summaries of data - and Conformal Prediction, a robust and general method for calibrating machine learning predictions. Specifically, we build on existing work to introduce Conformal Compressors, a method inspired by coresets that leverages Conformal Prediction for data compression. Initial results indicate that these compressors effectively capture meaningful information from the data while demonstrating significantly better stability and reliability compared to Uniform Random Sampling and state-of-the-art coreset constructions.},
+  archive      = {J_PR},
+  author       = {Nery Riquelme-Granada and Khuong An Nguyen and Zhiyuan Luo},
+  doi          = {10.1016/j.patcog.2025.112515},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112515},
+  shortjournal = {Pattern Recognition},
+  title        = {Conformal compressors},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2026). FCP-pro: Federated conformal prediction algorithm based on prototype similarity. <em>PR</em>, <em>172</em>, 112514. (<a href='https://doi.org/10.1016/j.patcog.2025.112514'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -862,6 +1222,26 @@
   pages        = {112509},
   shortjournal = {Pattern Recognition},
   title        = {MGAEPL: Multi-granularity automated and editable prompt learning for brain tumor segmentation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Tensor wheel completion with parallel matrix factorization and group smoothness for hyperspectral image recovery. <em>PR</em>, <em>172</em>, 112508. (<a href='https://doi.org/10.1016/j.patcog.2025.112508'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tensor wheel (TW) decomposition is an effective tool for tensor completion, commonly used to recover missing pixels in hyperspectral images (HSIs). However, existing TW completion methods remain sensitive to rank selection and fail to effectively leverage the group smoothness in HSIs, leading to suboptimal recovery performance. To address these limitations, we propose a tensor wheel completion with parallel matrix factorization and group smoothness (TWC-PMFGS). First, we impose low-rank matrix factorization on all ring factors by leveraging the rank relationship between the original tensor and the TW factors. This enhances the ability of TW decomposition to capture the global information of HSIs and improves the model’s robustness to rank selection. Second, we observe that HSIs exhibit group sparsity in the gradient domain and theoretically demonstrate that this structure can be effectively expressed by the TW factors. To better exploit this group smoothness, we impose the ℓ 2 , 1 -norm on the gradient factors. Finally, we evaluate the proposed TWC-PMFGS method on six hyperspectral images and seven multispectral images. The experimental results demonstrate the superiority of our TWC-PMFGS. Notably, our method outperforms the best comparative results by up to 3.65 dB, even with a sampling ratio as low as 10 %. The source code is available at https://github.com/XTian1307/TW-PMFGS .},
+  archive      = {J_PR},
+  author       = {Xin Tian and Kun Xie and Jigang Wen},
+  doi          = {10.1016/j.patcog.2025.112508},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112508},
+  shortjournal = {Pattern Recognition},
+  title        = {Tensor wheel completion with parallel matrix factorization and group smoothness for hyperspectral image recovery},
   volume       = {172},
   year         = {2026},
 }

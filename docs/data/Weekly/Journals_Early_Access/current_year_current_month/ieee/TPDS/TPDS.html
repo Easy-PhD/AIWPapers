@@ -25,27 +25,8 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 7</h2>
+<h2 id="tpds">TPDS - 10</h2>
 <ul>
-<li><details>
-<summary>
-(2025). SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3616981'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Sparse-Dense Matrix-Matrix Multiplication (SpMM) has emerged as a foundational primitive in HPC and AI. Recent advancements have aimed to accelerate SpMM by harnessing the powerful Tensor Cores found in modern GPUs. However, despite these efforts, existing methods frequently encounter performance degradation when ported across different Tensor Core architectures. Recognizing that scalable SpMM across multiple generations of Tensor Cores relies on the effective use of general-purpose instructions, we have meticulously developed a SpMM library named SSpMM. However, a significant conflict exists between granularity and performance in current Tensor Core instructions. To resolve this, we introduce the innovative Transpose Mapping Scheme, which elegantly implements fine-grained kernels using coarse-grained instructions. Additionally, we propose the Register Shuffle Method to further enhance performance. Finally, we introduce Sparse Vector Compression, a technique that ensures our kernels are scalable with both structured and unstructured sparsity. Our experimental results, conducted on four generations of Tensor Core GPUs using over 3,000 sparse matrices from well established matrix collections, demonstrate that SSpMM achieves an average speedup of 2.04×, 2.81×, 2.07×, and 1.87×, respectively, over the state-of-the-art SpMM solution. Furthermore, we have integrated SSpMM into PyTorch, achieving a 1.81× speedup in end-to-end Transformer inference compared to cuDNN.},
-  archive      = {J_TPDS},
-  author       = {Zeyu Xue and Mei Wen and Jianchao Yang and Minjin Tang and Zhongdi Luo and Jing Feng and Yang Shi and Zhaoyun Chen and Junzhong Shen and Johannes Langguth},
-  doi          = {10.1109/TPDS.2025.3616981},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {10},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores},
-  year         = {2025},
-}
-</textarea>
-</details></li>
 <li><details>
 <summary>
 (2025). Popularity-aware data placement in erasure coding-based edge storage systems. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3619273'>www</a>)
@@ -80,25 +61,6 @@
   pages        = {1-15},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Cache partition management for improving fairness and I/O responsiveness in NVMe SSDs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3619775'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The rapid growth of AIoT devices brings huge demands for DNNs deployed on resource-constrained devices. However, the intensive computation and high memory footprint of DNN inference make it difficult for the AIoT devices to execute the inference tasks efficiently. In many widely deployed AIoT use cases, multiple local AIoT devices launch DNN inference tasks randomly. Although local collaborative inference has been proposed to accelerate DNN inference on local devices with limited resources, multitasking local collaborative inference, which is common in AIoT scenarios, has not been fully studied in previous works. We consider multitasking local client-server collaborative inference (MLCCI), which achieves efficient DNN inference by offloading the inference tasks from multiple AIoT devices to a more powerful local server with parallel pipelined execution streams through Wi-Fi 6. Our optimization goal is to minimize the mean end-to-end latency of MLCCI. Based on the experiment results, we identify three key challenges: high communication costs, high model initialization latency, and congestion delay brought by task interference. We analyze congestion delay in MLCCI and its stochastic fluctuations with queuing theory and propose Chorus, a high-performance adaptive MLCCI framework for AIoT devices, to minimize the mean end-to-end latency of MLCCI against stochastic congestion delay. Chorus generates communication-efficient model partitions with heuristic search, uses a prefetch-enabled two-level LRU cache to accelerate model initialization on the server, reduces congestion delay and its short-term fluctuations with execution stream allocation based on the cross-entropy method, and finally achieves efficient computation offloading with reinforcement learning. We established a system prototype, which statistically simulated many virtual clients with limited physical client devices to conduct performance evaluations, for Chorus with real devices. The evaluation results for various workload levels show that Chorus achieved an average of $1.4\times$, $1.3\times$, and $2\times$ speedup over client-only inference, and server-only inference with LRU and MLSH, respectively.},
-  archive      = {J_TPDS},
-  author       = {Yuzhe Luo and Ji Qi and Ling Li and Ruizhi Chen and Xiaoyu Wu and Limin Cheng and Chen Zhao},
-  doi          = {10.1109/TPDS.2025.3619775},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {10},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay},
   year         = {2025},
 }
 </textarea>
@@ -143,19 +105,114 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer. <em>TPDS</em>, 1-10. (<a href='https://doi.org/10.1109/TPDS.2025.3620251'>www</a>)
+(2025). Accelerating point cloud sampling by parallel structure deconstruction. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3622691'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Quantum many-body system can be solved with neural-network method. Nonetheless, the practical deployment of neural network quantum states (NNQS) in large-scale electronic structure analyses faces challenges, chiefly the high sampling cost and the complexity of local energy computations. To overcome these computational barriers, we present an innovative data-parallel NNQS-Transformer implementation. This implementation introduces a hybrid multi-layer workload balancing strategy that effectively addresses previous load imbalance issues while leveraging Julia's portability to achieve targeted performance optimizations. Through extensive testing, we validate our approach using comprehensive quantum chemistry calculations on systems containing up to 120 spin orbitals, where previous methods were limited to much smaller scales. The implementation demonstrates exceptional scalability on the Sunway platform, achieving 92% strong scaling and 98% weak scaling efficiencies when utilizing up to 37 million processor cores. These significant performance improvements mark a crucial step toward making NNQS calculations practical for real-world quantum chemistry applications.},
+  abstract     = {Point cloud processing is fundamental to applications such as autonomous driving, robotic navigation, and 3D reconstruction. Sampling is a crucial process in point cloud processing, but current sampling algorithms perform poorly when deployed on edge devices due to limited computational resources. This stems from three main reasons. Firstly, the robustness of sampling is weak; even after denoising, residual noise remains, and existing edge sampling methods struggle to ignore noisy sampling nodes. Secondly, there's a lack of structural sampling, popular algorithms like FPS tend to cover global information without considering special structures for focused sampling. Thirdly, system efficiency is poor, traditional Farthest Point Sampling (FPS) and k-Nearest Neighbor Search (kNN) have terrible time and space complexities of $O(n^{2})$ with low parallelism, limiting system throughput, especially for large-scale point cloud processing. To bridge this gap, we propose a novel point cloud sampling algorithm based on parallel graph deconstruction named DPS (Deconstruction-based Point Cloud Sampling) and its multi-scale version DPS_MS with better denoising effect. First, during graph construction, we employ multi-scale graphing and add a preprocessing stage to filter out some noise nodes, reducing the noise rate. Second, in the sampling stage, we categorize important structures into edge nodes and dense nodes based on the reverse neighbor count of graph nodes, assigning them higher sampling weights to supplement structural information. Finally, we use a highly parallel locality-sensitive hashing algorithm to accelerate neighbor search and reduce memory consumption, we achieved data-level parallelization through the comprehensive parallelization of our algorithm. Through rigorous qualitative and quantitative validation on classification and segmentation tasks, we demonstrate that DPS, while maintaining accuracy, increases point cloud sampling speed by 22.08 times compared to the FPS algorithm, the implementation achieved a 75.1-fold improvement in system throughput and a maximum parallel speedup of 10.32x, and improves the Accuracy/FLOPs (M) ratio to 8.68.},
   archive      = {J_TPDS},
-  author       = {Yangjun Wu and Wenhao Zhou and Li Shen and Hong Qian and Honghui Shang},
-  doi          = {10.1109/TPDS.2025.3620251},
+  author       = {Hengzhe Chi and Jihe Wang and Jinzhe Zhang and Danghui Wang},
+  doi          = {10.1109/TPDS.2025.3622691},
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
-  pages        = {1-10},
+  pages        = {1-16},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer},
+  title        = {Accelerating point cloud sampling by parallel structure deconstruction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PHIDE: A parallel hybrid direct-iterative eigensolver for hermitian eigenvalue problems. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3623188'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a Parallel Hybrid Direct-Iterative Eigensolver for Hermitian Eigenvalue Problems without tridiagonalization, denoted by PHIDE, which combines direct and iterative methods. PHIDE first reduces a Hermitian matrix to banded form, then applies a spectrum slicing algorithm to the banded matrix, and finally computes the eigenvectors of the original matrix via backtransformation. Compared with conventional direct eigensolvers, PHIDE avoids tridiagonalization, which involves many memory-bound operations. In PHIDE, the banded eigenvalue problem is solved using the contour integral method implemented in FEAST, which may yield slightly lower accuracy than tridiagonalization-based approaches. For sequences of correlated Hermitian eigenvalue problems arising in density functional theory (DFT), PHIDE achieves an average speedup of $1.22\times$ over the state-of-the-art direct solver in ELPA when using 1024 processes. Numerical experiments are conducted on dense Hermitian matrices from real applications as well as large sparse matrices from the SuiteSparse and ELSES collections.},
+  archive      = {J_TPDS},
+  author       = {Shengguo Li and Xinzhe Wu and Jose E. Roman and Ziyang Yuan and Ruibo Wang and Tiejun Li and Yi Xie and Bo Yang and Xuguang Chen},
+  doi          = {10.1109/TPDS.2025.3623188},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {PHIDE: A parallel hybrid direct-iterative eigensolver for hermitian eigenvalue problems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CGA: Accelerating BFS through an sparsity-aware adaptive framework on heterogeneous platforms. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3624289'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Direction optimization determines whether to use Sparse Matrix-Sparse Vector Multiplication (SpMSpV) or Sparse Matrix-Dense Vector Multiplication (SpMV) based on the input vector's sparsity at each iteration of Breadth-First Search (BFS), aiming to achieve the fastest graph traversal. Although prior work on direction optimization has achieved state-of-the-art performance on either CPUs or GPUs, it has not fully leveraged the capabilities of modern heterogeneous platforms. This is because SpMSpV/SpMV execution times on GPUs do not consistently outperform those on CPUs, particularly for SpMSpV. In response, this paper introduces CGA, a machine learning-based adaptive framework for BFS that optimally selects between CPU and GPU kernels, effectively Adapting to diverse real-world graphs, vectors, and computing platforms. Our contributions include a novel set of bucket-based SpMSpV algorithms that significantly enhance kernel performance inhigh-sparsity scenarios, along with a low-overhead decision tree model and reduced CPU-GPU data transfers. Experimental results show that our framework outperforms previous state-of-the-art methods, achieving up to a 4.91x speedup over CPU-only baseline and 3.27x speedup over GPU-only baseline.},
+  archive      = {J_TPDS},
+  author       = {Lei Xu and Haipeng Jia and Yunquan Zhang},
+  doi          = {10.1109/TPDS.2025.3624289},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {CGA: Accelerating BFS through an sparsity-aware adaptive framework on heterogeneous platforms},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Kairos: Deterministic scheduling enhanced by user collaboration for deep learning workloads. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3624245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As deep learning (DL) workloads scale in complexity and volume, ensuring predictable job queuing times has become a critical challenge for data centers. Existing scheduling solutions primarily focus on minimizing tardiness or job completion times (JCT), often neglecting the need for deterministic queuing, particularly in dynamic and preemptive environments. This paper introduces Kairos, a preemption-based scheduling framework enhanced by user collaboration to address these gaps. Kairos combines a divide-and-conquer strategy—segmenting jobs into sequential units with adaptive priorities—and a user-collaborative mechanism for better duration estimation. By leveraging real-time feedback from resource contention and queuing delays, Kairos minimizes a novel metric, the Queue inStability Index (QSI), achieving significant improvements in queuing predictability while maintaining competitive JCT. Experimental results demonstrate that Kairos reduces QSI by over 99.8% compared to state-of-the-art deadline-aware baselines, offering robust performance for diverse DL workloads.},
+  archive      = {J_TPDS},
+  author       = {Xinhua Wang and Weiwei Lin and Ruichao Mo and Guozhi Liu and Haijie Wu and Shengjun Tang},
+  doi          = {10.1109/TPDS.2025.3624245},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Kairos: Deterministic scheduling enhanced by user collaboration for deep learning workloads},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GPUDirectIO: Streamline the CFD I/O path from NVMe to GPU for high-performance simulations. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3624576'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in computational fluid dynamics(CFD) driven by the heterogeneous computing techniques and high-fidelity numerical methods have significantly increased the demand for efficient input/output(I/O) operations. In GPU-accelerated CFD, redundant data copies and excessive CPU overhead have become prominent challenges for efficient IO due to increasing complexities in data transfers between memory and storage. In this work, we propose a GPU native I/O framework(named as GPUDirectIO) for high-performance CFD by redesigning the Data Mapping Layer(DML) and data structures of the CFD General Notation System(CGNS), which is a widely used file format for complex CFD applications. This GPU-centric system enables direct data transfers between NVMe storage and GPU memory via GPU Direct Storage(GDS), effectively streamlining heterogeneous CFD I/O workflows. To further improve I/O throughput, we develop a CGNS-based distributed data management strategy that leverages an NVMe storage array to fully utilize the GPU bandwidth. We compare the performance of the proposed GPUDirectIO with existing CPU-mediated I/O approaches with different number of threads using CFD datasets where the maximum number of computa tional grid points reaches 1.6 billion. The results demonstrate the superiority of GPUDirectIO. Single-threaded GPUDirectIO achieves read and write rates 2.95× and 3.49× those of CPU mediated I/O, respectively, and reduces transmission latency by approximately 59%. When applied to distributed storage systems, multi-threaded GPUDirectIO shows read and write rates 3.23× and 4.68× those of CPU-mediated parallel I/O, respectively, with transfer latency reduced by about 39%. GPUDirectIO has also demonstrated excellent parallel efficiency and speedup ratios in both strong and weak scalability tests.},
+  archive      = {J_TPDS},
+  author       = {Zhixiang Ling and Xinghua Chang and Yunde Su and Laiping Zhang and Yuntao Wang and Xiaogang Deng},
+  doi          = {10.1109/TPDS.2025.3624576},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {GPUDirectIO: Streamline the CFD I/O path from NVMe to GPU for high-performance simulations},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RICHIE: A framework for agile design and exploration of RISC-V-based accelerator-rich heterogeneous SoCs. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3624958'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern Heterogeneous Systems-on-Chip (HeSoCs) rely on the accelerator-rich paradigm to achieve performance and energy efficiency through the on-chip integration of many application-specific functional units. However, the lack of a standard System-Level Design (SLD) methodology and the heterogeneity of the HW/SW components complicate the costly and time-consuming process of deploying accelerator-rich systems and applications. In this work, we present RICHIE, an open-source research SLD framework featuring a modular and composable RISC-V-based accelerator-rich platform and a support toolchain to automate the assembly and specialization of accelerator-rich HeSoCs. RICHIE exploits Field Programmable Gate Arrays (FPGAs) to deploy full-stack applications and explore the HeSoC design space. We show how RICHIE facilitates the investigation of platform non-idealities as the system scales up in accelerator count, identifying key design solutions and exploring platform costs, such as area usage. This yields comparable trade-off improvements over manually-optimized designs. Finally, we assess the methodology ease-of-use and extensibility by deploying a real-world workload and adding support for a Network-on-Chip (NoC) architecture.},
+  archive      = {J_TPDS},
+  author       = {Gianluca Bellocchi and Alessandro Capotondi and Luca Benini and Andrea Marongiu},
+  doi          = {10.1109/TPDS.2025.3624958},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {RICHIE: A framework for agile design and exploration of RISC-V-based accelerator-rich heterogeneous SoCs},
   year         = {2025},
 }
 </textarea>
