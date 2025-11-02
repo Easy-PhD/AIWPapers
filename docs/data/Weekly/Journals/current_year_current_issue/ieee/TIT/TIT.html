@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="tit">TIT - 40</h2>
+<h2 id="tit">TIT - 51</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Subspace and DOA estimation under coarse quantization. <em>TIT</em>, <em>71</em>(10), 8149-8168. (<a href='https://doi.org/10.1109/TIT.2025.3598702'>www</a>)
+(2025). A sample efficient alternating minimization-based algorithm for robust phase retrieval. <em>TIT</em>, <em>71</em>(11), 9116-9133. (<a href='https://doi.org/10.1109/TIT.2025.3609564'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We study direction-of-arrival (DOA) estimation from coarsely quantized data. We focus on a two-step approach which first estimates the signal subspace via covariance estimation and then extracts DOA angles by the ESPRIT algorithm. In particular, we analyze two stochastic quantization schemes which use dithering: a one-bit quantizer combined with rectangular dither and a multi-bit quantizer with triangular dither. For each quantizer, we derive rigorous high probability bounds for the distances between the true and estimated signal subspaces and DOA angles. Using our analysis, we identify scenarios in which subspace and DOA estimation via triangular dithering qualitatively outperforms rectangular dithering. We verify in numerical simulations that our estimates are optimal in their dependence on the smallest non-zero eigenvalue of the target matrix. The resulting subspace estimation guarantees are equally applicable in the analysis of other spectral estimation algorithms and related problems.},
+  abstract     = {In this work, we study the robust phase retrieval problem where the task is to recover an unknown signal $\boldsymbol {\theta }^{*} \in \mathbb {R} ^{d}$ in the presence of potentially arbitrarily corrupted magnitude-only linear measurements. We propose an alternating minimization approach that incorporates an oracle solver for a non-convex optimization problem as a subroutine. Our algorithm guarantees convergence to $\boldsymbol {\theta }^{*}$ and provides an explicit polynomial dependence of the convergence rate on the fraction of corrupted measurements. We then provide an efficient construction of the aforementioned oracle under a sparse arbitrary outliers model and offer valuable insights into the geometric properties of the loss landscape in phase retrieval with corrupted measurements. Our proposed oracle avoids the need for computationally intensive spectral initialization, using a simple gradient descent algorithm with a constant step size and random initialization instead. Additionally, our overall algorithm achieves nearly linear sample complexity, $\mathcal {O}(d {\,}\mathrm {polylog}(d))$ .},
   archive      = {J_TIT},
-  author       = {Sjoerd Dirksen and Weilin Li and Johannes Maly},
-  doi          = {10.1109/TIT.2025.3598702},
+  author       = {Adarsh Barik and Anand Krishna and Vincent Y. F. Tan},
+  doi          = {10.1109/TIT.2025.3609564},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8149-8168},
+  month        = {11},
+  number       = {11},
+  pages        = {9116-9133},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Subspace and DOA estimation under coarse quantization},
+  title        = {A sample efficient alternating minimization-based algorithm for robust phase retrieval},
   volume       = {71},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Performance analysis of joint antenna selection and precoding methods in multi-user massive MISO. <em>TIT</em>, <em>71</em>(10), 8099-8148. (<a href='https://doi.org/10.1109/TIT.2025.3602119'>www</a>)
+(2025). Alternating minimization schemes for computing rate-distortion-perception functions with f-divergence perception constraints. <em>TIT</em>, <em>71</em>(11), 9100-9115. (<a href='https://doi.org/10.1109/TIT.2025.3604602'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper presents a performance analysis of two distinct techniques for antenna selection and precoding in downlink multi-user massive multiple-input single-output systems with limited dynamic range power amplifiers. Both techniques are derived from the original formulation of the regularized-zero forcing precoder, designed as the solution to minimizing a regularized distortion. Based on this, the first technique, called the $\ell _{1}$ -norm precoder, adopts an $\ell _{1}$ -norm regularization term to encourage sparse solutions, thereby enabling antenna selection. The second technique, termed the thresholded $\ell _{1}$ -norm precoder, involves post-processing the precoder solution obtained from the first method by applying an entry-wise thresholding operation. This work conducts a precise performance analysis to compare these two techniques. The analysis leverages the Gaussian min-max theorem which is effective for examining the asymptotic behavior of optimization problems without explicit solutions. While the analysis of the $\ell _{1}$ -norm precoder follows from the conventional convex Gaussian min-max theorem framework, understanding the thresholded $\ell _{1}$ -norm precoder is more complex due to the non-linear behavior introduced by the thresholding operation. To address this complexity, we develop a novel Gaussian min-max theorem tailored to these scenarios. We provide precise asymptotic behavior analysis of the precoders, focusing on metrics such as received signal-to-noise and distortion ratio and bit error rate. Our analysis demonstrates that the thresholded $\ell _{1}$ -norm precoder can offer superior performance when the threshold parameter is carefully selected. Simulations confirm that the asymptotic results are accurate for systems equipped with hundreds of antennas at the base station, serving dozens of user terminals.},
+  abstract     = {We study the computation of the rate-distortion-perception function (RDPF) for discrete memoryless sources subject to a single-letter average distortion constraint and a perception constraint belonging to the family of f-divergences. In this setting, the RDPF forms a convex programming problem for which we characterize optimal parametric solutions. We employ the developed solutions in an alternating minimization scheme, namely Optimal Alternating Minimization (OAM), for which we provide convergence guarantees. Nevertheless, the OAM scheme does not lead to a direct implementation of a generalized Blahut-Arimoto (BA) type of algorithm due to implicit equations in the iteration’s structure. To overcome this difficulty, we propose two alternative minimization approaches whose applicability depends on the smoothness of the used perception metric: a Newton-based Alternating Minimization (NAM) scheme, relying on Newton’s root-finding method for the approximation of the optimal solution of the iteration, and a Relaxed Alternating Minimization (RAM) scheme, based on relaxing the OAM iterates. We show, by deriving necessary and sufficient conditions, that both schemes guarantee convergence to a globally optimal solution. We also provide sufficient conditions on the distortion and perception constraints, which guarantee that the proposed algorithms converge exponentially fast in the number of iteration steps. We corroborate our theoretical results with numerical simulations and establish connections with existing results.},
   archive      = {J_TIT},
-  author       = {Xiuxiu Ma and Abla Kammoun and Mohamed-Slim Alouini and Tareq Y. Al-Naffouri},
-  doi          = {10.1109/TIT.2025.3602119},
+  author       = {Giuseppe Serra and Photios A. Stavrou and Marios Kountouris},
+  doi          = {10.1109/TIT.2025.3604602},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8099-8148},
+  month        = {11},
+  number       = {11},
+  pages        = {9100-9115},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Performance analysis of joint antenna selection and precoding methods in multi-user massive MISO},
+  title        = {Alternating minimization schemes for computing rate-distortion-perception functions with f-divergence perception constraints},
   volume       = {71},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Reduced complexity interval passing for sparse signal recovery. <em>TIT</em>, <em>71</em>(10), 8080-8098. (<a href='https://doi.org/10.1109/TIT.2025.3599674'>www</a>)
+(2025). Quantitative group testing and pooled data in the linear regime with sublinear tests. <em>TIT</em>, <em>71</em>(11), 9074-9099. (<a href='https://doi.org/10.1109/TIT.2025.3611276'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The reconstruction of sparse signals from a limited set of measurements poses a significant challenge as it necessitates a solution to an underdetermined system of linear equations. Compressed sensing (CS) deals with sparse signal reconstruction using techniques such as linear programming (LP) and iterative message passing schemes. The interval passing algorithm (IPA) is an attractive CS approach due to its low complexity when compared to LP. In this paper, we propose a sequential IPA that is inspired by sequential belief propagation decoding of low-density-parity-check (LDPC) codes used for forward error correction in channel coding. In the sequential setting, each check node (CN) in the Tanner graph of an LDPC measurement matrix is scheduled one at a time in every iteration, as opposed to the standard “flooding” interval passing approach in which all CNs are scheduled at once per iteration. The sequential scheme offers a significantly lower message passing complexity compared to flooding IPA on average, and for some measurement matrix and signal sparsity, a complexity reduction of approximately 36% is achieved. We show both analytically and numerically that the reconstruction accuracy of the IPA is not compromised by adopting our sequential scheduling approach.},
+  abstract     = {In the pooled data problem, the goal is to identify the categories associated with a large collection of items via a sequence of pooled tests. Each pooled test reveals the number of items in the pool belonging to each category. A prominent special case is quantitative group testing (QGT), which is the case of pooled data with two categories. We consider these problems in the non-adaptive and linear regime, where the fraction of items in each category is of constant order. We propose a scheme with a spatially coupled Bernoulli test matrix and an efficient approximate message passing (AMP) algorithm for recovery. We rigorously characterize its asymptotic performance in both the noiseless and noisy settings, and prove that in the noiseless case, the AMP algorithm achieves almost-exact recovery with a number of tests sublinear in the total number of items p. Although there exist other efficient schemes for noiseless QGT and pooled data that achieve recovery with order-optimal sample complexity ( $\Theta \left ({{\frac {p}{\log p}}}\right)$ tests), there are no guarantees on their performance in the presence of noise, even at low noise-levels. In comparison, our scheme achieves recovery in the noiseless case with a number of tests sublinear in p, and its performance degrades gracefully in the presence of noise. Numerical simulations illustrate the benefits of the spatially coupled scheme at finite dimensions, showing that it outperforms i.i.d. test designs as well as other recovery algorithms based on convex programming.},
   archive      = {J_TIT},
-  author       = {Salman Habib and Rémi A. Chou and Taejoon Kim},
-  doi          = {10.1109/TIT.2025.3599674},
+  author       = {Nelvin Tan and Pablo Pascual Cobo and Ramji Venkataramanan},
+  doi          = {10.1109/TIT.2025.3611276},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8080-8098},
+  month        = {11},
+  number       = {11},
+  pages        = {9074-9099},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Reduced complexity interval passing for sparse signal recovery},
+  title        = {Quantitative group testing and pooled data in the linear regime with sublinear tests},
   volume       = {71},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). On non-interactive simulation of distributed sources with finite alphabets. <em>TIT</em>, <em>71</em>(10), 8048-8079. (<a href='https://doi.org/10.1109/TIT.2025.3597546'>www</a>)
+(2025). Frequency component recovery from spectrum measurements. <em>TIT</em>, <em>71</em>(11), 9055-9073. (<a href='https://doi.org/10.1109/TIT.2025.3597070'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This work presents a Fourier analysis framework for the non-interactive source simulation (NISS) problem. Two distributed agents observe a pair of sequences $X^{d}$ and $Y^{d}$ drawn according to a joint distribution $P_{X^{d}Y^{d}}$ . The agents aim to generate outputs $U=f_{d}(X^{d})$ and $V=g_{d}(Y^{d})$ with a joint distribution sufficiently close in total variation to a target distribution $Q_{UV}$ . Existing works have shown that the NISS problem with finite-alphabet outputs is decidable. For the binary-output NISS, an upper-bound to the input complexity was derived which is $O\left ({{\exp \mathrm {poly}\left ({{\frac {1}{\epsilon }}}\right)}}\right)$ . In this work, the input complexity and algorithm design are addressed in several classes of NISS scenarios. For binary-output NISS scenarios with doubly-symmetric binary inputs, it is shown that the input complexity is $\Theta \left ({{\log {\frac {1}{\epsilon }}}}\right)$ , thus providing a super-exponential improvement in input complexity. An explicit characterization of the simulating pair of functions is provided. For general finite-input scenarios, a constructive algorithm is introduced that explicitly finds the simulating functions $(f_{d}(X^{d}),g_{d}(Y^{d}))$ . The approach relies on a novel Fourier analysis framework. Various numerical simulations of NISS scenarios with IID inputs are provided. Furthermore, to illustrate the general applicability of the Fourier framework, several examples with non-IID inputs, including entanglement-assisted NISS and NISS with Markovian inputs are provided.},
+  abstract     = {In this work, we present some novel results for recovering the frequency components (frequencies and their complex coefficients) of an n-dimensional complex signal/vector from noiseless measurements of its frequency spectrum. In the first part of the work, the frequency vectors are the general Vandermonde vectors (with an amplitude varying exponentially across the vector components) and the spectrum is a “Vandermonde” spectrum (a vector’s Vandermonde transform). It is shown that if the n-dimensional vector is composed of s unknown frequency components, exact recovery of the frequency components is possible with $2s$ uniform measurements of the spectrum and $O(\mathrm {poly}(s))$ complexity when $n \geq 2s$ . Furthermore, exact recovery with $O(\mathrm {poly}(s))$ complexity is also possible with arbitrary $3s$ non-uniform measurements of the spectrum. In the second part of the work, the frequency vectors are Fourier vectors and we consider the challenging problem of recovering the frequency components from phase-less Fourier spectrum measurements. One main result shows that the frequencies of the vector can be recovered with $4s - 1$ uniform spectrum measurements and $O(\mathrm {poly}(s))$ complexity if $n \geq 4s - 1$ , but not their complex coefficients (there being in general $2^{s-1}$ solutions for the coefficients). Another main result shows the surprising fact that if the n-dimensional vector is composed of s unknown frequency components with at least one having a non-harmonic frequency, $n \geq 4s - 1$ and we take $8s-3$ non-uniform (phase-less) spectrum measurements, the frequencies can be recovered exactly while, remarkably, there are only two possible coefficient vectors (up to a phase) and they are easily obtainable from each other. The frequencies and the two coefficient vectors can be found by an algorithm with only $O(\mathrm {poly}(s))$ complexity. Based on the results from the first part, a new class of compressed sensing measurement matrices is presented from which it is possible to recover s-sparse n-dimensional vectors for $n \geq 2s$ with as few as $2s$ measurements and with a recovery algorithm of $O(\mathrm {poly}(s))$ complexity. Similarly, from the results in the second part, we provide a class of measurement matrices from which it is possible to recover almost all s-sparse n-dimensional vectors (up to a phase) from $8s - 2$ phase-less measurements and $O(\mathrm {poly}(s))$ recovery complexity when $n \geq 4s - 1$ .},
   archive      = {J_TIT},
-  author       = {Hojat Allah Salehi and Farhad Shirani},
-  doi          = {10.1109/TIT.2025.3597546},
+  author       = {Dževdan Kapetanović},
+  doi          = {10.1109/TIT.2025.3597070},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8048-8079},
+  month        = {11},
+  number       = {11},
+  pages        = {9055-9073},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {On non-interactive simulation of distributed sources with finite alphabets},
+  title        = {Frequency component recovery from spectrum measurements},
   volume       = {71},
   year         = {2025},
 }
@@ -113,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The decomposition of cascade connections of NFSRs: Old and new results. <em>TIT</em>, <em>71</em>(10), 8029-8047. (<a href='https://doi.org/10.1109/TIT.2025.3592293'>www</a>)
+(2025). Nearly-linear time seeded extractors with short seeds. <em>TIT</em>, <em>71</em>(11), 9028-9054. (<a href='https://doi.org/10.1109/TIT.2025.3605160'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Cascade connection architectures of nonlinear feedback shift registers (NFSRs) have been widely used as the main components in the design of cryptographic algorithms, such as the Grain family of stream ciphers. It is known that the cascade connection of an n-stage NFSR into an m-stage NFSR is equivalent to an $(n+m)$ -stage NFSR. However, the converse problem on decomposing an NFSR into the cascade connection of two smaller NFSRs has not been well addressed, which can be transformed to decomposing the characteristic function h of the NFSR into the form $h=f \ast g$ for some nonlinear $f,g$ , where “ $\ast $ ” is a special composition of Boolean functions. In this paper, we present a complete and efficient method for such decomposition problem based on previous works. The framework of the decomposition consists of two steps. The first is to construct a candidate set for g as precise as possible, and the second is to verify each candidate g and recover the corresponding f. We propose the notion of $\ast $ -multiples of Boolean functions, and present three ways to take derivatives of h to extract the low-degree $\ast $ -multiples of g, which are useful to determine g efficiently. Compared to existing methods, the new approach can provide a very small candidate set for g in most cases, with the size being $O(\deg (h))$ , thereby achieving lower and more stable time costs in determining whether h is $\ast $ -reducible and enumerating all pairs $(f,g)$ such that $h=f \ast g$ (if it is $\ast $ -reducible). Moreover, we show that the decomposition method also applies to shift-invariant maps, by establishing a connection between the $\ast $ -product of Boolean functions and the composition of shift-invariant maps.},
+  abstract     = {Seeded extractors are fundamental objects in pseudorandomness and cryptography, and a deep line of work has designed polynomial-time seeded extractors with nearly-optimal parameters. However, existing constructions of seeded extractors with short seed length and large output length run in time $\Omega (n \log (1/\varepsilon))$ and often slower, where n is the input source length and $\varepsilon $ is the error of the extractor. Since cryptographic applications of extractors require $\varepsilon $ to be small, the resulting runtime makes these extractors impractical. Motivated by this, we explore constructions of strong seeded extractors with short seeds computable in nearly-linear time $O(n \log ^{c} n)$ , for any error $\varepsilon $ . We show that an appropriate combination of modern condensers and classical approaches for constructing seeded extractors for high min-entropy sources yields such extractors. More precisely, we obtain strong extractors for n-bit sources with any min-entropy k and any target error $\varepsilon $ with seed length $d=O(\log (n/\varepsilon))$ and output length $m=(1-\eta)k$ for an arbitrarily small constant $\eta \gt 0$ , running in nearly-linear time. When k or $\varepsilon $ are very small, our construction requires a reasonable one-time preprocessing step. These extractors directly yield privacy amplification protocols with nearly-linear time complexity (possibly after a one-time preprocessing step), large output length, and low communication complexity. As a second contribution, we give an instantiation of Trevisan’s extractor that can be evaluated in truly linear time in the RAM model, as long as the number of output bits is at most $\frac {n}{\log (1/\varepsilon)\mathrm {polylog}(n)}$ . Previous fast implementations of Trevisan’s extractor ran in $\widetilde {O}(n)$ time in this setting.},
   archive      = {J_TIT},
-  author       = {Xiao-Xin Zhao and Wen-Feng Qi and Zhong-Xiao Wang and Qun-Xiong Zheng and Deng Tang},
-  doi          = {10.1109/TIT.2025.3592293},
+  author       = {Dean Doron and João Ribeiro},
+  doi          = {10.1109/TIT.2025.3605160},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8029-8047},
+  month        = {11},
+  number       = {11},
+  pages        = {9028-9054},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {The decomposition of cascade connections of NFSRs: Old and new results},
+  title        = {Nearly-linear time seeded extractors with short seeds},
   volume       = {71},
   year         = {2025},
 }
@@ -134,20 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Improved constructions of skew-tolerant gray codes. <em>TIT</em>, <em>71</em>(10), 8017-8028. (<a href='https://doi.org/10.1109/TIT.2025.3592490'>www</a>)
+(2025). Age of gossip from connective properties via first passage percolation. <em>TIT</em>, <em>71</em>(11), 9019-9027. (<a href='https://doi.org/10.1109/TIT.2025.3612162'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Skew-tolerant Gray codes are Gray codes in which changes in consecutive codewords occur in adjacent positions. We present the first construction of asymptotically non-vanishing skew-tolerant Gray codes, offering an exponential improvement over previous work. We also provide linear-time encoding and decoding algorithms for our codes. Finally, we extend the definition to non-binary alphabets, and provide constructions of complete m-ary skew-tolerant Gray codes for every base $m\geqslant 3$ .},
+  abstract     = {In gossip networks, a source node forwards time-stamped updates to a network of observers according to a Poisson process. The observers then update each other on this information according to Poisson processes as well. The Age of Information (AoI) of a given node is the difference between the current time and the most recent time-stamp of source information that the node has received. We provide a method for evaluating the AoI of a node in terms of first passage percolation. We then use this distributional identity to prove matching upper and lower bounds on the AoI in terms of connectivity properties of the underlying network. In particular, if one sets $X_{v}$ to be the AoI of node v on a finite graph G with n nodes, then we define $m_{\ast } = \min \{m: m \cdot |B_{m}(v)| \geq n\}$ where $B_{m}(v)$ is the ball of radius m in G. In the case when the maximum degree of G is bounded by $\Delta $ we prove $\mathbb {E} X_{v} = \Theta _{\Delta } (m_{\ast })$ . As corollaries, we solve multiple open problems in the literature such as showing the age of information on a subset of $\mathbb {Z}^{d}$ is $\Theta (n^{1/(d+1)})$ . We also demonstrate examples of graphs with AoI scaling like $n^{\alpha }$ for each $\alpha \in (0,1/2)$ . These graphs are not vertex-transitive and in fact we show that if one considers the AoI on a graph coming from a vertex-transitive infinite graph then either $\mathbb {E} X_{v} = \Theta (n^{1/k})$ for some integer $k \geq 2$ or $\mathbb {E} X_{v} = n^{o(1)}$ .},
   archive      = {J_TIT},
-  author       = {Gabriel Sac Himelfarb and Moshe Schwartz},
-  doi          = {10.1109/TIT.2025.3592490},
+  author       = {Thomas Jacob Maranzatto and Marcus Michelen},
+  doi          = {10.1109/TIT.2025.3612162},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8017-8028},
+  month        = {11},
+  number       = {11},
+  pages        = {9019-9027},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Improved constructions of skew-tolerant gray codes},
+  title        = {Age of gossip from connective properties via first passage percolation},
   volume       = {71},
   year         = {2025},
 }
@@ -155,20 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Analysis of functions of low differential uniformity in characteristic 2: A new approach (I). <em>TIT</em>, <em>71</em>(10), 8002-8016. (<a href='https://doi.org/10.1109/TIT.2025.3597162'>www</a>)
+(2025). Function computation without secure links: Information and leakage rates. <em>TIT</em>, <em>71</em>(11), 9004-9018. (<a href='https://doi.org/10.1109/TIT.2025.3607890'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We introduce a new concept, the APN-defect, which can be thought of as measuring the distance of a given function $G:\mathbb {F}_{2^{n}} \rightarrow \mathbb {F}_{2^{n}}$ to the set of almost perfect nonlinear (APN) functions. This concept is motivated by the detailed analysis of the differential behaviour of non-APN functions (of low differential uniformity) G using the so-called difference squares. Indeed, the insight into some structural qualities of S-boxes provided by this new approach is particularly useful in the light of recent refinements of differential cryptanalysis. We describe the relations between the APN-defect and other current concepts of similar nature. Values of APN-defect for several classes of functions of interest, including Dembowski-Ostrom polynomials are given. This enables one to identify the quasi-APN ones, i.e., those with favourable differential behavior. The difference square corresponding to a modification of the inverse function is determined, its APN-defect depending on n is evaluated, the partial quadruple system associated to it is described, and the implications are discussed. In the forthcoming second part of this work we further examine the APN-defect of modifications of the inverse function and address some questions concerning CCZ-equivalence. We also study modifications of classes of functions of low differential uniformity over infinitely many extensions of $\mathbb {F}_{2^{n}}$ and present quantitative results on their differential behaviour.},
+  abstract     = {Consider L users, who each hold private data, and one fusion center who must compute a function of the private data of the L users. To accomplish this task, each user may utilize a public and noiseless broadcast channel in a non-interactive manner. In this setting, and in the absence of any additional resources such as secure links, we study the optimal communication rates and minimum information leakages on the private user data that are achievable. Specifically, we study the information leakage of the user data at the fusion center (beyond the knowledge of the function output), as well as at predefined groups of colluding users who eavesdrop one another. We derive the capacity region when the user data is independent, and inner and outer regions for the capacity region when the user data is correlated.},
   archive      = {J_TIT},
-  author       = {Nurdagül Anbar and Tekgül Kalaycı and Alev Topuzoğlu},
-  doi          = {10.1109/TIT.2025.3597162},
+  author       = {Rémi A. Chou and Jörg Kliewer},
+  doi          = {10.1109/TIT.2025.3607890},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {8002-8016},
+  month        = {11},
+  number       = {11},
+  pages        = {9004-9018},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Analysis of functions of low differential uniformity in characteristic 2: A new approach (I)},
+  title        = {Function computation without secure links: Information and leakage rates},
   volume       = {71},
   year         = {2025},
 }
@@ -176,20 +176,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Degree-D reverse multiplication-friendly embeddings. <em>TIT</em>, <em>71</em>(10), 7990-8001. (<a href='https://doi.org/10.1109/TIT.2025.3596305'>www</a>)
+(2025). Multiuser commitment over noisy channels. <em>TIT</em>, <em>71</em>(11), 8993-9003. (<a href='https://doi.org/10.1109/TIT.2025.3608081'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Reverse multiplication-friendly embeddings have played a crucial role in secure multiparty computation and zero-knowledge proofs. In this work, we generalize the notion of RMFEs to degree-D RMFEs. We present a general construction of degree-D RMFEs by generalizing the ideas on algebraic geometry used to construct traditional degree-2 RMFEs. Furthermore, our theory is given in a unified manner for general Galois rings, which include both rings of the form $\mathbb {Z}_{p^{k}}$ and fields like $\mathbb {F}_{p^{k}}$ , which have been treated separately in prior works. We present multiple concrete sets of parameters for degree-D RMFEs (including $D=2$ ), which can be useful for future works. In the recent work of (Cheon & Lee, Eurocrypt’22), the concept of a degree-D packing method was formally introduced, which captures the idea of embedding multiple elements of a smaller ring into a larger ring. We show that the generalized notion of RMFEs to degree-D RMFEs which, in spite of being “more algebraic” than packing methods, turn out to be essentially equivalent. Thus, our constructions of degree-D RMFEs are also degree-D packing methods.},
+  abstract     = {We consider multi-user commitment models that capture the problem of enabling multiple bidders to simultaneously submit auctions to verifiers while ensuring that i) verifiers do not obtain information on the auctions until bidders reveal them at a later stage; and, ii) bidders cannot change their auction once committed. Specifically, we assume that bidders and verifiers have access to a noiseless channel as well as a noisy multiple-access channel or broadcast channel, where inputs are controlled by the bidders and outputs are observed by verifiers. In the case of multiple bidders and a single verifier connected by a non-redundant multiple-access channel, we characterize the commitment capacity region when bidders are not colluding. When the bidders are colluding, we derive an achievable region and a tight converse for the sum rate. In both cases our proposed achievable commitment schemes are constructive. In the case of a single bidder and multiple verifiers connected by a non-redundant broadcast channel, in which verifiers could drop out of the network after auctions are committed, we also characterize the commitment capacity. Our results demonstrate how commitment schemes can benefit from multi-user protocols, and develop resilience when some verifiers may become unavailable.},
   archive      = {J_TIT},
-  author       = {Daniel Escudero and Cheng Hong and Hongqing Liu and Chaoping Xing and Chen Yuan},
-  doi          = {10.1109/TIT.2025.3596305},
+  author       = {Rémi A. Chou and Matthieu R. Bloch},
+  doi          = {10.1109/TIT.2025.3608081},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7990-8001},
+  month        = {11},
+  number       = {11},
+  pages        = {8993-9003},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Degree-D reverse multiplication-friendly embeddings},
+  title        = {Multiuser commitment over noisy channels},
   volume       = {71},
   year         = {2025},
 }
@@ -197,20 +197,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). On the cost of consecutive estimation error: Significance-aware non-linear aging. <em>TIT</em>, <em>71</em>(10), 7976-7989. (<a href='https://doi.org/10.1109/TIT.2025.3585733'>www</a>)
+(2025). Private aggregation in hierarchical wireless federated learning with partial and full collusion. <em>TIT</em>, <em>71</em>(11), 8977-8992. (<a href='https://doi.org/10.1109/TIT.2025.3606645'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper considers the semantics-aware remote state estimation of an asymmetric Markov chain with prioritized states. Due to resource constraints, the sensor needs to trade off estimation quality against communication cost. The aim is to exploit the significance of information through the history of system realizations to determine the optimal timing of transmission, thereby reducing the amount of uninformative data transmitted in the network. To this end, we introduce a new metric, the significance-aware Age of Consecutive Error (AoCE), that captures three semantic attributes: the significance of estimation error, the cost of consecutive error (or lasting impact, for short), and the urgency of lasting impact. Different costs and non-linear age functions are assigned to different estimation errors to account for their relative importance to system performance. We identify the optimal transmission problem as a countably infinite state Markov decision process (MDP) with unbounded costs. We first give sufficient conditions on the age functions, source pattern, and channel reliability so that an optimal policy exists to have bounded average costs. We show that the optimal policy exhibits a switching structure. That is, the sensor triggers a transmission only when the system has been trapped in an error for a certain number of consecutive time slots. We also provide sufficient conditions under which the switching policy degenerates into a simple threshold policy, i.e., featuring identical thresholds for all estimation errors. Furthermore, we exploit the structural results and develop a structured policy iteration (SPI) algorithm that considerably reduces computation overhead. Numerical results show that the optimal policy outperforms the classic rule-, distortion- and age-based policies. An important takeaway is that the more semantic attributes we utilize, the fewer transmissions are needed.},
+  abstract     = {In federated learning, a federator coordinates the training of a model, e.g., a neural network, on privately owned data held by several participating clients. The gradient descent algorithm, a well-known and popular iterative optimization procedure, is run to train the model. Every client computes partial gradients based on their local data and sends them to the federator, which aggregates the results and updates the model. Privacy of the clients’ data is a major concern. In fact, it is shown that observing the partial gradients can be enough to reveal the clients’ data. Existing literature focuses on private aggregation schemes that tackle the privacy problem in federated learning in settings where all users are connected to each other and to the federator. In this paper, we consider a hierarchical wireless system architecture in which the clients are connected to base stations; the base stations are connected to the federator either directly or through relays. We examine settings with and without relays, and derive fundamental limits on the communication cost under information-theoretic privacy with different collusion assumptions. We introduce suitable private aggregation schemes tailored for these settings whose communication costs are multiplicative factors away from the derived bounds.},
   archive      = {J_TIT},
-  author       = {Jiping Luo and Nikolaos Pappas},
-  doi          = {10.1109/TIT.2025.3585733},
+  author       = {Maximilian Egger and Christoph Hofmeister and Antonia Wachter-Zeh and Rawad Bitar},
+  doi          = {10.1109/TIT.2025.3606645},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7976-7989},
+  month        = {11},
+  number       = {11},
+  pages        = {8977-8992},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {On the cost of consecutive estimation error: Significance-aware non-linear aging},
+  title        = {Private aggregation in hierarchical wireless federated learning with partial and full collusion},
   volume       = {71},
   year         = {2025},
 }
@@ -218,20 +218,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Coset constructions of constant dimension codes by cosets of optimal ferrers diagrams rank metric codes. <em>TIT</em>, <em>71</em>(10), 7959-7975. (<a href='https://doi.org/10.1109/TIT.2025.3596103'>www</a>)
+(2025). Coded deep learning: Framework and algorithm. <em>TIT</em>, <em>71</em>(11), 8959-8976. (<a href='https://doi.org/10.1109/TIT.2025.3610095'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Constant dimension codes (CDCs) have received a lot of attention due to their application in random network coding. One main problem with CDCs is to improve the lower bound of $A_{q}(n,d,k)$ for given parameters $n,d$ and k, where $A_{q}(n,d,k)$ denotes the maximum size of all $(n,M,d,k)_{q}$ CDCs. The paper aims to construct CDCs by combining the coset and linkage construction. Precisely, we first combine the coset and linkage construction in different ways and then turn our attention to the coset construction. To enlarge the size of CDCs constructed from the coset construction, we are devoted to constructing lists of CDCs with fixed distance having size as large as possible by the cosets of optimal Ferrers diagram rank metric codes and the parallelisms in ${\mathcal {G}}_{q}(n, k)$ . As applications, numerous CDCs with larger size than the previously best known codes are obtained, including $A_{q}(18, 6,9), A_{q}(14, 6, 7), ~A_{q}(12, 4, 6), A_{q}(10, 4, 5),A_{q}(14, 4, 7),$ $A_{q}(16, 4, 8)$ and $A_{q}(n, 4,4)$ for $13\leq n\leq 16$ .},
+  abstract     = {The success of deep learning (DL) is often achieved at the expense of large model sizes and high computational complexity during both training and post-training inferences, making it difficult to train and run large models in a resource-limited environment. To alleviate these issues, this paper introduces a new framework dubbed “coded deep learning” (CDL), which integrates information-theoretic coding concepts into the inner workings of DL, aiming to substantially compress model weights and activations, reduce computational complexity at both training and post-training inference stages, and enable efficient model/data parallelism. Specifically, within CDL, 1) we first propose a novel probabilistic method for quantizing both model weights and activations, and its soft differentiable variant which offers an analytic formula for gradient calculation during training; 2) both the forward and backward passes during training are executed over quantized weights and activations, which eliminates a majority of floating-point operations and reduces the training computation complexity; 3) during training, both weights and activations are entropy constrained so that they are compressible in an information-theoretic sense at any stage of training, which in turn reduces communication costs in cases where model/data parallelism is adopted; and 4) the trained model in CDL is by default in a quantized format with compressible quantized weights, reducing post-training inference complexity and model storage complexity. Additionally, a variant of CDL, namely relaxed CDL (R-CDL), is presented to further improve the trade-off between validation accuracy and compression at the disadvantage of full precision operation involved in forward and backward passes during training with other advantageous features of CDL intact. Extensive empirical results show that CDL and R-CDL outperform the state-of-the-art algorithms in DNN compression in the literature.},
   archive      = {J_TIT},
-  author       = {Dengming Xu and Yihui Song},
-  doi          = {10.1109/TIT.2025.3596103},
+  author       = {En-Hui Yang and Shayan Mohajer Hamidi},
+  doi          = {10.1109/TIT.2025.3610095},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7959-7975},
+  month        = {11},
+  number       = {11},
+  pages        = {8959-8976},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Coset constructions of constant dimension codes by cosets of optimal ferrers diagrams rank metric codes},
+  title        = {Coded deep learning: Framework and algorithm},
   volume       = {71},
   year         = {2025},
 }
@@ -239,20 +239,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Sample-efficient reinforcement learning from human feedback via information-directed sampling. <em>TIT</em>, <em>71</em>(10), 7942-7958. (<a href='https://doi.org/10.1109/TIT.2025.3598296'>www</a>)
+(2025). Some facts about the optimality of the LSE in the gaussian sequence model with convex constraint. <em>TIT</em>, <em>71</em>(11), 8928-8958. (<a href='https://doi.org/10.1109/TIT.2025.3605342'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We study the problem of reinforcement learning from human feedback (RLHF), a critical problem in training large language models, from a theoretical perspective. Our main contribution is the design of novel sample-efficient RLHF algorithms based on information-directed sampling (IDS), an online decision-making principle inspired by information theory. Our algorithms maximize the sum of the value function and a mutual information term that encourages exploration of the unknown environment (which quantifies the information gained about the environment through observed human feedback data). To tackle the challenge of large state spaces and improve sample efficiency, we construct a simplified surrogate environment and introduce a novel distance measure (named the $\ell _{g}$ -distance), enabling our IDS-based algorithm to achieve a Bayesian regret upper bound of order $O(H^{3/2}\sqrt {\log (K(\epsilon)) T})$ , where H is the episode length, T is the number of episode and $K(\epsilon)$ is related to the covering number of the environment. Specializing to the tabular settings, this regret bound is of order $\tilde {O}(H^{2}\sqrt {SAT})$ , where S and A are the numbers of states and actions. Finally, we propose an Approximate-IDS algorithm that is computationally more efficient while maintaining nearly the same sample efficiency. The design principle of this approximate algorithm is not only effective in RLHF settings but also applicable to the standard RL framework. Moreover, our work showcases the value of information theory in reinforcement learning and in the training of large language models.},
+  abstract     = {We consider a convex constrained Gaussian sequence model and characterize necessary and sufficient conditions for the least squares estimator (LSE) to be minimax optimal. For a closed convex set $K\subset \mathbb {R} ^{n}$ we observe $Y=\mu +\xi $ for $\xi \sim {\mathcal {N}}(0,\sigma ^{2}\mathbb {I}_{n})$ and $\mu \in K$ and aim to estimate $\mu $ . We characterize the worst case risk of the LSE in multiple ways by analyzing the behavior of the local Gaussian width on K. We demonstrate that optimality is equivalent to a Lipschitz property of the local Gaussian width mapping. We also provide theoretical algorithms that search for the worst case risk. We then provide examples showing optimality or suboptimality of the LSE on various sets, including $\ell _{p}$ balls for $p\in [{1,2}]$ , pyramids, solids of revolution, and multivariate isotonic regression, among others.},
   archive      = {J_TIT},
-  author       = {Han Qi and Haochen Yang and Qiaosheng Zhang and Zhuoran Yang},
-  doi          = {10.1109/TIT.2025.3598296},
+  author       = {Akshay Prasadan and Matey Neykov},
+  doi          = {10.1109/TIT.2025.3605342},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7942-7958},
+  month        = {11},
+  number       = {11},
+  pages        = {8928-8958},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Sample-efficient reinforcement learning from human feedback via information-directed sampling},
+  title        = {Some facts about the optimality of the LSE in the gaussian sequence model with convex constraint},
   volume       = {71},
   year         = {2025},
 }
@@ -260,20 +260,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Exact matching in correlated networks with node attributes for improved community recovery. <em>TIT</em>, <em>71</em>(10), 7916-7941. (<a href='https://doi.org/10.1109/TIT.2025.3592704'>www</a>)
+(2025). Rethinking hard thresholding pursuit: Full adaptation and sharp estimation. <em>TIT</em>, <em>71</em>(11), 8899-8927. (<a href='https://doi.org/10.1109/TIT.2025.3603987'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We study community detection in multiple networks with jointly correlated node attributes and edges. This setting arises naturally in applications such as social platforms, where a shared set of users may exhibit both correlated friendship patterns and correlated attributes across different platforms. Extending the classical Stochastic Block Model (SBM) and its contextual counterpart (Contextual SBM or CSBM), we introduce the correlated CSBM, which incorporates structural and attribute correlations across graphs. To build intuition, we first analyze correlated Gaussian Mixture Models, wherein only correlated node attributes are available without edges, and identify the conditions under which an estimator minimizing the distance between attributes achieves exact matching of nodes across the two databases. For the correlated CSBMs, we develop a two-step procedure that first applies k-core matching to most nodes using edge information, then refines the matching for the remaining unmatched nodes by leveraging their attributes with a distance-based estimator. We identify the conditions under which the algorithm recovers the exact node correspondence, enabling us to merge the correlated edges and average the correlated attributes for enhanced community detection. Crucially, by aligning and combining graphs, we identify regimes in which community detection is impossible in a single graph but becomes feasible when side information from correlated graphs is incorporated. Our results illustrate how the interplay between graph matching and community recovery can boost performance, broadening the scope of multi-graph, attribute-based community detection.},
+  abstract     = {Hard Thresholding Pursuit (HTP) has aroused increasing attention for its robust theoretical guarantees and impressive numerical performance in non-convex optimization. This paper consider a high-dimensional linear regression model with n observations, p predictors, and an unknown $s^{*}$ -sparse signal $\boldsymbol {\beta }^{*} \in \mathbb {R}^{p}$ corrupted by noise of magnitude $\sigma $ . We introduce a novel tuning-free procedure, namely Full-Adaptive HTP (FAHTP), that simultaneously adapts to both the unknown sparsity and signal strength of the underlying model. Our theoretical analysis rigorously characterizes the iterative thresholding dynamics of FAHTP, offering refined theoretical insights. In specific, under the beta-min condition $\min _{ \{i: {\boldsymbol {\beta }}^{*}_{i}\ne 0\} } |{\boldsymbol {\beta }}^{*}_{i}| \ge C\sigma (\log p/n)^{1/2}$ , FAHTP achieves oracle estimation rate $\sigma (s^{*}/n)^{1/2}$ , highlighting its theoretical superiority over convex competitors such as LASSO and SLOPE, and recovers the true support set exactly. More importantly, even without the beta-min condition, FAHTP achieves a tighter error bound than the classical minimax rate with high probability. The comprehensive numerical experiments substantiate our theoretical findings, underscoring the effectiveness and robustness of the proposed FAHTP.},
   archive      = {J_TIT},
-  author       = {Joonhyuk Yang and Hye Won Chung},
-  doi          = {10.1109/TIT.2025.3592704},
+  author       = {Yanhang Zhang and Shixiang Liu and Zhifan Li and Xueqin Wang and Jianxin Yin},
+  doi          = {10.1109/TIT.2025.3603987},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7916-7941},
+  month        = {11},
+  number       = {11},
+  pages        = {8899-8927},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Exact matching in correlated networks with node attributes for improved community recovery},
+  title        = {Rethinking hard thresholding pursuit: Full adaptation and sharp estimation},
   volume       = {71},
   year         = {2025},
 }
@@ -281,20 +281,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Denoising and multilinear projected-estimation of high-dimensional matrix-variate factor time series. <em>TIT</em>, <em>71</em>(10), 7886-7915. (<a href='https://doi.org/10.1109/TIT.2025.3594536'>www</a>)
+(2025). Confirmation bias in gaussian mixture models. <em>TIT</em>, <em>71</em>(11), 8871-8898. (<a href='https://doi.org/10.1109/TIT.2025.3603619'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper proposes a new multi-linear projection method for denoising and estimation of high-dimensional matrix-variate factor time series. It assumes that a $p_{1}\times p_{2}$ matrix-variate time series consists of a dynamically dependent, lower-dimensional matrix-variate factor process and a $p_{1}\times p_{2}$ matrix idiosyncratic series. In addition, the latter series assumes a matrix-variate factor structure such that its row and column covariances may have diverging/spiked eigenvalues to accommodate the case of low signal-to-noise ratio often encountered in applications. We use an iterative projection procedure to reduce the dimensions and noise effects in estimating front and back loading matrices and to obtain faster convergence rates than those of the traditional methods available in the literature. We further introduce a two-way projected Principal Component Analysis to mitigate the diverging noise effects, and implement a high-dimensional white-noise testing procedure to estimate the dimension of the matrix factor process. Asymptotic properties of the proposed method are established if the dimensions and sample size go to infinity. We also use simulations and real examples to assess the performance of the proposed method in finite samples and to compare its forecasting ability with some existing ones in the literature. The proposed method fares well in out-of-sample forecasting. In the appendix, we demonstrate the efficacy of the proposed approach even when the idiosyncratic terms exhibit serial correlations with or without a diverging white noise effect.},
+  abstract     = {Confirmation bias, the tendency to interpret information in a way that aligns with one’s preconceptions, can profoundly impact scientific research, leading to conclusions that reflect the researcher’s hypotheses even when the observational data do not support them. This issue is especially critical in scientific fields involving highly noisy observations, such as cryo-electron microscopy. This study investigates confirmation bias in Gaussian mixture models. We consider the following experiment: A team of scientists assumes they are analyzing data drawn from a Gaussian mixture model with known signals (hypotheses) as centroids. However, in reality, the observations consist entirely of noise without any informative structure. The researchers use a single iteration of the K-means or expectation-maximization algorithms, two popular algorithms to estimate the centroids. Despite the observations being pure noise, we show that these algorithms yield biased estimates that resemble the initial hypotheses, contradicting the unbiased expectation that averaging these noise observations would converge to zero. Namely, the algorithms generate estimates that mirror the postulated model, although the hypotheses (the presumed centroids of the Gaussian mixture) are not evident in the observations. Specifically, among other results, we prove a positive correlation between the estimates produced by the algorithms and the corresponding hypotheses. We also derive explicit closed-form expressions of the estimates for a finite and infinite number of hypotheses. Furthermore, we provide theoretical and empirical results for multi-iteration K-means and expectation-maximization, showing that the bias is persistent even after hundreds of iterations of these algorithms. This study underscores the risks of confirmation bias in low signal-to-noise environments, provides insights into potential pitfalls in scientific methodologies, and highlights the importance of prudent data interpretation.},
   archive      = {J_TIT},
-  author       = {Zhaoxing Gao and Ruey S. Tsay},
-  doi          = {10.1109/TIT.2025.3594536},
+  author       = {Amnon Balanov and Tamir Bendory and Wasim Huleihel},
+  doi          = {10.1109/TIT.2025.3603619},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7886-7915},
+  month        = {11},
+  number       = {11},
+  pages        = {8871-8898},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Denoising and multilinear projected-estimation of high-dimensional matrix-variate factor time series},
+  title        = {Confirmation bias in gaussian mixture models},
   volume       = {71},
   year         = {2025},
 }
@@ -302,20 +302,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Gram–Schmidt methods for unsupervised feature extraction and selection. <em>TIT</em>, <em>71</em>(10), 7856-7885. (<a href='https://doi.org/10.1109/TIT.2025.3589174'>www</a>)
+(2025). Piecewise linearity of min-norm solution map of a nonconvexly regularized convex sparse model. <em>TIT</em>, <em>71</em>(11), 8840-8870. (<a href='https://doi.org/10.1109/TIT.2025.3605554'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Feature extraction and selection in the presence of nonlinear dependencies among the data is a fundamental challenge in unsupervised learning. We propose using a Gram-Schmidt (GS) type orthogonalization process over function spaces to detect and map out such dependencies. Specifically, by applying the GS process over some family of functions, we construct a series of covariance matrices that can either be used to identify new large-variance directions, or to remove those dependencies from known directions. In the former case, we provide information-theoretic guarantees in terms of entropy reduction. In the latter, we provide precise conditions by which the chosen function family eliminates existing redundancy in the data. Each approach provides both a feature extraction and a feature selection algorithm. Our feature extraction methods are linear, and can be seen as natural generalization of principal component analysis (PCA). We provide experimental results for synthetic and real-world benchmark datasets which show superior performance over state-of-the-art (linear) feature extraction and selection algorithms. Surprisingly, our linear feature extraction algorithms are comparable and often outperform several important nonlinear feature extraction methods such as autoencoders, kernel PCA, and UMAP. Furthermore, one of our feature selection algorithms strictly generalizes a recent Fourier-based feature selection mechanism (Heidari et al., IEEE Transactions on Information Theory, 2022), yet at significantly reduced complexity.},
+  abstract     = {It is well known that the minimum $\ell _{2}$ -norm solution of the convex LASSO model, say $ {x}_{\star }$ , is a continuous piecewise linear function of the regularization parameter $\lambda $ , and its signed sparsity pattern is constant within each linear piece (Osborne 2000, Efron et al. 2004). The current study is an extension of this classic result, proving that the aforementioned properties extend to the min-norm solution map $ {x}_{\star }( {y},\lambda)$ , where $ {y}$ is the observed signal, for a generalization of LASSO termed the scaled generalized minimax concave (sGMC) model. The sGMC model adopts a nonconvex debiased variant of the $\ell _{1}$ -norm as sparse regularizer, but its objective function is overall-convex. Based on the geometric properties of $ {x}_{\star }( {y},\lambda)$ , we propose an extension of the least angle regression (LARS) algorithm, which iteratively computes the closed-form expression of $ {x}_{\star }( {y},\lambda)$ in each linear zone. Under suitable conditions, the proposed algorithm provably obtains the whole solution map $ {x}_{\star }( {y},\lambda)$ within finite iterations. Numerical experiments demonstrate the efficiency and reduced estimation error of the proposed algorithm compared to the conventional LARS. Notably, our proof techniques for establishing continuity and piecewise linearity of $ {x}_{\star }( {y},\lambda)$ are novel, and they lead to two side contributions: (a) our proofs establish continuity of the sGMC solution set as a set-valued mapping of $( {y},\lambda)$ ; (b) to prove piecewise linearity and piecewise constant sparsity pattern of $ {x}_{\star }( {y},\lambda)$ , we do not require any assumption that previous work relies on (whereas to prove some additional properties of $ {x}_{\star }( {y},\lambda)$ , we use a different set of assumptions from previous work).},
   archive      = {J_TIT},
-  author       = {Bahram Yaghooti and Netanel Raviv and Bruno Sinopoli},
-  doi          = {10.1109/TIT.2025.3589174},
+  author       = {Yi Zhang and Isao Yamada},
+  doi          = {10.1109/TIT.2025.3605554},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7856-7885},
+  month        = {11},
+  number       = {11},
+  pages        = {8840-8870},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Gram–Schmidt methods for unsupervised feature extraction and selection},
+  title        = {Piecewise linearity of min-norm solution map of a nonconvexly regularized convex sparse model},
   volume       = {71},
   year         = {2025},
 }
@@ -323,20 +323,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Periodic gaussian process controlled B-spline for scalable modeling of irregularly spaced signals. <em>TIT</em>, <em>71</em>(10), 7842-7855. (<a href='https://doi.org/10.1109/TIT.2025.3595144'>www</a>)
+(2025). Robust quickest change detection in multi-stream non-stationary processes. <em>TIT</em>, <em>71</em>(11), 8818-8839. (<a href='https://doi.org/10.1109/TIT.2025.3606872'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Existing periodic Gaussian process (PGP) modeling methods rely on the regularly-spaced-signal assumption (i.e., signals are evenly spaced) and the integer-period assumption for the sake of computational feasibility. However, such an assumption prevents conventional efficient modeling approaches from working properly on irregularly (unevenly) spaced signals, such as evenly spaced signals with missing data. Moreover, without the integer-period assumption, it is computationally prohibitive to accurately search the decimal period of PGP due to the severe non-convexity of its likelihood function. To address these issues, this study proposes a PGP-controlled B-spline for scalable modeling of irregularly spaced signals with a decimal period. The proposed model integrates PGP with B-spline basis functions, allowing for nonlinear and nonparametric modeling of periodic signals. An explore-exploit optimization is developed to overcome the non-convexity of the likelihood, enabling effective and efficient decimal period estimation. The proposed PGP modeling approach has a linear time complexity. Asymptotic properties of the proposed method are studied, which shed light on the period estimation of other PGP models. Simulation and real case studies are conducted to demonstrate the superiority of the proposed method.},
+  abstract     = {The problem of robust quickest change detection (QCD) in non-stationary processes under a multi-stream setting is studied. In classical QCD theory, optimal solutions are developed to detect a sudden change in the distribution of stationary data. Most studies have focused on single-stream data. In non-stationary processes, the data distribution both before and after a change varies with time and is not precisely known. The multi-stream or multi-dimensional nature of the data further complicates the issue. It is shown that if the non-stationary family for each dimension or stream has a least favorable law (LFL) or distribution in a well-defined sense, then the algorithm designed using the LFLs is robust optimal. The notion of LFL defined in this work differs from the classical definitions due to the dependence of the post-change model on the change point. Examples of multi-stream non-stationary processes encountered in public health monitoring and aviation applications are provided. Our robust algorithm is applied to simulated and real data to show its effectiveness.},
   archive      = {J_TIT},
-  author       = {Yongxiang Li and Yuanyuan Li and Di Wang},
-  doi          = {10.1109/TIT.2025.3595144},
+  author       = {Yingze Hou and Hoda Bidkhori and Taposh Banerjee},
+  doi          = {10.1109/TIT.2025.3606872},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7842-7855},
+  month        = {11},
+  number       = {11},
+  pages        = {8818-8839},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Periodic gaussian process controlled B-spline for scalable modeling of irregularly spaced signals},
+  title        = {Robust quickest change detection in multi-stream non-stationary processes},
   volume       = {71},
   year         = {2025},
 }
@@ -344,20 +344,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Distributed semi-supervised inference for generalized linear models with block-wise missing covariates. <em>TIT</em>, <em>71</em>(10), 7815-7841. (<a href='https://doi.org/10.1109/TIT.2025.3596304'>www</a>)
+(2025). An information-theoretic framework for out-of-distribution generalization with applications to stochastic gradient langevin dynamics. <em>TIT</em>, <em>71</em>(11), 8798-8817. (<a href='https://doi.org/10.1109/TIT.2025.3598722'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {For a relatively small labeled dataset from high-dimensional generalized linear models with block-wise missing covariates and a large unlabeled dataset, we utilize a model-assisted approach in the labeled dataset to address the issue of block-wise missing covariates and then integrate the unlabeled data to construct estimation equations for the coefficients without any imputation. A lasso-penalized semi-supervised estimator is obtained, and then its debiased estimator is proposed to establish asymptotic normality/confidence intervals. When the labeled data are distributed in multiple machines independently and only some machines have unlabeled data, we further propose a distributed debiased semi-supervised estimator for estimation and inference. The finite sample performance of our proposed two estimators is studied through simulations and further illustrated with a breast cancer dataset.},
+  abstract     = {We study the Out-of-Distribution (OOD) generalization in machine learning and propose a general framework that establishes information-theoretic generalization bounds. Our framework interpolates freely between Integral Probability Metric (IPM) and f-divergence, which naturally recovers some known results (including Wasserstein- and KL-bounds), as well as yields new generalization bounds. Additionally, we show that our framework admits an optimal transport interpretation. When evaluated in two concrete examples, the proposed bounds either strictly improve upon existing bounds in some cases or match the best existing OOD generalization bounds. Moreover, by focusing on f-divergence and combining it with the Conditional Mutual Information (CMI) methods, we derive a family of CMI-based generalization bounds, which include the state-of-the-art ICIMI bound as a special instance. Finally, leveraging these findings, we analyze the generalization of the Stochastic Gradient Langevin Dynamics (SGLD) algorithm, showing that our derived generalization bounds outperform existing information-theoretic generalization bounds in certain scenarios.},
   archive      = {J_TIT},
-  author       = {Ziyuan Wang and Jin Liu and Jun Shao and Heng Lian and Lei Wang},
-  doi          = {10.1109/TIT.2025.3596304},
+  author       = {Wenliang Liu and Guanding Yu and Lele Wang and Renjie Liao},
+  doi          = {10.1109/TIT.2025.3598722},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7815-7841},
+  month        = {11},
+  number       = {11},
+  pages        = {8798-8817},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Distributed semi-supervised inference for generalized linear models with block-wise missing covariates},
+  title        = {An information-theoretic framework for out-of-distribution generalization with applications to stochastic gradient langevin dynamics},
   volume       = {71},
   year         = {2025},
 }
@@ -365,20 +365,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Quickest change detection for multiple data streams using the James–Stein estimator. <em>TIT</em>, <em>71</em>(10), 7802-7814. (<a href='https://doi.org/10.1109/TIT.2025.3588661'>www</a>)
+(2025). A novel gaussian Min–Max theorem and its applications. <em>TIT</em>, <em>71</em>(11), 8777-8797. (<a href='https://doi.org/10.1109/TIT.2025.3595521'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The problem of quickest change detection is studied in the context of detecting an arbitrary unknown mean-shift in multiple independent Gaussian data streams. The James-Stein estimator is used in constructing detection schemes that exhibit strong detection performance both asymptotically and non-asymptotically. Our results indicate that utilizing the James-Stein estimator in the recently developed window-limited CuSum test constitutes a uniform improvement over its typical maximum likelihood variant. That is, the proposed James-Stein version achieves a smaller detection delay simultaneously for all possible post-change parameter values and every false alarm rate constraint, as long as the number of parallel data streams is greater than three. Additionally, an alternative detection procedure that utilizes the James-Stein estimator is shown to have asymptotic detection delay properties that compare favorably to existing tests. The second-order asymptotic detection delay term is reduced in a predefined low-dimensional subspace of the parameter space, while second-order asymptotic minimaxity is preserved. The results are verified in simulations, where the proposed schemes are shown to achieve smaller detection delays compared to existing alternatives, especially when the number of data streams is large.},
+  abstract     = {A celebrated result by Gordon allows one to compare the min-max behavior of two Gaussian processes if certain inequality conditions are met. The consequences of this result include the Gaussian min-max (GMT) and convex Gaussian min-max (CGMT) theorems which have had far-reaching implications in high-dimensional statistics, machine learning, non-smooth optimization, and signal processing. Both theorems rely on a pair of Gaussian processes, first identified by Slepian, that satisfy Gordon’s comparison inequalities. In this paper, we identify a new pair of Gaussian processes satisfying these inequalities. The resulting theorems extend the classical GMT and CGMT Theorems from the case where the underlying Gaussian matrix in the primary process has iid rows to where it has independent but non-identically-distributed ones. The new CGMT is applied to the problems of multi-source Gaussian regression, as well as to binary classification of general Gaussian mixture models.},
   archive      = {J_TIT},
-  author       = {Topi Halme and Venugopal V. Veeravalli and Visa Koivunen},
-  doi          = {10.1109/TIT.2025.3588661},
+  author       = {Danil Akhtiamov and David Bosch and Reza Ghane and Nithin K. Varma and Babak Hassibi},
+  doi          = {10.1109/TIT.2025.3595521},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7802-7814},
+  month        = {11},
+  number       = {11},
+  pages        = {8777-8797},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Quickest change detection for multiple data streams using the James–Stein estimator},
+  title        = {A novel gaussian Min–Max theorem and its applications},
   volume       = {71},
   year         = {2025},
 }
@@ -386,20 +386,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Bregman-divergence-based arimoto-blahut algorithm. <em>TIT</em>, <em>71</em>(10), 7788-7801. (<a href='https://doi.org/10.1109/TIT.2025.3597943'>www</a>)
+(2025). Precise regularized minimax regret with unbounded weights. <em>TIT</em>, <em>71</em>(11), 8753-8776. (<a href='https://doi.org/10.1109/TIT.2025.3604599'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We generalize the generalized Arimoto-Blahut algorithm to a general function defined over Bregman-divergence system. In existing methods, when linear constraints are imposed, each iteration needs to solve a convex minimization. Exploiting our obtained algorithm, we propose a minimization-free-iteration algorithm. This algorithm can be applied to classical and quantum rate-distortion theory. We numerically apply our method to the derivation of the optimal conditional distribution in the rate-distortion theory.},
+  abstract     = {In online learning, a learner receives data in rounds and, at each round, predicts a label that is then compared to the true label, incurring a loss. The total loss over T rounds, when compared to the loss of the best expert from a class of experts or forecasters, is called the regret. In this paper, we focus on logarithmic loss for logistic-like experts with unbounded d-dimensional weights, a scenario that has been largely unexplored. To address the irregularities introduced by the unbounded weight norm, we introduce a regularized version of the average (fixed design) minimax regret by imposing a soft constraint on the weight norm. We demonstrate that the regularized minimax regret is fully characterized by a complexity measure we term the regularized Shtarkov sum. We also show how the behavior of the standard regret can be inferred from the regularized regret. Our main results provide a precise characterization of the regularized Shtarkov sum and, consequently, the regularized regret with unbounded weights up to second-order asymptotics. Notably, unlike the $d/2 \log T$ regret growth known for bounded weights, our results imply that the regularized regret grows as $(1/2 + \alpha /4) d \log T$ when the regularization parameter is of order $\Theta (T^{-\alpha })$ for $\alpha \leq 1/2$ . We achieve this using tools from analytic combinatorics, including multidimensional Fourier analysis, the saddle point method, and the Mellin transform.},
   archive      = {J_TIT},
-  author       = {Masahito Hayashi},
-  doi          = {10.1109/TIT.2025.3597943},
+  author       = {Michael Drmota and Philippe Jacquet and Changlong Wu and Wojciech Szpankowski},
+  doi          = {10.1109/TIT.2025.3604599},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7788-7801},
+  month        = {11},
+  number       = {11},
+  pages        = {8753-8776},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Bregman-divergence-based arimoto-blahut algorithm},
+  title        = {Precise regularized minimax regret with unbounded weights},
   volume       = {71},
   year         = {2025},
 }
@@ -407,20 +407,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Entropic and operational characterizations of dynamic quantum resources. <em>TIT</em>, <em>71</em>(10), 7753-7787. (<a href='https://doi.org/10.1109/TIT.2025.3559765'>www</a>)
+(2025). Bregman–Wasserstein divergence: Geometry and applications. <em>TIT</em>, <em>71</em>(11), 8723-8752. (<a href='https://doi.org/10.1109/TIT.2025.3606755'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We offer new methods for characterizing general closed and convex quantum resource theories, including dynamic ones, based on entropic concepts and operational tasks. We propose a resource-theoretic generalization of the quantum conditional min-entropy, termed the free conditional min-entropy (FCME), in the sense that it quantifies an observer’s “subjective” degree of uncertainty about a quantum system given that the observer’s information processing is limited to free operations of the resource theory. Using this generalized concept, we provide a complete set of entropic conditions for free convertibility between quantum states or channels in any closed and convex quantum resource theory. We also derive an information-theoretic interpretation for the resource global robustness of a state or a channel in terms of a mutual-information-like quantity based on the FCME. Apart from this entropic approach, we characterize dynamic resources by also analyzing their performance in operational tasks. We construct operationally meaningful and complete sets of resource monotones with these tasks, which enable faithful tests of free convertibility between quantum channels. Finally, we show that every well-defined robustness-based measure of a channel can be interpreted as an operational advantage of the channel over free channels in a communication task.},
+  abstract     = {The Bregman-Wasserstein divergence is the optimal transport cost when the underlying cost function is given by a Bregman divergence, and arises naturally in fields such as statistics and machine learning. We establish fundamental properties of the Bregman-Wasserstein divergence and propose a novel generalized transport geometry that promotes the Bregman geometry to the space of probability distributions. We provide a probabilistic interpretation involving exponential families and define generalized displacement interpolations compatible with the Bregman geometry. These interpolations are used to derive a generalized Pythagorean inequality, which is of independent interest. Furthermore, we construct a generalized dualistic geometry that lifts the differential geometry of the Bregman divergence to an infinite-dimensional statistical manifold. On the computational side, we demonstrate how Bregman-Wasserstein optimal transport maps can be estimated using neural approaches, establish the well-posedness of Bregman-Wasserstein barycenters, and relate them to Bayesian learning. Finally, we relate the Bregman-Wasserstein divergence to rate distortion theory, and introduce the Bregman-Wasserstein JKO scheme for discretizing Riemannian Wasserstein gradient flows.},
   archive      = {J_TIT},
-  author       = {Kaiyuan Ji and Eric Chitambar},
-  doi          = {10.1109/TIT.2025.3559765},
+  author       = {Amanjit Singh Kainth and Cale Rankin and Ting-Kam Leonard Wong},
+  doi          = {10.1109/TIT.2025.3606755},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7753-7787},
+  month        = {11},
+  number       = {11},
+  pages        = {8723-8752},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Entropic and operational characterizations of dynamic quantum resources},
+  title        = {Bregman–Wasserstein divergence: Geometry and applications},
   volume       = {71},
   year         = {2025},
 }
@@ -428,20 +428,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Optimal wire cutting with classical communication. <em>TIT</em>, <em>71</em>(10), 7742-7752. (<a href='https://doi.org/10.1109/TIT.2025.3601047'>www</a>)
+(2025). Online multiple changepoint detection with false discovery rate control. <em>TIT</em>, <em>71</em>(11), 8697-8722. (<a href='https://doi.org/10.1109/TIT.2025.3610613'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Circuit knitting is the process of partitioning large quantum circuits into smaller subcircuits such that the result of the original circuits can be deduced by only running the subcircuits. Such techniques will be crucial for near-term and early fault-tolerant quantum computers, as the limited number of qubits is likely to be a major bottleneck for demonstrating quantum advantage. One typically distinguishes between gate cuts and wire cuts when partitioning a circuit. The cost for any circuit knitting approach scales exponentially in the number of cuts. One possibility to realize a cut is via the quasiprobability simulation technique. In fact, we argue that all existing rigorous circuit knitting techniques can be understood in this framework. Furthermore, we characterize the optimal overhead for wire cuts where the subcircuits can exchange classical information or not. We show that the optimal cost for cutting n wires without and with classical communication between the subcircuits scales as $O(16^{n})$ and $O(4^{n})$ , respectively.},
+  abstract     = {Technological advances have led to the emergence of an increasing number of applications requiring the analysis of datastreams, that are characterized by an indefinitely long and time-evolving sequence, particularly in the healthcare domain. In such applications, the status of a stream can alternate, possibly many times, between a regular status and an irregular status. Consequently, it is necessary to develop statistical methodologies that constantly detect multiple changepoints in an online manner. While we may employ conventional methods of sequential change detection to trigger signals after the change occurs, no online procedure is available to quantify the uncertainty of the detected changes. In this work, we fill this gap by framing online multiple changepoint detection into an online multiple testing problem and proposing a new framework to test the null hypothesis that there is no change between neighboring signalled points. To obtain valid p-values for online multiple testing, we propose a data-fission-based procedure that is a simple yet effective way of dealing with the post-detection uncertainty quantification. It is shown that popular online false discovery rate control methods with those p-values can achieve finite-sample false discovery rate control. We evaluate the proposed method in simulation studies. The method is applied to health monitoring dataset, alleviating the false alarm issue in online data analysis.},
   archive      = {J_TIT},
-  author       = {Lukas Brenner and Christophe Piveteau and David Sutter},
-  doi          = {10.1109/TIT.2025.3601047},
+  author       = {Xiaolong Cui and Haoyu Geng and Haojie Ren and Zhaojun Wang and Changliang Zou},
+  doi          = {10.1109/TIT.2025.3610613},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7742-7752},
+  month        = {11},
+  number       = {11},
+  pages        = {8697-8722},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Optimal wire cutting with classical communication},
+  title        = {Online multiple changepoint detection with false discovery rate control},
   volume       = {71},
   year         = {2025},
 }
@@ -449,20 +449,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Bh sets and costas cubes. <em>TIT</em>, <em>71</em>(10), 7735-7741. (<a href='https://doi.org/10.1109/TIT.2025.3591529'>www</a>)
+(2025). Group-sparse inductive matrix completion through transfer learning. <em>TIT</em>, <em>71</em>(11), 8673-8696. (<a href='https://doi.org/10.1109/TIT.2025.3610522'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {A Costas array is a permutation array in which the vectors joining pairs of 1’s are all distinct. Jedwab and Yen introduced Costas cubes, which are three-dimensional arrays that satisfy the condition that their three two-dimensional projections are Costas arrays. On the other hand, a subset A in an additive group G is a $B_{h}$ set if all sums of the form $a_{1} + a_{2} \cdots + a_{h}$ , where $a_{1}, a_{2} \cdots, a_{h} \in A$ , are different. In this paper, we present three new constructions of $B_{h}$ sets for all $h\geq 3$ . Moreover, in the case $h=3$ , we analyze the relationship of these sets with Costas cubes constructed by Jedwab and Yen, and determine which of these cubes are $B_{3}$ sets.},
+  abstract     = {The emergence of big data has enabled the creation of significant models by allowing the storage of large data volumes. Transfer learning is a machine learning technique that transfers knowledge between different domains by utilizing pretrained models from the source domain to optimize the target domain. In contrast, inductive matrix completion is a method that leverages side information from multiple sources to improve task performance. This paper explores inductive matrix completion within the transfer learning framework, with our proposed approach assuming group sparsity for the difference between the core matrices of the target and source domains. Theoretical guarantees of our method are investigated to demonstrate the gains achieved through transfer learning compared with standard inductive matrix completion. Several synthetic experiments are conducted to evaluate the performance of the proposed approach and existing methods, demonstrating that our method outperforms others.},
   archive      = {J_TIT},
-  author       = {David Fernando Daza Urbano and Carlos Alberto Trujillo Solarte and Carlos Andrés Martos Ojeda},
-  doi          = {10.1109/TIT.2025.3591529},
+  author       = {Xiaojun Mao and Hengfang Wang and Zhonglei Wang},
+  doi          = {10.1109/TIT.2025.3610522},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7735-7741},
+  month        = {11},
+  number       = {11},
+  pages        = {8673-8696},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Bh sets and costas cubes},
+  title        = {Group-sparse inductive matrix completion through transfer learning},
   volume       = {71},
   year         = {2025},
 }
@@ -470,20 +470,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Common randomness generation from finite compound sources aided by one-way communication. <em>TIT</em>, <em>71</em>(10), 7715-7734. (<a href='https://doi.org/10.1109/TIT.2025.3595704'>www</a>)
+(2025). Analyzing matching-based parameter estimators in black-box data generation settings. <em>TIT</em>, <em>71</em>(11), 8654-8672. (<a href='https://doi.org/10.1109/TIT.2025.3598172'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We investigate the problem of generating common randomness (CR) from a finite compound source aided by unidirectional communication over a rate-limited perfect channel. The two communicating parties observe independent and identically distributed (i.i.d.) samples of a finite compound source and aim to agree on a common random variable with high probability for every possible state. Both parties know the set of source states as well as their statistics. However, they don’t know the actual state. We establish a single-letter formula for the compound CR capacity in the presence of communication over the channel and study key properties of the compound CR capacity: super-additivity, concavity, and continuity. We also consider the case where there is no communication between the terminals, and only the source outputs observed by the terminal at the receiving end of the perfect channel are state-dependent. In this setting, we establish single-letter bounds on the compound CR capacity. The single-letter lower bound is derived under the assumption that the source distributions are pairwise distinct for all states. Finally, within the same setting, we propose a CR generation scheme for a two-state binary source example. Notably, this scheme does not depend on the previously mentioned assumption.},
+  abstract     = {Assume that, ${\mathbf { X}}={\mathcal { S}}(\theta _{0},{\mathbf { Y}})$ , are $n \ i.i.d$ . observations in $\mathbb {R}^{p}$ , with cdf $F_{\theta _{0}}$ of unknown mathematical form; $\mathcal { S}$ is a black-box, $p\ge 1$ . Parameter $\theta _{0}$ is unknown, element of metric space $(\Theta , d_{\Theta })$ which can be infinite dimensional. Y is random, with distribution independent of $\theta _{0}$ . For each $\theta ^{*}$ in a discretization, $\Theta ^{*}$ , of $\Theta , \ F_{\theta ^{*}}$ is “learned” using independent ${\mathbf { X}}^{*}_{j}(\theta ^{*})={\mathcal { S}}(\theta ^{*}, {\mathbf { Y}}), 1\le j \le N_{rep}$ . Kolmogorov distance, $d_{K}$ , and the empirical cdfs of the observed $\bf x$ and of the $N_{rep}~{\mathbf { X}}^{*}_{j}(\theta ^{*}), \theta ^{*} \in \Theta ^{*}$ , are used to introduce for $\theta _{0}:~a$ ) the minimum matching distance estimator (MMDE), and b) the brand new, maximum matching support probability estimator (MMSPE). Under two mild assumptions, uniform consistency for both estimators is established. Their common upper error rate in probability depends on Kolmogorov’s entropy of $\Theta $ , is not affected by p when $\Theta \subseteq \mathbb {R}^{m}$ , and establishes that MMSPE is competitive. Both estimators have theoretical advantages over competitors, and complement each other in numerical applications presented for $p=1, 2$ , because of $d_{K}$ ’s computational cost for large p, relaxed with recent algorithms. MMSPE obtained using, instead of $d_{K}$ , the Euclidean sup-norm distance of $\bf x$ from each of the $N_{rep}~{\mathbf { X}}^{*}_{j} (\theta ^{*}), \theta ^{*} \in \Theta ^{*}$ , provides an approximation for the MLE when $N_{rep}$ is large, indicating MLE’s limitations for large p. MMDE and MMSPE obtained using Wolfowitz’s half-spaces distance and matching tool the empirical measure instead of the empirical cdf, have a computational advantage for large p.},
   archive      = {J_TIT},
-  author       = {Rami Ezzine and Moritz Wiese and Christian Deppe and Holger Boche},
-  doi          = {10.1109/TIT.2025.3595704},
+  author       = {Yannis G. Yatracos},
+  doi          = {10.1109/TIT.2025.3598172},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7715-7734},
+  month        = {11},
+  number       = {11},
+  pages        = {8654-8672},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Common randomness generation from finite compound sources aided by one-way communication},
+  title        = {Analyzing matching-based parameter estimators in black-box data generation settings},
   volume       = {71},
   year         = {2025},
 }
@@ -491,20 +491,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Several new classes of self-orthogonal minimal linear codes violating the Ashikhmin–Barg condition. <em>TIT</em>, <em>71</em>(10), 7699-7714. (<a href='https://doi.org/10.1109/TIT.2025.3600002'>www</a>)
+(2025). Universal rate-distortion-perception representations for lossy compression. <em>TIT</em>, <em>71</em>(11), 8633-8653. (<a href='https://doi.org/10.1109/TIT.2025.3584291'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Linear codes have attracted considerable attention in coding theory and cryptography due to their significant applications in secret sharing schemes, secure two-party computation, and Galois geometries, among others. As two special subclasses of linear codes, minimal linear codes and self-orthogonal linear codes are of particular interest. Constructing linear codes that possess both minimality and self-orthogonality is very interesting. The main purpose of this paper is to construct self-orthogonal minimal linear codes that violate the Ashikhmin-Barg (AB for short) condition over the finite field $\mathbb {F}_{p}$ . First, we present several classes of self-orthogonal minimal linear codes violating the AB condition over the finite field $\mathbb {F}_{2}$ and determine their weight distributions. Next, for any odd prime p, we construct two classes of self-orthogonal linear codes from p-ary functions, which contain some optimal or almost optimal codes. Finally, based on plateaued functions, we construct two classes of self-orthogonal linear codes that violate the AB condition. Their weight distributions are also provided. To the best of our knowledge, this paper is the first to investigate the constructions of linear codes that violate the AB condition and satisfy self-orthogonality.},
+  abstract     = {In the context of lossy compression, Blau and Michaeli adopt a mathematical notion of perceptual quality and define the information rate-distortion-perception function, generalizing the classical rate-distortion tradeoff. We consider the notion of universal representations in which one may fix a rate and an encoder then vary the decoder to achieve any point within a collection of distortion and perception constraints. We prove that the corresponding information-theoretic universal rate-distortion-perception function is operationally achievable in an approximate sense. Under MSE distortion, we show that the entire distortion-perception tradeoff of a Gaussian source can be achieved by a single encoder of the same rate asymptotically. We then characterize the achievable distortion-perception region for a fixed representation in the case of arbitrary distributions, and identify conditions under which the aforementioned results continue to hold approximately. Finally, we extend our notion of universality to the case where the rate is no longer fixed and additional bits can be sent at a second stage, generalizing the classical theory of successive refinement with perception constraints. This motivates the study of practical constructions that are approximately universal across the RDP tradeoff, thereby alleviating the need to design a new encoder for each objective. We provide experimental results on MNIST and SVHN suggesting that on image compression tasks, the operational tradeoffs achieved by machine learning models with a fixed encoder suffer only a small penalty when compared to their variable encoder counterparts.},
   archive      = {J_TIT},
-  author       = {Wengang Jin and Kangquan Li and Longjiang Qu},
-  doi          = {10.1109/TIT.2025.3600002},
+  author       = {George Zhang and Jingjing Qian and Jun Chen and Ashish Khisti},
+  doi          = {10.1109/TIT.2025.3584291},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7699-7714},
+  month        = {11},
+  number       = {11},
+  pages        = {8633-8653},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Several new classes of self-orthogonal minimal linear codes violating the Ashikhmin–Barg condition},
+  title        = {Universal rate-distortion-perception representations for lossy compression},
   volume       = {71},
   year         = {2025},
 }
@@ -512,20 +512,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Improved decoding algorithms for MDS and almost-MDS codes from twisted GRS codes. <em>TIT</em>, <em>71</em>(10), 7688-7698. (<a href='https://doi.org/10.1109/TIT.2025.3594174'>www</a>)
+(2025). Regularized over-parametrized neural networks learned by gradient descent can generalize well. <em>TIT</em>, <em>71</em>(11), 8613-8632. (<a href='https://doi.org/10.1109/TIT.2025.3533216'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this paper, firstly, we study decoding of a general class of twisted generalized Reed-Solomon (TGRS) codes and provide a precise characterization of the key equation for TGRS codes and propose a decoding algorithm. Secondly, we further study decoding of almost-MDS TGRS codes and provide a decoding algorithm. These two decoding algorithms are more efficient in terms of performance compared with the decoding algorithms presented in [Sun et al., IEEE-TIT, 2024] and [Sui et al., IEEE-TIT, 2023] respectively. Moreover, these two optimized decoding algorithms can be applied to the decoding of a more general class of twisted Goppa codes.},
+  abstract     = {Estimation of univariate regression function by a neural network with one hidden layer is considered, where the weight vector is determined by applying gradient descent to a regularized empirical $L_{2}$ risk. Here the number of hidden neurons is allowed to be much larger than the sample size. It is shown that the estimate nevertheless generalizes well in case that the Fourier transform of the regression function decays suitably fast, and that in this case over-parametrization leads to a particular good rate of convergence.},
   archive      = {J_TIT},
-  author       = {Guodong Wang and Hongwei Liu and Jinquan Luo},
-  doi          = {10.1109/TIT.2025.3594174},
+  author       = {Michael Kohler and Adam Krzyżak},
+  doi          = {10.1109/TIT.2025.3533216},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7688-7698},
+  month        = {11},
+  number       = {11},
+  pages        = {8613-8632},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Improved decoding algorithms for MDS and almost-MDS codes from twisted GRS codes},
+  title        = {Regularized over-parametrized neural networks learned by gradient descent can generalize well},
   volume       = {71},
   year         = {2025},
 }
@@ -533,20 +533,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The dimension and bose distance of certain primitive BCH codes. <em>TIT</em>, <em>71</em>(10), 7670-7687. (<a href='https://doi.org/10.1109/TIT.2025.3587496'>www</a>)
+(2025). Quantum relay channels. <em>TIT</em>, <em>71</em>(11), 8595-8612. (<a href='https://doi.org/10.1109/TIT.2025.3613067'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Bose-Ray-Chaudhuri-Hocquenghem (BCH) codes are a significant class of cyclic codes that play an important role in both theoretical research and practical applications. Their strong error-correcting abilities and efficient encoding and decoding methods make BCH codes widely applicable in various areas, including communication systems, data storage devices, and consumer electronics. Although BCH codes have been extensively studied, the parameters of BCH codes are not known in general. Let q be a prime power and m be a positive integer. Denote by ${\mathcal {C}}_{\left ({{q,m,\delta)}}\right)}$ the narrow-sense primitive BCH code with length $q^{m}-1$ and designed distance $\delta $ . As of now, the dimensions of ${\mathcal {C}}_{(q,m,\delta)}$ are fully understood only for $m \leq 2$ . For $m \geq 4$ , the dimensions of ${\mathcal {C}}_{(q,m,\delta)}$ are known only for the range $2 \leq \delta \leq q^{\lfloor (m+1)/2 \rfloor +1}$ and for a limited number of special cases. In this paper, we determined the dimension and Bose distance of ${\mathcal {C}}_{(q,m,\delta)}$ for $m\geq 4$ and $\delta \in [2, q^{\lfloor (2m-1)/{3}\rfloor +1}] $ . Additionally, we have also extended our results to primitive BCH codes that are not necessarily narrow-sense.},
+  abstract     = {Communication over a fully quantum relay channel is considered. We establish three bounds based on different coding strategies, i.e., partial decode-forward, measure-forward, and assist-forward. Using the partial decode-forward strategy, the relay decodes part of the information, while the other part is decoded without the relay’s help. The result by Savov et al. (2012) for a classical-quantum relay channel is obtained as a special case. Based on our partial decode-forward bound, the capacity is determined for Hadamard relay channels. In the measure-forward coding scheme, the relay performs a sequence of measurements and then sends a compressed representation of the measurement outcome to the destination receiver. The measure-forward strategy can be viewed as a generalization of the classical compress-forward bound. At last, we consider quantum relay channels with orthogonal receiver components. The assist-forward bound is based on a new approach, whereby the transmitter sends the message to the relay and simultaneously generates entanglement assistance between the relay and the destination receiver. Subsequently, the relay can transmit the message to the destination receiver with rate-limited entanglement assistance.},
   archive      = {J_TIT},
-  author       = {Run Zheng and Nung-Sing Sze and Zejun Huang},
-  doi          = {10.1109/TIT.2025.3587496},
+  author       = {Uzi Pereg},
+  doi          = {10.1109/TIT.2025.3613067},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7670-7687},
+  month        = {11},
+  number       = {11},
+  pages        = {8595-8612},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {The dimension and bose distance of certain primitive BCH codes},
+  title        = {Quantum relay channels},
   volume       = {71},
   year         = {2025},
 }
@@ -554,20 +554,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Classical codes and quantum codes involving the σ inner product. <em>TIT</em>, <em>71</em>(10), 7649-7669. (<a href='https://doi.org/10.1109/TIT.2025.3594472'>www</a>)
+(2025). Tight one-shot analysis for convex splitting with applications in quantum information theory. <em>TIT</em>, <em>71</em>(11), 8573-8594. (<a href='https://doi.org/10.1109/TIT.2025.3612051'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In 2019, Carlet et al. introduced the concept of $\sigma $ duals of linear codes involving the $\sigma $ inner product, which generalizes the Euclidean, Hermitian and $\ell $ -Galois cases. This paper focuses on constructing new and improved classical codes and quantum codes within the framework of the $\sigma $ inner product. We derive some general properties of linear codes, including matrix-product (MP) codes, with respect to the $\sigma $ inner product. We develop general methods and design effective routes involving certain optimization problems for constructing $\sigma $ self-orthogonal (SO) and $\sigma $ dual-containing (DC) MP codes. Our schemes efficiently generate numerous such codes with new or optimal parameters. We establish the $\sigma $ construction of quantum stabilizer codes from classical codes. We propose a unified method for constructing two general classes of entanglement-assisted quantum error-correcting codes (EAQECCs) based on the $\sigma $ hulls of general linear codes. This further yields six types of EAQECCs with flexible parameters based on propagation rules using MP codes under the Euclidean and Hermitian cases. Compared to the best-known ternary EAQECCs, we obtain 17 new ones and 13 of them have improved parameters. Finally, we present two infinite families of q-ary EAQECCs with lengths $(q^{2}-1)(q+2)$ and $q^{2}(q+2)$ , respectively. These families include many q-ary QECCs that are not only new according to Grassl’s online database but also surpass those listed in Edel’s online database.},
+  abstract     = {Convex splitting is a powerful technique in quantum information theory used in proving the achievability of various information-processing protocols such as quantum state redistribution and quantum network channel coding. In this work, we establish a one-shot error exponent and a one-shot exponential strong converse for convex splitting with trace distance as an error criterion. Our error exponent (resp. strong converse exponent) is positive if and only if the rate is in (resp. outside) the achievable region. This leads to new one-shot exponent results in various tasks such as communication over quantum wiretap channels, secret key distillation, one-way quantum message compression, quantum measurement simulation, and quantum channel coding with side information at the transmitter. We also establish a near-optimal one-shot characterization of the sample complexity for convex splitting, which yields matched second-order asymptotics. This then leads to stronger one-shot analysis in many quantum information-theoretic tasks.},
   archive      = {J_TIT},
-  author       = {Meng Cao and Yang Li and Shixin Zhu},
-  doi          = {10.1109/TIT.2025.3594472},
+  author       = {Hao-Chung Cheng and Li Gao},
+  doi          = {10.1109/TIT.2025.3612051},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7649-7669},
+  month        = {11},
+  number       = {11},
+  pages        = {8573-8594},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Classical codes and quantum codes involving the σ inner product},
+  title        = {Tight one-shot analysis for convex splitting with applications in quantum information theory},
   volume       = {71},
   year         = {2025},
 }
@@ -575,20 +575,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Difficulties constructing lattices with exponential kissing number from codes. <em>TIT</em>, <em>71</em>(10), 7644-7648. (<a href='https://doi.org/10.1109/TIT.2025.3593195'>www</a>)
+(2025). Quantum advantage in zero-error function computation with side information. <em>TIT</em>, <em>71</em>(11), 8551-8572. (<a href='https://doi.org/10.1109/TIT.2025.3594298'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this note, we present examples showing that several natural ways of constructing lattices from error-correcting codes do not in general yield a correspondence between minimum-weight non-zero codewords and shortest non-zero lattice vectors. From these examples, we conclude that the main results in two works of Vlăduţ (Moscow J. Comb. Number Th., 2019 and Discrete Comput. Geom., 2021) on constructing lattices with exponential kissing number from error-correcting codes are invalid. A more recent preprint (arXiv, 2024) that Vlăduţ posted after an initial version of this work was made public is also invalid. Exhibiting a family of lattices with exponential kissing number therefore remains an open problem (as of July 2025).},
+  abstract     = {We consider the problem of zero-error function computation with side information. Alice and Bob have correlated sources $X,Y$ with joint p.m.f. $p_{XY}(\cdot , \cdot)$ . Bob wants to calculate $f(X,Y)$ with zero error. Alice encodes m-length blocks $(m \geq 1)$ of her observations to Bob over error-free channels, which can be classical or quantum. We consider two classical settings. (i) Alice communicates via a fixed length code (FLC), and (ii) Alice communicates via a variable length code (VLC). In the FLC scenario, the minimum communication rate depends on the asymptotic growth of the chromatic number of an appropriately defined m-instance “confusion graph” $G^{(m)}$ . In the VLC scenario, the corresponding rate is characterized by the asymptotics of the chromatic entropy of $G^{(m)}$ . In the quantum setting, we only consider fixed length codes; the corresponding rate depends on the asymptotic growth of the orthogonal rank of the complement of $G^{(m)}$ . The behavior of the communication rates depends critically on $G^{(m)}$ , which is shown to be sandwiched between $G^{\boxtimes m}$ (m-times strong product) and $G^{\lor m}$ (m-times OR product) respectively. Our work presents necessary and sufficient conditions on the function $f(\cdot , \cdot)$ and joint p.m.f. $p_{XY}(\cdot ,\cdot)$ such that $G^{(m)}$ equals either $G^{\boxtimes m}$ or $G^{\lor m}$ . Our work explores the multitude of possible behaviors of the quantum and classical (FLC/VLC) rates in the single-instance case and the asymptotic (in m) case for several classes of confusion graphs. We show that there exist confusion graphs for which the quantum rate is exponentially smaller than the FLC and VLC rates. With respect to FLCs, we show, e.g., that the quantum advantage may exist in the single-instance but disappear in the asymptotic rate. With respect to VLCs, we show that there are scenarios where the VLC rate can be smaller than the quantum rate and vice versa.},
   archive      = {J_TIT},
-  author       = {Huck Bennett and Alexander Golovnev and Noah Stephens-Davidowitz},
-  doi          = {10.1109/TIT.2025.3593195},
+  author       = {Ruoyu Meng and Aditya Ramamoorthy},
+  doi          = {10.1109/TIT.2025.3594298},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7644-7648},
+  month        = {11},
+  number       = {11},
+  pages        = {8551-8572},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Difficulties constructing lattices with exponential kissing number from codes},
+  title        = {Quantum advantage in zero-error function computation with side information},
   volume       = {71},
   year         = {2025},
 }
@@ -596,20 +596,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). When can an expander code correct Ω(n) errors in o(n) time?. <em>TIT</em>, <em>71</em>(10), 7626-7643. (<a href='https://doi.org/10.1109/TIT.2025.3586842'>www</a>)
+(2025). Simultaneous superadditivity of the direct and complementary channel capacities. <em>TIT</em>, <em>71</em>(11), 8542-8550. (<a href='https://doi.org/10.1109/TIT.2025.3602136'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Tanner codes are error-correcting codes built from a bipartite graph G and a short inner code $C_{0}$ . Expander codes are a special type of Tanner code, where the graph is highly interconnected, ensuring stronger error correction capabilities. This paper is motivated by the following natural and fundamental problem in decoding expander codes: What are the sufficient and necessary conditions that $\delta \in [{0,1}]$ and $d_{0}\in \mathbb {N}$ must satisfy, so that every bipartite expander G with vertex expansion ratio $\delta $ and every linear inner code $C_{0}$ with minimum distance $d_{0}$ together define an expander code that corrects $\Omega (n)$ errors in $O(n)$ time? For $C_{0}$ being the parity-check code, the landmark work of Sipser and Spielman (IEEE-TIT’96) showed that $\delta \gt 3/4$ is sufficient; later, Viderman (ACM-TOCT’13) improved this to $\delta \gt 2/3-\Omega (1)$ and he also showed that $\delta \gt 1/2$ is necessary. For general linear code $C_{0}$ , the previously best-known result of Dowling and Gao (IEEE-TIT’18) showed that $d_{0}=\Omega (c\delta ^{-2})$ is sufficient, where c is the left-degree of G. We present a near-optimal solution to the above problem for general $C_{0}$ by showing that $\delta d_{0}\gt 3$ is sufficient and $\delta d_{0}\gt 1$ is necessary, thereby significantly improving Dowling-Gao’s result. To prove the sufficient condition, we present two novel algorithms for decoding arbitrary expander codes with $\delta d_{0}\gt 3$ , where the first algorithm is deterministic, and the second one is randomized and has a larger decoding radius. To prove the necessary condition, we generalize the aforementioned necessary result of Viderman, and construct for every pair of $\delta,d_{0}$ with $\delta d_{0}=1$ , an expander code with constant distance, that only corrects a constant number of errors.},
+  abstract     = {Quantum communication channels differ from their classical counterparts because their capacities can be superadditive. The principle of monogamy of entanglement suggests that superadditive improvements in the transmission capacity of a channel should reduce the amount of information loss to the environment. We challenge this intuition by demonstrating that the coherent and private information of a channel and its complement can be simultaneously superadditive for arbitrarily many channel uses. To quantify the limits of this effect, we consider the notion of max (resp. total) private information of a channel, which represents the maximum (resp. sum) of the private information of the channel itself and its complement, and study its relationship with the coherent information of the individual direct and complementary channels. We show that these quantities can obey different interleaving sequences of inequalities for a varying number of channel uses.},
   archive      = {J_TIT},
-  author       = {Yuanting Shen and Chong Shangguan and Minghui Ouyang and Kuan Cheng},
-  doi          = {10.1109/TIT.2025.3586842},
+  author       = {Satvik Singh and Sergii Strelchuk},
+  doi          = {10.1109/TIT.2025.3602136},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7626-7643},
+  month        = {11},
+  number       = {11},
+  pages        = {8542-8550},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {When can an expander code correct Ω(n) errors in o(n) time?},
+  title        = {Simultaneous superadditivity of the direct and complementary channel capacities},
   volume       = {71},
   year         = {2025},
 }
@@ -617,20 +617,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Vers: Coded computing system with distributed encoding. <em>TIT</em>, <em>71</em>(10), 7609-7625. (<a href='https://doi.org/10.1109/TIT.2025.3591523'>www</a>)
+(2025). Model reduction for quantum systems: Discrete-time quantum walks and open markov dynamics. <em>TIT</em>, <em>71</em>(11), 8524-8541. (<a href='https://doi.org/10.1109/TIT.2025.3601118'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Coded computing has proved to be useful in distributed computing, and has addressed challenges such as straggler workers. We have observed that almost all coded computing systems studied so far consider a setup of one leader and some workers. However, recently emerging technologies such as blockchain, internet of things, and federated learning introduce new requirements for coded computing systems. In these systems, data is generated (and probably stored) in a distributed manner, so central encoding/decoding by a leader is not feasible and scalable. This paper presents a multi-leader distributed coded computing system that consists of $k\in \mathbb {N}$ data owners and $N\in \mathbb {N}$ workers, where data owners employ workers to do some computations on their data, as specified by a target function f of degree $d\in \mathbb {N}$ . As there is no central encoder, workers perform encoding themselves, prior to computation phase. The challenge in this system is the presence of adversarial data owners that do not know the data of honest data owners but cause discrepancies by sending different versions of data to different workers, which is detrimental to local encodings in workers. There are at most $\beta \in \mathbb {N}$ adversarial data owners, and each distributes at most $v\in \mathbb {N}$ different versions of data. Since the adversaries and their possibly colluded behavior are not known to workers and honest data owners, workers compute tags of their received data, in addition to their main computational task, and send them to data owners in order to help them in decoding. We introduce a tag function that allows data owners to partition workers into sets that previously had received the same data from all data owners. Then, we characterize the fundamental limit of this multi-leader distributed coded computing system, denoted by $t^{*}$ , which is the minimum number of workers whose work can be used to correctly calculate the desired function of data of honest data owners. We show that $t^{*}=v^{\beta }d(K-1)+1$ , and present converse and achievable proofs.},
+  abstract     = {A general approach to obtain reduced models for a wide class of discrete-time quantum systems is proposed. The obtained models not only reproduce exactly the output of a given quantum model, but are also guaranteed to satisfy physical constraints, namely complete positivity and preservation of total probability. A fundamental framework for exact model reduction of quantum systems is constructed leveraging on algebraic methods, as well as novel results on quantum conditional expectations in finite-dimensions. The proposed reduction algorithm is illustrated and tested on prototypical examples, including the quantum walk realizing Grover’s algorithm.},
   archive      = {J_TIT},
-  author       = {Nastaran Abadi Khooshemehr and Mohammad Ali Maddah-Ali},
-  doi          = {10.1109/TIT.2025.3591523},
+  author       = {Tommaso Grigoletto and Francesco Ticozzi},
+  doi          = {10.1109/TIT.2025.3601118},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7609-7625},
+  month        = {11},
+  number       = {11},
+  pages        = {8524-8541},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Vers: Coded computing system with distributed encoding},
+  title        = {Model reduction for quantum systems: Discrete-time quantum walks and open markov dynamics},
   volume       = {71},
   year         = {2025},
 }
@@ -638,20 +638,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The intersection of two generalized reed-solomon codes. <em>TIT</em>, <em>71</em>(10), 7595-7608. (<a href='https://doi.org/10.1109/TIT.2025.3591269'>www</a>)
+(2025). Beyond-diagonal RIS in multiuser MIMO: Graph theoretic modeling and optimal architectures with low complexity. <em>TIT</em>, <em>71</em>(11), 8506-8523. (<a href='https://doi.org/10.1109/TIT.2025.3609435'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this paper, we show that, algebraically, the intersection of two GRS codes is a direct sum of some like-generalized Reed-Solomon codes, and that the dimension of such code can be given via the dimensions of the GRS codes and the degrees of some relevant polynomials. We also provide a necessary and sufficient condition for this intersection to be a GRS code. Our results naturally extend the main results on the hulls of GRS codes from existing literature. Particularly, we deterministically construct two GRS codes with given code length, dimensions, and intersection dimension. As an application of our main results, we derive the algebraic structure of the hull of a GRS code and exhibit a necessary and sufficient condition for the hull to be a GRS code. In addition, we discuss when a GRS code is self-orthogonal or dual-containing and when the hull of an RS code is again an RS code. Finally, as an application, we resolve the problem of explicit construction of MDS entanglement-assisted quantum error-correcting codes (EAQECCs) from classical codes for $n \leq q$ . Several examples are included to illustrate our results.},
+  abstract     = {Reconfigurable intelligent surfaces (RIS) is regarded as a key enabler of wave/analog-domain beamforming, processing, and computing in future wireless communication systems. Recently, Beyond-Diagonal RIS (BD-RIS) has been proposed as a generalization of conventional RIS, offering enhanced design flexibility thanks to the presence of tunable impedances that connect RIS elements. However, increased interconnections lead to high circuit complexity, which poses a significant practical challenge. In this paper, we address the fundamental open question: “What is the class of BD-RIS architectures that achieves the optimal performance in a RIS-aided multiuser multi-input multi-output (MIMO) system?” By modeling BD-RIS architectures using graph theory, we identify a class of BD-RIS architectures that achieves the optimal performance—matching that of fully-connected RIS—while maintaining low circuit complexity. Our result holds for a broad class of performance metrics, including the commonly used sum channel gain/sum-rate/energy efficiency maximization, transmit power minimization, and the information-theoretic capacity region. The number of tunable impedances in the proposed class is $\mathcal {O}(N_{I}\min \{D,N_{I}/2\})$ , where $N_{I}$ denotes the number of RIS elements and $D$ is the degree of freedom of the multiuser MIMO channel, i.e., the minimum between the number of transmit antennas and the total number of received antennas across all users. Since $D$ is much smaller than $N_{I}$ in practice, the complexity scales as $\mathcal {O}(N_{I}D)$ , which is substantially lower than the $\mathcal {O}(N_{I}^{2})$ complexity of fully-connected RIS. We further introduce two novel BD-RIS architectures—band-connected RIS and stem-connected RIS—and show that they belong to the optimal architecture class under certain conditions. Simulation results validate the optimality and enhanced performance-complexity tradeoff of our proposed architectures and demonstrate the significant loss and limitations incurred by conventional RIS compared to BD-RIS in multiuser MIMO settings.},
   archive      = {J_TIT},
-  author       = {Jingge Liu and Bocong Chen},
-  doi          = {10.1109/TIT.2025.3591269},
+  author       = {Zheyu Wu and Bruno Clerckx},
+  doi          = {10.1109/TIT.2025.3609435},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7595-7608},
+  month        = {11},
+  number       = {11},
+  pages        = {8506-8523},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {The intersection of two generalized reed-solomon codes},
+  title        = {Beyond-diagonal RIS in multiuser MIMO: Graph theoretic modeling and optimal architectures with low complexity},
   volume       = {71},
   year         = {2025},
 }
@@ -659,20 +659,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Higher grassmann codes III: Quantum variants. <em>TIT</em>, <em>71</em>(10), 7585-7594. (<a href='https://doi.org/10.1109/TIT.2025.3596479'>www</a>)
+(2025). Rank analysis and its applications for quasi-cyclic low-density parity-check codes. <em>TIT</em>, <em>71</em>(11), 8477-8505. (<a href='https://doi.org/10.1109/TIT.2025.3611129'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We show that it is possible to break up Higher Grassmann codes we constructed in earlier work to a sequence of affine Reed-Muller codes so that various operations can be reduced to performing these operations for the component affine Reed-Muller codes. Then we consider quantum codes produced from a pair of Higher Grassmann codes and discuss also their implementation aspects in detail.},
+  abstract     = {In this paper, we develop a new approach for rank analysis of parity-check matrices for quasi-cyclic low-density parity-check codes based on the associated polynomials of circulant matrices, applicable to general finite fields and arbitrary circulant sizes. Some formulas on the rank for parity-check matrices with one, two, and three row-blocks are first derived. For the general case with arbitrary numbers of row-blocks, lower and upper bounds on the rank are presented, and these bounds can be combined to give the exact rank result under certain conditions. We also investigate the effect on the rank by changing the circulant size. Furthermore, we study the relations between the rank of the masked matrix and that of the masking matrix, which can be used to predict the rank of the parity-check matrix after masking. The obtained rank analysis results are then applied to several classes of existing algebraically constructed parity-check matrices, along with their masked matrices. Finally, we demonstrate how rank analysis can be used in the code design procedure.},
   archive      = {J_TIT},
-  author       = {Mahir Bilen Can and Roy Joshua},
-  doi          = {10.1109/TIT.2025.3596479},
+  author       = {Po-Chun Yang and Chung-Hsuan Wang and Chi-chao Chao},
+  doi          = {10.1109/TIT.2025.3611129},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7585-7594},
+  month        = {11},
+  number       = {11},
+  pages        = {8477-8505},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Higher grassmann codes III: Quantum variants},
+  title        = {Rank analysis and its applications for quasi-cyclic low-density parity-check codes},
   volume       = {71},
   year         = {2025},
 }
@@ -680,20 +680,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Maximum likelihood estimation of optimal receiver operating characteristic curves from likelihood ratio observations. <em>TIT</em>, <em>71</em>(10), 7568-7584. (<a href='https://doi.org/10.1109/TIT.2025.3595488'>www</a>)
+(2025). Wei’s duality for generalized poset weight over galois rings. <em>TIT</em>, <em>71</em>(11), 8463-8476. (<a href='https://doi.org/10.1109/TIT.2025.3603973'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The optimal receiver operating characteristic (ROC) curve, giving the maximum probability of detection as a function of the probability of false alarm, is a key information-theoretic indicator of the difficulty of a binary hypothesis testing problem (BHT). It is well known that the optimal ROC curve for a given BHT, corresponding to the likelihood ratio test, is determined by the probability distribution of the observed data under each of the two hypotheses. In some cases, these two distributions may be unknown or computationally intractable, but independent samples of the likelihood ratio can be observed. This raises the problem of estimating the optimal ROC for a BHT from such samples. The maximum likelihood estimator of the optimal ROC curve is derived, and it is shown to converge almost surely to the true optimal ROC curve in the Lévy metric, as the number of observations tends to infinity. Finite sample size bounds are obtained for three other estimators: the classical empirical estimator, based on estimating the two types of error probabilities from two separate sets of samples, and two variations of the maximum likelihood estimator called the split estimator and fused estimator, respectively. The maximum likelihood estimator is observed in simulation experiments to be considerably more accurate than the empirical estimator, especially when the number of samples obtained under one of the two hypotheses is small. The area under the maximum likelihood estimator is derived; it is a consistent estimator of the area under the true optimal ROC curve.},
+  abstract     = {Wei’s duality theorem, proposed by Wei in 1991, initially deals with the generalized Hamming weight (GHW) of linear codes over finite fields. Specifically, the Wei’s duality theorem describes the relationship between the GHWs of a linear code and those of its dual code. The GHWs of linear codes are important parameters for measuring the security of codes in certain cryptographic applications. In this paper, we generalize the concept of GHW of linear codes over finite fields to the generalized poset weight (GPW) of linear codes over Galois rings. We also present an extension of GPW, abbreviated as EGPW. Similar to the GHWs, we derive two forms of the Wei’s duality theorem with respect to GPWs and EGPWs. In conclusion, we demonstrate that the GPWs of linear codes serve as indicators for assessing the security of information transmission within the wire-tap channel of type II.},
   archive      = {J_TIT},
-  author       = {Bruce Hajek and Xiaohan Kang},
-  doi          = {10.1109/TIT.2025.3595488},
+  author       = {Ying Wang and Xiwang Cao and Gaojun Luo},
+  doi          = {10.1109/TIT.2025.3603973},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7568-7584},
+  month        = {11},
+  number       = {11},
+  pages        = {8463-8476},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Maximum likelihood estimation of optimal receiver operating characteristic curves from likelihood ratio observations},
+  title        = {Wei’s duality for generalized poset weight over galois rings},
   volume       = {71},
   year         = {2025},
 }
@@ -701,20 +701,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Ensemble-tight second-order asymptotics and exponents for guessing-based decoding with abandonment. <em>TIT</em>, <em>71</em>(10), 7555-7567. (<a href='https://doi.org/10.1109/TIT.2025.3597405'>www</a>)
+(2025). Coding on dual-parameter barrier channels. <em>TIT</em>, <em>71</em>(11), 8447-8462. (<a href='https://doi.org/10.1109/TIT.2025.3613452'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper considers guessing-based decoders with abandonment for discrete memoryless channels in which all codewords have the same composition. This class of decoders rank-orders all input sequences in the codebook’s composition class from “closest” to “farthest” from the channel output and then queries them sequentially in that order for codebook membership. Decoding terminates when a codeword is encountered or when a predetermined number of guesses is reached, and decoding is abandoned. We derive ensemble-tight first-order asymptotics for the code rate and abandonment rate, which shows that guessing-based decoding is more efficient than conventional testing-based decoding whenever the capacity of the channel exceeds half the entropy of the capacity-achieving input distribution. The main focus of this paper is on refined asymptotics, specifically, second-order asymptotics, error exponents, and strong converse exponents. The optimal second-order region is characterized in terms of the minimum of the second-order code and abandonment rates. The error (resp. strong converse) exponent is characterized in terms of the minimum (resp. maximum) of the usual channel coding exponent and an abandonment exponent, which turns out to be a special case of the exponent of conditional almost-lossless source coding.},
+  abstract     = {This paper studies coding on channels with the barrier property: only errors to and from a special barrier symbol are possible. This model is motivated by information systems that have heterogeneous symbol structure, not admitting the usual multi-bit scaling principle of representation levels. This work is the first that addresses a barrier channel with separate parameters for the transitions into and out of the barrier symbol. Earlier work addressed special-case single-parameter models, and focused primarily on the worst-case coding performance. Our contributions for the general dual-parameter model include derivation of the channel capacity, guaranteed-correction conditions and code-size bounds, a code construction method, and several decoders that correct beyond the guaranteed worst-case capability. A key structural feature of our construction method enables reduction of the decoding problem to a cooperation between two decoders for codes in the Hamming metric.},
   archive      = {J_TIT},
-  author       = {Vincent Y. F. Tan and Hamdi Joudeh},
-  doi          = {10.1109/TIT.2025.3597405},
+  author       = {Yuval Ben-Hur and Yuval Cassuto},
+  doi          = {10.1109/TIT.2025.3613452},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7555-7567},
+  month        = {11},
+  number       = {11},
+  pages        = {8447-8462},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Ensemble-tight second-order asymptotics and exponents for guessing-based decoding with abandonment},
+  title        = {Coding on dual-parameter barrier channels},
   volume       = {71},
   year         = {2025},
 }
@@ -722,20 +722,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Properties of algorithmic information distance. <em>TIT</em>, <em>71</em>(10), 7540-7554. (<a href='https://doi.org/10.1109/TIT.2025.3597092'>www</a>)
+(2025). New constructions of q-ary MDS array codes derived from fq[x]/xm + λ and their efficient erasure Encoding/Decoding. <em>TIT</em>, <em>71</em>(11), 8429-8446. (<a href='https://doi.org/10.1109/TIT.2025.3610497'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The domain-independent universal Normalized Information Distance based on Kolmogorov complexity has been (in approximate form) successfully applied to a variety of difficult clustering problems. In this paper we investigate theoretical properties of the un-normalized algorithmic information distance $d_{K}$ . The main question we are asking in this work is what properties this curious distance has, besides being a metric. We show that many (in)finite-dimensional spaces can(not) be isometrically scale-embedded into the space of finite strings with metric $d_{K}$ . We also show that $d_{K}$ is not an Euclidean distance, but any finite set of points in Euclidean space can be scale-embedded into $(\{0,1\}^{*},d_{K})$ . A major contribution is the development of the necessary framework and tools for finding more (interesting) properties of $d_{K}$ in future, and to state several open problems.},
+  abstract     = {The q-ary maximum distance separable (MDS) array codes, especially $q=2^{v}$ , have important applications in the storage systems to prevent data loss. At now, almost all algebraic constructions of such codes are carried out over the quotient ring $\mathbb {R}_{m}=\mathbb {F}_{q}[x]/\langle x^{m}+1\rangle $ or its subring $\mathbb {F}_{q}[x]/\langle x^{m-1}+x^{m-2}+\cdots +1\rangle $ . In this paper, we consider the construction of MDS array codes derived form $\mathbb {R}_{m,\lambda }=\mathbb {F}_{q}[x]/\langle x^{m}+\lambda \rangle $ , where $\lambda \in \mathbb {F}^{*}_{q}=\mathbb {F}_{q}\backslash \{0\}$ , ${\mathrm { gcd}}(m,q)=1$ . By giving $\lambda $ -GCD Constraint of polynomials and the punctured $\lambda $ -twisted circulant matrices, a generic construction and its extensions of such codes are presented. Under this framework, four new explicit constructions are also provided. Specifically, some low-density MDS array codes are obtained in Explicit Constructions I and I ${}^{\mathbf {'}}$ . Explicit Constructions II and III provide long MDS array codes that can be applied in the large-scale storage systems. Explicit Construction IV gives MDS array codes both with the optimal repair bandwidth and the lowest update complexity, whose sub-packetization level is smaller than that of codes in (Li et al., 2024). In addition, by the LU factorization, a decoding method for erasures is obtained. For long codes, the syndromes can be computed fast. When the erased number $\rho \leq 3$ (the most common errors in the storage systems), its computational complexity is asymptotically optimal. By an example, the new encoder possesses fewer exclusive ORs per data bit than that of MDS array codes constructed over $\mathbb {R}_{m}$ in (Lv et al., 2023).},
   archive      = {J_TIT},
-  author       = {Marcus Hutter},
-  doi          = {10.1109/TIT.2025.3597092},
+  author       = {Jingjie Lv and Hongwei Zhu and Weijun Fang and Hanxu Hou and Shu-Tao Xia},
+  doi          = {10.1109/TIT.2025.3610497},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7540-7554},
+  month        = {11},
+  number       = {11},
+  pages        = {8429-8446},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Properties of algorithmic information distance},
+  title        = {New constructions of q-ary MDS array codes derived from fq[x]/xm + λ and their efficient erasure Encoding/Decoding},
   volume       = {71},
   year         = {2025},
 }
@@ -743,20 +743,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Distribution-preserving integrated sensing and communication. <em>TIT</em>, <em>71</em>(10), 7518-7539. (<a href='https://doi.org/10.1109/TIT.2025.3592995'>www</a>)
+(2025). On (ℒ, 𝒫)-twisted generalized reed-solomon codes. <em>TIT</em>, <em>71</em>(11), 8414-8428. (<a href='https://doi.org/10.1109/TIT.2025.3610149'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Distribution-preserving integrated sensing and communication is investigated in this paper. In addition to the distortion constraint, we impose another constraint on the distance between the reconstructed sequence distribution and the original state distribution to force the system to preserve the statistical property of the channel states. An inner bound of the distribution-preserving capacity-distortion region is provided with some capacity region results under special cases. Furthermore, we consider the case where the system aims to keep the reconstructed sequence secret from an eavesdropper who also observes the channel output and receives rate-limited side information about the estimator. An inner bound of the tradeoff region and a capacity-achieving special case are presented. In addition, we provide some numerical examples to illustrate the tradeoff between the communication rate, distortion, and the preservation of the distribution.},
+  abstract     = {Twisted generalized Reed-Solomon (TGRS) codes are an extension of generalized Reed-Solomon (GRS) codes, and have recently attracted significant attention due to their potential for constructing non-GRS MDS codes. This paper presents an in-depth and comprehensive investigation of TGRS codes in their most general form, allowing arbitrary twists at arbitrary positions. First, we introduce a more precise definition of TGRS codes, namely $(\mathcal {L},\mathcal {P})$ -TGRS codes, and provide a concise necessary and sufficient condition for them to be MDS, thereby generalizing previous results. Second, we explicitly characterize the parity check matrices of $(\mathcal {L},\mathcal {P})$ -TGRS codes, and provide a sufficient condition for them to be self-dual. Finally, we investigate the non-GRS properties of $(\mathcal {L},\mathcal {P})$ -TGRS codes via two approaches: the dimensions of Schur squares and combinatorial techniques. As a result, we obtain an infinite family of non-GRS MDS codes.},
   archive      = {J_TIT},
-  author       = {Yiqi Chen and Tobias J. Oechtering and Holger Boche and Mikael Skoglund and Yuan Luo},
-  doi          = {10.1109/TIT.2025.3592995},
+  author       = {Zhao Hu and Liang Wang and Nian Li and Xiangyong Zeng and Xiaohu Tang},
+  doi          = {10.1109/TIT.2025.3610149},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7518-7539},
+  month        = {11},
+  number       = {11},
+  pages        = {8414-8428},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Distribution-preserving integrated sensing and communication},
+  title        = {On (ℒ, 𝒫)-twisted generalized reed-solomon codes},
   volume       = {71},
   year         = {2025},
 }
@@ -764,20 +764,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Low-SNR asymptotic capacity of two types of optical wireless channels under average-intensity constraints. <em>TIT</em>, <em>71</em>(10), 7504-7517. (<a href='https://doi.org/10.1109/TIT.2025.3593888'>www</a>)
+(2025). On secure aggregation with uncoded groupwise keys against user dropouts and user collusion. <em>TIT</em>, <em>71</em>(11), 8391-8413. (<a href='https://doi.org/10.1109/TIT.2025.3612951'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this paper, we study two types of optical wireless channels under average-intensity constraints. One is called the Gaussian optical intensity channel, where the channel output models the converted electrical current corrupted by additive white Gaussian noise. The other one is the Poisson optical intensity channel, where the channel output models the number of received photons whose arrival rates are corrupted by a dark current. When the average input intensity $\mathcal {E}$ is small, the capacity of the Gaussian optical intensity channel is shown to scale as $\mathcal {E}\sqrt {\frac {\log \frac {1}{\mathcal {E}}}{2}}$ , and the capacity of the Poisson optical intensity channel as $\mathcal {E}\log \log \frac {1}{\mathcal {E}}$ . This closes the gaps between previously-derived upper and lower bounds on the asymptotic capacity of these two types of channels.},
+  abstract     = {This paper studies information theoretic secure aggregation in federated learning, which involves $\mathsf K$ distributed nodes and a central server. For security, the server can only recover aggregated updates of locally trained models, without any other information about the local users’ data being leaked. The secure aggregation process typically consists of two phases: the key sharing phase and the model aggregation phase. In previous research, a constraint on keys known as “uncoded groupwise keys” was introduced, and we adopt this constraint during the key sharing phase, where each set of $\mathsf S$ -users shares an independent key. During the model aggregation phase, each user transmits its encrypted model results to the server. To tolerate user dropouts in secure aggregation (i.e., some users may not respond), where up to ${\mathsf K}-{\mathsf U}$ users may drop out and the identity of the surviving users is unpredictable in advance, at least two rounds of transmission are required in the model aggregation phase. In the first round, users send the masked models. Then, in the second round, based on the identity of the surviving users after the first round, these surviving users send additional messages that assist the server in decrypting the sum of the users’ trained models. Our goal is to minimize the number of transmissions in the two rounds. Additionally, we consider the potential impact of user collusion, where up to $\mathsf T$ users may collude with the server. This requires the transmissions to meet stricter security constraints, ensuring that the server cannot learn anything beyond the aggregated model updates, even if it colludes with any set of up to $\mathsf T$ users. For this more challenging problem, we propose schemes that ensure secure aggregation and achieve the capacity region when ${\mathsf S}\in \{2\} \cup [{\mathsf K}-{\mathsf U}+1:{\mathsf K}-{\mathsf T}]$ . Experimental results conducted on Tencent Cloud also show that the proposed secure aggregation schemes improve the model aggregation time compared to the benchmark scheme.},
   archive      = {J_TIT},
-  author       = {Longguang Li},
-  doi          = {10.1109/TIT.2025.3593888},
+  author       = {Ziting Zhang and Jiayu Liu and Kai Wan and Hua Sun and Mingyue Ji and Giuseppe Caire},
+  doi          = {10.1109/TIT.2025.3612951},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7504-7517},
+  month        = {11},
+  number       = {11},
+  pages        = {8391-8413},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Low-SNR asymptotic capacity of two types of optical wireless channels under average-intensity constraints},
+  title        = {On secure aggregation with uncoded groupwise keys against user dropouts and user collusion},
   volume       = {71},
   year         = {2025},
 }
@@ -785,20 +785,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Capacity bounds for broadcast channels with bidirectional conferencing decoders. <em>TIT</em>, <em>71</em>(10), 7484-7503. (<a href='https://doi.org/10.1109/TIT.2025.3594183'>www</a>)
+(2025). On the error correction of iterative bounded distance decoding of generalized LDPC codes. <em>TIT</em>, <em>71</em>(11), 8380-8390. (<a href='https://doi.org/10.1109/TIT.2025.3609965'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The two-user broadcast channel (BC) with receivers connected by bidirectional cooperation links of finite capacities, known as conferencing decoders, is considered. A novel capacity region outer bound is established based on multiple applications of the Csiszár-Körner identity. Achievable rate regions are derived by using Marton’s coding as the transmission scheme, together with different combinations of decode-and-forward and quantize-bin-and-forward strategies at the receivers. It is shown that the outer bound coincides with the achievable rate region for a new class of semi-deterministic BCs with degraded message sets; for this class of channels, one-round cooperation is sufficient to achieve the capacity. Capacity result is also derived for a class of more capable semi-deterministic BCs with both common and private messages and one-sided conferencing. For the Gaussian BC with conferencing decoders, if the noises at the decoders are perfectly correlated (i.e., the correlation is either 1 or −1), the new outer bound yields exact capacity region for two cases: 1) BC with degraded message sets; 2) BC with one-sided conferencing from the weaker receiver to the stronger receiver. When the noises have arbitrary correlation, the outer bound is shown to be within half a bit from the capacity region for these same two cases. Finally, for the general Gaussian BC, a one-sided cooperation scheme based on decode-and-forward from the stronger receiver to the weaker receiver is shown to achieve the capacity region to within $\frac {1}{2}\log \left ({{\frac {2}{1-|\lambda |}}}\right)$ bits, where $\lambda $ is the noise correlation. An interesting implication of these results is that for a Gaussian BC with perfectly negatively correlated noises and conferencing decoders with finite cooperation link capacities, it is possible to achieve a strictly positive rate using only an infinitesimal amount of transmit power.},
+  abstract     = {Consider an ensemble of regular generalized LDPC (GLDPC) codes and assume that the same component code is associated with each parity check node. To decode a GLDPC code from the ensemble, we use the bit flipping bounded distance decoding algorithm, which is an extension of the bit flipping algorithm for LDPC codes. Previous work has shown conditions, under which, for a typical code in the ensemble with blocklength sufficiently large, a positive constant fraction of worst case errors can be corrected. In this work we first show that these requirements can be relaxed for ensembles with small left degrees. While previous work on GLDPC codes has considered expander graph arguments, our analysis formulates a necessary condition that the Tanner graph needs to satisfy for a failure event and then shows that the probability of this event vanishes for a sufficiently large blocklength. We then extend the analysis to random error correction and derive a lower bound on the fraction of random errors that can be corrected asymptotically. We discuss the extension of our results to non-binary GLDPC codes and present numerical examples.},
   archive      = {J_TIT},
-  author       = {Reza K. Farsani and Wei Yu},
-  doi          = {10.1109/TIT.2025.3594183},
+  author       = {David Burshtein},
+  doi          = {10.1109/TIT.2025.3609965},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7484-7503},
+  month        = {11},
+  number       = {11},
+  pages        = {8380-8390},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Capacity bounds for broadcast channels with bidirectional conferencing decoders},
+  title        = {On the error correction of iterative bounded distance decoding of generalized LDPC codes},
   volume       = {71},
   year         = {2025},
 }
@@ -806,20 +806,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). On the second-order asymptotics of the hoeffding test and other divergence tests. <em>TIT</em>, <em>71</em>(10), 7459-7483. (<a href='https://doi.org/10.1109/TIT.2025.3588194'>www</a>)
+(2025). PAC codes with bounded-complexity sequential decoding: Pareto distribution and code design. <em>TIT</em>, <em>71</em>(11), 8368-8379. (<a href='https://doi.org/10.1109/TIT.2025.3608563'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Consider a composite hypothesis testing problem where the test has access to the null hypothesis P but not to the alternative hypothesis Q. The generalized likelihood-ratio test (GLRT) for this problem is the Hoeffding test, which accepts P if the Kullback-Leibler (KL) divergence between the empirical distribution of $Z^{n}$ and P is below some threshold. This paper proposes a generalization of the Hoeffding test, termed divergence test, for which the KL divergence is replaced by an arbitrary divergence. For this test, the first and second-order terms of the type-II error probability for a fixed type-I error probability are characterized and compared with the error terms of the Neyman-Pearson test, which is the optimal test when both P and Q are known. It is demonstrated that, irrespective of the divergence, divergence tests achieve the first-order term of the Neyman-Pearson test. In contrast, the second-order term of divergence tests is strictly worse than that of the Neyman-Pearson test. It is further demonstrated that divergence tests with an invariant divergence achieve the same second-order term as the Hoeffding test, but divergence tests with a non-invariant divergence may outperform the Hoeffding test for some alternative hypotheses Q. This implies that the GLRT may have a second-order asymptotic performance that is strictly suboptimal.},
+  abstract     = {Recently, a novel variation of polar codes known as polarization-adjusted convolutional (PAC) codes has been introduced by Arıkan. These codes significantly outperform conventional polar and convolutional codes, particularly for short codeword lengths, and are shown to operate very close to the optimal bounds. It has also been shown that if the rate profile of PAC codes does not adhere to certain polarized cutoff rate constraints, the computation complexity for their sequential decoding grows exponentially. In this paper, we address the converse problem, demonstrating that if the rate profile of a PAC code follows the polarized cutoff rate constraints, the required computations for its sequential decoding can be bounded with a distribution that follows a Pareto distribution. This serves as a guideline for the rate-profile design of PAC codes. For a high-rate PAC  $(1024,899)$ code, simulation results show that the PAC code with Fano decoder, when constructed based on the polarized cutoff rate constraints, achieves a coding gain of more than 0.75 dB at a frame error rate (FER) of $10^{-5}$ compared to the state-of-the-art 5G polar and LDPC codes.},
   archive      = {J_TIT},
-  author       = {K. V. Harsha and Jithin Ravi and Tobias Koch},
-  doi          = {10.1109/TIT.2025.3588194},
+  author       = {Mohsen Moradi and Hessam Mahdavifar},
+  doi          = {10.1109/TIT.2025.3608563},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7459-7483},
+  month        = {11},
+  number       = {11},
+  pages        = {8368-8379},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {On the second-order asymptotics of the hoeffding test and other divergence tests},
+  title        = {PAC codes with bounded-complexity sequential decoding: Pareto distribution and code design},
   volume       = {71},
   year         = {2025},
 }
@@ -827,20 +827,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Derivation of mutual information and linear minimum mean-square error for viterbi decoding of convolutional codes using the innovations method. <em>TIT</em>, <em>71</em>(10), 7435-7458. (<a href='https://doi.org/10.1109/TIT.2025.3591781'>www</a>)
+(2025). Coded distributed (Batch) matrix multiplication over galois ring via RMFE. <em>TIT</em>, <em>71</em>(11), 8358-8367. (<a href='https://doi.org/10.1109/TIT.2025.3605210'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We apply the innovations method to Viterbi decoding of convolutional codes. First, we calculate the covariance matrix of the innovation (i.e., the soft-decision input to the main decoder in a scarce-state-transition (SST) Viterbi decoder). Then a covariance matrix corresponding to that of the one-step prediction error in the Kalman filter is obtained. Furthermore, from that matrix, a covariance matrix corresponding to that of the filtering error in the Kalman filter is derived using the formula in the Kalman filter. This is justified from the fact that Viterbi decoding of convolutional codes has the structure of the Kalman filter. As a result, an upper bound on the average mutual information per branch for Viterbi decoding of convolutional codes is given using these covariance matrices. Also, the trace of the latter covariance matrix represents the (filtering) linear minimum mean-square error (LMMSE) per branch. We show that an upper bound on the average mutual information per branch is sandwiched between half the SNR times the filtering and one-step prediction LMMSEs per branch. In the case of quick-look-in (QLI) codes, from the covariance matrix of the soft-decision input to the main decoder, we can get a matrix. We show that the trace of this matrix has some connection with the linear smoothing error.},
+  abstract     = {Coded Distributed Matrix Multiplication (CDMM) is a distributed matrix multiplication (DMM) for large-scale matrices through a coding scheme such that any R worker nodes among all N worker nodes can recover the final product, where N corresponds to the length of the code and $R\leq N$ is called the recovery threshold. The state-of-the-art CDMM schemes, such as EP codes for Single DMM and GCSA codes for batch DMM, are defined over a Galois field $\textsf {GF}(q)$ of size $q\geq N$ . These are inefficient for small Galois fields such as $\textsf {GF}(2)$ and the integer residue ring $\mathbb {Z}_{p^{\ell }}$ due to the lack of invertible elements for interpolation. DMM over $\mathbb {Z}_{p^{\ell }}$ (such as $\mathbb {Z}_{2^{64}}$ ) is well-motivated in practice due to its direct compatibility with hardware. In this work, we construct an efficient CDMM over the Galois ring $\textsf {GR}(p^{\ell },d)$ which is an extension ring over $\mathbb {Z}_{p^{\ell }}$ of degree d, particularly, $\textsf {GR}(p,d)=\textsf {GF}(p^{d})$ is the Galois field and $\textsf {GR}(p^{\ell },1)=\mathbb {Z}_{p^{\ell } }$ . We first give a general CDMM framework for the batch of n matrix multiplications via the famous RMFE (Cascudo et al., Crypto’18). Compared with GCSA, our construction has a smaller recovery threshold by a factor of $1/n$ . Next, we optimize EP codes via batch preprocessing of the input matrices. We give two types of Single CDMM, which can achieve almost the same performance as EP codes over a Galois field with size $q\geq N$ . Finally, we present the experimental analysis of our CDMM on Galois rings.},
   archive      = {J_TIT},
-  author       = {Masato Tajima},
-  doi          = {10.1109/TIT.2025.3591781},
+  author       = {Yi Kuang and Jiang Li and Songsong Li and Chaoping Xing},
+  doi          = {10.1109/TIT.2025.3605210},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7435-7458},
+  month        = {11},
+  number       = {11},
+  pages        = {8358-8367},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Derivation of mutual information and linear minimum mean-square error for viterbi decoding of convolutional codes using the innovations method},
+  title        = {Coded distributed (Batch) matrix multiplication over galois ring via RMFE},
   volume       = {71},
   year         = {2025},
 }
@@ -848,20 +848,251 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Algorithmic computability of the capacity of additive colored gaussian noise channels. <em>TIT</em>, <em>71</em>(10), 7419-7434. (<a href='https://doi.org/10.1109/TIT.2025.3594999'>www</a>)
+(2025). One-shot coding over general noisy networks. <em>TIT</em>, <em>71</em>(11), 8346-8357. (<a href='https://doi.org/10.1109/TIT.2025.3604694'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Designing capacity-achieving coding schemes for the band-limited additive colored Gaussian noise (ACGN) channel has been and is still a challenge. In this paper, the capacity of the band-limited ACGN channel is studied from a fundamental algorithmic point of view by addressing the question of whether or not the capacity can be algorithmically computed. To this aim, the concept of Turing machines is used, which provides fundamental performance limits of digital computers. It is shown that there are band-limited ACGN channels having computable continuous spectral densities whose capacity are non-computable numbers. Moreover, it is demonstrated that for those channels, it is impossible to find computable sequences of asymptotically sharp upper bounds for their capacities. Furthermore, the implications of the non-computability of the ACGN channel capacity in information theory and coding are discussed, particularly regarding the impossibility of computing achievable rates in the finite blocklength regime and the challenges of finding universal algorithms that compute capacity-achieving power spectral densities for the ACGN channel.},
+  abstract     = {We present a unified one-shot coding framework designed for the communication and compression of messages among multiple nodes across a general acyclic noisy network. Our setting can be seen as a one-shot version of the acyclic discrete memoryless network studied by Lee and Chung, and noisy network coding studied by Lim, Kim, El Gamal and Chung. We design a proof technique, called the exponential process refinement lemma, that is rooted in the Poisson matching lemma by Li and Anantharam, and can significantly simplify the analyses of one-shot coding over multi-hop networks. Our one-shot coding theorem not only recovers a wide range of existing asymptotic results, but also yields novel one-shot achievability results in different multi-hop network information theory problems, such as compress-and-forward and partial-decode-and-forward bounds for a one-shot (primitive) relay channel, and a bound for one-shot cascade multiterminal source coding. In a broader context, our framework provides a unified one-shot bound applicable to any combination of source coding, channel coding and coding for computing problems.},
   archive      = {J_TIT},
-  author       = {Holger Boche and Andrea Grigorescu and Rafael F. Schaefer and H. Vincent Poor},
-  doi          = {10.1109/TIT.2025.3594999},
+  author       = {Yanxiao Liu and Cheuk Ting Li},
+  doi          = {10.1109/TIT.2025.3604694},
   journal      = {IEEE Transactions on Information Theory},
-  month        = {10},
-  number       = {10},
-  pages        = {7419-7434},
+  month        = {11},
+  number       = {11},
+  pages        = {8346-8357},
   shortjournal = {IEEE Trans. Inf. Theory},
-  title        = {Algorithmic computability of the capacity of additive colored gaussian noise channels},
+  title        = {One-shot coding over general noisy networks},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reducing fragmentation in data deduplication systems via partial repetition and coding. <em>TIT</em>, <em>71</em>(11), 8324-8345. (<a href='https://doi.org/10.1109/TIT.2025.3613455'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data deduplication, one of the key features of modern Big Data storage devices, is the process of removing replicas of data chunks stored by different users. Despite the importance of deduplication, several drawbacks of the method, such as storage robustness and file fragmentation, have not been previously analyzed from a theoretical point of view. Storage robustness pertains to ensuring that deduplicated data can be used to reconstruct the original files without service disruptions and data loss. Fragmentation pertains to the problems of placing deduplicated data chunks of different user files in a proximity-preserving linear order, since neighboring chunks of the same file may be stored in sectors far apart on the server. This work proposes a new theoretical model for data fragmentation and introduces novel graph- and coding-theoretic approaches for reducing fragmentation via limited duplication (repetition coding) and coded deduplication (e.g., linear coding). In addition to alleviating issues with fragmentation, limited duplication and coded deduplication can also serve the dual purpose of increasing the robusteness of the system design. The contributions of our work are three-fold. First, we describe a new model for file structures of the form of self-avoiding (simple) paths in specialized graphs. Second, we introduce several new metrics for measuring the fragmentation level in deduplication systems on graph-structured files, including the stretch metric that captures the worst-case “spread” of adjacent data chunks within a file when deduplicated and placed on the server; and, the jump metric that captures the worst-case number of times during the reconstruction process of a file that one has to change the readout location on the server. For the stretch metric, we establish a connection between the level of fragmentation and the bandwidth of the file-graph. In particular, we derive lower and upper bounds on the degree of fragmentation and describe instances of the problem where repetition and coding reduce fragmentation. The key ideas behind our approach are graph folding and information-theoretic arguments coupled with graph algorithms such as matching. For the jump metric, we provide a new algorithm for computing the jump number of hierarchical data structures captured by trees. Third, we describe how controlled repetition and coded redundancy added after deduplication can ensure valuable trade-offs between the storage volume and the degree of fragmentation.},
+  archive      = {J_TIT},
+  author       = {Yun-Han Li and Jin Sima and Ilan Shomorony and Olgica Milenkovic},
+  doi          = {10.1109/TIT.2025.3613455},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8324-8345},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Reducing fragmentation in data deduplication systems via partial repetition and coding},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recursively extended permutation codes under chebyshev distance. <em>TIT</em>, <em>71</em>(11), 8312-8323. (<a href='https://doi.org/10.1109/TIT.2025.3611022'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the construction and analysis of permutation codes under the Chebyshev distance. Direct product group permutation (DPGP) codes, independently introduced by Kløve et al. and Tamo et al., represent the best-known class of permutation codes in terms of both size and minimum distance, while also allowing for algebraic and efficient encoding and decoding. In contrast, this study focuses on recursively extended permutation (REP) codes, proposed by Kløve et al. as a recursive alternative. We analyze the properties of REP codes and prove that, despite their distinct construction principles, optimal REP codes achieve exactly the same size and minimum distance as the best DPGP codes under the Chebyshev metric. This surprising equivalence uncovers a deep connection between two structurally dissimilar code families and establishes REP codes as a structurally flexible yet equally powerful alternative to DPGP codes. In addition, we present efficient encoding and decoding algorithms for REP codes, including a sequential encoder with $O(n \log n)$ complexity and a bounded-distance decoder with $O(n \log ^{2} n)$ complexity.},
+  archive      = {J_TIT},
+  author       = {Tomoya Hirobe and Kenta Kasai},
+  doi          = {10.1109/TIT.2025.3611022},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8312-8323},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Recursively extended permutation codes under chebyshev distance},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient ordered statistics decoding of BCH codes without gaussian elimination. <em>TIT</em>, <em>71</em>(11), 8294-8311. (<a href='https://doi.org/10.1109/TIT.2025.3613748'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ordered statistics decoding (OSD) can achieve near maximum likelihood (ML) decoding performance for BCH codes. However, Gaussian elimination (GE) that delivers the systematic generator matrix of the code has an uncompromised latency. Addressing this challenge, this paper proposes a low-latency OSD (LLOSD) for BCH codes. Since BCH codes are binary subcodes of Reed-Solomon (RS) codes, codeword candidates can be produced using the RS systematic generator matrix, whose entries can be generated in parallel. By eliminating the non-binary codeword candidates and identifying the ML codeword, the LLOSD yields a lower latency as well as complexity than the OSD. It is shown that the LLOSD can be interpreted as generating the codeoword candidates through systematic encoding of a punctured BCH codeword, explaining its low-complexity feature. Moreover, the segmented variant is proposed to further facilitate the LLOSD. In order to decode long BCH codes, a hybrid soft decoding (HSD) is finally proposed. It integrates the LLOSD and the algebraic Chase decoding that can effectively provide extra TEPs for the LLOSD, enhancing the decoding performance. Both the complexity and performance of the proposed decoding are analyzed, demonstrating their advantage over the relevant state-of-the-art decoding.},
+  archive      = {J_TIT},
+  author       = {Lijia Yang and Jianguo Zhao and Xihao Li and Li Chen and Huazi Zhang and Jiajie Tong},
+  doi          = {10.1109/TIT.2025.3613748},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8294-8311},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Efficient ordered statistics decoding of BCH codes without gaussian elimination},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multilevel lattice codes from hurwitz quaternion integers. <em>TIT</em>, <em>71</em>(11), 8280-8293. (<a href='https://doi.org/10.1109/TIT.2025.3603487'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work presents an extension of the Construction $\pi _{A}$ lattices proposed by Huang and Narayanan, to Hurwitz quaternion integers. This construction is provided by using an isomorphism from a version of the Chinese remainder theorem applied to maximal orders, in contrast to natural orders in prior works. Exploiting this map, we analyse the performance of the resulting multilevel lattice codes and highlight via computer simulations their notably reduced computational complexity provided by the multistage decoding. Moreover, it is shown that there is a sequence of Construction $\pi _{A}$ lattices that attain with high probability the Poltyrev-limit.},
+  archive      = {J_TIT},
+  author       = {Juliana G. F. Souza and Sueli I. R. Costa and Cong Ling},
+  doi          = {10.1109/TIT.2025.3603487},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8280-8293},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Multilevel lattice codes from hurwitz quaternion integers},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Galois hulls of a kind of goppa codes with applications to EAQECCs. <em>TIT</em>, <em>71</em>(11), 8262-8279. (<a href='https://doi.org/10.1109/TIT.2025.3598582'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Galois hulls of MDS codes can be applied to construst MDS entanglement-assisted quantum error-correcting codes (EAQECCs). Goppa codes over $\mathbb {F}_{q^{m}}$ are generalized Reed-Solomon codes (GRS codes) when $m=1$ . In this paper, we give a necessary and sufficient condition for the Galois dual codes of Goppa codes when $m=1$ to be Goppa codes with the same locator sets. Furthermore, we show that the Galois hulls of the above codes are still the Goppa codes and determine their Goppa polynomials and dimensions. In particular, we characterize Galois linear complementary dual (LCD), Galois self-orthogonal, Galois dual-containing and Galois self-dual codes among such codes. Moreover, we apply these results to EAQECCs.},
+  archive      = {J_TIT},
+  author       = {Jingge Liu and Hongwei Liu},
+  doi          = {10.1109/TIT.2025.3598582},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8262-8279},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Galois hulls of a kind of goppa codes with applications to EAQECCs},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rate-distortion-perception theory for the quadratic wasserstein space. <em>TIT</em>, <em>71</em>(11), 8247-8261. (<a href='https://doi.org/10.1109/TIT.2025.3612287'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We derive a single-letter characterization of the fundamental distortion-rate-perception tradeoff with limited common randomness under the squared error distortion measure and the squared Wasserstein-2 perception measure. This characterization is further shown to admit an explicit evaluation in the case of Gaussian sources. In addition, we clarify two different notions of universal representation. As a byproduct, soft-covering lemmas with respect to the Wasserstein-2 distance are established.},
+  archive      = {J_TIT},
+  author       = {Xiqiang Qu and Jun Chen and Lei Yu and Xiangyu Xu},
+  doi          = {10.1109/TIT.2025.3612287},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8247-8261},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Rate-distortion-perception theory for the quadratic wasserstein space},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multivariate analytic combinatorics for cost constrained channels. <em>TIT</em>, <em>71</em>(11), 8223-8246. (<a href='https://doi.org/10.1109/TIT.2025.3603494'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Analytic combinatorics in several variables is a branch of mathematics that deals with deriving the asymptotic behavior of combinatorial quantities by analyzing multivariate generating functions. We study information-theoretic questions about sequences in a discrete noiseless channel under cost constraints. Our main contributions involve the relationship between the graph structure of the channel and the singularities of the bivariate generating function whose coefficients are the number of sequences satisfying the constraints. We use these new results to invoke theorems from multivariate analytic combinatorics to obtain the asymptotic behavior of the number of cost-limited strings that are admissible by the channel. This builds a new bridge between analytic combinatorics in several variables and labeled weighted graphs, bringing a new perspective and a set of powerful results to the literature of cost-constrained channels. Along the way, we show that the cost-constrained channel capacity is determined by a cost-dependent singularity of the bivariate generating function, generalizing Shannon’s classical result for unconstrained capacity, and provide a new proof of the equivalence of the combinatorial and probabilistic definitions of the cost-constrained capacity.},
+  archive      = {J_TIT},
+  author       = {Andreas Lenz and Stephen Melczer and Cyrus Rashtchian and Paul H. Siegel},
+  doi          = {10.1109/TIT.2025.3603494},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8223-8246},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Multivariate analytic combinatorics for cost constrained channels},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved random-binning exponent for distributed hypothesis testing. <em>TIT</em>, <em>71</em>(11), 8217-8222. (<a href='https://doi.org/10.1109/TIT.2025.3603269'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Consider the problem of distributed binary hypothesis testing with two terminals, where the decision is made at one of them (the “receiver”). We study the exponent of the error probability of the second type. Previously, an achievable exponent was derived by Shimokawa, Han, and Amari using a “quantization and binning” scheme. We propose a simple modification on the receiver’s decision rule in this scheme to attain a better exponent.},
+  archive      = {J_TIT},
+  author       = {Yuval Kochman and Ligong Wang},
+  doi          = {10.1109/TIT.2025.3603269},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8217-8222},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Improved random-binning exponent for distributed hypothesis testing},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online information compression of finite-valued networks via finite automata approach and reinforcement learning. <em>TIT</em>, <em>71</em>(11), 8206-8216. (<a href='https://doi.org/10.1109/TIT.2025.3612356'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The storage and transmission of large-scale data are recognized as significant challenges that incur substantial costs due to the massive volume of information involved. Lossless compression offers a potential solution to this problem. In this work, we explore the online lossless state compression (LSC) in finite-valued networks by effectively combining the methods of finite state automata and reinforcement learning. To achieve online lossless compression, the concept of $k$ -step compressed walks (state sequences) is introduced. By constructing a finite state automaton to identify all insertable walks, the recoverability conditions of online lossless compression are presented. For any given compressed walk $w'_{c}$ , one algorithm is proposed to find a minimal recoverable $k_{min}$ -step compressed walk, thereby improving the compression ratio. Furthermore, it can be found that if a compressed walk keeps recoverability, adding more states to it would not break this property. Additionally, a model-free reinforcement learning framework based on Q-learning is developed to obtain globally minimal recoverable compressed walks. Finally, a numerical example is given to demonstrate the efficiency of the proposed online lossless compression scheme, achieving a compression ratio of 44.4%.},
+  archive      = {J_TIT},
+  author       = {Bowen Li and Yansheng Wu and Jianquan Lu and Qinyao Pan and Wenying Xu},
+  doi          = {10.1109/TIT.2025.3612356},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8206-8216},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Online information compression of finite-valued networks via finite automata approach and reinforcement learning},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal construction of N-bit-delay almost instantaneous fixed-to-variable-length codes. <em>TIT</em>, <em>71</em>(11), 8181-8205. (<a href='https://doi.org/10.1109/TIT.2025.3604725'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents an optimal construction of N-bit-delay almost instantaneous fixed-to-variable-length (AIFV) codes, the general form of binary codes we can make when finite bits of decoding delay are allowed. The presented method enables us to optimize lossless codes among a broader class of codes compared to the conventional FV and AIFV codes. The paper first discusses the problem of code construction, which contains some essential partial problems, and defines three classes of optimality to clarify how far we can solve the problems. The properties of the optimal codes are analyzed theoretically, showing the sufficient conditions for achieving the optimum. Then, we propose an algorithm for constructing N-bit-delay AIFV codes for given stationary memory-less sources. The optimality of the constructed codes is discussed both theoretically and empirically. They showed shorter expected code lengths when $N\ge 3$ than the conventional AIFV-m and extended Huffman codes. Moreover, in the random numbers simulation, they performed higher compression efficiency than the 32-bit-precision range codes under reasonable conditions.},
+  archive      = {J_TIT},
+  author       = {Ryosuke Sugiura and Masaaki Nishino and Norihito Yasuda and Yutaka Kamamoto and Takehiro Moriya},
+  doi          = {10.1109/TIT.2025.3604725},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8181-8205},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Optimal construction of N-bit-delay almost instantaneous fixed-to-variable-length codes},
+  volume       = {71},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Jensen-generalized discrete fisher information, its generating function, and applications to image processing and contaminated models. <em>TIT</em>, <em>71</em>(11), 8169-8180. (<a href='https://doi.org/10.1109/TIT.2025.3607695'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we first introduce a discrete version of generalized Fisher information measure and develop some new results for it. We then propose Jensen-generalized discrete Fisher (Jensen-GDF) information as a generalized measure, based on the convexity property of generalized discrete Fisher information measure. We further introduce generating functions for generalized discrete Fisher information and Jensen-GDF information measures and use them to develop some results. We also propose a new correlation coefficient in terms of the generalized discrete Fisher information and discuss some of its properties. Finally, to demonstrate the usefulness of the Jensen-generalized discrete Fisher information measure and the proposed correlation coefficient, we apply them to two real-world examples in image processing and forms of contaminated data, and present corresponding numerical results. Our findings show that the Jensen-GDF information measure and the correlation coefficient introduced here are effective criteria for quantifying similarity between two images in image processing settings and for analyzing contaminated data.},
+  archive      = {J_TIT},
+  author       = {Omid Kharazmi and Narayanaswamy Balakrishnan},
+  doi          = {10.1109/TIT.2025.3607695},
+  journal      = {IEEE Transactions on Information Theory},
+  month        = {11},
+  number       = {11},
+  pages        = {8169-8180},
+  shortjournal = {IEEE Trans. Inf. Theory},
+  title        = {Jensen-generalized discrete fisher information, its generating function, and applications to image processing and contaminated models},
   volume       = {71},
   year         = {2025},
 }

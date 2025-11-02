@@ -25,8 +25,68 @@
 </head>
 <body>
 
-<h2 id="jpdc">JPDC - 1</h2>
+<h2 id="jpdc">JPDC - 4</h2>
 <ul>
+<li><details>
+<summary>
+(2026). A general-purpose K-nearest neighbor method with an efficient pruning strategy for GPUs. <em>JPDC</em>, <em>207</em>, 105187. (<a href='https://doi.org/10.1016/j.jpdc.2025.105187'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {K -nearest neighbor ( k NN) search is widely applied to low- and high-dimensional tasks, as well as various data distributions and distance functions. However, its computational cost increases with the data volume, causing a bottleneck for many applications. The workload of the existing tree-based methods linearly increases with the neighbor count k in the worst case. In addition, some tree-based methods only apply to tasks with L2 distances and may have severe warp divergence when employed on GPUs. Our goal is to develop a general-purpose k NN method based on cluster sorting to achieve better pruning efficiency compared with tree-based approaches. We optimize the proposed method to achieve higher performance on tasks with different dimensionalities or distance functions. The proposed Sort, TraversE, and then Prune (STEP) algorithm is a k NN method that clusters the data points beforehand. With various 1) numbers of data points, 2) numbers of query points, 3) neighbor counts, 4) dimensions, and 5) distance metrics, the STEP method offers high performance because of the following aspects. First, our method prunes the data points efficiently by sorting the clusters for each query. Second, we exploit the single-instruction multiple-threads (SIMT) architecture of the GPU and utilize both coarse- and fine-grained parallelism to accelerate computation. The proposed method concurrently computes all queries and minimizes warp divergence by assigning a query to a GPU warp. Third, the STEP method rapidly updates the k NN results using bitonic operations. Fourth, we proposed an adaptive approach that automatically switches from the indexing approach to the exhaustive approach to achieve good scalability on high-dimensional data. Finally, we develop a variant of Gärtner’s bounding sphere algorithm so that our indexing method can handle distance metrics other than the L2 distance. The STEP method achieves a 15.9 times speedup with L2 distances and a 36.7 times speedup with angular distances compared with other state-of-the-art methods.},
+  archive      = {J_JPDC},
+  author       = {Jue Wang and Fumihiko Ino},
+  doi          = {10.1016/j.jpdc.2025.105187},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {1},
+  pages        = {105187},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {A general-purpose K-nearest neighbor method with an efficient pruning strategy for GPUs},
+  volume       = {207},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Security vulnerabilities and enhancement of a dynamic auditing scheme for regenerating code-based storage in cloud-fog-assisted IIoT. <em>JPDC</em>, <em>207</em>, 105185. (<a href='https://doi.org/10.1016/j.jpdc.2025.105185'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In a recent publication, Liu et al. put forth a privacy-preserving dynamic auditing scheme for distributed encoded storage systems in cloud-fog-assisted Industrial Internet of Things (IIoT) [Internet of Things, DOI: 10.1016/j.iot.2024.101084]. Each encoded data segment utilizes the ZSS signature for the creation of its corresponding authentication tag. The fog server will be challenged and subjected to rigorous verification through the utilisation of a bilinear pairing map. In this paper, we demonstrate that the security vulnerabilities of Liu et al.’s scheme by mounting a block forgery attack and an identifier forgery attack, respectively. In particular, an adversarial fog server is capable of successfully deceiving the proxy auditor through the implementation of arbitrary unauthorised data tampering or identifier impersonation. We also provide an alternative scheme to address the security weaknesses, and highlight the challenges of cloud data auditing tailored for cloud fog-enabled IIoT.},
+  archive      = {J_JPDC},
+  author       = {Guangjun Liu and Jinbo Xiong and Ximeng Liu and Xiang Zou and Chenghu Ke and Zengfa Dou},
+  doi          = {10.1016/j.jpdc.2025.105185},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {1},
+  pages        = {105185},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {Security vulnerabilities and enhancement of a dynamic auditing scheme for regenerating code-based storage in cloud-fog-assisted IIoT},
+  volume       = {207},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A lightweight fine-grained scheme for distinguishing the hotness of warm data to reduce segment cleaning overhead. <em>JPDC</em>, <em>207</em>, 105183. (<a href='https://doi.org/10.1016/j.jpdc.2025.105183'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the widespread adoption of flash memory, the Flash Friendly File System (F2FS) designed to flash memory characteristics has become widely-used in large data centers. However, F2FS encounters from significant cleaning overheads due to its logging scheme writes. We observe that warm data in F2FS account for a substantial proportion, at least 80 %. Nevertheless, the mixed storage of warm data with varying hotness exacerbates segment cleaning challenges. To address this issue, we propose a scheme called M2H, which involves a fine-grained management of warm data hotness identified by the K-means clustering algorithm. M2H determines hotness by considering factors such as file block update distance, most recently used distance, and workload characteristics. M2H facilitates M ulti-log delayed writing and M odified segment cleaning based on H otness. To reduce costs associated with distinguishing data hotness at the file block level, we employ Mini Batch K-means, which is referred to as HMBK. Moreover, for servers equipped with GPUs, the clustering process can be offloaded to the GPU, known as HGPU. We conduct a comprehensive comparison of traditional F2FS, M2H, HMBK, and HGPU on a real platform. Results show that compared to traditional F2FS, HGPU reduces the number of segment cleanings by 54.41 % to 97.93 %.},
+  archive      = {J_JPDC},
+  author       = {Lihua Yang and Yang Xiao and Zhipeng Tan and Fang Wang and Weizhao Lin and Wei Zhang and Jiaxin Li and Kai Lu},
+  doi          = {10.1016/j.jpdc.2025.105183},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {1},
+  pages        = {105183},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {A lightweight fine-grained scheme for distinguishing the hotness of warm data to reduce segment cleaning overhead},
+  volume       = {207},
+  year         = {2026},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2026). A scalable tensor-based MDTW approach for multi-modal time series patterns clustering. <em>JPDC</em>, <em>207</em>, 105173. (<a href='https://doi.org/10.1016/j.jpdc.2025.105173'>www</a>)

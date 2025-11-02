@@ -25,27 +25,8 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 10</h2>
+<h2 id="tpds">TPDS - 20</h2>
 <ul>
-<li><details>
-<summary>
-(2025). Popularity-aware data placement in erasure coding-based edge storage systems. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3619273'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Edge computing allows app vendors to store popular data on edge servers, enabling users to retrieve data with low latency. However, edge servers may become unavailable at runtime due to expected exceptions. Data requests are routed to cloud servers, resulting in increased data retrieval latency. To address this issue, erasure coding (EC) has been employed to improve data availability, aiming to ensure full data access for all the users in an edge storage system (ESS). However, in real-world scenarios, data popularity differs and varies. Existing approaches for edge data placement place coded blocks across the entire system without considering data popularity. As a result, they often suffer from high data retrieval latency. In addition, they are designed to process data items individually. Data placed earlier will limit the placement options for subsequent files because edge servers with the most neighbors in the system can be easily exhausted. Some files cannot be placed properly to accommodate user demands. This increases users' data retrieval latency further. This paper tries to study the placement of multiple files in an edge storage system, considering their popularity. We first model the edge data placement (EDP) problem as a mixed-integer programming problem and prove its $\mathcal {NP}$-hardness. Then, we present an optimal algorithm named EDP-O, decoupling the EDP problem into three convex optimization subproblems for solving with an iterative algorithm. In addition, we propose an approximation algorithm named EDP-A that quickly solves the EDP problem in large-scale scenarios with a guaranteed approximation ratio of $\ln N$. The results of experiments conducted on a real-world dataset show that EDP-O and EDP-A reduce the average data retrieval latency against four representative approaches by an average of 18.4% and 15.6% in small-scale scenarios. EDP-A reduces the average data retrieval latency against four representative approaches by an average of 54.7% and reduces the data discard rate by an average of 34.9% in large-scale scenarios.},
-  archive      = {J_TPDS},
-  author       = {Ruikun Luo and Jiadong Zhao and Qiang He and Feifei Chen and Song Wu and Hai Jin and Yun Yang},
-  doi          = {10.1109/TPDS.2025.3619273},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Popularity-aware data placement in erasure coding-based edge storage systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
 <li><details>
 <summary>
 (2025). Cache partition management for improving fairness and I/O responsiveness in NVMe SSDs. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3619866'>www</a>)
@@ -213,6 +194,215 @@
   pages        = {1-16},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {RICHIE: A framework for agile design and exploration of RISC-V-based accelerator-rich heterogeneous SoCs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MCG-sched: Multi-cluster GPU scheduling for resource fragmentation reduction and load balancing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3626153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Since the rapid development of deep learning (DL) technology, large-scale GPU clusters receive a large number of DL workloads daily. To speed up the completion time, the workloads usually occupy several GPUs on a server. However, workload scheduling inevitably generates resource fragmentation, which results in many scattered GPU resources being unavailable. Existing works address improving resource utilization by reducing GPU resource fragmentation, while they focus on resource scheduling for a single cluster and ignore multiple clusters. Multi-cluster scenarios, such as virtual clusters and geo-distributed clusters, require load balancing to avoid some clusters exhausting resources while some clusters are idle while improving resource utilization, which is not well addressed by existing works. In this paper, we propose MCG-Sched, a scheduling strategy to reduce resource fragmentation in multiple GPU clusters while maintaining load balancing among clusters. MCG-Sched measures the fragmented resources with the distribution of workload demands and uses a scheme that minimizes fragmentation in workload scheduling. Meanwhile, MCG-Sched achieves balanced load scheduling across clusters through the load balancing index. MCG-Sched senses the workload requests in the waiting queue, and prioritizes the workloads by combining fragmentation measurement and load balancing index to maximize resource utilization and load balancing during load peak. Our experiments show that MCG-Sched reduces unallocated GPUs up to 1.45× and workload waiting time by more than 40% compared to existing fragmentation-aware methods and achieves effective load balancing.},
+  archive      = {J_TPDS},
+  author       = {Haijie Wu and Xinhua Wang and Xiaoxuan Luo and Wangbo Shen and Weiwei Lin},
+  doi          = {10.1109/TPDS.2025.3626153},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {MCG-sched: Multi-cluster GPU scheduling for resource fragmentation reduction and load balancing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed discrete morse sandwich: Efficient computation of persistence diagrams for massive scalar data. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3626047'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The persistence diagram, which describes the topological features of a dataset, is a key descriptor in Topological Data Analysis. The “Discrete Morse Sandwich” (DMS) method has been reported to be the most efficient algorithm for computing persistence diagrams of 3D scalar fields on a single node, using shared-memory parallelism. In this work, we extend DMS to distributed-memory parallelism for the efficient and scalable computation of persistence diagrams for massive datasets across multiple compute nodes. On the one hand, we can leverage the embarrassingly parallel procedure of the first and most time-consuming step of DMS (namely the discrete gradient computation). On the other hand, the efficient distributed computations of the subsequent DMS steps are much more challenging. To address this, we have extensively revised the DMS routines by contributing a new self-correcting distributed pairing algorithm, redesigning key data structures and introducing computation tokens to coordinate distributed computations. We have also introduced a dedicated communication thread to overlap communication and computation. Detailed performance analyses show the scalability of our hybrid MPI+thread approach for strong and weak scaling using up to 16 nodes of 32 cores (512 cores total). Our algorithm outperforms DIPHA, a reference method for the distributed computation of persistence diagrams, with an average speedup of $\times 8$ on 512 cores. We show the practical capabilities of our approach by computing the persistence diagram of a public 3D scalar field of 6 billion vertices in 174 seconds on 512 cores. Finally, we provide a usage example of our open-source implementation at https://github.com/eve-le-guillou/DDMS-example.},
+  archive      = {J_TPDS},
+  author       = {E. Le Guillou and P. Fortin and J. Tierny},
+  doi          = {10.1109/TPDS.2025.3626047},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Distributed discrete morse sandwich: Efficient computation of persistence diagrams for massive scalar data},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TraDE: Network and traffic-aware adaptive scheduling for microservices under dynamics. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3626424'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The transition from monolithic architecture to microservices has enhanced flexibility in application design and its scalable execution. This approach typically uses a computing cluster managed by a container orchestration platform to deploy microservices. However, this shift introduces significant challenges, particularly in the efficient scheduling of containerized services. These challenges are compounded by unpredictable scenarios such as dynamic incoming workloads with various execution traffic and variable communication delays among cluster nodes. Existing works often overlook the real-time traffic impacts of dynamic requests on running microservices, as well as the varied communication delays across cluster nodes. Consequently, even optimally deployed microservices could suffer from significant performance degradation over time. To address these issues, we propose a network and traffic-aware adaptive scheduling framework, TraDE, which can adaptively redeploy microservice instances to maintain desired performance amid changing traffic and network conditions within the hosting cluster. We have implemented TraDE as an extension to the Kubernetes platform. Additionally, we deployed realistic microservice applications in a real compute cluster and conducted extensive experiments to assess our framework's performance in various scenarios. The results demonstrate the effectiveness of TraDE in rescheduling running microservices to enhance end-to-end performance while maintaining a high goodput ratio. Compared with the existing method NetMARKS, TraDE outperforms it by reducing the average response time of the application by up to 48.3%, and improving the throughput by up to 1.2-1.5× across workloads while maintaining a goodput ratio of 95.36%, and showing robust adaptive capability to meet QoS targets under sustained workloads and dynamic networking conditions.},
+  archive      = {J_TPDS},
+  author       = {Ming Chen and Muhammed Tawfiqul Islam and Maria Rodriguez Read and Rajkumar Buyya},
+  doi          = {10.1109/TPDS.2025.3626424},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {TraDE: Network and traffic-aware adaptive scheduling for microservices under dynamics},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lightweight application distribution with automated and real-time computing and communication (ARC2) in microcomputer clusters. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3626327'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The microcomputer cluster is a group of connected microcomputers that work together to perform as a single system. Unlike high-performance computer clusters, microcomputer clusters are designed to provide reliable and efficient services for safety-critical embedded systems, which usually require low SWaP (Size, Weight, and Power) because of the high stability and cost control requirements. Considering that safety-critical systems have strict real-time constraints (i.e., deadline constraints) and resource constraints, each microcomputer usually needs to run a Real-Time Operating System (RTOS) instead of Linux to achieve precise scheduling and control, and a high-speed real-time network such as Time-Triggered Ethernet (TTE) is required for intra-cluster communication. In microcomputer clusters, a load imbalance between microcomputers usually leads to system instability, and a lightweight application distribution framework automatically migrates applications among microcomputers, thereby breaking resource isolation and improving resource utilization. However, mainstream application distribution frameworks, such as Kubernetes (K8s), MicroK8s, and K3s, can be applied neither to RTOS nor to TTE. In this study, we design a lightweight application distribution framework with automated and real-time computing and communication (ARC2). ARC2 monitors the microcomputer cluster resource state in real-time and introduces a resource hierarchical pooling method to utilize cluster resources flexibly. It employs TTE for application distribution combined with a real-time scheduling strategy, achieving low end-to-end latency and load balancing. It simplifies the existing application distribution framework and introduces a low-complexity cluster management logic to achieve low resource overhead. We conduct experimental evaluations on a heterogeneous platform. The results show that: (1) the load imbalance is reduced by at least 59.81% compared to the original system; (2) the deviation in real-time monitoring traffic is reduced by an average of 56.7 ms, with the application distribution success rate reaching 100% and an average distribution time of 393.0 ms; and (3) the CPU, memory, and bandwidth overhead are 9%, 3 MB, and 0.104 Mb/s, respectively.},
+  archive      = {J_TPDS},
+  author       = {Jianchun Luo and Zhongjia Wang and Fei Peng and Xuejun Yu and Dongsheng Wei and Bo Liu and Guoqi Xie},
+  doi          = {10.1109/TPDS.2025.3626327},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Lightweight application distribution with automated and real-time computing and communication (ARC2) in microcomputer clusters},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable hybrid learning techniques for scientific data compression. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3623935'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data compression is becoming critical for storing scientific data because many scientific applications need to store large amounts of data and post process this data for scientific discovery. Unlike image and video compression algorithms that limit errors to primary data (PD), scientists require compression techniques that accurately preserve derived quantities of interest (QoIs). This paper presents a physics-informed compression technique implemented as an end-to-end, scalable, GPU-based pipeline for data compression that addresses this requirement. Our hybrid compression technique combines machine learning techniques and standard compression methods. Specifically, we combine an autoencoder, an error-bounded lossy compressor to provide guarantees on raw data error, and a constraint satisfaction post-processing step to preserve the QoIs within a minimal error (generally less than floating point error). The effectiveness of the data compression pipeline is demonstrated by compressing nuclear fusion simulation data generated by a large-scale fusion code, XGC, which produces hundreds of terabytes of data in a single day. Our approach works within the ADIOS framework and results in compression by a factor of more than 150 while requiring only a few percent of the computational resources necessary for generating the data, making the overall approach highly effective for practical scenarios.},
+  archive      = {J_TPDS},
+  author       = {Tania Banerjee and Jong Choi and Jaemoon Lee and Qian Gong and Jieyang Chen and Scott Klasky and Anand Rangarajan and Sanjay Ranka},
+  doi          = {10.1109/TPDS.2025.3623935},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Scalable hybrid learning techniques for scientific data compression},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Critique of “Data flow lifecycles for optimizing workflow coordination” by SCC team from tsinghua university. <em>TPDS</em>, 1-6. (<a href='https://doi.org/10.1109/TPDS.2025.3627225'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article we present our results from the SC24 Student Cluster Competition Reproducibility Challenge. The challenge entails reproducing the article entitled “Data Flow Lifecycles for Optimizing Workflow Coordination”, presented at SC23, which proposes data flow analysis for workflows. Data flow lifecycles (DFL) enrich task DAGs with data objects and properties that describe interactions between tasks and data flow. The authors use lifecycles and opportunity analysis to reason about improved task placement and reduce data movement for scientific workflows. Their work is implemented in the DataLife tool. Our study reproduces results associated with the 1000 Genomes workflow reported in the original article. We first monitored the I/O behavior of the workflow, drew the DFL graph and caterpillar tree graph, and subsequently improved workflow coordination based on insights from this analysis. Our experiments demonstrated that the DataLife tool effectively analyzes and visualizes existing workflows' task DAG and data flow properties, with the generated plots offering opportunities for optimization. However, we were unable to replicate the reported acceleration under our experimental settings and observed a maximum speedup discrepancy of 416%. To investigate this gap, we examined the source code and conducted experiments across varying CPU frequencies. While we identified several contributing factors, we could not draw definitive conclusions about all discrepancies due to the limited information disclosed about the original experimental setup.},
+  archive      = {J_TPDS},
+  author       = {Yifan Li and Yucheng Wang and Kai Yang and Zhiyu Xue and Yuqing Yang and Chengyu Shi and Mingshu Zhai and Wentao Han and Yuyang Jin and Jidong Zhai},
+  doi          = {10.1109/TPDS.2025.3627225},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-6},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Critique of “Data flow lifecycles for optimizing workflow coordination” by SCC team from tsinghua university},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient KV cache spillover management on memory-constrained GPU for LLM inference. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3626974'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid growth of model parameters presents a significant challenge when deploying large generative models on GPU. Existing LLM runtime memory management solutions tend to maximize batch size to saturate GPU device utilization. Nevertheless, this practice leads to situations where the KV Cache of certain sequences cannot be accommodated on GPUs with limited memory capacity during the model inference, requiring temporary eviction from GPU memory (referred to as KV Cache spillover). However, without careful consideration of the LLM inference's runtime pattern, current LLM inference memory management solutions face issues like one-size-fits-all spillover handling approach for different platforms, under-utilization of GPU in prefill stage, and suboptimal sequence selection due to direct employment of swap or recomputation. In this paper, we introduce FuseSpill, a holistic KV Cache management solution designed to boost LLM inference on memory-constrained GPU by efficiently handling KV Cache spillover. Specifically, FuseSpill consists of a spillover cost model that analyzes the system cost of spillover handling techniques quantitatively, a KV cache swap orchestrator to further refine the basic swap technique to sophisticated disaggregate KV Cache across heterogeneous devices for decoding iterations, a multi-executor scheduler to effectively coordinate task executors across devices, and a response length predictor to exploit the length-aware sequence selection strategy when KV Cache spillover occurs. The experimental results demonstrate that our implementation outperforms existing solutions, delivering a 20% to 40% increase in throughput while simultaneously reducing the inference latency of the spillover sequences.},
+  archive      = {J_TPDS},
+  author       = {Jiazhi Jiang and Yao Chen and Zining Zhang and Bingsheng He and Pingyi Luo and Mian Lu and Yuqiang Chen and Hongbing Zhang and Jiangsu Du and Dan Huang and Yutong Lu},
+  doi          = {10.1109/TPDS.2025.3626974},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Efficient KV cache spillover management on memory-constrained GPU for LLM inference},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RPCE: Dynamic data replicas placement management by cloud and edge collaboration. <em>TPDS</em>, 1-14. (<a href='https://doi.org/10.1109/TPDS.2025.3627553'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid advancement of information technology, traditional centralized cloud computing systems face challenges in meeting the stringent low-latency demands of emerging applications. To tackle this issue, this paper proposes a delay-aware cloud-edge architecture that incorporates the distributed characteristics of edge infrastructure, enabling low latency collaboration among edge nodes within the same geographic region. Furthermore, based on this architecture, a dynamic data replica management scheme is introduced, involving synergistic mechanisms between edge nodes and cloud centers to optimally place data replicas on the most suitable edge nodes. The scheme adopts a hierarchical strategy: edge nodes perform short-term localized management of data replicas, while the cloud executes long-term holistic oversight. Experimental results demonstrate that the dynamic approach effectively reduces user access latency, minimizes replica migration frequency, and decreases network bandwidth consumption.},
+  archive      = {J_TPDS},
+  author       = {Xiaofeng Lu and Luwen Zou and Yilu Mao and Pietro Lio and Hui Pan},
+  doi          = {10.1109/TPDS.2025.3627553},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {RPCE: Dynamic data replicas placement management by cloud and edge collaboration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Joint optimization of resource allocation and request batching for multi-tenant inference serving on GPU. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3627574'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The GPU technology has significantly aided Deep Learning (DL), especially in enhancing the performance of inference services. Tenants deploy inference models on the GPU, which are then uniformly scheduled and executed by an inference serving system. In resource-constrained environments, a single GPU needs to handle requests from multiple tenants. The diver sity of inference tasks, varying request frequencies, and different model architectures make designing an efficient inference serving system a significant challenge. Most current research discusses resource allocation and request batching separately, overlooking the critical connection between them. In such complex inference environments, this connection is particularly crucial. To rapidly process requests from various tenants in such a dynamic environment, we leverage the connection between resource allocation and request batching to design DRS: Deep Reinforcement Scheduler. In DRS, we use the Deep Deterministic Policy Gradient (DDPG) as our scheduling algorithm and NVIDIA Multi-Process Service (MPS) for spatial parallelism in sharing a single GPU among multiple tenants. By observing environmental information, we can rapidly adjust the GPU allocation for different tenants and f ind the proper request batch size, thereby maintaining high efficiency. In experiments, DRS achieves a speedup of up to 2.23× and 24 × compared to the baselines with the Makespan and Job Completion Time (JCT) metrics.},
+  archive      = {J_TPDS},
+  author       = {Yuning Zhang and Nan Yang and Chen Pan and Dong Yuan},
+  doi          = {10.1109/TPDS.2025.3627574},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Joint optimization of resource allocation and request batching for multi-tenant inference serving on GPU},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Critique of “Data flow lifecycles for optimizing workflow coordination” by SCC team from national tsing hua university. <em>TPDS</em>, 1-6. (<a href='https://doi.org/10.1109/TPDS.2025.3627428'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As part of the SC24 Student Cluster Competition Reproducibility Challenge, we reproduced performance evaluations of the 1000 Genomes Project workflow using the Data Flow Lifecycles (DFL) methodology. DFL aims to optimize workflow coordination by analyzing data flows to identify potential bottlenecks and opportunities for improved task placement and reduced data movement. On a small cluster (2-3 nodes), we tested Shared Memory (SHM) and SSD staging strategies. This contrasts with the original study's larger-scale setups (up to 15 nodes). Our results, measured across key workflow stages, align with the original study: SSD staging and multi-node setups significantly improve performance for I/O-intensive tasks. This confirms DFL's effectiveness in optimizing data placement and task coordination, even on smaller-scale HPC systems.},
+  archive      = {J_TPDS},
+  author       = {Chen-An Pai and Chih-Yu Hsieh and Chun-Mu Weng and Hao-Tien Yu and Tung-Yu Hsieh and Zhan-Yi Lin and Jerry Chou},
+  doi          = {10.1109/TPDS.2025.3627428},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-6},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Critique of “Data flow lifecycles for optimizing workflow coordination” by SCC team from national tsing hua university},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EDTC: Exact triangle counting for dynamic graphs on GPU. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3627974'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the process of updating a dynamic graph, an update to one edge may result in the addition or deletion of multiple triangles, while an update to multiple edges may only result in the addition or deletion of a single triangle. Consequently, accurately counting triangles on a dynamic graph is a challenging undertaking. As dynamic graphs are continuously updated, the GPU's memory may be insufficient to accommodate the storage of larger graphs. This presents a challenge when the graph, which is constantly growing, cannot be stored. The hash-based and binary search-based triangle counting algorithm is regarded as the most efficient for static graphs. However, when vertices with high degrees are encountered, the hash-based triangle counting method results in significant memory wastage due to the traditional construction of a hash table, leading to a shortage of memory. This issue remains unresolved. In this paper a triangle counting system EDTC is developed for dynamic graphs while ensuring the accuracy of counting. The system addresses three main problems: (1) An efficient EHTC algorithm is introduced to rapidly and accurately count the number of triangles in a graph. (2) The concept of an Update Activation CSR(UA-CSR) is introduced, along with a data structure to facilitate its implementation. This structure loads only the subgraph portion affected by the updated edge into the GPU, allowing calculations to be performed on this specific subgraph. (3) A compressed hash table is designed to reduce memory consumption, along with a dynamic shared memory assignment(DSA) strategy to fully utilize the shared memory of the GPU.},
+  archive      = {J_TPDS},
+  author       = {Zhuo Wang and Jiahao Tang and Zhixiong Li and Jinxing Tu and Wei Xue and Jianqiang Huang},
+  doi          = {10.1109/TPDS.2025.3627974},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {EDTC: Exact triangle counting for dynamic graphs on GPU},
   year         = {2025},
 }
 </textarea>

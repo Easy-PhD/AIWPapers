@@ -25,145 +25,25 @@
 </head>
 <body>
 
-<h2 id="aij">AIJ - 7</h2>
+<h2 id="aij">AIJ - 1</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Contra2: A one-step active learning method for imbalanced graphs. <em>AIJ</em>, <em>349</em>, 104439. (<a href='https://doi.org/10.1016/j.artint.2025.104439'>www</a>)
+(2026). Kernel-bounded clustering: Achieving the objective of spectral clustering without eigendecomposition. <em>AIJ</em>, <em>350</em>, 104440. (<a href='https://doi.org/10.1016/j.artint.2025.104440'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Graph active learning (GAL) is an important research direction in graph neural networks (GNNs) that aims to select the most valuable nodes for labeling to train GNNs. Previous works in GAL have primarily focused on the overall performance of GNNs, overlooking the balance among different classes. However, graphs in real-world applications are often imbalanced, which leads GAL methods to select class-imbalanced training sets, resulting in biased GNN models. Furthermore, due to the high cost of multi-turn queries, there is an increasing demand for one-step GAL methods, where the entire training set is queried at once. These realities prompt us to investigate the problem of one-step active learning on imbalanced graphs. In this paper, we propose a theory-driven method called Contrast & Contract (Contra 2 ) to tackle the above issues. The key idea of Contra 2 is that intra-class edges within the majority are dominant in the edge set, so contracting these edges will reduce the imbalance ratio. Specifically, Contra 2 first learns node representations by graph contrast ive learning (GCL), then stochastically contract s the edges that connect nodes with similar embeddings. We theoretically show that Contra 2 reduces the imbalance ratio with high probability. By leveraging a more evenly distributed graph, we can achieve a balanced selection of labeled nodes without requiring any seed labels. The effectiveness of Contra 2 is evaluated against various baselines on 11 datasets with different budgets. Contra 2 demonstrates remarkable performance, achieving either higher or on-par performance with only half of the annotation budget on some datasets.},
+  abstract     = {The research on spectral clustering (SC) has thus far been pursued on the same track using the same tool of eigendecomposition of a matrix since the idea was first introduced in 1973. Despite its successes, SC has been identified to have fundamental limitations that prevent SC from discovering certain types of clusters, and SC has slow runtime. We offer an alternative path that does not involve the eigendecomposition, and, more broadly, it uses no optimization. The proposed new Kernel-Bounded Clustering (KBC) is a complete metamorphosis in 50 years of research in SC in view of the fact that KBC achieves the same objective of SC without eigendecomposition or optimization. We evaluated KBC on the datasets that have been used to demonstrate the fundamental limitations of SC, genome-wide expression data, large image datasets and many commonly used real-world benchmark datasets. KBC produced better quality clusters than various variants of SC, and it ran six orders of magnitude faster than the traditional SC on a set of 5 million data points.},
   archive      = {J_AIJ},
-  author       = {Wenjie Yang and Shengzhong Zhang and Jiaxing Guo and Zengfeng Huang},
-  doi          = {10.1016/j.artint.2025.104439},
+  author       = {Hang Zhang and Kai Ming Ting and Ye Zhu},
+  doi          = {10.1016/j.artint.2025.104440},
   journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104439},
+  month        = {1},
+  pages        = {104440},
   shortjournal = {Artif. Intell.},
-  title        = {Contra2: A one-step active learning method for imbalanced graphs},
-  volume       = {349},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Arc-consistency with linear programming reduced costs (applied to stable set in chordal graphs). <em>AIJ</em>, <em>349</em>, 104438. (<a href='https://doi.org/10.1016/j.artint.2025.104438'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A well known technique to reduce the search space in integer programming is known as variable fixing or reduced cost strengthening . The reduced costs given by an optimal dual solution of the linear relaxation can be used to strengthen the bounds of the variables but this filtering is incomplete. We show how reduced costs can be used to achieve Arc-Consistency (AC), i.e. a complete filtering, of a global constraint with a cost variable and an assignment cost for each value. We assume that an ideal Integer Linear Programming (ILP) formulation is available i.e. the convex hull of the characteristic vectors of the supports is known. A detailed analysis of reduced cost based filtering is proposed. We characterize arc-consistency based on complementary slackness i.e. completeness of reasoning as opposed to only optimality. We also give a simple sufficient condition allowing a set of dual solutions to ensure arc-consistency through reduced costs. In practice, when the constraint has a such an ideal ILP, n dual solutions are always enough to achieve AC (where n is the number of variables of the global constraint). It extends the work presented in [26] for satisfaction problems and in [17] for the specific case of the minimum weighted alldifferent constraint. Our analysis is illustrated on constraints related to the assignment and shortest path problem and also demonstrated on the weighted stable set problem in chordal graphs. A novel AC algorithm is proposed in this latter case based on reduced costs.},
-  archive      = {J_AIJ},
-  author       = {Guillaume Claus and Hadrien Cambazard and Hugo Apeloig and Pierre Hoppenot},
-  doi          = {10.1016/j.artint.2025.104438},
-  journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104438},
-  shortjournal = {Artif. Intell.},
-  title        = {Arc-consistency with linear programming reduced costs (applied to stable set in chordal graphs)},
-  volume       = {349},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Constraints and lifting-based (conditional) preferences in abstract argumentation. <em>AIJ</em>, <em>349</em>, 104437. (<a href='https://doi.org/10.1016/j.artint.2025.104437'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Dealing with controversial information is an important issue in several application contexts. Formal argumentation enables reasoning on arguments for and against a claim to decide on an outcome. Abstract Argumentation Framework (AF) has emerged as a central formalism in argument-based reasoning. In recent years there has been an increasing interest in extending AF to facilitate the knowledge representation and reasoning process. In this paper, we present an extension of AF that allows for the representation of labelled constraints and labelled preferences. A labelled argument is of the form in ( a ) , out ( a ) , or und ( a ) , where a is an argument, whereas in , out , and und denote the acceptance status (i.e., accepted, rejected, undecided, respectively) of the specified argument. We start by considering an extension of AF with labelled constraints, namely Labelled Constrained AF (LCAF), then we focus on AF with labelled preferences ( Labelled Preference-based AF , LPAF for short) and, finally, we introduce a general framework called Labelled Preference-based Constrained AF (LPCAF) that combines AF, labelled constraints, and labelled preferences. We also investigate an extension of AF with labelled conditional (or extended) preferences, namely Labelled extended Preference-based AF (LePAF), and its further combination with labelled constraints ( Labelled extended Preference-based Constrained AF , LePCAF for short). Herein, conditional preferences are of the form a > b ← body , where a and b are labelled arguments, whereas body is a propositional formula over labelled arguments. For each framework, we define its syntax and semantics, and investigate the computational complexity of four canonical argumentation problems: existence , verification , and credulous and skeptical acceptance , under the well-known complete , stable , semi-stable , and preferred semantics.},
-  archive      = {J_AIJ},
-  author       = {Gianvincenzo Alfano and Sergio Greco and Francesco Parisi and Irina Trubitsyna},
-  doi          = {10.1016/j.artint.2025.104437},
-  journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104437},
-  shortjournal = {Artif. Intell.},
-  title        = {Constraints and lifting-based (conditional) preferences in abstract argumentation},
-  volume       = {349},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Pandora's box problem with time constraints. <em>AIJ</em>, <em>349</em>, 104426. (<a href='https://doi.org/10.1016/j.artint.2025.104426'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The Pandora's Box problem models the search for the best alternative when evaluation is costly. In the simplest variant, a decision maker is presented with n boxes, each associated with a cost of inspection and a hidden random reward. The decision maker inspects a subset of these boxes one after the other, in a possibly adaptive order, and gains the difference between the largest revealed reward and the sum of the inspection costs. Although this classic version is well understood (Weitzman 1979), there is a flourishing recent literature on variants of the problem. Here we introduce a general framework—the Pandora's Box Over Time problem—that captures a wide range of variants where time plays a role, e.g., by constraining the schedules of exploration and influencing costs and rewards. In our framework, boxes have time-dependent rewards and costs, whereas inspection may require a box-specific processing time. Moreover, once a box is inspected, its reward may deteriorate over time. Our main result is an efficient constant-factor approximation to the optimal strategy for the Pandora's Box Over Time problem, which is generally NP-hard to compute. We further obtain improved results for the natural special cases where boxes have no processing time, boxes are available only in specific time slots, or when costs and reward distributions are time-independent (but rewards may still deteriorate after inspection).},
-  archive      = {J_AIJ},
-  author       = {Georgios Amanatidis and Ben Berger and Tomer Ezra and Michal Feldman and Federico Fusco and Rebecca Reiffenhäuser and Artem Tsikiridis},
-  doi          = {10.1016/j.artint.2025.104426},
-  journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104426},
-  shortjournal = {Artif. Intell.},
-  title        = {Pandora's box problem with time constraints},
-  volume       = {349},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Defending a city from multi-drone attacks: A sequential stackelberg security games approach. <em>AIJ</em>, <em>349</em>, 104425. (<a href='https://doi.org/10.1016/j.artint.2025.104425'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {To counter an imminent multi-drone attack on a city, defenders have deployed drones across the city. These drones must intercept/eliminate the threat, thus reducing potential damage from the attack. We model this as a Sequential Stackelberg Security Game, where the defender first commits to a mixed sequential defense strategy, and the attacker then best responds. We develop an efficient algorithm called S2D2, which outputs a defense strategy. We demonstrate the efficacy of S2D2 in extensive experiments on data from 80 real cities, improving the performance of the defender in comparison to greedy heuristics based on prior works. We prove that under some reasonable assumptions about the city structure, S2D2 outputs an approximate Strong Stackelberg Equilibrium (SSE) with a convenient structure.},
-  archive      = {J_AIJ},
-  author       = {Dolev Mutzari and Tonmoay Deb and Cristian Molinaro and Andrea Pugliese and V.S. Subrahmanian and Sarit Kraus},
-  doi          = {10.1016/j.artint.2025.104425},
-  journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104425},
-  shortjournal = {Artif. Intell.},
-  title        = {Defending a city from multi-drone attacks: A sequential stackelberg security games approach},
-  volume       = {349},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Optimal bailouts and strategic debt forgiveness in financial networks. <em>AIJ</em>, <em>349</em>, 104424. (<a href='https://doi.org/10.1016/j.artint.2025.104424'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A financial system is represented by a network, where nodes correspond to banks, and directed labeled edges correspond to debt contracts between banks. Once a payment schedule has been defined, the liquidity of the system is defined as the sum of total payments made in the network. Maximizing systemic liquidity is a natural objective of any financial authority, so, we study the setting where the financial authority offers bailout money to some bank(s) or forgives the debts of others in order to help them avoid costs related to default, and, hence, maximize liquidity. We investigate the approximation ratio provided by the greedy bailout policy compared to the optimal one, and we study the computational hardness of finding the optimal debt-removal and budget-constrained optimal bailout policy, respectively. We also study financial systems from a game-theoretic standpoint. We observe that the removal of some incoming debt might be in the best interest of a bank, if that helps one of its borrowers remain solvent and avoid costs related to default. Assuming that a bank's well-being (i.e., utility) is aligned with the incoming payments they receive from the network, we define and analyze a game among banks who want to maximize their utility by strategically giving up some incoming payments. In addition, we extend the previous game by considering bailout payments. After formally defining the above games, we prove results about the existence and quality of pure Nash equilibria, as well as the computational complexity of finding such equilibria.},
-  archive      = {J_AIJ},
-  author       = {Panagiotis Kanellopoulos and Maria Kyropoulou and Hao Zhou},
-  doi          = {10.1016/j.artint.2025.104424},
-  journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104424},
-  shortjournal = {Artif. Intell.},
-  title        = {Optimal bailouts and strategic debt forgiveness in financial networks},
-  volume       = {349},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). The topology of surprise. <em>AIJ</em>, <em>349</em>, 104423. (<a href='https://doi.org/10.1016/j.artint.2025.104423'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper we present a topological epistemic logic, with modalities for knowledge (modelled as the universal modality), knowability (represented by the topological interior operator), and unknowability of the actual world. The last notion has a non-self-referential reading (modelled by Cantor derivative: the set of limit points of a given set) and a self-referential one (modelled by Cantor's perfect core of a given set: its largest subset without isolated points, where x is isolated iff { x } is open). We completely axiomatize this logic, showing that it is decidable and pspace -complete, and we apply it to the analysis of a famous epistemic puzzle: the Surprise Exam Paradox.},
-  archive      = {J_AIJ},
-  author       = {Alexandru Baltag and Nick Bezhanishvili and David Fernández-Duque},
-  doi          = {10.1016/j.artint.2025.104423},
-  journal      = {Artificial Intelligence},
-  month        = {12},
-  pages        = {104423},
-  shortjournal = {Artif. Intell.},
-  title        = {The topology of surprise},
-  volume       = {349},
-  year         = {2025},
+  title        = {Kernel-bounded clustering: Achieving the objective of spectral clustering without eigendecomposition},
+  volume       = {350},
+  year         = {2026},
 }
 </textarea>
 </details></li>
