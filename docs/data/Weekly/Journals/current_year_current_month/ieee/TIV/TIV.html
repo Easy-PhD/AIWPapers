@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="tiv">TIV - 15</h2>
+<h2 id="tiv">TIV - 17</h2>
 <ul>
 <li><details>
 <summary>
-(2025). MDFD2-DETR: A real-time complex road object detection model based on multi-domain feature decomposition and de-redundancy. <em>TIV</em>, <em>10</em>(8), 4343-4359. (<a href='https://doi.org/10.1109/TIV.2024.3478851'>www</a>)
+(2025). Optimizing look-ahead distance for vehicle lateral control: A controller-adaptive approach. <em>TIV</em>, <em>10</em>(9), 4583--4594. (<a href='https://doi.org/10.1109/TIV.2024.3488057'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Accurate perception of road object information is critical in autonomous driving systems and traffic flow analysis. This task is challenging due to the variability of complex road backgrounds, diversity in object sizes and shapes, and mutual occlusion among objects. To address these challenges, we introduce an end-to-end, real-time model for complex road object detection, named Multi-Domain Feature Decomposition and De-redundancy Detection Transformer (MDFD2-DETR). To the best of our knowledge, this is the first real-time perception model designed for complex traffic scenarios, based on the DETR architecture. In detail, we analyzed the key reasons for the low accuracy of complex road target perception and proposed a Multi-Domain Feature Decomposition (MDFD) module for reducing feature redundancy across spatial, channel, and frequency domains. Additionally, we introduced a Hybrid Position Encoding (HPE) strategy to achieve more effective positional interactions among features to address this issue. To train and evaluate the proposed algorithm, we built a complex, real-world road perception dataset named SWJTU-100k, containing 100,000 samples. Experimental results demonstrate that MDFD2-DETR surpasses existing real-time methods, including YOLO-like, DETR-like models, with fewer parameters and GFLOPs, reaching 82.6 FPS without the use of CUDA acceleration. Further, it demonstrates a 0.5%-1.7% mAP@0.5 improvement on the PASCAL VOC 2012 dataset, a 1.5%-3.3% mAP@0.5 improvement on the SWJTU-100K dataset, a 0.5%-1.5% mAP@0.5 improvement on the KITTI dataset, and a 0.6%-1.5% mAP@0.5 improvement on the Udacity dataset, thus exhibiting its superior performance. In addition, multi-object tracking algorithms based on MDFD2-DETR achieved superior tracking performance in complex road scenes.},
+  abstract     = {In vehicle lateral control, it is essential to determine an appropriate look-ahead distance influenced by vehicle speed and road curvature to improve tracking performance. This study proposes a vehicle lateral control scheme with a look-ahead distance tracer. First, using an empirical kinematic model, we designed a look-ahead distance hyperplane by optimizing the look-ahead distance and feedback control gains in $H_{2}$ sense. The look-ahead distance tracer determines an approximate optimal look-ahead distance using weighted interpolation, given the vehicle velocity and road curvature. We then obtained a suboptimal control gain using a linear parameter-varying controller for lane-tracking control. The linear parameter-varying controller stability was ensured by finding a solution to the linear matrix inequality problem. A comparative study using a fixed look-ahead distance and a nominal controller demonstrated the effectiveness of the proposed algorithm. The simulation results showed a substantially reduced lateral position error when using the proposed method compared to the nominal approach. The proposed scheme outperforms the nominal controller, highlighting the benefits of adapting the look-ahead distance for improved vehicle control.},
   archive      = {J_TIV},
-  author       = {Jia-wei Liu and Da Yang and Ting-wei Feng and Jun-jie Fu},
-  doi          = {10.1109/TIV.2024.3478851},
+  author       = {Woo Young Choi and Chung Choo Chung},
+  doi          = {10.1109/TIV.2024.3488057},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4343-4359},
+  month        = {9},
+  number       = {9},
+  pages        = {4583--4594},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {MDFD2-DETR: A real-time complex road object detection model based on multi-domain feature decomposition and de-redundancy},
+  title        = {Optimizing look-ahead distance for vehicle lateral control: A controller-adaptive approach},
   volume       = {10},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Architectural design and analysis of electro-mechanical-brake system in view of functional safety concept. <em>TIV</em>, <em>10</em>(8), 4330-4342. (<a href='https://doi.org/10.1109/TIV.2024.3478792'>www</a>)
+(2025). Human-like implicit intention expression for autonomous driving motion planning based on learning human intention priors. <em>TIV</em>, <em>10</em>(9), 4567--4582. (<a href='https://doi.org/10.1109/TIV.2024.3487527'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {With the development of automotive intelligence, drive-by-wire system has attracted extensive attention from academia and industry. However, the architectural design of electro-mechanical-brake (EMB) systems has not been emphasized enough, especially in the context of functional safety concept. In view of this, based on ISO 26262, this paper extends the system boundary of functional safety for the first time, and combines EMB system with other systems of the vehicle to build a 4-way redundant EMB system architecture. Furthermore, detailed qualitative and quantitative analysis results are given by using state transition location diagram and quantitative fault tree analysis (FTA) respectively, and the braking failure rate is ${{Q}_0} \approx 2.0003 \times {{10}^{ - 10}} &lt; {{10}^{ - 8}}$ meets the failure rate requirements of ASIL-D, which prove the security and reliability of the proposed architecture. This paper provides guidance and reference for the design and analysis of EMB system for subsequent researchers, and guarantees the safe development of autonomous vehicles from the safety and reliability of the system.},
+  abstract     = {One of the key factors determining whether autonomous vehicles (AVs) can be seamlessly integrated into existing traffic systems is their ability to interact smoothly and efficiently with human drivers and communicate their intentions. While many studies have focused on enhancing AVs' human-like interaction and communication capabilities at the behavioral decision-making level, a significant gap remains between the actual motion trajectories of AVs and the psychological expectations of human drivers. This discrepancy can seriously affect the safety and efficiency of AV-HV (Autonomous Vehicle-Human Vehicle) interactions. To address these challenges, we propose a motion planning method for AVs that incorporates implicit intention expression. First, we construct a trajectory space constraint based on human implicit intention priors, compressing and pruning the trajectory space to generate candidate motion trajectories that consider intention expression. We then apply maximum entropy inverse reinforcement learning to learn and estimate human trajectory preferences, constructing a reward function that represents the cognitive characteristics of drivers. Finally, using a Boltzmann distribution, we establish a probabilistic distribution of candidate trajectories based on the reward obtained, selecting human-like trajectory actions. We validated our approach on a real trajectory dataset and compared it with several baseline methods. The results demonstrate that our method excels in human-likeness, intention expression capability, and computational efficiency.},
   archive      = {J_TIV},
-  author       = {Zheng Zhu and Liang Li},
-  doi          = {10.1109/TIV.2024.3478792},
+  author       = {Jiaqi Liu and Xiao Qi and Ying Ni and Jian Sun and Peng Hang},
+  doi          = {10.1109/TIV.2024.3487527},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4330-4342},
+  month        = {9},
+  number       = {9},
+  pages        = {4567--4582},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Architectural design and analysis of electro-mechanical-brake system in view of functional safety concept},
+  title        = {Human-like implicit intention expression for autonomous driving motion planning based on learning human intention priors},
   volume       = {10},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). CoRange: Collaborative range-aware adaptive fusion for multi-agent perception. <em>TIV</em>, <em>10</em>(8), 4316-4329. (<a href='https://doi.org/10.1109/TIV.2024.3478756'>www</a>)
+(2025). Data streaming platform for crowd-sourced vehicle dataset generation. <em>TIV</em>, <em>10</em>(9), 4557--4566. (<a href='https://doi.org/10.1109/TIV.2024.3486926'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Collaborative perception facilitates information exchange and communication among neighbouring agents and is a competitive solution to address the limited field of view of a single vehicle in autonomous driving. Although collaborative perception has brightened application prospects and can greatly enhance vehicle safety in transportation systems, it often requires substantial communication and computation overhead to achieve efficient collaboration. Even worse, the sparse point cloud data caused by distant objects impairs the perceptual abilities of individual agents, and unavoidable errors in agents' poses result in misaligned global observations and low perception accuracy. In this work, we focus on the multi-agent collaborative perception problem and present a Collaborative Range-aware adaptive fusion framework named CoRange to achieve the communication-efficient and fusion-effective perception of the rapidly changing environment. First, we present a range-aware communication mechanism to reduce the misjudgment and minimize the bandwidth consumption, by fully considering the characters of range information and selectively transmitting the features of critical regions. Then, we design a local and agent-wise attention module to handle point clouds at different distances and capture relationships between heterogeneous agents, with an objective of enhancing the detection accuracy and robustness against pose errors. Finally, we adopt a hierarchical adaptive fusion method to effectively integrate the features representing diverse semantic information and provide multi-source representations for ego agents. Experiments on both simulated and real-world datasets are conducted to validate the efficiency and effectiveness of the proposed approach, and the experimental results demonstrate that our approach exhibits superior performance in limited communication bandwidths and noisy environments when LiDAR-based object detection tasks are carried out.},
+  abstract     = {Vehicles are sophisticated machines equipped with sensors that provide real-time data for onboard driving assistance systems. Due to the wide variety of traffic, road, and weather conditions, continuous system enhancements are essential. Connectivity allows vehicles to transmit previously unknown data, expanding datasets and accelerating the development of new data models. This enables faster identification and integration of novel data, improving system reliability and reducing time to market. Data Spaces aim to create a data-driven, interconnected, and innovative data economy, where edge and cloud infrastructures support a virtualised IoT platform that connects data sources and development servers. This paper proposes an edge-cloud data platform to connect car data producers with multiple and heterogeneous services, addressing key challenges in Data Spaces, such as data sovereignty, governance, interoperability, and privacy. The paper also evaluates the data platform's performance limits for text, image, and video data workloads, examines the impact of connectivity technologies, and assesses latencies. The results show that latencies drop to 33 ms with 5G connectivity when pipelining data to consuming applications hosted at the edge, compared to around 77 ms when crossing both edge and cloud processing infrastructures. The results offer guidance on the necessary processing assets to avoid bottlenecks in car data platforms.},
   archive      = {J_TIV},
-  author       = {Qiuhao Shu and Jinchao Chen and Yantao Lu and Ying Zhang and Yang Wang},
-  doi          = {10.1109/TIV.2024.3478756},
+  author       = {Felipe Mogollon and Zaloa Fernandez and Angel Martin and Juan Diego Ortega and Gorka Velez},
+  doi          = {10.1109/TIV.2024.3486926},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4316-4329},
+  month        = {9},
+  number       = {9},
+  pages        = {4557--4566},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {CoRange: Collaborative range-aware adaptive fusion for multi-agent perception},
+  title        = {Data streaming platform for crowd-sourced vehicle dataset generation},
   volume       = {10},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Multi-robot relative pose estimation in SE(2) with observability analysis: A comparison of extended kalman filtering and robust pose graph optimization. <em>TIV</em>, <em>10</em>(8), 4293-4315. (<a href='https://doi.org/10.1109/TIV.2024.3478290'>www</a>)
+(2025). Trajectory-guided driving behavior prediction for autonomous driving. <em>TIV</em>, <em>10</em>(9), 4546--4556. (<a href='https://doi.org/10.1109/TIV.2024.3486108'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this study, we focus on multi-robot cooperative localization and the observability analysis of relative pose estimation. Cooperative localization enhances pose estimation by sharing odometry data via communication networks. When a target robot's odometry is directly shared, relative pose observability can be achieved using either range-only or bearing-only measurements, given non-zero linear velocities. However, if the target robot's odometry must be estimated, both range and bearing measurements are required for observability. We validate relative pose estimation feasibility in ground-based multi-robot systems through simulations and real-world experiments, exploring six different sensing and communication structures. In ROS/Gazebo simulations, we evaluate estimation accuracy using extended Kalman filter (EKF) and pose graph optimization (PGO) methods with various robust loss functions and sliding window batch sizes. Hardware experiments with two Turtlebot3 robots equipped with UWB modules further demonstrate the practicality of decentralized relative pose estimation without inter-robot communication. The results show that estimation accuracy decreases by only 0 to 8% compared to setups utilizing inter-robot communication, underscoring the effectiveness of our proposed methods.},
+  abstract     = {Driving behavior prediction (DBP) plays an important role in autonomous driving systems. Accurately anticipating driving behaviors of ego-vehicles, such as lane changes or left/right turns, several seconds before their actual occurrences enables AI pilots to plan safer trajectories or alert drivers to potential dangers. However, existing DBP benchmarks, e.g., the Brain4Cars, are restricted by the limited amount of data samples and the narrow range of categories for driving behaviors of ego-vehicles. In this study, we extract over 5000 clips from untrimmed multi-modal data sequences of the HRI Driving Dataset (HDD) to create a new large-scale DBP benchmark, named HDD4DBP. Furthermore, a Trajectory-Guided Driving Behavior Prediction (TGDBP) approach is proposed within a two-branch network architecture. One branch encodes visual information of driving scenarios using a vision transformer (ViT) backbone, while the other predicts the future trajectory of the ego-vehicle based on historical trajectory and control signals. Finally, the predicted trajectories and visual information are fused to predict the driving behaviors. In experiments, the proposed TGDBP achieves a significant performance improvement over previous baselines on the HDD4DBP. Moreover, fine-tuning the pre-trained visual encoder of the TGDBP model on the Brain4Cars dataset results in state-of-the-art (SOTA) performance, further showcasing the advantages of the HDD4DBP dataset.},
   archive      = {J_TIV},
-  author       = {Gihun Shin and Hyunjae Sim and Seungwon Nam and Yonghee Kim and Jae Heo and Kwang-Ki K. Kim},
-  doi          = {10.1109/TIV.2024.3478290},
+  author       = {Zhang Zhang and Yubo Chang and Qinghui Dong and Liang Wang},
+  doi          = {10.1109/TIV.2024.3486108},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4293-4315},
+  month        = {9},
+  number       = {9},
+  pages        = {4546--4556},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Multi-robot relative pose estimation in SE(2) with observability analysis: A comparison of extended kalman filtering and robust pose graph optimization},
+  title        = {Trajectory-guided driving behavior prediction for autonomous driving},
   volume       = {10},
   year         = {2025},
 }
@@ -113,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Data-driven sliding mode optimal control for multi-power unit high-speed train: A composite approach. <em>TIV</em>, <em>10</em>(8), 4279-4292. (<a href='https://doi.org/10.1109/TIV.2024.3478275'>www</a>)
+(2025). Offline object tracking with joint point cloud registration. <em>TIV</em>, <em>10</em>(9), 4528--4545. (<a href='https://doi.org/10.1109/TIV.2024.3486087'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this study, a multiple-input multiple-output (MIMO) data-driven sliding mode optimal control scheme is investigated for a multi-power unit high-speed train (HST) automatic driving system under disturbances. First, an integral terminal sliding mode control (ITSMC) law based on the dynamic linearization method is introduced to achieve error convergence in finite time. Subsequently, a parameter update law and an adaptive extended state observer (AESO) are designed to estimate the control gain and total uncertainty, respectively, which solves the problem of traditional sliding mode control requiring a large switching gain to handle the disturbance. Third, an optimal control signal is obtained by predictive control to achieve a higher level of tracking error accuracy and quickly reach the quasi-sliding mode state, and the compound optimal control scheme is derived under the combined action of the ITSMC and predictive control. The scheme considers and compensates for the total uncertainty caused by the error feedback, parameter estimation error, and unknown nonlinearity. The main advantages of this scheme include the following: controller design process uses only system data, provides excellent model adaptability, and disturbance rejection ability. Upon providing a stability-proof analysis of the proposed method, the proposed composite control method was compared and tested on a CRH380A train simulation test bench equipped in the laboratory. The simulation results show that the speed tracking errors of each power unit of the HST under the proposed control scheme are within [$-$0.123 km$\cdot$h$^{-1}$, 0.144 km$\cdot$h$^{-1}$]. The control forces and accelerations are within [$-$55 kN, 46 kN] and [$-$0.592 m$\cdot$s$^{-2}$, 0.521 m$\cdot$s$^{-2}$] respectively, which meets the requirements of safe, stable, and efficient operation of the train.},
+  abstract     = {To meet regulatory and safety standards, a significant amount of ground-truth data is necessary for data-driven validation of perception algorithms. To overcome the high costs and extensive manual efforts required by existing methods, we propose an automatic offline approach to generate ground-truth data for 3D object poses. Our method solely uses lidar point clouds and matches them jointly, making it applicable to unknown rigid object shapes. We integrate soft 3D motion constraints and iteratively refine the kinematic object states, while correcting the point cloud distortion caused by object motion, to limit both global and local registration errors, respectively. To assess the accuracy of our obtained 3D object poses, we model error bounds under ideal conditions based on the sensitivity of the transformation parameters and the accuracy of a single lidar detection. Our experiments using both simulations and real-world sensor data demonstrate the superior performance of our proposed method within the near range compared to DGPS data.},
   archive      = {J_TIV},
-  author       = {Liang Zhou and Zhongqi Li and Hui Yang and Zhen Sui and Chang Tan and Yating Fu},
-  doi          = {10.1109/TIV.2024.3478275},
+  author       = {Egon Ye and Matthias Althoff},
+  doi          = {10.1109/TIV.2024.3486087},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4279-4292},
+  month        = {9},
+  number       = {9},
+  pages        = {4528--4545},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Data-driven sliding mode optimal control for multi-power unit high-speed train: A composite approach},
+  title        = {Offline object tracking with joint point cloud registration},
   volume       = {10},
   year         = {2025},
 }
@@ -134,20 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Socially adaptive path planning based on generative adversarial network. <em>TIV</em>, <em>10</em>(8), 4267-4278. (<a href='https://doi.org/10.1109/TIV.2024.3478219'>www</a>)
+(2025). SeqMamba-MPR: A spatial-temporal mamba network for place recognition using sequential multi-modal data. <em>TIV</em>, <em>10</em>(9), 4514--4527. (<a href='https://doi.org/10.1109/TIV.2024.3486042'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The natural interaction between robots and pedestrians in the process of autonomous navigation is crucial for the intelligent development of mobile robots, which requires robots to fully consider social rules and guarantee the psychological comfort of pedestrians. Learning-based socially adaptive algorithms have shown promise in specific human-robot interaction environments, yet generalization of robot path planning requires improvement. This work combines the generative adversarial network (GAN) with the Optimal Rapidly-exploring Random Tree (RRT*) navigation algorithm. It proposes a GAN model with strong generalization performance and a GAN-RRT* algorithm for path generation in human-robot interaction environments. Additionally, a socially adaptive path planning framework named GAN-RTIRL is presented, which combines GAN with Rapidly-exploring random Trees Inverse Reinforcement Learning (RTIRL) to enhance the homotopy rate between planned and demonstration paths. The GAN-RRT* path planner can update the GAN model from the demonstration path, enabling the robot to generate more anthropomorphic paths and have stronger generalization in complex environments. Experimental results indicate that the proposed method effectively improves the anthropomorphic degree of robot motion planning and the homotopy rate.},
+  abstract     = {Place recognition is a vital technique in the field of autonomous vehicle localization. Existing LiDAR-Visual fusion methods suffer from excessive computational burden, and their real-time performance is further compromised when using the sequential strategy for enhancement. To strike a balance between localization accuracy and computational time, we propose a sequence-based place recognition method for LiDAR-Visual fusion, named SeqMamba-MPR. First, we perform joint encoding of LiDAR point clouds and panoramic images using the maximum detection distance, referred to as SMRD.Subsequently, global descriptors are obtained through a single-scan module and a sequence-scan module designed based on a state-space model. The cross-scan design in the single-scan module improves computational efficiency, while the sequence all-combination representation strategy in the sequence-scan module addresses the place recognition problem with trajectory variations in the scene. We conduct experiments on the public dataset NCLT and a self-recorded NEU-Robot dataset, demonstrating that the proposed method achieves a balance between localization recall metrics and real-time performance, outperforming the current state-of-the-art methods.},
   archive      = {J_TIV},
-  author       = {Yao Wang and Jiajie Yu and Yuqi Kong and Lining Sun and Chao Liu and Jiankun Wang and Wenzheng Chi},
-  doi          = {10.1109/TIV.2024.3478219},
+  author       = {Jinpeng Zhang and Yunzhou Zhang and Le Zhou and Li Wang and Sizhan Wang},
+  doi          = {10.1109/TIV.2024.3486042},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4267-4278},
+  month        = {9},
+  number       = {9},
+  pages        = {4514--4527},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Socially adaptive path planning based on generative adversarial network},
+  title        = {SeqMamba-MPR: A spatial-temporal mamba network for place recognition using sequential multi-modal data},
   volume       = {10},
   year         = {2025},
 }
@@ -155,20 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). An online self-learning graph-based lateral controller for self-driving cars. <em>TIV</em>, <em>10</em>(8), 4255-4266. (<a href='https://doi.org/10.1109/TIV.2024.3478052'>www</a>)
+(2025). Multi-sensor fusion-based highway vehicle behavior prediction and its application in adaptive cruise control. <em>TIV</em>, <em>10</em>(9), 4499--4513. (<a href='https://doi.org/10.1109/TIV.2024.3486037'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The hype around self-driving cars has been growing over the past years and has sparked much research. Several modules in self-driving cars are thoroughly investigated to ensure safety, comfort, and efficiency, among which the controller is crucial. The controller module can be categorized into longitudinal and lateral controllers in which the task of the former is to follow the reference velocity, and the latter is to reduce the lateral displacement error from the reference path. Generally, a tuned controller is not sufficient to perform in all environments. Thus, a controller that can adapt to changing conditions is necessary for autonomous driving. Furthermore, these controllers often depend on vehicle models that also need to adapt over time due to varying environments. This paper uses graphs to present novel techniques to learn the vehicle model and the lateral controller online. First, a heterogeneous graph is presented depicting the current states of and inputs to the vehicle. The vehicle model is then learned online using known physical constraints in conjunction with the processing of the graph through a Graph Neural Network structure. Next, another heterogeneous graph – depicting the transition from current to desired states – is processed through another Graph Neural Network structure to generate the steering command on the fly. Finally, the performance of this self-learning model-based lateral controller is evaluated and shown to be satisfactory on an open-source autonomous driving platform called CARLA.},
+  abstract     = {We propose a vehicle behavior prediction approach using multi-sensor data fusion to address the challenges of high-level autonomous driving on expressways and deploying on vehicles with limited computation hardware capabilities. The proposed approach analyzes the interactions between the ego-vehicle and background vehicles to extract critical features such as congestion levels and occupancy states. After that, these features are fed into a Long Short-Term Memory (LSTM) model to predict the behaviors of key targets within the ego-vehicle's vicinity. This sequential fusion framework incorporating the hierarchical target association significantly reduces the computational intensity and memory requirements. Experimental results demonstrate that the proposed vehicle behavior prediction approach reduces the time required for background vehicle behavior analysis and enhances reliability and safety by providing valuable insights for defensive driving and planning strategies. Additionally, the ACC real-vehicle test incorporating the proposed behavior prediction reveals that the system can anticipate and respond appropriately to potential hazards, maintaining a safe distance between the ego-vehicle and surrounding traffic, thereby contributing to safer and more efficient autonomous driving.},
   archive      = {J_TIV},
-  author       = {Jilan Samiuddin and Benoit Boulet and Di Wu},
-  doi          = {10.1109/TIV.2024.3478052},
+  author       = {Zihan Wang and Yang Liu and Lihui Peng and Danya Yao and Yi Zhang},
+  doi          = {10.1109/TIV.2024.3486037},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4255-4266},
+  month        = {9},
+  number       = {9},
+  pages        = {4499--4513},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {An online self-learning graph-based lateral controller for self-driving cars},
+  title        = {Multi-sensor fusion-based highway vehicle behavior prediction and its application in adaptive cruise control},
   volume       = {10},
   year         = {2025},
 }
@@ -176,20 +176,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A deep reinforcement learning approach for optimized speed planning of connected and autonomous vehicles. <em>TIV</em>, <em>10</em>(8), 4242-4254. (<a href='https://doi.org/10.1109/TIV.2024.3477940'>www</a>)
+(2025). A blockchain-based fox optimization algorithm for optimizing and securing electrical vehicles charging. <em>TIV</em>, <em>10</em>(9), 4479--4498. (<a href='https://doi.org/10.1109/TIV.2024.3485568'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Intelligent transportation presents a novel approach to alleviate the impact of automobiles on traffic, energy consumption, and the environment. The rapid advancement and increasing prominence of Connected and Autonomous Vehicles (CAVs) technology offer potential advantages in improving traffic flow and optimizing energy usage. In this study, we propose enhancements in deep reinforcement learning techniques to address the optimal speed planning problem for CAVs at signalized intersections. We transform the CAV speed planning problem into a Markov Decision Process (MDP) framework. During this transformation, we introduce several enhancements and optimizations to the standard MDP modeling approach, which refine the state-action definitions, reward structures, and transition dynamics, tailored to the specific requirements of CAV behavior at signalized intersections. Through state space design, we achieve dimensionality reduction compared to prior studies, leading to more efficient storage utilization. Besides, instead of using speed limit violations as a training termination criterion, we integrate them into the reward structure, to ensure continuous learning. Additionally, we provide theoretical analysis on reward design to confirm that adherence to defined conditions guarantees the acquisition of the optimal policy within the MDP framework. Our simulation results indicate that the utilization of the Deep Deterministic Policy Gradient (DDPG) algorithm significantly enhances training efficiency and reduces learning time. We also conducted a comparative analysis of various reinforcement learning algorithms applied to our proposed model. Furthermore, our model outperforms the Intelligent Driver Model (IDM) in terms of travel time and energy consumption, demonstrating its practical advantages and effectiveness.},
+  abstract     = {The adoption of electric vehicles (EVs) is rapidly accelerating, driven by increased environmental awareness and technological advancements. However, EV charging faces security and operational challenges hindering widespread adoption. This paper introduces the first method to address both challenges simultaneously. It proposes a novel Secure Optimization for EV Charging (SO-EVC) model which addresses the operational and security challenges for EV charging. At the core of SO-EVC is a new FOA-B algorithm, a blockchain-based optimization model that addresses optimizing charging station (CS) locations and EV routing to CS. FOA-B integrates the Fox Optimizer with Ethereum blockchain, leveraging smart contracts for secure, tamper-proof transactions. FOA-B achieves a transaction throughput of 1,200 TPS, outperforming traditional blockchain systems like Ethereum while maintaining decentralization and security. A case study involving 150 EVs and 10 charging stations demonstrated SO-EVC's ability, through FOA-B, to quickly locate optimal charging stations (in 12 iterations) with a standard deviation of 0.22, and reduced dead EVs to just 8%. FOA-B's computational complexity is linear, ensuring scalability with O $O(N \times D \times T)$ for optimization and $O(H \times M)$ for blockchain processes. The model maintained steady performance throughout the simulation, showing resilience to downtime. FO-AB also addresses key blockchain challenges, such as the fork phenomena and selfish mining, through a lightweight consensus model and secure transaction validation. Different battery types and environmental temperatures were considered, demonstrating SO-EVC%s adaptability in real-world scenarios through FOA-B. These results confirm that SO-EVC provides a comprehensive solution for secure and optimized EV charging systems.},
   archive      = {J_TIV},
-  author       = {Xinxin Wang and Fangfei Li and Yang Tang and Xianlun Peng and Jingjie Ni},
-  doi          = {10.1109/TIV.2024.3477940},
+  author       = {Ahmed Hamed and Mohamed Torky and Salem AlJanah and Abdulaziz Alshammari and Tarek Gaber},
+  doi          = {10.1109/TIV.2024.3485568},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4242-4254},
+  month        = {9},
+  number       = {9},
+  pages        = {4479--4498},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {A deep reinforcement learning approach for optimized speed planning of connected and autonomous vehicles},
+  title        = {A blockchain-based fox optimization algorithm for optimizing and securing electrical vehicles charging},
   volume       = {10},
   year         = {2025},
 }
@@ -197,20 +197,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Radar4Motion: IMU-free 4D radar odometry with robust dynamic filtering and RCS-weighted matching. <em>TIV</em>, <em>10</em>(8), 4231-4241. (<a href='https://doi.org/10.1109/TIV.2024.3477445'>www</a>)
+(2025). Location-aware transformer network for bird's eye view semantic segmentation. <em>TIV</em>, <em>10</em>(9), 4467--4478. (<a href='https://doi.org/10.1109/TIV.2024.3485122'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Accurate localization is crucial for autonomous vehicle navigation. In particular, there is active research in odometry that estimates a vehicle's transformation over time. To achieve this, various environmental perception sensors are utilized, among which radar sensors stand out for their cost-effectiveness and robustness against adverse weather conditions compared to LiDAR sensors. However, traditional radar sensors provide only 2D spatial information ($x, y, doppler$). Recent technical advancements have introduced 4D imaging radar, providing 3D spatial ($x, y, z, doppler$) information. Nonetheless, radar data remains sparse and noisy when compared to LiDAR data, making it challenging to apply conventional LiDAR-based odometry algorithms. To address this challenge, we propose a radar point cloud odometry system that leverages Doppler, representing relative velocity, and Radar cross-section (RCS), a unique measure of an object's reflective ability. The IMU-free ego-motion estimation step utilizes Doppler data to generate an initial guess for registration. Additionally, to effectively extract meaningful points, we propose a polar-grid-based feature extraction algorithm utilizing RCS. To overcome the sparsity of radar point cloud data, we perform RCS-weighted accumulated scans-to-submap matching, where weights for point cloud registration are modeled based on RCS values to achieve robust odometry. Our proposed algorithm was experimentally evaluated using the View-of-Delft dataset. The results demonstrate that our algorithm outperforms existing methods, providing superior odometry performance.},
+  abstract     = {Bird's Eye View (BEV) segmentation with multiple surrounding cameras is crucial in autonomous driving due to its intuitive top-down view of the road environment. Despite the success of previous transformer-based networks, earlier works did not fully utilize the fact that each location on the BEV map requires features at its own resolution from the perspective view (PV). For instance, high-resolution features are needed for distant locations, while low-resolution features are sufficient for nearby areas. Therefore, a suitable combination of different resolution features is necessary to accurately handle variations in appearance in the PV, such as scale, lighting, context, and occlusion across various locations. To address this, we propose a new BEV segmentation network named Location-Aware Transformer Network (LATNet). LATNet blends different resolutions of PV image features using Location-Aware Attention, leveraging the correlation between the resolution of PV features and their location on the BEV map. By doing so, LATNet can create robust features for any BEV map location. Additionally, we introduce Ego-Centric Aware Flip (ECA Flip), a novel augmentation strategy for multi-camera-based BEV segmentation. Conventional augmentation methods disrupt the geometric relationship between PV and BEV, making them unsuitable for multi-camera-based BEV segmentation tasks. In contrast, ECA Flip can augment the original data up to fourfold without compromising the geometric relationships, significantly boosting the network's performance. Our approach achieves state-of-the-art results with real-time inference speed for camera-based semantic segmentation on both the nuScenes and Argoverse datasets.},
   archive      = {J_TIV},
-  author       = {Soyeong Kim and Jiwon Seok and Jaehwan Lee and Kichun Jo},
-  doi          = {10.1109/TIV.2024.3477445},
+  author       = {Suhan Woo and Minseong Park and Youngjo Lee and Seongwon Lee and Euntai Kim},
+  doi          = {10.1109/TIV.2024.3485122},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4231-4241},
+  month        = {9},
+  number       = {9},
+  pages        = {4467--4478},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Radar4Motion: IMU-free 4D radar odometry with robust dynamic filtering and RCS-weighted matching},
+  title        = {Location-aware transformer network for bird's eye view semantic segmentation},
   volume       = {10},
   year         = {2025},
 }
@@ -218,20 +218,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A feature fusion network with multiscale adaptively attentional for object detection in complex traffic scenes. <em>TIV</em>, <em>10</em>(8), 4217-4230. (<a href='https://doi.org/10.1109/TIV.2024.3476991'>www</a>)
+(2025). Image-guided outdoor LiDAR perception quality assessment for autonomous driving. <em>TIV</em>, <em>10</em>(9), 4455--4466. (<a href='https://doi.org/10.1109/TIV.2024.3485004'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Currently, small object detection in complex traffic scenarios remains a major challenge due to variations in object shape, scales, and external environment, as well as a high inter-class similarity. Although the latest algorithms achieve high accuracy, the results for small objects are still unsatisfactory. To obtain satisfactory small object detection results, the YOLOv8 algorithm is used to construct a feature fusion network with multiscale adaptively attentional (MAAFFNet). Firstly, the C2f module is modified to replace the simple summation operation with Multiscale Iterative Attentional Feature Fusion (MSIAFF), which enhances the ability of multi-scale aggregation of the C2f module and suppresses the interference of irrelevant information, resulting in a richer semantic feature map. Secondly, the adaptive spatial feature fusion (ASFF) module is introduced to deal with the feature maps of different scales, allocate the weights of spatial features of different levels, and enhance the consistency of semantic information between each layer of the feature maps, so as to improve the detail richness of the network. Finally, to achieve more accurate classification of small objects, a Slide loss function is introduced to achieve object classification and localization. Our proposed algorithm has been extensively experimented on KITTI, COCO-traffic and VOC 2012 datasets, respectively, comparing the proposed method to popular two-stage and one-stage object detection algorithms, the proposed method performs well in terms of accuracy.},
+  abstract     = {LiDAR is one of the most crucial sensors for autonomous vehicle perception. However, current LiDAR-based point cloud perception algorithms lack comprehensive and rigorous LiDAR quality assessment methods, leading to uncertainty in detection performance. Additionally, existing point cloud quality assessment algorithms are predominantly designed for single-object scenarios. In this paper, we introduce a novel image-guided point cloud quality assessment algorithm for outdoor autonomous driving environments, named the Image-Guided Outdoor Point Cloud Quality Assessment (IGO-PQA) algorithm. Our proposed algorithm comprises two main components. The first component is the IGO-PQA generation algorithm, which leverages point cloud data, corresponding RGB surrounding view images, and agent objects' ground truth annotations to generate an overall quality score for a single-frame LiDAR-based point cloud. The second component is a transformer-based IGO-PQA regression algorithm for no-reference outdoor point cloud quality assessment. This regression algorithm allows for the direct prediction of IGO-PQA scores in an online manner, without requiring image data and object ground truth annotations. We evaluate our proposed algorithm using the nuScenes and Waymo open datasets. The IGO-PQA generation algorithm provides consistent and reasonable perception quality indices. Furthermore, our proposed IGO-PQA regression algorithm achieves a Pearson Linear Correlation Coefficient (PLCC) of 0.86 on the nuScenes dataset and 0.97 on the Waymo dataset.},
   archive      = {J_TIV},
-  author       = {Fei Cai and Zhong Qu and Xuehui Yin},
-  doi          = {10.1109/TIV.2024.3476991},
+  author       = {Ce Zhang and Azim Eskandarian},
+  doi          = {10.1109/TIV.2024.3485004},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4217-4230},
+  month        = {9},
+  number       = {9},
+  pages        = {4455--4466},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {A feature fusion network with multiscale adaptively attentional for object detection in complex traffic scenes},
+  title        = {Image-guided outdoor LiDAR perception quality assessment for autonomous driving},
   volume       = {10},
   year         = {2025},
 }
@@ -239,20 +239,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Reconfigurable intelligent surfaces enabled vehicular communications: A comprehensive survey of recent advances and future challenges. <em>TIV</em>, <em>10</em>(8), 4191-4216. (<a href='https://doi.org/10.1109/TIV.2024.3476934'>www</a>)
+(2025). Adversarial attacks on autonomous driving systems in the physical world: A survey. <em>TIV</em>, <em>10</em>(9), 4433--4454. (<a href='https://doi.org/10.1109/TIV.2024.3484152'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This survey explores the transformative role of reconfigurable intelligent surface (RIS) technologies in vehicular communication systems. It begins by introducing key RIS concepts and classifying them into passive, active, and hybrid types, with particular focus on beyond diagonal RIS (BD-RIS) and its various architectural designs. The study then delves into the evolution of vehicular communication technologies, followed by channel modeling and strategies to ensure long-term system adaptability. The survey further investigates key technological advancements, such as advanced channel modeling and estimation techniques, strategies for optimizing network sum-rate and energy efficiency (EE), and enhancing security within vehicular networks through RIS. Additionally, it examines the integration of RIS with vehicular edge computing (VEC) frameworks, its potential in unmanned aerial vehicle (UAV) supported networks, and its application in visible light communication (VLC) systems. The analysis also considers the synergy between RIS and mmWave technologies. Then, a comprehensive performance assessment is conducted to evaluate the impact of these advancements in RIS-based vehicular networks. The aim is to thoroughly elaborate, compare, and evaluate the literature concerning network scenarios, RIS details, methodologies, and optimization objectives. Conclusively, the research highlights key findings and charts future research directions, pinpointing imminent technical challenges and emerging areas for further exploration in the rapidly evolving landscape of vehicular communications.},
+  abstract     = {Autonomous Driving Systems (ADS) represent a revolutionary advancement in transportation and offer unprecedented safety and convenience. Real-world physical attacks are emphasized because Autonomous Driving Systems (ADS) depend heavily on sensors and perception modules to detect and interpret their surroundings, making security a critical concern. Defenders usually have the upper hand in the digital sphere while they are challenged in the physical world because attackers have greater flexibility for covert operations. A comprehensive analysis is essential for understanding attack trends, evolution, and defense directions. This paper provides a survey of state-of-the-art physical attacks that threaten ADS perception. A novel multi-label classification method is introduced to categorize these attacks along four main dimensions. Visualization and analysis of the classification enhance the understanding of these multidimensional threats. Five research directions for future exploration are also proposed.},
   archive      = {J_TIV},
-  author       = {Min Deng and Manzoor Ahmed and Abdul Wahid and Aized Amin Soofi and Wali Ullah Khan and Fang Xu and Muhammad Asif and Zhu Han},
-  doi          = {10.1109/TIV.2024.3476934},
+  author       = {Lijun Chi and Mounira Msahli and Qingjie Zhang and Han Qiu and Tianwei Zhang and Gerard Memmi and Meikang Qiu},
+  doi          = {10.1109/TIV.2024.3484152},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4191-4216},
+  month        = {9},
+  number       = {9},
+  pages        = {4433--4454},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Reconfigurable intelligent surfaces enabled vehicular communications: A comprehensive survey of recent advances and future challenges},
+  title        = {Adversarial attacks on autonomous driving systems in the physical world: A survey},
   volume       = {10},
   year         = {2025},
 }
@@ -260,20 +260,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Acoustic sensors and audio signal processing in intelligent transportation systems: A survey. <em>TIV</em>, <em>10</em>(8), 4171-4190. (<a href='https://doi.org/10.1109/TIV.2024.3476475'>www</a>)
+(2025). Generation of two-wheeler accident pre-crash scenarios based on multimodal data. <em>TIV</em>, <em>10</em>(9), 4423--4432. (<a href='https://doi.org/10.1109/TIV.2024.3483847'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The effectiveness of intelligent transportation systems (ITS) strongly relies on the quality of input data provided by traffic monitoring sensors. Conventional traffic sensors such as cameras and radar necessitate costly infrastructure and are limited in the types of data they can collect. In contrast, acoustic sensors emerge as an affordable alternative that provides a wide range of road-related data (e.g. vehicle count, speed estimation, etc.). This paper presents the first survey encompassing the applications of audio signal processing (ASP) and acoustic sensors within the domain of ITS. Through an extensive literature review, this study examines various tasks relevant to traffic sensors, characterizes frequent feature extraction methodologies, and evaluates ASP models. Moreover, the paper investigates recent trends in AI-based ASP applied in ITS, which have resulted in more sophisticated acoustic sensors. To furnish a pragmatic roadmap for future investigations in this domain, this survey conducts a comparative analysis of studies in the same class, categorized by each task assigned to acoustic traffic sensors, and illuminates their strengths and weaknesses. Lastly, the paper identifies the main research gaps and suggests future directions aimed at advancing ASP in ITS. In conclusion, this study provides insights and recommendations to guide future research on this subject and serves as a reference to the state-of-the-art of ASP for acoustic sensors deployed in ITS.},
+  abstract     = {In the Chinese traffic system, a crucial role is played by two-wheelers (TWs), yet significant road safety challenges are posed by them, with many TW drivers being killed or injured in traffic accidents annually. With the rapid advancement of autonomous driving technology, it is becoming feasible to reduce such accidents and minimize the number of casualties. Understanding accident scenarios is pivotal for developing and testing autonomous driving technologies. To ensure the reliability of these technologies, especially in the Chinese traffic environment, a method combining textual and numerical multimodal data is proposed based on the China In-Depth Accident Study (CIDAS) database. The total of 2,463 cases of vehicle-to-TW crashes are selected from the CIDAS database, and thorough extraction and analysis of textual and numerical data are conducted. The use of a Latent Dirichlet Allocation (LDA) topic analysis model based on Term Frequency Inverse Document Frequency (TF-IDF) effectively mines and understands driver behavior information from textual data. This information not only provides robust data support for understanding accident causes but also integrates subjective driver behaviors with objective road environment information in accident scenario generation for the first time. Finally, the integrated textual and numerical data undergo cluster analysis using spectral clustering algorithms, identifying six typical pre-crash scenarios between vehicles and TWs. Compared to traditional studies on generating traffic accident scenarios, this research not only offers deeper insights into driver behavior but also provides essential foundations for selecting typical scenarios and diversifying sources of scenario information for testing autonomous vehicles.},
   archive      = {J_TIV},
-  author       = {Hossein Parineh and Majid Sarvi and Saeed Asadi Bagloee},
-  doi          = {10.1109/TIV.2024.3476475},
+  author       = {Lin Hu and Feifan Yang and Xinghua Wang and Ziwei Wang},
+  doi          = {10.1109/TIV.2024.3483847},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4171-4190},
+  month        = {9},
+  number       = {9},
+  pages        = {4423--4432},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Acoustic sensors and audio signal processing in intelligent transportation systems: A survey},
+  title        = {Generation of two-wheeler accident pre-crash scenarios based on multimodal data},
   volume       = {10},
   year         = {2025},
 }
@@ -281,20 +281,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Agile mixed-integer-based lane-change MPC for collision-free and efficient autonomous driving. <em>TIV</em>, <em>10</em>(8), 4153-4170. (<a href='https://doi.org/10.1109/TIV.2024.3476423'>www</a>)
+(2025). A demand-based placement of optimal EV fast charging stations in urban transportation network. <em>TIV</em>, <em>10</em>(9), 4409--4422. (<a href='https://doi.org/10.1109/TIV.2024.3483259'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Obstacle avoidance and lane-change functionalities are crucial requirements for automated driving that are usually developed to excel in specific road scenarios and therefore, to some extent, lack agility and versatility. This work proposes a versatile vehicle motion controller for connected and autonomous vehicles (CAVs) that, independently of the encountered traffic scenario, realizes safe and efficient lane-change and overtaking maneuvers while implicitly guaranteeing precise obstacle avoidance at all times. This is achieved by introducing a two-layer model predictive control architecture that utilizes mixed-integer-based obstacle avoidance and lane selection formulations. The linear time-invariant optimal control problems are efficiently formulated in Frenet coordinates, incorporate the position predictions of surrounding traffic participants, and guarantee globally optimal solutions. The proposed architecture combines two structurally distinct policies, namely velocity and time-gap tracking, to achieve efficient and safe maneuvering. A method to reduce the computational complexity of the implemented mixed-integer quadratic programming (MIQP) problems is developed. The controller's agility and robustness with respect to multiple complex traffic scenarios are tested in detailed traffic simulations, as well as validated via high-fidelity co-simulations with the CARLA Simulator.},
+  abstract     = {Improper placement and inadequate sizing of electric vehicle (EV) charging stations can have detrimental impacts on the progress of EVs, the configuration of the transportation network, and the convenience of EV drivers, ultimately resulting in increased construction costs for charging stations. In order to deal with this problem, this research proposes a two-stage approach to determine the optimal locations for fast charging stations (FCS) in an urban transport network (UTN) to meet the charging requirements of EVs. During the first stage, a zonal division model (ZDM) is used to determine charging station candidate locations (CSCL). In this stage, the UTN is divided into separate zones based on certain distance and charger number constraints. This ensures that charging stations are not allocated at every node. In the second stage, the charging station optimal locations (CSOL) are determined from the CSCLs with the goal of minimizing objective functions, which include station construction cost (SCC) and electric vehicle customer expenditure (EVCE). To minimize the objective functions, a point reduction technique (PRT) is proposed in this paper to determine the optimal FCS locations. The simulation results show that the proposed algorithm is effective in minimizing the SCC and EVCEs compared to the genetic algorithm (GA) and conventional mixed integer linear program (MILP).},
   archive      = {J_TIV},
-  author       = {Alexander L. Gratzer and Alexander Schmiedhofer and Alexander Schirrer and Stefan Jakubek},
-  doi          = {10.1109/TIV.2024.3476423},
+  author       = {Adepu Vamshi and Nakka Jayaram},
+  doi          = {10.1109/TIV.2024.3483259},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4153-4170},
+  month        = {9},
+  number       = {9},
+  pages        = {4409--4422},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Agile mixed-integer-based lane-change MPC for collision-free and efficient autonomous driving},
+  title        = {A demand-based placement of optimal EV fast charging stations in urban transportation network},
   volume       = {10},
   year         = {2025},
 }
@@ -302,20 +302,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Fixed-time sliding mode tracking control and adaptive actuator failure compensation for dual-three-phase motor steer-by-wire system. <em>TIV</em>, <em>10</em>(8), 4141-4152. (<a href='https://doi.org/10.1109/TIV.2024.3395487'>www</a>)
+(2025). A unified monocular vision-based driving model for autonomous vehicles with multi-task capabilities. <em>TIV</em>, <em>10</em>(9), 4397--4408. (<a href='https://doi.org/10.1109/TIV.2024.3483114'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The steer-by-wire (SbW) system driven by the dual-three-phase permanent magnet synchronous motor (DT-PMSM) is attracting increasing attention. However, the parameter uncertainties, external disturbances, and potential actuator malfunctions pose great challenges for steering execution. To achieve precise, rapid, and robust tracking, this paper proposes a novel fault-tolerant tracking scheme incorporating the fixed-time sliding mode control and the adaptive actuator failure compensation. Initially, this paper delineates the configuration of the DT-PMSM driven SbW system, followed by the development of its mathematic model accounting for actuator faults. Then, a non-singular fixed-time sliding mode surface is developed by leveraging the proposed fixed-time stable system with a fast convergence rate. Subsequently, the fixed-time control law and the adaptive compensation law are proposed, which can ensure fixed-time stability under normal conditions and Lyapunov stability under fault conditions respectively. For accurate fault detection and strategy implementation, an event-triggered mechanism based on the cumulative sum (CUSUM) is introduced. Moreover, the fixed-time extended disturbance observer (FEDO) is designed to suppress the lumped disturbances, whose settling time is also bounded and independent of initial states. Simulation and experimental results substantiate the excellent transient and tracking performances of the proposed scheme under both normal and fault conditions.},
+  abstract     = {The recent progress in autonomous driving primarily relies on sensor-rich systems, encompassing radars, LiDARs, and advanced cameras, in order to perceive the environment. However, human-operated vehicles showcase an impressive ability to drive based solely on visual perception. This study introduces an end-to-end method for predicting the steering angle and vehicle speed exclusively from a monocular camera image. Alongside the color image, which conveys scene texture and appearance details, a monocular depth image and a semantic segmentation image are internally derived and incorporated, offering insights into spatial and semantic environmental structures. This results in a total of three input images. Moreover, LSTM units are also employed to acquire temporal features. The proposed model demonstrates a significant enhancement in RMSE compared to the state-of-the-art, achieving a notable improvement of 44.96% for the steering angle and 4.39% for the speed on the Udacity dataset. Furthermore, tests on the CARLA and Sully Chen datasets yield results that outperform those reported in the literature. Extensive ablation studies are also conducted to showcase the effectiveness of each component. These findings highlight the potential of self-driving systems using visual input alone.},
   archive      = {J_TIV},
-  author       = {Yicai Liu and Xiangyu Wang and Zhentao Chen and Xiaoming Ye and Liang Li},
-  doi          = {10.1109/TIV.2024.3395487},
+  author       = {Salim Azak and Fırat Bozkaya and Şükrücan Tığlıoğlu and Abdullah Yusefi and Akif Durdu},
+  doi          = {10.1109/TIV.2024.3483114},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4141-4152},
+  month        = {9},
+  number       = {9},
+  pages        = {4397--4408},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Fixed-time sliding mode tracking control and adaptive actuator failure compensation for dual-three-phase motor steer-by-wire system},
+  title        = {A unified monocular vision-based driving model for autonomous vehicles with multi-task capabilities},
   volume       = {10},
   year         = {2025},
 }
@@ -323,20 +323,62 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Online data-driven input mapping mixed platoon control with variable order model. <em>TIV</em>, <em>10</em>(8), 4127-4140. (<a href='https://doi.org/10.1109/TIV.2024.3394952'>www</a>)
+(2025). Exploring driving parameter settings for autonomous vehicles: Considering travel efficiency and safety in urban traffic environments. <em>TIV</em>, <em>10</em>(9), 4385--4396. (<a href='https://doi.org/10.1109/TIV.2024.3481192'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper investigates the longitudinal control problem of the mixed platoon consisting of human-driven vehicles (HDVs) and connected autonomous vehicles (CAVs) in the multi-lane freeway. In most of the existing studies, the stochastic behavior of HDVs, including lane changing and cut-in, are not considered and the formation of the mixed platoons remains unchanged. Also, the online identification of HDV uncertain parameters requires heavy computation. To address these limitations, this paper proposes an online data-driven control strategy for mixed platoon control with a variable-order model. This approach represents the uncertainties of HDVs in the form of convex hulls, and an event trigger mechanism is designed to deal with the stochastic behavior of HDVs that affects the formation and system model of mixed platoons. A data-driven control scheme synthesizing offline and online strategies is designed to deal with the uncertainties. The online part directly maps historical data to compensate for the offline control law without model identification, where the mapping coefficients can be efficiently calculated by a linear programming problem. The simulation results show that the proposed method is computationally more efficient and converges faster than the previous data-driven model predictive control and adaptive control methods.},
+  abstract     = {This study addresses the imperative yet understudied aspect of exploring the simulated driving parameters for autonomous vehicles (AV) to achieve a harmonious balance between safety and travel efficiency. While previous research has predominantly focused on enhancing the safety performance of AV, the paramount facet of fast and efficient travel efficiency has been relatively neglected. Leveraging microscopic traffic simulations, this study delves into the impact of diverse combinations of driving parameters, specifically 216 sets derived from the Enhanced Intelligent Driver Model and lane-change model embedded in simulated AV. These parameters are strategically adjusted to address scenarios emphasizing safety, travel efficiency, and a harmonious integration of both objectives. The study's findings provide a comprehensive insight into AV performance under varying driving parameter sets, considering travel efficiency and safety. Additionally, it contributes to identifying the optimal range of parameter sets to enhance travel efficiency while maintaining a high level of safety. Furthermore, the study introduces a performance index map, elucidating the effectiveness of different parameter combinations in facilitating the safe and efficient movement of AV. This index map serves as a valuable reference for formulating autonomous driving algorithms for diverse purposes, ultimately enhancing the role of AV as efficient travel service providers in contemporary transportation systems.},
   archive      = {J_TIV},
-  author       = {Chen Zhang and Yunwen Xu and Dewei Li and Shaoying He and Aoyun Ma},
-  doi          = {10.1109/TIV.2024.3394952},
+  author       = {Gyungtaek Oh and Eugene Lee and Hyungjoo Kim and Jia Hu and Ilsoo Yun and Hangeom Ko and Seongwoo Cho and Jaehyun So},
+  doi          = {10.1109/TIV.2024.3481192},
   journal      = {IEEE Transactions on Intelligent Vehicles},
-  month        = {8},
-  number       = {8},
-  pages        = {4127-4140},
+  month        = {9},
+  number       = {9},
+  pages        = {4385--4396},
   shortjournal = {IEEE Trans. Intell. Veh.},
-  title        = {Online data-driven input mapping mixed platoon control with variable order model},
+  title        = {Exploring driving parameter settings for autonomous vehicles: Considering travel efficiency and safety in urban traffic environments},
+  volume       = {10},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exponential $H_{\infty }$ output control for switching fuzzy vehicle lateral dynamics via event-triggered mechanism. <em>TIV</em>, <em>10</em>(9), 4371--4384. (<a href='https://doi.org/10.1109/TIV.2024.3398735'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, a switching fuzzy model is firstly proposed for vehicle lateral dynamics, which comprehensively reflects practical vehicle changes, and its exponential $H_\infty$ output control is investigated. The event-triggered mechanism has proven to be significantly more effective than the time-triggered mechanism. By combining a new event-triggered mechanism with our previously published switching law, the relationship between event trigger points and system switching points is well handled. This allows for the realization of frequent switchings within an interevent interval. For the control objective of $H_\infty$ performance, by employing the maximum, minimum dwell time method, the weighted term $e^{-\alpha s}$ introduced by the average dwell time method is eliminated. Subsequently, the standard $L_{2}$ norm constraint is derived to ensure that the system does not blow up. By constructing a controller-mode-dependent Lyapunov functional and adopting the dynamic quantizers, the sufficient criteria of $H_\infty$ output control problem are presented. An example with numerical simulations is provided to validate the effectiveness.},
+  archive      = {J_TIV},
+  author       = {Jiaojiao Ren and Xuemeng Fan and Ran Huang and Guoqing Jiang and Cong Wu},
+  doi          = {10.1109/TIV.2024.3398735},
+  journal      = {IEEE Transactions on Intelligent Vehicles},
+  month        = {9},
+  number       = {9},
+  pages        = {4371--4384},
+  shortjournal = {IEEE Trans. Intell. Veh.},
+  title        = {Exponential $H_{\infty }$ output control for switching fuzzy vehicle lateral dynamics via event-triggered mechanism},
+  volume       = {10},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scale-equivariant object perception for autonomous driving. <em>TIV</em>, <em>10</em>(9), 4361--4370. (<a href='https://doi.org/10.1109/TIV.2024.3382034'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In autonomous driving, precise perception of surrounding objects is crucial for ensuring safety. To this end, many advanced object detection models have been developed using conventional Convolution Neural Networks (CNNs) for computer vision tasks. However, the environment for autonomous driving is dynamic; even identical objects can appear differently due to the movements of surrounding entities. Thus, simply increasing model complexity and using data augmentation may have limitations in effectively addressing the robust perception. Recently, the advancement of equivariant deep learning models, adept at managing diverse symmetries and group transformations, has spurred significant research integration within autonomous driving and robotics. Among various transformations, scale transformation is crucial for processing image data in autonomous vehicles, adapting dynamically as the vehicle progresses. Therefore, in this paper, we aim to discuss the use of scale-equivariant CNNs to achieve robust object perception. We first review the limitations inherent in existing scale-equivariant CNNs, highlighting their pronounced sensitivity to scale changes, particularly in high-frequency elements. We then propose the Separable Scale-Equivariant (SSE) backbone network, specifically engineered to adeptly counteract these shortcomings. Our proposed network exhibits minimal errors against other methods while also showing better performance in object detection and tracking on the KITTI dataset.},
+  archive      = {J_TIV},
+  author       = {Taekhyung Cho and Hyeongwoo Nam and Jongeun Choi},
+  doi          = {10.1109/TIV.2024.3382034},
+  journal      = {IEEE Transactions on Intelligent Vehicles},
+  month        = {9},
+  number       = {9},
+  pages        = {4361--4370},
+  shortjournal = {IEEE Trans. Intell. Veh.},
+  title        = {Scale-equivariant object perception for autonomous driving},
   volume       = {10},
   year         = {2025},
 }

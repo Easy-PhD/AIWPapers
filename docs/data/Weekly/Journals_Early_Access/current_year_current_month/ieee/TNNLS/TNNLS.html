@@ -25,1277 +25,289 @@
 </head>
 <body>
 
-<h2 id="tnnls">TNNLS - 67</h2>
+<h2 id="tnnls">TNNLS - 15</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Learning counterfactual fair representation under covariate shift via reflux. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3613549'>www</a>)
+(2025). Integrating Actor–Critic reinforcement learning with evolutionary algorithm for multimodal multiobjective optimization. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3624785'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent advances in counterfactual fairness have shifted focus from flawed group fairness metrics to ensuring individual-level fairness through counterfactual reasoning. However, most existing approaches remain limited to in-processing strategies—injecting fairness constraints into predictive models—while largely overlooking the potential of data preprocessing to mitigate inherent biases. Moreover, few methods address the critical challenge of real-world distribution shift, which can compromise the generalizability of fair models across domains. In this article, we propose the counterfactual reflux variational autoencoder (CRVAE), a novel framework for generating counterfactual samples and learning fair representations. To the best of our knowledge, this is the first work to explicitly consider counterfactual fair representation learning under covariate shift, enabling both single-domain and covariate shift prediction tasks. For fairness, we introduce a Reflux technique that enforces consistency between factual and counterfactual representations. For transferability, we incorporate a domain discriminator to align fair representations across domains. Experimental results show that our approach improves fairness with minimal performance loss and maintains generalization across domains. Furthermore, CRVAE can be flexibly combined with existing in-processing fairness methods. Future work may explore extending this framework to settings with limited causal graph knowledge.},
+  abstract     = {Effectively solving multimodal multiobjective optimization problems (MMOPs) requires maintaining an optimal balance between the diversity and the convergence. Traditional algorithms often struggle with environmental selection adaptability, leading to suboptimal performance across diverse MMOPs. This article innovatively integrates the actor–critic reinforcement learning (RL) with the evolutionary algorithm, significantly improving environmental selection adaptability through synergistic online learning between its actor and critic components. An RL process that dynamically optimizes the niche size is established, which critically determines the trade-off between the diversity and convergence preferences. The process is formulated by defining: 1) convergence and diversity measures as the state; 2) niche size adjustment as the continuous action; and 3) state improvement as the reward. Two specialized fully connected neural networks are employed as the actor network for action generation and the critic network for value estimation, which collaboratively adapt to population states through real-time online learning. This adaptive niching technology, integrated with local convergence quality assessment, enables comprehensive evaluation of both diversity and potential convergence. Extensive experimental validation demonstrates the superior performance of the proposed algorithm against ten state-of-the-art algorithms across 48 benchmark problems and a real-world application. The results consistently show significant improvements in balance maintenance and overall optimization effectiveness compared to existing algorithms.},
   archive      = {J_TNNLS},
-  author       = {Yiliang Xia and Xiaohang Zhang and Zhengren Li},
-  doi          = {10.1109/TNNLS.2025.3613549},
+  author       = {Kaili Xiang and Tenglong Huang and Lei Yang and Jie Lin},
+  doi          = {10.1109/TNNLS.2025.3624785},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Learning counterfactual fair representation under covariate shift via reflux},
+  title        = {Integrating Actor–Critic reinforcement learning with evolutionary algorithm for multimodal multiobjective optimization},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Unbiased semantic decoding with vision foundation models for few-shot segmentation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3611497'>www</a>)
+(2025). FIESTA: Fourier-based semantic augmentation with uncertainty guidance for enhanced domain generalizability in medical image segmentation. <em>TNNLS</em>, 1--15. (<a href='https://doi.org/10.1109/TNNLS.2025.3620853'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Few-shot segmentation (FSS) has garnered significant attention. Many recent approaches attempt to introduce the segment anything model (SAM) to handle this task. With the strong generalization ability and rich object-specific extraction ability of the SAM model, such a solution shows great potential in FSS. However, the decoding process of SAM highly relies on accurate and explicit prompts, making previous approaches mainly focus on extracting prompts from the support set, which is insufficient to activate the generalization ability of SAM, and this design is easy to result in a biased decoding process when adapting to the unknown classes. In this work, we propose an unbiased semantic decoding (USD) strategy integrated with SAM, which extracts target information from both the support and query set simultaneously to perform consistent predictions guided by the semantics of the contrastive language-image pretraining (CLIP) model. Specifically, to enhance the unbiased semantic discrimination of SAM, we design two feature enhancement strategies that leverage the semantic alignment capability of CLIP to enrich the original SAM features, mainly including a global supplement at the image level to provide a generalize category indicate with support image and a local guidance at the pixel level to provide a useful target location with query image. Besides, to generate target-focused prompt embeddings, a learnable visual–text target prompt generator (VTPG) is proposed by interacting target text embeddings and clip visual features. Without requiring retraining of the vision foundation models, the features with semantic discrimination draw attention to the target region through the guidance of prompt with rich target information. Experiments on both the PASCAL- $5^{i}$ and COCO- $20^{i}$ show that our proposed method outperforms the existing approaches by a clear margin and achieves new state-of-the-art performances.},
+  abstract     = {Single-source domain generalization (SDG) in medical image segmentation (MIS) aims to generalize a model using only one source domain data to segment data from an unseen target domain. Despite substantial advances in SDG with data augmentation, existing methods often fail to fully consider the details and uncertain areas prevalent in MIS, leading to mis-segmentation. In this study, we propose a Fourier-based semantic augmentation method called FIESTA using uncertainty guidance (UG) to enhance the fundamental goals of MIS in an SDG context by manipulating the amplitude and phase components in the frequency domain. The proposed Fourier augmentative transformer (FAT) addresses semantic amplitude modulation based on meaningful angular points to induce pertinent variations and harnesses the phase spectrum to ensure structural coherence. Moreover, FIESTA employs uncertainty estimation to fine-tune the augmentation process, improving the ability of the model to adapt to diverse augmented data and concentrate on areas with higher ambiguity. Extensive experiments across three cross-domain scenarios demonstrate that FIESTA surpasses recent state-of-the-art SDG approaches in segmentation performance and significantly contributes to boosting the model’s applicability in medical imaging modalities.},
   archive      = {J_TNNLS},
-  author       = {Jin Wang and Bingfeng Zhang and Jian Pang and Weifeng Liu and Baodi Liu and Honglong Chen},
-  doi          = {10.1109/TNNLS.2025.3611497},
+  author       = {Kwanseok Oh and Eunjin Jeon and Da-Woon Heo and Yooseung Shin and Heung-Il Suk},
+  doi          = {10.1109/TNNLS.2025.3620853},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
+  month        = {11},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Unbiased semantic decoding with vision foundation models for few-shot segmentation},
+  title        = {FIESTA: Fourier-based semantic augmentation with uncertainty guidance for enhanced domain generalizability in medical image segmentation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Three-dimensional multiobject tracking based on voxel masking encoder and deep hashing paradigm. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3613354'>www</a>)
+(2025). Novel approach for decoding olfactory receptors interactions with molecules based on multimodal feature and deep learning network. <em>TNNLS</em>, 1--12. (<a href='https://doi.org/10.1109/TNNLS.2025.3622055'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In autonomous driving, accurate 3-D multiobject tracking (MOT) plays a key role in ensuring vehicle safety. However, due to the complexity of the environment, existing methods still face many challenges when dealing with long-distance objects, partial occlusions, and interference from similar categories. To tackle these challenges, we propose a 3-D MOT framework based on a voxel masking encoder (VME) and a deep hashing paradigm (DHP). We introduce a masking strategy that processes voxel features from near to far while maintaining feature sparsity, effectively capturing global contextual information between spatial features. Simultaneously, DHP is utilized to generate image hash codes and compute their hamming distance from the category hash codes. This process effectively distinguishes between object categories and thus avoids cross-category object dissociation. In addition, we propose a distance optimization matching (DOM) method that uses geometric dimensions and spatial distances to build a cost matrix, achieving more efficient and precise object associations. Results from experiments conducted on the KITTI dataset reveal that our framework delivers outstanding tracking performance, surpassing other advanced methods in tracking accuracy. The code is released at https://github.com/lsy-collab/VD-MOT},
+  abstract     = {The olfaction transduction process commences when odorant molecules bind to specific olfactory receptors (ORs) located in the nasal cavity. Recognizing the interactions between odorant molecules and ORs remains a significant challenge due to the complex and nonlinear nature of the molecule–receptor relationship. Addressing this challenge is pivotal for advancing our understanding of human olfaction mechanisms and aiding in the development of novel synthetic pharmaceuticals. The primary difficulty arises from the intricate interactions between odorant molecules and ORs, where diverse molecule with varying physical and chemical properties can activate specific receptors, and conversely, individual receptors exhibit the ability to bind with multiple distinct molecules. In this study, we present a novel approach for predicting molecule–receptor interactions by leveraging multimodal deep learning networks to precisely identify specific ORs for given molecules. Our method demonstrates significant advancements and achieves an impressive accuracy of 95.1% when evaluated on a newly curated dataset. Notably, the proposed method achieves substantial improvements in performance metrics compared with other deep learning classification models and existing recognition approaches and exhibits robustness against discontinuities in the mapping of molecule structures to ORs. In addition, we developed a space distribution map to elucidate the structural intricacies of diverse receptors, revealing the clustering patterns among receptors. Our method facilitates a deeper understanding of the interaction mechanisms between molecules and receptors, laying a foundation for the digitization of receptor reaction.},
   archive      = {J_TNNLS},
-  author       = {Saiyu Li and Zhong Chen and Hui Li and Ye Tao and Ying Gao and Jun Yan},
-  doi          = {10.1109/TNNLS.2025.3613354},
+  author       = {Fei Wang and Xiaoya Xie and Yunwei Xiong and Zihao Liu and Miao Kong and Hao Dong and Xing Chen},
+  doi          = {10.1109/TNNLS.2025.3622055},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--12},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Three-dimensional multiobject tracking based on voxel masking encoder and deep hashing paradigm},
+  title        = {Novel approach for decoding olfactory receptors interactions with molecules based on multimodal feature and deep learning network},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Optical-cue-guided diffusion probabilistic model for reflection removal. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3612402'>www</a>)
+(2025). On imbalance in case types: Evaluating and enhancing PLMs for criminal court view generation. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3622490'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This article presents a novel reflection removal algorithm that integrates a flash-based optical cue into a diffusion model to control the recovery of the transmission image. The algorithm accepts a pair of ambient and flash images as inputs, and a flash-only image, which corresponds to the one captured with flash as the sole illumination source, is derived from the inputs. In light of the reflection-free nature of the flash-only image, we use it to guide the diffusion model to reconstruct the structures of the transmission image. A feature distillation scheme is designed to infer the chromatic attributes of the transmission image from the ambient image, and the features are used to modulate the generative priors learned by the diffusion model. We use time-aware strategies to ensure the synchronization between feature distillation and the dynamic image generation process of the diffusion model. The performance of the proposed algorithm is sequentially optimized in latent and pixel spaces. We also develop a plug-and-play fidelity-enhancing module (FEM) and integrate it into the proposed model to enable the faithful reconstruction of fine-granular visual characteristics of the target scene and reduce artifacts. Comparative experiments demonstrate that the proposed algorithm shows superior quantitative and qualitative performance over state-of-the-art methods in real-world scenarios. By leveraging the optical cue and the generative capability of the diffusion model, the algorithm can accurately restore the visual details of the transmission image even in the presence of strong reflections, and it also exhibits satisfactory robustness against nonlinear image representation and misalignment.},
+  abstract     = {The criminal court view generation (CCVG) task aims to produce succinct and coherent summaries of fact descriptions, providing interpretable opinions for verdicts. Traditional text generation evaluation metrics, such as ROUGE, BLEU, and BERTSCORE, are extensively employed for this task and measure performance by averaging the assessment scores of all samples within the test set. However, these sample-averaged metrics encounter two primary dilemmas: 1) they fail to fairly assess overall evaluation scores across different case types and 2) they overlook the measurement of the degree of performance imbalance between case types. To fill this research gap, we propose two novel case-type-oriented evaluation metrics: Case-type-oriented Text Generation (CTG) and Case-type-oriented Imbalance Performance (CIP). First, CTG mitigates the unfair assessment among different case types by assigning equal weight to each type. Second, CIP evaluates performance imbalance by measuring the distance between the performance of each case type and the overall performance. We provide three theorems to elucidate the properties of CIP, demonstrating that CIP can effectively identify the extent to which a CCVG model achieves balanced generation performance across different case types. Furthermore, we propose an embarrassingly simple and effective charge-guided encoder–decoder (CGED) framework to enhance performance fairly across different case types in encoder–decoder pretrained language models (PLMs). Code is available at https://yuquanle.github.io/Case-type-oriented-metrics-homepage/},
   archive      = {J_TNNLS},
-  author       = {Feiyang Zhang and Yuenan Li and Xiaoliang Chang},
-  doi          = {10.1109/TNNLS.2025.3612402},
+  author       = {Yuquan Le and Zheng Xiao and Yan Ding and Eng Siong Chng and Kenli Li},
+  doi          = {10.1109/TNNLS.2025.3622490},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Optical-cue-guided diffusion probabilistic model for reflection removal},
+  title        = {On imbalance in case types: Evaluating and enhancing PLMs for criminal court view generation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Hard sample mining: A new paradigm of efficient and robust model training. <em>TNNLS</em>, 1-21. (<a href='https://doi.org/10.1109/TNNLS.2025.3610948'>www</a>)
+(2025). Generalizable multistage assembly via one-shot category-level demonstration. <em>TNNLS</em>, 1--14. (<a href='https://doi.org/10.1109/TNNLS.2025.3618280'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Over the past two decades, deep learning (DL) has achieved unprecedented breakthroughs across diverse application domains spanning computer vision (CV) to natural language processing (NLP). However, despite significant advances in computational resources and algorithmic frameworks, the training of deep neural networks continues to present formidable challenges due to persistent issues of training inefficiency and inherent data distribution biases. Recent years have witnessed the emergence of hard sample mining (HSM) as a promising paradigm to mitigate training inefficiencies and enhance model robustness through representative sample selection. Although HSM is reshaping contemporary AI research, its critical role in enabling efficient and robust model training has not yet been systematically explored. This article presents a comprehensive survey of HSM methodologies by: 1) establishing unified definitions of hard samples through rigorous sample complexity quantification criteria; 2) proposing a systematic taxonomy of HSM approaches with in-depth technical analysis; and 3) identifying pivotal research frontiers in this evolving field. This survey not only consolidates the foundations of HSM but also provides a roadmap for advancing efficient, robust, and generalizable deep learning models.},
+  abstract     = {Imitation learning offers a flexible approach for robot skill acquisition, enabling robots to learn complex tasks directly from demonstrations. However, most existing methods require a large number of demonstrations, whereas humans typically only need one or a few demonstrations. This discrepancy results in significant time consumption for data collection. Furthermore, these methods often assume that test scenarios will always be identical to the demonstration, which can lead to substantial performance degradation when facing novel scenarios, such as manipulating objects from the same category but with different shapes and sizes, or encountering object collisions during manipulation. To address these challenges, we propose a generalized multistage manipulation network for category-level robot assembly tasks. This network allows a robot to learn a multistage screw–nut assembly task from a single demonstration and generalize to new object instances with varying shapes and sizes. Specifically, the network uses category-level pose estimation to extract manipulation trajectories from the demonstration and applies manipulation-pose generalization to transfer these trajectories to novel instances. In addition, real-time action correction adjusts the trajectory based on real-time force feedback, enabling the robot to adapt to unexpected collisions during execution. We validate our method through experiments in both simulation and real-world environments, verifying its effectiveness and flexibility.},
   archive      = {J_TNNLS},
-  author       = {Lei Liu and Yunji Liang and Xiaokai Yan and Luwen Huangfu and Sagar Samtani and Zhiwen Yu and Yanyong Zhang and Daniel D. Zeng},
-  doi          = {10.1109/TNNLS.2025.3610948},
+  author       = {Yu Ren and Yang Cong and Ronghan Chen and Wei Cong and Gan Sun},
+  doi          = {10.1109/TNNLS.2025.3618280},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-21},
+  month        = {11},
+  pages        = {1--14},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Hard sample mining: A new paradigm of efficient and robust model training},
+  title        = {Generalizable multistage assembly via one-shot category-level demonstration},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Modal detection informed classification evaluation via ensemble networks for expensive constrained multimodal optimization. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3612490'>www</a>)
+(2025). A real-time neural representation via algorithm-hardware synergy for sparse-view CT reconstruction. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3626038'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The evaluation of objective and constraint involving expensive simulations or physical experiments with multiple optimal solutions is referred to as expensive constrained multimodal optimization problems (ECMMOPs). Under limited real function evaluations (FEs), it is challenging to find multiple optimal solutions accurately while satisfying constraints. To address these issues, this article studies a self-clustering particle swarm optimization algorithm with modal detection informed classification evaluation (MDICE) to solve ECMMOPs. To deal with multimodality, a surrogate-assisted self-clustering update mechanism is first designed to update individuals in each modality. Following that, a novel modal detection strategy is proposed based on the awareness of fitness landscapes to identify all potential modal seeds. For better utilization of FEs, a modality-guided classification evaluation strategy is designed to efficiently generate infilling samples for each constraint and modality. Moreover, to address the complex constraints, a surrogate-assisted feasibility search strategy is developed to quickly search for feasible solutions at a lower evaluation cost. Experimental results on 33 benchmark functions with various characteristics indicate that MDICE outperforms four state-of-the-art surrogate-assisted evolutionary algorithms.},
+  abstract     = {Sparse-view computed tomography (SVCT) is an advancement in computed tomography (CT) technology that aims to reduce the radiation dose during imaging. Reconstructing high-quality images from sparse-view (SV) projections is an ill-posed inverse problem. Recently, implicit neural representations (INRs) as a self-supervised paradigm for solving underdetermined inverse problems have demonstrated excellent performance in SVCT reconstruction. However, since INR-based approaches rely on subject-specific training, they require a significant investment of time to optimize from scratch. Consequently, previous INR methods have not been able to meet the requisite timeliness of reconstruction. In our work, we propose RTSyner, an algorithm-hardware collaboration framework that facilitates the real-time efficiency of CT reconstruction. On the algorithmic side, we introduce an efficient coordinate-based feature module that exploits the local latent features as a positional external condition, leveraging the limited structural information of corrupted images derived from the sensory domain. By fusing latent features and coordinate information, the model learns a neural representation of the final tomographic image. On the hardware side, we design a dedicated hardware architecture with a customized algorithm flow to improve reconstruction speed and reduce power consumption. Furthermore, we improve the efficiency of model inference through model quantization, which also facilitates the subsequent deployment of hardware. Our extensive experimental results demonstrate that the RTSyner based on neural representation has achieved real-time SVCT reconstruction through the synergistic acceleration of the algorithm and hardware. We further explore its application potential via volume reconstructions under more complex acquisition geometries.},
   archive      = {J_TNNLS},
-  author       = {Kunjie Yu and Fan Chen and Mingyuan Yu and Jing Liang and Ke Chen},
-  doi          = {10.1109/TNNLS.2025.3612490},
+  author       = {Xin Li and Haochuan Wan and Kangjie Long and Qing Wu and Chenhe Du and Ying Su and Zhe Luo and Xin Lou and Yuyao Zhang},
+  doi          = {10.1109/TNNLS.2025.3626038},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Modal detection informed classification evaluation via ensemble networks for expensive constrained multimodal optimization},
+  title        = {A real-time neural representation via algorithm-hardware synergy for sparse-view CT reconstruction},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Optimizing the output of long short-term memory cell for high-frequency forecasting in financial markets. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3611887'>www</a>)
+(2025). Expensive multiobjective optimization guided by attention-enhanced generative models. <em>TNNLS</em>, 1--15. (<a href='https://doi.org/10.1109/TNNLS.2025.3625964'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {High-frequency trading (HFT) requires fast data processing without information lags for precise stock price forecasting. This high-paced stock price forecasting is usually based on vectors that need to be treated as sequential and time-independent signals due to the time irregularities that are inherent in HFT. A well-documented and tested method that considers these time irregularities is a type of recurrent neural network (NN), named long short-term memory (LSTM) NN. This type of NN is formed based on cells that perform sequential and stale calculations via gates and states without knowing whether their order, within the cell, is optimal. In this article, we propose a revised and real-time adjusted LSTM cell that selects the best gate or state as its final output. Our cell is running under a shallow topology, has a minimal look-back period, and is trained online. This revised cell achieves lower forecasting error compared to other recurrent NNs (RNNs) for online HFT forecasting tasks such as the limit order book (LOB) mid-price (MP) prediction as it has been tested on two high-liquid U.S. and two less-liquid Nordic stocks.},
+  abstract     = {Surrogate-assisted evolutionary algorithms (SAEAs) have garnered significant attention for addressing expensive multiobjective optimization problems. Most existing SAEAs, however, still rely on conventional genetic operators in reproduction, which is inefficient in generating promising candidate solutions. To address the above issue, this article presents a learning-based generative model that replaces crossover and mutation and learns to conduct multiobjective search for expensive multiobjective optimization problems. The key idea is to design an attention-enhanced convolutional residual network with the assistance of surrogate model for offspring generations. The proposed framework employs a generative model to produce promising solutions for each decomposed subproblem based on the Tchebycheff metric, while a surrogate model assists in optimizing the generative model’s hyperparameters through an online learning process. We demonstrate the efficacy of our learning-based multiobjective generative model (LMOGM) on DTLZ, ZDT, and WFG benchmark function suites, varying in dimensions from 30 to 200, as well as through a practical application involving the geothermal energy extraction design optimization. Experimental results highlight the superior performance of the proposed approach when compared to traditional evolutionary algorithms and state-of-the-art surrogate-assisted multiobjective evolutionary algorithms (MOEAs).},
   archive      = {J_TNNLS},
-  author       = {Adamantios Ntakaris and Moncef Gabbouj and Juho Kanniainen},
-  doi          = {10.1109/TNNLS.2025.3611887},
+  author       = {Guodong Chen and Zhongzheng Wang and Qiqi Liu and Jiu Jimmy Jiao and Yaochu Jin},
+  doi          = {10.1109/TNNLS.2025.3625964},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Optimizing the output of long short-term memory cell for high-frequency forecasting in financial markets},
+  title        = {Expensive multiobjective optimization guided by attention-enhanced generative models},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). All-to-all connected oscillator ising machines and their application as associative memory. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3609571'>www</a>)
+(2025). ORAL: Adaptive gap increasing for advantage learning via occam’s razor principle. <em>TNNLS</em>, 1--15. (<a href='https://doi.org/10.1109/TNNLS.2025.3626536'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Dynamic behaviors of the classical Kuramoto models have been widely studied. The dynamics of the all-to-all connected oscillator Ising machines (OIMs) is similar to that of the classical Kuramoto models, with the main difference being that there is an additional term in OIMs, called the second harmonic term. However, the dynamic behavior of an all-to-all connected OIM is significantly different and its intricate properties are largely unexplored. In this article, we study in detail the properties of the all-to-all connected OIMs and explore their application as associative memory. The number of patterns such an OIM can store increases exponentially with respect to the number of oscillators. To improve the performance of the OIMs for associative memory, we propose a new harmonic term so that the resulting OIM achieves pattern retrieval with high accuracy in the presence of a high level of noise.},
+  abstract     = {Benefiting from the gap increasing between the optimal action and its competitors, the advantage learning (AL) operator is more robust to estimation errors in the approximated $Q$ -functions than the Bellman optimality operator in reinforcement learning (RL). However, our analysis reveals that its robustness and larger action gaps come at the cost of a worse performance loss bound, leading to slower convergence of value functions. To address this issue, we present a novel method, named Occam’s Razor-based AL (ORAL), which follows Occam’s Razor principle and takes the necessity into consideration when increasing the action gap. Specifically, our ORAL can adaptively increase the action gap for different state–action pairs, depending on the proximity of their $Q$ values to the optimal ones. We first propose a naive implementation of ORAL, employing a nonsmooth clipping function to realize the above idea, and then introduce a smooth version of ORAL aimed at achieving more stable learning. Furthermore, our methods can be easily plugged into other AL-based operators and extended to more complex continuous-control tasks. Theoretical analysis supports the feasibility of our approaches, demonstrating their ability to balance the gap increasing with fast convergence. Empirical results further validate its effectiveness, showing significant performance improvements across multiple benchmarks.},
   archive      = {J_TNNLS},
-  author       = {Yi Cheng and Zongli Lin},
-  doi          = {10.1109/TNNLS.2025.3609571},
+  author       = {Zhe Zhang and Yongle Zhou and Yuyang Long and Jia Zhang and Juanjuan Weng and Zhetao Li and Yaozhong Gan and Xiaoyang Tan},
+  doi          = {10.1109/TNNLS.2025.3626536},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {All-to-all connected oscillator ising machines and their application as associative memory},
+  title        = {ORAL: Adaptive gap increasing for advantage learning via occam’s razor principle},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). FedMPS: Federated learning in a synergy of multi-level prototype-based contrastive learning and soft label generation. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3611832'>www</a>)
+(2025). Multimodal knowledge graph completion by cross-modal interaction with similarity enhancing and difference embracing. <em>TNNLS</em>, 1--15. (<a href='https://doi.org/10.1109/TNNLS.2025.3618611'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Federated learning (FL) facilitates collaborative training among multiple clients while preserving data privacy by eliminating raw data transmission. However, the inherent data heterogeneity among participants induces bias during collaborative learning, significantly degrading the performance of local models. Existing FL solutions face critical challenges in achieving efficient knowledge transmission, particularly with respect to insufficient information extraction or excessive communication costs, which result in slow convergence and inferior performance. To address these limitations, we propose a novel FL framework in a synergy of multi-level prototype-based contrastive learning (CL) and soft label generation, named FedMPS. The proposed method first constructs multi-level prototypes from different layers of the model to capture semantic information in high-level features and detailed information in low-level features. These prototypes are then utilized through CL to enhance intra-class discriminability and intra-class consistency in the feature space. In addition, a prototype-guided soft label generation module is introduced to model latent interclass relationships in the output space. Instead of exchanging model parameters, FedMPS transmits only prototypes and soft labels, effectively reducing global knowledge shift and communication costs. Extensive experimental studies on six publicly available datasets validate the effectiveness of the proposed method when compared to the current state-of-the-art FL approaches. The code is available at github.com/wenxinyang1026/FedMPS},
+  abstract     = {Multimodal knowledge graph completion (MMKGC) enhances the precision and breadth of application of knowledge graphs by integrating rich data from various modalities, steadily increasing its appeal in the research community. Prior studies mainly focus on the common representation of different modalities while neglecting the different and complementary features. On the contrary, some works tend to model triples of each modality separately while overlooking the similarities between modalities. It is challenging to associate the heterogeneous modalities effectively for MMKGC. In this article, we introduce a novel MMKGC framework by cross-modal interaction with similarity-enhancing and difference-embracing (CISEDE), which leverages both the similarities and differences among multimodal entities by a proposed cross-modal interaction mechanism. In the cross-modal interaction, multihead attention is employed to enhance similarity information from multimodal entities and embrace different information by linking various modal triples. Through relation-guided fusion, the modal triples are decoded and merged for MMKGC. The experimental results on three commonly used datasets, FB15k-237, WN9, and WN18RR, show that the proposed method achieves state-of-the-art performance.},
   archive      = {J_TNNLS},
-  author       = {Wenxin Yang and Xingchen Hu and Xiubin Zhu and Rouwan Wu and Witold Pedrycz and Xinwang Liu and Jincai Huang},
-  doi          = {10.1109/TNNLS.2025.3611832},
+  author       = {Linjia Hao and Yongli Hu and Tong Bie and Huajie Jiang and Junbin Gao and Yanfeng Sun and Baocai Yin},
+  doi          = {10.1109/TNNLS.2025.3618611},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {FedMPS: Federated learning in a synergy of multi-level prototype-based contrastive learning and soft label generation},
+  title        = {Multimodal knowledge graph completion by cross-modal interaction with similarity enhancing and difference embracing},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Syntax-oriented shortcut: A syntax level perturbing algorithm for preventing text data from being learned. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3609842'>www</a>)
+(2025). Adapting graph models via target integrity assessment and source distribution hypothesis. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3626361'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The vast availability of free data has been critical to the success of large language models (LLMs). With the widespread use of LLMs, more and more concerns have been raised about the unauthorized use of publicly available data. To protect data from unauthorized use for training models, researchers have proposed adding imperceptible perturbations into image data so that models would be misled by the generated shortcut features and cannot mine information from these images. However, due to the inherent discrete property and semantic complexity of texts, directly applying these methods to text will cause semantic changes, resulting in meaningless shortcut features being constructed. To tackle this problem, in this article, we design a novel Unlearnable text examples generation algorithm via syntax-oriented shortcut (UTE-SS) by incorporating the syntactic structure of texts. Specifically, we propose a syntax template generator (STG) to generate the optimal perturbing syntax for a given category, which will realize imperceptible perturbations. Then, a perturbing text generator (PTG) is designed to perturb the in-class texts with the selected syntax template to stably deviate from the original texts. Along this line, models will be misled to learn the shortcut between the syntax template and the category, so as to keep text examples unlearnable. Extensive experiments over eight advanced Transformer-based pretrained language models (PLMs) on four different natural language processing (NLP) tasks demonstrate the effectiveness and flexibility of our proposed algorithm. Our method is easy to implement, and the code is publicly available at https://github.com/libolb/UTE-SS.},
+  abstract     = {This article addresses the challenge of domain adaptation on graphs, a specialized form of graph transfer learning (GTL), which involves adapting a graph model trained on source graphs to unlabeled target graphs that significantly differ in distribution. Traditional methods often rely heavily on the source graph to transfer learned task knowledge, but certain situations may render the source graph unavailable or restricted due to privacy or security concerns, thus impeding the usability and flexibility of graph model adaptation. Therefore, this article studies the problem of source-free domain adaptation (SFDA) in graph transfer learning (GTL). Our objective is to adapt a pretrained model to effectively operate on the target graph without the need to access the source graph. To achieve this, we first incorporate a weighted information maximization loss to enhance the model’s discriminative ability on the target graph, where we introduce the concept of posterior integrities of target nodes to assess their optimization confidence. Then, we estimate the distributions of the source graph and generate synthesized source nodes. We propose a reconstruction decoder to enhance the authenticity of the synthesized nodes and use adversarial learning to align the distributions between graphs, leading to improved adaptation of the model. Finally, extensive experimental results on a range of publicly accessible datasets demonstrate the superior performance of our method over the state of the art.},
   archive      = {J_TNNLS},
-  author       = {Bo Li and Kun Zhang and Xi Chen and Richang Hong},
-  doi          = {10.1109/TNNLS.2025.3609842},
+  author       = {Ziyue Qiao and Xiaomin Yu and Weiyu Guo and Xiao Luo and Meng Xiao and Hui Xiong},
+  doi          = {10.1109/TNNLS.2025.3626361},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Syntax-oriented shortcut: A syntax level perturbing algorithm for preventing text data from being learned},
+  title        = {Adapting graph models via target integrity assessment and source distribution hypothesis},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). FedNK-RF: Federated kernel learning with heterogeneous data and optimal rates. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3612728'>www</a>)
+(2025). Contrastive-driven diversity and consistency exploration in tensorized multiview subspace clustering. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3614464'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Federated learning (FL) has become a mainstream decentralized learning paradigm due to its privacy-preserving features. However, the heterogeneity of data in FL can reduce predictive accuracy and complicate the analysis of the generalization properties of FL methods. In this article, we propose efficient federated kernel learning (FedK) algorithms and study their generalization properties. We first devise FedK with random features (FedK-RF), which acquires global information through sharing RF of local data subsets, enhancing predictive capability while protecting privacy. We then propose federated Nyström approximation with RF (FedNK-RF) that reduces errors resulted from RF. Furthermore, using integral operator theory, we derive the excess risk bounds with minimax optimal rates, which illustrate the impacts from data heterogeneity and shared information. Finally, we conduct several experiments that demonstrate the superiority of the proposed FedNK-RF.},
+  abstract     = {The success of multiview subspace clustering (MVSC) lies in the efficient integration of consensus and complementary information from subspace structures. However, existing MVSC algorithms often treat these two types of information separately, overlooking the obvious correlations—both positive and negative—that exist between them. To address this issue, we propose a novel method called contrastive-driven diversity and consistency exploration in tensorized MVSC (CD-TMSC). Specifically, our method begins by segmenting self-representations into a consensus representation and a set of specific representations to accurately model both consensus and complementary information. Drawing inspiration from contrastive learning, we introduce a novel fractional regularization term to harness both the positive and negative correlations inherent in consensus and complementary information, where the numerator, employing the Hilbert–Schmidt independence criterion (HSIC), quantifies the negative correlation between the consensus and view-specific representations, as well as among the view-specific representations themselves. Conversely, the denominator, also leveraging HSIC, measures the positive correlation between the original data matrices and their self-representations. Minimizing this term has a dual effect: it reduces the numerator, thereby amplifying the negative correlation, a move that might be seen as counterproductive but, in our innovative approach, it promotes the diversity within representation matrices. Simultaneously, it increases the denominator, reinforcing the positive correlation and bolstering the consistency of the information. Additionally, we incorporate a graph regularization term for the consensus matrix to capture more consistent manifold information. Finally, utilizing the high-quality consensus and view-specific representations derived from our constraints, we reconstruct self-representation matrices and construct a third-order tensor with a low-rank constraint to explore higher order correlations within the self-representations. Our method integrates contrastive-driven regularization, manifold learning, and low-rank tensor learning into a cohesive framework, optimized using an alternating direction minimization strategy. Experimental results on multiple benchmark datasets show that our approach outperforms several state-of-the-art methods.},
   archive      = {J_TNNLS},
-  author       = {Xuning Zhang and Jian Li and Rong Yin and Weiping Wang},
-  doi          = {10.1109/TNNLS.2025.3612728},
+  author       = {Xiaoxing Guo and Gui-Fu Lu},
+  doi          = {10.1109/TNNLS.2025.3614464},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {FedNK-RF: Federated kernel learning with heterogeneous data and optimal rates},
+  title        = {Contrastive-driven diversity and consistency exploration in tensorized multiview subspace clustering},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). PID: A parameter-efficient isolation domain-incremental learning framework for signal modulation classification. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3615307'>www</a>)
+(2025). Lightweight dual-kernel information aggregation network for efficient image super-resolution. <em>TNNLS</em>, 1--12. (<a href='https://doi.org/10.1109/TNNLS.2025.3626142'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep neural networks have achieved promising progress in signal modulation classification (SMC), playing an essential role in a variety of applications such as cognitive radio networks, cyber defense, and electronic surveillance. However, most existing SMC methods still follow the traditional machine learning paradigm that trains on static closed datasets, lacking the ability to cope with the challenge of continuous data distribution shifts in real communication scenarios. Directly applying the model to a new environment may lead to severe degradation of classification performance on previous scenarios, i.e., catastrophic forgetting. To address this, this article proposes the first domain-incremental learning (DIL) paradigm for SMC and designs a parameter-efficient isolation DIL (PID) method, which enables SMC models to rapidly adjust to new scenarios by extending only a few parameters, while significantly retaining classification capabilities on previous scenarios. Specifically, we first propose a parameter space decomposition-based classifier (PSD), separating the model parameters into a set of bases and corresponding coefficients. By freezing the bases and fine-tuning the low-dimensional coefficients, the catastrophic forgetting problem can be efficiently eliminated. Furthermore, we design a scene-aware domain controller (SDC) to select the most suitable domain-specific coefficients for each sample, thereby maintaining the SMC model’s classification capabilities across all domains. The extensive experimental results show the superiority of the proposed PID, which achieves state-of-the-art (SOTA) overall performance. The code will be available at: https://github.com/SMC-IL/PID},
+  abstract     = {Efficient single-image super-resolution (ESISR) primarily aims to enhance super-resolution (SR) performance while keeping model complexity low, making it more suitable for deployment on edge devices. However, the limited receptive field caused by conventional convolution’s locality restricts the backbone networks and attention modules from effectively capturing nonlocal features, leading to suboptimal SR performance. Additionally, insufficient interaction between high- and low-frequency feature information results in incomplete feature representation. To overcome these limitations, we propose a novel ESISR network called the lightweight dual-kernel information aggregation network (LDIAN). First, we design a dual-kernel convolution (DKC) that combines depth-wise 1-D convolution and dilated convolution to efficiently extract richer image features in an expanded receptive field while minimizing model complexity. Building upon DKC, we further develop a dual-kernel enhanced convolution (DEConv) and a dual-kernel enhanced distillation block (DEDB). Additionally, we propose a lightweight dual-kernel attention (DKA) mechanism to focus on more representative features for SR reconstruction. Second, we design an innovative feature fusion structure named the information aggregation block (IAB) to integrate spatial features and strengthen the interaction between high- and low-frequency information, thereby improving feature representation. Extensive quantitative and qualitative experiments demonstrate that the LDIAN achieves state-of-the-art performance with an optimal balance between model performance and complexity. Notably, compared to SRFormer-light, LDIAN-L delivers superior performance across five standard datasets while requiring only about 50% of the model’s FLOPs.},
   archive      = {J_TNNLS},
-  author       = {Guanchun Wang and Ziyi Liu and Xiangrong Zhang and Yifan Chen and Yifang Zhang and Jin Zhu and Licheng Jiao},
-  doi          = {10.1109/TNNLS.2025.3615307},
+  author       = {Yinggan Tang and Mengjie Su and Xuguang Zhang},
+  doi          = {10.1109/TNNLS.2025.3626142},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--12},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {PID: A parameter-efficient isolation domain-incremental learning framework for signal modulation classification},
+  title        = {Lightweight dual-kernel information aggregation network for efficient image super-resolution},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). DMutDE: Dual-view mutual distillation framework for knowledge graph embeddings. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3608503'>www</a>)
+(2025). Inverse reinforcement learning for disturbed networked nonlinear systems with data dropouts. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3626762'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Knowledge graphs (KGs) have caught more and more attention in recent years. Currently, in some practical scenarios, KG embedding (KGE) models are expected to reduce their spatial complexity without losing much performance to address the challenges of storage limitations and knowledge reasoning efficiency. To achieve this, existing works use one or more large and high-performance teacher models to improve the performance of a lightweight student model via knowledge distillation (KD), thus meeting the requirements of some practical complicated applications. However, in resource-constrained scenarios, obtaining high-performance teacher models is challenging due to high training costs and significant storage requirements. Thus, enhancing the student model’s performance without large teacher models is crucial. To address this issue, we propose Dual-View Mutual Distillation Framework for Knowledge Graph Embeddings (DMutDE), a distillation framework leveraging mutual learning for peer-to-peer distillation between two KGE models with different architectures. In KGE models, we notice that the way of modeling relational directed edges determines the model view of KGE model for learning KG data. Thus, integrating the model views from two different KGE models by KD into a student KGE model can improve its generalization, so as to increase its performance. To identify an effective dual-view fusion method, we design two modules in the DMutDE framework. Specifically, we design a novel soft-label fusion (SLF) module for noise filtering and response knowledge transfer. Then, we propose an entity embedding distillation (EED) module to distill structural features from each other. Finally, we conduct several comprehensive experiments on the standard open-source benchmarks to demonstrate that our framework achieves the state-of-the-art results. The code is available at https://github.com/RuizhouLiu/DMutDE},
+  abstract     = {This article develops inverse reinforcement learning (IRL) control algorithms for nonlinear networked control systems (NCSs) to mimic trajectories of a target system governed by an unknown optimal cost function, despite the presence of random data dropouts and external disturbances. Data dropouts occur during: 1) reception of target trajectory data by the controller; 2) reception of state feedback data by the controller; and 3) reception of control input data by the actuator. By organically integrating $H_{\infty } $ control to account for disturbances and dropout-induced uncertainty, a model-based IRL algorithm is first developed. Building on this, a neural-network-based data-driven IRL algorithm is developed to infer the cost function and optimal control policy using available data while reducing dependence on system models. The proposed methods enable effective trajectory imitation under partial model knowledge, data dropouts, and disturbances, as demonstrated through simulation studies.},
   archive      = {J_TNNLS},
-  author       = {Ruizhou Liu and Zhe Wu and Yiling Wu and Zongsheng Cao and Qianqian Xu and Qingming Huang},
-  doi          = {10.1109/TNNLS.2025.3608503},
+  author       = {Pengfei Shi and Wenqian Xue and Jialu Fan and Frank L. Lewis and Bosen Lian},
+  doi          = {10.1109/TNNLS.2025.3626762},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {DMutDE: Dual-view mutual distillation framework for knowledge graph embeddings},
+  title        = {Inverse reinforcement learning for disturbed networked nonlinear systems with data dropouts},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Multigranularity deep graph convolutional neural network node clustering leveraging spatial information. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3615830'>www</a>)
+(2025). From a social cognitive perspective: Context-aware visual social relationship recognition. <em>TNNLS</em>, 1--15. (<a href='https://doi.org/10.1109/TNNLS.2025.3623197'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In the era of information explosion, clustering analysis of graph-structured data and empty graph-structured data is of great significance for extracting the intrinsic value of data. From the perspective of spatial information, empty graph-structured data and graph-structured data are essentially the same type of data, both containing rich spatial information. However, there is currently no general clustering method that can handle both types of data, and the clustering methods applicable to empty graph-structured data pay little attention to the spatial information they contain. Meanwhile, graph convolutional neural networks (GCN) have made significant progress in processing graph-structured data, but applying them to empty graph-structured data still faces challenges because the latter lacks an explicit topological structure. To address these problems, this study proposes a multigranularity deep GCN node clustering method leveraging spatial information (CMDGCN). It converts empty graph-structured data into graph-structured data using the $k$ -nearest neighbor (k-nn) algorithm and constructs multigranularity graph structures based on feature segmentation to extend the network depth to deep layers, thereby addressing the issue of shallow network layers in traditional GCN models. In addition, this study improves the self-expressiveness principle, ensuring that the learned similarity matrix not only depends on the node embedding representation but also incorporates the original structural information of the graph, resulting in a high-quality and interpretable similarity matrix. Furthermore, through experimental verification on multiple graph-structured datasets and empty graph-structured datasets, our method outperforms existing methods in several key indicators, proving its effectiveness and robustness. This achievement not only provides new methods and perspectives for graph node clustering but also offers new effective tools for processing empty graph-structured data.},
+  abstract     = {People’s social relationships are often manifested through their surroundings, with certain objects or interactions acting as symbols for specific relationships, e.g., wedding rings, roses, hugs, or holding hands. This brings unique challenges to recognizing social relationships, requiring understanding and capturing the essence of these contexts from visual appearances. However, current methods of social relationship understanding rely on the basic classification paradigm of detected persons and objects, which fails to understand the comprehensive context and often overlooks decisive social factors, especially subtle visual cues. To highlight the social-aware context and intricate details, we propose a novel approach that recognizes contextual social relationships (ConSoRs) from a social cognitive perspective. Specifically, to incorporate social-aware semantics, we build a lightweight adapter upon the frozen contrastive language-image pretraining (CLIP) to learn social concepts via our novel multimodal side adapter tuning mechanism. Furthermore, we construct social-aware descriptive language prompts (e.g., scene, activity, objects, and emotions) with social relationships for each image, and then compel ConSoR to concentrate more intensively on the decisive visual social factors via visual–linguistic contrasting. Impressively, ConSoR outperforms previous methods with a 7.6% gain on the people-in-social-context (PISC) dataset and a 9.8% increase on the people-in-photo-album (PIPA) benchmark. Furthermore, we observe that ConSoR excels at finding critical visual evidence to reveal social relationships. Code is available at https://github.com/starsholic/ConSoR},
   archive      = {J_TNNLS},
-  author       = {Bin Yu and Haibo Yang},
-  doi          = {10.1109/TNNLS.2025.3615830},
+  author       = {Shiwei Wu and Chao Zhang and Joya Chen and Tong Xu and Likang Wu and Qimeng Wang and Yan Gao and Yao Hu and Enhong Chen},
+  doi          = {10.1109/TNNLS.2025.3623197},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
+  month        = {11},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Multigranularity deep graph convolutional neural network node clustering leveraging spatial information},
+  title        = {From a social cognitive perspective: Context-aware visual social relationship recognition},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Theoretical convergence analysis and initialization comparisons of deep soft-thresholding networks. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3614196'>www</a>)
+(2025). Knowledge graph reasoning based on information enhancement and subgraph alignment. <em>TNNLS</em>, 1--13. (<a href='https://doi.org/10.1109/TNNLS.2025.3627430'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Soft-thresholding (ST) has been widely used in deep neural networks. Its fundamental network structure is a deep soft-thresholding fully connected network (ST-FCN). However, training deep ST-FCN to achieve convergence remains time-consuming or even encounters gradient explosion, in part because the convergence behavior is not fully understood. To address this issue, this article proves the relationship between the convergence of deep ST-FCN and the values of network weights and biases. Theoretical analysis shows that, as the number of network layers approaches infinity, deep ST-FCN converges when the network weights tend to an identity matrix, while the biases tend to zero. Following this guidance, we initialize the network weights as the identity matrix, compare it with other representative initialization methods (Gaussian, He, LeCun, Xavier, and Uniform), and quantify their effects on network convergence. Extensive results on a synthetic spectrum dataset and real-world datasets (MNIST and CIFAR-10) demonstrate that initializing the weights to the identity matrix and the bias to zero leads to fast and stable convergence. These conclusions are further supported by additional experiments and statistical analysis on deeper ST networks (with more than ten layers) and other representative architectures (DenseNet-161, ResNet-152, and VGG-19), and more challenging benchmarks (CIFAR-100, STL-10, and Tiny ImageNet). This work provides a theoretical foundation for understanding the convergence of ST neural networks. Furthermore, convergence theory analysis for deep recurrent neural networks (RNNs) with ST is deduced.},
+  abstract     = {Knowledge graph reasoning (KGR) is an important task in data mining. It aims to mine the logical rules based on the existing facts and further infer new facts, which makes the graph complete and accurate. Currently, with the development of large language models (LLMs), they are widely integrated with different baseline models for better performance. A few works are proposed on LLM-enhanced KGR models, which leaves many issues to be addressed. Inspired by the efficiency and accuracy of LLM in generating text semantic information, this article proposes a KGR method based on LLM information enhancement and subgraph alignment (LSA). LSA first utilizes LLM to generate textual descriptions corresponding to graph entities, relationships, and subgraphs. Then, it utilizes the generated textual attribute in both explicit and implicit ways: 1) explicit utilization, treating LLM-generated text features as the initialized features for the previous KGR model; and 2) implicit utilization, aligning the structural and textual information of key subgraphs via a learning mechanism. Finally, LSA is evaluated on three typical datasets. The promising performances demonstrate that our LSA leverages LLM to make the KG for richer information, and the representation learning model is empowered with better expressive ability.},
   archive      = {J_TNNLS},
-  author       = {Chunyan Xiong and Mengxue Zhang and Tong Wei and Yihui Huang and Jian Cao and Qingrui Cai and Zhong Chen and Xiaobo Qu},
-  doi          = {10.1109/TNNLS.2025.3614196},
+  author       = {Miaomiao Li and Ke Liang and Yuping Lai and Xinwang Liu},
+  doi          = {10.1109/TNNLS.2025.3627430},
   journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
+  month        = {11},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Theoretical convergence analysis and initialization comparisons of deep soft-thresholding networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MDSF-YOLO: Advancing object detection with a multiscale dilated sequence fusion network. <em>TNNLS</em>, 1-12. (<a href='https://doi.org/10.1109/TNNLS.2025.3617122'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Accurate and fast detection of traffic signs is critical for autonomous driving, particularly in complex environments with diverse sign scales and varying detection distances. Existing approaches, incorporating attention modules or modifying detection heads, frequently encounter high rates of false positives and omissions due to the increased sampling depth. To address these limitations, we propose MDSF-you only look once (YOLO), a novel detection framework that integrates multiscale sequence fusion (MSF) for synergistic feature integration across granularities, enhancing the precision of both localization and semantic information fusion. Additionally, our dilated-wise residual (DWR) module leverages dilated convolutions and channel-wise reparameterization to improve fine-grained feature extraction. The architecture further introduces a $P_{2}$ detection head for shallow features and fully decouples all detection heads, optimizing target localization and category identification. Extensive experiments on the TT100K and CCTSDB2021 datasets demonstrate the superiority of MDSF-YOLO over benchmark models, including YOLOv11s, with significant improvements in mAP by 8.8% and 2.4% on respective datasets while substantially reducing false positives and leakage rate. Besides, the marked improvement of MDSF-YOLO on the VisDrone2019 dataset verifies its enhanced capability to address drone-based object detection. These advances underscore the efficiency and robustness of the proposed model, providing a promising solution for autonomous driving and similar object detection scenarios.},
-  archive      = {J_TNNLS},
-  author       = {Yu Sun and Chong Zhang and Xian Li and Xuyang Jing and Hui Kong and Qing-Guo Wang},
-  doi          = {10.1109/TNNLS.2025.3617122},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {MDSF-YOLO: Advancing object detection with a multiscale dilated sequence fusion network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FGPLFA: Fine-grained pseudo-labeling and feature alignment for source-free unsupervised domain adaptation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3616236'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Source-free unsupervised domain adaptation (SFUDA) aims to improve performance in unlabeled target domain data without accessing source domain data. This is crucial in scenarios with data-sharing restrictions due to privacy or compliance constraints. Existing SFUDA approaches often rely on pseudo-labeling techniques based on entropy or confidence metrics. These often overlook fine-grained data features, resulting in noisy pseudo-labels that degrade model performance. To overcome this limitation, we develop a new method called fine-grained pseudo-labeling and feature alignment (FGPLFA) to enhance SFUDA’s performance. FGPLFA starts with a gradient-based metric that integrates insights from both model knowledge and data features, creating a more reliable sample metric. To enhance fine granularity, the fine-grained pseudo-labeling (FGPL) module was introduced. This module clusters data based on the magnitude and direction of gradients, allowing for dataset partitioning into subsets at the sample level. The subsets are pseudo-labeled with category-specificity and domain specificity, establishing a multilevel granularity structure that reduces noisy pseudo-labels. Subsequently, the mean-covariance adjustment feature alignment (MCAFA) method was introduced. Features from the subsets are aligned in a specified sequence, enhancing model adaptability in the target domain. Extensive experiments conducted across multiple datasets validate the superiority of FGPLFA.},
-  archive      = {J_TNNLS},
-  author       = {Zhongyi Wen and Qiang Li and Yatong Wang and Huaizong Shao and Guoming Sun},
-  doi          = {10.1109/TNNLS.2025.3616236},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {FGPLFA: Fine-grained pseudo-labeling and feature alignment for source-free unsupervised domain adaptation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A novel pattern learning framework with enhanced scalability for continuous optimization. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3610993'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multiobjective optimization problems (MOPs) arise in numerous real-world scenarios, yet finding their solutions with optimal trade-offs can be a formidable challenge. This article studies the continuous optimization problem involving large-scale variables, many objectives, and intricate constraints, which is rarely comprehensively discussed in existing works, due to the coexisting difficulties posed by the curse of dimensionality, selection pressure, and feasibility restrictions. To address these problems, this work pioneers a novel optimization framework, optimization pattern learning, embedded with machine learning (ML) techniques. Within this framework, the concept of measurable order and its corresponding learning mechanism are proposed to extract valuable knowledge from solutions. This measurable order is a general form of those orders used explicitly or implicitly in the existing studies, providing a more flexible means to evaluate solutions for efficient optimization adaptively. By substituting original solutions with their measurable orders, this framework effectively avoids the selection pressure from many objectives and the feasibility restrictions from intricate constraints. Furthermore, two novel ML models based on measurable orders are developed to progressively learn effective optimization patterns from iterative data in high-dimensional search spaces. Leveraging these learned patterns, this framework successfully addresses the curse of dimensionality from large-scale variables and thus achieves efficient optimization. Owing to the strong adaptability and search capabilities of this framework, it also demonstrates excellent scalability as the number of variables, objectives, and constraints increases. Extensive simulations validate the effectiveness of the framework and underscore its competitiveness relative to state-of-the-art algorithms in this field.},
-  archive      = {J_TNNLS},
-  author       = {Jian Qin and Yuanqiu Mo and Hongzhe Liu and Zhi-Hui Zhan and Wenwu Yu},
-  doi          = {10.1109/TNNLS.2025.3610993},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {A novel pattern learning framework with enhanced scalability for continuous optimization},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Boosting few-shot hyperspectral image classification through dynamic fusion and hierarchical enhancement. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3615950'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Few-shot learning has garnered increasing attention in hyperspectral image classification (HSIC) due to its potential to reduce dependency on labor-intensive and costly labeled data. However, most existing methods are constrained to feature extraction using a single image patch of fixed size, and typically neglect the pivotal role of the central pixel in feature fusion, leading to inefficient information utilization. In addition, the correlations among sample features have not been fully explored, thereby weakening feature expressiveness and hindering cross-domain knowledge transfer. To address these issues, we propose a novel few-shot HSIC framework incorporating dynamic fusion and hierarchical enhancement. Specifically, we first introduce a robust feature extraction module, which effectively combines the content concentration of small patches with the noise robustness of large patches, and further captures local spatial correlations through a central-pixel-guided dynamic pooling strategy. Such patch-to-pixel dynamic fusion enables a more comprehensive and robust extraction of ground object information. Then, we develop a support–query hierarchical enhancement module that integrates intraclass self-attention and interclass cross-attention mechanisms. This process not only enhances support-level and query-level feature representation but also facilitates the learning of more informative prior knowledge from the abundantly labeled source domain. Moreover, to further increase feature discriminability, we design an intraclass consistency loss and an interclass orthogonality loss, which collaboratively encourage intraclass samples to be closer together and interclass samples to be more separable in the metric space. Experimental results on four benchmark datasets demonstrate that our method substantially improves classification accuracy and consistently outperforms competing approaches. Code is available at https://github.com/guoying918/DFHE2025},
-  archive      = {J_TNNLS},
-  author       = {Ying Guo and Bin Fan and Yuchao Dai and Yan Feng and Mingyi He},
-  doi          = {10.1109/TNNLS.2025.3615950},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Boosting few-shot hyperspectral image classification through dynamic fusion and hierarchical enhancement},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FedMKD: Hybrid feature guided multilayer fusion knowledge distillation in heterogeneous federated learning. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3615230'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In recent years, federated learning (FL) has received widespread attention for its ability to enable collaborative training across multiple clients while protecting user privacy, especially demonstrating significant value in scenarios such as medical data analysis, where strict privacy protection is required. However, most existing FL frameworks mainly focus on data heterogeneity without fully addressing the challenge of heterogeneous model aggregation among clients. To address this problem, this article proposes a novel FL framework called FedMKD. This framework introduces proxy models as a medium for knowledge sharing between clients, ensuring efficient and secure interactions while effectively utilizing the knowledge in each client’s data. In order to improve the efficiency of asymmetric knowledge transfer between proxy models and private models, a hybrid feature-guided multilayer fusion knowledge distillation (MKD) learning method is proposed, which eliminates the dependence on public data. Extensive experiments were conducted using a combination of multiple heterogeneous models under diverse data distributions. The results demonstrate that FedMKD efficiently aggregates model knowledge.},
-  archive      = {J_TNNLS},
-  author       = {Peng Han and Han Xiao and Shenhai Zheng and Yuanyuan Li and Guanqiu Qi and Zhiqin Zhu},
-  doi          = {10.1109/TNNLS.2025.3615230},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {FedMKD: Hybrid feature guided multilayer fusion knowledge distillation in heterogeneous federated learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HKANLP: Link prediction with hyperspherical embeddings and Kolmogorov–Arnold networks. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3614341'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Link prediction (LP) is fundamental to graph-based applications, yet existing graph autoencoders (GAEs) and variational GAEs (VGAEs) often struggle with intrinsic graph properties, particularly the presence of negative eigenvalues in adjacency matrices, which limits their adaptability and predictive performance. To address this limitation, we propose Hyperspherical Kolmogorov–Arnold Networks for LP (HKANLP), a novel framework that combines multiple graph neural network (GNN)-based representation learning strategies with Kolmogorov–Arnold networks (KANs) in a hyperspherical embedding space. Specifically, our model leverages the von Mises–Fisher (vMF) distribution to impose geometric consistency in the latent space and employs KANs as universal function approximators to reconstruct adjacency matrices, thereby mitigating the impact of negative eigenvalues and enhancing spectral diversity. Extensive experiments on homophilous, heterophilous, and large-scale graph datasets demonstrate that HKANLP achieves superior LP performance and robustness compared to state-of-the-art baselines. Furthermore, visualization analyses illustrate the model’s effectiveness in capturing complex structural patterns. The source code of our model is publicly available at https://github.com/zxj8806/HKANLP/},
-  archive      = {J_TNNLS},
-  author       = {Wenchuan Zhang and Wentao Fan and Weifeng Su and Nizar Bouguila},
-  doi          = {10.1109/TNNLS.2025.3614341},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {HKANLP: Link prediction with hyperspherical embeddings and Kolmogorov–Arnold networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). IML-spikeformer: Input-aware multilevel spiking transformer for speech processing. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3615971'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Spiking neural networks (SNNs), inspired by biological neural mechanisms, represent a promising neuromorphic computing paradigm that offers energy-efficient alternatives to traditional artificial neural networks (ANNs). Despite proven effectiveness, SNN architectures have struggled to achieve competitive performance on large-scale speech processing tasks. Two key challenges hinder progress: 1) the high computational overhead during training caused by multitimestep spike firing and 2) the absence of large-scale SNN architectures tailored to speech processing tasks. To overcome the issues, we introduce the input-aware multilevel spikeformer (IML-Spikeformer), a spiking transformer architecture specifically designed for large-scale speech processing. Central to our design is the input-aware multilevel spike (IMLS) mechanism, which simulates multitimestep spike firing within a single timestep using an adaptive, input-aware thresholding scheme. IML-Spikeformer further integrates a reparameterized spiking self-attention (RepSSA) module with a hierarchical decay mask (HDM), forming the HD-RepSSA module. This module enhances the precision of attention maps and enables modeling of multiscale temporal dependencies in speech signals. Experiments demonstrate that IML-Spikeformer achieves word error rates (WERs) of 6.0% on AiShell-1 and 3.4% on Librispeech-960, comparable to conventional ANN transformers while reducing theoretical inference energy consumption by $4.64\times $ and $4.32\times $ , respectively. IML-Spikeformer marks an advance of scalable SNN architectures for large-scale speech processing in both task performance and energy efficiency. Our source code and model checkpoints are publicly available at github.com/Pooookeman/IML-Spikeformer},
-  archive      = {J_TNNLS},
-  author       = {Zeyang Song and Shimin Zhang and Yuhong Chou and Jibin Wu and Haizhou Li},
-  doi          = {10.1109/TNNLS.2025.3615971},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {IML-spikeformer: Input-aware multilevel spiking transformer for speech processing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Inhibiting error exacerbation in offline reinforcement learning with data sparsity. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3615982'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Offline reinforcement learning (RL) aims to learn effective agents from previously collected datasets, facilitating the safety and efficiency of RL by avoiding real-time interaction. However, in practical applications, the approximation error of the out-of-distribution (OOD) state–actions can cause considerable overestimation due to error exacerbation during training, finally degrading the performance. In contrast to prior works that merely addressed the OOD state–actions, we discover that all data introduces estimation error whose magnitude is directly related to data sparsity. Consequently, the impact of data sparsity is inevitable and vital when inhibiting the error exacerbation. In this article, we propose an offline RL approach to inhibit error exacerbation with data sparsity (IEEDS), which includes a novel value estimation method to consider the impact of data sparsity on the training of agents. Specifically, the value estimation phase includes two innovations: 1) replace Q-net with V-net, a smaller and denser state space makes data more concentrated, contributing to more accurate value estimation and 2) introduce state sparsity to the training by design state-aware-sparsity Markov decision process (MDP), further lessening the impact of sparse states. We theoretically prove the convergence of IEEDS under state-aware-sparsity MDP. Extensive experiments on offline RL benchmarks reveal that IEEDS’s superior performance.},
-  archive      = {J_TNNLS},
-  author       = {Fan Zhang and Malu Zhang and Wenyu Chen and Siying Wang and Xin Zhang and Jiayin Li and Yang Yang},
-  doi          = {10.1109/TNNLS.2025.3615982},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Inhibiting error exacerbation in offline reinforcement learning with data sparsity},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Semi-supervised breast lesion segmentation using confidence-ranked features and bi-level prototypes. <em>TNNLS</em>, 1-12. (<a href='https://doi.org/10.1109/TNNLS.2025.3616332'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Automated lesion segmentation through breast ultrasound (BUS) images is an essential prerequisite in computer-aided diagnosis. However, the task of breast segmentation remains challenging, due to the time-consuming and labor-intensive process of acquiring precise labeled data, as well as severely ambiguous lesion boundaries and low contrast in BUS images. In this article, we propose a novel semi-supervised breast segmentation framework based on confidence-ranked features and bi-level prototypes (CoBiNet) to alleviate these issues. Our outputs are derived from two branches: classifier and projector. In the projector branch, we first rank the features by multilevel sampling to obtain multiple feature sets with different confidence levels. Then, these sets are progressed in two directions. One is to acquire local prototypes at each level by local sampling and perform trans-confidence level (TCL) contrastive learning. This encourages the low-confidence features to converge to the high-confidence features, which enhances the model’s ability to recognize ambiguous regions. The other process is to generate more representative global prototypes by global sampling, followed by generating more reliable predictions and performing cross-guidance (CG) consistency learning with the classifier output predictions, facilitating knowledge transfer between the structure-aware projector and the category-discriminative classifier branches. Extensive experiments on two well-known public datasets, BUSI and UDIAT, demonstrate the superiority of our method over state-of-the-art approaches. Codes will be released upon publication.},
-  archive      = {J_TNNLS},
-  author       = {Siyao Jiang and Huisi Wu and Yu Zhou and Junyang Chen and Jing Qin},
-  doi          = {10.1109/TNNLS.2025.3616332},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Semi-supervised breast lesion segmentation using confidence-ranked features and bi-level prototypes},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multimodal cross-city semantic segmentation based on similarity-inspired fusion and invertible transformation learning network. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3617345'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal cross-city semantic segmentation aims to adapt a network trained on multiple labeled source domains (MSDs) from one city to multiple unlabeled target domains (MTDs) in another city, where the multiple domains refer to different sensor modalities. However, remote sensing data from different sensors increases the extent of domain shift in the fused domain space, making feature alignment more challenging. Meanwhile, traditional fusion methods only consider complementarity within MSDs (or MTDs), which wastes cross-domain relevant information and neglects control over domain shift. To address the above issues, we propose a similarity-inspired fusion and invertible transformation learning network (SFITNet) for multimodal cross-city semantic segmentation. To alleviate the increasing alignment difficulty in multimodal fused domains, an invertible transformation learning strategy (ITLS) is proposed, which adopts a topological perspective on unsupervised domain adaptation. This strategy aims to simulate the potential distribution transformation function between the MSD and the MTD based on invertible neural networks (INNs) after feature fusion, thereby performing distribution alignment independently within the two feature spaces. A cross-domain similarity-inspired information interaction module (CDSiM) is also designed, which considers the correspondence between the MSD and the MTD in the fusion stage, effectively utilizes multimodal complementary information and promotes the subsequent alignment of fused domain shifts. The semantic segmentation tests are completed on the public C2Seg-AB dataset and a new multimodal cross-city Su-Wu dataset. Compared with some state-of-the-art techniques, the experimental results demonstrated the superiority of the proposed SFITNet.},
-  archive      = {J_TNNLS},
-  author       = {Lijia Dong and Wen Jiang and Zhengyi Xu and Jie Geng},
-  doi          = {10.1109/TNNLS.2025.3617345},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Multimodal cross-city semantic segmentation based on similarity-inspired fusion and invertible transformation learning network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Feature enhancement module based on class-centric loss for fine-grained visual classification. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3613791'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We propose a novel feature enhancement module designed for fine-grained visual classification tasks, which can be seamlessly integrated into various backbone architectures, including both convolutional neural network (CNN)-based and Transformer-based networks. The plug-and-play module outputs pixel-level feature maps and performs a weighted fusion of filtered features to enhance fine-grained feature representation. We introduce a class-centric loss function that optimizes the alignment of samples with their target class centers by pulling them toward the center of the target class while simultaneously pushing them away from the center of the most visually similar nontarget classes. Soft labels are employed to mitigate overfitting, ensuring the model generalizes well to unseen examples. Our approach consistently delivers significant improvements in accuracy across various mainstream backbone architectures, underscoring its versatility and robustness. Furthermore, we achieved the highest accuracy on the NABirds (NAB) and our proprietary lock cylinder datasets. We have released our source code and pretrained model on GitHub: https://github.com/Richard5413/FEM-CC.git},
-  archive      = {J_TNNLS},
-  author       = {Daohui Wang and He Xinyu and Shujing Lyu and Wei Tian and Yue Lu},
-  doi          = {10.1109/TNNLS.2025.3613791},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Feature enhancement module based on class-centric loss for fine-grained visual classification},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Distill to delete: Unlearning in graph networks with knowledge distillation. <em>TNNLS</em>, 1-11. (<a href='https://doi.org/10.1109/TNNLS.2025.3607995'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph unlearning has emerged as a pivotal method to delete information from an already trained graph neural network (GNN). One may delete nodes, a class of nodes, edges, or a class of edges. An unlearning method enables the GNN model to comply with data protection regulations (i.e., the right to be forgotten), adapt to evolving data distributions, and reduce the GPU-hours carbon footprint by avoiding repetitive retraining. Removing specific graph elements from graph data is challenging due to the inherent intricate relationships and neighborhood dependencies. Existing partitioning and aggregation-based methods have limitations due to their poor handling of local graph dependencies and additional overhead costs. Our work takes a novel approach to address these challenges in graph unlearning through knowledge distillation, as it distills to delete in GNN (D2DGN). It is an efficient model-agnostic distillation framework where the complete graph knowledge is divided and marked for retention and deletion. It performs distillation with response-based soft targets and feature-based node embedding while minimizing KL-divergence. The unlearned model effectively removes the influence of the deleted graph elements while preserving knowledge about the retained graph elements. D2DGN surpasses the performance of existing methods when evaluated on various real-world graph datasets by up to $\mathbf {43.1\%}$ (AUC) in edge and node unlearning tasks. Other notable advantages include better efficiency, better performance in removing target elements, preservation of performance for the retained elements, and zero overhead costs. Source code: https://github.com/MachineUnlearn/D2DGN},
-  archive      = {J_TNNLS},
-  author       = {Yash Sinha and Murari Mandal and Mohan Kankanhalli},
-  doi          = {10.1109/TNNLS.2025.3607995},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-11},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Distill to delete: Unlearning in graph networks with knowledge distillation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Generalizable offline multiobjective reinforcement learning via preference-conditioned diffuser. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3591838'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multiobjective reinforcement learning (MORL) addresses sequential decision-making problems with multiple objectives by learning policies optimized for diverse pReferences. While traditional methods necessitate costly online interaction with the environment, recent approaches leverage static datasets containing precollected trajectories, making offline MORL the preferred choice for real-world applications. However, existing offline MORL techniques suffer from limited expressiveness and poor generalization on out-of-distribution (OOD) preferences. To overcome these limitations, we propose diffusion-based MORL (DiffMORL), a generalizable diffusion-based planning frame work for MORL. Leveraging the strong expressiveness and generation capability of diffusion models, DiffMORL further boosts its generalization through offline data mixup, which mitigates the memorization phenomenon and facilitates feature learning by data augmentation. By training on the augmented data, DiffMORL is able to condition on a given preference, whether in-distribution or OOD, to plan the desired trajectory and extract the corresponding action. Evaluations conducted on the datasets for MORL (D4MORL) benchmark demonstrate that DiffMORL achieves state-of-the-art results across nearly all tasks. Notably, it surpasses the best baseline on 14 out of 18 metrics for OOD generalization, underscoring its remarkable generalization ability in offline MORL scenarios.},
-  archive      = {J_TNNLS},
-  author       = {Yuchen Xiao and Lei Yuan and Lihe Li and Ziqian Zhang and Yichen Li and Yang Yu},
-  doi          = {10.1109/TNNLS.2025.3591838},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Generalizable offline multiobjective reinforcement learning via preference-conditioned diffuser},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Toward reliable offline reinforcement learning via lyapunov uncertainty control. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3616159'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Learning trustworthy and reliable offline policies presents significant challenges due to the inherent uncertainty in pre-collected datasets. In this article, we propose a novel offline reinforcement learning (RL) method to tackle this issue. Inspired by the concepts of Lyapunov stability and control-invariant sets from control theory, the central idea is to introduce a restricted state space for the agent to operate within, which allows the learned models to exhibit reduced Bellman uncertainty and make reliable decisions. To achieve this, we regulate the expected Bellman uncertainty associated with the new policy, ensuring that its growth trend in subsequent states remains within acceptable limits. The resulting method, termed Lyapunov uncertainty control (LUC), is shown to guarantee that the agent remains within a low-uncertainty state enclosure throughout its entire trajectory. Furthermore, we perform extensive theoretical and experimental analysis to showcase the effectiveness and feasibility of the proposed LUC.},
-  archive      = {J_TNNLS},
-  author       = {Ke Jiang and Yao Li and Xiaoyang Tan},
-  doi          = {10.1109/TNNLS.2025.3616159},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Toward reliable offline reinforcement learning via lyapunov uncertainty control},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Targeted mining of time-interval related patterns. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3613966'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Compared with frequent pattern mining, sequential pattern mining emphasizes the temporal aspect and finds broad applications across various fields. However, numerous studies treat temporal events as single time points, neglecting their durations. Time-interval-related pattern (TIRP) mining is introduced to address this issue and has been applied to healthcare analytics, stock prediction, etc. Typically, mining all patterns is not only computationally challenging for accurate forecasting but also resource-intensive in terms of time and memory. Targeting the extraction of TIRPs based on specific criteria can improve data analysis efficiency and better align with customer pReferences. Therefore, this article proposes a novel algorithm called TaTIRP to discover targeted TIRP. In addition, we develop multiple pruning strategies to eliminate redundant extension operations, thereby enhancing performance on large-scale datasets. Finally, we conduct experiments on various real-world and synthetic datasets to validate the accuracy and efficiency of the proposed algorithm.},
-  archive      = {J_TNNLS},
-  author       = {Shuang Liang and Lili Chen and Wensheng Gan and Philip S. Yu and Shengjie Zhao},
-  doi          = {10.1109/TNNLS.2025.3613966},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Targeted mining of time-interval related patterns},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A mathematical certification for positivity conditions in neural networks with applications to partial monotonicity and trustworthy AI. <em>TNNLS</em>, 1-16. (<a href='https://doi.org/10.1109/TNNLS.2025.3614431'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Artificial neural networks (ANNs) have become a powerful tool for modeling complex relationships in large-scale datasets. However, their closed box nature poses trustworthiness challenges. In certain situations, ensuring trust in predictions might require following specific partial monotonicity constraints. However, certifying if an already-trained ANN is partially monotonic is challenging. Therefore, ANNs are often disregarded in some critical applications, such as credit scoring, where partial monotonicity is required. To address this challenge, this article presents a novel algorithm (LipVor) that certifies if a closed box model, such as an ANN, is positive based on a finite number of evaluations. Consequently, since partial monotonicity can be expressed as a positivity condition on partial derivatives, LipVor can certify whether an ANN is partially monotonic. To do so, for every positively evaluated point, the Lipschitzianity of the closed box model is used to construct a specific neighborhood, where the function remains positive. Next, based on the Voronoi diagram of the evaluated points, a sufficient condition is stated to certify if the function is positive in the domain. Unlike prior methods, our approach certifies partial monotonicity without constrained architectures or piecewise linear activations. Therefore, LipVor could open up the possibility of using unconstrained ANN in some critical fields. Moreover, some other properties of an ANN, such as convexity, can be posed as positivity conditions, and therefore, LipVor could also be applied.},
-  archive      = {J_TNNLS},
-  author       = {Alejandro Polo-Molina and David Alfaya and Jose Portela},
-  doi          = {10.1109/TNNLS.2025.3614431},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {A mathematical certification for positivity conditions in neural networks with applications to partial monotonicity and trustworthy AI},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Unsupervised skill discovery through skill regions differentiation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3613857'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Unsupervised reinforcement learning (RL) aims to discover diverse behaviors that can accelerate the learning of downstream tasks. Previous methods typically focus on entropy-based exploration or empowerment-driven skill learning. However, entropy-based exploration struggles in large-scale state spaces (e.g., images), and empowerment-based methods with mutual information (MI) estimations have limitations in state exploration. To address these challenges, we propose a novel skill discovery objective that maximizes the deviation of the state density of one skill from the explored regions of other skills, encouraging inter-skill state diversity similar to the initial MI objective. For state-density estimation, we construct a novel conditional autoencoder with soft modularization for different skill policies in high-dimensional space. Meanwhile, to incentivize intra-skill exploration, we formulate an intrinsic reward based on the learned autoencoder that resembles count-based exploration in a compact latent space. Through extensive experiments in challenging state and image-based tasks, we find our method learns meaningful skills and achieves superior performance in various downstream tasks.},
-  archive      = {J_TNNLS},
-  author       = {Ting Xiao and Jiakun Zheng and Rushuai Yang and Kang Xu and Qiaosheng Zhang and Peng Liu and Zhe Wang and Chenjia Bai},
-  doi          = {10.1109/TNNLS.2025.3613857},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Unsupervised skill discovery through skill regions differentiation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PGFormer: A prototype-graph transformer for incomplete multiview clustering. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3617888'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Incomplete multiview clustering (IMVC) faces significant challenges due to missing data and inherent view discrepancies. While deep neural networks offer powerful representation learning capabilities for IMVC, existing methods often overlook view diversity and force representations across views to be identical, leading to 1) biased representations with distorted topologies and 2) inaccurate imputation for missing data, ultimately degrading clustering performance. To address these issues, we propose prototype-graph transformer (PGFormer), a novel IMVC framework that integrates prototype assignments, rather than direct representations, to enhance clustering performance. PGFormer leverages view-specific encoders to extract features from available samples in each view, employs a PGFormer designed to refine node embeddings, and reconstructs available samples using these refined embeddings. For each view, PGFormer utilizes a graph convolutional network (GCN) to model node-to-node topologies and generate semantic prototypes from the node embeddings. These view-specific prototypes and embeddings are then refined through dual attention mechanisms: prototype-to-prototype (P2P) self-attention and prototype-to-node (P2N) cross-attention, enabling a thorough exploration of multilevel topological relationships within each view. To address missing data, the cross-prototype imputation (CPI) module leverages the weighted prototype assignments from different views to impute missing samples using refined intraview prototypes. Building on this, the cross-view alignment module calibrates prototype assignments to ensure consistent predictions across views. Extensive experiments demonstrate that PGFormer can achieve superior performance compared with the baselines.},
-  archive      = {J_TNNLS},
-  author       = {Yiming Du and Yao Wang and Ziyu Wang and Rui Ning and Lusi Li},
-  doi          = {10.1109/TNNLS.2025.3617888},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {PGFormer: A prototype-graph transformer for incomplete multiview clustering},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Large-scale multiview clustering via joint learning of anchor representation and multigraph alignment. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3616320'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The anchor-based clustering method is currently a predominant technique for handling large-scale data. However, in multiview data, existing anchor-based methods face a key challenge: balancing individual anchor graph distinctiveness with final consistency. To address this challenge, we propose a large-scale multiview clustering (MVC) method via joint learning of anchor representation and multigraph alignment (ARMGA). Specifically, ARMGA introduces a unified framework that facilitates the concurrent learning of single-view anchor representations and virtual graph-based multigraph alignment. The approach aims to preserve the adaptability of anchor learning across different views, while ensuring the ultimate consistency of the merged anchor graph. Furthermore, ARMGA employs Schatten- $\boldsymbol {p}$ norm on the tensor formed by the adaptive anchor representation, originating from multigraph alignment, to reinforce cross-view consistency. This technique effectively leverages complementary information preserved across views to bolster the overall structure and consensus information. Ultimately, to attenuate the noise impact on the anchor representation matrix, ARMGA capitalizes on the cosine angle information from the low-rank representation as coefficients within the relationship matrix and efficiently reduces computational complexity through deductions. On nine datasets, ARMGA has exhibited a notable improvement in clustering performance indicators by 2%–10% over other algorithms, while also maintaining lower time complexity.},
-  archive      = {J_TNNLS},
-  author       = {Ronghua Shang and Jingya Liu and Xinyuan Wang and Jingyu Zhong and Weitong Zhang and Songhua Xu},
-  doi          = {10.1109/TNNLS.2025.3616320},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Large-scale multiview clustering via joint learning of anchor representation and multigraph alignment},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). CRL-MM: Context-aware relational learning and multidimensional matching for few-shot knowledge graph completion. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3615900'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Few-shot knowledge graph completion (FKGC) aims to infer missing triples for long-tail relationships using a small set of References. Existing FKGC models focus mainly on entity representation aggregation, heavily relying on interactions between central entities and their neighbors. However, real-world knowledge graphs contain relations with multiple semantics, and existing models struggle to capture the diverse semantic information of the relations in different contexts. To address this issue, we propose a novel FKGC model, context-aware relational learning and multidimensional matching (CRL-MM). First, CRL-MM enhances the representation of task relations by obtaining semantic information in different scenarios based on the semantic similarity between task relations and background relations. Second, unlike previous models, which rely mainly on neighborhood relations to capture relation information, CRL-MM considers the entity pair and its neighborhood as a unified contextual whole, aggregating neighborhood information through adaptive task relations and paired entity awareness to improve entity encoding. In addition, during the matching phase, we design a matching network from multiple dimensions, which includes not only the similarity score of the entity pairs but also the triple rationality score to further improve the generalizability of the model. Extensive experiments on public benchmark datasets show that CRL-MM outperforms state-of-the-art methods, and the ablation experiments also demonstrate the effectiveness of each module of the proposed CRL-MM.},
-  archive      = {J_TNNLS},
-  author       = {Wenchao Jiang and Fangyue Wu and Fanlong Zhang and Quan Chen and Zhiming Zhao and Song Guo},
-  doi          = {10.1109/TNNLS.2025.3615900},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {CRL-MM: Context-aware relational learning and multidimensional matching for few-shot knowledge graph completion},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Trend and order features for semi-supervised time-series classification via multitask learning. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3616340'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multitask learning with a pretext task has excelled in time-series classification task lacking labeled data. The key to multitask learning is to build a pretext task and learn the most representative feature from the raw time series. In this article, we propose trend and order features for semi-supervised time-series classification via multitask learning (TOFL). Specifically, we propose a simple but effective pretext task—self-sequence order prediction (SOP)—to discover the order relation. In addition, we design a gradual trend fusion (GTF) block concatenating different trend features as the shared backbone network basis element to obtain high-quality trend features for the SOP task. Finally, we not only theoretically analyze the uniform stability and generalization error of TOFL but also evaluate the results compared with state-of-the-art (SOTA) supervised and semi-supervised methods on the 128 UCR datasets and three real-world datasets. TOFL demonstrates a high level of competitiveness and, in most cases, closely matches or even surpasses SOTA methods in terms of accuracy. The source code and data of TOFL are freely available at: https://github.com/Sample-design-alt/TOFL},
-  archive      = {J_TNNLS},
-  author       = {Rongjun Chen and Xuanhui Yan and Guobao Xiao and Yi Hou and Shilin Zhou},
-  doi          = {10.1109/TNNLS.2025.3616340},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Trend and order features for semi-supervised time-series classification via multitask learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Granular ball-guided disambiguation for partial multilabel feature selection via maximum consistency minimum uncertainty. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3610795'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Partial multilabel feature selection (PMLFS) is a prevalent subject that aims to enhance the performance of multilabel learning (MLL) in the context of noisy labels. In PMLFS, a crucial aspect is handling the false positive labels hidden in the candidate label set, as the imprecise annotations could mislead the feature selection process. However, many existing approaches for partial label disambiguation rely on topology information and tend to be error-prone. Besides, feature selection frameworks are often built upon a linear regression model, leading to a reliance on the classifier and a deficiency in exploring local structures. Focusing on the issues above, this article proposes a novel two-stage PMLFS method, resorting to the ideology of granular computing. In the first stage, a label disambiguation method is developed using label-specific information. Specifically, a specific granular ball computing model is designed to characterize the distribution of datapoints labeled differently, and therefore, using the affinity relationships among samples and balls, the label-specific information concealed in the data distribution can be captured for label disambiguation. In the second stage, a filter-based feature selection method that explores the local structure of samples is presented. This method relies on a devised fuzzy decision neighborhood rough set (FDNRS) to capture more detailed membership information by maximizing the neighborhood consistency of samples’ related labels. Simultaneously, the feature selection method minimizes the uncertainty derived from unrelated labels. Extensive experiments on 12 datasets in terms of four evaluation metrics demonstrated the effectiveness of the proposed approach.},
-  archive      = {J_TNNLS},
-  author       = {Fankang Xu and Wenbin Qian and Wenhao Shu and Jintao Huang and Weiping Ding and Shuyin Xia},
-  doi          = {10.1109/TNNLS.2025.3610795},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Granular ball-guided disambiguation for partial multilabel feature selection via maximum consistency minimum uncertainty},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Deep reinforcement learning for online reconfiguration of active distribution network. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3617113'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The operation and control of active distribution networks (ADNs) are becoming increasingly important due to the high penetration of renewable energy (RE). The inherent uncertainty of RE can affect the stability and efficiency of ADN operations. To mitigate the inherent uncertainty and rapid variability of the high RE penetration in ADNs, this article uses an online ADN reconfiguration (ADNR) approach to ensure swift responses to RE fluctuations. Unlike traditional deep reinforcement learning (DRL)-based methods, which typically model the ADNR as a Markov decision process (MDP) and rely on historical ADN data to train the DRL agent, this approach may lead to a mismatch between the MDP’s characteristics and the actual ADNR and pose challenges in handling scenarios that do not exist in the training data. To address this issue, this article proposes an online–offline DRL framework for online ADNR. Initially, during the offline stage, ADNR is formulated as a state-driven Markov decision process, which incorporates the operational characteristics of the ADN. Following this, a state-driven proximal policy optimization (SD-PPO) algorithm is proposed to enhance the generalization capability of DRL. In the subsequent step, we present the optimized action proximal policy optimization (OA-PPO) algorithm, which performs personalized training based on SD-PPO to further improve DRL performance in the online stage. The proposed approach is applied to three IEEE ADN systems. Numerical results demonstrate the effectiveness of our approach in reducing power loss and enhancing RE accommodation. Furthermore, detailed comparisons with other DRL and traditional ADNR algorithms confirm the superior computational performance of our proposed method.},
-  archive      = {J_TNNLS},
-  author       = {Guokai Hao and Yuanzheng Li and Yang Li and Yunfeng Luo and Mohammad Shahidehpour and Zhigang Zeng},
-  doi          = {10.1109/TNNLS.2025.3617113},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Deep reinforcement learning for online reconfiguration of active distribution network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Single-domain generalization via path flatness-aware optimization of loss landscapes. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3616593'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Domain generalization (DG) methods traditionally rely on multiple source domains to achieve the robust performance across unseen target domains. However, single-DG (SDG) presents a more practical paradigm by learning from a single source domain, addressing scenarios where access to multiple domains is limited. While existing SDG approaches primarily focus on data augmentation and style transfer techniques to enhance the model robustness, these methods often incur substantial computational overhead and may inadequately capture the complexity of real-world domain shifts. In this article, we propose path flatness-aware optimization (PFO), an optimization framework that addresses the fundamental challenges of SDG. Unlike conventional approaches that rely on the synthetic data generation, PFO identifies and exploits regions of flat minima within the optimization landscape of deep neural networks. The framework employs an iterative optimization strategy to construct a path through the parameter space along which an ensemble of candidate models achieves the minimal empirical risk. The initialization of this optimization path is achieved through the strategic interconnection of model instances, each originating from carefully selected anchor points that are computationally determined through the systematic analysis of classification decision manifolds. This optimization path serves as a mechanism for implicit distribution alignment between source and target domains within the loss landscape, consequently enhancing the model’s capacity for cross-DG. Empirical evaluation on multiple benchmark datasets demonstrates significant performance improvements in cross-DG, validating the efficacy of our approach.},
-  archive      = {J_TNNLS},
-  author       = {Zizhou Wang and Yan Wang and Yangqin Feng and Jiawei Du and Joey Tianyi Zhou and Rick Siow Mong Goh and Yong Liu and Liangli Zhen},
-  doi          = {10.1109/TNNLS.2025.3616593},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Single-domain generalization via path flatness-aware optimization of loss landscapes},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A transfer learning SSVEP decoding algorithm calibrated with single-trial data. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3617508'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Training-based algorithms significantly outperform training-free methods in terms of recognition performance for steady-state visual-evoked potential (SSVEP)-based brain–computer Interfaces (BCIs). However, collecting training data requires calibration experiments that are effort-intensive and often costly. These calibration demands limit the practicality of BCI, as users (and even system operators) may experience fatigue or lose interest in continued use. Transfer learning (TL) offers an effective solution, but it typically relies on either a certain amount of target domain data or extensive source domain data. To address this limitation, we introduce the concept of cross-dataset TL in SSVEP for the first time to extract transfer knowledge from other datasets. During this process, we identified a data mismatch problem that severely compromises the generalizability of transfer knowledge. To overcome this challenge, we propose a TL-SSVEP decoding algorithm calibrated with single-trial data (TL-CSTD). Specifically, we use 2 s of 8 Hz single-trial calibration data from the target domain to obtain matched transfer templates from the source domain. These templates are then corrected to extract holistic and single-period transfer knowledge, which are subsequently employed to construct an efficient TL-SSVEP decoding model for the target subject. Experimental results on three large SSVEP datasets demonstrate that TL-CSTD effectively addresses the data mismatch problem and achieves excellent SSVEP recognition performance using only 2 s of single-trial calibration data, showing its significant application potential and practicality.},
-  archive      = {J_TNNLS},
-  author       = {Jing Jin and Ke Qin and Brendan Z. Allison and Shurui Li and Yutao Zhang and Xingyu Wang and Andrzej Cichocki},
-  doi          = {10.1109/TNNLS.2025.3617508},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {A transfer learning SSVEP decoding algorithm calibrated with single-trial data},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Lightweight reparameterizable integral neural networks for mobile applications. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3612265'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Standard integral neural networks (INNs) employ continuous integration layer representation across the kernel and channel dimensions. However, they neglect the reparameterization problem of continuous integration layers, making it difficult to deploy INNs on resource-constrained mobile devices by decoupling their training-time and inference-time structure. We propose a continuous reparameterization strategy that reparameterizes the train-time multiple integration layers into a feed-forward structure at inference time to address this issue. Then, we extend the vision transformer (ViT)–like MetaFormer structure to the continuous integration layer design and leverage an overparameterization integral branch to improve the representation capacity of INNs. Last, exploiting the above innovative techniques, we establish a family of lightweight reparameterizable INNs (RINNs) to achieve strong performance on resource-constrained mobile devices. The results of extensive experiments show the superior performance of RINNs to state-of-the-art lightweight ViTs and favorable zero-shot transfer performance in downstream tasks. On the ImageNet dataset, our RINNs achieve over 79.1 top-1 accuracy with 0.87-ms latency on mobile devices. Moreover, our RINNs maintain the same performance at up to 50% of the rate of structural pruning, without fine-tuning, compared with the 25%–50% accuracy loss of the state-of-the-art discrete models. The codes are publicly available here: https://github.com/ljh3832-ccut/RINN},
-  archive      = {J_TNNLS},
-  author       = {Jinhua Lin and Xin Li and Bowen Ren and Xiangdong Hao and Quan Wang and Yu Yao},
-  doi          = {10.1109/TNNLS.2025.3612265},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Lightweight reparameterizable integral neural networks for mobile applications},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SNN-FT: Temporal-coded spiking neural networks for fourier transform. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3622893'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The Fourier transform (FT) stands as a fundamental tool in modern signal processing with widespread applications across various scientific and engineering fields. Therefore, there remains a need for continued research efforts to devise energy-efficient implementations of the FT. Due to their inherent energy efficiency, biologically plausible spiking neural networks (SNNs) emerge as a promising alternative solution. However, current SNN implementations of the FT suffer from two key shortcomings, namely, high latency and reduced accuracy. In this article, we analyze the underlying causes of these limitations and highlight deficiencies in the existing spike-based encoding mechanisms and spiking neuron models. We then propose a new SNN-based FT (SNN-FT) based on a logarithmically polarized time-to-first-spike (TTFS) encoding method (called LP-TTFS) along with a novel piecewise spiking neuron (PTSN) model based on ternary spikes (referred to as PTSN). The resulting SNN-FT is mathematically equivalent to the conventional FT and demonstrates superior performance in accuracy as well as reduced latency. We assess the performance of the proposed SNN-FT alternative through extensive experiments on FT-based applications, such as radar and audio signal processing, and the obtained results demonstrate the efficacy of SNN-FT and its superiority over the existing approaches. This study unveils a novel energy-efficient neuromorphic computing technique with great potential for FT applications across diverse scientific and engineering domains.},
-  archive      = {J_TNNLS},
-  author       = {Shuai Wang and Haorui Zheng and Yukun Chen and Ammar Belatreche and Guoqing Wang and Yeying Jin and Jibin Wu and Malu Zhang and Yang Yang and Haizhou Li},
-  doi          = {10.1109/TNNLS.2025.3622893},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {SNN-FT: Temporal-coded spiking neural networks for fourier transform},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Segment any cell: A SAM-based auto-prompting fine-tuning framework for nuclei segmentation. <em>TNNLS</em>, 1-10. (<a href='https://doi.org/10.1109/TNNLS.2025.3611322'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In the rapidly evolving field of AI research, foundational models like BERT and GPT have significantly advanced language and vision tasks. The advent of pretrain-prompting models, such as ChatGPT and segment anything model (SAM), has further revolutionized image segmentation. However, their applications in specialized areas, particularly in nuclei segmentation within medical imaging, reveal a key challenge: the generation of high-quality, informative prompts is as crucial as applying state-of-the-art (SOTA) fine-tuning techniques on foundation models. To address this, we introduce segment any cell (SAC), an innovative framework that enhances SAM specifically for nuclei segmentation. SAC integrates a low-rank adaptation (LoRA) within the attention layer of the Transformer to improve the fine-tuning process, outperforming existing SOTA methods. It also introduces an innovative auto-prompt generator that produces effective prompts to guide segmentation, a critical factor in handling the complexities of nuclei segmentation in biomedical imaging. Our extensive experiments demonstrate the superiority of SAC in nuclei segmentation tasks, proving its effectiveness as a tool for pathologists and researchers. Our contributions include a novel prompt generation strategy, automated adaptability for diverse segmentation tasks, the innovative application of low-rank attention adaptation in SAM, and a versatile framework for semantic and instance segmentation challenges.},
-  archive      = {J_TNNLS},
-  author       = {Saiyang Na and Yuzhi Guo and Feng Jiang and Hehuan Ma and Jean Gao and Junzhou Huang},
-  doi          = {10.1109/TNNLS.2025.3611322},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-10},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Segment any cell: A SAM-based auto-prompting fine-tuning framework for nuclei segmentation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Generative fuzzy system for sequence-to-sequence learning via rule-based inference. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3615650'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Generative models (GMs), particularly large language models (LLMs), have garnered significant attention in machine learning and artificial intelligence for their ability to generate new data by learning the statistical properties of training data and creating data that resemble the original data. This capability offers a wide range of applications across various domains. However, the complex structures and numerous model parameters of GMs obscure the input–output processes and complicate the understanding and control of the outputs. Moreover, the purely data-driven learning mechanism limits GMs’ abilities to acquire broader knowledge. There remains substantial potential for enhancing the robustness and generalization capabilities of GMs. In this work, we leverage fuzzy system, a classical modeling method, to combine both data-driven and knowledge-driven mechanisms for generative tasks. We propose a novel generative fuzzy system framework, named GenFS, which integrates the deep learning capabilities of GMs with the term-based interpretability and dual-driven mechanisms of fuzzy systems. Specifically, we propose an end-to-end GenFS-based model for sequence generation, called FuzzyS2S. A series of test studies were conducted on 12 datasets, covering three distinct categories of generative tasks: machine translation, code generation, and summary generation. The results demonstrate that FuzzyS2S outperforms the transformer in terms of accuracy and fluency. Furthermore, it exhibits better performance than state-of-the-art models T5 and CodeT5 for some application scenarios.},
-  archive      = {J_TNNLS},
-  author       = {Hailong Yang and Zhaohong Deng and Wei Zhang and Zhuangzhuang Zhao and Guanjin Wang and Kup-Sze Choi},
-  doi          = {10.1109/TNNLS.2025.3615650},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Generative fuzzy system for sequence-to-sequence learning via rule-based inference},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multiscale spatiotemporal graph convolutional networks with dynamic delay awareness for traffic forecasting. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3617860'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The spatiotemporal dynamics of traffic forecasting make it a challenging task. In recent years, by adapting to the topology of traffic networks where road segments serve as nodes, graph convolutional networks (GCNs) have been able to capture spatiotemporal dependencies, thereby improving traffic forecasting performance. However, there are two shortcomings of GCN-based methods: 1) existing methods treat the delays between nodes in the traffic network as equally important and fail to extract critical information effectively, leading to information redundancy, the introduction of irrelevant noise, and increased computational costs and 2) most methods overlook the issue that spatiotemporal correlations between nodes are inconsistent across different timescales. This article designs a new dynamic delay-aware multiscal spatiotemporal graph convolutional network (DDAMGCN) for traffic forecasting. Specifically, a dynamic delay-aware module is designed to identify key nodes and model the important delays from key nodes, so that the model focuses on key information and reduces computational cost. Additionally, a novel multiscale spatiotemporal graph convolution module is designed to achieve fine-grained modeling of the spatiotemporal correlation of different nodes at different timescales. Experiments on eight real traffic datasets verify the superiority of the proposed method compared to several state-of-the-art baselines.},
-  archive      = {J_TNNLS},
-  author       = {Guodong Zhu and Xingyi Zhang and Yunyun Niu and Songzhi Du},
-  doi          = {10.1109/TNNLS.2025.3617860},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Multiscale spatiotemporal graph convolutional networks with dynamic delay awareness for traffic forecasting},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Higher order cumulants-based method for direct and efficient causal discovery. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3622148'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Causal discovery plays a pivotal role in scientific inquiry and subsequent applications in prediction or decision-making. While many methods have been proposed, many of them rely on independence tests. However, these tests are difficult to implement and computationally intensive. In this article, we aim to propose a direct and computationally efficient method to determine the causal relationship between two observed variables in the linear non-Gaussian case. Building on the insight that cumulants provide information about the shape of a probability distribution, we show that interestingly, the (in)dependence between two observed variables can be directly inferred from the difference in the product of certain joint cumulants of these variables. This concept is named the cause difference criterion. Based on this criterion, we introduce two practical methods, high-order cumulant (HC) and HC-linear non-Gaussian acyclic model (LiNGAM), for causal discovery in the high-dimensional case. Theoretical analyses ensure the identifiability of the proposed criteria and methods. Experimental results indicate that our methods outperform most existing methods.},
-  archive      = {J_TNNLS},
-  author       = {Wei Chen and Linjun Peng and Zhiyi Huang and Ruichu Cai and Zhifeng Hao and Kun Zhang},
-  doi          = {10.1109/TNNLS.2025.3622148},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Higher order cumulants-based method for direct and efficient causal discovery},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multimodal aspect-based sentiment analysis with plugin-enhanced large language models. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3622470'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal aspect-based sentiment analysis (MABSA) is a challenging task that predicts sentiment polarity for specific aspect terms based on inputs across modalities. Existing approaches typically employ advanced visual and textual encoders to extract multimodal features and align them for MABSA prediction, yet they still face challenges in handling complex connections between multiple modalities. Recent bloom of large language models (LLMs), as well as their multimodal counterparts, has shown significant promise in various tasks, which offer a promising solution for MABSA, with potential limitations such as semantic mismatch between images and texts, and their high computational cost of fine-tuning for specific tasks. To address these limitations, in this article, we propose a novel plugin-based approach for MABSA, which uses plugins to encode key knowledge instances, such as salient objects in images and word relationships in texts, with an attentive graph convolutional network (A-GCN). We further utilize a memory-based hub to integrate the encoded multimodal knowledge and align the knowledge representations with the LLM, guiding it to better understand the intricate connections between modalities. We evaluate our approach on two benchmark MABSA datasets, which outperforms baselines and achieves state-of-the-art performance over existing studies. Further analysis shows that our approach enables efficient and scalable adaptation of multimodal LLMs to specific tasks, making it a promising solution for related tasks. The code is available at https://github.com/synlp/MABSA-LLMPlug},
-  archive      = {J_TNNLS},
-  author       = {Yuanhe Tian and Yan Song and Yongdong Zhang},
-  doi          = {10.1109/TNNLS.2025.3622470},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Multimodal aspect-based sentiment analysis with plugin-enhanced large language models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multimodality image registration with modality distillation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3621065'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal image registration aims to spatially align images from different modalities at the pixel level. However, due to the nonlinear relationship of radiation intensities caused by different imaging modalities, achieving high accuracy in multimodal image registration presents a significant challenge. Additionally, the presence of both global transformations (i.e., large-scale rigid affine transformations) and local distortions (i.e., small-scale nonrigid deformations) between paired images further complicates the registration process. This article addressed the challenge resulting from modality differences through modality distillation. Specifically, a teacher (i.e., a homomodal image registration model) is trained to guide the student (i.e., a multimodal image registration model). Besides, this article simultaneously aligned large-scale rigid and small-scale nonrigid deformations by predicting deformation flow from both global and local features, thereby achieving high-precision registration. Furthermore, this proposed method incorporated a deformation mask during training to mitigate the negative impact of black edges in the obtained registration results on model performance. Experimental results demonstrate that the proposed method delivers state-of-the-art registration accuracy across various multimodal datasets, with ablation studies confirming the effectiveness of each component. The codes will be available at https://github.com/2351056918/Multimodality-Image-Registration-with-Modailty-Distillation},
-  archive      = {J_TNNLS},
-  author       = {Xichuan Zhou and Jicheng Zhao and Lihui Chen and Gemine Vivone and Yanchun Liu and Jing Nie and Haijun Liu},
-  doi          = {10.1109/TNNLS.2025.3621065},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Multimodality image registration with modality distillation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Be reliable: An interpretable attribute-oriented representation learning framework. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3618290'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Representation learning techniques effectively unveil latent patterns within raw data. However, the learning process is often marred by uncertainties, such as variations in data quality and heterogeneous scenarios, which greatly affect the reliability of representation learning. In this article, we introduce a reliable representation learning framework to establish a connection between data attributes and modeling strategies, namely the interpretable attribute-oriented representation learning framework. First, by focusing on the inherent knowledge embedded in the data, we decouple it into four principal attributes: fidelity, topology, invariance, and discriminability. To explicitly address these attributes, we incorporate them into an optimization-derived framework using corresponding general loss terms. Furthermore, by treating the iterative solution process as a bridge, each derived network module possesses traceable interpretability, thus laying a reliable foundation. Ultimately, we extend the proposed framework to multisource heterogeneous scenarios, enabling it to adapt to complex environments while maintaining reliability. In essence, our work aims to seamlessly integrate deep representations with prior knowledge during the learning process, thereby creating a solid basis for dependable modeling. Networks derived from the proposed framework achieve promising results, particularly in complex multisource heterogeneous environments, demonstrating both their effectiveness and reliability. The code is available at https://github.com/ZihanFang11/2025_AORLNet_TNNLS.},
-  archive      = {J_TNNLS},
-  author       = {Zihan Fang and Shide Du and Ying Zou and Yanchao Tan and Na Song and Shiping Wang},
-  doi          = {10.1109/TNNLS.2025.3618290},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Be reliable: An interpretable attribute-oriented representation learning framework},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A physics-informed demonstration-guided learning framework for granular material manipulation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3622482'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Due to the complex physical properties of granular materials, research on robot learning for manipulating such materials predominantly either disregards the consideration of their physical characteristics or uses surrogate models to approximate their physical properties. Learning to manipulate granular materials based on physical information obtained through precise modeling remains an unsolved problem. In this article, we propose to address this challenge by constructing a differentiable physics-based simulator for granular materials using the Taichi programming language and developing a learning framework accelerated by demonstrations generated through gradient-based optimization on nongranular materials within our simulator, eliminating the costly data collection and model training of prior methods. Experimental results show that our method, with its flexible design, trains robust policies that are capable of executing the task of transporting granular materials in both simulated and real-world environments, beyond the capabilities of standard reinforcement learning (RL), imitation learning (IL), and prior task-specific granular manipulation methods.},
-  archive      = {J_TNNLS},
-  author       = {Minglun Wei and Xintong Yang and Yu-Kun Lai and Seyed Amir Tafrishi and Ze Ji},
-  doi          = {10.1109/TNNLS.2025.3622482},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {A physics-informed demonstration-guided learning framework for granular material manipulation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HomLLM: Exploiting semantic homology relationship for fine-grained bird image classification via large language models. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3617339'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {How to recognize endangered bird species in complex outdoor environments has attracted considerable attention in the fields of computer vision and machine learning. However, fine-grained bird image classification (FBIC) is susceptible to problems such as arbitrary postures, interclass discriminability, and occlusions. We propose a novel semantic homology relationship representation learning for fine-grained bird classification with large language models, namely HomLLM, to address these challenges in FBIC effectively. Our proposed model aims to learn homology relationship representations adaptively by identifying invariant structural correspondences between visual features and semantic descriptions, using limited bird data and base class labels. Our approach yields two key findings: 1) invariant homology in key regions of birds that maintain structural consistency across different postures and 2) homological relationship that establish essential taxonomic markers among similar bird classes. Based on these insights, we propose two new modules of the model: the semantic homology generation (SHG) module and homology relationship mining (HRM) module. Specifically, in SHG, bird features are described at multiple granularities through a large language model (LLM) to establish semantic homology. In HRM, feature adaptation is performed separately for textual and visual information, and cross-modal homological interaction is performed hierarchically. In addition, we propose a hierarchical homology interaction scheme to integrate multilevel homological features while preserving structural consistency. Experiments on the commonly used bird datasets CUB-200-2011 and NABirds demonstrate that HomLLM exhibits better performance than state-of-the-art (SOTA) methods.},
-  archive      = {J_TNNLS},
-  author       = {Hai Liu and Yu Song and Tingting Liu and Hao Zheng and Lin Chen and Zhaoli Zhang and You-Fu Li},
-  doi          = {10.1109/TNNLS.2025.3617339},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {HomLLM: Exploiting semantic homology relationship for fine-grained bird image classification via large language models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Progressive feedforward collapse of ResNet training. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3620798'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Neural collapse (NC) is a simple and symmetric phenomenon for deep neural networks (DNNs) at the terminal phase of training, where the last-layer features collapse to their class means and form a simplex equiangular tight frame (ETF) aligning with the classifier vectors. However, the relationship of the last-layer features to the data and intermediate layers during training remains unexplored. To this end, we characterize the geometry of intermediate layers of residual neural network (ResNet) and propose a novel conjecture, progressive feedforward collapse (PFC), claiming the degree of collapse increases during the forward propagation of DNNs. We derive a transparent model for the well-trained ResNet based on the principle that ResNet with weight decay approximates the geodesic curve in the Wasserstein space at the terminal phase. The metrics of PFC indeed monotonically decrease across depth on various datasets. We propose a new surrogate model, multilayer unconstrained feature model (MUFM), connecting intermediate layers by an optimal transport regularizer. The optimal solution of MUFM is inconsistent with NC but is more concentrated relative to the input data. Overall, this study extends NC to PFC to model the collapse phenomenon of intermediate layers and its dependence on the input data, shedding light on the theoretical understanding of ResNet in classification problems.},
-  archive      = {J_TNNLS},
-  author       = {Sicong Wang and Kuo Gai and Shihua Zhang},
-  doi          = {10.1109/TNNLS.2025.3620798},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Progressive feedforward collapse of ResNet training},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Decentralized online optimization with compressed communication over directed graphs. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3622106'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article focuses on a decentralized online optimization problem over multiagent systems, where the interactions are modeled by a strongly connected directed graph. The objective of each agent is to minimize the global loss function accumulated by all agents’ local loss functions, which are time-varying and only known by themselves. To address the communication bottleneck caused by the high-dimensional data and large-scale networks, we design a decentralized online algorithm with compressed communication, decentralized online gradient push-sum with compressed communication (CC-DOGPS). For strongly convex functions, a sublinear regret bound $\mathcal {O}((\ln T)^{2})$ of our designed algorithm is obtained, where $T$ is the time horizon. Finally, two numerical simulations are given to validate the theoretical results and illustrate the efficiency of our designed algorithm.},
-  archive      = {J_TNNLS},
-  author       = {Honglei Liu and Baoyong Zhang and Zhan Yu and Deming Yuan and Mingcheng Dai},
-  doi          = {10.1109/TNNLS.2025.3622106},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Decentralized online optimization with compressed communication over directed graphs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Tensor multi-subspace representation for remote sensing image mixed noise removal. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3620863'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Remote sensing image (RSI) denoising is an important and fundamental task in RSI processing. Existing denoising methods usually assume that RSI lies in a single matrix or tensor subspace. However, due to the wavelength difference or/and temporal variability, the assumption of a single subspace may not be suitable for RSI. To address this, we propose a tensor multi-subspace representation (TenMSR) for RSI mixed noise removal. To be specific, in this work, we introduce TenMSR to finely characterize the intrinsic tensor multi-subspace structure of RSI. Compared with the single matrix/tensor subspace-based methods, the proposed method can not only precisely describe the wavelength difference or/and temporal variability of RSI but also produce a more compact image distribution in tensor multi-subspace. To mine and preserve the multi-subspace structure, we introduce a nonlinear transform-based 3-D tensor nuclear norm to characterize the tensor low rankness of the multi-subspace representation coefficient. An effective algorithm based on the proximal alternating minimization (PAM) framework is developed to solve the proposed model with theoretical convergence analysis. Extensive experiments show the effectiveness and superiority of the proposed method over existing state-of-the-art single matrix/tensor subspace RSI denoising methods.},
-  archive      = {J_TNNLS},
-  author       = {Jing-Hua Yang and Heng-Chao Li and Meng Ding and Xi-Le Zhao and Wen-Yu Hu},
-  doi          = {10.1109/TNNLS.2025.3620863},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Tensor multi-subspace representation for remote sensing image mixed noise removal},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Kernel-based representation alignment for class imbalanced semi-supervised learning. <em>TNNLS</em>, 1-14. (<a href='https://doi.org/10.1109/TNNLS.2025.3622936'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Semi-supervised learning (SSL) offers a promising solution to the challenge of learning from limited labeled data by leveraging the potential of unlabeled data, thus circumventing the need for costly labeling efforts. However, common SSL methods often encounter domain shifts in many real-world scenarios, where class distribution is imbalanced. In order to make machine learning more robust to imbalanced datasets, it is imperative to ensure that consistent representations are learned for each class, regardless of the amount of data available. Therefore, we propose a straightforward yet effective kernel function mapping strategy to align the representations of each class in an infinite-dimensional space. Specifically, we employ a Gaussian kernel function to map the representations of unlabeled data to the centroids of labeled data, enabling similarity comparisons in the infinite-dimensional space. In this way, we are able to refine the predicted pseudo-labels at the representation level. To better handle class imbalance, we note that it is common to obtain a high recall but low precision for the majority classes and a high precision but low recall for the minority classes. A selective strategy is adopted for predictions corrected for the majority classes while maintaining confidence in the pseudo-labels assigned to the minority classes. Extensive evaluations on various benchmarks and training settings validate the superior performance of the proposed method compared to the existing relevant state-of-the-art approaches.},
-  archive      = {J_TNNLS},
-  author       = {Zuoyong Li and Jinhuang Ye and Jie Wen and Haixiong Liu and Tao Wang and Weisi Lin},
-  doi          = {10.1109/TNNLS.2025.3622936},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Kernel-based representation alignment for class imbalanced semi-supervised learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A novel approach for perceptions of physician decision-making and latent topic refinement in large language model-enhanced medical dialog generation. <em>TNNLS</em>, 1-12. (<a href='https://doi.org/10.1109/TNNLS.2025.3569168'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The rapid advancement of medical dialog generation (MDG) techniques has enabled medical dialog systems (MDSs) to generate high-quality responses rich in medical expertise by integrating diverse medical information. However, they still encounter several challenges, including generic response generation, lack of semantic precision, and imprecise dialog topic extraction. This study aims to design a novel model to address these challenges simultaneously. Correspondingly, we propose the TRL-HMIE model, which represents transformer reinforcement learning (RL) for heterogeneous medical information extraction. In particular, we incorporate GPT-3 from transformer-related models as the reference language model. Our enhancements focused on three key aspects. First, we developed a conversation-topic classifier to precisely categorize conversation topics, supporting the conversation-topic locator module in generating reliable conversation topics. Second, the model employs a multihead attention mechanism to capture crucial information from the dialog context, facilitating the extraction of key dialog information and enhancing the accuracy of heterogeneous information extraction. Finally, the model integrates RL and a reward fusion mechanism, which, combined with its ability to handle multisource information and long dialog contexts, generates optimized rewards for the TRL-HMIE model, encouraging the production of doctor responses with precise semantics and dialog topics. The experimental results demonstrate that the proposed method achieves a 6.07% improvement over the benchmark model on the MedDG and MedDialog datasets. The experimental results demonstrate that the proposed method achieves a 6.07% improvement over the benchmark model on the MedDG and MedDialog datasets.},
-  archive      = {J_TNNLS},
-  author       = {Jinli Zhang and Junzhe Jiang and Fenglong Ma and Zongli Jiang and Qi Tan and Yongcheng Zhou},
-  doi          = {10.1109/TNNLS.2025.3569168},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-12},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {A novel approach for perceptions of physician decision-making and latent topic refinement in large language model-enhanced medical dialog generation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Regret minimization in population network games: Vanishing heterogeneity and convergence to equilibria. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3565266'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Understanding and predicting the behavior of large-scale multiagents in games remains a fundamental challenge in multiagent systems. This article examines the role of heterogeneity in equilibrium formation by analyzing how smooth regret matching drives a large number of heterogeneous agents with diverse initial policies toward unified behavior. By modeling the system state as a probability distribution of regrets and analyzing its evolution through the continuity equation, we uncover a key phenomenon in diverse multiagent settings: the variance of the regret distribution diminishes over time, leading to the disappearance of heterogeneity and the emergence of consensus among agents. This universal result enables us to prove convergence to quantal response equilibria in both competitive and cooperative multiagent settings. This work advances the theoretical understanding of multiagent learning and offers a novel perspective on equilibrium selection in diverse game-theoretic scenarios.},
-  archive      = {J_TNNLS},
-  author       = {Die Hu and Shuyue Hu and Chunjiang Mu and Shiqi Fan and Chen Chu and Jinzhuo Liu and Zhen Wang},
-  doi          = {10.1109/TNNLS.2025.3565266},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Regret minimization in population network games: Vanishing heterogeneity and convergence to equilibria},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An intrinsically knowledge-transferring developmental spiking neural network for tactile classification. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3623703'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Gradient descent, computed through backpropagation (BP), has been widely used to train spiking neural networks (SNNs). However, the approach has several limitations. It requires manual intervention to tune the network architecture, is prone to catastrophic forgetting of previously learned information when exposed to data containing new information, and is computationally demanding. To address these issues, we propose brain-mimetic developmental spiking neural networks (BDNNs), which emulate the postnatal development of biological neural circuits. We evaluated BDNNs using a neuromorphic tactile system with the task of classifying objects through grasping. Our findings show that BDNNs grow dynamically in response to input data by incrementally recruiting hidden neurons, leading to steadily increasing classification accuracy without the need for manual architecture tuning. The growth process adapts autonomously to the complexity of incoming data. BDNNs also exhibit strong knowledge transfer capabilities, which effectively leverage previously learned knowledge about grasping objects to incrementally learn about new objects. Furthermore, in comparative experiments using the same dataset and hardware, BDNNs achieved classification performance comparable to the standard BP-based method and its variants, while learning one to three orders of magnitude faster. Furthermore, the BDNN outperforms existing continual learning algorithms in the performance and speed. These results highlight BDNNs as a promising approach for continual learning and real-time edge computing applications. The source code of our work is publicly available at https://github.com/1jiaqixing/BDNNversion1},
-  archive      = {J_TNNLS},
-  author       = {Jiaqi Xing and Yizhi Liu and Zezheng Zhang and Libo Chen and Mohammed Nazibul Hasan and Zhi-Bin Zhang},
-  doi          = {10.1109/TNNLS.2025.3623703},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {An intrinsically knowledge-transferring developmental spiking neural network for tactile classification},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Noise-tolerant CIM-DNNs explained. <em>TNNLS</em>, 1-13. (<a href='https://doi.org/10.1109/TNNLS.2025.3621473'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Compute-in-memory (CIM) systems implemented with resistive random access memory (RRAM) crossbars are a promising approach for accelerating deep neural network (DNN) computations. However, it is noteworthy that RRAM-based CIM systems are susceptible to computational errors. Unlike digital computation, the nature of analog computing introduces the risk of error accumulation throughout the computation process. Various techniques have been proposed to help deal with the errors in CIM systems, among which, training methods to create noise-tolerant CIM-based DNNs (CIM-DNNs) models that are insensitive to weight variations are the most promising due to their simplicity and low implementation cost. Although promising empirical results of variation-aware training (VAT) showcasing DNN models with high tolerance to device nonidealities have been demonstrated, there remains a significant gap in the understanding of noise tolerance properties in VAT-trained CIM-DNNs and how to improve VAT based on these understandings. The exploration of these theoretical aspects represents an area requiring further investigation and research. This work endeavors to explore the fundamental properties of noise tolerance in DNNs for CIM systems. We encapsulate our contributions into three key points. First, we identify factors that influence DNNs’ performance when subjected to noise through a series of training experiments. Second, we offer both theoretical insights and practical demonstrations illustrating how VAT operates to yield solutions with heightened resistance to noise during the training process. Finally, leveraging these insights, we provide guidelines for implementing VAT to obtain optimal noise tolerance in CIM-DNNs. Our objective is to establish a theoretical foundation for VAT, and building on these insights, we aim to offer general and straightforward guidelines for DNN training, experimenting with factors such as hyperparameter choices for optimizers and weight clamping. Ultimately, our aim is to contribute to general and practical solutions for the development of reliable CIM systems. Our studies focus on analyzing how noise injection and different optimizers affect the convergence dynamics during training to reach a more noise-tolerant solution through VAT. Future studies could incorporate advanced regularizers reflecting the flatness of the solution into the cost function, which may be necessary for models beyond DNNs studied here. Combined together, these techniques can potentially lead to practical solutions for the development of reliable CIM systems.},
-  archive      = {J_TNNLS},
-  author       = {Fan-Hsuan Meng and Eric Yeu-Jer Lee and Yuting Wu and Ziyu Wang and Wei D. Lu},
-  doi          = {10.1109/TNNLS.2025.3621473},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-13},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Noise-tolerant CIM-DNNs explained},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing the policy generalization on OOD tasks via latent variable distribution enhancement sampler. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3614724'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In standard reinforcement learning, since the uncertainty of task objectives is not adequately considered in the policy training, the policy achieves poor generalization for the out-of-distribution (OOD) tasks. Although considerable efforts have been made to enhance the generalization for OOD tasks, most of these methods overlook the structural information of task representations in latent space during the generation of extrapolative data, resulting in biased and blurred data embeddings, which then affect the policy generalization. To address this issue, we propose a context-based meta-reinforcement learning (meta-RL) method, namely latent variable distribution enhancement sampler (LVDES), which enhances the policy generalization on OOD tasks by providing efficient task representation space and accurate augmentation policy training data for OOD tasks. Specifically, the proposed LVDES consists of four modules: a task inference module, a task separation module, a latent enhancement module (LEM), and a policy module. The task inference module is used to identify the task. The task separation module (TSM) learns a representation space with highly structured separability. The LEM generates relevant additional task trajectories for augmenting policy training data. The policy module learns a policy to solve tasks. By using efficient task representation space and augmented trajectory data, the exploration efficiency and generalization of the policy for OOD tasks can be enhanced by our LVDES method. Extensive experiments are conducted to demonstrate the effectiveness of our method in comparison with existing methods on the MuJoCo and Meta-World benchmarks. The experimental results show that the task completion accuracy of our LVDES on OOD tasks is increased by 60.20%, with the average exploration time being reduced by 62.99% in comparison with the most effective current method, which demonstrates that our LVDES can achieve great policy generalization on OOD tasks.},
-  archive      = {J_TNNLS},
-  author       = {Shaobo Li and Jie Lin and Xiangyuan Yang and Hanlin Zhang and Peng Zhao},
-  doi          = {10.1109/TNNLS.2025.3614724},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Enhancing the policy generalization on OOD tasks via latent variable distribution enhancement sampler},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PromptVAD: Abnormal prompt via vision-language model. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3621336'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Weakly supervised video anomaly detection (WSVAD) aims at predicting frame-level anomaly scores by modeling training videos with video-level annotations. The category names of abnormal events contain high-level knowledge abstracted by humans about abnormalities, which is of great help in identifying abnormal events. To utilize the knowledge implicit in category names, based on the visual-language pretraining model, we introduce a learnable abnormal prompt from three aspects: learnable domain prompt, learnable category prompt, and nonlearnable category definition prompt. Based on the learnable abnormal prompt, we propose a novel fine-grained WSVAD method: PromptVAD, which exploits a learnable abnormal prompt to reduce the semantic gap between visual images and anomaly categories. Through a similarity measure and our proposed coarse-grained two-class prompt module, our PromptVAD jointly learns coarse-grained and fine-grained VAD. Extensive experimental results on the ShanghaiTech, University of Central Florida (UCF)-Crime, and XD-Violence datasets show that our method achieves state-of-the-art performance. Specifically, our method achieves an area under the curve (AUC) of 88.62% on the UCF-Crime dataset.},
-  archive      = {J_TNNLS},
-  author       = {Shuo Li and Fang Liu and Licheng Jiao and Zehua Hao and Jiahao Wang and Long Sun and Lingling Li and Xu Liu and Puhua Chen},
-  doi          = {10.1109/TNNLS.2025.3621336},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {PromptVAD: Abnormal prompt via vision-language model},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Sparse mixture of mambas for domain generalized atomic electron tomography augmentation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3613878'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Atomic electron tomography (AET) is essential for characterizing the atomic structure of functional materials. However, raw 3-D tomograms often exhibit severe artifacts caused by geometric constraints and low radiation doses. Although point-attention-based ensemble augmentation methods effectively remove artifacts in simulated datasets with varying structure factors, they struggle with the complexity of real tomograms that demand multidomain feature learning. Moreover, existing models degrade in multidomain scenarios and incur high parameter counts introduced by point-attention mechanisms, which increase hardware demands. To address these challenges, we propose a sparse mixture of Mambas (MoMambas), a novel 3-D augmentation method that enhances domain generalization. MoMambas decouple domain-specific parameters by integrating a sparse mixture-of-experts (MoE) framework with Mamba-based experts, resolve positional ambiguity in sparse input sequences through positional information enhancement, and boost MoE accuracy via a multihead routing algorithm. Our approach achieves a 22% accuracy improvement over state-of-the-art AET augmentation methods in multidomain learning, reduces the parameter count to just 2.9% of the original, and lowers computational cost by 6%. Codes and data are publicly available at https://github.com/yuy38457/MoMambas},
-  archive      = {J_TNNLS},
-  author       = {Yang Yu and Jingling Yuan and Xian Zhong and Qixuan Zhao and Wen Luo and Liqiang Mai},
-  doi          = {10.1109/TNNLS.2025.3613878},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Sparse mixture of mambas for domain generalized atomic electron tomography augmentation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LEPD-net: A lightweight and efficient network for pedestrian detection. <em>TNNLS</em>, 1-9. (<a href='https://doi.org/10.1109/TNNLS.2025.3624356'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The pedestrian detection is crucial in practical applications, such as autonomous driving and video surveillance. However, the existing research mainly focuses on improving detection accuracy, with relatively little attention paid to model complexity and operational efficiency. In scenarios with high real-time requirements, the practical deployment of pedestrian detectors still faces many difficulties. To this end, we propose a lightweight and efficient pedestrian detection network (LEPD-Net). First, we design a PoolFormer-based detection head (PDH) to reduce the model computation and inference time. Second, to compensate for the deficiency of PDH in global context modeling, we design a triple-branch joint attention module (TJAM). TJAM uses only a small number of parameters and strengthens the model’s contextual representation by capturing spatial location dependencies and global semantic information between channels. Finally, after incorporating PDH and TJAM into the backbone network, a lightweight and efficient pedestrian detector is constructed. We benchmarked the model on mainstream pedestrian datasets Caltech and CityPersons. The results show that our model achieves the current state-of-the-art performance level. In addition, our model reduces inference time by 25% while maintaining accuracy.},
-  archive      = {J_TNNLS},
-  author       = {Wenliang Ge and Shucheng Huang and Mingxing Li and Yifan Jiao},
-  doi          = {10.1109/TNNLS.2025.3624356},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-9},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {LEPD-net: A lightweight and efficient network for pedestrian detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multiscale contrastive learning for node clustering based on variational graph auto-encoder. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3610024'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Variational graph auto-encoders (VGAEs) are a key tool for node clustering, but existing models face several significant challenges. These challenges include a mismatch between inference and generative models after incorporating the clustering inductive bias, as well as posterior collapse (PC), where latent representations become overly influenced by the prior distribution. In addition, in existing VGAEs, noisy clustering assignments lead to the feature randomness (FR) challenge, while the strong tradeoff between clustering accuracy and reconstruction quality results in the feature drift (FD) problem. To address these issues, we propose a multiscale contrastive VGAE (MCVGAE). This multiscale model combines cluster-level and graph-level contrastive learning with proximity-level and cluster-level self-supervised methods. MCVGAE improves the alignment between the hidden space and the data distribution and prevents PC. Moreover, it reduces FR and FD more effectively than existing techniques. Achieving impressive accuracy scores of 79.09% on Cora, 90.04% on ACM, 75.12% on Pubmed, 72.7% on Citeseer, 74.11% on DBLP, and 59.79% on Wiki clearly demonstrates the superiority of MCVGAE over 30 state-of-the-art methods.},
-  archive      = {J_TNNLS},
-  author       = {Nazila Pourhaji Aghayengejeh and M. A. Balafar and Jafar Tanha and Narjes Nikzad Khasmakhi and Shervin Minaee},
-  doi          = {10.1109/TNNLS.2025.3610024},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Multiscale contrastive learning for node clustering based on variational graph auto-encoder},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Generalized subspace coupling approach for robust low-tubal-rank tensor completion. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3622331'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The field of low-tubal-rank tensor recovery, especially with subspace prior information, has recently garnered significant attention. However, existing methods encounter limitations when dealing with tensor data affected by simultaneous damage and loss. Moreover, they frequently necessitate clean (with no outliers) data to generate subspace prior information, which presents practical challenges. Addressing these issues, this article proposes a generalized subspace coupling (GSC) scheme, equipped with a novel tool to quantify the accuracy of the prior subspace. Building upon this foundation, we delve into the robust low-tubal-rank tensor completion problem, aiming to recover a low-tubal-rank tensor from partially observed data corrupted by sparse noise. Importantly, we theoretically demonstrate that the proposed method achieves exact tensor recovery under significantly weaker incoherence conditions compared to those previously suggested. Additionally, to optimize the proposed model, we design a symmetric Gauss–Seidel-based alternating direction method of multipliers (sGS-ADMM) with guaranteed convergence. Experiments conducted on various datasets, including facial images, medical scans, and video sequences, validate the superiority of our model over existing competitors in both qualitative and quantitative assessments.},
-  archive      = {J_TNNLS},
-  author       = {Weichao Kong and Qingrong Feng and Qianyu Shu and Jianjun Wang and Tingwen Huang and Bin Zhang},
-  doi          = {10.1109/TNNLS.2025.3622331},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Generalized subspace coupling approach for robust low-tubal-rank tensor completion},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Spectral embedding representation based on random anchor graph aggregation. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3622100'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Anchor-based strategies have been widely used to accelerate spectral clustering, yet their effectiveness is directly affected by the quality of the selected anchors. Random sampling has become one of the most important anchor determination methods due to its efficiency. However, the anchors obtained by a single random sampling often fail to adequately capture the topological structure of the original data, making it difficult for the constructed anchor graph to achieve satisfactory clustering performance. To solve this problem, we propose a novel spectral embedding representation model based on random anchor graph aggregation (RAGA), in which an aggregated anchor graph can be produced to obtain enhanced sample representation capability. Specifically, we perform multiple random samplings to make the distribution of the selected anchors approximate the original data within a reasonable sampling time. Subsequently, adaptive weighted learning is performed on the contribution of the constructed multiple anchor graphs, and then an aggregated anchor graph can be formed, which can portray the topological structure of the original samples more precisely. In addition, spectral embedding and spectral rotation are integrated into a joint learning framework to reduce the model learning error accumulation caused by the traditional two-stage framework. Notably, we propose a rigorous theorem for analyzing the approximation of samples by the selected anchors in multiple random samplings. Our proposed RAGA maintains the speed advantage of random sampling while obtaining a high-quality aggregated anchor graph, enabling it to handle large-scale data scenarios. Experimental results on several benchmark datasets show that the RAGA model outperforms other state-of-the-art (SOTA) anchor graph-based clustering methods.},
-  archive      = {J_TNNLS},
-  author       = {Jie Zhou and Fengkai Li and Can Gao and Weiping Ding and Witold Pedrycz and Guangming Lang},
-  doi          = {10.1109/TNNLS.2025.3622100},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Spectral embedding representation based on random anchor graph aggregation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Video to video generative adversarial network for few-shot learning based on policy gradient. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3616322'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The development of sophisticated models for video-to-video synthesis has been facilitated by recent advances in deep reinforcement learning (RL) and generative adversarial networks (GANs). In this article, we propose RL-V2V-GAN, a new deep neural network approach based on RL for unsupervised conditional video-to-video synthesis. While preserving the unique style of the source video domain, our approach aims to learn a mapping from a source video domain to a target video domain. We train the model using policy gradient and employ convolutional long short-term memory (ConvLSTM) layers to capture the spatial and temporal information by designing a fine-grained GAN architecture and incorporating spatiotemporal adversarial goals. The adversarial losses aid in content translation while preserving style. Unlike traditional video-to-video synthesis methods requiring paired inputs, our proposed approach is more general because it does not require paired inputs. Thus, when dealing with limited videos in the target domain, that is, few-shot learning, it is particularly effective. Our experiments show that RL-V2V-GAN can produce temporally coherent video results. These results highlight the potential of our approach for further advances in video-to-video synthesis.},
-  archive      = {J_TNNLS},
-  author       = {Yintai Ma and Diego Klabjan and Jean Utke},
-  doi          = {10.1109/TNNLS.2025.3616322},
-  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
-  month        = {10},
-  pages        = {1-15},
-  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
-  title        = {Video to video generative adversarial network for few-shot learning based on policy gradient},
+  title        = {Knowledge graph reasoning based on information enhancement and subgraph alignment},
   year         = {2025},
 }
 </textarea>

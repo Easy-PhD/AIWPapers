@@ -25,460 +25,175 @@
 </head>
 <body>
 
-<h2 id="tip">TIP - 24</h2>
+<h2 id="tip">TIP - 9</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Optimized vessel segmentation: A structure-agnostic approach with small vessel enhancement and morphological correction. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607583'>www</a>)
+(2025). DAR-prompt: Dynamic regulation in prompt tuning for multi-label zero-shot learning. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3626157'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Accurate segmentation of blood vessels is essential for various clinical assessments and postoperative analyses. However, the inherent challenges of vascular imaging—such as sparsity, fine granularity, low contrast, data distribution variability, and the critical need for preserving topological integrity—make generalized vessel segmentation particularly complex. While specialized segmentation methods have been developed for specific anatomical regions, their over-reliance on tailored models hinders broader applicability and generalization. General-purpose segmentation models introduced in medical imaging often fail to address critical vascular characteristics, including the connectivity of segmentation results. In this study, we propose OVS-Net, an optimized vessel segmentation framework designed to generalize across diverse vessel structures and imaging modalities. It introduces a dual-branch architecture design for improving small vessel segmentation and a morphology-aware correction module to preserve vascular topology and connectivity. We compiled a comprehensive multi-modality dataset from 17 sources to train and benchmark the proposed OVS-Net against 6 SAM-based methods and 17 expert models under various conditions. The results demonstrate that our approach achieves superior segmentation accuracy, generalization, and a 34.6% improvement in connectivity, underscoring its potential for clinical applications. The code and dataset will be released at github.com.},
+  abstract     = {Prompt tuning achieves superior performance across a wide range of tasks, including multi-label zero-shot classification. Existing approaches employ multiple prompts to acquire comprehensive knowledge from categories, demonstrating state-of-the-art performance and significant computational efficiency. However, two main challenges still exist in these methods that impede the full potential of generalization. First, the class imbalance is not carefully addressed. Despite some efforts to adopt re-weighted loss functions to alleviate the positive-negative imbalance, such strategies tend to exacerbate the class imbalance by over-suppression of labels with fewer samples and overfitting to dominant classes. Second, the multi-prompt methods neglect the interactions between prompts during parameter optimization, underestimating the potential of prompts and leading to suboptimal performance. To address these issues, we present a novel framework named Dynamic Regulation in Prompt Tuning (DAR-Prompt). DAR-Prompt introduces three dynamic components: semantic regulator and debiased regulator to address the class imbalance, along with contrastive gradient regularization to enhance feature separation through prompt interactions during the backward pass. Specifically, the semantic regulator generates class-adaptive thresholds to compensate for tail classes and mitigate over-suppression, while the debiased regulator focuses on learning biased classes by rectifying overconfident predictions. Moreover, we apply dynamic regularization to the gradient update directions of prompts to promote orthogonality, thereby enhancing feature distinctiveness. Extensive experiments on several benchmarks show that our method can achieve state-of-the-art performance, well demonstrating its effectiveness and superiority. Codes will be available publicly.},
   archive      = {J_TIP},
-  author       = {Dongning Song and Weijian Huang and Jiarun Liu and Md Jahidul Islam and Hao Yang and Shuqiang Wang and Hairong Zheng and Shanshan Wang},
-  doi          = {10.1109/TIP.2025.3607583},
+  author       = {Yiwen Liang and Hui Chen and Zijia Lin and Pengzhang Liu and Jiaxing Wang and Guoxin Wang and Lin Li and Sicheng Zhao and Jungong Han and Guiguang Ding},
+  doi          = {10.1109/TIP.2025.3626157},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {Optimized vessel segmentation: A structure-agnostic approach with small vessel enhancement and morphological correction},
+  title        = {DAR-prompt: Dynamic regulation in prompt tuning for multi-label zero-shot learning},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Exploring vision-based active 3D object detection by informativeness characterization. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3613927'>www</a>)
+(2025). Probability map-guided network for 3D volumetric medical image segmentation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623259'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Vision-based 3D object detection (3DOD) gains lots of attention due to its low cost for deployment compared to Lidar-based tasks, while it suffers from labor-expensive data annotations. At the same time, active learning (AL) has shown great potential in reducing annotation costs in related tasks, which can maximize model performance within very limited labeled data. In this paper, we explore active learning for vision-based 3DOD for the first time. Inspired by the entropy analysis, we involve three concerns to characterize the sample informativeness: sample diversity in input space, feature informativeness in BEV space, and result distribution in prediction space. Based on these concerns, we propose a novel AL framework named HMAD, which utilizes Height Modeling and Adaptive Diversity-based sampling for comprehensive informativeness characterization. In HMAD, we first propose a novel height-guided adversarial module in BEV space, which measures the informativeness of height modeling for 2D-to-3D mapping in an adversarial manner. Furthermore, Budget-aware SpatioTemporal diversity Sampling (BSTS) and Class Balance Sampling (CBS) are proposed to adaptively measure the sample informativeness in input and prediction space, respectively. Finally, the three components are integrated into a two-stage sampling strategy, with which the most informative samples can be selected and annotated for the next iteration. Experiments evidence that HMAD achieves comparable performances by only using 50% annotated training data, and can generalize well on different conditions.},
+  abstract     = {3D medical images are volumetric data that provide spatial continuity and multi-dimensional information. These features provide rich anatomical context. However, their anisotropy may result in reduced image detail along certain directions. This can cause blurring or distortion between slices. In addition, global or local intensity inhomogeneities are often observed. This may be due to limitations of the imaging equipment, inappropriate scanning parameters, or variations in the patient’s anatomy. This inhomogeneity may blur lesion boundaries and may also mask true features, causing the model to focus on irrelevant regions. Therefore, a probability map-guided network for 3D volumetric medical image segmentation (3D-PMGNet) is proposed. The probability maps generated from the intermediate features are used as supervisory signals to guide the segmentation process. A new probability map reconstruction method is designed, combining dynamic thresholding with local adaptive smoothing. This enhances the reliability of high-response regions while suppressing low-response noise. A learnable channel-wise temperature coefficient is introduced to adjust the probability distribution to make it closer to the true distribution; in addition, a feature fusion method based on dynamic prompt encoding is developed. The response strength of the main feature maps is dynamically adjusted, and this adjustment is achieved through the spatial position encoding derived from the probability maps. The proposed method has been evaluated on four datasets. Experimental results show that the proposed method outperforms state-of-the-art 3D medical image segmentation methods. The source codes have been publicly released at https://github.com/ZHANGZIMENG01/3D-PMGNet.},
   archive      = {J_TIP},
-  author       = {Ruixiang Li and Yiming Wu and Yehao Lu and Xuewei Li and Xian Wang and Xiubo Liang and Xi Li},
-  doi          = {10.1109/TIP.2025.3613927},
+  author       = {Zhiqin Zhu and Zimeng Zhang and Guanqiu Qi and Yuanyuan Li and Pan Yang and Yu Liu},
+  doi          = {10.1109/TIP.2025.3623259},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {Exploring vision-based active 3D object detection by informativeness characterization},
+  title        = {Probability map-guided network for 3D volumetric medical image segmentation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). ChartX & ChartVLM: A versatile benchmark and foundation model for complicated chart reasoning. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3607618'>www</a>)
+(2025). Texture-consistent 3D scene style transfer via transformer-guided neural radiance fields. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3626892'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recently, many versatile Multi-modal Large Language Models (MLLMs) have emerged continuously. However, their capacity to query information depicted in visual charts and engage in reasoning based on the queried contents remains under-explored. In this paper, to comprehensively and rigorously benchmark the ability of the off-the-shelf MLLMs in the chart domain, we construct ChartX, a multi-modal evaluation set covering 18 chart types, 7 chart tasks, 22 disciplinary topics, and high-quality chart data. Besides, we develop ChartVLM to offer a new perspective on handling multi-modal tasks that strongly depend on interpretable patterns, such as reasoning tasks in the field of charts or geometric images. We evaluate the chart-related ability of mainstream MLLMs and our ChartVLM on the proposed ChartX evaluation set. Extensive experiments demonstrate that ChartVLM surpasses both versatile and chart-related large models, including GPT-4V. We believe that our study can pave the way for further exploration in creating a more comprehensive chart evaluation set and developing more interpretable multi-modal models. Both ChartX and ChartVLM are available at: https://github.com/Alpha-Innovator/ChartVLM.},
+  abstract     = {Recent advancements have suggested that neural radiance fields (NeRFs) show great potential in 3D style transfer. However, most existing NeRF-based style transfer methods still face considerable challenges in generating stylized images that simultaneously preserve clear scene textures and maintain strong cross-view consistency. To address these limitations, in this paper, we propose a novel transformer-guided approach for 3D scene style transfer. Specifically, we first design a transformer-based style transfer network to capture long-range dependencies and generate 2D stylized images with initial consistency, which serve as supervision for the 3D stylized generation. To enable fine-grained control over style, we propose a latent style vector as a conditional feature and design a style network that projects this style information into the 3D space. We further develop a merge network that integrates style features with scene geometry to render 3D stylized images that are both visually coherent and stylistically consistent. In addition, we propose a texture consistency loss to preserve scene structure and enhance texture fidelity across views. Extensive quantitative and qualitative experimental results demonstrate that our proposed approach outperforms many state-of-the-art methods in terms of visual perception, image quality and multi-view consistency. Our code and more results are available at: https://github.com/PaiDii/TGTC-Style.git.},
   archive      = {J_TIP},
-  author       = {Renqiu Xia and Hancheng Ye and Xiangchao Yan and Qi Liu and Hongbin Zhou and Zijun Chen and Botian Shi and Junchi Yan and Bo Zhang},
-  doi          = {10.1109/TIP.2025.3607618},
+  author       = {Wudi Chen and Zhiyuan Zha and Shigang Wang and Liaqat Ali and Bihan Wen and Xin Yuan and Jiantao Zhou and Ce Zhu},
+  doi          = {10.1109/TIP.2025.3626892},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {ChartX & ChartVLM: A versatile benchmark and foundation model for complicated chart reasoning},
+  title        = {Texture-consistent 3D scene style transfer via transformer-guided neural radiance fields},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Hierarchical multimodal knowledge matching for training-free open-vocabulary object detection. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3618408'>www</a>)
+(2025). Salient object detection in traffic scene through the TSOD10K dataset. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3626935'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Open-Vocabulary Object Detection (OVOD) aims to leverage the generalization capabilities of pre-trained vision-language models for detecting objects beyond the trained categories. Existing methods mostly focus on supervised learning strategies based on available training data, which might be suboptimal for data-limited novel categories. To tackle this challenge, this paper presents a Hierarchical Multimodal Knowledge Matching method (HMKM) to better represent novel categories and match them with region features. Specifically, HMKM includes a set of object prototype knowledge that is obtained using limited category-specific images, acting as off-the-shelf category representations. In addition, HMKM also includes a set of attribute prototype knowledge to represent key attributes of categories at a fine-grained level, with the goal to distinguish one category from its visually similar ones. During inference, two sets of object and attribute prototype knowledge are adaptively combined to match categories with region features. The proposed HMKM is training-free and can be easily integrated as a plug-and-play module into existing OVOD models. Extensive experiments demonstrate that our HMKM significantly improves the performance when detecting novel categories across various backbones and datasets.},
+  abstract     = {Traffic Salient Object Detection (TSOD) aims to segment the objects critical to driving safety by combining semantic (e.g., collision risks) and visual saliency. Unlike SOD in natural scene images (NSI-SOD), which prioritizes visually distinctive regions, TSOD emphasizes the objects that demand immediate driver attention due to their semantic impact, even with low visual contrast. This dual criterion, i.e., bridging perception and contextual risk, re-defines saliency for autonomous and assisted driving systems. To address the lack of task-specific benchmarks, we collect the first large-scale TSOD dataset with pixel-wise saliency annotations, named TSOD10K. TSOD10K covers the diverse object categories in various real-world traffic scenes under various challenging weather/illumination variations (e.g., fog, snowstorms, low-contrast, and low-light). Methodologically, we propose a Mamba-based TSOD model, termed Tramba. Considering the challenge of distinguishing inconspicuous visual information from complex traffic backgrounds, Tramba introduces a novel Dual-Frequency Visual State Space module equipped with shifted window partitioning and dilated scanning to enhance the perception of fine details and global structure by hierarchically decomposing high/low-frequency components. To emphasize critical regions in traffic scenes, we propose a traffic-oriented Helix 2D-Selective-Scan (Helix-SS2D) mechanism that injects driving attention priors while effectively capturing global multi-direction spatial dependencies. We establish a comprehensive benchmark by evaluating Tramba and 25 existing NSI-SOD models on TSOD10K, demonstrating Tramba’s superiority. Our research establishes the first foundation for safety-aware saliency analysis in intelligent transportation systems. The dataset and code will be made publicly available at https://github.com/mj129/Tramba.},
   archive      = {J_TIP},
-  author       = {Qisen Ma and Yan Huang and Zikun Liu and Hyunhee Park and Liang Wang},
-  doi          = {10.1109/TIP.2025.3618408},
+  author       = {Yu Qiu and Yuhang Sun and Jie Mei and Lin Xiao and Jing Xu},
+  doi          = {10.1109/TIP.2025.3626935},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {Hierarchical multimodal knowledge matching for training-free open-vocabulary object detection},
+  title        = {Salient object detection in traffic scene through the TSOD10K dataset},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). JOANet: An integrated joint optimization architecture making medical image segmentation really helped by super-resolution pre-processing. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3620627'>www</a>)
+(2025). ViMoE: An empirical study of designing vision mixture-of-experts. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3626887'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Conventional computer vision pipelines typically treat low-level enhancement and high-level semantic tasks as isolated processes, focusing on optimizing enhancement for perceptual quality rather than computational utility, neglecting semantic task requirements. To bridge this gap, this paper proposes an integrated joint optimization architecture that aligns the objectives of enhancement tasks with the practical needs of semantic tasks. Specifically, the architecture ensures that medical image segmentation (the semantic task) benefits directly from super-resolution pre-processing (the enhancement task). This integrated architecture fundamentally differs from conventional sequential frameworks by enabling joint training of super-resolution and segmentation networks. Guided by its own content reconstruction loss and semantic loss transferred from segmentation, the super-resolution network prioritizes semantically significant regions for segmentation-driven reconstruction. Comprehensive comparative and ablation studies demonstrate that the network, trained jointly, markedly enhances segmentation performance in low-resolution images, even outperforming those directly from referenced high-resolution images. The code is available at https://github.com/kldys/JOANet.},
+  abstract     = {Mixture-of-Experts (MoE) models embody the divide-and-conquer concept and are a promising approach for increasing model capacity, demonstrating excellent scalability across multiple domains. In this paper, we integrate the MoE structure into the classic Vision Transformer (ViT), naming it ViMoE, and explore the potential of applying MoE to vision through a comprehensive study on image classification and semantic segmentation. However, we observe that the performance is sensitive to the configuration of MoE layers, making it challenging to obtain optimal results without careful design. The underlying cause is that inappropriate MoE layers lead to unreliable routing and hinder experts from effectively acquiring helpful information. To address this, we introduce a shared expert to learn and capture common knowledge, serving as an effective way to construct a stable ViMoE. Furthermore, we demonstrate how to analyze expert routing behavior, revealing which MoE layers are capable of specializing in handling specific information and which are not. This provides guidance for retaining the critical layers while removing redundancies, thereby advancing ViMoE to be more efficient without sacrificing accuracy. We aspire for this work to offer new insights into the design of vision MoE models and provide valuable empirical guidance for future research.},
   archive      = {J_TIP},
-  author       = {Cheng-Hao Qiu and Xian-Shi Zhang and Yong-Jie Li},
-  doi          = {10.1109/TIP.2025.3620627},
+  author       = {Xumeng Han and Longhui Wei and Zhiyang Dou and Yingfei Sun and Zhenjun Han and Qi Tian},
+  doi          = {10.1109/TIP.2025.3626887},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {JOANet: An integrated joint optimization architecture making medical image segmentation really helped by super-resolution pre-processing},
+  title        = {ViMoE: An empirical study of designing vision mixture-of-experts},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Bi-sparse unsupervised feature selection. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3620667'>www</a>)
+(2025). Food3D: Text-driven customizable 3D food generation with gaussian splatting. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3627408'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {To deal with high-dimensional unlabeled datasets in many areas, principal component analysis (PCA) has become a rising technique for unsupervised feature selection (UFS). However, most existing PCA-based methods only consider the structure of datasets by embedding a single sparse regularization or constraint on the transformation matrix. In this paper, we introduce a novel bi-sparse method called BSUFS to improve the performance of UFS. The core idea of BSUFS is to incorporate ℓ2,p-norm and ℓq-norm into the classical PCA, which enables our method to select relevant features and filter out irrelevant noises, thereby obtaining discriminative features. Here, the parameters p and q are within the range of [0, 1). Therefore, BSUFS not only constructs a unified framework for bi-sparse optimization, but also includes some existing works as special cases. To solve the resulting non-convex model, we propose an efficient proximal alternating minimization (PAM) algorithm using Stiefel manifold optimization and sparse optimization techniques. In addition, the computational complexity analysis is presented. Extensive numerical experiments on synthetic and real-world datasets demonstrate the effectiveness of our proposed BSUFS. The results reveal the advantages of bi-sparse optimization in feature selection and show its potential for other fields in image processing. Our code is available at https://github.com/xianchaoxiu/BSUFS.},
+  abstract     = {Realistic 3D food creation generation plays a critical role in applications such as nutritional assessment, advertising, and virtual content creation. The existing text-to-3D models typically begin by initializing a 3D representation, which is subsequently refined using supervision from a text-to-image model to obtain the final 3D output. In this work, we present Food3D, a novel framework for 3D food generation designed to address two main limitations of current models. First, the limitation of initialization in 3D generation: poor initialization can result in the generated 3D food lacking crucial details and realism, thereby reducing its quality. To address this issue, we propose a generalized method named Food3D-G, which uses Mamba-based initialization to improve the starting point of the initialization process, thereby enhancing the visual fidelity and quality of the generated 3D food. Second, the limitation of text-to-image models: current text-to-3D models often rely on text-to-image models for supervision. However, a considerable gap persists between the generated images and real-world visuals, particularly when modeling complex food structures. These models fail to accurately capture the fine details and textures, which negatively impacts the quality and realism of the generated 3D food models. To address this limitation, we propose a customizable method for personalized 3D food generation, termed Food3D-C. This method employs a dual-branch diffusion model that effectively captures intricate details, particularly in complex food structures. Within the Food3D framework, both proposed methods incorporate 3D Gaussian splatting (3D GS) and a schedulable interval score matching (S-ISM) algorithm to enhance shape and texture generation. Extensive experiments demonstrate that Food3D achieves state-of-the-art performance, with substantial improvements in detail, shape accuracy, and overall visual realism. Project page and source codes: https://yudongjian.github.io/Food3D/.},
   archive      = {J_TIP},
-  author       = {Xianchao Xiu and Chenyi Huang and Pan Shang and Wanquan Liu},
-  doi          = {10.1109/TIP.2025.3620667},
+  author       = {Dongjian Yu and Weiqing Min and Xin Jin and Qian Jiang and Shaowen Yao and Shuqiang Jiang},
+  doi          = {10.1109/TIP.2025.3627408},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {Bi-sparse unsupervised feature selection},
+  title        = {Food3D: Text-driven customizable 3D food generation with gaussian splatting},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Consistent image inpainting with pre-perception and cross-perception collaborative processes. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3622071'>www</a>)
+(2025). SketchAging: Face photo-sketch synthesis and aging with multi-scale feature extraction. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3627854'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {It has been proven that introducing multiple guidance sources boosts image inpainting performance. However, existing methods primarily focus on local relationships and neglect the holistic interplay between guidance and texture information. Moreover, they lack an effective feedback mechanism to adaptively update the guidance process as corrupted texture information is progressively restored, potentially resulting in inconsistent inpainting. To tackle this issue, we propose a novel scheme aligned with pre-perception and cross-perception collaborative processes in human drawing. To mimic the pre-perception process, we introduce a pre-perceptual transformer block that captures long-range contextual dependencies and activates meaningful information to individually optimize image structures, semantic layouts, and textures, thereby effectively controlling their respective generation. To mimic the cross-perception collaborative process, we propose a cyclic cross-perceptual interaction to maintain consistency across the entire image regarding structure, layout, and texture while progressively refining their details. This interaction accounts for the global attention relationship between texture and other guidance sources (including image structure and semantic layout) to enhance image texture, alongside integrating a dedicated feedback mechanism to update guidance information. The proposed components are alternately deployed in three-branch decoders of the new scheme from rough to fine-grained levels to achieve these two iterative processes of human drawing. Experimental results prove the superiority of the proposed scheme over state-of-the-art methods across three datasets.},
+  abstract     = {With the rapid development of Generative Adversarial Networks (GANs), facial sketch generation and age transformation have advanced considerably. These technologies show great potential in digital media, entertainment, and forensic applications, particularly in helping law enforcement reconstruct the appearance of long-term fugitives. However, current methodologies exhibit notable limitations: existing approaches typically specialize in either facial sketch generation or age progression independently, lacking an effective integration for cross-domain synthesis. Moreover, preserving identity information while ensuring high-quality image generation remains a challenge. This paper proposes Multi-Scale Feature Extraction Networks (MSFE), an image-to-image translation framework that enables continuous age transformation while maintaining the stylistic characteristics of sketch domains. The core of the MSFS network uses a Dual Conditional Normalization Attention (DCNA) architecture to extract sketch features and encode facial images into the latent space of a pre-trained StyleGAN based on the desired age change. Experimental results on public datasets demonstrate that our approach outperforms existing methods, achieving superior facial photo-sketch synthesis with enhanced realism, identity preservation, and age accuracy.},
   archive      = {J_TIP},
-  author       = {Yongle Zhang and Yimin Liu and Hao Fan and Ruotong Hu and Jian Zhang and Qiang Wu},
-  doi          = {10.1109/TIP.2025.3622071},
+  author       = {Chunlei Peng and Zhuang Tang and Decheng Liu and Nannan Wang and Ruimin Hu and Xinbo Gao},
+  doi          = {10.1109/TIP.2025.3627854},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {Consistent image inpainting with pre-perception and cross-perception collaborative processes},
+  title        = {SketchAging: Face photo-sketch synthesis and aging with multi-scale feature extraction},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). LIX: Implicitly infusing spatial geometric prior knowledge into visual semantic segmentation for autonomous driving. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3618378'>www</a>)
+(2025). Prompt to restore, restore to prompt: Cyclic prompting for universal adverse weather removal. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3627860'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Despite the impressive performance achieved by data-fusion networks with duplex encoders for visual semantic segmentation, they become ineffective when spatial geometric data are not available. Implicitly infusing the spatial geometric prior knowledge acquired by a data-fusion teacher network into a single-modal student network is a practical, albeit less explored research avenue. This article delves into this topic and resorts to knowledge distillation approaches to address this problem. We introduce the Learning to Infuse “X” (LIX) framework, with novel contributions in both logit distillation and feature distillation aspects. We present a mathematical proof that underscores the limitation of using a single, fixed weight in decoupled knowledge distillation and introduce a logit-wise dynamic weight controller as a solution to this issue. Furthermore, we develop an adaptively-recalibrated feature distillation algorithm, including two novel techniques: feature recalibration via kernel regression and feature consistency quantification via centered kernel alignment. Extensive experiments conducted with intermediate-fusion and late-fusion networks across various public datasets provide both quantitative and qualitative evaluations, demonstrating the superior performance of our LIX framework when compared to other state-of-the-art approaches. Source code is available at https://mias.group/LIX.},
+  abstract     = {Universal adverse weather removal (UAWR) seeks to address various weather degradations within a unified framework. Recent methods are inspired by prompt learning using pre-trained vision-language models (e.g., CLIP), leveraging degradation-aware prompts to facilitate weather-free image restoration, yielding significant improvements. In this work, we propose CyclicPrompt, an innovative cyclic prompt approach designed to enhance the effectiveness, adaptability, and generalizability of UAWR. CyclicPrompt comprises two key components: 1) a composite context prompt that integrates weather-related information and context-aware representations into the network to guide restoration. This prompt differs from previous methods by marrying learnable input-conditional vectors with weather-specific knowledge, thereby improving adaptability across various degradations. 2) The erase-and-paste mechanism, after the initial guided restoration, substitutes weather-specific knowledge with constrained restoration priors, inducing high-quality weather-free concepts into the composite prompt to further fine-tune the restoration process. Therefore, we can form a cyclic “Prompt-Restore-Prompt” pipeline that adeptly harnesses weather-specific knowledge, textual contexts, and reliable textures. Extensive experiments on synthetic and real-world datasets validate the superior performance of CyclicPrompt. The code is available at: https://github.com/RongxinL/CyclicPrompt.},
   archive      = {J_TIP},
-  author       = {Sicen Guo and Ziwei Long and Zhiyuan Wu and Qijun Chen and Ioannis Pitas and Rui Fan},
-  doi          = {10.1109/TIP.2025.3618378},
+  author       = {Rongxin Liao and Feng Li and Yanyan Wei and Zenglin Shi and Le Zhang and Huihui Bai and Meng Wang},
+  doi          = {10.1109/TIP.2025.3627860},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {LIX: Implicitly infusing spatial geometric prior knowledge into visual semantic segmentation for autonomous driving},
+  title        = {Prompt to restore, restore to prompt: Cyclic prompting for universal adverse weather removal},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Enhanced cross-modal hashing via hybrid distillation and structural refinement. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3613942'>www</a>)
+(2025). Informative sample selection model for skeleton-based action recognition with limited training samples. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3627418'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Since cross-modal hashing requires minimal storage and computation, it is becoming increasingly popular with the exponential growth of multimedia content on the internet. However, the lack of accurate supervisory data has curtailed the effectiveness of unsupervised hashing techniques. Conversely, supervised hashing strategies necessitate considerable human and financial resources for data annotation. To address this limitation, we propose a novel semi-supervised cross-modal hashing method called Enhanced Cross-Modal Hashing via Hybrid Distillation and Structural Refinement (HDSR). Specifically, we first learn the features of inter-modal and inter-instance similarity relationships through pointwise semantic alignment and listwise similarity partial order learning, respectively, to extract refined structural representations from partially labeled data. Secondly, by fusing inter-modal similarity to construct higher-order affinity matrices, we precisely delineate the semantic correlation information across cross-modal data, facilitating stable self-supervised training of unlabeled data through the application of momentum fusion strategies. Finally, the refined structural representation of labeled data is transferred into unlabeled branches through hybrid distillation, enhancing the performance of cross-modal hash learning by generating compact and accurate hash codes. The proposed HDSR is compared with several state-of-the-art deep cross-modal hashing methods on three widely used benchmark databases, and the experimental results verify its efficiency and superiority.},
+  abstract     = {Skeleton-based human action recognition aims to classify human skeletal sequences, which are spatiotemporal representations of actions, into predefined categories. To reduce the reliance on costly annotations of skeletal sequences while maintaining competitive recognition accuracy, the task of 3D Action Recognition with Limited Training Samples, also known as semi-supervised 3D Action Recognition, has been proposed. In addition, active learning, which aims to proactively select the most informative unlabeled samples for annotation, has been explored in semi-supervised 3D Action Recognition for training sample selection. Specifically, researchers adopt an encoder–decoder framework to embed skeleton sequences into a latent space, where clustering information, combined with a margin-based selection strategy using a multi-head mechanism, is utilized to identify the most informative sequences in the unlabeled set for annotation. However, the most representative skeleton sequences may not necessarily be the most informative for the action recognizer, as the model may have already acquired similar knowledge from previously seen skeleton samples. As a result, selecting such samples with limited new information to train the action recognizer may lead to sub-optimal recognition performance. To address this limitation, we reformulate Semi-supervised 3D action recognition via active learning from a novel perspective by casting it as a Markov Decision Process (MDP). Built upon the well-established MDP framework and its training paradigm, we train an informative sample selection model to intelligently guide the selection of skeleton sequences for annotation. To enhance the representational capacity of the factors in the state-action pairs within our MDP framework, we project them from Euclidean space to hyperbolic space. Furthermore, we introduce a meta tuning strategy based on meta-learning to accelerate the deployment of our method in real-world scenarios. Extensive experiments on three 3D action recognition benchmarks demonstrate the effectiveness of our method.},
   archive      = {J_TIP},
-  author       = {Xiaoqing Liu and Zhiwen Yu and Kaixiang Yang and Jun Yu and Huanqiang Zeng and C. L. Philip Chen},
-  doi          = {10.1109/TIP.2025.3613942},
+  author       = {Zhigang Tu and Zhengbo Zhang and Jia Gong and Junsong Yuan and Bo Du},
+  doi          = {10.1109/TIP.2025.3627418},
   journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Image Process.},
-  title        = {Enhanced cross-modal hashing via hybrid distillation and structural refinement},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Where and what: Contextual dynamics-aware anomaly detection in surveillance videos. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623392'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In surveillance environments, detecting anomalies requires understanding the contextual dynamics of the environment, human behaviors, and movements within a scene. Effective anomaly detection must address both the where and what of events, but existing approaches such as unimodal action-based methods or LLM-integrated multimodal frameworks have limitations. These methods either rely on implicit scene information, making it difficult to localize where anomalies occur, or fail to adapt to surveillance specific challenges such as view changes, subtle actions, low light conditions, and crowded scenes. As a result, these challenges hinder accurate detection of what occurs. To overcome these limitations, our system takes advantage of features from a lightweight scene classification model to discern where an event occurs, acquiring explicit location-based context. To identify what events occur, it focuses on atomic actions, which remain underexplored in this field and are better suited to interpreting intricate abnormal behaviors than conventional abstract action features. To achieve robust anomaly detection, the proposed Temporal-Semantic Relationship Network (TSRN) models spatio-temporal relationships among multimodal features and employs a Segment-selective Focal Margin loss (SFML) to effectively address class imbalance, outperforming conventional MIL-based methods. Compared to existing methods, experimental results demonstrate that our system significantly reduces false alarms while maintaining robustness across diverse scenarios. Quantitative and qualitative evaluations on public datasets validate the practical effectiveness of the proposed method for real-world surveillance applications.},
-  archive      = {J_TIP},
-  author       = {Deok-Hyun Ahn and YongJin Jo and DongBum Kim and Gi-Pyo Nam and Jae-Ho Han and Haksub Kim},
-  doi          = {10.1109/TIP.2025.3623392},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Where and what: Contextual dynamics-aware anomaly detection in surveillance videos},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Advancing weakly-supervised change detection in satellite images via adversarial class prompting. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623260'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Weakly-Supervised Change Detection (WSCD) aims to distinguish specific object changes (e.g., objects appearing or disappearing) from background variations (e.g., environmental changes due to light, weather, or seasonal shifts) in paired satellite images, relying only on paired image (i.e., image-level) classification labels. This technique significantly reduces the need for dense annotations required in fully-supervised change detection. However, as image-level supervision only indicates whether objects have changed in a scene, WSCD methods often misclassify background variations as object changes, especially in complex remote-sensing scenarios. In this work, we propose an Adversarial Class Prompting (AdvCP) method to address this co-occurring noise problem, including two phases: a) Adversarial Prompt Mining: After each training iteration, we introduce adversarial prompting perturbations, using incorrect one-hot image-level labels to activate erroneous feature mappings. This process reveals co-occurring adversarial samples under weak supervision, namely background variation features that are likely to be misclassified as object changes. b) Adversarial Sample Rectification: We integrate these adversarially prompt-activated pixel samples into training by constructing an online global prototype. This prototype is built from an exponentially weighted moving average of the current batch and all historical training data. Serving as an unbiased anchor, the global prototype guides the rectification of adversarial pixel samples. Our AdvCP can be seamlessly integrated into current WSCD methods without adding additional inference cost. Experiments on ConvNet, Transformer, and Segment Anything Model (SAM)-based baselines demonstrate significant performance enhancements, achieving up to 7.37%, 7.46%, and 6.56% IoU improvements on the WHU-CD, LEVIR-CD, and DSIFN-CD datasets. Furthermore, we demonstrate the generalizability of AdvCP to other multi-class weakly-supervised dense prediction scenarios. Code is available at https://github.com/zhenghuizhao/AdvCP.},
-  archive      = {J_TIP},
-  author       = {Zhenghui Zhao and Chen Wu and Di Wang and Hongruixuan Chen and Cuiqun Chen and Zhuo Zheng and Bo Du and Liangpei Zhang},
-  doi          = {10.1109/TIP.2025.3623260},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Advancing weakly-supervised change detection in satellite images via adversarial class prompting},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). BinoHeM: Binocular singular hellinger metametric for fine-grained few-shot classification. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623379'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Meta-metric learning has demonstrated strong performance in coarse-grained few-shot situations. However, despite their simplicity and availability, these metametrics are limited in effectively handling fine-grained few-shot scenarios. Fine-Grained Few-Shot Classification (FGFSC) presents significant challenges to the network’s ability to extract subtle features. Equipped with the symmetrical binocular perception system and complex neural networks in the brain, humans inherently possess exceptional and resilient meta-learning abilities, facilitating superior management of fine-grained few-shot scenarios. In this paper, inspired by the human binocular visual system, we pioneer the first human-like meta-metric paradigm: Binocular Singular Hellinger Metametric (BinoHeM). Functionally, BinoHeM incorporates advanced symmetric binocular feature encoding and recognition mechanisms. Structurally, it integrates two binocular sensing feature encoders, a singular Hellinger metametric, and two collaborative identification mechanisms. Building on this foundation, we introduce two innovative metametric variants: BinoHeM-KDL and BinoHeM-MTL. These are grounded in two advanced training mechanisms: knowledge distillation learning (KDL) and meta-transfer learning (MTL), respectively. Furthermore, we showcase the high accuracy and robust generalization capabilities of our approaches on four representative FGFSC benchmarks. Extensive comparative and ablation experiments have validated the efficiency and superiority of our paradigm over other state-of-the-art algorithms. Our code is publicly available at: https://github.com/ChaofeiQI/BinoHeM.},
-  archive      = {J_TIP},
-  author       = {Chaofei Qi and Chao Ye and Weiyang Lin and Zhitai Liu and Jianbin Qiu},
-  doi          = {10.1109/TIP.2025.3623379},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {BinoHeM: Binocular singular hellinger metametric for fine-grained few-shot classification},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). APSNR: Artifact peak signal-to-noise ratio for image quality assessment. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623864'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {An image processing pipeline typically involves key operations like compression, denoising, and resizing, along with enhancements such as sharpening, histogram equalization, and low-light compensation. Within this pipeline, image artifacts are often introduced, which could severely degrade perceptual quality and mislead downstream vision tasks. Yet, current image quality assessment (IQA) models fail to distinguish between harmful artifacts and beneficial enhancements, as they generally apply a rigid fidelity criterion that penalizes all deviations from the reference image. We address this gap with the artifact peak signal-to-noise ratio (APSNR), a new IQA metric that adopts a selective fidelity criterion—allowing legitimate enhancements while penalizing only spurious artifacts. Specifically, APSNR detects artifacts by identifying pixels that violate an “artifact-free” intensity mapping between the processed and reference images, and then computes PSNR exclusively within the artifact-corrupted regions. Extensive experiments demonstrate that our APSNR consistently correlates with human perception of artifacts while remaining robust to enhancements. This enables a more nuanced evaluation of image processing algorithms and provides a principled tool for benchmarking artifact suppression.},
-  archive      = {J_TIP},
-  author       = {Li Zhu and Baojiang Zhong and Kai-Kuang Ma},
-  doi          = {10.1109/TIP.2025.3623864},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {APSNR: Artifact peak signal-to-noise ratio for image quality assessment},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Universal vessel segmentation for multi-modality retinal images. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623893'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We identify two major limitations in the existing studies on retinal vessel segmentation: (1) Most existing works are restricted to one modality, i.e., the Color Fundus (CF). However, multi-modality retinal images are used every day in the study of the retina and diagnosis of retinal diseases, and the study of vessel segmentation on other modalities is scarce; (2) Even though a few works extended their experiments to new modalities such as the Multi-Color Scanning Laser Ophthalmoscopy (MC), these works still require fine-tuning a separate model for the new modality. The fine-tuning will require extra training data, which is difficult to acquire. In this work, we present a novel universal vessel segmentation model (URVSM) for multi-modality retinal images. In addition to performing the study on a much wider range of image modalities, we also propose a universal model to segment the vessels in all these commonly used modalities. While being much more versatile compared with existing methods, our universal model also demonstrates comparable performance to the state-of-the-art fine-tuned methods. To the best of our knowledge, this is the first work that achieves modality-agnostic retinal vessel segmentation and the first to study retinal vessel segmentation in several novel modalities.},
-  archive      = {J_TIP},
-  author       = {Bo Wen and Anna Heinke and Akshay Agnihotri and Dirk-Uwe Bartsch and William Freeman and Truong Nguyen and Cheolhong An},
-  doi          = {10.1109/TIP.2025.3623893},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Universal vessel segmentation for multi-modality retinal images},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Consistent image layout editing with diffusion models. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623869'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Despite the great success of large-scale text-to-image diffusion models in image generation and image editing, existing methods still struggle with editing the layout of real-world images. Although a few works have been developed to address this issue, they either fail to adjust the image layout effectively or encounter challenges in preserving the visual appearance of objects after layout adjustment. To bridge this gap, this paper proposes a novel image layout editing method that not only re-arranges a real-world image to a specified layout, but also ensures that the visual appearance of the objects remains consistent with their original state prior to editing. Concretely, a Multi-Concept Learning scheme is developed to learn the concepts of different objects from a single image, which can be seen as a novel inversion scheme tailored for image layout editing. Then, we leverage the semantic consistency within intermediate features of diffusion models to project the appearance information of objects to the target regions to improve the fidelity of objects after editing. Additionally, a novel initialization noise design is adopted to facilitate the convergence and success rate of re-arranging the layout. The phenomenon of concept entanglement is also analyzed, and resolved by a novel asynchronous editing strategy. Extensive experimental results demonstrate that the proposed method outperforms existing methods in both layout alignment and visual consistency for the task of image layout editing.},
-  archive      = {J_TIP},
-  author       = {Tao Xia and Yudi Zhang and Ting Liu and Lei Zhang},
-  doi          = {10.1109/TIP.2025.3623869},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Consistent image layout editing with diffusion models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). VTAG: Visual-textual association guided radiology reports generation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3623915'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Radiology report generation, which automatically generates diagnostic textual reports from medical images, plays a crucial role in improving clinical efficiency and diagnostic accuracy. However, existing radiology report generation models face numerous challenges, such as lack of interpretability as well as description inaccuracy. To address these issues, we propose an integrated framework that enhances radiology report generation by combining target detection with contextual alignment of relevant region descriptions. Target detection focuses on clinically significant areas within medical images, while contextual alignment ensures that the generated text is directly linked to visual findings. Additionally, we introduce a full-spectrum feature fusion method that combines both high- and low-frequency features from the images. This approach captures details and broader structures, allowing the model to gain a more comprehensive and hierarchical understanding of the images. We validated the effectiveness of our method on the public dataset MIMIC-CXR. The results indicate that our method outperforms previous approaches on multiple evaluation metrics. Notably, in terms of the average of the six traditional metrics, our method (VTAG) achieved a significant improvement of 14.3%, compared to the state-of-the-art model MLRG.},
-  archive      = {J_TIP},
-  author       = {Zhaoli Su and Yucong Lin and Hong Song and Ruoyi Jian and Bowen Liu and Jian Yang},
-  doi          = {10.1109/TIP.2025.3623915},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {VTAG: Visual-textual association guided radiology reports generation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Text-derived relational graph-enhanced network for skeleton-based action segmentation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3624581'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Skeleton-based Temporal Action Segmentation (STAS) aims to segment and recognize various actions from long, untrimmed sequences of human skeletal movements. Current STAS methods typically employ spatio-temporal modeling to establish dependencies among joints as well as frames, and utilize one-hot encoding with cross-entropy loss for frame-wise classification supervision. However, these methods overlook the intrinsic correlations among joints and actions within skeletal features, leading to a limited understanding of human movements. To address this, we propose a Text-Derived Relational Graph-Enhanced Network (TRG-Net) that leverages prior graphs generated by Large Language Models (LLM) to enhance both modeling and supervision. For modeling, the Dynamic Spatio-Temporal Fusion Modeling (DSFM) method incorporates Text-Derived Joint Graphs (TJG) with channel- and frame-level dynamic adaptation to effectively model spatial relations, while integrating spatio-temporal core features during temporal modeling. For supervision, the Absolute-Relative Inter-Class Supervision (ARIS) method employs contrastive learning between action features and text embeddings to regularize the absolute class distributions, and utilizes Text-Derived Action Graphs (TAG) to capture the relative inter-class relationships among action features. Additionally, we propose a Spatial-Aware Enhancement Processing (SAEP) method, which incorporates random joint occlusion and axial rotation to enhance spatial generalization. Performance evaluations on four public datasets demonstrate that TRG-Net achieves state-of-the-art results.},
-  archive      = {J_TIP},
-  author       = {Haoyu Ji and Bowen Chen and Weihong Ren and Wenze Huang and Zhihao Yang and Zhiyong Wang and Honghai Liu},
-  doi          = {10.1109/TIP.2025.3624581},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Text-derived relational graph-enhanced network for skeleton-based action segmentation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Unleashing the power of each distilled image. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3624626'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Dataset distillation (DD) aims to accelerate the training speed of neural networks (NNs) by synthesizing a reduced dataset. NNs trained on the smaller dataset are expected to obtain almost the same test set accuracy as they do on the larger one. Previous DD research treated the obtained distilled dataset as a regular dataset for training, neglecting the overfitting issue caused by the limited number of original distilled images. In this paper, we propose a new DD paradigm. Specifically, in the deployment stage, distilled images are augmented by amplifying their local information since the teacher network can produce diverse supervision signals when receiving inputs from different regions. Efficient and diverse augmentation methods for each distilled image are devised, while ensuring the authenticity of augmented samples. Additionally, to alleviate the increased training cost caused by data augmentation, we design a bi-directional dynamic dataset pruning technique to prune the original distilled dataset and augmented distilled dataset. A new pruning strategy and scheduling are proposed based on experimental findings. Experiments on 9 benchmark datasets (CIFAR10, CIFAR100, ImageWoof, ImageCat, ImageFruit, ImageNette, ImageNet10, ImageNet100 and ImageNet1K) demonstrate the effectiveness of our approach. For instance, on the ImageNet1K dataset with a ResNet18 architecture and 50 distilled images per class, our algorithm surpasses the second-ranked MiniMax algorithm by 7.6%, achieving a distilled accuracy of 66.2%.},
-  archive      = {J_TIP},
-  author       = {Jingxuan Zhang and Zhihua Chen and Lei Dai},
-  doi          = {10.1109/TIP.2025.3624626},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Unleashing the power of each distilled image},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). C-NeRF: Representing scene changes as directional consistency difference-based NeRF. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3622374'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this work, we aim to detect the changes caused by object variations in a scene represented by the neural radiance fields (NeRFs). Given an arbitrary view and two sets of scene images captured at different timestamps, we can predict scene changes in that view, which has significant potential applications in scene monitoring and measuring. We conducted preliminary studies and found that such an exciting task cannot be easily achieved by utilizing existing NeRFs and 2D change detection (CD) methods with many false or missing detections. The main reason is that the 2D CD is based on the pixel appearance difference between spatial-aligned image pairs and neglects the stereo information in the NeRF. To address the limitations, we propose the C-NeRF to represent scene changes as directional consistency difference-based NeRF, which mainly contains three modules. We first build two aligned NeRFs from pre-change and post-change scenes. Then, we identify the change points based on the direction-consistent constraint; that is, real change points have similar change representations across view directions, but fake change points do not. Finally, we design the change map rendering process based on the built NeRFs and can generate the change map of an arbitrarily specified view direction. To validate the effectiveness, we build a new dataset containing ten scenes covering diverse scenarios with different changing objects. Our approach surpasses state-of-the-art CD methods and NeRF-based methods by a significant margin.},
-  archive      = {J_TIP},
-  author       = {Rui Huang and Haojie Tao and Binbin Jiang and Qingyi Zhao and Liang Wan and Qing Guo},
-  doi          = {10.1109/TIP.2025.3622374},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {C-NeRF: Representing scene changes as directional consistency difference-based NeRF},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Crucial-diff: A unified diffusion model for crucial image and annotation synthesis in data-scarce scenarios. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3625380'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The scarcity of data in various scenarios, such as medical, industry and autonomous driving, leads to model overfitting and dataset imbalance, thus hindering effective detection and segmentation performance. Existing studies employ the generative models to synthesize more training samples to mitigate data scarcity. However, these synthetic samples are repetitive or simplistic and fail to provide “crucial information” that targets the downstream model’s weaknesses. Additionally, these methods typically require separate training for different objects, leading to computational inefficiencies. To address these issues, we propose Crucial-Diff, a domain-agnostic framework designed to synthesize crucial samples. Our method integrates two key modules. The Scene Agnostic Feature Extractor (SAFE) utilizes a unified feature extractor to capture target information. The Weakness Aware Sample Miner (WASM) generates hard-to-detect samples using feedback from the detection results of downstream model, which is then fused with the output of SAFE module. Together, our Crucial-Diff framework generates diverse, high-quality training data, achieving a pixel-level AP of 83.63% and an F1-MAX of 78.12% on MVTec. On polyp dataset, Crucial-Diff reaches an mIoU of 81.64% and an mDice of 87.69%. Code will be released after acceptance.},
-  archive      = {J_TIP},
-  author       = {Siyue Yao and Mingjie Sun and Eng Gee Lim and Ran Yi and Baojiang Zhong and Moncef Gabbouj},
-  doi          = {10.1109/TIP.2025.3625380},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Crucial-diff: A unified diffusion model for crucial image and annotation synthesis in data-scarce scenarios},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Deep semi-smooth newton-driven unfolding network for multi-modal image super-resolution. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3625429'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Deep unfolding has emerged as a powerful solution for Multi-modal Image Super-Resolution (MISR) through strategic integration of cross-modal priors in network architecture. However, current deep unfolding approaches rely on first-order optimization, which exhibit limitations in learning efficiency and reconstruction accuracy. In this paper, to overcome these limitations, we propose a novel Semi-smooth Newton driven Unfolding network for MISR, namely SNUM-Net. Specifically, we first develop a Semi-smooth Newton-driven MISR (SNM) algorithm that establishes a theoretical foundation for our approach. Then, we unfold the iterative solution of SNM into a novel network. To the best of our knowledge, the SNUM-Net is the first successful attempt to design a deep unfolding MISR network based on second-order optimization algorithm. Compared to existing methods, the SNUM-Net demonstrates three main advantages. 1) Universal paradigm: the SNUM-Net provides a unified paradigm for diverse MISR tasks without requiring scenario-specific constraints; 2) Explainable framework: the network preserves a mathematical correspondence with the SNM algorithm, ensuring that the topological relationships between modules are well explainable; 3) Superior performance: comprehensive evaluations across 10 datasets spanning 3 MISR tasks demonstrate the network’s exceptional reconstruction accuracy and generalization capability. The software codes are available at https://github.com/pandazcx/SNUM-Net.},
-  archive      = {J_TIP},
-  author       = {Chenxiao Zhang and Xin Deng and Jingyi Xu and Yongxuan Dou and Mai Xu},
-  doi          = {10.1109/TIP.2025.3625429},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Deep semi-smooth newton-driven unfolding network for multi-modal image super-resolution},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Instruction-driven multi-weather image translation based on a large-scale image editing model. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3625764'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Weather image translation technologies aim to convert sunny images into various weather scenes, addressing the challenge of the costly acquisition of highly-demanded diverse weather samples. However, existing weather translation methods based on generative adversarial networks (GANs) have limited generalization capability, resulting in translated images that lack authenticity and diversity. In contrast, the emerging image generation technologies based on diffusion models have greatly surpassed GAN-based ones in performance, thus becoming the dominant paradigm in various visual tasks. This work pioneers the application of diffusion models to weather translation and presents a novel Instruction-driven Multi-Weather Translation (InstructWT) method. InstructWT is built on the large image editing model, InstructPix2Pix, and leverages the latter’s zero-shot generalization capacities. We develop a user-friendly translation instruction set through prompt engineering and introduce a weather intensity factor for precise control of weather effects, thereby well enhancing the authenticity and diversity of weather images translated. A weather correlation-based blended editing technique is employed to maintain the layout and structure of the original image content. Additionally, a physical rendering approach of rain and snow is incorporated to further improve the translations’ realism. The results of comparative experiments on a public dataset, Cityscapes, demonstrate that InstructWT outperforms existing methods in terms of authenticity and fidelity. Specifically, InstructWT achieves Contrastive Language-Image Pre-Training (CLIP) image embedding cosine similarity and directional CLIP similarity scores of 0.8302 and 0.1598, respectively. Furthermore, several semantic segmentation algorithms fine-tuned using the multi-weather scene dataset augmented by InsturctWT show significant improvement in the segmentation effect on all complex weather scenarios.},
-  archive      = {J_TIP},
-  author       = {Yunjian Feng and Jun Li and MengChu Zhou},
-  doi          = {10.1109/TIP.2025.3625764},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Instruction-driven multi-weather image translation based on a large-scale image editing model},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Constructing per-shot bitrate ladders using visual information fidelity. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3625750'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Video service providers need their delivery systems to be able to adapt to network conditions, user preferences, display settings, and other factors. HTTP Adaptive Streaming (HAS) offers dynamic switching between different video representations to simultaneously enhance bandwidth consumption and users’ streaming experiences. Per-shot encoding, pioneered by Netflix, optimizes the encoding parameters on each scene or shot. The Dynamic Optimizer (DO) [1] uses the Video Multi-Method Assessment Fusion (VMAF) [2] perceptual video quality prediction engine to deliver high-quality videos at reduced bitrates. Here we develop a perceptually optimized method of constructing optimal per-shot bitrate and quality ladders, using an ensemble of low-level features and Visual Information Fidelity (VIF) features. During inference, our method predicts the bitrate or quality ladder of a source video without any compression or quality estimation. We compare the performance of our model against other content-adaptive bitrate ladder prediction methods, a fixed bitrate ladder, and reference bitrate ladders constructed via exhaustive encoding using Bjontegaard-delta (BD) metrics [3]. Our proposed method shows excellent gains in bitrate and quality against the fixed bitrate ladder and only small losses against the reference bitrate ladder, while providing significant computational advantages.},
-  archive      = {J_TIP},
-  author       = {Krishna Srikar Durbha and Alan C. Bovik},
-  doi          = {10.1109/TIP.2025.3625750},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Constructing per-shot bitrate ladders using visual information fidelity},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Text-controlled motion mamba: Text-instructed temporal grounding of human motion. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3624601'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Human motion understanding is a fundamental task with diverse practical applications, facilitated by the availability of large-scale motion capture datasets. Recent studies focus on text-motion tasks, such as text-based motion generation, editing and question answering. In this study, we introduce the novel task of text-based human motion grounding (THMG), aimed at precisely localizing temporal segments corresponding to given textual descriptions within untrimmed motion sequences. Capturing global temporal information is crucial for the THMG task. However, Transformer-based models that rely on global temporal self-attention face challenges when handling long untrimmed sequences due to the quadratic computational cost. We address these challenges by proposing Text-controlled Motion Mamba (TM-Mamba), a unified model that integrates temporal global context, language query control, and spatial graph topology with only linear memory cost. The core of the model is a text-controlled selection mechanism which dynamically incorporates global temporal information based on text query. The model is further enhanced to be topology-aware through the integration of relational embeddings. For evaluation, we introduce BABEL-Grounding, the first text-motion dataset that provides detailed textual descriptions of human actions along with their corresponding temporal segments. Extensive evaluations demonstrate the effectiveness of TM-Mamba on BABEL-Grounding.},
-  archive      = {J_TIP},
-  author       = {Xinghan Wang and Zixi Kang and Yadong Mu},
-  doi          = {10.1109/TIP.2025.3624601},
-  journal      = {IEEE Transactions on Image Processing},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Image Process.},
-  title        = {Text-controlled motion mamba: Text-instructed temporal grounding of human motion},
+  title        = {Informative sample selection model for skeleton-based action recognition with limited training samples},
   year         = {2025},
 }
 </textarea>

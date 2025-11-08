@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="ijnme">IJNME - 29</h2>
+<h2 id="ijnme">IJNME - 8</h2>
 <ul>
 <li><details>
 <summary>
-(2025). A non-intrusive efficient two-step model reduction method for large-scale thin-walled acoustic indirect BEM systems. <em>IJNME</em>, <em>126</em>(20), e70171. (<a href='https://doi.org/10.1002/nme.70171'>www</a>)
+(2025). Higher-order, mixed-hybrid finite elements for Kirchhoff–Love shells. <em>IJNME</em>, <em>126</em>(21), e70175. (<a href='https://doi.org/10.1002/nme.70175'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Performing frequency sweep analysis for acoustic performance prediction using the boundary element method (BEM) is associated with high computational costs as the associated system matrices are dense and frequency-dependent. While model order reduction (MOR) techniques, such as Krylov subspace recycling, have been proposed for direct BEM, their application to indirect Galerkin BEM (iBEM) remains limited, as only moderate reductions are offered. In that context, this work presents a two-step, non-intrusive MOR method for large-scale, thin-walled acoustic problems modeled via iBEM, reducing both respective solution times and required memory while facilitating their employment on top of any existing commercial software. Within the first step, the proposed method employs the automatic Krylov subspace recycling (AKR) algorithm in combination with a Chebyshev approximation of the iBEM system to construct an initial reduction basis by minimizing the number of systems sampled and permitting the storage of the affinely approximated system. In the second step, the Reduced Basis Method (RBM) is employed to further reduce the dimension of the system, achieving significant savings in memory and online computational time. To improve scalability under tight memory constraints, a memory-aware version is introduced, using frequency interval splitting with a Petrov–Galerkin projection in the second step. This version bounds memory consumption without compromising accuracy. The proposed method is implemented in MATLAB and interfaces with an external commercial BEM solver in a black-box fashion, demonstrating compatibility with existing industrial workflows. The performance of the methodology is assessed on two industrially challenging benchmark problems. Results show that the method achieves substantial online speed-ups compared to a single-step reduction, while maintaining solution accuracy.},
+  abstract     = {A novel mixed-hybrid method for Kirchhoff–Love shells is proposed that enables the use of classical, possibly higher-order Lagrange elements in numerical analyses. In contrast to purely displacement-based formulations that require higher continuity of shape functions as in isogeometric analysis (IGA), the mixed formulation features displacements and moments as primary unknowns. Thereby, the continuity requirements are reduced, allowing equal-order interpolations of the displacements and moments. Hybridization enables an element-wise static condensation of the degrees of freedom related to the moments, at the price of introducing (significantly less) rotational degrees of freedom acting as Lagrange multipliers to weakly enforce the continuity of tangential moments along element edges. The mixed model is formulated coordinate-free based on the tangential differential calculus, making it applicable for explicitly and implicitly defined shell geometries. All mechanically relevant boundary conditions are considered. Numerical results confirm optimal higher-order convergence rates whenever the mechanical setup allows for sufficiently smooth solutions; new benchmark test cases of this type are proposed.},
   archive      = {J_IJNME},
-  author       = {Philip Le and Dionysios Panagiotopoulos and Elke Deckers},
-  doi          = {10.1002/nme.70171},
+  author       = {Jonas Neumeyer and Michael Wolfgang Kaiser and Thomas-Peter Fries},
+  doi          = {10.1002/nme.70175},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70171},
+  month        = {11},
+  number       = {21},
+  pages        = {e70175},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A non-intrusive efficient two-step model reduction method for large-scale thin-walled acoustic indirect BEM systems},
+  title        = {Higher-order, mixed-hybrid finite elements for Kirchhoff–Love shells},
   volume       = {126},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Multi-material structural topology optimization via dynamic body-fitted multi-trimmed mesh evolution and Reaction–Diffusion-based level-set method. <em>IJNME</em>, <em>126</em>(20), e70167. (<a href='https://doi.org/10.1002/nme.70167'>www</a>)
+(2025). Computational analysis of magnetohydrodynamic Jeffery–Hamel flow for couple stress fluids in Stretching/Shrinking channels via artificial neural network. <em>IJNME</em>, <em>126</em>(21), e70174. (<a href='https://doi.org/10.1002/nme.70174'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This article presents a novel and efficient computational framework for multi-material structural topology optimization (TO), integrating a dynamic body-fitted multi-trimmed (BMT) mesh evolution technique with a reaction–diffusion (RD)-based level-set (LS) formulation. The proposed method addresses major challenges in capturing complex structural boundaries and material-phase interfaces with high geometric fidelity. Within this framework, multiple independent LS functions evolve under a system of RD equations, driven by smooth, projected topological sensitivity fields computed on a fixed background mesh of regular quadrilateral elements. To accurately represent the evolving multi-material geometry, a high-resolution BMT mesh is dynamically constructed at each iteration by multi-trimming the background mesh along the zero-isolines of the LS functions, using a combination of marching squares and marching triangles algorithms. The resulting BMT mesh enables sharp material delineation and improves numerical stability throughout the optimization process. Benchmark examples demonstrate the framework's ability to generate high-quality topologies with smooth boundaries, reduced compliance, and robust convergence. The proposed method provides a promising tool for advancing multi-material TO by combining precise interface tracking, flexible geometry representation, and enhanced computational efficiency.},
+  abstract     = {The Jeffery–Hamel flow, a classic benchmark in fluid dynamics, describes the motion of an incompressible viscous fluid within convergent or divergent channels. Although extensively studied for Newtonian fluids, the dynamics of such flows in channels with stretching or shrinking walls, especially for couple-stress fluids, remain largely unexplored. In this study, we pioneer the use of artificial neural networks (ANNs) to solve a fifth-order nonlinear differential equation arising from the two-dimensional Jeffery–Hamel flow of couple-stress fluids within stretching/shrinking channels, addressing a complex, nonlinear fluid dynamics problem. By capturing microstructural effects and the unique rheology of couple-stress fluids, our approach enables high-accuracy solutions for complex flow behaviour influenced by wall deformation. We focus exclusively on fluid flow behaviour, analysing the influence of key parameters such as Reynolds number, magnetic parameter, channel angle, stretching parameter, and couple stress parameter on velocity distribution and flow structure. Our results reveal new flow topologies and response patterns that are unattainable with traditional analytical or numerical methods. The proposed ANN-based methodology bridges significant gaps in the literature and provides a powerful tool for modelling biological, industrial, and microfluidic flows in adaptive geometries. This work advances the understanding of the dynamics of Jeffery–Hamel flow in couple-stress fluids within magnetically influenced stretching/shrinking channels, demonstrating unprecedented microstructural interactions absent in prior Newtonian or non-Newtonian studies, and unveiling the effectiveness of intelligent methods for solving problems in computational fluid mechanics.},
   archive      = {J_IJNME},
-  author       = {Ba-Dinh Nguyen-Tran and Duc-Huynh Phan and Trung Nguyen-Thoi and Son H. Nguyen},
-  doi          = {10.1002/nme.70167},
+  author       = {Atul Kaushik and J. V. Ramana Murthy},
+  doi          = {10.1002/nme.70174},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70167},
+  month        = {11},
+  number       = {21},
+  pages        = {e70174},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Multi-material structural topology optimization via dynamic body-fitted multi-trimmed mesh evolution and Reaction–Diffusion-based level-set method},
+  title        = {Computational analysis of magnetohydrodynamic Jeffery–Hamel flow for couple stress fluids in Stretching/Shrinking channels via artificial neural network},
   volume       = {126},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Space-time boundary elements on graded meshes for 3D elastodynamics. <em>IJNME</em>, <em>126</em>(20), e70163. (<a href='https://doi.org/10.1002/nme.70163'>www</a>)
+(2025). Concurrent multiscale topology optimization of coated structures infilled with multiple self-connected microstructures. <em>IJNME</em>, <em>126</em>(21), e70173. (<a href='https://doi.org/10.1002/nme.70173'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The solution to the elastodynamic equations in the exterior of a polygonal or polyhedral domain or a screen exhibits singularities at corners and edges. This paper presents a space-time boundary element method in 3D on algebraically graded meshes to resolve these singularities, based on recently obtained error estimates for the weakly singular integral equation. Numerical examples show the efficiency of the proposed approach. They confirm the theoretically predicted, quasi-optimal convergence rates and study the singular behavior of the solution for typical 3D geometries with edges, corners or cone points.},
+  abstract     = {Compared to those coated structures optimized with periodic and uniform microstructures, considering multiple lattice-infilling microstructures can effectively enlarge the design freedom of coated structures with better structural performance achieved. This paper presents a concurrent multiscale topology optimization method for coated structures infilled with multiple self-connected microstructures, which involves a new density-based extended two-step filtering procedure. Using various filtered density fields, the outer coating and the distribution of multiple microstructural blocks of coated structures can be simultaneously distinguished by relying on a single macroscale design variable field. In particular, the construction of coated structures with multiple infilling microstructures and the multi-material interpolation model are demonstrated under the framework of the ordered solid isotropic material with penalization (SIMP) method. At the microscale, topologies of microstructures are described by the density model and optimized using the homogenization method. To conveniently ensure the connectivity between different microstructural configurations, the designable connective region (DCR) method is introduced into the proposed approach to achieve the self-connected property of optimized lattice microstructures. The effectiveness of the proposed method is proved through several numerical examples, with discussions on the influences of different coating thicknesses, different volume fractions, etc. Eventually, the manufacturability of optimized structures at two scales is also illustrated by using the additive manufacturing (AM) technique, which further validates the applicability of the proposed approach.},
   archive      = {J_IJNME},
-  author       = {Alessandra Aimi and Luca Desiderio and Heiko Gimperlein and Chiara Guardasoni},
-  doi          = {10.1002/nme.70163},
+  author       = {Tiannan Hu and Yaguang Wang and Hao Li and Shun Noguchi and Heng Zhang and Kozo Furuta and Kazuhiro Izui and Shinji Nishiwaki},
+  doi          = {10.1002/nme.70173},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70163},
+  month        = {11},
+  number       = {21},
+  pages        = {e70173},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Space-time boundary elements on graded meshes for 3D elastodynamics},
+  title        = {Concurrent multiscale topology optimization of coated structures infilled with multiple self-connected microstructures},
   volume       = {126},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Mixing data-driven and physics-based constitutive models using uncertainty-driven phase fields. <em>IJNME</em>, <em>126</em>(20), e70162. (<a href='https://doi.org/10.1002/nme.70162'>www</a>)
+(2025). Efficient multimodes monte carlo method for structural topology optimization with random uncertainties. <em>IJNME</em>, <em>126</em>(21), e70172. (<a href='https://doi.org/10.1002/nme.70172'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {There is a high interest in accelerating multiscale models using data-driven surrogate modeling techniques. Creating a large training dataset encompassing all relevant load scenarios is essential for a good surrogate, yet the computational cost of producing this data quickly becomes a limiting factor. Commonly, a pre-trained surrogate is used throughout the computational domain. We introduce an alternative adaptive mixture approach that uses a fast probabilistic surrogate model as a constitutive model when possible, but resorts to the true high-fidelity model when necessary. The surrogate is thus not required to be accurate for every possible load condition, enabling a significant reduction in the data collection time. We achieve this by creating phases in the computational domain corresponding to the different models. These phases evolve using a phase-field model driven by the surrogate uncertainty. When the surrogate uncertainty becomes large, the phase-field model causes a local transition from the surrogate to the high-fidelity model, maintaining a highly accurate simulation. We discuss requirements for accuracy and numerical stability and compare the phase-field model to a local approach that does not enforce spatial smoothness in phase mixing. Using a Gaussian Process surrogate for an elasto-plastic material, we demonstrate the potential of this mixture of models to accelerate multiscale simulations.},
+  abstract     = {Structural topology optimization with random material or boundary load requires significant computational costs in solving numerous random elastic systems, particularly in 3D. Based on the multimode representation of displacement and the Monte Carlo method for sampling the probability space, a phase field model is proposed for robust topology optimization, where Young's modulus and the applied loading are characterized as random fields. The optimization algorithm is proposed based on the gradient flow scheme and the multimode Monte Carlo method. The well-posedness and truncation error estimates of the multimode Monte Carlo method have been rigorously discussed. Numerical examples of compliance minimization and compliant mechanisms in both 2D and 3D show the proposed algorithm's accuracy, effectiveness, and efficiency for robust topology optimization.},
   archive      = {J_IJNME},
-  author       = {Joep Storm and WaiChing Sun and Iuri B. C. M. Rocha and Frans P. van der Meer},
-  doi          = {10.1002/nme.70162},
+  author       = {Jiajie Li and Hui Yang and Shengfeng Zhu},
+  doi          = {10.1002/nme.70172},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70162},
+  month        = {11},
+  number       = {21},
+  pages        = {e70172},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Mixing data-driven and physics-based constitutive models using uncertainty-driven phase fields},
+  title        = {Efficient multimodes monte carlo method for structural topology optimization with random uncertainties},
   volume       = {126},
   year         = {2025},
 }
@@ -113,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A thermodynamically-based phase field model for thermosetting resins considering nonlinear hardening effect. <em>IJNME</em>, <em>126</em>(20), e70161. (<a href='https://doi.org/10.1002/nme.70161'>www</a>)
+(2025). Element-based internal variable formulations for finite element discretizations in FFT-based homogenization methods. <em>IJNME</em>, <em>126</em>(21), e70170. (<a href='https://doi.org/10.1002/nme.70170'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The ductile fracture behavior of thermosetting resins is significantly influenced by material viscosity, nonlinear plastic deformation, and plastic hardening characteristics. In this paper, a phase-field model is developed to analyze the ductile fracture behavior of thermosetting resins. The interaction between deformation and damage evolution is captured by coupling the generalized Maxwell–Perzyna constitutive model with the phase-field model, and viscosity-related viscoelastic free energy and hardening-related viscoplastic free energy are incorporated into the crack driving force. The governing equations for deformation and damage evolution are derived within a thermodynamically consistent framework, numerically discretized, and successfully implemented in commercial software. Subsequently, an epoxy resin system was synthesized and validated through homogeneity tests. Uniaxial tensile and compressive tests were conducted at various strain rates to calibrate the model parameters. Moreover, numerical simulations were performed on several representative fracture cases and compared with experimental results. The results show that the proposed model demonstrates excellent capability in accurately predicting critical mechanical characteristics, including stress response, crack propagation path, and rate-dependent ductile fracture behavior of thermosetting resins.},
+  abstract     = {Although finite elements were made available for FFT-based computational homogenization methods, they are seldomly used for inelastic computations because traditionally the constitutive law is evaluated at each quadrature point of the element, making the storage of that many internal variables necessary, as well. Recently, an innovative discretization scheme based on tetrahedral finite differences (TET) was introduced, which may be interpreted as a finite element discretization with two “virtual” quadrature points. In this work, we devise a general way to formulate finite element discretizations with multiple quadrature points and only a single internal variable per element in a consistent manner. For the large class of generalized standard materials, we demonstrate that the natural variational formulation leads to a simple and compact scheme requiring only a single nonlinear material evaluation per element. We discuss the efficient implementation into displacement-based FFT codes and demonstrate the advantages and limitations of our element-based internal (EBI) approach when applied to the TET discretization, classical trilinear hexahedral finite elements (HEX8) and multi-quadrature point composite voxels. In particular, we compare the computational expense, the memory requirements, and the accuracy of the traditional discretizations, their EBI formulations, and a hybrid composition of the latter two to the results of the rotated staggered grid discretization.},
   archive      = {J_IJNME},
-  author       = {Jiaxin Cui and Jia Zhou and Ming Yuan and Wenxiang Liu and Chenxu Jiang and Changqing Miao},
-  doi          = {10.1002/nme.70161},
+  author       = {Flavia Gehrig and Matti Schneider},
+  doi          = {10.1002/nme.70170},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70161},
+  month        = {11},
+  number       = {21},
+  pages        = {e70170},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A thermodynamically-based phase field model for thermosetting resins considering nonlinear hardening effect},
+  title        = {Element-based internal variable formulations for finite element discretizations in FFT-based homogenization methods},
   volume       = {126},
   year         = {2025},
 }
@@ -134,20 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Crack prediction in stepped circular arches through optimization algorithms. <em>IJNME</em>, <em>126</em>(20), e70160. (<a href='https://doi.org/10.1002/nme.70160'>www</a>)
+(2025). Gradient descent-based local equivalent resistivity identification for fuel cell diagnosis by magnetic tomography. <em>IJNME</em>, <em>126</em>(21), e70168. (<a href='https://doi.org/10.1002/nme.70168'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The purpose of this study is to demonstrate the effectiveness of using optimization algorithms to predict the locations and depths of cracks in stepped circular arches. The cracked zone is modeled as a rotational spring that connects the two adjacent sections. The theoretical model of Euler–Bernoulli is employed to derive the equation of motion for circular arches. By applying boundary conditions as well as the cracks and stepped continuity conditions, a homogeneous system is obtained and resolved through a Newton–Raphson algorithm. The optimization algorithms, coded in MATLAB, are designed for estimating the location and severity of a crack by minimizing the gap between the measured and calculated frequencies. The algorithms utilized in this study encompass the Particle Swarm Optimization (PSO), Firefly hybrid-Genetic algorithm (FF-GA), and Particle Swarm Optimization combined with genetic algorithm (PSO-GA). The predicted values of crack depths and locations obtained via the three algorithms are compared with the exact results by means of a parametric approach. This later leads to ascertaining which of these algorithms demonstrates greater reliability in detecting cracks along the edge of the lateral surface of the arch. The outcomes obtained have been thoroughly deliberated and analyzed.},
+  abstract     = {This work presents a new inverse algorithm based on magnetic tomography (MT) for diagnosing fuel-cell stacks (FC-stacks). The objective is to determine the local internal resistivities of the stack from external magnetic measurements. The inverse problem is solved by minimizing the difference between the simulated magnetic induction and the measured magnetic induction using the gradient descent method. To limit the search space, a neighbor-regularization is implemented as a penalty term, and the stack voltage is added as a constraint. To accelerate the solving process and improve the accuracy, we provide the derivatives of our optimization problem. This involves calculating the derivative of the employed finite element method (FEM) model, where sensitivities are determined using the adjoint-state method. To validate our novel approach, the algorithm is applied to numerical data and subsequently tested it on measurements from a real FC-stack, presenting the results in this article.},
   archive      = {J_IJNME},
-  author       = {Omar Outassafte and Ahmed Adri and Yassine El khouddar and Issam El Hantati and Rhali Benamar},
-  doi          = {10.1002/nme.70160},
+  author       = {Leonard Freisem and Olivier Chadebec and Gilles Cauffet and Sebastien Rosini and Yann Bultel},
+  doi          = {10.1002/nme.70168},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70160},
+  month        = {11},
+  number       = {21},
+  pages        = {e70168},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Crack prediction in stepped circular arches through optimization algorithms},
+  title        = {Gradient descent-based local equivalent resistivity identification for fuel cell diagnosis by magnetic tomography},
   volume       = {126},
   year         = {2025},
 }
@@ -155,20 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Topology optimization of functionally-graded lattice structures under multiple loading conditions for enhanced stiffness and robustness. <em>IJNME</em>, <em>126</em>(20), e70159. (<a href='https://doi.org/10.1002/nme.70159'>www</a>)
+(2025). Numerical stability of soil-water coupled analysis with implicit time integration using spectral radius of recursive equation comprising discretized governing equation of u-p formulation. <em>IJNME</em>, <em>126</em>(21), e70164. (<a href='https://doi.org/10.1002/nme.70164'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The topology optimization method of functionally graded lattice structures with multiple loading conditions is proposed to enhance both the structural stiffness and robustness. The conventional method for topology optimization of porous infill structures is extended to construct the functionally graded lattices, and the multiple loading conditions are introduced to formulate the optimization model with multiple objectives and multiple constraints. The multi-objective optimization model is formulated into the minimization of maximum compliance with different loading conditions under the volume constraints. The gradient-based optimization method is used to solve the optimization model, and the functionally graded lattice structures can be constructed efficiently and effectively. Numerical experiments prove that the proposed method performs better compared with conventional methods, and it will construct a connected and uniform lattice structure to improve both the stiffness and the robustness of the optimized structure with appropriate design domain and working conditions. To the best of our knowledge, this is the first work to verify the mechanical performance of an optimized functionally graded lattice structure manufactured from aluminum alloy, one of the most widely used metals in industry due to its excellent strength-to-weight ratio.},
+  abstract     = {The numerical stability of the u - p formulation-based dynamic soil-water coupled analysis was evaluated using the spectral radius of a simultaneous recursive equation derived from the spatiotemporally discretized governing equations and time-integration formulas. The findings reveal that the unstable range of the u - p formulation forms a band-shaped region in the permeability coefficient k -time increment Δ t space. This band bends at the point where the theoretical solution of the u - p formulation transitions. By analyzing the transience of the eigenvector along the band, we identified significant eigenvector rotation around the bend, suggesting that the differing appearances of unstable regions between low- and high-permeability ranges are caused by variations in the divergence of eigenmodes. Moreover, the criterion proposed by Noda et al. (2008) for evaluating the feasibility of u - p formulation-based analysis, which relies on the ratio k /Δ t , is generally valid for low-permeability ranges. However, this criterion proves inconsistent for high-permeability ranges, where feasibility depends solely on Δ t .},
   archive      = {J_IJNME},
-  author       = {Bing Yi and Zhizhong Li and Yong Tao and Xiao Liu and Xiang Peng},
-  doi          = {10.1002/nme.70159},
+  author       = {Tomohiro Toyoda and Toshihiro Noda},
+  doi          = {10.1002/nme.70164},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70159},
+  month        = {11},
+  number       = {21},
+  pages        = {e70164},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Topology optimization of functionally-graded lattice structures under multiple loading conditions for enhanced stiffness and robustness},
+  title        = {Numerical stability of soil-water coupled analysis with implicit time integration using spectral radius of recursive equation comprising discretized governing equation of u-p formulation},
   volume       = {126},
   year         = {2025},
 }
@@ -176,461 +176,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Computing nodal distributions with quasi-optimal lebesgue constant. <em>IJNME</em>, <em>126</em>(20), e70157. (<a href='https://doi.org/10.1002/nme.70157'>www</a>)
+(2025). Peridynamic thermal stresses and hypothetical body forces. <em>IJNME</em>, <em>126</em>(21), e70154. (<a href='https://doi.org/10.1002/nme.70154'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We propose an optimization method to minimize the Lebesgue constant of high-order interpolative nodal distributions in the d $$ d $$ -dimensional simplex. The main novelty is to deterministically minimize the Lebesgue constant in the high-dimensional simplex by consistently exploiting the first-order derivatives of the Lebesgue function in terms of the node coordinates. To drive the minimization, we consider a sequential linear programming approach. At each iteration, we compute a candidate nodal displacement by minimizing the upper bound of first-order approximations of the Lebesgue function sampled at the previous maxima. Then, we perform a backtracking line search procedure to choose a step-length ensuring that the new nodal configuration reduces the Lebesgue constant. To devise our method, we use an advantageous representation of the -simplex in the -sphere orthant to exploit existing conjectures regarding the distribution and structure of optimal nodal distributions. The results show numerical evidence that our quasi-optimal Lebesgue nodes are suitable for interpolation. Specifically, we obtain the optimal Lebesgue nodes in 1D and reproduce the current best nodal distributions in 2D. In 3D and 4D, our nodal sets improve the current best interpolative nodal configurations. Moreover, we obtain competitive condition numbers of the Vandermonde matrix and observe that the series seems to converge to one. We conclude that, in combination with existing methods to obtain fair point distributions, we can devise a two-stage approach to compute quasi-optimal Lebesgue nodal distributions suitable for high-order numerical interpolation in the high-dimensional simplex.},
+  abstract     = {The present work aims to gain new insights into thermal stresses and force states in peridynamic elastic solids. The key findings from this study are: (1) A general micro-potential-based formulation is developed for peridynamic thermal stresses in elastic solids. It provides a route to develop and verify micro-bond potential functions for materials with a known relationship between thermal stress and strain. As an example, a specific micro-bond potential is introduced, and the corresponding peridynamic thermal stresses are derived, which take the same form as the linear relationship between stresses and strains in the classical theory of thermoelasticity. It indicates that the specific micro-bond potential is applicable to linear thermoelasticity and might be further used to develop bond failure criteria for linear thermoelastic solids. (2) A peridynamic projection tensor is defined for the first time, based on which an exact relation between stresses and force states is established. This would provide a powerful way to incorporate more material models in peridynamics. (3) The peridynamic linear thermoelastic-elastic correspondence principle is first developed by inspection of the constitutive force states and the basic peridynamic momentum equation. Peridynamic hypothetical body forces are formulated by taking into account the temperature effect on the motion. On this basis, the displacement solution to a linear thermoelastic problem could be replaced by a solution to a corresponding isothermal problem provided that the solid was subject to an additional hypothetical peridynamic body force. Besides, study shows that for material points away from solid boundaries, the hypothetical peridynamic body forces converge to those defined in the classical theory of linear thermoelasticity as the horizon approaches zero. The effectiveness of the present work is demonstrated through numerical examples, highlighting its ability to provide good predictions for displacements and thermal stresses in linear thermoelastic solids.},
   archive      = {J_IJNME},
-  author       = {Albert Jiménez-Ramos and Abel Gargallo-Peiró and Xevi Roca},
-  doi          = {10.1002/nme.70157},
+  author       = {Jincheng Fan and Heping Xie},
+  doi          = {10.1002/nme.70154},
   journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70157},
+  month        = {11},
+  number       = {21},
+  pages        = {e70154},
   shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Computing nodal distributions with quasi-optimal lebesgue constant},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Development of a projection-based advanced deterministic uncertainty analysis in low dimensions. <em>IJNME</em>, <em>126</em>(20), e70156. (<a href='https://doi.org/10.1002/nme.70156'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper provides an in-depth exploration of reduced order modeling and uncertainty quantification relevant to engineering disciplines. The objective of this study is to develop an innovative uncertainty quantification algorithm incorporating a reduced order model suitable for complex system calculations, with the goal of maintaining an appropriate level of computational accuracy while reducing overall computational costs. To achieve this, a comprehensive review of reduced order modeling and uncertainty quantification was conducted, leading to the development of a projection-based advanced Deterministic Uncertainty Analysis algorithm in Low dimension (DUAL). DUAL introduces two effective methods for engineering calculations and analysis: data-driven sparse sensor placement and high-order deterministic uncertainty quantification. Data-driven sparse sensor placement enables the identification of a small, optimal dataset from the full data by computing the rank of the basis matrix. High-order deterministic uncertainty quantification computes the parameter and response distributions by numerically quantifying the first to fourth moments of the target distributions. DUAL utilizes both sparse sensor placement and high-order deterministic uncertainty quantification to more accurately and cost-effectively determine system uncertainties. The proposed numerical algorithms were applied to the FLECHT-SEASET boil-off and ATLAS A4.1 tests, estimating parameter and response distributions while leveraging dimension reduction in thermal hydraulic system calculations. The data-driven sparse sensor placement module of DUAL effectively identified optimized datasets for the two benchmark problems, while the high-order deterministic uncertainty quantification module efficiently estimated parameter and response distributions based on the first to fourth moments of the probability density function. DUAL demonstrated cost savings in overall computational expenses while maintaining appropriate accuracy levels by optimally selecting the number of basis modes in the reduced order model.},
-  archive      = {J_IJNME},
-  author       = {Jaeseok Heo and Young Suk Bang},
-  doi          = {10.1002/nme.70156},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70156},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Development of a projection-based advanced deterministic uncertainty analysis in low dimensions},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Topology optimization for unsteady non-newtonian fluid flows using the streamline upwind petrov-galerkin with penalty finite element method. <em>IJNME</em>, <em>126</em>(20), e70155. (<a href='https://doi.org/10.1002/nme.70155'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper addresses the topology optimization of unsteady incompressible non-Newtonian fluid flows. To reduce computational cost and improve efficiency, fluid simulations are performed using a penalty finite element method (PFEM) that decouples the velocity and pressure computations. Numerical oscillations induced by flow inertia are suppressed by streamline upwind Petrov–Galerkin (SUPG) stabilization. The optimization problem is formulated in a density-based framework and is solved with gradient-based algorithms, with the instantaneous minimum energy dissipation adopted as the objective. Several representative two- and three-dimensional cases are presented, followed by a comprehensive analysis to evaluate the effects of unsteady dynamics and non-Newtonian characteristics on both the optimized process and results. The findings broaden the applicability of fluid flow topology optimization and provide new insights for designing under unsteady, non-Newtonian conditions.},
-  archive      = {J_IJNME},
-  author       = {Xin Zhang and Jingjie He and Jianyin Miao and Jinyin Huang and Yulong Ji},
-  doi          = {10.1002/nme.70155},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70155},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Topology optimization for unsteady non-newtonian fluid flows using the streamline upwind petrov-galerkin with penalty finite element method},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Geometrically nonlinear optimization of thin-walled 3D structures using a novel reduced-order method. <em>IJNME</em>, <em>126</em>(20), e70153. (<a href='https://doi.org/10.1002/nme.70153'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Due to the computational difficulties in numerical robustness and efficiency caused by geometrical nonlinearities, the design of thin-walled structures is commonly conducted based on the small-deformation assumptions. However, the large deflection frequently occurs due to the insufficient out-of-plane stiffness and the demands of the lightweight design. In this work, optimizations of thin-walled structures are carried out considering the geometrically nonlinear effects. A reduced-order method using hybrid-stress solid-shell formulations is presented for large-deformation analysis in the optimization process. By adopting the two-field Hellinger–Reissner variational principle, a reduced-order model with only one degree of freedom is efficiently constructed. The entire geometrically nonlinear response is automatically and accurately traced by a predictor-corrector phase. Starting from a completed plate, the topology optimization is achieved by digging arbitrary circular holes or varying the thickness distribution. Three categories of optimization objectives are achieved to minimize the deflection deformation, minimize the maximum stress, and approach the target response curve, respectively. Different optimization constraints on the design variables, shapes, and volumes of thin-walled structures are considered. The favorable optimization design on geometrically nonlinear responses of thin-walled structures is achieved, which demonstrates the efficiency and robustness of the presented method.},
-  archive      = {J_IJNME},
-  author       = {Jiaqi Mu and Ke Liang},
-  doi          = {10.1002/nme.70153},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70153},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Geometrically nonlinear optimization of thin-walled 3D structures using a novel reduced-order method},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Challenges in automatic differentiation and numerical integration in physics-informed neural networks modelling. <em>IJNME</em>, <em>126</em>(20), e70148. (<a href='https://doi.org/10.1002/nme.70148'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, we numerically examine the precision challenges that emerge in automatic differentiation and numerical integration in various tasks now tackled by physics-informed neural networks (PINNs). Specifically, we illustrate how ill-posed problems or inaccurately computed functions can cause serious precision issues in differentiation and integration. A major difficulty lies in detecting these problems. A simple, large-scale view of the function, or good-looking loss functions or convergence results, may not reveal any potential errors, and the resulting outcomes are often mistakenly considered correct. To address this, it is often critical to determine whether standard double-precision arithmetic suffices or if higher precision is necessary, but using higher precision arithmetic with neural networks does not have to bring an improvement at all. Three problematic use cases for solving differential equations using PINNs are analyzed in detail. For the case requiring numerical integration, we also evaluate several numerical quadrature methods and suggest particular numerical analysis steps to choose the most suitable method.},
-  archive      = {J_IJNME},
-  author       = {Josef Daněk and Jan Pospíšil},
-  doi          = {10.1002/nme.70148},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70148},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Challenges in automatic differentiation and numerical integration in physics-informed neural networks modelling},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Finite strain robust topology optimization considering multiple uncertainties. <em>IJNME</em>, <em>126</em>(20), e70143. (<a href='https://doi.org/10.1002/nme.70143'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper presents a computational framework for the robust stiffness design of hyperelastic structures at finite deformations subject to various uncertain sources. In particular, the loading, material properties, and geometry uncertainties are incorporated within the topology optimization framework and are modeled by random vectors or random fields. A stochastic perturbation method is adopted to quantify uncertainties, and analytical adjoint sensitivities are derived for efficient gradient-based optimization. Moreover, the mesh distortion of low-density elements under finite deformations is handled by an adaptive linear energy interpolation scheme. The proposed robust topology optimization framework is applied to several examples, and the effects of different uncertain sources on the optimized topologies are systematically investigated. As demonstrated, robust designs are less sensitive to the variation of target uncertain sources than deterministic designs. Finally, it is shown that incorporating symmetry-breaking uncertainties in the topology optimization framework promotes stable designs compared to the deterministic counterpart, where—when no stability constraint is included—can lead to unstable designs.},
-  archive      = {J_IJNME},
-  author       = {Nan Feng and Guodong Zhang and Kapil Khandelwal},
-  doi          = {10.1002/nme.70143},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70143},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Finite strain robust topology optimization considering multiple uncertainties},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Bayesian buckling load optimisation for structures with geometric uncertainties. <em>IJNME</em>, <em>126</em>(20), e70111. (<a href='https://doi.org/10.1002/nme.70111'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Optimised lightweight structures, such as shallow domes and slender towers, are prone to sudden buckling failure because geometric uncertainties/imperfections can lead to a drastic reduction in their buckling loads. We introduce a framework for the robust optimisation of buckling loads, considering geometric nonlinearities and random geometric imperfections. The mean and standard deviation of buckling loads are estimated by Monte Carlo sampling of random imperfections and performing a nonlinear finite element computation for each sample. The extended system method is employed to compute the buckling load directly, avoiding costly path-following procedures. Furthermore, the quasi-Monte Carlo sampling using the Sobol sequence is implemented to generate more uniformly distributed samples, which significantly reduces the number of finite element computations. The objective function, consisting of the weighted sum of the mean and standard deviation of the buckling load, is optimised using Bayesian optimisation. The accuracy and efficiency of the proposed framework are demonstrated through robust sizing optimisation of several geometrically nonlinear truss examples.},
-  archive      = {J_IJNME},
-  author       = {Tianyi Liu and Xiao Xiao and Fehmi Cirak},
-  doi          = {10.1002/nme.70111},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {20},
-  pages        = {e70111},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Bayesian buckling load optimisation for structures with geometric uncertainties},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A novel improved collocation approach to solve good boussinesq equation describing propagation of shallow water waves. <em>IJNME</em>, <em>126</em>(19), e70152. (<a href='https://doi.org/10.1002/nme.70152'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The present work is about obtaining a high-order accurate numerical approach to approximate the solution of the good Boussinesq equation (GBeq). In present approach, the quintic B-spline collocation procedure equipped with new approximations for the second-order and the fourth-order spatial derivatives is employed to discretize the spatial variables and Crank–Nicolson scheme is used to obtain temporal integration of the GBeq. The proposed approach achieves sixth-order accuracy and second-order accuracy in spatial and temporal directions, respectively. By von-Neumann stability analysis, the unconditionally stability of the suggested approach is proved. The efficiency and applicability of the computational approach is verified by examining the sample problems including motion of single solitary, interaction of two solitons and birth of solitons. The error norm is computed and compared with the existing studies in the literature. The comparisons demonstrate that the suggested approach is superior to some existing techniques in terms of accuracy. Also, the rate of convergence and invariant constant are numerically computed and seen to match with their theoretical values.},
-  archive      = {J_IJNME},
-  author       = {Emre Kırlı},
-  doi          = {10.1002/nme.70152},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70152},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A novel improved collocation approach to solve good boussinesq equation describing propagation of shallow water waves},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Energy-dissipative implicit-explicit runge-kutta schemes with an optimized stabilization parameter for directed self-assembly of diblock copolymer melts. <em>IJNME</em>, <em>126</em>(19), e70151. (<a href='https://doi.org/10.1002/nme.70151'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We investigate high-order, energy-dissipative schemes for simulating the directed self-assembly (DSA) of diblock copolymer melts, which plays a crucial role in materials science, nanotechnology, and soft matter. The DSA process is primarily modulated through strategies such as external physical fields, substrate interfacial engineering, and geometric confinement, all of which are fundamentally described by Ohta–Kawasaki energy functionals. To preserve the intrinsic energy dissipation property of the corresponding gradient flow equations, we develop implicit-explicit Runge-Kutta (IMEXRK) schemes of up to third order and approximately fourth order, ensuring energy stability for any time step size. Under the uniform boundedness assumption of solutions, a novel criterion to justify the energy stability is established by rewriting the IMEXRK schemes in a unified matrix-vector framework. To address the time delay effect in stabilization schemes, an optimized, time-step-dependent selection of stabilization parameters is proposed, which shows significant accuracy improvement compared to a constant stabilization parameter. Numerical experiments validate the superior accuracy and stability, while simulations of directed self-assembly of diblock copolymer melts under different situations demonstrate the universality and broad applicability of the proposed schemes.},
-  archive      = {J_IJNME},
-  author       = {Yan Wang and Huiya Wang and Hong Zhang and Xu Qian},
-  doi          = {10.1002/nme.70151},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70151},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Energy-dissipative implicit-explicit runge-kutta schemes with an optimized stabilization parameter for directed self-assembly of diblock copolymer melts},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Smoothed particle hydrodynamics enhanced with unstructured finite-volume method for low-speed flows with moving boundaries. <em>IJNME</em>, <em>126</em>(19), e70150. (<a href='https://doi.org/10.1002/nme.70150'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this study, the conventional smoothed particle hydrodynamics is enhanced by coupling it with an unstructured finite-volume scheme for solving flows near the moving boundary, particularly in wall-bounded turbulence, capable of both robustly capturing free surface flows and accurately resolving flows near the wall. A mesh domain is deployed encompassing the moving object, and the corresponding flow field is resolved using an unstructured arbitrary Lagrangian-Eulerian finite-volume scheme. Beyond the mesh domain, the flows are resolved using the particle-based smoothed particle hydrodynamics scheme. Under the turbulence circumstance, the large-eddy simulation model is incorporated into the governing equations, and the wall-modeled large-eddy simulation based on the reduced-order wall model is adopted when the flows near the wall boundary are under-resolved. Regarding the coupling between finite-volume and smoothed particle hydrodynamics domains, the smoothed particle hydrodynamics particles are divided into activated and non-activated particles, and the field values of non-activated particles are interpolated from the finite-volume domain; for the finite-volume domain, the interface points, serving as flux inputs into the finite-volume domain, are deployed on the finite-volume domain boundary, where the field values of the interface points are interpolated from the activated smoothed particle hydrodynamics particles. A set of two-dimensional and three-dimensional cases with low and high Reynolds numbers is simulated using the present method, which presents good accuracy and efficiency and is particularly suitable for simulating turbulent flows. Overall, the proposed method can serve as a remarkable enhancement to the conventional smoothed particle hydrodynamics scheme to reliably predict low-speed wall-bounded flows with moving boundaries.},
-  archive      = {J_IJNME},
-  author       = {Tianrun Gao and Mingduo Yuan and Lin Fu},
-  doi          = {10.1002/nme.70150},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70150},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Smoothed particle hydrodynamics enhanced with unstructured finite-volume method for low-speed flows with moving boundaries},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). The complex variable dimension coupling method for 3D inhomogeneous transient heat conduction problems. <em>IJNME</em>, <em>126</em>(19), e70149. (<a href='https://doi.org/10.1002/nme.70149'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Based on the dimensional splitting method (DSM) and an improved complex variable element-free Galerkin (ICVEFG) method, the complex variable dimension coupling method (CVDCM) is proposed to analyze 3D inhomogeneous transient heat conduction problems. The original 3D governing equation is split into a collection of 2D forms by the dimensional splitting method (DSM), and the discrete equation of the 2D problem is derived via the ICVEFG method. The splitting direction is then treated by using the finite element method (FEM), while the time-dependent term in the governing equation is handled by the finite difference method (FDM). Finally, the numerical solution formula is obtained. To verify the accuracy of the CVDCM, the ratio of the L 2 norm to the true value is used as the relative error. The convergence of the proposed method is demonstrated by increasing the number of nodes and meshes. Five numerical examples of transient inhomogeneous heat conduction problems with spatially varying material properties (density, specific heat capacity, and thermal conductivity) are solved using the CVDCM; the results show that the proposed method achieves good convergence and achieves higher accuracy compared to the dimension coupling method (DCM) and the improved element-free Galerkin (IEFG) method in five examples.},
-  archive      = {J_IJNME},
-  author       = {Wenna He and Heng Cheng},
-  doi          = {10.1002/nme.70149},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70149},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {The complex variable dimension coupling method for 3D inhomogeneous transient heat conduction problems},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A study on time-dependent two parameter singularly perturbed problems via trigonometric quintic B-splines on an exponentially graded mesh. <em>IJNME</em>, <em>126</em>(19), e70146. (<a href='https://doi.org/10.1002/nme.70146'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper presents a fresh perspective on solving two-parameter singularly perturbed parabolic convection-diffusion-reaction equations with Dirichlet boundary conditions. The methodology integrates the Crank–Nicolson (CN) scheme for discretizing temporal derivatives and applies the Trigonometric Quintic B-splines (TQBS) approach to approximate both the state variable and its spatial derivatives on an exponentially graded mesh. Through a meticulous convergence analysis, the study establishes a parameter-uniform convergence of fourth order in space and second order in time. To verify the theoretical claims and evaluate the method's efficacy, four test examples are solved using the numerical algorithm, offering tangible evidence of the parameter-uniform convergence of the proposed numerical scheme. Additionally, the paper includes a graphical comparison of the proposed method with Shishkin meshes, providing empirical evidence of its efficacy and parameter-uniform convergence.},
-  archive      = {J_IJNME},
-  author       = {Sangeetha C and Aswin V S and Ashish Awasthi},
-  doi          = {10.1002/nme.70146},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70146},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A study on time-dependent two parameter singularly perturbed problems via trigonometric quintic B-splines on an exponentially graded mesh},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A biomimetic moving-mesh topology optimization method. <em>IJNME</em>, <em>126</em>(19), e70145. (<a href='https://doi.org/10.1002/nme.70145'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Topology optimization has experienced rapid development over the past two decades and has been widely applied in fields such as aircraft structures, civil engineering, and transportation equipment. Common topology optimization methods, such as density-based methods and level set methods, focus on global variable optimization. These global optimization approaches often consume substantial computational resources and are not suitable for parallel optimization. In contrast, structures in nature evolve from a combination of numerous local optimization problems, where each cell unit adjusts on the basis of its perception of the surrounding environment, leading to the formation of biological structures. This paper proposes a novel heuristic topology optimization method, the biomimetic moving-mesh (BMM) method, inspired by biological cell growth and evolution. The BMM method uses the positions of mesh nodes as variables to simulate cellular expansion and contraction, thereby creating a new optimization approach. Compared with traditional topology optimization methods, the BMM method offers smoother meshes and is more suitable for handling large-scale parallel optimization problems.},
-  archive      = {J_IJNME},
-  author       = {Huawei Feng and Huikai Zhang and Zhongqi Li and Junjie Zhou and Peidong Lei and Bin Liu},
-  doi          = {10.1002/nme.70145},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70145},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A biomimetic moving-mesh topology optimization method},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Physics-informed deep learning constitutive model for anisotropic and pressure-dependent behavior of short fiber-reinforced polymers. <em>IJNME</em>, <em>126</em>(19), e70144. (<a href='https://doi.org/10.1002/nme.70144'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Short fiber-reinforced polymers (SFRPs) exhibit complex anisotropic, nonlinear, and pressure-dependent behavior due to their heterogeneous microstructures. Conventional constitutive models, while accurate, require extensive parameter calibration and may lack generalization capability under varied loading conditions. In this study, a physics-informed deep learning (PIDL) constitutive framework is proposed that integrates the governing physical laws with the flexibility of neural networks. The model employs long short-term memory (LSTM) networks to capture path-dependent behaviors and utilizes scalar invariants consistent with transverse isotropy to ensure thermodynamic consistency, objectivity, and material symmetry. The neural network is trained using synthetic data generated from a validated continuum-mechanical model for SFRPs, including elasto-plastic behavior and anisotropy. To validate the PIDL model, an open-hole tensile (OHT) test is simulated, and the predicted stresses are compared against those obtained from the classical constitutive model. While the initial PIDL model showed limitations under complex multiaxial stress states, a retraining strategy using randomly generated loading paths significantly improved its predictive accuracy. This study demonstrates the potential of physics-informed machine learning for developing generalizable and efficient data-driven constitutive models for complex composite materials.},
-  archive      = {J_IJNME},
-  author       = {Aamir Dean and Vinayak B. Naik and Betim Bahtiri and Elsadig Mahdi and Pavan K. A. V. Kumar},
-  doi          = {10.1002/nme.70144},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70144},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Physics-informed deep learning constitutive model for anisotropic and pressure-dependent behavior of short fiber-reinforced polymers},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A micropolar phase field fracture model for elastoplastic solids applied to concrete failure. <em>IJNME</em>, <em>126</em>(19), e70140. (<a href='https://doi.org/10.1002/nme.70140'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Given the high costs and practical limitations of experimental testing, computational models have emerged as powerful alternatives to analyze and predict structural failures caused by fracture initiation and propagation. Many materials, such as concrete, rock, clay, certain ceramics, and various composites, exhibit quasi-brittle or ductile cracking. Unlike brittle fractures, where the load capacity of the solid drops abruptly, the failure response of these materials is more involved and exhibits a gradual deterioration of structural integrity accompanied by plastic deformation. In these materials, depending on the loading conditions, fracturing begins with the formation of microcracks, which subsequently coalesce to form larger macroscopic ones. Additionally, under confined compression, localized zones of large inelastic deformations with dimensions linked to the material's microstructure can emerge. As a result, the fracture response of these materials is significantly influenced by their inherent microstructure, affecting both crack initiation and propagation. Therefore, a fracture model that explicitly accounts for the effects of microstructure on the macroscopic ductile fracture response of a body is essential. In this contribution, a thermodynamically consistent phase field fracture model for elastoplastic solids in micropolar continua is presented. We begin by reviewing the kinematical descriptions in which the effects of microstructure and microdeformation are incorporated through an independent microrotation field. Using a purely geometric approach, the evolution of fracture is linked to a constitutive crack driving functional. The governing equations alongside their finite element implementations are presented, and the constitutive relations for a solid with a general non-associative plasticity formulation are detailed. A realization of the proposed framework specific to concrete is also introduced. We present a new degradation function alongside a crack driving force capturing the complex fracture response of concrete, including its pressure-dependent strength and asymmetric response under tension and compression. Finally, the proposed framework is validated by comparing computational simulation results with existing experimental data across a range of loading conditions, from tension-dominated to shear-driven and compression-induced failure scenarios. Comparison of load-displacement curves and crack propagation paths with corresponding experimental observations demonstrates the capabilities of the proposed framework.},
-  archive      = {J_IJNME},
-  author       = {Sina Abrari Vajari and Matthias Neuner and Prajwal Kammardi Arunachala and Christian Linder},
-  doi          = {10.1002/nme.70140},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70140},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A micropolar phase field fracture model for elastoplastic solids applied to concrete failure},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An F-bar B-spline material point method for capturing size-dependent strain localization with finite strain gradient plasticity. <em>IJNME</em>, <em>126</em>(19), e70137. (<a href='https://doi.org/10.1002/nme.70137'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The classical material point method (MPM) is particularly suitable for large deformation problems with surface contact, but its capability to capture size effects remains relatively limited. In order to capture the size effect widely observed in solid materials as well as to eliminate mesh dependency, we present an F-bar B-spline MPM for solving finite strain-gradient plasticity in the micromorphic approach. A multiplicative finite strain thermoplasticity model is first regularized in a micromorphic approach, where a global internal variable is introduced to take into account the size effect. An implicit B-spline MPM is developed to solve the coupled problem in a monolithic manner with consistent linearization. This implementation provides a general framework to incorporate phenomenological elasto-plasticity models while preserving the prescribed size effect in the MPM. Although B-spline basis function is effective in suppressing the volumetric-locking deformation pattern when volume-preserving plasticity model is used, severe stress oscillation may manifest when the deformation mode approaches the incompressible limit. Therefore, we propose an F-bar method for the implicit B-spline MPM to suppress the spurious stress oscillation. The exact linearization of the F-bar method and its coupling with the balance equation of micromorphic momentum are derived in closed form. Three representative numerical examples are presented to validate our implementation and demonstrate the advantages of our method. Results show that the proposed method is effective in capturing the size effect at extreme conditions with large distortion and contact, and the F-bar method suppresses the spurious stress oscillations associated with volume-preserving plastic flow. One limitation is that the convergence behavior is less satisfactory when strain-softening model is used due to the inherent limitation of the implicit MPM.},
-  archive      = {J_IJNME},
-  author       = {Ran Ma and Haoyu Ni and Panpan Cheng and Guodong Zhang and Tong Guo},
-  doi          = {10.1002/nme.70137},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70137},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {An F-bar B-spline material point method for capturing size-dependent strain localization with finite strain gradient plasticity},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A family of higher-order theories for wave propagation in one-dimensional structural elements. <em>IJNME</em>, <em>126</em>(19), e70136. (<a href='https://doi.org/10.1002/nme.70136'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper proposes a systematic framework for the development and classification of higher-order theories for modeling wave propagation in one-dimensional structural elements. Building upon and organizing the existing higher-order models, a generalized approach is introduced to construct an entire family of such theories with controllable complexity and accuracy. The methodology enables the inclusion of higher-order terms in a physically meaningful and mathematically consistent manner, going beyond the classical polynomial extension of displacement fields. The proposed theories leverage traction-free boundary conditions, leading to accurate wave representation. Preliminary considerations on their implementation in the finite element method are also discussed, laying the foundation for future work focused on advanced finite element formulations.},
-  archive      = {J_IJNME},
-  author       = {Wiktor Waszkowiak and Łukasz Doliński and Paweł Kowalski and Arkadiusz Żak},
-  doi          = {10.1002/nme.70136},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70136},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A family of higher-order theories for wave propagation in one-dimensional structural elements},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A total-lagrangian material point method for fast and stable hydromechanical modeling of porous media. <em>IJNME</em>, <em>126</em>(19), e70135. (<a href='https://doi.org/10.1002/nme.70135'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Modeling the incompressible fluid flow in porous media has long been a challenging task in the Material Point Method (MPM). Although widely used, conventional Updated Lagrangian MPM (ULMPM) often suffers from numerical stability and computational efficiency issues in the hydromechanical analysis of saturated porous media. To address these issues, we herein present a novel semi-implicit Total Lagrangian MPM (TLMPM). The proposed TLMPM leverages the fractional step method to decouple pore pressure from kinematic fields and employs the semi-implicit scheme to bypass the small time step constraint imposed by permeability and fluid compressibility. Unlike its UL counterpart, the TLMPM evaluates weighting functions and their gradients only once in the reference configuration, eliminating material point tracking and inherently resolving cell-crossing instabilities. Given the consistent set of active degrees of freedom throughout simulations, the proposed method greatly reduces computational costs associated with system matrix assembly for both kinematics and pore pressure and with free-surface node detection. Furthermore, this feature also facilitates the efficient Cholesky factorization, resulting in a substantial acceleration of the solver performance. The proposed approach has been validated against various benchmark tests, and our results have highlighted the remarkable performance of TLMPM, which can achieve up to 63 times speedup over conventional methods, scaling favorably with problem size, and retaining numerical stability even with low-order basis functions. These advancements position the TLMPM as a transformative tool for poroelastic analysis, with broader applicability to large-deformation problems in geomechanics, energy systems, and environmental engineering.},
-  archive      = {J_IJNME},
-  author       = {Weijian Liang and Bodhinanda Chandra and Jidu Yu and Zhen-Yu Yin and Jidong Zhao},
-  doi          = {10.1002/nme.70135},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70135},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A total-lagrangian material point method for fast and stable hydromechanical modeling of porous media},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Lippmann–Schwinger spectrum, composite materials eigenstates and their role in computational homogenization. <em>IJNME</em>, <em>126</em>(19), e70130. (<a href='https://doi.org/10.1002/nme.70130'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Focusing on the homogenization of periodic composite materials, this study investigates computational methods based on volume integral equations. Such formulations are revisited from the standpoint of the preconditioning of the original cell problem by the introduction of a comparison material. This allows for to recovery of simple convergence criteria for iterative steepest-descent and fixed-point schemes for composites with general non-linear behaviour. In the case of linear materials, the preconditioned volume integral formulation coincides with the well-known Lippmann–Schwinger equation. The spectral properties of the featured linear integral operator, which is bounded and self-adjoint, are investigated to shed light on the behaviour of conventional computational homogenization methods. The so-called Lippmann–Schwinger spectrum is analyzed, with its bounds governing the convergence rate of iterative solution methods. The associated eigenvectors, which constitute the eigenstates of the composite material considered, are also described in detail to understand their role in constructing the solution to the cell problem and ultimately in computing the effective properties. Formulated in the continuous setting, this analysis is followed by the investigation of a discrete representation of the integral operator considered. A number of examples on synthetic microstructures are finally considered in the conductivity setting to illustrate the obtained theoretical results and highlight the role of the spectral properties in the operation of computational homogenization methods. This paves the way for the development of reduced models and more efficient computations.},
-  archive      = {J_IJNME},
-  author       = {C. Bellis and H. Moulinec},
-  doi          = {10.1002/nme.70130},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70130},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Lippmann–Schwinger spectrum, composite materials eigenstates and their role in computational homogenization},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Truncated weighted singular value decomposition solution of tikhonov regularized softening shear band problems in finite elements. <em>IJNME</em>, <em>126</em>(19), e70126. (<a href='https://doi.org/10.1002/nme.70126'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A Truncated Weighted Singular Value Decomposition (TWSVD) based approach is proposed for the Tikhonov regularized solution of the ill-posed softening type nonlocal plasticity model. Tikhonov regularization provides a stable, smooth, and mesh-independent solution of integral-type nonlocal plasticity, but is computationally expensive for large-scale problems, particularly in three-dimensional models. The proposed solution technique offers an efficient method for the solution of the large-scale Euler equation resulting from the Tikhonov regularization, which is significant for practical applications of softening problems. The TWSVD approach modifies the truncated SVD method to apply to the numerical integration method commonly used in finite element (FE) models. The mathematical formulation of the proposed approach is presented with a linear isotropic plasticity model, and a stress-update algorithm is developed for the FE application of the approach. The solution algorithm is implemented in a three-dimensional model with isoparametric brick elements. The solution approach is validated with a benchmark shear-band softening problem. Results show that the TWSVD method can significantly reduce the computational time compared to conventional Tikhonov-regularized solutions, without sacrificing accuracy, making it a practical and efficient solution tool for large-scale systems in nonlocal plasticity models with softening behavior.},
-  archive      = {J_IJNME},
-  author       = {Albert Dahal and Luis Ibarra},
-  doi          = {10.1002/nme.70126},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70126},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Truncated weighted singular value decomposition solution of tikhonov regularized softening shear band problems in finite elements},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Variable density interpolation for dynamic topology optimization. <em>IJNME</em>, <em>126</em>(19), e70123. (<a href='https://doi.org/10.1002/nme.70123'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Topology optimization problems are usually nonconvex, and different optimization paths often lead to different local optima. This phenomenon is particularly pronounced in dynamic situations, where it typically causes grayscale. The occurrence of grayscale is greatly dependent on material parameters such as stiffness and density. In particular, under finite deformation conditions, the effect of inertia becomes more significant, and the nonconvexity becomes more pronounced, making it difficult to achieve a clear topology with conventional interpolation functions. To address this issue, the present study proposes two novel interpolation functions for density in dynamic topology optimization considering finite deformation. The proposed interpolation functions can adjust their shape during optimization, effectively reducing the grayscale by driving the design variable towards a binary state (0 or 1). Firstly, we investigate the conditions under which grayscale is likely to occur by performing many optimization calculations using various material parameters and load frequencies, and then use the findings obtained to develop new interpolation functions. The proposed methods leverage a gradient-based method, and the accuracy of sensitivity is verified. Finally, the effectiveness of the proposed methods is demonstrated through several numerical examples, highlighting their ability to achieve clear topologies while maintaining robustness in challenging dynamic scenarios.},
-  archive      = {J_IJNME},
-  author       = {Xinlin Xu and Takumi Sugiura and Hiroya Hoshiba and Koji Nishiguchi and Junji Kato},
-  doi          = {10.1002/nme.70123},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70123},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {Variable density interpolation for dynamic topology optimization},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A comprehensive study and insight in co-rotational approach based geometrically nonlinear analysis with planar solid elements. <em>IJNME</em>, <em>126</em>(19), e70106. (<a href='https://doi.org/10.1002/nme.70106'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The co-rotational (CR) approach is a widely adopted and efficient strategy for geometrically nonlinear analysis. The Classic Formalism , which derives full variations from local element to global coordinates, has been refined over the years and is generally regarded as theoretically sound. This study presents an insight into CR planar solid elements. To isolate these issues from element-specific effects, we focus on the simplest planar solid elements: four-node quadrilaterals and three-node triangles. A comprehensive investigation is conducted to provide a unified overview and systematic comparison of commonly used local element frame construction methods. The findings indicate that the Classic Formalism may exacerbate unrealistic asymmetric responses in symmetric problems, particularly when the local element frame lacks precision. To address this, we propose a direct force correction formalism that introduces a correction term to directly enforce spin equilibrium. On the one hand, the derivation process eliminates the need for a second variation in computing the tangent stiffness matrix; on the other hand, the corrected equal weights act on each node of elements and are directly related to the rotation matrix, rather than a variant of the rotation matrix. As a result, this formalism may reduce the asymmetry in symmetrical cases better than Classic Formalism . Importantly, the proposed formalism is broadly applicable across various element types and frame construction methods.},
-  archive      = {J_IJNME},
-  author       = {Ziyun Kan and Jie Deng and Yanting Li and Xueguan Song},
-  doi          = {10.1002/nme.70106},
-  journal      = {International Journal for Numerical Methods in Engineering},
-  month        = {10},
-  number       = {19},
-  pages        = {e70106},
-  shortjournal = {Int. J. Numer. Meth. Eng.},
-  title        = {A comprehensive study and insight in co-rotational approach based geometrically nonlinear analysis with planar solid elements},
+  title        = {Peridynamic thermal stresses and hypothetical body forces},
   volume       = {126},
   year         = {2025},
 }

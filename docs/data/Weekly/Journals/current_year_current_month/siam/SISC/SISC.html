@@ -25,24 +25,24 @@
 </head>
 <body>
 
-<h2 id="sisc">SISC - 45</h2>
+<h2 id="sisc">SISC - 18</h2>
 <ul>
 <li><details>
 <summary>
-(2025). A training-free conditional diffusion model for learning stochastic dynamical systems. <em>SISC</em>, <em>47</em>(5), C1144-C1171. (<a href='https://doi.org/10.1137/24M1699589'>www</a>)
+(2025). Learning WENO for entropy stable schemes to solve conservation laws. <em>SISC</em>, <em>47</em>(6), C1196--C1222. (<a href='https://doi.org/10.1137/24M1697566'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. This study introduces a training-free conditional diffusion model for learning unknown SDEs using data. The proposed approach addresses key challenges in computational efficiency and accuracy for modeling SDEs by utilizing a score-based diffusion model to approximate their stochastic flow map. Unlike the existing methods, this technique is based on an analytically derived closed-form exact score function, which can be efficiently estimated by Monte Carlo methods using the trajectory data, and eliminates the need for neural network training to learn the score function. By generating labeled data through solving the corresponding reverse ODE, the approach enables supervised learning of the flow map. Extensive numerical experiments across various SDE types, including linear, nonlinear, and multidimensional systems, demonstrate the versatility and effectiveness of the method. The learned models exhibit significant improvements in predicting both short-term and long-term behaviors of unknown stochastic systems, often surpassing baseline methods such as generative adversarial networks in estimating drift and diffusion coefficients. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/YanfangLiu11/Conditional-Diffusion-Model-for-SDE-Learning and in the supplementary materials (Conditional-Diffusion-Model-for-SDE-Learning-main.zip [235KB]).},
+  abstract     = {Abstract. Entropy conditions play a crucial role in the extraction of a physically relevant solution for systems of conservation laws, thus motivating the construction of entropy stable schemes that satisfy a discrete analogue of such conditions. TeCNO schemes [U. S. Fjordholm, S. Mishra, and E. Tadmor, SIAM J. Numer. Anal., 50 (2012), pp. 544–573] form a class of arbitrary high-order entropy stable finite difference solvers, which require specialized reconstruction algorithms satisfying the sign property at each cell interface. Third-order weighted essentially non-oscillatory (WENO) schemes called SP-WENO [U. S. Fjordholm and D. Ray, J. Sci. Comput., 68 (2016), pp. 42–63] and SP-WENOc [D. Ray, A third-order entropy stable scheme for the compressible Euler equations, in Theory, Numerics and Applications of Hyperbolic Problems II, Springer, 2018, pp. 503–515] have been designed to satisfy the sign property. However, these WENO algorithms can perform poorly near shocks, with the numerical solutions exhibiting large spurious oscillations. In the present work, we propose a variant of the SP-WENO, termed as Deep Sign-Preserving WENO (DSP-WENO), where a neural network is trained to learn the WENO weighting strategy. The sign property and third-order accuracy are strongly imposed in the algorithm, which constrains the WENO weight selection region to a convex polygon. Thereafter, a neural network is trained to select the WENO weights from this convex region with the goal of improving the shock-capturing capabilities without sacrificing the rate of convergence in smooth regions. The proposed synergistic approach retains the mathematical framework of the TeCNO scheme while integrating deep learning to remedy the computational issues of the WENO-based reconstruction. We present several numerical experiments to demonstrate the significant improvement with DSP-WENO over the existing variants of WENO satisfying the sign property.},
   archive      = {J_SISC},
-  author       = {Yanfang Liu and Yuan Chen and Dongbin Xiu and Guannan Zhang},
-  doi          = {10.1137/24M1699589},
+  author       = {Philip Charles and Deep Ray},
+  doi          = {10.1137/24M1697566},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {C1144-C1171},
+  month        = {12},
+  number       = {6},
+  pages        = {C1196--C1222},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A training-free conditional diffusion model for learning stochastic dynamical systems},
+  title        = {Learning WENO for entropy stable schemes to solve conservation laws},
   volume       = {47},
   year         = {2025},
 }
@@ -50,20 +50,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Optimized sparse matrix operations for reverse mode automatic differentiation. <em>SISC</em>, <em>47</em>(5), C1115-C1143. (<a href='https://doi.org/10.1137/24M1711832'>www</a>)
+(2025). Bilevel optimization with convex majorant approach for training sparse neural networks. <em>SISC</em>, <em>47</em>(6), C1173--C1195. (<a href='https://doi.org/10.1137/25M1726467'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. Sparse matrices are ubiquitous in computational science, enabling significant reductions in both compute time and memory overhead for problems with local connectivity. Simultaneously, recent work in automatic differentiation has lead to explosive growth in the adoption of accessible frameworks, such as PyTorch, TensorFlow, and JAX, which allow for the rapid development of optimization problems in computational settings. However, these existing tools lack support for sparse linear algebra, severely limiting their use in settings such as scientific machine-learning (SciML) and numerical PDEs, where the use of sparsity is often a necessity for achieving efficient algorithms. In this paper, we develop a set of performant kernels that allow for efficient automatic differentiation of expressions with sparse matrix values; fine-grained parallelism is exploited and performance is highlighted on massively-parallel graphics processing units (GPUs). We also present several applications that are enhanced by the use of these kernels, such as computing optimal transmission conditions for optimized Schwarz methods or finding sparse preconditioners for conjugate gradients. The use of backpropagation with these sparse operations results in massive speed gains when compared to their dense counterparts, with speedups ranging from to (or more), and enabling computation on larger problems than is possible using dense operations. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/nicknytko/numml/tree/main and in the supplementary materials (numml-main.zip [85.0KB]).},
+  abstract     = {Abstract. This paper proposes a convex majorant approach for training sparse neural networks by bilevel optimization, where the upper level problem minimizes a smooth nonconvex function, and the lower level problem minimizes a smooth nonconvex function with a nonsmooth convex group sparse regularizer over a box set for fixed sparse regularization hyperparameters. The convex majorant function approximates the objective function of the lower level problem. We establish the relationship between the original bilevel optimization and the bilevel optimization with the convex majorant approach regarding global and local minimizers. Moreover, we use a smoothing function to approximate the convex majorant function and derive the convergence of global minimizers to those of the corresponding nonsmooth bilevel problems with smoothing parameter converging to zero. A smoothing implicit function method is proposed to solve the smooth approximate bilevel optimization problem. Some numerical experiments including the tests on the data from machine learning repository show that the convex majorant approach performs better than the widely used Grid Search method, Random Search method, and Bayesian optimization method.},
   archive      = {J_SISC},
-  author       = {Nicolas Nytko and Ali Taghibakhshi and Tareq Uz Zaman and Scott MacLachlan and Luke N. Olson and Matthew West},
-  doi          = {10.1137/24M1711832},
+  author       = {Xingbang Cui and Xiaojun Chen},
+  doi          = {10.1137/25M1726467},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {C1115-C1143},
+  month        = {12},
+  number       = {6},
+  pages        = {C1173--C1195},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Optimized sparse matrix operations for reverse mode automatic differentiation},
+  title        = {Bilevel optimization with convex majorant approach for training sparse neural networks},
   volume       = {47},
   year         = {2025},
 }
@@ -71,20 +71,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A deep learning method for computing committor functions with adaptive sampling. <em>SISC</em>, <em>47</em>(5), C1091-C1114. (<a href='https://doi.org/10.1137/24M1654750'>www</a>)
+(2025). Polytope division method: A scalable sampling method for problems with high-dimensional parameters. <em>SISC</em>, <em>47</em>(6), B1424--B1449. (<a href='https://doi.org/10.1137/24M1704506'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. The committor function is a central object for quantifying transitions between metastable states in randomly perturbed dynamical systems. Recently, effective methods based on deep learning have been proposed to compute the committor function in high-dimensional systems. However, sampling training data in these methods remains a challenging task, particularly for systems with small noise. In this work, we propose a deep learning method in which the data are sampled from the equilibrium distribution of a modified potential. We introduce two such modified potentials: the first (scheme I) incorporates a bias formed by localized Gaussian functions along a one-dimensional variable constructed from the learned committor function; the second (scheme II) uses a bias involving the free energy associated with the learned committor function. We analyze the distribution of the sampled data and show that, in both schemes, the data are well spread out and effectively cover the transition tube. Both schemes enable adaptive learning of the committor function without requiring prior knowledge of the transition pathways. The efficiency of the method is demonstrated using high-dimensional examples, including the alanine dipeptide and a solvated dimer system. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/LinBoNUS/DLCommittor and in the supplementary materials (DLCommittor-main.zip [5.62MB]).},
+  abstract     = {Abstract. Configuration Optimization Problems (COPs), which involve minimizing a loss function over a set of discrete points , are common in areas like Model Order Reduction, Active Learning, and Optimal Experimental Design. While exact solutions are often infeasible, heuristic methods such as the weak Greedy Sampling Method (wGSM) provide practical alternatives, particularly for low-dimensional cases. wGSM recursively updates by solving a continuous optimization problem, which is typically approximated by a search over a discrete sample set . However, as the dimensionality grows, the sample size suffers from the curse of dimensionality. To address this, we introduce the Polytope Division Method (PDM), a scalable greedy-type approach that adaptively partitions the parameter space and targets regions of high loss. PDM achieves linear scaling with problem dimensionality and offers an efficient solution approach for high-dimensional COPs, overcoming the limitations of traditional methods.},
   archive      = {J_SISC},
-  author       = {Bo Lin and Weiqing Ren},
-  doi          = {10.1137/24M1654750},
+  author       = {Evie Nielen and Oliver Tse and Karen Veroy},
+  doi          = {10.1137/24M1704506},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {C1091-C1114},
+  month        = {12},
+  number       = {6},
+  pages        = {B1424--B1449},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A deep learning method for computing committor functions with adaptive sampling},
+  title        = {Polytope division method: A scalable sampling method for problems with high-dimensional parameters},
   volume       = {47},
   year         = {2025},
 }
@@ -92,20 +92,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Structured and balanced multicomponent and multilayer neural networks. <em>SISC</em>, <em>47</em>(5), C1059-C1090. (<a href='https://doi.org/10.1137/24M1675990'>www</a>)
+(2025). Nearest neighbors GParareal: Improving scalability of gaussian processes for parallel-in-time solvers. <em>SISC</em>, <em>47</em>(6), B1400--B1423. (<a href='https://doi.org/10.1137/24M1663648'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. In this work, we propose a balanced multicomponent and multilayer neural network (MMNN) structure to accurately and efficiently approximate functions with complex features in terms of both degrees of freedom and computational cost. The main idea is inspired by a multicomponent approach in which each component can be effectively approximated by a single-layer network, combined with a multilayer decomposition strategy to capture the complexity of the target function. Although MMNNs can be viewed as a simple modification of fully connected neural networks (FCNNs) or multilayer perceptrons (MLPs) by introducing balanced multicomponent structures, they achieve a significant reduction in training parameters, a much more efficient training process, and improved accuracy compared to FCNNs or MLPs. Extensive numerical experiments demonstrate the effectiveness of MMNNs in approximating highly oscillatory functions and their ability to automatically adapt to localized features. Our code and implementations are available at GitHub.},
+  abstract     = {Abstract. With the advent of supercomputers, multiprocessor environments and parallel-in-time (PinT) algorithms offer ways to solve initial value problems for ordinary and partial differential equations (ODEs and PDEs) over long time intervals, a task often unfeasible with sequential solvers within realistic time frames. A recent approach, GParareal, combines Gaussian Processes with traditional PinT methodology (Parareal) to achieve faster parallel speed-ups. The method is known to outperform Parareal for low-dimensional ODEs and a limited number of computer cores. Here, we present Nearest Neighbors GParareal (nnGParareal), a novel data-enriched PinT integration algorithm. nnGParareal builds upon GParareal by improving its scalability properties for higher-dimensional systems and increased processor count. Through data reduction, the model complexity is reduced from cubic to log-linear in the sample size, yielding a fast and automated procedure to integrate initial value problems over long time intervals. First, we provide both an upper bound for the error and theoretical details on the speed-up benefits. Then, we empirically illustrate the superior performance of nnGParareal compared to GParareal and Parareal on nine different systems with unique features (e.g., stiff, chaotic, high-dimensional, or challenging-to-learn systems). Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/Parallel-in-Time-Differential-Equations/Nearest-Neighbors-GParareal and in the supplementary materials (nnGParareal_supplementary_material.pdf [2.53MB], Nearest-Neighbors-GParareal-main.zip [9.34MB]).},
   archive      = {J_SISC},
-  author       = {Shijun Zhang and Hongkai Zhao and Yimin Zhong and Haomin Zhou},
-  doi          = {10.1137/24M1675990},
+  author       = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
+  doi          = {10.1137/24M1663648},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {C1059-C1090},
+  month        = {12},
+  number       = {6},
+  pages        = {B1400--B1423},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Structured and balanced multicomponent and multilayer neural networks},
+  title        = {Nearest neighbors GParareal: Improving scalability of gaussian processes for parallel-in-time solvers},
   volume       = {47},
   year         = {2025},
 }
@@ -113,20 +113,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Sparsifying dimensionality reduction of PDE solution data with bregman learning. <em>SISC</em>, <em>47</em>(5), C1033-C1058. (<a href='https://doi.org/10.1137/24M1684566'>www</a>)
+(2025). A novel deflation approach for topology optimization and application for optimization of bipolar plates of electrolysis cells. <em>SISC</em>, <em>47</em>(6), B1369--B1399. (<a href='https://doi.org/10.1137/24M1670913'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. Classical model reduction techniques project the governing equations onto a linear subspace of the original state space. More recent data-driven techniques use neural networks to enable nonlinear projections. While those often enable stronger compression, they may have redundant parameters and lead to suboptimal latent dimensionality. To overcome these issues, we propose a multistep algorithm that induces sparsity in the encoder-decoder networks for effective reduction in the number of parameters and additional compression of the latent space. This algorithm starts with sparsely initializing a network and training it using linearized Bregman iterations. These iterations have been very successful in computer vision and compressed sensing tasks, but have not yet been used for reduced-order modeling. After the training, we further compress the latent space dimensionality by using a form of proper orthogonal decomposition. Last, we use a bias propagation technique to change the induced sparsity into an effective reduction of parameters. We apply this algorithm to three representative PDE models: 1D diffusion, 1D advection, and 2D reaction-diffusion. Compared to conventional training methods like Adam, the proposed method achieves similar accuracy with 30% fewer parameters and a significantly smaller latent space. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/TJHeeringa/bregman-pde-dimensionality-reduction/tree/v1.0.0 and in the supplementary materials (bregman-pde-dimensionality-reduction-1.0.0.zip [2.39MB]).},
+  abstract     = {Abstract. Topology optimization problems usually feature multiple local minimizers. To guarantee convergence to local minimizers that perform best globally, or to find local solutions that are desirable for practical applications due to easy manufacturability or aesthetic designs, it is important to compute multiple local minimizers of topology optimization problems. In this paper, we introduce a novel deflation approach to systematically find multiple local minimizers of general topology optimization problems. The approach is based on a penalization of previously found local solutions in the objective. We validate our approach on the so-called five-holes double-pipe example. Finally, we introduce a model for the topology optimization of bipolar plates of hydrogen electrolysis cells and demonstrate that our deflation approach enables the discovery of novel designs for such plates.},
   archive      = {J_SISC},
-  author       = {Tjeerd Jan Heeringa and Christoph Brune and Mengwu Guo},
-  doi          = {10.1137/24M1684566},
+  author       = {Leon Baeck and Sebastian Blauth and Christian Leithäuser and René Pinnau and Kevin Sturm},
+  doi          = {10.1137/24M1670913},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {C1033-C1058},
+  month        = {12},
+  number       = {6},
+  pages        = {B1369--B1399},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Sparsifying dimensionality reduction of PDE solution data with bregman learning},
+  title        = {A novel deflation approach for topology optimization and application for optimization of bipolar plates of electrolysis cells},
   volume       = {47},
   year         = {2025},
 }
@@ -134,20 +134,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Level-set shape optimization via polytopic discontinuous galerkin methods. <em>SISC</em>, <em>47</em>(5), B1293-B1315. (<a href='https://doi.org/10.1137/24M1687595'>www</a>)
+(2025). Symmetric Gauss–Seidel method with a preconditioned fixed-point iteration for the steady-state boltzmann equation. <em>SISC</em>, <em>47</em>(6), B1343--B1368. (<a href='https://doi.org/10.1137/24M1691818'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. We introduce a new level-set shape optimization approach based on polytopic (i.e., polygonal in two and polyhedral in three spatial dimensions) discontinuous Galerkin methods. The approach benefits from the geometric mesh flexibility of polytopic discontinuous Galerkin methods to resolve the zero-level set accurately and efficiently. Additionally, we employ suitable Runge–Kutta discontinuous Galerkin methods to update the level-set function on a fine underlying simplicial mesh. We discuss the construction and implementation of the approach, explaining how to modify shape derivate formulas to compute consistent shape gradient approximations using discontinuous Galerkin methods and how to recover dG functions into smoother ones. Numerical experiments on unconstrained and PDE-constrained test cases evidence the good properties of the proposed methodology. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and Data Available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://zenodo.org/records/13366737.},
+  abstract     = {Abstract. We introduce a numerical solver for the steady-state Boltzmann equation based on the symmetric Gauss–Seidel (SGS) method. To solve the nonlinear system on each grid cell arising from the SGS method, a fixed-point iteration preconditioned using its asymptotic limit is developed. The preconditioner only requires solving an algebraic system which is easy to implement and can speed up the convergence significantly especially in the case of small Knudsen numbers. Additionally, we couple our numerical scheme with the multigrid method to further accelerate convergence. A variety of numerical experiments are carried out to illustrate the effectiveness of these methods.},
   archive      = {J_SISC},
-  author       = {Raphael S. Fernandes and Emmanuil H. Georgoulis and Alberto Paganini},
-  doi          = {10.1137/24M1687595},
+  author       = {Zhenning Cai and Xiaoyu Dong and Jingwei Hu},
+  doi          = {10.1137/24M1691818},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1293-B1315},
+  month        = {12},
+  number       = {6},
+  pages        = {B1343--B1368},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Level-set shape optimization via polytopic discontinuous galerkin methods},
+  title        = {Symmetric Gauss–Seidel method with a preconditioned fixed-point iteration for the steady-state boltzmann equation},
   volume       = {47},
   year         = {2025},
 }
@@ -155,20 +155,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Convergence of splitting methods on rotating grids for the magnetized vlasov equation. <em>SISC</em>, <em>47</em>(5), B1272-B1292. (<a href='https://doi.org/10.1137/24M1659327'>www</a>)
+(2025). Finite element-based space-time total-variation-type regularization of the inverse problem in electrocardiographic imaging. <em>SISC</em>, <em>47</em>(6), B1317--B1342. (<a href='https://doi.org/10.1137/24M1685055'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. Semi-Lagrangian solvers for the Vlasov system offer noiseless solutions compared to Lagrangian particle methods and can handle larger time steps compared to Eulerian methods. In order to reduce the computational complexity of the interpolation steps, it is common to use a directional splitting. In this paper, we consider a Vlasov system with a background magnetic field resulting in an angular velocity due to the term. We analyze a semi-Lagrangian method that treats the angular velocity due to the term with a rotational grid and combines this with a directional splitting for the remaining terms. We analyze the convergence properties of the scheme both analytically and numerically. The favorable numerical properties of the rotating grid solution are demonstrated for the case of ion Bernstein waves against a pure directional splitting and an exact rotational splitting.},
+  abstract     = {Abstract. Reconstructing cardiac electrical activity from body surface electric potential measurements results in the severely ill-posed inverse problem in electrocardiography. Many different regularization approaches have been proposed to improve numerical results and provide unique results. This work presents a novel approach for reconstructing the epicardial potential from body surface potential maps based on a space-time total-variation-type regularization using finite elements, where a first-order primal-dual algorithm solves the underlying convex optimization problem. In several numerical experiments, the superior performance of this method and the benefit of space-time regularization for the reconstruction of epicardial potential on two-dimensional torso data and a three-dimensional rabbit heart compared to state-of-the-art methods are demonstrated.},
   archive      = {J_SISC},
-  author       = {Nils Schild and Mario Räth and Klaus Hallatschek and Katharina Kormann},
-  doi          = {10.1137/24M1659327},
+  author       = {Manuel Haas and Thomas Grandits and Thomas Pinetz and Thomas Beiert and Simone Pezzuto and Alexander Effland},
+  doi          = {10.1137/24M1685055},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1272-B1292},
+  month        = {12},
+  number       = {6},
+  pages        = {B1317--B1342},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Convergence of splitting methods on rotating grids for the magnetized vlasov equation},
+  title        = {Finite element-based space-time total-variation-type regularization of the inverse problem in electrocardiographic imaging},
   volume       = {47},
   year         = {2025},
 }
@@ -176,20 +176,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). NuGPR: GPU-accelerated gaussian process regression with iterative algorithms and low-rank approximations. <em>SISC</em>, <em>47</em>(5), B1250-B1271. (<a href='https://doi.org/10.1137/24M1683615'>www</a>)
+(2025). A mixed finite element method for the velocity-pseudostress formulation of the oseen eigenvalue problem. <em>SISC</em>, <em>47</em>(6), A3356--A3382. (<a href='https://doi.org/10.1137/24M1696950'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. Gaussian process regression (GPR) is an important type of supervised machine learning model with inherent uncertainty measure in its predictions. We propose a new framework, nuGPR, to address the well-known challenge of high computation cost associated with GPR training. Our framework includes several ideas from numerical linear algebra to reduce the amount of computation in key steps of GPR, and we combine them to establish an end-to-end training algorithm. Specifically, we leverage the preconditioned conjugate gradient method to accelerate the convergence of the linear solves required in GPR. We exploit clustering in the input data to identify block-diagonal structure of the covariance matrix and subsequently construct low-rank approximations of the off-diagonal blocks. These enhancements significantly reduce the time and space complexity of our computations. In addition, unlike other frameworks that rely on exact differentiation, we employ numerical gradients to optimize the hyperparameters of our GPR model, further reducing the training cost by eliminating the need for backpropagation. Lastly, we leverage the CUDA Toolkit to efficiently parallelize the training procedure on NVIDIA GPUs. As a result, nuGPR reduces total training time by up to and peak memory consumption by up to on various synthetic and real-world datasets when compared to the best existing GPU-based GPR implementation.},
+  abstract     = {Abstract. In this paper, we introduce and analyze a mixed formulation for the Oseen eigenvalue problem by introducing the pseudostress tensor as a new unknown, allowing us to eliminate the fluid pressure. The well-posedness of the solution operator is established using a fixed-point argument. For the numerical analysis, we use the tensorial versions of Raviart–Thomas and Brezzi–Douglas–Marini elements to approximate the pseudostress, and piecewise polynomials for the velocity. Convergence and a priori error estimates are derived based on compact operator theory. We present a series of numerical tests in two and three dimensions to confirm the theoretical findings.},
   archive      = {J_SISC},
-  author       = {Ziqi Zhao and Vivek Sarin},
-  doi          = {10.1137/24M1683615},
+  author       = {Felipe Lepe and Gonzalo Rivera and Jesus Vellojin},
+  doi          = {10.1137/24M1696950},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1250-B1271},
+  month        = {12},
+  number       = {6},
+  pages        = {A3356--A3382},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {NuGPR: GPU-accelerated gaussian process regression with iterative algorithms and low-rank approximations},
+  title        = {A mixed finite element method for the velocity-pseudostress formulation of the oseen eigenvalue problem},
   volume       = {47},
   year         = {2025},
 }
@@ -197,20 +197,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Probabilistic error analysis of limited-precision stochastic rounding. <em>SISC</em>, <em>47</em>(5), B1227-B1249. (<a href='https://doi.org/10.1137/24M1681458'>www</a>)
+(2025). Computing large deviation rate functions of entropy production for diffusion processes by an interacting particle method. <em>SISC</em>, <em>47</em>(6), A3330--A3355. (<a href='https://doi.org/10.1137/24M1720172'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. Classical probabilistic rounding error analysis is particularly well suited to stochastic rounding (SR), and it yields strong results when dealing with floating-point algorithms that rely heavily on summation. For many numerical linear algebra algorithms, one can prove probabilistic error bounds that grow as , where is the problem size and is the unit roundoff. These probabilistic bounds are asymptotically tighter than the worst-case ones, which grow as . For certain classes of algorithms, SR has been shown to be unbiased. However, all these results were derived under the assumption that SR is implemented exactly, which typically requires too many random bits to be suitable for practical implementations. We investigate the effect of the number of random bits on the probabilistic rounding error analysis of SR. To this end, we introduce a new rounding mode, limited-precision SR. By taking into account the number of random bits used, this new rounding mode matches hardware implementations accurately, unlike the ideal SR operator generally used in the literature. We show that this new rounding mode is biased and that the bias is a function of . As approaches infinity, however, the bias disappears, and limited-precision SR converges to the ideal, unbiased SR operator. We develop a novel model for probabilistic error analysis of algorithms employing SR. Several numerical examples corroborate our theoretical findings. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/mptorch/mptorch and in the supplementary materials (mptorch-main.zip [69.0KB]).},
+  abstract     = {Abstract. We develop an interacting particle method (IPM) for computing the large deviation rate function of entropy production for diffusion processes, with emphasis on the vanishing-noise limit and high dimensions. The crucial ingredient for obtaining the rate function is the computation of the principal eigenvalue of elliptic, non-self-adjoint operators. We show that this principal eigenvalue can be approximated in terms of the spectral radius of a discretized evolution operator, which is obtained from an operator splitting scheme and an Euler–Maruyama scheme with a small time step size. We also show that this spectral radius can be accessed through a large number of iterations of this discretized semigroup, which is suitable for computation using the IPM. The IPM applies naturally to problems in unbounded domains and scales easily to high dimensions. We show numerical examples of dimensions up to 16, and the results show that our numerical approximation of converges to the analytical vanishing-noise limit within visual tolerance with a fixed number of particles and a fixed time step size. It is numerically shown that the IPM can adapt to singular behaviors in the vanishing-noise limit. We also apply the IPM to explore situations with no explicit formulas of the vanishing-noise limit. Our paper appears to be the first to obtain numerical results of principal eigenvalue problems for non-self-adjoint operators in such high dimensions.},
   archive      = {J_SISC},
-  author       = {El-Mehdi El Arar and Massimiliano Fasi and Silviu-Ioan Filip and Mantas Mikaitis},
-  doi          = {10.1137/24M1681458},
+  author       = {Zhizhang Wu and Renaud Raquépas and Jack Xin and Zhiwen Zhang},
+  doi          = {10.1137/24M1720172},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1227-B1249},
+  month        = {12},
+  number       = {6},
+  pages        = {A3330--A3355},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Probabilistic error analysis of limited-precision stochastic rounding},
+  title        = {Computing large deviation rate functions of entropy production for diffusion processes by an interacting particle method},
   volume       = {47},
   year         = {2025},
 }
@@ -218,20 +218,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Fast and scalable FFT-based GPU-accelerated algorithms for block-triangular toeplitz matrices with application to linear inverse problems governed by autonomous dynamical systems. <em>SISC</em>, <em>47</em>(5), B1201-B1226. (<a href='https://doi.org/10.1137/24M1683172'>www</a>)
+(2025). Exact simulation of the first-passage time of diffusions to time-dependent thresholds. <em>SISC</em>, <em>47</em>(6), A3303--A3329. (<a href='https://doi.org/10.1137/24M1718093'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. We present an efficient and scalable algorithm for performing matrix-vector multiplications (matvecs) for block Toeplitz matrices. Such matrices, which are shift-invariant with respect to their blocks, arise in the context of solving inverse problems governed by autonomous systems, and time-invariant systems in particular. In this article, we consider inverse problems that infer unknown parameters from observational data of a linear time-invariant dynamical system given in the form of partial differential equations (PDEs). Matrix-free Newton-conjugate-gradient methods are often the gold standard for solving these inverse problems, but they require numerous actions of the Hessian on a vector. Matrix-free adjoint-based Hessian matvecs require solution of a pair of linearized forward/adjoint PDE solves per Hessian action, which may be prohibitive for large-scale inverse problems. Time invariance of the forward PDE problem leads to a block Toeplitz structure of the discretized parameter-to-observable (p2o) map defining the mapping from inputs (parameters) to outputs (observables) of the PDEs. This block Toeplitz structure enables us to exploit two key properties: (1) compact storage of the p2o map and its adjoint, and (2) efficient fast Fourier transform–based Hessian matvecs. The proposed algorithm is mapped onto large multi-GPU clusters and achieves more than 80% of peak bandwidth on NVIDIA A100 GPUs. Excellent weak scaling is shown for up to 48 A100 GPUs. For the targeted problems, the implementation executes Hessian matvecs within fractions of a second, which is orders of magnitude faster than can be achieved by conventional matrix-free Hessian matvecs via forward/adjoint PDE solves. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/s769/FFTMatvec and in the supplementary materials (FFTMatvec-main.zip [1.05MB]).},
+  abstract     = {Abstract. The first-passage time (FPT) is a fundamental concept in stochastic processes, representing the time it takes for a process to reach a specified threshold for the first time. Often, considering a time-dependent threshold is essential for accurately modeling stochastic processes, as it provides a more accurate and adaptable framework. In this paper, we extend an existing Exact simulation method developed for constant thresholds to handle time-dependent thresholds. Our proposed approach utilizes the FPT of Brownian motion and accepts it for the FPT of a given process with some probability, which is determined using Girsanov’s transformation. This method eliminates the need to simulate entire paths over specific time intervals, avoids time-discretization errors, and directly simulates the FPT. We present results demonstrating the method’s effectiveness, including the extension to time-dependent thresholds, an analysis of its time complexity, comparisons with existing methods through numerical examples, and its application to predicting spike times in a neuron.},
   archive      = {J_SISC},
-  author       = {Sreeram Venkat and Milinda Fernando and Stefan Henneking and Omar Ghattas},
-  doi          = {10.1137/24M1683172},
+  author       = {Devika Khurana and Sascha Desmettre and Evelyn Buckwar},
+  doi          = {10.1137/24M1718093},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1201-B1226},
+  month        = {12},
+  number       = {6},
+  pages        = {A3303--A3329},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Fast and scalable FFT-based GPU-accelerated algorithms for block-triangular toeplitz matrices with application to linear inverse problems governed by autonomous dynamical systems},
+  title        = {Exact simulation of the first-passage time of diffusions to time-dependent thresholds},
   volume       = {47},
   year         = {2025},
 }
@@ -239,20 +239,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A nonnested augmented subspace method for the Poisson–Boltzmann equation. <em>SISC</em>, <em>47</em>(5), B1175-B1200. (<a href='https://doi.org/10.1137/25M1725280'>www</a>)
+(2025). A positive- and bound-preserving vectorial lattice boltzmann method in two dimensions. <em>SISC</em>, <em>47</em>(6), A3276--A3302. (<a href='https://doi.org/10.1137/24M1712412'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. In this paper, we propose a nonnested augmented subspace algorithm for solving Poisson–Boltzmann equations which have curved interfaces. The augmented subspace algorithm is designed with the help of low dimension finite element space, which is defined on a coarse mesh. Since the appearance of curved interfaces, the coarse and finest meshes have no nested property, which leads to the low-dimensional finite element space not being a subset of the one defined on the finest mesh. Even though there is no nested property, the nonnested augmented subspace method can transfer the solution of the Poisson–Boltzmann equation on the finest mesh to solving a linear equation on the same mesh and a small scale semilinear problem on a low-dimensional augmented subspace. The corresponding theoretical analysis and numerical experiments are provided to demonstrate the efficiency of the proposed algorithm.},
+  abstract     = {Abstract. We present a novel positive kinetic scheme built on the efficient collide-and-stream algorithm of the lattice Boltzmann method (LBM) to address hyperbolic conservation laws. We focus on the compressible Euler equations with strong discontinuities. Starting from the work of Jin and Xin [Comm. Pure Appl. Math., 48 (1995), pp. 235–276] and then that of Aregba-Driollet and Natalini [SIAM J. Numer. Anal., 37 (2000), pp. 1973–2004] and Bouchut [J. Stat. Phys., 95 (19990, pp. 113–170], we show how the LBM discretization procedure can yield both first- and second-order schemes, referred to as vectorial LBM. Noticing that the first-order scheme is convex preserving under a specific CFL constraint, we develop a blending strategy that preserves both the conservation and simplicity of the algorithm. This approach employs convex limiters, carefully designed to ensure either positivity (of the density and the internal energy) preservation (PP) or well-defined local maximum principles (LMP), while minimizing numerical dissipation. On challenging test cases involving strong discontinuities and near-vacuum regions, we demonstrate the scheme’s accuracy, robustness, and ability to capture sharp discontinuities with minimal numerical oscillations.},
   archive      = {J_SISC},
-  author       = {Sheng Gui and Haikun Dang and Hehu Xie},
-  doi          = {10.1137/25M1725280},
+  author       = {Gauthier Wissocq and Yongle Liu and Rémi Abgrall},
+  doi          = {10.1137/24M1712412},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1175-B1200},
+  month        = {12},
+  number       = {6},
+  pages        = {A3276--A3302},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A nonnested augmented subspace method for the Poisson–Boltzmann equation},
+  title        = {A positive- and bound-preserving vectorial lattice boltzmann method in two dimensions},
   volume       = {47},
   year         = {2025},
 }
@@ -260,20 +260,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Element-wise multiplication of tensor trains. <em>SISC</em>, <em>47</em>(5), B1158-B1174. (<a href='https://doi.org/10.1137/24M1714149'>www</a>)
+(2025). Monte Carlo–Moments micro-macro parareal method for unimodal and bimodal scalar McKean–Vlasov SDEs. <em>SISC</em>, <em>47</em>(6), A3239--A3275. (<a href='https://doi.org/10.1137/23M1609142'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. We present the tensor train multiplication (TTM) algorithm for the elementwise multiplication of two tensor trains with bond dimension . The computational complexity and memory requirements of the TTM algorithm scale as and , respectively. This represents a significant improvement compared with the conventional approach, where the computational complexity scales as and memory requirements scale as . We benchmark the TTM algorithm using flows obtained from artificial turbulence generation and numerically demonstrate its improved runtime and memory scaling compared with the conventional approach. The TTM algorithm paves the way toward GPU accelerated tensor network simulations of computational fluid dynamics problems with large bond dimensions due to its dramatic improvement in memory scaling.},
+  abstract     = {Abstract. We propose a micro-macro parallel-in-time Parareal method for scalar McKean–Vlasov stochastic differential equations (SDEs). In the algorithm, the fine Parareal propagator is a Monte Carlo simulation of an ensemble of particles, while an approximate ordinary differential equation (ODE) description of the mean and the variance of the particle distribution is used as a coarse Parareal propagator to achieve speedup. We analyze the convergence behavior of our method for a linear problem and provide numerical experiments indicating the convergence behavior of the algorithm on a set of examples. We show, with numerical experiments, that convergence typically takes place in a low number of iterations, depending on the quality of the ODE predictor. For bimodal SDEs, we use multiple ODEs, each describing the mean and variance of the particle distribution in locally unimodal regions of the phase space. For bimodal SDEs, we also develop a variant that converges faster by adaptively learning a model for the distribution of particles over different regions of the phase space (through a least-squares procedure). The benefit of the proposed algorithm can be viewed through two lenses: (i) through the parallel-in-time lens, speedup is obtained through the use of a very cheap coarse integrator (an ODE moment model), and (ii) through the moment models lens, accuracy is iteratively gained through the use of parallel machinery as a corrector. In contrast to the isolated use of a moment model, the proposed method (iteratively) converges to the true distribution generated by the underlying McKean–Vlasov SDE. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://gitlab.kuleuven.be/numa/public/mc-moments-parareal and in the supplementary materials (mc-moments-parareal-main.zip [970KB]).},
   archive      = {J_SISC},
-  author       = {Alexios A. Michailidis and Christian Fenton and Martin Kiffner},
-  doi          = {10.1137/24M1714149},
+  author       = {Ignace Bossuyt and Stefan Vandewalle and Giovanni Samaey},
+  doi          = {10.1137/23M1609142},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1158-B1174},
+  month        = {12},
+  number       = {6},
+  pages        = {A3239--A3275},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Element-wise multiplication of tensor trains},
+  title        = {Monte Carlo–Moments micro-macro parareal method for unimodal and bimodal scalar McKean–Vlasov SDEs},
   volume       = {47},
   year         = {2025},
 }
@@ -281,20 +281,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Leveraging GPU batching for scalable nonlinear programming through massive lagrangian decomposition. <em>SISC</em>, <em>47</em>(5), B1133-B1157. (<a href='https://doi.org/10.1137/21M1450112'>www</a>)
+(2025). Parameter-robust preconditioning for hybridizable symmetric discretizations. <em>SISC</em>, <em>47</em>(6), A3212--A3238. (<a href='https://doi.org/10.1137/25M1740073'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. We present the implementation of a trust-region Newton algorithm ExaTron for bound-constrained nonlinear programming problems, fully running on multiple graphics processing units (GPUs). Without data transfers between a CPU and GPU, our implementation has achieved the elimination of a major performance bottleneck under a memory-bound situation, particularly when solving many small problems in batch. We discuss the design principles and implementation details for our kernel function and core operations. Different design choices are justified by numerical experiments. By using the application of distributed control of alternating current optimal power flow, where a large problem is decomposed into many smaller nonlinear programs using a Lagrangian approach, we demonstrate computational performance of ExaTron on the Summit supercomputer at Oak Ridge National Laboratory. Our numerical results show the linear scaling with respect to the batch size and the number of GPUs and more than 35 times speedup on 6 GPUs than on 40 CPU cores available on a single node. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/exanauts/ExaTron.jl and in the supplementary materials (ExaTron.jl-main.zip [101KB]).},
+  abstract     = {Abstract. Hybridizable discretizations allow for the elimination of local degrees-of-freedom leading to reduced linear systems. In this paper, we determine and analyze an approach to construct parameter-robust preconditioners for these reduced systems. Using the framework of Mardal and Winther [Numer. Linear Algebra Appl., 18 (2011), pp. 1–40], we first determine a parameter-robust preconditioner for the full system. We then eliminate the local degrees-of-freedom of this preconditioner to obtain a preconditioner for the reduced system. However, not all reduced preconditioners obtained in this way are automatically robust. We therefore present conditions that must be satisfied for the reduced preconditioner to be robust. To demonstrate our approach, we determine preconditioners for the reduced systems obtained from hybridizable discretizations of the Darcy and Stokes equations. Our analysis is verified by numerical examples in two and three dimensions.},
   archive      = {J_SISC},
-  author       = {Youngdae Kim and François Pacaud and Michel Schanen and Kibaek Kim and Mihai Anitescu},
-  doi          = {10.1137/21M1450112},
+  author       = {Esteban Henríquez and Jeonghun J. Lee and Sander Rhebergen},
+  doi          = {10.1137/25M1740073},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1133-B1157},
+  month        = {12},
+  number       = {6},
+  pages        = {A3212--A3238},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Leveraging GPU batching for scalable nonlinear programming through massive lagrangian decomposition},
+  title        = {Parameter-robust preconditioning for hybridizable symmetric discretizations},
   volume       = {47},
   year         = {2025},
 }
@@ -302,20 +302,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A second-order modified ghost fluid method (2nd-MGFM) for 2D planar and axisymmetric compressible multimedium flows. <em>SISC</em>, <em>47</em>(5), B1104-B1132. (<a href='https://doi.org/10.1137/24M1660838'>www</a>)
+(2025). A well-balanced point-average-moment PolynomiAl-interpreted (PAMPA) method for shallow water equations with horizontal temperature gradients on triangular meshes. <em>SISC</em>, <em>47</em>(6), A3185--A3211. (<a href='https://doi.org/10.1137/24M1695063'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. In this work, we develop a second-order modified ghost fluid method (2nd-MGFM) to simulate two-dimensional (2D) planar and axisymmetric compressible multimedium flow with an immiscible interface. To treat the material interface with higher-order accuracy, we develop the balanced conditions related to spatial derivatives at material interfaces for 2D planar and axisymmetric compressible multimedium flows. We then employ these balanced conditions to describe the interfacial physical properties and disclose that these conditions cannot be satisfied for the current ghost fluid methods, resulting in a first-order temporal error occurring in the region of the interface. To fix this difficulty, a multimedium generalized Riemann problem is proposed to predict the states and the spatial derivatives along the normal direction at the interface, in which the balanced conditions are imposed. Theoretical analysis and numerical results show that the proposed 2nd-MGFM can satisfy these balanced conditions, effectively eliminate the first-order major error term, suppress numerical overheating, and improve mass conservation.},
+  abstract     = {Abstract. In this paper, we develop a novel well-balanced Point-Average-Moment PolynomiAl-interpreted (PAMPA) numerical method for solving the two-dimensional shallow water equations with horizontal temperature gradients on unstructured triangular meshes. The proposed PAMPA method uses a globally continuous representation of the variables, with degrees of freedom (DoFs) consisting of point values on the edges and average values within each triangular element. The update of cell averages is carried out using a conservative form of the partial differential equations (PDEs), while the update of point values—unconstrained by local conservation—follows a non-conservative formulation. The powerful PAMPA framework offers great flexibility in the choice of variables for the non-conservative form, including conservative variables, primitive variables, and other possible sets of variables. In order to preserve a wider class of steady-state solutions, we introduce pressure-momentum-temperature variables instead of using the standard conservative or primitive ones. By utilizing these new variables and the associated non-conservative form, along with adopting suitable Gaussian quadrature rules in the discretization of conservative form, we prove that this new class of schemes is well-balanced for both “lake at rest” and isobaric steady states. We validate the performance of the proposed well-balanced PAMPA method through a series of numerical experiments, demonstrating their high-order accuracy, well-balancedness, and robustness.},
   archive      = {J_SISC},
-  author       = {Xiaotao Zhang and Chengliang Feng and Tiegang Liu},
-  doi          = {10.1137/24M1660838},
+  author       = {Yongle Liu},
+  doi          = {10.1137/24M1695063},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1104-B1132},
+  month        = {12},
+  number       = {6},
+  pages        = {A3185--A3211},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A second-order modified ghost fluid method (2nd-MGFM) for 2D planar and axisymmetric compressible multimedium flows},
+  title        = {A well-balanced point-average-moment PolynomiAl-interpreted (PAMPA) method for shallow water equations with horizontal temperature gradients on triangular meshes},
   volume       = {47},
   year         = {2025},
 }
@@ -323,20 +323,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). An efficient high-order compact splitting spectral method for dipolar bose-einstein condensates with arbitrary-angle rotation. <em>SISC</em>, <em>47</em>(5), B1077-B1103. (<a href='https://doi.org/10.1137/24M1716069'>www</a>)
+(2025). Discrete time dynamic programming using tensor trains. <em>SISC</em>, <em>47</em>(6), A3161--A3184. (<a href='https://doi.org/10.1137/24M1672341'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. We propose high-order compact splitting Fourier spectral methods to compute the dynamics of dipolar Bose–Einstein condensates (BECs) with arbitrary-angle rotation. The Hamiltonian is split into a linear part that consists of the Laplace and rotation and a nonlinear part that includes all the remaining terms. For the linear subproblem, we factorize the linear operator into a product of simple suboperators using the exact classical-quantum correspondence and semigroups decomposition, and these suboperators are integrated exactly in either physical or phase space. Importantly, we first derive explicit formulas for the splitting coefficients originally obtained by numerically solving a nonlinear system. The nonlinear part is solved exactly in physical space, and the convolution-type nonlocal potential with a singular kernel is computed via the Far-field Smooth Approximation (FSA) method with spectral accuracy. This “compact” splitting, involving only two operators, significantly simplifies the design of high-order schemes. Our method achieves high-order temporal precision and spectral spatial accuracy with near-optimal efficiency, and it is explicit, easy to implement and unconditionally stable. In addition, we derive some dynamical properties and conduct a comprehensive investigation, including accuracy confirmation, property verification, interaction of quantized vortices, and dynamics under honeycomb potential.},
+  abstract     = {Abstract. Discrete time dynamic programming has many applications in decision-making and econometrics. In it, one is looking for a so-called value function that obeys a functional equation called the Bellman equation. The difficulty is that the number of variables of the value function can be very high, and a brute-force iteration of the Bellman equation is not feasible. Some authors solve this problem with deep neural networks, which have disadvantages. In this paper, we propose to handle the (sampled) value function in terms of a tensor train in a rectangular grid. Two novel techniques for the function interpolation were proposed. The decomposition has to be repeated in each Bellman iteration. Since the number of the tensor samples is still astronomically large, we propose to decompose the tensor using the TT-cross technique which only uses a fraction of the tensor elements. In this way, it is possible to find approximate solutions to the problem in dimensions where the traditional methods fail. Next, we propose a smoothing operation that may improve the convergence and a novel way of computing the approximation error and estimating the time when the iteration should be halted. The method’s performance is demonstrated in the example of the linear quadratic controller, where the ideal solution is known as the ground truth. Next, the proposed technique is applied to the problem of active fault detection, and its performance is compared to that of the neural network technique. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/IDM-UWB/AFD-SIAM and in the supplementary material (AFD-SIAM-main.zip [53.4 KB]).},
   archive      = {J_SISC},
-  author       = {Xin Liu and Yong Zhang},
-  doi          = {10.1137/24M1716069},
+  author       = {Petr Tichavský and Ondřej Straka and Ivo Punčochář},
+  doi          = {10.1137/24M1672341},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1077-B1103},
+  month        = {12},
+  number       = {6},
+  pages        = {A3161--A3184},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {An efficient high-order compact splitting spectral method for dipolar bose-einstein condensates with arbitrary-angle rotation},
+  title        = {Discrete time dynamic programming using tensor trains},
   volume       = {47},
   year         = {2025},
 }
@@ -344,20 +344,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Model order reduction for seismic applications. <em>SISC</em>, <em>47</em>(5), B1045-B1076. (<a href='https://doi.org/10.1137/24M1667737'>www</a>)
+(2025). Parallel-in-time solution of scalar nonlinear conservation laws. <em>SISC</em>, <em>47</em>(6), A3134--A3160. (<a href='https://doi.org/10.1137/24M1630268'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. In this paper, we propose a model order reduction approach to speed up the computation of seismograms, i.e., the solution of the seismic wave equation evaluated at a receiver location, for different model parameters. This is highly relevant for seismic applications, such as full waveform inversion, seismic tomography, or monitoring tools of seismicity, that are computationally challenging, as the discretized (forward) model often has a huge number of unknowns and needs to be solved many times for different model parameters. Our approach achieves a reduction of the unknowns by a factor of approximately 1000 for various numerical experiments for a two-dimensional subsurface model of Groningen, the Netherlands (a region known for its seismic activity), even if the (known) wave speeds of the subsurface are relatively varied. Moreover, when using multiple cores to construct the reduced model, we can approximate the (time domain) seismogram in a lower wall-clock time than an implicit Newmark-beta method. To realize this reduction, we exploit the fact that seismograms are low-pass filtered for the observed seismic events. We thus consider the Laplace-transformed problem in the frequency domain and implicitly restrict ourselves to the frequency range of interest by adjusting the parameters of a source function, which is a popular model in computational seismology for the temporal response of an earthquake. Therefore, we can avoid the high frequencies that would require many reduced basis functions to reach the desired accuracy and generally make the reduced order approximation of wave problems challenging. Instead, we can prove for our ansatz that for a fixed subsurface model, the reduced order approximation converges exponentially fast in the frequency range of interest in the Laplace domain. We build the reduced model from solutions of the Laplace-transformed problem via a (proper orthogonal decomposition-)greedy algorithm targeting the construction of the reduced model to the time domain seismograms; the latter is achieved by using an a posteriori error estimator that does not require computing any time domain counterparts. Finally, we show that we obtain a stable reduced model, thus overcoming the challenge that standard model reduction approaches do not necessarily yield a stable reduced model for wave problems. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://doi.org/10.5281/zenodo.15033159 and in the supplementary materials (M166773_SM.pdf [653KB]).},
+  abstract     = {Abstract. We consider the parallel-in-time solution of scalar nonlinear conservation laws in one spatial dimension. The equations are discretized in space with a conservative finite-volume method using weighted essentially nonoscillatory (WENO) reconstructions, and in time with high-order explicit Runge–Kutta methods. The solution of the global, discretized space-time problem is sought via a nonlinear iteration that uses a novel linearization strategy in cases of nondifferentiable equations. Under certain choices of discretization and algorithmic parameters, the nonlinear iteration coincides with Newton’s method, although, more generally, it is a preconditioned residual correction scheme. At each nonlinear iteration, the linearized problem takes the form of a certain discretization of a linear conservation law over the space-time domain in question. An approximate parallel-in-time solution of the linearized problem is computed with a single multigrid reduction-in-time (MGRIT) iteration; however, any other effective parallel-in-time method could be used in its place. The MGRIT iteration employs a novel coarse-grid operator that is a modified conservative semi-Lagrangian discretization and generalizes those we have developed previously for nonconservative scalar linear hyperbolic problems. Numerical tests are performed for the inviscid Burgers and Buckley–Leverett equations. For many test problems, the solver converges in just a handful of iterations with a convergence rate independent of mesh resolution, including problems with (interacting) shocks and rarefactions. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/okrzysik/pit-nonlinear-hyperbolic-github and in the supplementary materials (pit-nonlinear-hyperbolic-master.zip [35.6MB], M163026_SM_1.pdf [12.3MB]).},
   archive      = {J_SISC},
-  author       = {Rhys Hawkins and Muhammad Hamza Khalid and Matthias Schlottbom and Kathrin Smetana},
-  doi          = {10.1137/24M1667737},
+  author       = {O. A. Krzysik and H. De Sterck and R. D. Falgout and J. B. Schroder},
+  doi          = {10.1137/24M1630268},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1045-B1076},
+  month        = {12},
+  number       = {6},
+  pages        = {A3134--A3160},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Model order reduction for seismic applications},
+  title        = {Parallel-in-time solution of scalar nonlinear conservation laws},
   volume       = {47},
   year         = {2025},
 }
@@ -365,20 +365,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A canonical gauge for computing of eigenpairs of the magnetic schrödinger operator. <em>SISC</em>, <em>47</em>(5), B1026-B1044. (<a href='https://doi.org/10.1137/24M1692228'>www</a>)
+(2025). An efficient asymptotic-preserving scheme for the boltzmann mixture with disparate mass. <em>SISC</em>, <em>47</em>(6), A3108--A3133. (<a href='https://doi.org/10.1137/24M1715222'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. We consider the eigenvalue problem for the magnetic Schrödinger operator and take advantage of a property called gauge invariance to transform the given problem into an equivalent problem that is more amenable to numerical approximation. More specifically, we propose a canonical magnetic gauge that can be computed by solving a Poisson problem that yields a new operator having the same spectrum but eigenvectors that are less oscillatory. Extensive numerical tests demonstrate that accurate computation of eigenpairs can be done more efficiently and stably with the canonical magnetic gauge. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/Julieusa/A-Canonical-Gauge-for-Computing-of-Eigenpairs-of-the-Magnetic-Schr-dinger-Operator/tree/main and in the supplementary materials (A-Canonical-Gauge-for-Computing-of-Eigenpairs-of-the-Magnetic-Schr-dinger-Operator-main.zip [34KB]).},
+  abstract     = {Abstract. In this paper, we develop and implement an efficient asymptotic-preserving (AP) scheme to solve the gas mixture of Boltzmann equations under the disparate mass scaling relevant to the so-called epochal relaxation phenomenon. The disparity in molecular masses, ranging across several orders of magnitude, leads to significant challenges in both the evaluation of collision operators and the designing of time-stepping schemes to capture the multiscale nature of the dynamics. A direct implementation of the spectral method faces prohibitive computational costs as the mass ratio increases due to the need to resolve vastly different thermal velocities. Unlike [I. M. Gamba, S. Jin, and L. Liu, Commun. Math. Sci., 17 (2019), pp. 1257–1289], we propose an alternative approach based on proper truncation of asymptotic expansions of the collision operators, which significantly reduces the computational complexity and works well for small . By incorporating the separation of three time scales in the model’s relaxation process [P. Degond and B. Lucquin-Desreux, Math. Models Methods Appl. Sci., 6 (1996), pp. 405–436], we design an AP scheme that captures the specific dynamics of the disparate mass model while maintaining computational efficiency. Numerical experiments demonstrate the effectiveness of the proposed scheme in handling large mass ratios of heavy and light species, as well as capturing the epochal relaxation phenomenon.},
   archive      = {J_SISC},
-  author       = {Jeffrey S. Ovall and Li Zhu},
-  doi          = {10.1137/24M1692228},
+  author       = {Zhen Hao and Ning Jiang and Liu Liu},
+  doi          = {10.1137/24M1715222},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1026-B1044},
+  month        = {12},
+  number       = {6},
+  pages        = {A3108--A3133},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A canonical gauge for computing of eigenpairs of the magnetic schrödinger operator},
+  title        = {An efficient asymptotic-preserving scheme for the boltzmann mixture with disparate mass},
   volume       = {47},
   year         = {2025},
 }
@@ -386,587 +386,20 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallel computation of the phonon boltzmann transport equation for simulation of frequency domain thermo-reflectance (FDTR) experiments. <em>SISC</em>, <em>47</em>(5), B1001-B1025. (<a href='https://doi.org/10.1137/24M1664186'>www</a>)
+(2025). Empirical sparse regression on quadratic manifolds. <em>SISC</em>, <em>47</em>(6), A3085--A3107. (<a href='https://doi.org/10.1137/24M1717270'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abstract. The phonon Boltzmann Transport Equation (BTE) is the most appropriate model for extracting thermal properties of semiconductors from state-of-the-art frequency-domain thermo-reflectance (FDTR) experimental data. However, solving the BTE is computationally expensive because of its high-dimensionality, resulting in prohibitive time-to-solution. Scalable parallelization of the BTE solver that can avail supercomputing resources is desirable. We developed an adaptive parallelization strategy for the implicit solution of the multidimensional phonon BTE in the time domain. This adaptive method minimizes load imbalance and unnecessary computations in previously used band and cell-based partitioning schemes, achieved an average speedup of compared to the nonadaptive counterpart, and maintained strong scalability at cores. This new solver was used to simulate an FDTR experiment. The results (phase lag between the probe and pulse laser signals) are validated against experimental measurements and show good agreement. Our developed strategies can be applied to other computationally challenging problems constrained by limited parallelism.},
+  abstract     = {Abstract. Approximating field variables and data vectors from sparse samples is a key challenge in computational science. Widely used methods such as gappy proper orthogonal decomposition and empirical interpolation rely on linear approximation spaces, limiting their effectiveness for data representing transport-dominated and wave-like dynamics. To address this limitation, we introduce quadratic manifold sparse regression, which trains quadratic manifolds with a sparse greedy method and computes approximations on the manifold through novel nonlinear projections of sparse samples. The nonlinear approximations obtained with quadratic manifold sparse regression achieve orders of magnitude higher accuracies than linear methods on data describing transport-dominated dynamics in numerical experiments.},
   archive      = {J_SISC},
-  author       = {Han D. Tran and Siddharth Saurav and Sandip Mazumder and P. Sadayappan and Hari Sundar},
-  doi          = {10.1137/24M1664186},
+  author       = {Paul Schwerdtner and Serkan Gugercin and Benjamin Peherstorfer},
+  doi          = {10.1137/24M1717270},
   journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {B1001-B1025},
+  month        = {12},
+  number       = {6},
+  pages        = {A3085--A3107},
   shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Parallel computation of the phonon boltzmann transport equation for simulation of frequency domain thermo-reflectance (FDTR) experiments},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Erratum: Spectral analysis of implicit \({s}\)-stage block Runge–Kutta preconditioners: Erratum. <em>SISC</em>, <em>47</em>(5), A3082-A3083. (<a href='https://doi.org/10.1137/25M172848X'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. This is an erratum for the paper by M. J. Gander and M. Outrata “Spectral analysis of implicit -stage block Runge–Kutta preconditioners” [SIAM J. Sci. Comput., 46 (2024), pp. A2047–2072].},
-  archive      = {J_SISC},
-  author       = {Martin J. Gander and Michal Outrata},
-  doi          = {10.1137/25M172848X},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A3082-A3083},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Erratum: Spectral analysis of implicit \({s}\)-stage block Runge–Kutta preconditioners: Erratum},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A new algorithm for computing the exponential of a block triangular matrix. <em>SISC</em>, <em>47</em>(5), A3064-A3081. (<a href='https://doi.org/10.1137/24M1699747'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. The exponential of block triangular matrices arises in a wide range of scientific computing applications, including exponential integrators for solving systems of ODEs, Hamiltonian systems in control theory, sensitivity analysis, and option pricing in finance. We propose a novel algorithm exploiting the block triangular structure for simultaneously computing the exponentials of the diagonal blocks and the off-diagonal block of the matrix exponential without direct involvement of the full block matrix in the computations. This approach generalizes the work of Al-Mohy and Higham [SIAM J. Matrix Anal. Appl., 30 (2009), pp. 1639–1657] on the Fréchet derivative of the matrix exponential. The generalization is established through a linear operator framework, facilitating efficient evaluation schemes and rigorous backward error analysis. The algorithm employs the scaling and squaring method using diagonal Padé approximants with algorithmic parameters selected based on the backward error analysis. A key feature is that the selection of the scaling parameter relies solely on the maximal norm of the diagonal blocks with no dependence on the norm of the off-diagonal block. Numerical experiments confirm that the proposed algorithm consistently outperforms existing algorithms in both accuracy and efficiency, making it a preferred choice for computing the matrix exponential of block triangular matrices.},
-  archive      = {J_SISC},
-  author       = {Awad H. Al-Mohy},
-  doi          = {10.1137/24M1699747},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A3064-A3081},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A new algorithm for computing the exponential of a block triangular matrix},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multiscale scattered data analysis in samplet coordinates. <em>SISC</em>, <em>47</em>(5), A3038-A3063. (<a href='https://doi.org/10.1137/24M1696305'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We study multiscale scattered data interpolation schemes for globally supported radial basis functions with focus on the Matérn class. The multiscale approximation is constructed through a sequence of residual corrections, where radial basis functions with different lengthscale parameters are combined to capture varying levels of detail. We prove that the condition numbers of the diagonal blocks of the corresponding multiscale system remain bounded independently of the particular level, allowing us to use an iterative solver with a bounded number of iterations for the numerical solution. Employing an appropriate diagonal scaling, the multiscale system becomes well-conditioned. We exploit this fact to derive a general error estimate bounding the consistency error issuing from a numerical approximation of the multiscale system. To apply the multiscale approach to large data sets, we suggest representing each level of the multiscale system in samplet coordinates. Samplets are localized, discrete signed measures exhibiting vanishing moments and allow for the sparse approximation of generalized Vandermonde matrices issuing from a vast class of radial basis functions. Given a quasi-uniform set of data sites, and local approximation spaces with exponentially decreasing dimension, the samplet compressed multiscale system can be assembled with cost . The overall cost of the proposed approach is . The theoretical findings are accompanied by extensive numerical studies in two and three spatial dimensions.},
-  archive      = {J_SISC},
-  author       = {Sara Avesani and Rüdiger Kempf and Michael Multerer and Holger Wendland},
-  doi          = {10.1137/24M1696305},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A3038-A3063},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Multiscale scattered data analysis in samplet coordinates},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Information worth and assimilation of binary data. <em>SISC</em>, <em>47</em>(5), A3017-A3037. (<a href='https://doi.org/10.1137/24M1720159'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. Many sensors report observations of a continuous quantity in a binary form. Estimation of system states and parameters from binary observations is challenging for two reasons. First, binary observations have lower information content than their real-valued counterparts, which might hinder the system’s identifiability. Second, the discontinuous nature of binary observation poses a challenge to variational data assimilation methods. We introduce metrics to quantify the nonidentifiability in a dynamic system with binary observations and demonstrate that such a system is almost surely nonidentifiable. We also demonstrate that binary observations might play a crucial role in reducing the predictive uncertainty of a model with uncertain parameters and partial observations, thus providing valuable information for the estimation of system states. We propose two approaches to address the challenges posed by the discontinuity of binary observations in estimation via variational methods: a constrained optimization formulation and an unconstrained optimization formulation. We illustrate the results using an in-host virus dynamics and immune response model for the SARS-CoV-2 (COVID-19) virus.},
-  archive      = {J_SISC},
-  author       = {Apoorv Srivastava and Wei Kang and Daniel M. Tartakovsky},
-  doi          = {10.1137/24M1720159},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A3017-A3037},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Information worth and assimilation of binary data},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Hybrid high-order approximations of div-curl systems on domains with general topology. <em>SISC</em>, <em>47</em>(5), A2988-A3016. (<a href='https://doi.org/10.1137/25M1744356'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We devise and analyze hybrid polyhedral methods of arbitrary order for the approximation of div-curl systems on three-dimensional domains featuring nontrivial topology. The div-curl systems we are interested in stem from magnetostatics, and can either be first-order (field formulation) or second-order (vector potential formulation). The well-posedness of the resulting discrete problems essentially hinges on recently established, topologically generic, hybrid versions of the (first and second) Weber inequalities. Our error analysis covers the case of regular solutions. Leveraging (co)homology computation techniques from the literature, we perform an in-depth numerical assessment of our approach, covering, in particular, the case of non-simply connected domains. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://gitlab.inria.fr/simlemai/paraskel and in the supplementary materials (paraskel-master.zip [526 KB]).},
-  archive      = {J_SISC},
-  author       = {Jérémy Dalphin and Jean-Pierre Ducreux and Simon Lemaire and Silvano Pitassi},
-  doi          = {10.1137/25M1744356},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2988-A3016},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Hybrid high-order approximations of div-curl systems on domains with general topology},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Deflation techniques for finding multiple local minima of a nonlinear least squares problem. <em>SISC</em>, <em>47</em>(5), A2963-A2987. (<a href='https://doi.org/10.1137/24M1695191'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. In this paper we generalize the technique of deflation to define two new methods to systematically find many local minima of a nonlinear least squares problem. The methods are based on the Gauss–Newton algorithm, and as such do not require the calculation of a Hessian matrix. They also require fewer deflations than for applying the deflated Newton method on the first order optimality conditions, as the latter finds all stationary points, not just local minima. One application of interest covered in this paper is the inverse eigenvalue problem (IEP) associated with the modelling of spectroscopic data of relevance to the physical and chemical sciences. Open source MATLAB code is provided at https://github.com/AlbanBloorRiley/DeflatedGaussNewton. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/AlbanBloorRiley/DeflatedGaussNewton and in the supplementary materials (DeflatedGaussNewton-main.zip [29.2KB]).},
-  archive      = {J_SISC},
-  author       = {Alban Bloor Riley and Marcus Webb and Michael L. Baker},
-  doi          = {10.1137/24M1695191},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2963-A2987},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Deflation techniques for finding multiple local minima of a nonlinear least squares problem},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). On a class of multifidelity methods for the semiclassical schrödinger equation with uncertainties. <em>SISC</em>, <em>47</em>(5), A2936-A2962. (<a href='https://doi.org/10.1137/24M1663867'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. In this paper, we study the semiclassical Schrödinger equation with random parameters and develop several robust multifidelity methods. We employ the time-splitting Fourier pseudospectral (TSFP) method for the high-fidelity solver and consider different low-fidelity solvers including the meshless method of frozen Gaussian approximation (FGA) and the level set (LS) method for the semiclassical limit of the Schrödinger equation. With a careful choice of the low-fidelity model, we obtain an error estimate for the bifidelity method. We conduct numerous numerical experiments and validate the accuracy and efficiency of our proposed multifidelity methods by comparing their performance to that of a class of bifidelity and tri-fidelity approximations.},
-  archive      = {J_SISC},
-  author       = {Yiwen Lin and Liu Liu},
-  doi          = {10.1137/24M1663867},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2936-A2962},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {On a class of multifidelity methods for the semiclassical schrödinger equation with uncertainties},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Mixed precision iterative refinement for low-rank matrix and tensor approximations. <em>SISC</em>, <em>47</em>(5), A2906-A2935. (<a href='https://doi.org/10.1137/23M1576992'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We present a new mixed precision algorithm to compute low-rank matrix and tensor approximations, a fundamental task in numerous applications in scientific computing and data analysis. Our algorithm is reminiscent of the iterative refinement framework for linear systems: we first compute a low-rank approximation in low precision and then refine its accuracy by iteratively updating it. We carry out an error analysis of our algorithm which proves that we can reach a high accuracy while performing most of the operations in low precision. We measure the computational cost of the algorithm, which depends on the numerical rank of the input (matrix or tensor) as well as the speed ratio between low and high precision arithmetic. We identify two situations where our method has a strong potential: when the hardware provides fast low precision matrix multiply–accumulate units, and when the numerical rank of the input is small at low accuracy levels. We confirm experimentally the potential of our algorithm for computing various low-rank matrix and tensor decompositions such as SVD, QR, Tucker, hierarchical Tucker, and tensor-train.},
-  archive      = {J_SISC},
-  author       = {Marc Baboulin and Oguz Kaya and Theo Mary and Matthieu Robeyns},
-  doi          = {10.1137/23M1576992},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2906-A2935},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Mixed precision iterative refinement for low-rank matrix and tensor approximations},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Fully guaranteed and computable error bounds on the energy for periodic Kohn–Sham equations with convex density functionals. <em>SISC</em>, <em>47</em>(5), A2881-A2905. (<a href='https://doi.org/10.1137/25M1735676'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. In this article, we derive fully guaranteed error bounds for the energy of convex nonlinear mean-field models. These results apply in particular to Kohn–Sham equations with convex density functionals, which includes the reduced Hartree–Fock (rHF) model, as well as the Kohn–Sham model with exact exchange-density functional (which is unfortunately not explicit and therefore not usable in practice). We then decompose the obtained bounds into two parts, one depending on the chosen discretization and one depending on the number of iterations performed in the self-consistent algorithm used to solve the nonlinear eigenvalue problem, paving the way for adaptive refinement strategies. The accuracy of the bounds is demonstrated on a series of test cases, including a silicon crystal and a hydrogen fluoride molecule simulated with the rHF model and discretized with planewaves. We also show that, although not anymore guaranteed, the error bounds remain very accurate for a silicon crystal simulated with the Kohn–Sham model using nonconvex exchange-correlation functionals of practical interest. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://doi.org/10.18419/darus-4469 and in the supplementary materials (M173567_SM.pdf [287KB], aposteriori_kohn_sham.zip [190MB]).},
-  archive      = {J_SISC},
-  author       = {Andrea Bordignon and Eric Cancès and Geneviève Dusson and Gaspard Kemlin and Rafael Antonio Lainez Reyes and Benjamin Stamm},
-  doi          = {10.1137/25M1735676},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2881-A2905},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Fully guaranteed and computable error bounds on the energy for periodic Kohn–Sham equations with convex density functionals},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Learning stochastic reduced models from data: A nonintrusive approach. <em>SISC</em>, <em>47</em>(5), A2851-A2880. (<a href='https://doi.org/10.1137/24M1679756'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. A nonintrusive model order reduction method for bilinear stochastic differential equations with additive Gaussian noise is proposed. A reduced order model (ROM) is designed in order to approximate the statistical properties of high-dimensional systems. The drift and diffusion coefficients of the ROM are inferred from state observations by solving appropriate least-squares problems. The closeness of the ROM obtained by the presented approach to the intrusive ROM obtained by the proper orthogonal decomposition (POD) method is investigated. Two generalizations of the snapshot-based dominant subspace construction to the stochastic case are presented. Numerical experiments are provided to compare the developed approach to POD. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/JMNicolaus/OperatorInference_for_SDEs and in the supplementary materials (OperatorInference_for_SDEs-main.zip [73.5KB]).},
-  archive      = {J_SISC},
-  author       = {M. A. Freitag and J. M. Nicolaus and M. Redmann},
-  doi          = {10.1137/24M1679756},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2851-A2880},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Learning stochastic reduced models from data: A nonintrusive approach},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A preconditioner for spectral collocation. <em>SISC</em>, <em>47</em>(5), A2828-A2850. (<a href='https://doi.org/10.1137/24M1712539'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We develop a preconditioner for spectral collocation discretizations of ordinary differential equations. The preconditioner approximates integration, as a convolution with the unit step function, yielding a lower triangular matrix of quadrature weights. Each column of the matrix is constant below the diagonal, making it possible to approximate the entirety of linear integration operators (variable coefficients included) with a mapping whose inverse requires operations to apply, where is the number of collocation nodes. We set the collocation nodes to the Chebyshev points, in which case the preconditioner provides efficient iterative solutions that scale beyond one million nodes. We show that the preconditioner approximates the spectral integration matrix to an accuracy of , which implies that the eigenvalues of the preconditioned system converge to 1.},
-  archive      = {J_SISC},
-  author       = {Aurya Javeed and Drew P. Kouri and Denis Ridzal and John D. Steinman},
-  doi          = {10.1137/24M1712539},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2828-A2850},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A preconditioner for spectral collocation},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Randomized sketched TT-GMRES for linear systems with tensor structure. <em>SISC</em>, <em>47</em>(5), A2801-A2827. (<a href='https://doi.org/10.1137/24M1694999'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. In the past decade, tensors have shown their potential as valuable tools for various tasks in numerical linear algebra. While most of the research has been focusing on how to compress a given tensor in order to maintain information as well as reducing the storage demand for its allocation, the solution of linear tensor equations is a less explored venue. Even if many of the routines available in the literature are based on alternating minimization schemes (ALS), we pursue a different path and utilize Krylov methods instead. The use of Krylov methods in the tensor realm is not new. However, these routines often turn out to be rather expensive in terms of computational cost, and ALS procedures are preferred in practice. We enhance Krylov methods for linear tensor equations with a panel of diverse randomization-based strategies which remarkably increase the efficiency of these solvers, making them competitive with state-of-the-art ALS schemes. The up-to-date randomized approaches we employ range from sketched Krylov methods with incomplete orthogonalization and structured sketching transformations to streaming algorithms for tensor rounding. The promising performance of our new solver for linear tensor equations is demonstrated by many numerical results. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/numpi/tt-sgmres and in the supplementary materials (tt-sgmres-main.zip [25.5KB]).},
-  archive      = {J_SISC},
-  author       = {Alberto Bucci and Davide Palitta and Leonardo Robol},
-  doi          = {10.1137/24M1694999},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2801-A2827},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Randomized sketched TT-GMRES for linear systems with tensor structure},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). On a generalization of wasserstein distance and the beckmann problem to connection graphs. <em>SISC</em>, <em>47</em>(5), A2774-A2800. (<a href='https://doi.org/10.1137/23M1624828'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We propose a model of optimal parallel transport between vector fields on a connection graph, which consists of a weighted graph along with a map from its edges to an orthogonal group. Inspired by the well-known equivalence of 1-Wasserstein distance and minimum cost flows on standard graphs, we consider two versions of this problem: a minimum norm vector-valued flow problem with divergence constraints reflective of the connection structure of the graph, and a modified version which incorporates both quadratic regularization and a relaxation of the divergence constraint. Our theoretical contributions include conditions for feasibility and computation of the Lagrangian dual problem for both problems and duality correspondence for the relaxed-regularized version. Example applications of the model including transport between color images, vector field interpolation, and unsupervised clustering of vector field-valued data (in this case hurricane trajectory data) are also considered.},
-  archive      = {J_SISC},
-  author       = {Sawyer Jack Robertson and Dhruv Kohli and Gal Mishne and Alexander Cloninger},
-  doi          = {10.1137/23M1624828},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2774-A2800},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {On a generalization of wasserstein distance and the beckmann problem to connection graphs},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Sub-ODEs simplify taylor series algorithms for ordinary differential equations. <em>SISC</em>, <em>47</em>(5), A2746-A2773. (<a href='https://doi.org/10.1137/24M1716161'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. A Taylor method for solving an ordinary differential equation initial-value problem , computes the Taylor series (TS) of the solution at the current point, truncated to some order, and then advances to the next point by summing the TS with a suitable stepsize. A standard ODE method (e.g., Runge–Kutta) treats function as a black box, but a Taylor solver requires to be preprocessed into a code-list of elementary operations that it interprets as operations on (truncated) TS. The trade-off for this extra work includes arbitrary order, typically enabling much larger stepsizes. For a standard function, such as , this means evaluating , where are TS. The sub-ODE method applies the ODE , obeyed by , to in-line this operation as . This gives economy of implementation: each function that satisfies a simple ODE goes into the “Taylor library” with a few lines of code—not needing a separate recurrence relation, which is the typical approach. Mathematically, however, the use of sub-ODEs generally transforms the original ODE into a differential-algebraic system, making it nontrivial to ensure a sound system of recurrences for Taylor coefficients. We prove that, regardless of how many sub-ODEs are incorporated into , this approach guarantees a sound system. We introduce our sub-ODE-based MATLAB ODE solver and show that its performance compares favorably with solvers from the MATLAB ODE suite.},
-  archive      = {J_SISC},
-  author       = {Nedialko S. Nedialkov and John D. Pryce},
-  doi          = {10.1137/24M1716161},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2746-A2773},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Sub-ODEs simplify taylor series algorithms for ordinary differential equations},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Fourth- and higher-order semi-lagrangian finite volume methods for the two-dimensional advection equation on arbitrarily complex domains. <em>SISC</em>, <em>47</em>(5), A2722-A2745. (<a href='https://doi.org/10.1137/24M171084X'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. To numerically solve the two-dimensional advection equation, we propose a family of fourth- and higher-order semi-Lagrangian finite volume (SLFV) methods that feature (1) fourth-, sixth-, and eighth-order convergence rates, (2) applicability to both regular and irregular domains with arbitrarily complex topology and geometry, (3) ease of handling both zero and nonzero source terms, and (4) the same algorithmic steps for both periodic and incoming penetration conditions. Test results confirm the analysis and demonstrate the accuracy, flexibility, robustness, and excellent conditioning of the proposed SLFV method.},
-  archive      = {J_SISC},
-  author       = {Yunxia Sun and Kaiyi Liang and Yuke Zhu and Zhi Lin and Qinghai Zhang},
-  doi          = {10.1137/24M171084X},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2722-A2745},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Fourth- and higher-order semi-lagrangian finite volume methods for the two-dimensional advection equation on arbitrarily complex domains},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Rational function approximation with normalized positive denominators. <em>SISC</em>, <em>47</em>(5), A2699-A2721. (<a href='https://doi.org/10.1137/24M1632139'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. Recent years have witnessed the introduction and development of extremely fast rational function algorithms. Many ideas in this realm arose from polynomial-based linear-algebraic algorithms. However, polynomial approximation is occasionally ill-suited to specific challenging tasks arising in several situations. Some occasions require maximal efficiency in the number of encoding parameters while retaining the renowned accuracy of polynomial-based approximation. One application comes from promoting empirical pointwise functions to sparse matrix operators. Another is the robust representation of noisy data without overfitting. Rational function approximations provide a simple but flexible alternative (actually a superset), allowing one to capture complex nonlinearities without oscillatory artifacts. However, these come with extra challenges: i) coping with singularities and near singularities arising from a vanishing denominator, and ii) a nonuniqueness owing to the simultaneous renormalization of both numerator and denominator. We, therefore, introduce a new rational function framework using manifestly positive and normalized Bernstein polynomials for the denominator and any traditional polynomial basis (e.g., Chebyshev) for the numerator. While an expressly nonsingular approximation slightly reduces the maximum degree of compression, it keeps all the benefits of rational functions while maintaining the flexibility and robustness of polynomials, especially in noisy data scenarios. We illustrate the relevant aspects of this approach with a series of derivations and computational examples. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/infamoussoap/RationalFunctionApproximation and in the supplementary materials (RationalFunctionApproximation-main.zip [3.03MB]).},
-  archive      = {J_SISC},
-  author       = {James Chok and Geoffrey Vasil},
-  doi          = {10.1137/24M1632139},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2699-A2721},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Rational function approximation with normalized positive denominators},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). APTT: Accuracy-preserved tensor-train method for the boltzmann-BGK equation. <em>SISC</em>, <em>47</em>(5), A2672-A2698. (<a href='https://doi.org/10.1137/24M1677204'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. Solving the Boltzmann-BGK equation with traditional numerical methods suffers from high computational and memory costs due to the curse of dimensionality. In this paper, we propose a novel accuracy-preserved tensor-train (APTT) method to efficiently solve the Boltzmann-BGK equation. A second-order finite difference scheme is applied to discretize the Boltzmann-BGK equation, resulting in a tensor algebraic system at each time step. Based on the low-rank TT representation, the tensor algebraic system is then approximated as a TT-based low-rank system, which is efficiently solved using the TT-modified alternating least-squares (TT-MALS) solver. Thanks to the low-rank TT representation, the APTT method can significantly reduce the computational and memory costs compared to traditional numerical methods. Theoretical analysis demonstrates that the APTT method maintains the same convergence rate as that of the finite difference scheme. The convergence rate and efficiency of the APTT method are validated by several benchmark test cases.},
-  archive      = {J_SISC},
-  author       = {Zhitao Zhu and Chuanfu Xiao and Kejun Tang and Jizu Huang and Chao Yang},
-  doi          = {10.1137/24M1677204},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2672-A2698},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {APTT: Accuracy-preserved tensor-train method for the boltzmann-BGK equation},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An implicit well-posed lagrangian scheme for nonviscous compressible fluids in high dimension. <em>SISC</em>, <em>47</em>(5), A2636-A2671. (<a href='https://doi.org/10.1137/24M1644559'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We construct an implicit first-order Lagrangian scheme to approximate inviscid compressible gas dynamics in dimension . Our main theoretical result is that this finite volume scheme is unconditionally stable with regard to the time step, which means that solutions provided by the scheme ensure positivity of density and growth of physical entropy for all . We detail the issues related to the displacement of the mesh in dimension . Finally, we illustrate the theoretical results with basic tests.},
-  archive      = {J_SISC},
-  author       = {Stéphane Del Pino and Bruno Després and Alexiane Plessier},
-  doi          = {10.1137/24M1644559},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2636-A2671},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {An implicit well-posed lagrangian scheme for nonviscous compressible fluids in high dimension},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A new class of Runge–Kutta methods for nonlinearly partitioned systems. <em>SISC</em>, <em>47</em>(5), A2609-A2635. (<a href='https://doi.org/10.1137/24M1638501'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. This work introduces a new class of Runge–Kutta methods for solving nonlinearly partitioned initial value problems. These new methods, named nonlinearly partitioned Runge–Kutta (NPRK), generalize existing additive and component-partitioned Runge–Kutta methods, and allow one to distribute different types of implicitness within nonlinear terms. The paper introduces the NPRK framework and discusses order conditions, linear stability, and the derivation of implicit-explicit and implicit-implicit NPRK integrators. The paper concludes with numerical experiments that demonstrate the utility of NPRK methods for solving viscous Burgers’ and the gray thermal radiation transport equations.},
-  archive      = {J_SISC},
-  author       = {Tommaso Buvoli and Ben S. Southworth},
-  doi          = {10.1137/24M1638501},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2609-A2635},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A new class of Runge–Kutta methods for nonlinearly partitioned systems},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Stable derivative free gaussian mixture variational inference for bayesian inverse problems. <em>SISC</em>, <em>47</em>(5), A2583-A2608. (<a href='https://doi.org/10.1137/25M1722548'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. This paper is concerned with the approximation of probability distributions known up to normalization constants, with a focus on Bayesian inference for large-scale inverse problems in scientific computing. In this context, key challenges include costly repeated evaluations of forward models, multimodality, and inaccessible gradients for the forward model. To address them, we develop a variational inference framework that combines the Fisher–Rao natural gradient with specialized quadrature rules to enable derivative free updates of Gaussian mixture variational families. The resulting method, termed derivative free Gaussian mixture variational inference (DF-GMVI), guarantees covariance positivity and affine invariance, offering a stable and efficient framework for approximating complex posterior distributions. The effectiveness of DF-GMVI is demonstrated through numerical experiments on challenging scenarios, including distributions with multiple modes, infinitely many modes, and curved modes in spaces with up to 100 dimensions. The method’s practicality is further demonstrated in a large-scale application, where it successfully recovers the initial conditions of the Navier–Stokes equations from solution data at positive times. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/PKU-CMEGroup/InverseProblems.jl and in the supplementary materials (InverseProblems.jl-master.zip [61.1MB], Review_on_Gaussian_Mixture_Natural_Gradient_Flow.pdf [281KB]).},
-  archive      = {J_SISC},
-  author       = {Baojun Che and Yifan Chen and Zhenghao Huan and Daniel Zhengyu Huang and Weijie Wang},
-  doi          = {10.1137/25M1722548},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2583-A2608},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Stable derivative free gaussian mixture variational inference for bayesian inverse problems},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A new rational approximation algorithm via the empirical interpolation method. <em>SISC</em>, <em>47</em>(5), A2559-A2582. (<a href='https://doi.org/10.1137/24M1674832'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We present a rational empirical interpolation method for interpolating a family of parametrized functions to rational polynomials with invariant poles, leading to efficient numerical algorithms for space-fractional differential equations, parameter-robust preconditioning, and evaluation of matrix functions. Compared to classical rational approximation algorithms, the proposed method is more efficient for approximating a large number of target functions. In addition, we derive a convergence estimate of our rational approximation algorithm using the metric entropy numbers. Numerical experiments are included to demonstrate the effectiveness of the proposed method. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/yuwenli925/REIM and in the supplementary materials (REIM-main.zip [27.5KB]).},
-  archive      = {J_SISC},
-  author       = {Aidi Li and Yuwen Li},
-  doi          = {10.1137/24M1674832},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2559-A2582},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A new rational approximation algorithm via the empirical interpolation method},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A stabilized arbitrary Lagrangian–Eulerian sliding interface method for fluid-structure interaction with a rotating rigid structure. <em>SISC</em>, <em>47</em>(5), A2533-A2558. (<a href='https://doi.org/10.1137/24M1695919'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We introduce a novel sliding interface formulation for fluid-structure interaction (FSI) between a rotating rigid structure and incompressible fluid, improving existing methodologies with a skew-symmetric Nitsche’s stabilization term applied on an artificial sliding interface alongside a rotational arbitrary Lagrangian–Eulerian framework. This innovative approach not only preserves the energy-dissipating property at the continuous level but also provides a robust foundation for further advancements in FSI modeling. Our methodology includes a first-order full discretization that maintains these critical energy-dissipating properties at the discrete level, ensuring numerical stability and accuracy. While prior contributions such as the original sliding interface method introduced by Bazilevs and Hughes (Comput. Mech., 43(1):143–150, 2008) have been significant, theoretical analyses such as the inf-sup condition on nonmatching meshes have gone largely unaddressed. We fill this gap by proving the inf-sup condition within the context of the isoparametric finite element method (FEM), where meshes are not only nonmatching but also overlapping, thus extending the applicability and robustness of our approach. Leveraging this inf-sup condition along with the inherent energy-dissipating properties, we establish the unique solvability of the fully discrete scheme. Through extensive numerical experiments, we illustrate the convergence, efficiency, and energy-dissipating property of the proposed method.},
-  archive      = {J_SISC},
-  author       = {Yali Gao and Jiashun Hu and Buyang Li},
-  doi          = {10.1137/24M1695919},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2533-A2558},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A stabilized arbitrary Lagrangian–Eulerian sliding interface method for fluid-structure interaction with a rotating rigid structure},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An algebraic multigrid method for oseen problems. <em>SISC</em>, <em>47</em>(5), A2506-A2532. (<a href='https://doi.org/10.1137/24M1704488'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We consider the numerical solution of discrete Oseen problems. We focus on the recently proposed transform-then-solve approach, which amounts to first applying a specific algebraic transformation to the linear system of equations arising from the discretization and then solving the transformed system with an algebraic multigrid method. Promising results have been previously obtained with a two-grid variant, and here we bring two key improvements to make the approach robust in a multilevel setting. For a model problem with a constant convection field, it is shown, in a local Fourier analysis setting, that the two-grid method is convergent at any level of the hierarchy, with bounds that are independent of both the mesh size and the Reynolds number. Numerical results with a K-cycle multigrid scheme confirm the theoretical expectations for constant coefficient problems. For problems with variable convective flow, the method appears also robust with grid independence convergence, although a mild dependency with respect to the Reynolds number shows up at very low viscosity in driven cavity problems. The method is based on point coarsening and therefore, besides the system matrix, requires knowing, for each discrete unknown, which grid point it is associated with.},
-  archive      = {J_SISC},
-  author       = {Yvan Notay},
-  doi          = {10.1137/24M1704488},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2506-A2532},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {An algebraic multigrid method for oseen problems},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Accelerated gradient flows for large bending deformations of nonlinear plates. <em>SISC</em>, <em>47</em>(5), A2481-A2505. (<a href='https://doi.org/10.1137/24M1719049'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. In this paper, we propose novel algorithms integrated projection-free techniques with accelerated gradient flows to minimize bending energies for nonlinear plates with nonconvex metric constraints. We discuss the stability and constraint consistency in a semidiscrete setting for both bilayer and prestrained plates. The proposed algorithms exhibit substantial improvements in efficiency and accuracy compared to the current state-of-the-art methods based on gradient flows.},
-  archive      = {J_SISC},
-  author       = {Guozhi Dong and Hailong Guo and Shuo Yang},
-  doi          = {10.1137/24M1719049},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2481-A2505},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Accelerated gradient flows for large bending deformations of nonlinear plates},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A gradient flow model for ground state calculations in wigner formalism based on density functional theory. <em>SISC</em>, <em>47</em>(5), A2456-A2480. (<a href='https://doi.org/10.1137/24M1698663'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. In this paper, a gradient flow model is presented for conducting ground state calculations in the Wigner formalism of many-body systems in the framework of density functional theory. Theoretically, an energy functional in the Wigner formalism is proposed, based on which the minimization problem is designed and analyzed for the ground state, providing a new perspective for ground state calculations of the Wigner function. Employing density functional theory, a gradient flow model is built upon the energy functional to obtain the ground state Wigner function representing the entire many-body system. Numerically, a parallelizable algorithm is developed using the operator splitting method and the Fourier spectral collocation method, whose numerical complexity of a single iteration is . Numerical experiments demonstrate the anticipated accuracy, encompassing the one-dimensional system with up to particles and the three-dimensional system with defect, showcasing the potential of our approach to large-scale simulations and computations of systems with defect. To the best of our knowledge, this is the first deterministic method for calculating the ground state Wigner function of the three-dimensional many-body system.},
-  archive      = {J_SISC},
-  author       = {Guanghui Hu and Ruo Li and Hongfei Zhan},
-  doi          = {10.1137/24M1698663},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2456-A2480},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {A gradient flow model for ground state calculations in wigner formalism based on density functional theory},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An augmented lagrangian preconditioner for the control of the Navier–Stokes equations. <em>SISC</em>, <em>47</em>(5), A2431-A2455. (<a href='https://doi.org/10.1137/24M1683354'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We address the solution of the distributed control problem for the steady, incompressible Navier–Stokes equations. We propose an inexact Newton linearization of the optimality conditions. Upon discretization by a finite element scheme, we obtain a sequence of large symmetric linear systems of saddle-point type. We use an augmented Lagrangian-based block triangular preconditioner in combination with the flexible GMRES method at each Newton step. The preconditioner is applied inexactly via a suitable multigrid solver. Numerical experiments indicate that the resulting method appears to be fairly robust with respect to viscosity, mesh size, and the choice of regularization parameter when applied to 2D problems.},
-  archive      = {J_SISC},
-  author       = {Santolo Leveque and Michele Benzi and Patrick E. Farrell},
-  doi          = {10.1137/24M1683354},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2431-A2455},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {An augmented lagrangian preconditioner for the control of the Navier–Stokes equations},
-  volume       = {47},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Coupled input-output dimension reduction: Application to goal-oriented bayesian experimental design and global sensitivity analysis. <em>SISC</em>, <em>47</em>(5), A2403-A2430. (<a href='https://doi.org/10.1137/24M1670421'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Abstract. We introduce a new method to jointly reduce the dimension of the input and output space of a function between high-dimensional spaces. Choosing a reduced input subspace influences which output subspace is relevant and vice versa. Conventional methods focus on reducing either the input or output space, even though both are often reduced simultaneously in practice. Our coupled approach naturally supports goal-oriented dimension reduction, where either an input or output quantity of interest is prescribed. We consider, in particular, goal-oriented sensor placement and goal-oriented sensitivity analysis, which can be viewed as dimension reduction where the most important output or, respectively, input components are chosen. Both applications present difficult combinatorial optimization problems with expensive objectives such as the expected information gain and Sobol’ indices. By optimizing gradient-based bounds, we can determine the most informative sensors and most influential parameters as the largest diagonal entries of some diagnostic matrices, thus bypassing the combinatorial optimization and objective evaluation. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/qchen95/Coupled-input-output-DR and in the Supplementary Materials (Coupled-input-output-DR-master.zip [49.1KB]).},
-  archive      = {J_SISC},
-  author       = {Qiao Chen and Élise Arnaud and Ricardo Baptista and Olivier Zahm},
-  doi          = {10.1137/24M1670421},
-  journal      = {SIAM Journal on Scientific Computing},
-  month        = {10},
-  number       = {5},
-  pages        = {A2403-A2430},
-  shortjournal = {SIAM J. Sci. Comput.},
-  title        = {Coupled input-output dimension reduction: Application to goal-oriented bayesian experimental design and global sensitivity analysis},
+  title        = {Empirical sparse regression on quadratic manifolds},
   volume       = {47},
   year         = {2025},
 }

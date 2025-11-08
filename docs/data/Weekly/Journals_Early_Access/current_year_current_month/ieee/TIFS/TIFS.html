@@ -25,821 +25,365 @@
 </head>
 <body>
 
-<h2 id="tifs">TIFS - 43</h2>
+<h2 id="tifs">TIFS - 19</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Amplifying training data exposure through fine-tuning with pseudo-labeled memberships. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3613882'>www</a>)
+(2025). SRVC: Highly compatible bidirectional self-regulatory virtual channel. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3627850'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Large language models (LLMs) are vulnerable to training data extraction attacks due to data memorization. This paper introduces a novel attack scenario wherein an attacker adversarially fine-tunes pre-trained LLMs to amplify the exposure of the original training data. Unlike prior TDE methods that mainly rely on post-hoc querying or prompt selection to elicit memorized content from a fixed model, our strategy directly alters the model’s parameters to intensify its retention of the pre-training dataset. To achieve this, the attacker needs to collect generated texts that are closely aligned with the pre-training data. However, without knowledge of the actual dataset, quantifying the amount of pre-training data within generated texts is challenging. To address this, we propose the use of pseudo-labels for these generated texts, leveraging membership approximations indicated by machine-generated probabilities from the target LLMusing DetectGPT. We subsequently fine-tune the LLM via reinforcement learning from human feedback (RLHF) to favor generations with higher likelihoods of originating from the pre-training data, based on these membership probabilities. Our empirical findings indicate a remarkable outcome: LLMs with over 1B parameters exhibit a four to eight-fold increase in training data exposure. We discuss potential mitigations and suggest future research directions.},
+  abstract     = {The Payment Channel Network (PCN) provides an off-chain payment model to alleviate the problem of limited blockchain throughput. However, PCNs typically rely on third-party regulators to monitor the blockchain states continuously to prevent honest users’ funds from being lost, which increases user overhead and compromises transaction privacy. To overcome these challenges, we propose a highly compatible bidirectional Self-Regulatory Virtual Channel (SRVC) that eliminates third-party reliance while enhancing privacy and reducing overhead. By leveraging absolute time locks, we establish a self-regulatory mechanism where users only need to monitor the blockchain online for a short time window to ensure the security of their funds, effectively removing the need for third-party monitoring. Additionally, we introduce a novel payment paradigm and a punishment mechanism based on adaptor signatures across underlying channels to ensure transaction privacy and security, while also reducing transaction overhead. We formalize the security properties of SRVC as an ideal functionality and prove that SRVC is secure in the Universal Composability framework. Performance analysis demonstrates that, compared to other virtual channel protocols based on Lightning channels, SRVC reduces communication overhead by approximately 46.8% in the open operation and 62.9% in the update operation. In high-concurrency payment scenarios, SRVC further decreases communication overhead by about 57.8% and reduces the number of transactions by around 52.8% compared to Sleepy Channel’s Virtual Channel (SCVC) implementation.},
   archive      = {J_TIFS},
-  author       = {Myunggyo Oh and Hong Eun Ahn and Leo Hyun Park and Taekyoung Kwon},
-  doi          = {10.1109/TIFS.2025.3613882},
+  author       = {Yang Xu and Yaqin Liu and Songyou Xie and Yu Long and Wei Liang and Yaoxue Zhang},
+  doi          = {10.1109/TIFS.2025.3627850},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Amplifying training data exposure through fine-tuning with pseudo-labeled memberships},
+  title        = {SRVC: Highly compatible bidirectional self-regulatory virtual channel},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). SauronEyes: Disentangling voluminous logs to unveil camouflaged attack intentions. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3618381'>www</a>)
+(2025). Reinforcement learning-based efficient multi-exit neural networks against side-channel attacks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3628121'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Advanced Persistent Threats (APTs) pose escalating risks to large enterprises and institutions. While current research has predominantly focused on data source analysis for identifying known attack patterns or anomalous behaviors, three critical challenges remain inadequately addressed: 1) APTs demonstrate sophisticated concealment capabilities, embedding malicious operations within legitimate business activities; 2) The sparse nature of APT attacks leads to low-frequency malicious activities that prove exceptionally challenging to detect within massive log datasets; 3) APTs employ multi-stage attack chains, whereas existing solutions exhibit limitations in reconstructing complete attack pathways to enable effective forensic analysis. In this paper, we address the detrimental effects of the sparsity of malevolent interactions and attack intent camouflaging on anomaly detection by introducing SAURONEYES, the pioneering APT detection system tailored to resolve these challenges. SAURONEYES constructs audit logs into both knowledge and interaction views, disentangling these to learn representations through graph learning enhanced with an attention-based neighbor allocation mechanism. Additionally, we incorporate self-supervised contrastive learning to discern the subtle similarities and distinctions among disentangled samples, facilitating a deeper understanding of the inherent structures within system interactions. SAURONEYES thus boasts heightened sensitivity and granular detection capabilities. Finally, SAURONEYES reconstructs the attack chain at the node level and presents an attack-chain that is more accessible for security analysis. Our evaluations in real-world scenarios and simulated attack environments demonstrate that SAURONEYES achieves outstanding accuracy, with an average detection rate of 99% and a false positive rate below 0.1%.},
+  abstract     = {Distributed multi-exit neural networks (MeNNs) enable mobile devices to handle complex tasks such as image classification, but their performance is highly dependent on transmission quality and is therefore vulnerable to side-channel attacks. In this paper, we design a side-channel attack model and propose an efficient inference framework based on the distributed MeNN to resist the designed attack. First, we design an intelligent side-channel attack model, in which the attacker can eavesdrop on the communication channel and use deep reinforcement learning (RL) to predict the early exit decision of each sample. Next, we develop a defense method that employs a hierarchical and multi-agent RL to determine whether to infer locally or offload to a chosen early exit on the server, and to adjust the transmit power accordingly. We further propose a critic-guided safety mechanism that steers local agents away from risky policies that would cause inference failures or severe data leakage. We prove that our framework enforces a strict instantaneous security constraint and asymptotically achieves the optimum by deriving a regret bound. Extensive experiments on several datasets (including CIFAR‑10, CIFAR‑100, STL‑10, EMNIST, FMNIST, and Stanford Cars) show that our method reduces inference latency, improves classification accuracy, and significantly enhances robustness against side-channel attacks, as compared with two benchmarks SCAN and PCE.},
   archive      = {J_TIFS},
-  author       = {Wei Qiao and Weiheng Wu and Song Liu and Teng Li and Yebo Feng and Zehui Wang and Junrong Liu and Bo Jiang and Zhigang Lu and Baoxu Liu},
-  doi          = {10.1109/TIFS.2025.3618381},
+  author       = {Xiaozhen Lu and Zihan Liu and Zhibo Liu and Yanling Bu and Huaiyu Dai},
+  doi          = {10.1109/TIFS.2025.3628121},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {SauronEyes: Disentangling voluminous logs to unveil camouflaged attack intentions},
+  title        = {Reinforcement learning-based efficient multi-exit neural networks against side-channel attacks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Finding more Hints–Improved power analysis attacks on dilithium. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3618387'>www</a>)
+(2025). Regulatable and privacy-preserving blockchain via anomaly detection on private transactions. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3628110'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {CRYSTALS-Dilithium (referred to as Dilithium) is a standard in NIST’s post-quantum cryptography project. However, its design does not include protections against attacks exploiting intermediate data leakage. Since Ravi and Bruinderink introduced schemes to forge Dilithium signatures, numerous works have leveraged power analysis attack to exploit vulnerabilities in Dilithium implementations. In this paper, we revisit previous attacks and identify promising optimization strategies for hints-oriented attacks. In such attacks, an adversary first utilizes side-channel leakage to derive hint equations related to the secret key and then solves for the secret key using these equations. Our new strategy enables each signature to generate more valid hint equations, significantly reducing the number of required signatures for a successful attack. By incorporating machine learning techniques, specifically the Convolutional Neural Network (CNN), we can efficiently detect hint equations with high accuracy. Furthermore, by combining a lattice-based algorithm with hybrid filtering methods, our scheme can further reduce the required number of hint equations. Additionally, our attack method is applicable to Dilithium security levels 2, 3, and 5. For Dilithium-2, the proposed attack successfully recovers the complete secret key even under low Signal-to-Noise Ratio (SNR) conditions, requiring 395, 330, and 305 signatures at SNRs of 0.0167, 0.0210, and 0.0406, respectively.},
+  abstract     = {The recent popularity of cryptocurrencies like Bitcoin and Ethereum has drawn widespread attention to the blockchain technique. In particular, some private cryptocurrencies like Zerocash and Monero enhance privacy protection by concealing the identities of participants and transaction amounts. However, such comprehensive privacy measures present regulatory challenges to malicious activities like money laundering and extortion. Therefore, building a novel blockchain that maintains privacy while supporting regulatory oversight is crucial. In this paper, we propose a regulatable and privacy-preserving blockchain scheme that introduces a decoupled and preparatory regulatory process. It serves as a privacy-preserving first line of defense, enabling the identification of anomalous transactions without compromising the confidentiality of the underlying data. Our approach pioneers a method for anomaly screening on private transactions, mitigating risks without resorting to key escrow or content recovery, thus preserving end-to-end privacy for legitimate users. Initially, we explore suitable transaction features within private blockchains for training machine learning classifiers to detect anomalous behaviors. Subsequently, we customize a privacy-centric classifier employing homomorphic encryption to achieve private computation of anomaly detection without leaking sensitive information from private transaction content. We then construct the zero-knowledge proof for validating the encrypted computation process. Our work pioneers in fully integrating homomorphic encryption with zero-knowledge proof, enabling credible and trustworthy verification of the homomorphic ciphertext computations. Finally, we conduct comprehensive security analysis and experimental simulations. The experimental results demonstrate the efficiency and scalability of our approach.},
   archive      = {J_TIFS},
-  author       = {Yiteng Sun and Tianfu Zhang and Zhuo Huang and Yu Yu and Yan Zhuang and Shuo Sun and Weijia Wang},
-  doi          = {10.1109/TIFS.2025.3618387},
+  author       = {Longyang Yi and Jian Liu and Zhiguo Wan and Kui Ren and Chun Chen},
+  doi          = {10.1109/TIFS.2025.3628110},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Finding more Hints–Improved power analysis attacks on dilithium},
+  title        = {Regulatable and privacy-preserving blockchain via anomaly detection on private transactions},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Patronus: Plug-and-play and near-lossless facial privacy enhancement against reconstruction attacks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3618405'>www</a>)
+(2025). Heimdall: A decentralized access control scheme with time-based secret management and private access policies. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3628480'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Reconstruction attackers can exploit facial features to recover the original user’s face, resulting in user privacy leakage. One new strategy to enhance the “Edge-Cloud” face recognition system’s privacy is to add adversarial perturbations to facial features, preventing the attackers from high-quality user image recovery. However, the existing works following this strategy suffer from unacceptable damage to face recognition accuracy. Achieving robust privacy enhancement and face recognition accuracy simultaneously is still challenging. To tackle this challenge, we propose an adversarial perturbation-based plug-and-play privacy-enhancing method (Patronus) with robustness against face image reconstruction attacks and near-lossless face recognition performance. The key insight is derived from our observation that the feature distance between two face images of the same person is significantly lower than the threshold set in the face recognition system. This leaves room for adding adversarial perturbations to the facial features without compromising face recognition accuracy. Our strategy limits the amount of adversarial perturbations in a fine-grained manner to ensure that they are within the range of not damaging face recognition accuracy. Our evaluation shows the superior performance of Patronus in robustness against reconstruction attacks and near-lossless face recognition accuracy compared to state-of-the-art (SOTA) methods. Patronus can be easily integrated into deployed face recognition systems as a plug-in privacy-enhancing module with low overhead.},
+  abstract     = {Decentralized Access Control (DAC) manages access through multiple entities, consisting of two modules: decentralized secret management and access policies. However, existing DAC schemes lack support for managing secrets with time-based conditions, such as triggering secret release after a certain time bound. In this case, users may gain access to information before the designated time, which is undesirable in scenarios involving time-sensitive data. Moreover, current DAC schemes mainly focus on identity confidentiality and lack support for policy confidentiality, which may lead to leakage of sensitive information in access policies. To address these challenges, we propose Heimdall, a decentralized access control scheme with time-based secret management and private access policies. The core of our solution is the dhNIZK protocol, an efficient non-interactive zero-knowledge protocol designed for the verifiable incorporation of time conditions into threshold cryptosystems. We utilize this dhNIZK protocol and homomorphic time-lock puzzles to enable time-based secret management, improving the efficiency of secret reconstruction through batch puzzle-solving techniques. Furthermore, we enhance the garbling scheme’s encoding algorithm to ensure policy confidentiality while maintaining identity confidentiality. Finally, we implement Heimdall and present experimental results demonstrating its superior performance compared to the state-of-the-art solutions.},
   archive      = {J_TIFS},
-  author       = {Hui Liu and Hongqin Du and Jiageng Chen and Jinghua Wang and Ke Zhang and Kehuan Zhang and Peng Liu},
-  doi          = {10.1109/TIFS.2025.3618405},
+  author       = {Libin Xia and Yue Li and Jiashuo Zhang and Jianbo Gao and Zhi Guan and Zhong Chen},
+  doi          = {10.1109/TIFS.2025.3628480},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Patronus: Plug-and-play and near-lossless facial privacy enhancement against reconstruction attacks},
+  title        = {Heimdall: A decentralized access control scheme with time-based secret management and private access policies},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). SCOPE: Bridging explicit and implicit privacy leakage for quantitative image privacy evaluation. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3620117'>www</a>)
+(2025). An efficient handover authentication scheme for 6G-enabled space-terrestrial integrated networks with mobile edge computing. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3628470'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The rapid growth of social media has led to the widespread uploading of private images to online networks, raising significant privacy concerns. Existing methods for image privacy assessment typically operate at coarse granularity, lack support for personalized settings, and primarily focus on explicit, entity-centered content. However, such approaches neglect implicit privacy, which refers to private information inferred from contextual cues rather than from any single identifiable visual entity, leading to a substantial underestimation of entire privacy risks. In this work, we propose SCOPE (Systematic Context-based Observation for Privacy Evaluation), a unified framework that systematically incorporates both explicit and implicit privacy across the entire image privacy lifecycle, including detection, quantitative risk assessment, and protection. SCOPE integrates context-aware image graphs with a concept-anchored ontology graph, enabling the incorporation of multi-source information to infer implicit privacy risks at both object and event levels. It further introduces novel qualitative and quantitative privacy metrics that jointly assess image-level privacy risks based on explicit and implicit content, and provides explainable mechanisms to guide implicit privacy protection. Experimental results demonstrate that SCOPE achieves 97.02% object-level and 88.37% event-level implicit privacy inference accuracy, outperforming previous methods by 15.88% and 21.83%, respectively. Extensive experiments and a user study further confirm the effectiveness of our privacy assessment metrics and protection mechanisms.},
+  abstract     = {Sixth-generation (6G) services can offer unprecedented data speeds, ultra-low latency, and vast connectivity. Moreover, satellite communication has become crucial to achieving seamless global coverage for 6G networks. Space-terrestrial integrated networks (STIN) combine satellite and ground networks, ensuring continuous services via satellites even when outside terrestrial network coverage. However, existing STIN schemes rely on central ground server, which can potentially lead to bottlenecks and delays. Additionally, a lightweight handover is necessary to address frequent service changes due to the narrow communication ranges in 6G-based STIN environments. To address these challenges, we propose a novel authentication scheme to provide secure and high-speed handover process for STIN environments. The proposed scheme leverages mobile edge computing (MEC)-based low-Earth orbit (LEO) satellites to minimize communications with the central server. Moreover, a key feature of the proposed scheme is the structural separation of computational loads: we utilize elliptic curve cryptography (ECC) for robust initial authentication, and only hash functions and exclusive-OR (XOR) operators for high-speed handover process. To prove the security of our scheme,we perform informal analysis, “Burrows-Abadi-Needham (BAN) logic”, “Real-Or-Random (ROR) model“, “Automated Validation of Internet Security Protocols and Applications (AVISPA) simulation tool”, and “Scyther tool”. Furthermore, we conduct comparative study on security properties, computation, and communication costs of the proposed scheme and the existing related schemes. To verify the practical deployment of the proposed scheme, we perform a simulation study using “Network Simulator 3 (NS-3)”. Our results demonstrate that the proposed scheme can provide efficient and secure communications for MEC-based STIN environments.},
   archive      = {J_TIFS},
-  author       = {Yunyi Huang and Jiahui Hou and Chuang Zhao and Jie Zhang and Tie Xiao and Xiang-Yang Li},
-  doi          = {10.1109/TIFS.2025.3620117},
+  author       = {Deokkyu Kwon and Seunghwan Son and Kisung Park and Ashok Kumar Das and Youngho Park},
+  doi          = {10.1109/TIFS.2025.3628470},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {SCOPE: Bridging explicit and implicit privacy leakage for quantitative image privacy evaluation},
+  title        = {An efficient handover authentication scheme for 6G-enabled space-terrestrial integrated networks with mobile edge computing},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Secrecy energy efficiency maximization in RIS-aided networks: Active or nearly-passive RIS?. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3620227'>www</a>)
+(2025). Parallel unlearning in inherited model networks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3627869'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This work addresses the problem of secrecy energy efficiency (SEE) maximization in RIS-aided wireless networks. The use of active and nearly-passive RISs are compared and their trade-off in terms of SEE is analyzed. Considering both perfect and statistical channel state information, two SEE maximization algorithms are developed to optimize the transmit powers of the mobile users, the RIS reflection coefficients, and the base station receive filters. Numerical results quantify the trade-off between active and nearly-passive RISs in terms of SEE, with active RISs yielding worse SEE values as the static power consumed by each reflecting element increases.},
+  abstract     = {Unlearning is challenging in generic learning frameworks with the continuous growth and updates of models exhibiting complex inheritance relationships. This paper presents a novel unlearning framework that enables fully parallel unlearning among models exhibiting inheritance. We use a chronologically Directed Acyclic Graph (DAG) to capture various unlearning scenarios occurring in model inheritance networks. Central to our framework is the Fisher Inheritance Unlearning (FIUn) method, designed to enable efficient parallel unlearning within the DAG. FIUn utilizes the Fisher Information Matrix (FIM) to assess the significance of model parameters for unlearning tasks and adjusts them accordingly. To handle multiple unlearning requests simultaneously, we propose the Merging-FIM (MFIM) function, which consolidates FIMs from multiple upstream models into a unified matrix. This design supports all unlearning scenarios captured by the DAG, enabling one-shot removal of inherited knowledge while significantly reducing computational overhead. Experiments confirm the effectiveness of our unlearning framework. For single-class tasks, it achieves complete unlearning with 0% accuracy for unlearned labels while maintaining 94.53% accuracy for retained labels. For multi-class tasks, the accuracy is 1.07% for unlearned labels and 84.77% for retained labels. Our framework accelerates unlearning by 99% compared to alternative methods.},
   archive      = {J_TIFS},
-  author       = {Robert Kuku Fotock and Agbotiname Lucky Imoize and Alessio Zappone and Marco Di Renzo and Roberto Garello},
-  doi          = {10.1109/TIFS.2025.3620227},
+  author       = {Xiao Liu and Mingyuan Li and Guangsheng Yu and Lixiang Li and Haipeng Peng and Ren Ping Liu},
+  doi          = {10.1109/TIFS.2025.3627869},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Secrecy energy efficiency maximization in RIS-aided networks: Active or nearly-passive RIS?},
+  title        = {Parallel unlearning in inherited model networks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). PoisonPatch: Natural adversarial patches via diffusion models and federated learning poisoning. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3620155'>www</a>)
+(2025). Modeling and mitigating social engineering Malware:Integrating malware- opinion dynamics with optimal impulse control approaches. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3630005'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Adversarial patches pose a significant threat to deep neural networks (DNNs). Unlike conventional adversarial attacks that are digital and less effective in the real world, adversarial patches can disrupt DNNs in real-world scenarios with potentially catastrophic outcomes. Understanding the characteristics of these patches is crucial to comprehending this new form of adversarial attack. While prior research has primarily aimed at enhancing the success rate of adversarial patches on specific DNN models, the rise of federated learning (FL) introduces a novel attack vector. In this context, attackers could manipulate a DNN model’s learnable parameters by contributing models trained on poisoned data. To assess the feasibility and danger of adversarial patches in this context, we introduce a novel attack method named PoisonPatch. This method merges FL poisoning attacks with adversarial patch search, first poisoning a DNN-based image classifier through FL, and then employing an adversarial patch search algorithm to create patches that increase the success rate of the attacks. This dual approach, combining poisoning attacks with adversarial patches, results in patches that are more challenging for machines to detect than traditional poisoning attacks and less noticeable to the human eye than typical adversarial patches due to their natural appearance. Our extensive experimental results demonstrate that PoisonPatch surpasses current state-of-the-art methods, producing natural-looking patches while achieving a 100% attack success rate.},
+  abstract     = {Social engineering malware, which exploits both technical and human vulnerabilities, presents challenging for individuals and organizations. However, existing studies typically focus on either technical or human vulnerabilities through case studies or questionnaires, ignoring their combined importance in mitigating such threats. This study pioneers the introduction of a mathematical model to analyze and mitigate the dynamics associated with these combined vulnerabilities. To achieve this, this study proposes an innovative framework, which integrates (a) a coupled malware-opinion dynamics model to capture the interplay between both types of vulnerabilities, and (b) an optimal impulse control approach to strategically mitigating social engineering malware. Within this framework, we define an optimization problem, aimed at balancing control costs and malware severity. We derive theoretical conditions for optimal impulse strategies that achieve this balance and develop an iterative algorithm, the convergence and scalability of which have been empirically validated. Experimental results on three real-world social networks and synthetic scale-free networks demonstrate that our strategies consistently achieve an optimal balance by minimizing total expenses, including control costs and losses associated with malware. This finding underscores the effectiveness of routine patching and ongoing security awareness training in standard cybersecurity practices. Further experiments indicate that the strategic, early, and frequent deployment of patches in specific scenarios can effectively reduce unnecessary losses, enhancing overall cybersecurity resilience.},
   archive      = {J_TIFS},
-  author       = {Yulong Wang and Yifei Fu and Wenwei Kong and Chang Liu and Sen Su},
-  doi          = {10.1109/TIFS.2025.3620155},
+  author       = {Xiaojuan Cheng and Lu-Xing Yang and Gang Li and Zenan Ma and Tianqing Zhu and Lidan Wang and Shukai Duan},
+  doi          = {10.1109/TIFS.2025.3630005},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {PoisonPatch: Natural adversarial patches via diffusion models and federated learning poisoning},
+  title        = {Modeling and mitigating social engineering Malware:Integrating malware- opinion dynamics with optimal impulse control approaches},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Enabling gradient inversion attack against SplitFed learning via l2 norm amplification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3616594'>www</a>)
+(2025). TrackPhish: A multi-embedding attention-enhanced 1D CNN model for phishing URL detection. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629558'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {SplitFed Learning (SFL) represents a compelling distributed learning paradigm tailored for resource-constrained edge computing scenarios, wherein the privacy threat posed by Gradient Inversion Attacks (GIA) remains challenging. The unique architecture of SFL restricts the fed server’s access only to the client-side model’s deficient gradients, which lack essential information about the original data. This absence of complete gradient information hinders traditional GIA methods, which rely on complete gradient information for effective data reconstruction, thereby significantly diminishing their effectiveness in the SFL context. In this paper, we propose a novel attack against SFL called Deficient Gradient-based Inversion Attack (DGIA), which reconstructs original training data by artificially amplifying the ℓ2 norm of deficient gradients. Through extensive evaluation of how GIA performance varies with different gradient magnitudes, we observe a definitive correlation between the gradient ℓ2 norm and attack performance. Based on this correlation, we further optimize DGIA to identify the optimal gradient amplification scale that maximizes the information encoded in deficient gradients. This compensates for the restricted access to complete gradients and enhances the attack performance. We conduct extensive experiments to demonstrate DGIA’s performance across various SFL scenarios compared with other GIA schemes and show attack efficacy under general defenses.},
+  abstract     = {Phishing attacks are a growing threat to online security, with increasingly sophisticated and frequent tactics. This rise in cyber threats underscores the need for advanced detection methods. While the Internet is crucial for modern communication and commerce, it also exposes users to risks such as phishing, spamming, malware, and performance degradation attacks. Among these, malicious URLs, commonly embedded in static links within emails and websites, are a significant challenge in identifying and mitigating these attacks. This study proposes TrackPhish, a novel lightweight application that predicts URL legitimacy without visiting the associated website. The proposed model combines traditional word embeddings (Word2Vec, FastText, GloVe) with transformer models (BERT, RoBERTa, GPT-2) to create a comprehensive feature set fed into a Deep Learning (DL) model for detecting phishing URLs. The integration of these embeddings captures semantic relationships and contextual understanding of the text, generating a robust feature set enhanced by an attention mechanism to choose relevant features. The refined features are then used to train a One-Dimensional Convolutional Neural Network (1D CNN) model for phishing URL detection. The proposed model offers key advantages over existing methods, including independence from third-party features, adaptability for client-side deployment, and target-independent detection. Experimental results demonstrate the model’s effectiveness, achieving 95.41% accuracy with a low false positive rate of 1.44% on our dataset and an impressive 98.55% accuracy on benchmark datasets, outperforming existing baseline models. The proposed model represents a significant advancement over traditional methods, enhancing online security against phishing URLs.},
   archive      = {J_TIFS},
-  author       = {Jianan Zhao and Wenjuan Tang and Kuan Zhang and Hongbo Jiang},
-  doi          = {10.1109/TIFS.2025.3616594},
+  author       = {Cheemaladinne Kondaiah and Alwyn Roshan Pais and Routhu Srinivasa Rao},
+  doi          = {10.1109/TIFS.2025.3629558},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Enabling gradient inversion attack against SplitFed learning via l2 norm amplification},
+  title        = {TrackPhish: A multi-embedding attention-enhanced 1D CNN model for phishing URL detection},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). SnifferDog: Comprehensively learning heterogeneous features of network traffic to identify malicious flows. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3620640'>www</a>)
+(2025). Efficient and verifiable proof of replicated storage. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3630070'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep learning has recently attracted significant attention in the field of network intrusion detection. Despite a substantial number of efforts have been made, previous works struggle to comprehensively learn the features of network traffic, resulting in inconsistent performance across various environments and attacks. To address these limitation, this study presents SnifferDog, a novel network attack detection system that takes raw packets as input and rationally extracts and integrates heterogeneous features involved in packets, flows and topology. It formats the packets and flows concurrently to achieve a high-level throughout for feature learning. Then, a flow pretraining model consisting of a LSTM, a self-attention and cross-attention layers is developed to learn both sequential and nonsequential inter packet relation features as initial flow vectors. Subsequently, a node-to-node and a node-to-edge attention layers are implemented to enhance an inductive GNN model that dynamically embeds the flow-to-flow and flow-to-topology relation features into the flow vectors. The resulting flow vectors involve comprehensive information of packet-to-packet, flow-to-flow and flow-to-topology relations, enabling high detection performance. In-lab experiments across eight datasets from diverse environments demonstrate SnifferDog’s superior effectiveness over existing solutions. A scalable prototype deployed in our institute’s network achieves a false positive rate of only 0.08%, validating SnifferDog’s practicality in real-world scenarios.},
+  abstract     = {Allowing users to assure that their files are reliably stored into multiple replicas is critically important but challenging for secure cloud storage. Recently, Damgård et al. [1] designed the first publicly verifiable proof of replicated storage (abbreviated as PRI-POREP) in the private client setup without the fine-grained timing assumption. However, it relies on an “ideal” invertible random permutations (IRPs), whose construction with the structured domain/range remains open even in the random oracle model. Also, it is computationally inefficient in terms of both replicas generation and file update. To address challenges regarding both practicality and efficiency while guaranteeing the security of PRI-POREP, this paper aims at constructing a new proof of replicated storage scheme without timing assumption, named as μPRI-POREP. μPRI-POREP is secure against server-side deletion of replica blocks and it works efficiently, saving computation cost by orders of magnitude, compared to PRI-POREP. Moreover, we demonstrate that μPRI-POREP can also support efficient dynamic update and can be further applied to secure the RSA-Hourglass schemes. Finally, we evaluate μPRI-POREP with a prototype implementation and exhibit that it can achieve comparable performance compared to PRI-POREP and support efficient file update operation.},
   archive      = {J_TIFS},
-  author       = {Xi Luo and Lihua Yin and Hongyu Yang and Zeyan Liu and Weizhe Chen and Shijie Jia and Bo Luo and Hongli Xiang},
-  doi          = {10.1109/TIFS.2025.3620640},
+  author       = {Tao Jiang and Fang He and Yinbin Miao and Xinghua Li and Jianfeng Ma and Robert H. Deng},
+  doi          = {10.1109/TIFS.2025.3630070},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {SnifferDog: Comprehensively learning heterogeneous features of network traffic to identify malicious flows},
+  title        = {Efficient and verifiable proof of replicated storage},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Image-attribute and frequency-spatial dual collaborative learning for pedestrian attribute recognition. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622074'>www</a>)
+(2025). Diverse semantics-guided feature alignment and decoupling for visible-infrared person re-identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629581'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The key of pedestrian attribute recognition (PAR) task lies in accurately extracting various attributes from pedestrian images, such as gender, age, clothing, and accessories. Prior CLIP-based PAR methods primarily rely on static textual prompts or template-based sentences and perform direct classification or one-to-one image-text matching. Although these methods have achieved promising results, their reliance on such static prompts may lack flexibility in capturing the dynamic interactions between multiple attribute labels and their fine-grained visual semantics. To address this, we propose a novel Frequency-Spatial and Image-Attribute (FSIA) method that adopts a dual collaborative learning strategy to effectively model image-attribute associations and enhance feature representation. FSIA consists of two key components: (1) An Image-Attribute Collaborative Learning (IACL) framework that integrates visual data with attribute labels to enable a nuanced semantic understanding. The proposed IACL utilizes learnable attribute prompts, each specifically optimized for an individual attribute category, facilitating expressive and discriminative visual-language alignment; (2) A Frequency-Spatial Collaborative Learning (FSCL) module that leverages frequency-domain information (often overlooked in prior PAR) to exploit dual-domain frequency-spatial information in pedestrian images, thereby enhancing feature robustness. Extensive experiments show that FSIA has significant advantages in improving the performance of PAR and the challenging zero-shot PAR task. Specifically, the proposed FSIA achieves 90.08% in mA, 82.09% in Accu, 87.92% in Prec, 89.73% in Recall and 88.45% in F1 on the PETA dataset.},
+  abstract     = {Visible-Infrared Person Re-Identification (VI-ReID) is a challenging task due to the large modality discrepancy between visible and infrared images, which complicates the alignment of their features into a suitable common space. Moreover, style noise, such as illumination and color contrast, reduces the identity discriminability and modality invariance of features. To address these challenges, we propose a novel Diverse Semantics-guided Feature Alignment and Decoupling (DSFAD) network to align identity-relevant features from different modalities into a textual embedding space and disentangle identity-irrelevant features within each modality. Specifically, we develop a Diverse Semantics-guided Feature Alignment (DSFA) module, which generates pedestrian descriptions with diverse sentence structures to guide the cross-modality alignment of visual features. Furthermore, to filter out style information, we propose a Semantic Margin-guided Feature Decoupling (SMFD) module, which decomposes visual features into pedestrian-related and style-related components, and then constrains the similarity between the former and the textual embeddings to be at least a margin higher than that between the latter and the textual embeddings. Additionally, to prevent the loss of pedestrian semantics during feature decoupling, we design a Semantic Consistency-guided Feature Restitution (SCFR) module, which further excavates useful information for identification from the style-related features and restores it back into the pedestrian-related features, and then constrains the similarity between the features after restitution and the textual embeddings to be consistent with that between the features before decoupling and the textual embeddings. Extensive experiments on three VI-ReID datasets demonstrate the superiority of our DSFAD. The code will be made publicly available at https://github.com/nengdong96/DSFAD.},
   archive      = {J_TIFS},
-  author       = {Yukang Zhang and Xinwen Fan and Yujun Yang and Yang Lu and Hanzi Wang},
-  doi          = {10.1109/TIFS.2025.3622074},
+  author       = {Neng Dong and Shuanglin Yan and Liyan Zhang and Jinhui Tang},
+  doi          = {10.1109/TIFS.2025.3629581},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Image-attribute and frequency-spatial dual collaborative learning for pedestrian attribute recognition},
+  title        = {Diverse semantics-guided feature alignment and decoupling for visible-infrared person re-identification},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Towards automatic heap exploit generation by using heap layout constraints on binary programs. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622077'>www</a>)
+(2025). Towards defending adversarial patch attacks with mask-reconstruction-assisted adversarial training. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629619'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Automatic exploit generation (AEG) is widely recognized as one of the most effective methods for assessing the risk level of vulnerabilities. To exploit heap-related vulnerabilities, it is necessary to precisely form a desired heap layout and construct an effective payload. However, prior AEG solutions are inefficient in analyzing heap operation traces for manipulating heap layout in a program, and often fail to consider how to precisely construct payloads that align with the structure of vulnerable objects, which ultimately results in the failure to exploit vulnerabilities. In this paper, we propose HEXP, a novel system that can generate working exploit samples that can result in exploitable states on binaries. Given a binary program and a PoC (proof-of-concept) input, HEXP first extracts heap operation traces and then determines their semantics, e.g., the size of each heap allocation. Subsequently, HEXP executes the program with the PoC to infer the target heap layout and analyzes the member types of the vulnerable object. As a result, HEXP inserts suitable heap operation traces into the PoC’s execution trace to synthesize a target trace and constructs corresponding data constraints, whose execution leads to the target heap layout. Finally HEXP generates exploit samples by symbolically executing the target trace while applying these data constraints. We evaluated HEXP against 18 CTF (Capture-the-Flag) programs and 12 real-world binary programs with 19 known CVEs. The results highlight that: 1) HEXP surpasses MAZE in accurately and efficiently identifying heap operation traces; 2) HEXP infers correct target heap layouts and generates exploit samples for 16 CTF programs, outperforming Revery by 7 programs; and 3) HEXP successfully achieves the target heap layouts for 16 out of 19 CVEs in real-world binaries.},
+  abstract     = {Adversarial patch attacks pose a significant threat to deep learning models in real-world applications, such as autonomous driving, due to their physical feasibility and ease of deployment. Although several defenses exist, they often have limitations, such as requiring prior knowledge of adversarial patches, being tied to specific model architectures, or struggling to balance robustness with accuracy on clean inputs. In this work, we propose a novel Mask-Reconstruction-assisted Adversarial Training (MRAT) framework to enhance model robustness against adversarial patches while preserving accuracy. To achieve this, we first develop an adversarial example generation method that applies masks comprising randomly positioned square blocks with adversarial perturbations to clean images. This technique generates diverse adversarial examples for training, preventing the model from overfitting to a specific type of adversarial patch. To maintain accuracy on clean inputs while enhancing adversarial robustness, we incorporate a mask-reconstruction task into standard adversarial training paradigms. This task utilizes feature representations extracted from the backbone to reconstruct clean versions of adversarial examples. By jointly optimizing the reconstruction network and the classification model, the feature representations of adversarial examples retain essential features of their original images, leading to robust feature extraction and high classification accuracy. Extensive experimental results in both digital and physical domains demonstrate that MRAT significantly enhances the model’s defensive performance against adversarial patch attacks while maintaining high accuracy on clean inputs. Our code is available at: https://github.com/wanggroupAI/AI_Security/tree/main/Adversarial%20Example/MRAT.},
   archive      = {J_TIFS},
-  author       = {Jie Liu and Lianda Yao and Yanqi Li and Hongliang Liang},
-  doi          = {10.1109/TIFS.2025.3622077},
+  author       = {Hongshan Yang and Zhichao Li and Zhibo Wang and Peng Sun and Zhixuan Chu and Feng Lin},
+  doi          = {10.1109/TIFS.2025.3629619},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Towards automatic heap exploit generation by using heap layout constraints on binary programs},
+  title        = {Towards defending adversarial patch attacks with mask-reconstruction-assisted adversarial training},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). User-autonomous multi-factor authentication supporting arbitrary factor configurations. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622084'>www</a>)
+(2025). RDCBA-FEL: Robust defense against colluded backdoor attacks in federated edge learning. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629550'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Multi-factor authentication (MFA) is widely used to secure high-value digital assets in web applications. Traditional t-factor authentication (t-FA) enhances security by requiring users to present t factors, which often becomes inconvenient as the number of required factors increases. Threshold (t, n)-MFA (T-MFA) improves usability by allowing users to authenticate with any t factors from a set of n. However, T-MFA treats all factors as equal, ignoring the varying security strengths of different factors. For instance, passwords are generally less secure than smart cards, yet T-MFA fails to account for these differences. This restricts its ability to balance security and usability effectively. To overcome this, we propose AS-MFA, a new primitive allowing users to configure factor combinations based on the security strength of each factor. Our scheme employs secret sharing for general access structures, ensuring that authentication is granted only when a valid combination of factors is presented. Unlike T-MFA limited to threshold configurations, AS-MFA supports arbitrary factor combinations, offering greater user autonomy. We formally define the security of AS-MFA and prove the security of our design. In terms of performance, the protocol requires only two communication rounds and achieves computational efficiency, involving t2 fuzzy extractor operations, 2 + 3t1 + 3t2 exponentiations, and 2 multi-exponentiations for a factor combination consisting of t1 passwords, t2 biometrics, and t3 devices. For threshold configurations, AS-MFA outperforms Li et al.’s T-MFA by requiring fewer exponentiation operations, offering a constant and lower computation cost compared to the linear cost in t of T-MFA.},
+  abstract     = {Federated edge learning (FEL) has emerged as a distributed machine learning paradigm that enables devices to jointly train a shared global model in the Industrial Internet of Things (IIoT), which greatly accelerates the advancement of Industrial 4.0. However, FEL is vulnerable to the colluded backdoor attack (CBA) at high percentages of poisonous devices and attack intensity. Meanwhile, conventional strategies against general BAs aim to mitigate the impact of degrading the accuracy of benign clients by propagating correct local updates, but they can hardly prevent CBAs. Moreover, recent work defends against CBAs at the cost of slower convergence. To tackle the above vulnerabilities, we propose RDCBA-FEL, which effectively identifies and corrects malicious updates from all local ones. Firstly, RDCBA-FEL restricts common features in poisonous updates, such as amplified magnitudes or similar descent directions. Secondly, RDCBA-FEL adopts the residual-based attack detection mechanism to identify and convert malicious updates into benign ones, thus speeding up model convergence. Thirdly, RDCBA-FEL employs the beta-based reputation model to average the weights of local updates, guaranteeing that benign updates have priority over poisoned ones. Moreover, since historical reputations can negatively affect benign weight allocation, a distributed time-decay attention mechanism is used to flexibly adjust FEL to make the model more focused on the current reputation. Extensive evaluations on five benchmark datasets show the robustness of RDCBA-FEL against advanced attacks compared to eleven state-of-the-art schemes.},
   archive      = {J_TIFS},
-  author       = {Wenting Li and Haibo Cheng and Kaitai Liang},
-  doi          = {10.1109/TIFS.2025.3622084},
+  author       = {Pan Zhang and Lei Xu and Chungen Xu and Lin Mei and Yiting Liu},
+  doi          = {10.1109/TIFS.2025.3629550},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {User-autonomous multi-factor authentication supporting arbitrary factor configurations},
+  title        = {RDCBA-FEL: Robust defense against colluded backdoor attacks in federated edge learning},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Achieving packet traceback by inferring AS-level topology based on cryptographic path identifiers. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622069'>www</a>)
+(2025). GCODWFA: Gradient collaborative optimization with dynamic weighted feature alignment for unsupervised domain adaptation in radio frequency fingerprinting identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3630037'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Although the Internet has become a huge system with more than 70000 autonomous systems (ASes) in the past decades, the lack of coherent security has left the Internet vulnerable to various cyber attacks (e.g., DDoS). There are many studies on tracing back malicious packets, aiming to figure out which ASes the attacker is in and which ASes the malicious packets traverse. However, it is hard to achieve per-packet traceback under the traditional TCP/IP architecture, since it is agnostic to the AS-level paths. In this paper, we focus on another clean-slate Internet architecture called path-aware networking (PAN). Typical PAN architectures include SCION, CoLoR, and LIPSIN. Under PAN architectures, the in-packet path identifiers (PIDs) enable us to infer the AS-level topology and then trace back each malicious packet accurately. Despite the powerful traceback capability, there is no study on this topology inference problem as far as we know. This is because PAN architectures adopt different path identification methods, thus the topology inference problems have different formulations. In this paper, we would like to take an initial step and investigate how to infer the AS-level topology under a specific PAN architecture CoLoR, which adopts cryptographic path identification. Specifically, an AS or an end-host acts as the observer and collects PID sequences in the packets traversing it. The observer then infers the AS-level topology based on the collected PID sequences. Extensive simulations show that the accuracy of our proposed topology inference method is greater than 95%. The inferred AS-level topology can be used to monitor network traffic, detect traffic anomaly and trace back attackers, thus is helpful for enhancing network security and facilitating network management.},
+  abstract     = {Radio Frequency Fingerprinting Identification (RFFI) has become a critical technology in the physical-layer security (PLS) field, with deep learning emerging as the dominant approach over the past decade. However, most deep learning-based models rely on the assumption that training and testing data follow an independent and identical distribution (i.i.d.), which often does not hold in real-world scenarios. This mismatch significantly degrades model performance in cross-domain settings, making cross-domain RFFI a challenging task. Traditional unsupervised domain adaptation (UDA) methods attempt to address this issue by jointly optimizing task loss and domain loss which is able to reduce the distribution gap between training and testing data. However, we observe that during training, the gradients of these two losses often conflict, hindering effective optimization and limiting cross-domain performance improvements. To address these challenges, we propose a novel framework, Gradient Collaborative Optimization with Dynamic Weighted Feature Alignment (GCODWFA). Specifically, GCODWFA introduces a novel Gradient Collaborative Optimization (GCO) loss, which explicitly adjusts the gradient interaction between task and domain losses by optimizing their angular relationship. Additionally, it incorporates a Dynamic Weighted Feature Alignment (DWFA) strategy, which dynamically adjusts the layer-specific weights for feature alignment based on the angular similarity of task and domain gradients. Extensive experiments conducted on multiple datasets demonstrate the superiority of GCODWFA over existing methods.},
   archive      = {J_TIFS},
-  author       = {Hongbin Luo and Hongyi Li and Shan Zhang and Yuxin Mao and Zhiyuan Wang},
-  doi          = {10.1109/TIFS.2025.3622069},
+  author       = {Zhongyi Wen and Zhikai Zhai and Jiahui Xiang and Qiang Li and Wei Zhang and Huaizong Shao},
+  doi          = {10.1109/TIFS.2025.3630037},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Achieving packet traceback by inferring AS-level topology based on cryptographic path identifiers},
+  title        = {GCODWFA: Gradient collaborative optimization with dynamic weighted feature alignment for unsupervised domain adaptation in radio frequency fingerprinting identification},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Polar-domain multi-user key generation in near-field communications. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622317'>www</a>)
+(2025). Part-based bi-directional enhancement learning for unsupervised visible-infrared re-identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629565'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Given the substantial increase in the number of antennas in extremely large-scale antenna array (ELAA) systems, polar-domain channel modeling has been introduced to capture both angular and distance information in near-field environments. The fine-grained polar-domain channel provides additional sources of randomness, making it well-suited for physical layer key generation (PLKG). To minimize the pilot overhead in multi-user key generation and leverage the randomness from the polar-domain channel paths, we implement a zero-forcing (ZF)-based precoding scheme to mitigate the inter-path and inter-user interference. Using ZF precoding, we derive an analytical expression for the sum secret key rate (SKR) as a function of the power allocation variables, and then optimize these variables in the presence of eavesdroppers. Since the ZF method may not fully eliminate interference with imperfect channel state information (CSI), there could be correlation between the measurements of polar-domain channel paths and users. We present a channel decorrelation and reciprocity compensation approach that leverages principal component analysis (PCA) and deep neural networks (DNNs) to mitigate channel correlation issues. Specifically, PCA is first applied at the base station (BS) to decorrelate the composite CSI vector that aggregates the CSI of all users. Following this preprocessing, a DNN is trained to learn the mapping from the decorrelated uplink CSI to the corresponding original downlink CSI. This trained DNN then reconstructs a new version of the downlink CSI, enhancing the cross-correlation between the BS and the users’ CSI, thereby improving uplink/downlink reciprocity. Our simulations evaluate the effectiveness of the DNN-based reciprocity compensation by assessing the normalized mean squared error (NMSE) and the correlation between uplink and downlink CSI, the bit disagreement ratio (BDR) and the randomness of secret keys after quantization.},
+  abstract     = {Unsupervised Learning Visible-Infrared Person Re-identification (USL-VI-ReID) aims to learn uniform feature representations for retrieving persons from unlabeled cross-modality data, which can accomplish 24-hour surveillance without expensive manual annotations. However, USL-VI-ReID is a cross-modality retrieval task that suffers from cross-modality label association and cross-modality feature discrepancy problems. To address these two problems, we propose a Part-based Bidirectional Enhancement (PBE) framework for learning a cross-modality uniform representation of USL-VI-ReID. The PBE consists of both forward and backward enhancements: 1) To alleviate the cross-modality label association problem, we propose a Part-based Label Forward Enhancement (PLFE) module. The PLFE module employs part features to complement global features during the label association process, thus generating higher-quality VI-associated pseudo-labels for the forward enhancement of the feature learning process. 2) To mitigate the cross-modality feature discrepancy problem, we propose a Part-based Feature Backward Enhancement (PFBE) module. The PFBE module utilizes part features to augment global features during the feature learning process, thus learning more robust uniform features for the backward enhancement of the label association process. Based on the part features, our PBE method achieves bi-directional enhancement during the label association and feature learning processes for robust recurrent training. Extensive experiments on SYSU-MM01 and RegDB datasets demonstrate that the proposed PBE framework outperforms existing USL-VI-ReID methods. Code is available at https://github.com/heqlin5/PBE.},
   archive      = {J_TIFS},
-  author       = {Tianyu Lu and Liquan Chen and Junqing Zhang and Weicheng Zhang and Michail Matthaiou},
-  doi          = {10.1109/TIFS.2025.3622317},
+  author       = {Qiaolin He and Yiming Yang and Zihan Wang and Haifeng Hu},
+  doi          = {10.1109/TIFS.2025.3629565},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Polar-domain multi-user key generation in near-field communications},
+  title        = {Part-based bi-directional enhancement learning for unsupervised visible-infrared re-identification},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Practical constant-time asynchronous distributed key generation with improved efficiency. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622362'>www</a>)
+(2025). General backdoor-resilient federated learning via multi-armed bandit-based knowledge distillation. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3630065'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We propose an expected constant-time asynchronous distributed key generation (ADKG) protocol that significantly outpaces prior protocols. Our protocol supports all desirable properties for ADKG (supporting a high threshold, private keys from field elements, and optimal resilience). At the core of our protocol is a new ADKG paradigm from weak leader election and multivalued Byzantine agreement (MBA). We have implemented our protocol and performed thus far the largest WAN evaluation using up to 202 Amazon EC2 nodes. We show that the latency of the state-of-the-art ADKG protocol due to Das, Xiang, Kokoris-Kogias, and Ren is approximately 1.6-4.8x that of our ADKG protocol.},
+  abstract     = {The decentralized nature of federated learning (FL) makes it difficult to verify the trustworthiness of participating clients, creating an opportunity for backdoor attacks. This paper addresses a general backdoor-resilient decentralized FL problem without any prior knowledge of the type of backdoor attacks or information about malicious clients. After an in-depth investigation of how backdoor attacks are conducted in FL, we introduce a multi-armed bandit-based knowledge distillation approach to help benign clients learn useful knowledge from other clients while rejecting potential backdoors hidden in shared updates. Unlike most previous works that rely on identifying and removing malicious updates—an approach limited to scenarios with fewer than 50% attackers—our knowledge distillation technique enables benign clients to reject backdoored knowledge while preserving useful information, maintaining effective defense even when malicious clients exceed 50% of the population. Additionally, to handle the various updates from clients with Non-IID dataset, a multi-armed bandit scheme is designed for each benign client to select the most appropriate teachers for knowledge distillation, resulting in high accuracy and fast convergence. Extensive experiments demonstrate that our multi-armed bandit-based knowledge distillation approach achieves high accuracy and general backdoor resilience. Comparisons with previous works show that our approach can reduce the attack success rate by 14.71%∼96.78% on average.},
   archive      = {J_TIFS},
-  author       = {Zhaoyang Xie and Haibin Zhang and Shengli Liu and Sisi Duan and Liehuang Zhu},
-  doi          = {10.1109/TIFS.2025.3622362},
+  author       = {Senmao Qi and Hao Ma and Yifei Zou and Peng Li and Hanlin Gu and Zhenzhen Xie and Lixin Fan and Xiuzhen Cheng and Dongxiao Yu},
+  doi          = {10.1109/TIFS.2025.3630065},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Practical constant-time asynchronous distributed key generation with improved efficiency},
+  title        = {General backdoor-resilient federated learning via multi-armed bandit-based knowledge distillation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Boosting parallel fuzzing with boundary-targeted task allocation and exploration. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3622956'>www</a>)
+(2025). A novel evaluation algorithm for identifying optimal datasets in differential-based neural distinguisher. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629547'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {As software systems grow in complexity, scale, and update frequency, parallel fuzzing has become essential for mitigating the efficiency limitations of traditional fuzzing. Effective task allocation is vital in maximizing parallel fuzzing efficiency and has garnered significant attention. However, current strategies often neglect critical code areas, treating all regions uniformly and resulting in suboptimal exploration. To address the limitations of current approaches, we present FlexFuzz, a novel parallel fuzzing system. First, we identify the boundary basic blocks that connect covered and uncovered areas, dynamically adapting them as fuzzing progresses. Second, we introduce a boundary-sensitive task allocation scheme that assigns fuzzing tasks based on the identified boundary basic blocks and their potential for exploration. Finally, to ensure focused exploration, we implement a multi-target, distance-guided approach that directs each instance to concentrate on its relevant task area. We have implemented a prototype of FlexFuzz and comprehensively evaluated it against the state-of-the-art parallel fuzzing systems. Across standard benchmarks, FlexFuzz surpasses other parallel tools: it increases coverage by 20.09% over the next best tool (PAFL), and identifies 33.75% more vulnerabilities than the next best tool (AFL++).},
+  abstract     = {Recently, the cryptography community has witnessed growing interest in a novel attack called Differential Neural Cryptanalysis, which combines deep learning with differential cryptanalysis. This approach has demonstrated superior performance compared to classical techniques for certain ciphers. However, the differential-based neural distinguisher, as its core component, is highly specialized and presents challenges in adapting to other ciphers. The two major challenges limit its broader applicability: the lack of efficient methods for identifying high-quality input differences, which are critical for constructing datasets to train differential-based neural distinguishers; and the dependence on customized neural network structures tailored to specific ciphers. In this paper, we address the first challenge by introducing a new evaluation metric, the Differential Distribution Cluster (DDC) degree, inspired by information entropy. This metric provides a reliable measure for evaluating input differences and enables the construction of optimal datasets. Using the DDC degree, our proposed two-stage evaluation algorithm achieves significant time efficiency, evaluating each input difference in approximately 1.028 seconds. We apply the algorithm to several Feistel, SPN, and ARX-type block ciphers, successfully identifying their optimal input differences. Notably, we provide the first differential-based neural distinguishers for 7-round GIFT-64, 8-round GIFT-128, and 11-round SPECK128/256, and improve the state-of-the-art for LBLOCK, HIGHT, and SPECK64/128.},
   archive      = {J_TIFS},
-  author       = {Hong Liang and Yijia Guo and Haotian Wu and Yifan Xia and Yi Xiang and Xiantao Jin and Hao Peng and Xuhong Zhang and Shouling Ji},
-  doi          = {10.1109/TIFS.2025.3622956},
+  author       = {Haiyi Xu and Lei Zhang and Yufei Yuan},
+  doi          = {10.1109/TIFS.2025.3629547},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Boosting parallel fuzzing with boundary-targeted task allocation and exploration},
+  title        = {A novel evaluation algorithm for identifying optimal datasets in differential-based neural distinguisher},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Game-theoretic machine unlearning: Mitigating extra privacy leakage. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623364'>www</a>)
+(2025). SCALA: Towards imperceptible and efficient black-box textual adversarial perturbations. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3629604'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {With the extensive use of machine learning technologies, data providers encounter increasing privacy risks. Recent legislation, such as GDPR, obligates organizations to remove requested data and its influence from a trained model. Machine unlearning is an emerging technique designed to enable machine learning models to erase users’ private information. Although several efficient machine unlearning schemes have been proposed, these methods still have limitations. First, removing the contributions of partial data may lead to model performance degradation. Second, discrepancies between the original and generated unlearned models can be exploited by attackers to obtain target sample’s information, resulting in additional privacy leakage risks. To address above challenges, we proposed a game-theoretic machine unlearning algorithm that simulates the competitive relationship between unlearning performance and privacy protection. This algorithm comprises unlearning and privacy modules. The unlearning module possesses a loss function composed of model distance and classification error, which is used to derive the optimal strategy. The privacy module aims to make it difficult for an attacker to infer membership information from the unlearned data, thereby reducing the privacy leakage risk during the unlearning process. Additionally, the experimental results on real-world datasets demonstrate that this game-theoretic unlearning algorithm’s effectiveness and its ability to generate an unlearned model with a performance similar to that of the retrained one while mitigating extra privacy leakage risks.},
+  abstract     = {Deep learning models are intrinsically susceptible to textual adversarial attacks on social media, where the perturbed text can trigger aberrant behaviours of victim models and threaten security and privacy. In this paper, we present a novel word-level attack called SCALA: a Synonym-based desCending And repLace-back Ascending mechanism. Our focus is on the efficient production of adversarial examples, with a particular emphasis on minimizing human perceptibility while ensuring the visual resemblance and semantic correctness. The merits of our attacking solution lie in being: (i) imperceptible – it keeps a very low word perturbation rate based on the Hamming (L0-norm) distance, thus achieving heightened deceptiveness validated through human evaluations; (ii) efficient – our tensor-based parallelization strategy ensures the attacking efficiency compared with baselines; (iii) effective – it surpasses seven state-of-the-art attacks on five target models in terms of reducing after-attack accuracy; (iv) practical – black-box score-based setting ensures that the adversary only needs to query target models for confidence scores; and (v) transferable – our attack shows competitive transferability on the generated adversarial examples. We release our code SCALA via https://github.com/TrustAI/SCALA.},
   archive      = {J_TIFS},
-  author       = {Hengzhu Liu and Tianqing Zhu and Lefeng Zhang and Ping Xiong},
-  doi          = {10.1109/TIFS.2025.3623364},
+  author       = {Siqi Sun and Achim D. Brucker and Jia Hu and Xiaowei Huang and Wenjie Ruan},
+  doi          = {10.1109/TIFS.2025.3629604},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Game-theoretic machine unlearning: Mitigating extra privacy leakage},
+  title        = {SCALA: Towards imperceptible and efficient black-box textual adversarial perturbations},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Secret-key generation from private identifiers under channel uncertainty. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623929'>www</a>)
+(2025). Low-latency video anonymization for crowd anomaly detection: Privacy vs. performance. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3630347'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This study investigates secret-key generation for device authentication using physical identifiers, such as responses from physical unclonable functions (PUFs). The system includes two legitimate terminals (encoder and decoder) and an eavesdropper (Eve), each with access to different measurements of the identifier. From the device identifier, the encoder generates a secret key, which is securely stored in a private database, along with helper data that is saved in a public database accessible by the decoder for key reconstruction. Eve, who also has access to the public database, may use both her own measurements and the helper data to attempt to estimate the secret key and identifier. Our setup focuses on authentication scenarios where channel statistics are uncertain, with the involved parties employing multiple antennas to enhance signal reception. Our contributions include deriving inner and outer bounds on the optimal trade-off among secret-key, storage, and privacy-leakage rates for general discrete sources, and showing that these bounds are tight for Gaussian sources.},
+  abstract     = {Recent advancements in artificial intelligence hold ample potential for monitoring applications using surveillance cameras. However, concerns about privacy and model bias have made it challenging to utilize them in public. Although de-identification approaches have been proposed in the literature, aiming to achieve a certain level of anonymization (AN), most of them employ deep learning models that are computationally demanding for real-time edge deployment. This study revisits conventional AN solutions for privacy protection and real-time video anomaly detection (VAD) applications. We propose a lightweight adaptive AN for VAD (LA3D) that employs dynamic adjustment to enhance full-body privacy protection. We have evaluated privacy protection and VAD utility retention efficacy using several publicly available datasets to examine the strengths and weaknesses of different AN methods and highlight the promising leverage of our approach. Our experiment demonstrates that the LA3D enables substantial improvement in privacy AN without severely degrading VAD efficacy, outperforming conventional and deep learning approaches. Code: https://github.com/muleina/LA3D.},
   archive      = {J_TIFS},
-  author       = {Vamoua Yachongka and Rémi A. Chou},
-  doi          = {10.1109/TIFS.2025.3623929},
+  author       = {Mulugeta Weldezgina Asres and Lei Jiao and Christian Walter Omlin},
+  doi          = {10.1109/TIFS.2025.3630347},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Secret-key generation from private identifiers under channel uncertainty},
+  title        = {Low-latency video anonymization for crowd anomaly detection: Privacy vs. performance},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). LPP-FL: A lightweight privacy-preserving federated learning against byzantine attacks on non-IID data. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623924'>www</a>)
+(2025). Towards channel-robust and receiver-independent radio frequency fingerprint identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3630316'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {As a distributed computing paradigm, federated learning (FL) enables multiple clients to cooperatively train in edge scenarios without sharing raw training data. Nonetheless, FL is vulnerable to Byzantine attacks due to its distributed nature. While numerous solutions have been proposed, they ignore the inconsistency of local models among clients caused by data heterogeneity (i.e., Non-IID), which severely degrades the performance of FL. Moreover, to further protect client privacy, complex security algorithms are integrated into FL, which seriously increases the privacy computation overhead on edge nodes. To tackle the above issues, this paper proposes a lightweight privacy-preserving federated learning framework, named LPP-FL, significantly improving the performance of FL against Byzantine attacks with Non-IID data. Specifically, we incorporate a correction-term into local model training to mitigate the inconsistency of local models among clients caused by data heterogeneity. Moreover, we design a secure protocol that is deployed on two servers, which achieves Byzantine-robust aggregation results while providing lightweight privacy protection for clients. Theoretical analysis demonstrates the security and robustness of LPP-FL. Extensive experiments show that LPP-FL exhibits superior performance against Byzantine attacks across various data distributions.},
+  abstract     = {Radio frequency fingerprint identification (RFFI) is an emerging method for authenticating Internet of Things (IoT) devices. RFFI exploits the intrinsic and unique hardware imperfections for classifying IoT devices. Deep learning-based RFFI has shown excellent performance. However, there are still remaining research challenges, such as limited public training datasets as well as impacts of channel and receive effects. In this paper, we proposed a three-stage RFFI approach involving contrastive learning-enhanced pretraining, Siamese network-based classification network training, and inference. Specifically, we employed spectrogram as signal representation to decouple the transmitter impairments from channel effects and receiver impairments. We proposed an unsupervised contrastive learning method to pretrain a channel-robust RFF extractor. In addition, the Siamese network-based scheme is enhanced by data augmentation and contrastive loss, which is capable of jointly mitigating the effects of channel and receiver impairments. We carried out a comprehensive experimental evaluation using three public LoRa datasets and one self-collected LoRa dataset. The results demonstrated that our approach can effectively and simultaneously mitigate the effects of channel and receiver impairments. We also showed that pretraining can significantly reduce the required amount of the fine-tuning data. Our proposed approach achieved an accuracy of over 90% in dynamic non-line-of-sight (NLOS) scenarios when there are only 20 packets per device.},
   archive      = {J_TIFS},
-  author       = {Jiguo Yu and Hongliang Zhang and Qi Xia and Yifei Zou and Yangyang Liu},
-  doi          = {10.1109/TIFS.2025.3623924},
+  author       = {Jie Ma and Junqing Zhang and Guanxiong Shen and Linning Peng and Alan Marshall},
+  doi          = {10.1109/TIFS.2025.3630316},
   journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
+  month        = {11},
   pages        = {1},
   shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {LPP-FL: A lightweight privacy-preserving federated learning against byzantine attacks on non-IID data},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Privacy-preserving robotic-based multi-factor authentication scheme for secure automated delivery system. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3623374'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Package delivery is a critical aspect of various industries, but it often incurs high financial costs and inefficiencies when relying solely on human resources. The last-mile transport problem, in particular, contributes significantly to the expenditure of human resources in major companies. Robot-based delivery systems have emerged as a potential solution for last-mile delivery to address this challenge. However, robotic delivery systems still face security and privacy issues, like impersonation, replay, man-in-the-middle attacks (MITM), unlinkability, and identity theft.In this context, we propose a privacy-preserving multi-factor authentication scheme specifically designed for robot delivery systems. Additionally, AI-assisted robotic delivery systems are susceptible to machine learning-based attacks (e.g. FGSM, PGD, etc.). We introduce the first transformer-based audio-visual fusion defender to tackle this issue, which effectively provides resilience against adversarial samples. Furthermore, we provide a rigorous formal analysis of the proposed protocol and also analyse the protocol security using a popular symbolic proof tool called ProVerif and Scyther. Finally, we present a real-world implementation of the proposed robotic system with the computation cost and energy consumption analysis. Code and pre-trained models are available at: https://github.com/YYangNUS/TIFS RobotMFA.},
-  archive      = {J_TIFS},
-  author       = {Yang Yang and Prosanta Gope and Aryan Pasikhani and Biplab Sikdar},
-  doi          = {10.1109/TIFS.2025.3623374},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Privacy-preserving robotic-based multi-factor authentication scheme for secure automated delivery system},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An obfuscator for securing ring confidential transactions’ signing keys of cryptocurrencies. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624550'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Ring Confidential Transaction (RingCT) protocols are widely used in cryptocurrencies to protect user privacy. Consequently, a corresponding digital signature scheme, such as a ring signature scheme that hides the signers’ identities, is required. Accordingly, the security of a RingCT protocol depends on the confidentiality of the secret signing keys of the underlying ring signature scheme. However, existing solutions like hardware wallets, Trusted Execution Environments (TEEs), and threshold signature schemes have limitations such as specified expensive hardware, targeting attacks at CPUs on insufficiently secure hardware, and overheads caused by multiple parties. On the contrary, program obfuscation for signature schemes offers advantages over these existing approaches. Concretely, we propose a novel obfuscator that secures the secret keys of the concise linkable spontaneous anonymous group (CLSAG) signature scheme, which is the latest ring signature scheme used in Monero’s RingCT protocol. To achieve enhanced security, the proposed obfuscator leverages Paillier homomorphic encryption to transform secret keys into an obfuscated form resistant to attacks. The security of the proposed obfuscator has been formally proved. Computational efficiency has been both theoretically analyzed and experimentally evaluated with positive results on various testing platforms.},
-  archive      = {J_TIFS},
-  author       = {Yang Shi and Minyu Teng and Tianyuan Luo and Wenyuan Jiang and Jiayao Gao and Jiangfeng Li and Man Ho Au},
-  doi          = {10.1109/TIFS.2025.3624550},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {An obfuscator for securing ring confidential transactions’ signing keys of cryptocurrencies},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Trace your footprint: Efficient spatial keyword query over encrypted trajectory data. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624950'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the popularity of mobile devices, spatial-textual trajectory query has been deployed in applications such as trajectory-based navigation and travel route recommendation. Massive trajectory data have been outsourced to cloud servers for storage and sharing such as spatial keyword search. However, existing solutions only support similarity queries in the spatial dimension and still incur high storage and query costs, which cannot scale well in large-scale trajectory data scenarios. To solve the above issues, we first achieve an Efficient Range Query over Encrypted Trajectory Data (ERT) using Douglas-Peucker trajectory compression algorithm, random matrix multiplication, filtering-verification mechanism and polynomial fitting technology. Then, we further propose an enhanced Efficient Spatial Keyword Query over Encrypted Trajectory Data (ESKT) by constructing a unified spatial-textual index structure, which can find relevant trajectories that are within some arbitrary geometric range and contain all query keywords. Finally, we formally prove that our schemes are secure against chosen-plaintext-attack, and conduct extensive experiments to demonstrate that our schemes improve the query efficiency by almost 100× when compared with state-of-the-art solutions.},
-  archive      = {J_TIFS},
-  author       = {Yinbin Miao and Xin Wang and Shu Zhang and Xinghua Li and Shujiang Xu and Zhiquan Liu and Kim-Kwang Raymond Choo and Robert H. Deng},
-  doi          = {10.1109/TIFS.2025.3624950},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Trace your footprint: Efficient spatial keyword query over encrypted trajectory data},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Arena: Multi-leader synchronous byzantine fault tolerance. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624981'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Byzantine fault-tolerant state machine replication (BFT-SMR) replicates a deterministic state machine across a set of replicas, and processes requests as a single machine even in the presence of Byzantine faults. BFT-SMR is crucial for ensuring system reliability in distributed computing, where the integrity of data and the correct execution of operations are of utmost importance. Recently, synchronous BFT-SMRs have received tremendous attention due to their simple design and high fault-tolerance threshold. However, existing solutions are not efficient enough to achieve high throughput. In this paper, we propose Arena, the first multi-leader synchronous BFT-SMR. Thanks to the synchrony assumption, Arena gains high throughput benefit from multi-leader with a much simpler design (compared to other partially synchronous multi-leader designs). Furthermore, it is more robust: “no progress” of a leader will not trigger a view-change. Our experimental results show that Arena achieves a peak throughput of up to 7.7× higher than the state-of-the-art.},
-  archive      = {J_TIFS},
-  author       = {Hao Lu and Jian Liu and Jiaheng Zhang and Kui Ren},
-  doi          = {10.1109/TIFS.2025.3624981},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Arena: Multi-leader synchronous byzantine fault tolerance},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MICROFT: Exploring and mitigating cross-state control-flow hijacking attacks on ARM cortex-M TrustZone. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3625394'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {ARM Cortex-M is one of the most popular microcontroller architectures designed for deeply embedded and Internet of Things (IoT) applications. To facilitate efficient execution, it has some unique hardware optimization. Specifically, Cortex-M TrustZone has a fast state switch mechanism that allows direct control-flow transfer from the secure state program to the non-secure state userspace program. In this paper, we present MICROFT – exploring and mitigating cross-state control-flow hijacking attacks on ARM Cortex-M TrustZone. In particular, we first demonstrate how Cortex-M TrustZone’s fast state switch mechanism can be exploited for arbitrary code execution with escalated privilege in the non-secure state by introducing a new exploitation technique, namely return-to-non-secure (ret2ns). We present the detailed methodology of ret2ns attacks in two representative cases and experimentally confirm the feasibility of four variants of attacks on two hardware platforms. To defend against ret2ns attacks, we design three address sanitizing mechanisms while imposing a negligible performance overhead of less than 0.1%. The first mechanism is a generic MPU-assisted address sanitizer, while the second and third mechanisms are more efficient software-fault isolation based approaches that assume the userspace and kernel space programs are placed in different and known memory regions.},
-  archive      = {J_TIFS},
-  author       = {Zheyuan Ma and Xi Tan and Lukasz Ziarek and Ning Zhang and Shambhu Upadhyaya and Hongxin Hu and Ziming Zhao},
-  doi          = {10.1109/TIFS.2025.3625394},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {MICROFT: Exploring and mitigating cross-state control-flow hijacking attacks on ARM cortex-M TrustZone},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A strategy-making method for PIoT PLC honeypoint defense against attacks based on the time-delay evolutionary game. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3601442'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In the context of electric power grid cybersecurity, latency can significantly impact the stable operation, real-time data transmission, and security of the grid. Optimizing security strategies can effectively mitigate the impact of latency on the cybersecurity of the power grid. Particularly in the context of power grids, facing sophisticated and advanced APT (Advanced Persistent Threat) attacks, formulating scientific and rational security strategies is crucial for reducing the time delays incurred during the execution of these strategies. In this paper, we propose a security strategy decision-making method for the deployment of PLC Honeypoints in the Power Internet of Things (PIoT), based on the time-delayed evolution game to select the optimal defense strategy. Firstly, we establish a time-delayed evolutionary game model for the attack and defense of PLC Honeypoints, derive the time-delay differential equations for attack and defense strategies, and obtain the rules for updating the attack and defense strategies. Secondly, we implement a decision-making algorithm for PLC Honeypoint security defense strategies to solve for the optimal PLC Honeypoint defense strategy. Finally, the simulation results show that our model had considerable advantages over traditional replication dynamics. Although it affected the convergence rate of the strategy to reach the steady state, the time delay could ensure the stability of the optimal strategy result. In addition, as the impact of PLC Honeypoint defense on attack latency increased, the time delay in attack strategy-making increased, which can make timely adjustments and reduce losses to the defense in a timely manner. We use the percentage of load loss of the target power grid to construct attack-defense payoff. The attack-defense test in IEEE 22-Bus data set shows that the proposed scheme can effectively select the optimal PLC honeypoint strategy in 35th time.},
-  archive      = {J_TIFS},
-  author       = {Jinglei Tan and Tianshuai Zheng and Hui Jin and Yuan Liu and Hengwei Zhang and Zhihong Tian},
-  doi          = {10.1109/TIFS.2025.3601442},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {A strategy-making method for PIoT PLC honeypoint defense against attacks based on the time-delay evolutionary game},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Adv-inversion: Stealthy adversarial attacks via GAN-inversion for facial privacy protection. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3625635'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rapid advancement of deep face recognition (FR) systems, concerns over the unauthorized use of facial data have become increasingly serious. Although adversarial attacks have been employed to obscure identity information and protect user privacy, existing methods often struggle with degraded visual quality, low success rates in black-box attacks, and dependence on identity-specific training. To overcome these limitations, we introduce Adv-Inversion, a novel and stealthy adversarial attack technique for facial privacy protection. Our approach leverages an encoder-based GAN inversion framework, incorporating a redesigned feature style encoder to prioritize adversarial attacks over traditional editing tasks. By embedding adversarial perturbations iteratively into the feature tensor space, the method ensures high imperceptibility, robust attack transferability, and flexibility without the need for identity-specific training. Additionally, we introduce an Identity Prior Feature Fusion Module for identity-specific scenarios, enabling alignment between reconstructed and target faces while enhancing black-box attack success through an ensemble training strategy. Extensive experiments across two datasets, four open-source FR models on both face verification and face identification tasks, and two commercial FR APIs demonstrate that Adv-Inversion significantly outperforms related methods in both identity-free and identity-specific training scenarios, achieving state-of-the-art results in attack success rate and visual quality metrics, while also exhibiting robustness against common adversarial defense methods. Multiple ablation studies further confirm the effectiveness of our model design. Our code is available at.},
-  archive      = {J_TIFS},
-  author       = {Haobo Wang and Weiqi Luo and Xiaohua Xie and Peijia Zheng and Wenmin Huang and Jiwu Huang},
-  doi          = {10.1109/TIFS.2025.3625635},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Adv-inversion: Stealthy adversarial attacks via GAN-inversion for facial privacy protection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). False-positive-free wildcard queries with dual wildcard flexibility and enhanced efficiency. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3625627'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Wildcard keyword search enables the client to perform wildcard-based similar queries over the encrypted database. Wildcard symmetric searchable encryption (wildcard SSE) appears to be a practical solution. However, it is vulnerable to false positives in query results due to its reliance on keyword feature extraction and approximate membership structures. In contrast, wildcard asymmetric searchable encryption (wildcard ASE) ensures accuracy, but its practicality is limited by the high search latency incurred by public-key operations. To achieve the best of wildcard SSE and ASE, we propose F-WSSE, a novel false-positive-free wildcard SSE scheme in the symmetric-key setting that offers both high search efficiency and guaranteed accuracy. Specifically, we design a new cryptographic construction, ciphertext-masked symmetric-key hidden vector encryption (CM-SHVE), which ensures ciphertext randomness and features a concise secret key. Based on CM-SHVE, F-WSSE achieves query results without false positives in the symmetric-key setting. Additionally, we leverage a fragmentation technique to support dual-wildcard keyword queries, i.e., queries containing both single- and multi-character wildcards. Our evaluation demonstrates that the search efficiency of F-WSSE outperforms the existing wildcard ASE scheme by several orders of magnitude, while delivering comparable search performance of the state-of-the-art wildcard SSE schemes.},
-  archive      = {J_TIFS},
-  author       = {Jiaojiao Wu and Wanxuan Huang and Jianfeng Wang and Shi-Feng Sun and Xiaofeng Chen},
-  doi          = {10.1109/TIFS.2025.3625627},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {False-positive-free wildcard queries with dual wildcard flexibility and enhanced efficiency},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PLAnCo: Provable learnability analysis of generic APUF compositions using finite automata models. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3625776'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Delay-based physically unclonable functions (PUFs) have been a popular candidate for hardware-based root-of-trust owing to their capability to implement “secret-free” cryptography in low-end devices. These are specialized circuits that leverage the intrinsic variabilities of their host device to realize a pseudorandom instance-specific Boolean function in hardware. Since the emergence of this primitive, there has been an ongoing make-and-break game where attackers propose novel attack strategies to model PUF constructions, and designers try to come up with fortified constructions to mitigate the state-of-the-art attacks. In this work, we present a formal learnability analysis framework based on automata-based model and prove that any APUF based PUF composition is PAC learnable. First, we introduce a formal framework for representing delay-based PUFs as deterministic finite automata (DFA), leading to a polynomial-sized representation of any arbitrary composition. Next, we establish the provable learnability of DFA compositions in the distribution-independent PAC model, achieving polynomial space and time complexity. To validate our theoretical findings, we conduct extensive experiments on simulated and FPGA implementations of PUF constructions using the PyPUF framework, thereby demonstrating the practicality/feasibility of our results.},
-  archive      = {J_TIFS},
-  author       = {Soumi Chatterjee and Durba Chatterjee and Aritra Hazra and Debdeep Mukhopadhyay},
-  doi          = {10.1109/TIFS.2025.3625776},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {PLAnCo: Provable learnability analysis of generic APUF compositions using finite automata models},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Masked text adversarial training for cloth-changing person re-identification. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3625662'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Cloth-Changing Person Re-Identification (CC-ReID) aims to match persons who have changed clothes over extended periods. The key challenge of CC-ReID lies in extracting features independent of clothing. In recent years, many studies have focused on pedestrian multi-modal features that are less variable compared to clothing color features. Among these studies, some focus solely on biometric features, ignoring the easily accessible and editable textual features in images. On the other hand, methods leveraging textual features always utilize prior knowledge to explore explicit part alignment but lack the necessary low-level alignment capabilities, which limits their effectiveness in matching multi-modal data. To address these, we propose masked text adversarial training for cloth-changing person re-identification method (MTAT), which integrates textual features containing sequential textual descriptions of masked color information of persons with visual cues into a cross-attention encoder to learn the relationships between local visual and textual tokens, enabling cross-modal interaction. Furthermore, we employ a textual adversarial loss to penalize the ability of the ReID model to predict clothing attributes, thus mining clothing independent features from raw RGB images. Notably, we introduce a learned textual perturbation strategy to simulate real-world description inaccuracies, which significantly enhances the robustness of the model. Experiments were conducted on several CC-ReID benchmark datasets, including LTCC, Celeb-reID and Celeb-reID-light. The results demonstrate that the MTAT method effectively integrates textual features, significantly improving cloth-changing person re-identification performance and outperforming state-of-the-art methods.},
-  archive      = {J_TIFS},
-  author       = {Chengrui Hao and Boyu Wang and Chunlei Peng and Decheng Liu and Nannan Wang and Ruimin Hu and Xinbo Gao},
-  doi          = {10.1109/TIFS.2025.3625662},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Masked text adversarial training for cloth-changing person re-identification},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MTVDGAN: Multi-token-ViT dense GAN for robust screen-shooting watermarking. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626146'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The widespread use of digital imaging devices has exposed a key challenge: the moiré distortion in screen-shooting content preservation significantly weakens the robustness of visual information extraction. The existing methods are difficult to achieve effective feature extraction and moiré distortion suppression simultaneously. This paper proposes a dual module solution based on a generative adversarial network architecture. This framework combines the Multi-Token-ViT (MTV) mechanism for hierarchical feature aggregation and the Dense-net Feature Fusion (DFF) module with cross-layer connections. Specifically, MTV captures multi-scale visual semantics through tokenized paths and generates attention masks to guide adaptive watermark embedding in texture areas. DFF establishes dense cross-layer connections between convolutional blocks, gradually refining features through multi-level information loops. The combination of dual modules effectively enhances the invisibility of watermarks. In addition, this paper proposes a Stacked Moiré Distortion (SMD) simulation technique based on the superposition principle of waves, which uses the waveform superposition of multiple periodic signals to generate realistic training samples that match the spectral complexity of the actual scene, in order to improve the robustness of the model. Our solution demonstrates superior information fidelity and generalization ability in complex interference modes through extensive experiments across various device categories and distortion modes. The code is available at https://github.com/Jane9921/MTVDGAN-Multi-Token-ViT-Dense-GAN-for-Robust-Screen-Shooting-Watermarking.git.},
-  archive      = {J_TIFS},
-  author       = {Guangyong Gao and Yan Ding and Tongchao Feng and Zhangjie Fu and Yunqing Shi},
-  doi          = {10.1109/TIFS.2025.3626146},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {MTVDGAN: Multi-token-ViT dense GAN for robust screen-shooting watermarking},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Disguise while defensing: Avoid refusal responses in LLM’s defense via a multi-agent attacker-disguiser game. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626228'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the enhanced performance of large language models (LLMs) on natural language processing tasks, potential moral and ethical issues of LLMs arise in the Web service. Malicious attackers exist who induce LLMs to jailbreak and generate information containing illegal, privacy-invasive information through techniques such as prompt engineering. As a result, LLMs counter malicious attackers’ attacks using techniques such as safety alignment. However, the strong defense mechanism of the LLMs through rejection replies, which are typically unrelated to the attacker’s query, is easily identified by attackers and leaks information that strengthens their capabilities. We propose an LLM-driven defense task that generates safe and disguised responses which remain relevant to the attack request while concealing defensive intent and withholding any useful information from the attacker. To achieve this task, we construct an LLM-based multi-agent attacker-disguiser game that trains two LLM-based players to select in-context learning (ICL) examples and strategies, guiding them to better generation and approach to Nash equilibrium. To enhance the LLMs’ generation via ICL, we apply the Minimax Q-learning to optimize the players for choosing ICL examples. To further refine generation, we use policy gradient (PG) to train the strategy selectors to select prompt strategies for LLMs. To improve the ICL examples and prompts for LLMs’ generation, we iteratively train the players with ICL sample selection training and prompt strategy training. The goal of this game is to arrive at the Nash equilibrium. Through training, we obtain an LLM-based defender which can receive jailbreak prompts from malicious users and output safe and disguised responses. The experiments reveal that our method strengthens the LLM’s ability to disguise the defense intent compared to other methods. Our method also minimizes the attacker-perceived drop in attack success rate, while delivering the largest actual reduction. This effectively misleads the attacker’s evaluation and enhances practical defense utility.},
-  archive      = {J_TIFS},
-  author       = {Qianqiao Xu and Zhiliang Tian and Hongyan Wu and Zhen Huang and Dong Liang and Yiping Song and Ziyi Pan and Feng Liu and Dongsheng Li},
-  doi          = {10.1109/TIFS.2025.3626228},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Disguise while defensing: Avoid refusal responses in LLM’s defense via a multi-agent attacker-disguiser game},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Traceable and collision-resilient differential privacy. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3624560'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Differential Privacy (DP) is a preeminent technique for data privacy by introducing noise to sensitive information. However, traditional DP mechanisms excessively rely on third parties to ensure traceability, necessitating strong background assumptions that are frequently impractical in real-world scenarios. This reliance makes it difficult to preserve both privacy and traceability. To address these challenges, we propose a novel Traceable and Collision-Resilient Differential Privacy (TCRDP) mechanism. The TCRDP mechanism simultaneously publishes perturbed results and data fingerprints, retaining partial information from the original data in a collision-resilient manner to facilitate future verification. Moreover, the TCRDP mechanism integrates an innovative noise generation process, leveraging hash values and a customized Laplace-like distribution to produce noise. This strategy mitigates the risk of adversaries compromising privacy through enumeration and yields a more concentrated noise distribution with reduced variance. We evaluated the TCRDP mechanism using three datasets: ICUs, Diabetes, and RAHRD, across various query types. The experimental results demonstrated significant improvements in data utility, with the TCRDP mechanism achieving great reductions in Mean Absolute Error (MAE) and Mean Squared Error (MSE) compared to traditional mechanisms. The TCRDP mechanism also maintained lower Accuracy Loss (AL) across different privacy budgets and dataset sizes, highlighting its robustness and scalability. These findings underscore the potential of the TCRDP mechanism to advance privacy-preserving data analysis, offering significant enhancements over existing methods in both accuracy and utility.},
-  archive      = {J_TIFS},
-  author       = {Kai Zhang and Xin Yuan and Ruoxi Sun and Chaoqun Hong and Pei-Wei Tsai and Jason Xue},
-  doi          = {10.1109/TIFS.2025.3624560},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Traceable and collision-resilient differential privacy},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). CleanerCLIP: Fine-grained counterfactual semantic augmentation for backdoor defense in contrastive learning. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626950'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rise of the open-source community, multimodal pre-trained models such as CLIP have become increasingly vulnerable to backdoor attacks. Backdoor triggers can manipulate model outputs during inference, posing a significant threat to downstream users. While post-training defenses based on fine-tuning have made some progress, their effectiveness remains limited due to two key challenges: (1) They fail to weaken the connection between the backdoor trigger and the target text space, making it possible for the model to still rely on the backdoor pattern for prediction. (2) Although batch-level fine-tuning expands the data distribution, it lacks precise guidance for vision-language alignment. To address these limitations, we propose a fine-grained counterfactual text-driven sample-level fine-tuning defense. By generating counterfactual sub-texts, we explicitly guide the text space to shift towards a more discriminative and robust representation, thereby indirectly weakening the association between backdoor triggers and target semantics. Furthermore, we introduce intra-sample contrastive learning with hard negative sub-texts, which enforces a more precise gradient direction to enhance vision-language fine-grained alignment. We evaluate our approach against six different backdoor attack methods and conduct a comprehensive zero-shot classification study on ImageNet-1K. Experimental results demonstrate that our method surpasses SoTA CleanCLIP in defending against BadCLIP attacks, reducing the attack success rate (ASR) in Top-1 classification by 52.02% and Top-10 classification by 63.88%. We aim to enhance the robustness of multimodal models against backdoor threats, fostering safer deployment in real-world applications.},
-  archive      = {J_TIFS},
-  author       = {Yuan Xun and Siyuan Liang and Xiaojun Jia and Xinwei Liu and Jun Chen and Xiaochun Cao},
-  doi          = {10.1109/TIFS.2025.3626950},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {CleanerCLIP: Fine-grained counterfactual semantic augmentation for backdoor defense in contrastive learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient one-to-many authentication with intelligent illegal request identification for UAV networks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626931'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In Unmanned Aerial Vehicle (UAV) networks, UAVs usually perform tasks in the form of groups. When tasks change, the Ground Control Station (GCS) will assign the complemental UAV to join the group for notification or reinforcement. Since UAVs communicate over open wireless channels, secure authentication is required for complemental UAV joining the group. However, one-by-one authentication between complemental UAV and the group members leads to high overhead and delays. At the same time, when the UAV group is far away from the coverage of the GCS, the GCS is unable to assist the authentication process in real-time. To solve the above problems, we propose a one-to-many UAV authentication scheme using Identity-Based Broadcast Encryption (IBBE) and batch authentication. This scheme does not require a trusted third party to be online in real time. We also design an algorithm based on reinforcement learning for identifying illegal requests during batch authentication, enhancing efficiency and ensuring successful authentication. Our scheme meets UAV networks’ security requirements, defending against various attacks. Experimental results show that it reduces computational overhead by 55.27% and communication overhead by 23.16% compared to similar schemes. Additionally, the illegal request identification algorithm reduces identification numbers by 15.44% to 25.72% and lowers latency by 14.64% to 25.12% compared to existing methods.},
-  archive      = {J_TIFS},
-  author       = {Zekai Chen and Zhe Ren and Xinghua Li and Zhan Zhang and Yunwei Wang and Robert H. Deng},
-  doi          = {10.1109/TIFS.2025.3626931},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Efficient one-to-many authentication with intelligent illegal request identification for UAV networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Low-complexity secure beamforming with fluid antenna-assisted MU-MISO system. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626967'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Fluid Antenna (FA) systems hold significant potential for enhancing physical layer security (PLS) by dynamically adjusting the positions of transmit antennas to suppress information leakage to eavesdroppers. However, the joint optimization of secure beamforming and FA positions is very challenging and remains unsolved, given the mutually coupled, non-convex and NP-hard nature of the problem. In this paper, we investigate the FA-assisted multi-user multiple-input single-output (MU-MISO) system for maximizing the downlink secrecy rate. First of all, we propose an alternating optimization (AO) framework to decouple the problem. For efficient FA position optimization, we introduce a low-sampling successive selection and successive convex approximation (L3S-SCA) method, which first selects a proper port in discrete space and subsequently refines the FA positions via continuous optimization. For secure beamforming, we reformulate the problem as an unconstrained optimization on Riemannian manifold, eliminating the errors from relaxing per-antenna power constraints (PAPC). We design the necessary Riemannian tools and propose a Limited-memory Riemannian Broyden-Fletcher-Goldfarb-Shanno (LRBFGS) method with low computational complexity. Comprehensive convergence and complexity analyses are conducted, and simulation results demonstrate the advantages of FA-assisted secure beamforming, as well as the superiority of our proposed algorithms in terms of performance and complexity.},
-  archive      = {J_TIFS},
-  author       = {Siwen Li and Jiacheng Chen and Shuangyin Ren and Boyu Deng and Jingchao Wang and Jieling Wang},
-  doi          = {10.1109/TIFS.2025.3626967},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Low-complexity secure beamforming with fluid antenna-assisted MU-MISO system},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). PosGKG: Lightweight position-based group key generation and management in BC systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626945'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Backscatter Communication (BC) is an innovative wireless communication technology that is characterized by energy harvesting capability, low cost, ultra-low power consumption, and ease of maintenance. Secure communications among a group of Backscatter Devices (BDs) are crucially important to facilitate its wide applications. However, current Group Key Generation (GKG) technologies in BC systems suffer from such problems as inadequate key consistency, low key generation efficiency, suboptimal key randomness, high key generation complexity, as well as lack of group key management to ensure backward and forward secrecy. In response, this paper proposes PosGKG, a position-based group key generation and management scheme with high key consistency, efficiency, and randomness, tailored for easy deployment in a BC system with low computation and communication complexity. PosGKG leverages position information to construct shared information between devices for GKG, thereby addressing over-reliance on channel reciprocity and enhancing group key consistency. In particular, PosGKG incorporates a dynamic update mechanism for private weight vectors of BDs that are used to obtain global positions for GKG, which guarantees that the generated group key retains a high degree of randomness, even in a static environment. PosGKG not only diminishes communication and computational complexities due to the adoption of randomly changed global positions as shared information for GKG but also exhibits enhanced security under various attacks, both passive and active ones. In addition, group key management is applied to guarantee the forward and backward secrecy of PosGKG, irrespective of the changes of the BC system. Theoretical analysis and comprehensive experiments with diverse configurations validate the performance of PosGKG in terms of communication and computational complexity, key generation efficiency, key consistency, robustness, security, and environmental feasibility, with demonstrated advantages over existing technologies.},
-  archive      = {J_TIFS},
-  author       = {Jiajun Li and Zheng Yan and Yishan Yang},
-  doi          = {10.1109/TIFS.2025.3626945},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {PosGKG: Lightweight position-based group key generation and management in BC systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Nes2Net: A lightweight nested architecture for foundation model driven speech anti-spoofing. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626963'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Speech foundation models have significantly advanced various speech-related tasks by providing exceptional representation capabilities. However, their high-dimensional output features often create a mismatch with downstream task models, which typically require lower-dimensional inputs. A common solution is to apply a dimensionality reduction (DR) layer, but this approach increases parameter overhead, computational costs, and risks losing valuable information. To address these issues, we propose Nested Res2Net (Nes2Net), a lightweight back-end architecture designed to directly process high-dimensional features without DR layers. The nested structure enhances multi-scale feature extraction, improves feature interaction, and preserves high-dimensional information. We first validate Nes2Net on CtrSVDD, a singing voice deepfake detection dataset, and report a 22% performance improvement and an 87% back-end computational cost reduction over the state-of-the-art baseline. Additionally, extensive testing across four diverse datasets: ASVspoof 2021, ASVspoof 5, PartialSpoof, and In-the-Wild, covering fully spoofed speech, adversarial attacks, partial spoofing, and real-world scenarios, consistently highlights Nes2Net’s superior robustness and generalization capabilities. The code package and pre-trained models are available at https://github.com/Liu-Tianchi/Nes2Net.},
-  archive      = {J_TIFS},
-  author       = {Tianchi Liu and Duc-Tuan Truong and Rohan Kumar Das and Kong Aik Lee and Haizhou Li},
-  doi          = {10.1109/TIFS.2025.3626963},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Nes2Net: A lightweight nested architecture for foundation model driven speech anti-spoofing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Pattern-hiding encrypted multi-maps with support for join queries. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3627000'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The recently proposed Join Cross-Tags Protocol (JXT) addresses the long-standing issue of excessive query overhead in table joins within Searchable Symmetric Encryption (SSE). As a purely symmetric-key solution, JXT supports efficient conjunctive queries over equi-joins of encrypted tables without requiring any pre-computation during the setup phase. However, JXT has a potential limitation: it may inadvertently reveal the actual volumes of identifiers corresponding to attribute-value pairs, as well as the result values of the join queries. In this paper, we propose JXTMM (JXT multi-map), the first join query scheme designed to hide both volume patterns and result patterns. JXTMM is capable of concealing identifier volumes, preventing the server from learning the actual volumes of attribute-value pairs, and shifting the checkability of join results to the client side, thereby eliminating result pattern leakage. We provide a formal security proof for JXTMM, along with a comprehensive efficiency analysis. Experimental results demonstrate that JXTMM not only performs efficiently on table join queries but also effectively achieves volume-hiding in such queries.},
-  archive      = {J_TIFS},
-  author       = {Jinguo Li and Delong Cui and Junqin Huang and Linghe Kong},
-  doi          = {10.1109/TIFS.2025.3627000},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Pattern-hiding encrypted multi-maps with support for join queries},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Three-player game theory and p-PCPSO for defense resource allocation in wireless sensor networks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626956'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the development of artificial intelligence, the security problem of wireless sensor networks (WSN) is becoming more and more serious. Existing researches mainly consider the confrontation between attacker and defender. In this paper, the sleeper is introduced in the confrontation process. The sleeper exists independently of attacker and defender. The sleeper will choose sides based on the conditions of confrontation game. In this paper, a three-player game model is established to analyze the confrontation game. Large scale strategies make it difficult to find the Nash equilibrium (NE) of the three-player game. In order to solve this problem, a parallel compact particle swarm optimization based on Pareto distribution (p-PCPSO) is proposed. The p-PCPSO not only reduces the use of memory but also improves the optimization performance. Experiments show that p-PCPSO has better optimization performance than other algorithms on 75% test functions of CEC2013. The effectiveness of using p-PCPSO to solve NE is demonstrated by experiments. How different resources and game values influence the benefit of defender are analyzed by experiments. This three-player game model can be extended to intrusion detection and cyber resilience. This paper provides ideas for network security automation and active defense of real-world.},
-  archive      = {J_TIFS},
-  author       = {Ning Liu and Jeng-Shyang Pan and Shangkun Liu and Wei-Min Zheng},
-  doi          = {10.1109/TIFS.2025.3626956},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Three-player game theory and p-PCPSO for defense resource allocation in wireless sensor networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Penetrating the hostile: Detecting DeFi protocol exploits through cross-contract analysis. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3626979'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Decentralized finance (DeFi) protocols are crypto projects developed on the blockchain to manage digital assets. Attacks on DeFi have been frequent and have resulted in losses exceeding $80 billion. Current tools detect and locate possible vulnerabilities in contracts by analyzing the state changes that may occur during malicious events. However, this victim-only approaches seldom possess the capability to cover the attacker’s interaction intention logic. Furthermore, only a minuscule percentage of DeFi protocols experience attacks in real-world scenarios, which poses a significant challenge for these detection tools to demonstrate practical effectiveness. In this paper, we propose DeFiTail, the first framework that utilizes deep learning technology for access control and flash loan exploit detection. Through feeding the cross-contract static data flow, DeFiTail automatically learns the attack logic in real-world malicious events that occur on DeFi protocols, capturing the threat patterns between attacker and victim contracts. Since the DeFi protocol events involve interactions with multi-account transactions, the execution path with external and internal transactions requires to be unified. Moreover, to mitigate the impact of mistakes in Control Flow Graph (CFG) connections, DeFiTail validates the data path by employing the symbolic execution stack. Furthermore, we feed the data paths through our model to achieve the inspection of DeFi protocols. Comparative experiment results indicate that DeFiTail achieves the highest accuracy, with 98.39% in access control and 97.43% in flash loan exploits. DeFiTail also demonstrates an enhanced capability to detect malicious contracts, identifying 86.67% accuracy from the CVE dataset. By monitoring existing contracts, we identified five distinct categories of vulnerabilities: repetition abuse, unsafe unintended exploitation, signature violated exploitation, insecure interfaces exploitation, and unrestricted token transfer.},
-  archive      = {J_TIFS},
-  author       = {Xiaoqi Li and Wenkai Li and Zhiquan Liu and Yuqing Zhang and Yingjie Mao},
-  doi          = {10.1109/TIFS.2025.3626979},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Penetrating the hostile: Detecting DeFi protocol exploits through cross-contract analysis},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GC-DRQN: Enhancing radar anti-jamming performance with supervised auxiliary tasks and deterministic rewards. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3627879'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Self-defense suppression jammers pose a critical threat to radar by adaptively altering jamming frequencies based on intercepted radar pulses, which can mask the real targets. An effective countermeasure is to transmit a cover pulse before the detection pulse to deceive the jammer. In order to maximize radar detection performance while ensuring successful anti-jamming, reinforcement learning (RL) methods are employed to dynamically adjust the width ratio between the cover pulse and the detection pulse based on the jamming state and reward feedback. However, unknown jammer interception durations and interception-jamming cycles, along with the random feedback affected by noise, pose significant challenges to the pulse width selection based on RL methods. Inspired by biological intelligence to enhance RL, we propose a supervised learning (SL)-based general auxiliary task framework that emulates the spatiotemporal encoding characteristics of grid cells and time cells in mammalian brains to extract richer and more structured environmental information. Building on this, we introduce a flexible grid cell-deep recurrent Q-network (GC-DRQN) architecture, integrating SL and RL, which improves the performance of RL in handling tasks with temporal dependencies. Additionally, we implement a deterministic equivalent reward mechanism to overcome the instability in the RL convergence process caused by random rewards. Simulation results demonstrate that the pulse transmission strategy learned by GC-DRQN achieves significantly higher target detection probabilities compared to several baseline methods. Notably, in a low signal-to-noise ratio (SNR) scenario, GC-DRQN improves the target detection probability and convergence speed of DRQN by up to twofold.},
-  archive      = {J_TIFS},
-  author       = {Jiaxiang Zhang and Bo Wang and Zhennan Liang and Huayu Fan and Quanhua Liu},
-  doi          = {10.1109/TIFS.2025.3627879},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {GC-DRQN: Enhancing radar anti-jamming performance with supervised auxiliary tasks and deterministic rewards},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Malware containment via firewall placement in large scale wireless IoT networks. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3627851'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {One of the biggest risks that wireless IoT networks encounter is malware or botnet epidemics. Malware can propagate from one device to another device existing in its coverage range as long as there are no check points (firewalls) to protect that device. Firewalls can be hardware (special devices) or software licenses installed on a limited number of devices. Unfortunately, in both cases the number of firewalls in any network is usually limited due to cost constraints. Therefore, it is crucial to reduce the number of required firewalls and/or make efficient use of the available firewalls. In this paper, we consider two optimization problems to optimize the firewall placement in a massive wireless IoT network. The objective of the first optimization problem is to reduce the number of firewalls required to partition the network into isolated clusters/partitions of a given maximum size. The second problem aims at reducing the maximum size of the isolated partitions that can be achieved given an available number of firewalls. These two clustering problems are non-convex and are known to be NP-complete. However, we provide efficient algorithms, with different variations, to solve the two problems, and we compare their performance to the well known K-Means and Spectral Partitioning algorithms. Simulation results show that in both problems the average performance of the proposed algorithms outperforms the performance of both algorithms. Furthermore, we show that adding the proposed algorithm as a second stage after the Spectral Partitioning algorithm improves the performance of the Spectral Partitioning significantly.},
-  archive      = {J_TIFS},
-  author       = {Wessam Mesbah},
-  doi          = {10.1109/TIFS.2025.3627851},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Malware containment via firewall placement in large scale wireless IoT networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Integrated security strategies generation and optimization in industrial cyber-physical systems. <em>TIFS</em>, 1. (<a href='https://doi.org/10.1109/TIFS.2025.3627857'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In industrial cyber-physical systems (ICPSs), the strong coupling characteristics between the cyber and physical systems increase the complexity of security strategy decision-making. A trade-off exists in current methods: complex decision models hinder the fulfillment of real-time demands, whereas simplified coupling characteristics compromise strategy effectiveness. In recent years, digital twin (DT) technology has gained increasing attention in industrial security because of its high-fidelity modeling and real-time interaction capabilities. Motivated by this trend, we propose an integrated security strategy generation and optimization method for ICPSs that incorporates DT to tackle the challenge of balancing real-time performance with strategy reliability. Leveraging the high fidelity of the existing DT in ICPS, the coupling characteristics can be directly mapped to the virtual model, avoiding the cumbersome modeling operations. We first quickly generate an initial strategy space through a lightweight basic decision model. Subsequently, a DT-based closed-loop evaluation mechanism is introduced to facilitate rapid convergence toward the optimal strategy. It reduces computational complexity while preserving the authenticity of coupling characteristics, thereby enhancing the efficiency and accuracy of security decision-making. Experimental verification and analysis demonstrate that our method provides a feasible solution for efficient security decision-making in ICPSs.},
-  archive      = {J_TIFS},
-  author       = {Huiqi Xian and Xiaoya Hu and Yabin Zhang and Huimai Zhang},
-  doi          = {10.1109/TIFS.2025.3627857},
-  journal      = {IEEE Transactions on Information Forensics and Security},
-  month        = {10},
-  pages        = {1},
-  shortjournal = {IEEE Trans. Inf. Forensics Security},
-  title        = {Integrated security strategies generation and optimization in industrial cyber-physical systems},
+  title        = {Towards channel-robust and receiver-independent radio frequency fingerprint identification},
   year         = {2025},
 }
 </textarea>

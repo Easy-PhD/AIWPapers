@@ -25,498 +25,137 @@
 </head>
 <body>
 
-<h2 id="trob">TROB - 26</h2>
+<h2 id="trob">TROB - 7</h2>
 <ul>
 <li><details>
 <summary>
-(2025). MARG: MAstering risky gap terrains for legged robots with elevation mapping. <em>TROB</em>, 1-17. (<a href='https://doi.org/10.1109/TRO.2025.3619041'>www</a>)
+(2025). A multi-mode motion polar robot: Energy-saving through foldable sail and transformable tracks. <em>TROB</em>, 1--17. (<a href='https://doi.org/10.1109/TRO.2025.3629811'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep Reinforcement Learning (DRL) controllers for quadrupedal locomotion have demonstrated impressive performance on challenging terrains, allowing robots to execute complex skills such as climbing, running, and jumping. However, existing blind locomotion controllers often struggle to ensure safety and efficient traversal through risky gap terrains, which are typically highly complex, requiring robots to perceive terrain information and select appropriate footholds during locomotion accurately. Meanwhile, existing perception-based controllers still present several practical limitations, including a complex multisensor deployment system and expensive computing resource requirements. This paper proposes a DRL controller named MAstering Risky Gap Terrains (MARG), which integrates terrain maps and proprioception to dynamically adjust the action and enhance the robot's stability in these tasks. During the training phase, our controller accelerates policy optimization by selectively incorporating privileged information (e.g., center of mass, friction coefficients) that are available in simulation but unmeasurable directly in real-world deployments due to sensor limitations. We also designed three foot-related rewards to encourage the robot to explore safe footholds. More importantly, a terrain map generation (TMG) model is proposed to reduce the drift existing in mapping and provide accurate terrain maps using only one LiDAR, providing a foundation for zero-shot transfer of the learned policy. The experimental results indicate that MARG maintains stability in various risky terrain tasks.},
+  abstract     = {Existing polar robots are constrained by limited energy supply, making it difficult to carry out long-term scientific exploration missions, which highlights an urgent demand for energy conservation. An energy-efficient multi-mode motion polar robot is proposed to address this challenge. Both increasing external assistance and reducing the driving force are critical for lowering energy consumption. A foldable sail is designed to provide external assistance. When unfolded, the sail generates assistive force. When folded, it maintains stability in extreme polar climates. The sail shape is designed based on a symmetrically extended NACA0018 airfoil, and the influence of different sail parameters on performance is discussed. The transformable tracks realize switching between traction and sliding modes through the separation of the track and teeth chain, using the sliding mode to reduce driving force. The effect of teeth parameter variations on traction performance is analyzed. The system kinematics and dynamics are model, and stability conditions are determined. Based on this, an energy-saving motion control framework for multi-mode motion is proposed. Finally, experiments are conducted to evaluate the energy-saving contribution of each independent mode under different configurations. Comprehensive experiments in multi-mode motion demonstrate an overall energy-saving rate of approximately 24%, verifying the effectiveness of the energy-saving motion control strategy. With its energy-saving advantages, this robot shows strong potential for enabling long-term scientific exploration in polar regions.},
   archive      = {J_TROB},
-  author       = {Yinzhao Dong and Ji Ma and Liu Zhao and Wanyue Li and Peng Lu},
-  doi          = {10.1109/TRO.2025.3619041},
+  author       = {Yongsheng Luo and Zhaokun Guo and Tao Liu and Kaixuan Li and Jinnong Liao and Lefan Guo and Yanhe Zhu and Gangfeng Liu and Jie Zhao},
+  doi          = {10.1109/TRO.2025.3629811},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-17},
+  month        = {11},
+  pages        = {1--17},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {MARG: MAstering risky gap terrains for legged robots with elevation mapping},
+  title        = {A multi-mode motion polar robot: Energy-saving through foldable sail and transformable tracks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). CCRobot-S: A robotic cable-climbing squad collaborating for fast inspection and heavy-duty maintenance. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619048'>www</a>)
+(2025). SlideSLAM: Sparse, lightweight, decentralized metric-semantic SLAM for multi-robot navigation. <em>TROB</em>, 1--20. (<a href='https://doi.org/10.1109/TRO.2025.3629786'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This study introduces a novel climbing strategy, reconfigurable parallel-type cable-driven climbing designed for long-span, large-scale bridge stay cable robotic applications, which has the potential to revolutionize the stay cable inspection and maintenance practice. The proposed methodology features the development of a Collaborative Climbing Robot Squad (CCRobot-S), which builds upon the design principles of the previous CCRobot series. In this study, CCRobot-S implements a parallel-type cable-driven manipulation design, allowing for reconfigurable kinematic morphology by its movable anchor bases and realizing the capacity of crossing over the stay cables for its flying platform. The collaborative robot squad design liberates the dimensions and scales of the robot's reachable workspace and moves the part of the robotic system that indeed needs to be moved, enhancing the working efficiency and climbing agility. This strategy also utilizes controllable adhesion instead of friction to interact with the bridge cable surface for the flying platform, realizing force multiplication for forceful manipulation. Toward bringing high efficiency and heavy-duty capacity, we propose the applicable climbing frameworks (zero-downtime climbing gait for cable inspection and spider-like climbing gait for cable maintenance) and the optimization frameworks (optimal anchor configuration for the movable anchor bases and optimal grasp arrangement for the flying gripper). This article includes the exploration of the design and climbing gaits of CCRobotS, the formulation of the CCRobot-S model, a comprehensive analysis of its workspace, and its climbing strategy and optimization. Extensive experiments have assessed the proposed climbing strategy's effectiveness and showcased CCRobot-S' capabilities.},
+  abstract     = {This paper develops a real-time decentralized metric-semantic SLAM algorithm that enables a heterogeneous robot team to collaboratively construct object-based metric-semantic maps. The proposed framework integrates a data-driven front-end for instance segmentation from either RGBD cameras or LiDARs and a custom back-end for optimizing robot trajectories and object landmarks in the map. To allow multiple robots to merge their information, we design semantics-driven place recognition algorithms that leverage the informativeness and viewpoint invariance of the object-level metric-semantic map for inter-robot loop closure detection. A communication module is designed to track each robot's observations and those of other robots whenever communication links are available. The framework supports real-time, decentralized operation onboard the robots and has been integrated with three types of aerial and ground platforms. We validate its effectiveness through experiments in both indoor and outdoor environments, as well as benchmarks on public datasets and comparisons with existing methods. The framework is open-sourced and suitable for both single-agent and multi-robot real-time metric-semantic SLAM applications.},
   archive      = {J_TROB},
-  author       = {Zhenliang Zheng and Ning Ding and Herbert Werner and Feng Ren and Yongyuan Xu and Wenchao Zhang and Xiaoli Hu and Jianguo Zhang and Tin Lun Lam},
-  doi          = {10.1109/TRO.2025.3619048},
+  author       = {Xu Liu and Jiuzhou Lei and Ankit Prabhu and Yuezhan Tao and Igor Spasojevic and Pratik Chaudhari and Nikolay Atanasov and Vijay Kumar},
+  doi          = {10.1109/TRO.2025.3629786},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
+  month        = {11},
+  pages        = {1--20},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {CCRobot-S: A robotic cable-climbing squad collaborating for fast inspection and heavy-duty maintenance},
+  title        = {SlideSLAM: Sparse, lightweight, decentralized metric-semantic SLAM for multi-robot navigation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Impedance control design framework using commutative map between $SE(3)$ and $\mathfrak {se}(3)$. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3619066'>www</a>)
+(2025). Efficient routing for multi-truck multi-drone package delivery with precedence constraints. <em>TROB</em>, 1--16. (<a href='https://doi.org/10.1109/TRO.2025.3629808'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Impedance control is a widely adopted approach that ensures the compliant behavior of robot manipulators as they interact with their environment according to specifically designed dynamics. For tasks involving six degrees of freedom (DoF), it is crucial to appropriately manage the position and orientation of the end-effector by controlling dynamic behavior. However, describing orientational displacement and designing the corresponding rotational impedance can be challenging, especially when we use a minimal representation. The well-known minimal representation for orientation, the Euler angle, suffers from representation singularity. As a remedy, the quaternion or dual quaternion can be an alternative, but with non-minimal representations. This lack of minimal representation, which does not suffer from the representation singularity, often leads to handling the impedance design by directly defining the potential energy function in the matrix Lie group. This paper proposes a framework for the six-DoF impedance control design that takes advantage of Lie group theory with minimal representation, known as the exponential coordinate. Since the exponential coordinate can be treated as the Euclidean variable within the injectivity radius, it allows for the formulation of the impedance control more systematically and familiarly. In our framework, a detour strategy is utilized; the impedance is designed in the Lie group $SE(3)$, and the control is designed in the Lie algebra $\mathfrak {se}(3)$, which is isomorphic to the vector space $\mathbb {R}^{6}$. The group structure of $SE(3)$ can be maintained using the proposed conversion formula between the Lie group and the Lie algebra, called the differential of the exponential map and its time derivative, with a closed-form expression. Experiments with a 6-DoF robot manipulator verified that the proposed impedance control framework effectively reflects the $SE(3)$ group structure and achieves the desired dynamic behavior as the functionality of the impedance control with minimal parameters.},
+  abstract     = {As the demand for efficient parcel delivery continues to grow in the logistics industry, optimizing multi-robot task assignment has become crucial for enhancing overall delivery performance. This paper addresses the precedence-constrained multi-truck multi-drone package delivery task assignment problem, where each truck coordinates with a drone to serve multiple dispersed customers under precedence constraints that specify the required order of service. While trucks deliver packages to designated customers, drones can simultaneously serve other customers, subject to their limited flight endurance and payload capacity. To tackle this challenge, a three-phase heuristic algorithm is proposed to minimize the total delivery time required to serve the last customer while ensuring all precedence constraints are satisfied. In the first phase, an extended minimum marginal cost algorithm is applied to quickly construct truck-only routes that comply with precedence constraints. In the second phase, a splitting algorithm combined with an endurance checking procedure is employed to generate hybrid truck–drone routes considering drone limitations. In the final phase, a variable neighborhood descent approach is introduced to further improve the solution by strategically perturbing the truck-only routes. Extensive simulations and experiments demonstrate that the proposed three-phase heuristic algorithm consistently achieves higher-quality solutions with reduced computation time compared with the widely used adaptive large neighborhood search method.},
   archive      = {J_TROB},
-  author       = {Jonghyeok Kim and Minchang Sung and Youngjin Choi and Jonghoon Park and Wan Kyun Chung},
-  doi          = {10.1109/TRO.2025.3619066},
+  author       = {Xiaoshan Bai and Baode Li and Jianqiang Li and Zongze Wu and Weidong Zhang and Shuzhi Sam Ge},
+  doi          = {10.1109/TRO.2025.3629808},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
+  month        = {11},
+  pages        = {1--16},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Impedance control design framework using commutative map between $SE(3)$ and $\mathfrak {se}(3)$},
+  title        = {Efficient routing for multi-truck multi-drone package delivery with precedence constraints},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Asymmetric information enhanced mapping framework for multirobot exploration based on deep reinforcement learning. <em>TROB</em>, 1-17. (<a href='https://doi.org/10.1109/TRO.2025.3619045'>www</a>)
+(2025). Torque-bounded task-space admittance control for redundant manipulators. <em>TROB</em>, 1--19. (<a href='https://doi.org/10.1109/TRO.2025.3629785'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Despite significant advancements in multirobot technologies, efficiently and collaboratively exploring an unknown environment remains a major challenge. In this paper, we propose AIM-Mapping, an Asymmetric InforMation enhanced Mapping framework based on deep reinforcement learning. The framework fully leverages the privileged information to help construct the environmental representation as well as the supervised signal in an asymmetric actor-critic training framework. Specifically, privileged information is used to evaluate exploration performance through an asymmetric feature representation module and a mutual information evaluation module. The decision-making network employs the trained feature encoder to extract structural information of the environment and integrates it with a topological map constructed based on geometric distance. By leveraging this topological map representation, we apply topological graph matching to assign corresponding boundary points to each robot as long-term goal points. We conduct experiments in both iGibson simulation environments and real-world scenarios. The results demonstrate that the proposed method achieves significant performance improvements compared to existing approaches.},
+  abstract     = {This paper presents a task-space admittance controller applicable to redundant manipulators equipped with torque sensors. It extends Kikuuwe's (2019) torque-bounded admittance controller (TBAC), which allows for imposing explicit limits on the joint actuator torques without causing unsafe behaviors such as oscillation and overshoots. The proposed controller enforces that the end-effector follows predefined task-space dynamics as long as the joint torques are unsaturated and the configuration is away from singularities. The behavior in the nullspace, which arises from the redundant degrees of freedom and singular configurations, is governed by predefined joint-space dynamics. The task-space and joint-space dynamics are combined through a newly proposed continualized pseudoinverse, which employs the singular value decomposition. Results of experiments using a seven-degree-of-freedom Kinova Gen3 robot illustrate the validity of the proposed admittance controller in various scenarios, including the case where the robot is fully stretched.},
   archive      = {J_TROB},
-  author       = {Jiyu Cheng and Junhui Fan and Xiaolei Li and Paul L. Rosin and Yibin Li and Wei Zhang},
-  doi          = {10.1109/TRO.2025.3619045},
+  author       = {Ryo Kikuuwe},
+  doi          = {10.1109/TRO.2025.3629785},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-17},
+  month        = {11},
+  pages        = {1--19},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Asymmetric information enhanced mapping framework for multirobot exploration based on deep reinforcement learning},
+  title        = {Torque-bounded task-space admittance control for redundant manipulators},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Controlling deformable objects with non-negligible dynamics: A shape-regulation approach to end-point positioning. <em>TROB</em>, 1-16. (<a href='https://doi.org/10.1109/TRO.2025.3620806'>www</a>)
+(2025). Nonlinear modeling of the finite helical deformation of 3D-printed PneuNets. <em>TROB</em>, 1--17. (<a href='https://doi.org/10.1109/TRO.2025.3629813'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Model-based manipulation of deformable objects has traditionally dealt with objects while neglecting their dynamics, thus mostly focusing on very lightweight objects at steady state. At the same time, soft robotic research has made considerable strides toward general modeling and control, despite soft robots and deformable objects being very similar from a mechanical standpoint. In this work, we leverage these recent results to develop a control-oriented, fully dynamic framework of slender deformable objects grasped at one end by a robotic manipulator. We introduce a dynamic model of this system using functional strain parameterizations and describe the manipulation challenge as a regulation control problem. This enables us to define a fully model-based control architecture, for which we can prove analytically closed-loop stability and provide sufficient conditions for steady state convergence to the desired state. The nature of this work is intended to be markedly experimental. We provide an extensive experimental validation of the proposed ideas, tasking a robot arm with controlling the distal end of six different cables, in a given planar position and orientation in space.},
+  abstract     = {PneuNet, consists of a series of interconnected chambers embedded within a soft elastomer material, can exhibit diverse deformations. 3D printing allows for precise control over both material combinations and geometrical configurations, enabling the fabrication of PneuNets with complicated structures and multifunctionality. However, the increased freedom in material and structures introduced by 3D printing also presents significant challenges for modeling and design, including material nonlinearities, complex cross-sections and varying initial curvatures. In this work, we develop 3D-printed PneuNets with varying initial curvatures and cross-sections demonstrating finite deformation with multiple complete turns. To model the helical shape, we establish a general nonlinear framework based on the minimum potential energy method. The model is validated by PneuNets with various material combinations and geometrical configurations across a range of constitutive models including Mooney-Rivlin, Ogden, Neo-Hookean and Yeoh models. Results show that the nonlinear model, especially the Mooney–Rivlin model, accurately captures the deformation without any fitting parameters, achieving an $R^{2}$ value of 0.975, compared to 0.017 for the linear model. Based on the validated model, PneuNets are inverse-designed to achieve desired spatial deformations. Their dynamic responses and payload capacities are also evaluated. We design a 3D-printed octopus with tentacles composed of PneuNets, capable of mimicking the grasping and movement of a real octopus. Additionally, we demonstrate the multifunctional capabilities such as fluid transition and sensing. This study lays a solid foundation for the design and application of 3D-printed PneuNets.},
   archive      = {J_TROB},
-  author       = {Sebastien Tiburzio and Tom´as Coleman and Daniel Feliu-Talegon and Cosimo Della Santina},
-  doi          = {10.1109/TRO.2025.3620806},
+  author       = {Qinghua Yu and Mengjie Zhang and Chengru Jiang and Guoying Gu and Dong Wang},
+  doi          = {10.1109/TRO.2025.3629813},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-16},
+  month        = {11},
+  pages        = {1--17},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Controlling deformable objects with non-negligible dynamics: A shape-regulation approach to end-point positioning},
+  title        = {Nonlinear modeling of the finite helical deformation of 3D-printed PneuNets},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Identification modeling and trajectory tracking of robotic fish with synergistic fins-body. <em>TROB</em>, 1-15. (<a href='https://doi.org/10.1109/TRO.2025.3621044'>www</a>)
+(2025). A tactile-proximity dual-mode photoelectric sensor: Implementation and applications. <em>TROB</em>, 1--18. (<a href='https://doi.org/10.1109/TRO.2025.3629784'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The robotic fish of BCF/MPF hybrid propulsion achieves efficient and stable swimming through the synergistic control of pectoral fins and body. However, the control problem has been less studied of fins-body coupling with multiple degrees of freedom. This study focuses on the development and synergistic control of robotic fish with fins-body. First, a robotic fish with pectoral fin and body co-propulsion was designed, and a gait controller of fin-body synergic was constructed by a central pattern generator (CPG). Specifically, the control parameters were simplified, and the synergic movement was realized of fin-body coupling with multiple degrees of freedom. Secondly, the dataset was obtained with computational fluid dynamics (CFD) simulations and six-dimensional force sensors, and the offline hydrodynamic model was obtained by bidirectional long-short-time memory networks (BiLSTM) identification, which is the relationship between the control parameters and force/torque of the robotic fish. The model parameters were updated online with experimental data. Finally, a control framework is constructed for offline-online model and event-triggered nonlinear model predictive control (ENMPC), which compensates for the driving force of the robotic fish, achieves tracking trajectory precisely, and reduces the computational cost.},
+  abstract     = {Tactile and proximity sensing is essential for robotic tasks involving human-robot interaction (HRI) and manipulation. However, existing dual-mode sensors often face challenges such as environmental interference, large sizes, and task-specific limitations. This study proposes a dual-mode photoelectric sensor that integrates tactile and proximity sensing. The tactile sensing mechanism is based on a variable optical path structure, while the proximity sensing relies on the surface light reflection. The sensor exhibits a high sensitivity (up to 1.12 V/N), compactness (4 mm thickness), and desirable stability with a drift of less than 1% over 8,000 repetitive cycles under pressures ranging from 0 to 63 kPa. A general tactile-proximity servoing framework is also proposed for the dual-mode sensor array which enables tactile servoing, proximity servoing and hybrid tactile-proximity servoing. Under this framework, parameters can be flexibly adjusted to adapt to different servoing tasks including position and orientation control of the robotic arm's end-effector. In more complex robotic tasks, a real-time fruit ripeness classification method is developed based on the proposed sensor. Using the proposed TPNet, the classification method can achieve an accuracy of 94.4% in a four-level tomato ripeness classification task during grasping.},
   archive      = {J_TROB},
-  author       = {Zhiping Wang and Zonggang Li and Bin Li and Guangqing Xia and Huifeng Kang},
-  doi          = {10.1109/TRO.2025.3621044},
+  author       = {Xinpan Meng and Long Cheng and Zhengwei Li},
+  doi          = {10.1109/TRO.2025.3629784},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-15},
+  month        = {11},
+  pages        = {1--18},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {Identification modeling and trajectory tracking of robotic fish with synergistic fins-body},
+  title        = {A tactile-proximity dual-mode photoelectric sensor: Implementation and applications},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). An underwater exoskeleton for scuba diving: Reducing air consumption and muscle activation through knee assistance. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3621405'>www</a>)
+(2025). Improving robustness to out-of-distribution states in imitation learning via deep koopman-boosted diffusion policy. <em>TROB</em>, 1--14. (<a href='https://doi.org/10.1109/TRO.2025.3629819'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Evolutionary pressures have pushed humans to become efficient walkers, but inefficient divers. People consume more energy to travel the same distance underwater than on land. In diverse overground locomotion, emerging exoskeletons have reduced the metabolic cost of humans. Can we also improve the energy economy in underwater locomotion via exoskeletons? Here, we propose an underwater exoskeleton to assist scuba diving using flutter kick, by applying assistive knee extension torque during the strike phase of the diving kick cycle. When divers wore the powered exoskeleton, the average net air cost across six experienced divers was reduced by 22.7 $\pm$ 10.0%, and the peak quadriceps activation was decreased by 20.9 $\pm$ 7.5%, compared with normal diving without the exoskeleton. The average gastrocnemius activation also decreased by 20.6 $\pm$ 5.3%, suggesting that the divers sufficiently utilized the exoskeleton assistance. These results indicate that applying exoskeleton assistance is conducive to improving the endurance of human underwater diving and enhancing our ability to explore the underwater world. Our study extends the application boundary of wearable robots, and provides a reference for the design and assessment of future underwater assistive devices, with the potential to strengthen the connection between humans and the ocean.},
+  abstract     = {Integrating generative models with action chunking has shown significant promise in imitation learning for robotic manipulation. However, the existing diffusion-based paradigm often struggles to capture strong temporal dependencies across multiple steps, particularly when incorporating proprioceptive input. This limitation can lead to task failures, where the policy overfits to proprioceptive cues at the expense of capturing the visually derived features of the task. To overcome this challenge, we propose the Deep Koopman-boosted Dual-branch Diffusion Policy (D3P) algorithm. D3P introduces a dual-branch architecture to decouple the roles of different sensory modality combinations. The visual branch encodes the visual observations to indicate task progression, while the fused branch integrates both visual and proprioceptive inputs for precise manipulation. Within this architecture, when the robot fails to accomplish intermediate goals, such as grasping a drawer handle, the policy can dynamically switch to execute action chunks generated by the visual branch, allowing recovery to previously observed states and facilitating retrial of the task. To further enhance visual representation learning, we incorporate a Deep Koopman Operator module that captures structured temporal dynamics from visual inputs. During inference, we use the test-time loss of the generative model as a confidence signal to guide the aggregation of the temporally overlapping predicted action chunks, thereby enhancing the reliability of policy execution. In simulation experiments across six RLBench tabletop tasks, D3P outperforms the state-of-the-art diffusion policy by an average of 14.6%. On three real-world robotic manipulation tasks, it achieves a 15.0% improvement. Code: https://github.com/dianyeHuang/D3P.},
   archive      = {J_TROB},
-  author       = {Xianda Wu and Ming Xu and Zhihao Zhou and Wenjie Lou and Teng Zhang and Yalei Zhou and Jingeng Mai and Qining Wang},
-  doi          = {10.1109/TRO.2025.3621405},
+  author       = {Dianye Huang and Nassir Navab and Zhongliang Jiang},
+  doi          = {10.1109/TRO.2025.3629819},
   journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
+  month        = {11},
+  pages        = {1--14},
   shortjournal = {IEEE Trans. Robot.},
-  title        = {An underwater exoskeleton for scuba diving: Reducing air consumption and muscle activation through knee assistance},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Non-rigid structure-from-motion via differential geometry with recoverable conformal scale. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3621422'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Non-rigid structure-from-motion (NRSfM), a promising technique for addressing the mapping challenges in monocular visual deformable simultaneous localization and mapping (SLAM), has attracted growing attention. We introduce a novel method, called Con-NRSfM, for NRSfM under conformal deformations, encompassing isometric deformations as a subset. Our approach performs point-wise reconstruction using 2D selected image warps optimized through a graph-based framework. Unlike existing methods that rely on strict assumptions, such as locally planar surfaces or locally linear deformations, and fail to recover the conformal scale, our method eliminates these constraints and accurately computes the local conformal scale. Additionally, our framework decouples constraints on depth and conformal scale, which are inseparable in other approaches, enabling more precise depth estimation. To address the sensitivity of the formulated problem, we employ a parallel separable iterative optimization strategy. Furthermore, a self-supervised learning framework, utilizing an encoder-decoder network, is incorporated to generate dense 3D point clouds with texture. Simulation and experimental results using both synthetic and real datasets demonstrate that our method surpasses existing approaches in terms of reconstruction accuracy and robustness. The code for the proposed method will be made publicly available on the project website: https://sites.google.com/view/con-nrsfm.},
-  archive      = {J_TROB},
-  author       = {Yongbo Chen and Yanhao Zhang and Shaifali Parashar and Liang Zhao and Shoudong Huang},
-  doi          = {10.1109/TRO.2025.3621422},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Non-rigid structure-from-motion via differential geometry with recoverable conformal scale},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Irrotational contact fields. <em>TROB</em>, 1-18. (<a href='https://doi.org/10.1109/TRO.2025.3621418'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We present Irrotational Contact Fields (ICF), a framework for generating convex approximations of complex contact models, incorporating experimentally validated models like Hunt & Crossley coupled with Coulomb's law of friction alongside the principle of maximum dissipation. Our approach is robust across a wide range of stiffness values, making it suitable for both compliant surfaces and rigid approximations. We evaluate these approximations across a wide variety of test cases, detailing properties and limitations. We implement a fully differentiable solution in the open-source robotics toolkit, Drake. Our novel hybrid approach enables efficient computation of gradients for complex geometric models by reusing factorizations from contact resolution. We demonstrate robust simulation of robotic tasks at interactive rates, with accurately resolved stiction and contact transitions, supporting effective sim-to-real transfer.},
-  archive      = {J_TROB},
-  author       = {Alejandro Castro and Xuchen Han and Joseph Masterjohn},
-  doi          = {10.1109/TRO.2025.3621418},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Irrotational contact fields},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). OmniMap: A general mapping framework integrating optics, geometry, and semantics. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3621333'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Robotic systems demand accurate and comprehensive 3D environment perception, requiring simultaneous capture of photo-realistic appearance (optical), precise layout shape (geometric), and open-vocabulary scene understanding (semantic). Existing methods typically achieve only partial fulfillment of these requirements while exhibiting optical blurring, geometric irregularities, and semantic ambiguities. To address these challenges, we propose OmniMap. Overall, OmniMap represents the first online mapping framework that simultaneously captures optical, geometric, and semantic scene attributes while maintaining real-time performance and model compactness. At the architectural level, OmniMap employs a tightly coupled 3DGS-Voxel hybrid representation that combines fine-grained modeling with structural stability. At the implementation level, OmniMap identifies key challenges across different modalities and introduces several innovations: adaptive camera modeling for motion blur and exposure compensation, hybrid incremental representation with normal constraints, and probabilistic fusion for robust instance-level understanding. Extensive experiments show OmniMap's superior performance in rendering fidelity, geometric accuracy, and zero-shot semantic segmentation compared to state-of-the-art methods across diverse scenes. The framework's versatility is further evidenced through a variety of downstream applications, including multi-domain scene Q&A, interactive editing, perception-guided manipulation, and map-assisted navigation.},
-  archive      = {J_TROB},
-  author       = {Yinan Deng and Yufeng Yue and Jianyu Dou and Jingyu Zhao and Jiahui Wang and Yujie Tang and Yi Yang and Mengyin Fu},
-  doi          = {10.1109/TRO.2025.3621333},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {OmniMap: A general mapping framework integrating optics, geometry, and semantics},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A differential dynamic programming framework for inverse reinforcement learning. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3623769'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A differential dynamic programming (DDP)-based framework for inverse reinforcement learning (IRL) is introduced to recover the parameters in the cost function, system dynamics, and constraints from demonstrations. Different from existing work, where DDP was usually used for the inner forward problem, our proposed framework uses it to efficiently compute the gradient required in the outer inverse problem with equality and inequality constraints. The equivalence between the proposed and existing methods based on Pontryagin's Maximum Principle (PMP) is established. More importantly, using this DDP-based IRL with an open-loop loss function, a closed-loop IRL framework is presented. In this framework, a loss function is proposed to capture the closed-loop nature of demonstrations. It is shown to be better than the commonly used open-loop loss function. We show that the closed-loop IRL framework reduces to a constrained inverse optimal control problem under certain assumptions. Under these assumptions and a rank condition, it is proven that the learning parameters can be recovered from the demonstration data. The proposed framework is extensively evaluated through four numerical robot examples and one real-world quadrotor system. The experiments validate the theoretical results and illustrate the practical relevance of the approach.},
-  archive      = {J_TROB},
-  author       = {Kun Cao and Xinhang Xu and Wanxin Jin and Karl H. Johansson and Lihua Xie},
-  doi          = {10.1109/TRO.2025.3623769},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {A differential dynamic programming framework for inverse reinforcement learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Heterogeneous multi-robot task allocation for long-endurance missions in dynamic scenarios. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626651'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We present a framework for Multi-Robot Task Allocation (MRTA) in heterogeneous teams performing long-endurance missions in dynamic scenarios. Given the limited battery of robots, especially for aerial vehicles, we allow for robot recharges and the possibility of fragmenting and/or relaying certain tasks. We also address tasks that must be performed by a coalition of robots in a coordinated manner. Given these features, we introduce a new class of heterogeneous MRTA problems which we analyze theoretically and optimally formulate as a Mixed Integer Linear Program (MILP). We then contribute a heuristic algorithm to compute approximate solutions and integrate it into a mission planning and execution architecture capable of reacting to unexpected events by repairing or recomputing plans online. Our experimental results show the relevance of our newly formulated problem in a realistic use case for inspection with aerial robots. We assess the performance of our heuristic solver in comparison with other variants and with exact optimal solutions in small-scale scenarios. In addition, we evaluate the ability of our replanning framework to repair plans online.},
-  archive      = {J_TROB},
-  author       = {Álvaro Calvo and Jesús Capitán},
-  doi          = {10.1109/TRO.2025.3626651},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Heterogeneous multi-robot task allocation for long-endurance missions in dynamic scenarios},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A static modelling and evaluation framework for soft continuum robots with reinforced chambers. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626601'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Elastomer-based soft manipulators with fibre-reinforced chambers, represent a prevalent design paradigm in soft robotics. These robots incorporate multiple actuation chambers, enabling elongation and bending motions. However, the inherent compliance of materials and the pressurised chambers inevitably introduce significant nonlinearity to these robots. Moreover, design of such robots often relies on a trial-and-error approach. Consequently, a comprehensive robot prototyping framework is of paramount importance. To achieve this, we present a static modelling, design and evaluation framework for soft robots with densely reinforced chambers (i.e., the angle between the reinforcement fibre and the axial direction of soft robots is 90°). We first propose a static analytical modelling framework to achieve both the forward kinematics and the tip force generation modelling. This modelling framework accommodates the effects of pressurised chambers and (non)linear material behaviours. Furthermore, our design and evaluation framework incorporates an open-accessible simulation toolbox with a user-friendly graphical interface, along with a physical evaluation platform. The entire framework is validated by eight kinds of manipulators with varying diameters and lengths. Meanwhile, the nonlinearity introduced by geometrical deformation resulting from the elongation, the pressurised actuation chambers (i.e., the chamber stiffening effect), and material hyper-elasticity are investigated. Results also enable informed decision-making on design specifications prior to robot fabrication.},
-  archive      = {J_TROB},
-  author       = {Jialei Shi and Hanyu Jin and Sara-Adela Abad and Wenlong Gaozhang and Ge Shi and Helge A Wurdemann},
-  doi          = {10.1109/TRO.2025.3626601},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {A static modelling and evaluation framework for soft continuum robots with reinforced chambers},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Single-instance sampling for computationally efficient and accurate real-time task space MPPI control. <em>TROB</em>, 1-18. (<a href='https://doi.org/10.1109/TRO.2025.3626660'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study presents a model predictive path integral (MPPI) method capable of conducting high-frequency real-time model predictive control (MPC) for robot manipulators. Real-time MPC-based manipulation holds significant potential for controlling an end-effector precisely and reactively while satisfying various constraints in dynamic environments. However, the optimization under a complex robot model and various constraints imposes a heavy computational burden, hindering the realization of high-frequency updates. To address this challenge, we propose a single-instance sampling-based MPPI algorithm and dynamic time horizon to significantly reduce the computational burden while enhancing control performance. The performance and efficacy of the proposed method are verified through experiments conducted on a 7-degree-of-freedom robotic arm, along with comparative simulations and analysis.},
-  archive      = {J_TROB},
-  author       = {Dongwhan Kim and Euncheol Im and Yujin Kim and Myotaeg Lim and Yisoo Lee},
-  doi          = {10.1109/TRO.2025.3626660},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Single-instance sampling for computationally efficient and accurate real-time task space MPPI control},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Disturbance observer-based model predictive control for cable-driven parallel robots. <em>TROB</em>, 1-19. (<a href='https://doi.org/10.1109/TRO.2025.3626664'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, a disturbance observer-based model predictive control (DOB-based MPC) strategy is proposed for the trajectory tracking of cable-driven parallel robots (CDPRs). The original nonlinear optimization problem of the MPC explicitly handles the positive bounded constraints of cable tensions and is transformed into a quadratic problem (QP) based on the desired trajectory and offline workspace analysis. Additionally, the uncertainties and external disturbances in the system are considered and derived as the lumped disturbance. Then, a nonlinear DOB is used to estimate the lumped disturbance, and accordingly the estimation is used to enhance the prediction model of the MPC. The control input of the proposed MPC strategy is redesigned to incorporate an auxiliary controller. The estimation error of the DOB and the time-varying characteristics of the disturbance are leveraged to tighten the constraints of the QP less conservatively and generate feasible tubes. Such tube techniques guarantee the recursive feasibility and the input-to-state stability of the proposed MPC strategy. Furthermore, the whole algorithm for deployment including an online constraint updating method is developed. Both simulations and experiments are carried out thoroughly, showing that the DOB-based MPC can effectively improve trajectory tracking accuracy and ensure that the cable tensions satisfy the constraints in the case of unknown disturbances and model uncertainties.},
-  archive      = {J_TROB},
-  author       = {Xinyu Gao and Weiwei Shang and Bin Zhang},
-  doi          = {10.1109/TRO.2025.3626664},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-19},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Disturbance observer-based model predictive control for cable-driven parallel robots},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Perfectly undetectable reflection and scaling false data injection attacks via affine transformation on mobile robot trajectory tracking control. <em>TROB</em>, 1-16. (<a href='https://doi.org/10.1109/TRO.2025.3626620'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the increasing integration of cyber-physical systems (CPS) into critical applications, ensuring their resilience against cyberattacks is paramount. A particularly concerning threat is the vulnerability of CPS to deceptive attacks that degrade system performance while remaining undetected. This paper investigates perfectly undetectable false data injection attacks (FDIAs) targeting the trajectory tracking control of a non-holonomic mobile robot. The proposed attack method utilizes affine transformations of intercepted signals, exploiting weaknesses inherent in the partially linear dynamic properties and symmetry of the nonlinear plant. The feasibility and potential impact of these attacks are validated through experiments using a Turtlebot 3 platform, highlighting the urgent need for sophisticated detection mechanisms and resilient control strategies to safeguard CPS against such threats. Furthermore, a novel approach for detection of these attacks called the state monitoring signature function (SMSF) is introduced. An example SMSF, a carefully designed function resilient to FDIA, is shown to be able to detect the presence of a FDIA through signatures based on system states.},
-  archive      = {J_TROB},
-  author       = {Jun Ueda and Hyukbin Kwon},
-  doi          = {10.1109/TRO.2025.3626620},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-16},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Perfectly undetectable reflection and scaling false data injection attacks via affine transformation on mobile robot trajectory tracking control},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). RAID-AgiVS: A bio-inspired reciprocal perceptual control framework for agile visual servo. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626647'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The agility of visual servo systems is essential for efficient operation in dynamic environments. However, this agility is limited by uncertainties, perceptual limitations, and the failure to integrate perception and control in conventional frameworks. In this paper, a bio-inspired Reinforced Active-Inference-Driven Agile Visual Servo (RAID-AgiVS) technology is presented to systematically elude the above limitations. Central to RAID-AgiVS is the Reinforced Sensing Mechanism that augments sparse visual measurements with fast soft measurements generated by alternating prediction and observation; thereby producing high-bandwidth data that surpasses the native sampling rate of the visual sensor. In addition, the reinforced data are employed by an active inference controller—embedded within a Reciprocal Perceptual Control structure—to introduce perceptual inference and active control actions that bolster adaptability and agility in visual servo tasks. By fusing biological adaptability with advanced data generation and analytic modeling, the RAID-AgiVS framework markedly improves performance, particularly under sensory limitations and dynamic uncertainties. Comparative evaluations on a 6-DoF manipulator—and an indoor quadrotor UAV—demonstrate the superior accuracy, agility, and adaptability of the proposed method.},
-  archive      = {J_TROB},
-  author       = {Zeyu Guo and Jun Yang and Shihua Li and Lei Guo and Wen-Hua Chen and Karl J. Friston},
-  doi          = {10.1109/TRO.2025.3626647},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {RAID-AgiVS: A bio-inspired reciprocal perceptual control framework for agile visual servo},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Programmable locking cells (PLC) for modular robots with high stiffness tunability and morphological adaptability. <em>TROB</em>, 1-18. (<a href='https://doi.org/10.1109/TRO.2025.3626509'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Robotic systems operating in unstructured environments require the ability to switch between compliant and rigid states to perform diverse tasks such as adaptive grasping, high-force manipulation, shape holding, and navigation in constrained spaces, among others. However, many existing variable stiffness solutions rely on complex actuation schemes, continuous input power, or monolithic designs, limiting their modularity and scalability. This paper presents the Programmable Locking Cell (PLC)—a modular, tendon-driven unit that achieves discrete stiffness modulation through mechanically interlocked joints actuated by cable tension. Each unit transitions between compliant and firm states via structural engagement, and the assembled system exhibits high stiffness variation—up to 950% per unit—without susceptibility to damage under high payload in the firm state. Multiple PLC units can be assembled into reconfigurable robotic structures with spatially programmable stiffness. We validate the design through two functional prototypes: (1) a variable-stiffness gripper capable of adaptive grasping, firm holding, and in-hand manipulation; and (2) a pipe-traversing robot composed of serial PLC units that achieves shape adaptability and stiffness control in confined environments. These results demonstrate the PLC as a scalable, structure-centric mechanism for programmable stiffness and motion, enabling robotic systems with reconfigurable morphology and task-adaptive interaction.},
-  archive      = {J_TROB},
-  author       = {Jianshu Zhou and Wei Chen and Junda Huang and Boyuan Liang and Yunhui Liu and Masayoshi Tomizuka},
-  doi          = {10.1109/TRO.2025.3626509},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-18},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Programmable locking cells (PLC) for modular robots with high stiffness tunability and morphological adaptability},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HI-SLAM2: Geometry-aware gaussian SLAM for fast monocular scene reconstruction. <em>TROB</em>, 1-17. (<a href='https://doi.org/10.1109/TRO.2025.3626627'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We present HI-SLAM2, a geometry-aware Gaussian SLAM system that achieves fast and accurate monocular scene reconstruction using only RGB input. Existing Neural SLAM or 3DGS-based SLAM methods often trade off between rendering quality and geometry accuracy, our research demonstrates that both can be achieved simultaneously with RGB input alone. The key idea of our approach is to enhance the ability for geometry estimation by combining easy-to-obtain monocular priors with learning-based dense SLAM, and then using 3D Gaussian splatting as our core map representation to efficiently model the scene. Upon loop closure, our method ensures on-the-fly global consistency through efficient pose graph bundle adjustment and instant map updates by explicitly deforming the 3D Gaussian units based on anchored keyframe updates. Furthermore, we introduce a grid-based scale alignment strategy to maintain improved scale consistency in prior depths for finer depth details. Through extensive experiments on Replica, ScanNet, Waymo Open, ETH3D SLAM and ScanNet++ datasets, we demonstrate significant improvements over existing Neural SLAM methods and even surpass RGB-D-based methods in both reconstruction and rendering quality.},
-  archive      = {J_TROB},
-  author       = {Wei Zhang and Qing Cheng and David Skuddis and Niclas Zeller and Daniel Cremers and Norbert Haala},
-  doi          = {10.1109/TRO.2025.3626627},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-17},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {HI-SLAM2: Geometry-aware gaussian SLAM for fast monocular scene reconstruction},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Safe and dynamically-feasible motion planning using control lyapunov and barrier functions. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626614'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper considers the problem of designing motion planning algorithms for control-affine systems that generate collision-free paths from an initial to a final destination and can be executed using safe and dynamically-feasible controllers. We introduce the C-CLF-CBF-RRT algorithm, which produces paths with such properties and leverages rapidly exploring random trees (RRTs), control Lyapunov functions (CLFs) and control barrier functions (CBFs). For linear systems with polytopic and ellipsoidal constraints, C-CLF-CBF-RRT requires solving a quadratically constrained quadratic program (QCQP) at every iteration of the algorithm, which can be done efficiently. We prove the probabilistic completeness of C-CLF-CBF-RRT and showcase its performance in simulation and hardware experiments.},
-  archive      = {J_TROB},
-  author       = {Pol Mestres and Carlos Nieto-Granda and Jorge Cortés},
-  doi          = {10.1109/TRO.2025.3626614},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Safe and dynamically-feasible motion planning using control lyapunov and barrier functions},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). $\sqrt{VINS}$:Robust and ultrafast square-root filter-based 3D motion tracking. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626607'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, we develop and open-source, for the first time, a robust and efficient square-root filter (SRF)-based visual-inertial navigation system (VINS), termed $\sqrt{VINS}$, which is ultra-fast, numerically stable, and capable of dynamic initialization even under extreme conditions (i.e., extremely small time window). Despite recent advancements in VINS, resource constraints and numerical instability on embedded (robotic) systems with limited precision remain critical challenges. A square-root covariance-based filter offers a promising solution by providing numerical stability, efficient memory usage, and guaranteed positive semi-definiteness. However, canonical SRFs suffer from inefficiencies caused by disruptions in the triangular structure of the covariance matrix during updates. The proposed method significantly improves VINS efficiency with a novel Cholesky decomposition (LLT)-based SRF update, by fully exploiting the system structure and the SRF to preserve the upper triangular structure of square-root covariance. Moreover, we design a fast, robust, dynamic initialization method, which first quickly recovers the minimal states without triangulating 3D features and then efficiently performs iterative SRF update to refine the full states, enabling seamless VINS operation even in challenging scenarios. The proposed LLT-based SRF is extensively verified through numerical studies, demonstrating superior numerical stability under challenging conditions and achieving robust efficient performance on 32-bit single-precision floats, operating at twice the speed of state-of-the-art (SOTA) methods. Our initialization method, tested on both mobile workstations and Jetson Nano computers achieving a high success rate of initialization even within a $100ms$ window under minimal conditions. Finally, the proposed $\sqrt{VINS}$ is extensively validated across diverse scenarios, demonstrating strong efficiency, robustness, and reliability. The full open-source implementation is released to support future research and applications.},
-  archive      = {J_TROB},
-  author       = {Yuxiang Peng and Chuchu Chen and Kejian Wu and Guoquan Huang},
-  doi          = {10.1109/TRO.2025.3626607},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {$\sqrt{VINS}$:Robust and ultrafast square-root filter-based 3D motion tracking},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Whole-body integrated motion planning for aerial manipulators. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626619'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Expressive motion planning for Aerial Manipulators (AMs) is essential for tackling complex manipulation tasks, yet achieving coupled trajectory planning adaptive to various tasks remains challenging, especially for those requiring aggressive maneuvers. In this work, we propose a novel whole-body integrated motion planning framework for quadrotor-based AMs that leverages flexible waypoint constraints to achieve versatile manipulation capabilities. These waypoint constraints enable the specification of individual position requirements for either the quadrotor or end-effector, while also accommodating higher-order velocity and orientation constraints for complex manipulation tasks. To implement our framework, we exploit spatio-temporal trajectory characteristics and formulate an optimization problem to generate feasible trajectories for both the quadrotor and manipulator while ensuring collision avoidance considering varying robot configurations, dynamic feasibility, and kinematic feasibility. Furthermore, to enhance the maneuverability for specific tasks, we employ Imitation Learning (IL) to facilitate the optimization process to avoid poor local optima. The effectiveness of our framework is validated through comprehensive simulations and real-world experiments, where we successfully demonstrate nine fundamental manipulation skills across various environments.},
-  archive      = {J_TROB},
-  author       = {Weiliang Deng and Hongming Chen and Biyu Ye and Haoran Chen and Ziliang Li and Ximin Lyu},
-  doi          = {10.1109/TRO.2025.3626619},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Whole-body integrated motion planning for aerial manipulators},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SSDVM: A sliding strip discrete vortex method applied to hydrodynamic calculations for robotic fish. <em>TROB</em>, 1-19. (<a href='https://doi.org/10.1109/TRO.2025.3626609'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recent advances in underwater robotics highlight the potential of fish- like robots for efficient propulsion. However, their motion performance still lags behind real fish due to an incomplete understanding of fluid dynamics. This paper hypothesizes that chordwise-oriented vortices dominate the flow evolution of low-aspect-ratio flapping foils. Based on this, a quasi-three-dimensional hydrodynamic model, the Sliding Strip Discrete Vortex Method (SSDVM), is developed. SSDVM tracks chordwise-oriented vortex evolution along the chord, enabling hydrodynamic force calculations for heave and pitch motions across various parameters. The model closely agrees with Computational Fluid Dynamics (CFD) simulations while reducing computational cost. When integrated with a dynamic model, SSDVM accurately predicts robotic fish motion, with simulated speeds closely matching experimental results and achieving a Mean Absolute Percentage Error (MAPE) of 6.54%. SSDVM offers an analytical tool for robotic fish hydrodynamics, balancing accuracy and efficiency, with potential applications in optimizing bioinspired underwater propulsion.},
-  archive      = {J_TROB},
-  author       = {Zhaoran Yin and Chao Zhou and Xiaocun Liao and Xiaofei Wang and Zhuoliang Zhang and Long Cheng and Junfeng Fan and Jian Wang},
-  doi          = {10.1109/TRO.2025.3626609},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-19},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {SSDVM: A sliding strip discrete vortex method applied to hydrodynamic calculations for robotic fish},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An intelligent bionic amphibious turtle robot with visual-tactile fusion for dynamic terrain adaptation. <em>TROB</em>, 1-19. (<a href='https://doi.org/10.1109/TRO.2025.3626512'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study presents an intelligent bionic amphibious turtle robot (IBATR) featuring a three-degree-of-freedom bionic flipper mechanism, designed to achieve high maneuverability, agility, and adaptive locomotion in dynamic aquatic-terrestrial environments. Specifically, mechanical testing and hydrodynamic analysis validate the robot's operational capabilities in granular media and aquatic settings. Subsequently, Bayesian optimization generates energy-efficient gait parameters, enabling flexible motion under low-power constraints. To further bridge perception and action, a terrain classification framework is implemented by fusing visual data from an onboard camera and tactile feedback from pressure sensors, enhancing environmental adaptability. This framework utilizes a dual-stream convolutional neural network, achieving 99.17% classification accuracy across four terrestrial substrates and one aquatic condition. Experimental results demonstrate that terrain-aware gait adaptation improves energy efficiency by 19.1% and movement speed by 9.2% compared to static gait configurations. Field tests under wave disturbances further confirm the robot's capability for seamless land-water transitions. Collectively, this work advances biomimetic robotics by unifying perception-driven control, terrain-optimized actuation, and lightweight structural design, offering novel methodologies for resilient operations in complex amphibious environments.},
-  archive      = {J_TROB},
-  author       = {Ang Liu and Xianrui Zhang and Haozhi Huang and Fengqi Xiao and Zhuang Zhang and Guangming Cui and Baijin Mao and Yining Xu and Juntian Qu},
-  doi          = {10.1109/TRO.2025.3626512},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-19},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {An intelligent bionic amphibious turtle robot with visual-tactile fusion for dynamic terrain adaptation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Frictional and prismatic pin-array gripper for universal gripping and stable tool manipulation. <em>TROB</em>, 1-14. (<a href='https://doi.org/10.1109/TRO.2025.3626656'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Global trend in robotics has shifted towards deploying humanoid robots and mobile manipulators in industrial settings to automate repetitive and structured tasks traditionally performed by human workers. However, most tools and equipment are designed for human hands, and current grippers or end-effectors are highly specialized, limiting their ability to fully replace human handling of simple tools and tasks. This study proposes a novel frictional and prismatic pin-array gripper developed for universal gripping and tool manipulation. A pin-array structure of the gripper mimics the behavior of soft grippers while incorporating rigid components, enabling adaptability to various shapes and sizes. Each pin features semi-automatic actuation through a compression spring, supporting the underactuated mechanism. Most existing studies on grippers focus on simple pick-and-place tasks, whereas the proposed gripper extends functionality to practical tool usage. Enabled by the pin-array structure, it provides increased contact surface and support points, ensuring stable gripping and enhanced manipulation performance. In the evaluation, the pin-array gripper achieved a payload capacity of 2400 g, significantly outperforming the conventional RG2-FT gripper and the frictional flat gripper, which reached maximum capacities of 800 g and 400 g, respectively. It also exhibited higher grasping forces, measuring 1.17 times greater than the RG2-FT gripper and up to 23 times greater than the frictional flat gripper. For tool manipulation, the pin-array gripper exhibited significantly lower manipulation errors, with 21.67 and 6.59 times fewer errors than the RG2-FT and flat grippers, respectively, when handling the hammer, and 7.69 and 4.45 times fewer for the metal file. Additionally, qualitative demonstrations in universal gripping, omni-directional gripping, and tool usage further validated the gripper's performance in mobile manipulator tasks},
-  archive      = {J_TROB},
-  author       = {Cheonghwa Lee and Hyeongwon Kim and Midum Oh and Kisu Ok and Sung-Hoon Ahn},
-  doi          = {10.1109/TRO.2025.3626656},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-14},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Frictional and prismatic pin-array gripper for universal gripping and stable tool manipulation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Concurrent-allocation task execution for multi-robot path-crossing-minimal navigation in obstacle environments. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3626654'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Reducing undesirable path crossings among tra jectories of different robots is vital in multi-robot navigation missions, which not only reduces detours and conflict scenarios, but also enhances navigation efficiency and boosts productivity. Despite recent progress in multi-robot path-crossing-minimal (MPCM) navigation, the majority of approaches depend on the minimal squared-distance reassignment of suitable desired points to robots directly. However, if obstacles occupy the passing space, calculating the actual robot-point distances becomes complex or intractable, which may render the MPCM navigation in obstacle environments inefficient or even infeasible. In this paper, the concurrent-allocation task execution (CATE) algorithm is presented to address this problem (i.e., MPCM navigation in obstacle environments). First, the path-crossing related elements in terms of (i) robot allocation, (ii) desired-point convergence, and (iii) collision and obstacle avoidance are en coded into integer and control barrier function (CBF) constraints. Then, the proposed constraints are used in an online constrained optimization framework, which implicitly yet effectively minimizes the possible path crossings and trajectory length in obstacle environments by minimizing the desired point allocation cost and slack variables in CBF constraints simultaneously. In this way, the MPCM navigation in obstacle environments can be achieved with flexible spatial orderings. Note that the feasibility of solutions and the asymptotic convergence property of the proposed CATE algorithm in obstacle environments are both guaranteed, and the calculation burden is also reduced by concurrently calculating the optimal allocation and the control input directly without the path planning process. Finally, extensive simulations and experiments are conducted to validate that the CATE algorithm (i) outperforms the existing state-of-the-art baselines in terms of feasibility and efficiency in obstacle environments, (ii) is effective in environments with dynamic obstacles and is adaptable for per forming various navigation tasks in 2D and 3D, (iii) demonstrates its efficacy and practicality by 2D experiments with a multi-AMR onboard navigation system, and (iv) provides a possible solution to evade deadlocks and pass through a narrow gap.},
-  archive      = {J_TROB},
-  author       = {Bin-Bin Hu and Weijia Yao and Yanxin Zhou and Henglai Wei and Chen Lv},
-  doi          = {10.1109/TRO.2025.3626654},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1-20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Concurrent-allocation task execution for multi-robot path-crossing-minimal navigation in obstacle environments},
+  title        = {Improving robustness to out-of-distribution states in imitation learning via deep koopman-boosted diffusion policy},
   year         = {2025},
 }
 </textarea>

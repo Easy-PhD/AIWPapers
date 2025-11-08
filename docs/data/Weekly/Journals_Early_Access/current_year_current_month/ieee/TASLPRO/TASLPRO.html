@@ -25,328 +25,112 @@
 </head>
 <body>
 
-<h2 id="taslpro">TASLPRO - 18</h2>
+<h2 id="taslpro">TASLPRO - 6</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Robust detection of partially spoofed audio using semantic-aware inconsistency learning. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617241'>www</a>)
+(2025). Imitate, reward and introspect: Enhancing neural machine translation by utilizing large language models as environments. <em>TASLPRO</em>, 1--13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3623904'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Partially spoofed technology subtly manipulates interested parts in an audio to alter the original meaning, with its fine-grained forgery posing great challenges to existing fully spoofed detection countermeasures. Existing partially spoofed audio detection methods have shown excellent effectiveness in distinguishing clean and long-duration spoofed segments. However, their robustness remains limited when malicious attackers manipulate a finer-grained segment (e.g., only a single phoneme) and employ post-processing operations to reduce detectable discontinuities. To face these challenges, we propose the Semantic-Aware Inconsistency Learning (SAIL) method for robust frame-level detection. It incorporates a robust augmentation module (RAM), a Multi-Scale Semantic Inconsistency Learning (MSIL) module, and a Semantic Separation Module (SSM) to learn robust discriminative features by capturing multi-segment discontinuities and semantic inconsistencies introduced by partially spoofed manipulations. Specifically, the RAM is applied to suppress the model's erroneous attention to additional interference caused by post-processing operations on the subtle spoofed artifacts. Then, the MSIL module is proposed to extract semantic inconsistency features after manipulations, using attention mechanisms at different scales to highlight forgery differences at various granularities. Finally, the SSM is devised to refine these features for robust frame-level detection, utilizing contrastive learning to ensure a clear distinction of inconsistent semantic features in the feature space. Extensive experiments are conducted on three public datasets, including ASVS2019PS, HAD, and LAV-DF, showing that our proposed method achieves the best performance under various noisy scenarios.},
+  abstract = {The current neural machine translation (NMT) models face several challenges including the high cost of parallel sentence pairs and difficulties in learning from limited error examples. To address these issues, we propose a novel framework, Large Language Models as Environments (LLMaE), which leverages interactions with large language models (LLMs) to enhance NMT performance. The LLMaE framework comprises three logically sequential steps: behavior imitation, reward feedback, and introspection. The behavior imitation step facilitates the NMT model to mimic the behavioral patterns of the LLMs. The reward feedback step leverages the quality assessments provided by the LLMs to optimize the NMT model and encourage it to produce more accurate translations. Finally, the introspection step enables the NMT model to learn from limited error examples by generating introspective examples. Each stage builds on the previous one, creating a cycle of continuous improvement. Extensive experimental results demonstrate that our proposed method significantly improves the performance of NMT in various scenarios and with different LLMs.},
   archive  = {J},
-  author   = {Jialu Cao and Hui Tian and Peng Tian and Haizhou Li and Jianzong Wang},
-  doi      = {10.1109/TASLPRO.2025.3617241},
+  author   = {Yang Zhao and Yaping Zhang and Lu Xiang and Jiajun Zhang and Yu Zhou and Chengqing Zong},
+  doi      = {10.1109/TASLPRO.2025.3623904},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-14},
-  title    = {Robust detection of partially spoofed audio using semantic-aware inconsistency learning},
+  month    = {11},
+  pages    = {1--13},
+  title    = {Imitate, reward and introspect: Enhancing neural machine translation by utilizing large language models as environments},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). VPVID: Variance-preserving velocity-guided interpolant diffusion for speech enhancement and dereverberation. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3617254'>www</a>)
+(2025). Evaluating sound similarity metrics for differentiable, iterative sound-matching. <em>TASLPRO</em>, 1--15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629237'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Diffusion-based generative models for speech enhancement often face challenges in balancing performance and inference efficiency. To address this, we propose a model of Variance-Preserving Velocity-guided Interpolant Diffusion (VPVID), a novel framework that achieves competitive enhancement performance while maintaining high computational efficiency. Our approach incorporates a scalable interpolant framework that reconstructs the reverse diffusion process using velocity terms and state variables. Unlike traditional score-matching objectives, we employ a velocity-based loss function that directly estimates the instantaneous rate of change, providing more stable training and efficient data distribution learning. We further combine stochastic diffusion sampling with probability flow ordinary differential equations, augmented by an adaptive corrector mechanism, creating a flexible sampling strategy that balances quality and efficiency. Extensive experiments on VoiceBank-DEMAND and WSJ0-CHiME3 datasets demonstrate that VPVID significantly outperforms existing baselines across multiple metrics, particularly excelling in noise separation with SI-SIR improvement up to 4.7 dB. Furthermore, VPVID achieves up to 7× faster inference than existing diffusion-based methods while maintaining excellent speech enhancement and dereverberation performance.},
+  abstract = {Manual sound design with a synthesizer is inherently iterative: an artist compares the synthesized output to a mental target, adjusts parameters, and repeats until satisfied. Iterative sound-matching automates this workflow by continually programming a synthesizer under the guidance of a loss function (or similarity measure) towards a target sound. Prior comparisons of loss functions have typically favored one metric over another, but only within narrow settings: limited synthesis methods, few loss types, often without blind listening tests. This leaves open the question of whether a universally optimal loss exists, or the choice of loss remains a creative decision conditioned on the synthesis method and the sound designer's preference. We propose differentiable iterative sound-matching as the natural extension of the available literature, since it combines the manual approach to sound design with modern advances in machine learning. To analyze the variability of loss function performance across synthesizers, we implemented a mix of four novel and established differentiable loss functions, and paired them with differentiable subtractive, additive, and AM synthesizers. For each of the sixteen synthesizer–loss combinations, we ran 300 randomized sound-matching trials. Performance was measured using parameter differences, spectrogram-distance metrics, and manually assigned listening scores. We observed a moderate level of consistency among the three performance measures. Our post hoc analysis shows that the loss function performance is highly dependent on the synthesizer. These findings underscore the value of expanding the scope of sound-matching experiments, and developing new similarity metrics tailored to specific synthesis techniques, rather than pursuing one-size-fits-all solutions.},
   archive  = {J},
-  author   = {Gang Yang and Yangjie Wei and Ben Niu and Yuqiao Wang},
-  doi      = {10.1109/TASLPRO.2025.3617254},
+  author   = {Amir Salimi and Abram Hindle and Osmar R. Zaïane},
+  doi      = {10.1109/TASLPRO.2025.3629237},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-14},
-  title    = {VPVID: Variance-preserving velocity-guided interpolant diffusion for speech enhancement and dereverberation},
+  month    = {11},
+  pages    = {1--15},
+  title    = {Evaluating sound similarity metrics for differentiable, iterative sound-matching},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Bayesian sound field reconstruction using partial boundary information. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3619822'>www</a>)
+(2025). Local density-based anomaly score normalization for domain generalization. <em>TASLPRO</em>, 1--11. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629236'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {The problem of reconstructing a spatial sound field from microphone signals and a coarse, partial, and/or uncertain point cloud representation of the boundaries of the room is considered. This problem has downstream applications within sound field control for which precise reconstruction is essential. Typical for these applications is that only microphone measurements are considered, resulting in poor reconstruction in a large spatial region and at high frequencies when few microphones are available. In contrast, in an idealistic setting, where boundary geometry and acoustic properties are known, the sound field can be simulated as a forward problem. However, since the acquisition of such information can be costly and time-consuming, we consider the intermediate setting where partial information of the boundary geometry is available. We formulate the problem in a Bayesian setting, where the boundary information is used to form a prior distribution on the sound field. The paper extends our preliminary work in [1] by allowing for multiple impedance boundary conditions and by introducing a weighting of the boundary points. A scheme for finding an optimal weighting is introduced to reduce the influence of points far from the region of interest or points not consistent with the microphone measurements. Finally, extensive numerical simulation experiments are performed to understand the properties of the boundary-informed regularizer. To further validate the performance and robustness on real data in relation to commonly used regularizers, we release the Field LAser-calibrated Impulse Response (FLAIR) dataset. This dataset consists of 135 microphone measurements along with a laser calibrated, millimeter accurate point cloud of the room geometry and microphone positions that is aimed at stimulating further research in this domain.},
+  abstract = {State-of-the-art (ASD) systems in domain-shifted conditions rely on projecting audio signals into an embedding space and using distance-based outlier detection to compute anomaly scores. One of the major difficulties to overcome is the so-called domain mismatch between the anomaly score distributions of a source domain and a target domain that differ acoustically and in terms of the amount of training data provided. A decision threshold that is optimal for one domain may be highly sub-optimal for the other domain and vice versa. This significantly degrades the performance when only using a single decision threshold, as is required when generalizing to multiple data domains that are possibly unseen during training while still using the same trained ASD system as in the source domain. To reduce this mismatch between the domains, we propose a simple local-density-based anomaly score normalization scheme. In experiments conducted on several ASD datasets, we show that the proposed normalization scheme consistently improves performance for various types of embedding-based ASD systems and yields better results than existing anomaly score normalization approaches.},
   archive  = {J},
-  author   = {David Sundström and Filip Elvander and Andreas Jakobsson},
-  doi      = {10.1109/TASLPRO.2025.3619822},
+  author   = {Kevin Wilkinghoff and Haici Yang and Janek Ebbers and François G. Germain and Gordon Wichern and Jonathan Le Roux},
+  doi      = {10.1109/TASLPRO.2025.3629236},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-12},
-  title    = {Bayesian sound field reconstruction using partial boundary information},
+  month    = {11},
+  pages    = {1--11},
+  title    = {Local density-based anomaly score normalization for domain generalization},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Enhancing textual personality detection toward social media: Integrating long-term and short-term perspectives. <em>TASLPRO</em>, 1-11. (<a href='https://doi.org/10.1109/TASLPRO.2025.3622900'>www</a>)
+(2025). The inverse drum machine: Source separation through joint transcription and analysis-by-synthesis. <em>TASLPRO</em>, 1--12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629286'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Textual personality detection aims to identify personality characteristics by analyzing user-generated content on social media platforms. Extensive psychological literature high lights that personality encompasses both long-term stable traits and short-term dynamic states. However, existing studies often concentrate only on either long-term or short-term personality representations, neglecting the integration of both aspects. This limitation hinders a comprehensive understanding of individuals' personalities, as both stable traits and dynamic states are vital. To bridge this gap, we propose a Dual Enhanced Network (DEN) to jointly model users' long-term and short-term personality traits. In DEN, the Long-term Personality Encoding module models stable long-term personality traits by analyzing consistent patterns in the usage of psychological entities. The Short-term Personality Encoding module captures dynamic short-term personality states by modeling the contextual information of individual posts in real-time. The Bi-directional Interaction module integrates both aspects of personality, creating a cohesive and comprehensive representation of the user's personality. Experimental results on two personality detection datasets demonstrate the effectiveness of the DEN model and underscore the importance of considering both stable and dynamic aspects of personality in textual personality detection.},
+  abstract = {We present the Inverse Drum Machine, a novel approach to Drum Source Separation that leverages an analysis-by-synthesis framework combined with deep learning. Unlike recent supervised methods that require isolated stem recordings for training, our approach is trained on drum mixtures with only transcription annotations. IDM integrates Automatic Drum Transcription and One-shot Drum Sample Synthesis, jointly optimizing these tasks in an end-to-end manner. By convolving synthesized one-shot samples with estimated onsets, akin to a drum machine, we reconstruct the individual drum stems and train a Deep Neural Network on the reconstruction of the mixture. Experiments on the StemGMD dataset demonstrate that IDM achieves separation quality comparable to state-of-the-art supervised methods that require isolated stems data.},
   archive  = {J},
-  author   = {Haohao Zhua and Xiaokun Zhang and Junyu Lua and Youlin Wua and Zewen Baia and Changrong Min and Liang Yanga and Bo Xua and Dongyu Zhang and Hongfei Lin},
-  doi      = {10.1109/TASLPRO.2025.3622900},
+  author   = {Bernardo Torres and Geoffroy Peeters and Gaël Richard},
+  doi      = {10.1109/TASLPRO.2025.3629286},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-11},
-  title    = {Enhancing textual personality detection toward social media: Integrating long-term and short-term perspectives},
+  month    = {11},
+  pages    = {1--12},
+  title    = {The inverse drum machine: Source separation through joint transcription and analysis-by-synthesis},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Unified semantic and structural modeling via focal attention for causality graph event prediction. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3622899'>www</a>)
+(2025). Efficient multichannel auralization based on the modal decomposition of acoustic radiance transfer (MoD-ART). <em>TASLPRO</em>, 1--13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629242'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {Causality Graph Event Prediction (CGEP) aims to forecast consequential events based on an Event Causality Graph (ECG). Previous studies typically adopt a separate PLM+GNN framework for prediction, overlooking interactions among event evolution patterns and the impact of core events. This hampers a prediction model from capturing long-range dependencies, leading to limited understanding of event development. In this paper, we leverage PLMs to jointly model semantic context and graph structure by restricting the attention scale for each token. The proposed methodology discards GNNs for modeling graph structure to address the insufficient integration of semantic and structural features. To this end, we propose a Scale-restricted Event Dynamic Attention Model (SEDA) for the CGEP task. This model introduces a multi-faceted event graph (MEG) derived from the original ECG to characterize the interactions among event evolution patterns and designs two topology-based receptive matrices for each token to model the graph structure. Extensive experiments on two benchmark datasets have validated the effectiveness of our approach in terms of MRR and Hit@n metrics.},
+  abstract = {In complex acoustic environments such as multiple connected rooms, reverberation is highly dependent on the posi tions of sound sources and listeners — not only in terms of early reflections, but late reverberation as well. Modeling this positional dependency accurately is important for immersive, interactive applications such as virtual reality, augmented reality, and video games, where reverberation needs to be adapted in real time as sound sources and listeners move. The recently proposed modal decomposition of acoustic radiance transfer (MoD-ART) method can evaluate position-dependent late reverberation characteristics in real time, based on physical properties of the modeled environment, and it is specifically designed for complex acoustic environments. The reverberation characteristics' auralization (i.e. their application to audio signals) can be accomplished either with convolution or with delay-based reverberators. In this paper, we propose a method to auralize late reverberation efficiently in the presence of multiple sound sources and listeners, based on the MoD-ART model. The proposed method inherits the favorable complexity scaling of MoD-ART's modeling and extends it to the aspect of auralization, enabling the rendering of late reverberation in scenarios with hundreds of interactive sound sources and listeners. Furthermore, the proposed method can model fully dynamic scenarios (meaning both sources and listeners may move) correctly and with no rendering latency.},
   archive  = {J},
-  author   = {Chuanhong Zhan and Wei Xiang and Chao Liang and Bang Wang},
-  doi      = {10.1109/TASLPRO.2025.3622899},
+  author   = {Matteo Scerbo and Sebastian J. Schlecht and Randall Ali and Lauri Savioja and Enzo De Sena},
+  doi      = {10.1109/TASLPRO.2025.3629242},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-16},
-  title    = {Unified semantic and structural modeling via focal attention for causality graph event prediction},
+  month    = {11},
+  pages    = {1--13},
+  title    = {Efficient multichannel auralization based on the modal decomposition of acoustic radiance transfer (MoD-ART)},
   year     = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Unlocking multi-view insights in knowledge-dense retrieval-augmented generation. <em>TASLPRO</em>, 1-10. (<a href='https://doi.org/10.1109/TASLPRO.2025.3622944'>www</a>)
+(2025). Aligning speech to languages to enhance code-switching speech recognition. <em>TASLPRO</em>, 1--14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629290'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract = {While Retrieval-Augmented Generation (RAG) plays a crucial role in the application of Large Language Models (LLMs), existing retrieval methods in knowledge-dense domains like law and medicine still suffer from the insufficient utilization of multi-perspective views embedded within domain-specific corpora, which are essential for improving interpretability and reliability. Previous research on multi-view retrieval often focused solely on different semantic forms of queries, neglecting the expression of specific domain knowledge perspectives. This paper introduces a novel multi-view RAG framework, MVRAG, tailored for knowledge-dense domains, which leverages machine learning techniques for professional perspectives extraction and intention-aware query rewriting from multiple domain viewpoints to enhance retrieval precision, thereby improving the effectiveness of the final inference. Experiments conducted on both retrieval and generation tasks demonstrate substantial improvements in generation quality while maintaining retrieval performance in complex, knowledge-dense scenarios.},
+  abstract = {Code-switching (CS) refers to the switching of languages within a speech signal and results in language confusion for automatic speech recognition (ASR). To address language confusion, we propose a language alignment loss (LAL) that aligns acoustic features to pseudo-language labels learned from the ASR decoder during ASR training. This approach enables frame-level language identification without the need for frame-level language annotations. To further tackle the complex token alternatives for language modeling in bilingual scenarios, we propose to employ large language models via a generative error correction method. A linguistic hint, derived from LAL outputs and decoded hypotheses, is introduced to guide the prompting and enhance the LLM-based generative error correction for CS-ASR. The proposed methods are evaluated on the SEAME dataset and data from the ASRU 2019 Mandarin-English code-switching speech recognition challenge. The incorporation of the proposed language alignment loss improves CS-ASR performance for both hybrid CTC/attention and Whisper models on both datasets, with only a negligible increase in the number of parameters. This work also highlights the efficacy of language alignment loss in balancing primary-language-dominant bilingual data during training, with an 8.6% relative improvement on the ASRU dataset compared to the baseline model. Performance evaluation using large language models reveals the advantage of the linguistic hint by achieving 14.1% and 5.5% relative improvement on test sets of the ASRU and SEAME datasets, respectively.},
   archive  = {J},
-  author   = {Guanhua Chen and Wenhan Yu and Xiao Lu and Xiao Zhang and Erli Meng and Lei Sha},
-  doi      = {10.1109/TASLPRO.2025.3622944},
+  author   = {Hexin Liu and Xiangyu Zhang and Haoyang Zhang and Leibny Paola Garcia-Perera and Andy W. H. Khong and Eng Siong Chng and Shinji Watanabe},
+  doi      = {10.1109/TASLPRO.2025.3629290},
   journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-10},
-  title    = {Unlocking multi-view insights in knowledge-dense retrieval-augmented generation},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Unsupervised mutual learning of discourse parsing and topic segmentation in dialogue. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3623884'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {In dialogue systems, discourse plays a crucial role in managing conversational focus and coordinating interactions. It consists of two key structures: rhetorical structure and topic structure. The former captures the logical flow of conversations, while the latter detects transitions between topics. Together, they improve the ability of a dialogue system to track conversation dynamics and generate contextually relevant high-quality responses. These structures are typically identified through discourse parsing and topic segmentation, respectively. However, existing supervised methods rely on costly manual annotations, while unsupervised methods often focus on a single task, overlooking the deep linguistic interplay between rhetorical and topic structures. To address these issues, we first introduce a unified representation that integrates rhetorical and topic structures, ensuring semantic consistency between them. Under the unified representation, we further propose two linguistically grounded hypotheses based on discourse theories: (1) Local Discourse Coupling, where rhetorical cues dynamically enhance topic-aware information flow, and (2) Global Topology Constraint, where topic structure patterns probabilistically constrain rhetorical relation distributions. Building on the unified representation and two hypotheses, we propose an unsupervised mutual learning framework (UMLF) that jointly models rhetorical and topic structures, allowing them to mutually reinforce each other without requiring additional annotations. We evaluate our approach on two rhetorical datasets (STAC and Molweni) and three topic segmentation datasets (DialSeg711, Doc2Dial, and TIAGE). Experimental results demonstrate that our method surpasses all strong baselines built on pre-trained language models (PLMs) and achieves competitive performance to state-of-the-art large language models (LLMs) such as GPT-4o. Furthermore, when applied to LLMs (Qwen2-1.5B-Instruct and Llama3-8B-Instruct), our framework achieves notable improvements, demonstrating its effectiveness in improving discourse structure modeling, even when integrated with powerful models.},
-  archive  = {J},
-  author   = {Jiahui Xu and Feng Jiang and Anningzhe Gao and Luis Fernando D'Haro and Haizhou Li},
-  doi      = {10.1109/TASLPRO.2025.3623884},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-15},
-  title    = {Unsupervised mutual learning of discourse parsing and topic segmentation in dialogue},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Bidirectional propagation of hierarchy-specific features for hierarchical text classification. <em>TASLPRO</em>, 1-11. (<a href='https://doi.org/10.1109/TASLPRO.2025.3623873'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Hierarchical Text Classification (HTC) endeavors to construct a predictive model capable of predicting, for any future text, a set of relevant labels that together form a sub-tree. The local model is a simple yet effective approach for HTC. Its fundamental idea is to induce a set of local classifiers for each layer or node in the label tree and utilize them to predict future texts in a top-down fashion. In this paper, we introduce a novel local model for HTC, named Bidirectional Propagation of Hierarchy-specific Feature for HTC (BPHFHTC). Specifically, we initialize some learnable label embeddings for each class, which can be jointly optimized with the network parameters. Subsequently, a local classifier is employed to obtain layer-specific predictions. Finally, the label embeddings and the predictions are integrated into the final features, which are then fed into the subsequent layers. Moreover, an encoder-decoder structure is adopted to separate the feature extractor and the hierarchical classifier. This structure offers a natural advantage for HTC. The encoder can be used to extract the global textual representations, while the decoder captures the local hierarchical features. Additionally, to further address the error propagation issue, we propose a bidirectional decoder, where labels are generated not only from a top-down perspective but also from a bottom-up perspective. The bidirectional decoders are trained to learn from each other to reduce errors. We conduct extensive experiments on popular HTC datasets. The results show that our BPHFHTC model can outperform the existing state-of-the-art HTC models. The ablation and case studies indicate that BPHFHTC can effectively alleviate the error propagation problem.},
-  archive  = {J},
-  author   = {Bing Wang and Ximing Li and Zhengnan Zhang and Bo Fu and Wenting Wang and Jihong Ouyang},
-  doi      = {10.1109/TASLPRO.2025.3623873},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-11},
-  title    = {Bidirectional propagation of hierarchy-specific features for hierarchical text classification},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). FluentEditor2: Text-based speech editing by modeling multi-scale acoustic and prosody consistency. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624913'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Text-based speech editing (TSE) allows users to edit speech by modifying the corresponding text directly without altering the original recording. Current TSE techniques often focus on minimizing discrepancies between generated speech and reference within edited regions during training to achieve fluent TSE performance. However, the generated speech in the edited region should maintain acoustic and prosodic consistency with the unedited region and the original speech at both the local and global levels. To maintain speech fluency, we propose a new fluency speech editing scheme based on our previous FluentEditor model, termed FluentEditor2, by modeling the multi-scale acoustic and prosody consistency training criterion in TSE training. Specifically, for local acoustic consistency, we propose hierarchical local acoustic smoothness constraint to align the acoustic properties of speech frames, phonemes, and words at the boundary between the generated speech in the edited region and the speech in the unedited region. For global prosody consistency, we propose contrastive global prosody consistency constraint to keep the speech in the edited region consistent with the prosody of the original utterance. Extensive experiments on the VCTK and LibriTTS datasets show that FluentEditor2 surpasses existing neural networks-based TSE methods, including Editspeech, Campnet, A $^{3}$ T, FluentSpeech, and our Fluenteditor, in both subjective and objective. Ablation studies further highlight the contributions of each module to the overall effectiveness of the system.},
-  archive  = {J},
-  author   = {Rui Liu and Jiatian Xi and Ziyue Jiang and Haizhou Li},
-  doi      = {10.1109/TASLPRO.2025.3624913},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-15},
-  title    = {FluentEditor2: Text-based speech editing by modeling multi-scale acoustic and prosody consistency},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Neural momentum-enhanced LMS for linear acoustic echo cancellation. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624967'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Acoustic Echo Cancellation (AEC) has been a longstanding research focus in signal processing for voice communications, audio systems and intelligent speech devices. Typically, acoustic echo can be cancelled by subtracting the estimated echo, typically calculated via adaptive filtering algorithms, from the near-end microphone signal. However, in practical applications, adaptive filter is prone to under compensation or over-compensation, particularly in double-talk at high power level. This requires the use of advanced algorithms capable of dynamically adjusting filter parameters to achieve accurate and stable echo cancellation. Hybrid approaches that integrate deep neural networks (DNN) with traditional adaptive filtering algorithms have received increasing attention. Although DNN helps to update the parameters of the adaptive filter, it also results in slower convergence and inaccurate gradient estimation, especially during echo-path changes. This paper proposes a neural momentum LMS algorithm, which employs narrowband complex DNN to capture the dynamic correlations between momentum and gradient terms, leading to more efficient parameter optimization and faster convergence. Extensive experiments were conducted in stationary and non-stationary channels, echo-path change, and real-world recordings. The results demonstrate that the proposed algorithm achieves superior convergence and re-convergence performance across diverse and acoustically challenging environments. Moreover, with only 4.9K model parameters, the proposed algorithm exhibits great potential for deployment in resource-constrained devices.},
-  archive  = {J},
-  author   = {Haiqian Yu and Hongsheng Zhang and Jintao Xiang and Hong Yang},
-  doi      = {10.1109/TASLPRO.2025.3624967},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-16},
-  title    = {Neural momentum-enhanced LMS for linear acoustic echo cancellation},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). RNPM: Neural-guided embedding region selection and error correction for robust audio multi-watermarking. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624964'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Robust audio watermarking plays a crucial role in copyright protection; however, existing techniques suffer from low embedding capacity and limited robustness under severe signal distortions. To solve these limitations, this paper proposes a Robust Neural-Guided Parallel Multi-Watermarking (RNPM) scheme. In the RNPM, we propose a U-Net-Based Embedding Region Selection (ERSU-Net) module to accurately locate multiple embedding regions based on robustness characteristics. To better exploit the intrinsic frequency and energy distribution of audio signals, the ERSU-Net module is enhanced with dual attention modules, thereby improving the robustness. After determining the embedding regions, they are segmented into multiple overlapping frames to facilitate embedding. To further enhance embedding capacity without compromising robustness, the proposed RNPM integrates Discrete Cosine Transform (DCT) and inter-frame difference-based embedding with Gram–Schmidt orthogonalization, enabling parallel multi-watermark embed ding. Furthermore, to mitigate extraction errors caused by signal distortion, an error correction mechanism is integrated with the localized embedding regions, improving overall extraction reliability. Experimental results demonstrate that the proposed RNPM achieves superior robustness and inaudibility. In partic ular, RNPM maintains high robustness with a Bit Error Rate (BER) value of 0 under 20% cropping, MP3 compression at 64 kbps, and 22.5 kHz resampling attacks, surpassing existing state of-the-art methods.},
-  archive  = {J},
-  author   = {Qiutong Li and Tong Liu and Xiaochen Yuan},
-  doi      = {10.1109/TASLPRO.2025.3624964},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-12},
-  title    = {RNPM: Neural-guided embedding region selection and error correction for robust audio multi-watermarking},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Wavehax: Aliasing-free neural waveform synthesis based on 2D convolution and harmonic prior for reliable complex spectrogram estimation. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624985'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Neural vocoders often struggle with aliasing in latent feature spaces, caused by time-domain nonlinear operations and resampling layers. Aliasing folds high-frequency components into the low-frequency range, making aliased and original frequency components indistinguishable and introducing two practical issues. First, aliasing complicates the waveform generation process, as the subsequent layers must address these aliasing effects, increasing the computational complexity. Second, it limits extrapolation performance, particularly in handling high fundamental frequencies, which degrades the perceptual quality of generated speech waveforms. This paper demonstrates that 1) time-domain nonlinear operations inevitably introduce aliasing but provide a strong inductive bias for harmonic generation, and 2) time-frequency-domain processing can achieve aliasing free waveform synthesis but lacks the inductive bias for effective harmonic generation. Building on this insight, we propose Wave hax, an aliasing-free neural WAVEform generator that integrates 2D convolution and a HArmonic prior for reliable Complex Spectrogram (Wavehax) estimation. Experimental results show that Wavehax achieves speech quality comparable to existing high-fidelity neural vocoders and exhibits exceptional robustness in scenarios requiring high fundamental frequency extrapola tion, where aliasing effects become typically severe. Moreover, Wavehax requires less than 5% of the multiply-accumulate operations and model parameters compared to HiFi-GAN V1, while achieving over four times faster CPU inference speed.},
-  archive  = {J},
-  author   = {Reo Yoneyama and Atsushi Miyashita and Ryuichi Yamamoto and Tomoki Toda},
-  doi      = {10.1109/TASLPRO.2025.3624985},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-16},
-  title    = {Wavehax: Aliasing-free neural waveform synthesis based on 2D convolution and harmonic prior for reliable complex spectrogram estimation},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). High-transparency OPUS steganography using deep reinforcement learning. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624951'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Voice-over-IP (VoIP) steganography has matured into a critical branch of information hiding, yet nearly all prior work targets traditional codecs such as Adaptive Multi-Rate and G.723. In contrast, OPUS —current de-facto codec standard in mainstream voice platforms — remains largely unexplored for VoIP steganography. To address this gap, this paper presents a systematic and comprehensive investigation of steganography in OPUS speech streams. Our study begins with an analysis of the steganographic performance in the pulse parameter domain, identifying advantages such as non-continuity and a preference for silent frames. Building on this analysis, we propose two novel steganographic approaches: an inter-frame technique featuring a deep reinforcement learning-based position selection method, and an intra-frame technique relying on pulse modulation. The position selection method formulates speech steganography as a continuous control task, capitalizing on the inherent insensitivity of silent speech for information embedding and globally optimizing embedding positions through deep reinforcement learning. The pulse modulation method, on the other hand, embeds information by exploiting pulse randomness and their tendency toward zero. Experimental results demonstrate that the pulse modulation method achieves excellent steganographic transparency and capacity, while the position selection method significantly improves the steganographic transparency of various intra-frame steganographic techniques. It is noteworthy that this study not only pioneers the field of information hiding in OPUS speech streams but also marks the first successful application of deep reinforcement learning to speech steganography. The proposed methods are applicable not only to OPUS but can also be extended to other modern codecs such as SILK.},
-  archive  = {J},
-  author   = {Hui Tian and Lili Tang and Haizhou Li and Ching-Chun Chang and Chin-Chen Chang},
-  doi      = {10.1109/TASLPRO.2025.3624951},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-14},
-  title    = {High-transparency OPUS steganography using deep reinforcement learning},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). WhisMultiNet: Advancing end-to-end speech topic classification with whisper and MultiGateGNN. <em>TASLPRO</em>, 1-15. (<a href='https://doi.org/10.1109/TASLPRO.2025.3622978'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Speech topic classification aims to automatically identify and categorize the topics of audio content, with widespread applications in recommendation systems, speech content indexing, and other fields. In recent years, end-to-end models have gradually outperformed cascaded models due to their ability to preserve speech features and avoid ASR errors. However, existing end-to-end models still face challenges in deep semantic extraction and global semantic modeling. To address these issues, we propose WhisMultiNet, an end-to-end speech topic classification model based on Whisper, a feature projector, multi-scale CNNs, and a multi-layer graph network. Specifically, Whisper extracts deep speech features from the last layer of its encoder, while the pre-trained feature projector enhances the semantic representation of speech features. The multi-scale CNNs further improve the multi-level representation of local semantic features. A multi-layer graph network constructs nodes by segmenting semantic feature sequences and employs a dynamic gating mechanism to weight and fuse graph attention outputs from different layers, effectively capturing global semantic information. Our model outperforms previous state-of-the-art models, achieving accuracy improvements of 4.01% and 7.23% on the Fisher and Switchboard datasets, respectively. Furthermore, to address the limited diversity and accessibility of existing datasets for speech topic classification, we crawled, filtered, and curated a 638-hour multimodal speech topic classification dataset covering 40 categories, named TedSpeechTopic. This dataset will be publicly released alongside the paper at the following link.},
-  archive  = {J},
-  author   = {Xiaozhe Qi and Xuejian Zhao and Zhe Li and Liang He},
-  doi      = {10.1109/TASLPRO.2025.3622978},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-15},
-  title    = {WhisMultiNet: Advancing end-to-end speech topic classification with whisper and MultiGateGNN},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Bootstrapping post-training for LLM translator. <em>TASLPRO</em>, 1-12. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624962'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Large language models (LLMs) have shown promising results in machine translation (MT), but their ability to adapt to diverse language use and new domains in real-world deployments remains a challenge. This is further compounded by the scarcity of gold-standard reference translations in practical settings. To address this, we propose a novel bootstrapping approach for LLM translator that leverages preference optimization and interactively enhances performance without human annotations. Our method iterates through three stages: 1) generate multiple translation candidates; 2) construct preference data using a reference-free scorer; 3) post-train the LLM translator through preference optimization. Results demonstrate that our bootstrapping approach enables LLMs to continuously self-improve translation quality by leveraging their inherent diversity, even without reference translations. We provide a detailed analysis, showing that inter-pair diversity and intra-pair variation of generated translations are crucial for the bootstrapping process.},
-  archive  = {J},
-  author   = {Wenyang Gao and Yafu Li and Qingkai Min and Yue Zhang},
-  doi      = {10.1109/TASLPRO.2025.3624962},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-12},
-  title    = {Bootstrapping post-training for LLM translator},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing low-resource speech recognition with non-linear cross-lingual mappings. <em>TASLPRO</em>, 1-14. (<a href='https://doi.org/10.1109/TASLPRO.2025.3626241'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {In this article, the performance of monolingual acoustic models from several out-of-domain (OOD) languages is analysed in their ability to perceive the input speech signals of a target language. For a given target language speech utterance, the output from various acoustic models of OOD languages is expected to be fallible. However, the analysis reveals significant patterns in the output of an OOD language Acoustic Model (AM) relative to the ground-truth phonemic transcription. In our previous work, a simple feed-forward neural network model has been trained to learn the mappings between output posteriors from an OOD language acoustic model and those of the target language. In this work, we propose to enhance these mapping models leveraging several modelling and optimisation approaches. The proposed method improves the convergence of mapping models, scales efficiently, and achieves a 6.7% relative gain in accuracy compared to baseline models. Utilising these enhanced mapping models for multilingual and cross-lingual acoustic model fusion results in an absolute average gain of 2.19% and 5.12%, respectively, compared to model fusion with baseline mapping models. Improved multilingual model fusion yields a relative gain of approximately 9.8% and 15.3% over monolingual and multilingual speech recognition systems, respectively.},
-  archive  = {J},
-  author   = {Muhammad Umar Farooq and Thomas Hain},
-  doi      = {10.1109/TASLPRO.2025.3626241},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-14},
-  title    = {Enhancing low-resource speech recognition with non-linear cross-lingual mappings},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). From alignment to advancement: Bootstrapping audio-language alignment with synthetic data. <em>TASLPRO</em>, 1-16. (<a href='https://doi.org/10.1109/TASLPRO.2025.3626233'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {Audio-aware large language models (ALLMs) have recently made great strides in understanding and processing audio inputs. These models are typically adapted from text-based large language models (LLMs) through additional training on audio-related tasks. This adaptation process presents two major limitations. First, ALLMs often suffer from catastrophic forgetting, where crucial textual capabilities like instruction-following are lost after training on audio data. In some cases, models may even hallucinate sounds that are not present in the input audio, raising concerns about reliability. Second, achieving cross-modal alignment between audio and language typically relies on large collections of task-specific question-answer pairs for instruction tuning, making it resource-intensive. To address these issues, previous works have leveraged the backbone LLMs to synthesize general-purpose, caption-style alignment data. In this paper, we propose a data generation framework that produces contrastive-like training data, designed to enhance ALLMs' ability to differentiate between present and absent sounds. We further extend our approach to multi-audio scenarios, enabling the model to either explain differences between audio inputs or produce unified captions that describe all inputs, thereby enhancing audio-language alignment. We refer to the entire ALLM training framework as bootstrapping audio-language alignment via synthetic data generation from backbone LLMs (BALSa). Experimental results indicate that our method effectively mitigates audio hallucinations while reliably maintaining strong performance on audio understanding and reasoning benchmarks, as well as instruction-following skills. Moreover, incorporating multi-audio training further enhances the model's comprehension and reasoning capabilities. Overall, BALSa offers an efficient and scalable approach to developing ALLMs.},
-  archive  = {J},
-  author   = {Chun-Yi Kuan and Hung-yi Lee},
-  doi      = {10.1109/TASLPRO.2025.3626233},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-16},
-  title    = {From alignment to advancement: Bootstrapping audio-language alignment with synthetic data},
-  year     = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). RefuteBench 2.0 – Agentic benchmark for dynamic evaluation of LLM responses to refutation instruction. <em>TASLPRO</em>, 1-13. (<a href='https://doi.org/10.1109/TASLPRO.2025.3626926'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract = {While large language models (LLMs) can leverage user feedback in multi-turn interactions, evaluating their ability to incorporate refutation feedback remains challenging. We introduce RefuteBench 2.0, an evaluation framework using LLM agents as refuters and evaluators to assess how models handle contradictory input. The framework includes transient and persistent refutation instructions with varying validity periods to reflect real-world interaction patterns. Meta-evaluation shows our approach generates human-like refutations and achieves high correlation with human evaluators. Experiments across various LLMs reveal a critical limitation: while models can satisfy immediate refutation requests, they fail to retain refutation information over extended dialogues. Notably, increasing refutations progressively degrades performance on the original task. Attention analysis confirms that current LLMs struggle with information retention and correct utilization in long-context scenarios, highlighting a fundamental weakness in their multi-turn reasoning capabilities.},
-  archive  = {J},
-  author   = {Jianhao Yan and Yun Luo and Yue Zhang},
-  doi      = {10.1109/TASLPRO.2025.3626926},
-  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
-  month    = {10},
-  pages    = {1-13},
-  title    = {RefuteBench 2.0 – Agentic benchmark for dynamic evaluation of LLM responses to refutation instruction},
+  month    = {11},
+  pages    = {1--14},
+  title    = {Aligning speech to languages to enhance code-switching speech recognition},
   year     = {2025},
 }
 </textarea>
