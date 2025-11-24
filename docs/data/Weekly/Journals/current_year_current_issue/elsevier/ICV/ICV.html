@@ -25,8 +25,48 @@
 </head>
 <body>
 
-<h2 id="icv">ICV - 18</h2>
+<h2 id="icv">ICV - 22</h2>
 <ul>
+<li><details>
+<summary>
+(2026). A human layout consistency framework for image-based virtual try-on. <em>ICV</em>, <em>165</em>, 105831. (<a href='https://doi.org/10.1016/j.imavis.2025.105831'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image-based virtual try-on, commonly framed as a generative image-to-image translation task, has garnered significant research interest due to its elimination of the need for costly 3D scanning devices. In this field, image inpainting and cycle-consistency have been the dominant frameworks, but they still face challenges in cross-attribute adaptation and parameter sharing between try-on networks. This paper proposes a new framework, termed human layout consistency, based on the intuitive insight that a high-quality try-on result should align with a coherent human layout. Under the proposed framework, a try-on network is equipped with an upstream Human Layout Generator (HLG) and a downstream Human Layout Parser (HLP). The former generates an expected human layout as if the person were wearing the selected target garment, while the latter extracts an actual human layout parsed from the try-on result. The supervisory signals, free from the ground-truth image pairs, are constructed by assessing the consistencies between the expected and actual human layouts. We design a dual-phase training strategy, first warming up HLG and HLP, then training try-on network by incorporating the supervisory signals based on human layout consistency. On this basis, the proposed framework enables arbitrary selection of target garments during training, thereby endowing the try-on network with the cross-attribute adaptation. Moreover, the proposed framework operates with a single try-on network, rather than two physically separate ones, thereby avoiding the parameter-sharing issue. We conducted both qualitative and quantitative experiments on the benchmark VITON dataset. Experimental results demonstrate that our proposal can generate high-quality try-on results, outperforming baselines by a margin of 0.75% to 10.58%. Ablation and visualization results further reveal that the proposed method exhibits superior adaptability to cross-attribute translations, showcasing its potential for practical application.},
+  archive      = {J_ICV},
+  author       = {Rong Huang and Zhicheng Wang and Hao Liu and Aihua Dong},
+  doi          = {10.1016/j.imavis.2025.105831},
+  journal      = {Image and Vision Computing},
+  month        = {1},
+  pages        = {105831},
+  shortjournal = {Image Vis. Comput.},
+  title        = {A human layout consistency framework for image-based virtual try-on},
+  volume       = {165},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). CAGS: Open-vocabulary 3D scene understanding with context-aware gaussian splatting. <em>ICV</em>, <em>165</em>, 105830. (<a href='https://doi.org/10.1016/j.imavis.2025.105830'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open-vocabulary 3D scene understanding is crucial for applications requiring natural language-driven spatial interpretation, such as robotics and augmented reality. While 3D Gaussian Splatting (3DGS) offers a powerful representation for scene reconstruction, integrating it with open-vocabulary frameworks reveals a key challenge: cross-view granularity inconsistency . This issue, stemming from 2D segmentation methods like the Segment Anything Model (SAM), results in inconsistent object segmentations across views (e.g., a ”coffee set” segmented as a single entity in one view but as ”cup + coffee + spoon” in another). Existing 3DGS-based methods often rely on isolated per-Gaussian feature learning, neglecting the spatial context needed for cohesive object reasoning, leading to fragmented representations. We propose Context-Aware Gaussian Splatting (CAGS) , a novel framework that addresses this challenge by incorporating spatial context into 3DGS. CAGS constructs local graphs to propagate contextual features across Gaussians, reducing noise from inconsistent granularity, employs mask-centric contrastive learning to smooth SAM-derived features across views, and leverages a precomputation strategy to reduce computational cost by precomputing neighborhood relationships, enabling efficient training in large-scale scenes. By integrating spatial context, CAGS significantly improves 3D instance segmentation and reduces fragmentation errors on datasets like LERF-OVS and ScanNet, enabling robust language-guided 3D scene understanding.},
+  archive      = {J_ICV},
+  author       = {Wei Sun and Yuan Li and Jianbin Jiao},
+  doi          = {10.1016/j.imavis.2025.105830},
+  journal      = {Image and Vision Computing},
+  month        = {1},
+  pages        = {105830},
+  shortjournal = {Image Vis. Comput.},
+  title        = {CAGS: Open-vocabulary 3D scene understanding with context-aware gaussian splatting},
+  volume       = {165},
+  year         = {2026},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2026). MOT-STM: Maritime object tracking: A spatial-temporal and metadata-based approach. <em>ICV</em>, <em>165</em>, 105826. (<a href='https://doi.org/10.1016/j.imavis.2025.105826'>www</a>)
@@ -42,6 +82,26 @@
   pages        = {105826},
   shortjournal = {Image Vis. Comput.},
   title        = {MOT-STM: Maritime object tracking: A spatial-temporal and metadata-based approach},
+  volume       = {165},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MedSetFeat++: An attention-enriched set feature framework for few-shot medical image classification. <em>ICV</em>, <em>165</em>, 105825. (<a href='https://doi.org/10.1016/j.imavis.2025.105825'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot learning (FSL) has emerged as a promising solution to address the challenge of limited annotated data in medical image classification. However, traditional FSL methods often extract features from only one convolutional layer. This limits their ability to capture detailed spatial, semantic, and contextual information, which is important for accurate classification in complex medical scenarios. To overcome these limitations, this study introduces MedSetFeat++, an improved set feature learning framework with enhanced attention mechanisms, tailored for few-shot medical image classification. It extends the SetFeat architecture by incorporating several key innovations. It uses a multi-head attention mechanism with projections at multiple scales for the query, key, and value, allowing for more detailed feature interactions across different levels. It also includes learnable positional embeddings to preserve spatial information. An adaptive head gating method is added to control the flow of attention in a dynamic way. Additionally, a Convolutional Block Attention Module (CBAM) based attention module is used to improve focus on the most relevant regions in the data. To evaluate the performance and generalization of MedSetFeat++, extensive experiments were conducted using three different medical imaging datasets: HAM10000, BreakHis at 400 × magnification, and Kvasir. Under a 2-way 10-shot 15-query setting, the model achieves 92.17% accuracy on HAM10000, 70.89% on BreakHis, and 73.46% on Kvasir. The proposed model outperforms state-of-the-art methods in multiple 2-way classification tasks under 1-shot, 5-shot, and 10-shot settings. These results establish MedSetFeat++ as a strong and adaptable framework for improving performance in few-shot medical image classification.},
+  archive      = {J_ICV},
+  author       = {Ankit Kumar Titoriya and Maheshwari Prasad Singh and Amit Kumar Singh},
+  doi          = {10.1016/j.imavis.2025.105825},
+  journal      = {Image and Vision Computing},
+  month        = {1},
+  pages        = {105825},
+  shortjournal = {Image Vis. Comput.},
+  title        = {MedSetFeat++: An attention-enriched set feature framework for few-shot medical image classification},
   volume       = {165},
   year         = {2026},
 }
@@ -242,6 +302,26 @@
   pages        = {105803},
   shortjournal = {Image Vis. Comput.},
   title        = {DBaP-net: Deep network for image defogging based on physical properties prior},
+  volume       = {165},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). DGFMamba: Model fine-tuning based on bidirectional state space for domain generalization semantic segmentation. <em>ICV</em>, <em>165</em>, 105800. (<a href='https://doi.org/10.1016/j.imavis.2025.105800'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Compared with traditional semantic segmentation, Domain Generalization Semantic Segmentation (DGSS) focuses more on improving the generalization of models in unseen domains. Existing methods are mainly based on Transformers and convolutional neural networks, which have limited receptive fields and high complexity. Mamba, as a new state-space model, can solve these problems well. Nevertheless, the problems of hidden states and learning domain-invariant semantic features make it difficult to apply to DGSS. In this paper, we propose a model fine-tuning method named DGFMamba, which introduces Hidden State Fine-tuning Tokens (HSFT) and Feature-level Bidirectional Selective Scan Module (FBSSM) to improve the feature maps. HSFT, which consists of channel tokens and feature tokens, can perform local forgetting on feature maps. Feature-level embedding allows feature maps to be input to FBSSM with single pixels as vectors. FBSSM obtains contextual information from both forward and reverse directions, with reverse information serving as a complement to forward information. To further reduce the trainable parameters of the model, the parameters of FBSSM and MLP at each layer are shared. DGFMamba achieves promising results in experiments with different settings. This also demonstrates the effectiveness of applying state-space models to model fine-tuning. The average mIoU under the GTAV → scapes+BDD100K+Mapillary setting is 64.4%. The average mIoU under the GTAV+Synthia → Cityscapes+BDD100K+Mapillary setting is 65.8%. It is worth noting that DGFMamba only adds an additional 0.5% of trainable parameters. The code is available at https://github.com/xiaoxia0722/DGFMamba .},
+  archive      = {J_ICV},
+  author       = {Yongchao Qiao and Ya’nan Guan and Zhiyou Wang and Jingmin Yang and Wenyuan Yang},
+  doi          = {10.1016/j.imavis.2025.105800},
+  journal      = {Image and Vision Computing},
+  month        = {1},
+  pages        = {105800},
+  shortjournal = {Image Vis. Comput.},
+  title        = {DGFMamba: Model fine-tuning based on bidirectional state space for domain generalization semantic segmentation},
   volume       = {165},
   year         = {2026},
 }

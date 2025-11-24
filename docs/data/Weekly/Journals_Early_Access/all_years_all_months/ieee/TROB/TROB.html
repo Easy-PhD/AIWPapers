@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="trob">TROB - 25</h2>
+<h2 id="trob">TROB - 21</h2>
 <ul>
 <li><details>
 <summary>
@@ -219,6 +219,63 @@
 </details></li>
 <li><details>
 <summary>
+(2025). SiLVR: Scalable lidar-visual radiance field reconstruction with uncertainty quantification. <em>TROB</em>, 1--18. (<a href='https://doi.org/10.1109/TRO.2025.3633844'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a neural radiance field (NeRF) based large-scale reconstruction system that fuses lidar and vision data to generate high-quality reconstructions that are geometrically accurate and capture photorealistic texture. Our system adopts the state-of-the-art NeRF representation to additionally incorporate lidar. Adding lidar data adds strong geometric constraints on the depth and surface normals, which is particularly useful when modelling uniform texture surfaces which contain ambiguous visual reconstruction cues. A key contribution of this work is a novel method to quantify the epistemic uncertainty of the lidar-visual NeRF reconstruction by estimating the spatial variance of each point location in the radiance field given the sensor observations from the cameras and lidar. This provides a principled approach to evaluate the contribution of each sensor modality to the final reconstruction. In this way, reconstructions that are uncertain (due to, e.g., uniform visual texture, limited observation viewpoints, or little lidar coverage) can be identified and removed. Our system is integrated with a real-time pose-graph lidar SLAM system which is used to bootstrap a Structure-from-Motion (SfM) reconstruction procedure. It also helps to properly constrain the overall metric scale which is essential for the lidar depth loss. The refined SLAM trajectory can then be divided into submaps using Spectral Clustering to group sets of co-visible images together. This submapping approach is more suitable for visual reconstruction than distance-based partitioning. Our uncertainty estimation is particularly effective when merging submaps, as their boundaries often contain artefacts due to limited observations. We demonstrate the reconstruction system using a multi-camera, lidar sensor suite in experiments involving both robot-mounted and handheld scanning. Our test datasets cover a total area of more than $\rm{20,000}~\rm{m}^{2}$, including multiple university buildings and an aerial survey of a multi-storey building. Quantitative evaluation is provided by comparing with maps produced by a commercial tripod scanner. The code and dataset are available at https://dynamic.robots.ox.ac.uk/projects/silvr/.},
+  archive      = {J_TROB},
+  author       = {Yifu Tao and Maurice Fallon},
+  doi          = {10.1109/TRO.2025.3633844},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {11},
+  pages        = {1--18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {SiLVR: Scalable lidar-visual radiance field reconstruction with uncertainty quantification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Addressing human-robot symbiosis via bilevel optimization of robotic knee prosthesis control. <em>TROB</em>, 1--14. (<a href='https://doi.org/10.1109/TRO.2025.3634368'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents an innovative solution for integrating a human and a robotic knee prosthesis symbiotically for walking. Achieving this requires human-robot cross-joint coordination to provide personalized walking assistance. Our approach uses inverse reinforcement learning (IRL) to identify control objectives for reinforcement learning (RL) controller. Unlike existing methods that optimize performance of human or robot alone, our approach considers both human (thigh segmental angle) and robot (knee joint kinematics) aspects. This bilevel optimization method was evaluated on 3 non-disabled participants and 2 people with amputation. Results showed that the approach personalized the objective function and resulted in a robust policy, completing optimization within a duration of 3.5 minutes. Compared to previous approaches focusing only on robot states, this symbiotic approach increased stance time and step length on the prosthesis side for most participants. Our results highlight the potential of integrating human state into prosthesis control personalization, enhancing the functionality and health of people with amputation.},
+  archive      = {J_TROB},
+  author       = {Wentao Liu and Varun Nalam and Jennie Si and He Huang},
+  doi          = {10.1109/TRO.2025.3634368},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {11},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Addressing human-robot symbiosis via bilevel optimization of robotic knee prosthesis control},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On transient release dynamics in robot throwing: A sliding pivot model. <em>TROB</em>, 1--21. (<a href='https://doi.org/10.1109/TRO.2025.3634386'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Humans regularly throw projectiles with high speed and accuracy; some animals, including chimpanzees and elephants, also throw objects occasionally. In comparison, robots are currently lagging behind, despite having lower communication latency and more accurate motor control. To understand this paradox and ultimately achieve ubiquitous throwing robots, one of the major obstacles is the lack of high-fidelity and tractable physical models of the transient release dynamics, where the momentum exchange between the hand and the object occurs within tens of milliseconds via the frictional interface. In this work, we try to establish a physical model for the release dynamics. We first demonstrate that the conventional model, which combines rigid-body dynamics and patch friction (limit surface, LS), struggles to capture the release dynamics and exhibits pathological behaviors, such as Zeno-like oscillations, leading to poor accuracy in predicting throwing outcomes. To mitigate this, we formulate a viscous-smoothed variant of the limit surface model solved via implicit integration (ILS), which achieves high predictive fidelity but incurs significant computational cost. On the other hand, motivated by the dominant effect of in-hand pivoting in release dynamics, we propose a Sliding Pivot (SP) model that simplifies the contact dynamics by capturing the sticking-pivoting-sliding behavior emerging under vanishing normal force. This model achieves accuracy comparable to ILS, with only 10% higher error while offering over 20× faster computation. Compared to conventional LS models, our method reduces horizontal velocity prediction error by 40% and angular velocity prediction error by 63%, achieving 2.4 cm mean absolute error (MAE) for landing position and 15.4 degrees MAE for landing orientation. These results provide a robust, physically grounded foundation for future scalable robot throwing systems.},
+  archive      = {J_TROB},
+  author       = {Yang Liu and Aude Billard},
+  doi          = {10.1109/TRO.2025.3634386},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {11},
+  pages        = {1--21},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {On transient release dynamics in robot throwing: A sliding pivot model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2025). OmniMap: A general mapping framework integrating optics, geometry, and semantics. <em>TROB</em>, 1--20. (<a href='https://doi.org/10.1109/TRO.2025.3621333'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -238,82 +295,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Heterogeneous multi-robot task allocation for long-endurance missions in dynamic scenarios. <em>TROB</em>, 1--20. (<a href='https://doi.org/10.1109/TRO.2025.3626651'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We present a framework for Multi-Robot Task Allocation (MRTA) in heterogeneous teams performing long-endurance missions in dynamic scenarios. Given the limited battery of robots, especially for aerial vehicles, we allow for robot recharges and the possibility of fragmenting and/or relaying certain tasks. We also address tasks that must be performed by a coalition of robots in a coordinated manner. Given these features, we introduce a new class of heterogeneous MRTA problems which we analyze theoretically and optimally formulate as a Mixed Integer Linear Program (MILP). We then contribute a heuristic algorithm to compute approximate solutions and integrate it into a mission planning and execution architecture capable of reacting to unexpected events by repairing or recomputing plans online. Our experimental results show the relevance of our newly formulated problem in a realistic use case for inspection with aerial robots. We assess the performance of our heuristic solver in comparison with other variants and with exact optimal solutions in small-scale scenarios. In addition, we evaluate the ability of our replanning framework to repair plans online.},
-  archive      = {J_TROB},
-  author       = {Álvaro Calvo and Jesús Capitán},
-  doi          = {10.1109/TRO.2025.3626651},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Heterogeneous multi-robot task allocation for long-endurance missions in dynamic scenarios},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A static modelling and evaluation framework for soft continuum robots with reinforced chambers. <em>TROB</em>, 1--20. (<a href='https://doi.org/10.1109/TRO.2025.3626601'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Elastomer-based soft manipulators with fibre-reinforced chambers, represent a prevalent design paradigm in soft robotics. These robots incorporate multiple actuation chambers, enabling elongation and bending motions. However, the inherent compliance of materials and the pressurised chambers inevitably introduce significant nonlinearity to these robots. Moreover, design of such robots often relies on a trial-and-error approach. Consequently, a comprehensive robot prototyping framework is of paramount importance. To achieve this, we present a static modelling, design and evaluation framework for soft robots with densely reinforced chambers (i.e., the angle between the reinforcement fibre and the axial direction of soft robots is 90°). We first propose a static analytical modelling framework to achieve both the forward kinematics and the tip force generation modelling. This modelling framework accommodates the effects of pressurised chambers and (non)linear material behaviours. Furthermore, our design and evaluation framework incorporates an open-accessible simulation toolbox with a user-friendly graphical interface, along with a physical evaluation platform. The entire framework is validated by eight kinds of manipulators with varying diameters and lengths. Meanwhile, the nonlinearity introduced by geometrical deformation resulting from the elongation, the pressurised actuation chambers (i.e., the chamber stiffening effect), and material hyper-elasticity are investigated. Results also enable informed decision-making on design specifications prior to robot fabrication.},
-  archive      = {J_TROB},
-  author       = {Jialei Shi and Hanyu Jin and Sara-Adela Abad and Wenlong Gaozhang and Ge Shi and Helge A Wurdemann},
-  doi          = {10.1109/TRO.2025.3626601},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {A static modelling and evaluation framework for soft continuum robots with reinforced chambers},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Single-instance sampling for computationally efficient and accurate real-time task space MPPI control. <em>TROB</em>, 1--18. (<a href='https://doi.org/10.1109/TRO.2025.3626660'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study presents a model predictive path integral (MPPI) method capable of conducting high-frequency real-time model predictive control (MPC) for robot manipulators. Real-time MPC-based manipulation holds significant potential for controlling an end-effector precisely and reactively while satisfying various constraints in dynamic environments. However, the optimization under a complex robot model and various constraints imposes a heavy computational burden, hindering the realization of high-frequency updates. To address this challenge, we propose a single-instance sampling-based MPPI algorithm and dynamic time horizon to significantly reduce the computational burden while enhancing control performance. The performance and efficacy of the proposed method are verified through experiments conducted on a 7-degree-of-freedom robotic arm, along with comparative simulations and analysis.},
-  archive      = {J_TROB},
-  author       = {Dongwhan Kim and Euncheol Im and Yujin Kim and Myotaeg Lim and Yisoo Lee},
-  doi          = {10.1109/TRO.2025.3626660},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--18},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Single-instance sampling for computationally efficient and accurate real-time task space MPPI control},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Disturbance observer-based model predictive control for cable-driven parallel robots. <em>TROB</em>, 1--19. (<a href='https://doi.org/10.1109/TRO.2025.3626664'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, a disturbance observer-based model predictive control (DOB-based MPC) strategy is proposed for the trajectory tracking of cable-driven parallel robots (CDPRs). The original nonlinear optimization problem of the MPC explicitly handles the positive bounded constraints of cable tensions and is transformed into a quadratic problem (QP) based on the desired trajectory and offline workspace analysis. Additionally, the uncertainties and external disturbances in the system are considered and derived as the lumped disturbance. Then, a nonlinear DOB is used to estimate the lumped disturbance, and accordingly the estimation is used to enhance the prediction model of the MPC. The control input of the proposed MPC strategy is redesigned to incorporate an auxiliary controller. The estimation error of the DOB and the time-varying characteristics of the disturbance are leveraged to tighten the constraints of the QP less conservatively and generate feasible tubes. Such tube techniques guarantee the recursive feasibility and the input-to-state stability of the proposed MPC strategy. Furthermore, the whole algorithm for deployment including an online constraint updating method is developed. Both simulations and experiments are carried out thoroughly, showing that the DOB-based MPC can effectively improve trajectory tracking accuracy and ensure that the cable tensions satisfy the constraints in the case of unknown disturbances and model uncertainties.},
-  archive      = {J_TROB},
-  author       = {Xinyu Gao and Weiwei Shang and Bin Zhang},
-  doi          = {10.1109/TRO.2025.3626664},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--19},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Disturbance observer-based model predictive control for cable-driven parallel robots},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). RAID-AgiVS: A bio-inspired reciprocal perceptual control framework for agile visual servo. <em>TROB</em>, 1--20. (<a href='https://doi.org/10.1109/TRO.2025.3626647'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -327,63 +308,6 @@
   pages        = {1--20},
   shortjournal = {IEEE Trans. Robot.},
   title        = {RAID-AgiVS: A bio-inspired reciprocal perceptual control framework for agile visual servo},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Programmable locking cells (PLC) for modular robots with high stiffness tunability and morphological adaptability. <em>TROB</em>, 1--18. (<a href='https://doi.org/10.1109/TRO.2025.3626509'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Robotic systems operating in unstructured environments require the ability to switch between compliant and rigid states to perform diverse tasks such as adaptive grasping, high-force manipulation, shape holding, and navigation in constrained spaces, among others. However, many existing variable stiffness solutions rely on complex actuation schemes, continuous input power, or monolithic designs, limiting their modularity and scalability. This paper presents the Programmable Locking Cell (PLC)—a modular, tendon-driven unit that achieves discrete stiffness modulation through mechanically interlocked joints actuated by cable tension. Each unit transitions between compliant and firm states via structural engagement, and the assembled system exhibits high stiffness variation—up to 950% per unit—without susceptibility to damage under high payload in the firm state. Multiple PLC units can be assembled into reconfigurable robotic structures with spatially programmable stiffness. We validate the design through two functional prototypes: (1) a variable-stiffness gripper capable of adaptive grasping, firm holding, and in-hand manipulation; and (2) a pipe-traversing robot composed of serial PLC units that achieves shape adaptability and stiffness control in confined environments. These results demonstrate the PLC as a scalable, structure-centric mechanism for programmable stiffness and motion, enabling robotic systems with reconfigurable morphology and task-adaptive interaction.},
-  archive      = {J_TROB},
-  author       = {Jianshu Zhou and Wei Chen and Junda Huang and Boyuan Liang and Yunhui Liu and Masayoshi Tomizuka},
-  doi          = {10.1109/TRO.2025.3626509},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--18},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Programmable locking cells (PLC) for modular robots with high stiffness tunability and morphological adaptability},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HI-SLAM2: Geometry-aware gaussian SLAM for fast monocular scene reconstruction. <em>TROB</em>, 1--17. (<a href='https://doi.org/10.1109/TRO.2025.3626627'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We present HI-SLAM2, a geometry-aware Gaussian SLAM system that achieves fast and accurate monocular scene reconstruction using only RGB input. Existing Neural SLAM or 3DGS-based SLAM methods often trade off between rendering quality and geometry accuracy, our research demonstrates that both can be achieved simultaneously with RGB input alone. The key idea of our approach is to enhance the ability for geometry estimation by combining easy-to-obtain monocular priors with learning-based dense SLAM, and then using 3D Gaussian splatting as our core map representation to efficiently model the scene. Upon loop closure, our method ensures on-the-fly global consistency through efficient pose graph bundle adjustment and instant map updates by explicitly deforming the 3D Gaussian units based on anchored keyframe updates. Furthermore, we introduce a grid-based scale alignment strategy to maintain improved scale consistency in prior depths for finer depth details. Through extensive experiments on Replica, ScanNet, Waymo Open, ETH3D SLAM and ScanNet++ datasets, we demonstrate significant improvements over existing Neural SLAM methods and even surpass RGB-D-based methods in both reconstruction and rendering quality.},
-  archive      = {J_TROB},
-  author       = {Wei Zhang and Qing Cheng and David Skuddis and Niclas Zeller and Daniel Cremers and Norbert Haala},
-  doi          = {10.1109/TRO.2025.3626627},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--17},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {HI-SLAM2: Geometry-aware gaussian SLAM for fast monocular scene reconstruction},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Safe and dynamically-feasible motion planning using control lyapunov and barrier functions. <em>TROB</em>, 1--20. (<a href='https://doi.org/10.1109/TRO.2025.3626614'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper considers the problem of designing motion planning algorithms for control-affine systems that generate collision-free paths from an initial to a final destination and can be executed using safe and dynamically-feasible controllers. We introduce the C-CLF-CBF-RRT algorithm, which produces paths with such properties and leverages rapidly exploring random trees (RRTs), control Lyapunov functions (CLFs) and control barrier functions (CBFs). For linear systems with polytopic and ellipsoidal constraints, C-CLF-CBF-RRT requires solving a quadratically constrained quadratic program (QCQP) at every iteration of the algorithm, which can be done efficiently. We prove the probabilistic completeness of C-CLF-CBF-RRT and showcase its performance in simulation and hardware experiments.},
-  archive      = {J_TROB},
-  author       = {Pol Mestres and Carlos Nieto-Granda and Jorge Cortés},
-  doi          = {10.1109/TRO.2025.3626614},
-  journal      = {IEEE Transactions on Robotics},
-  month        = {10},
-  pages        = {1--20},
-  shortjournal = {IEEE Trans. Robot.},
-  title        = {Safe and dynamically-feasible motion planning using control lyapunov and barrier functions},
   year         = {2025},
 }
 </textarea>

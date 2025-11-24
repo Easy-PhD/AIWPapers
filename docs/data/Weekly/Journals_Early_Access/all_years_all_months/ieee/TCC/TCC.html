@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tcc">TCC - 35</h2>
+<h2 id="tcc">TCC - 39</h2>
 <ul>
 <li><details>
 <summary>
@@ -137,6 +137,82 @@
   pages        = {1--16},
   shortjournal = {IEEE Trans. Cloud Comput.},
   title        = {Privacy-preserving multi-key image retrieval in cloud environment},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing VM performance monitoring on commodity x86 platforms with PMU passthrough. <em>TCC</em>, 1--13. (<a href='https://doi.org/10.1109/TCC.2025.3630754'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern processors expose hardware performance monitoring capabilities through Performance Monitoring Units (PMUs). Profiling tools leverage these PMU facilities to analyze program execution. As the computation is increasingly shifting to virtual machines (VMs), commodity hypervisors like KVM have implemented virtual PMUs (vPMUs) to expose these capabilities to VMs. However, we found that KVM's current vPMU implementation introduces substantial overhead, leading to inaccurate measurements. This overhead stems from frequent VM exits caused by PMU access and sampling interrupts, as well as the complexity of emulation. To address this, we develop Direct vPMU (D-vPMU), a novel set of passthrough mechanisms for Intel x86 platforms running KVM. D-vPMU enables VMs to access the physical PMU and handle interrupts directly, thereby eliminating the virtualization overhead that currently plagues vPMU solutions. D-vPMU delivers better profiling accuracy and performance while strictly maintaining the security and isolation boundaries between guest and host PMU contexts.},
+  archive      = {J_TCC},
+  author       = {Jian-Hao Chen and Shih-Wei Li and Yu-Hsun Wang},
+  doi          = {10.1109/TCC.2025.3630754},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {11},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Optimizing VM performance monitoring on commodity x86 platforms with PMU passthrough},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). D-DOSA:DPU-based dataflow offloading and sparse allreduce framework for distributed training. <em>TCC</em>, 1--17. (<a href='https://doi.org/10.1109/TCC.2025.3634564'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Communication overhead represents a primary bottleneck in distributed deep learning, impeding training scalability. Although existing gradient sparsification techniques reduce network traffic, they introduce critical limitations: they fail to optimize intra-node data paths and are incompatible with efficient, decentralized Allreduce operations. To address these issues, we propose D-DOSA, a DPU-based communication offloading framework. D-DOSA incorporates two key innovations: 1) D-DO, an architecture that establishes a direct GPU-DPU data path to offload data loading and intra-node communication from the host CPU; and 2) D-SA, a novel sparse Allreduce algorithm that, for the first time, enables compatibility between sparse tensors and high-performance, ring-based communication. We evaluated D-DOSA on a 8-node, DPU-enabled cluster using representative models including VGG, LSTM, and BERT. Experimental results demonstrate that our framework accelerates training by up to 1.32x compared to the state-of-the-art sparse training baseline, without compromising accuracy. Ultimately, D-DOSA shows that co-designing data-flow architectures and communication algorithms on the DPU resolves key bottlenecks in sparse training and presents a viable path toward scalable performance in larger systems.},
+  archive      = {J_TCC},
+  author       = {Zhenqi Yu and Wenjing Li and Shaoyong Guo and Qingfeng Li and Feng Qi and Jiapeng Xiu},
+  doi          = {10.1109/TCC.2025.3634564},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {11},
+  pages        = {1--17},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {D-DOSA:DPU-based dataflow offloading and sparse allreduce framework for distributed training},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Chrono: Efficient serverless analytics with adaptive fine-grained partitioning and shadow execution. <em>TCC</em>, 1--14. (<a href='https://doi.org/10.1109/TCC.2025.3634618'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless computing has been widely adopted in large-scale data analytics. However, a critical challenge in data analytics is the substantial variability in the volume of data assigned to individual function invocations across executions. This high degree of inter-invocation variability introduces performance unpredictability and complicates efficient resource utilization. Existing approaches attempt to address this issue through vertical scaling, but their effectiveness is inherently limited, as function performance quickly saturates with increased resource allocation. To address these limitations, we propose Chrono, an adaptive serverless analytics framework designed to reduce latency and mitigate cold start overhead under high concurrency. Chrono incorporates three key components: (1) continuous monitoring of function execution to proactively detect risks of SLO violations; (2) dynamic partitioning of unprocessed data among parallel execution instances, aiming to reduce the end-to-end latency; and (3) the integration of lightweight shadow functions running in shared environments, effectively reducing cold start latency. Experimental evaluations on real-world datasets indicate that Chrono outperforms existing methods by reducing average latency by up to 43.16% and 45.42% in 99th percentile latency. Regarding resource utilization, Chrono improves multi-core CPU utilization by 60.6%, and decreases maximum memory usage by 27.2%.},
+  archive      = {J_TCC},
+  author       = {Zhaorui Wu and Yuhui Deng and Jiande Huang and Qifen Yang and Peng Zhou and Geyong Min},
+  doi          = {10.1109/TCC.2025.3634618},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {11},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Chrono: Efficient serverless analytics with adaptive fine-grained partitioning and shadow execution},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explainable graph ensemble learning for multivariate time series anomaly detection in cloud microservice architectures. <em>TCC</em>, 1--15. (<a href='https://doi.org/10.1109/TCC.2025.3634737'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing adoption of cloud microservice architectures demands robust multivariate time series anomaly detection algorithms to ensure a reliable computing infrastructure. Although countless of these algorithms are readily available in the literature, significant concerns remain about their interpretability, particularly in cases where it is required to consider both the temporal and topological aspects of the explanation. Our proposed framework leverages attention-based spatial-temporal graph convolutional networks and ensemble learning to capture complex spatial-temporal dependencies across time series. Our approach achieves an averaged event-wise F1 score of 0.94 on two proprietary datasets. After the detection phase, an analysis of the network attention weights, at carefully selected layers, provides useful explanations of the anomalous events to cloud operators.},
+  archive      = {J_TCC},
+  author       = {Kevin O'Shea and Sen Yan and Ming Yu and Xianjuan Chen and Stefano Mauceri and Bhaskar Dhariyal and Lei Xu and Noel O'Connor and Mingming Liu},
+  doi          = {10.1109/TCC.2025.3634737},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {11},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Explainable graph ensemble learning for multivariate time series anomaly detection in cloud microservice architectures},
   year         = {2025},
 }
 </textarea>

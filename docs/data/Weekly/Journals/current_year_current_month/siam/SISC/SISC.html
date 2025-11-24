@@ -25,8 +25,50 @@
 </head>
 <body>
 
-<h2 id="sisc">SISC - 21</h2>
+<h2 id="sisc">SISC - 27</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Neural empirical interpolation method for nonlinear model reduction. <em>SISC</em>, <em>47</em>(6), C1264--C1293. (<a href='https://doi.org/10.1137/24M1681434'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we introduce the neural empirical interpolation method (NEIM), a neural network-based alternative to the discrete empirical interpolation method for reducing the time complexity of computing the nonlinear term in a reduced-order model (ROM) for a parameterized nonlinear partial differential equation. NEIM is a greedy algorithm which accomplishes this reduction by approximating an affine decomposition of the nonlinear term of the ROM, where the vector terms of the expansion are given by neural networks depending on the ROM solution, and the coefficients are given by an interpolation of some “optimal” coefficients. Because NEIM is based on a greedy strategy, we are able to provide a basic error analysis to investigate its performance. NEIM has the advantages of being easy to implement in models with automatic differentiation, of being a nonlinear projection of the ROM nonlinearity, of being efficient for both nonlocal and local nonlinearities, and of relying solely on data and not the explicit form of the ROM nonlinearity. We demonstrate the effectiveness of the methodology on solution-dependent and solution-independent nonlinearities, a nonlinear elliptic problem, and a nonlinear parabolic model of liquid crystals. Code availability: https://github.com/maxhirsch/NEIM. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/maxhirsch/NEIM and in the supplementary materials (NEIM-main.zip [2.10MB]).},
+  archive      = {J_SISC},
+  author       = {Max Hirsch and Federico Pichi and Jan S. Hesthaven},
+  doi          = {10.1137/24M1681434},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {C1264--C1293},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Neural empirical interpolation method for nonlinear model reduction},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural implicit solution formula for efficiently solving Hamilton–Jacobi equations. <em>SISC</em>, <em>47</em>(6), C1223--C1263. (<a href='https://doi.org/10.1137/25M1730193'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper presents an implicit solution formula for the Hamilton–Jacobi partial differential equation (HJ PDE). The formula is derived using the method of characteristics and is shown to coincide with the Hopf and Lax formulas in the case where either the Hamiltonian or the initial function is convex. It provides a simple and efficient numerical approach for computing the viscosity solution of HJ PDEs, bypassing the need for the Legendre transform of the Hamiltonian or the initial condition, and the explicit computation of individual characteristic trajectories. A deep learning–based methodology is proposed to learn this implicit solution formula, leveraging the mesh-free nature of deep learning to ensure scalability for high-dimensional problems. Building upon this framework, an algorithm is developed that approximates the characteristic curves piecewise linearly for state-dependent Hamiltonians. Extensive experimental results demonstrate that the proposed method delivers highly accurate solutions, even for nonconvex Hamiltonians, and exhibits remarkable scalability, achieving computational efficiency for problems up to 40 dimensions.},
+  archive      = {J_SISC},
+  author       = {Yesom Park and Stanley Osher},
+  doi          = {10.1137/25M1730193},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {C1223--C1263},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Neural implicit solution formula for efficiently solving Hamilton–Jacobi equations},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Learning WENO for entropy stable schemes to solve conservation laws. <em>SISC</em>, <em>47</em>(6), C1196--C1222. (<a href='https://doi.org/10.1137/24M1697566'>www</a>)
@@ -64,6 +106,27 @@
   pages        = {C1173--C1195},
   shortjournal = {SIAM J. Sci. Comput.},
   title        = {Bilevel optimization with convex majorant approach for training sparse neural networks},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). One-shot parareal approach for topology optimization of transient heat flow. <em>SISC</em>, <em>47</em>(6), B1450--B1480. (<a href='https://doi.org/10.1137/24M1696603'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper presents a method of performing topology optimization of transient heat conduction problems using the parallel-in-time method Parareal. To accommodate the adjoint analysis, the Parareal method was modified to store intermediate time steps. Preliminary tests revealed that Parareal requires many iterations to achieve accurate results and, thus, achieves no appreciable speedup. To mitigate this, a one-shot approach was used, where the time history is iteratively refined over the optimization process. The method estimates objectives and sensitivities by introducing cumulative objectives and sensitivities and solving for these using a single iteration of Parareal, after which it updates the design using the Method of Moving Asymptotes. The resulting method was applied to a test problem where a power mean of the temperature was minimized. It achieved a peak speedup relative to a sequential reference method of using 16 threads. The resulting designs were similar to the one found by the reference method, both in terms of objective values and qualitative appearance. The one-shot Parareal method was compared to the Parallel Local-in-Time method of topology optimization. This revealed that the Parallel Local-in-Time method was unstable for the considered test problem, but it was able to execute optimization iterations faster than the one-shot Parareal method. It was determined that the dominant bottleneck in the one-shot Parareal method was the time spent on computing coarse propagators.},
+  archive      = {J_SISC},
+  author       = {Magnus Appel and Joe Alexandersen},
+  doi          = {10.1137/24M1696603},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {B1450--B1480},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {One-shot parareal approach for topology optimization of transient heat flow},
   volume       = {47},
   year         = {2025},
 }
@@ -169,6 +232,69 @@
   pages        = {B1317--B1342},
   shortjournal = {SIAM J. Sci. Comput.},
   title        = {Finite element-based space-time total-variation-type regularization of the inverse problem in electrocardiographic imaging},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enforcing conservation laws and dissipation inequalities numerically via auxiliary variables. <em>SISC</em>, <em>47</em>(6), A3516--A3535. (<a href='https://doi.org/10.1137/25M1756673'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a general strategy for enforcing multiple conservation laws and dissipation inequalities in the numerical solution of initial value problems. The key idea is to represent each conservation law or dissipation inequality by means of an associated test function; we introduce auxiliary variables representing the projection of these test functions onto a discrete test set and modify the equation to use these new variables. We demonstrate these ideas by their application to the Navier–Stokes equations. We generalize to arbitrary order the energy-dissipating and helicity-tracking scheme of Rebholz for the incompressible Navier–Stokes equations and devise a time discretization of the compressible equations that conserves mass, momentum, and energy and provably dissipates entropy. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://doi.org/10.5281/zenodo.15302724.},
+  archive      = {J_SISC},
+  author       = {Boris D. Andrews and Patrick E. Farrell},
+  doi          = {10.1137/25M1756673},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {A3516--A3535},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Enforcing conservation laws and dissipation inequalities numerically via auxiliary variables},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nesterov’s accelerated jacobi-type methods for large-scale symmetric positive semidefinite linear systems. <em>SISC</em>, <em>47</em>(6), A3494--A3515. (<a href='https://doi.org/10.1137/24M1673899'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Solving symmetric positive semidefinite linear systems is an essential task in many scientific computing problems. While Jacobi-type methods, including the classical Jacobi method and the weighted Jacobi method, exhibit simplicity in their forms and friendliness to parallelization, they are not attractive either because of the potential convergence failure or their slow convergence rate. This paper aims to showcase the possibility of improving classical Jacobi-type methods by employing Nesterov’s acceleration technique that results in an accelerated Jacobi-type method with improved convergence properties. Simultaneously, it preserves the appealing features for parallel implementation. In particular, we show that the proposed method has an convergence rate in terms of objective function values of the associated convex quadratic optimization problem, where denotes the iteration counter. To further improve the practical performance of the proposed method, we also develop and analyze a restarted variant of the method, which is shown to have an convergence rate when the coefficient matrix is positive definite. Furthermore, we conduct appropriate numerical experiments to evaluate the efficiency of the proposed method. Our numerical results demonstrate that the proposed method outperforms the classical Jacobi-type methods and the conjugate gradient method, and shows a comparable performance as the preconditioned conjugate gradient method with a diagonal preconditioner. Finally, we develop a parallel implementation and conduct speed-up tests on some large-scale systems. Our results indicate that the proposed framework is highly scalable.},
+  archive      = {J_SISC},
+  author       = {Ling Liang and Qiyuan Pang and Kim-Chuan Toh and Haizhao Yang},
+  doi          = {10.1137/24M1673899},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {A3494--A3515},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Nesterov’s accelerated jacobi-type methods for large-scale symmetric positive semidefinite linear systems},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Convergence analysis of overlapping domain decomposition preconditioners for nonlinear problems. <em>SISC</em>, <em>47</em>(6), A3464--A3493. (<a href='https://doi.org/10.1137/25M1735585'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Numerical simulations of nonlinear partial differential equations often involve solving large nonlinear systems, for which Newton’s method is widely employed due to its fast convergence near the solution. However, its performance can deteriorate in the presence of strong nonlinearities or poor initial guesses. Nonlinear overlapping domain decomposition methods, such as RASPEN and substructured RASPEN (SRASPEN), have proven effective in addressing these challenges. Because SRASPEN reduces the problem size by restricting computations to a substructure, it does not update the solution outside the substructure, so that no natural initial guesses for the nonlinear local solution exists that might lead to additional inner subdomain nonlinear iterations or even prevent the local solvers to converge. In this study, we analyze the convergence of RASPEN. We show how domain decomposition improves the convergence rate of the Newton’s method by highlighting the key role of the substructure on the global error contraction. Moreover, our analysis provides insight into an inexpensive modification to SRASPEN that mitigates the lack of iterations outside the substructure. The proposed variant significantly reduces computational cost while improving overall efficiency compared to existing techniques in the literature. Numerical experiments confirm the computational performance and robustness of the improved SRASPEN, establishing it as a reliable approach for solving large-scale nonlinear systems.},
+  archive      = {J_SISC},
+  author       = {Ettaouchi El Mehdi and Luc Giraud and Carola Kruse and Nicolas Tardieu},
+  doi          = {10.1137/25M1735585},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {A3464--A3493},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Convergence analysis of overlapping domain decomposition preconditioners for nonlinear problems},
   volume       = {47},
   year         = {2025},
 }

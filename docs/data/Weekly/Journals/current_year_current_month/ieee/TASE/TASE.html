@@ -25,8 +25,521 @@
 </head>
 <body>
 
-<h2 id="tase">TASE - 1830</h2>
+<h2 id="tase">TASE - 1857</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Trajectory planning for extrinsic camera calibration in robotic applications using optimal experiment design. <em>TASE</em>, <em>22</em>, 24152--24163. (<a href='https://doi.org/10.1109/TASE.2025.3632764'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The extrinsic calibration of camera systems is a common task in robotic applications. However, calibration is often performed manually, and choosing proper calibration points depends on the operator’s experience. This paper introduces a novel approach for automatically planning continuous calibration trajectories. We consider two different approaches. One is based on optimal experiment design and minimizes the width of the calibration parameters confidence intervals. The other is a heuristic approach that reduces the correlation between the calibration trajectory’s spatial components. The trajectories are based on the Fourier series, enabling repeated executions to smooth out measurement noise. To estimate the transformations in the extrinsic calibration problem, we develop a nonlinear least squares solver incorporating quaternion algebra. We evaluate the methods on an experimental setup consisting of an industrial robot, attached ArUco markers, and an RGB camera system. The real-world results confirm the practicality and effectiveness of our proposed methods, particularly in the context of optimal experiment design-based calibration trajectory planning. Note to Practitioners—This paper was motivated by measuring the transformation from the robot base coordinate system to the coordinate system of a stationary camera. In robotics, this problem is often referred to as extrinsic camera calibration, a variant of the hand-eye calibration problem. Simultaneously, the tool’s geometry should be estimated. Here, we introduce a novel approach for automatically calibrating camera systems in robotic applications. Considering a marker attached to the robot’s tool, we plan its motion to ensure accurate extrinsic calibration. We developed two methods: one based on an a priori geometric model—e.g., obtained from a CAD planning model—and a heuristic approach that requires little prior information. The planned continuous trajectory consists of periodic functions that consider the Cartesian position, velocity, and acceleration limits regarding the robot’s tool frame. The periodicity enables us to repeat the trajectory multiple times, reducing the influence of measurement errors. We additionally implemented a fast and robust solver to estimate the tool geometry and the transformation from the robot’s base frame to the camera coordinate system, using measurements of the robot’s flange pose and the marker pose detected by the camera system. The approach is evaluated on an experimental setup with an industrial robot and an RGB camera. The results prove the superiority of the model-based planner, while the heuristic planner still provides reasonable results. The calculated confidence intervals provide an estimate of the accuracy of the calibration parameters.},
+  archive      = {J_TASE},
+  author       = {Manuel Amersdorfer and Thomas Meurer},
+  doi          = {10.1109/TASE.2025.3632764},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24152--24163},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Trajectory planning for extrinsic camera calibration in robotic applications using optimal experiment design},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Asymmetric-constrained nearly optimal tracking of saturated systems: Theory and experiments. <em>TASE</em>, <em>22</em>, 24136--24151. (<a href='https://doi.org/10.1109/TASE.2025.3632282'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article addresses the suboptimal high-precision tracking problem for a class of nonlinear systems, considering constraints on both state and input, by employing an asymmetric prescribed performance envelope. To make the equilibrium of the controlled plant coincide with its equivalent, a novel error transformation is proposed in this paper so that the equivalent tracking error can be mapped to an asymmetric prescribed boundary containing the origin. To address the optimal tracking control issue of the saturated nonlinear system with the non-zero equilibrium, a modified cost function corresponding to equivalent asymmetric state transformation is proposed, simplifying designing a saturated ADP error tracking controller. Since the equivalent system with asymmetric state constraints can be previously reduced to a logarithmic sliding-mode system, a fine-tracking precision is achieved by a high gain at the equilibrium while reducing the implementation difficulty of the proposed ADP controller. Experiments conducted on a permanent magnet synchronous motor (PMSM) system verify the effectiveness of the proposed control scheme. Note to Practitioners—Learning-based or approximate optimal control is widely studied due to its superior robustness. A large number of existing theoretical studies require the controlled system to be “square”, so that optimal methods such as ADP can be deployed, which limits the application of such methods in second-order motion control systems like servo motors and robots. In addition, for an ideal nonlinear system, the zero equilibrium condition must be guaranteed such that the stability of a closed-loop system can be proved theoretically, but it is also usually difficult to be strictly guaranteed for engineering practices. Also, how to reasonably constrain the system convergence dynamics is also an interesting problem. This paper aims to provide insightful ideas for enhancing the existing solutions to the aforementioned problems: a sliding-mode function is proposed to reduce the order of the controlled system, so that it becomes a “square” one; a novel asymmetric prescribed performance mapping mechanism is constructed to constrain states; then, a modified cost function is employed to address the optimal tracking control issue of the saturated nonlinear system with the non-zero equilibrium. The proposed control scheme ensures that the motor can operate stably under load disturbances. Theoretical analysis and comparative experiments with state-of-the-art methods also confirm its effectiveness.},
+  archive      = {J_TASE},
+  author       = {Hanlin Dong and Xinyue Xu and Qianbao Mi and Zhiqiang Ma and Choon Ki Ahn},
+  doi          = {10.1109/TASE.2025.3632282},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24136--24151},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Asymmetric-constrained nearly optimal tracking of saturated systems: Theory and experiments},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). UUV path following control and autonomous collision avoidance based on adaptive gradient smoothing policy. <em>TASE</em>, <em>22</em>, 24120--24135. (<a href='https://doi.org/10.1109/TASE.2025.3632248'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a novel deep reinforcement learning (DRL) based method for unmanned underwater vehicle (UUV) path-following and collision avoidance. An end-to-end architecture integrating guidance law, gradient-based condition for action policy smoothing method and soft actor-critic (Grad-CAPS-SAC) is proposed. Specifically, the Serret-Frenet frame and the guidance law generate the tracking error and the desired attitude, respectively. Since the oscillation of the control signal may cause wear and energy consumption of the physical system, an adaptive gradient-based action policy regularization method is proposed to smooth the control policy. In addition, the DRL controller controls the rudder and elevator, and Proportional-integral-derivative (PID) controller is adopted to maintain the desired cruise speed. Furthermore, a composite reward function with constraints is designed to avoid useless exploration and improve training efficiency. Simulation results show that Grad-CAPS-SAC has better path-following and collision avoidance performance than the mainstream DRL methods in different waypoint and obstacle configurations. Note to Practitioners—The dynamics of UUV is nonlinear and its parameters are uncertain, and there are uncertain obstacles in the unknown underwater environment. Most of the classical path-following and collision avoidance methods rely on the UUV dynamics model and prior knowledge, and have poor generalization. DRL has excellent learning and generalization ability in complex control and collision avoidance tasks. The main objective of this paper is to design a novel end-to-end path-following and collision avoidance method for UUV that is suitable for practical application. In addition, DRL control and collision avoidance methods face control signal oscillations in solving complex underwater operations, which can destroy system safety and increase power consumption. To this end, we propose an adaptive policy smoothing method to effectively suppress the control action oscillations. Then, the PID controller is introduced into Grad-CAPS-SAC to maintain the desired cruising speed and improve the stability of policy learning. Furthermore, we design new composite reward functions with constraints to avoid useless exploration and improve training efficiency. Simulation results show that the proposed Grad-CAPS-SAC has good control and collision avoidance effects.},
+  archive      = {J_TASE},
+  author       = {Bo Zhong and Hongjian Wang and Jingfei Ren and Yutong Huang and Shaozheng Song and Zhenwei Lu},
+  doi          = {10.1109/TASE.2025.3632248},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24120--24135},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {UUV path following control and autonomous collision avoidance based on adaptive gradient smoothing policy},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal reinforcement learning with score-based policy. <em>TASE</em>, <em>22</em>, 24105--24119. (<a href='https://doi.org/10.1109/TASE.2025.3631883'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning multimodal policies is crucial for enhancing exploration in online reinforcement learning (RL), especially in tasks with continuous action spaces and non-convex reward landscapes. While recent diffusion policies show promise, they often suffer from low computational efficiency in online settings. A more training-efficient paradigm involves modeling the policy as a Boltzmann distribution and guiding the action sampling directly with the gradient of the Q-value with respect to the action (proportional to the score function of the policy), such as via Langevin dynamics. However, analysis in this paper reveals that this gradient-guided approach suffers from two critical challenges: sampling instability caused by the widely varying magnitude of action gradients; and mode imbalance, where the sampling process inaccurately represents the weights of different high-value action modes. To address these challenges, this paper introduces three targeted techniques: score normalization and reshaping to stabilize the sampling process, and value-based resampling to correct mode imbalance. These techniques are then integrated into an actor-critic framework, resulting in the Score-Enhanced Actor-Critic (SEAC) algorithm. Simulation and real-world experiments demonstrate that SEAC not only effectively learns multimodal behaviors but also achieves state-of-the-art performance and high computational efficiency compared to prior multimodal RL methods. The code of this paper is available at https://github.com/THUzouwenjun/SEAC Note to Practitioners—This article is motivated by the need to develop efficient RL algorithms for complex control tasks, such as robotic locomotion and autonomous driving. These tasks often involve high-dimensional state spaces and exhibit complex non-convex, non-linear dynamics. Online RL algorithms require strong exploration capabilities during training to find global optima. A key approach to enhance exploration is to use policies that can output multimodal action distributions, where each mode corresponds to a local optimum. Meanwhile, in real-world applications like autonomous driving, policies usually need to generate multiple candidate trajectories for safety validation and optimal decision-making. Therefore, developing efficient multimodal online RL algorithms is crucial. However, multimodal online RL remains underexplored, and existing diffusion-based methods often suffer from slow training or suboptimal performance. To address these challenges, this paper proposes the SEAC algorithm based on Langevin dynamics. The sampling process leverages gradients from the Q-value function in online RL, enabling efficient and accurate action generation. Experimental results show that SEAC outperforms existing RL algorithms while also significantly improving training and inference speed compared to prior multimodal RL methods. Given these advantages, SEAC is highly applicable to a wide range of complex continuous control tasks. Future studies will extend the application of SEAC to a broader range of real-world tasks.},
+  archive      = {J_TASE},
+  author       = {Wenjun Zou and Yinuo Wang and Tong Liu and Bin Shuai and Liming Xiao and Yinsong Ma and Jingliang Duan and Shengbo Eben Li},
+  doi          = {10.1109/TASE.2025.3631883},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24105--24119},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Multimodal reinforcement learning with score-based policy},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Finite-time l1 control of multi-loop networked control systems: A hybrid system method. <em>TASE</em>, <em>22</em>, 24092--24104. (<a href='https://doi.org/10.1109/TASE.2025.3631127'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article is concerned with the stochastic finite-time $L_{1}$ control problem of multi-loop networked control systems (NCSs) with network-induced delay, random packet loss, and external interference. Firstly, considering the data processing mode jumping, data transmission channel switching, and positive total amount of data, the multi-loop NCSs with network-induced delay, random packet loss, and external interference are modeled as a more general class of variable dual switching positive time-delay systems (VDSPTDSs) for the first time. Secondly, a new scheduling strategy that fully considers the random packet loss and the total amount of data, named positive minimum state expectation (PMSE), is proposed. Under this scheduling strategy, the channel with the smaller expectation of the total amount of data is selected to reduce the communication overhead. Subsequently, a stochastic multiple co-positive Lyapunov-Krasovskii functional (SMCPLKF) is constructed to establish the criteria of stochastic finite-time bounded (SFTB) and finite-time $L_{1}$ -gain performance. A mode-dependent finite-time $L_{1}$ -gain state feedback controller is further designed such that the closed-loop VDSPTDSs are positive and SFTB with $L_{1}$ -gain characterization. Finally, a multi-loop data communication NCS model is given to demonstrate the validity and generality of the proposed methods. Note to Practitioners—Practical multi-loop NCSs frequently suffer from various factors such as network-induced delay, random packet loss, and external disturbance, all of which can impact the data transmission and control performance of the systems. However, current research results on modeling and control of multi-loop NCSs are relatively conservative because they rarely consider the aforementioned factors simultaneously. To reduce the conservativeness of the existing results as well as to develop a new methodology for multi-loop NCSs, the VDSPTDSs modeling and control methods are proposed in this article. Firstly, the multi-loop NCSs with multiple factors are modeled as the more general VDSPTDSs model. Then, a novel PMSE scheduling strategy is proposed to ensure the data transmission of the systems. Meanwhile, a state feedback controller is designed to ensure the control performance of the systems. The feasibility and superiority of the suggested methodology are confirmed through an illustrative example. It is worth noting that the VDSPTDSs modeling and control methods proposed in this article can also provide a new pathway to modeling and controlling other complex systems, such as multi-agent systems and robot control systems.},
+  archive      = {J_TASE},
+  author       = {Cai Liu and Fang Liu and Yalin Wang and Tianqing Yang and Lang Wu and Kangzhi Liu},
+  doi          = {10.1109/TASE.2025.3631127},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24092--24104},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Finite-time l1 control of multi-loop networked control systems: A hybrid system method},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FLARE: Fast autonomous aerial exploration in large-scale 3D scenarios using actively rotated LiDAR. <em>TASE</em>, <em>22</em>, 24077--24091. (<a href='https://doi.org/10.1109/TASE.2025.3631098'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous aerial vehicles have emerged as critical platforms for 3D environmental mapping, yet existing LiDAR-based systems struggle to balance efficiency and compactness in large-scale scenarios. Conventional designs rigidly mount LiDAR with a narrow vertical field of view, necessitating inefficient vertical maneuvers for coverage. While rotating LiDARs can mitigate this limitation, they are often burdensome for lightweight aerial platforms and require processing more expansive 3D data streams. To address these challenges, we present FLARE, a co-designed aerial exploration system integrating a lightweight actively rotated LiDAR with a hierarchical planning framework. The micro-servo-actuated LiDAR dynamically adjusts its orientation via online planning, effectively expanding its sensing field without incurring substantial system complexity. Moreover, FLARE employs a hierarchical frontier clustering method that supports multilayer coarse-to-fine planning, balancing computational load and exploration performance to ensure efficient operation even in large-scale scenarios. Both simulation and fully onboard real-world experiments validate the system’s effectiveness, demonstrating complete coverage with shorter trajectories and reduced flight time compared to existing methods. Note to Practitioners—This work addresses the challenge of efficiently mapping large-scale 3D environments, such as industrial plants, mining sites, or historical structures, using autonomous drones. Existing systems often require excessive flight time to scan vertically extended spaces (e.g., tall chimneys, deep pits) due to fixed sensor orientations and limited vertical sensing range. These inefficiencies increase operational costs and delay critical tasks like structural inspections or hazard assessments. We propose a practical solution combining a mechanically simplified rotating LiDAR module with an adaptive path planning algorithm. Unlike conventional drones that must move laterally to scan vertical surfaces, our system actively adjusts the LiDAR’s scanning direction mid-flight. This reduces redundant movements in tall structures, significantly shortening mission time and energy consumption. The accompanying planning software hierarchically coordinates long-range route planning with real-time adjustments of drone motion and LiDAR orientation, ensuring thorough coverage without overwhelming computational resources.},
+  archive      = {J_TASE},
+  author       = {Zhiwen Zhu and Yuhao Fang and Xulin Xiao and Ximin Lyu and Jie Mei and Boyu Zhou},
+  doi          = {10.1109/TASE.2025.3631098},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24077--24091},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {FLARE: Fast autonomous aerial exploration in large-scale 3D scenarios using actively rotated LiDAR},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive arbitrary time stability of a class of uncertain nonlinear systems with applications to inertial neural network synchronization. <em>TASE</em>, <em>22</em>, 24065--24076. (<a href='https://doi.org/10.1109/TASE.2025.3629966'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses the arbitrary-time stabilization problem for a class of uncertain nonlinear systems subject to exogenous disturbances. First, a novel arbitrary-time stability theorem featuring a linear structure ( $\dot {V} \leq -\hat {a}\frac {V}{T-t}$ for $t \in [0,T]$ and $\dot {V}=0$ otherwise, where $\hat {a}\gt 0$ is a design parameter and $T$ is the user-prescribed convergence time) is established, which significantly simplifies stability analysis. Building upon this theoretical foundation, some new sufficient conditions ensuring arbitrary-time stability for the considered uncertain systems through Lyapunov-based synthesis are derived. Furthermore, we investigate the arbitrary-time synchronization problem for inertial neural networks with parametric uncertainties and disturbances by devising an adaptive control strategy with online parameter estimation. To substantiate the theoretical advancements some numerical simulations are presented to demonstrate the feasibility of the proposed stability conditions. Note to Practitioners—This work tackles the critical challenge of stabilizing complex nonlinear systems with inherent uncertainties and external disturbances within a user-specified, arbitrary time frame. Key contributions for practical implementation include: 1. Simplified Stability Analysis: We introduce a novel stability theorem with a linear structure, significantly reducing the complexity traditionally associated with arbitrary-time stability proofs. This makes analysis more accessible for control engineers. 2. Practical Stability Conditions: Building on this foundation, we derive explicit sufficient conditions (based on Lyapunov methods) that enable the direct design of controllers guaranteeing arbitrary-time stabilization for uncertain systems exposed to disturbances. 3. Adaptive Control for Neural Networks: Specifically for inertial neural networks suffering from parameter uncertainties and disturbances, we develop an adaptive control strategy. This strategy incorporates online parameter estimation, dynamically compensating for unknown system variations without requiring perfect prior knowledge. 4. Demonstrated Feasibility: Numerical simulations validate the theoretical results, confirming the practical feasibility of the proposed conditions and control approach. Practical Significance: The presented stability conditions provide clear design guidelines. The adaptive controller offers a robust solution for achieving rapid, pre-specified convergence times in applications like networked control systems, robotics, or power systems where model uncertainties and disturbances are unavoidable and precise timing is crucial. The linear structure of the stability criterion facilitates easier verification and application in real-world scenarios.},
+  archive      = {J_TASE},
+  author       = {Jiacheng Li and Runzi Luo and ZiKang Meng and Luxia Han},
+  doi          = {10.1109/TASE.2025.3629966},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24065--24076},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Adaptive arbitrary time stability of a class of uncertain nonlinear systems with applications to inertial neural network synchronization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement learning-based optimized formation tracking control for heterogeneous AAV and ASV swarms. <em>TASE</em>, <em>22</em>, 24053--24064. (<a href='https://doi.org/10.1109/TASE.2025.3629698'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses distributed formation tracking control for heterogeneous swarms consisting of quadrotor autonomous aerial vehicles (AAVs) and autonomous surface vehicles (ASVs). A hierarchical control framework is proposed to coordinate overall swarm formation. At the upper layer, a position-based control strategy is designed for AAVs, in which a virtual leader is introduced to facilitate coordinated aerial formation. At the lower layer, a bearing-based control strategy is employed for ASVs, with selected AAVs serving as mobile leaders to guide the ASV formation. Within this framework, optimized formation controllers for both AAVs and ASVs are developed by integrating the backstepping method with a reinforcement learning algorithm based on the actor-critic architecture. Lyapunov-based stability analysis demonstrates that the proposed scheme ensures the desired formation performance of the swarm. Compared with existing studies that primarily address homogeneous AAV or ASV formations, the proposed method achieves optimized formation tracking control for more complex heterogeneous swarms, without requiring precise knowledge of their dynamic models. The effectiveness and robustness of the proposed approach are further validated through numerical simulations. Note to Practitioners—Coordinating heterogeneous swarms of AAVs and ASVs is essential for field tasks such as surveillance, environmental monitoring, and search-and-rescue. The proposed hierarchical framework assigns AAVs as leaders to guide ASVs, enabling reliable formation tracking across vehicle types. This approach offers improved robustness for complex heterogeneous formations and is suitable for practical deployment. Future work will focus on enhancing communication efficiency and scalability to support larger and more dynamic swarm operations.},
+  archive      = {J_TASE},
+  author       = {Lin-Xing Xu and Lei Ding and Yang Yang},
+  doi          = {10.1109/TASE.2025.3629698},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24053--24064},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Reinforcement learning-based optimized formation tracking control for heterogeneous AAV and ASV swarms},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptive meta-reinforcement learning framework for dynamic flexible job shop scheduling. <em>TASE</em>, <em>22</em>, 24036--24052. (<a href='https://doi.org/10.1109/TASE.2025.3627282'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The optimization of flexible job shop scheduling is essential for improving manufacturing efficiency and performance in dynamic production environments. However, existing scheduling methods face challenges in scalability and adaptability, which limits their effectiveness in such environments. To address these limitations, this paper proposes a generalized and modular DFJSP framework that systematically decomposes shop-floor elements into key modules, enabling flexible and resilient scheduling under dynamic conditions. Building on this framework, an Adaptive Markov Decision Process (AMDP) is formulated to capture real-time shop-floor states and guide optimal action selection. Leveraging Meta-Reinforcement Learning (MRL), the proposed approach integrates Model-Agnostic Meta-Learning (MAML) with Proximal Policy Optimization (PPO) to facilitate rapid adaptation to new scheduling tasks while enhancing policy generalization. Numerical experiments demonstrate that the framework effectively balances multiple dynamic objectives, including makespan and energy consumption, and adapts efficiently to real-time variations in job priorities, machine availability, and processing times. The results highlight the potential of combining modular problem formulation, AMDP modeling, and MRL for scalable, efficient, and robust DFJSP solutions in modern manufacturing environments. Note to Practitioners—This paper presents a MRL framework that offers an efficient solution for dynamic flexible job shop scheduling, enabling rapid adaptation to unexpected events such as machine breakdowns and urgent job insertions while simultaneously optimizing both makespan and energy consumption. Through a modular design, the framework can be flexibly adapted to various shop floor configurations. Leveraging the MAML-PPO algorithm, the model requires only a small amount of data to generate new scheduling solutions within seconds, demonstrating a significantly faster response compared to conventional methods such as genetic algorithms. For practical deployment, it is recommended to prioritize the integration of dynamic event definitions (e.g., failure probabilities) and to utilize GPU-accelerated computing. Additionally, module functionalities (e.g., logistics coordination) should be adjusted according to production requirements to achieve rapid improvements in operational efficiency and resource optimization.},
+  archive      = {J_TASE},
+  author       = {Lincong Wu and Xiaoxia Li and Xin Lu and Zaiwen Feng and Yanguo Jing},
+  doi          = {10.1109/TASE.2025.3627282},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24036--24052},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {An adaptive meta-reinforcement learning framework for dynamic flexible job shop scheduling},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SeGraM: Aligned coordinate system aided semantic graph matching method for loop closure detection. <em>TASE</em>, <em>22</em>, 24024--24035. (<a href='https://doi.org/10.1109/TASE.2025.3626761'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Capturing object semantics and their spatial relationships is crucial to estimating scene similarity for loop closure detection. Existing semantic loop closure detection methods generally treat semantics as landmarks or extract the object topology to compare the similarity of frames. However, they often neglect the absolute spatial distribution of objects, which is essential to capture distinctive features of the scene. A fundamental requirement is to register the spatial coordinates of both frames in a unified reference frame. To address this, we construct aligned coordinate systems between two frames and extract absolute spatial distribution features of objects for loop closure detection. Building on this, we introduce SeGraM, a unified semantic graph matching approach applicable to both indoor and outdoor environments. Specifically, for each pair of semantic graphs, we first establish correspondences between nodes, referred to as node pairs. We then evaluate the geometric and semantic consistency of these pairs, along with the local graph features in the surrounding. To facilitate meaningful comparisons, two node pairs are carefully selected to establish aligned spherical coordinate systems, with ground normals to define the Z axes outdoors. SeGraM is validated in both indoor and outdoor scenarios and is compared with multiple algorithms, demonstrating improvements in loop closure detection accuracy. The code is accessible at https://github.com/BIT-TYJ/SeGraM Note to Practitioners—This paper focuses on enhancing the accuracy and robustness of loop closure detection in both indoor and outdoor environments, which is a critical component for long-term autonomy in robotic navigation and autonomous driving. Traditional semantic-based loop closure methods often overlook the absolute spatial distribution of objects, limiting their ability to distinguish similar but distinct scenes. To address this, we propose SeGraM, a semantic graph matching method that constructs aligned coordinate systems between frames, allowing for more precise spatial reasoning. This allows the system to better recognize the locations revisited. Our approach improves localization accuracy and reduces the trajectory drift. Future work may plan to integrate our method into SLAM frameworks to support precise robotic mapping, and navigation in complex environments.},
+  archive      = {J_TASE},
+  author       = {Meiling Wang and Yujie Tang and Yinan Deng and Haoyang Lu and Sibo Zuo and Yufeng Yue},
+  doi          = {10.1109/TASE.2025.3626761},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24024--24035},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {SeGraM: Aligned coordinate system aided semantic graph matching method for loop closure detection},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Noncyclic scheduling of cluster tools using deep reinforcement learning. <em>TASE</em>, <em>22</em>, 24009--24023. (<a href='https://doi.org/10.1109/TASE.2025.3632534'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in AI/ML have significantly increased the demand for various semiconductor products. To meet the growing demand and improve productivity, semiconductor companies now produce multiple wafer types simultaneously and, in some cases, even transport them in a single cassette. These changes in manufacturing practices have increased the complexity of cluster tool scheduling, making efficient scheduling algorithms a key focus for both researchers and manufacturers. In this paper, we propose a deep reinforcement learning (DRL)-based scheduling approach that effectively addresses the challenges of scheduling multiple wafer types in cluster tools. The proposed model considers both input sequencing and robot move sequencing to handle various wafer types across different cluster tool configurations. It is structured around an encoder–decoder framework: the encoder captures wafer recipes (i.e., processing times and flow), and the decoder uses dynamic scheduling information to determine the robot’s next actions while avoiding deadlock situations. Through extensive experiments that consider multiple cluster tool structures and wafer types, our model consistently outperforms conventional robot move sequences and metaheuristic methods, without relying on cyclic assumptions. These results demonstrate that our approach can derive efficient robot sequences without requiring expert knowledge or extensive manual analysis, across single-arm, dual-arm, serial-parallel flow, concurrent flow, and skip flow configurations, while also considering purge operations within cluster tools. As such, our model is highly adaptable and can be effectively applied to a wide range of cluster tool scheduling problems. We provide benchmark datasets to support further research and practical applications: https://github.com/yeoneee/ClusterToolSchedulingRL.git Note to Practitioners—Semiconductor cluster tools are deployed in a variety of structural configurations depending on the company and the specific processes in use. For instance, robots can be configured as single-arm or dual-arm handlers, processing modules (PMs) are generally arranged in a serial configuration, or in cases of certain process steps, multiple PMs may be utilized to form a serial-parallel structure. In addition to these tool configuration factors, the complexity of cluster tool scheduling problems increases significantly when multiple wafer types are processed simultaneously to enhance productivity. For instance, some wafer types are processed using dedicated concurrent flows for each type, and certain wafer types may utilize skip flows, bypassing specific processes. These production scenarios, involving the simultaneous handling of diverse wafer types, not only demand additional decision-making regarding wafer release sequences but also require careful planning of robot move sequences within the tool, thereby further amplifying the complexity of the scheduling problem. The DRL method proposed in this paper offers a practical, scalable solution for operating cluster tools. Through reinforcement learning, the model autonomously derives effective robot move rules without relying on expert defined heuristic sequences or cyclic assumptions. This allows engineers to apply the DRL model in various tool configurations, eliminating the need for trial-and-error approaches. Our method improves throughput by consistently generating wafer-type input sequences and efficient robot move sequences across various tool setups. This framework can reduce the scheduling burden on engineers, which can also allow them to maximize productivity.},
+  archive      = {J_TASE},
+  author       = {Duyeon Kim and Hyun-Jung Kim},
+  doi          = {10.1109/TASE.2025.3632534},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {24009--24023},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Noncyclic scheduling of cluster tools using deep reinforcement learning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Virtual image-based visual servoing. <em>TASE</em>, <em>22</em>, 23996--24008. (<a href='https://doi.org/10.1109/TASE.2025.3631649'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The classical image-based visual servoing (IBVS) methods exhibit strong robustness to robot modeling and camera calibration errors, but suffer from uncontrollable spatial trajectories and local convergence issues. Although current IBVS variants employ specialized visual features or information to improve trajectory controllability, these approaches impose restrictive geometric constraints, such as requiring coplanar feature points or configurations approximately orthogonal to the optical axis of the camera. Furthermore, despite conclusive evidence of local minima (LM) in the IBVS scheme, there is currently no solution to address this challenge. For the reason, this article first introduces a novel virtual image construction method and proposes a decoupling visual servoing control law based on virtual image, achieving explicit separation of translational and rotational error dynamics. Then, through Monte Carlo simulations, the spatial distribution patterns of local minima in IBVS are systematically studied, and an escape algorithm leveraging virtual image is further designed. To the best of our knowledge, this may be the first attempt to address the issue of local minima only through IBVS to a certain extent. Comparative simulations and experiments validate the effectiveness and superiority of the proposed decoupling control law based on virtual image, and the success rate of the local minima escape algorithm is 100% under different configurations. Note to Practitioners—Image-based visual servoing demonstrates strong robustness against camera parameter errors in engineering applications. However, its uncontrollable spatial trajectory characteristics often lead to potential collisions between robots and obstacles, causing safety incidents. Furthermore, the local convergence property of IBVS limits its deployment in engineering applications, which may be unacceptable for certain scenarios. In this article, a novel virtual image construction approach that accomplishes the decoupling of translational and rotational errors is proposed, thereby achieving the decoupling of robot motion. In addition, through the observed patterns of local minima, a local minima escape algorithm based on virtual image is designed. Simulations and experiments confirm the effectiveness of the proposed method, and the theoretical model provides a useful tool for designing the spatial trajectories of IBVS and escaping the local minima, thus providing guidance for practical visual servoing applications.},
+  archive      = {J_TASE},
+  author       = {Xiangyu Li and Yecan Yin and Xiangfei Li and Huan Zhao and Han Ding},
+  doi          = {10.1109/TASE.2025.3631649},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23996--24008},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Virtual image-based visual servoing},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Encoding–Decoding-based fault-tolerant consensus control for multi-agent systems with markovian switching topologies and logarithmic quantizers. <em>TASE</em>, <em>22</em>, 23984--23995. (<a href='https://doi.org/10.1109/TASE.2025.3631522'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper focuses on the fault-tolerant consensus problem of multi-agent systems under an encoding-decoding framework with Markovian switching topologies. Due to the influence of complex environments, the communication network changes over time, and thus, a Markov chain is introduced to describe the random topology switching. Under the stochastic characteristics and encoding-decoding framework, Lyapunov’s second method is applied for the first time instead of the original matrix analysis method, with both uniform and logarithmic quantizers considered. To obtain the unmeasurable states and the unknown sensor faults in the form of first-order differences, augmented estimation is performed, followed by encoding-transmission-reception-decoding for controller design. Under uniform quantization, the relationship between the scaling function and the parameters in the Riccati inequality is established, enabling boundedness analysis of data transmission. Under logarithmic quantization, a quantization-dependent Lyapunov function is constructed, and its rationality is rigorously proven. Finally, numerical simulations under both uniform and logarithmic quantization are provided to demonstrate the achievement of consensus and poly-quadratically stable in mean square sense. Note to Practitioners—For engineers designing complex multi-agent systems, such as UAV swarms, autonomous vehicle networks, or industrial IoT, achieving reliable coordination is often hampered by two real-world challenges: unpredictable communication links and faulty sensors. This paper provides a practical and mathematically rigorous toolkit to address both simultaneously. The key takeaway for practitioners is the choice between two distinct, ready-to-implement quantization strategies, each tailored to different design priorities: For systems with strict bandwidth constraints (Uniform Quantization): This work enables effective management and prediction of data transmission rates by establishing a clear analytical relationship between system stability (via a Riccati inequality) and the quantizer’s scaling function. For systems where performance is paramount (Logarithmic Quantization): The analysis of logarithmic quantizers provides a rigorous framework for achieving high control performance in scenarios with broad signal dynamic ranges. A novel quantization-dependent Lyapunov function is constructed, which formally establishes poly-quadratic stability. Moreover, Lyapunov’s second method, as employed in this work, offers a more flexible framework for analyzing stability under multiple simultaneous random effects (such as Markovian topology switching and sensor faults). The proposed augmented state estimation technique also provides a clear procedure for handling unmeasurable states and unknown faults, making the overall framework robust and applicable to real-world scenarios where perfect information is unavailable.},
+  archive      = {J_TASE},
+  author       = {Chao Zhou and Zehui Mao and Xiangpeng Xie and Bin Jiang and Wenbo Li},
+  doi          = {10.1109/TASE.2025.3631522},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23984--23995},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Encoding–Decoding-based fault-tolerant consensus control for multi-agent systems with markovian switching topologies and logarithmic quantizers},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intention coupling mamba-driven differential transformer model for vehicle trajectory prediction. <em>TASE</em>, <em>22</em>, 23970--23983. (<a href='https://doi.org/10.1109/TASE.2025.3631440'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The difficulty of vehicle trajectory prediction mainly lies in the shared spatial-temporal relationships among vehicles. To address this task effectively, extracting the spatial-temporal details that affect the inter-vehicle motion, such as motion intentions and interactions, is crucial. This paper proposes a Mamba-driven differential Transformer model with an intention coupling decoder (ICMDT). Differential Transformer determines final attention scores by calculating the difference between two independent softmax attention maps, effectively suppressing the noise in spatial-temporal features. ICMDT integrates the strengths of differential Transformer and Mamba, concentrating on encoding spatial-temporal features while eliminating redundant information. It also enhances global information aggregation and spatial interaction modeling. Additionally, an intention coupling decoder is proposed to align motion intentions with spatial-temporal features, achieving connections between features and intention query instances. This decoder facilitates accurate multi-modal trajectory predictions. ICMDT has demonstrated superior performance across four real-world datasets, surpassing multiple metrics. For instance, improvements of 45.92% to 57.89% in long-term prediction ( $3\sim 5$ s) are achieved using the RMSE metric, which is quite promising. Notably, our experiments reveal that the intention coupling decoder consistently enhances the prediction accuracy of several leading prediction models, providing new insights for the future development of vehicle trajectory prediction algorithms. Note to Practitioners—Vehicle trajectory prediction holds significant application value in multiple fields, including autonomous driving, traffic safety, and robotics. Specifically, accurately predicting the trajectories of surrounding vehicles provides critical decision-making support for autonomous vehicles, enabling them to plan optimal paths in advance and effectively avoid potential collision risks, thereby significantly enhancing driving safety. Based on the above research needs, this paper proposes an advanced deep-learning model to eliminate redundant spatial-temporal interactions among vehicles. The model introduces the Mamba module to model the trajectory sequence relationship with linear time complexity, enhancing each module’s feature extraction ability. In addition, this paper proposes an intention coupling decoder, which solves the information inconsistency problem caused by directly splicing intention features, ensures the coordination between motion intentions and spatial-temporal dynamics, and significantly improves the reasoning efficiency in multi-modal prediction. Preliminary experimental results show that this method significantly improves performance in complex scenarios such as highway main roads, ramp entrances, and roundabouts. Furthermore, migrating the intention coupling decoder to other methods also significantly improves the performance of these methods. In future research, we plan to deploy this model in autonomous driving vehicles and verify its performance in more diverse scenarios to explore this method’s potential and application boundaries fully.},
+  archive      = {J_TASE},
+  author       = {Xunhao Li and Yu Qian and Jian Zhang and Xuejian Yao and Yongfu Li},
+  doi          = {10.1109/TASE.2025.3631440},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23970--23983},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Intention coupling mamba-driven differential transformer model for vehicle trajectory prediction},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust localization algorithm for micromanipulation targets under complex interference conditions. <em>TASE</em>, <em>22</em>, 23959--23969. (<a href='https://doi.org/10.1109/TASE.2025.3631003'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of micromanipulation, accurate identification and localization of micro-targets are crucial. This article presents a robust high-precision micromanipulation targets localization and motion tracking algorithm to address the challenges posed by uneven illumination, shadows, object occlusion, and image noise in micromanipulation. The proposed method employs improved bilateral filtering and the Sobel operator for illumination correction and edge contour detection in the horizontal view, achieving identification and Z-directional localization of micro-targets. In the vertical view, the improved grayscale template and the feature point matching algorithms accurately identify micro-targets and locate manipulation points in the X/Y directions, even under occlusion and rotation. Experimental results demonstrate that the algorithm can identify and localize micro-targets with an average error less than $1~\mu $ m and an average time of 120 ms, significantly improving the success rate, accuracy, and efficiency compared to existing methods. This article provides a novel approach for the precise automation of micromanipulation tasks. Note to Practitioners—This paper proposes a highly robust algorithm for high-precision localization and motion tracking of micromanipulation targets, aiming to address issues such as uneven illumination, shadow interference, target occlusion, and image noise in micromanipulation. Compared with existing methods, the proposed algorithm significantly improves the success rate, accuracy, and efficiency of operations. It can be applied in micro/nano-robotics and related manipulation scenarios, including automated micro-assembly, cell manipulation, and visually-guided microsurgery, and is of great significance for advancing the automation level of micromanipulation and micro-assembly technologies.},
+  archive      = {J_TASE},
+  author       = {Dongjie Li and Fuyue Zhang and Weibin Rong and Caixu Yue and Yu Zhang and Yu Liang and Jiaxin Ren},
+  doi          = {10.1109/TASE.2025.3631003},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23959--23969},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Robust localization algorithm for micromanipulation targets under complex interference conditions},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Resilient practical predefined-time reinforcement learning control for two-wheeled robots under actuator attacks. <em>TASE</em>, <em>22</em>, 23946--23958. (<a href='https://doi.org/10.1109/TASE.2025.3630647'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given that time-consuming adjustment processes can result in system instability or substantial performance degradation, it is crucial to ensure stability within a predefined timeframe without requiring prior knowledge of the attack signals. A practical predefined-time reinforcement learning control mechanism is designed. To the best of our knowledge, this is the first time to propose the reinforcement learning with predefined-time convergence subjected to actuator attacks. Subsequently, a theoretical proof of the proposed control algorithm is provided. The flexibility of the proposed algorithm is reflected in its use of predefined-time reinforcement learning to handle actuator attacks, measurement limitation, and unmodeled errors, while employing Barrier Lyapunov Function to ensure that the state tracking errors meet the constraint conditions. The effectiveness of this approach is verified through its application to two-wheeled robots for trajectory tracking. Consequently, the settling time for both position and angle can be decreased by 77.8% compared to reinforcement learning and by 66.7% in relation to fixed-time reinforcement learning control method. Ultimately, this research enhances the transient stability and robustness of two-wheeled robot control under actuator attacks, adversarial environments and disturbance. Note to Practitioners—Security issue is a critical concern for military and civilian robots operating in network environments. Due to the challenges posed by unknown actuator attacks, achieving the necessary security control objectives becomes a complex and important task. To address this issue, this work aims to design a reinforcement learning control strategy for wheeled robots that are affected by actuator attacks within a predefined time. In practical applications, the actuator attack signals are often unknown, and classical reinforcement learning control methods often struggle to respond quickly to these changes. Therefore, by applying a control method with a predefined-time strategy, it not only reduces the destructiveness and impact of the attacks within a given time, but also ensures that the proposed solution effectively meets the practical needs of military and civilian robots operating in adversarial environments.},
+  archive      = {J_TASE},
+  author       = {Han Xue and Fei-Yun Wu},
+  doi          = {10.1109/TASE.2025.3630647},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23946--23958},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Resilient practical predefined-time reinforcement learning control for two-wheeled robots under actuator attacks},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic consensus of open double-integrator systems with velocity constraint. <em>TASE</em>, <em>22</em>, 23935--23945. (<a href='https://doi.org/10.1109/TASE.2025.3629087'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article focuses on the consensus problem of open double-integrator multi-agent systems in the absence of velocity measurements. To this end, by leveraging a filter variable to estimate velocity information and an auxiliary variable to characterize agent’s departure, a distributed control algorithm is proposed using merely the position information. For the strongly connected digraphs, a surplus variable is introduced to overcome asymmetric property caused by digraphs. It is shown that the sum of position and the related surplus variable of agents is merely related to the initial position, velocity, filter and coupling gain; the sum of velocity and the related surplus variable of agents is only associated with the initial velocity, filter and coupling gain. Finally, a UAV simulation is presented to demonstrate the effectiveness of the proposed criteria. Note to Practitioners—Consensus in open double-integrator multi-agent systems under velocity constraints is critical for applications such as autonomous vehicle platooning, drone swarms, and distributed robotics. In practice, velocity measurements are often unavailable or costly due to sensor limitations, communication bandwidth, or energy constraints. Control strategies that rely solely on position feedback are designed by leveraging estimators or observers to infer velocity indirectly. This reduces hardware costs and system complexity. Moreover, it remains effective as agents join or leave the network. Algorithms should adapt to topology changes without requiring global reconfiguration. Future work could explore AI-aided adaptive tuning for heterogeneous agents. By addressing these challenges, practitioners can deploy reliable and resource-efficient consensus systems in real-world scenarios.},
+  archive      = {J_TASE},
+  author       = {Shanchan Jiang and Xiaoyu Wu and Yan Zhang and Jie Lin},
+  doi          = {10.1109/TASE.2025.3629087},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23935--23945},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Dynamic consensus of open double-integrator systems with velocity constraint},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel adaptive fixed-time tracking control approach of uncertain nonlinear systems. <em>TASE</em>, <em>22</em>, 23923--23934. (<a href='https://doi.org/10.1109/TASE.2025.3628625'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The issue of fixed-time tracking control of nonlinear systems subject to time-varying uncertain parameters is investigated in this article. In contrast to previous adaptive approach-based fixed-time control results which focus on driving the tracking error to a bounded region, it is technically challenging yet highly desired to achieve zero-error trajectory tracking. The primary difficulty lies in how to construct and analyze adaptive estimation schemes to completely compensate for uncertain parameters within the fixed-time convergence setting. Furthermore, the presence of time-varying uncertainties renders the systems fundamentally different from those in existing works. To tackle this challenge, a new fixed-time stability lemma utilizing an exponential decay function is proposed. Then, we develop an adaptive fixed-time controller design framework, it is demonstrated that the tracking error ultimately converges to zero after converging to a small neighborhood around zero within a fixed time, with all the closed-loop signals remaining bounded. Besides, the singularity problem in fixed-time control is circumvented. Finally, simulation results substantiate the effectiveness of the proposed strategy. Note to Practitioners—Actual engineering systems are invariably characterized by uncertainties and external disturbances, which should be adequately accounted for in the control design. Furthermore, convergence speed and steady-state accuracy serve as crucial metrics for evaluating system performance. Compared with the fixed-time stabilization, fixed-time tracking is more prevalent in practical control systems and poses greater challenges due to the temporal variability of the reference signal. However, due to the inability to fully compensate for the impact of adaptive estimation errors on the system, existing adaptive fixed-time control algorithms can only obtain bounded tracking results, which is obviously undesirable in application scenarios requiring high-precision tracking. Therefore, this paper proposes a stability lemma based on the exponential decay function, providing a systematic solution for achieving zero-error tracking under the adaptive fixed-time framework. Besides, the designed nonsingular fixed-time control strategy demonstrates robustness against more general time-varying uncertainties. This approach is particularly suited for high-performance tracking applications requiring both rapid convergence and precision, such as in wheeled robots and uncrewed surface vessels.},
+  archive      = {J_TASE},
+  author       = {Bin Wang and Changchun Hua and Hao Li and Pengju Ning},
+  doi          = {10.1109/TASE.2025.3628625},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23923--23934},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {A novel adaptive fixed-time tracking control approach of uncertain nonlinear systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Supervised momentum contrastive learning-based coarse-to-fine fusion path planning. <em>TASE</em>, <em>22</em>, 23909--23922. (<a href='https://doi.org/10.1109/TASE.2025.3626557'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data-driven, learning-based path planning approaches have demonstrated significant advantages over traditional planning algorithms in terms of search efficiency and computational cost. These approaches can learn from large-scale environmental data and plan paths effectively. Currently, mainstream learning-based methods such as Neural RRT and Neural A* can directly output a promising region that connects the start and end points provided by the input map. This region provides a smaller sampling space for sampling-based methods and a more effective heuristic function for search-based methods. However, the paths generated by such learning-based approaches are generally inferior to those of traditional planners. Furthermore, their performance exhibits poor generalization ability, particularly in unseen environments. In this paper, we propose a supervised momentum contrastive learning method to address these challenges. Our method leverages the powerful feature representation and generalization capabilities of contrastive learning to generate a coarse-grained map with promising regions. Subsequently, an any-angle search planner, Theta*, is applied to perform fine-grained path generation on the resulting navigation map. To the best of our knowledge, this is the first work that adopts contrastive learning to solve path planning problems. Results show that the proposed method achieves a better trade-off between solution quality and search efficiency compared to state-of-the-art learning-based planners and traditional planners. Evaluations in out-of-distribution environments and real-world deployments also confirm that the proposed method has a superior generalization performance and satisfactory applicability. Note to Practitioners—This work is motivated by developing a hierarchical path planning system that overcomes the high computational burden and low path quality problems of traditional algorithms and learning-based approaches, respectively. The proposed method reduces the computational cost of traditional planners while enhancing the path quality of learning-based approaches. It demonstrates improved adaptability to unseen environments, addressing a common challenge in practical applications. By employing a hierarchical planning framework, the method significantly improves search efficiency, reduces planning time, and meets real-time requirements for robotic navigation. Specifically, the approach supports cooperative uncrewed aerial/ground vehicle (UAV/UGV) systems. In this framework, the UAV captures real-time global environmental data from an aerial perspective and transmits prior information (e.g., image-based maps) to the ground agent. The UGV leverages this data to generate high-quality navigation paths. This synergy enables the UAV with its broad aerial view and high mobility to efficiently guide the UGV in exploring unknown environments. However, the proposed approach is restricted to processing images of fixed size and low resolution, thereby limiting its capability to analyze the unpredictable and variable aerial view images captured by UAVs across diverse real-world environments. In future research, we will focus on this problem and address it.},
+  archive      = {J_TASE},
+  author       = {Jin Zhou and David Chieng and Boon Giin Lee and Junkai Ji and Zun Liu and Jianqiang Li},
+  doi          = {10.1109/TASE.2025.3626557},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23909--23922},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Supervised momentum contrastive learning-based coarse-to-fine fusion path planning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Iterative learning control with enhanced convergence for discrete-time linear systems. <em>TASE</em>, <em>22</em>, 23898--23908. (<a href='https://doi.org/10.1109/TASE.2025.3626370'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, a convergence-enhanced iterative learning control algorithm with a tuning parameter is presented for a class of repetitive discrete-time linear single-input single-output systems to achieve a faster convergence of the tracking error. Two convergence conditions related to the tuning parameter are established by the spectral radius of a matrix and the roots of a quadratic equation, respectively. The admissible interval of the tuning parameter that guarantees the convergence of the tracking error is obtained. In addition, the explicit expression of the optimal parameter is derived to guarantee the fastest convergence rate of the tracking error. Finally, the superiority of the proposed algorithm is illustrated by two numerical examples. Note to Practitioners—In many real-world applications, such as robot manipulators, high-rate trains, and power converters, some systems perform the same work tasks repeatedly in finite time intervals. Iterative learning control (ILC) is a mainstream and effective scheme for such systems. It is a fundamental issue in the field of ILC to ensure the convergence of the tracking error. Further, the convergence rate is also a crucial issue. It is a practical requirement for the system to converge as fast as possible in order to save production costs and improve productivity. Naturally, a system with faster convergence rate can accomplish more tasks during the same time interval. Therefore, the main objective of this paper is to propose an ILC algorithm that speeds up the convergence. The convergence performance of the tracking error is improved by introducing a tuning parameter in the ILC algorithm. The proposed control algorithm can be easily implemented and the optimal tuning parameter is given by an explicit expression.},
+  archive      = {J_TASE},
+  author       = {Ai-Guo Wu and Xiu-Juan Zhao},
+  doi          = {10.1109/TASE.2025.3626370},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23898--23908},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Iterative learning control with enhanced convergence for discrete-time linear systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Full-body pose motion tracking from sparse data via morphology-aware constraints. <em>TASE</em>, <em>22</em>, 23884--23897. (<a href='https://doi.org/10.1109/TASE.2025.3624630'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precise full-body pose motion tracking in Virtual Reality (VR) especially under minimal sparse sensor configurations makes consumer-level immersive entertainment and intuitive interactions more accessible. The current VR setup typically utilizes a Head-Mounted Display (HMD) along with hand controllers for full-body pose estimation. Nevertheless, these studies face significant challenges in accurately capturing reasonable full-body motion, especially in ambiguous lower-limb motion. To address these challenges, in this paper, we propose a novel data-driven framework named Morphology-aware Constraint Poser (MCP), which employs only six tracking devices. Specifically, to account for the influence of individual morphology on pose representation, we design a morphological and skeletal constraint mechanism to streamline pose estimation and improve tracking precision. To ensure realistic and physiologically plausible human motion, we introduce a physiological penalty loss function that constrains joint angles in a range of valid values, thereby reducing unreasonable motion and enhancing generalization capabilities. Furthermore, to bridge the gap between the training dataset and real-world scenarios, we employ data homogenization techniques to bolster robustness. We conduct comprehensive evaluations of MCP on the publicly available AMASS motion dataset and real-world VR scenarios. The experimental results have demonstrated the effectiveness of MCP in accurately tracking full-body motion. The code will soon be released as open source. Note to Practitioners—This paper tackles the challenge of accurate full-body pose estimation in VR using six consumer-grade 6-DOF sensors. The proposed MCP framework integrates skeletal priors, physiological joint constraints, and statistical homogenization techniques to improve adaptability and realism in real-world environments. Key contributions include ensuring poses remain physiologically plausible and refining motion tracking through the integration of body morphology with inverse kinematics. This approach enhances efficiency and accuracy for VR applications in training, ergonomic analysis, and virtual production. Beyond entertainment, precise motion tracking has significant implications for human-robot interaction, remote operation in industrial automation, and smart manufacturing systems, where accurate human pose estimation can improve safety and operational efficiency. Future extensions may explore support for additional sensors and diverse body shapes to broaden applicability, as well as integrating the system into cyber-physical production environments and automated workflow optimization in next-generation smart factories.},
+  archive      = {J_TASE},
+  author       = {Yinghao Yang and Sanyi Zhang and Chixuan Wei and Chenxi Feng and Xinyang Liu and Long Ye},
+  doi          = {10.1109/TASE.2025.3624630},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23884--23897},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Full-body pose motion tracking from sparse data via morphology-aware constraints},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nonlinear coupling end-effector tracking control and application for underactuated tower cranes. <em>TASE</em>, <em>22</em>, 23873--23883. (<a href='https://doi.org/10.1109/TASE.2025.3630600'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tower cranes play an important role in construction, whose performance can determine the efficiency and safety of building construction. Payloads (end-effectors) must be transported along desired paths to ensure work efficiency and obstacle avoidance, rather than point to point. In this paper, an end-effector tracking controller is designed for 5-DOF underactuated tower cranes. Based on the proposed system transformation, tower cranes can be described as cascade systems including actuated and unactuated subsystems. A novel nonlinear coupling variable is defined between actuated (positions and speeds of jibs, trolleys and rope lengths) and unactuated (positions and speeds of payload swing angles) states according to position of end-effectors. The developed control strategy is constructed by block backstepping and the stability analysis is given based on approximate linearization to ensure its mathematical rigor. Finally, the developed end-effector tracking controller is applied to an actual laboratorial tower crane to demonstrate its superiority by comparing to the existing control strategies. The experimental results show that the tracking accuracy of payloads is 35.3% and the maximum swing angle of payloads is 62.65% of the existing controllers. Note to Practitioners—This paper is devoted to precise positioning of payloads (end-effectors) for nonlinear tower cranes. In practice, the control objective of crane systems is to transport payloads to desired positions accurately. Most of the existing methods focus on the control of the positions of jib, trolley and rope length to locate payloads. However, it is difficult to achieve precise positioning of payloads due to the complex nonlinear relationship between positions of payloads and positions/speeds of jibs, trolleys, rope, payload swing angles. This paper proposes a nonlinear coupling end-effector motion tracking controller using block backstepping and apply it to an actual laboratorial tower crane, which can guarantee precise positioning of payloads directly. Besides, a systematic method for tuning control parameters is employed, which can avoid time-consuming and laborious of the trial and error. It means that the proposed control strategy can not only achieve better tracking accuracy and anti-swing of payloads, but also improve the efficiency of system debugging. Therefore, it is more practical. In future work, we will apply the developed controller to real industrial crane systems to improve positional accuracy and working efficiency.},
+  archive      = {J_TASE},
+  author       = {Cungen Liu and Zhiwei Zhang and Xiaoping Liu and Huanqing Wang and Yang Liu and Chengdong Li},
+  doi          = {10.1109/TASE.2025.3630600},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23873--23883},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Nonlinear coupling end-effector tracking control and application for underactuated tower cranes},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive consensus control for multi-finger gestures of a novel 4D-printed soft gripper. <em>TASE</em>, <em>22</em>, 23861--23872. (<a href='https://doi.org/10.1109/TASE.2025.3630220'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The high integration and continuous deformation capability of 4D-printed smart materials possess great potential in soft robot manufacturing. However, due to material properties and fabrication discrepancies, there may be variations in the sensing and actuation performance among 4D-printed actuators with identical structures, which can affect their synchronous operation. This paper develops a novel electrothermally driven 4D-printed multi-finger soft gripper system that integrates self-sensing, actuation, and control. The 4D-printed flexible structure integrated with flexible micro-crack sensor is used as the finger, and a simplified dynamic model is proposed based on the pseudo-rigid body modeling technique. In addition, an adaptive consensus control strategy is proposed to address the issue of performance response inconsistency among multiple fingers. The effectiveness of the proposed control strategy is verified by numerical simulation and experiments. Finally, bioinspired wrinkled structures made of silicone rubber are designed on fingers to improve the grasping performance of the gripper. The experimental results show that soft fingers with different initial states, driving, and sensing performances eventually converge to consistent states under the action of the controller even in the presence of disturbances. During the grasping process, the soft gripper demonstrated excellent coordinated deformation capability, effectively maintaining grasping stability. Note to Practitioners—This paper presents a novel 4D-printed multi-finger soft gripper system that integrates self-sensing, self-actuation, and adaptive consensus control. It addresses a common issue encountered in multi-actuator soft robotic systems, where actuators with identical structures exhibit inconsistent performance responses due to material properties and minor variations during fabrication. Each finger is fabricated using thermally responsive liquid crystal elastomers (LCE) and embedded with micro-crack sensors, enabling simultaneous deformation actuation and state feedback. Bioinspired wrinkled structures made of silicone rubber are designed on the fingers to increase the support points and friction with target objects, facilitating the grasp of irregular or fragile items without affecting bending performance. An adaptive consensus control strategy is proposed to synchronize the deformation behaviors of multiple fingers, ensuring coordinated motion even when the fingers exhibit different initial states or dynamic responses. The proposed control strategy is validated through both numerical simulation and experiments, demonstrating strong robustness in grasping various target objects and under external disturbances. This work serves as a practical reference for engineers and researchers designing reliable and integrated soft robotic grippers, particularly in applications that require compactness, adaptability, and high compliance, such as fragile object handling, biomedical manipulation, or wearable robotic systems.},
+  archive      = {J_TASE},
+  author       = {Haiying Yao and Yuyan Zhang and Xiaoyuan Luo and Zixiang Zhou and Yue Di and Zhixin Ren and Yintang Wen},
+  doi          = {10.1109/TASE.2025.3630220},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23861--23872},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Adaptive consensus control for multi-finger gestures of a novel 4D-printed soft gripper},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed collision-free control of MASs by combining reinforcement learning with filtered position barrier certificates and applications. <em>TASE</em>, <em>22</em>, 23849--23860. (<a href='https://doi.org/10.1109/TASE.2025.3629700'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a novel control framework that combines reinforcement learning (RL) with filtered position barrier certificate (FPBC) for distributed collision-free multi-agent systems (MASs) control. By introducing a filtered position model on the basis of a velocity-controlled double-integral system, the collision avoidance analysis is greatly simplified. The proposed FPBC is designed based on this filtered position model and enables collision-free interaction among agents using a less conservative first-order control barrier function (CBF), thereby eliminating the need for complex high-order CBFs (HOCBFs). The proposed FPBC is used in a Quadratic Program (QP)-based safety filter that enforces collision avoidance on the actions generated by a RL controller. This RL controller only needs to be trained in a single-agent setting and can learn an effective policy through a stability-optimality reward function to reduce computing resource consumption. Furthermore, a deadlock resolution mechanism is proposed to prevent agent stagnation and task failure in large-scale MASs. Extensive simulations and real-world experiments in UGV and UAV environments validate the proposed framework, which demonstrates superior safety and performance compared to conventional HOCBFs. The experiment video and other supplementaries are available at https://github.com/mahafeeling/FPBC. Note to Practitioners—The motivation for this paper arises from the fact that dynamic collision avoidance in MASs such as multi-UGV or multi-UAV systems is crucial to prevent mission failures or hardware damage, yet traditional HOCBF methods often suffer from high conservatism and computational overhead. This paper addresses the practical challenges of ensuring distributed collision-free control in MASs. The method combines a RL controller with low computing resource consumption and a novel safety certificate called the FPBC. The FPBC is integrated in a safety filter that minimally adjusts the actions from the RL controller to achieve collision-free motion, offering significant practical advantages over existing conventional HOCBFs, including higher optimization success rates and fewer collision constraint violations. Moreover, a novel deadlock resolution mechanism is proposed for large-scale MASs to prevent agent stagnation without compromising safety. The simulations and real-world experiments on both UGVs and UAVs demonstrate the effectiveness of the proposed methods and yield satisfactory control performance, making it directly applicable to a wide range of multi-agent applications.},
+  archive      = {J_TASE},
+  author       = {Qihan Qi and Hai Lin and Xinsong Yang and Yaping Sun and Xingxing Ju and Wenwu Yu},
+  doi          = {10.1109/TASE.2025.3629700},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23849--23860},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Distributed collision-free control of MASs by combining reinforcement learning with filtered position barrier certificates and applications},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed global nash containment control and learning of multiplayer multiagent systems. <em>TASE</em>, <em>22</em>, 23835--23848. (<a href='https://doi.org/10.1109/TASE.2025.3629540'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies multiplayer multiagent differential graphical games, where each agent represents a linear dynamic system with multiple heterogeneous control inputs, referred to as players. The objective of the games is to control all followers to achieve containment within the convex hull of the leaders. Meanwhile, each player minimizes its cost function, which is also jointly affected by the other players and neighboring states in the same and neighboring agents. We design global Nash equilibrium (NE) (called Nash) control policies in the games, enabling all players to play the optimal control policies. The global Nash control solution is ensured to be distributed as it is computed using only local agents’ states. The solvability of the games, the asymptotic stability of the local error system, and the distributed global NE property are guaranteed. In addition, a data-driven integral reinforcement learning (RL) algorithm ensures the online computation of the distributed Nash control without requiring explicit knowledge of the system model matrices, by utilizing online measurements of system trajectories. The algorithm solves optimal control and inverse optimal control (IOC) as subproblems. A simulation example validates the algorithms. Note to Practitioners—This work addresses a common challenge in systems such as autonomous vehicles, drones, and robotic teams, which is how to coordinate multiple controllers or subsystems that each have different roles but must work together to achieve a shared goal. Specifically, we focus on keeping a group of agents (followers) safely within a region defined by a set of leaders, using only local information and without relying on a central controller. We develop a distributed control approach where each local controller, or “player” optimizes its actions while considering nearby agents. The method ensures that all players work together to reach a balanced, globally optimal outcome known as a global Nash equilibrium. To avoid relying on detailed models of the system, we design a data-driven RL algorithm that learns control policies directly from real-time data. The method assumes linear dynamics and requires sufficient data, but offers a practical, scalable control solution. It can be extended to more complex systems and applied to robotics, smart infrastructure, and autonomous vehicle teams.},
+  archive      = {J_TASE},
+  author       = {Yizhong Zhang and Bosen Lian and Wenqian Xue and Dariusz G. Mikulski and Gregory R. Hudas},
+  doi          = {10.1109/TASE.2025.3629540},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23835--23848},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Distributed global nash containment control and learning of multiplayer multiagent systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic grasping based on reinforcement learning and differentiable MPC. <em>TASE</em>, <em>22</em>, 23822--23834. (<a href='https://doi.org/10.1109/TASE.2025.3629383'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic object grasping in human-robot shared workspaces presents significant challenges in ensuring grasping success, efficiency, and safety. To address these challenges, we propose a novel Actor-Critic reinforcement learning (RL) framework integrated with a differentiable nonlinear least squares (DNLS) optimization module. The RL component generates target poses and adaptively tunes cost function weights for DNLS, while the DNLS module refines motion trajectories to satisfy kinodynamic and safety constraints. The framework supports end-to-end training and enhances grasping performance and training speed, thanks to the GPU-accelerated DNLS optimization. We evaluate the proposed method in both simulation and real-world environments, demonstrating superior performance over baseline method in terms of success rate, efficiency, safety, and trajectory smoothness. These results highlight the effectiveness of our approach and its potential for enabling safe and reliable human-robot collaboration in dynamic, safety-critical environments. Note to Practitioners—Dynamic object-grasping in human-robot shared workspaces is a key challenge for service robots, requiring real-time adaptation to avoid human-arm collisions while efficiently grasping objects. This paper proposes a RL framework integrated with a DNLS optimization module. RL generates target joint positions and cost function weights, while DNLS refines these targets to ensure safety and efficiency. The method uses Mask-RCNN for object segmentation, FoundationPose for object pose estimation, and MediaPipe Pose for human arm tracking. The combined data, along with robot kinematics, form the state input for the RL module. This approach enables safe and effective grasping in dynamic environments. However, it currently requires prior knowledge of the object model, limiting its applicability to known objects. Future work will focus on generalizing the method to unseen objects using point cloud inputs.},
+  archive      = {J_TASE},
+  author       = {Jianzhi Lyu and Hui Zhang and Ge Gao and Youshuang Ding and Fuchun Sun and Jianwei Zhang},
+  doi          = {10.1109/TASE.2025.3629383},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23822--23834},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Dynamic grasping based on reinforcement learning and differentiable MPC},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural networks-based output PDF shape identification and control of singularly perturbed systems. <em>TASE</em>, <em>22</em>, 23810--23821. (<a href='https://doi.org/10.1109/TASE.2025.3628947'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For the output probability density function (PDF) control problem of singularly perturbed systems, a new neural networks-based output PDF shape identification and control is proposed to address the impact of fast and slow time scales. First, an identification scheme for the output probability density function of singularly perturbed systems based on multi-time scale neural networks is proposed, by designing a new weight adaptive update algorithm through the optimal bounded ellipsoid constraint. Second, two control methods are proposed under different uncertainty conditions. By uncertainty approximation assumption, a direct optimization method based on derivation is proposed. Then, to enhance the applicability, a control strategy based on convergence domain and the gradient descent optimization method is proposed to update the control parameters. The closed-loop stability is analyzed by constraining the convergence domain under Lyapunov stability, ensuring the tracking effect of the system state. Simulation results and grinding process confirm the effectiveness of the proposed method. Note to Practitioners—The traditional output PDF control algorithm is aimed at a single time scale system, which makes it difficult to effectively deal with the dynamic separation characteristics of fast and slow states in singularly perturbed systems. This paper proposes an output PDF shape control algorithm for singularly perturbed systems based on multi-time scale neural network identification, which effectively realizes the PDF tracking control of ore particle size in grinding and classification industrial scenarios. The multi-time scale neural network-based identification algorithm effectively estimates the evolution characteristics of the output probability density function, which reduces the demand for prior information on system parameters compared to existing algorithms and improves the accuracy of identification. The two control algorithms based on convergence domain analysis realize effective tracking of the output probability density function in different scenarios. Grinding and classification process experiments verify the accuracy and effectiveness of the proposed method.},
+  archive      = {J_TASE},
+  author       = {Xiaoyang Sun and Yujie Gu and Lanhao Wang and Wei Dai and Ping Zhou},
+  doi          = {10.1109/TASE.2025.3628947},
+  journal      = {IEEE Transactions on Automation Science and Engineering},
+  pages        = {23810--23821},
+  shortjournal = {IEEE Trans. Autom. Sci. Eng.},
+  title        = {Neural networks-based output PDF shape identification and control of singularly perturbed systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Event-triggered secure fusion estimation with watermarking against linear man-in-the-middle attacks in multirate multisensor systems. <em>TASE</em>, <em>22</em>, 23798--23809. (<a href='https://doi.org/10.1109/TASE.2025.3630714'>www</a>)
