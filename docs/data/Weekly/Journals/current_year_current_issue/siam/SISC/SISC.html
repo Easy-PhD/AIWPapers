@@ -25,8 +25,29 @@
 </head>
 <body>
 
-<h2 id="sisc">SISC - 27</h2>
+<h2 id="sisc">SISC - 30</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Bounded KRnet and its applications to density estimation and approximation. <em>SISC</em>, <em>47</em>(6), C1294--C1318. (<a href='https://doi.org/10.1137/23M1579091'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we develop an invertible mapping, called B-KRnet, on a bounded domain and apply it to density estimation/approximation for data or the solutions of PDEs such as the Fokker–Planck equation and the Keller–Segel equation. Similar to KRnet, B-KRnet consists of a series of coupling layers with progressively fewer active transformation dimensions, inspired by the triangular structure of the Knothe–Rosenblatt (KR) rearrangement. The main difference between B-KRnet and KRnet is that B-KRnet is defined on a hypercube while KRnet is defined on the whole space; in other words, a new mechanism is introduced in B-KRnet to maintain the exact invertibility. Using B-KRnet as a transport map, we obtain an explicit probability density function (PDF) model that corresponds to the pushforward of a base (uniform) distribution on the hypercube. It can be directly applied to density estimation when only data are available. By coupling KRnet and B-KRnet, we define a deep generative model on a high-dimensional domain where some dimensions are bounded and other dimensions are unbounded. A typical case is the solution of the stationary kinetic Fokker–Planck equation, which is a PDF of position and momentum. Based on B-KRnet, we develop an adaptive learning approach to approximate partial differential equations whose solutions are PDFs or can be treated as PDFs. A variety of numerical experiments is presented to demonstrate the effectiveness of B-KRnet.},
+  archive      = {J_SISC},
+  author       = {Li Zeng and Xiaoliang Wan and Tao Zhou},
+  doi          = {10.1137/23M1579091},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {C1294--C1318},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Bounded KRnet and its applications to density estimation and approximation},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Neural empirical interpolation method for nonlinear model reduction. <em>SISC</em>, <em>47</em>(6), C1264--C1293. (<a href='https://doi.org/10.1137/24M1681434'>www</a>)
@@ -232,6 +253,48 @@
   pages        = {B1317--B1342},
   shortjournal = {SIAM J. Sci. Comput.},
   title        = {Finite element-based space-time total-variation-type regularization of the inverse problem in electrocardiographic imaging},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On high-Order/Low-order and micro-macro methods for implicit time-stepping of the BGK model. <em>SISC</em>, <em>47</em>(6), A3566--A3593. (<a href='https://doi.org/10.1137/24M1698298'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, a high-order/low-order (HOLO) method is combined with a micro-macro (MM) decomposition to accelerate iterative solvers in fully implicit time-stepping of the Bhatnagar–Gross–Krook (BGK) equation for gas dynamics. The MM formulation represents a kinetic distribution as the sum of a local Maxwellian and a perturbation. In highly collisional regimes, the perturbation away from initial and boundary layers is small and can be compressed to reduce the overall storage cost of the distribution. The convergence behavior of the MM methods, the usual HOLO method, and the standard source iteration method is analyzed on a linear BGK model. Both the HOLO and MM methods are implemented using a discontinuous Galerkin (DG) discretization in phase space, which naturally preserves the consistency between high- and low-order models required by the HOLO approach. The accuracy and performance of these methods are compared on the Sod shock tube problem and a sudden wall heating boundary layer problem. Overall, the results demonstrate the robustness of the MM and HOLO approaches and illustrate the compression benefits enabled by the MM formulation when the kinetic distribution is near equilibrium.},
+  archive      = {J_SISC},
+  author       = {Cory D. Hauck and M. Paul Laiu and Stefan R. Schnake},
+  doi          = {10.1137/24M1698298},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {A3566--A3593},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {On high-Order/Low-order and micro-macro methods for implicit time-stepping of the BGK model},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel and simple invariant-domain-preserving framework for PAMPA scheme: 1D case. <em>SISC</em>, <em>47</em>(6), A3536--A3565. (<a href='https://doi.org/10.1137/24M1715015'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The PAMPA (Point-Average-Moment PolynomiAl-interpreted) method was introduced in [R. Abgrall, Commun. Appl. Math. Comput., 5 (2023) pp. 370–402], as an innovative approach effectively combining the conservative and nonconservative formulations of a hyperbolic system of conservation laws to evolve cell averages and point values. Solutions to hyperbolic conservation laws typically admit an invariant domain, and preserving numerical solutions within this domain is essential yet nontrivial. In this paper, we propose a novel framework for designing efficient Invariant-Domain-Preserving (IDP) PAMPA schemes. We first provide a rigorous theoretical analysis of the IDP property for the updated cell averages in the original PAMPA scheme, revealing the critical roles of cell average decomposition and the enforcement of midpoint values within the invariant domain. This analysis also reveals the challenges of relying solely on single-state fluxes at cell interfaces (as opposed to two-state numerical fluxes) to ensure the updated cell averages within the invariant domain. Building on these insights, we introduce a simple IDP limiter for cell midpoint values and construct a provably IDP PAMPA scheme that always maintains the IDP property for updated cell averages by proof without the need for additional postprocessing limiters. This approach contrasts with existing bound-preserving PAMPA schemes, which typically require extra convex limiting to blend high-order and low-order schemes. Most notably, inspired by the Softplus and Clipped ReLU functions from machine learning, we propose a novel, automatic IDP reformulation of the governing equations. Thanks to this new formulation, we design an unconditionally limiter-free IDP scheme for evolving point values. We also introduce novel techniques to suppress spurious oscillations in the IDP PAMPA scheme, allowing for effective capture of strong shocks. Numerical experiments in one dimension, including tests on the linear convection equation, Burgers’ equation, shallow water equations, the compressible Euler equations, and MHD equations, demonstrate the accuracy and robustness of the proposed IDP PAMPA scheme.},
+  archive      = {J_SISC},
+  author       = {Rémi Abgrall and Miaosen Jiao and Yongle Liu and Kailiang Wu},
+  doi          = {10.1137/24M1715015},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {12},
+  number       = {6},
+  pages        = {A3536--A3565},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {A novel and simple invariant-domain-preserving framework for PAMPA scheme: 1D case},
   volume       = {47},
   year         = {2025},
 }

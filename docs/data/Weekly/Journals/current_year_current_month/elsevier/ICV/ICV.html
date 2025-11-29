@@ -25,444 +25,64 @@
 </head>
 <body>
 
-<h2 id="icv">ICV - 22</h2>
+<h2 id="icv">ICV - 3</h2>
 <ul>
 <li><details>
 <summary>
-(2026). A human layout consistency framework for image-based virtual try-on. <em>ICV</em>, <em>165</em>, 105831. (<a href='https://doi.org/10.1016/j.imavis.2025.105831'>www</a>)
+(2026). A computationally efficient framework leveraging auxiliary head features for robust cloth-changing person re-identification. <em>ICV</em>, <em>166</em>, 105852. (<a href='https://doi.org/10.1016/j.imavis.2025.105852'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Image-based virtual try-on, commonly framed as a generative image-to-image translation task, has garnered significant research interest due to its elimination of the need for costly 3D scanning devices. In this field, image inpainting and cycle-consistency have been the dominant frameworks, but they still face challenges in cross-attribute adaptation and parameter sharing between try-on networks. This paper proposes a new framework, termed human layout consistency, based on the intuitive insight that a high-quality try-on result should align with a coherent human layout. Under the proposed framework, a try-on network is equipped with an upstream Human Layout Generator (HLG) and a downstream Human Layout Parser (HLP). The former generates an expected human layout as if the person were wearing the selected target garment, while the latter extracts an actual human layout parsed from the try-on result. The supervisory signals, free from the ground-truth image pairs, are constructed by assessing the consistencies between the expected and actual human layouts. We design a dual-phase training strategy, first warming up HLG and HLP, then training try-on network by incorporating the supervisory signals based on human layout consistency. On this basis, the proposed framework enables arbitrary selection of target garments during training, thereby endowing the try-on network with the cross-attribute adaptation. Moreover, the proposed framework operates with a single try-on network, rather than two physically separate ones, thereby avoiding the parameter-sharing issue. We conducted both qualitative and quantitative experiments on the benchmark VITON dataset. Experimental results demonstrate that our proposal can generate high-quality try-on results, outperforming baselines by a margin of 0.75% to 10.58%. Ablation and visualization results further reveal that the proposed method exhibits superior adaptability to cross-attribute translations, showcasing its potential for practical application.},
+  abstract     = {Cloth-Changing Person Re-identification (CC-ReID) addresses the critical challenge of matching individuals across surveillance cameras after clothing changes. This task presents unique difficulties due to appearance variations that increase visual ambiguity among persons. While existing approaches predominantly concentrate on body shape analysis, contour sketches, and human parsing techniques, these methods exhibit limitations in robustness while demanding substantial computational resources. To exploit cloth-irrelevant information for the CC-ReID task at low cost, a computationally efficient framework that effectively leverages head features as discriminative auxiliary cues is proposed in this paper. First, a Head Region Cropping and Location (HRCL) module is presented to isolate head regions, enabling rough feature localization. Second, a lightweight Head Attention Network (HANet) is presented that integrates MobileNet architecture with cascaded channel-spatial attention mechanisms, which synergistically capture both global semantic patterns and local discriminative characteristics. This dual-stream design achieves effective feature enhancement without requiring complex auxiliary feature extraction as required by conventional approaches. An optimal Feature-Level Fusion Module (FLFM) that combines learned head representations with conventional body features is presented. Extensive evaluations on the LTCC and PRCC datasets demonstrate significant performance improvements. The proposed method achieves state-of-the-art Rank-1 accuracy of 58.8% and a competitive mAP of 25.4% on the LTCC dataset, while attaining 59.8% Rank-1 accuracy and 57.9% mAP on PRCC. Comprehensive ablation studies further validate the effectiveness of each proposed component.},
   archive      = {J_ICV},
-  author       = {Rong Huang and Zhicheng Wang and Hao Liu and Aihua Dong},
-  doi          = {10.1016/j.imavis.2025.105831},
+  author       = {Shanna Zhuang and Yining Li and Jiaxin Zhang and Jing Bai and Congcong Li and Zhengyou Wang},
+  doi          = {10.1016/j.imavis.2025.105852},
   journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105831},
+  month        = {2},
+  pages        = {105852},
   shortjournal = {Image Vis. Comput.},
-  title        = {A human layout consistency framework for image-based virtual try-on},
-  volume       = {165},
+  title        = {A computationally efficient framework leveraging auxiliary head features for robust cloth-changing person re-identification},
+  volume       = {166},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). CAGS: Open-vocabulary 3D scene understanding with context-aware gaussian splatting. <em>ICV</em>, <em>165</em>, 105830. (<a href='https://doi.org/10.1016/j.imavis.2025.105830'>www</a>)
+(2026). Preserving instance-level characteristics for multi-instance generation. <em>ICV</em>, <em>166</em>, 105851. (<a href='https://doi.org/10.1016/j.imavis.2025.105851'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Open-vocabulary 3D scene understanding is crucial for applications requiring natural language-driven spatial interpretation, such as robotics and augmented reality. While 3D Gaussian Splatting (3DGS) offers a powerful representation for scene reconstruction, integrating it with open-vocabulary frameworks reveals a key challenge: cross-view granularity inconsistency . This issue, stemming from 2D segmentation methods like the Segment Anything Model (SAM), results in inconsistent object segmentations across views (e.g., a ”coffee set” segmented as a single entity in one view but as ”cup + coffee + spoon” in another). Existing 3DGS-based methods often rely on isolated per-Gaussian feature learning, neglecting the spatial context needed for cohesive object reasoning, leading to fragmented representations. We propose Context-Aware Gaussian Splatting (CAGS) , a novel framework that addresses this challenge by incorporating spatial context into 3DGS. CAGS constructs local graphs to propagate contextual features across Gaussians, reducing noise from inconsistent granularity, employs mask-centric contrastive learning to smooth SAM-derived features across views, and leverages a precomputation strategy to reduce computational cost by precomputing neighborhood relationships, enabling efficient training in large-scale scenes. By integrating spatial context, CAGS significantly improves 3D instance segmentation and reduces fragmentation errors on datasets like LERF-OVS and ScanNet, enabling robust language-guided 3D scene understanding.},
+  abstract     = {Recently, there have been efforts to explore instance-level control in diffusion models, where multiple instances are generated independently and then integrated into a single scene. However, several issues arise when instances are closely positioned or overlapping. First, independently generated instances frequently differ in style and lack coherence, leading to changes in their attributes as they influence each other when merged. Second, instances often merge with one another or become absorbed into others. To tackle these challenges, we propose a local latent refinement (LLR) that enforces each local latent to meet its conditions and remain distinct from others. We also propose a local latent injection (LLI) method that gradually integrates local latents during global latent generation for smoother fusion. Also, we find that the variance of latents changes significantly after instance fusion, which greatly impacts the quality of the generated images. To remedy this, we apply an instance normalization layer to regulate the variance of the fused latents, thereby producing high-quality images. Extensive experiments demonstrate that our approach achieves both high fidelity in instance layout and superior image quality, even in cases of high overlap among instances.},
   archive      = {J_ICV},
-  author       = {Wei Sun and Yuan Li and Jianbin Jiao},
-  doi          = {10.1016/j.imavis.2025.105830},
+  author       = {Jaehak Ryu and Sungwon Moon and Donghyeon Cho},
+  doi          = {10.1016/j.imavis.2025.105851},
   journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105830},
+  month        = {2},
+  pages        = {105851},
   shortjournal = {Image Vis. Comput.},
-  title        = {CAGS: Open-vocabulary 3D scene understanding with context-aware gaussian splatting},
-  volume       = {165},
+  title        = {Preserving instance-level characteristics for multi-instance generation},
+  volume       = {166},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). MOT-STM: Maritime object tracking: A spatial-temporal and metadata-based approach. <em>ICV</em>, <em>165</em>, 105826. (<a href='https://doi.org/10.1016/j.imavis.2025.105826'>www</a>)
+(2026). BSA-dehaze: Multi-scale bitemporal fusion and size-aware decoder for unsupervised image dehazing. <em>ICV</em>, <em>166</em>, 105819. (<a href='https://doi.org/10.1016/j.imavis.2025.105819'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Object Tracking and Re-Identification (Re-ID) in maritime environments using drone video streams presents significant challenges, especially in search and rescue operations. These challenges mainly arise from the small size of objects from high drone altitudes, sudden movements of the drone’s gimbal and limited appearance diversity of objects. The frequent occlusion in these challenging conditions makes Re-ID difficult in long-term tracking. In this work, we present a novel framework, Maritime Object Tracking with Spatial–Temporal and Metadata-based modeling (MOT-STM), designed for robust tracking and re-identification of maritime objects in challenging environments. The proposed framework adapts multi-resolution spatial feature extraction using Cross-Stage Partial with Full-Stage (C2FDark) backbone combined with temporal modeling via Video Swin Transformer (VST), enabling effective spatio-temporal representation. This design enhances detection and significantly improves tracking performance in the maritime domain. We also propose a metadata-driven Re-ID module named Metadata-Assisted Re-ID (MARe-ID), which leverages drone’s metadata such as Global Positioning System (GPS) coordinates, altitude and camera orientation to enhance long-term tracking. Unlike traditional appearance-based Re-ID, MARe-ID remains effective even in scenarios with limited visual diversity among the tracked objects and is generic enough to be integrated into any State-of-the-Art (SotA) multi-object tracking framework as a Re-ID module. Through extensive experiments on the challenging SeaDronesSee dataset, we demonstrate that MOT-STM significantly outperforms existing methods in maritime object tracking. Our approach achieves a state-of-the-art performance attaining a HOTA score of 70.14% and an IDF1 score of 88.70%, showing the effectiveness and robustness of the proposed MOT-STM framework.},
+  abstract     = {Single-image dehazing plays a critical role in various autonomous vision systems. Early methods relied on hand-crafted optimization techniques, whereas recent approaches leverage deep neural networks trained on synthetic data, owing to the scarcity of real-world paired datasets. However, this often results in domain bias when applied to outdoor scenes. In this paper, we present BSA-Dehaze, an unsupervised single-image dehazing framework that integrates a Multi-Scale Bitemporal Fusion Module (MBFM) and a Size-Aware Decoder (SA-Decoder). The method operates without requiring ground-truth images. Our method reformulates dehazing as a haze-to-clear image translation task. BSA-Dehaze incorporates a novel Encoder-SA-Decoder built with ResNet blocks, designed to better preserve image details and edge sharpness. To enhance feature fusion and training efficiency, we introduce the MBFM. A multi-scale discriminator (MSD) is proposed, along with Hinge Loss and Dynamic Block-wise Contrastive Loss, to improve training stability and emphasize challenging samples. Ablation studies verify the contribution of each component. Experimental results on SOTS outdoor, BeDDE, and a real-world dataset demonstrate that our method surpasses existing approaches in both performance and efficiency, despite being trained on significantly less data.},
   archive      = {J_ICV},
-  author       = {Vinayak S. Nageli and Arshad Jamal and Puneet Goyal and Rama Krishna Sai S Gorthi},
-  doi          = {10.1016/j.imavis.2025.105826},
+  author       = {Wujin Li and Qian Xing and Wei He and Longyuan Guo and Jianhui Wu and Minzhi Zhao and Siyuan Chen},
+  doi          = {10.1016/j.imavis.2025.105819},
   journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105826},
+  month        = {2},
+  pages        = {105819},
   shortjournal = {Image Vis. Comput.},
-  title        = {MOT-STM: Maritime object tracking: A spatial-temporal and metadata-based approach},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). MedSetFeat++: An attention-enriched set feature framework for few-shot medical image classification. <em>ICV</em>, <em>165</em>, 105825. (<a href='https://doi.org/10.1016/j.imavis.2025.105825'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Few-shot learning (FSL) has emerged as a promising solution to address the challenge of limited annotated data in medical image classification. However, traditional FSL methods often extract features from only one convolutional layer. This limits their ability to capture detailed spatial, semantic, and contextual information, which is important for accurate classification in complex medical scenarios. To overcome these limitations, this study introduces MedSetFeat++, an improved set feature learning framework with enhanced attention mechanisms, tailored for few-shot medical image classification. It extends the SetFeat architecture by incorporating several key innovations. It uses a multi-head attention mechanism with projections at multiple scales for the query, key, and value, allowing for more detailed feature interactions across different levels. It also includes learnable positional embeddings to preserve spatial information. An adaptive head gating method is added to control the flow of attention in a dynamic way. Additionally, a Convolutional Block Attention Module (CBAM) based attention module is used to improve focus on the most relevant regions in the data. To evaluate the performance and generalization of MedSetFeat++, extensive experiments were conducted using three different medical imaging datasets: HAM10000, BreakHis at 400 × magnification, and Kvasir. Under a 2-way 10-shot 15-query setting, the model achieves 92.17% accuracy on HAM10000, 70.89% on BreakHis, and 73.46% on Kvasir. The proposed model outperforms state-of-the-art methods in multiple 2-way classification tasks under 1-shot, 5-shot, and 10-shot settings. These results establish MedSetFeat++ as a strong and adaptable framework for improving performance in few-shot medical image classification.},
-  archive      = {J_ICV},
-  author       = {Ankit Kumar Titoriya and Maheshwari Prasad Singh and Amit Kumar Singh},
-  doi          = {10.1016/j.imavis.2025.105825},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105825},
-  shortjournal = {Image Vis. Comput.},
-  title        = {MedSetFeat++: An attention-enriched set feature framework for few-shot medical image classification},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). CI-TransCNN: A class imbalance hybrid CNN-transformer network for facial attribute recognition. <em>ICV</em>, <em>165</em>, 105823. (<a href='https://doi.org/10.1016/j.imavis.2025.105823'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recent facial attribute recognition (FAR) methods often struggle to capture global dependencies and are further challenged by severe class imbalance, large intra-class variations, and high inter-class similarity, ultimately limiting their overall performance. To address these challenges, we propose a network combining CNN and Transformer, termed Class Imbalance Transformer-CNN (CI-TransCNN), for facial attribute recognition, which mainly consists of a TransCNN backbone and a Dual Attention Feature Fusion (DAFF) module. In TransCNN, we incorporate a Structure Self-Attention (StructSA) to improve the utilization of structural patterns in images and propose an Inverted Residual Convolutional GLU (IRC-GLU) to enhance model robustness. This design enables TransCNN to effectively capture multi-level and multi-scale features while integrating both global and local information. DAFF is presented to fuse the features extracted from TransCNN to further improve the feature’s discriminability by using spatial attention and channel attention. Moreover, a Class-Imbalance Binary Cross-Entropy (CIBCE) loss is proposed to improve the model performance on datasets with class imbalance, large intra-class variation, and high inter-class similarity. Experimental results on the CelebA and LFWA datasets show that our method effectively addresses issues such as class imbalance and achieves superior performance compared to existing state-of-the-art CNN- and Transformer-based FAR approaches.},
-  archive      = {J_ICV},
-  author       = {Yanfei Liu and Youchang Shi and Yufei Long and Miaosen Xu and Junhua Chen and Yuanqian Li and Hao Wen},
-  doi          = {10.1016/j.imavis.2025.105823},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105823},
-  shortjournal = {Image Vis. Comput.},
-  title        = {CI-TransCNN: A class imbalance hybrid CNN-transformer network for facial attribute recognition},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Density-aware global–local attention network for point cloud segmentation. <em>ICV</em>, <em>165</em>, 105822. (<a href='https://doi.org/10.1016/j.imavis.2025.105822'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {3D point cloud segmentation has a wide range of applications in areas such as autonomous driving, augmented reality, virtual reality and digital twins. The point cloud data collected in real scenes often contain small objects and categories with small sample sizes, which are difficult to handle by existing networks. In this regard, we propose a point cloud segmentation network that fuses local attention based on density perception with global attention. The core idea is to increase the effective receptive field of each point while reducing the loss of information about small objects in dense areas. Specifically, we divide different sized windows for local areas with different densities to compute attention within the window. Furthermore, we consider each local area as an independent token for the global attention of the entire input. A category-response loss is also proposed to balance the processing of different categories and sizes of objects. In particular, we set up an additional fully connected layer in the middle of the network for prediction of the presence of object categories, and construct a binary cross-entropy loss to respond to the presence of categories in the scene. In experiments, our method achieves competitive results in semantic segmentation and part segmentation tasks on several publicly available datasets. Experiments on point cloud data obtained from complex real-world scenes filled with tiny objects also validate the strong segmentation capability of our method for small objects as well as small sample categories.},
-  archive      = {J_ICV},
-  author       = {Chade Li and Pengju Zhang and Jiaming Zhang and Yihong Wu},
-  doi          = {10.1016/j.imavis.2025.105822},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105822},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Density-aware global–local attention network for point cloud segmentation},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). PACMAN: Rapid identification of keypoint patch-based fiducial marker in occluded environments. <em>ICV</em>, <em>165</em>, 105821. (<a href='https://doi.org/10.1016/j.imavis.2025.105821'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Fiducial marker systems are widely used in image-based localization methods due to their high robustness and low computational latency. However, occlusions caused by dynamic environmental factors, such as shadows and unexpected objects, significantly hinder the detection of fiducial markers, as partially visible patterns and significant image degradation often contradict the fundamental assumptions of marker detection systems. To address this challenge, we propose a keypoint-based fiducial marker and a deep-learning-based detector that jointly handle occlusion and image degradation with minimal computational latency. First, we design four distinct keypoint patches that account for occlusions and maintain essential functionalities. A fiducial marker is then constructed by assembling six identical patches under geometric constraints. Second, a widely-used interest point detector network is optimized for the proposed marker design, resulting in robust keypoint detection under various types of image deformation and degradation. A geometric consistency check is subsequently applied to map imperfect keypoint detections to 6D marker poses in the image, effectively rejecting occlusions and potential network failures. Third, neural network quantization and parallel CPU processing are applied to minimize computational latency. Our experimental results demonstrate higher detection rates then other types of single marker in occluded environments, with improvements ranging from 17% to 40%. The proposed system is also evaluated under motion blur, dimming effects, and variations in scale and rotation. Additionally, the efficient computational design enables end-to-end processing at up to 749 FPS on a desktop PC and 138 FPS on an edge device, for 640 × 480 resolution images containing a single marker. Our code is available at: https://github.com/WhiteCri/PACMAN.git .},
-  archive      = {J_ICV},
-  author       = {Taewook Park and Geunsik Bae and Woojae Shin and Meraj Mammadov and Jaemin Seo and Heejung Shin and Hyondong Oh},
-  doi          = {10.1016/j.imavis.2025.105821},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105821},
-  shortjournal = {Image Vis. Comput.},
-  title        = {PACMAN: Rapid identification of keypoint patch-based fiducial marker in occluded environments},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Large-small model collaboration for medical visual question answering with task aware mixture of experts and relation knowledge distillation. <em>ICV</em>, <em>165</em>, 105820. (<a href='https://doi.org/10.1016/j.imavis.2025.105820'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Medical visual question answering aims to support clinical decision-making by answering natural language questions about medical images. In this domain, specialized task-specific small models often surpass large medical vision–language models due to stronger task alignment and domain-specific expertise. However, these small models lack broad domain knowledge necessary for high-level diagnostic reasoning, such as identifying disease causes or recommending treatments. To address these limitations, this paper presents CoMed-TR, a collaborative framework that integrates multiple large medical vision–language models with a task–specific small model to achieve robust and accurate medical visual question answering. The framework introduces a domain-specific vision–language embedding model, Med-Vec, trained on large-scale medical data to produce rich joint image–text representations. A Task-Aware Mixture-of-Experts module dynamically selects and weights heterogeneous experts, including pretrained medical vision–language models and a segmentation-based image encoder-based on question semantics, enabling adaptive expert fusion. In addition, a relation knowledge distillation strategy aligns the fused expert representations with the relational structure learned by Med-Vec, embedding clinically meaningful similarity relationships into the model’s representation space. Experiments on two public benchmarks demonstrate that CoMed-TR achieves significant performance gains, improving overall accuracy by 3.3% on the VQA-RAD dataset and 1.1% on SLAKE, outperforming both prior state-of-the-art models and existing large–small collaboration methods. Notably, these results are achieved with only approximately 25 million trainable parameters, highlighting the framework’s computational efficiency and practical potential for deployment in real-world clinical settings. The codes are available at: https://github.com/shanziSZ/CoMed-TR/ .},
-  archive      = {J_ICV},
-  author       = {Qishen Chen and Wenxuan He and Xingyuan Chen and Chen Cheng and Minjie Bian and Huahu Xu},
-  doi          = {10.1016/j.imavis.2025.105820},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105820},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Large-small model collaboration for medical visual question answering with task aware mixture of experts and relation knowledge distillation},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Semantic-assisted unpaired image dehazing. <em>ICV</em>, <em>165</em>, 105818. (<a href='https://doi.org/10.1016/j.imavis.2025.105818'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recently, a series of innovative unpaired image dehazing techniques have been introduced, they have relieved pressure from collecting paired data, yet these methods typically overlook the integration of semantic information, which is essential for a more comprehensive dehazing process. Our research aims to bridge this gap by proposing a novel method that fully integrates feature information into unpaired image dehazing. Specifically, we propose a semantic information-guided feature enhancement and fusion block, which selectively fuses the refined features guided by the semantic result layer and semantic feature layer based on the uncertainty of semantic information. Besides, our method adopts semantic information to guide the generation of haze in the training process. This approach results in the creation of a more diverse set of hazy images, which in turn enhances the dehazing performance. Furthermore, in terms of the loss function, we introduce a loss term that constrains the semantic information entropy of the dehazing results. This constraint ensures that the dehazed images not only achieve clarity but also retain semantic accuracy and integrity. Extensive experiments validate our superiority over other methods and the effectiveness of our designs. The code is available at .},
-  archive      = {J_ICV},
-  author       = {Yang Yang and Lei Zhang and Ke Pang and Tongtong Chen and Xiaodong Yue},
-  doi          = {10.1016/j.imavis.2025.105818},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105818},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Semantic-assisted unpaired image dehazing},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). ABENet: Attention-based bidirectional enhancement network for collaborative camouflaged object detection. <em>ICV</em>, <em>165</em>, 105817. (<a href='https://doi.org/10.1016/j.imavis.2025.105817'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Camouflaged object detection (COD) aims to identify targets that are highly similar in appearance or color to their background, presenting an extremely challenging task. Existing methods primarily focus on single object detection, neglecting the potential for collaborative camouflaged behavior between targets, resulting in inadequate performance in scenarios with multiple target interferences and complex backgrounds. To address this, we propose a novel collaborative camouflaged object detection (CoCOD) framework—Attention-based Bidirectional Enhancement Network (ABENet). Specifically, we design two core modules: the Shifted Cooperative Attention Module (SCAM) and the Gated Bidirectional Enhancement Module (GBEM). The SCAM introduces a shifted window attention mechanism to facilitate efficient feature interaction between local and global contexts, combined with multi-scale receptive fields and channel selectors to enhance the response capability to critical camouflaged regions, and the GBEM employs a gated mechanism to achieve bidirectional enhancement between high- and low-level features, integrating contextual semantic information to enhance the effectiveness and robustness of collaborative camouflaged object detection tasks. Extensive experiments on the CoCOD8K dataset demonstrate that our proposed ABENet outperforms 10 state-of-the-art COD methods, 7 co-salient object detection (CoSOD) models, and 7 CoCOD approaches, as evaluated by six widely used metrics.},
-  archive      = {J_ICV},
-  author       = {Cong Zhang and Shiyuan Li and Yulin Zeng and Yuhui Gao and Hongbo Bi},
-  doi          = {10.1016/j.imavis.2025.105817},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105817},
-  shortjournal = {Image Vis. Comput.},
-  title        = {ABENet: Attention-based bidirectional enhancement network for collaborative camouflaged object detection},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Unsupervised object localization driven by self-supervised foundation models: A comprehensive review. <em>ICV</em>, <em>165</em>, 105807. (<a href='https://doi.org/10.1016/j.imavis.2025.105807'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Object localization is a fundamental task in computer vision that traditionally requires labeled datasets for accurate results. Recent progress in self-supervised learning has enabled unsupervised object localization, reducing reliance on manual annotations. Unlike supervised encoders, which depend on annotated training data, self-supervised encoders learn semantic representations directly from large collections of unlabeled images. This makes them the natural foundation for unsupervised object localization, as they capture object-relevant features while eliminating the need for costly manual labels. These encoders produce semantically coherent patch embeddings. Grouping these embeddings reveals sets of patches that correspond to objects in an image. These patch sets can be converted into object masks or bounding boxes, enabling tasks such as single-object discovery, multi-object detection, and instance segmentation. By applying off-line mask clustering or using pre-trained vision-language models, unsupervised localization methods can assign semantic labels to discovered objects. This transforms initially class-agnostic objects (objects without class labels) into class-aware ones (objects with class labels), aligning these tasks with their supervised counterparts. This paper provides a structured review of unsupervised object localization methods in both class-agnostic and class-aware settings. In contrast, previous surveys have focused only on class-agnostic localization. We discuss state-of-the-art object discovery strategies based on self-supervised features and provide a detailed comparison of experimental results across a wide range of tasks, datasets, and evaluation metrics.},
-  archive      = {J_ICV},
-  author       = {Sotirios Papadopoulos and Emmanouil Patsiouras and Konstantinos Ioannidis and Stefanos Vrochidis and Ioannis Kompatsiaris and Ioannis Patras},
-  doi          = {10.1016/j.imavis.2025.105807},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105807},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Unsupervised object localization driven by self-supervised foundation models: A comprehensive review},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Diffusion model-based imbalanced diabetic retinal image classification. <em>ICV</em>, <em>165</em>, 105805. (<a href='https://doi.org/10.1016/j.imavis.2025.105805'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Since the release of Denoising Diffusion Probabilistic Models by Google in 2020, diffusion models have gradually emerged as a new research focus in generative modeling. However, in the task of diabetic retinopathy image classification, conventional convolutional neural network methods, although capable of achieving high accuracy, generally lack interpretability and thus fail to meet the transparency requirements of clinical diagnosis. To address this issue, a novel denoising diffusion framework named TCG-DiffDRC is proposed for diabetic retinopathy classification. An innovative triple-granularity conditional guidance strategy is introduced, in which three independent branches are fused. The global feature branch employs an improved ResNet-50 architecture with class activation mapping to generate global descriptors and capture macroscopic patterns. The local feature branch integrates multiple regions through a gated attention mechanism to identify local structures. The detail branch leverages an interpretable neural transformer with a multi-head attention mechanism to extract fine-grained lesion features. Furthermore, a dynamic guidance mechanism based on the correctness of an auxiliary classifier is incorporated during the diffusion reconstruction process, while segmentation masks are embedded as a regularization term in the loss function to enhance structural consistency in lesion regions. Experimental results demonstrate that TCG-DiffDRC consistently outperforms state-of-the-art methods across three public datasets, including APTOS2019, Messidor, and IDRiD. On the APTOS2019 dataset, the proposed method achieves an accuracy of 86.7% and a Cohen’s Kappa of 75.8%, with improvements confirmed by statistical significance testing, thereby verifying the reliability of the model.},
-  archive      = {J_ICV},
-  author       = {Yu Chen and Liu Yang and Jun Long and TingBo Bao},
-  doi          = {10.1016/j.imavis.2025.105805},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105805},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Diffusion model-based imbalanced diabetic retinal image classification},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). FaceMINT: A library for gaining insights into biometric face recognition via mechanistic interpretability. <em>ICV</em>, <em>165</em>, 105804. (<a href='https://doi.org/10.1016/j.imavis.2025.105804'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Deep-learning models, including those used in biometric recognition, have achieved remarkable performance on benchmark datasets as well as real-world recognition tasks. However, a major drawback of these models is their lack of transparency in decision-making. Mechanistic interpretability has emerged as a promising research field intended to help us gain insights into such models, but its application to biometric data remains limited. In this work, we bridge this gap by introducing the FaceMINT library, a publicly available Python library (build on top of Pytorch) that enables biometric researchers to inspect their models through mechanistic interpretability. It provides a plug-and-play solution that allows researchers to seamlessly switch between the analyzed biometric models, evaluate state-of-the-art sparse autoencoders, select from various image parametrizations, and fine-tune hyperparameters. Using a large scale Glint360K dataset, we demonstrate the usability of FaceMINT by applying its functionality to two state-of-the-art (deep-learning) face recognition models: AdaFace, based on Convolutional Neural Networks (CNN), and SwinFace, based on transformers. The proposed library implements various sparse auto-encoders (SAEs), including vanilla SAE, Gated SAE, JumpReLU SAE, and TopK SAE, which have achieved state-of-the-art results in the mechanistic interpretability of large language models. Our study highlights the promise of mechanistic interpretability in the biometric field, providing new avenues for researchers to explore model transparency and refine biometric recognition systems. The library is publicly available at www.gitlab.com/peterrot/facemint .},
-  archive      = {J_ICV},
-  author       = {Peter Rot and Robert Jutreša and Peter Peer and Vitomir Štruc and Walter Scheirer and Klemen Grm},
-  doi          = {10.1016/j.imavis.2025.105804},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105804},
-  shortjournal = {Image Vis. Comput.},
-  title        = {FaceMINT: A library for gaining insights into biometric face recognition via mechanistic interpretability},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). DBaP-net: Deep network for image defogging based on physical properties prior. <em>ICV</em>, <em>165</em>, 105803. (<a href='https://doi.org/10.1016/j.imavis.2025.105803'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In the realm of computer vision, high-quality image information serves as the foundation for downstream tasks. Nevertheless, elements such as foggy weather, suboptimal lighting circumstances, and atmospheric impurities frequently deteriorate image quality, posing a considerable research challenge in effectively restoring these low-quality images. Existing defogging approaches mainly rely on constraints and physical priors; however, they have demonstrated limited efficacy, especially when dealing with extensive fog-affected areas. To tackle this issue, a deep trainable de-fog network named DBaP-net is proposed in this paper. By leveraging convolutional neural networks, this network integrates diverse filters to extract physical priors from images. Through the construction of a sophisticated deep network architecture, DBaP-net precisely estimates the transmission map and efficiently facilitates the restoration of haze-free images. Additionally, we design a spatial transformation layer customized for physical prior features and adopt a multi-kernel fusion extraction technique to further enhance the model’s feature extraction capabilities and spatial adaptability, thereby laying a solid foundation for subsequent visual tasks. Experimental validation indicates that DBaP-net not only effectively eliminates haze from images but also significantly enhances their overall quality. In both quantitative and qualitative evaluations, DBaP-net surpasses other comparison algorithms in terms of efficiency and usability. As a result, this study offers a novel solution to the image defogging problem within computer vision frameworks, enabling the precise restoration of low-quality images and providing robust support for research endeavors and downstream applications in related fields.},
-  archive      = {J_ICV},
-  author       = {Bo Yu and Hanting Wei and Chenghong Zhang and Wei Wang},
-  doi          = {10.1016/j.imavis.2025.105803},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105803},
-  shortjournal = {Image Vis. Comput.},
-  title        = {DBaP-net: Deep network for image defogging based on physical properties prior},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). DGFMamba: Model fine-tuning based on bidirectional state space for domain generalization semantic segmentation. <em>ICV</em>, <em>165</em>, 105800. (<a href='https://doi.org/10.1016/j.imavis.2025.105800'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Compared with traditional semantic segmentation, Domain Generalization Semantic Segmentation (DGSS) focuses more on improving the generalization of models in unseen domains. Existing methods are mainly based on Transformers and convolutional neural networks, which have limited receptive fields and high complexity. Mamba, as a new state-space model, can solve these problems well. Nevertheless, the problems of hidden states and learning domain-invariant semantic features make it difficult to apply to DGSS. In this paper, we propose a model fine-tuning method named DGFMamba, which introduces Hidden State Fine-tuning Tokens (HSFT) and Feature-level Bidirectional Selective Scan Module (FBSSM) to improve the feature maps. HSFT, which consists of channel tokens and feature tokens, can perform local forgetting on feature maps. Feature-level embedding allows feature maps to be input to FBSSM with single pixels as vectors. FBSSM obtains contextual information from both forward and reverse directions, with reverse information serving as a complement to forward information. To further reduce the trainable parameters of the model, the parameters of FBSSM and MLP at each layer are shared. DGFMamba achieves promising results in experiments with different settings. This also demonstrates the effectiveness of applying state-space models to model fine-tuning. The average mIoU under the GTAV → scapes+BDD100K+Mapillary setting is 64.4%. The average mIoU under the GTAV+Synthia → Cityscapes+BDD100K+Mapillary setting is 65.8%. It is worth noting that DGFMamba only adds an additional 0.5% of trainable parameters. The code is available at https://github.com/xiaoxia0722/DGFMamba .},
-  archive      = {J_ICV},
-  author       = {Yongchao Qiao and Ya’nan Guan and Zhiyou Wang and Jingmin Yang and Wenyuan Yang},
-  doi          = {10.1016/j.imavis.2025.105800},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105800},
-  shortjournal = {Image Vis. Comput.},
-  title        = {DGFMamba: Model fine-tuning based on bidirectional state space for domain generalization semantic segmentation},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Automated recognition of humerus anomalies with convolutional neural networks. <em>ICV</em>, <em>165</em>, 105799. (<a href='https://doi.org/10.1016/j.imavis.2025.105799'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Humerus anomalies are a problem that requires rapid and accurate diagnosis to ensure immediate and efficient treatment. In this context, the main goal of this paper is to develop and analyze well-known Convolutional Neural Network models for the automatic recognition of humeral fractures, with the aim of proposing a useful tool for healthcare personnel. Specifically, three distinct architectures were implemented and compared: a three-layer untrained neural network, a network based on the ResNet18 architecture and one based on the DenseNet121 model, both of which were trained. The performance analysis highlighted a trade-off between accuracy and generalization ability, showing better accuracy in the pre-trained models - in particular, the DenseNet121 model achieved optimal accuracy across multiple runs of 85%. - which however proved more prone to suffer from overfitting compared to the non-pre-trained model. As a result, this study aims to propose the integration of deep learning tools in medical practice, laying important foundations for future developments, with the hope of improving the efficiency and accuracy of orthopedic diagnoses.},
-  archive      = {J_ICV},
-  author       = {Gea Viozzi and Fabio Persia and Daniela D’Auria},
-  doi          = {10.1016/j.imavis.2025.105799},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105799},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Automated recognition of humerus anomalies with convolutional neural networks},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). LSBE-net: Semantic segmentation of large-scale point cloud scenes via local boundary feature and spatial attention aggregation. <em>ICV</em>, <em>165</em>, 105798. (<a href='https://doi.org/10.1016/j.imavis.2025.105798'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {3D point cloud semantic segmentation plays a pivotal role in comprehending 3D scenes and facilitating environmental perception. Existing studies predominantly emphasize the extraction of local geometric structures, but they often overlook the incorporation of local boundary cues and long-range spatial relationships. This limitation hampers precise delineation of object boundaries and impairs the distinction of long distance instances. To address these challenges, we propose LSBE-Net, a novel segmentation algorithm designed to extract local boundary features and integrate spatial context features. The Local Surface Representation (LSR) module is introduced to capture local geometric shapes by encoding both surface and positional features, thereby providing critical structural information. The Local Boundary Enhancement (LBE) module extracts boundary features and fuses them with geometric and semantic features through a transformer mechanism within local neighborhoods, enabling the learning of contextual relationships and refinement of boundary delineation. These features are aggregated through the Spatial Encoding Attention (SEA) module, which facilitates the learning of long-range dependencies and spatial relationship across the point cloud. The proposed LSBE-Net is extensively evaluated on three large-scale benchmark datasets: S3DIS, Toronto3D, and Semantic3D. Our method achieves competitive mean Intersection over Union (mIoU) scores of 66.1%, 82.3%, and 78.0%, respectively, demonstrating its effectiveness and robustness in diverse real-world scenarios.},
-  archive      = {J_ICV},
-  author       = {Hailang Wang and Keke Duan and Mingzi Zhang and Li Ma},
-  doi          = {10.1016/j.imavis.2025.105798},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105798},
-  shortjournal = {Image Vis. Comput.},
-  title        = {LSBE-net: Semantic segmentation of large-scale point cloud scenes via local boundary feature and spatial attention aggregation},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). W-MambaFuse: A wavelet decomposition and adaptive state-space modeling approach for anatomical and functional image fusion. <em>ICV</em>, <em>165</em>, 105796. (<a href='https://doi.org/10.1016/j.imavis.2025.105796'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Anatomical-functional image fusion plays a critical role in a variety of medical and biological applications. Current convolutional neural network-based fusion algorithms are constrained by their limited receptive fields, impeding the effective modeling of long-range dependencies in medical images. While transformer-based architectures possess global modeling capabilities, they face computational challenges due to the quadratic complexity of their self-attention mechanisms. To address these limitations, we propose a network based on wavelet-domain decomposition and an adaptive selectively structured state space model, termed as W-MambaFuse, for anatomical and functional image fusion. Specifically, the network first applies a wavelet transform to enlarge the receptive field of the convolutional layers, facilitating the capture of low-frequency structural outlines and high-frequency textural primitives. Furthermore, we develop an adaptive gated fusion module, referred to as CNN-Mamba Gated (MCG), which leverages the dynamic modeling capability of state space models and the local feature extraction strengths of convolutional neural networks. This design facilitates the effective extraction of both intra-modal and inter-modal features, thereby enhancing multimodal image fusion. Experimental results on benchmark datasets demonstrate that W-MambaFuse consistently outperforms pure CNN-based models, transformer-based models, and CNN-transformer hybrid approaches in terms of both visual quality and quantitative evaluations. Our code is publicly available at https://github.com/Bowen-Zhong/W-Mamba .},
-  archive      = {J_ICV},
-  author       = {Bowen Zhong and Shijie Li and Xuan Deng and Zheng Li},
-  doi          = {10.1016/j.imavis.2025.105796},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105796},
-  shortjournal = {Image Vis. Comput.},
-  title        = {W-MambaFuse: A wavelet decomposition and adaptive state-space modeling approach for anatomical and functional image fusion},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). EmbryoVision AI: An explainable deep learning framework for enhanced blastocyst selection in assisted reproductive technologies. <em>ICV</em>, <em>165</em>, 105795. (<a href='https://doi.org/10.1016/j.imavis.2025.105795'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Accurate embryo selection is a key factor in improving implantation success rates in Assisted Reproductive Technologies. This study presents a deep learning framework, EmbryoVision AI , designed to enhance blastocyst assessment using Time-Lapse Imaging and eXplainable AI techniques. A customized convolutional neural network was developed to capture both morphological and temporal dynamics, enabling a precise classification of the embryo. To ensure transparency, Gradient-weighted Class Activation Mapping was integrated, allowing visualization of decision-critical embryonic structures and ensuring clinical alignment. The model demonstrated strong predictive performance across different embryo grades, achieving an accuracy of 91.5% for Grade AA, 88.4% for Grade AB, and 79.3% for Grade BC. The AUC-ROC values were 0.95, 0.90, and 0.81 for Grade AA, AB, and BC, respectively, indicating strong discriminatory capabilities. The findings suggest that AI-driven embryo selection can enhance objectivity, reduce human variability, and improve ART outcomes. However, the results also underscore the need to refine AI models to better handle morphological variability in lower-quality embryos, highlighting the importance of improving generalization and strengthening clinical integration.},
-  archive      = {J_ICV},
-  author       = {Alessia Auriemma Citarella and Pietro Battistoni and Chiara Coscarelli and Fabiola De Marco and Luigi Di Biasi and Mengyuan Wang},
-  doi          = {10.1016/j.imavis.2025.105795},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105795},
-  shortjournal = {Image Vis. Comput.},
-  title        = {EmbryoVision AI: An explainable deep learning framework for enhanced blastocyst selection in assisted reproductive technologies},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). CMDiff: Clip-guided multi-dimension mamba diffusion model for low light image enhancement. <em>ICV</em>, <em>165</em>, 105787. (<a href='https://doi.org/10.1016/j.imavis.2025.105787'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Significant progress has been made in low-light image enhancement techniques, but unstable image quality recovery and suboptimal visual perception remain challenges. To address these issues, we propose a robust low-light image enhancement method, CLIP-guided multi-dimension mamba diffusion (CMDiff). Our framework utilizes the CLIP model for scene information guidance via feature modulation to enhance the model’s perception of scene details. We combine the multidimension Mamba block with UNet to construct a denoising network that leverages Mamba’s strengths in processing long sequences and global contextual information. The multi-dimension Mamba module integrates key information from multiple image dimensions with linear time complexity, thus facilitating effective and comprehensive feature learning. Extensive experiments on real-world benchmarks show that our approach outperforms state-of-the-art methods in terms of image quality and noise rejection.},
-  archive      = {J_ICV},
-  author       = {Chengbo Yu and Dengshi Li and Jia Wei and Yulin Wu and AoLei Chen},
-  doi          = {10.1016/j.imavis.2025.105787},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105787},
-  shortjournal = {Image Vis. Comput.},
-  title        = {CMDiff: Clip-guided multi-dimension mamba diffusion model for low light image enhancement},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Fidelity-preserving zero-shot diffusion models for highly ill-posed inverse problems in lensless imaging. <em>ICV</em>, <em>165</em>, 105786. (<a href='https://doi.org/10.1016/j.imavis.2025.105786'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Diffusion models have been extensively explored for solving ill-posed inverse problems, achieving remarkable performance. However, their applicability to real-world scenarios, such as lensless imaging, has not been well investigated. Modern lensless imaging has compact form factor, low-cost hardware requirement, and intrinsic compressive imaging capabilities, but these advantages pose highly ill-posed inverse problems. In this work, we introduce a training-free zero-shot diffusion model, termed Dilack , for restoring raw images captured by lensless cameras that are degraded by large and complex kernels. Our approach incorporates novel data fidelity terms, referred to as the pseudo-inverse anchor for constraining (PiAC) fidelity loss, to enhance reconstruction quality by addressing the ill-posed nature of challenging inverse problems. Additionally, inspired by locally acting classical regularizers, we propose integrating masked fidelity within the PiAC loss. This scheme enables interaction with globally acting diffusion models while adaptively enforcing spatially and stepwise local fidelity through masks. Our proposed framework effectively mitigates erratic behavior and inherent artifacts in diffusion models when used for highly ill-posed inverse problems, significantly improving the quality of lensless camera raw image restoration, including perceptual aspects. Experimental results on both synthetic and real-world datasets for modern lensless imaging demonstrate that our approach outperforms prior arts including classical and existing diffusion based methods. The code is available at https://github.com/mundongju/Dilack .},
-  archive      = {J_ICV},
-  author       = {Haechang Lee and Dong Ju Mun and Hyunwoo Lee and Kyung Chul Lee and Seongmin Hong and Gwanghyun Kim and Seung Ah Lee and Se Young Chun},
-  doi          = {10.1016/j.imavis.2025.105786},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105786},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Fidelity-preserving zero-shot diffusion models for highly ill-posed inverse problems in lensless imaging},
-  volume       = {165},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Enhanced skeleton-based group activity recognition through spatio-temporal graph convolution with cross-dimensional attention. <em>ICV</em>, <em>165</em>, 105784. (<a href='https://doi.org/10.1016/j.imavis.2025.105784'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Group Activity Recognition is a pivotal task in video understanding, with broad applications ranging from surveillance to human–computer interaction. Traditional RGB-based methods face challenges such as privacy concerns, environmental sensitivity, and fragmented scene-level semantic understanding. Skeleton-based approaches offer a promising alternative but often suffer from limited exploration of heterogeneous features and the absence of explicit modeling for human-object interactions. In this paper, we introduce a lightweight framework for skeleton-based GAR, leveraging an attention-enhanced spatio-temporal graph convolutional network. Specially, we first decouple joint and bone features along with their motion patterns, constructing a global human-object relational graph using an attention graph convolution module (AGCM). Additionally, we incorporate a Multi-Scale Temporal Convolution Module (MTC) and a Cross-Dimensional Attention Module (CDAM) to dynamically focus on key spatio-temporal nodes and feature channels. Our method achieves significant improvements in accuracy while maintaining high computational efficiency, making it suitable for real-time applications in privacy-sensitive scenarios. Experiments on the Volleyball and NBA datasets demonstrate that our method achieves competitive performance using only skeleton input, significantly reducing parameters and computational cost compared to mainstream approaches. Here, our method show an improvement in Multi-Class Per-Class Accuracy (MPCA) to 96.1% on the Volleyball dataset and 71.6% on the NBA dataset, offering a lightweight and efficient solution for GAR in privacy-sensitive scenarios.},
-  archive      = {J_ICV},
-  author       = {Dongli Wang and Yongcan Weng and Xiaolin Zhu and Yan Zhou and Zixin Zhang and Richard Irampaye},
-  doi          = {10.1016/j.imavis.2025.105784},
-  journal      = {Image and Vision Computing},
-  month        = {1},
-  pages        = {105784},
-  shortjournal = {Image Vis. Comput.},
-  title        = {Enhanced skeleton-based group activity recognition through spatio-temporal graph convolution with cross-dimensional attention},
-  volume       = {165},
+  title        = {BSA-dehaze: Multi-scale bitemporal fusion and size-aware decoder for unsupervised image dehazing},
+  volume       = {166},
   year         = {2026},
 }
 </textarea>

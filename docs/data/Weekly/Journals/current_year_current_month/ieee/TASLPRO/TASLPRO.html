@@ -25,8 +25,206 @@
 </head>
 <body>
 
-<h2 id="taslpro">TASLPRO - 358</h2>
+<h2 id="taslpro">TASLPRO - 369</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Towards effective and efficient non-autoregressive decoders for conformer and LLM-based ASR using block-based attention mask. <em>TASLPRO</em>, <em>33</em>, 4880--4896. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633090'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Automatic speech recognition (ASR) systems often rely on autoregressive (AR) Transformer decoder architectures, which limit efficient inference parallelization due to their sequential nature.To this end, non-autoregressive (NAR) approaches aim primarily to achieve significant decoding speedup while the maintaining recognition accuracy that is comparable to AR baselines. This paper proposes a novel NAR block-based attention mask decoder (AMD) that effectively improves decoding efficiency while maintaining ASR accuracy, and also offering flexibility in balancing the performance-efficiency trade-off on both Conformer and large language model (LLM)-based ASR systems. The proposed AMD performs parallel inference within contiguous blocks of output labels while maintaining monotonic left-to-right prediction between blocks. A one-pass beam search algorithm is designed to dynamically fuse Connectionist Temporal Classification (CTC), AR decoder, and AMD probabilities. Experiments are conducted on normal speech LS960 and DBank elderly speech across: a) The Conformer encoder-decoder ASR system with filterbank input features; b) its integration with WavLM features; and c) further advancement by integrating an LLM-based decoder. On the LS960 task, the proposed AMD empowered tripartite decoder achieves decoding speedup ratios of up to 1.44x, 1.55x, and 2.31x under the three model configurations over the CTC + AR baselines, without statistically significant WER increases. When operating with real-time factors (RTFs) comparable to the baselines, the tripartite decoder produces statistically significant WER reductions of 0.19%, 0.62% and 0.13% absolute (4.3%, 16.3%, and 3.8% relative). Similar improvements are also obtained on the DBank task, where the tripartite decoder accelerates decoding by up to 1.38x, 1.64x and 1.61x without statistically significant WER increase, and yields statistically significant WER reductions of 0.46%, 0.38% and 0.41% absolute (1.8%, 1.8%, and 2.0% relative) when operating with RTFs comparable to the CTC + AR baselines.},
+  archive  = {J},
+  author   = {Tianzi Wang and Xurong Xie and Zengrui Jin and Mengzhe Geng and Jiajun Deng and Zhaoqing Li and Shoukang Hu and Shujie Hu and Guinan Li and Mingyu Cui and Helen Meng and Xunying Liu},
+  doi      = {10.1109/TASLPRO.2025.3633090},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4880--4896},
+  title    = {Towards effective and efficient non-autoregressive decoders for conformer and LLM-based ASR using block-based attention mask},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Read between the tokens: Differentiable text pruning via perturbed top-$k$ selection. <em>TASLPRO</em>, <em>33</em>, 4870--4879. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629289'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Transformer-based pretrained language models (PLMs) face scalability issues due to their computational expense, which increases with the length of the input sequence, and often struggle to maintain focus on relevant information. To mitigate this, we introduce PrunePert, a novel model featuring a learnable mechanism that identifies and removes uninformative tokens from the context. By doing so, our method not only addresses performance concerns but also enhances interpretability, offering valuable insights into the tokens utilized in the model's decision-making process. Specifically, our approach employs a differentiable perturbed top-$k$ token selection module within the transformer layers to prune a user-defined percentage of tokens. It can be integrated with any downstream PLMs, allowing them to be trained end-to-end using backpropagation. We demonstrate the application of PrunePert in text summarization and classification tasks, utilizing both encoder–decoder PLMs and contemporary decoder-only large language models. Notably, our findings reveal that models equipped with PrunePert achieve up to 2x higher throughput and exhibit comparable performance in text summarization, while demonstrating superior performance in text classification tasks.},
+  archive  = {J},
+  author   = {Paolo Italiani and Luca Ragazzi and Gianluca Moro},
+  doi      = {10.1109/TASLPRO.2025.3629289},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4870--4879},
+  title    = {Read between the tokens: Differentiable text pruning via perturbed top-$k$ selection},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interactive target positive and negative features modeling for monaural speech enhancement. <em>TASLPRO</em>, <em>33</em>, 4856--4869. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633071'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Speech enhancement (SE) often struggles with residual noise and speech distortion when speech and noise share overlapping feature representations. To enhance the discriminability between speech and noise, many existing methods introduce explicit noise modeling as a way to provide stronger contrastive supervision. However, their effectiveness is fundamentally limited by the unpredictable and unstructured nature of noise signals. In this work, we propose the Positive-Negative Features Decomposition and Fusion SE Network (PN-DeFuSE-Net). Instead of modeling noise explicitly, PN-DeFuSE-Net decomposes the input features into speech-dominant (target-positive) and noise-dominant (target-negative) components to enable more effective separation. These features interact through guided correction, allowing the model to recover residual speech from noise-dominant regions while suppressing residual noise in speech-dominant areas. To support this architecture, we introduce three key modules: (1) a self-similarity-guided Decomposition Module that captures static and dynamic patterns across perceptual frequency bands; (2) a Convolutional Back-Projection Module (CBPM) that enhances fine-grained speech details through residual compensation; and (3) a Multi-sparsity Back-projection Conformer Module (MBCM) that refines time-frequency dependencies with sparsity-aware attention. Extensive evaluations across diverse noise environments demonstrate that PN-DeFuSE-Net achieves substantial improvements in speech quality and intelligibility, significantly reducing speech distortion and residual noise compared to prior models.},
+  archive  = {J},
+  author   = {Xinmeng Xu and Weiping Tu and Yuhong Yang and Jizhen Li and Yiqun Zhang},
+  doi      = {10.1109/TASLPRO.2025.3633071},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4856--4869},
+  title    = {Interactive target positive and negative features modeling for monaural speech enhancement},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sound source localization using multi-dictionary orthogonal matching pursuit in reverberant environments. <em>TASLPRO</em>, <em>33</em>, 4844--4855. (<a href='https://doi.org/10.1109/TASLPRO.2025.3624966'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Sound source localization in reverberant environments remains a challenging problem, particularly when precise position estimation is required. Existing DOA estimation methods, while effective in determining sound direction, often fall short of accurate position estimation in adverse acoustic conditions due to their inherent constraints. In this paper, we propose Multi-Dictionary Orthogonal Matching Pursuit (MD-OMP), extending sparse recovery methods by jointly exploiting spatial, temporal, and spectral information for source position estimation. MD-OMP iteratively selects candidate grid entries that maximize joint correlation across time frames and frequency bins, thereby enhancing localization accuracy under reverberant conditions. We also introduce a generalized extension of the algorithm to accommodate an arbitrary number of multidimensional domains, thereby supporting advanced applications such as higher-order source modeling and scenarios with dominant frequency components. To validate the effectiveness of MD-OMP, we arrange microphones along the room walls to form a perimeter array and conduct both extensive simulations and practical experiments in a conference room setting. Numerical simulations under various acoustic conditions—including different reverberation times, candidate grid densities, frequency ranges, source types, and room dimensions—show that MD-OMP consistently outperforms group-sparsity-based and TDOA-based benchmark methods in localization accuracy. Experimental results in a realistic office environment further verify its practical applicability. Overall, MD-OMP achieves accurate and robust source position estimation across diverse and challenging scenarios.},
+  archive  = {J},
+  author   = {Wei-Ting Lai and Lachlan Birnie and Thushara Abhayapala and Amy Bastine and Prasanga Samarasinghe},
+  doi      = {10.1109/TASLPRO.2025.3624966},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4844--4855},
+  title    = {Sound source localization using multi-dictionary orthogonal matching pursuit in reverberant environments},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Listen to extract: Onset-prompted target speaker extraction. <em>TASLPRO</em>, <em>33</em>, 4832--4843. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633088'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We propose listen to extract (LExt), a highly-effective while extremely-simple algorithm for monaural target speaker extraction (TSE). Given an enrollment utterance of a target speaker, LExt aims at extracting the target speaker from the speaker’s mixed speech with other speakers. For each mixture, LExt concatenates an enrollment utterance of the target speaker to the mixture signal at the waveform level, and trains deep neural networks (DNN) to extract the target speech based on the concatenated mixture signal. The rationale is that, this way, an artificial speech onset is created for the target speaker and it could prompt the DNN (a) which speaker is the target to extract; and (b) spectral-temporal patterns of the target speaker that could help extraction. This simple approach produces strong TSE performance on multiple public TSE datasets including WSJ0-2mix, WHAM! and WHAMR!.},
+  archive  = {J},
+  author   = {Pengjie Shen and Kangrui Chen and Shulin He and Pengru Chen and Shuqi Yuan and He Kong and Xueliang Zhang and Zhong-Qiu Wang},
+  doi      = {10.1109/TASLPRO.2025.3633088},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4832--4843},
+  title    = {Listen to extract: Onset-prompted target speaker extraction},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A visual annotation-free method that rivals fully supervised methods for grounded multimodal named entity recognition. <em>TASLPRO</em>, <em>33</em>, 4821--4831. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633057'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Grounded Multimodal Named Entity Recognition (GMNER) aims to extract named entities, their types, and corresponding visual objects from image-text pairs. However, existing GMNER methods rely on costly multimodal annotations, limiting their scalability in real applications. To address this issue, we propose a visual annotation-free framework that leverages text-only NER data and a Zero-shot Entity Visual Grounding (ZeroEVG) approach. ZeroEVG consists of three modules: (1) Candidate Object Generation, which pre-selects visual object candidates; (2) Entity-Object Matching, which determines whether an entity has a visual presence; and (3) Entity Visual Localization, which employs a variant of GradCAM to identify bounding boxes for groundable entities. Experimental results on two benchmark datasets show that our visual annotation-free framework achieves competitive performance with fully supervised multimodal approaches, and even surpasses some of them under the same backbone on both GMNER and EVG tasks.},
+  archive  = {J},
+  author   = {Jia Yang and Jianfei Yu and Zilin Du and Wenya Wang and Li Yang and Rui Xia and Boyang Li},
+  doi      = {10.1109/TASLPRO.2025.3633057},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4821--4831},
+  title    = {A visual annotation-free method that rivals fully supervised methods for grounded multimodal named entity recognition},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A joint training framework for noise-robust speech recognition through multi-level feature fusion. <em>TASLPRO</em>, <em>33</em>, 4808--4820. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633058'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In robust speech recognition systems, speech enhancement is commonly employed as a front-end preprocessing module to eliminate noise components from speech segments. However, this process inevitably introduces speech distortion while removing noise, leading to the loss of speech information, therefore causing performance decline in ASR. To address this issue, this paper proposes an innovative multi-level feature fusion (MLFF) architecture. First, during the speech enhancement stage, a multi-head self-attention and convolutional fusion network (MCF-Net) integrates the masking features and mapping features generated by enhancement processing, achieving preliminary alleviation of speech distortion. Subsequently, a cross-information fusion network (CIF-Net) performs secondary fusion between the MCF-Net output features and original noisy features to further mitigate distortion effects. Finally, last-stage fusion is conducted through an adaptive feature fusion network (AFF-Net) between the abstract representations from the ASR encoder and the hidden layer features from intermediate speech enhancement stages, comprehensively compensating for information loss across processing stages. Experimental results on AISHELL-1 (Chinese) and LibriSpeech 100 h (English) datasets demonstrate that our method achieves state-of-the-art (SOTA) performance in CER/WER metrics, validating the robustness and effectiveness of the proposed architecture.},
+  archive  = {J},
+  author   = {Cunhang Fan and Jiahao Li and Enrui Liu and Jiangyan Yi and Xinhui Li and Ruibo Fu and Zhao Lv},
+  doi      = {10.1109/TASLPRO.2025.3633058},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4808--4820},
+  title    = {A joint training framework for noise-robust speech recognition through multi-level feature fusion},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parallel delayed memory units for enhanced temporal modeling in biomedical and bioacoustic signal analysis. <em>TASLPRO</em>, <em>33</em>, 4797--4807. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633044'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Advanced deep learning architectures, particularly recurrent neural networks (RNNs), have been widely applied in audio, bioacoustic, and biomedical signal analysis, especially in data-scarce environments. While gated RNNs remain effective, they can be relatively over-parameterised and less training-efficient in some regimes [Ravanelli et al. (2017)], [Sun et al. (2024)], while linear RNNs tend to fall short in capturing the complexity inherent in bio-signals. To address these challenges, we propose the Parallel Delayed Memory Unit (PDMU), a delay-gated state-space module for short-term temporal credit assignment targeting audio and bioacoustic signals, which enhances short-term temporal state interactions and memory efficiency via a gated delay-line mechanism. Unlike previous Delayed Memory Units (DMU) that embed temporal dynamics into the delay-line architecture, the PDMU further compresses temporal information into vector representations using Legendre Memory Units (LMU). This design serves as a form of causal attention, allowing the model to dynamically adjust its reliance on past states and improve real-time learning performance. Notably, in low-information scenarios, the gating mechanism behaves similarly to skip connections by bypassing state decay and preserving early representations, thereby facilitating long-term memory retention. The PDMU is modular, supporting parallel training and sequential inference, and can be easily integrated into existing linear RNN frameworks. Furthermore, we introduce bidirectional, efficient, and spiking variants of the architecture, each offering additional gains in performance or energy efficiency. Experimental results on diverse audio and biomedical benchmarks demonstrate that the PDMU significantly enhances both memory capacity and overall model performance.},
+  archive  = {J},
+  author   = {Pengfei Sun and Wenyu Jiang and Paul Devos and Dick Botteldooren},
+  doi      = {10.1109/TASLPRO.2025.3633044},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4797--4807},
+  title    = {Parallel delayed memory units for enhanced temporal modeling in biomedical and bioacoustic signal analysis},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BER-ES: An enhanced audio-visual emotion recognition network utilizing emotional similarity information. <em>TASLPRO</em>, <em>33</em>, 4787--4796. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633062'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Recent advancements in emotion recognition technology have spurred extensive research in artificial intelligence. A critical challenge in multimodal emotion recognition is efficiently aggregating information from various modalities to enhance model performance. This paper introduces the Bimodal Emotion Recognition Network Based on Emotional Similarity Information in Audio and Video (BER-ES), a deep learning network for audio-visual emotion recognition, which builds upon our previous work in this area. It features a multidimensional emotion-aware speech encoder and a video encoder that employs a multi-stage feature fusion strategy alongside dynamic deformable convolution to extract emotional information from both audio and video signals. By leveraging the intrinsic relationship between emotional expressions in these modalities, we developed a modality-shared similarity information encoder to extract and enhance cross-modal emotional similarity features between audio and video modalities. Utilizing a supervised loss function based on emotional similarity, we measure the interplay between audio-visual emotional features and similarity features, effectively guiding the encoder to capture cross-modal emotional correlations. We validated the BER-ES network on two benchmark datasets, IEMOCAP and CREMA_D [1], achieving weighted accuracy rates of 82.99% and 68.48% for four-class and six-class tasks, respectively, and 93.06% and 83.01%, outperforming other state-of-the-art methods. This work is an extension of our earlier research and presents a more robust approach for emotion recognition by incorporating innovative fusion and similarity features [2].},
+  archive  = {J},
+  author   = {Changwen Shi and Jian Xu and Xueqin Chen},
+  doi      = {10.1109/TASLPRO.2025.3633062},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4787--4796},
+  title    = {BER-ES: An enhanced audio-visual emotion recognition network utilizing emotional similarity information},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Structure-aware dual adversarial autoencoder for unsupervised bilingual lexicon induction. <em>TASLPRO</em>, <em>33</em>, 4771--4786. (<a href='https://doi.org/10.1109/TASLPRO.2025.3633041'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Bilingual lexicon induction (BLI) is a core task in multilingual natural language processing (NLP) that aims to generate cross-lingual word representations between languages. However, previous works often treat words as individual and isolated entities, neglecting the topological relationships both within a single embedding space (intra-space) and across different embedding spaces (inter-space). This restriction makes it difficult to match words from distinct language pairs with diverse topological structures, especially when the assumption of isomorphism between language spaces does not hold. Additionally, the quality of word representations is often compromised by noise introduced during insufficient pre-training of models, resulting in unstable and inaccurate BLI outcomes. To tackle these challenges, we propose a novel framework, named Structure-Aware Dual Adversarial Autoencoder (SA-DAAE), which explicitly captures diverse topological structure information and improves language alignment in an unsupervised manner. In the model, two lightweight graph convolutional networks (GCNs) are first utilized to discover intra-space topological correlations within monolingual embedding spaces and then generate refined embedding representations. Next, a dual denoising autoencoder (DAE) module is introduced to remove noise from the embeddings and explore inter-space topological structures, facilitating the initial alignment of two languages into a shared latent space. To further refine the coarse-grained alignment, we design a pairwise embedding fine-tuning (PEF) strategy, which operates independently of the global isomorphic assumption and enables word-specific transformations in a fully unsupervised manner. Through extensive experiments on several datasets across fifteen language pairs, comprising both low and high isomorphic relationships, we demonstrate the generalization and effectiveness of SA-DAAE.},
+  archive  = {J},
+  author   = {Qian Tao and Ziyan Li and Bocheng Han and Lusi Li},
+  doi      = {10.1109/TASLPRO.2025.3633041},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4771--4786},
+  title    = {Structure-aware dual adversarial autoencoder for unsupervised bilingual lexicon induction},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RefuteBench 2.0 – Agentic benchmark for dynamic evaluation of LLM responses to refutation instruction. <em>TASLPRO</em>, <em>33</em>, 4760--4770. (<a href='https://doi.org/10.1109/TASLPRO.2025.3626926'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {While large language models (LLMs) can leverage user feedback in multi-turn interactions, evaluating their ability to incorporate refutation feedback remains challenging. We introduce RefuteBench 2.0, an evaluation framework using LLM agents as refuters and evaluators to assess how models handle contradictory input. The framework includes transient and persistent refutation instructions with varying validity periods to reflect real-world interaction patterns. Meta-evaluation shows our approach generates human-like refutations and achieves high correlation with human evaluators. Experiments across various LLMs reveal a critical limitation: while models can satisfy immediate refutation requests, they fail to retain refutation information over extended dialogues. Notably, increasing refutations progressively degrades performance on the original task. Attention analysis confirms that current LLMs struggle with information retention and correct utilization in long-context scenarios, highlighting a fundamental weakness in their multi-turn reasoning capabilities.},
+  archive  = {J},
+  author   = {Jianhao Yan and Yun Luo and Yue Zhang},
+  doi      = {10.1109/TASLPRO.2025.3626926},
+  journal  = {IEEE Transactions on Audio, Speech and Language Processing},
+  pages    = {4760--4770},
+  title    = {RefuteBench 2.0 – Agentic benchmark for dynamic evaluation of LLM responses to refutation instruction},
+  volume   = {33},
+  year     = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Efficient multichannel auralization based on the modal decomposition of acoustic radiance transfer. <em>TASLPRO</em>, <em>33</em>, 4748--4759. (<a href='https://doi.org/10.1109/TASLPRO.2025.3629242'>www</a>)

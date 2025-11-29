@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 36</h2>
+<h2 id="tpds">TPDS - 45</h2>
 <ul>
 <li><details>
 <summary>
@@ -194,6 +194,177 @@
   pages        = {1--18},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Fully decentralized data distribution for large-scale HPC systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GLPilot: Efficient distributed GNN training with learnable embeddings. <em>TPDS</em>, 1--16. (<a href='https://doi.org/10.1109/TPDS.2025.3636057'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Neural Networks (GNNs) with learnable vertex embeddings enable models to infer rich, task-specific representations even when vertex features are sparse, noisy, or missing. In large-scale multi-GPU training, dynamically updated embeddings, often orders of magnitude larger than model parameters, severely degrade training efficiency. Specifically, loading remote embeddings and synchronizing their gradients collectively account for over 90% of per-iteration time. Traditional caching and parallelism approaches, designed for static embeddings or model parameters alone, are ineffective at mitigating this “data wall” of embedding-related transfers. To address this, we begin with a detailed analysis of vertex access patterns over training iterations and find that infrequently sampled vertices, despite incurring the majority of embedding-loading latency, undergo very few updates, making their embeddings ideal candidates for staleness reuse. Driven by this, we propose GLPilot, a novel system that mitigates embedding-related bottlenecks. GLPilot introduces a staleness-bounded embedding buffering mechanism to reduce remote fetches and a local gradient aggregation technique to minimize redundant communications during synchronization. Additionally, GLPilot utilizes an on-GPU cache for keeping mostly updated embeddings to alleviate CPU-GPU data transfer bottlenecks. Our evaluations on a 32-GPU cluster using two popular GNN models, three datasets and two optimizers demonstrate that GLPilot consistently achieves 1.28–1.93× per-epoch training speedups, in comparison with two strong baselines such as DGL and P3, while maintaining comparable model accuracy.},
+  archive      = {J_TPDS},
+  author       = {Chengru Yang and Chaoyi Ruan and Chengjie Tang and Ping Gong and Shiyi Wang and Xiang Song and Cheng Li},
+  doi          = {10.1109/TPDS.2025.3636057},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {GLPilot: Efficient distributed GNN training with learnable embeddings},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CuFastTuckerPlusTC: A stochastic parallel sparse FastTucker decomposition using GPU tensor cores. <em>TPDS</em>, 1--16. (<a href='https://doi.org/10.1109/TPDS.2025.3636547'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse tensors are prevalent in real-world applications, often characterized by their large-scale, high-order, and high dimensional nature. Directly handling raw tensors is impractical due to the significant memory and computational overhead involved. The current mainstream approach involves compressing or decomposing the original tensor. One popular tensor decomposition algorithm is the Tucker decomposition. However, existing state-of-the-art algorithms for large-scale Tucker decomposition typically relax the original optimization problem into multiple convex optimization problems to ensure polynomial convergence. Unfortunately, these algorithms tend to converge slowly. In contrast, tensor decomposition exhibits a simple optimization landscape, making local search algorithms capable of converging to a global (approximate) optimum much faster. In this paper, we propose the FastTuckerPlus algorithm, which decomposes the original optimization problem into two non-convex optimization problems and solves them alternately using the Stochastic Gradient Descent method. Furthermore, we introduce cuFastTuckerPlusTC, a fine-grained parallel algorithm designed for GPU platforms, leveraging the performance of tensor cores. This algorithm minimizes memory access overhead and computational costs, surpassing the state-of-the-art algorithms. Our experimental results demonstrate that the proposed method achieves a 2× to 8× improvement in convergence speed and a 3× to 5× improvement in per-iteration execution speed compared with state-of-the-art algorithms.},
+  archive      = {J_TPDS},
+  author       = {Zixuan Li and Mingxing Duan and Huizhang Luo and Wangdong Yang and Kenli Li and Keqin Li},
+  doi          = {10.1109/TPDS.2025.3636547},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {CuFastTuckerPlusTC: A stochastic parallel sparse FastTucker decomposition using GPU tensor cores},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NVMe-of-R: Fast recovery design on disaggregated distributed storage system. <em>TPDS</em>, 1--16. (<a href='https://doi.org/10.1109/TPDS.2025.3637057'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Failures in a large distributed storage system are often critical, leading to unexpected I/Os that are required to restore the system's health and ensure availability. With the advent of NVMe-oF, the disaggregation of compute and storage resources presents an opportunity to minimize the negative impact of the compute failure by reattaching the storage resources. However, despite advances in hardware, modern distributed storage systems have not yet fully adapted to the disaggregated architecture. There are four main reasons: (1) lack of awareness of recoverable failure events in the disaggregated architecture, (2) incorrect availability management with respect to the NVMe-oF fault domains, (3) unnecessary data rebalance I/Os for uniform distribution triggered even after the failure is recovered, (4) load imbalance caused by asymmetric deployment of compute resources after blind relocation for recovery. To address these challenges, we introduce NVMe-oF-R, a resilient disaggregated distributed storage architecture for fast recovery. NVMe-oF-R comprises three techniques: (1) NVMe-oF adapter, which detects recoverable failure events and orchestrates relocation; (2) DCRUSH, a data placement strategy that considers the NVMe-oF based disaggregation architecture; and (3) Relocater, which efficiently relocates failed compute resources and fixes stragglers that arise after recovery. We implement NVMe-oF-R atop the storage orchestration layer in a CRUSH-based distributed storage system, Ceph. Our experimental results demonstrate that NVMe-oF-R can eliminate unnecessary recovery traffic and reduce recovery time by more than 50%.},
+  archive      = {J_TPDS},
+  author       = {Myoungwon Oh and Cheolho Kang and Sungmin Lee and Woojoong Kim and Yangwoo Roh and Jeong-Uk Kang and Silwan Chang},
+  doi          = {10.1109/TPDS.2025.3637057},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {NVMe-of-R: Fast recovery design on disaggregated distributed storage system},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Based on tensor core sparse kernels accelerating deep neural networks. <em>TPDS</em>, 1--12. (<a href='https://doi.org/10.1109/TPDS.2025.3637268'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large language models in deep learning have numerous parameters, requiring significant storage space and computational resources. Compression techniques are highly effective in addressing these challenges. With the development of hardware like Graphics Processing Unit (GPU), Tensor Core can accelerate low-precision matrix multiplication but achieve acceleration for sparse matrices is challenging. Due to its sparsity, the utilization of Tensor Cores is relatively low. To address this, we propose the based on Tensor Core Compressed Sparse Row format (TC-CSR), which facilitates data loading on GPUs and matrix operations on Tensor Cores. Based on this format, we designed block Sparse Matrix-Matrix Multiplication (SpMM) and Sampled Dense-Dense Matrix Multiplication (SDDMM) kernels, which are common operations in deep learning. Utilizing these designs, we achieved a $\mathbf {1.41\times }$ speedup on Sputnik in scenarios of moderate sparsity and a $\mathbf {1.38\times }$ speedup with large-scale highly sparse matrices. Benefit from our design, we achieved a $\mathbf {1.75\times }$ speedup in end-to-end inference with sparse Transformers and save memory.},
+  archive      = {J_TPDS},
+  author       = {Shijie Lv and Debin Liu and Laurence T. Yang and Xiaosong Peng and Ruonan Zhao and Zecan Yang and Jun Feng},
+  doi          = {10.1109/TPDS.2025.3637268},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Based on tensor core sparse kernels accelerating deep neural networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HashTAG with CALM: Low-overhead hardware support for inter-task eviction monitoring. <em>TPDS</em>, 1--13. (<a href='https://doi.org/10.1109/TPDS.2025.3637171'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multicore processors have emerged as the preferred architecture for safetycritical systems due to their significant performance advantages. However, concurrent access by multiple cores to a shared cache induces intercore evictions that generate nondeterministic interference and compromise timing predictability. Static partitioning of the cache among cores is a wellestablished countermeasure that effectively eliminates such evictions but reduces flexibility and system throughput. To accurately estimate inter-core cache contention, Auxiliary Tag Directories (ATDs) are widely adopted. However, ATDs incur substantial hardware area costs, which often motivates the use of heuristic-based reductions. These reduced ATD designs, while more compact, compromise accuracy and therefore are not suitable for safety-critical domains. This paper extends the proposal of HashTAG, a novel approach to accurately upper-bound inter-core eviction interference. HashTAG introduces a safe and lightweight Auxiliary Tag Directory mechanism that tracks which cores are responsible for evicting cache lines used by others, thus measuring contention. We further refine the proposed HashTAG approach by creating CALM, a custom-made memory allocator that significantly improves HashTAG performance in multicore systems. Our results show that no inter-task interference underprediction is possible with HashTAG, making it suitable for the safety domain. HashTAG provides a 47% reduction in the Auxiliary Tag Directory area, presenting perfect measurements on 80% of cases and only a 1% error on maximum inter-core eviction measurements for a HashTAG tag size of ten bits.},
+  archive      = {J_TPDS},
+  author       = {Pablo Andreu and Pedro Lopez and Carles Hernandez},
+  doi          = {10.1109/TPDS.2025.3637171},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {HashTAG with CALM: Low-overhead hardware support for inter-task eviction monitoring},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Concurrent and orthogonal software power meters for accurate runtime energy profiling of parallel hybrid programs on heterogeneous hybrid servers. <em>TPDS</em>, 1--18. (<a href='https://doi.org/10.1109/TPDS.2025.3637511'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Energy predictive models employing performance events have emerged as a promising alternative to other mainstream methods for developing software power meters used in runtime energy profiling of applications. These models are cost-effective and provide a highly accurate means of measuring the energy consumption of applications during execution. Recently, software power meters have been proposed to profile the dynamic energy consumption of data transfers between CPU and GPU in heterogeneous hybrid platforms, thereby effectively addressing the gap between software power meters that measure computations and those that measure data transfers. However, the state-of-the-art software power meters lack fundamental properties essential for achieving accurate runtime energy profiling of parallel hybrid programs on heterogeneous hybrid servers. Two critical properties are concurrency and orthogonality. In this work, we define these essential properties and propose a methodology for developing concurrent and orthogonal platform-level software power meters capable of accurate runtime energy profiling of parallel hybrid programs on heterogeneous hybrid servers. We apply this methodology to develop software power meters for three heterogeneous hybrid servers that consist of Intel multicore CPUs and Nvidia GPUs from different generations. Furthermore, we demonstrate the accuracy and efficiency of the proposed software power meters by using them to estimate the dynamic energy consumption of computation and communication activities in three parallel hybrid programs. Our results show that the average prediction error for dynamic energy consumption by these software power meters is just 2.5% across our servers.},
+  archive      = {J_TPDS},
+  author       = {Hafiz Adnan Niaz and Ravi Reddy Manumachu and Alexey Lastovetsky},
+  doi          = {10.1109/TPDS.2025.3637511},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Concurrent and orthogonal software power meters for accurate runtime energy profiling of parallel hybrid programs on heterogeneous hybrid servers},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MAMILS: A memory-aware multi-objective scheduler for real-time embedded EEG depression diagnosis. <em>TPDS</em>, 1--18. (<a href='https://doi.org/10.1109/TPDS.2025.3637175'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Depression detection using Electroencephalogram (EEG) signals obtained from wearable medical-assisted diagnostic systems has become a well-established approach in the field of affective disorders. However, despite recent advancements, on-board Artificial Intelligence (AI) models still demand substantial computational resources, presenting significant challenges for deployment on resource-constrained wearable medical devices. Embedded Multi-core Processors (MPs) offer a promising solution for accelerating these models. However, the limited computational capabilities of embedded MPs, combined with the structural diversity of AI models, complicate resource allocation and increase associated costs. To address these challenges, we propose a Memory-Aware Multi-Objective Iterative Local Search (MAMILS) algorithm to optimize task scheduling, thereby improving the efficiency of AI model deployment on wearable EEG devices. Experimental results across seven AI models demonstrate that, the MAMILS approach yields substantial improvements in key performance indicators: Total Energy Consumption ($\bm {TEC}$) with an average reduction of 47.57%, $\bm {Makespan}$ with an average reduction of 48.75%, and $\bm {Throughput}$ with an average increase of 198.37%, all while maintaining satisfactory classification performance for both Machine Learning (ML) and Deep Learning (DL) models. Especially, on-board deployment of EEGNeX achieves an accuracy of 93.4%, sensitivity of 91.6%, and specificity of 95.8%. Further analysis indicates that, when integrated with wearable EEG sensors and executable on-board AI models, the proposed MAMILS optimization strategy shows significant promise in facilitating the widespread adoption of low-power, real-time diagnostic systems for depression detection.},
+  archive      = {J_TPDS},
+  author       = {Fuze Tian and Lixin Zhang and Qi Pan and Jingyu Liu and Qinglin Zhao and Bin Hu},
+  doi          = {10.1109/TPDS.2025.3637175},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {MAMILS: A memory-aware multi-objective scheduler for real-time embedded EEG depression diagnosis},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FLUXLog: A federated mixture-of-experts framework for unified log anomaly detection. <em>TPDS</em>, 1--15. (<a href='https://doi.org/10.1109/TPDS.2025.3638693'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional log anomaly detection systems are centralized, which poses the risk of privacy leakage during data transmission. Previous research mainly focuses on single-domain logs, requiring domain-specific models and retraining, which limits flexibility and scalability. In this paper, we propose a unified federated cross-domain log anomaly detection approach, FLUXLog, which is based on MoE (Mixture of Experts) to handle heterogeneous log data. Based on our insights, we establish a two phase training process: pre-training the gating network to assign expert weights based on data distribution, followed by expert driven top-down feature fusion. The following training of the gating network is based on fine-tuning the adapters, providing the necessary flexibility for the model to adapt across domains while maintaining expert specialization. This training paradigm enables a Hybrid Specialization Strategy, fostering both domain-specific expertise and cross-domain generalization. The Cross Gated Experts Module (CGEM) then fuses expert weights and dual channel outputs. Experiments on public datasets demonstrate that our model outperforms baseline models in handling unified cross-domain log data.},
+  archive      = {J_TPDS},
+  author       = {Yixiao Xia and Yinghui Zhao and Jian Wan and Congfeng Jiang},
+  doi          = {10.1109/TPDS.2025.3638693},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FLUXLog: A federated mixture-of-experts framework for unified log anomaly detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerating ML inference via opportunistic pre-loading on serverless clusters. <em>TPDS</em>, 1--18. (<a href='https://doi.org/10.1109/TPDS.2025.3638428'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless computing has emerged as a novel paradigm in cloud computing, characterized by its agile scalability, cost-effective pay-as-you-go billing, and user-friendly capabilities for Machine Learning (ML) inference tasks. Developers wrap their ML algorithms into serverless functions and run them in containers. However, the well-known cold-start problem significantly slows down the response time of functions. To address cold-starts, the technique of pre-warming, which proactively maintains containers in a warm state, has gained widespread adoption across both research and industry. Nevertheless, we observed that pre-warming does not address the distinct delays caused by the loading of ML artifacts. According to our analysis, in ML inference functions, the time required to load libraries and models significantly exceeds the time needed to warm containers. Thus, relying solely on pre-warming is insufficient for mitigating cold-starts. This paper presents Tyche, an opportunistic pre-loading approach designed to eliminate the latency associated with loading ML artifacts, enabling near-instant inference and minimizing function execution time. Tyche fully leverages the idle memory in warmed containers and GPUs to pre-load required libraries and models, striking an optimal balance between acceleration and resource efficiency. Additionally, Tyche is tailored for large-scale serverless platforms, incorporating cluster-wide scheduling and lightweight locality-aware load balancing to enhance performance. We design Tyche to be transparent to providers and compatible with existing pre-warming solutions. Experiments on OpenWhisk with real-world workloads show that Tyche reduces up to 93% loading latency and achieves up to 8× speedup compared to state-of-the-art pre-warming solutions. Compared with the state-of-the-art serverless pre-loading solution, Tyche also achieves up to 1.9× speedup.},
+  archive      = {J_TPDS},
+  author       = {Yifan Sui and Hanfei Yu and Yitao Hu and Jianxun Li and Hao Wang},
+  doi          = {10.1109/TPDS.2025.3638428},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {11},
+  pages        = {1--18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Accelerating ML inference via opportunistic pre-loading on serverless clusters},
   year         = {2025},
 }
 </textarea>
