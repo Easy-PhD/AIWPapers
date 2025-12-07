@@ -25,8 +25,103 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 45</h2>
+<h2 id="tpds">TPDS - 50</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Scheduling jobs under a variable number of processors. <em>TPDS</em>, 1--16. (<a href='https://doi.org/10.1109/TPDS.2025.3638703'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Even though it is usually assumed that data centers can always operate at maximum capacity, there have been recent scenarios where the amount of electricity that can be used by data centers evolve over time. Hence, the number of available processors is not a constant anymore. In this work, we assume that jobs can be checkpointed before a resource change. Indeed, in the scenarios that we consider, the resource provider warns the user before a change in the number of processors. It is thus possible to anticipate and take checkpoints before the change happens, such that no work is ever lost. The goal is then to maximize the goodput and/or the minimum yield of jobs within the next section (time between two changes in the number of processors). We model the problem and design greedy solutions and sophisticated dynamic programming algorithms with some optimality results for jobs of infinite duration, and adapt the algorithms to finite jobs. A comprehensive set of simulations, building on real-life job sets, demonstrates the performance of the proposed algorithms. Most algorithms achieve a useful platform utilization (goodput) of over 95%. With infinite jobs, the algorithms also keep fairness by having a relative minimum yield above 0.8, meaning that each job gets a good access to the platform (80% of the time that it would have had if each job had its perfect share of the platform). For finite jobs, the minimum yield can be low since very short new jobs may have to wait until the beginning of the next section to start (and finish), significantly impacting their yield. However, for 75% of the jobs within each workload, the yield ratio between these jobs is at most at a factor two, hence demonstrating the fairness of the proposed algorithms.},
+  archive      = {J_TPDS},
+  author       = {Anne Benoit and Joachim Cendrier and Frédéric Vivien},
+  doi          = {10.1109/TPDS.2025.3638703},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Scheduling jobs under a variable number of processors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EdgeDup: Popularity-aware communication-efficient decentralized edge data deduplication. <em>TPDS</em>, 1--13. (<a href='https://doi.org/10.1109/TPDS.2025.3638945'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data deduplication, originally designed for cloud storage systems, is increasingly popular in edge storage systems due to the costly and limited resources and prevalent data redundancy in edge computing environments. The geographical distribution of edge servers poses a challenge in aggregating all data storage information for global decision-making. Existing edge data deduplication (EDD) methods rely on centralized cloud control, which faces issues of timeliness and system scalability. Additionally, these methods overlook data popularity, leading to significantly increased data retrieval latency. A promising approach to this challenge is to implement distributed EDD without cloud control, performing regional deduplication with the edge server requiring deduplication as the center. However, our investigation reveals that existing distributed EDD approaches either fail to account for the impact of collaborative caching on data availability or generate excessive information exchange between edge servers, leading to high communication overhead. To tackle this challenge, this paper presents EdgeDup, which attempts to implement effective EDD in a distributed manner. Additionally, to ensure data availability, EdgeDup aims to maintain low data retrieval latency. EdgeDup achieves its goals by: 1) identifying data redundancies across different edge servers in the system; 2) deduplicating data based on their popularity; and 3) reducing communication overheads using a novel data dependency index. Extensive experimental results show that EdgeDup significantly enhances performance, i.e., reducing data retrieval latency by an average of 47.78% compared to state-of-the-art EDD approaches while maintaining a comparable deduplication ratio.},
+  archive      = {J_TPDS},
+  author       = {Ruikun Luo and Wang Yang and Qiang He and Feifei Chen and Song Wu and Hai Jin and Yun Yang},
+  doi          = {10.1109/TPDS.2025.3638945},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {EdgeDup: Popularity-aware communication-efficient decentralized edge data deduplication},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cross-rack aware recycle technique in erasure-coded data centers. <em>TPDS</em>, 1--15. (<a href='https://doi.org/10.1109/TPDS.2025.3639066'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data centers commonly use erasure codes to maintain high data reliability with lower storage overhead than replication. However, recycling invalid data blocks caused by deletion and update operations is challenging in erasure-coded data centers. Erasure codes organize data blocks into stripes, and we cannot directly delete invalid data blocks like replication to ensure the redundancy of the remaining valid blocks within a stripe. When considering the recycling issues in data centers, existing studies still need to address the following problems: ignoring heavy cross-rack traffic and the load imbalance problem during recycling, and incurring high disk seeks that affect writing performance after recycling. This paper presents the first systematic study on data re cycling in erasure-coded data centers and proposes a Cross rack Aware Recycle (CARecycle) technique. The key idea is migrating valid data blocks from certain stripes to rewrite invalid ones in others, thereby releasing the invalid blocks for certain stripes. Specifically, CARecycle first carefully examines the block distribution for each stripe and generates an efficient recycle solution for migrating and releasing, with the primary objective of reducing cross-rack traffic and disk seek load of nodes. Due to the rewriting of invalid data blocks, parity blocks in multiple stripes need to be updated concurrently. Thus, it further batch processes multiple stripes and selectively arranges appropriate stripes into a batch to achieve uniform cross-rack traffic load distribution. In addition, CARecycle can be extended to adapt to different erasure codes and boost recycling in heterogeneous network environments. Large-scale simulations and Amazon EC2 experiments show that CARecycle can reduce up to 33.8% cross rack traffic and 28.64%-59.64% recycle time while incurring low disk seek, compared to a state-of-the-art recycling technique.},
+  archive      = {J_TPDS},
+  author       = {Hai Zhou and Dan Feng},
+  doi          = {10.1109/TPDS.2025.3639066},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Cross-rack aware recycle technique in erasure-coded data centers},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enabling tile-based direct query on adaptively compressed data with GPU acceleration. <em>TPDS</em>, 1--18. (<a href='https://doi.org/10.1109/TPDS.2025.3639485'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The explosive growth of data poses significant challenges for GPU-based databases, which must balance limited memory capacity with the need for high-speed query execution. Compression has become an essential technique for optimizing memory utilization and reducing data movement. However, its benefits have been limited to the necessary data decompression. Querying compressed data conventionally requires decompression, which causes the query process to be significantly slower than a direct query on uncompressed data. To address this problem, this paper presents a novel GPU-accelerated tile-based direct query framework that successfully eliminates the limitation, significantly enhancing query performance. By employing direct query strategies, the framework minimizes data movement and maximizes memory bandwidth utilization. It incorporates tilebased hardware-conscious execution strategies for direct query, including memory management and control flow coordination, to improve execution efficiency. Additionally, adaptive data-driven compression formats are paired with tailored SQL operators to enable efficient support for diverse queries. Our experiments, conducted using the Star Schema Benchmark, show an average improvement of 3.5× compared to the state-of-the-art tilebased decompression scheme, while maintaining the space-saving advantages of compression. Notably, our solution consistently outperforms existing direct execution schemes for compressed data across all query types.},
+  archive      = {J_TPDS},
+  author       = {Yu Zhang and Feng Zhang and Yani Liu and Huanchen Zhang and Jidong Zhai and Wenchao Zhou and Xiaoyong Du},
+  doi          = {10.1109/TPDS.2025.3639485},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Enabling tile-based direct query on adaptively compressed data with GPU acceleration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey on machine learning-based HPC I/O analysis and optimization. <em>TPDS</em>, 1--15. (<a href='https://doi.org/10.1109/TPDS.2025.3639682'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The soaring computing power of HPC systems supports numerous large-scale applications, which generate massive data volumes and diverse I/O patterns, leading to severe I/O bottlenecks. Analyzing and optimizing HPC I/O is therefore critical. However, traditional approaches are typically customized and lack the adaptability required to cope with dynamic changes in HPC environments. To address the challenge, Machine Learning (ML) has been increasingly adopted to automate and enhance I/O analysis and optimization. Given sufficient I/O traces from HPC systems, ML can learn underlying I/O behaviors, extract actionable insights, and dynamically adapt to evolving workloads to improve performance. In this survey, we propose a novel taxonomy that aligns HPC I/O problems with learning tasks to systematically review existing studies. Through this taxonomy, we synthesize key findings on research distribution, data preparation, and model selection. Finally, we discuss several directions to advance the effective integration of ML in HPC I/O systems.},
+  archive      = {J_TPDS},
+  author       = {Jingxian Peng and Lihua Yang and Huijun Wu and Wenzhe Zhang and Zhenwei Wu and Wei Zhang and Jiaxin Li and Yiqin Dai and Yong Dong},
+  doi          = {10.1109/TPDS.2025.3639682},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A survey on machine learning-based HPC I/O analysis and optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Puffer: A serverless platform based on vertical memory scaling. <em>TPDS</em>, 1--14. (<a href='https://doi.org/10.1109/TPDS.2025.3628202'>www</a>)

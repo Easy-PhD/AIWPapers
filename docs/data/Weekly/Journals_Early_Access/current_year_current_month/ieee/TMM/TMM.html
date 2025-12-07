@@ -25,612 +25,669 @@
 </head>
 <body>
 
-<h2 id="tmm">TMM - 32</h2>
+<h2 id="tmm">TMM - 35</h2>
 <ul>
 <li><details>
 <summary>
-(2025). High-frequency prioritized sparse attention network for image restoration. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3618558'>www</a>)
+(2025). Tensor wheel completion with low-rank factor prior and adaptive graph regularizer for hyperspectral image recovery. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3632633'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Image restoration aims to restore high-quality images from degraded inputs caused by factors such as motion blur, defocus blur, and rain, where the primary difference between degraded and high-quality images lies in their high-frequency components. Despite the critical role of high frequencies in restoration, few methods explicitly prioritize computational resources for high frequencies over low frequencies. To address this issue, we propose a High-Frequency Prioritized Sparse Attention Network (HFP-SAN), a novel architecture for image restoration tasks. We explicitly prioritize high-frequency components by designing a symmetric encoder-decoder framework integrated with High-Frequency Selective Sparse Attention (HFSSA) modules while handling low-frequency components with a smaller residual network, thereby proportionally allocating computational resources based on their relative importance. HFSSA incorporates a Frequency-Selective Matching (FSM) algorithm to focus attention on strongly correlated high-frequency regions, mitigating computation on areas with weak correlations and irrelevant areas. Additionally, we introduce a dynamically adjustable high-frequency mask that guides the network to focus on the severely degraded regions, further refining restoration quality. The above designs ensure the final reconstructed image is a high-quality product. Experiments demonstrate that our HFP-SAN achieves state-of-the-art performance across multiple image restoration tasks, both quantitatively and qualitatively.},
+  abstract     = {Tensor wheel (TW) decomposition has been successfully applied to low-rank tensor completion (LRTC) to recover missing pixels in hyperspectral images (HSIs). However, existing TW models ignore the low-rank information in the factor space and the nonlinear geometric structure of HSIs, resulting in unsatisfactory recovery accuracy. To address these limitations, we propose a tensor wheel completion with low-rank factor prior and adaptive graph regularizer (TW-FPAG) for HSI recovery. First, we discover and prove the rank relationship between the tensor unfoldings and TW ring factors. Leveraging this relationship, we impose the matrix nuclear norm on factors, thereby enhancing the ability of TW decomposition to describe the low-rankness of HSIs. Second, we preserve the geometric proximity information of HSIs by constructing the nearest neighbor graph for each ring factor and integrating this information into the TW decomposition using the graph Laplacian. Finally, we extensively evaluate the proposed TW-FPAG on the hyperspectral image, multispectral image (MSI), and hyperspectral video (HSV). The experimental results demonstrate the superiority of our TW-FPAG method, with significant performance improvements of 2.81 to 5.07 dB for HSIs under a 10% sampling ratio compared to the best-compared results.},
   archive      = {J_TMM},
-  author       = {Shuting Dong and Zhe Wu and Hongyang Wei and Mingzhi Chen and Guanghao Li and Haolong Qian and Hanyang Peng and Chun Yuan},
-  doi          = {10.1109/TMM.2025.3618558},
+  author       = {Xin Tian and Kun Xie and Jigang Wen and Quan Feng},
+  doi          = {10.1109/TMM.2025.3632633},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Tensor wheel completion with low-rank factor prior and adaptive graph regularizer for hyperspectral image recovery},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A fusion-enhanced network for infrared and visible high-level vision tasks. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3640020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Infrared and visible dual-modality vision tasks such as semantic segmentation, object detection, and salient object detection can achieve robust performance even in extreme scenes by leveraging complementary information. However, most existing image fusion-based methods and task-specific frameworks exhibit limited generalization across multiple tasks. Moreover, summing the general representations obtained from foundation models poses challenges, including insufficient semantic information mining and feature fusion. In this paper, we propose a fusion-enhanced network, which effectively enriches semantic information and integrates features based on the complementary characteristics of infrared and visible modalities. The proposed network can extend to high-level vision tasks, showing strong generalization capabilities. Firstly, we adopt the infrared and visible foundation models to extract the general representations. Then, to enrich the semantic information of these general representations for high-level vision tasks, we design the feature enhancement module and the token enhancement module for feature maps and tokens, respectively. Besides, the attention-guided fusion module is proposed for effective fusion by exploring the complementary information of two modalities. Moreover, we adopt the cutout&mix augmentation strategy to conduct the data augmentation, which further improves the ability of the model to mine the regional complementarity between the two modalities. Extensive experiments show that the proposed method outperforms state-of-the-art dual-modality methods in the semantic segmentation, object detection, and salient object detection tasks.},
+  archive      = {J_TMM},
+  author       = {Fangcen Liu and Chenqiang Gao and Fang Chen and Pengcheng Li and Junjie Guo and Deyu Meng},
+  doi          = {10.1109/TMM.2025.3640020},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {A fusion-enhanced network for infrared and visible high-level vision tasks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MCSF-net: A multi-color space fusion network for underwater image enhancement. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3639953'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing multi-color space guided techniques for underwater image enhancement (UIE) fail to take the advantages of the XYZ color space for preserving underwater image details, meanwhile, existing UIE datasets, typically containing low-quality reference images of distorted colors and blurred structures, lead to inaccurate enhancement mapping between low-quality and high-quality images. To overcome these above limitations, we propose a Multi-Color Space Fusion Network (MCSF-Net) for UIE. The MCSF-Net incorporates a Multi-dimensional Feature Fusion Block (MFFB) and weighted feature fusion scheme to effectively integrate complementary features from both XYZ and RGB color spaces. Moreover, we establish a Large-Scale Mixed UIE dataset (LSMU) by using nine no-reference metrics to filter out low-quality reference images from eight public UIE datasets, enabling more effective network learning. Extensive experiments on mainstream datasets demonstrate that the proposed method outperforms several leading approaches in both color restoration and detail enhancement of various underwater images. The code and dataset for MCSF-Net will be available at https://github.com/WYJGR/MCSF-Net.},
+  archive      = {J_TMM},
+  author       = {Yijian Wang and Peixian Zhuang and Zhenqi Fu and Jiaquan Yan and Zuoyong Li},
+  doi          = {10.1109/TMM.2025.3639953},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {MCSF-net: A multi-color space fusion network for underwater image enhancement},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PC-NSVC: An end-to-end neural scalable vibrotactile codec with psychohaptic calibration. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639938'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To achieve an efficient compression and reconstruction of vibrotactile signals in the Tactile Internet, an end-to-end neural vibrotactile codec, PC-NSVC, is proposed. By integrating a residual product quantizer (RPQ) within a deep autoencoder, PC-NSVC effectively reduces coding latency through joint training and inference of the entire framework, while simultaneously enhancing the quality of the reconstructed signals. The RPQ allows for control over transmission bitrates by adjusting quantizer parameters, enabling scalable codec across various network environments and bandwidths. Additionally, PC-NSVC incorporates psychohaptic model to account for the influence of human perception, further improving the perceptual fidelity of the reconstructed signals. A remote vibrotactile sharing prototype, TouchShare, was developed to conduct transmission and material classification tests. Simulation and transmission results demonstrate that the PC-NSVC scheme significantly improves the quality of reconstructed signals at different compression ratios and supports accurate material classification, outperforming existing schemes.},
+  archive      = {J_TMM},
+  author       = {Shengyu Zhang and Qi Zhang and Xinkun Zheng and Tao Jiang},
+  doi          = {10.1109/TMM.2025.3639938},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--12},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {PC-NSVC: An end-to-end neural scalable vibrotactile codec with psychohaptic calibration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual feature fusion for incomplete multi-view multi-label learning. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639981'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-view Multi-label Learning (MVML) aims to leverage multi-view information from input samples to achieve accurate predictions of multiple labels. Unfortunately, most existing MVML methods operate under the assumption of data completeness, which makes them ineffective in practical scenarios involving missing views or uncertain labels. Recent methods address incomplete data, but few approaches handle scenarios where both views and labels are missing. To address this challenge, we propose a Dual-view Feature-guided Fusion Learning (DFFL) framework. DFFL considers both view-specific unique features and inter-view consistent features. Specifically, DFFL constructs view-uniqueness contrastive learning to ensure that features within the same view maintain high semantic relevance under the condition of view missing, while the semantics between different views are different. Unlike previous methods, DFFL assumes that label relevance can be reversely mapped to high-dimensional features. By establishing View-consistency learning, the mutual information in the shared embedding space is maximized to achieve consistent feature alignment. In particular, DFFL minimizes the conditional entropy of the marginal distribution of multi-view features through dual prediction, thereby deriving the maximum joint distribution of feature fusion and combining the missing view index matrix to achieve feature fusion. This process can effectively alleviate the fusion feature suppression existing in previous methods. Finally, the missing label index matrix is combined with the fusion feature to complete the classification task. We validate the framework on five widely used datasets, and experimental results demonstrate that our approach achieves superior performance compared to state-of-the-art methods. Ablation studies further validated the effectiveness of each component in DFFL.},
+  archive      = {J_TMM},
+  author       = {Xinyu Xiao and Shuhan Qi and Yulin Wu and Bin Chen and Chao Xing and Xuan Wang},
+  doi          = {10.1109/TMM.2025.3639981},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {High-frequency prioritized sparse attention network for image restoration},
+  title        = {Dual feature fusion for incomplete multi-view multi-label learning},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Fusion-driven task mutual-guidance network for few-shot hyperspectral image classification. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632632'>www</a>)
+(2025). Trustworthy continuous sign language recognition. <em>TMM</em>, 1--11. (<a href='https://doi.org/10.1109/TMM.2025.3640024'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In recent years, deep learning has revolutionized hyperspectral image (HSI) classification. However, it remains a significant challenge to achieve high-precision classification with limited image quality and labeled samples. Most existing methods fail to effectively leverage unlabeled samples and neglect the impact of image quality degradation on classification performance. To address these issues, this paper proposes a Fusion-Driven Task Mutual-Guidance Network (FTMNet), which enhances image quality and improves classification performance through mutual guidance between fusion and classification tasks. Specifically, we propose an image fusion subnet integrating contrastive learning to jointly optimize input quality enhancement and discriminative feature representation through multi-objective constraints. To mitigate sample scarcity, a multi-task interactive multimodal contrastive architecture is developed, leveraging cross-modal complementarity and cross-task feature sharing mechanisms to strengthen discriminative power. Furthermore, we introduce a cross-task collaborative mutual-guidance strategy that synchronizes inter-task information exchange via learnable parametric constraints, forming unified optimization directions for coordinated performance enhancement. The experimental results demonstrate that the proposed method outperforms the existing state-of-the-art methods in both quantitative and qualitative aspects. Code is available at https://github.com/Jiahuiqu/FTMNet.},
+  abstract     = {Continuous sign language recognition (CSLR) uses visual cues (e.g., hands, face, mouth, and body) to automatically recognize the sign language of deaf people, helping them to actively communicate with hearing people. The effects of these visual cues change dynamically with the demonstration of sign language. However, previous CSLR methods usually model visual information from the entire frame or simple fused visual cues, and thus do not well describe such dynamic change among visual cues. Therefore, we propose the Trustworthy Fusion Network ( TFN) of visual cues for CSLR, which comprises two fundamental modules: Intra-cue Cross-modality Feature Fusion module ( IntraCFF) and Inter-cue Trustworthy Fusion module (InterTF). IntraCFF uses the calibrated joint-belief method to dynamically fuse cross-modality features of RGB and keypoint information, to obtain a robust visual cue feature. InterTF innovatively employs the Dempster-Shafer Theory (DST) to evaluate the uncertainty of different cues in expressing sign movements. Then, the trustworthy fusion via DST is used to adaptively weigh and credibly fuse the visual cues based on uncertainty. In addition, to address the semantic gap when fusing different cues, we design consistency fusion constraints during the training stage. These constraints enhance the semantic consistency of different cues with global sign movements. Experiments on publicly CSLR datasets validate the effectiveness of our TFN.},
   archive      = {J_TMM},
-  author       = {Yusen Zhu and Jiahui Qu and Wenqian Dong and Yunsong Li},
-  doi          = {10.1109/TMM.2025.3632632},
+  author       = {Yan Zhang and Wanli Xue and Leming Guo and Yuxi Zhou and Chao Wei and Yangcan Wu and Tiantian Yuan and Shengyong Chen},
+  doi          = {10.1109/TMM.2025.3640024},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Fusion-driven task mutual-guidance network for few-shot hyperspectral image classification},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Rectifying adversarial sample with low entropy prior for test-time defense. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632635'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Existing defense methods fail to defend against un known attacks and thus raise generalization issue of adversarial robustness. To remedy this problem, we attempt to delve into some underlying common characteristics among various attacks for generality. In this work, we reveal the commonly overlooked low entropy prior (LE) implied in various adversarial samples, and shed light on the universal robustness against unseen attacks in inference phase. LE prior is elaborated as two properties across various attacks as shown in Fig. 1 and 2: 1) low entropy misclassification for adversarial samples and 2) lower entropy prediction for higher attack intensity. This phenomenon stands in stark contrast to the naturally distributed samples. The LE prior can instruct existing test-time defense methods, thus we propose a two-stage REAL approach: Rectify Adversarial sample based on LE prior for test-time adversarial rectification. Specifically, to align adversarial samples more closely with clean samples, we propose to first rectify adversarial samples misclassified with low entropy by reverse maximizing prediction entropy, thereby eliminating their adversarial nature. To ensure the rectified samples can be correctly classified with low entropy, we carry out secondary rectification by forward minimizing prediction entropy, thus creating a Max-Min entropy optimization scheme. Further, based on the second property, we propose an attack aware weighting mechanism to adaptively adjust the strengths of Max-Min entropy objectives. Experiments on several datasets show that REAL can greatly improve the performance of existing sample rectification models.},
-  archive      = {J_TMM},
-  author       = {Lina Ma and Xiaowei Fu and Fuxiang Huang and Xinbo Gao and Lei Zhang},
-  doi          = {10.1109/TMM.2025.3632635},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Rectifying adversarial sample with low entropy prior for test-time defense},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). HDMDN: Hierarchical-decoupling based meta-knowledge single image dehazing network. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632669'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Images suffer from color shift and detail distortion owing to limitations of contrast and visibility in hazy scenes, affecting their subjective perception. However, the performance of existing algorithms on real-world hazy images remains limited as scenes can be complex and haze degradation varies in outdoor visual systems. This study proposes a meta-knowledge single image dehazing algorithm based on hierarchical decoupling, combining the advantages of convolutional neural networks (CNNs) and transformers. We propose a novel dual-branch decoupling network that decouples low-level features from high level semantic information in images, leveraging the hierarchical properties of the network. It combines a CNN and cross dual branch transformer network (CDual transformer) in the encoder network to fully extract local and global features of images. To disentangle high-level semantic features, a style transfer module is designed to transform the style of hazy images while retaining the remaining semantic information. Afterward, the low-level features of images and the transformed high-level semantic features are used to reconstruct the dehazed images, fully capitalizing on the multilevel features. Furthermore, we built a meta-semi-supervised training strategy to improve the decoupling performance of the model and accumulated style knowledge of clear images from both synthetic and real-world hazy data, improving the generalizability of the model. Extensive experiments on both synthetic and real datasets show that the proposed algorithm effectively removes haze and offers better generalization abilities than similar methods. The project is publicly available at https://github.com/BJUTsipl/HDMDN.},
-  archive      = {J_TMM},
-  author       = {Tongyao Jia and Jiafeng Li and Li Zhuo and Jing Zhang and Tianjian Yu},
-  doi          = {10.1109/TMM.2025.3632669},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {HDMDN: Hierarchical-decoupling based meta-knowledge single image dehazing network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Adversarial pruning networks for compact 3D gaussian splatting. <em>TMM</em>, 1--10. (<a href='https://doi.org/10.1109/TMM.2025.3632681'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {3D Gaussian Splatting holds significant potential for high-quality visual scene rendering. However, the large number of Gaussian primitives it requires poses challenges in memory consumption and practical deploy. Existing methods often rely on empirical criteria to prune Gaussians, which inevitably compromises visual quality. To address this, we propose Adversarial Pruning Networks (APNet), a framework that employs adversarial learning to balances the reduction of redundant Gaussians with the preservation of visual fidelity. APNet comprises a Gaussian Learning and Pruning Network (GLPN) and a Discriminative Network. GLPN incorporates the geometric information into the learning of Gaussians and prunes these Gaussians through a data-driven mask. Meanwhile, the Discriminative Network is trained to distinguish between synthesized and real images, acting as an adversary. Through adversarial pruning, APNet significantly reduces the number of Gaussians while rendering high-quality images. Extensive experiments on the Mip-NeRF360, Tanks & Temples, and Deep Blending datasets demonstrate that APNet achieves up to a 90% reduction in the original 3DGS while maintaining high rendering quality.},
-  archive      = {J_TMM},
-  author       = {Hui Shuai and Yucheng Shi and Yubao Sun and Qingshan Liu},
-  doi          = {10.1109/TMM.2025.3632681},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--10},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Adversarial pruning networks for compact 3D gaussian splatting},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). UniAlign: A universal cross-modality knowledge alignment framework for fine-grained action recognition. <em>TMM</em>, 1--11. (<a href='https://doi.org/10.1109/TMM.2025.3632670'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The key to fine-grained video action recognition is identifying subtle differences between action categories. Relying solely on visual features supervised by action labels makes it challenging to characterize robust and discriminative action dynamics from videos. With significant advancements in human pose estimation and the powerful capabilities of Vision-Language Models (VLMs), obtaining reliable and cost-free human pose data and textual semantics has become increasingly feasible, enabling their effective use in fine-grained action recognition. However, the inherent disparities in feature representations across different modalities necessitate a robust alignment strategy to achieve opti mal fusion. To address this, we propose a universal cross-modality knowledge alignment framework, namely UniAlign, to transfer the knowledge from such pre-trained multi-modal models into action recognition models. Specifically, UniAlign introduces two additional branches to extract pose features and textual semantics with the pre-trained pose encoder and VLM. To align the action relevant cues among video features, pose features, and textual semantics, we propose a Cross-Modality Similarity Aggregation module (CMSA) that utilizes the importance of different modal cues while aggregating cross-modal similarities. Additionally, we adopt a fine-tuning mechanism similar to Exponential Moving Average (EMA) to refine the textual semantics, ensuring that the semantic representations encoded by VLMs are preserved while being optimized towards the specific task preferences. Extensive experiments on widely used fine-grained action recognition benchmarks (e.g., FineGym, NTURGB-D, Diving48) and coarse-grained K400 dataset demonstrate the effectiveness of the proposed UniAlign method.},
-  archive      = {J_TMM},
-  author       = {Yihan Wang and Baoli Sun and Haojie Li and Xinzhu Ma and Zhihui Wang and Zhiyong Wang},
-  doi          = {10.1109/TMM.2025.3632670},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--11},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {UniAlign: A universal cross-modality knowledge alignment framework for fine-grained action recognition},
+  title        = {Trustworthy continuous sign language recognition},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Rethinking the influence of distribution adjustment in incremental semantic segmentation. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632665'>www</a>)
+(2025). Towards general cross-modal visual coding for emergency communications. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639942'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In an ever-changing world, incremental segmentation learning faces challenges due to the need for pixel-level accuracy and the practical application of gradually obtained samples. While most existing methods excel in stability by freezing model parameters or employing other regularization techniques to preserve the distribution of old knowledge, these approaches often fall short of achieving satisfactory plasticity. This phenomenon arises from the limited allocation of parameters for learning new knowledge. Meanwhile, in such a learning manner, the distribution of old knowledge cannot be optimized as new knowledge accumulates. As a result, the feature distribution of newly learned knowledge overlaps with old knowledge, leading to inaccurate segmentation performance on new classes and insufficient plasticity. This issue prompts us to explore how both old and new knowledge representations can be dynamically and simultaneously adjusted in the feature space during incremental learning. To address this, we conduct a theoretical structural analysis, which indicates that compressing the feature subspace and promoting sparse distribution is beneficial in allocating more space for new knowledge in incremental segmentation learning. Following compression principle, high-dimensional knowledge is projected into a lower-dimensional space in a contracted and dimensionally reduced manner. Regarding sparsity, the exclusivity of multiple peaks in Gaussian mixture distributions across different classes is preserved. Through effective knowledge transfer, both up-to-date and long-standing knowledge can dynamically adapt within a unified space, facilitating efficient adaptation to continuously incoming and evolving data. Extensive experiments across diverse incremental settings consistently validate the effectiveness of our proposed method. Source code is publicly available at https://github.com/XinyueZhangHust/CSISL.},
+  abstract     = {Multi-modal visual signals are prevalent in emergency communications. To ensure high reliability of signal transmission under bandwidth constraints, it is crucial to compress redundant information both within and between modalities as much as possible, and ensure the fidelity of the reconstructed signals. Most existing studies depend exclusively on single-modal coding schemes and fail to effectively leverage the semantic correlations between modalities. In this paper, we introduce an end-to-end general cross-modal visual coding scheme, namely CMVC, which aims to jointly compress multi-modal visual signals (such as visible and infrared signals). First, we propose a cross-modal asynchronous entropy module that extracts common features using a cross-attention mechanism. Additionally, we enhance the accuracy of common features extraction by maximizing mutual information loss. This module further compresses multi-modal visual signals by compressing only the residual features between modalities. Second, we propose a cascaded enhancement module based on cross-modal Mamba that fuses complementary information to enhance the reconstruction quality of multi-modal visual signals. Finally, extensive experimental results demonstrate that our scheme significantly outperforms other advanced methods on visible-infrared datasets. Even at low bitrates, multi-modal visual signals can still achieve excellent reconstruction quality. Additionally, our scheme exhibits outstanding compression and reconstruction performance when applied to visible-depth signals, effectively demonstrating its robustness and generalizability.},
   archive      = {J_TMM},
-  author       = {Xinyue Zhang and Wanjia Luo and Guodong Wang and Sheng Zhong and Xu Zou and Luxin Yan},
-  doi          = {10.1109/TMM.2025.3632665},
+  author       = {Peilin Li and Yannan Chen and Lindong Zhao and Ang Li and Bin Kang and Dan Wu and Liang Zhou},
+  doi          = {10.1109/TMM.2025.3639942},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Rethinking the influence of distribution adjustment in incremental semantic segmentation},
+  title        = {Towards general cross-modal visual coding for emergency communications},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). MDT-FI: Mask-guided dual-branch transformer with texture and structure feature interaction for image inpainting. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632651'>www</a>)
+(2025). Video-based instantaneous heart rate measurement with enhanced time-frequency representations. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639906'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Image inpainting has attracted considerable attention in computer vision and image processing due to its wide range of applications. While deep learning-based methods have shown promising potential, accurately recovering pixel-level details remains a significant challenge, particularly in the presence of large and irregular missing regions. Furthermore, existing methods are limited by unidirectional semantic guidance and a localized understanding of global structural context. In this study, we propose a mask-guided dual-branch Transformer-based framework, named MDT-FI, which effectively balances local detail restoration and global contextual reasoning by explicitly modeling long-range dependencies. MDT-FI consists of three key components: the Interactive Attention Module (IAM), the Spectral Harmonization Module (SHM), and the Lateral Adaptation Network (LAN). The model integrates multi-scale feature interaction, frequency-domain information fusion, and a mask-guided attention mechanism to progressively build cross-level feature associations. This design facilitates multi-level representation learning and optimization, thereby enhancing local texture synthesis while preserving global structural consistency. To further improve perceptual quality, a feature augmenter is employed to assess the fidelity of both texture and structure in the generated results. Extensive experiments on CelebA-HQ, Places2, and Paris Street View demonstrate that MDT-FI significantly outperforms state-of-the-art methods.},
+  abstract     = {Remote photoplethysmography (rPPG) for heart rate (HR) measurement based on facial videos has recently attracted increasing attention. However, most existing methods focus on average heart rate (AHR) over a period rather than instantaneous heart rate (IHR), which better reflects physical and mental states. To address this issue, we propose a novel rPPG-based method for measuring IHR values from facial videos. Our method employs the wavelet synchrosqueezed transform (WSST) to generate time-frequency representations (TFRs) of chrominance (CHROM) signals from multiple facial regions of interest (ROIs), synchronously reflecting the IHR during a video segment. Furthermore, the TransUNet is introduced to refine these TFR images, enhancing the ridge line information related to IHRs. Comprehensive comparisons and ablation studies on four public datasets (UBFC-rPPG, PURE, UBFC-Phys, and MMPD) reveal that our WSST-UNet method achieves superior performance over several typical rPPG methods, achieving mean absolute errors (MAE) of 2.34 beats per minute (bpm), 1.29 bpm, 5.03 bpm, and 6.58 bpm, respectively. The proposed method offers a promising solution for practical application in video-based IHR measurements.},
   archive      = {J_TMM},
-  author       = {Dong Liu and Xiaofeng Wang and Ruidong Han and Jianghua Li and Shanmin Pang},
-  doi          = {10.1109/TMM.2025.3632651},
+  author       = {Juan Cheng and Xiwen Luo and Xiaowei Wu and Rencheng Song and Yu Liu},
+  doi          = {10.1109/TMM.2025.3639906},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--13},
+  month        = {12},
+  pages        = {1--14},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {MDT-FI: Mask-guided dual-branch transformer with texture and structure feature interaction for image inpainting},
+  title        = {Video-based instantaneous heart rate measurement with enhanced time-frequency representations},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Cas-OVD: Cascaded open-vocabulary detection of small objects using multi-refined region proposal network in autonomous driving. <em>TMM</em>, 1--16. (<a href='https://doi.org/10.1109/TMM.2025.3632649'>www</a>)
+(2025). Exploring cross-modal mutual prompt learning for video quality assessment. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639890'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Although text information has aided existing models to achieve promising results in open vocabulary object detection (OVD), the lack of semantic information has led to the difficulty in small objects detection (SOD). Moreover, such semantic gap also causes failure when matching texts and image features, resulting in false negative instances being detected. To address these issues, we propose a Cascade Open Vocabulary Detector (Cas-OVD), which builds upon existing multi-stage detection pipelines but specializes in text-vision alignment for small objects. In particular, we adapt a multi-refined region proposal network, guided by a non-sampled anchor strategy, to reduce the missing and false detections of small objects. Meanwhile, a deformable convolution network based feature conversion module is proposed to enhance the semantic information of small objects even the potential ones with low confidence. Unlike existing methods that rely on coarse-grained image-based features for image-text matching, Cas-OVD refines these features through a cascade alignment process, allowing each stage to build on the results of the previous one. This can progressively enhance the feature correlation between the image regions and the textual descriptions through successive error correction. On the joint BDD100K-SODA-D dataset, Cas-OVD achieved 17.95% AP$_{\mathrm{all}}$ and 14.6% AP$_{\mathrm{s}}$, outperforming RegionCLIP by 3.5% AP$_{\mathrm{all}}$ and 3.0% AP$_{\mathrm{s}}$, respectively. On the OV_COCO dataset, Cas-OVD has the 32.71% AP$_{\mathrm{all}}$ and 17.26% AP$_{\mathrm{s}}$, surpassing the RegionCLIP by 6.6% AP$_{\mathrm{all}}$ and 6.1% AP$_{\mathrm{s}}$, respectively.},
+  abstract     = {Enhancing video quality assessment (VQA) through semantic information integration is a critical research focus. Recent research has employed the Contrastive Language-Image Pre-training (CLIP) model as a foundation to improve semantic perception. However, the image-text alignment inherent in these pre-trained Vision-Language (VL) models frequently results in suboptimal VQA performance. While prompt engineering has recently targeted the language component to address this alignment issue, the unique insights resided in visual analysis is still overlooked for further advancing VQA tasks. Additionally, seeking a trade-off between quality separability and domain invariance in VQA remains largely unresolved within the VL paradigm. In this paper, we introduce a novel cross-modal prompt-based approach to tackle these challenges. Specifically, we propose learnable prompts within the vision branch to foster synergy between visual and language modalities through a language-to-vision coupling function. The multi-view backbone is then carefully crafted with content enhancement and distortion-aware temporal modulation to ensure quality separability. The language prompts, derived from visual representations, are further supported by adaptive weighting mechanisms to optimize the balance between quality separability and domain invariance. Experimental results demonstrate the effectiveness of our proposed method over leading VQA models, showing significant improvements in generalization across diverse datasets. The source code for this work is publicly available at https://github.com/cpf0079/CM2PL.},
   archive      = {J_TMM},
-  author       = {Zhenyu Fang and Yulong Wu and Jinchang Ren and Jiangbin Zheng and Yijun Yan and Lixiang Zhang},
-  doi          = {10.1109/TMM.2025.3632649},
+  author       = {Pengfei Chen and Leida Li and Jinjian Wu and Jiebin Yan and Vinit Jakhetiya and Aladine Chetouani},
+  doi          = {10.1109/TMM.2025.3639890},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--16},
+  month        = {12},
+  pages        = {1--14},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Cas-OVD: Cascaded open-vocabulary detection of small objects using multi-refined region proposal network in autonomous driving},
+  title        = {Exploring cross-modal mutual prompt learning for video quality assessment},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Fast and effective overwrite attack against DNN-based image watermarking models. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632696'>www</a>)
+(2025). S2ML: Spatio-spectral mutual learning for depth completion. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639949'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep neural network (DNN)-based image watermarking models have been widely recognized as an effective way to manage the huge amount of AI-generated images. However, the vulnerability of such models to different forms of adversarial attacks has been a critical concern. Among the existing forms of attacks in the literature, image-dependent attacks cannot launch real-time attacks on a large number of watermarked images, because they need to train a new noise image to attack each new watermarked image; image-regeneration attacks either require a lot of information about the watermarking system or cause too much damage to the attacked image. To fill the gap in the existing forms of attacks, in this paper, we propose a novel form of attack named “fast and effective overwrite attack (FEOA)”, which achieves an extremely fast attack speed and strong attack effectiveness. In particular, we discovered a single noise image, when directly added to many watermarked images, can overwrite their true watermark messages to different ones in milliseconds. We also develop an adaptive version of FEOA, which trains $k$ different noise images and applies the principle of divide and conquer to significantly improve attack effectiveness. Our work opens the door to quickly launching massive overwrite attacks on a large number of watermarked images, revealing a new robustness issue of DNN-based image watermarking models. Extensive experiments demonstrate the outstanding attack time efficiency and effectiveness of our methods.},
+  abstract     = {The raw depth images captured by RGB-D cameras using Time-of-Flight (TOF) or structured light often suffer from incomplete depth values due to weak reflections, boundary shadows, and artifacts, which limit their applications in downstream vision tasks. Existing methods address this problem through depth completion in the image domain, but they overlook the physical characteristics of raw depth images. It has been observed that the presence of invalid depth areas alters the frequency distribution pattern. In this work, we propose a Spatio-Spectral Mutual Learning framework (S2ML) to harmonize the advantages of both spatial and frequency domains for depth completion. Specifically, we consider the distinct properties of amplitude and phase spectra and devise a dedicated spectral fusion module. Meanwhile, the local and global correlations between spatial-domain and frequency-domain features are calculated in a unified embedding space. The gradual mutual representation and refinement encourage the network to fully explore complementary physical characteristics and priors for more accurate depth completion. Extensive experiments demonstrate the effectiveness of our proposed S2ML method, outperforming the state-of-the-art method CFormer by 0.828 dB and 0.834 dB on the NYU-Depth V2 and SUN RGB-D datasets, respectively.},
   archive      = {J_TMM},
-  author       = {Shaoxin Li and Xiaofeng Liao and Qiqi Zhang and Yuanqi Xue and Lingyang Chu},
-  doi          = {10.1109/TMM.2025.3632696},
+  author       = {Zihui Zhao and Yifei Zhang and Zheng Wang and Yang Li and Kui Jiang and Zihan Geng and Chia-Wen Lin},
+  doi          = {10.1109/TMM.2025.3639949},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--13},
+  month        = {12},
+  pages        = {1--14},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Fast and effective overwrite attack against DNN-based image watermarking models},
+  title        = {S2ML: Spatio-spectral mutual learning for depth completion},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). MUVOD: A novel multi-view video object segmentation dataset and a benchmark for 3D segmentation. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632697'>www</a>)
+(2025). From sight to insight: Enhancing confusable structure segmentation via vision-language mutual prompting. <em>TMM</em>, 1--11. (<a href='https://doi.org/10.1109/TMM.2025.3639888'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The application of methods based on Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3D GS) have steadily gained popularity in the field of 3D object segmentation in static scenes. These approaches demonstrate efficacy in a range of 3D scene understanding and editing tasks. Nevertheless, the 4D object segmentation of dynamic scenes remains an underexplored field due to the absence of a sufficiently extensive and accurately labelled multi-view video dataset. In this paper, we present MUVOD, a new multi-view video dataset for training and evaluating object segmentation in reconstructed real-world scenarios. The 17 selected scenes, describing various indoor or outdoor activities, are collected from different sources of datasets originating from various types of camera rigs. Each scene contains a minimum of 9 views and a maximum of 46 views. We provide 7830 RGB images (30 frames per video) with their corresponding segmentation mask in 4D motion, meaning that any object of interest in the scene could be tracked across temporal frames of a given view or across different views belonging to the same camera rig. This dataset, which contains 459 instances of 73 categories, is intended as a basic benchmark for the evaluation of multi-view video segmentation methods. We also present an evaluation metric and a baseline segmentation approach to encourage and evaluate progress in this evolving field. Additionally, we propose a new benchmark for 3D object segmentation task with a subset of annotated multi-view images selected from our MUVOD dataset. This subset contains 50 objects of different conditions in different scenarios, providing a more comprehensive analysis of state-of-the-art 3D object segmentation methods. Our proposed MUVOD dataset is available at https://volumetric-repository.labs.b-com.com/#/muvod.},
+  abstract     = {Confusable structure segmentation (CSS) is a type of semantic segmentation applied in remote sensing sea fog detection, medical image segmentation, camouflaged object detection, etc. Structural similarity and visual ambiguity are two critical issues in CSS that pose difficulties in distinguishing foreground objects from the background. Current methods focus primarily on enhancing visual representations and do not often incorporate multimodal information, which leads to performance bottlenecks. Inspired by recent achievements in vision-language models, we propose Vision-Language Mutual Prompting (VLMP), a novel and unified language-guided framework that leverages text prompts to enhance CSS. Specifically, VLMP consists of vision-to-language prompting and language-to-vision prompting, which bidirectionally model the interactions between visual and linguistic features, thereby facilitating cross-modal complementary information flow. To prevent the predominance of one modality over another, we design a feature integration modulator that modulates and balances feature weights for adaptive multimodal fusion. Our framework is designed to be modular and flexible, allowing for integration with any backbone, including CNNs and transformers. We evaluate VLMP with three diverse datasets: SFDD-H8, QaTa-COV19, and CAMO-COD10K. Extensive experiments demonstrate the effectiveness and superiority of the proposed framework over those of state-of-the-art methods across these datasets. This shift from basic sight to deeper insight in CSS through vision-language integration represents a significant advancement in the field.},
   archive      = {J_TMM},
-  author       = {Bangning Wei and Joshua Maraval and Meriem Outtas and Kidiyo Kpalma and Nicolas Ramin and Lu Zhang},
-  doi          = {10.1109/TMM.2025.3632697},
+  author       = {Yixiang Huang and Yihao Zuo and Mengqiu Xu and Kaixin Chen and Ming Wu and Chuang Zhang and Zhanyu Ma and Jun Guo},
+  doi          = {10.1109/TMM.2025.3639888},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
+  month        = {12},
+  pages        = {1--11},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {MUVOD: A novel multi-view video object segmentation dataset and a benchmark for 3D segmentation},
+  title        = {From sight to insight: Enhancing confusable structure segmentation via vision-language mutual prompting},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Multi-granularity query network with adaptive category feature embedding for behavior recognition. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3632695'>www</a>)
+(2025). Modality-aware gated attention network for audio-visual event localization. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3640018'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Behavior recognition is a highly challenging task, particularly in scenarios requiring unified recognition across both human and animal subjects. Most existing approaches primarily focus on single-species datasets or rely heavily on prior information such as species labels, positional annotations, or skeletal keypoints, which limits their applicability in real-world scenarios where species labels may be ambiguous or annotations are insufficient. To address these limitations, we propose a query-based Multi-Granularity Behavior Recognition Network that directly mines cross-species shared spatiotemporal behavior patterns from raw video inputs. Specifically, we design a Multi-Granularity Query module to effectively fuse fine-grained and coarse-grained features, thereby enhancing the model's capability in capturing spatiotemporal dynamics at different granularities. Additionally, we introduce a Category Query Decoder that leverages learnable category query vectors to achieve explicit behavior category modeling and mapping. Without relying on any extra annotations, the proposed method achieves unified recognition of multi-species and multi-category behaviors, setting a new state-of-the-art on the Animal Kingdom dataset and demonstrating strong generalization ability on the Charades dataset.},
+  abstract     = {Audio-visual event localization (AVEL) refers to the identification of the category and the corresponding temporal boundaries of an event that is both visually and audibly discernible in unconstrained videos. However, the event-irrelevant background (e.g., ambient noise or visual occlusion) and event-specific modal biases often lead to audio-visual semantic inconsistency. Existing methods utilize modality-guided attention to suppress background interference, but they neglect this attention inevitably introduces redundant or irrelevant information from the other modality. To alleviate this problem, we propose a novel Modality-Aware Gated Attention Network (MAGAN) that focuses on event-relevant visual regions, consolidates informative audio frequencies, and captures event-specific modality biases. Specifically, a cross-modal gated co-attention (CMGCA) scheme is presented for modeling the correspondence between the potential (self-guided) localization maps and the modality-guided localization maps through two gated components, i.e., audio-to-visual attention and visual-to-audio attention. Furthermore, a cross-modal gated co-interaction (CMGCI) mechanism that incorporates both unimodal gated interaction and multimodal gated interaction is introduced to capture event-specific modality biases by considering unimodal independence and multimodal synergy simultaneously. Extensive experiments on the AVE dataset demonstrate the superiority and effectiveness of our model over state-of-the-art approaches in both fully- and weakly-supervised AVE settings.},
   archive      = {J_TMM},
-  author       = {Nuoer Long and Yonghao Dang and Kaiwen Yang and Chengpeng Xiong and Shaobin Chen and Tao Tan and Wei Ke and Chan-Tong Lam and Jianqin Yin and Peter H. N. de With and Yue Sun},
-  doi          = {10.1109/TMM.2025.3632695},
+  author       = {Liang Liu and Shuaiyong Li and Yongqiang Zhu and Zhengxu Dai},
+  doi          = {10.1109/TMM.2025.3640018},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--12},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Multi-granularity query network with adaptive category feature embedding for behavior recognition},
+  title        = {Modality-aware gated attention network for audio-visual event localization},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Partition map-based fast block partitioning for VVC inter coding. <em>TMM</em>, 1--16. (<a href='https://doi.org/10.1109/TMM.2025.3632639'>www</a>)
+(2025). ViDR-GNN: Vision implicit discriminative reorganization graph neural networks. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639924'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Among the new techniques of Versatile Video Coding (VVC), the quadtree with nested multi-type tree (MTT) block structure yields significant coding gains by providing more flexible block partitioning patterns. However, the recursive partition search in the VVC encoder increases the encoder complexity substantially. To address this issue, we propose a partition map-based algorithm to pursue fast block partitioning in inter coding. Based on our previous work on partition map-based methods for intra coding, we analyze the characteristics of VVC inter coding and improve the partition map by incorporating an MTT mask for early termination. Next, we develop a neural network that uses both spatial and temporal features to predict the partition map. It consists of several special designs, including stacked top-down and bottom-up processing, quantization parameter modulation layers, and partitioning-adaptive warping. Furthermore, we present a dual-threshold decision scheme to achieve a fine-grained trade-off between complexity reduction and rate-distortion performance loss. The experimental results demonstrate that the proposed method achieves an average 51.30% encoding time saving with a 2.12% Bjøntegaard-delta-bit-rate under the random access configuration. The source code is publicly available at https://github.com/ustc-ivclab/IPM.},
+  abstract     = {Vision GNNs (ViGs) divide an image into multiple patches, treating these image patches as graph nodes. The image is represented by extracting explicit features from these patches as node features and constructing edge connections based on explicit dependencies. However, this explicit graph structure struggles to accurately capture deeper implicit dependencies. For example, at the node-level, implicit relationships include the intra-group consistency of local and global features belonging to the same semantic group and the inter-group distinction of features belonging to different semantic groups. At the graph-level, implicit relationships manifest in whether global consistency of edge connections can be established in the absence of direct edge connection supervision. These aspects are crucial for improving the accuracy of downstream tasks. Therefore, more effective learning of implicit dependencies in vision graph structures remains an area requiring further research. We designed the Discriminative Feature Reorganization (DFR) module to address implicit dependencies at the node-level. This module constructs a loss function using similarity measures between positive and negative sample feature pairs from adjacent layers of the neural network. By adjusting this loss function, the intra-group consistency and inter-group distinction of node-level local and global features can be enhanced. We also designed the Graph Structure Refinement (GSR) module. This module refines the consistency of graph-level implicit relationships of edge connections through interactive supervision of two graphs learned from adjacent layers of the neural network. Experimental results show that ViDR-GNN achieves significant performance improvements in image classification, object detection, and instance segmentation tasks.},
   archive      = {J_TMM},
-  author       = {Xinmin Feng and Zhuoyuan Li and Li Li and Dong Liu and Feng Wu},
-  doi          = {10.1109/TMM.2025.3632639},
+  author       = {Zeyang Zhang and Xiaofeng Cao and Xiang Zhang and Li Peng and Lijia Ma and Jielong Yang},
+  doi          = {10.1109/TMM.2025.3639924},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--16},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Partition map-based fast block partitioning for VVC inter coding},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Adaptive multi-modal visual tracking with dynamic semantic prompts. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3632650'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {RGB-based object tracking is a fundamental task in computer vision, aiming to identify, locate, and continuously track objects of interest across sequential video frames. Despite the significant advancements in the performance of traditional RGB trackers, they still face challenges in maintaining accuracy and robustness in the presence of complex backgrounds, occlusions, and rapid movements. To tackle these challenges, combining visual auxiliary modalities has gained significant attention. Beyond this, integrating natural language information offers additional advantages by providing high-level semantic context, enhancing robustness, and clarifying target priorities, further elevating tracker performance. This work proposes the Adaptive Multi-modal Visual Tracking with Dynamic Semantic Prompts (AMVTrack) tracker, which efficiently incorporates image descriptions and avoids text dependency during tracking to improve flexibility and adaptability. AMVTrack significantly reduces computational resource consumption by freezing the parameters of the image encoder, text encoder, and Box Head and only optimizing a few learnable prompt parameters. Additionally, we introduce the Adaptive Dynamic Semantic Prompt Generator (ADSPG), which dynamically generates semantic prompts based on visual features, and the Visual-Language Fusion Adaptation (V-L FA) method, which integrates multi-modal features to ensure consistency and complementarity of information. Additionally, we partition the Image Encoder to conduct an in-depth investigation into the relationship between the importance of features across different depth and width regions. Experimental results demonstrate that AMVTrack achieves significant performance improvements on multiple benchmark datasets, proving its effectiveness and robustness in complex scenarios.},
-  archive      = {J_TMM},
-  author       = {Jiahao Wang and Fang Liu and Licheng Jiao and Hao Wang and Shuo Li and Lingling Li and Puhua Chen and Xu Liu and Wenping Ma and Xinyi Wang},
-  doi          = {10.1109/TMM.2025.3632650},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Adaptive multi-modal visual tracking with dynamic semantic prompts},
+  title        = {ViDR-GNN: Vision implicit discriminative reorganization graph neural networks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Multimodal industrial anomaly detection via attention-enhanced memory-guided network. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632646'>www</a>)
+(2025). Towards copyright leakage mitigation for spherical panoramic images. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639974'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Anomaly detection is a key technology in quality control for automated production lines. Currently, 2D-based anomaly detection methods fail to identify geometric structure anomalies in products. To address this limitation, this paper proposes a multimodal anomaly detection model using 3D point clouds and RGB images. To ensure the single-domain inference capability of each modality, we design an attention-enhanced dual memory bank to separately store local point cloud features and RGB features. The attention mechanism enhances the informativeness and discriminability of the feature descriptors, significantly improving the data quality in the memory bank. During the inference phase, the local point cloud features in the dual memory bank guide the RGB features in calculating anomaly scores in the 2D modality. This memory-guided approach strengthens the correlation between information across different modalities. Moreover, to improve the overall segmentation precision of the model, we propose an anomaly scoring scheme based on a weight map of signed distance values. The final anomaly detection results are obtained by integrating the advantages of point cloud data in geometric structure anomaly detection and RGB data in color anomaly detection. Extensive experiments demonstrate that the proposed method achieves superior segmentation precision compared to other advanced methods on the MVTec 3D-AD and Eyecandies datasets.},
+  abstract     = {Although several watermarking techniques have been proposed for spherical panoramic content, most have focused on simple leakage situations and have not addressed the various copyright leakage scenarios specific to spherical panoramic content. Such leakage scenarios are yet to be thoroughly analyzed in the literature. Diverse scenarios can occur in the case of spherical panoramic content depending on the rendering process and stage of image leakage. A distinct watermarking method is required for each scenario. In this study, six leakage scenarios for spherical panoramic content were identified, and the requirements for effective watermarking methods were examined. Without the original source information, existing watermarking techniques generally fail to protect copyrights. To this end, we propose two supplementary methods to enhance blind watermarking techniques. In the first method, a deep learning model designed for steganalysis was used to detect vertical viewpoints from perspective images without using the original source image. In the second method, a template was used to increase the robustness against spherical angle translation attacks. Using these two supplementary methods, we achieved comprehensive coverage across all scenarios that utilize existing watermarking techniques.},
   archive      = {J_TMM},
-  author       = {Shuaibo Liu and Xiaoli Luan and Yueyang Li},
-  doi          = {10.1109/TMM.2025.3632646},
+  author       = {Jihyeon Kang and Jong-Uk Hou},
+  doi          = {10.1109/TMM.2025.3639974},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Multimodal industrial anomaly detection via attention-enhanced memory-guided network},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). How vision-language tasks benefit from large pre-trained models: A survey. <em>TMM</em>, 1--24. (<a href='https://doi.org/10.1109/TMM.2025.3632653'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The exploration of various vision-language tasks, such as visual captioning, visual question answering, and visual commonsense reasoning, is an important area in artificial intelligence and continuously attracts the attention of the research community. Despite improvements in overall performance, classic challenges still exist in vision-language tasks and hinder the development of this area. In recent years, the rise of pre-trained models is driving the research on vision-language tasks. Because of the massive scale of training data and model parameters, pre-trained models have exhibited excellent performance in numerous downstream tasks. Inspired by the powerful capabilities of pre-trained models, new paradigms have emerged to solve the classic challenges. Such methods have become mainstream in current research with increasing attention and rapid advances. In this paper, we present a comprehensive overview of how vision-language tasks benefit from pre-trained models. First, we review several main challenges in vision-language tasks and discuss the limitations of previous solutions before the era of pre-training. Next, we summarize the recent advances in incorporating pre-trained models to address the challenges in vision-language tasks. Finally, we analyze the potential risks associated with the inherent limitations of pre-trained models, discuss possible solutions, and attempt to provide future research directions.},
-  archive      = {J_TMM},
-  author       = {Yayun Qi and Hongxi Li and Yiqi Song and Xinxiao Wu and Jiebo Luo},
-  doi          = {10.1109/TMM.2025.3632653},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--24},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {How vision-language tasks benefit from large pre-trained models: A survey},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Generic-to-personalised learning for multimodal image synthesis with bidirectional variational GAN. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632663'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multimodal image synthesis, which predicts target-modality images from source-modality images, has garnered considerable attention in the field of clinical diagnosis. Both unidirectional and bidirectional multimodal image synthesis methods have been explored in the medical domain, however, unidirectional models heavily rely on paired images, while current bidirectional models typically overlook local image details due to their unsupervised training patterns. In this work, we propose a Bidirectional Variational Generative Adversarial Network (BVGAN) for multimodal image synthesis, which achieves high-quality bidirectional translations between any two modalities using only a limited number paired images. Firstly, BVGAN's generator incorporates a variational structure (VAS) to regularise the latent space for noise reduction. This regularisation imposes smoothness to the latent space, enabling BVGAN to produce high-quality, noise-free images. Secondly, a novel generic-to-personalised (GTP) learning strategy is introduced to train BVGAN and reduce its reliance on a large sets of paired images. GTP initially leverages an unsupervised learning model to capture the global mapping between two modalities using unpaired images from generic patients. It then applies a supervised learning model to refine the mapping for individual patient, enhancing image details. Finally, the GTP learning strategy along with VAS enables BVGAN to achieve state-of-the-art performance on two multi-modality medical datasets: Brain CTMRI and BRATS.},
-  archive      = {J_TMM},
-  author       = {Long Chen and Xirui Dong and Jiangrong Shen and Lu Zhang and Qi Xu and Gang Pan and Qiang Zhang},
-  doi          = {10.1109/TMM.2025.3632663},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Generic-to-personalised learning for multimodal image synthesis with bidirectional variational GAN},
+  title        = {Towards copyright leakage mitigation for spherical panoramic images},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Purified zero-shot sketch-based image retrieval. <em>TMM</em>, 1--16. (<a href='https://doi.org/10.1109/TMM.2025.3632682'>www</a>)
+(2025). On the adversarial robustness of learning-based image compression against rate-distortion attacks. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3639935'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Sketches, as a new solution in multimedia systems that can replace natural language, are characterized by sparse visual cues such as simple strokes that differ significantly from natural images containing complex elements such as background, foreground, and texture. This misalignment poses substantial challenges for zero-shot sketch-based image retrieval (ZS-SBIR). Prior approaches match sketches to full images and tend to overlook redundant elements in natural images, leading to model distraction and semantic ambiguity. To address this issue, we introduce a distraction-agnostic framework, purified cross-domain matching (PuXIM), which operates on a straightforward principle: masking and matching. We devise a visual-cross-linguistic (VxL) sampler that generates linguistic masks based on semantic labels to obscure semantically irrelevant image features. Our novel contribution is the concept of purified masked matching (PMM), which comprises two processes: (1) reconstruction, which compels the image encoder to reconstruct the masked image feature, and (2) interaction, which involves a transformer decoder that processes both sketch and masked image features to investigate cross-domain relationships for effective matching. Evaluated on the TU-Berlin, Sketchy, and QuickDraw datasets, PuXIM sets new benchmarks in terms of performance. Importantly, the distraction-agnostic nature of the matching process renders PuXIM more conducive to training, enabling efficient adaptation to zero-shot scenarios with reduced data requirements and low data quality.},
+  abstract     = {Despite demonstrating superior Rate-Distortion (RD) performance, Learning-based Image Compression (LIC) algorithms have been found to be vulnerable to malicious perturbations in recent studies. However, the adversarial attacks considered in existing literature remain divergent from real-world scenarios, both in terms of the attack direction and bitrate. Additionally, existing methods focus solely on empirical observations of the model vulnerability, neglecting to identify the origin of it. These limitations hinder the comprehensive investigation and in-depth understanding of the adversarial robustness of LIC algorithms. To address the aforementioned issues, this paper considers the arbitrary nature of the attack direction and the uncontrollable compression ratio faced by adversaries, and presents two practical rate-distortion attack paradigms, i.e., Specific-ratio Rate-Distortion Attack (SRDA) and Agnostic-ratio Rate-Distortion Attack (ARDA). To the best of our knowledge, we are the first to conduct joint rate-distortion attacks on LIC algorithms. Using the performance variations as indicators, we evaluate the adversarial robustness of eight predominant LIC algorithms against diverse attacks. Furthermore, we propose two novel analytical tools for in-depth analysis, i.e., Entropy Causal Intervention and Layer-wise Distance Magnify Ratio, and reveal that hyperprior significantly increases the bitrate and Inverse Generalized Divisive Normalization (IGDN) significantly amplifies input perturbations when under attack. Lastly, we examine the efficacy of adversarial training and introduce the use of online updating for defense. By comparing their advantages and disadvantages, we provide a reference for constructing more robust LIC algorithms against the rate-distortion attacks.},
   archive      = {J_TMM},
-  author       = {Yang Zhou and Jingru Yang and Jin Wang and Kaixiang Huang and Guodong Lu and Shengfeng He},
-  doi          = {10.1109/TMM.2025.3632682},
+  author       = {Chenhao Wu and Qingbo Wu and Haoran Wei and Lei Wang and Fanman Meng and King Ngi Ngan and Li Zhuo and Hongliang Li},
+  doi          = {10.1109/TMM.2025.3639935},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--16},
+  month        = {12},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Purified zero-shot sketch-based image retrieval},
+  title        = {On the adversarial robustness of learning-based image compression against rate-distortion attacks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). From sight to insight: Unleashing eye-tracking in weakly supervised video salient object detection. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3632641'>www</a>)
+(2025). Tensor-based graph learning with consistency and specificity for multi-view clustering. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3639979'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The eye-tracking video saliency prediction (VSP) task and video salient object detection (VSOD) task both focus on the most attractive objects in video and show the result in the form of predictive heatmaps and pixel-level saliency masks, respectively. In practical applications, eye tracker annotations are more readily obtainable and align closely with the authentic visual patterns of human eyes. Therefore, this paper aims to introduce fixation information to assist the detection of video salient objects under weak supervision. On the one hand, we ponder how to better explore and utilize the information provided by fixation, and then propose a Position and Semantic Embedding (PSE) module to provide location and semantic guidance during the feature learning process. On the other hand, we achieve spatiotemporal feature modeling under weak supervision from the aspects of feature selection and feature contrast. A Semantics and Locality Query (SLQ) Competitor with semantic and locality constraints is designed to effectively select the most matching and accurate object query for spatiotemporal modeling. In addition, an Intra-Inter Mixed Contrastive (IIMC) model improves the spatiotemporal modeling capabilities under weak supervision by forming an intra-video and inter-video contrastive learning paradigm. Experimental results on five popular VSOD benchmarks indicate that our model outperforms other competitors on various evaluation metrics.},
+  abstract     = {In the context of multi-view clustering, graph learning is recognized as a crucial technique, which generally involves constructing an adaptive neighbor graph based on probabilistic neighbors, and then learning a consensus graph for clustering. However, it is worth noting that these graph learning methods encounter two significant limitations. Firstly, they often rely on Euclidean distance to measure similarity when constructing the adaptive neighbor graph, which proves inadequate in capturing the intrinsic structure among data points in practice, particularly for high-dimensional data. Secondly, most of these methods focus solely on consensus graph, ignoring unique information from each view. Although a few graph-based studies have considered using specific information as well, the modelling approach employed does not exclude the noise impact from the common or specific components. To this end, we propose a novel tensor-based multi-view graph learning framework that simultaneously considers consistency and specificity, while effectively eliminating the influence of noise. Specifically, we calculate similarity using pseudo-Stiefel manifold distance to preserve the intrinsic properties of data. By making an assumption that the learned neighbor graph of each view comprises a consistent part, a specific part, and a noise part, we formulate a new tensor-based target graph learning paradigm for noise-free graph fusion. Owing to the benefits of tensor singular value decomposition (t-SVD) in uncovering high-order correlations, this model is capable of achieving a comprehensive understanding of the target graph. Furthermore, we derive an algorithm to address the optimization problem. Experiments on six datasets have demonstrated the superiority of our method. We have released the source code on https://github.com/lshi91/CSTGL-Code.},
   archive      = {J_TMM},
-  author       = {Qi Qin and Runmin Cong and Gen Zhan and Yiting Liao and Sam Kwong},
-  doi          = {10.1109/TMM.2025.3632641},
+  author       = {Long Shi and Yunshan Ye and Lei Cao and Yu Zhao and Badong Chen},
+  doi          = {10.1109/TMM.2025.3639979},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Tensor-based graph learning with consistency and specificity for multi-view clustering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A cross-modal shared attention fusion framework for emotion recognition in multi-party conversations. <em>TMM</em>, 1--8. (<a href='https://doi.org/10.1109/TMM.2025.3639948'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Emotion Recognition in Conversation (ERC) enables machines to respond emotionally to users' requests, which is crucial in human-computer interaction. Existing methods concentrate on capturing context and speaker-dependent relationships within the text modality or emphasize multi-modal interaction and feature fusion. However, these methods fail to effectively align shared emotional representations across modalities and preserve unique emotional features within each modality. To address this challenge, we propose an end-to-end framework called Cross-Modal Shared Attention (ShareERC). Specifically, we first extract context-aware features from text and audio, aggregating emotional information within each modality. Leveraging this aggregated emotional information, we design a Cross-Modal Shared Attention module that aligns shared features across modalities in the feature space while preserving the distinct features of each modality. Extensive experiments on the MELD and IEMOCAP datasets demonstrate the effectiveness and superiority of the proposed ShareERC.},
+  archive      = {J_TMM},
+  author       = {Shifei Ding and Jie Li and Lili Guo},
+  doi          = {10.1109/TMM.2025.3639948},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--8},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {A cross-modal shared attention fusion framework for emotion recognition in multi-party conversations},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sparse transformer for ultra-sparse sampled video compressive sensing. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639993'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Digital cameras consume $\sim 0.1$ microjoule per pixel to capture and encode video, resulting in a power usage of $\sim 20$W for a 4K sensor operating at 30 fps. Imagining gigapixel cameras operating at 100-1000 fps, the current processing model is unsustainable. To address this, physical layer compressive measurement has been proposed to reduce power consumption per pixel by 10-100×. Video Snapshot Compressive Imaging (SCI) introduces high frequency modulation in the optical sensor layer to increase effective frame rate. A commonly used sampling strategy of video SCI is Random Sampling (RS) where each mask element value is randomly set to be 0 or 1. Similarly, image inpainting (I2P) has demonstrated that images can be recovered from a fraction of the image pixels. Inspired by I2P, we propose Ultra-Sparse Sampling (USS) regime, where at each spatial location, only one sub-frame is set to 1 and all others are set to 0. We then build a Digital Micro-mirror Device (DMD) encoding system to verify the effectiveness of our USS strategy. Ideally, we can decompose the USS measurement into sub-measurements for which we can utilize I2P algorithms to recover high-speed frames. However, due to the mismatch between the DMD and CCD, the USS measurement cannot be perfectly decomposed. To this end, we propose BSTFormer, a sparse TransFormer that utilizes local Block attention, global Sparse attention, and global Temporal attention to exploit the sparsity of the USS measurement. Extensive results on both simulated and real-world data show that our method significantly outperforms all previous state-of-the-art algorithms. Additionally, an essential advantage of the USS strategy is its higher dynamic range than that of the RS strategy. Finally, from the application perspective, the USS strategy is a good choice to implement a complete video SCI system on chip due to its fixed exposure time. Code is available at https://github.com/mcao92/BSTFormer.},
+  archive      = {J_TMM},
+  author       = {Miao Cao and Siming Zheng and Lishun Wang and Ziyang Chen and David Brady and Xin Yuan},
+  doi          = {10.1109/TMM.2025.3639993},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {From sight to insight: Unleashing eye-tracking in weakly supervised video salient object detection},
+  title        = {Sparse transformer for ultra-sparse sampled video compressive sensing},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Rethinking class-incremental learning from a dynamic imbalanced learning perspective. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3632688'>www</a>)
+(2025). TransGOP-R: Transformer-based real-world gaze object prediction. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3639891'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep neural networks suffer from catastrophic forgetting when continually learning new concepts. In this paper, we analyze this problem from a data imbalance point of view. We argue that the imbalance between old task and new task data contributes to forgetting of the old tasks. Moreover, the increasing imbalance ratio during incremental learning further aggravates the problem. To address the dynamic imbalance issue, we propose Uniform Prototype Contrastive Learning (UPCL), where uniform and compact features are learned. Specifically, we generate a set of non-learnable uniform prototypes before each task starts. Then we assign these uniform prototypes to each class and guide the feature learning through prototype contrastive learning. We also dynamically adjust the relative margin between old and new classes so that the feature distribution will be maintained balanced and compact. Finally, we demonstrate through extensive experiments that the proposed method achieves state-of-the-art performance on several benchmark including CIFAR-100, ImageNet-100, TinyImageNet, Food-101, and CUB-200. Experimental results show that our approach not only effectively addresses the issue of imbalanced old data in memory but also tackles the problem of imbalanced new data distributions.},
+  abstract     = {The goal of gaze object prediction (GOP) is to predict human gaze objects and categories. However, existing methods require additional head priors or filter the results before evaluation, which is an obstacle for real-world applications. To this end, this paper proposes a Transformer-based Gaze Object Prediction under Real-world setting (TransGOP-R), which does not rely on any head prior input and evaluates end-to-end. We first design a head location module to generate human head location information from a head query. Then, an error analysis demonstrates that the primary error source of the existing GOP model is in gaze estimation, which is caused by the difficulty in predicting gaze points by directly regressing heatmaps. Therefore, we introduce cone prediction into the model training stage, allowing the middle-layer features of the gaze regressor to build the relationship between the target human and objects before regressing the gaze point. An oriented gradient mechanism is proposed in this process to ensure the object detection performance is not affected by cone information. Finally, we conducted very detailed and sufficient experiments to verify the superiority of our method on the GOO-Synth and GOO-Real datasets. At the same time, we also achieve advantages compared to the human-target gaze estimation methods on the GazeFollowing, VideoAttentionTarget, and ChildPlay datasets.},
   archive      = {J_TMM},
-  author       = {Leyuan Wang and Liuyu Xiang and Yunlong Wang and Huijia Wu and Huafeng Yang and Jingqian Liu and Zhaofeng He},
-  doi          = {10.1109/TMM.2025.3632688},
+  author       = {Guangyu Guo and Chenxi Guo and Zhaozhong Wang and Binglu Wang},
+  doi          = {10.1109/TMM.2025.3639891},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {TransGOP-R: Transformer-based real-world gaze object prediction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Triple-view knowledge distillation for semi-supervised semantic segmentation. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639923'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To alleviate the expensive human labeling problem, semi-supervised semantic segmentation utilizes a few labeled images along with an abundance of unlabeled images to predict the pixel-level label maps with the same size. Previous methods often rely on co-training with two convolutional networks with the same architecture but different initialization, which fails to capture sufficiently diverse features. This limitation motivates us to employ tri-training and design a triple-view encoder to utilize encoders with different architectures to derive diverse features, while leveraging knowledge distillation to capture complementary semantics among these encoders. Moreover, existing approaches simply concatenate features from both encoder and decoder, and the simple concatenation requires a large memory cost. This inspires us to present a dual-frequency decoder that selects those important features by projecting the spatial-domain features into the frequency domain, where a dual-frequency channel attention mechanism is applied to evaluate the feature importance. Therefore, we propose a Triple-view Knowledge Distillation framework, termed TriKD, for semi-supervised semantic segmentation. It comprises the triple-view encoder and the dual-frequency decoder. Extensive experiments conducted on two benchmarks, i.e., Pascal VOC 2012 and Cityscapes, validate the superiority of our method, achieving a satisfying tradeoff between precision and inference speed. Our code is available at GitHub.},
+  archive      = {J_TMM},
+  author       = {Ping Li and Junjie Chen and Li Yuan and Xianghua Xu and Mingli Song},
+  doi          = {10.1109/TMM.2025.3639923},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
   pages        = {1--12},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Rethinking class-incremental learning from a dynamic imbalanced learning perspective},
+  title        = {Triple-view knowledge distillation for semi-supervised semantic segmentation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Progressive learning of instance-level proxy semantics for few-shot action recognition. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632652'>www</a>)
+(2025). StructGS: Adaptive spherical harmonics and rendering enhancements for superior 3D gaussian splatting. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639991'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Few-shot action recognition is a crucial task for mitigating the challenges of data scarcity in video understanding. Recent advancements in large-scale pre-trained models have introduced the potential of incorporating semantic knowledge from multi-modal pre-trained models, such as CLIP, to alleviate these challenges. Although some progress have been made, existing methods still rely on class-level text embeddings that are inherently low in diversity, limiting their ability to generalize to unseen actions. To overcome this limitation, we propose a novel framework called Progressive Learning of Instance-Level Proxy Semantics (ProLIPS). ProLIPS integrates Proxy Semantic Diffusion (PSD) to generate rich, instance-level proxy semantic features with diverse semantic contents and temporal dynamics, utilizing a multi-step CLIP-guidance mechanism and a time-conditioned reverse diffusion process. Our approach preserves the diversity of semantic-aligned visual features, significantly improving the generalization and robustness of few-shot action recognition. Extensive experiments on five challenging benchmarks demonstrate the effectiveness of ProLIPS.},
+  abstract     = {Recent advancements in 3D reconstruction coupled with neural rendering techniques have greatly improved the creation of photo-realistic 3D scenes, influencing both academic research and industry applications. The technique of 3D Gaussian Splatting and its variants incorporate the strengths of both primitive-based and volumetric representations, achieving superior rendering quality. While 3D Geometric Scattering (3DGS) and its variants have advanced the field of 3D representation, they fall short in capturing the stochastic properties of non-local structural information during the training process. Additionally, the initialisation of spherical functions in 3DGS-based methods often fails to engage higher-order terms in early training rounds, leading to unnecessary computational overhead as training progresses. Furthermore, current 3DGS-based approaches require training on higher resolution images to render higher resolution outputs, significantly increasing memory demands and prolonging training durations. We introduce StructGS, a framework that enhances 3D Gaussian Splatting (3DGS) for improved novel-view synthesis in 3D reconstruction. StructGS innovatively incorporates a patch-based SSIM loss, dynamic spherical harmonics initialisation and a Multi-scale Residual Network (MSRN) to address the above-mentioned limitations, respectively. Our framework significantly reduces computational redundancy, enhances detail capture and supports high-resolution rendering from low-resolution inputs. Experimentally, StructGS demonstrates superior performance over state-of-the-art (SOTA) models, achieving higher quality and more detailed renderings with fewer artifacts. (The link to the code will be made available after publication.).},
   archive      = {J_TMM},
-  author       = {Fang Peng and Xiaoshan Yang and Yaowei Wang and Changsheng Xu},
-  doi          = {10.1109/TMM.2025.3632652},
+  author       = {Zexu Huang and Min Xu and Stuart Perry},
+  doi          = {10.1109/TMM.2025.3639991},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
+  pages        = {1--12},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {StructGS: Adaptive spherical harmonics and rendering enhancements for superior 3D gaussian splatting},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ICDSR: Integrated conditional diffusion model for single image super-resolution. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639910'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion Probabilistic Models (DPMs) have recently demonstrated considerable potential for single image super-resolution (SISR) by utilizing a conditional generation process that transforms Gaussian noise into high-resolution (HR) images based on low-resolution (LR) inputs. Current Image-Conditional DPMs (icDPMs) have demonstrated promising results by leveraging LR images as a condition to guide the generation of HR images. However, icDPMs fail to effectively integrate LR images and other conditional information to generate accurate and natural output. To address this issue, we propose an Integrated Conditional Diffusion Model for Single Image Super-Resolution (ICDSR). Our approach encodes the LR image as a condition to generate the prior feature, simultaneously integrating it with timestep information to establish intermediate constraints. To further enhance these constraints, we designed a multi-scale guidance structure for the U-shaped concatenation of the diffusion model during the integration of conditions. This constraint serves as multi-scale guidance specifically designed for the U-shaped concatenation of the diffusion model during the integration of conditions. Specifically, multi-scale integrated information is injected into the diffusion model basic block, informing about the coarse structure of the sharp image at the intermediate layers with spatially adaptive conditions. Additionally, ICDSR employs a lightweight U-Net to provide initial guidance and leverages the diffusion model to learn residual guidance for faster convergence. Extensive experiments on facial and general benchmarks, including the CelebA and DIV2K datasets, demonstrate that ICDSR surpasses existing methods, achieving state-of-the-art perceptual quality while maintaining competitive distortion metrics.},
+  archive      = {J_TMM},
+  author       = {Cong Hu and Xiao-Zhong Wei and Xiao-Jun Wu},
+  doi          = {10.1109/TMM.2025.3639910},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Progressive learning of instance-level proxy semantics for few-shot action recognition},
+  title        = {ICDSR: Integrated conditional diffusion model for single image super-resolution},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Real-scene image dehazing via laplacian pyramid-based conditional diffusion model. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3632694'>www</a>)
+(2025). Investigate interactive semantic segmentation via an uncertainty mining view. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639952'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent diffusion models have demonstrated exceptional efficacy across various image restoration tasks, but still suffer from time-consuming and substantial computational resource consumption. To address these challenges, we present LPCDiff, a novel Laplacian Pyramid-based Conditional Diffusion model designed for real-scene image dehazing. LPCDiff leverages the Laplacian pyramid decomposition to decouple the input image into two components: the low-resolution low-pass image and the high-frequency residuals. These components are subsequently reconstructed through a diffusion model and a well-designed high-frequency residual recovery module. With such a strategy, LPCDiff can substantially accelerate inference speed and reduce computational costs without sacrificing image fidelity. In addition, the framework empowers the model to capture intrinsic high-frequency details and low-frequency structural information within the image, resulting in sharper and more realistic haze-free outputs. Moreover, to extract more valuable information from the limited training data, we introduce a low-frequency refinement module to further enhance the intricate details of the final dehazed images. Through extensive experimentation, our method significantly outperforms 12 state-of-the-art approaches on three real-world and one synthetic image dehazing benchmarks. Code is available at https://github.com/yz-wang/LPCDiff.},
+  abstract     = {With the rapid development of intelligence media, traditional semantic segmentation has shown excellent potential in application scenarios like autonomous driving. However, due to limited performance, traditional segmentation models usually lead to poor user experiences in applications that require high segmentation precision. Therefore, interactive semantic segmentation (ISS) is gaining the attention is gaining attention due to its capability to generate high-precision semantic segmentation results through a few user-provided clicks for experience improvement, which thus has a promising development prospect in fine-grained application scenarios, e.g., virtual reality, smart medical, data annotation, etc.. For good interaction efficiency, most existing interactive methods make efforts to conduct suitable click simulation strategies and reasonable click encoding methods, aiming at the robust understanding of diverse user clicks and translating comprehensible user intent, i.e., assign the correct category to the clicked area, for the neural network. Though proved effective, their designs ignore the uncertainty hiding in the extracted interaction features, which reflects the interaction difficulty and the user clicking intents. This can lead to inappropriate click simulation and click encoding, limiting the interaction efficiency. Hence we focus on exploring a reasonable ISS scheme via an uncertainty mining view. Specifically, we propose an uncertainty-based class-balanced click sampling (UCCS) simulation strategy by considering both the uncertainty of the click simulation region and its semantic imbalance, to form a reasonable click distribution. Furthermore, we propose a semantic uncertainty residual encoding (SURE) method to better embed the user's intention into the localization maps, by mining semantic confusion between the click and misprediction classes. We prove the effectiveness of our design through extensive experiments and initially analyze the importance of uncertainty mining for the ISS. Our model can achieve state-of-the-art performance on three semantic segmentation benchmarks.},
   archive      = {J_TMM},
-  author       = {Yongzhen Wang and Jie Sun and Heng Liu and Xiao-Ping Zhang and Mingqiang Wei},
-  doi          = {10.1109/TMM.2025.3632694},
+  author       = {Yutong Gao and Congyan Lang and Fayao Liu and Xun Xu and Yuanzhouhan Cao and Lijuan Sun and Yunchao Wei},
+  doi          = {10.1109/TMM.2025.3639952},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Real-scene image dehazing via laplacian pyramid-based conditional diffusion model},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). ASK-HOI: Affordance-scene knowledge prompting for human-object interaction detection. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632627'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Human-object interaction (HOI) detection task aims to learn how humans interact with surrounding objects by inferring fine-grained triples of $\left\langle \rm {\emph {human, action, object}} \right\rangle$, which plays a vital role in computer vision tasks such as human-centered scene understanding and visual question answering. However, HOI detection suffers from class long-tailed distributions and zero-shot problems. Current methods typically identify HOI only from input images or label spaces in a data-driven manner, lacking sufficient knowledge prompts, and consequently limits their potential for real-world scenes. Hence, to fill this gap, this paper introduces affordance and scene knowledge as prompts on different granularities to the HOI detector to improve its recognition ability. Concretely, we first construct a large-scale affordance-scene knowledge graph, named ASKG, whose knowledge can be divided into two categories according to the fields of image information, i.e., the knowledge related to affordances of object instances and the knowledge associated with the scene. Subsequently, the knowledge of affordance and scene specific to the input image is extracted by an ASKG-based prior knowledge embedding module. Since this knowledge corresponds to the image at different granularities, we then propose an instance field adaptive fusion module and a scene field adaptive fusion module to enable visual features fully absorb the knowledge prompts. These two encoded features of different fields and knowledge embeddings are finally fed into a proposed HOI recognition module to predict more accurate HOI results. Extensive experiments on both HICO-DET and V-COCO benchmarks demonstrate that the proposed method leads to competitive results compared with the state-of-the-art methods.},
-  archive      = {J_TMM},
-  author       = {Dongpan Chen and Dehui Kong and Junna Gao and Jinghua Li and Qianxing Li and Baocai Yin},
-  doi          = {10.1109/TMM.2025.3632627},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {ASK-HOI: Affordance-scene knowledge prompting for human-object interaction detection},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Unsupervised point cloud reconstruction via recurrent multi-step moving strategy. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632687'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Point cloud reconstruction is an ingredient in geometry modeling, computer graphics, and 3D vision. In this paper, we propose a novel unsupervised learning method called the Recurrent Multi-Step Moving Strategy, which progressively moves query points toward the underlying surface to accurately learn unsigned distance fields (UDFs) for point cloud reconstruction. Specifically, we design a recurrent network for UDF estimation that integrates a multi-step strategy for query movement. This model treats query movement as a trajectory prediction process, establishing dependencies between the current query move decision and the previous path, thus utilizing temporal information to improve UDF estimation accuracy. Further, we design distance and gradient regularization losses to ensure the precision, consistency, and continuity of the estimated UDFs. Extensive evaluations, comparisons, and ablation studies are conducted to show the superiority of our method over the competing approaches in terms of reconstruction accuracy and generality. Our unsupervised reconstruction method outperforms many supervised techniques and demonstrates efficacy across diverse scenarios, including single-object, indoor, and outdoor benchmarks.},
-  archive      = {J_TMM},
-  author       = {Zheng Liu and Jianjun Zhang and Ming Zhang and Runze Ke and Chengcheng Yu and Ligang Liu},
-  doi          = {10.1109/TMM.2025.3632687},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Unsupervised point cloud reconstruction via recurrent multi-step moving strategy},
+  title        = {Investigate interactive semantic segmentation via an uncertainty mining view},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Double-chain graph convolution transformer for 3D human pose estimation. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3632636'>www</a>)
+(2025). HAAP: Vision-context hierarchical attention autoregressive with adaptive permutation for scene text recognition. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639908'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Reconstructing 3D poses from 2D poses lacking depth information is particularly challenging due to the complexity and diversity of human motion. The key is to effectively model the spatial constraints between joints to leverage their inherent dependencies. Thus, we propose a novel model, called Double-chain Graph Convolution Transformer (DC-GCT), to constrain the pose through a double-chain design consisting of local-to-global and global-to-local chains to obtain a complex representation more suitable for the current human pose. Specifically, we combine the advantages of GCN and Transformer and design a Local Constraint Module (LCM) based on GCN and a Global Constraint Module (GCM) based on self-attention mechanism as well as a Feature Interaction Module (FIM). The proposed method fully captures the multi-level dependencies between human body joints to optimize the modeling capability of the model. Moreover, we propose a method to use temporal information into the single-frame model by guiding the video sequence embedding through the joint embedding of the target frame, with negligible increase in computational cost. Experimental results demonstrate that DC-GCT achieves state-of-the-art performance on two challenging datasets (Human3.6 M and MPI-INF-3DHP). Notably, our model achieves state-of-the-art performance on all action categories in the Human3.6 M dataset using detected 2D poses from CPN, and our code is available at: https://github.com/KHB1698/DC-GCT.},
+  abstract     = {Scene Text Recognition (STR) is challenging in extracting effective character representations from visual data when text is unreadable. Permutation language modeling (PLM) is introduced to refine character predictions by jointly capturing contextual and visual information. However, in PLM, the use of random permutations causes training fit oscillation, and the iterative refinement (IR) operation also introduces additional overhead. To address these issues, this paper proposes the Hierarchical Attention autoregressive Model with Adaptive Permutation (HAAP) to enhance position-context-image interaction capability, improving autoregressive LM generalization. First, we propose Implicit Permutation Neurons (IPN) to generate adaptive attention masks that dynamically exploit token dependencies, enhancing the correlation between visual information and context. Adaptive correlation representation helps the model avoid training fit oscillation. Second, the Cross-modal Hierarchical Attention mechanism (CHA) is introduced to capture the dependencies among position queries, contextual semantics and visual information. CHA enables position tokens to aggregate global semantic information, avoiding the need for IR. Extensive experimental results show that the proposed HAAP achieves state-of-the-art (SOTA) performance in terms of accuracy, complexity, and latency on several datasets.},
   archive      = {J_TMM},
-  author       = {Hongbo Kang and Yong Wang and Mengyuan Liu and Doudou Wu and Peng Liu and Wenming Yang},
-  doi          = {10.1109/TMM.2025.3632636},
+  author       = {Honghui Chen and Yuhang Qiu and Jiabao Wang and Pingping Chen and Nam Ling},
+  doi          = {10.1109/TMM.2025.3639908},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--12},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Double-chain graph convolution transformer for 3D human pose estimation},
+  title        = {HAAP: Vision-context hierarchical attention autoregressive with adaptive permutation for scene text recognition},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Orientation-aware task-decoupled learning for oriented object detection. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3632656'>www</a>)
+(2025). Towards structure-aware model for multi-modal knowledge graph completion. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639983'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent studies have shown that disentanglement of classification and localization tasks has great potential to improve the performance of general object detection. However, such kind of disentanglement strategies remain not well explored in oriented object detection. Particularly, there exist two challenges lying in task disentanglement for oriented object detection: (1) existing task-decoupled methods ignore the orientation of objects, hardly coping with arbitrarily oriented objects; (2) the targets in oriented object detection (e.g., high-resolution remote sensing images) are generally small-size and fine-grained, making classification more difficult. To handle the above issues, we rethink task-decoupled policy in oriented object detection and propose an effective Orientation-aware Task-Decoupled Learning (OTDL) method. Specifically, our OTDL first presents a light-weight Task-specific Proposal Offset Learning (TPOL) module to generate the eligible proposals for arbitrarily oriented objects, where TPOL module equips classification and localization tasks with individual proposals by learning task-specific and orientation-aware offsets in a local coordinate. Furthermore, we empirically study the effect of various double-head strategies on performance of oriented object detection, while proposing a novel Pyramid Covariance Attention (PCA)-based classification head to cope with small-size and fine-grained targets. Based on the proposed TPOL module and PCA-based classification head, our OTDL explores the potential of task disentanglement for improving the performance of oriented object detection. The experiments are conducted on five oriented object detection benchmarks (i.e., DOTA-v1.0, DOTA-v1.5, HRSC2016, DIOR-R and SODA-A), and the results show our OTDL method significantly outperforms its counterparts, while achieving state-of-the-art performance.},
+  abstract     = {Knowledge graphs (KGs) play a key role in promoting various multimedia and AI applications. However, with the explosive growth of multi-modal information, traditional knowledge graph completion (KGC) models cannot be directly applied. This has attracted a large number of researchers to study multi-modal knowledge graph completion (MMKGC). Since MMKG extends KG to the visual and textual domains, MMKGC faces two main challenges: (1) how to deal with the fine-grained modality information interaction and awareness; (2) how to ensure the dominant role of graph structure in multi-modal knowledge fusion and deal with the noise generated by other modalities during modality fusion. To address these challenges, this paper proposes a novel MMKGC model named TSAM, which integrates fine-grained modality interaction and dominant graph structure to form a high-performance MMKGC framework. Specifically, to solve the challenges, TSAM proposes the Fine-grained Modality Awareness Fusion method (FgMAF), which uses pre-trained language models better to capture fine-grained semantic information interaction of different modalities and employs an attention mechanism to achieve fine-grained modality awareness and fusion. Additionally, TSAM presents the Structure-aware Contrastive Learning method (SaCL), which utilizes two contrastive learning approaches to align other modalities more closely with the structured modality. Extensive experiments show the proposed TSAM model significantly outperforms existing MMKGC models on widely used multi-modal datasets. The code is available at https://github.com/2391134843/TSAM.},
   archive      = {J_TMM},
-  author       = {Ting Yang and Qilong Wang and Qinghua Hu},
-  doi          = {10.1109/TMM.2025.3632656},
+  author       = {Linyu Li and Zhi Jin and Yichi Zhang and Dongming Jin and Chengfeng Dou and Yuanpeng He and Xuan Zhang and Haiyan Zhao},
+  doi          = {10.1109/TMM.2025.3639983},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Orientation-aware task-decoupled learning for oriented object detection},
+  title        = {Towards structure-aware model for multi-modal knowledge graph completion},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). AesPrompt: Zero-shot image aesthetics assessment with multi-granularity aesthetic prompt learning. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632637'>www</a>)
+(2025). Exploiting multimodal knowledge graph for multimodal machine translation. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639995'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent years have witnessed increasing interest towards image aesthetics assessment (IAA), which predicts the aesthetic appeal of images by simulating human perception. The state-of-the-art IAA methods, despite their significant advancements, typically rely heavily on time-consuming and labor-intensive human annotation of aesthetic scores. Furthermore, they are subject to the generalization challenge, which is highly desired in real-world applications. Motivated by this, zero-shot image aesthetics assessment (ZIAA) is investigated to achieve robust model generalization without relying on manual aesthetic annotations, which remains largely underexplored. Specifically, a novel aesthetic prompt learning framework for ZIAA, dubbed AesPrompt, is presented in this paper. The key insight of AesPrompt is to emulate the human aesthetic perception process for learning aesthetic-oriented prompts in a multi-granularity manner. First, we first develop a new pseudo aesthetic distribution generation paradigm based on multi-LLM ensemble. Then, external knowledge of multi-granularity prompts encompassing image themes, emotions, and aesthetics is acquired. Through learning the multi-granularity aesthetic-oriented prompts, the proposed method achieves better generalization and interpretability. Extensive experiments on five IAA benchmarks demonstrate that AesPrompt consistently outperforms the state-of-the-art ZIAA methods across diverse-sourced images, covering natural images, artistic images, and artificial intelligence-generated images.},
+  abstract     = {A neural Multimodal Machine Translation (MMT) system utilizes multimodal information, particularly images, to enhance traditional text-only models and achieve superior performance. However, the effectiveness of MMT heavily depends on the availability of extensive collections of bilingual parallel sentence pairs and manually annotated images, which poses a challenge due to the scarcity of such pairs. To address this issue, we propose incorporating the Multimodal Knowledge Graph (MMKG) for data augmentation in MMT. By utilizing MMKG as an additional source of knowledge, we can overcome the limitations of existing sentence-image pairings. This allows us to expand the original parallel corpus and generate corresponding images, creating new synthetic data pairs that facilitate effective data augmentation. Experiments conducted on two translation datasets, Multi30k and IKEA, demonstrate that the proposed MMKG enhancement method significantly improves performance across multiple baseline methods, ultimately outperforming all baseline approaches. Additionally, experiments under low-resource conditions reveal that our method achieves exceptional enhancement effects in low-resource corpora, surpassing other data augmentation baseline methods. These results indicate the efficacy and potential of the proposed method for enhancing the performance of multimodal models across diverse datasets.},
   archive      = {J_TMM},
-  author       = {Xiangfei Sheng and Leida Li and Pengfei Chen and Li Cai and Giuseppe Valenzise},
-  doi          = {10.1109/TMM.2025.3632637},
+  author       = {Tianjiao Xu and Xuebo Liu and Derek F. Wong and Yue Zhang and Lidia S. Chao and Min Zhang and Tian Gan},
+  doi          = {10.1109/TMM.2025.3639995},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {AesPrompt: Zero-shot image aesthetics assessment with multi-granularity aesthetic prompt learning},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). DiffW: Multi-encoder based on conditional diffusion model for robust image watermarking. <em>TMM</em>, 1--16. (<a href='https://doi.org/10.1109/TMM.2025.3632631'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The existing deep-learning based robust watermarking model generally applies a discriminator to form generative adversarial network (GAN) for increasing the quality of encoded images, and adopts a single encoder to embed watermark. However, GAN training is unstable, and the single encoder cannot fully adjust the watermarking distribution, thus affecting the watermarking performance. To address those limitations, this paper presents the multi-encoder based on conditional diffusion model (CDM) for robust image watermarking, namely, DiffW. To enhance the stability, the multi-encoder structure based on CDM replaces GAN for optimizing the watermarking distribution iteratively. Specifically, the operation of each timestep in the forward and reverse diffusion processes of the CDM is regarded as an encoder to overcome the shortcomings of the single encoder structure. At the training stage, under the guidance of the conditional noisy image, the forward process trains each encoder to fuse the image and watermark to generate high-quality encoded images. During the testing stage, only a small number of trained encoders of the forward process are used, so as to reduce the time complexity. Furthermore, to improve watermarking robustness, the channel attention module (CAM) is designed to extract main watermark features by mining channel correlations for multi-layer fusion, so that watermark can be embedded into imperceptible and texture areas. The experimental results reveal that compared with the existing watermarking model, the proposed DiffW can achieve better results in terms of watermarking invisibility and robustness.},
-  archive      = {J_TMM},
-  author       = {Ting Luo and Renzhi Hu and Zhouyan He and Gangyi Jiang and Haiyong Xu and Yang Song and Chin-Chen Chang},
-  doi          = {10.1109/TMM.2025.3632631},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--16},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {DiffW: Multi-encoder based on conditional diffusion model for robust image watermarking},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Denoised semantic features for local consistent no-reference image quality assessment. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3632644'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multi-dataset no-reference image quality assessment (NR-IQA) aims to deliver consistent image quality evaluation across a variety of contexts, empowering platform developers to optimize image processing pipelines while maintaining acceptable visual quality. Human vision, when observing images, tends to prioritize local semantics, for example, a blurry sky is perceived differently than a blurry face. This insight forms the basis of many multi-dataset NR-IQA models, which commonly rely on pretrained deep networks to extract semantic information that is crucial for assessing perceptual quality. Vision Transformer-based pre-trained models often exhibit persistent noise artifacts, as demonstrated by previous studies such as Denoising Vision Transformers; many existing IQA approaches fail to appropriately address these local semantic artifacts, leading to inconsistent local IQA score maps, even when overall performance appears satisfactory. To tackle this, we introduce DINO-IQA, a novel dual-branch network architecture designed for NR-IQA to multi-dataset. The first branch focuses on extracting local distortion features, effectively capturing image degradation, while the second branch utilizes denoised DINOv2 from ViT decomposition to extract refined semantic features, free from local artifacts. By enabling visual interaction between distortion and semantic features, our method generates locally consistent quality maps that align more closely with human perception. This approach achieves remarkable accuracy and sets a new benchmark for state-of-the-art multi-dataset NR-IQA performance. Our findings underscore the critical need to address semantic noise in pre-trained networks for enhancing NR-IQA, demonstrating that our dual-branch framework offers a robust solution to this previously underexplored challenge.},
-  archive      = {J_TMM},
-  author       = {Hui Li and Liang Liao and Chaofeng Chen and Xiaopeng Fan and Wangmeng Zuo and Weisi Lin},
-  doi          = {10.1109/TMM.2025.3632644},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Multimed.},
-  title        = {Denoised semantic features for local consistent no-reference image quality assessment},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Feature dispersion adaptation with pre-pooling prototype for continual image classification. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3632692'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Catastrophic forgetting, the degradation of knowledge about previously seen classes when learning new concepts from a shifting data stream, is a pitfall faced by neural network learning in open environments. Recent research on continual image classification usually relies on storing samples or prototypes to resist this forgetting. We find that during acquiring knowledge of the new classes, the features of old classes gradually disperse, which leads to confusion of features between classes and makes them difficult to discriminate. Coping with feature dispersion would be a key consideration in resisting catastrophic forgetting, which has been neglected in previous works. To this end, we try to address this issue from two perspectives. First, we propose a dispersing feature generation mechanism, which generates pseudo-features based on the pre-pooling prototypes of the old classes to simulate feature dispersion and remind the classifier to adjust the decision boundary. Second, we design a consistent alignment constraint to alleviate the severity of feature dispersion by maintaining consistency in the hidden states of different depths when aligning the current model with the previous model. Extensive experimental results on various benchmarks show the superiority of our proposed method.},
-  archive      = {J_TMM},
-  author       = {Wuxuan Shi and Mang Ye and Wei Yu and Bo Du},
-  doi          = {10.1109/TMM.2025.3632692},
-  journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
   pages        = {1--12},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Feature dispersion adaptation with pre-pooling prototype for continual image classification},
+  title        = {Exploiting multimodal knowledge graph for multimodal machine translation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Long-short match for lost control in UAV multi-object tracking. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632642'>www</a>)
+(2025). Prompt learning with knowledge regularization for pre-trained vision-language models. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639886'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Multi-Object Tracking (MOT) in Unmanned Aerial Vehicles (UAV) aims to continuously and stably detect and track objects in videos captured by UAVs. In existing MOT tracking-by-detection schemes, the tracker with a fixed step size is always employed, and a fixed length of past tracking information is input to the tracker to guide position prediction. However, the limited prediction range of a single-scale tracker leads to frequent tracking losses, and limited historical information also reduces tracking accuracy. To address these limitations, we propose a novel Long-Short Match (LSMTrack) tracking method. The key idea is to use long and short trackers and maintain a long-term motion state to improve tracking performance, thus reducing the likelihood of entering the lost status. To this end, a new Mamba-based tracker and a long-short match strategy are proposed. For long and short trackers, the same architecture is used based on Mamba. Unlike the previous Mamba-based approach, the proposed tracker maintains a long-term state while updating the state and making position predictions in each time step, so we call it a step Mamba tracker. Meanwhile, we devise a long-short match strategy at the inference stage to integrate long and short trackers, and design a lost control operation which updates the long-term states using historical state values. In this way, the matching probability and the inference efficiency are guaranteed. Experimental results on two UAV MOT datasets confirm the state-of-the-art performance. Specifically, the best results are achieved in terms of two popular MOTA and IDF1 tracking evaluation metrics.},
+  abstract     = {Prompt learning is an effective way to adapt pre-trained models to downstream tasks by training a small number of additional learnable prompts. Recent studies address several early challenges by combining generalized knowledge from frozen pre-trained VL models with task-specific knowledge from training data as guidance for prompt learning. However, existing methods still struggle with the generalization-adaptation (GA) trade-off dilemma: excessive reliance on generalized knowledge hinders adaptation to downstream tasks, while overemphasis on task-specific knowledge undermines the inherent generalization capabilities of pre-trained models. To address this issue, we propose a novel prompt learning method called Prompt Learning with Knowledge Regularization (PLKR). PLKR effectively mitigates the GA trade-off dilemma by offering greater flexibility in adapting to task-specific knowledge while minimizing the disruption of pre-trained knowledge. Specifically, we propose category-invariant and topology-invariant knowledge regularization to preserve generalized knowledge: the former enhances category-level discriminative capabilities while allowing flexible task-specific learning, and the latter maintains global topological stability during adaptation to new tasks. Through the proposed regularization, PLKR improves the performance on both base and new tasks. We evaluate the effectiveness of our approach on four representative tasks over 11 datasets. Experimental results show our method outperforms existing SOTA methods by a large margin.},
   archive      = {J_TMM},
-  author       = {Zizhuang Zou and Mao Ye and Luping Ji and Lihua Zhou and Song Tang and Yan Gan and Shuai Li},
-  doi          = {10.1109/TMM.2025.3632642},
+  author       = {Boyang Guo and Liang Li and Jiehua Zhang and Yaoqi Sun and Chenggang Yan and Xichun Sheng},
+  doi          = {10.1109/TMM.2025.3639886},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
-  pages        = {1--15},
+  month        = {12},
+  pages        = {1--12},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Long-short match for lost control in UAV multi-object tracking},
+  title        = {Prompt learning with knowledge regularization for pre-trained vision-language models},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Accelerating adaptive diffusion and uncertainty modeling for underwater image enhancement. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3632678'>www</a>)
+(2025). Long-tailed continual learning for visual food recognition. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3632640'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Underwater image enhancement (UIE) aims to mitigate wavelength-dependent absorption and multi-path scattering effects, enabling the recovery of natural colors and rich details. Despite notable progress, consistently achieving high-quality enhancement in both fidelity and perceptual clarity remains a fundamental challenge. To address this, we propose the Laplacian domain Dual-Focus Enhancer (DFE), an innovative framework consisting of two stages: adaptive diffusion-accelerated low frequency enhancement (ADALE) and progressive uncertainty driven high-frequency enhancement (PUHE). Specifically, DFE applies a Laplacian transform to decouple the frequency-specific degradations in underwater images, supporting fidelity- and clarity-oriented enhancement along separate pathways. To facilitate high-fidelity restoration, ADALE incorporates an HSV guided optimization mechanism (HSV-OM) to establish a robust color and brightness calibration baseline for the low-frequency diffusion model, adaptively managing basic degradations with minimal sampling steps. Furthermore, to enhance contour and detail perception, PUHE models the uncertainty of reference textures and integrates it with feature modulation to progressively reconstruct multi-scale high-frequency structures. The multi reference underwater texture enhancement (MUTE) dataset fur ther improves image clarity. Extensive experiments demonstrate that our DFE outperforms state-of-the-art (SOTA) methods in both quantitative metrics and visual quality.},
+  abstract     = {Deep learning-based food recognition has made significant progress in predicting food types from eating occasion images. However, two key challenges hinder real-world deployment: (1) continuously learning new food classes without forgetting previously learned ones, and (2) handling the long-tailed distribution of food images, where a few common classes and many more rare classes. To address these, food recognition methods should focus on long-tailed continual learning. In this work, We introduce a dataset that encompasses 186 American foods along with comprehensive annotations. We also introduce three new benchmark datasets, VFN186-LT, VFN186-INSULIN and VFN186-T2D, which reflect real-world food consumption for healthy populations, insulin takers and individuals with type 2 diabetes without taking insulin. We propose a novel end-to-end framework that improves the generalization ability for instance-rare food classes using a knowledge distillation-based predictor to avoid misalignment of representation during continual learning. Additionally, we introduce an augmentation technique by integrating class-activation-map (CAM) and CutMix to improve generalization on instance-rare food classes. Our method, evaluated on Food101-LT, VFN-LT, VFN186-LT, VFN186-INSULIN, and VFN186-T2DM, shows significant improvements over existing methods. An ablation study highlights further performance enhancements, demonstrating its potential for real-world food recognition applications.},
   archive      = {J_TMM},
-  author       = {Xiuna Zeng and Jiaao Peng and Zhenqi Fu and Linyu Fan and Xiaotong Tu and Yue Huang and Xinghao Ding},
-  doi          = {10.1109/TMM.2025.3632678},
+  author       = {Jiangpeng He and Xiaoyan Zhang and Luotao Lin and Jack Ma and Heather A. Eicher-Miller and Fengqing Zhu},
+  doi          = {10.1109/TMM.2025.3632640},
   journal      = {IEEE Transactions on Multimedia},
-  month        = {11},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Long-tailed continual learning for visual food recognition},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SSPD: Spatial-spectral prior decoupling model for spectral snapshot compressive imaging. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3638016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Coded aperture snapshot spectral imaging (CASSI) captures 3D hyperspectral images (HSIs) in a single shot by encoding incident light into 2D measurements. However, recovering the original hyperspectral data from these measurements is a severely ill-posed inverse problem due to significant information loss during compression. Recent deep learning methods, especially deep unfolding networks, have demonstrated promising reconstruction results by embedding learnable priors into iterative optimization frameworks. However, most existing approaches use a single network to jointly estimate spatial and spectral priors, limiting their ability to handle the distinct properties of HSIs. To overcome this limitation, we propose the Spatial-Spectral Prior Decoupling Model (SSPD), which reformulates HSI reconstruction as a prior absorption problem, enabling independent modeling of spatial and spectral priors with specialized network architectures. To achieve this, we design two attention mechanisms tailored for hyperspectral data: one for capturing spatial correlations and another for preserving spectral signatures. Additionally, we develop a hybrid loss function that combines convergence constraints and cross-prior interactions, ensuring accurate prior fusion and stable reconstruction. Experiments on synthetic and real-world datasets confirm that SSPD outperforms existing methods in spectral snapshot compressive imaging.},
+  archive      = {J_TMM},
+  author       = {Lizhu Liu and Yaonan Wang and Yurong Chen and Jiwen Lu and Hui Zhang},
+  doi          = {10.1109/TMM.2025.3638016},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {SSPD: Spatial-spectral prior decoupling model for spectral snapshot compressive imaging},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CrossHypergraph: Consistent high-order semantic network for few-shot image classification. <em>TMM</em>, 1--12. (<a href='https://doi.org/10.1109/TMM.2025.3639903'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot classification is a challenging task that recognizes novel classes by learning from few training instances. Metric-based models are currently the most effective solutions for few-shot classification. In these models, patch feature distances between query instances and support classes are calculated to achieve classification. However, it is difficult for patch-based methods to mine semantic information of support and query instances, leading to inaccurate feature similarity measures. To address these problems, we propose to construct CrossHypergraph based on hypergraph modeling. Specifically, we first align the local prototype vertices of support and query instances to model consistent hypergraph structures. Then a vertex-hyperedge-vertex-based interactive feature updating mechanism is designed to generate CrossHypergraph representation with consistent high-order semantic information for support and query instances. Based on the CrossHypergraph, we propose a consistent high-order semantic network, in which the high-order semantic-based weighted metric strategy is designed to achieve accurate classification. The proposed method is evaluated on general, fine-grained, and cross-domain few-shot benchmarks, including miniImageNet, tieredImageNet, CIFAR-FS, FC100, and miniImageNet $\rightarrow$ CUB datasets. Experimental results show that our CrossHypergraph-based few-shot classifier generates consistent high-order semantic features, and achieves state-of-the-art performance on both 1-shot and 5-shot tasks.},
+  archive      = {J_TMM},
+  author       = {Yucheng Zhang and Hao Wang and Shuo Zhang and Biao Leng},
+  doi          = {10.1109/TMM.2025.3639903},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--12},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {CrossHypergraph: Consistent high-order semantic network for few-shot image classification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Invisible backdoor attack with siamese tuning on pre-trained vision-language models. <em>TMM</em>, 1--14. (<a href='https://doi.org/10.1109/TMM.2025.3639961'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale pre-trained Vision-Language Models (VLMs) have shown impressive cross-modal alignment capabilities in images and text extraction. Despite their strengths, these models are vulnerable to backdoor attacks due to their heavy reliance on training data. Prevailing backdoor attacks on VLMs involve the injection of subtle patches into the pre-training process, causing the model to exhibit harmful behaviors when these triggers appear in test images. However, existing attack methods typically suffer from the following limitations: (1) Polluting pre-training data to train a poisoned VLM is expensive and time-consuming, and this extra retraining phase could potentially harm the performance of the pre-trained VLM; (2) Backdoor triggers, often visible to humans and requiring elaborate placements, significantly raise the risk of being detected and compromise their feasibility. To overcome the above limitations, we propose a novel invisible backdoor attack with Siamese tuning on pre-trained VLMs. Specifically, we design a Siamese Tuning Attack (SiTA) method to subtly manipulate the behavior of the target VLM by parallelizing a Siamese model with the original image encoder and fine-tuning the Siamese model with a poisoned dataset. Furthermore, an imperceptible frequency-domain trigger is employed in the targeted VLM attack, enhancing its robustness and feasibility without necessitating alterations to the image encoder of the initial model. Extensive experiments conducted on three datasets across multiple downstream tasks demonstrate a remarkable attack performance of our proposed SiTA against VLMs.},
+  archive      = {J_TMM},
+  author       = {Bing Wang and Shengsheng Qian and Changsheng Xu},
+  doi          = {10.1109/TMM.2025.3639961},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Invisible backdoor attack with siamese tuning on pre-trained vision-language models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SLSM-net: Sparse LiDAR point clouds supervised stereo matching. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639911'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning has achieved significant success in stereo matching, with its training process often supervised by LiDAR measurements. However, the sparsity of real-world LiDAR data limits the ability of deep models to extract effective features from stereo images. To address this issue, a novel deep learning-based framework called sparse LiDAR point cloud supervised stereo matching (SLSM-Net) is proposed. Specifically, dense reconstruction of sparse single-frame point clouds is first designed to avoid the error introduction with the mergence of multi-frame point clouds. To effectively densify point clouds of objects in local areas, stereo images are utilized as supervision information to train the deep models. Furthermore, a coarse-to-fine structure of the deep model is designed for stereo matching. A self-supervised learning strategy, which employs a photometric consistency constraint, is second proposed along with fully supervised learning to obtain dense and precise supervision information. This stage generates coarse disparity maps from stereo images. Finally, to fully leverage the complementary characteristics of LiDAR and stereo cameras, multi-scale feature fusion of point clouds and stereo images is performed by a residual block, where the feature maps of point clouds are derived from the densification reconstruction. This stage refines the results. Experimental results indicate that SLSM-Net outperforms current state-of-the-art methods, demonstrating superior performance in stereo matching.},
+  archive      = {J_TMM},
+  author       = {Ze Zong and Cheng Wu and Jie Xie and Jin Zhang},
+  doi          = {10.1109/TMM.2025.3639911},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {SLSM-net: Sparse LiDAR point clouds supervised stereo matching},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ErasableMask: A robust and erasable privacy protection scheme against black-box face recognition models. <em>TMM</em>, 1--11. (<a href='https://doi.org/10.1109/TMM.2025.3639912'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While face recognition (FR) models have brought remarkable convenience in face verification and identification, they also pose substantial privacy risks to the public. Existing facial privacy protection schemes usually adopt adversarial examples to disrupt face verification of FR models. However, these schemes often suffer from weak transferability against black-box FR models and permanently damage the identifiable information that cannot fulfill the requirements of authorized operations such as forensics and authentication. To address these limitations, we propose ErasableMask, a robust and erasable privacy protection scheme against black-box FR models. Specifically, via rethinking the inherent relationship between surrogate FR models, ErasableMask introduces a novel meta-auxiliary attack, which boosts black-box transferability by learning more general features in a stable and balancing optimization strategy. It also offers a perturbation erasion mechanism that supports the erasion of semantic perturbations in protected face without degrading image quality. To further improve performance, ErasableMask employs a curriculum learning strategy to mitigate optimization conflicts between adversarial attack and perturbation erasion. Extensive experiments on the CelebA-HQ and FFHQ datasets demonstrate that ErasableMask achieves the state-of-the-art performance in transferability, achieving over 72% mean confidence in commercial FR systems. Moreover, ErasableMask also exhibits outstanding perturbation erasion performance, achieving over 90% erasion success rate.},
+  archive      = {J_TMM},
+  author       = {Sipeng Shen and Yunming Zhang and Dengpan Ye and Xiuwen Shi and Long Tang and Haoran Duan and Yueyun Shang and Zhihong Tian},
+  doi          = {10.1109/TMM.2025.3639912},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--11},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {ErasableMask: A robust and erasable privacy protection scheme against black-box face recognition models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A semantic-aware and multi-guided network for infrared-visible image fusion. <em>TMM</em>, 1--13. (<a href='https://doi.org/10.1109/TMM.2025.3639988'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modality image fusion aims at fusing modality-specific (complementarity) and modality-shared (correlation) information from multiple source images. To tackle the overlooking of inter-feature relationships, high-frequency information loss, and the limited attention to downstream tasks, this paper focuses on efficiently extracting complementary in formation and aggregating multi-guided features. We propose a three-branch encoder-decoder architecture along with corresponding fusion layers as the fusion strategy. Firstly, shallow features from individual modalities are extracted by a depthwise convolution layer combined with the transformer block. In the three parallel branches of the encoder, Cross Attention and Invertible Block (CAI) extracts local features and preserves high frequency texture details. Base Feature Extraction Module (BFE) captures long-range dependencies and enhances modality-shared information. Graph Reasoning Module (GR) is introduced to reason high-level cross-modality relations and simultaneously ex tract low-level detail features as CAI's modality-specific complementary information. Experiments demonstrate the competitive results compared with state-of-the-art methods in visible/infrared image fusion and medical image fusion tasks. Moreover, the proposed algorithm surpasses the state-of-the-art methods in terms of subsequent tasks, averagely scoring 8.27% mAP@0.5 higher in object detection and 5.85% mIoU higher in semantic segmentation.},
+  archive      = {J_TMM},
+  author       = {Xiaoli Zhang and Liying Wang and Libo Zhao and Xiongfei Li and Siwei Ma},
+  doi          = {10.1109/TMM.2025.3639988},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {A semantic-aware and multi-guided network for infrared-visible image fusion},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). D3BSR: Blind super-resolution via diffusion-based disentangled degradation representation. <em>TMM</em>, 1--15. (<a href='https://doi.org/10.1109/TMM.2025.3639955'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing Blind Super-Resolution (BSR) methods are mostly trained on artificial synthetic degradation data pairs or rely on specific degradation priors, which lead to poor performance due to the trained degradation mismatch between other unknown complex degradations in real-world scenarios. To tackle this problem, we propose a novel Diffusion-based Disentangled Degradation representation method for BSR, dubbed D3BSR, which disentangles arbitrary unknown degradation into structure and texture degradations to enhance perception and fidelity quality individually. Specifically, the structure degradation is optimized by degradation distribution transition with a self-supervised collaborative learning strategy to recursively minimize the perception error. The texture degradation is restored through posterior sampling controlled by a fidelity coefficient to leverage rich texture priors encapsulated in a pre-trained diffusion model for preserving fidelity. The degraded image is super-resolved using an analytical solution with the pseudo inverse of the structural and texture degradation, which achieves a controllable trade-off between perception and fidelity and does not rely on any degradation priors or extra-supervised training. Extensive experiments on the nine heavily degraded synthetic and real-world natural and face datasets demonstrate that our D3BSR outperforms SOTA methods on the diverse metrics in reconstruction faithfulness and perceptual quality.},
+  archive      = {J_TMM},
+  author       = {Wei Yu and Qinling Liu and Quanling Meng and Chenyang Wang and Xin Sun},
+  doi          = {10.1109/TMM.2025.3639955},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {12},
   pages        = {1--15},
   shortjournal = {IEEE Trans. Multimed.},
-  title        = {Accelerating adaptive diffusion and uncertainty modeling for underwater image enhancement},
+  title        = {D3BSR: Blind super-resolution via diffusion-based disentangled degradation representation},
   year         = {2025},
 }
 </textarea>

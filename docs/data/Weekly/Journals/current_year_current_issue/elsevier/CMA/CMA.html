@@ -25,104 +25,84 @@
 </head>
 <body>
 
-<h2 id="cma">CMA - 5</h2>
+<h2 id="cma">CMA - 4</h2>
 <ul>
 <li><details>
 <summary>
-(2026). Three-dimensional narrow volume reconstruction method with unconditional stability based on a phase-field lagrange multiplier approach. <em>CMA</em>, <em>202</em>, 88--112. (<a href='https://doi.org/10.1016/j.camwa.2025.11.009'>www</a>)
+(2026). An efficient reduced-order approximation for the stochastic allen-cahn equation. <em>CMA</em>, <em>203</em>, 56--72. (<a href='https://doi.org/10.1016/j.camwa.2025.11.019'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Reconstruction of an object from points cloud is essential in prosthetics, medical imaging, computer vision, etc. We present an effective algorithm for an Allen–Cahn-type model of reconstruction, employing the Lagrange multiplier approach. Utilizing scattered data points from an object, we reconstruct a narrow shell by solving the governing equation enhanced with an edge detection function derived from the unsigned distance function. The specifically designed edge detection function ensures the energy stability. By reformulating the governing equation through the Lagrange multiplier technique and implementing a Crank–Nicolson time discretization, we can update the solutions in a stable and decoupled manner. The spatial operations are approximated using the finite difference method, and we analytically demonstrate the unconditional stability of the fully discrete scheme. Comprehensive numerical experiments, including reconstructions of complex 3D volumes such as characters from Star Wars , validate the algorithm’s accuracy, stability, and effectiveness. Additionally, we analyze how specific parameter selections influence the level of detail and refinement in the reconstructed volumes. To facilitate the interested readers to understand our algorithm, we share the computational codes and data in https://github.com/cfdyang521/C-3PO/tree/main .},
+  abstract     = {In this paper, we propose and analyze an efficient numerical method for solving the stochastic Allen-Cahn equation with additive noise. The method combines a stabilized semi-implicit time discretization scheme with a reduced-order finite element spatial discretization method. The core idea is to approximate the original high-dimensional solution space via a low-dimensional subspace, constructed by the Proper Orthogonal Decomposition (POD) method based on an ensemble of snapshots from the full-order model at selected time instances. First, we rigorously establish the spatio-temporal strong convergence rates between the mild solution and the reduced-order solution. Second, in large-sample simulations, the reduced-order basis exhibits a certain generalization capability in capturing the average behavior of the numerical solutions. Numerical experiments are provided to verify the theoretical error estimates and to demonstrate the effectiveness of the proposed method.},
   archive      = {J_CMA},
-  author       = {Renjun Gao and Xiangjie Kong and Dongting Cai and Boyi Fu and Junxiang Yang},
-  doi          = {10.1016/j.camwa.2025.11.009},
+  author       = {Xiao Qi and Yubin Yan},
+  doi          = {10.1016/j.camwa.2025.11.019},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {88--112},
+  month        = {2},
+  pages        = {56--72},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {Three-dimensional narrow volume reconstruction method with unconditional stability based on a phase-field lagrange multiplier approach},
-  volume       = {202},
+  title        = {An efficient reduced-order approximation for the stochastic allen-cahn equation},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). A second order accurate, and structure-preserving numerical scheme for the thermodynamical consistent Keller–Segel–Navier–Stokes model. <em>CMA</em>, <em>202</em>, 59--87. (<a href='https://doi.org/10.1016/j.camwa.2025.11.005'>www</a>)
+(2026). Regularized numerical method for the space-fractional logarithmic klein-gordon equation. <em>CMA</em>, <em>203</em>, 41--55. (<a href='https://doi.org/10.1016/j.camwa.2025.11.025'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this work, we propose a Keller–Segel–Navier–Stokes (KSNS) model for describing chemotactic phenomena, formulated within the framework of the Energetic Variational Approach (EnVarA). A second-order accurate numerical scheme is developed that rigorously preserves three fundamental properties in discrete sense: the positivity of cell density, mass conservation of cell density, and total energy dissipation. The Keller–Segel subsystem is reformulated as a coupling between an H − 1 gradient flow with non-constant mobility and an L 2 gradient flow, enabling the effective treatment of the nonlinear and singular logarithmic energy potential via a modified Crank-Nicolson scheme. Artificial regularization terms are introduced to enforce positivity preservation. For the fluid dynamics component, we adopt a second-order semi-implicit time discretization. The marker-and-cell (MAC) finite difference approximation is used as the spatial discretization, which ensures a discretely divergence-free velocity field. The proposed numerical method guarantees unique solvability, mass conservation, and total energy stability. Furthermore, through detailed asymptotic expansions and rigorous error analysis, we establish optimal convergence rates. A series of numerical experiments are presented to validate the effectiveness and robustness of both the physical model and the numerical scheme.},
+  abstract     = {In this paper, we propose a regularized method to resolve the singularity behavior occurring at the origin for the space-fractional logarithmic Klein-Gordon equation (SFLogKGE). A small regularization parameter ε is introduced into the SFLogKGE model to ensure the well-posedness of the logarithmic term. The proposed method preserves the energy, and the energy of the regularized equation approximates that of the original equation with a convergence rate of O (ε). For the convenience of using the time splitting method for numerical solution, we transform the Klein-Gordon equation into an equivalent Schrödinger equation. Then, we use the Lie-Trotter splitting method to derive a time semi-discrete scheme, and combine it with the Fourier spectral method for numerical discretization in the spatial direction. We provide a rigorous proof of the consistency, stability, and the optimal error estimate of the time semi-discrete scheme. Furthermore, we present an original convergence analysis for the regularized time semidiscretization based on the Strang splitting method, which to the best of our knowledge, has not been rigorously established in the existing literature. Finally, numerical experiments verify the first- and second-order temporal convergence of the two splitting methods, demonstrating the sharpness of our theoretical analysis. A series of numerical experiments also illustrate the markedly different evolution behaviors of the fractional equation compared with the classical equation.},
   archive      = {J_CMA},
-  author       = {Rui Wang and Cheng Wang and Yuzhe Qin and Zhengru Zhang},
-  doi          = {10.1016/j.camwa.2025.11.005},
+  author       = {Qibo Ma and Xiaoyun Jiang and Junqing Jia},
+  doi          = {10.1016/j.camwa.2025.11.025},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {59--87},
+  month        = {2},
+  pages        = {41--55},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {A second order accurate, and structure-preserving numerical scheme for the thermodynamical consistent Keller–Segel–Navier–Stokes model},
-  volume       = {202},
+  title        = {Regularized numerical method for the space-fractional logarithmic klein-gordon equation},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Pre-classification based stochastic reduced-order model for time-dependent complex system. <em>CMA</em>, <em>202</em>, 38--58. (<a href='https://doi.org/10.1016/j.camwa.2025.11.006'>www</a>)
+(2026). A kernel compensation mimetic difference scheme for the grad-div eigenvalue problem. <em>CMA</em>, <em>203</em>, 20--40. (<a href='https://doi.org/10.1016/j.camwa.2025.11.015'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We propose a novel stochastic reduced-order model (SROM) for complex systems by combining statistical analysis tools. Based on the generalizability of distance in the centroidal Voronoi tessellation (CVT) method and the minimization of projection error in proper orthogonal decomposition (POD), we define a time-dependent generalized CVT clustering. Each generalized centroid corresponds to a set of cluster-based POD (CPOD) basis functions. Then, using the clustering results as the training dataset, the classification mechanism of the system input can be obtained by applying the naive Bayesian method. For a given input sample, the predicted label obtained by the classifier is used to determine a set of CPOD basis functions for model reduction. Rigorous error analysis is shown, and a discussion of the Navier-Stokes equation with random parameters is given to provide a context for the application of this SROM. Numerical experiments verify that the accuracy of our SROM is improved compared with the standard POD method.},
+  abstract     = {We propose a kernel compensation mimetic difference (MD) scheme to solve the grad-div eigenvalue problem. This method utilizes a curl-curl type compensation operator along with carefully selected boundary conditions to effectively manage the infinite-dimensional kernel of the grad-div operator. To ensure high accuracy, we apply stencil-based MD operators to discretize the grad-div operator under Dirichlet boundary conditions. This results in a numerical scheme characterized by a sparse stiff matrix with a narrow bandwidth while achieving high-order accuracy. We construct the compensation operator with a proper boundary condition that is orthogonal to the discrete grad-div operator. A generalized identification method for spurious eigenvalues is presented. The resulting scheme offers several advantages, including high-order accuracy, enhanced computational efficiency with reduced memory usage, and excellent scalability for parallel computation. Numerical tests demonstrate that our approach not only converges at the expected rates but also performs satisfactorily in terms of speed.},
   archive      = {J_CMA},
-  author       = {Meixin Xiong and Liuhong Chen and Yulan Ning and Ju Ming and Zhiwen Zhang},
-  doi          = {10.1016/j.camwa.2025.11.006},
+  author       = {Chenyang Wang and Yan Xu},
+  doi          = {10.1016/j.camwa.2025.11.015},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {38--58},
+  month        = {2},
+  pages        = {20--40},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {Pre-classification based stochastic reduced-order model for time-dependent complex system},
-  volume       = {202},
+  title        = {A kernel compensation mimetic difference scheme for the grad-div eigenvalue problem},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Convergence and numerical simulations of the continuous data assimilation for biot's poroelasticity system. <em>CMA</em>, <em>202</em>, 20--37. (<a href='https://doi.org/10.1016/j.camwa.2025.11.008'>www</a>)
+(2026). A compact difference method for the 2-D kuramoto-tsuzuki complex equation with neumann boundary characterized by strong nonlinear effects. <em>CMA</em>, <em>203</em>, 1--19. (<a href='https://doi.org/10.1016/j.camwa.2025.11.013'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Real-world applications often suffer from incomplete or uncertain data, which can undermine the accuracy of physical models. In our work, we tackle this challenge by applying continuous data assimilation (CDA) to Biot's poroelasticity system, a model that captures how fluid-saturated porous materials, such as soils or biological tissues, deform under stress. We utilize a nudging term in the conservation of mass equation to integrate sparse observational data directly into the pressure field. We then use an iterative fixed-stress method to decouple the pressure and displacement problem, making the process both stable and efficient. Our approach employs finite element methods along with an interpolation strategy that adapts to different data resolutions. Several numerical tests illustrate that the proposed method reliably drives the model's predictions towards the true state, even in complex scenarios involving heterogeneous permeability or nonlinear permeability, and including a three dimensional setup. This study is the first to rigorously apply CDA to Biot's poroelasticity system, offering a promising avenue for more accurate predictive modeling in fields ranging from geomechanics to biomechanics.},
+  abstract     = {This paper develops and analyzes a linearized compact three-levelfinite difference (CTLFD) scheme to solve the two-dimensional (2-D) Kuramoto-Tsuzuki dynamics dominated by strong nonlinear characteristics. This method combines the compact difference method (CDM) in space with the Crank-Nicolson (C-N) scheme in time, achieving an overall convergence rate of O ( τ 2 + h x 4 + h y 4 ) , where τ, h x , and h y represent the time and space step sizes, respectively. Nonlinear terms are linearized in a semi-implicit manner to enhance stability and computational efficiency. A rigorous stability and error analysis is carried out using an energy technique together with mathematical induction, confirming boundedness, uniqueness, and the optimal convergence for the numerical solution under two discrete norms. Finally, three sets of numerical experiments are presented to verify the theoretical results and demonstrate the accuracy and robustness of the proposed scheme.},
   archive      = {J_CMA},
-  author       = {Seungmin Lee and Sanghyun Lee},
-  doi          = {10.1016/j.camwa.2025.11.008},
+  author       = {Jinxiu Zhang and Xuehua Yang and Song Wang},
+  doi          = {10.1016/j.camwa.2025.11.013},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {20--37},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Convergence and numerical simulations of the continuous data assimilation for biot's poroelasticity system},
-  volume       = {202},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Prediction-correction method for nonlinear partial differential equations based on sparse grid interpolation techniques. <em>CMA</em>, <em>202</em>, 1--19. (<a href='https://doi.org/10.1016/j.camwa.2025.11.007'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article proposes a prediction-correction method for solving nonlinear partial differential equations (PDEs) in complex multidimensional domains. Our approach employs the Feynman-Kac formula, which establishes a connection between stochastic differential equations and PDEs, along with multidimensional function interpolation and corresponding integration methods based on sparse grid nodes. First, we derive the relationship between solutions of discrete-time PDEs using the Feynman-Kac formula. Next, we establish a discretization scheme through integration over sparse grid points and then construct the expression of each time-layer solution via interpolation on these points. Prediction-correction techniques are applied to address the integration of nonlinear unknown functions. While deriving a prediction-correction numerical method, this paper also presents a rigorous theoretical error analysis of the method. The effectiveness and convergence of the proposed method are validated through two types of examples. Compared with traditional numerical methods, our method enables efficient handling of more complex and multidimensional regions.},
-  archive      = {J_CMA},
-  author       = {Chenglong Xu and Yining Qiu and Keyan Wang and Bihao Su},
-  doi          = {10.1016/j.camwa.2025.11.007},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
+  month        = {2},
   pages        = {1--19},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {Prediction-correction method for nonlinear partial differential equations based on sparse grid interpolation techniques},
-  volume       = {202},
+  title        = {A compact difference method for the 2-D kuramoto-tsuzuki complex equation with neumann boundary characterized by strong nonlinear effects},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>

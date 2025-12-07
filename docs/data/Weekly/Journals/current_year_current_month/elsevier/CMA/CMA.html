@@ -25,444 +25,84 @@
 </head>
 <body>
 
-<h2 id="cma">CMA - 22</h2>
+<h2 id="cma">CMA - 4</h2>
 <ul>
 <li><details>
 <summary>
-(2026). Three-dimensional narrow volume reconstruction method with unconditional stability based on a phase-field lagrange multiplier approach. <em>CMA</em>, <em>202</em>, 88--112. (<a href='https://doi.org/10.1016/j.camwa.2025.11.009'>www</a>)
+(2026). An efficient reduced-order approximation for the stochastic allen-cahn equation. <em>CMA</em>, <em>203</em>, 56--72. (<a href='https://doi.org/10.1016/j.camwa.2025.11.019'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Reconstruction of an object from points cloud is essential in prosthetics, medical imaging, computer vision, etc. We present an effective algorithm for an Allen–Cahn-type model of reconstruction, employing the Lagrange multiplier approach. Utilizing scattered data points from an object, we reconstruct a narrow shell by solving the governing equation enhanced with an edge detection function derived from the unsigned distance function. The specifically designed edge detection function ensures the energy stability. By reformulating the governing equation through the Lagrange multiplier technique and implementing a Crank–Nicolson time discretization, we can update the solutions in a stable and decoupled manner. The spatial operations are approximated using the finite difference method, and we analytically demonstrate the unconditional stability of the fully discrete scheme. Comprehensive numerical experiments, including reconstructions of complex 3D volumes such as characters from Star Wars , validate the algorithm’s accuracy, stability, and effectiveness. Additionally, we analyze how specific parameter selections influence the level of detail and refinement in the reconstructed volumes. To facilitate the interested readers to understand our algorithm, we share the computational codes and data in https://github.com/cfdyang521/C-3PO/tree/main .},
+  abstract     = {In this paper, we propose and analyze an efficient numerical method for solving the stochastic Allen-Cahn equation with additive noise. The method combines a stabilized semi-implicit time discretization scheme with a reduced-order finite element spatial discretization method. The core idea is to approximate the original high-dimensional solution space via a low-dimensional subspace, constructed by the Proper Orthogonal Decomposition (POD) method based on an ensemble of snapshots from the full-order model at selected time instances. First, we rigorously establish the spatio-temporal strong convergence rates between the mild solution and the reduced-order solution. Second, in large-sample simulations, the reduced-order basis exhibits a certain generalization capability in capturing the average behavior of the numerical solutions. Numerical experiments are provided to verify the theoretical error estimates and to demonstrate the effectiveness of the proposed method.},
   archive      = {J_CMA},
-  author       = {Renjun Gao and Xiangjie Kong and Dongting Cai and Boyi Fu and Junxiang Yang},
-  doi          = {10.1016/j.camwa.2025.11.009},
+  author       = {Xiao Qi and Yubin Yan},
+  doi          = {10.1016/j.camwa.2025.11.019},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {88--112},
+  month        = {2},
+  pages        = {56--72},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {Three-dimensional narrow volume reconstruction method with unconditional stability based on a phase-field lagrange multiplier approach},
-  volume       = {202},
+  title        = {An efficient reduced-order approximation for the stochastic allen-cahn equation},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). A second order accurate, and structure-preserving numerical scheme for the thermodynamical consistent Keller–Segel–Navier–Stokes model. <em>CMA</em>, <em>202</em>, 59--87. (<a href='https://doi.org/10.1016/j.camwa.2025.11.005'>www</a>)
+(2026). Regularized numerical method for the space-fractional logarithmic klein-gordon equation. <em>CMA</em>, <em>203</em>, 41--55. (<a href='https://doi.org/10.1016/j.camwa.2025.11.025'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In this work, we propose a Keller–Segel–Navier–Stokes (KSNS) model for describing chemotactic phenomena, formulated within the framework of the Energetic Variational Approach (EnVarA). A second-order accurate numerical scheme is developed that rigorously preserves three fundamental properties in discrete sense: the positivity of cell density, mass conservation of cell density, and total energy dissipation. The Keller–Segel subsystem is reformulated as a coupling between an H − 1 gradient flow with non-constant mobility and an L 2 gradient flow, enabling the effective treatment of the nonlinear and singular logarithmic energy potential via a modified Crank-Nicolson scheme. Artificial regularization terms are introduced to enforce positivity preservation. For the fluid dynamics component, we adopt a second-order semi-implicit time discretization. The marker-and-cell (MAC) finite difference approximation is used as the spatial discretization, which ensures a discretely divergence-free velocity field. The proposed numerical method guarantees unique solvability, mass conservation, and total energy stability. Furthermore, through detailed asymptotic expansions and rigorous error analysis, we establish optimal convergence rates. A series of numerical experiments are presented to validate the effectiveness and robustness of both the physical model and the numerical scheme.},
+  abstract     = {In this paper, we propose a regularized method to resolve the singularity behavior occurring at the origin for the space-fractional logarithmic Klein-Gordon equation (SFLogKGE). A small regularization parameter ε is introduced into the SFLogKGE model to ensure the well-posedness of the logarithmic term. The proposed method preserves the energy, and the energy of the regularized equation approximates that of the original equation with a convergence rate of O (ε). For the convenience of using the time splitting method for numerical solution, we transform the Klein-Gordon equation into an equivalent Schrödinger equation. Then, we use the Lie-Trotter splitting method to derive a time semi-discrete scheme, and combine it with the Fourier spectral method for numerical discretization in the spatial direction. We provide a rigorous proof of the consistency, stability, and the optimal error estimate of the time semi-discrete scheme. Furthermore, we present an original convergence analysis for the regularized time semidiscretization based on the Strang splitting method, which to the best of our knowledge, has not been rigorously established in the existing literature. Finally, numerical experiments verify the first- and second-order temporal convergence of the two splitting methods, demonstrating the sharpness of our theoretical analysis. A series of numerical experiments also illustrate the markedly different evolution behaviors of the fractional equation compared with the classical equation.},
   archive      = {J_CMA},
-  author       = {Rui Wang and Cheng Wang and Yuzhe Qin and Zhengru Zhang},
-  doi          = {10.1016/j.camwa.2025.11.005},
+  author       = {Qibo Ma and Xiaoyun Jiang and Junqing Jia},
+  doi          = {10.1016/j.camwa.2025.11.025},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {59--87},
+  month        = {2},
+  pages        = {41--55},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {A second order accurate, and structure-preserving numerical scheme for the thermodynamical consistent Keller–Segel–Navier–Stokes model},
-  volume       = {202},
+  title        = {Regularized numerical method for the space-fractional logarithmic klein-gordon equation},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Pre-classification based stochastic reduced-order model for time-dependent complex system. <em>CMA</em>, <em>202</em>, 38--58. (<a href='https://doi.org/10.1016/j.camwa.2025.11.006'>www</a>)
+(2026). A kernel compensation mimetic difference scheme for the grad-div eigenvalue problem. <em>CMA</em>, <em>203</em>, 20--40. (<a href='https://doi.org/10.1016/j.camwa.2025.11.015'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {We propose a novel stochastic reduced-order model (SROM) for complex systems by combining statistical analysis tools. Based on the generalizability of distance in the centroidal Voronoi tessellation (CVT) method and the minimization of projection error in proper orthogonal decomposition (POD), we define a time-dependent generalized CVT clustering. Each generalized centroid corresponds to a set of cluster-based POD (CPOD) basis functions. Then, using the clustering results as the training dataset, the classification mechanism of the system input can be obtained by applying the naive Bayesian method. For a given input sample, the predicted label obtained by the classifier is used to determine a set of CPOD basis functions for model reduction. Rigorous error analysis is shown, and a discussion of the Navier-Stokes equation with random parameters is given to provide a context for the application of this SROM. Numerical experiments verify that the accuracy of our SROM is improved compared with the standard POD method.},
+  abstract     = {We propose a kernel compensation mimetic difference (MD) scheme to solve the grad-div eigenvalue problem. This method utilizes a curl-curl type compensation operator along with carefully selected boundary conditions to effectively manage the infinite-dimensional kernel of the grad-div operator. To ensure high accuracy, we apply stencil-based MD operators to discretize the grad-div operator under Dirichlet boundary conditions. This results in a numerical scheme characterized by a sparse stiff matrix with a narrow bandwidth while achieving high-order accuracy. We construct the compensation operator with a proper boundary condition that is orthogonal to the discrete grad-div operator. A generalized identification method for spurious eigenvalues is presented. The resulting scheme offers several advantages, including high-order accuracy, enhanced computational efficiency with reduced memory usage, and excellent scalability for parallel computation. Numerical tests demonstrate that our approach not only converges at the expected rates but also performs satisfactorily in terms of speed.},
   archive      = {J_CMA},
-  author       = {Meixin Xiong and Liuhong Chen and Yulan Ning and Ju Ming and Zhiwen Zhang},
-  doi          = {10.1016/j.camwa.2025.11.006},
+  author       = {Chenyang Wang and Yan Xu},
+  doi          = {10.1016/j.camwa.2025.11.015},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {38--58},
+  month        = {2},
+  pages        = {20--40},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {Pre-classification based stochastic reduced-order model for time-dependent complex system},
-  volume       = {202},
+  title        = {A kernel compensation mimetic difference scheme for the grad-div eigenvalue problem},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Convergence and numerical simulations of the continuous data assimilation for biot's poroelasticity system. <em>CMA</em>, <em>202</em>, 20--37. (<a href='https://doi.org/10.1016/j.camwa.2025.11.008'>www</a>)
+(2026). A compact difference method for the 2-D kuramoto-tsuzuki complex equation with neumann boundary characterized by strong nonlinear effects. <em>CMA</em>, <em>203</em>, 1--19. (<a href='https://doi.org/10.1016/j.camwa.2025.11.013'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Real-world applications often suffer from incomplete or uncertain data, which can undermine the accuracy of physical models. In our work, we tackle this challenge by applying continuous data assimilation (CDA) to Biot's poroelasticity system, a model that captures how fluid-saturated porous materials, such as soils or biological tissues, deform under stress. We utilize a nudging term in the conservation of mass equation to integrate sparse observational data directly into the pressure field. We then use an iterative fixed-stress method to decouple the pressure and displacement problem, making the process both stable and efficient. Our approach employs finite element methods along with an interpolation strategy that adapts to different data resolutions. Several numerical tests illustrate that the proposed method reliably drives the model's predictions towards the true state, even in complex scenarios involving heterogeneous permeability or nonlinear permeability, and including a three dimensional setup. This study is the first to rigorously apply CDA to Biot's poroelasticity system, offering a promising avenue for more accurate predictive modeling in fields ranging from geomechanics to biomechanics.},
+  abstract     = {This paper develops and analyzes a linearized compact three-levelfinite difference (CTLFD) scheme to solve the two-dimensional (2-D) Kuramoto-Tsuzuki dynamics dominated by strong nonlinear characteristics. This method combines the compact difference method (CDM) in space with the Crank-Nicolson (C-N) scheme in time, achieving an overall convergence rate of O ( τ 2 + h x 4 + h y 4 ) , where τ, h x , and h y represent the time and space step sizes, respectively. Nonlinear terms are linearized in a semi-implicit manner to enhance stability and computational efficiency. A rigorous stability and error analysis is carried out using an energy technique together with mathematical induction, confirming boundedness, uniqueness, and the optimal convergence for the numerical solution under two discrete norms. Finally, three sets of numerical experiments are presented to verify the theoretical results and demonstrate the accuracy and robustness of the proposed scheme.},
   archive      = {J_CMA},
-  author       = {Seungmin Lee and Sanghyun Lee},
-  doi          = {10.1016/j.camwa.2025.11.008},
+  author       = {Jinxiu Zhang and Xuehua Yang and Song Wang},
+  doi          = {10.1016/j.camwa.2025.11.013},
   journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {20--37},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Convergence and numerical simulations of the continuous data assimilation for biot's poroelasticity system},
-  volume       = {202},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Prediction-correction method for nonlinear partial differential equations based on sparse grid interpolation techniques. <em>CMA</em>, <em>202</em>, 1--19. (<a href='https://doi.org/10.1016/j.camwa.2025.11.007'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article proposes a prediction-correction method for solving nonlinear partial differential equations (PDEs) in complex multidimensional domains. Our approach employs the Feynman-Kac formula, which establishes a connection between stochastic differential equations and PDEs, along with multidimensional function interpolation and corresponding integration methods based on sparse grid nodes. First, we derive the relationship between solutions of discrete-time PDEs using the Feynman-Kac formula. Next, we establish a discretization scheme through integration over sparse grid points and then construct the expression of each time-layer solution via interpolation on these points. Prediction-correction techniques are applied to address the integration of nonlinear unknown functions. While deriving a prediction-correction numerical method, this paper also presents a rigorous theoretical error analysis of the method. The effectiveness and convergence of the proposed method are validated through two types of examples. Compared with traditional numerical methods, our method enables efficient handling of more complex and multidimensional regions.},
-  archive      = {J_CMA},
-  author       = {Chenglong Xu and Yining Qiu and Keyan Wang and Bihao Su},
-  doi          = {10.1016/j.camwa.2025.11.007},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
+  month        = {2},
   pages        = {1--19},
   shortjournal = {Comput. Meth. Appl.},
-  title        = {Prediction-correction method for nonlinear partial differential equations based on sparse grid interpolation techniques},
-  volume       = {202},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Meshless and FEM approximations for mixed polytopal elements. <em>CMA</em>, <em>201</em>, 278--288. (<a href='https://doi.org/10.1016/j.camwa.2025.11.003'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper presents a comparison of various approaches to approximating the unknown functions within the mixed ultra-weak formulation, using Voronoi polygon discretization and stabilization via the Discontinuous Petrov–Galerkin (DPG) methodology. The primary objective is to identify the basis functions that offer the best approximability. We consider meshless functions, which have not previously been applied to fully mixed formulations (stress–displacement in mechanics), and compare several of their variants with polynomial approximations. Numerical tests are conducted for the Laplace equation on both square and L-shaped domains, for regular as well as singular solutions. Our study reveals that, with one exception, the polynomial approximation—particularly the orthogonal Legendre type—exhibits faster convergence, most likely due to its superior interpolation properties in the two-field formulation. The findings of this study can be extended to other elliptic problems, including those in solid mechanics, where mixed formulations and polygonal finite elements offer significant advantages.},
-  archive      = {J_CMA},
-  author       = {Witold Cecot and Marta Oleksy and Mateusz Dryzek},
-  doi          = {10.1016/j.camwa.2025.11.003},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {278--288},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Meshless and FEM approximations for mixed polytopal elements},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). A weaker adversarial neural networks method for linear second order elliptic PDEs. <em>CMA</em>, <em>201</em>, 259--277. (<a href='https://doi.org/10.1016/j.camwa.2025.11.004'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, we propose the Weaker Adversarial Network (WerAN), a novel extension of the Weak Adversarial Network (WAN) framework designed for partial differential equations with singularities. By applying integration by parts twice in the derivation of weak form, our approach relaxes the constraints on the solution space in WAN. This adjustment transitions the implementation-level requirements from H 1 to L 2 and the theoretical requirements from W 2 , ∞ to W 1 , ∞ . Furthermore, we provide a systematic error analysis of the proposed method. Our theoretical investigations affirm the convergence of the WerAN method and offer insights into selecting network parameters and sample sizes across the domain and its boundary. We also present several numerical examples to demonstrate the effectiveness of WerAN in addressing both smooth and singular problems.},
-  archive      = {J_CMA},
-  author       = {Zhizhong Kong and Rui Sheng and Jerry Zhijian Yang and Juntao You and Cheng Yuan},
-  doi          = {10.1016/j.camwa.2025.11.004},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {259--277},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {A weaker adversarial neural networks method for linear second order elliptic PDEs},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Pinning phenomena in numerical schemes of the Allen–Cahn equation. <em>CMA</em>, <em>201</em>, 248--258. (<a href='https://doi.org/10.1016/j.camwa.2025.11.001'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this study, we investigate the artificial pinning phenomena that emerge in numerical simulations of high-order Allen–Cahn (AC) equations. The AC equation is widely used to describe interface motion during phase separation processes. However, discretized numerical solutions may exhibit nonphysical behavior such as interface immobilization, or “pinning,” particularly when the ratio between the interfacial thickness model parameter ( ϵ ) and the spatial numerical mesh size ( h ) is below a critical threshold. The present work systematically analyzes how this ratio, P = ϵ / h , influences interface dynamics and determines the critical values at which pinning begins to occur for various nonlinearity degrees ( α ) of the polynomial potential. A fully explicit finite difference method is used to simulate the AC equation in both two- and three-dimensional settings. A bisection algorithm is introduced to accurately identify the critical pinning threshold P ⁎ as a function of α . Numerical experiments demonstrate that as α increases, P ⁎ decreases, indicating that the solution becomes more sensitive to spatial discretization and requires finer grids to avoid artificial pinning. Additionally, computational results show that higher values of α yield thicker and smoother interface transitions, and the study also investigates the influence of these values on phase morphology under random initial conditions. The numerical results in this study provide quantitative guidance for selecting discretization parameters in phase-field simulations and emphasize the importance of balancing the interface resolution with model complexity. These insights contribute to the development of accurate and robust numerical schemes for simulating interfacial dynamics in complex physical systems.},
-  archive      = {J_CMA},
-  author       = {Junseok Kim and Zhengang Li and Xinpei Wu and Soobin Kwak},
-  doi          = {10.1016/j.camwa.2025.11.001},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {248--258},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Pinning phenomena in numerical schemes of the Allen–Cahn equation},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Discontinuous galerkin finite element method for a fourth order parabolic variational inequality. <em>CMA</em>, <em>201</em>, 233--247. (<a href='https://doi.org/10.1016/j.camwa.2025.11.002'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this article, we propose and analyze a discontinuous Galerkin finite element method for the numerical approximation of a fourth-order parabolic variational inequality. In the fully-discrete discontinuous Galerkin scheme, we implement time discretization using the implicit backward Euler method, while spatial discretization is achieved through the utilization of a piecewise quadratic finite element space. The convergence analysis is conducted under a reasonable regularity assumption on the exact solution u , to be specific we assume u t ∈ L 2 ( 0 , S ; L 2 ( Ω ) ) , and the obstacle constraints are incorporated at the vertices of the triangulation. We derive an optimal order (with respect to the regularity) a p r i o r i error estimate in the energy norm. Additionally, we present some numerical experiment results to illustrate the performance of the proposed method.},
-  archive      = {J_CMA},
-  author       = {Kamana Porwal and Ritesh Singla},
-  doi          = {10.1016/j.camwa.2025.11.002},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {233--247},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Discontinuous galerkin finite element method for a fourth order parabolic variational inequality},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Meshless approach for solving nonlinear time-fractional fourth-order reaction–diffusion equation with convergence order analysis and stability analysis. <em>CMA</em>, <em>201</em>, 214--232. (<a href='https://doi.org/10.1016/j.camwa.2025.10.024'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This article presents a novel meshless approach to solve a nonlinear fourth-order reaction-diffusion equation with the time-fractional derivative of Caputo-type on arbitrary bounded domains by constructing a set of novel basis using the Sinc function as a shape function with higher accuracy and stability. The key contributions and innovations of this study are summarized as follows. Firstly, the time non-smooth problem is addressed by discretizing time term and approximating the time-fractional derivative with the piecewise fractional linear interpolation. What's more, a novel approach has been developed for the superconvergence estimation of the two-dimensional Sinc function approximation. Subsequently, the time-iterative stability analysis of the semi-analytical solution is presented, and it is demonstrated that the solution is absolutely stable on arbitrary bounded domains. We then present a detailed analysis of both local and global error estimates and prove that the space-time convergence order is O ( M 4 − m q + q ) with M being the number of basis and q being the length of time step, that is, the spatial convergence order is superconvergent. At last, a series of numerical examples validates the effectiveness of the proposed meshless method, and the low CPU time demonstrates its high computational efficiency.},
-  archive      = {J_CMA},
-  author       = {JiangShan Tong and Zhong Chen and Wei Jiang},
-  doi          = {10.1016/j.camwa.2025.10.024},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {214--232},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Meshless approach for solving nonlinear time-fractional fourth-order reaction–diffusion equation with convergence order analysis and stability analysis},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Transient numerical simulation of control valve flow characteristics using a wall function and local grid refinement in LES-LBM. <em>CMA</em>, <em>201</em>, 195--213. (<a href='https://doi.org/10.1016/j.camwa.2025.10.026'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Transient simulations offer the advantage of capturing time-dependent flow behavior, making them more suitable than steady simulations for modeling complex phenomena such as turbulence, vibration, cavitation, and noise. While traditional CFD methods are more suitable for handling steady simulations, they are less effective for transient simulations due to limited parallel processing capabilities, leading to high computational costs. As a result, the lattice Boltzmann method (LBM) is employed in this study, which is a more efficient approach for transient simulation owing to its efficient handling of complex geometries, programming simplicity, and strong parallel scalability. In order to enhance the stability of LBM in the numerical simulation of high Reynolds number flow fields, the multiple relaxation time (MRT) collision model and the Smagorinsky-Lilly large eddy simulation (LES) turbulence model are utilized. To address the high dissipation near the wall in the Lilly model, the van Driest damping function is incorporated, improving the accuracy of the LES model in boundary regions. Additionally, to minimize memory consumption and reduce computation time without sacrificing accuracy, wall functions and local grid refinement techniques are applied, reducing the overall number of computational grids required. An experimental platform was established to measure the flow characteristics of control valves, and the accuracy of the proposed method was validated by comparing the flow coefficient C v at various valve openings. Finally, the effects of local grid refinement and wall functions on simulation accuracy were compared, demonstrating that these techniques significantly improve the precision of transient simulations.},
-  archive      = {J_CMA},
-  author       = {Xiang Li and Du Zhou and Zihan Liu and Chao Xu and Likuan Chen and Bingliang Yan and Chuanjiang Shen and Zhixiong Wang and Henghu Yang and Yongzhi Zhao},
-  doi          = {10.1016/j.camwa.2025.10.026},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {195--213},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Transient numerical simulation of control valve flow characteristics using a wall function and local grid refinement in LES-LBM},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). A conservative higher-order finite difference scheme for solving the gardner equation with dual power-law nonlinearities in both 1D and 2D. <em>CMA</em>, <em>201</em>, 171--194. (<a href='https://doi.org/10.1016/j.camwa.2025.10.023'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this study, we have developed a conservative finite difference scheme that demonstrates fourth-order accuracy in space while preserving the discrete conservation of the invariant M n and energy E n for the Gardner equation with dual power-law nonlinearities in both 1D and 2D. Theoretical analyses and numerical results indicate that the proposed scheme achieves second-order accuracy in time and fourth-order accuracy in space. The solvability, stability and convergence of the difference scheme are rigorously analyzed using the discrete energy method. Additionally, experimental results are provided to illustrate the effectiveness of the proposed difference scheme in accurately capturing the dynamics of the Gardner equation in both 1D and 2D, as well as its reliability for long-term simulations.},
-  archive      = {J_CMA},
-  author       = {Xiaofeng Wang and Weizhong Dai and Anjan Biswas},
-  doi          = {10.1016/j.camwa.2025.10.023},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {171--194},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {A conservative higher-order finite difference scheme for solving the gardner equation with dual power-law nonlinearities in both 1D and 2D},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). An invariant-region-preserving scheme for a convection-reaction-Cahn–Hilliard multiphase model of biofilm growth in slow sand filters. <em>CMA</em>, <em>201</em>, 146--170. (<a href='https://doi.org/10.1016/j.camwa.2025.10.012'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A multidimensional model of biofilm growth present in the supernatant water of a Slow Sand Filter is derived. The multiphase model, consisting of solid and liquid phases, is written as a convection-reaction system with a Cahn–Hilliard-type equation with degenerate mobility coupled to a Stokes-flow equation for the mixture velocity. An upwind discontinuous Galerkin approach is used to approximate the convection-reaction equations, whereas an H 1 -conforming primal formulation is proposed for the Stokes system. By means of a splitting procedure due to the reaction terms, an invariant-region principle is shown for the concentration unknowns, namely non-negativity for all phases and an upper bound for the total concentration of the solid phases. Numerical examples with reduced biofilm reactions are presented to illustrate the performance of the model and numerical scheme.},
-  archive      = {J_CMA},
-  author       = {Julio Careaga and Stefan Diehl and Jaime Manríquez},
-  doi          = {10.1016/j.camwa.2025.10.012},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {146--170},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {An invariant-region-preserving scheme for a convection-reaction-Cahn–Hilliard multiphase model of biofilm growth in slow sand filters},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Performance evaluation of flux-reconstruction schemes in the discrete unified gas-kinetic scheme for low-speed continuum flows. <em>CMA</em>, <em>201</em>, 129--145. (<a href='https://doi.org/10.1016/j.camwa.2025.10.014'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study presents a systematic performance evaluation of three flux-reconstruction schemes in the discrete unified gas-kinetic scheme (DUGKS) for low-speed continuum flows. The collision term integral at cell interfaces is approximated with the left-rectangular, trapezoidal (standard DUGKS) and right-rectangular rules, while a unified finite-volume framework is retained elsewhere. Theoretical analysis confirms that all schemes retain second-order accuracy in time and space; however, numerical benchmarks (Taylor–Green vortex flow, lid-driven cavity flow, and flow past a square cylinder) reveal clear performance differences. On the same meshes, the right-rectangular and trapezoidal rules produce nearly equal errors, with the right-rectangular rule marginally superior, whereas the left-rectangular rule is an order of magnitude less accurate. Per time step, the rectangular rules are faster than the trapezoidal rule; when total runtime to convergence is considered, the right-rectangular rule is the most economical and markedly more stable, remaining robust for exceptionally large ratios between the time step and the relaxation time. Hence, the right-rectangular formulation offers the best overall balance of accuracy, efficiency, and stability for continuum flow simulations.},
-  archive      = {J_CMA},
-  author       = {Ziyang Xin and Zhaoli Guo and Chang Shu},
-  doi          = {10.1016/j.camwa.2025.10.014},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {129--145},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Performance evaluation of flux-reconstruction schemes in the discrete unified gas-kinetic scheme for low-speed continuum flows},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). A boundary integral framework for formulating a generalized eigenvalue problem to efficiently compute confined electron states in quantum dot structures. <em>CMA</em>, <em>201</em>, 116--128. (<a href='https://doi.org/10.1016/j.camwa.2025.10.022'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study presents an innovative method for efficiently determining confined electron states in quantum dot structures by formulating a generalized energy eigenvalue problem within the boundary integral framework. The proposed approach directly computes energy eigenvalues and normalized wavefunctions for both infinitely and finitely bound quantum states. It aims to overcome challenges in accurately modeling electron behavior in confined regions, providing valuable insights for optimizing quantum semiconductor structures. By utilizing boundary integral techniques, this method establishes a robust numerical framework to address the complexities of quantum confinement effects. Numerical simulations demonstrate the effectiveness and accuracy of the proposed technique in determining electron states for quantum dot structures.},
-  archive      = {J_CMA},
-  author       = {J.D. Phan and A.-V. Phan},
-  doi          = {10.1016/j.camwa.2025.10.022},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {116--128},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {A boundary integral framework for formulating a generalized eigenvalue problem to efficiently compute confined electron states in quantum dot structures},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). An efficient multiscale isogeometric topology optimization of phononic structures. <em>CMA</em>, <em>201</em>, 96--115. (<a href='https://doi.org/10.1016/j.camwa.2025.10.007'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Widening band gaps to design high-performance phononic crystals (PnCs) is critical in vibration isolation and wave control applications. This study presented an advanced multiscale isogeometric topology optimization (MITO) approach based on the reduced Gaussian quadrature rule for maximizing phononic band gaps by the macroscopic and microscopic concurrent optimization design of PnCs. The MITO approach expands the design space to develop light structures with superior properties, in which, isogeometric analysis (IGA) was used to calculate the mechanical responses at macro-scale and micro-scale to improve the computational accuracy and smooth topologies. As the multiscale optimization needs to solve physical equations in multiple scales iteratively, a reduced Gaussian quadrature rule was used to reduce the computational cost. The Gaussian quadrature rule can reduce the calculation amount by reducing integration points. Numerical examples demonstrated the proposed MITO effectively maximizes phononic band gaps while achieving smooth multiscale topologies. Compared to conventional isogeometric topology optimization without using reduced Gaussian quadrature rule, the present method reduced computational costs by 80% through optimized Gaussian point allocation during iterative optimization.},
-  archive      = {J_CMA},
-  author       = {Shuohui Yin and Jiahui Huang and Sheng Jiang and Zhihui Zou and Sisi Liu and Shuitao Gu and Tinh Quoc Bui},
-  doi          = {10.1016/j.camwa.2025.10.007},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {96--115},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {An efficient multiscale isogeometric topology optimization of phononic structures},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Unconditional superconvergent error estimates of a novel energy-dissipative BDF2 type nonconforming FEM for klein-gordon equation. <em>CMA</em>, <em>201</em>, 80--95. (<a href='https://doi.org/10.1016/j.camwa.2025.10.004'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A novel energy dissipative two-step backward difference formula (BDF2) type fully discrete scheme is rigorously established for the Klein-Gordon equation with nonconforming E Q 1 rot finite element, and its unique solvability is analytically proved via Brouwer fixed-point theorem. The novel scheme not only enables us to obtain the numerical solution at the endpoint, but also guarantees the energy stability. Then, utilizing the specific attributes of E Q 1 rot element and the economical interpolation post-processing technique, the superclose and superconvergent estimates with orders O ( h 2 + τ 2 ) are theoretically deduced without any constraints between the temporal step τ and the spatial grid size h . Ultimately, systematic computational tests are executed to confirm the analytical findings and outstanding behaviors of the proposed scheme.},
-  archive      = {J_CMA},
-  author       = {Siqing Yu and Dongyang Shi},
-  doi          = {10.1016/j.camwa.2025.10.004},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {80--95},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Unconditional superconvergent error estimates of a novel energy-dissipative BDF2 type nonconforming FEM for klein-gordon equation},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Numerical simulation of generalized finite difference wave equation based on automatic construction of interface nodes. <em>CMA</em>, <em>201</em>, 65--79. (<a href='https://doi.org/10.1016/j.camwa.2025.10.001'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In seismic exploration, the Finite Difference Method (FDM) is commonly used to simulate the propagation of seismic waves. This numerical method approximates derivatives by calculating the weighted sum of values at adjacent nodes. Currently, models are stored using regular grids. When discretizing complex structural interfaces such as inclined strata and faults, non - smooth surfaces will appear, which leads to errors in the forward modeling of wave equations. To address the forward - modeling issues caused by model errors, a meshless method called the Generalized Finite Difference Method (GFDM) has been proposed and has been successfully applied in computational geosciences. This method constructs node clouds for discrete nodes and solves derivatives based on the relationships between central nodes and surrounding nodes in the node cloud, offering flexible solutions. However, it requires substantial time for fine-grained modeling of the model, and conventional node construction performs poorly for complex models with drastic lateral variations. In this study, we analyzed the causes of errors in relation to interface dip angles and proposed an automatic interface node construction method. Testing on various models demonstrates that this method can effectively construct models with smaller discretization errors and significantly reduced scattering errors in forward modeling compared to conventional methods.},
-  archive      = {J_CMA},
-  author       = {Zhili Chen and Yong Wang and Zhixian Gui},
-  doi          = {10.1016/j.camwa.2025.10.001},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {65--79},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Numerical simulation of generalized finite difference wave equation based on automatic construction of interface nodes},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Meshfree method for solving the elliptic monge-ampère equation with dirichlet boundary. <em>CMA</em>, <em>201</em>, 53--64. (<a href='https://doi.org/10.1016/j.camwa.2025.09.036'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We develop the meshfree method for solving the elliptic Monge-Ampère equation with Dirichlet boundary on the bounded domain and prove its convergence in the paper. In terms of trial, we use the radial functions (for example, Whittle-Matérn-Sobolev kernels and Wendland's compactly supported radial basis functions) which can reproduce W σ , 2 ( R d ) to construct the finite dimensional approximate spaces. It allows the easy construction of approximation spaces in arbitrary dimensions with arbitrary smoothness and avoids the huge workload caused by mesh-based methods at the same time. In terms of testing, it just needs to take values directly on the collocation points and greatly simplifies the difficulties caused by variation and integration. Theoretically, we obtain L 2 error when the testing discretization is finer than the trial discretization. The convergence rate depends on the regularity of the solution, the smoothness of the computing domain, and the approximation of kernel-based trial spaces. An extension to non-Dirichlet boundary condition is in a forthcoming paper.},
-  archive      = {J_CMA},
-  author       = {Zhiyong Liu and Qiuyan Xu},
-  doi          = {10.1016/j.camwa.2025.09.036},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {53--64},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Meshfree method for solving the elliptic monge-ampère equation with dirichlet boundary},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). A second-order time-accurate, linear fully decoupled unconditional energy stabilization finite element method for tumor growth model. <em>CMA</em>, <em>201</em>, 35--52. (<a href='https://doi.org/10.1016/j.camwa.2025.09.028'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {By using the L 2 gradient flow method, we derive a phase-field model for tumor growth from the free energy. The scalar auxiliary variable (SAV) method is employed to handle the nonlinear energy potential. Based on the second-order backward differentiation formula (BDF2) and the finite element method, we construct an unconditionally stable, linear, and decoupled fully discrete numerical scheme. We rigorously prove the unconditional energy stability of the proposed scheme and the optimal L 2 -norm error estimates for ϕ and c . Numerical examples are presented to validate the theoretical results and to demonstrate the effectiveness of the model and the scheme.},
-  archive      = {J_CMA},
-  author       = {Mingle Sun and Bo Wang and Guang-an Zou and Yuxing Zhang},
-  doi          = {10.1016/j.camwa.2025.09.028},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {35--52},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {A second-order time-accurate, linear fully decoupled unconditional energy stabilization finite element method for tumor growth model},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). High order energy invariant fast algorithm for space two dimensional klein-gordon-zakharov equations. <em>CMA</em>, <em>201</em>, 18--34. (<a href='https://doi.org/10.1016/j.camwa.2025.09.026'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Space two dimensional Klein-Gordon-Zakharov equations are directly changed into the Hamiltonian system with infinite dimensional space by the variational formula, which can be discretized into finite dimensional Hamiltonian system by Fourier pseudo-spectral method. The average vector field formulas with second and fourth order accuracy in time are utilized to compute the finite dimensional Hamiltonian system. In order to improve computation velocity of these formulas, the fast computation algorithm of these formulas is proposed by decomposing the spectral matrix. Solitary wave evolution of the equations is analyzed with different initial conditions by these new computational formulas. Energy invariant property, accuracy and computation efficiently of these new formulas are also investigated.},
-  archive      = {J_CMA},
-  author       = {Jie Chen and Jianqiang Sun},
-  doi          = {10.1016/j.camwa.2025.09.026},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {18--34},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {High order energy invariant fast algorithm for space two dimensional klein-gordon-zakharov equations},
-  volume       = {201},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Fundamental solution neural networks for solving inverse cauchy problems for the laplace and biharmonic equations. <em>CMA</em>, <em>201</em>, 1--17. (<a href='https://doi.org/10.1016/j.camwa.2025.09.032'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper proposes a novel fundamental solution neural networks method (FSNNs) to solve inverse Cauchy problems, which combines the method of fundamental solutions (MFS) with the physics-informed neural networks (PINNs). To optimize the distribution of source points, the method starts by partitioning the interval into equal segments, determined by the number of the source points. The coordinate system is situated at the center of the computational domain. The resulting angles as network inputs for the FSNNs and the intermediate variable as outputs, which is subsequently substituted into a length function to obtain the final length. The coordinates of the source points are then determined, and the MFS is employed to approximate the numerical solutions. The loss function is formulated based on the boundary conditions on the accessible boundary, and the training is employed to optimize the network parameters in the FSNNs and source point intensities in the MFS. The introduction of the PINNs overcomes the challenge of source point selection in the MFS and effectively addresses the ill-posedness of inverse problems. In summary, the proposed scheme is a machine learning-based semi-analytical meshless method which is simple, accurate and easily implemented, making it highly suitable for the numerical solution of inverse problems. Four numerical experiments, including the Laplace and biharmonic equations, validate the effectiveness and accuracy of the proposed FSNNs.},
-  archive      = {J_CMA},
-  author       = {Xin Li and Fajie Wang and Renhao Wang and Shengdong Zhao and Daigeng Yang},
-  doi          = {10.1016/j.camwa.2025.09.032},
-  journal      = {Computers & Mathematics with Applications},
-  month        = {1},
-  pages        = {1--17},
-  shortjournal = {Comput. Meth. Appl.},
-  title        = {Fundamental solution neural networks for solving inverse cauchy problems for the laplace and biharmonic equations},
-  volume       = {201},
+  title        = {A compact difference method for the 2-D kuramoto-tsuzuki complex equation with neumann boundary characterized by strong nonlinear effects},
+  volume       = {203},
   year         = {2026},
 }
 </textarea>

@@ -25,105 +25,25 @@
 </head>
 <body>
 
-<h2 id="parco">PARCO - 5</h2>
+<h2 id="parco">PARCO - 1</h2>
 <ul>
 <li><details>
 <summary>
-(2025). LSHDP: Locally sharded heterogeneous data parallel for distributed deep learning. <em>PARCO</em>, <em>126</em>, 103164. (<a href='https://doi.org/10.1016/j.parco.2025.103164'>www</a>)
+(2026). Machine learning-driven fault-tolerant core mapping in network-on-chip architectures for advanced computing networks. <em>PARCO</em>, <em>127</em>, 103167. (<a href='https://doi.org/10.1016/j.parco.2025.103167'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {In today’s world, pre-trained models such as GPT-3 and Llama 3.1, along with the use of transformers, recognized as large AI models, have gained significant importance. To accelerate the training of these models, distributed training has become a fundamental approach. This method enables the execution of model training across multiple GPUs, which is particularly essential for models that require more data and training time. Despite past advancements, achieving optimal utilization of GPU capacity remains a major challenge, especially in academic environments that often feature heterogeneous infrastructures and limited bandwidth between nodes, which do not align with the assumptions of existing methods. In previous methods, the node with the lowest computational power is considered the bottleneck, leading to computational slowdowns and increased waiting times for other nodes. This study addresses the issue by adjusting batch sizes to minimize node waiting times. This approach improves the efficiency of node utilization without reducing the convergence speed. Moreover, to address GPU memory limitations, existing methods often rely on high-speed inter-node communication. This reliance increases training time in scenarios with low network bandwidth (e.g., 1 Gb/s). This research mitigates this challenge using the LSDP (Locally Sharded Data Parallel) method, which leverages CPU memory instead of inter-node communication. Finally, by combining these two strategies, the LSHDP (Locally Sharded Heterogeneous Data Parallel) solution is introduced which is suitable for heterogeneous infrastructures with low inter-node communication speeds. Experiments demonstrate that this method outperforms previous approaches in such environments, achieving improvements of 35.39 % and 52.57 % in terms of speed compared to data-parallel and Fully Sharded Data Parallel (FSDP) methods respectively.},
+  abstract     = {The utilization of machine learning (ML) in architectural design shows great potential, especially in addressing the challenges posed by complex design spaces where traditional approaches may fall short. Network-on-chip (NoC) architecture has emerged as an efficient solution for on-chip communication among processors. However, with the increasing device scaling and component density, the likelihood of processor failures also rises, making fault-tolerant design a critical aspect of chip development to ensure system reliability. In this paper, we present a novel ML framework for fault-tolerant core mapping that effectively overcomes issues encountered in previous methodologies, such as re-transmission and re-mapping. The proposed framework intelligently learns optimal core mapping strategies and effectively addresses fault tolerance concerns in NoCs with diverse application core graphs. The approach begins with efficient NoC mapping and scheduling as the primary step. In the event of any faults during this process, an error detection and correction mechanism is applied within the NoC itself, eliminating the need for time-consuming re-transmissions. Furthermore, if faults persist even after error correction, the tasks assigned to the failed core are seamlessly migrated to a designated spare core, ensuring continuous system operation. Comparisons with conventional methods demonstrate considerable improvements in processor speed-up, energy efficiency, as well as reductions in re-transmission, latency, and dynamic power consumption. Hardware results indicate enhanced performance, reduced area, and lower power consumption compared to related algorithms when implemented on an FPGA board. The proposed technique showcases significant advancements in fault-tolerant core mapping for NoCs, thereby enhancing overall chip reliability and performance.},
   archive      = {J_PARCO},
-  author       = {Motahhare Mirzaei and Mehrdad Ashtiani and Mohammad Javad Pirhadi and Sauleh Eetemadi},
-  doi          = {10.1016/j.parco.2025.103164},
+  author       = {Challa Muralikrishna Yadav and B. Naresh Kumar Reddy},
+  doi          = {10.1016/j.parco.2025.103167},
   journal      = {Parallel Computing},
-  month        = {11},
-  pages        = {103164},
+  month        = {3},
+  pages        = {103167},
   shortjournal = {Parallel Comput.},
-  title        = {LSHDP: Locally sharded heterogeneous data parallel for distributed deep learning},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Detecting chaotic regions of recurrent equations in parallel environments. <em>PARCO</em>, <em>126</em>, 103163. (<a href='https://doi.org/10.1016/j.parco.2025.103163'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper investigates how parallel computing techniques, such as OpenMP and CUDA, can be optimized to enhance the computational efficiency of detecting chaotic regions in the parameter space of recurrent equations, a critical task in chaos theory. Leveraging the embarrassingly parallel nature of maximum Lyapunov exponent calculations, our method targets systems with known recurrence relations, where governing equations are analytically defined. Applied to a discretized recurrent neural model, the proposed approach achieves significant speedups, addressing the computational intensity of chaos detection. While building on established parallel techniques, this work fills a gap in their systematic application to chaos detection in high-dimensional systems, offering a scalable solution with potential for real-time analysis. We provide detailed performance metrics, parallel I/O guidelines, and visualization strategies, demonstrating adaptability to other analytically defined chaotic systems.},
-  archive      = {J_PARCO},
-  author       = {Athanasios Margaris and Stavros Souravlas},
-  doi          = {10.1016/j.parco.2025.103163},
-  journal      = {Parallel Computing},
-  month        = {11},
-  pages        = {103163},
-  shortjournal = {Parallel Comput.},
-  title        = {Detecting chaotic regions of recurrent equations in parallel environments},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A sleek lock-free hash map in an ERA of safe memory reclamation methods. <em>PARCO</em>, <em>126</em>, 103162. (<a href='https://doi.org/10.1016/j.parco.2025.103162'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Lock-free data structures have become increasingly significant due to their algorithmic advantages in multi-core cache-based architectures. Safe Memory Reclamation (SMR) is a technique used in concurrent programming to ensure that memory can be safely reclaimed without causing data corruption, dangling pointers, or access to freed memory. The ERA theorem states that any SMR method for concurrent data structures can only provide at most two of the three main desirable properties: Ease of use, Robustness, and Applicability. This fundamental trade-off influences the design of efficient lock-free data structures at an early stage. This work redesigns a previous lock-free hash map to fully exploit the properties of the ERA theorem and to leverage the characteristics of multi-core cache-based architectures by minimizing the number of cache misses, which are a significant bottleneck in multi-core environments. Experimental results show that our design outperforms the previous design, which was already quite competitive when compared against the Concurrent Hash Map design of the Intel’s TBB library.},
-  archive      = {J_PARCO},
-  author       = {Pedro Moreno and Miguel Areias and Ricardo Rocha},
-  doi          = {10.1016/j.parco.2025.103162},
-  journal      = {Parallel Computing},
-  month        = {11},
-  pages        = {103162},
-  shortjournal = {Parallel Comput.},
-  title        = {A sleek lock-free hash map in an ERA of safe memory reclamation methods},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A dependency-aware task offloading in IoT-based edge computing system using an optimized deep learning approach. <em>PARCO</em>, <em>126</em>, 103161. (<a href='https://doi.org/10.1016/j.parco.2025.103161'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Internet of Things (IoT) devices produce a lot of data, which can be difficult to process on limited computing systems. Edge computing aims to solve this issue by providing localized processing power at the edge of IoT networks to reduce communication delays and network bandwidth. Because of their limited resources and task dependencies, edge computing systems are facing computational issues as a result of the growing usage of IoT devices. An efficient task-offloading system that combines the Fire Hawk Optimizer (FHO) and Deep Reinforcement Learning (DRL) is proposed in this research to address these issues. This paper proposes leveraging deep learning techniques to prioritize and offload computational tasks from IoT applications to edge computing systems, addressing task interdependencies and resource constraints to enhance efficiency. The proposed method consists of two components. The first component uses Petri-Net modelling to analyze interdependencies among tasks, identify subtasks, and map their relationships. The second component uses a residual neural network-based actor-critic deep reinforcement learning (ResNet-ACDRL) decision-making model to offload tasks. Task dependencies and resource availability are assessed by the DRL component, namely a ResNet-ACDRL model, which is utilized to dynamically learn and enhance task-offloading strategies. In order to ensure optimal task allocation across local, edge, and cloud computing resources, the FHO is then used to refine these learned policies. Here, the term "policy" refers to the strategy used by the system to decide the most suitable resource for task execution. This dual approach strategy drastically reduces energy usage and execution delays. The suggested framework outperforms existing methods, according to experimental data, especially when managing task interdependencies and a variety of computational loads. The proposed method has been shown to significantly improve time delay and energy consumption compared to existing methods.},
-  archive      = {J_PARCO},
-  author       = {Shiva Shankar Reddy and Silpa Nrusimhadri and Gadiraju Mahesh and Veeranki Venkata Rama Maheswara Rao},
-  doi          = {10.1016/j.parco.2025.103161},
-  journal      = {Parallel Computing},
-  month        = {11},
-  pages        = {103161},
-  shortjournal = {Parallel Comput.},
-  title        = {A dependency-aware task offloading in IoT-based edge computing system using an optimized deep learning approach},
-  volume       = {126},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). GPU/CUDA-accelerated gradient growth optimizer for efficient complex numerical global optimization. <em>PARCO</em>, <em>126</em>, 103160. (<a href='https://doi.org/10.1016/j.parco.2025.103160'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Efficiently solving high-dimensional and complex numerical optimization problems remains a critical challenge in high-performance computing. This paper presents the GPU/CUDA-Accelerated Gradient Growth Optimizer (GGO)—a novel parallel metaheuristic algorithm that combines gradient-guided local search with GPU-enabled large-scale parallelism. Building upon the Growth Optimizer (GO), GGO incorporates a dimension-wise gradient-guiding strategy based on central difference approximations, which improves solution precision without requiring differentiable objective functions. To address the computational bottlenecks of high-dimensional problems, a hybrid CUDA-based framework is developed, integrating both fine-grained and coarse-grained parallel strategies to fully exploit GPU resources and minimize memory access latency. Extensive experiments on the CEC2017 and CEC2022 benchmark suites demonstrate the superior performance of GGO in terms of both convergence accuracy and computational speed. Compared to 49 state-of-the-art optimization algorithms, GGO achieves top-ranked results in 67% of test cases and delivers up to 7.8× speedup over its CPU-based counterpart. Statistical analyses using the Wilcoxon signed-rank test further confirm its robustness across 28 out of 29 functions in high-dimensional scenarios. Additionally, in-depth analysis reveals that GGO maintains high scalability and performance even as the problem dimension and population size increase, providing a generalizable solution for high-dimensional global optimization that is well-suited for parallel computing applications in scientific and engineering domains.},
-  archive      = {J_PARCO},
-  author       = {Qingke Zhang and Wenliang Chen and Shuzhao Pang and Sichen Tao and Conglin Li and Xin Yin},
-  doi          = {10.1016/j.parco.2025.103160},
-  journal      = {Parallel Computing},
-  month        = {11},
-  pages        = {103160},
-  shortjournal = {Parallel Comput.},
-  title        = {GPU/CUDA-accelerated gradient growth optimizer for efficient complex numerical global optimization},
-  volume       = {126},
-  year         = {2025},
+  title        = {Machine learning-driven fault-tolerant core mapping in network-on-chip architectures for advanced computing networks},
+  volume       = {127},
+  year         = {2026},
 }
 </textarea>
 </details></li>

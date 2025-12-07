@@ -25,593 +25,99 @@
 </head>
 <body>
 
-<h2 id="tsc">TSC - 31</h2>
+<h2 id="tsc">TSC - 5</h2>
 <ul>
 <li><details>
 <summary>
-(2025). TAMO:Fine-grained root cause analysis via tool-assisted LLM agent with multi-modality observation data in cloud-native systems. <em>TSC</em>, 1--13. (<a href='https://doi.org/10.1109/TSC.2025.3629066'>www</a>)
+(2025). Enhancing AIGC service efficiency with adaptive multi-edge collaboration in a distributed system. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3638764'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Implementing large language models (LLMs)-driven root cause analysis (RCA) in cloud-native systems has become a key topic of modern software operations and maintenance. However, existing LLM-based approaches face three key challenges: multi-modality input constraint, context window limitation, and dynamic dependence graph. To address these issues, we propose a tool-assisted LLM agent with multi-modality observation data for fine-grained RCA, namely TAMO, including multi-modality alignment tool, root cause localization tool, and fault types classification tool. In detail, TAMO unifies multi-modal observation data into time-aligned representations for cross-modal feature consistency. Based on the unified representations, TAMO then invokes its specialized root cause localization tool and fault types classification tool for further identifying root cause and fault type underlying system context. This approach overcomes the limitations of LLMs in processing real-time raw observational data and dynamic service dependencies, guiding the model to generate repair strategies that align with system context through structured prompt design. Experiments on two benchmark datasets demonstrate that TAMO outperforms state-of-the-art (SOTA) approaches with comparable performance.},
+  abstract     = {The Artificial Intelligence Generated Content (AIGC) technique has gained significant traction for producing diverse content. However, existing AIGC services typically operate within a centralized framework, resulting in high response times. To address this issue, we integrate collaborative Mobile Edge Computing (MEC) technology to reduce processing delays for AIGC services. Current collaborative MEC methods primarily support single-server offloading or facilitate interactions among fixed Edge Servers (ESs), limiting flexibility and resource utilization across all ESs to meet the varying computing and networking requirements of AIGC services. We propose AMCoEdge, an adaptive multi-server collaborative MEC approach to enhancing AIGC service efficiency. The AMCoEdge fully utilizes the computing and networking resources across all ESs through adaptive multi-ES selection and dynamic workload allocation, thereby minimizing the offloading make-span of AIGC services. Our design features an online distributed algorithm based on deep reinforcement learning, accompanied by theoretical analyses that confirm an approximate linear time complexity. Simulation results show that our method outperforms state-of-the-art baselines, achieving at least an $11.04\%$ reduction in task offloading make-span and a $44.86\%$ decrease in failure rate. Additionally, we develop a distributed prototype system to implement and evaluate our AMCoEdge method for real AIGC service execution, demonstrating service delays that are $9.23\% - 31.98\%$ lower than the three representative methods.},
   archive      = {J_TSC},
-  author       = {Xiao Zhang and Qi Wang and Mingyi Li and Yuan Yuan and Mengbai Xiao and Fuzhen Zhuang and Dongxiao Yu},
-  doi          = {10.1109/TSC.2025.3629066},
+  author       = {Changfu Xu and Jianxiong Guo and Jiandian Zeng and Houming Qiu and Tian Wang and Xiaowen Chu and Jiannong Cao},
+  doi          = {10.1109/TSC.2025.3638764},
   journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Serv. Comput.},
+  title        = {Enhancing AIGC service efficiency with adaptive multi-edge collaboration in a distributed system},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MHCertChain: A multi-CA hierarchical certificate blockchain with low overhead. <em>TSC</em>, 1--13. (<a href='https://doi.org/10.1109/TSC.2025.3639573'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Blockchain-based certificate management schemes provide a distributed approach for Public Key Infrastructure through the integration of blockchain services, thereby enhancing transparency and security in identity authentication. However, existing schemes often suffer from limited scalability when accommodating new CAs, high overhead of blockchain systems, and a high false-positive rate in revocation status checks. To address above issues, we propose MHCertChain, a multi-CA hierarchical certificate blockchain with low overhead. Specifically, a two-layer blockchain structure including the main chain and sub-chains is designed to enhance scalability, while the main chain stores trust paths between CAs and each automatically deployed sub-chain records user certificates issued by an end-entity CA. Then, we propose a lightweight dual-signature certificate format that contains certificate location information without requiring any external certificate location method outside the blockchain. Considering time characteristics of certificates, a time-partitioned cuckoo filter is proposed with a low false positive rate and accelerates revocation status query. Moreover, we deduce an optimal global performance parameter of such filter through mathematical modeling. We present a thorough security analysis of our MHCertChain utilizing the universally composable framework, and extensive experiments demonstrate that the CPU overhead and false positive rate are reduced by 70% and 95%, respectively, compared to state-of-the-art schemes. Blockchain-based certificate management schemes provide a distributed approach for Public Key Infrastructure through the integration of blockchain services, thereby enhancing transparency and security in identity authentication. However, existing schemes seldom discuss hierarchical CA architecture, and often suffer from limited scalability and high overhead when considering new CAs, frequent certificate authentication and revocation status verification. To address above issues, we propose MHCertChain, a multi-CA hierarchical certificate blockchain with low overhead. Specifically, a two-layer blockchain structure including the main chain and sub-chains is designed, while the main chain stores trust paths between CAs and each automatically deployed sub-chain records user certificates issued by an end-entity CA. Then, we propose a lightweight dual-signature certificate format that contains certificate location information without requiring any external certificate location method outside the blockchain. Considering time characteristics of certificates, a time-partitioned cuckoo filter is proposed with a low false positive rate and accelerates revocation status query. Moreover, we deduce an optimal global performance parameter of such filter through mathematical modeling. We present a thorough security analysis of our MHCertChain utilizing the universally composable framework, and extensive experiments demonstrate that the CPU overhead and false positive rate are reduced by 70% and 95%, respectively, compared to state-of-the-art schemes. Blockchain-based certificate management schemes provide a distributed means to increase the transparency of PKI (Public Key Infrastructure) and prevent single point attacks in web communications. However, certificate management based on hierarchical multi-CA architecture often faces the problems of poor scalability and high CPU overhead in blockchain. In this article, we are the first to propose a multi-CA hierarchical certificate blockchain with low overhead. Specifically, a two-layer blockchain structure of the main chain and sub-chain is adopted, with the main chain storing the trust paths and the sub-chain storing the user certificates. By monitoring to the CA transactions of the main chain, the sub-chain is automatically deployed. Then, in the certificate operation, we consider the high CPU overhead of traditional certificate query in blockchain and propose a dual-signature certificate format. combined with the time characteristics of the certificate, a time-partitioned cuckoo filter is proposed with a low false positive rate for the revocation status query speeding, and we find a global performance optimal parameter through mathematical modeling. Finally, we use a general composable framework to prove the security of HiCertChain, and the experiments show that the CPU overhead and false positive rate are reduced by 90% and 95%, respectively, compared with those of state-of-the-arts.},
+  archive      = {J_TSC},
+  author       = {Xiaojie Guo and Xuewen Dong and Qingsong Yao and Lingxiao Yang and Zhiwei Zhang and Ning Xi and Yulong Shen},
+  doi          = {10.1109/TSC.2025.3639573},
+  journal      = {IEEE Transactions on Services Computing},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {TAMO:Fine-grained root cause analysis via tool-assisted LLM agent with multi-modality observation data in cloud-native systems},
+  title        = {MHCertChain: A multi-CA hierarchical certificate blockchain with low overhead},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). BSTL: Bayesian STL for predictive edge service monitoring with probabilistic guarantee. <em>TSC</em>, 1--18. (<a href='https://doi.org/10.1109/TSC.2025.3629323'>www</a>)
+(2025). Adaptive timescale hierarchical learning for energy-efficient service deployment and delivery in MEC. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3639960'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Edge service monitoring is essential for ensuring the robustness and efficiency of service executions, where predictive monitoring enables proactive detection of potential service violations. Current approaches for predictive monitoring, which mostly adopt Signal Temporal Logic (STL) specifications for requirements representation and evaluation, primarily focus on deterministic signals, and thus, may lack probabilistic guarantees for uncertainty interpretation. To address these challenges, this paper proposes Bayesian STL (BSTL), an extension of STL that enables probabilistic reasoning over stochastic signals. Specifically, Bayesian Neural Networks (BNNs) are employed to generate sequences of posterior probability distributions, offering more comprehensive predictive insights compared to traditional point- or interval-based methods with deterministic sequential predictions. Uncertainty interpretation over these distribution predictions is achieved by a novel expected robustness metric that jointly quantifies both the degree and probability of service satisfaction. Thereafter, a BSTL-based predictive monitoring framework is developed, where a service constraint is formally specified by a BSTL formula and interpreted with both qualitative and quantitative semantics. Besides, confidence levels and constraint thresholds ensuring robust satisfaction of a BSTL formula are rigorously estimated. Extensive experiments on publicly available datasets demonstrate that BSTL outperforms baseline techniques in terms of expressiveness, robustness, and applicability.},
+  abstract     = {Mobile Edge Computing (MEC) decentralizes the network's computing and storage capabilities from centralized infrastructure to edge nodes located closer to end-users, enabling context-aware service deployment, low-latency service response, and efficient computation for mobile users. However, achieving energy-efficient service deployment while maintaining service delivery quality remains a significant challenge due to the wide geographic distribution of edge nodes, the dynamic variation of service workloads, and the differences between service deployment and delivery cycles. To address these challenges, we first design a feature encoding strategy and a self-attention-based encoder to extract contextual features, which are fused to support adaptive decision timescale regulation driven by service semantics and system load dynamics. Then, we propose a novel Dual-Timescale Energy-Efficient Service Deployment and Delivery (DT-EESD) framework integrated with hierarchical learning. The upper layer leverages an enhanced decision-making mechanism to optimize proactive service deployment and base station switching on a larger timescale, aiming to reduce long-term network costs. The lower layer employs a fine-grained real-time optimization approach to dynamically handle service delivery and resource allocation on a smaller timescale, effectively responding to dynamic service requests. By incorporating an expected reward-based learning mechanism, the framework efficiently handles the temporal coupling between deployment and delivery cycles. Extensive experiments demonstrate that DT-EESD outperforms baseline algorithms, achieving at least a 10.89% reduction in average system cost while also improving model convergence, reducing delay, and enhancing resource utilization.},
   archive      = {J_TSC},
-  author       = {Deng Zhao and Zhangbing Zhou and Xiaoyan Meng and Xiao Xue and Ruixi Pan and Walid Gaaloul},
-  doi          = {10.1109/TSC.2025.3629323},
+  author       = {Xiangyi Chen and Guangjie Han and Huanlai Xing and Yuanguo Bi and Xingwei Wang},
+  doi          = {10.1109/TSC.2025.3639960},
   journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--18},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {BSTL: Bayesian STL for predictive edge service monitoring with probabilistic guarantee},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enhancing SLA-DTNA for intelligence resource reservation in edge-cloud-end collaborative. <em>TSC</em>, 1--16. (<a href='https://doi.org/10.1109/TSC.2025.3629121'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Edge-Cloud-End Collaborative (ECEC) computing emerges as a promising paradigm to support computationally intensive applications within Digital Twin (DT) networks, providing flexibility and real-time performance for heterogeneous task scheduling and resource allocation. However, effectively balancing key Service Level Agreement (SLA) parameters, such as response delay, availability, and throughput in dynamic network environments remains challenging, especially for complex, large-scale applications. Existing solutions typically lack SLA-oriented proactive resource reservation schemes. To address these limitations, we propose an SLA-driven hierarchical bidirectional closed-loop DT Network Architecture (SLA-DTNA), comprising four layers: real network, local DT, edge DT, and cloud DT. The proposed architecture systematically decomposes SLA requirements into measurable system parameters, aiming to minimize overall system cost. Specifically, a differentiated task management mechanism is designed at the local DT layer to ensure Quality of Service (QoS) for critical tasks. At the edge DT layer, we propose a heuristic-based lightweight scheduling algorithm leveraging DT capabilities for efficient task resource mapping and reduced scheduling complexity. At the cloud DT layer, we apply the Deep Deterministic Policy Gradient (DDPG) algorithm for adaptive resource reservation, dynamically adapting schemes based on task preferences and historical behavior patterns. Simulation and experimental results validate that the proposed SLA-DTNA enables fine-grained and intelligent resource allocation, enhances overall network performance, and effectively satisfies dynamic SLA requirements.},
-  archive      = {J_TSC},
-  author       = {Tianyu Li and Xingwei Wang and Qiang He and Yuxin Zhang and Ammar Hawbani and Min Huang and Liang Zhao},
-  doi          = {10.1109/TSC.2025.3629121},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--16},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Enhancing SLA-DTNA for intelligence resource reservation in edge-cloud-end collaborative},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Energy efficient resource sharing in trustworthy federated cloud environment: A bayesian game and double auction based approach. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3629534'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Cloud federation enhances cloud services by enabling resource sharing and cooperation among multiple Cloud Service Providers (CSPs) for improved performance. However, one of the significant challenges for CSPs within the federation is maintaining coordination among heterogeneous CSPs. Additionally, reducing the presence of pernicious CSPs within the federation will allow the federation to deliver services with committed Quality of Service (QoS). Moreover, minimising the energy while migrating virtual machines within the federation will allow an increase in the revenue of CSPs within the federation. This paper proposed a Bayesian game-based model for detecting pernicious CSPs within the federation and developed a greedy double-auction-based resource-sharing mechanism. Here, the proposed mechanism ensures that CSPs achieve high satisfaction levels and guarantee a fair, efficient, and energy-aware resource-sharing environment among CSPs in a federation. Simulated results of the proposed Energy, Pernicious, and QoS Greedy Double Auction model (EPQ-GDA) are extensively compared with other competing models. The results demonstrate the effectiveness and superiority of our proposed method over the nearest competitor, with an average improvement in satisfaction of 2.61% for buyer CSPs and 3.67% for seller CSPs, 3.77% over energy, and 14.90% over perniciousness. Further simulated results also show that the EPQ-GDA satisfies important auction properties such as truthfulness, individual rationality, and budget balance.},
-  archive      = {J_TSC},
-  author       = {Sandeep Singh Sikarwar and Rakesh Kumar and Benay Kumar Ray},
-  doi          = {10.1109/TSC.2025.3629534},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Energy efficient resource sharing in trustworthy federated cloud environment: A bayesian game and double auction based approach},
+  title        = {Adaptive timescale hierarchical learning for energy-efficient service deployment and delivery in MEC},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Non-subjective trust mechanism for online ride-hailing services. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3630208'>www</a>)
+(2025). Decoupling location and preference: A dual-branch architecture for robust QoS prediction under extreme sparsity. <em>TSC</em>, 1--17. (<a href='https://doi.org/10.1109/TSC.2025.3639601'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Online ride-hailing services (ORHS) are changing the travel mode. The quality evaluation of ORHS is essential to regulate driver behavior and guide passengers in choosing good services. The existing quality evaluation methods of ORHS rely on subjective passenger feedback, while they are susceptible to malicious or paranoid feedback, resulting in untrustworthy evaluation results. This paper proposes a non-subjective trust mechanism for ORHS to supplement existing evaluation methods. Inspired by the trust machine, this mechanism defines the concept of non-subjective trust to measure the quality of ORHS. It uses trajectory data collected by infrastructure as a parameter to calculate the non-subjective trust value of ORHS, which can ensure the trustworthiness and authenticity of the calculation results. This mechanism also improves the CKKS homomorphic encryption algorithm to ensure both the privacy protection of the trajectory data and the effective calculation of non-subjective trust values. In addition, a blockchain is adopted to store trajectory data cipher text and trust values plaintext in the infrastructure. It promotes its flexible management and use and ensures the security of original data and traceability of evaluation results. Theoretical analysis and experiments show that the trust value calculated by this mechanism is trustworthy, and its time costs are feasible.},
+  abstract     = {Quality of Service (QoS) prediction faces challenges from location-dependent variability and sparse user-service interactions. Existing methods often struggle to integrate location information (e.g., using fixed weights for spatial attributes) or learn representative features from sparse matrices. This paper proposes a method for Decoupling Location and Preference via a dual-branch architecture for robust QoS prediction under extreme sparsity, called DLP. It integrates location and preference features to address the challenges of sparsity and contextual variability. Unlike conventional single-stream or simple concatenation methods, DLP features a novel dual-branch architecture that decouples heterogeneous features and specializes in processing them: Location context and user-service preferences. The first branch, a location feature extraction network, processes user and service geographical and network information. It utilizes an attention mechanism to dynamically weight spatial attributes (instead of fixed weights) based on their actual impact on QoS and selects the most salient co-location features to model spatial interactions. The second branch, a preference feature extraction network, constructs high-dimensional feature representations from similarity-based user-service vectors derived from the sparse QoS matrix. It employs a multi-layer feature extraction block that hierarchically aggregates intermediate features to compensate for information loss during transformation, thereby capturing richer user/service preferences. Finally, a feature fusion prediction network integrates the learned location and preference features to generate accurate QoS predictions. Ablation studies and analysis validate that each component contributes significantly to performance gains. Extensive experiments on the WS-DREAM dataset show that DLP outperforms 22 baselines across 2.5%–20% sparsity, excelling in throughput prediction (achieving reductions up to 9.07% in Mean Absolute Error and 28.86% in Root Mean Squared Error at 2.5% sparsity) and validating its superior QoS prediction accuracy.},
   archive      = {J_TSC},
-  author       = {Wei Tong and Xuewen Dong and Jian Shen and Yulong Shen and Zesong Dong},
-  doi          = {10.1109/TSC.2025.3630208},
+  author       = {Peiyun Zhang and Jigang Ren and Jishi Yin and Qinglin Zhao and Haibin Zhu},
+  doi          = {10.1109/TSC.2025.3639601},
   journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
+  month        = {12},
+  pages        = {1--17},
+  shortjournal = {IEEE Trans. Serv. Comput.},
+  title        = {Decoupling location and preference: A dual-branch architecture for robust QoS prediction under extreme sparsity},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust load balancing taking advantage of aggregated performance metrics. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3640174'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While load balancing in distributed systems is extensively studied, traditional algorithms often assume static task loads, a simplification that fails under realistic dynamic conditions where rapid load fluctuations undermine balancing effectiveness. Addressing this critical gap, this paper introduces a novel approach by explicitly incorporating load uncertainty. We uniquely reformulate the load balancing problem using statistical performance aggregates—specifically, both mean and variance—to simultaneously optimize for balance and robustness. We propose a fully decentralized algorithm enabling nodes to collaboratively achieve this dual objective using these aggregates. Crucially, our algorithm offers mathematically provable guarantees, ensuring convergence to a global ideal state in logarithmic rounds even amidst varying loads, a guarantee often missing for dynamic scenarios. Simulations using real-world traces validate our approach, demonstrating significantly superior performance robustness and tighter load balancing compared to existing methods that rely solely on instantaneous or static metrics.},
+  archive      = {J_TSC},
+  author       = {Hung-Chang Hsiao and Lian-Xing Wei and Ching-Hsien Hsu},
+  doi          = {10.1109/TSC.2025.3640174},
+  journal      = {IEEE Transactions on Services Computing},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Non-subjective trust mechanism for online ride-hailing services},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Auditable ledger snapshot for non-repudiable cross-blockchain communication. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3630671'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Blockchain interoperability is increasingly recognized as the centerpiece for robust interactions among decentralized services. Blockchain ledgers are generally tamper-proof and thus enforce non-repudiation for transactions recorded within the same network. However, such a guarantee does not hold for cross blockchain transactions. When disruptions occur due to malicious activities or system failures within one blockchain network, foreign networks can take advantage by denying legitimate claims or mounting fraudulent liabilities against the defenseless network. In response, this paper introduces InterSnap, a novel blockchain snapshot archival methodology, for enabling auditability of cross blockchain transactions, enforcing non-repudiation. InterSnap introduces cross-chain transaction receipts that ensure their irrefutability. Snapshots of ledger data along with these receipts are utilized as non-repudiable proof of bilateral agreements among different networks. InterSnap enhances system resilience through a distributed snapshot generation process, need-based snapshot scheduling process, and archival storage and sharing via decentralized platforms. Through a prototype implementation based on Hyperledger Fabric, we conducted experiments using on-premise machines, AWS public cloud instances, as well as a private cloud infrastructure. We establish that InterSnap can recover from malicious attacks while preserving cross chain transaction receipts. Additionally, our proposed solution demonstrates adaptability to increasing loads while securely transferring snapshot archives with minimal overhead.},
-  archive      = {J_TSC},
-  author       = {Tirthankar Sengupta and Bishakh Chandra Ghosh and Sandip Chakraborty and Shamik Sural},
-  doi          = {10.1109/TSC.2025.3630671},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Auditable ledger snapshot for non-repudiable cross-blockchain communication},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Fairness-aware federated recommender design with heterogeneous privacy budgets. <em>TSC</em>, 1--13. (<a href='https://doi.org/10.1109/TSC.2025.3630641'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {To mitigate the rising concern on privacy infringement in recommenders, federated recommender (FRec) boosted with local differential privacy (LDP) has been proposed, in which each user privately retains his (or her) dataset, and only exposes model parameters distorted by LDP to a parameter server (PS). Although such kind of solution can largely preserve data privacy, it overlooks the potential unfairness issue. For example, a user can become a free-rider by setting an extremely small privacy budget to completely distort his (or her) model such that the model training is mainly contributed by other users. To guarantee fairness, we design a fairness-aware federated recommender framework called FFRec when users adopt heterogeneous privacy budgets. In FFRec, fairness implies that clients with higher utilities will have more opportunities to participate in training. We integrate fairness into FFRec by taking both sample size and privacy requirements into account. Specifically, a user is selected by the PS to participate in model training based on his (or her) sample size and potential noise influence by LDP and cumulative participation counts. We formulate the fairness-aware client selection problem as an integer programming problem and then reduce it into a submodular problem which has been proven to be NP-hard. To resolve this problem, we employ an approximation algorithm with an approximation ratio of 1 − e−12. Extensive experiments with popular field-measured datasets (i.e., Movielens and Netflix) demonstrate that FFRec can improve fairness by 10.3%-38.5% while guaranteeing high recommendation accuracy},
-  archive      = {J_TSC},
-  author       = {Miao Hu and Yang Li and Pengshan Liao and Yipeng Zhou and Di Wu},
-  doi          = {10.1109/TSC.2025.3630641},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--13},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Fairness-aware federated recommender design with heterogeneous privacy budgets},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Flocky: Decentralized intent-based edge orchestration using open application model. <em>TSC</em>, 1--16. (<a href='https://doi.org/10.1109/TSC.2025.3631387'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Continuum computing has emerged as a paradigm to improve various aspects of service orchestration by offloading computation from the cloud to the network edge. However, edge orchestration poses two significant challenges compared to cloud computing. On one hand, cloud software scheduling algorithms make suboptimal decisions when applied to the network edge, as edge devices and networks are more hetereogeneous than cloud data centers, and orchestration requires different parameters. On the other hand, most orchestration platforms assume highly centralized cloud data centers, with each server running many easily migrated software instances, whereas edge devices have limited hardware capabilities and migration of tasks between devices is significantly slower than in the cloud. As a result, there is a need for a decentralized orchestration platform that allows scheduling algorithms to take into account a wide variety of device properties and deployment requirements in placement decisions. This article presents Flocky, a decentralized device discovery and service orchestration framework based on Open Application Model (OAM), to address this gap. The architecture of Flocky is elaborated, showing how OAM enables flexible intent modeling in the edge, and combined with a Gossip-like algorithm allows individual edge devices to discover devices in their neighborhoods, map their capabilities, and optimally deploy parts of applications to individual nodes. Evaluation shows Flocky to be highly scalable and mainly dependent on local node density, with nodes discovering over 97% of their viable neighbours on average within two discovery rounds, while using 84% less memory than a centralized orchestrator such as Kubernetes.},
-  archive      = {J_TSC},
-  author       = {Tom Goethals and Merlijn Sebrechts and Mays Al-Naday and Filip De Turck and Bruno Volckaert},
-  doi          = {10.1109/TSC.2025.3631387},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--16},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Flocky: Decentralized intent-based edge orchestration using open application model},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Hierarchical reinforcement learning for optimizing local-global collaborative computation offloading and resource allocation. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3631532'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Traditional computation offloading and resource allocation strategies encounter several issues that lead to poor service experience and resource wastage. The resource allocation scheme lacks the flexibility to adapt to the time-varying offloading demands of User Equipment (UEs). Furthermore, there is an imbalance between UEs seeking better service and Service Providers (SPs) aiming to minimize cost expenditures. In this paper, we propose a knowledge-defined networking-based Multi-Layer Computation Offloading and Resource Allocation strategy optimization (ML-CORA) architecture. Based on the ML-CORA, we design a Multi-Layer Local-Global Collaborative computation offloading and resource allocation strategy optimization (ML2GC) algorithm. The basic level of the ML2GC algorithm expresses and optimizes computation offloading demands from the perspective of UE (local), while the meta level optimizes the resource allocation strategy on demand from the perspective of the SP (global), achieving a collaborative multi-objective optimization for a win-win system between UEs and SPs. The two-layer structure of the ML2GC algorithm outputs continuous and discrete actions respectively, which improves the flexibility and efficiency of the algorithm while effectively balancing the interests of all parties and promoting efficient resource utilization. Simulation results based on the real-world dataset of Shanghai Telecom indicate that the ML2GC algorithm significantly improves both social welfare and resource utilization compared to baseline algorithms.},
-  archive      = {J_TSC},
-  author       = {Kaiqi Yang and Qiang He and Xingwei Wang and Yufei Liu and Xiaoming Fu and Dongkuo Wu and Liang Zhao},
-  doi          = {10.1109/TSC.2025.3631532},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Hierarchical reinforcement learning for optimizing local-global collaborative computation offloading and resource allocation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). CIRCA: A framework for collaborative identification of root cause analysis in IoT microservices. <em>TSC</em>, 1--15. (<a href='https://doi.org/10.1109/TSC.2025.3631804'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With continuous growth of IoT applications, service failures are quite inevitable. Due to the complexity and dynamics of IoT services, the root cause analysis (RCA) following an alert can assist in quickly resolving the possible faults. However, the time scales of metrics (e.g., CPU utilization, memory usage) generated by microservices and the dynamic topologies generated by calls between the Application Program Interfaces (APIs) are different. Moreover, the status of devices is an important aspect of RCA in IoT. All these make it extremely challenging to learn failure features of microservice metrics and API calls. Therefore, we propose a novel framework for collaborative identification of root cause analysis (CIRCA) to identify the most potential root cause path with the highest fault scores (weights). In detail, we use both microservice-level and API-level root cause identification (RCI) models to obtain the node fault score in the path. Since we prove the root cause path inference problem is an NP-hard problem, and we then propose a topology-based weighted variable neighborhood search (TWVNS) algorithm and infer the optimal root cause path from two-level scores and call topologies. Our experiments demonstrate CIRCA achieves satisfactory results of RCI and path inference on four public datasets.},
-  archive      = {J_TSC},
-  author       = {Xingguo Jiang and Hong Luo and Yan Sun and Sajal K. Das},
-  doi          = {10.1109/TSC.2025.3631804},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {CIRCA: A framework for collaborative identification of root cause analysis in IoT microservices},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Niagara+: Scheduling live ML analytics across device heterogeneous processors and edge servers. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3628759'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Intelligent applications rely significantly on the live machine learning pipeline, a couple of deep neural network (DNN) inference services, executed on mobile devices to meet functional requirements while ensuring user data privacy. However, executing these DNN services on resource-constrained mobile devices presents a considerable challenge: low throughput and high energy consumption of inference tasks. To address this issue, we propose Niagara+, a novel system designed to enhance throughput by jointly scheduling DNN inference services across heterogeneous processors on mobile devices and offloading services to powerful edge servers. To achieve this, Niagara+ encounters two critical challenges: unpredictable workload dynamics and high scheduling complexity. To effectively tackle these challenges, Niagara+ employs a predictive model to forecast incoming workload patterns and orchestrates service allocation across device heterogeneous processors and edge servers through a combination of two-step offline scheduling optimization and online service dispatching strategies. We implemented Niagara+ and conducted comprehensive experiments, demonstrating its superiority over state-of-the-art approaches, reducing DNN service latency by up to 2.6× under high-bandwidth networks and 9.1× under low-bandwidth networks, while consistently meeting stringent inference latency requirements.},
-  archive      = {J_TSC},
-  author       = {Daliang Xu and Qing Li and Mengwei Xu and Kang Huang and Gang Huang and Shangguang Wang and Qun Wei and Xin Jin and Yun Ma and Xuanzhe Liu},
-  doi          = {10.1109/TSC.2025.3628759},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Niagara+: Scheduling live ML analytics across device heterogeneous processors and edge servers},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Knowledge graph-enhanced masked auto-encoders for recommendation systems. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3632319'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Contrastive learning has received significant attention for its ability to improve the representation quality over limited labeled data, achieving notable advancements in Knowledge graphs (KGs) enhanced recommendation. However, the effectiveness of most contrastive methods heavily relies on manually designed data augmentation strategies, which often limit their generality across different datasets and downstream tasks, as well as their robustness to noise perturbations. To address these challenges, we propose a novel KG-enhanced recommendation framework named Knowledge Graph-enhanced Masked Auto-Encoders for Collaborative Filtering (KG-CMAE) based on the masking-reconstruction paradigm, which employs two types of masked auto-encoders: the Knowledge Masked Auto-Encoder (KMAE) and the Collaborative Masked Auto-Encoder (CMAE), to adaptively extract informative self-supervised signals from KGs and user-item interactions. Specifically, KMAE employs the multi-head cross-attention mechanism to reflect the importance of neighboring nodes, and selectively masks and reconstructs the important connections with high structural consistency, thereby highlighting task-relevant knowledge. CMAE focuses on masking and reconstructing the interactions with high semantic relevance in the user-item interaction graph, and incorporates an enhanced decoder to better model the direct collaborative signals, such as user-user and item-item correlations, to mitigate the over-smoothing problem. Extensive experiments are conducted on three benchmark datasets under various settings, including noisy data, cold-start user recommendation, and long-tail item recommendation. The experimental results demonstrate the effectiveness, generality and robustness of the proposed KG-CMAE model compared to various baseline methods.},
-  archive      = {J_TSC},
-  author       = {Zhaoli Liu and Tao Qin and Xin Wang and Qindong Sun},
-  doi          = {10.1109/TSC.2025.3632319},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Knowledge graph-enhanced masked auto-encoders for recommendation systems},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SLO-aware instance management with queuing-based delay execution. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3632416'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In the rapidly evolving landscape of cloud computing, serverless architectures offer a paradigm shift towards fine-grained function deployment and meticulous resource auto-scaling. Despite its growing popularity, existing systems often struggle to ensure the stability of function execution due to frequent cold starts and high concurrency demands. Our observations reveal a critical issue where a few hotspot functions excessively create new containers, resulting in substantial response latency fluctuations. To address this challenge, we propose Eunomia, a SLO-aware (Service Level Objective-aware) serverless framework. Eunomia introduces an optimized Poisson model with dynamic, sliding windows to accurately capture the arrival patterns of hotspot functions. Based on the optimized Poisson model, it proposes a queuing-based delay execution approach to mitigate initialization overhead by promoting instance reuse. Additionally, Eunomia designs flexible instance orchestration, providing dedicated concurrency pools for hotspot functions and dynamically adjusting the number of active instances. Experimental results demonstrate that Eunomia ensures 97% tail latency under a 100 ms response latency SLO, and outperforms the second-best baseline by 46% when memory is limited.},
-  archive      = {J_TSC},
-  author       = {Xinquan Cai and Kai Yan and Yili Gong and Chuang Hu and Dazhao Cheng},
-  doi          = {10.1109/TSC.2025.3632416},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {SLO-aware instance management with queuing-based delay execution},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Surveying root cause analysis techniques: A comprehensive review of aspects for multi-service applications. <em>TSC</em>, 1--19. (<a href='https://doi.org/10.1109/TSC.2025.3631913'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {As the landscape of industry and commerce continues to evolve, it presents increasing challenges for traditional operation and maintenance of services. These challenges arise from the need to adapt to dynamic market conditions, integrate complex systems and technologies, ensure uninterrupted service delivery, manage large volumes of data, and meet ever-growing customer expectations. Identifying the root cause of a failure is a crucial aspect of day-to-day operation and maintenance. With an accurate and prompt diagnosis, it becomes possible to take timely action and address the underlying issue at its core. Research on root cause analysis has been active in recent years, as it is recognized as a potential solution for effectively managing complex system states. This survey delves into the current state of research on root cause analysis, investigates recent research trends, and presents the commonly available public datasets. We organize studies along two orthogonal axes—application scenarios (cloud services, microservices, industrial systems) and input-data types (logs, traces, metrics, reports)—and synthesize algorithmic families, hybrid/LLM approaches, evaluation metrics, datasets, and tooling. To our knowledge, this is the first survey to classify RCA methods by both scenario and input-data perspectives while providing a consolidated inventory of datasets and tools, offering a roadmap for researchers},
-  archive      = {J_TSC},
-  author       = {Zhijing Li and Jianbo Yu and Zhijun Huang and Yusheng Huang},
-  doi          = {10.1109/TSC.2025.3631913},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--19},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Surveying root cause analysis techniques: A comprehensive review of aspects for multi-service applications},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MGCO: Mobility-aware generative computation offloading in edge-cloud systems.. <em>TSC</em>, 1--16. (<a href='https://doi.org/10.1109/TSC.2025.3632862'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Mobility introduces significant challenges for optimal computation offloading, latency minimization, and efficient re source utilization in multi-access edge computing (MEC) systems. A key difficulty lies in leveraging real user trajectories to jointly optimize horizontal (inter-edge) and vertical (edge-to-cloud) task offloading decisions. This paper proposes a two-dimensional offloading scheme for a multi-layer edge–cloud architecture that enables collaborative task execution among resource-constrained edge nodes under mobility conditions. We present MGCO (Mobility-Aware Generative Computation Offloading), a generative AI–driven Transformer-based sequence-to-sequence Deep Q-Network (s2s-DQN) framework that learns from real-time trajectory data to anticipate user movement and optimize task placement dynamically. The Transformer architecture is adopted because its multi-head self-attention effectively captures long range dependencies in mobility and task-demand patterns while avoiding vanishing gradients and sequential bottlenecks inherent to LSTM/GRU models. This design enables parallel contextual reasoning and stable autoregressive action generation, supporting real-time offloading decisions within strict operational latency constraints. Experimental results demonstrate that MGCO consistently outperforms existing methods, achieving up to 41.61% reduction in turnaround time compared to GASTO, and substantial improvements over DMQTO and HMAOA, reaching up to 645.40% and 751.90%, respectively, for longer prediction horizons (48 time slots of 5 seconds each). These results highlight MGCO's robustness, scalability, and effectiveness in managing complex mobility scenarios in dynamic edge–cloud environments.},
-  archive      = {J_TSC},
-  author       = {Aswini Ghosh and Nelson Sharma and Shivendu Mishra and Rajiv Misra and Sajal K. Das},
-  doi          = {10.1109/TSC.2025.3632862},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--16},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {MGCO: Mobility-aware generative computation offloading in edge-cloud systems.},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Two-stage auctions based on different seller types in crowdsensing. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3632836'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the exponential growth of mobile devices, Mobile Crowdsensing (MCS) has emerged as a new paradigm for various types of tasks. However, most existing studies focus primarily on the utility of either buyers or sellers, with limited exploration of the task types for buyers and the user types for sellers. Therefore, this paper investigates the incentive mechanisms for different types of sellers under varying task types. In this study, we classify sellers into two groups: teams and individuals, and classify buyers' tasks into two categories: simple tasks and complex tasks. Considering the characteristics of different task types and seller groups, we design two auction schemes: the Two-Stage Auction Scheme for Simple Tasks (TDAS-S) and the Two-Stage Auction Scheme for Complex Tasks (TDAS-C). In the first stage, we design a seller auction model based on the Stackelberg game to ensure the maximization of the seller's utility. In the second stage, we design an auction model for buyers, utilizing a variant of the Vickrey Auction and marginal contribution theory to pay the selected sellers in both TDAS-S and TDAS-C, ensuring the maximization of the buyer's utility. We further prove that the proposed scheme satisfies properties such as individual rationality, truthfulness, and budget balance. Finally, through extensive experiments on real-world datasets, we demonstrate that our scheme effectively balances the utility conflicts between buyers and sellers, allowing each party to maximize their respective utilities.},
-  archive      = {J_TSC},
-  author       = {Taochun Wang and Leilei Shen and Fulong Chen and Kuide Wang and Chuanxin Zhao and Yonglong Luo},
-  doi          = {10.1109/TSC.2025.3632836},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Two-stage auctions based on different seller types in crowdsensing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Broker-assisted computation offloading and resource pricing in MEC networks: A two-stage stackelberg game approach. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3633175'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Mobile Edge Computing (MEC) significantly enhances service response speeds and improves the Quality of Service (QoS) by facilitating the offloading of computation-intensive tasks from Mobile Users (MUs) to nearby Edge Servers (ESs). However, due to the inherent selfishness of involved entities, MUs may be unwilling to offload tasks without reasonable resource pricing, and ESs may lack motivation to provide computation resources without appropriate compensation. Furthermore, improving the utilization of ESs' computation resources and achieving efficient task scheduling remains a major challenge. To ad dress these issues, we introduce a profitable broker between ESs and MUs, and propose TORP, a Two-stage Stackelberg Game based Computation Offloading and Resource Pricing mechanism, to maximize the utility of each entity. Specifically, we model the interactions among three entities (i.e., the broker, MUs, and ESs) as a two-stage Stackelberg game, where the interactions between the broker and ESs is defined as Stage I, while the interactions between the broker and MUs is defined as Stage II. By using the backward induction method, we theoretically prove the Stackelberg Equilibrium (SE) for each stage of the two-stage Stackelberg, and the SE of the whole game. Then, recognizing that the optimization problem is a Mixed-Integer Nonlinear Programming (MINLP) problem, an Alternating Iteration-Based Resource Pricing and Task Offloading Algorithm (AIPOA) is proposed to obtain the optimal solution. Finally, we perform extensive simulations comparing TORP against multiple base lines. Experimental results show that TORP achieves substantial improvements, enhancing the utilities of three entities by about 2.00%-52.69% under different scenarios.},
-  archive      = {J_TSC},
-  author       = {Huan Zhou and Deng Meng and Jianmeng Guo and Peng Sun and Liang Zhao and Bin Guo and Zhiwen Yu},
-  doi          = {10.1109/TSC.2025.3633175},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Broker-assisted computation offloading and resource pricing in MEC networks: A two-stage stackelberg game approach},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An adaptive toolbox for computing throttling rate limits in web APIs. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3633389'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Services for data provisioning can be extremely valuable. Organizations wrestle with deciding whether to “expose or not to expose” their data through Web APIs and, depending on the nature of their business, mull over potential benefits and drawbacks. This is because data can be exploited and misused in unanticipated ways. Rate restriction techniques are frequently used to manage data access and protect back-end computing resources. The best choice for the maximum rate at which information can be “safely” provided to clients will determine its effectiveness. An important situation involves formal service-level agreements that govern the quality of services provided by public governments and private businesses. These firms might need to decide on a rate cap for their Web APIs that prevents unauthorized clients from accurately calculating service levels while still enabling the development of valuable value-added services. In this paper, we propose a statistical model for this problem and a technique, based on sampling tools, following brute-force, binary search, and heuristic search methods, to select an appropriate rate limit, and demonstrate its validity through a case study involving a large Italian bus company.},
-  archive      = {J_TSC},
-  author       = {Ala Arman and Marzio Monticelli and Donatella Firmani and Francesco Leotta and Massimo Mecella},
-  doi          = {10.1109/TSC.2025.3633389},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {An adaptive toolbox for computing throttling rate limits in web APIs},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Crossport: A cloud-edge-end microservice architecture for collaborative rendering in metaverse services. <em>TSC</em>, 1--13. (<a href='https://doi.org/10.1109/TSC.2025.3633668'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The metaverse has evolved from a theoretical concept into a digital infrastructure with multiple simultaneous users, real-time interaction, and high-quality immersive experiences. Traditional architecture inherited from multiplayer gaming cannot adequately meet these requirements due to rendering pressure, battery life, device weight, and service cost. While Cloud and Edge XR architectures address some constraints by offloading computation, they introduce latency issues that com promise immersion. Edge-end collaborative rendering XR offers a promising direction but struggles with task decomposition, edge resource utilization, and practical infrastructure. This paper presents Crossport, a cloud-edge-end architecture that enables microservice-based collaborative rendering for metaverseser vices. Crossport introduces a scene-based microservice decomposition methodology, a composition toolchain supporting multiple consumers, and containerization middleware for integration with existing infrastructure. Experimental evaluation shows Crossport reduces edge resource consumption by up to 29.5% in single-user scenarios and 55.3% in multi-user contexts while maintaining high-quality immersive experiences.},
-  archive      = {J_TSC},
-  author       = {Zihang Su and Xiang He and Wenrui Wang and Zhongjie Wang},
-  doi          = {10.1109/TSC.2025.3633668},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--13},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Crossport: A cloud-edge-end microservice architecture for collaborative rendering in metaverse services},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Tailored homogeneous service composition at runtime to enhance user-perceived performance. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3633988'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Web services are widely used in modern software, providing diverse data and functionalities. Some data and functionalities are critical to an application's execution and user experience, posing strict requirements on the Quality of Service (QoS) of their delivery (e.g., latency and reliability), which services often fail to meet. Previous studies show that composing homogeneous services, i.e., simultaneously invoking multiple services providing the same functionalities and returning the first response, can improve latency and reliability. However, this approach increases the workloads on cloud servers and causes additional network traffic, limiting its deployment at scale. Our empirical study reveals that services deliver varying QoS across different locations, making it possible to reduce the invocation cost by tailoring the composition strategy for different clients. In this paper, we introduce an approach that composes homogeneous services dynamically for each client, improving user-perceived QoS while minimizing the invocation costs. In particular, our approach first probes the QoS of all homogeneous services for a client, and then calculates an optimal composition strategy that satisfies the QoS requirements specified by App developers with minimum cost. We prototyped our approach as an Android library and tested it via both real-world experiments and simulations. The evaluation results show that our approach significantly improves QoS compared to invoking a single service with average best QoS across all locations (enhancing reliability to 100%, reducing average latency by 7% and tail latency by 35%) while incurring 50% less cost than static homogeneous composition, making it a useful tool for service-oriented applications.},
-  archive      = {J_TSC},
-  author       = {Zhengquan Li and Zheng Song},
-  doi          = {10.1109/TSC.2025.3633988},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Tailored homogeneous service composition at runtime to enhance user-perceived performance},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Panther: A cost-effective privacy-preserving framework for GNN training and inference services in cloud environments. <em>TSC</em>, 1--15. (<a href='https://doi.org/10.1109/TSC.2025.3621855'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph Neural Networks (GNNs) have marked significant impact in traffic state prediction, social recommendation, knowledge-aware question answering and so on. As more and more users move towards cloud computing, it has become a critical issue to unleash the power of GNNs while protecting the privacy in cloud environments. Specifically, the training data and inference data for GNNs need to be protected from being stolen by external adversaries. Meanwhile, the financial cost of cloud computing is another primary concern for users. Therefore, although existing studies have proposed privacy-preserving techniques for GNNs in cloud environments, their additional computational and communication overhead remain relatively high, causing high financial costs that limit their widespread adoption among users. To protect GNN privacy while lowering the additional financial costs, we introduce Panther, a cost-effective privacy-preserving framework for GNN training and inference services in cloud environments. Technically, Panther leverages four-party computation to asynchronously executing the secure array access protocol, and randomly pads the neighbor information of GNN nodes. We prove that Panther can protect privacy for both training and inference of GNN models. Our evaluation shows that Panther reduces the training and inference time by an average of 75.28% and 82.80%, respectively, and communication overhead by an average of 52.61% and 50.26% compared with the state-of-the-art, which is estimated to save an average of 55.05% and 59.00% in financial costs (based on on-demand pricing model) for the GNN training and inference process on Google Cloud Platform.},
-  archive      = {J_TSC},
-  author       = {Congcong Chen and Xinyu Liu and Kaifeng Huang and Lifei Wei and Yang Shi},
-  doi          = {10.1109/TSC.2025.3621855},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Panther: A cost-effective privacy-preserving framework for GNN training and inference services in cloud environments},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Trends in industry support for pricing-driven DevOps in SaaS. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3634801'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The SaaS paradigm has popularized the usage of pricings, allowing providers to offer a wide range of subscription possibilities. This creates a vast configuration space for customers, enabling them to choose the features, limits and guarantees that best suit their needs. Regardless of the reasons, changes in pricings are frequent, and are increasing their complexity. Therefore, for those responsible for the development and operation of SaaS, it would be ideal to minimize the time required to transfer changes in SaaS pricing to the software and underlying infrastructure, without compromising quality and reliability. We call this pricing-driven self-adaptation, and this work explores the extent of industry support for it. First, after analyzing 240 pricings from 37 different SaaS over seven years, we reveal a trend of exponentially increasing complexity, mainly driven by a sustained increase in the number of add-ons. Second, acknowledging feature toggling as a promising technique for enabling pricing-driven self-adaptation, we evaluate 18 existing solutions to assess their suitability. However, results reveal a gap between their capabilities and the requirements imposed by the growing complexity of pricings. In light of these results, establishing a standard for pricing serialization and advancing automation in pricing-driven self-adaptation emerge as key steps toward reducing the time-to-market of SaaS pricing updates.},
-  archive      = {J_TSC},
-  author       = {Alejandro García-Fernández and José Antonio Parejo and Francisco Javier Cavero and Antonio Ruiz-Cortés},
-  doi          = {10.1109/TSC.2025.3634801},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Trends in industry support for pricing-driven DevOps in SaaS},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). QuanFraud: Quantum state verification scheme for fraud detection in IoT-assisted quantum-blockchain networks. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3635525'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Fraud detection in Internet-of-Things (IoT) applications remains a pressing challenge. Adversaries exploit injection, eavesdropping, and man-in-the-middle attacks that often evade conventional detection pipelines. Existing blockchain and Machine Learning (ML) based solutions improve accuracy but lack verifiability, auditability, and resilience against quantum-era threats. We propose QuanFraud, a protocol that integrates Greenberger–Horne–Zeilinger (GHZ)–$\theta$ quantum state verification, Decentralized Identifiers (DID), and a Quantum Support Vector Classifier (QSVC) within an auditable blockchain framework. The scheme ensures that fraud detection outcomes are not only data-driven but also cryptographically verifiable and resistant to identity-correlation and replay attacks. We evaluate QuanFraud on a financial dataset of 20,000 records (117 features), using Principal Component Analysis (PCA) and the Synthetic Minority Oversampling Technique (SMOTE) under 10- fold cross-validation. Results show that classical baselines such as Random Forest and XGBoost achieve balanced accuracy above 77%, while QSVC alone yields 42.1 $\pm$ 2.8%. This gap indicates that the contribution of QuanFraud is not accuracy leadership but a verifiable, auditable fraud-detection protocol under Noisy Intermediate-Scale Quantum (NISQ) constraints, where QSVC provides kernel-level privacy, quantum state verification, and on-chain checks that classical models do not offer. We further discuss complexity and scalability, highlighting the scheme's suitability for deployment in resource-constrained IoT environments.},
-  archive      = {J_TSC},
-  author       = {Suman Majumder and Sangram Ray and Mou Dasgupta and Pronaya Bhattacharya and Thippa Reddy Gadekallu and Gautam Srivastava},
-  doi          = {10.1109/TSC.2025.3635525},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {QuanFraud: Quantum state verification scheme for fraud detection in IoT-assisted quantum-blockchain networks},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SageCopilot: An LLM-empowered autonomous agent for data science as a service. <em>TSC</em>, 1--18. (<a href='https://doi.org/10.1109/TSC.2025.3635384'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {While the field of natural language to SQL(NL2SQL) has made significant advancements in translating natural language instructions into executable SQL scripts for data querying and processing, achieving full automation within the broader data science pipeline–encompassing data querying, analysis, visualization, and reporting–remains a complex challenge. This study introduces SageCopilot, an advanced, industry-grade system that automates the data science pipeline by integrating Large Language Models (LLMs), Autonomous Agents (AutoAgents), and Language User Interfaces (LUIs). Designed with a two-phase architecture, SageCopilot uses an offline phase to generate high-quality demonstrations supporting In-Context Learning (ICL), which powers the online phase to transform user inputs into executable scripts for database queries, analysis, and visualization tasks. Leveraging specialized components such as NL2SQL, Text2Analyze, and Text2Viz, as well as chain-of-thought prompting for multi-turn interactions, SageCopilot achieves superior end-to-end automation. Rigorous experimentation with real-world datasets demonstrates the system's ability to minimize human intervention while ensuring correctness and user-friendly operation.},
-  archive      = {J_TSC},
-  author       = {Yuan Liao and Jiang Bian and Yuhui Yun and Shuo Wang and Yubo Zhang and Jiaming Chu and Tao Wang and Yuchen Li and Xuhong Li and Shilei Ji and Haoyi Xiong},
-  doi          = {10.1109/TSC.2025.3635384},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--18},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {SageCopilot: An LLM-empowered autonomous agent for data science as a service},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A hybrid fault-tolerant workflow scheduling with performance fluctuated cloud resources. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3635177'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the increasing complexity of cloud systems, resource performance fluctuation and failure have become two significant factors that affect task execution in the cloud, particularly for workflow tasks with precedence constraints. The former often leads to uncertain task execution time, while the latter can result in task abortion. Although many cloud workflow scheduling algorithms have been proposed for fault tolerance or uncertain task execution time separately, these two issues simultaneously exist in practice and have not yet been thoroughly explored. This paper proposes a hybrid fault-tolerant cloud workflow scheduling algorithm designed to study the failures of cloud resources and uncertain task execution time simultaneously. The proposed scheduling process consists of four phases: preprocessing, initial scheduling, online scheduling, and online adjustment. Two fundamental and widely recognized strategies for fault tolerance, replication and resubmission, are integrated into the algorithm. An elastic resource provisioning mechanism is also designed to adjust active resources dynamically. Performance evaluations on both randomly generated and real-world workflows demonstrate that the algorithm effectively schedules deadline-constrained workflows under uncertain task execution time while guaranteeing fault tolerance.},
-  archive      = {J_TSC},
-  author       = {Qian Ren and Guangshun Yao},
-  doi          = {10.1109/TSC.2025.3635177},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {A hybrid fault-tolerant workflow scheduling with performance fluctuated cloud resources},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Location privacy protection method based on local differential privacy in crowdsensing with approximately accurate task allocation. <em>TSC</em>, 1--13. (<a href='https://doi.org/10.1109/TSC.2025.3635240'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the widespread adoption of smartphones and other mobile intelligent devices, Mobile Crowd Sensing (MCS) is widely used. Typically, the real locations of the workers and tasks must be submitted to the service platform to complete the task allocation. Therefore, the protection of location information has become a key factor in influencing user participation. To address the issue of location information leakage, we propose a location information protection method based on local differential privacy, which can protect the location privacy of workers and tasks while generating approximately accurate task allocation results. Firstly, we divide the region into $k$*$k$ grids and merge girds with a similar dispersion to form clusters. Then, this paper utilizes the inverse sampling of the cumulative distribution function (CDF) of the flipped Huber distribution to generate a personalized noise location set for each cluster. Furthermore, the exponential mechanism is used to select the obfuscated location for each user. Finally, the platform selects workers based on the perturbed location to complete the task allocation. Theoretical analysis shows that our mechanism satisfies differential privacy and achieves an approximately accurate task allocation. Experimental results demonstrate that, compared to existing methods, this method exhibits superior performance across different datasets and effectively balances the utility of data and the protection of location privacy.},
-  archive      = {J_TSC},
-  author       = {Yutao Huang and Tianjiao Ni and Ying Liu and Peng Hu and Qingying Yu and Yonglong Luo},
-  doi          = {10.1109/TSC.2025.3635240},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--13},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Location privacy protection method based on local differential privacy in crowdsensing with approximately accurate task allocation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Cooperative coevolution genetic programming for dynamic joint workflow scheduling and container scaling in cloud-fog computing. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3636121'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Cloud-Fog computing has emerged as an essential paradigm to support the growing demand for real-time data processing driven by the Internet of Things. By integrating the extensive computing capabilities of cloud data centres with the low-latency benefits of fog nodes, this architecture increases resource utilisation and improves quality of service. However, the dynamic and heterogeneous nature of cloud fog environments poses significant workflow scheduling challenges, especially when optimising multiple trade-offs such as latency, cost, energy consumption, and resource utilisation. This paper investigates the many-objective dynamic workflow scheduling problem under deadline constraints in container-based cloud-fog computing environments (MDWS-CoCF). Unlike existing studies that primarily focus on horizontal scaling, this work considers both vertical and horizontal scaling of containers, allowing for real-time adjustments of container configurations based on task-specific requirements. To address this complex problem, we first develop a dynamic workflow scheduling simulator that models real-world scenarios, including a variety of task categories and container scalability. Based on this simulator, we propose a Cooperative Coevolution Genetic Programming (CCGP) approach that evolves specialised heuristics for task selection, resource allocation, and container deployment to facilitate adaptive and efficient scheduling in MDWS-CoCF. Extensive simulations using real-world data traces show that the proposed CCGP approach significantly outperforms existing baseline algorithms, achieving superior performance as measured by the HyperVolume and Inverted Generational Distance metrics. The results show that the evolved heuristics are robust and effective under different dynamic scenarios, ensuring balanced optimisation of many objectives.},
-  archive      = {J_TSC},
-  author       = {Zaixing Sun and Fangfang Zhang and Yi Mei and Hejiao Huang and Chonglin Gu and Bin Wang and Mengjie Zhang},
-  doi          = {10.1109/TSC.2025.3636121},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Cooperative coevolution genetic programming for dynamic joint workflow scheduling and container scaling in cloud-fog computing},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multi-scale collaborative distillation graph neural networks for session-based recommendation. <em>TSC</em>, 1--14. (<a href='https://doi.org/10.1109/TSC.2025.3637009'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Session-based recommendation (SBR) in service computing is pivotal in predicting a user's next action based on their current anonymous session. While Graph Neural Network (GNN)-based methods have shown promise in capturing intricate item transformation relationships within sessions, they often fall short in accurately modeling user preferences. This is primarily due to the common practice of solely considering the last item in the session as the user's current interest, neglecting potentially valuable information embedded in other session items which is essential for capturing user global preferences. Moreover, existing models typically optimize performance solely through cross-entropy loss between predicted items and ground truth labels, while overlooking latent valuable knowledge embedded in intermediate features and item-item relationships that lends support to the model in accurately capturing and modeling user preferences. To address these shortcomings, we propose Multi-Scale Collaborative Distillation (MSCD) for SBR. Our approach introduces a current interest adaptive selection module, which dynamically selects appropriate item embeddings as session-local embeddings by evaluating the importance of each item within the session. This allows for a more accurate capture of the user's current true preferences. Additionally, we propose collaborative knowledge distillation, where multiple models are trained concurrently, enabling the transfer of three types of knowledge including response-based, feature-based, and relationship-based knowledge between models, thereby enriching the model's understanding of user preferences. Experimental evaluations conducted on three popular SBR datasets demonstrate that our MSCD model outperforms recent state-of-the-art methods in terms of recommendation accuracy. Our codes are available at: https://github.com/lonely-ice/MSCD.},
-  archive      = {J_TSC},
-  author       = {Jianping Gou and Youhui Cheng and Benteng Ma and Lan Du and Xin Luo and Zhang Yi},
-  doi          = {10.1109/TSC.2025.3637009},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--14},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {Multi-scale collaborative distillation graph neural networks for session-based recommendation},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). IoT-cloud data sharing and access control system with efficient policy updating. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3632804'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The integration of the Internet of Things (IoT) with cloud computing has expanded the scope of IoT applications but also introduced challenges in dynamic data management. Attribute-Based Encryption (ABE) serves as a crucial technology for constructing access control systems in data sharing environ ments. ABE schemes with policy updating capabilities allow data owners to dynamically and frequently modify access policies. Existing ABE schemes typically outsource the task of policy updating to a cloud server; however, the size of the update keys remains linear with the number of updated attributes and depends on the types of updated gates. The resulting updating costs are not less than generating a new ciphertext for data owners, especially when updating multiple attributes and threshold gates. Therefore, in this paper, we propose a novel ABE scheme, termed Policy Updatable Ciphertext-Policy ABE (PU CP-ABE), which enables efficient and flexible policy updating. Our construction ensures that the size of update keys depends only on the number of updating gates, independent of both the number of attributes and the gate types. Furthermore, PU-CP ABE provides a unified update mechanism that supports AND, OR, and threshold gates without requiring distinct update keys for different gate types.},
-  archive      = {J_TSC},
-  author       = {Luqi Huang and Fuchun Guo and Willy Susilo and Li Wang},
-  doi          = {10.1109/TSC.2025.3632804},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {IoT-cloud data sharing and access control system with efficient policy updating},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). OPUS: Optimal pricing for UAV-as-a-service using bargaining game. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3636730'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This work proposes an optimal pricing scheme– OPUS– for UAV-as-a-Service (UaaS) using a bargaining game. In a UaaS platform, multiple actors participate– end-users request services, UAV owners lease their UAVs, and a centralized service provider allocates UAVs equipped with heterogeneous onboard sensors. A UAV can support multiple applications by moving across task locations, where both its mobility and the operations of its onboard sensors contribute to overall energy consumption. Consequently, energy use directly affects the price charged to end-users. On the other hand, the service provider aims to maximize revenue, while end-users seek to pay a minimum chargeable price without compromising the service quality. Thus, the challenge is to design an efficient pricing mechanism that balances these conflicting objectives. Therefore, in this work, we aim to design a pricing scheme, OPUS, capable of determining an optimal chargeable price by jointly considering energy consumption, time of use, resource utilization, and UAV reputation. Specifically, time-based pricing accounts for the duration of UAV engagement, resource-based pricing captures operational overheads such as transmission and storage, and reputation-based pricing reflects UAV reliability and past performance. We formulate the problem using the Rubinstein bargaining model to ensure a fair trade off between the service provider's profit and the end-user's satisfaction. Extensive experimental results demonstrate that OPUS outperforms existing schemes– QUEST, TMSC, and Yu's strategy– for UaaS. Specifically, OPUS improves service provider profit by an average of 33.7%.},
-  archive      = {J_TSC},
-  author       = {Prince Kumar and Veera Manikantha Rayudu Tummala and Arijit Roy},
-  doi          = {10.1109/TSC.2025.3636730},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {OPUS: Optimal pricing for UAV-as-a-service using bargaining game},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). $AiRacleX$: Automated detection of price oracle manipulations via LLM-driven knowledge mining and prompt generation. <em>TSC</em>, 1--12. (<a href='https://doi.org/10.1109/TSC.2025.3638205'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Decentralized finance (DeFi) applications depend on accurate price oracles to ensure secure and fair transactions. However, poorly integrated oracles remain susceptible to manipulation, enabling attackers to exploit smart contract logic for unfair asset valuation and financial gain. While many such vulnerabilities are only detected after deployment, smart contracts are typically immutable once deployed, making post-hoc fixes costly or infeasible. This highlights the critical need for detecting oracle manipulation risks before deployment. In this paper, we propose $AiRacleX$, a novel LLM-driven framework that enables pre-deployment detection of price oracle manipulation vulnerabilities by leveraging the complementary strengths of multiple large language models (LLMs). Our approach begins with domain-specific knowledge extraction, where an LLM model synthesizes precise insights about price oracle vulnerabilities, eliminating the need for profound expertise from developers or auditors. This knowledge forms the foundation for a second LLM model to generate structured, context-aware Chain-of-Thought prompts, which guide a third LLM model in accurately identifying manipulation patterns in smart contracts. We evaluate $AiRacleX$ on 60 known vulnerabilities from 44 real-world DeFi exploits and Code4rena projects spanning 2021-2023. The results show that $AiRacleX$ achieves a 2.58 times improvement in recall over the state-of-the-art GPTScan, with comparable precision. Our framework also demonstrates strong extensibility and efficiency, and supports deployment with open-source LLMs to enhance security and reduce operational cost.},
-  archive      = {J_TSC},
-  author       = {Bo Gao and Yuan Wang and Qingsong Wei and Yong Liu and Rick Siow Mong Goh and David Lo},
-  doi          = {10.1109/TSC.2025.3638205},
-  journal      = {IEEE Transactions on Services Computing},
-  month        = {11},
-  pages        = {1--12},
-  shortjournal = {IEEE Trans. Serv. Comput.},
-  title        = {$AiRacleX$: Automated detection of price oracle manipulations via LLM-driven knowledge mining and prompt generation},
+  title        = {Robust load balancing taking advantage of aggregated performance metrics},
   year         = {2025},
 }
 </textarea>

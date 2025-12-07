@@ -25,152 +25,26 @@
 </head>
 <body>
 
-<h2 id="joh">JOH - 7</h2>
+<h2 id="joh">JOH - 1</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Resource-constrained multi-stage processing and assembly scheduling with sequential and batch operations. <em>JOH</em>, <em>31</em>(4), 38--41. (<a href='https://doi.org/10.1007/s10732-025-09573-2'>www</a>)
+(2026). Improving state-of-the-art vertex sorting algorithms to compute the maximum common induced subgraph. <em>JOH</em>, <em>32</em>(1), 1--33. (<a href='https://doi.org/10.1007/s10732-025-09575-0'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper addresses a complex scheduling problem in multi-product, flexible, and small-batch production modes, where the aim is to meet diverse customer demands while enhancing production efficiency. Specifically, the problem involves fulfilling a set of orders, each containing multiple products. Each product consists of several components that must undergo an assembly operation after being manufactured through a series of sequential or batch operations. These operations require various resources, such as machines, personnel, and equipment, in both the processing and assembly stages. To solve this complex problem, we develop a discrete-time mixed integer programming model that incorporates multi-stage processing and assembly, as well as sequential and batch processing, subject to resource constraints. For large-scale problems, we propose a simple and effective heuristic in which the initial solution is constructed using a parallel schedule generation scheme based on the minimum latest finish time priority rule. This solution is then iteratively refined through alternating forward and backward scheduling procedures. The proposed heuristic is evaluated on both small and large problem instances with various resource capacities and order quantities. Numerical experiments demonstrate that the proposed heuristic outperforms the multi-start parallel schedule generation scheme for all 120 instances, with improvements of 2.22%-5.93%. In addition, the comparison results under standard resource capacity indicate that it also outperforms the random sampling method and two classic metaheuristic algorithms for all 40 instances, achieving 3.90%-26.05% improvements. Finally, resource utilization analysis offers valuable insights into the efficiency of the scheduling outcomes.},
+  abstract     = {The Maximum Common Induced Subgraph problem is a longstanding challenge in graph theory and combinatorial optimization, recognized for being NP-complete and its applications across chemistry, network analysis, and pattern recognition. State-of-the-art methods, such as the McSplit algorithm and its successors, employ a recursive branch-and-bound procedure to navigate the vast solution space. The efficiency of this search is critically dependent on the initial vertex sorting heuristic, which not only guides the algorithm toward a good solution but also structures the search tree for the computationally intensive proof of optimality. The original algorithm relies on a simple node degree heuristic, which is often suboptimal. This paper systematically investigates the influence of alternative vertex-ordering heuristics on McSplitDAL, a state-of-the-art variant of McSplit. We integrate five node-ranking heuristics (namely, PageRank, Betweenness Centrality, Closeness Centrality, Local Clustering Coefficient, and a modified Katz Centrality) into the McSplitDAL framework. We analyze their effect on search-space exploration, pruning efficiency, convergence behavior, and execution speed. We also investigate how they shape the algorithmic search and affect the solver’s ability to approach or prove optimality under constrained computational budgets. Experimental results across heterogeneous datasets reveal that specific heuristics, such as PageRank and Katz Centrality, consistently promote more effective pruning and higher-quality intermediate solutions, offering valuable insights into the relationship between graph topology-derived measures and branch-and-bound performance.},
   archive      = {J_JOH},
-  author       = {Wu, Song and Wang, Yang and Du, Yu and Yang, Wei and Feng, Jianguang},
-  doi          = {10.1007/s10732-025-09573-2},
+  author       = {Calabrese, Andrea and Cardone, Lorenzo and Licata, Salvatore and Porro, Marco and Quer, Stefano},
+  doi          = {10.1007/s10732-025-09575-0},
   journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {38--41},
+  month        = {3},
+  number       = {1},
+  pages        = {1--33},
   shortjournal = {J. Heuristics},
-  title        = {Resource-constrained multi-stage processing and assembly scheduling with sequential and batch operations},
-  volume       = {31},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A random-key optimizer for combinatorial optimization. <em>JOH</em>, <em>31</em>(4), 1--47. (<a href='https://doi.org/10.1007/s10732-025-09568-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This paper introduces the Random-Key Optimizer (RKO), a versatile and efficient stochastic local search method tailored to combinatorial optimization problems. Using the random-key concept, RKO encodes solutions as vectors of random keys that are subsequently decoded into feasible solutions via problem-specific decoders. The RKO framework is able to combine a plethora of classic metaheuristics, each capable of operating independently or in parallel, with solution sharing facilitated through an elite solution pool. This modular approach allows for the adaptation of various metaheuristics, including simulated annealing, iterated local search, and greedy randomized adaptive search procedures, among others. The efficacy of the RKO framework, implemented in C++ and publicly available, is demonstrated through its application to three NP-hard combinatorial optimization problems: the $$\alpha $$ -neighborhood p-median problem, the tree of hubs location problem, and the node-capacitated graph partitioning problem. The results highlight the framework’s ability to produce high-quality solutions across diverse problem domains, underscoring its potential as a robust tool for combinatorial optimization.},
-  archive      = {J_JOH},
-  author       = {Chaves, Antonio A. and Resende, Mauricio G. C. and Schuetz, Martin J. A. and Brubaker, J. Kyle and Katzgraber, Helmut G. and de Arruda, Edilson F. and Silva, Ricardo M. A.},
-  doi          = {10.1007/s10732-025-09568-z},
-  journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {1--47},
-  shortjournal = {J. Heuristics},
-  title        = {A random-key optimizer for combinatorial optimization},
-  volume       = {31},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An iterated local search heuristic for the maximum intersection of $$k$$ -subsets problem. <em>JOH</em>, <em>31</em>(4), 1--29. (<a href='https://doi.org/10.1007/s10732-025-09569-y'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Given a collection L of n subsets of a finite set R, the Maximum Intersection of k-Subsets problem (kMIS) aims to select a subset $$L' \subseteq L$$ with $$|L'| = k$$ such that the intersection of the subsets in $$L'$$ is maximized. This problem is $$\mathcal{N}\mathcal{P}$$ -hard and has applications in data anonymization, bioinformatics, recommendation systems, and various other fields. In this work, we propose an Iterated Local Search (ILS) algorithm for solving the kMIS. The local search phase uses the swap(1,1) neighborhood structure. To enhance efficiency, we introduce an auxiliary data structure which precomputes partial intersections, reducing the complexity of evaluating a neighboring solution from $$O(k^2)$$ to O(k). The proposed ILS was evaluated against two state-of-the-art metaheuristics from the literature on 238 benchmark instances. The experimental results demonstrate that our approach efficiently finds high-quality solutions, establishing its competitiveness for solving the kMIS.},
-  archive      = {J_JOH},
-  author       = {Ferreira, Hélder Silva and Pinheiro, Rian G. S.},
-  doi          = {10.1007/s10732-025-09569-y},
-  journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {1--29},
-  shortjournal = {J. Heuristics},
-  title        = {An iterated local search heuristic for the maximum intersection of $$k$$ -subsets problem},
-  volume       = {31},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Minimax regret makespan scheduling with interval release dates on unrelated machines. <em>JOH</em>, <em>31</em>(4), 1--37. (<a href='https://doi.org/10.1007/s10732-025-09571-4'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, we present a study of the robust (non-deterministic) job scheduling problem with interval release dates on unrelated machines. Robust optimization is a tractable alternative to stochastic optimization suited for problems in which parameter distributions are undetermined due to insufficient data. Our problem formulation involves minimizing the maximum regret, defined as the worst-case deviation from an optimal makespan, with the assumption that each release date belongs to a well-defined interval. Mathematical analysis is accomplished to investigate the properties of the robust scheduling problem examining the inapproximability, determination of the upper bound of a regret function, and selection of feasible scenarios. In order to solve the robust scheduling problem, we propose an algorithm that implements a greedy strategy and schedules jobs using only the deterministic criterion (the makespan) instead of assessing the worst-case regret value. We compare the quality of our schedules with the solutions obtained by the properly adapted and tuned simulated annealing algorithm. Additionally, the applicability of our robust approach (robust framework) in the Scheduling-Location problem (deterministic problem in which the parameters are precisely defined), which combines the facility location problem and job scheduling problem, is demonstrated. The numerical evaluation shows that including the uncertainty and regret-averse (the minimax regret criterion) can allow, in certain cases, to achieve optimal solutions for incomplete dataset.},
-  archive      = {J_JOH},
-  author       = {Ławrynowicz, Mirosław and Józefczyk, Jerzy},
-  doi          = {10.1007/s10732-025-09571-4},
-  journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {1--37},
-  shortjournal = {J. Heuristics},
-  title        = {Minimax regret makespan scheduling with interval release dates on unrelated machines},
-  volume       = {31},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Automated CNN architecture design with enhanced particle swarm optimization. <em>JOH</em>, <em>31</em>(4), 1--51. (<a href='https://doi.org/10.1007/s10732-025-09570-5'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Deep convolutional neural networks (CNNs) are powerful deep learning models for tackling various computer vision challenges, particularly image classification. However, designing an optimal CNN model is a complex, labor-intensive, and resource-demanding process that typically requires extensive manual effort and domain-specific knowledge. This paper introduces EPSO-CNN, an efficient framework leveraging particle swarm optimization (PSO) to automatically design optimal CNN architectures for image classification tasks. The proposed method utilizes a modified variable-length encoding scheme for flexible and efficient representation of CNN layers as particles, facilitating rapid architecture construction without conversion overhead. Novel strategies for velocity and position updates are incorporated to enhance search exploration and prevent premature convergence. Batch normalization and dropout techniques are employed to accelerate training and mitigate overfitting. Experimental results on eight widely used image classification datasets show that EPSO-CNN outperforms most of the 26 state-of-the-art models with notably lower error rates, and its superiority is further validated on NAS-Bench-101 and NAS-Bench-201, confirming its competitiveness across standardized NAS evaluation platforms. The best CNN architectures generated by EPSO-CNN are evaluated on facial expression recognition (FER) challenge dataset, showcasing their robustness and generalization ability in real-life application. The findings confirm the efficacy of EPSO-CNN in automating the design of deep CNN architectures, offering a valuable tool for advancing image classification methodologies.},
-  archive      = {J_JOH},
-  author       = {Ghosh, Arjun and Jana, Nanda Dulal and Ghosh, Subhayu},
-  doi          = {10.1007/s10732-025-09570-5},
-  journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {1--51},
-  shortjournal = {J. Heuristics},
-  title        = {Automated CNN architecture design with enhanced particle swarm optimization},
-  volume       = {31},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Exploiting user-supplied decompositions inside heuristics. <em>JOH</em>, <em>31</em>(4), 1--38. (<a href='https://doi.org/10.1007/s10732-025-09572-3'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Numerous industrial fields, like supply chain management, face mixed-integer optimization problems on a regular basis. Such problems typically show a sparse structure and vary in size, as well as complexity. However, in order to satisfy customer demands, it is crucial to find good solutions to all such problems quickly. Current research often focuses on the development of a tailored approach for one specific problem class with a common structure. Information supplied by everyday users is usually overlooked, but may result in a decomposition with weakly connected blocks due to the structural sparsity. Hence, we present three heuristics to exploit decomposition information and analyze their value based on the type of decomposition. In particular, we newly introduce the heuristic Dynamic Partition Search, enhance the Penalty Alternating Direction Method published earlier in a basic form, and extend a framework from literature to Decomposition Kernel Search. All heuristics are implemented in the non-commercial solver SCIP. We examine their performance in a comprehensive computational study across three different test sets. The computational results indicate that knowledge about relevant decomposition information can boost the solution process of mixed-integer optimization problems.},
-  archive      = {J_JOH},
-  author       = {Halbig, Katrin and Göß, Adrian and Weninger, Dieter},
-  doi          = {10.1007/s10732-025-09572-3},
-  journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {1--38},
-  shortjournal = {J. Heuristics},
-  title        = {Exploiting user-supplied decompositions inside heuristics},
-  volume       = {31},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A matheuristic for design and dispatch of a utility-connected distributed energy system. <em>JOH</em>, <em>31</em>(4), 1--52. (<a href='https://doi.org/10.1007/s10732-025-09567-0'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Modeling distributed power generation systems often requires complicated mathematical expressions that present challenges for commercial optimization solvers. This paper presents a matheuristic to solve a mixed-integer optimization model that informs decisions regarding the design and dispatch of a utility-connected microgrid. We deploy a genetic algorithm to search the system design space and a linear program to solve the economic dispatch problem. The model is a component of a web tool that requires solutions within a few minutes. Our method yields objective function values within 5% of an exogenously produced optimal in fewer than 30 seconds for 90% of our test cases compared to only 10% of our test cases by a traditional optimization solver in the same amount of time.},
-  archive      = {J_JOH},
-  author       = {Grymes, James and Newman, Alexandra and Zolan, Alexander and Mehta, Dinesh},
-  doi          = {10.1007/s10732-025-09567-0},
-  journal      = {Journal of Heuristics},
-  month        = {12},
-  number       = {4},
-  pages        = {1--52},
-  shortjournal = {J. Heuristics},
-  title        = {A matheuristic for design and dispatch of a utility-connected distributed energy system},
-  volume       = {31},
-  year         = {2025},
+  title        = {Improving state-of-the-art vertex sorting algorithms to compute the maximum common induced subgraph},
+  volume       = {32},
+  year         = {2026},
 }
 </textarea>
 </details></li>

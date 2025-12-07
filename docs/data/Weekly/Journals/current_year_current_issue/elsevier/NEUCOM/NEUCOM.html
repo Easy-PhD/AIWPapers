@@ -25,324 +25,524 @@
 </head>
 <body>
 
-<h2 id="neucom">NEUCOM - 16</h2>
+<h2 id="neucom">NEUCOM - 26</h2>
 <ul>
 <li><details>
 <summary>
-(2026). L-c4: Language-based video colorization for creative and consistent color. <em>NEUCOM</em>, <em>665</em>, 132199. (<a href='https://doi.org/10.1016/j.neucom.2025.132199'>www</a>)
+(2026). NLMSA: Towards structure-aware image inpainting using nested linear and multi-scale attention. <em>NEUCOM</em>, <em>666</em>, 132292. (<a href='https://doi.org/10.1016/j.neucom.2025.132292'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Automatic video colorization is inherently an ill-posed problem because each monochrome frame has multiple optional color candidates. Existing language-based video editing methods struggle to balance content preservation and color assignment, leading to incorrect colors for corresponding instances. Alternatively, language-based image colorization methods combined with post-processing algorithms still struggle to maintain temporal consistency. To address these issues, we present Language-based video Colorization for Creative and Consistent Color (L-C4) to guide the colorization process using user-provided language descriptions. Our model is built upon a pre-trained cross-modality generative model, leveraging its comprehensive language understanding and robust color representation for creative colorization results. We introduce the luminance encoder to preserve video content and propose the cross-modality pre-fusion module for effective instance-aware colorization. Additionally, we propose temporally deformable attention to prevent flickering or color shifts, and cross-clip fusion to maintain long-term color consistency. Extensive experimental results demonstrate that L-C4 outperforms relevant methods, achieving semantically accurate colors, controllable creative correspondence, and temporally robust consistency.},
+  abstract     = {Image inpainting technology aims to fill damaged regions reasonably based on known area information, generating semantically coherent inpainting results. The key to this task lies in effectively modeling long-range dependencies. However, existing Fourier transform-based methods are limited by fixed receptive fields, while dilated convolution methods sacrifice fine-grained details due to expanded receptive fields, making it difficult to achieve multi-scale global context modeling. Additionally, Transformer-based methods model long-range dependencies through simple module stacking, leading to increased computational costs. To address these challenges, this paper proposes a lightweight image inpainting framework called Structure-Guided Texture Generation, which achieves high-quality restoration through the collaborative work of a Structure Reconstruction Network (SRN) and a Texture Restoration Network (TRN). Specifically, in the SRN, a Multi-Scale Channel Attention Block (MSCAB) is designed based on edge-preserving smoothed images, enabling collaborative modeling of multi-scale features through a dynamic feature fusion mechanism to accurately reconstruct image structures. In the TRN, a novel Nested Linear Attention with Prior Information (NLAPI) mechanism is introduced, which incorporates structural prior information into the texture generation process through gated operations, achieving long-range dependency modeling under structural guidance. Experiments on the CelebA-HQ, FFHQ, and Paris StreetView datasets demonstrate that the proposed method can generate visually realistic inpainting results and outperforms comparative methods in both quantitative metrics and visual quality.},
   archive      = {J_NEUCOM},
-  author       = {Zheng Chang and Shuchen Weng and Huan Ouyang and Lihan Lin and Yu Li and Si Li and Boxin Shi},
-  doi          = {10.1016/j.neucom.2025.132199},
+  author       = {Xing Wu and Jiliang Shi and Chuangchuang Chen and Quan Qian and Jianbiao Dai},
+  doi          = {10.1016/j.neucom.2025.132292},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132199},
+  pages        = {132292},
   shortjournal = {Neurocomputing},
-  title        = {L-c4: Language-based video colorization for creative and consistent color},
-  volume       = {665},
+  title        = {NLMSA: Towards structure-aware image inpainting using nested linear and multi-scale attention},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Bridging cross-modal sparsity via adaptive pillar propagation and hierarchical multi-granularity feature distillation for 3D object detection. <em>NEUCOM</em>, <em>665</em>, 132195. (<a href='https://doi.org/10.1016/j.neucom.2025.132195'>www</a>)
+(2026). DAGCCF: Dynamic alternating graphs based cross-modal complementary fusion for conversational emotion recognition. <em>NEUCOM</em>, <em>666</em>, 132268. (<a href='https://doi.org/10.1016/j.neucom.2025.132268'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent advances in 3D object detection using LiDAR-camera fusion are hindered by the high cost of LiDAR and the computational burden of point clouds, positioning radar-camera fusion as a scalable alternative. Existing fusion methods, which rely on feature concatenation or attention mechanisms, struggle to bridge the radar-camera modality gap. Furthermore, the sparsity of radar impedes the effective utilization of object information. To address these issues, we propose a 3D object detection framework based on hierarchical feature propagation and Knowledge Distillation (KD). Our approach introduces a bi-directional fusion module that dynamically assigns radar attributes to image features, followed by a region-to-pillar attention mechanism for cross-modal interaction. To mitigate distillation difficulties between LiDAR-camera and radar-camera BEV features, we design a hierarchical radar-camera bird’s-eye-view (BEV) feature distillation network. It progressively hides LiDAR points to generate a LiDAR-camera BEV feature set, enabling staged KD with the radar branch’s radar-image BEV features. Concurrently, a pillar propagation mechanism is utilized to predict potential radar pillars, enriching radar representation to align with the distillation processes. Furthermore, we develop an object pyramid feature distillation module for object refinement. It decomposes object boxes into pyramid parts for part feature interaction and part-wise knowledge transfer. Experiments on the nuScenes dataset demonstrate competitive performance (69.4 % NDS, 63.5 % mAP). Ablation studies confirm that each component contributes to accuracy gains and quantitative results validate the effectiveness of our hierarchical feature propagation and distillation strategy. In summary, our work offers a novel and viable alternative for radar-camera fusion-based detection.},
+  abstract     = {Emotion Recognition in Conversations (ERC), a pivotal technology for augmenting the empathy capacity of human-computer interaction systems, continues to encounter substantial challenges in its multimodal fusion mechanism. Owing to their advanced relational modelling capabilities, graph neural networks (GNNs) have proven to be advantageous in the domain of multimodal learning. GNNs utilise graphs constructed with multimodal data to facilitate information interaction within and between modalities, thereby achieving complementarity and fusion of multimodal data. The majority of prevailing MERC methodologies founded upon GNNs are inherently incapable of leveraging the full potential of direct inter-modal cues. The simultaneous extraction of information from both within and between modalities invariably gives rise to conflicts in the context of multimodal data integration. In this work, we propose a dynamic alternating graphs based cross-modal complementary fusion for conversational emotion recognition (DAGCCF). The DAGCCF comprises two fundamental modules: the DAGP and RMGAT modules. The DAGP module models intra-modal and inter-modal relationships in an alternating, layer-wise manner, thereby reducing conflicts and redundancies during multimodal data fusion. Meanwhile, the RMGAT module alleviates the over-smoothing issue inherent in GNNs, while simultaneously enhancing the fusion of multimodal contextual information and inter-modal relational features. The application of DAGCCF can be performed in a concurrent manner with regard to multimodal emotion recognition in conversation (MERC) and multimodal sentiment analysis in conversation (MSAC). The new framework provides a unified network for multimodal learning. The experimental findings, derived from the analysis of numerous datasets, demonstrate the preeminence of our DAGCCF over contemporary state-of-the-art methodologies. This paper further explores and examines the impact of various settings on the efficacy of DAGCCF through a substantial number of experiments, thereby providing additional validation for the model.},
   archive      = {J_NEUCOM},
-  author       = {Rui Wan and Weigang Meng and Tianyun Zhao and Wei Lu},
-  doi          = {10.1016/j.neucom.2025.132195},
+  author       = {Hongkun Zhao and Yang Chen and Siyuan Liu and Fanmin Kong and Kang Li},
+  doi          = {10.1016/j.neucom.2025.132268},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132195},
+  pages        = {132268},
   shortjournal = {Neurocomputing},
-  title        = {Bridging cross-modal sparsity via adaptive pillar propagation and hierarchical multi-granularity feature distillation for 3D object detection},
-  volume       = {665},
+  title        = {DAGCCF: Dynamic alternating graphs based cross-modal complementary fusion for conversational emotion recognition},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Normalized clipping: A privacy-enhanced method in differentially private GANs. <em>NEUCOM</em>, <em>665</em>, 132180. (<a href='https://doi.org/10.1016/j.neucom.2025.132180'>www</a>)
+(2026). Geometry gated multi-view stereo for 3D reconstruction. <em>NEUCOM</em>, <em>666</em>, 132264. (<a href='https://doi.org/10.1016/j.neucom.2025.132264'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Most of the existing methods combining Generative Adversarial Networks (GANs) and differential privacy use gradient perturbation methods to achieve privacy protection. That is, in the optimization process, the sensitivity of the optimizer to individual data is constrained by gradient clipping, and random noise is added to the clipped gradient to protect the model. However, in most methods, the clipping threshold is fixed during training, and the performance of the model will be affected if the threshold is too large or too small, and usually the selection of the threshold depends on the experience. Inspired by the training optimization of GANs, we propose the DPCGAN-NC algorithm, which simplifies the selection process of the threshold during training, and does not require other helper methods such as public datasets. Through extensive experiments conducted on MNIST and CIFAR10 datasets, it is evident that our approach is capable of generating high-quality samples. Additionally, it successfully achieves an outstanding trade-off between maintaining strong model utility and providing robust privacy protection.},
+  abstract     = {Multi-view stereo (MVS) aims to reconstruct accurate 3D scenes from multiple images. Currently, deep learning-based MVS methods typically estimate depth maps by regressing cost volumes. Therefore, the accuracy of geometric information encoded in the cost volume and the aggregation methods are crucial to the performance of MVS reconstruction. However, existing approaches lack sufficient optimization in cost volume construction and interaction. Moreover, conventional 3D convolutions often result in high computational complexity. To address these challenges, this work proposes a Geometry-gated Multi-view Stereo Network (GGMVS), aiming to optimize feature representation in cost volume construction and the cost volume fusion mechanism, thereby improving both the accuracy and efficiency of MVS reconstruction. First, we design a Geometric Matching Enhancement Network (GME) to optimize the quality of cost volume construction. GME captures fine-grained features from multiple views and achieves dynamic feature propagation in a top-down manner. Second, we introduce a Cross-attention Volume Fusion Module (CVF) to strengthen inter-scale cost volume interactions. CVF leverages a cross-attention mechanism to globally integrate information from cost volumes at different scales, facilitating effective multi-scale geometric information fusion. Finally, we propose a Gated Volume Fusion Module (GVF) to enable refined filtering of cost volume information. GVF generates gating signals to dynamically filter and integrate high-confidence information from different cost volumes, providing precise inputs for the aggregation unit. Experimental results on the DTU and T&T datasets demonstrate that GGMVS significantly reduces memory consumption and runtime while maintaining competitive accuracy. Furthermore, validation on the ETH3D dataset further confirms the excellent generalization capability of GGMVS.},
   archive      = {J_NEUCOM},
-  author       = {Guangyuan Liu and Shigong Long and Shengnan Guo and Junming Zhang},
-  doi          = {10.1016/j.neucom.2025.132180},
+  author       = {Han Li and Guohua Gou and Hao Zhang and Weicheng Jiang and Haigang Sui},
+  doi          = {10.1016/j.neucom.2025.132264},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132180},
+  pages        = {132264},
   shortjournal = {Neurocomputing},
-  title        = {Normalized clipping: A privacy-enhanced method in differentially private GANs},
-  volume       = {665},
+  title        = {Geometry gated multi-view stereo for 3D reconstruction},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Adaptive gradient-oriented sampling and dynamic-blended shadow generation for realistic face relighting. <em>NEUCOM</em>, <em>665</em>, 132169. (<a href='https://doi.org/10.1016/j.neucom.2025.132169'>www</a>)
+(2026). A hierarchical deep reinforcement learning framework for surface mount vehicle routing problem. <em>NEUCOM</em>, <em>666</em>, 132253. (<a href='https://doi.org/10.1016/j.neucom.2025.132253'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Illumination plays a key role in portrait photography, enhancing the three-dimensional perception of human faces. A promising technical paradigm is to explicitly model the shadow formation process using ray-tracing principles, that is, casting a ray from each point on the face toward the light source to detect geometric occlusions. However, such methods often produce rigid shadows under strong directional lighting, leading to unnatural transitions and low computational efficiency. To address these challenges, we propose a deep learning framework that generates high-quality relit images through refined shadow modeling. We introduce an adaptive gradient sampling strategy that intelligently adjusts the sampling density of occlusion detection points along each ray based on local facial geometry, thereby ensuring both accuracy and efficiency. Additionally, we design a dynamic shadow fusion module that adaptively combines hard shadows generated by ray tracing with physically inspired soft shadows to produce realistic hybrid shadows. Extensive experiments on the DPR and FFHQ datasets show that our method outperforms existing methods in both quantitative and qualitative evaluations. On DPR, our method achieves the lowest perceptual LPIPS loss of 0.1275, excelling in generating realistic and geometrically consistent shadows.},
+  abstract     = {The rapid development of the electronics manufacturing industry cannot be separated from the support of surface mount technology. This paper addresses the critical surface mount routing optimization problem for beam-head placement machines to enhance operational efficiency. To mitigate solution complexity, this paper utilizes a hierarchical optimization framework to decompose the problem into a candidate placement point assignment problem with beam head constraints and an assembly sequence of placement point problem. For the assignment subproblem, a novel Deep Reinforcement Learning (DRL) algorithm is introduced. This DRL approach leverages deep neural networks to autonomously learn assignment rules, thereby improving solution quality and reducing reliance on manually designed heuristics. Firstly, an attention model is employed in this paper to extract the features of the distribution of the placement points. Then, a specialized decoder is designed for the placement point assignment based on the characteristics of the beam head. Finally, the neural network is trained utilizing REINFORCE with a rollout baseline, a reinforcement learning method. The assembly sequence of placement point problem is solved utilizing a modified dynamic programming algorithm. Extensive experiments conducted on a self-designed placement machine using industrial PCB data demonstrate that our proposed hierarchical deep reinforcement learning (HDRL) framework achieves more efficient solutions, yielding an average improvement of 2.87 % over mainstream approaches.},
   archive      = {J_NEUCOM},
-  author       = {Hanzhao Pan and Gengshen Wu and Xin Sun},
-  doi          = {10.1016/j.neucom.2025.132169},
+  author       = {Baoqing Yin and Xianqiang Yang},
+  doi          = {10.1016/j.neucom.2025.132253},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132169},
+  pages        = {132253},
   shortjournal = {Neurocomputing},
-  title        = {Adaptive gradient-oriented sampling and dynamic-blended shadow generation for realistic face relighting},
-  volume       = {665},
+  title        = {A hierarchical deep reinforcement learning framework for surface mount vehicle routing problem},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Exploring and mitigating fawning hallucinations in large language models. <em>NEUCOM</em>, <em>665</em>, 132166. (<a href='https://doi.org/10.1016/j.neucom.2025.132166'>www</a>)
+(2026). Advancement and development of graph-based reasoning method for human malicious behaviors identification based on graph contrastive representation learning. <em>NEUCOM</em>, <em>666</em>, 132250. (<a href='https://doi.org/10.1016/j.neucom.2025.132250'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Large language models (LLMs) have demonstrated exceptional proficiency in language understanding. However, when LLMs align their outputs with deceptive and/or misleading prompts, the generated responses can deviate from the de facto information. Such observations are known as fawning hallucinations, where the model prioritizes alignment with the input’s implied perspective over accuracy and truthfulness. In this work, we analyze fawning hallucinations in various natural language processing tasks and tailor the so-called contrastive decoding method for fawning-hallucination mitigation. Specifically, we design two paradigms to generate corresponding deceptive and/or misleading inputs for the consistent induction of fawning hallucinations. Then, we propose the collaborative contrastive decoding (CCD) method to handle the fawning hallucinations across different tasks in LLMs. By contrasting the deviation in output distribution between induced and transformed neutral inputs, the proposed CCD can reduce reliance on deceptive and/or misleading information without requiring additional training. Extensive experiments demonstrate that the proposed CCD can effectively mitigate fawning hallucinations and improve the factuality of the generated responses across various tasks.},
+  abstract     = {The primary objective of this paper is to solve the problem of human malicious behaviors identification in nuclear security, a domain characterized by its significant potential risks and distinct evaluation criteria. In comparable research articles, deep learning technologies are widely applied to detect the presence of malicious action labels. However, such research methods exhibit limitations in terms of interpretability and generalizability, while deep learning models are frequently criticized for their opaque, ‘black-box’ nature. In our previous work, a novel calculation framework for human malicious behaviors identification is proposed with two fundamental modules, which are computer vision module (CVM) and reasoning module (RM). Among them, the objective of CVM is to identify multi-type human actions through the utilization of typical and sophisticated deep learning models. On the other hand, RM aims to obtain final reasoning results by comprehensively analyzing the detected human actions from CVM. This module incorporates an explainable and innovative reasoning method. In this research, one of the reasoning methods, called graph-based reasoning method, is further advanced and developed, addressing its poorer performance in previous work. Firstly, the previously employed graph similarity-based method is extended with additional machine learning technologies, especially K-Nearest Neighbors (KNN) and dictionary learning. Moreover, a novel technology of graph contrastive representation learning is developed and implemented within graph-based reasoning method. The results show that the graph contrastive representation learning method outperform state-of-the-art methods, achieving the highest precision value of 0.9421, the peak accuracy value of 0.8919 and the highest F1-score value of 0.8889.},
   archive      = {J_NEUCOM},
-  author       = {Zixuan Shangguan and Yanjie Dong and Lanjun Wang and Xiaoyi Fan and Victor C.M. Leung and Xiping Hu},
-  doi          = {10.1016/j.neucom.2025.132166},
+  author       = {Zhan Li and Xingyu Song and Shi Chen and Kazuyuki Demachi},
+  doi          = {10.1016/j.neucom.2025.132250},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132166},
+  pages        = {132250},
   shortjournal = {Neurocomputing},
-  title        = {Exploring and mitigating fawning hallucinations in large language models},
-  volume       = {665},
+  title        = {Advancement and development of graph-based reasoning method for human malicious behaviors identification based on graph contrastive representation learning},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Hyperbolic legendre neural network: Enhancing modeling and generalization capabilities in hyperbolic space. <em>NEUCOM</em>, <em>665</em>, 132153. (<a href='https://doi.org/10.1016/j.neucom.2025.132153'>www</a>)
+(2026). FA-ReID: Feature alignment with adversarial learning for clothing-changing person re-identification. <em>NEUCOM</em>, <em>666</em>, 132237. (<a href='https://doi.org/10.1016/j.neucom.2025.132237'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Graph Convolutional Neural Networks (GCNs) embed graph data into either Euclidean or non-Euclidean spaces. For graph data with hierarchical structures, Euclidean embeddings struggle to accurately model inter-node hierarchical relationships due to their flat geometric nature. In contrast, hyperbolic embeddings, with their exponentially expanding spatial capacity, can more naturally represent such structures. However, existing hyperbolic graph neural networks exhibit limitations in spectral filtering capabilities. For instance, Hyperbolic Graph Convolutional Networks (HGCNs) rely exclusively on first-order polynomial approximations, which hinders their ability to capture complex spectral features. To address this limitation, we propose the Hyperbolic Legendre Neural Network (HLNN), which incorporates Legendre polynomials into hyperbolic space to enable high-order spectral filtering. Specifically, HLNN extends Legendre polynomials to hyperbolic space through Möbius transformations and constructs learnable spectral filters. Furthermore, we design an adaptive-order mechanism that dynamically adjusts polynomial degrees to balance model expressivity and computational efficiency. Experimental results demonstrate that HLNN outperforms existing methods in node classification and link prediction tasks on hierarchical and heterogeneous graph data, while reducing computational overhead through the adaptive-order strategy.},
+  abstract     = {Person re-identification (Re-ID) under clothing-changing conditions remains a significant challenge due to the drastic intra-identity appearance variations caused by different outfits. Existing methods often struggle to effectively disentangle stable, identity-discriminative biometric cues from dominant yet unreliable clothing features. To address this, we propose a novel Synergistic Feature Alignment framework for Re-ID, termed FA-ReID, designed to learn clothing-invariant identity representations. Our framework uniquely integrates three key components. First, we employ a dual-stream architecture that processes both standard RGB images and their corresponding multi-channel human parsing maps, which provide explicit, clothing-agnostic structural information about body parts. Second, we introduce a novel Multi-Scale Cross-Attention (MSCA) module that facilitates a synergistic fusion of these two modalities. The MSCA module enables the structural features from the parsing stream to guide the RGB stream’s focus toward identity-salient regions while suppressing misleading clothing textures. Third, we design a “clothing-stripping” adversarial training strategy. By maximizing the classification entropy on clothing-related features via a gradient reversal layer, this strategy forces the feature extractor to learn a representation that is invariant to clothing styles, effectively disentangling identity cues from appearance. Extensive experiments on three challenging clothing-changing benchmarks—PRCC, LTCC, and VC-Clothes—demonstrate that FA-ReID achieves state-of-the-art performance, validating the effectiveness of our synergistic approach to learning robust and discriminative features for clothing-changing person Re-ID. The code will be made publicly available.},
   archive      = {J_NEUCOM},
-  author       = {Yanqun Ye and Shuyang Wang and Xu Chen and Yongjun Jing},
-  doi          = {10.1016/j.neucom.2025.132153},
+  author       = {Yongkang Ding and Yuxiang Wang and Yina Jian and Chang Yu and Ke Tian and Zi Ye and Gaozhe Jiang},
+  doi          = {10.1016/j.neucom.2025.132237},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132153},
+  pages        = {132237},
   shortjournal = {Neurocomputing},
-  title        = {Hyperbolic legendre neural network: Enhancing modeling and generalization capabilities in hyperbolic space},
-  volume       = {665},
+  title        = {FA-ReID: Feature alignment with adversarial learning for clothing-changing person re-identification},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). TGeCoNet: A framework for constructing temporal gene co-expression networks. <em>NEUCOM</em>, <em>665</em>, 132151. (<a href='https://doi.org/10.1016/j.neucom.2025.132151'>www</a>)
+(2026). A duet of perception and reasoning: CLIP and LLM brainstorming for scene text recognition. <em>NEUCOM</em>, <em>666</em>, 132236. (<a href='https://doi.org/10.1016/j.neucom.2025.132236'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Biological systems, composed of interconnected biological objects, can be effectively represented through a network graph-model where nodes and edges denote biological objects and their interactions/associations, respectively. In this context, Gene Co-expression Networks (GCNs) are widely studied, however, since they rely on a static representation of interactions, they fail to represent the evolution of time-dependent phenomena. The dynamic nature of gene expression is crucial for unravelling complex biological processes. To address this issue, we designed an open-source framework for constructing real-world Temporal Gene Co-expression Networks ( tGeCoNet ). Temporal Gene Co-expression Networks (TGCNs) are modelled based on real-world data. Gene expression data, along with metadata (e.g., age groups) is used to build a temporal network that captures the time-varying associations between genes (i.e., nodes), based on the statistical significance computed for each age group (i.e., time point). Designed as a scalable and reproducible solution, tGeCoNet can serve as a valuable data source for studies on time-dependent biological phenomena, especially for those exploring the temporal evolution of gene co-expression within the framework of network science.},
+  abstract     = {Deciphering ambiguous or contextually complex text remains a major challenge in the field of Scene Text Recognition (STR). Most existing STR recognizers rely on specialized, small-scale decoders that lack access to higher-level world knowledge and are prone to propagating local prediction errors, making it difficult to perform the higher-order reasoning required in complex contexts. These limitations are especially pronounced when using unimodal visual backbones that are incapable of capturing semantic information. In this study, we propose a novel STR paradigm called the Visual-Linguistic Enhancement Network (VLENet), which aims to jointly enhance visual perception and linguistic reasoning. Specifically, VLENet employs a cross-modal pre-trained model (CLIP) to extract visual representations that are semantically aligned with textual content. Based on the recognizer’s initial visual and linguistic predictions, a large language model (LLM) is prompted to “brainstorm” a diverse set of plausible text candidates. Finally, a carefully designed visual-linguistic matching module computes similarity scores between the original image and each candidate to select the most accurate transcription. We demonstrate the effectiveness of VLENet across a wide range of Chinese and English benchmarks, achieving new state-of-the-art (SOTA) results. Furthermore, our analysis shows that VLENet performs particularly well on challenging datasets such as COCO and Uber, highlighting its strong ability to reason about and correct text in complex real-world scenarios.},
   archive      = {J_NEUCOM},
-  author       = {Pietro Cinaglia},
-  doi          = {10.1016/j.neucom.2025.132151},
+  author       = {Zeguang Jia and Jianming Wang and Kehui Song and Zhilan Wang and Xiaohan Ma and Rize Jin},
+  doi          = {10.1016/j.neucom.2025.132236},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132151},
+  pages        = {132236},
   shortjournal = {Neurocomputing},
-  title        = {TGeCoNet: A framework for constructing temporal gene co-expression networks},
-  volume       = {665},
+  title        = {A duet of perception and reasoning: CLIP and LLM brainstorming for scene text recognition},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). PHLP: Sole persistent homology for link prediction - Interpretable feature extraction. <em>NEUCOM</em>, <em>665</em>, 132147. (<a href='https://doi.org/10.1016/j.neucom.2025.132147'>www</a>)
+(2026). EEG-based fusion approaches in multimodal emotion recognition: An in-depth review. <em>NEUCOM</em>, <em>666</em>, 132235. (<a href='https://doi.org/10.1016/j.neucom.2025.132235'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Link prediction (LP), inferring the connectivity between nodes, is a significant research area in graph data, where a link represents essential information about relationships between nodes. Although graph neural network (GNN)-based models have achieved high performance in LP, understanding why they perform well is challenging because most consist of complex neural networks. We employ persistent homology (PH), a topological data analysis method that helps analyze the topological information of graphs, to interpret the features used for prediction. We propose a novel method that employs PH for LP (PHLP) focusing on how the presence or absence of target links influences the overall topology. The PHLP utilizes the angle hop subgraph and new node labeling method called degree double radius node labeling (Degree DRNL) , which distinguishes the information of graphs better than DRNL. Using only a classifier, PHLP performs similarly to state-of-the-art (SOTA) models on most benchmark datasets. Incorporating the outputs calculated using PHLP into the existing GNN-based SOTA models improves performance across all benchmark datasets. To the best of our knowledge, PHLP is the first method to apply PH to LP without GNNs. The proposed approach, employing PH while not relying on neural networks, enables the identification of crucial factors for improving performance.},
+  abstract     = {Emotion recognition plays a central role in advancing HCI, healthcare, and affective computing. However, due to the rapid and dynamic nature of emotions, traditional unimodal approaches often fall short in capturing their complexity. As a result, multimodal emotion recognition has gained significant attention, with EEG emerging as a core modality due to its noninvasiveness, high temporal resolution, and direct neural activity. This paper presents a comprehensive review of EEG-based multimodal emotion recognition, focusing on sensors, fusion strategies, and benchmark datasets employed in state-of-the-art studies. Unlike previous surveys, this review makes three distinct contributions. First, it introduces a sensor-level categorisation that highlights device-specific constraints and opportunities for fusion design. Second, it systematically maps fusion strategies—including sensor-, feature-, and decision-level fusion—using structured comparisons that detail assumptions, data requirements, and computational costs. This methodological progression—from handcrafted pipelines to deep learning, hybrid, and transformer-based architectures—has also shaped multimodal emotion recognition approaches. Third, it provides an in-depth benchmarking of widely used EEG-based multimodal datasets, offering multidimensional comparisons across sample size, demographics, labelling schemes, stimulation protocols, and evaluation strategies. To contextualise these advances, a review of unimodal approaches is also provided. Together, these contributions establish a practical reference for designing robust EEG-based multimodal emotion recognition systems, selecting appropriate datasets, and ensuring consistency in comparative evaluations. The review also highlights key challenges and future opportunities, including dataset standardisation, cross-subject generalisation, and ethical considerations, to guide the next generation of research in this rapidly evolving field.},
   archive      = {J_NEUCOM},
-  author       = {Junwon You and Eunwoo Heo and Jae-Hun Jung},
-  doi          = {10.1016/j.neucom.2025.132147},
+  author       = {Bahar Hatipoglu Yilmaz and Cagatay Murat Yilmaz and Cemal Kose},
+  doi          = {10.1016/j.neucom.2025.132235},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132147},
+  pages        = {132235},
   shortjournal = {Neurocomputing},
-  title        = {PHLP: Sole persistent homology for link prediction - Interpretable feature extraction},
-  volume       = {665},
+  title        = {EEG-based fusion approaches in multimodal emotion recognition: An in-depth review},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Embedding uncertainty modeling for cold-start item recommendation. <em>NEUCOM</em>, <em>665</em>, 132144. (<a href='https://doi.org/10.1016/j.neucom.2025.132144'>www</a>)
+(2026). SMFNet: Stacking multi-frame network for 4D spatial-temporal LiDAR semantic segmentation. <em>NEUCOM</em>, <em>666</em>, 132233. (<a href='https://doi.org/10.1016/j.neucom.2025.132233'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recently, embedding techniques have achieved excellent performance in various recommendation tasks. However, these techniques are data-demanding and suffer from the cold-start problem. Existing optimizations for cold-start item embeddings generally rely on side information (e.g., item attributes such as category, brand, textual descriptions, or knowledge features), assuming that cold-start items share overlapping side information with warm items. As a result, most methods focus on leveraging such information to generate embeddings for cold-start items. In this paper, we argue that the potential distribution shift of cold-start items weakens the effect of side information, since new items often introduce novel auxiliary features that never appear among warm items. To address this issue, we propose the Embedding Uncertainty Modeling Recommendation (EUMR) framework, which exploits the uncertainty of warm item embeddings to adapt to the distribution shift of cold-start items. Instead of directly generating embeddings based solely on side information, EUMR leverages warm item distributions to estimate cold-start representations. Specifically, EUMR models warm item feature embeddings as multivariate Gaussian distributions, estimates the uncertainty of each distribution from their statistics, and samples shifted distributions according to this uncertainty. Cold-start embeddings are then synthesized from the shifted distributions, thereby accommodating unseen auxiliary features. In this way, EUMR provides a simple yet effective solution for distribution-shifted cold-start items and can be flexibly integrated into existing recommendation models. Extensive offline experiments on public datasets and online A/B tests demonstrate that EUMR consistently improves generalization and robustness over state-of-the-art methods.},
+  abstract     = {In many real-world applications such as autonomous vehicles and robots, LiDAR sensor is an essential equipment due to its capacity to scan surrounding environment. It produces sequential point clouds by rotating the laser emitter in a consecutive pattern. Therefore, semantic segmentation of the sequential point clouds is critical for understanding the surrounding environment for autonomous vehicles and robots. Unlike the semantic segmentation of single scan, this task requires distinguishing the moving objects from static ones. However, existing semantic segmentation methods for single scan perform poorly on the multi-scan task due to the lack of temporal information. In this paper, we propose a novel framework, which consists of a Spatial-Aware Feature Learning module (SAFL) and a Temporal-Aware Feature Learning module (TAFL), to extract spatial and temporal information in a unified pattern. Specifically, we project each point cloud into a pseudo-image by spherical projection and stack several sequential images along the temporal dimension, forming a 3D grid. First, the SAFL module extracts spatial features for each voxel using submanifold sparse convolution and reduces the resolution through a sparse convolution. Then, the TAFL module adopts a window-based Transformer along with a specially designed mask mechanism to learn the temporal information. Moreover, we design a Motion-Aware Feature Learning module (MAFL), using an optimized 2D network and residual images built from the stacked images to strengthen the moving feature learning and facilitate the prediction of moving objects. We evaluate our proposed method on the Synthia4D and SemanticKITTI multi-scan datasets and the results demonstrate that our method achieves competitive results than most previous methods with less latency, which provides a novel idea to process 4D LiDAR tasks. The code is available at https://github.com/daojianqingchou/SMFNet.git .},
   archive      = {J_NEUCOM},
-  author       = {Jiaxing Li and Youyong Kong},
-  doi          = {10.1016/j.neucom.2025.132144},
+  author       = {Xindong Guo and Zhongyu Chen and Rong Zhao and Xie Han},
+  doi          = {10.1016/j.neucom.2025.132233},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132144},
+  pages        = {132233},
   shortjournal = {Neurocomputing},
-  title        = {Embedding uncertainty modeling for cold-start item recommendation},
-  volume       = {665},
+  title        = {SMFNet: Stacking multi-frame network for 4D spatial-temporal LiDAR semantic segmentation},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). DNTFNet: Deep feature learning via tensor factorization for few-shot HSI classification. <em>NEUCOM</em>, <em>665</em>, 132140. (<a href='https://doi.org/10.1016/j.neucom.2025.132140'>www</a>)
+(2026). InterpIoU: Robust bounding box regression loss within an interpolation-based IoU framework. <em>NEUCOM</em>, <em>666</em>, 132230. (<a href='https://doi.org/10.1016/j.neucom.2025.132230'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep learning methods have shown great potential in hyperspectral image (HSI) classification by automatically extracting discriminative features. However, successful deep learning models generally require a large number of labeled samples and involve high computational complexity, which significantly restricts their use in scenarios where annotations are limited. To tackle this problem, we propose a novel deep learning framework named DNTFNet in this paper, which effectively integrates tensor factorization into feature learning for few-shot HSI classification. The core idea is to construct a hierarchical nonnegative tensor factorization (NTF) model that learns representative convolutional filters in an unsupervised manner. Specifically, we first design a fourth-order NTF structure to capture multi-mode correlations in HSI data. Then, the factorization process is extended to a deep architecture, enabling multi-level feature abstraction. Inspired by convolutional networks, we build a full feature extraction pipeline incorporating PCA, normalization, factor-based convolution, and ReLU activation. Extensive experiments performed on three public HSI datasets demonstrate that our method achieves highly competitive performance compared with state-of-the-art techniques, especially when very few training samples are available. This work provides a practical and efficient solution for accurate classification of hyperspectral imagery with minimal human supervision.},
+  abstract     = {Bounding box regression (BBR) is central to object detection, where regression loss plays a key role in precise localization. Existing IoU-based losses often rely on handcrafted geometric penalties to provide gradients in non-overlapping cases and improve localization. However, these geometric penalties are inherently sensitive to box geometry, producing unstable gradients in extreme cases and a subtle misalignment with the IoU objective, which harms small object detection and yields undesired convergence behaviors such as bounding box enlargement. To address these limitations, we introduce InterpIoU, an interpolation-based IoU optimization framework that rethinks BBR beyond handcrafted penalties. By bridging predictions and ground truth with interpolated boxes, InterpIoU supplies meaningful gradients in non-overlapping cases while ensuring consistent alignment with the BBR objective. Crucially, our findings challenge the convention of using geometric penalties, demonstrating they are often unnecessary and suboptimal. Building on InterpIoU, we propose Dynamic InterpIoU, which adjusts interpolation coefficients based on IoU values, adapting to diverse object distributions. Experiments on COCO, VisDrone, and PASCAL VOC demonstrate that our methods consistently outperform state-of-the-art IoU-based losses across detection frameworks, including YOLOv8 and DINO, with notable improvements for small object detection.},
   archive      = {J_NEUCOM},
-  author       = {Chunbo Cheng and Hong Li and Wenjing Cui and Yuxiao Cun and Liming Zhang},
-  doi          = {10.1016/j.neucom.2025.132140},
+  author       = {Haoyuan Liu and Hiroshi Watanabe},
+  doi          = {10.1016/j.neucom.2025.132230},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132140},
+  pages        = {132230},
   shortjournal = {Neurocomputing},
-  title        = {DNTFNet: Deep feature learning via tensor factorization for few-shot HSI classification},
-  volume       = {665},
+  title        = {InterpIoU: Robust bounding box regression loss within an interpolation-based IoU framework},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Sorted graph neural network for robust node classification on heterophilic graphs. <em>NEUCOM</em>, <em>665</em>, 132130. (<a href='https://doi.org/10.1016/j.neucom.2025.132130'>www</a>)
+(2026). Impulse-based lyapunov method on fixed/preassigned-time synchronization of multi-layer impulsive networks. <em>NEUCOM</em>, <em>666</em>, 132228. (<a href='https://doi.org/10.1016/j.neucom.2025.132228'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Node classification represents a fundamental challenge in graph-structured data analysis. While contemporary graph neural networks (GNNs) achieve notable performance by jointly modeling node attributes and topological relationships, prevailing architectures predominantly rely on the homophily assumption. This dependence frequently results in suboptimal performance on heterophilic graphs where high-order neighborhood interactions prove critical. Conventional GNN approaches employ local message-passing mechanisms that risk indiscriminately blending features from dissimilar node classes in heterophilic contexts. To address this limitation, we introduce Sorted-GNN, an innovative framework that dynamically integrates high-order neighborhood information via selective fusion. The proposed method computes node-specific compatibility scores, ranks neighborhood interactions, and employs gating mechanisms for adaptive feature combination. Extensive experiments on benchmark datasets demonstrate that Sorted-GNN is consistently competitive and achieves the best or second-best accuracy on most datasets, with pronounced gains on heterophilic graphs, while maintaining training efficiency comparable to strong baselines. These findings underscore the importance of structured neighborhood aggregation for robust graph representation learning.},
+  abstract     = {In this article, the synchronization of multi-layer impulsive network models within a fixed/preassigned time is investigated. Firstly, a concise and effective fixed-time control scheme is proposed to discuss the fixed-time synchronization of the multi-layer impulsive networks. Then, through developing a Lyapunov-like function dependent on impulsive time and employing a theorem of improved fixed-time stability, several more general conditions are obtained to guarantee fixed-time synchronization and the convergence time is estimated with lower conservativeness. Meanwhile, the synchronization within a preassigned time is also explored via designing a novel control scheme, in which the synchronized time can be pre-set to meet operational requirements. Lastly, a typical numerical example is presented to confirm the effectiveness of the obtained results.},
   archive      = {J_NEUCOM},
-  author       = {Jun Lv and Wei Wang and Chi Huang and Yao Chen},
-  doi          = {10.1016/j.neucom.2025.132130},
+  author       = {Iftikhar Ahmad and Caicai Zheng and Cheng Hu and Juan Yu},
+  doi          = {10.1016/j.neucom.2025.132228},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132130},
+  pages        = {132228},
   shortjournal = {Neurocomputing},
-  title        = {Sorted graph neural network for robust node classification on heterophilic graphs},
-  volume       = {665},
+  title        = {Impulse-based lyapunov method on fixed/preassigned-time synchronization of multi-layer impulsive networks},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Asymptotic evaluation of the information processing capacity in reservoir computing. <em>NEUCOM</em>, <em>665</em>, 132128. (<a href='https://doi.org/10.1016/j.neucom.2025.132128'>www</a>)
+(2026). SeiFuD: A novel deep learning framework leveraging domain generalization for cross-subject seizure prediction. <em>NEUCOM</em>, <em>666</em>, 132227. (<a href='https://doi.org/10.1016/j.neucom.2025.132227'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Reservoir computing (RC) is becoming increasingly important because of its short training time. The squared error normalized by the target output is called the information processing capacity (IPC) and is used to evaluate the performance of an RC system. Since RC aims to learn the relationship between input and output time series, we should evaluate the IPC for infinitely long data rather than the IPC for finite-length data. However, a method for estimating it has not yet been established. We evaluated the IPC for infinitely long data using the asymptotic expansion of the IPC and weighted least-squares fitting. Then, we demonstrated the validity of our method through numerical simulations. This work makes the performance evaluation of RC more precise.},
+  abstract     = {Electroencephalogram (EEG)-based seizure prediction methods have the potential to significantly improve the quality of life for patients with epilepsy. However, due to substantial inter-individual variability in EEG patterns, most existing approaches rely on patient-specific models, which exhibit limited generalization performance when applied to unseen patients—especially under data-scarce scenarios. To overcome this limitation, we propose a domain generalization framework named SeiFuD (Seizure prediction via Feature Fusion and Disentanglement). Specifically, we first extract multi-scale time–frequency features from raw EEG signals and employ a spatio-temporal convolutional neural network to generate a robust and comprehensive fused representation. Subsequently, a feature disentanglement module decomposes the learned features into domain-invariant and domain-specific components. To enhance cross-patient generalization, we incorporate adversarial training to suppress patient-specific information within the domain-invariant features, thereby capturing seizure-related patterns that are transferable across individuals. The proposed method was evaluated on the CHB-MIT dataset and the TUSZ dataset, achieving an area under the curve (AUC) of 60.26 %, a sensitivity of 42.88 %, and a false positive rate (FPR) of 0.42/h on the CHB-MIT dataset, and an AUC of 63.76 %, a sensitivity of 47.44 %, and an FPR of 0.493/h on the TUSZ dataset. Moreover, interpretability analysis demonstrates that the model successfully identifies clinically relevant features associated with seizure onset. Experimental results validate the effectiveness of our approach in reducing interpatient variability and improving generalization performance, offering a promising solution for practical and scalable seizure prediction systems.},
   archive      = {J_NEUCOM},
-  author       = {Yohei Saito},
-  doi          = {10.1016/j.neucom.2025.132128},
+  author       = {Sha Zhao and Caibo Zhang and Jiquan Wang and Haiteng Jiang and Shijian Li and Tao Li and Gang Pan},
+  doi          = {10.1016/j.neucom.2025.132227},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132128},
+  pages        = {132227},
   shortjournal = {Neurocomputing},
-  title        = {Asymptotic evaluation of the information processing capacity in reservoir computing},
-  volume       = {665},
+  title        = {SeiFuD: A novel deep learning framework leveraging domain generalization for cross-subject seizure prediction},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Lane detection with vanishing box based dynamic anchor generation mechanism. <em>NEUCOM</em>, <em>665</em>, 132110. (<a href='https://doi.org/10.1016/j.neucom.2025.132110'>www</a>)
+(2026). Lightweight AI-driven traffic forecasting and shaping for 6G LEO satellite networks. <em>NEUCOM</em>, <em>666</em>, 132226. (<a href='https://doi.org/10.1016/j.neucom.2025.132226'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Anchor generation is the core of currently dominant anchor-based lane detection methods. However, the mainstream anchor generation mechanism generates the fixed anchors that cannot be adaptively applied to complex, diverse, and dynamic traffic scenarios, and some anchors are far from ground truth lanes in certain challenging scenarios. To address this issue, this paper demonstrates through oracle experiments that the deviations between anchors and ground truth lanes significantly affect lane detection performance. On this basis, we propose a dynamic Vanishing Box-based Anchor Generation ( VBAG ) mechanism, which is theoretically grounded in the physical mapping principle. The anchors generated by VBAG exhibit reasonable geometric characteristics and are closer to ground truth lanes. A series of comparison, ablation, and visualization experiments is conducted on two benchmark datasets (i.e., TuSimple and CULane). The comparison experiment results demonstrate the superiority of our method. The ablation and visualization experiment results validate that VBAG contributes to generating high-quality anchors and our method exhibits better performance than other methods even when using fewer anchors.},
+  abstract     = {Low Earth Orbit (LEO) satellite networks are expected to be a key enabler of 6G communications, providing global coverage and low-latency services for remote and underserved regions. However, their dynamic topologies, large-scale deployments, and limited onboard resources pose significant challenges to reliable service delivery. This paper presents a lightweight, AI-driven framework for service flow forecasting in LEO networks to minimize latency and ensure compliance with service level agreements (SLAs). Our main contributions are: (1) iTransformer_Lite, a resource-efficient transformer variant employing simplified embeddings, linear attention, and compact feedforward networks (CompactFFN) to reduce computational overhead; and (2) a multi-class Credit-Based Shaping (CBS) algorithm that leverages iTransformer_Lite predictions for dynamic, SLA-aware traffic shaping. Experiments on multiple public and satellite-specific datasets show that iTransformer_Lite achieves up to approximately 57 % lower memory footprint and approximately 2.3 × faster inference compared to the baseline iTransformer, while maintaining competitive or superior forecasting accuracy across diverse benchmarks.},
   archive      = {J_NEUCOM},
-  author       = {Zhixiong Nan and Wanying Xu and Si Chen and Bo Zheng and Tao Xiang},
-  doi          = {10.1016/j.neucom.2025.132110},
+  author       = {Yu Liang and Mingji Dong and Xiaofan Xu and Ping Du and Maozhen Li and Zuqing Zhu},
+  doi          = {10.1016/j.neucom.2025.132226},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132110},
+  pages        = {132226},
   shortjournal = {Neurocomputing},
-  title        = {Lane detection with vanishing box based dynamic anchor generation mechanism},
-  volume       = {665},
+  title        = {Lightweight AI-driven traffic forecasting and shaping for 6G LEO satellite networks},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). SIMBRAIN: A nonidealities-aware simulation framework for spiking neural networks based on memristor crossbars. <em>NEUCOM</em>, <em>665</em>, 132107. (<a href='https://doi.org/10.1016/j.neucom.2025.132107'>www</a>)
+(2026). Semi-supervised denoising for facial landmark detection in videos. <em>NEUCOM</em>, <em>666</em>, 132225. (<a href='https://doi.org/10.1016/j.neucom.2025.132225'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Memristor crossbars have emerged as a promising computing paradigm for neural networks (NNs), excelling in executing multiply-accumulate (MAC) operations for artificial neural networks (ANNs). However, crossbar architectures still face challenges in handling the complex nonlinear cognitive functions of trace dynamics, which have become one of the most energy-intensive and memory-demanding aspects of implementing brain-inspired spiking neural networks (SNNs). Furthermore, the nonidealities of memristors remain a critical concern. Their impact on different NNs, especially biologically-plausible SNNs, is still largely underexplored. While prior studies have proposed device-to-algorithm simulation frameworks that incorporate these nonidealities, efforts are still needed to bridge the gap between raw device data and ready-to-use memristor models. Therefore, this work introduces SIMBRAIN, an open-source device-to-network simulation framework that incorporates an all-in-one model and fitting acceleration strategies for translating device nonidealities into an integrated behavioral model. SIMBRAIN proposes a novel mapping strategy that first extends conventional crossbars to perform nonlinear cognitive functions for trace dynamics. Validated on two memristors, SIMBRAIN rapidly delivers both realistic accuracy results and circuit-level performance metrics by addressing batch processing challenges considering nonidealities. This work also systematically quantifies the impact of memristor nonidealities on trace-SNN performance compared to ANNs.},
+  abstract     = {Existing video-based facial landmark detection methods often introduce noise, leading to positional jitter that hinders precision-sensitive tasks such as micro-expression recognition. However, training effective denoising models remains challenging because annotated data are scarce. To address this limitation, we investigate semi-supervised learning for denoising, with a particular emphasis on masked modeling techniques. Among semi-supervised strategies, masked modeling is especially promising for its ability to learn robust representations from incomplete data. Nevertheless, when integrating masked modeling into our semi-supervised denoising framework for facial landmark tasks, we identify two key limitations of conventional approaches. First, they overlook the varying reconstruction difficulty across facial regions, making uniform masking rates inadequate for learning region-specific features. Second, they fail to exploit the implicit denoising cues present in unmasked regions within semi-supervised settings. To address these issues, we propose a region-wise masking strategy that assigns optimal masking rates to different facial regions and incorporates a consistency constraint, enforcing agreement on the unmasked portions between masked and complete inputs. Experimental results on the 300VW and WFLW-V datasets demonstrate the superior performance and strong generalization capability of the proposed approach. On the WFLW-V dataset, our method achieves an NME of 2.12/1.22 and NMF of 143.36/76.54 on hard/easy difficulty levels respectively, validating the effectiveness of our semi-supervised denoising framework.},
   archive      = {J_NEUCOM},
-  author       = {Jiawei Xu and Yi Zheng and Ruisi Shen and Ruijia Wang and Jie Li and Deyu Wang and Dimitrios Stathis and Li-Rong Zheng and Zhuo Zou and Ahmed Hemani},
-  doi          = {10.1016/j.neucom.2025.132107},
+  author       = {Lei Wang and Jinfan Peng and Yuanhong Lao and Pinyi Huang and Wangyang Cai},
+  doi          = {10.1016/j.neucom.2025.132225},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132107},
+  pages        = {132225},
   shortjournal = {Neurocomputing},
-  title        = {SIMBRAIN: A nonidealities-aware simulation framework for spiking neural networks based on memristor crossbars},
-  volume       = {665},
+  title        = {Semi-supervised denoising for facial landmark detection in videos},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Model-free inverse reinforcement learning algorithms for continuous-time and discrete-time zero-sum games. <em>NEUCOM</em>, <em>665</em>, 132101. (<a href='https://doi.org/10.1016/j.neucom.2025.132101'>www</a>)
+(2026). Multimodal privacy-leaking image detection method based on multi-image correlation. <em>NEUCOM</em>, <em>666</em>, 132222. (<a href='https://doi.org/10.1016/j.neucom.2025.132222'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper presents data-driven, model-free inverse optimal control (IOC) algorithms, also known as inverse reinforcement learning (IRL), for estimating the cost functions of two-player zero-sum games with deterministic continuous-time (CT) and discrete-time (DT) dynamics. Addressing the underexplored area of IOC in zero-sum games, the proposed methods reduce the complexity inherent in existing bi-level approaches by estimating all cost function terms, including those penalizing inputs. The method partitions unknown parameters into two sets: one is updated iteratively using a gradient-based scheme driven by policy errors, while the other is estimated via the Hamilton-Jacobi-Bellman equation after convergence of the first set. This eliminates the need to solve a forward IOC problem at each iteration, reducing computational load and ensuring policy stability. For DT systems, the approach parallels the CT method but requires adapted gains to manage additional complexities. Numerical simulations demonstrate the effectiveness of the algorithms in accurately estimating cost functions for two-player zero-sum games.},
+  abstract     = {The purpose of privacy-leaking image detection in deep learning is to automatically determine whether an image poses a privacy leakage risk and provide corresponding identification results. However, some of the images with privacy leakage can only be detected by analyzing the overall semantics of multiple content-related images, and are hardly detected in a single-image scenario. To address this issue, a privacy-leaking image detection method combining multi-image correlation and multimodal features is proposed in this paper. This method leverages semantically related image groups along with their corresponding text summaries to establish contextual correlation, and employs both additive and dot-product attention mechanisms to achieve effective multimodal fusion between the two modalities. Furthermore, saliency features from both modalities are incorporated to strengthen the correlation between contents and privacy leakage from different perspectives. The experimental results show that the proposed method can effectively capture inter-image semantic correlation through multi-image text summarization, leading to significant improvements in privacy-leaking image detection performance.},
   archive      = {J_NEUCOM},
-  author       = {Hamed Jabbari Asl and Anh Vu Le and Bui Vu Minh and Mohan Rajesh Elara},
-  doi          = {10.1016/j.neucom.2025.132101},
+  author       = {Changhao Ding and Jie Huang and Qi Hao and Zeping Zhang and Yizhun Zhang},
+  doi          = {10.1016/j.neucom.2025.132222},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132101},
+  pages        = {132222},
   shortjournal = {Neurocomputing},
-  title        = {Model-free inverse reinforcement learning algorithms for continuous-time and discrete-time zero-sum games},
-  volume       = {665},
+  title        = {Multimodal privacy-leaking image detection method based on multi-image correlation},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Synthesizing stronger nodes for minority classes in imbalanced node classification. <em>NEUCOM</em>, <em>665</em>, 132086. (<a href='https://doi.org/10.1016/j.neucom.2025.132086'>www</a>)
+(2026). Cooperative multi-entity game skill learning with heterogeneous agents policy mirror descent. <em>NEUCOM</em>, <em>666</em>, 132215. (<a href='https://doi.org/10.1016/j.neucom.2025.132215'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Class imbalance is a critical challenge in graph-based node classification, where majority-class nodes dominate and minority-class nodes are underrepresented. Existing oversampling strategies often increase sample size without improving representation quality, leaving synthesized nodes susceptible to majority-class interference. We propose GraphSGN (Synthesizing Stronger Nodes), a framework that generates structurally and semantically stronger minority nodes. GraphSGN introduces a Feature Mixing module to aggregate class-consistent features among neighbors while suppressing majority-class noise, and a class-balanced graph augmentation mechanism that integrates node-level synthesis with feature-level mixing to achieve structural and semantic balance. Experiments on six benchmark datasets show that GraphSGN consistently outperforms competitive baselines, effectively tackling low-quality synthesis and cross-class feature distortion in imbalanced node classification.},
+  abstract     = {In light of the challenge that “environmental information is often incomplete and it is difficult to learn equilibrium strategies that converge,” this paper designs a policy mirror descent learning algorithm for heterogeneous agents. Furthermore, a Sequential Team policy space response oracle (Set-PSRO) iterative policy learning method based on skill meta-game is proposed, and the equilibrium convergence of team confrontation strategies is demonstrated. This approach enables the rapid learning of heterogeneous multi-agent cooperative policies. The problem of cooperative multi-agent games is analyzed using a two-team zero-sum game model. Relying on the online convex optimization theory of mirror descent policies and the advantage function decomposition lemma, two types of Heterogeneous Blue Agents Policy Mirror Descent (HAPMD) methods are constructed: on-policy and off-policy. The Set-PSRO method is centered around the discovery of team cooperative confrontation skills, employing self-play or cross-play to automatically expand skills and strengthen the policy population. This is done to address confrontational challenges of varying difficulties and to effectively mitigate the impact of incomplete environmental information on policy learning. Experimental results from the benchmark platform indicate that the win rate of the HAPMD method on the “StarCraft Multi-Agent Challenge” benchmark platform is 95.4 % ± 2 % , and the skill level Elo score in the symmetric game environment “Google Football” surpasses that of the built-in algorithm. In the asymmetric game “Network Pursuit-Evasion,” online strategies can be quickly generated by fine-tuning the pre-trained skill model.},
   archive      = {J_NEUCOM},
-  author       = {Shilong Lin and Guangquan Lu and Shichao Zhang and Longqing Du and Zhijie Luo and Lin Luo},
-  doi          = {10.1016/j.neucom.2025.132086},
+  author       = {Junren Luo and Wanpeng Zhang and Jiongming Su and Zhangling Wang and Jing Chen},
+  doi          = {10.1016/j.neucom.2025.132215},
   journal      = {Neurocomputing},
   month        = {2},
-  pages        = {132086},
+  pages        = {132215},
   shortjournal = {Neurocomputing},
-  title        = {Synthesizing stronger nodes for minority classes in imbalanced node classification},
-  volume       = {665},
+  title        = {Cooperative multi-entity game skill learning with heterogeneous agents policy mirror descent},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A novel recurrent neural network with robust learning algorithm: Application to modeling of nonlinear complex systems. <em>NEUCOM</em>, <em>666</em>, 132214. (<a href='https://doi.org/10.1016/j.neucom.2025.132214'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The goal of this research is to develop a novel recurrent neural network with a small number of adaptable weights that combines the benefits of the Jordan neural network (JNN) and the Elman neural network (ENN). The proposed model is named Elman Jordan compound recurrent neural network (EJCRNN), and it consists of only three layers: input, hidden, and output layers. Four hidden neurons are taken into consideration in the compound-type hidden layer. The first two hidden neurons resemble the working of hidden neurons of the ENN model, and the remaining two neurons behave like the JNN model’s neurons. Additionally, the output neuron of the suggested model has a recurrent connection that uses an adjustable feedback weight to link the output neuron to the unit-delayed output of the suggested model. Thus, both the hidden and the output layer neurons are of a recurrent type. The weight adjustment methods are developed based on the ideas of Lyapunov stability theory in order to ensure the stability of the suggested model. To further enhance the training process, an adaptive learning rate is also suggested. By simulating the two complex nonlinear systems, the suggested model’s performance is assessed and contrasted with that of the ENN and JNN models. The results of the simulation show that the accuracy achieved with the suggested model is superior to that of the other two models. Also, the proposed model offered a smaller number of adjustable weights compared to the other two recurrent models, which makes it more computationally efficient.},
+  archive      = {J_NEUCOM},
+  author       = {Rajesh Kumar},
+  doi          = {10.1016/j.neucom.2025.132214},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132214},
+  shortjournal = {Neurocomputing},
+  title        = {A novel recurrent neural network with robust learning algorithm: Application to modeling of nonlinear complex systems},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Event-triggered intelligent critic control for uncertain robotic systems: Guaranteed optimal tracking with disturbance attenuation. <em>NEUCOM</em>, <em>666</em>, 132212. (<a href='https://doi.org/10.1016/j.neucom.2025.132212'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates an event-triggered critic optimal tracking strategy with disturbance attenuation for robotic manipulator systems subject to model perturbation and external disturbance. The described issue is first formulated as an infinite horizon optimal control with a novel performance index function of a concatenated system, encompassing both tracking error and reference command dynamics. Then, inspired by the idea of the zero-sum differential game, the approximate optimal control policy and the worst-case disturbance law are solved by employing the improved adaptive critic configuration with a complementary stabilizing component, which dispenses with the demand for the painstaking choice of initial neural weights. Notably, to promote control efficiency and lessen computational load, the event-triggered mechanism is integrated into network learning and control design. The stability of the system and the convergence of network weights are rigorously verified using the Lyapunov stability theory. Finally, comparative simulations are provided to illustrate the efficacy and strength of the presented approach.},
+  archive      = {J_NEUCOM},
+  author       = {Yalu Su and Dan Xiong and Yiyong Huang and Wei Han and Xudong Zhao},
+  doi          = {10.1016/j.neucom.2025.132212},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132212},
+  shortjournal = {Neurocomputing},
+  title        = {Event-triggered intelligent critic control for uncertain robotic systems: Guaranteed optimal tracking with disturbance attenuation},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A multi-axis spatiotemporal attention model with multilayer convolution and kolmogorov-arnold networks for ENSO prediction. <em>NEUCOM</em>, <em>666</em>, 132210. (<a href='https://doi.org/10.1016/j.neucom.2025.132210'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The El Niño-Southern Oscillation (ENSO) is a significant climate phenomenon that impacts global climate patterns, and accurate ENSO prediction is crucial for mitigating its adverse effects. Due to its diversity, complex directional features, and nonlinear variations, long-term ENSO prediction remains challenging. This study proposes a novel spatiotemporal attention model (MSTKAN) that combines convolutional encoders to extract coarse-grained features while preserving spatiotemporal information. The model incorporates a multi-axis spatiotemporal attention mechanism, capturing fine-grained directional features from both temporal and spatial perspectives. Additionally, the Kolmogorov-Arnold Network (KAN) is employed to model the nonlinear dynamics of ENSO. To validate its efficacy and robustness, we conducted experiments on the simulated and historical climate datasets. It exhibits superior prediction accuracy in the CMIP6 dataset with forecast horizons extending beyond 18 months. For the ERSST dataset, MSTKAN model achieves a correlation coefficient greater than 0.8 for 24-month forecasts. Additionally, we compare the predicted and observed Niño3.4 indices for the period from 1995 to 2020, as well as for typical ENSO events. The results highlight the strong performance of the proposed MSTKAN model in ENSO forecasting.},
+  archive      = {J_NEUCOM},
+  author       = {Bin Wang and Minxin Jing and Dandan Li and Xiao Dong and Songhui Rao and Xingwang Dong and Rui Wang and Jiangbo Jin and Xin Gao},
+  doi          = {10.1016/j.neucom.2025.132210},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132210},
+  shortjournal = {Neurocomputing},
+  title        = {A multi-axis spatiotemporal attention model with multilayer convolution and kolmogorov-arnold networks for ENSO prediction},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Time-aware dual-channel denoising for session recommendation. <em>NEUCOM</em>, <em>666</em>, 132207. (<a href='https://doi.org/10.1016/j.neucom.2025.132207'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Session-based recommendation aims to predict the next item that users are most likely to interact with based on their interaction behavior over a period of time. However, the existing methods have the following two shortcomings: (1) Generally speaking, the interaction interval between two consecutive items in a session can reflect the user’s willingness to interact with the next item, and then reveal the user’s preference for the item, which is rarely taken into account; (2) For time-sensitive items, improper interaction by a small number of users may bring noise influence to their overall preference modeling, so how to effectively remove the noise influence needs to be solved urgently. In order to solve the above two problems, this work proposes a time-aware dual-channel denoising network (TDCDN), which designs a session channel and a hypergraph channel for item representation learning and session modeling. Specifically, in the session channel, we first apply the time decay idea of the Hawkes process, and learn the interest influence of different items by modeling the time interval information of adjacent items in the session; In the hypergraph channel, we design a noise item selector according to the time information of interacted items, and propose an aggregation network, which can narrow the individual differences of time-sensitive items by clustering the selected items. Finally, the item representations learned by the two channels are fused, so that the modeling of the final session representation not only captures the personalized characteristics of the internal item, but also combines the optimization of the noise item. Extensive experiments on three real datasets show that TDCDN significantly outperforms state-of-the-art methods.},
+  archive      = {J_NEUCOM},
+  author       = {Nan Wang and Jingyang Liu and Xuefeng Jiang and Jinbao Li},
+  doi          = {10.1016/j.neucom.2025.132207},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132207},
+  shortjournal = {Neurocomputing},
+  title        = {Time-aware dual-channel denoising for session recommendation},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MMT: Multimodal meta-training for few-shot object detection. <em>NEUCOM</em>, <em>666</em>, 132197. (<a href='https://doi.org/10.1016/j.neucom.2025.132197'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-Shot Object Detection (FSOD) aims to detect objects from novel classes using only a few labeled instances per class. Recently, several FSOD approaches have incorporated vision - language models (VLMs) to leverage textual semantics for improving visual representations. However, VLM-based FSOD methods still face two major challenges: (1) the alignment bias between textual and regional features, which leads to unstable or suboptimal performance on novel categories; and (2) the lack of efficient training strategies, as most methods rely on repeatedly fine-tuning models on limited novel samples, which contradicts the few-shot learning paradigm and incurs substantial computational cost. To address these issues, we propose a Multimodal Meta-Training (MMT) framework that enhances both semantic alignment and training efficiency in FSOD. MMT consists of two core components: (1) a Region Feature Enhancement Module (RFEM), which refines visual region representations through cross-modal fusion with textual features to alleviate semantic misalignment; and (2) a Meta-Training Strategy, which adopts an inner-outer loop optimization scheme to improve model generalization and reduce training overhead. Extensive experiments on PASCAL VOC and MS COCO demonstrate that MMT achieves superior detection accuracy on novel classes while significantly reducing training time.},
+  archive      = {J_NEUCOM},
+  author       = {Xiren Chen and Jian Cheng and Ziying Xia and Thupten Tsering and Zhicheng Dong and Nyima Tashi},
+  doi          = {10.1016/j.neucom.2025.132197},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132197},
+  shortjournal = {Neurocomputing},
+  title        = {MMT: Multimodal meta-training for few-shot object detection},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). AugGen: A generative framework for continual generalized zero-shot learning. <em>NEUCOM</em>, <em>666</em>, 132187. (<a href='https://doi.org/10.1016/j.neucom.2025.132187'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continual Generalized Zero-shot Learning (CGZSL) aims to address the challenges of knowledge forgetting and class imbalance that are common in Generalized Zero-shot Learning (GZSL) when applied in continuous learning scenarios. In these settings, the model must adapt to new tasks while retaining past knowledge. Generation-based methods synthesize visual features for unseen classes, which helps bridge the gap between semantic and visual spaces. However, the generative frameworks in CGZSL still suffer from limited feature diversity for unseen classes, which impairs their generalization ability. Existing generative models struggle to fully capture the diversity distribution of classes, often leading to biased feature representations. To address these problems, we propose AugGen, a novel framework combining Diversified Attribute Enhancement (DAE) and Cross-Task Feature Distillation (TFD). DAE uses prompt attributes from large language models to enrich the unseen class attributes and combines them with the original attributes through an adaptive feature fusion network to enhance diversity. TFD mitigates catastrophic forgetting by aligning feature spaces across tasks to preserve knowledge. Experimental results across five CGZSL benchmarks demonstrate the effectiveness of the AugGen approach.},
+  archive      = {J_NEUCOM},
+  author       = {Na Han and Honglin Chen and Bingzhi Chen and Lei Zhang and Yue Huang and Qintao Luo and Xiaozhao Fang},
+  doi          = {10.1016/j.neucom.2025.132187},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132187},
+  shortjournal = {Neurocomputing},
+  title        = {AugGen: A generative framework for continual generalized zero-shot learning},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Inverse++: Vision-centric 3D semantic occupancy prediction assisted with 3D object detection. <em>NEUCOM</em>, <em>666</em>, 132162. (<a href='https://doi.org/10.1016/j.neucom.2025.132162'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D semantic occupancy prediction aims to forecast detailed geometric and semantic information of the surrounding environment for autonomous vehicles (AVs) using onboard surround-view cameras. Existing methods primarily focus on intricate inner structure module designs to improve model performance, such as efficient feature sampling and aggregation processes or intermediate feature representation formats. In this paper, we explore multitask learning by introducing an additional 3D supervision signal through the incorporation of an additional 3D object detection auxiliary branch. This extra 3D supervision signal enhances the model’s overall performance by strengthening the capability of the intermediate features to capture small dynamic objects in the scene. These small dynamic objects often include vulnerable road users, i.e., bicycles, motorcycles, and pedestrians, whose detection is crucial for ensuring driving safety in autonomous vehicles. Extensive experiments conducted on the nuScenes dataset, including challenging rainy and night scenarios, show that our approach delivers state-of-the-art results, achieving an IoU score of 31.73 % and an mIoU score of 20.91 % and excels at detecting vulnerable road users (VRU). The code will be available at: https://github.com/DanielMing123/Inverse++},
+  archive      = {J_NEUCOM},
+  author       = {Zhenxing Ming and Julie Stephany Berrio-Perez and Mao Shan and Stewart Worrall},
+  doi          = {10.1016/j.neucom.2025.132162},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132162},
+  shortjournal = {Neurocomputing},
+  title        = {Inverse++: Vision-centric 3D semantic occupancy prediction assisted with 3D object detection},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A comprehensive review of traffic prediction: From traditional machine learning to AutoML. <em>NEUCOM</em>, <em>666</em>, 132148. (<a href='https://doi.org/10.1016/j.neucom.2025.132148'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the rapidly urbanizing world, efficient traffic prediction is essential for reducing congestion, optimizing travel times, and enhancing road safety. Traditional machine learning (ML) models have long been used for traffic forecasting but often struggle with unstructured data and capturing the complex temporal and spatio-temporal relationships inherent in traffic networks. Deep learning (DL) models, by contrast, can effectively handle large datasets and learn complex patterns, yet they still demand substantial human expertise for architecture design, hyperparameter tuning, and dataset-specific adaptation. This paper presents a comprehensive review of the evolution of traffic prediction models, highlighting the limitations of ML and DL approaches and introducing Automated Machine Learning (AutoML) as a promising solution. We discuss how AutoML can automate key stages of the ML pipeline—including data preprocessing, feature engineering, model learning, and model updating—reducing the need for human expertise, improving generalizability, and enabling model adaptation across datasets. While some studies have integrated AutoML components into traffic prediction tasks, a fully automated, end-to-end pipeline remains an open research challenge. This review identifies current gaps, explores AutoML’s potential to address these challenges, and outlines future directions for advancing traffic prediction through AutoML.},
+  archive      = {J_NEUCOM},
+  author       = {Mahshid Khatiriolyaee and Li Yang and Richard W. Pazzi},
+  doi          = {10.1016/j.neucom.2025.132148},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132148},
+  shortjournal = {Neurocomputing},
+  title        = {A comprehensive review of traffic prediction: From traditional machine learning to AutoML},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Dual perspectives with consistency training on predicting drug–drug interactions. <em>NEUCOM</em>, <em>666</em>, 132146. (<a href='https://doi.org/10.1016/j.neucom.2025.132146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting drug–drug interactions (DDIs) is essential for pharmaceutical research, aiding in the prevention of adverse effects from drug combinations. Our study introduces a novel Dual Perspectives with Consistency Training (DP-CT) method that harnesses both graph structures and SMILES sequences for deep learning-based DDI prediction. Unlike previous methods that focus on a single representation, our DP-CT approach leverages the strengths of both, enhancing predictive accuracy. We employ a Transformer for SMILES encoding and a graph neural network for graph representation, integrating them with point-wise and pair-wise consistency regularizations to ensure alignment and robustness of the encoded drug features. Our method has been tested on the DrugBank and TWOSIDES datasets, demonstrating significant improvements in accuracy, particularly in inductive settings, where we observed an approximate 8-point increase over existing methods.},
+  archive      = {J_NEUCOM},
+  author       = {Xiechao Guo and Dandan Song},
+  doi          = {10.1016/j.neucom.2025.132146},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132146},
+  shortjournal = {Neurocomputing},
+  title        = {Dual perspectives with consistency training on predicting drug–drug interactions},
+  volume       = {666},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Recent advances in knapsack problem: A comprehensive review of models, algorithms, and applications. <em>NEUCOM</em>, <em>666</em>, 132135. (<a href='https://doi.org/10.1016/j.neucom.2025.132135'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The reason why the knapsack problems continue to attract the attention of researchers is due to its strong theoretical challenge and extensive practical application prospects. With the increasing complexity and diversity of real-world problems, more and more knapsack variants are constantly being proposed. In this paper, we attempt to discuss various representative knapsack problem models, including (1) Simple single-objective knapsack problems. (2) Multiple, multidimensional, and quadratic knapsack problem. (3) Bi-objective, multi-objective and many-objective knapsack problems. The study mainly focuses on three aspects for the topic: optimization algorithms, mathematical models, and practical application fields. We have conducted in-depth discussions on optimization algorithms for solving various types of KP problems, including exact algorithms, approximation algorithms, evolutionary algorithms, and hybrid algorithms, etc. An in-depth discussion has been conducted on the prospects and challenges on the knapsack problem. This review aims to provide reference and inspiration for researchers in the field of knapsack problems and related combinatorial optimization problems.},
+  archive      = {J_NEUCOM},
+  author       = {Yanhong Feng and Tianyu Hu and Xin-Ao Chen and Gai-Ge Wang},
+  doi          = {10.1016/j.neucom.2025.132135},
+  journal      = {Neurocomputing},
+  month        = {2},
+  pages        = {132135},
+  shortjournal = {Neurocomputing},
+  title        = {Recent advances in knapsack problem: A comprehensive review of models, algorithms, and applications},
+  volume       = {666},
   year         = {2026},
 }
 </textarea>
