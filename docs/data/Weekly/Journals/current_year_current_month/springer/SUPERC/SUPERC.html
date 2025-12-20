@@ -25,466 +25,130 @@
 </head>
 <body>
 
-<h2 id="superc">SUPERC - 22</h2>
+<h2 id="superc">SUPERC - 6</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Accelerating GridSearchCV hyperparameter tuning method using an FPGA-based hardware accelerator. <em>SUPERC</em>, <em>81</em>(18), 1632--27. (<a href='https://doi.org/10.1007/s11227-025-08124-7'>www</a>)
+(2026). Automatic annotation for accurate text-to-SPARQL translation using hybrid encoder–decoder models. <em>SUPERC</em>, <em>82</em>(1), 6--41. (<a href='https://doi.org/10.1007/s11227-025-08127-4'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Machine learning models underpin critical applications, and their performance hinges on effective hyperparameter tuning, yet exhaustive methods like GridSearchCV are computationally intensive on general-purpose systems. This paper presents a custom FPGA accelerator for the GridSearchCV–KNN pipeline, simulated on an Intel Cyclone V platform. The six-module RTL design features an on-chip unique memory unit, a pipelined Manhattan distance subtractor, and a parallel sorting Distance Memory that tracks nearest neighbors without explicit sorting. A dedicated hardware controller manages hyperparameter grid enumeration and K-fold evaluation entirely in hardware. We introduce ’CV-full’ (Leave-One-Out Cross-Validation) to test our system under the most intensive circumstances. Post-synthesis simulations show average speedups of 1.8 $$\times$$ , 2 $$\times$$ , and about 10 $$\times$$ under 5-fold, 10-fold, and CV-full settings, respectively, with a peak of 27.7 $$\times$$ over a Google Colab server. By minimizing off-chip memory access and explicit sorting stages, our FPGA design offers a special-purpose hardware solution for accelerating GridSearchCV–KNN hyperparameter tuning.},
+  abstract     = {Knowledge graph question answering (KGQA) systems translate natural language questions into structured query languages (e.g., SQL/SPARQL). With advances in sequence-to-sequence models and large pre-trained language models (LPLMs), neural machine translation (NMT) has become a prevailing approach for Text-to-SPARQL. This study leverages the large-scale pre-trained language model T5 to obtain rich, transferable representations for SPARQL query generation and addresses translation errors that T5 may produce during decoding. Through an ablation study, we show that manually provided annotations (e.g., partial answers or gold entities) can effectively mitigate such errors; however, they require technical expertise and are therefore impractical for real-world deployment. To overcome this limitation, we propose a T5-based framework that integrates an MHC-LSTM architecture with an automatic annotation and correction mechanism. The automatic annotator, combined with the correction mechanism, yields the best overall results with T5-MHC-LSTM, narrowing the gap to manually annotated performance. Empirically, the proposed method achieves F1-measures of 89.63% and 95.58% on QALD-9 and LC-QuAD 1.0 for text-to-text translation, and 59% and 81% in end-to-end evaluations, respectively—surpassing existing KGQA systems. These findings confirm that combining LPLMs, MHC-LSTM, and automated annotation with correction substantially enhances SPARQL query generation and overall KGQA effectiveness.},
   archive      = {J_SUPERC},
-  author       = {Shahbazian, Arian and Binesh Marvasti, Mohammadreza and Asghari, Seyyed Amir},
-  doi          = {10.1007/s11227-025-08124-7},
+  author       = {Chen, Yi-Hui and Lu, Eric Jui-Lin and Hsu, Cheng-Hsien},
+  doi          = {10.1007/s11227-025-08127-4},
   journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1632--27},
+  month        = {1},
+  number       = {1},
+  pages        = {6--41},
   shortjournal = {J. Supercomput.},
-  title        = {Accelerating GridSearchCV hyperparameter tuning method using an FPGA-based hardware accelerator},
-  volume       = {81},
-  year         = {2025},
+  title        = {Automatic annotation for accurate text-to-SPARQL translation using hybrid encoder–decoder models},
+  volume       = {82},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). An efficient lossy compression framework for density partitioning in AMR applications. <em>SUPERC</em>, <em>81</em>(18), 1631--29. (<a href='https://doi.org/10.1007/s11227-025-08106-9'>www</a>)
+(2026). Cardiovascular disease prediction using machine learning algorithms with bernstein-type kernel functions. <em>SUPERC</em>, <em>82</em>(1), 5--29. (<a href='https://doi.org/10.1007/s11227-025-08128-3'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Adaptive mesh refinement (AMR) has become an indispensable tool in high-performance computing (HPC), enabling exascale simulations by dynamically allocating computational resources and significantly reducing memory footprint. Meanwhile, lossy compression is widely adopted in HPC environments to alleviate critical storage capacity and I/O bottlenecks, provided that reconstruction errors remain within acceptable bounds. However, the hierarchical structure, multi-resolution nature, and inherent spatio-temporal irregularity of AMR data pose unique challenges that render general-purpose compressors inefficient. Despite their respective advantages, existing data compressors still have an insufficient compression ratio and low throughput for data reduction in AMR applications. This paper mainly explores how to improve the performance of state-of-the-art lossy compression algorithms from the perspective of applications. To this end, we propose a density-partitioned AMR data lossy compression framework called AMRDPC, improving AMR applications’ storage efficiency. The main ideas are twofold. First, to address the high computational overhead of using the k-d tree to process medium-density AMR data, we propose a fast k-d tree backfilling density grid (FBKDTree) strategy to improve compression speed. Second, to address the problem of the low compression ratio of high-density AMR data, we propose an efficient loop reversal patching (ELRP) strategy based on the design characteristics of existing prediction-based compressors. It can significantly improve the data compression performance while controlling errors. To verify the effectiveness of AMRDPC, we introduce multiple evaluation metrics for experimental analysis in seven real AMReX application datasets. Compared to state-of-the-art methods, AMRDPC achieves significant performance gains, with up to a 5.73 $$\times $$ higher compression ratio and an 18.83% increase in throughput, providing a powerful data reduction solution for supercomputing environments.},
+  abstract     = {Cardiac disease is still one of the world’s top causes of mortality. After coronavirus disease 2019, for those infected with the coronavirus, the risk of cardiac diseases such as arrhythmias, heart failure and chronic cardiovascular illnesses has increased dramatically. Since, early detection and prevention of the disease depend on precise and effective prediction models. In this field, machine learning (ML) has become a rapidly expanding technique that may be used to find intricate patterns in medical data. This study focuses on heart disease detection using two ML algorithms: support vector machines (SVM) and kernel ridge regression (KR), enhanced through the development of two novel kernel functions obtained from the Bernstein operator and modified Bernstein operator. These kernel functions, constructed to improve the performance of ML algorithms, were integrated into both algorithms to replace traditional kernel functions such as polynomial, linear, sigmoid and radial basis function (RBF). These kernels are extended to multidimensional feature spaces via summation over individual feature-wise Bernstein kernels. The proposed kernels required computationally intensely matrix operations and multifold cross-validation procedures that can best leverage parallel and high-performance computing (HPC) resources for their efficient executions and large-scale deployment. Consequently, using a nested fivefold cross-validation on the Cleveland heart disease dataset, the proposed kernel functions outperformed traditional kernels and some baseline models by achieving the highest mean accuracy of $$0.8551 \pm 0.0330$$ with SVM and $$0.8484 \pm 0.0188$$ with KR. These results demonstrate how custom-designed kernels might increase the accuracy and reliability of models used to predict cardiac disease.},
   archive      = {J_SUPERC},
-  author       = {Li, Yida and Luo, Huizhang and Zhang, Yufeng and Li, Keqin and Li, Kenli},
-  doi          = {10.1007/s11227-025-08106-9},
+  author       = {Tomar, Mahima and Deo, Naokant},
+  doi          = {10.1007/s11227-025-08128-3},
   journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1631--29},
+  month        = {1},
+  number       = {1},
+  pages        = {5--29},
   shortjournal = {J. Supercomput.},
-  title        = {An efficient lossy compression framework for density partitioning in AMR applications},
-  volume       = {81},
-  year         = {2025},
+  title        = {Cardiovascular disease prediction using machine learning algorithms with bernstein-type kernel functions},
+  volume       = {82},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). TF-UNet: A time–frequency feature network for seismic noise attenuation using hybrid synthetic–field data. <em>SUPERC</em>, <em>81</em>(18), 1630--26. (<a href='https://doi.org/10.1007/s11227-025-08113-w'>www</a>)
+(2026). Distributed reinforcement learning for heterogeneous blockchain networks: A customized multi-agent architecture for cross-chain optimization. <em>SUPERC</em>, <em>82</em>(1), 4--30. (<a href='https://doi.org/10.1007/s11227-025-08060-6'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Seismic data denoising has become a major challenge in seismic exploration, particularly under poor signal-to-noise ratio (SNR) conditions. Therefore, achieving effective separation of signal and noise, especially when weak signals are buried in strong noise, is of critical importance. Traditional denoising methods often fail to simultaneously focus on time–frequency-domain features, limiting their denoising effectiveness. In the TF-UNet architecture, the real and imaginary components of the seismic noise frequency domain are obtained through the fast Fourier transform (FFT) and combined with the noise-free time domain to form a three-channel input for the U-Net. This design enables the model to effectively learn the joint time–frequency representations of seismic data. Furthermore, the TF-UNet is trained using hybrid datasets that integrate field and synthetic seismic data, allowing the network to learn field noise characteristics. Experimental results demonstrate that, compared with the methods discussed in this study, the proposed TF-UNet achieves superior denoising performance on both field and synthetic seismic datasets, effectively suppressing noise and preserving signal fidelity. Although supervised training requires labeled data, the TF-UNet can be effectively applied in geophysical exploration given high-quality annotations. Once trained, the model can process seismic data in real time on systems equipped with parallel computing and time processing capabilities, thereby enhancing the efficiency of seismic data analysis in exploration applications.},
+  abstract     = {The rapid evolution of blockchain ecosystems has highlighted the necessity for efficient interoperability across heterogeneous blockchain networks. However, the dynamic and decentralized nature of multi-chain systems introduces substantial challenges in optimizing cross-chain communication, transaction routing, and resource coordination. Conventional reinforcement learning (RL) algorithms often face scalability bottlenecks due to Q-value divergence and the exponential growth of state-action spaces. To address these limitations, this paper proposes a hierarchical distributed reinforcement learning (HDRL) framework that integrates hierarchical decision-making, distributed optimization, and graph neural networks (GNNs) for adaptive cross-chain coordination. In the proposed architecture, blockchain nodes act as autonomous agents performing local optimizations while collectively pursuing a global objective through a communication-efficient collaboration protocol. The framework formalizes cross-chain interactions as a set of Markov decision processes (MDPs), enabling decentralized policy learning under resource and latency constraints. Experimental results demonstrate that the HDRL approach achieves up to 750 transactions per second (TPS), reduces average latency to approximately 120 ms, and maintains resource utilization above 85%. Furthermore, HDRL exhibits accelerated convergence within 120 training epochs, surpassing federated and transfer learning baselines in both stability and efficiency. These results confirm the potential of hierarchical distributed learning to enhance interoperability and performance in large-scale heterogeneous blockchain environments.},
   archive      = {J_SUPERC},
-  author       = {Zhang, Shengrong and Wang, Gaocai and Lu, Liuye and Wei, Manyi and Qin, Xuesha and Zhang, Liang},
-  doi          = {10.1007/s11227-025-08113-w},
+  author       = {Daliri, Sajjad and Jassbi, Somayyeh Jafarali},
+  doi          = {10.1007/s11227-025-08060-6},
   journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1630--26},
+  month        = {1},
+  number       = {1},
+  pages        = {4--30},
   shortjournal = {J. Supercomput.},
-  title        = {TF-UNet: A time–frequency feature network for seismic noise attenuation using hybrid synthetic–field data},
-  volume       = {81},
-  year         = {2025},
+  title        = {Distributed reinforcement learning for heterogeneous blockchain networks: A customized multi-agent architecture for cross-chain optimization},
+  volume       = {82},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Hybrid quantum inception-inspired convolutional neural network for image classification. <em>SUPERC</em>, <em>81</em>(18), 1629--24. (<a href='https://doi.org/10.1007/s11227-025-08119-4'>www</a>)
+(2026). Frequency domain discrimination and double loss function optimization of image generation for GANs. <em>SUPERC</em>, <em>82</em>(1), 3--32. (<a href='https://doi.org/10.1007/s11227-025-08105-w'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Quantum Neural Networks (QNNs) present a promising research direction in image recognition. However, models that rely on a single circuit topology frequently exhibit limited expressive capacity, thereby constraining scalability and recognition accuracy. To address these limitations, we propose a Hybrid Quantum–Classical Inception-Inspired Convolutional Neural Networks (HQICNN). The specific descriptions are as follows. First, in the encoding layer, amplitude encoding layer is adopted to map complete multi-channel images data into quantum states. Second, in the convolutional layer, this architecture utilizes quantum convolutional kernels with heterogeneous circuit topologies for feature extraction. A Hadamard integration method is proposed to aggregate multi-channel feature information. Then, in the pooling layer, quantum pooling using RY gates is employed to reduce feature dimensionality. Finally, in the prediction layer, a fully connected layer is applied to map the quantum-enhancing features into class labels for classification tasks. The quantum resource analysis indicates that for the MNIST-4 classification task, the quantum circuit depth of the proposed HQICNN is approximately O(n), which is lower to the existing HQCNN model( $$O(n^2)$$ ). Experimental results demonstrate that HQICNN achieves 98.3% accuracy on the MNIST-4 classification task, outperforming existing HQCNN models (90.0%). Furthermore, the HQICNN model utilizes only 11% of the parameters of a CNN while achieving comparable classification performance. The proposed design enhances image classification accuracy within a quantum circuit architecture while reducing the number of parameters, performing better than HQCNN models.},
+  abstract     = {In recent years, generative adversarial networks (GANs) have demonstrated enormous promise in areas connected to image generation. As the model generation performance continues to improve and the generated images become more realistic, it is difficult to effectively distinguish between the real image and the generated image. Therefore, the problem of discriminating and optimizing the generated images (adversarial discrimination) has become necessary, and subsequent optimization plans are proposed based on the discrimination strategy. However, due to the nature of convolution, the two-dimensional power spectrum curve of the generated image is low overall; that is, compared with the real image, there is energy loss at each frequency (without other processing), and the curve drops rapidly and approaches zero, which is obviously different from the real image. In particular, the curve of the image generated by transposed convolution has a clear upward trend at the very high-frequency part, which is contrary to the characteristic of the real image, which is that the energy decreases with increasing frequency. By analyzing the characteristics and causes of the two-dimensional power spectrum curve of generated images, we propose a discrimination approach that leverages high-frequency curve warping and energy loss. This approach enhances the ability to discriminate generated images and enables effective distinction between real and generated images. Based on this, we present the power spectrum loss function to improve the upward warping characteristics of the very high-frequency part of the two-dimensional power spectrum curve without degrading the quality of the generated image and the high-frequency feature loss function to improve the quality of the generated image. The value and efficiency of the proposed discrimination approach in this study are demonstrated on multiple GANs models, including WGAN, WGAN-GP, and SAGAN, with the dataset CelebA, and the GANs model with encoder-decoder as the generator with the dataset CelebA-HQ. The two loss functions proposed are also demonstrated on multiple GANs models, including WGAN, WGAN-GP, and SAGAN with the dataset FFHQ. After adding the high-frequency feature loss, the Fréchet inception distance (FID) decreases by 6.97, 6.15, and 5.56, respectively. After adding the power spectrum loss, the above models can improve the upward warping characteristics of the two-dimensional power spectrum curve in the very high-frequency part of the generated image to a certain extent. The FID decreases by 17.4, 11.55, and 12.27 when the weight is fixed, and 12.66, 8.15, and 4.46 when the weight is variable, respectively.},
   archive      = {J_SUPERC},
-  author       = {Wu, Wanqing and Zhang, Yuxiang},
-  doi          = {10.1007/s11227-025-08119-4},
+  author       = {Ye, Xueyi and Sui, Mingcong and Zeng, Maosheng and Han, Zhuo and Wang, Hao},
+  doi          = {10.1007/s11227-025-08105-w},
   journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1629--24},
+  month        = {1},
+  number       = {1},
+  pages        = {3--32},
   shortjournal = {J. Supercomput.},
-  title        = {Hybrid quantum inception-inspired convolutional neural network for image classification},
-  volume       = {81},
-  year         = {2025},
+  title        = {Frequency domain discrimination and double loss function optimization of image generation for GANs},
+  volume       = {82},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). BiSTAG-TS: A dual-stream generative framework for symbolic–numerical time series forecasting via large language models. <em>SUPERC</em>, <em>81</em>(18), 1628--35. (<a href='https://doi.org/10.1007/s11227-025-08115-8'>www</a>)
+(2026). Maturity estimation of mini tomatoes with color analysis and cumulative temperature. <em>SUPERC</em>, <em>82</em>(1), 2--21. (<a href='https://doi.org/10.1007/s11227-025-08134-5'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Combining numerical patterns with symbolic representations enables time series forecasting models to more effectively capture multi-scale dynamics, underlying structural trends, and domain-specific interpretability—factors often overlooked by purely numerical approaches. However, existing forecasting tools are generally constrained by fixed-length sliding windows, lack scalability for large-scale temporal data, and often underperform in real-time or zero-sample forecasting tasks. To address these challenges, we introduce BiSTAG-TS, a high-performance dual-stream generative framework designed for symbolic–numerical time series forecasting. The framework first converts continuous time series into LLM-compatible discrete labeled sequences via dynamic discretization, leveraging the sequence modeling and generation capabilities of large pre-trained language models. Simultaneously, it extracts a symbolic event stream representing semantic temporal transitions to enhance interpretability and causal inference. By exploiting parallel autoregressive generation and adaptive fusion between the numerical and symbolic streams, BiSTAG-TS supports highly parallelizable computation suitable for HPC infrastructures, enabling efficient processing of multi-dimensional, high-frequency time series in real-time environments. Moreover, the unified symbolic–numerical representation facilitates large-scale temporal reasoning and multi-domain question answering within a single LLM-based architecture. Extensive experiments on diverse real-world datasets demonstrate that BiSTAG-TS achieves state-of-the-art forecasting accuracy, provides interpretable symbolic insights, and exhibits strong scalability and generalization capabilities under both zero- and few-shot conditions—highlighting its potential for deployment in large-scale, high-performance, and real-time forecasting scenarios.},
+  abstract     = {Manual maturity assessment in greenhouses is labor-intensive and increasingly constrained by labor shortages, limiting timely harvest and quality control. To address this challenge, this study proposes an original approach for real-time monitoring the growth and maturity degree of mini tomatoes in complex greenhouse environments. The proposed framework combines visual features by YOLOv8-based segmentation and skeleton and environmental features for maturity estimation. This approach also employs CIELAB color space and HUE angle with an $$L*$$ threshold filter against the variable lightness situation and occlusion in the greenhouse. The segmentation and skeleton models achieved reliable performance of mask mAP of 80.3% and skeleton precision of 97%. This enables the accurate mini tomato fruit detection and cluster structure analysis. The employed $$L*$$ filter improved color level estimation accuracy from 83 to 95%. Especially, the harvest-ready stage increases from 64 to 94%. Additionally, a linear regression model confirmed the relationship between HUE angle and cumulative temperature. These results show that the proposed system can support efficient, data-driven monitoring of mini tomato growth stages.},
   archive      = {J_SUPERC},
-  author       = {Yang, Ruidi and Mao, Yuxing and Yan, Hengyu and Wei, Zijie and Li, Jian and Pan, Jianyu},
-  doi          = {10.1007/s11227-025-08115-8},
+  author       = {Lyu, Yan and Shibuya, Kyuki and Gama, Yoshiki and Hatanaka, Yoshiki and Timprae, Warut and Rumahorbo, Poltak Sandro and Yamanaka, Shinya and Watanabe, Shinya},
+  doi          = {10.1007/s11227-025-08134-5},
   journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1628--35},
+  month        = {1},
+  number       = {1},
+  pages        = {2--21},
   shortjournal = {J. Supercomput.},
-  title        = {BiSTAG-TS: A dual-stream generative framework for symbolic–numerical time series forecasting via large language models},
-  volume       = {81},
-  year         = {2025},
+  title        = {Maturity estimation of mini tomatoes with color analysis and cumulative temperature},
+  volume       = {82},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). MGFN-WR: Multi-modal knowledge graph completion with multi-layer graph fusion network based on weight regulation. <em>SUPERC</em>, <em>81</em>(18), 1627--20. (<a href='https://doi.org/10.1007/s11227-025-08110-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multi-modal knowledge graph completion and fusion aims to enrich relational information, address missing data and uni-modal limitations in traditional graphs, and provide high-quality graphs for downstream tasks. However, existing models often treat all entities equally, ignoring semantic distances between entities. Besides, they often encode triples using transformers alone, overlooking the original graph topology, which weakens structural dependency modeling and relational reasoning. To bridge this gap, we propose a novel model incorporating an entity weight regulation (WR) module and a multi-layer graph fusion network (MGFN). The WR module assigns weights to entity vectors based on semantic distance, reducing the noise from weakly related entities. To effectively model structural patterns, features are processed through a multi-layer convolutional attention network before entity content encoding. Extensive experiments on public datasets demonstrate the effectiveness of our model and show notable gains over baselines, especially in mean reciprocal rank (MRR) and Hit@1.},
-  archive      = {J_SUPERC},
-  author       = {Zhong, Min and Fu, Ziyang and Liang, Hong and Zhu, Xiaofeng and Le, Siting},
-  doi          = {10.1007/s11227-025-08110-z},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1627--20},
-  shortjournal = {J. Supercomput.},
-  title        = {MGFN-WR: Multi-modal knowledge graph completion with multi-layer graph fusion network based on weight regulation},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Image registration of pointer gauges based on improved reliable and repeatable detector and descriptor algorithm. <em>SUPERC</em>, <em>81</em>(18), 1626--17. (<a href='https://doi.org/10.1007/s11227-025-08117-6'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Aiming at the problem that the images acquired by industrial meters in complex environments have an angular skew and large errors in the reading results, an improved Reliable and Repeatable Detector and Descriptor (R2D2) image auto-correction method with two-channel soft thresholding is proposed by introducing a soft threshold function in the Convolutional Block Attention Module (CBAM) residual neural network and replacing the original backbone network of the R2D2 model with the improved network. Additionally, pointer-type instrument images cover multiple instrument types and require data collection under complex operating conditions. Model training and real-time registration necessitate processing large volumes of noisy instrument feature data. This demands leveraging the parallel processing capabilities of high-performance computing (HPC) to ensure efficiency, thereby preventing excessive computational time per device from impacting industrial applications. The experimental results show that the improved model can increase the number of feature points and the matching accuracy of image alignment, thus improving the accuracy and robustness of image alignment. The improved algorithm has good image alignment performance compared with the traditional R2D2 algorithm, especially in illuminated scenes.},
-  archive      = {J_SUPERC},
-  author       = {Liu, Hongli and Qu, Jingyi and Li, Ji and Li, Chao and Sun, Wentao and Zhang, Tiancheng},
-  doi          = {10.1007/s11227-025-08117-6},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1626--17},
-  shortjournal = {J. Supercomput.},
-  title        = {Image registration of pointer gauges based on improved reliable and repeatable detector and descriptor algorithm},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). CKD-pFL: Clustering-enhanced bidirectional distillation for heterogeneous personalized federated learning. <em>SUPERC</em>, <em>81</em>(18), 1625--21. (<a href='https://doi.org/10.1007/s11227-025-08102-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Federated learning preserves data privacy by sharing model parameters instead of raw data. However, a single global model often struggles to accommodate the diversity of client-side data, particularly in large-scale, high-performance computing, and real-time scenarios. This paper proposes a personalized federated learning framework that integrates clustering and knowledge distillation to enable heterogeneous model optimization. Specifically, the framework supports architecturally distinct models on the server and client sides. The server initializes a global model and distributes it to clients for local training. Based on gradient similarity, the trained client models are clustered and aggregated into multiple cluster-specific models, which are further fused to construct an adaptive global model. To enhance both global generalization performance and local personalization capability, bidirectional knowledge distillation is performed between the global and client models. Extensive experimental results demonstrate that the proposed framework significantly improves the overall performance of federated learning systems while maintaining personalization, thus providing an effective solution for heterogeneous model scenarios.},
-  archive      = {J_SUPERC},
-  author       = {Zhang, Mingxing and Guo, Ping and Bai, Cheng},
-  doi          = {10.1007/s11227-025-08102-z},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1625--21},
-  shortjournal = {J. Supercomput.},
-  title        = {CKD-pFL: Clustering-enhanced bidirectional distillation for heterogeneous personalized federated learning},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Forecasting container throughput in northwest europe inland waterways: A data-driven approach. <em>SUPERC</em>, <em>81</em>(18), 1624--42. (<a href='https://doi.org/10.1007/s11227-025-08114-9'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Accurate forecasting of container throughput volume (CTV) is essential for inland waterway transportation (IWT), especially for container-on-barge (IWT) operations that reduce congestion and improve freight sustainability. The Rhine River serves as a major IWT corridor in Northwest Europe, connecting inland ports in Belgium, Germany, the Netherlands, and France. This study develops a hybrid model to forecast quarterly CTV across the four Rhine-connected European Union (IWT) countries supporting IWT planning and operations. Quarterly CTV data in Twenty-foot Equivalent Units were collected from Eurostat, covering both Rhine and non-Rhine inland port networks. A hybrid ensemble forecasting model was constructed by integrating Extreme Gradient Boosting (XGBoost), Gated Recurrent Unit, and Long Short-Term Memory models with a Support Vector Regression meta-learner. Random forest was used for feature selection, and Optuna was applied for hyperparameter tuning. The models were trained on historical data and generated forecasts from the third quarter of 2021 through early 2024, followed by an extended evaluation covering mid-2024 to early 2025. Computations were executed using tensor processing unit-enabled high-performance computing resources to handle training complexity. The hybrid model outperformed all individual learners, achieving mean absolute percentage error values of 2.41%, 1.60%, 2.02%, and 2.36% for Belgium, Germany, the Netherlands, and France, respectively. These results show the model’s ability to learn nonlinear patterns that traditional statistical approaches, including autoregressive integrated moving average and exponential smoothing, often fail to capture. The proposed approach remains dependent on historical CTV data and selected external features, which may affect its robustness under changing economic or operational conditions. This study proposes a hybrid ensemble method that improves multi-country CTV forecasting accuracy, strengthening planning and operational decision-making in the Rhine-connected IWT network.},
-  archive      = {J_SUPERC},
-  author       = {Hasan, Md Mehedi and Rahman, Senjuti and Bu, Fan},
-  doi          = {10.1007/s11227-025-08114-9},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1624--42},
-  shortjournal = {J. Supercomput.},
-  title        = {Forecasting container throughput in northwest europe inland waterways: A data-driven approach},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). A scalable local-search approximation for diversity-aware querying in large graphs. <em>SUPERC</em>, <em>81</em>(18), 1623--58. (<a href='https://doi.org/10.1007/s11227-025-08063-3'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Graph Pattern Matching (GPM) aims to discover matches in a graph G that satisfy a query pattern C. It is increasingly used in various real-world applications such as social network analysis and cyberattack detection. However, since GPM relies on subgraph isomorphism, its computation becomes intractable for large graphs. Moreover, the potentially exponential number of matches makes exhaustive inspection infeasible. To address this, the diversified top-k GPM (dtkGPM) problem seeks to retrieve only the top-k most diversified matches for C in G. Existing solutions remain limited in terms of approximation guarantees, relevance expressiveness, and integration within commercial graph systems. This article investigates the dtkGPM problem in the context of a practical query language (Cypher) and a real graph system (Neo4j). We formalize the problem using an expressive range of relevance criteria and prove its NP-hardness. We then present three baseline algorithms: a fast heuristic with early termination, and two greedy-search methods offering a $$\frac{1}{2}$$ -approximation ratio. While the heuristic is highly efficient, its quality can be suboptimal; conversely, the greedy approaches require computing all matches of C in G, which may be impractical. To overcome this limitation, we propose a local-search algorithm that preserves a $$(1 - \frac{2}{k})$$ approximation ratio. The key innovation lies in a query rewriting principle that avoids exhaustive match enumeration. Experimental results demonstrate that our local-search algorithm significantly outperforms existing approximations in both efficiency and scalability, while maintaining high solution quality. To our knowledge, this is the first approach to the dtkGPM problem that achieves a balanced trade-off between efficiency and approximation guarantee, with seamless integration into real-world graph applications.},
-  archive      = {J_SUPERC},
-  author       = {Mahfoud, Houari},
-  doi          = {10.1007/s11227-025-08063-3},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1623--58},
-  shortjournal = {J. Supercomput.},
-  title        = {A scalable local-search approximation for diversity-aware querying in large graphs},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Hierarchical heuristic scheduling for real-time distributed workflows in heterogeneous embedded systems. <em>SUPERC</em>, <em>81</em>(18), 1622--25. (<a href='https://doi.org/10.1007/s11227-025-08092-y'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In this paper, we address the problem of dynamic scheduling for distributed computing tasks on complex heterogeneous embedded information processing systems with stringent real-time constraints. The heterogeneity of hardware resources and the complexity of task workflows lead to a vast scheduling solution space, posing significant challenges for achieving efficient and timely task deployment. We propose a hierarchical and segmented heuristic scheduling (HSHS) method, which substantially reduces the solution space by first layering and segmenting both computational tasks and hardware clusters and then employing a greedy heuristic to dynamically optimize task allocation. Experimental evaluation, based on a prototype system comprising 139 computing tasks distributed across 4 heterogeneous chassis clusters, demonstrates that our algorithm achieves superior real-time performance with a deployment time of 61.95 ms–significantly faster than baselines such as HEFT-based schedulers–while attaining higher resource utilization (91.50%). Furthermore, scalability tests show that HSHS maintains efficient scheduling performance as the number of tasks increases, and optimality gap analysis confirms that it produces near-optimal solutions with greatly reduced computational overhead. The method also exhibits effective fault tolerance, enabling rapid task remapping in response to runtime node failures.},
-  archive      = {J_SUPERC},
-  author       = {Li, He and Li, Xiaofeng and Chen, Long and Li, Xiaoping},
-  doi          = {10.1007/s11227-025-08092-y},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1622--25},
-  shortjournal = {J. Supercomput.},
-  title        = {Hierarchical heuristic scheduling for real-time distributed workflows in heterogeneous embedded systems},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Path congestion detection and disjoint path for improving communication efficiency in dragonfly interconnection networks. <em>SUPERC</em>, <em>81</em>(18), 1621--31. (<a href='https://doi.org/10.1007/s11227-025-08083-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {High-Performance Computing (HPC) systems rely on efficient interconnection networks to provide fast and reliable communication between processing elements. The dragonfly network topology is a prominent solution for such environments due to its scalability and high performance. Path congestion in dragonfly networks degrades communication efficiency by intensifying buffer contention and routing conflicts among packets. In this paper, we address the critical issue of path congestion in dragonfly networks. We introduce and evaluate multiple algorithms designed to detect and mitigate path congestion, including Path Congestion Detection and Path Congestion Detection with Disjoint Paths. These algorithms are specifically designed for the extreme concurrency, high-radix routers, and low latencies of current and emerging supercomputers. We exploit precomputed disjoint paths and real-time congestion monitoring to reduce packet stalls under global synchronization and bursty traffic patterns in HPC workloads. Our simulations demonstrate that the proposed methods significantly outperform existing solutions in terms of latency, throughput, and packet delivery reliability.},
-  archive      = {J_SUPERC},
-  author       = {Wang, Yaodong and Li, Yamin},
-  doi          = {10.1007/s11227-025-08083-z},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1621--31},
-  shortjournal = {J. Supercomput.},
-  title        = {Path congestion detection and disjoint path for improving communication efficiency in dragonfly interconnection networks},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Correction: Relational message passing with mutual information maximization for inductive link prediction. <em>SUPERC</em>, <em>81</em>(18), 1620--1. (<a href='https://doi.org/10.1007/s11227-025-08067-z'>www</a>)
+(2026). Correction: Independent vector analysis based on binary grey wolf feature selection and extreme learning machine for bearing fault diagnosis. <em>SUPERC</em>, <em>82</em>(1), 1. (<a href='https://doi.org/10.1007/s11227-025-08122-9'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
   archive      = {J_SUPERC},
-  author       = {Liang, Xinyu and Si, Guannan and Li, Jianxin and Tian, Pengxin and An, Zhaoliang and Zhou, Fengyu},
-  doi          = {10.1007/s11227-025-08067-z},
+  author       = {Souaidia, Chouaib and Thelaidjia, Tawfik and Chenikher, Salah},
+  doi          = {10.1007/s11227-025-08122-9},
   journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1620--1},
+  month        = {1},
+  number       = {1},
+  pages        = {1},
   shortjournal = {J. Supercomput.},
-  title        = {Correction: Relational message passing with mutual information maximization for inductive link prediction},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). CORF: A cuckoo optimized replication framework for data placement in grid computing. <em>SUPERC</em>, <em>81</em>(18), 1619--49. (<a href='https://doi.org/10.1007/s11227-025-08008-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {As the volume of data continues to grow and becomes increasingly distributed across geographically dispersed regions, ensuring timely access and managing these massive datasets presents significant challenges. Data replication has emerged as a key solution, enhancing data availability and reducing access latency by storing multiple copies of data across different sites, enabling users to retrieve the nearest replica efficiently. Among existing approaches, the Dynamic Hierarchical Replication (DHR) algorithm adopts a hierarchical strategy, but its reliance on a single parameter (access frequency) and its sequential search logic often lead to suboptimal placements and additional processing overhead. To overcome these limitations, we propose CORF (Cuckoo-based Optimized Replication Framework), which integrates DHR with the Cuckoo Optimization Algorithm (COA) to achieve multi-criteria, profit-driven replica placement. CORF evaluates candidate sites in parallel using parameters such as access frequency, memory availability, access cost, and locality, thereby avoiding sequential bottlenecks and enabling scalability for large-scale, HPC-class grid environments. By embedding COA’s evolutionary search logic, CORF adaptively balances exploration and exploitation, reinforcing high-performing sites while penalizing suboptimal ones, which improves both efficiency and resilience. The framework is implemented and tested in the OptorSim simulation environment and benchmarked against baseline algorithms (DHR, DHRT, and RDT). Experimental results demonstrate that CORF achieves a 16–18% reduction in job execution time and a 17–19% improvement in effective network utilization compared to baselines. These consistent gains underscore CORF’s suitability for real-time, data-intensive supercomputing workloads, where parallelism, scalability, and adaptive optimization are essential for managing massive distributed datasets.},
-  archive      = {J_SUPERC},
-  author       = {Safi-Esfahani, Faramarz and Larian, Habib and Majidi, Roza and Beydoun, Ghassan},
-  doi          = {10.1007/s11227-025-08008-w},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1619--49},
-  shortjournal = {J. Supercomput.},
-  title        = {CORF: A cuckoo optimized replication framework for data placement in grid computing},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). SELF: A multi-task learning framework for robust person-centric relation extraction. <em>SUPERC</em>, <em>81</em>(18), 1618--34. (<a href='https://doi.org/10.1007/s11227-025-08112-x'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Relation extraction (RE) plays a vital role in transforming unstructured text into structured knowledge. Person-centric relations are prevalent in large-scale user-generated content and real-world applications. Extracting such relations requires fine-grained semantic modeling and high computational efficiency. Despite their importance, person-centric relations remain underexplored in current RE research. Existing models often miss implicit semantic cues linked to person entities, leading to poor performance. To address this, we propose SELF, a multi-task learning framework, which enhances extraction performance for person-centric relationships. SELF introduces a simple, parameter-free auxiliary task that models the semantic space of person-related entities. This enables effective capture of sparse, crucial semantic information in person-centric contexts. Additionally, SELF incorporates a parallel hierarchical feature retainer module. This module adaptively maintains shallow and deep semantic representations from the auxiliary task, enriching the understanding of person-centric relationships. Extensive experiments on TACRED, Re-TACRED, and SemEval-2010 Task-8 show that SELF outperforms existing models in classifying person-centric relations and maintains computational efficiency in multi-task settings.},
-  archive      = {J_SUPERC},
-  author       = {Wang, Hailin and Niu, Wentong and Ren, Hangyi and Li, Jiahao and Tian, Jingxuan and Zhang, Dan},
-  doi          = {10.1007/s11227-025-08112-x},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1618--34},
-  shortjournal = {J. Supercomput.},
-  title        = {SELF: A multi-task learning framework for robust person-centric relation extraction},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An extended prioritized average operator and SWARA-CoCoSo decision-making integrated technique within the complex fuzzy Z-number framework. <em>SUPERC</em>, <em>81</em>(18), 1617--56. (<a href='https://doi.org/10.1007/s11227-025-08116-7'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Contemporary urban development is a multifaceted system that includes economic, social, and environmental factors. A reasonable assessment approach is essential to accurately represent the present condition of urban development and to inform future growth trajectories. Multi-criteria group decision-making (MCGDM) integrates evaluative information from numerous experts across diverse criteria to provide rational solutions, making it common in practical decision-making and assessment contexts. This study initially presents a flexible extended prioritized average (EPA) operator in a multi-parameter format to address the restrictions inherent in the form-conservative character of the prioritized average (PA) operator. Besides, the complex fuzzy Z-number (CFZN) can delineate the reliability and periodicity of the evaluated object. Thus, within the CFZN framework, this paper develops four aggregation operators (AOs) for information fusion based on Frank T-norms and T-conorms and verifies their fundamental properties: idempotence, monotonicity, and boundedness. To ascertain the objective weights of experts and criteria, a divergence measure is developed to quantify discrepancies between CFZNs. Moreover, this study makes use of the stepwise weight assessment ratio analysis (SWARA) approach to methodically assess the subjective weights of the criteria. In the end, the proposed operators are incorporated with the combined compromise solution (CoCoSo) approach to establish an innovative MCGDM framework and apply it in a comprehensive evaluation of urban development over multiple dimensions. Furthermore, sensitivity and comparative analyses confirm the robustness and efficacy of our strategy, indicating its better performance.},
-  archive      = {J_SUPERC},
-  author       = {Jiang, Yunfeng and Mao, Junjun and Liu, Shuhuan and Zhang, Zheng and Wu, Tao},
-  doi          = {10.1007/s11227-025-08116-7},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1617--56},
-  shortjournal = {J. Supercomput.},
-  title        = {An extended prioritized average operator and SWARA-CoCoSo decision-making integrated technique within the complex fuzzy Z-number framework},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Interpreting navigation sonar data for object detection: A feasibility study using the ping360. <em>SUPERC</em>, <em>81</em>(18), 1616--27. (<a href='https://doi.org/10.1007/s11227-025-08095-9'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This study investigates the feasibility of repurposing the Blue Robotics Ping360—a low-cost, mechanically scanned single-beam sonar—for underwater object detection beyond its navigation role. It addresses three key questions: (i) what challenges arise when interpreting navigation sonar data in cluttered or reflective environments; (ii) how effective is manual annotation when combined with segmentation models such as U-Net; and (iii) whether affordable sonar can support complex object-level perception. Controlled pool experiments were conducted to examine acoustic artifacts including reflections, shadows, and range-dependent distortions. A manually annotated dataset was used to evaluate classical and deep-learning-based segmentation methods. Results show that preprocessing—near-field exclusion, denoising, and polar resampling—significantly improves detection clarity. Leveraging GPU-accelerated and data-parallel processing, the framework achieves scalable, near-real-time performance aligned with high-performance computing principles. The dataset and code are publicly available to encourage further research in dynamic and multi-sensor underwater perception.},
-  archive      = {J_SUPERC},
-  author       = {Hasan, Md Junayed and Kannan, Somasundar and Rohan, Ali and Talaat, Amira Samy},
-  doi          = {10.1007/s11227-025-08095-9},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1616--27},
-  shortjournal = {J. Supercomput.},
-  title        = {Interpreting navigation sonar data for object detection: A feasibility study using the ping360},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Improved whale optimization path planning design for multi-UAVs based on pareto strategy. <em>SUPERC</em>, <em>81</em>(18), 1615--33. (<a href='https://doi.org/10.1007/s11227-025-08079-9'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {To solve the path planning problem of multi-UAVs, the improved whale optimization algorithm based on Pareto strategy (IMOAP) is proposed in this paper. In order to optimize multiple objective functions at the same time, Pareto selection strategy is introduced to solve the “data explosion” problem in the multi-objective state, and Pareto ranking strategy is designed to achieve the finiteness and feasibility of the solution and ensure the population quantity. This paper constructs a synergy factor based on the fitness design value to improve the population diversity, convergence speed and accuracy of the algorithm, and the overall performance. Then, through convergence and complexity analysis, the feasibility and stability of the improved algorithm are proved. In addition, the Reynolds model of ground-to-air communication is used to realize the coordinated movement of UAV clusters. Across three path planning scenarios of varying complexity, compared with the baseline WOA, the proposed IWOAP algorithm achieved up to 50% shorter planning time, 55–65% lower energy consumption, and significantly improved convergence speed, while maintaining zero collisions across all three path planning scenarios, demonstrating superior stability, efficiency, and adaptability in complex environments.},
-  archive      = {J_SUPERC},
-  author       = {Cheng, Lingyu and Wang, Fang and Zhou, Chao},
-  doi          = {10.1007/s11227-025-08079-9},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1615--33},
-  shortjournal = {J. Supercomput.},
-  title        = {Improved whale optimization path planning design for multi-UAVs based on pareto strategy},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An augmented multi-label neural network-based approach for text classification in small and unbalanced datasets: The case of digital innovation in the EIP-AGRI operational groups. <em>SUPERC</em>, <em>81</em>(18), 1614--49. (<a href='https://doi.org/10.1007/s11227-025-08100-1'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Digital technologies offer significant economic, social, and environmental benefits in agriculture and rural areas. However, the level of diffusion of these technologies among farmers remains low. The Operational Groups (OGs) of the European Innovation Partnership for Agricultural Productivity and Sustainability (EIP-AGRI) can promote digitalization in agriculture by disseminating innovative digital solutions. Unfortunately, the existing project information is not classified, representing a major obstacle to the diffusion of innovations. To address this problem, this paper introduces a method that uses multi-label neural network models to automatically classify digital innovations in the projects of the EIP-AGRI OGs. The method tackles challenges such as data limitations and imbalances by adopting a data augmentation technique based on the generation of artificial synonyms and weighted loss functions. The study explores various deep learning models, including state-of-the-art pre-trained language models, and finds that the OpenAI generative pre-trained transformer has the best performance in automatically classifying projects. It also demonstrates that the use of artificial synonyms enhances the ability of neural networks to predict truly positive labels, i.e., to identify digital innovations in projects where they are actually present.},
-  archive      = {J_SUPERC},
-  author       = {Bonfiglio, Andrea},
-  doi          = {10.1007/s11227-025-08100-1},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1614--49},
-  shortjournal = {J. Supercomput.},
-  title        = {An augmented multi-label neural network-based approach for text classification in small and unbalanced datasets: The case of digital innovation in the EIP-AGRI operational groups},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). VS-MSS: Visual saliency-based efficient and secure multi-secret sharing scheme over cloud storage. <em>SUPERC</em>, <em>81</em>(18), 1613--49. (<a href='https://doi.org/10.1007/s11227-025-08094-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Existing state-of-the-art secret sharing schemes primarily focus on generating shares for the entire image. However, there is limited research in the literature that specifically focuses on objects or attention-worthy objects (salient objects) present in an image. Performing share generation and reconstruction over the complete image often leads to increased computational, communication, and storage overhead due to redundant background information. To overcome these limitations, this work proposes a visual saliency-based multi-secret sharing (VS-MSS) scheme for secure and efficient cloud storage, focusing exclusively on salient objects as the actual secrets. The proposed framework integrates a tri-stage encoder--decoder network for salient object detection with a lightweight arithmetic modulo-based secret sharing mechanism for efficient share generation and reconstruction. The method utilizes operations such as random permutation, modular arithmetic, and modular multiplicative inverse, achieving an optimal balance between data security and computational efficiency. The scheme follows a perfect $$(n + 1,n + 1)$$ multi-secret sharing configuration, where the first $$n+1$$ represents the number of generated shares distributed across independent non-colluding cloud nodes, and the second $$n+1$$ denotes the shares required for complete reconstruction. Comprehensive performance evaluation covering computational, storage, and communication costs demonstrates that the proposed approach effectively minimizes overhead while maintaining lossless reconstruction quality. Furthermore, extensive security analysis confirms that the scheme ensures information-theoretic secrecy, high share entropy, and strong resilience against collusion, noise, and cropping attacks. Experimental results validate that VS-MSS is efficient, secure, and scalable, making it well-suited for real-time and cloud-based multimedia applications.},
-  archive      = {J_SUPERC},
-  author       = {Rawat, Arjun Singh and Deshmukh, Maroti and Singh, Maheep and Kumain, Sandeep Chand and Awasthi, Lalit Kumar},
-  doi          = {10.1007/s11227-025-08094-w},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1613--49},
-  shortjournal = {J. Supercomput.},
-  title        = {VS-MSS: Visual saliency-based efficient and secure multi-secret sharing scheme over cloud storage},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Integrating deep learning with branch-and-bound algorithm for enhanced solution of hydrogen distribution. <em>SUPERC</em>, <em>81</em>(18), 1612--29. (<a href='https://doi.org/10.1007/s11227-025-08089-7'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Sustainable transportation is crucial in the global effort to reduce greenhouse gas emissions and transition to cleaner energy sources. In this context, hydrogen vehicles (HVs) have emerged as a promising and eco-friendly alternative to traditional fossil fuels. A key challenge in the advance of the hydrogen economy lies in the efficient distribution of hydrogen (HD), which is addressed through the hydrogen vehicle routing problem with time window and vehicle capacity (HVRPTC). In this paper, we explore the HVRPTC using HVs, taking into account factors such as driving costs, penalties for violating time windows, and vehicle capacities to determine optimal HD routes. While exact methods like the branch-and-bound (B&B) algorithm offer robust solutions, their computational time can become prohibitive for larger instances. To solve this issue, we propose a hybrid solution by integrating B&B and a deep learning (DL) model, where the B&B method provides high-quality training instances and the trained DL models can predict near-optimal total cost with shorter computing time so that more effective solutions to HVRPTC can be developed in terms of both quality and efficiency. Our method promises encouraging results and provides solutions for a sustainable and efficient HD system. This study demonstrates the potential for scalable, real-time optimization of hydrogen logistics.},
-  archive      = {J_SUPERC},
-  author       = {Abibou, Soukayna and El Bourakadi, Dounia and Yahyaouy, Ali and Gualous, Hamid},
-  doi          = {10.1007/s11227-025-08089-7},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1612--29},
-  shortjournal = {J. Supercomput.},
-  title        = {Integrating deep learning with branch-and-bound algorithm for enhanced solution of hydrogen distribution},
-  volume       = {81},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Mathematical bounds on differential privacy in heterogeneous federated IoT environments. <em>SUPERC</em>, <em>81</em>(18), 1611--42. (<a href='https://doi.org/10.1007/s11227-025-08097-7'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Federated learning (FL) enables decentralized training of machine learning models across distributed Internet of Things (IoT) clients while preserving data locality. However, achieving strong differential privacy (DP) guarantees under heterogeneous, non-IID data remains a critical challenge. This paper presents Div-DPFL, a divergence-aware, privacy-preserving framework that adaptively calibrates client-level noise based on statistical divergence, sensitivity, and participation frequency. Heterogeneity is formally modeled through weighted Rényi divergence to capture discrepancies between local and global data distributions, with privacy loss analyzed under zero-concentrated differential privacy (zCDP). The proposed mechanism scales Gaussian noise according to divergence-based sensitivity, enabling tighter zCDP composition and personalized privacy budgeting. To meet the high computational demands of large-scale federated training, Div-DPFL is designed for parallel and distributed execution on high-performance computing (HPC) infrastructures, leveraging GPU acceleration for real-time gradient aggregation and adaptive noise scaling. Extensive experiments on CIFAR-10, FEMNIST, and synthetic IoT datasets demonstrate that Div-DPFL improves accuracy by up to 6.8% and reduces average privacy loss by 11.5% compared with state-of-the-art DP-FL methods. It also enhances fairness by minimizing variance in client-level accuracy and privacy cost. Notably, Div-DPFL sustains stable performance under extreme heterogeneity ( $$\alpha = 0.1$$ ) and adapts effectively to varying privacy budgets and participation rates. Overall, Div-DPFL establishes a scalable and computation-aware foundation for privacy-preserving federated learning in heterogeneous IoT environments, aligning with the real-time and parallel processing paradigms of modern supercomputing.},
-  archive      = {J_SUPERC},
-  author       = {Abbass, Waseem and Abbas, Nasim and Majeed, Uzma},
-  doi          = {10.1007/s11227-025-08097-7},
-  journal      = {The Journal of Supercomputing},
-  month        = {12},
-  number       = {18},
-  pages        = {1611--42},
-  shortjournal = {J. Supercomput.},
-  title        = {Mathematical bounds on differential privacy in heterogeneous federated IoT environments},
-  volume       = {81},
-  year         = {2025},
+  title        = {Correction: Independent vector analysis based on binary grey wolf feature selection and extreme learning machine for bearing fault diagnosis},
+  volume       = {82},
+  year         = {2026},
 }
 </textarea>
 </details></li>

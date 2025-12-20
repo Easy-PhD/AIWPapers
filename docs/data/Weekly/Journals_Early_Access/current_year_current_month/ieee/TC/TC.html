@@ -25,346 +25,650 @@
 </head>
 <body>
 
-<h2 id="tc">TC - 18</h2>
+<h2 id="tc">TC - 34</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Monero-based group covert transmission with fine-grained access control. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3624019'>www</a>)
+(2025). ECC: Efficient concurrency control for disaggregated memory systems. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642010'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Public Blockchain-based covert transmission (CT) can address the limitations of traditional CT methods. Monero is a blockchain-based cryptocurrency with strong privacy protection techniques. However, existing Monero-based CT methods are limited to unicast scenarios. If applied directly to group CT scenarios, they would lead to a significant increase in transaction volume as the number of receivers increases. Meanwhile, existing Bitcoin/Ethereum-based group CT methods at least face three challenges, including susceptibility to key and identity inference attacks, information leakage during off-chain negotiations, and exposure of communication channels. This paper proposes a Monero-Based Group CT approach (MBGCT), which enables on-chain group key (used for receivers to filter covert transactions and extract messages) issuance, fine-grained access control of messages, and covert transaction identification and decryption isolation. MBGCT can ensure confidentiality of group keys, unforgeability of messages, integrity of each transmitted message, obscurity of covert channels, isolation of key generation from key management, and enhanced anonymity. As a result, MBGCT can not only prevent information leakage and channel exposure, but also resist the attacks of entity impersonation, data tampering, key and identity inference. We implemented MBGCT in Monero client v0.18.1.0, and validated its capability of high embedding rates, low transaction fees, and high execution efficiency on the Monero public chain Stagenet.},
+  abstract     = {Memory disaggregation architecture presents unique challenges in ensuring data consistency due to the limited computational power available at memory servers. One line of pessimistic solutions utilizes lock tables to deal with this challenge. Since the lock release signal cannot be immediately synchronized to the compute server, such solutions can only achieve suboptimal memory utilization. To address the aforementioned limitation, another line of solutions operates optimistically, polling the memory server until the operation completes successfully. However, these solutions trigger a massive number of unnecessary retries, resulting in performance collapse in high contention scenarios. high memory utilization while avoiding the need for retries. Our key idea is that compute servers proactively predict the appropriate retry interval and schedule accordingly. By analyzing the properties of requests on memory disaggregation, we find that the retry interval mainly consists of network fluctuations and host congestion delay. ECC design builds upon insights gained from this analysis. We have integrated ECC into Clover—a state-of-the-art memory disaggregation system and evaluated it through simulations and testbed experiments. Our testbed results show that ECC improves throughput by 50.8% over Clover.},
   archive      = {J_TC},
-  author       = {Zhenshuai Yue and Yuhe Qiu and Xiaolin Chang and Yanwei Gong and Junchao Fan and Ruichen Zhang},
-  doi          = {10.1109/TC.2025.3624019},
+  author       = {Yang Li and Yaozhen Li and Wenxin Li and Yulong Li and Song Zhang and Renjie Pei and Xiancheng Meng and Jin Zhang and Keqiu Li},
+  doi          = {10.1109/TC.2025.3642010},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {ECC: Efficient concurrency control for disaggregated memory systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Low-latency implementation of bitsliced SPN-cipher on IoT processors. <em>TC</em>, 1--11. (<a href='https://doi.org/10.1109/TC.2025.3642221'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bitsliced cipher implementations demonstrate enhanced performance and security on high-end processors through specialized instruction utilization. However, IoT processors, particularly 32-bit architectures, present significant implementation challenges due to limited register sizes and instruction sets, hindering efficient parallelism in bitsliced SPN ciphers. This study presents optimization strategies for implementing bitsliced SPN ciphers on 32-bit processors using common instruction sets. The linear layer optimization employs a decomposition algorithm that transforms complex permutation operations into minimal instruction sequences. This approach recursively identifies optimal instruction combinations while maintaining computational efficiency. For the non-linear layer, operations are constrained to basic logic instructions (NOT, AND, OR, XOR). A novel encoding method for the Bit-slice Gate Complexity (BGC) model is proposed to optimize S-box transformations within these constraints using Boolean satisfiability solvers. Additionally, a comprehensive benchmarking framework facilitates standardized performance evaluation across implementations. Experimental evaluation of the optimized implementations on ARM Cortex-M and Xtensa LX processors demonstrates significant performance improvements. The proposed techniques achieve reductions of 9.7% and 67.6% in Cycles Per Byte for AES and QARMAv2 implementations, respectively.},
+  archive      = {J_TC},
+  author       = {Jiahao Xiang and Lang Li},
+  doi          = {10.1109/TC.2025.3642221},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--11},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Low-latency implementation of bitsliced SPN-cipher on IoT processors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Viper: Priority-based high-visibility per-flow packet sampling for SDNs. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642321'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Packet sampling is crucial for managing datacenter networks, serving fault diagnosis, traffic measurement, and intrusion detection functions. However, traditional sampling techniques, such as those based on sketches or ports, either lack packet–level granularity or provide insufficient visibility, leading to functional performance degradation. Recent research has employed the software-defined networking (SDN) model to enable flow-based packet sampling. However, these approaches often introduce substantial control and computation overhead, limiting their scalability. This paper presents Viper, a novel priority-based, high-visibility per-flow packet sampling mechanism tailored to address these challenges. Specifically, Viper leverages existing priority-based traffic scheduling mechanisms to prioritize shorter flows over longer ones. Then, a logical centralized controller orchestrates sampling policies for packets of different priorities. In-depth analysis indicates that the orchestration performed by the controller significantly impacts Viper’s performance. Consequently, we model this process as a nonlinear optimization problem, seeking to maximize the utility of sampling. Then, we propose an online primal–dual interior–point algorithm to address this optimization problem and prove the algorithm’s convergence, optimality, and efficiency. Experimental results show that Viper increases visibility by 3.83% to 8.3%, with negligible control overhead and a substantial reduction in sampling load by at least 20.51%.},
+  archive      = {J_TC},
+  author       = {Xiaodong Dong and Xiulong Liu and Lihai Ni and Jiuwu Zhang and Yinglong Wang},
+  doi          = {10.1109/TC.2025.3642321},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Viper: Priority-based high-visibility per-flow packet sampling for SDNs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving the serverless function cache efficiency with flame. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642338'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Function caching is one of the fundamental techniques in FaaS platforms to alleviate coldstart overhead. However, as cache instances consume significant cloud resources (e.g., memory), it is challenging to balance function performance and cache cost. Current systems use simple and rudderless cache polices with a “local cache control” design, which ignores function characteristics such as workload skewness from hot functions and results in either cache contentions or cache resource waste. In this paper, inspired by software-defined networks, we propose Flame, an efficient cache system to manage cached functions with hotspot-aware instance scheduling and cache allocation. It consists of a two-layer design. Firstly, by decoupling the cache control plane from worker nodes and introducing a centralized cache controller, Flame can schedule functions from a global view of the cluster’s status, thereby reducing inter-node workload skew. Second, Flame divides the prior monolithic cache pool within each node into multiple partitions and dynamically assigns them to different hot functions, thereby further mitigating intra-node cache contention. Experimental results from realworld workloads show that Flame can reduce cache resource usage by 36% on average while improving function performance by nearly 7× compared to the state-of-the-art method.},
+  archive      = {J_TC},
+  author       = {Yanan Yang and Wenda Tang and Laiping Zhao and Keqiu Li and Jie Wu},
+  doi          = {10.1109/TC.2025.3642338},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Improving the serverless function cache efficiency with flame},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FEDINF: An efficient and secure inference with federated participants. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3642408'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning is a machine learning paradigm through training on locally private data and aggregating local models to generate a federated model. However, due to the heterogeneity problems (data heterogeneity and model heterogeneity), federated learning suffers from convergence difficulties and excessive aggregation overhead on decentralized participants. Additionally, federated learning faces privacy concerns during the aggregation of local models. To this end, in this work, we propose FEDINF, an efficient and secure inference with federated participants. Specifically, FEDINF features the following characteristics. FEDINF overcomes convergence challenges through federated inference instead of federated training, which reduces computation and communication overhead. Moreover, we design secure computation protocols and aggregation mechanisms to measure contributions, and handle both data and model heterogeneity without sacrificing privacy. Results of experimental evaluations on common datasets demonstrate that the proposed FEDINF outperforms the existing federated learning approaches in terms of efficiency and heterogeneity.},
+  archive      = {J_TC},
+  author       = {Bowen Zhao and Weibin Guo and Jiahui Chen and Yang Xiao and Liang Zhai and Qingqi Pei},
+  doi          = {10.1109/TC.2025.3642408},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Monero-based group covert transmission with fine-grained access control},
+  title        = {FEDINF: An efficient and secure inference with federated participants},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Netlist-independent functional stress pattern generation strategy for AI HW accelerators embedded into SoCs. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3627803'>www</a>)
+(2025). Configurable hardware acceleration for hyperdimensional computing extension on RISC-V. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3642250'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Artificial Intelligence hardware accelerators are pervading the chip market. Most of the time, they are third-party IPs integrated by silicon manufacturers. As a consequence, their design may be obfuscated, which can introduce issues from a manufacturing testing perspective. This paper illustrates how to effectively and efficiently select the most appropriate functional stress stimuli for Artificial Intelligence (AI) Hardware (HW) Accelerators embedded in System-on-Chip (SoC). The proposed methodology is netlist independent; and it is based on both current measurements from the real chip and architectural evaluations. These ingredients are heuristically used to rank and sift the optimal functional patterns to apply along the Burn-In (BI) phase. Experimental results on two different Automotive SoCs manufactured by STMicroelectronics, demonstrate the effectiveness and efficiency of the proposed method.},
+  abstract     = {Hyperdimensional Computing (HDC) is a neuro-inspired computational model that represents and manipulates information using high-dimensional distributed representations that are combined and compared using simple and highly parallel vector operations. In this work, we present a highly flexible hardware acceleration unit for HDC learning tasks based on the binary spatter-code model. Integrated into the execution stage of the Klessydra-T03 RISC-V core, the unit accelerates the core arithmetic operations of HDC and can be configured at synthesis time in terms of hardware parallelism, supported operations, and size of the local memories, trading off execution time with hardware resources to match application needs. A custom RISC-V Instruction Set Extension efficiently controls the accelerator, with instructions fully integrated into the GNU Compiler Collection toolchain and exposed to the programmer as intrinsics. Dedicated Control and Status Registers allow specifying the characteristics of the high-dimensional space and the target learning tasks at runtime, controlling the hardware loops of the accelerator and enabling the same hardware architecture to be used for various tasks. The dual flexibility coming from hardware configuration and software programmability sets this work apart from application-specific solutions in the literature, offering a unique, versatile accelerator adaptable to a wide range of applications and learning tasks.},
   archive      = {J_TC},
-  author       = {Gabriele Filipponi and Denis Schwachhofer and Francesco Angione and Claudia Bertani and Simone Corbellini and Nicola di Gruttola Giardino and Giuseppe Garozzo and Giorgio Insinga and Vincenzo Tancorre and Paolo Bernardi},
-  doi          = {10.1109/TC.2025.3627803},
+  author       = {Rocco Martino and Marco Angioli and Antonello Rosato and Marcello Barbirotta and Abdallah Cheikh and Mauro Olivieri},
+  doi          = {10.1109/TC.2025.3642250},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--13},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Netlist-independent functional stress pattern generation strategy for AI HW accelerators embedded into SoCs},
+  title        = {Configurable hardware acceleration for hyperdimensional computing extension on RISC-V},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). CIMinus: Empowering sparse DNN workloads modeling and exploration on SRAM-based CIM architectures. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628114'>www</a>)
+(2025). A framework for quantum circuit optimization: Comparators as a case study. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642981'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Compute-in-memory (CIM) has emerged as a pivotal direction for accelerating workloads in the field of machine learning, such as Deep Neural Networks (DNNs). However, the effectively exploitation of sparsity in CIM systems presents numerous challenges, due to the inherent limitations in their rigid array structures. Designing sparse DNN dataflows and developing efficient mapping strategies also become more complex when accounting for diverse sparsity patterns and the flexibility of a multi-macro CIM structure. Despite these complexities, there is still an absence of a unified systematic view and modeling approach for diverse sparse DNN workloads in CIM systems. In this paper, we propose CIMinus, a framework dedicated to cost modeling for sparse DNN workloads on CIM architectures. It provides an in-depth energy consumption analysis at the level of individual components and an assessment of the overall workload latency. We validate CIMinus against contemporary CIM architectures and demonstrate its applicability in two use-cases. These cases provide valuable insights into both the impact of sparsity patterns and the effectiveness of mapping strategies, bridging the gap between theoretical design and practical implementation.},
+  abstract     = {Qubits are the minimum unit of information in quantum computing. As current quantum devices have a very limited number of available qubits, finding circuits that optimize their use is crucial for this computing paradigm. Optimizing the qubits needed to implement a quantum circuit is not trivial, as these circuits have important restrictions such as the impossibility of copying values or the requirement that the computation done in them must always be reversible. This paper presents a framework for optimizing circuits for quantum computing. The framework is able to obtain, given a quantum circuit, an equivalent one that is more efficient in terms of number of qubits. In particular, the framework has applicability in quantum circuits dedicated to arithmetic operations such as addition or multiplication. As a representative case study, it is applied to a reversible comparator circuit, obtaining a design that reduces the number of qubits and controlled gates compared to other reversible comparators reported in the recent literature. As part of the work, a public repository is included with the necessary code to simplify any other circuit.},
   archive      = {J_TC},
-  author       = {Yingjie Qi and Jianlei Yang and Rubing Yang and Cenlin Duan and Xiaolin He and Ziyan He and Weitao Pan and Weisheng Zhao},
-  doi          = {10.1109/TC.2025.3628114},
+  author       = {Francisco Orts and Rodrigo Gil-Merino},
+  doi          = {10.1109/TC.2025.3642981},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {CIMinus: Empowering sparse DNN workloads modeling and exploration on SRAM-based CIM architectures},
+  title        = {A framework for quantum circuit optimization: Comparators as a case study},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). TPDA-DRAM: A variation-aware DRAM improving system performance via in-situ timing margin detection and adaptive mitigation. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3627945'>www</a>)
+(2025). Graph-based batch job load balancing scheduling for multi-dimensional resources in heterogeneous GPU clusters. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642832'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {DRAM latency remains a critical bottleneck in the performance of modern computing systems. However, the latency is excessively conservative due to the timing margins imposed by DRAM vendors to accommodate rare worst-case scenarios, such as weak cells and high temperatures. In this study, we introduce a temperature- and process-variation-aware timing detection and adaptation DRAM (TPDA-DRAM) architecture that dynamically mitigates timing margins at runtime. TPDA-DRAM leverages innovative in-situ cross-coupled detectors to monitor voltage differences between bitline pairs inside DRAM arrays, ensuring precise detection of timing margins. Additionally, the proposed detector inherently accelerates the precharge operation of DRAM, thereby reducing the precharge latency by up to 62.5%. Building upon this architecture, we propose two variation-aware timing adaptation schemes: 1) a process-variation-aware adaptation (PVA) scheme that accelerates access to weak cells, mitigating process-induced timing margins, and 2) a temperature-variation-aware adaptation (TVA) scheme that leverages temperature information and the restoration truncation technique to reduce DRAM latency, mitigating temperature-induced timing margins. Evaluations on an eight-core computing system show that TPDA-DRAM improves average performance by 21.8% and energy efficiency by 18.2%.},
+  abstract     = {GPU clusters serve as a cornerstone of high-performance computing and support a wide range of batch jobs with complex resource demands. However, the diverse requirements of batch jobs and resource heterogeneity present significant challenges to efficient scheduling. Existing approaches either rely on static rules or overlook the interdependencies among virtual machines introduced by resource heterogeneity, making it difficult to address the diverse resource demands and dynamic load balancing. In this paper, we propose a novel scheduling model based on Graph Neural Networks (GNNs) and Double Deep Q-Networks (DDQNs), termed GNN-DDQN, for batch job load balancing and scheduling of multi-dimensional resources (e.g. GPU, CPU and memory) in heterogeneous clusters. We propose a system model that integrates batch job resource requests, multi-dimensional resource configurations, and a multi-objective optimization framework. The scheduling problem is formulated as a Markov Decision Process based on this model. A GNN is employed to effectively capture the interdependencies among virtual machines, while a DDQN optimizes scheduling decisions using a dynamic target network update mechanism. Extensive experiments are conducted using two real-world Alibaba cluster traces. Results demonstrate the effectiveness and generalization capabilities of the proposed scheduling model. Compared to baseline methods, the results confirm its superiority in load balancing, job latency, fairness, and time efficiency.},
   archive      = {J_TC},
-  author       = {Yuxuan Qin and Chuxiong Lin and Guoming Rao and Ling Yang and Weiguang Sheng and Weifeng He},
-  doi          = {10.1109/TC.2025.3627945},
+  author       = {Sheng Wang and Yumei Shi and Shiping Chen and Guangshun Yao and Shengxiang Wang},
+  doi          = {10.1109/TC.2025.3642832},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {TPDA-DRAM: A variation-aware DRAM improving system performance via in-situ timing margin detection and adaptive mitigation},
+  title        = {Graph-based batch job load balancing scheduling for multi-dimensional resources in heterogeneous GPU clusters},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). DCS3: A dual-layer co-aware scheduler with stealing balance and synchronized priority in virtualization environments. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628012'>www</a>)
+(2025). AGC: An adaptive workload burst-aware garbage collection mechanism for high-performance SSDs. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642636'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Virtualization environments (e.g., containers and hypervisors) achieve isolation of multiple runtime entities but result in two mutually isolated guest and host layers. Such cross-ayer isolation could cause high latency and low throughput of the system. Previous aware scheduling and double scheduling fail to achieve bidirectional coordination between the guest and host layers. To address this challenge, we develop DCS3, a Dual-layer Co-aware Scheduler that combines stealing balance and synchronized priority. Stealing balancing migrates tasks between virtual CPU (vCPU) queues for load balance based on the workloads of physical CPUs (pCPUs). Synchronized priority dynamically adjusts the thread priorities running on the pCPUs according to the current vCPU workloads. The vCPUs and pC-PUs belong to the guest and host layers, respectively. Compared with aware scheduling, double scheduling, and DCS2 (i.e., DCS3 without synchronized priority), DCS3 has the following obvious advantages: 1) Requests Per Second (RPS) increases by up to 52%, 55%, and 2%, respectively; 2) request latency decreases by up to 72%, 71%, and 20%, respectively.},
+  abstract     = {In NAND flash-based solid-state drives (SSDs), system performance and quality of service tend to be degraded by frequent conflicts between garbage collection (GC) I/Os and user I/Os. To address this challenge, we propose an adaptive workload burst-Aware Garbage Collection (AGC) mechanism to build highperformance SSDs. AGC minimizes conflicts between user I/Os and GC I/Os by jointly considering access patterns in workloads, internal GC, and allocation strategies. The running time of a workload is divided into multiple five-millisecond time windows. AGC incorporates a burst I/O access pattern prediction mechanism, which anticipates I/Os patterns in subsequent time windows according to historical access patterns. Pattern predictions allow AGC to proactively buffer valid pages during GC to prevent interference with forthcoming user I/O requests. According to the status of the underlying flash memory, we implement a hybrid allocation strategy to reduce GC-induced user writes blocking while preserving read parallelism performance. AGC classifies data into four hotness levels (hot, warm, cool, and cold) according to the update interval of the same request. Then, we design a hotness-aware victim block selection policy that prioritizes hot blocks to avert valid data migration during GC, thereby reducing write amplification in SSDs. We evaluate AGC through extensive experiments driven by real-world traces. The findings confirm that compared with state-of-the-art schemes (Baseline, CachedGC, FFT-GC, HIPA, and RDA), AGC reduces read and write response time by up to 81.57% and 69.66%, respectively, with average reductions of 54.34% and 39.21%. Furthermore, AGC decreases GC counts by up to 24.31% with an average of 12.04%, thereby reducing GC overhead and extending SSD lifetime across diverse workloads.},
   archive      = {J_TC},
-  author       = {Chenglai Xiong and Junjie Wen and Guoqi Xie and Zhongjia Wang and Zhenli He and Shaowen Yao and Jianfeng Tan and Tianyu Zhou and Tiwei Bie and Yan Yan and Shoumeng Yan},
-  doi          = {10.1109/TC.2025.3628012},
+  author       = {Hui Sun and Haisheng Ding and Haoqiang Tong and Xiang Cheng and Honggang Chai and Xiao Qin},
+  doi          = {10.1109/TC.2025.3642636},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {DCS3: A dual-layer co-aware scheduler with stealing balance and synchronized priority in virtualization environments},
+  title        = {AGC: An adaptive workload burst-aware garbage collection mechanism for high-performance SSDs},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Efficient approximation algorithms for server allocation to minimize total capacity under server failure. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3627912'>www</a>)
+(2025). Hardware trojan object detection based on bidirectional graph neural networks. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642575'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Real-time applications, such as ticket booking systems, video streaming systems, social networking services, and online games, are prevalent nowadays. Low latency between a user and a server is required in such applications. A distributed server approach is used instead of a single server one to achieve this. In such a situation, selecting which users connect to which servers significantly determines the system’s performance. There is a problem with the distributed server approach; each server may fail due to maintenance or breakdown. Single-server failure is more popular than multiple-server failure, so this paper focuses on single-server failure. In this paper, we assume that the capacity of each server is variable and minimize the total capacity of the servers. We also set the assumption that each user is allowed to connect exactly two servers. Under this assumption, we select each user’s main and backup servers. This paper proposes two approximation algorithms for a server allocation problem to minimize total capacity under server failure. We formulate the problem as an integer linear programming (ILP) problem. We show that the proposed algorithms have an approximation rate of $4/3$. One of them is an improved version of the other one. The algorithms are based on a 2-approximation algorithm of a vertex cover problem, in which taking a maximal matching is the key idea. Numerical results show that the proposed algorithms run significantly faster than ILP. The performance of the proposed algorithms depends on the topology; still, in randomly generated general networks, it increases the total capacity by 2.03% or less than ILP on average.},
+  abstract     = {The rapid growth of Internet of Things (IoT) devices has heightened hardware security concerns, particularly with the emergence of hardware Trojans (HTs) as malicious components in integrated circuits. These HTs pose significant threats to information privacy and system performance. The early detection methods rely on golden references and domain knowledge, limiting their implementation in large-scale integrated circuits. Traditional machine learning-based HT detections can effectively identify infected circuits without golden chips. However, locating and evaluating the specific behavior of HTs in vast and complex circuits is challenging. To address these challenges, this paper presents an HT Object Detection (HTOD) problem, which involves two primary tasks: identifying the boundaries and sizes of HTs within circuits and distinguishing between different HT behaviors. We have developed a two-stage HT object detection framework based on a bidirectional jumping knowledge network called HTOD-BGNN to solve the HTOD problem, which enables progressive refinement of localized regions. It incorporates enhanced base-type features to ensure scalability and information retention during modeling. Additionally, the implementation of sample augmentation alleviates the challenges of sample imbalance and scarcity. The proposed method enables more intelligent circuit detection, achieving 100% and 87.5% detection rates for Trojan triggering and payload behaviors, respectively. It demonstrates superior localization performance and effective generalization to unseen circuit scenarios via its region refinement mechanism, achieving F1-scores of 54.01% on TrustHub and 90.04% on TRIT datasets.},
   archive      = {J_TC},
-  author       = {Masahiro Inoue and Eiji Oki},
-  doi          = {10.1109/TC.2025.3627912},
+  author       = {Dong Cheng and Xuanwei Lin and Chen Don and Ximeng Liu and Kun Guo and Yirui Huang},
+  doi          = {10.1109/TC.2025.3642575},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Efficient approximation algorithms for server allocation to minimize total capacity under server failure},
+  title        = {Hardware trojan object detection based on bidirectional graph neural networks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). ComHA: Cloud-edge-device cooperative model building based on hierarchical automated machine learning. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628026'>www</a>)
+(2025). Instant-CIM: An instant neural radiance field computing-in-memory architecture for low-power and real-time AR/VR rendering. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3642843'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Cloud-edge-device (CED) cooperative computing is an emerging paradigm that extends the reach of cloud services, providing higher flexibility and scalability to modern AI-driven computing services. However, traditional “one-size-fits-all” AI model construction at the edge struggles to accommodate the strong heterogeneity of target devices. This leads to an increasing demand for specialized models tailored for local resources in AI applications. To this end, we introduce ComHA, a cooperative model building framework based on hierarchical Automated Machine Learning (AutoML) to bridge the gap between hyperparameter optimization on the cloud and local model customization at the edge. In this framework, the cloud performs high-level AutoML to reduce the search space of learning algorithms, model architectures, and relevant hyperparameters to a specific set based on target device specifications. Subsequently, edge devices execute low-level AutoML to identify and train the optimal model, customized for their local data and resources. This approach aims to strike a balance between the benefit and cost of customized model building. Through extensive experiments conducted on a real-world testbed with public datasets, our results demonstrate that ComHA outperforms traditional methods in producing tailored models of high accuracy and low inference latency in various environments.},
+  abstract     = {Novel View Synthesis is a foundational technique for creating immersive Augmented and Virtual Reality (AR/VR) experiences, aiming to generate photorealistic images of a scene from arbitrary camera viewpoints using only a limited set of source images, with Neural Radiance Fields (NeRF) emerging as the state-of-the-art solution. However, real-time NeRF rendering on low-power devices remains challenging due to its memory-intensive hash encoding and compute-intensive Multilayer Perception (MLP). In this work, we propose Instant-CIM, the fully on-chip Computing-in-Memory (CIM) architecture for efficient NeRF rendering. At the algorithm level, Instant-CIM proposes a spatially-adaptive framework that dynamically selects the number of active hash encoding levels per spatial region based on a composite importance score derived from density and gradient. The approach replaces uniform level allocation with a threshold-based strategy that activates finer encoding levels only in regions with high representation complexity. At the hardware level, Instant-CIM proposes an in-situ hash engine that implements in-memory hash query and interpolation through 3D scene grid decomposition and Z-order based mapping schemes. Meanwhile, Instant-CIM proposes a sparse MLP engine that leverages differential-based input complemented by a precision-adjustable skipping mechanism to fully exploit spatial similarities. Comprehensive evaluation across synthetic datasets demonstrates that Instant-CIM achieves 3.0×~4.9× improvement in rendering speed and 8.6×~33× enhancement in energy efficiency compared to state-of-the-art NeRF architecture.},
   archive      = {J_TC},
-  author       = {Weiwei Lin and Wangbo Shen and Wentai Wu and Keqin Li},
-  doi          = {10.1109/TC.2025.3628026},
+  author       = {Lixia Han and Yiyang Chen and Hui Chen and Xueming Fu and Zheng Zhou and Ke Chen and Peng Huang and Yijun Cui and Weiqiang Liu},
+  doi          = {10.1109/TC.2025.3642843},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Instant-CIM: An instant neural radiance field computing-in-memory architecture for low-power and real-time AR/VR rendering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient and secure information management approach for remote PPG biometric authentication systems. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642581'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite the fact that biometric systems won many desirable advantages such as high security and convenience, biometric data are vulnerable to various attacks. Once the biometric data are compromised during any point of the authentication process, they are lost forever. In this paper, we propose a security information management approach to address privacy concerns emerging from the management of biometric data in remote Photoplethysmogram (rPPG) biometric authentication systems. In our design, Fully Homomorphic Encryption (FHE) is introduced to protect PPG signals in the transmission and storage phases. We further design an efficient FHE-based Convolutional Neural Network (CNN) model and encrypt the key model parameters of the CNN to realize secure inference. In addition, Principal Component Analysis, Max-Relevance and Min-Redundancy, and Relative Mutual Information methods are employed in the feature extraction stage to screen out the most representative PPG features, thus improving the accuracy of PPG authentication. In the experiments, we adopt eight publicly PPG/rPPG databases and our own rPPG dataset collected via a remote camera to evaluate our proposed biometric authentication system. The experimental results show that our proposed remote PPG biometric authentication system outperforms the state-of-the-art related work in terms of balancing authentication accuracy and biometric privacy protection.},
+  archive      = {J_TC},
+  author       = {Liping Zhang and Wenjie Deng and Hewen Pan and Bohao Li and Kim-Kwang Raymond Choo and Jing Chen},
+  doi          = {10.1109/TC.2025.3642581},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {ComHA: Cloud-edge-device cooperative model building based on hierarchical automated machine learning},
+  title        = {An efficient and secure information management approach for remote PPG biometric authentication systems},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). ECache: A sample-inference-based intelligent cache scheme for high-performance SSDs. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628340'>www</a>)
+(2025). GreenDLS: An energy-efficient and SLO-aware deep learning serving system. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3642827'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {DRAM-based cache is a practical approach to enhancing the performance of large-capacity SSDs. Due to DRAM’s limited capacity, cache sizes are significantly smaller than the data scale of workloads – and cache replacement schemes determine the cache hit ratio and SSD performance when a cache reaches full capacity. Prior work embarked on leveraging machine learning models (ML) to predict future access patterns in workloads, aiding cache replacement decisions for intelligent cache schemes inside SSDs. Unfortunately, existing ML-based cache schemes often overlook the impacts of data granularity – including page, request, and coarse granularities – of training datasets, model inference time overhead, and computational overhead on SSD performance. To address these challenges, we are motivated to propose an sample-inference-based intelligent cache scheme – eCache. eCache accurately predicts the future reuse distance of each sampled requested pages, which can enhance the accuracy of decision-making for the cache replacement. In particular, we design a parallel framework to curb the time overhead caused by model inference. We advocate for a random-group sampling inference method that utilizes the most accurate model while reducing computational overhead. Moreover, we implement eCache on the state-of-the-art SSD simulator, MQSim, and compare it against alternative cache schemes (i.e., CCache, NCache, LAC, and VS-batch). The experimental results unveil that compared with the other cache schemes, eCache significantly reduces the average response time by up to 79.68% with an average reduction of 44.08%. When compared with the page-granularity-ML-empowered cache schemes, eCache greatly curtails computational overhead by up to 85.23% with an average reduction of 66.00%.},
+  abstract     = {The growing demand for deploying deep learning (DL) models, particularly large language models (LLMs), has made it imperative to optimize GPU energy consumption while meeting service-level objectives (SLOs). Significant energy use and carbon dioxide (CO2) emissions from GPU-based inference tasks contribute substantially to the environmental footprint of the DL deployment. Existing approaches primarily rely on batching and dynamic voltage and frequency scaling (DVFS) to optimize service performance or throughput, but often overlook memory frequency adjustments and holistic energy optimization under dynamic workloads. This study presents GREENDLS, a DL serving system that integrates deep reinforcement learning (DRL) with offline prediction models to optimize energy consumption while adhering to inference latency SLOs, achieving significant energy savings. GREENDLS dynamically adjusts batch size, GPU streaming multiprocessor (SM) frequency, and GPU memory frequency based on inference request rates. It also accounts for GPU energy consumption during idle phases, such as batch filling, enabling multi-parameter and fine-grained energy optimization. Compared to the Clipper system, GREENDLS achieves energy savings of up to 45.57% on the RTX 3080Ti and 39.44% on the Tesla V100S. When compared to the EAIS system, which only combines batching with GPU SM frequency adjustment, GREENDLS achieves energy savings of up to 36.44% on the RTX 3080Ti and 15.44% on the Tesla V100S. Against the method proposed by Yu et al., GREENDLS attains energy savings of up to 46.34% on the RTX 3080Ti and 33.74% on the Tesla V100S. In LLM inference tasks using Qwen, GREENDLS reduces average energy consumption by 40.79% compared to Clipper, 10.42% compared to EAIS, and 42.42% compared to Yu et al. These results clearly demonstrate that GREENDLS more effectively optimizes energy consumption compared to traditional methods that rely primarily on batching or a combination of batching and DVFS, while still ensuring SLO compliance.},
   archive      = {J_TC},
-  author       = {Hui Sun and Yinan Fu and Xin Wang and Yi Zhou and Xiao Qin},
-  doi          = {10.1109/TC.2025.3628340},
+  author       = {Meng Hao and Xueyang Tian and Siyu Yang and Hongwei Yang and Hui He and Xuan Li and Yiming Wang and Zheng Liu and Desheng Wang and Weizhe Zhan},
+  doi          = {10.1109/TC.2025.3642827},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {ECache: A sample-inference-based intelligent cache scheme for high-performance SSDs},
+  title        = {GreenDLS: An energy-efficient and SLO-aware deep learning serving system},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Sonnet: A workflow-aware serverless platform for time-sensitive edge computing with WebAssembly. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628246'>www</a>)
+(2025). SEMU: Concurrency-optimized high-performance cache management for key-value caches. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3643461'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The serverless computing paradigm has emerged as a promising solution to address the resource underutilization and inflexible service scaling in edge environments by decoupling the monolithic application into a serverless workflow. However, existing serverless platforms are primarily designed for cloud centers, relying on heavyweight isolation mechanisms that are illsuited for resource-constrained edge computing. These limitations result in high latency, low deployment density, and restricted parallelism. In this paper, we propose Sonnet, a serverless platform tailored for edge computing, capable of rapidly responding to user requests and supporting efficient and elastic service scaling. Sonnet offers these features by (i) employing lightweight WebAssembly as the execution environment for functions, (ii) leveraging serverless workflow information to optimize function deployment on resource-constrained edge environments, and (iii) designing a function deployment algorithm that achieves dynamic load balancing within the cluster. An extensive evaluation of Sonnet with real-world serverless workflows demonstrates its effectiveness and practical applicability. Compared with SOTA and commonly used edge computing serverless solutions, our experiments show that Sonnet can reduce end-to-end latency by 27% and improve throughput by 2.83×.},
+  abstract     = {Improving software-managed cache efficiency is an important issue for various modern applications. Although LRU (Least Recently Used) has been widely used as the default replacement policy in many key-value caches, it suffers from low concurrency performance caused by frequent list updates. However, existing concurrency-aware schemes like FIFO sacrifice the LRU’s temporal locality of data access, leading to a drop in the cache’s hit ratio. In this work, aiming to improve the concurrency performance of cache management while maintaining a high hit ratio as LRU, we propose a novel concurrency-aware cache replacement policy called SEMU (SEgment-based MUlti-version cache replacement) that outperforms state-of-the-art schemes. The novelty of SEMU lies in two aspects. First, it uses an appendonly segment-based FIFO list to avoid locking the list, yielding high concurrency performance. Second, it adopts a multi-version mechanism to make the cache aware of the temporal locality of data access, which can offer a high hit ratio as LRU. With such designs, SEMU can offer high concurrency performance and a high hit ratio for the cache. We conduct extensive experiments on both synthetic and real world workloads to compare SEMU with a few existing schemes, including LRU, FIFO, 2Q, and FrozenHot. We also implement SEMU into a real key-value store, RocksDB, and perform a system-to-system evaluation. The performance comparison under the YCSB workloads shows that SEMU can efficiently improve the performance of RocksDB with the consideration of data concurrency. Particularly, in the multi-thread concurrent environment, SEMU averagely outperforms LRU, 2Q, FIFO, and FrozenHot by up to 1.9×, 1.6×, 80%, and 102% under the synthetic workloads and improves the throughput of RocksDB configured with default settings by up to 59.67% under the system-to-system comparison.},
   archive      = {J_TC},
-  author       = {Quanfeng Deng and Jing Wu and Qiangyu Pei and Chuangxun Lin and Chen Yu and Hai Jin},
-  doi          = {10.1109/TC.2025.3628246},
+  author       = {Xiaoliang Wang and Peiquan Jin and Yigui Yuan},
+  doi          = {10.1109/TC.2025.3643461},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Sonnet: A workflow-aware serverless platform for time-sensitive edge computing with WebAssembly},
+  title        = {SEMU: Concurrency-optimized high-performance cache management for key-value caches},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Bit-serial acceleration of LLM inference with mixture-of-datatype quantization. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628193'>www</a>)
+(2025). A high-performance sketch with dynamic memory allocation for priority-oriented data stream processing. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3643356'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Large language models (LLMs) have achieved significant breakthroughs on machine learning tasks. Yet the substantial memory footprint of LLMs significantly hinders their wide deployment. In this paper, we propose BitMoD, an algorithm-hardware co-design solution for efficient LLM deployment. On the algorithm side, BitMoD introduces “fine-grained data type adaptation”, which uses a different data type to quantize a group (e.g., 128) of weights and key-value-cache (KV-cache). Through the careful design of these data types, BitMoD is able to quantize LLM weights and KV-cache to sub-4-bit precision while maintaining high accuracy. On the hardware side, BitMoD employs the bit-serial computing paradigm to easily support multiple numerical precisions and data types, thus providing a flexible trade-off between model accuracy and hardware efficiency. Furthermore, we design low-cost hardware components to effectively handle online KV-cache quantization and per-group partial sum dequantization. Our evaluation on a diverse set of LLMs demonstrates that BitMoD significantly outperforms state-of-the-art LLM quantization methods on both discriminative and generative tasks. Combining the superior model performance with an efficient accelerator design, BitMoD surpasses the state-of-the-art LLM accelerator in terms of both hardware performance and energy efficiency.},
+  abstract     = {Sketch is widely used in many traffic estimation tasks due to its good balance among accuracy, speed, and memory usage. In scenarios with priority flows, priority-aware sketch, as an emerging method, provides differentiated detection accuracy for flows of different priorities, optimizing resource allocation and improving the detection accuracy of high-priority flows. However, existing priority-aware sketches methods struggle to effectively handle the dynamic changes in flow priority distribution in realworld detection environments, leading to wasted or insufficient storage space. To address this issue, this paper proposes a new priority-aware sketch with Dynamic Memory Allocation called DMA-Sketch. It dynamically adjusts the detection framework based on flow priority distribution information and adaptively allocates appropriate memory space to each storage region. The experimental results show that DMA-Sketch improves the overall priority accuracy, high-priority accuracy and throughput by up to 1.33×, 16.39× and 1.88×, respectively, under the scenarios with changing flow priority distribution over the state-of-the-art schemes.},
   archive      = {J_TC},
-  author       = {Yuzong Chen and Chi-Chih Chang and Xilai Dai and Ahmed F. AbouElhamayed and Marta Andronic and George A. Constantinides and Mohamed S. Abdelfattah},
-  doi          = {10.1109/TC.2025.3628193},
+  author       = {Jinbin Hu and Houqiang Shen and Jiawei Huang and R. Simon Sherratt and Jin Wang},
+  doi          = {10.1109/TC.2025.3643356},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Bit-serial acceleration of LLM inference with mixture-of-datatype quantization},
+  title        = {A high-performance sketch with dynamic memory allocation for priority-oriented data stream processing},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Accelerating LLM inference via low-bit fine-grained quantization algorithm and bit-level accelerator co-design. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3628629'>www</a>)
+(2025). An agile deployment system for password recovery on FPGA. <em>TC</em>, 1--15. (<a href='https://doi.org/10.1109/TC.2025.3643444'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Large language models (LLMs) have emerged as one of the most impactful and transformative paradigms in natural language processing. Despite their remarkable success, the intensive computational demands and substantial memory footprint impose a significant barrier to efficient LLM inference. In this paper, we present a comprehensive solution to improve LLM inference performance under ultra-low weight precision, meticulously optimized through algorithm and architecture co-design. To achieve this, we first propose a fine-grained intra-cluster bit allocation method that partitions the weights into small clusters and explicitly considers the distribution of outliers and salient points within each cluster. Then, an intra-cluster protection mechanism is proposed to selectively preserve important weights during quantization, where an extended integer format and group-wise scale factor search are further introduced to mitigate accuracy degradation caused by aggressive bit-width reduction. Furthermore, we develop a memory-aligned encoding scheme to facilitate efficient memory access while enabling flexible identification of mixed-precision representations. Finally, we design a lightweight bit-level accelerator for low-bit LLM inference, offering simplified hardware design and enhanced adaptability through parallel bit-level computation. Compared to existing state-of-the-art quantization algorithms, our algorithm achieves higher model accuracy under ultra-low weight precision. Meanwhile, the proposed bit-level accelerator delivers speedups of 1.59×, 1.38×, and 1.61×, along with energy efficiency improvements of 1.52×, 1.42×, and 1.22× over ANT, OliVe, and FineQ, respectively.},
+  abstract     = {Hardware-based acceleration of password recovery remains a pressing challenge, as CPUs and GPUs struggle to efficiently process modern cryptographic primitives. Although FPGAs offer superior performance-per-watt, their widespread adoption is limited by long development cycles, manual optimization, and the absence of an end-to-end deployment framework that jointly accelerates password generation and verification. To address this gap, we propose the first agile, end-to-end FPGA-based password recovery system that unifies deep-learning-driven password generation and cryptographic verification within a single deployment workflow. The framework consists of: (1) a customized Neural Processing Unit (NPU) that accelerates GAN-based password generation models such as PassGAN; (2) an automated, template-based accelerator generator for verification kernels, built on reusable Chisel hardware primitives; and (3) a multi-objective Design Space Exploration (DSE) engine that co-optimizes kernel-level parameters (e.g., loop unrolling) and system-level parallelism to determine globally optimal FPGA configurations. We deploy the system on a heterogeneous platform combining a Zynq MPSoC with dual Virtex UltraScale+ FPGAs. Experimental results show that the NPU outperforms an NVIDIA Tesla V100 by 82.16% in PassGAN inference throughput. The full system achieves 1.90× higher end-to-end throughput and 2.32× better energy efficiency than GPU-based implementations, and delivers an average 32.58% speedup over state-of-the-art FPGA-only verification designs. These results demonstrate the practicality and scalability of our architecture for real-world password recovery workflows.},
   archive      = {J_TC},
-  author       = {Xilong Xie and Liang Wang and Limin Xiao and Li Ruan and Tairan Zhang and Jinquan Wang and Yongyue Wang and Xiaojian Liao},
-  doi          = {10.1109/TC.2025.3628629},
+  author       = {Liming Deng and Guowei Zhu and Xitian Fan and Guangwei Xie and Mingqian Sun and Xuegong Zhou and Wei Cao and Fan Zhang and XinSheng Yu},
+  doi          = {10.1109/TC.2025.3643444},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--15},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Accelerating LLM inference via low-bit fine-grained quantization algorithm and bit-level accelerator co-design},
+  title        = {An agile deployment system for password recovery on FPGA},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). HeShare: Energy-aware and efficient multi-task GPU sharing in heterogeneous GPU-based computing systems. <em>TC</em>, 1--12. (<a href='https://doi.org/10.1109/TC.2025.3628924'>www</a>)
+(2025). Performance analysis and CXL memory optimization in cluster-based RAG systems. <em>TC</em>, 1--12. (<a href='https://doi.org/10.1109/TC.2025.3643434'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {With the rapid growth of artificial intelligence and large-scale model computing, the demand for GPUs in datacenters continues to increase, especially for large-scale training and inference tasks. Heterogeneous multi-GPU systems, which integrate GPUs with varying types and computational capabilities, have become critical computing resources. This leads to two main challenges. First, due to the differences in GPU performance and power consumption, task scheduling involves a complex multi-objective optimization to balance energy efficiency and performance. More importantly, the lack of coordinated mechanisms for multi-task sharing and energy-efficient resource management across heterogeneous GPUs can result in GPU overload or underutilization, leading to wasted resources and potential system risks. To address these challenges, we propose HESHARE, an energy-aware and efficient heterogeneous GPU framework for datacenters. First, we design an energy-aware task scheduling strategy that optimizes task allocation across different GPUs to achieve a balance between energy consumption and performance. Second, we introduce a GPU sharing optimization mechanism that adaptively configures MPS and DVFS settings for each GPU, enhancing resource utilization, reducing overall energy consumption, and ensuring task performance. Compared to the state-of-the-art framework, we reduce average energy costs by 26% and improve job completion time by 31%, achieving a balance between energy efficiency and performance.},
+  abstract     = {Retrieval-augmented generation (RAG) systems rely on large-scale embedding search. However, the growth of corpora and the demand for real-time queries expose the memory capacity and bandwidth limitations of DRAM-centric architectures. To address this challenge, we adopt CXL memory in conjunction with cluster-scale RAG deployments and optimize the system in terms of performance, latency and cost efficiency. Our design leverages state-of-the-art CXL memory devices and platforms with memory management policies such as weighted interleaving and tiering between DRAM and CXL memory. In comparison with a DRAM baseline, our system archives 20% higher vector search performance and 43% lower LLM time-to-first token (TTFT), demonstrating clear end-to-end performance benefits. Moreover, in the context of overall system efficiency, we observed up to 20% and 42% improvement in power efficiency (QPS/Watt) and cost efficiency (QPS/$), respectively. These results demonstrate that, despite the relatively high latency of CXL memory, memory management policy-level optimization enable CXL memory to serve as a first-class memory resource in cluster-based RAG systems.},
   archive      = {J_TC},
-  author       = {Zhuolong Jiang and Zinuo Cai and Hongyu Zhao and Baoheng Zhang and Tianqi Wu and Yiming Qiang and Ruhui Ma and Haibing Guan and Rajkumar Buyya},
-  doi          = {10.1109/TC.2025.3628924},
+  author       = {Jesin Kim and Hochul Shin and Byeonghun Hwang and Seungpyo Cho and Kyumin Park and Young Geon Yoo and Byungyo Lee and Hojun Shim},
+  doi          = {10.1109/TC.2025.3643434},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--12},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {HeShare: Energy-aware and efficient multi-task GPU sharing in heterogeneous GPU-based computing systems},
+  title        = {Performance analysis and CXL memory optimization in cluster-based RAG systems},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). TensorFHE+: Fully homomorphic encryption acceleration based on linear algebra. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3629614'>www</a>)
+(2025). A hybrid online and offline requests inference serving system for LLM in private computer environment. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3643296'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Fully Homomorphic Encryption (FHE) enables encrypted data processing on untrusted cloud servers, crucial for privacy-sensitive applications. Despite its potential, performance overheads (about 10, 000× slower) limit adoption. ASIC accelerators outperform GPUs/FPGAs by optimizing specific operations but rely on costly 7nm processes and large on-chip memory, hindering cost-effective deployment. Balancing efficiency with manufacturing constraints remains critical. This paper presents TensorFHE+, a GPU-optimized FHE acceleration framework leveraging Tensor Cores to accelerate Number Theoretic Transform (NTT) operations. Key innovations include: 1) Decomposing CKKS kernels into vector/matrix operations for hardware utilization; 2) Vectorized modulo arithmetic; 3) Data layout optimization for memory efficiency. Evaluated on NVIDIA A100, TensorFHE+ outperforms TensorFHE [1] by 1.44× in average (up to 1.69× on ResNet-20) and surpasses prior GPU implementations [2], [3]. The design also demonstrates compatibility with commercial linear algebra accelerators, enabling efficient FHE deployment.},
+  abstract     = {While advancements in Large Language Models (LLMs) have broadened their applications, performing multitask LLM inference on a single GPU remains challenging due to insufficient GPU memory to load all model parameters. Existing methods that offload unneeded parameters to main memory and prefetch them back introduce high latency due to data transfer overhead. We propose FixGen, a single GPU LLM online-offline mixed inference serving system that supports multitask inference. First, we develop FixPool to optimize memory management by centralizing storage in a fixed memory space and optimizing parameter storage procedures, thus reducing PCIe resource consumption and improving efficiency. Secondly, we use a router to select appropriate operators to compute requests in the prefill and decode stages within the same batch to reduce the response latency for sudden online requests. FixGen reduces the online request-response latency between 1.06 and 1.84 times compared to the conventional method while maintaining the throughput to offline requests on a single GPU from OPT-6.7b to OPT-30b.},
   archive      = {J_TC},
-  author       = {Yintai Sun and Shengyu Fan and Zhenhua Yin and Xinkai Song and Xing Hu and Zidong Du and Qi Guo and Weizhi Xu and Rui Hou and Dan Meng and Song Bian and Mingzhe Zhan},
-  doi          = {10.1109/TC.2025.3629614},
+  author       = {Yuchen Shen and Yuning Zhang and Dong Yuan},
+  doi          = {10.1109/TC.2025.3643296},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {TensorFHE+: Fully homomorphic encryption acceleration based on linear algebra},
+  title        = {A hybrid online and offline requests inference serving system for LLM in private computer environment},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). DNSGreen: A comprehensive defense system against bounce-style DNS DDoS attacks with p4. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3625385'>www</a>)
+(2025). LASS: Reducing cold startup latency in serverless through loaded library sharing. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3643460'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {DNS recursive resolver plays the role of intermediary agent in domain name query service, making it easy to observe various DNS flooding attack behaviors. The programmable data plane has promoted innovation in in-band attack detection, but previous work has not concentrated on DNS services, and there are concerns with mistakenly killing benign traffic and low classification accuracy. In this paper, we propose DNSGreen, a comprehensive defense system against bounce-style DNS DDoS attacks in the programmable data plane. DNSGreen discusses flow and packet characteristics under anomalous behavior, employing a “flow-detection and packet-filtering” pattern to ensure effective defense while allowing benign traffic to pass through as much as possible. Furthermore, DNSGreen designs a whitelist collection module, which eliminates the need to inspect trusted streams in subsequent filtering and thereby reducing the occurrence of false positives. Finally, DNSGreen improves the allocation method of the statistical structure to enhance the accuracy of system alarms. We deploy DNSGreen on BMv2 switches and conduct tests in three attack scenarios, demonstrating that DNSGreen safeguards normal users with excellent F0:5 score while filtering attack traffic.},
+  abstract     = {In serverless scenario, function invocation runs in an individual container. Lightweight container technology has significantly reduced the startup latency of container. The library loading process now becomes a critical performance bottleneck of serverless function cold startup. The state-of-the-art approaches leverage the process fork operation to reduce the cold startup latency in serverless computing by reusing the loaded libraries. However, the fork operation can only share libraries between parent process and forked process. For security, the libraries loaded by the parent process should be a subset of those required by the forked process, which limits opportunities to eliminate library loading overhead. To address this problem, we propose the LASS system, which enables multiple processes to share initialized libraries in a composable and efficient manner. LASS allows a process to securely reuse libraries loaded by multiple processes, thereby reducing library loading latency to the millisecond level. Compared to the state-of-the-art approaches, LASS can improve average library loading speed by more than 10.3×, and reduce 99th percentile end-to-end latency by 34%–57%.},
   archive      = {J_TC},
-  author       = {Dan Tang and Xiaocai Wang and Pei Tan and Zheng Qin and Keqin Li and Jiliang Zhang},
-  doi          = {10.1109/TC.2025.3625385},
+  author       = {Zishu Yu and Yao Zhang and Runfu Li and Yifan Wang and Xiaohui Peng and Zhiwei Xu},
+  doi          = {10.1109/TC.2025.3643460},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {DNSGreen: A comprehensive defense system against bounce-style DNS DDoS attacks with p4},
+  title        = {LASS: Reducing cold startup latency in serverless through loaded library sharing},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). SLAM: Extending the reach of ising machine advantage. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3630119'>www</a>)
+(2025). SuperEncoder: Towards efficient neural approximate quantum state preparation. <em>TC</em>, 1--12. (<a href='https://doi.org/10.1109/TC.2025.3644034'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Dynamics-based Ising machines (IMs) are a promising substrate for high-speed combinatorial optimization and sampling. For problems that fit within their fixed capacity, they provide orders-of-magnitude speedups over conventional software algorithms. Once a problem exceeds hardware capacity, somewhat surprisingly, they become practically useless: Previous works generally relegate them to isolated sub-solvers. As our analysis will show, this approach produces no clear time or energy benefits, losing any inherent advantage of hardware IMs. After analyzing the shortcomings of previous hybrid proposals, we introduce a better method to extend IM advantage beyond hardware capacity. We call it the Stepped Large-neighborhood Annealing Method (SLAM), which drastically improves performance on combinatorial benchmarks with minimal host-side computation. We also propose novel architectural support to implement SLAM with low data movement overheads. The resulting augmented IM continues to exploit dynamical systems-enabled parallelism and thus maintains order of magnitude time-to-solution and energy-to-solution advantages over CPU-based algorithms. As a side benefit, our approach also significantly reduces the impact of device variation on solution quality, another perennial issue for analog optimizers.},
+  abstract     = {Numerous quantum algorithms assume that classical data has already been converted into quantum states, a process known as Quantum State Preparation (QSP). However, achieving precise QSP requires a circuit depth that scales exponentially with the number of qubits, posing a significant challenge to realizing quantum advantage. Recent research explores Parameterized Quantum Circuits (PQCs) as an approximate alternative, offering improved scalability with reduced circuit depth. However, the iterative, state-by-state optimization required by this approach creates substantial runtime overhead, which severely limits its practicality. To improve the efficiency of approximate QSP, we introduce a novel two-stage framework that can potentially generate QSP circuits for arbitrary quantum states. In the offline training stage, our model learns a direct mapping from target states to circuit parameters, thereby bypassing the need for online, state-by-state optimization during the inference stage. Extensive evaluations show that our approach significantly reduces runtime overhead by up to 132×, making a steady step towards efficient neural approximate QSP.},
   archive      = {J_TC},
-  author       = {Matthew X. Burns and Zahra Azad and Yongchao Liu and Tony Geng and Hui Wu and Michael C. Huang},
-  doi          = {10.1109/TC.2025.3630119},
+  author       = {Yilun Zhao and Bingmeng Wang and Wenle Jiang and Xiwei Pan and Bing Li and Yinhe Han and Ying Wang},
+  doi          = {10.1109/TC.2025.3644034},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--12},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {SLAM: Extending the reach of ising machine advantage},
+  title        = {SuperEncoder: Towards efficient neural approximate quantum state preparation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). JPnR: A length-matching placement and routing framework for single-flux-quantum circuits. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3625822'>www</a>)
+(2025). Dynamic quantum circuit compilation. <em>TC</em>, 1--12. (<a href='https://doi.org/10.1109/TC.2025.3643826'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Superconducting rapid single-flux-quantum (RSFQ) logic is a promising candidate for advancing future computing technologies due to its low-energy consumption and high-frequency capabilities. However, precise timing alignment is crucial for its physical design, posing significant challenges in length-matching placement and routing. This paper introduces JPnR, a physical design framework tailored for RSFQ circuits, featuring a clock-aware length-matching placer and a length-matching multi-terminal router. The placer simultaneously considers both clock distribution and timing constraints, distributing clock pulses heuristically and transforming the placement problem into a single-source shortest-path problem. This allows it to minimize vertical wirelength using dynamic programming and iteratively optimize placement via a barycenter-like reordering method. The router tackles challenges related to splitter placement and length-matching multi-terminal routing using a two-layer planar Manhattan routing model. Initial routing assigns tracks based on the left-edge algorithm to minimize routing width while employing the dogleg algorithm to resolve cycles in the vertical constraint graph. Length-matching is achieved via a splitter tree-based hierarchical approach with maximum-flow-based detour insertion. Finally, a PTL region expansion strategy is employed for unsatisfied connections. Experimental results on RSFQ benchmarks demonstrate the effectiveness and efficiency of JPnR.},
+  abstract     = {The practical applications of quantum computing is currently limited by the small number of available qubits. Recent advances in quantum hardware have introduced midcircuit measurements and resets, enabling the reuse of measured qubits and thus reducing the qubit requirements for executing quantum algorithms. In this work, we present a systematic study of dynamic quantum circuit compilation, a process that transforms static quantum circuits into their dynamic equivalents with fewer qubits through qubit reuse. We establish the first graph-based framework for optimizing qubit-reuse compilation. In particular, we characterize the task of finding the optimal compilation strategy for maximizing qubit reuse using binary integer programming and provide efficient heuristic algorithms for devising general compilation strategies. We conduct a thorough analysis of quantum circuits with practical relevance and offer their optimal qubit-reuse compilation strategies. We also perform a comparative analysis against state-of-the-art approaches, demonstrating the superior performance of our methods in both structured and random quantum circuits. Our framework lays a rigorous foundation for understanding dynamic quantum circuit compilation via qubit reuse, holding significant promise for the practical implementation of large-scale quantum algorithms on quantum computers with limited resources.},
   archive      = {J_TC},
-  author       = {Rongliang Fu and Minglei Zhou and Siyan Chen and Xinda Chen and Junying Huang and Xiaochun Ye and Zhimin Zhang and Tsung-Yi Ho},
-  doi          = {10.1109/TC.2025.3625822},
+  author       = {Kun Fang and Munan Zhang and Ruqi Shi and Yinan Li},
+  doi          = {10.1109/TC.2025.3643826},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--12},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {JPnR: A length-matching placement and routing framework for single-flux-quantum circuits},
+  title        = {Dynamic quantum circuit compilation},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Galaxy: An elastic FaaS control plane for highly-scalable instance scheduling. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3624373'>www</a>)
+(2025). An efficient and fault-tolerant data transmission scheme in data center networks. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3644354'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Function-as-a-Service (FaaS) is becoming increasingly prevalent, and the number of daily service requests in our system ByteDance has even reached 49.6 billion. These requests exhibit “3H” characteristics: high concurrency, high burstiness, and high fluctuation, causing the instance scheduling system to face severe bottlenecks even earlier than the data plane. In this paper, inspired by the idea of on-demand scaling of FaaS applications, we propose Galaxy, a highly scalable instance scheduling system for FaaS platforms. Galaxy decouples the instance scheduling system into functions and introduces a top controller to dynamically adjust the number of instances for each function based on the request load, effectively eliminating bottlenecks under high concurrent requests. We evaluate Galaxy with real-world workloads and the experimental results show that Galaxy can complete the scaling of over 89,935 instances within 1 second, excluding cold start overhead. Galaxy increases the scheduling throughput by 8.6 ~ 12.7× compared to the existing control plane.},
+  abstract     = {The rapid growth of cloud computing, large-scale distributed systems, and AI-driven applications has placed stringent demands on the performance and reliability of data center networks (DCNs). As DCNs scale in size and structural complexity, they become increasingly vulnerable to multiple concurrent node and/or link failures, which can lead to severe service disruptions and significant performance degradation. Existing data transmission approaches typically address node and link failures in isolation, frequently mitigating one type while overlooking the other, and thus fall short in effectively handling complex multi-failure scenarios. This paper presents a novel and efficient data transmission scheme designed to ensure robust communication under multiple node and/or link failures in DCNs. The proposed solution integrates a proactive path redundancy mechanism with a failure-aware routing strategy to enable rapid identification and avoidance of faulty components. We adopt the generalized hypercube network (GHN), a regular and scalable topology, as the underlying network model. Firstly, leveraging the method of Yang and Chang [44], we construct multiple independent spanning trees (ISTs) in GHNs, which provide structural path diversity and fault isolation. Building upon these ISTs, we propose GFP-IST, an optimized routing algorithm with a time complexity of O(N log N), where N denotes the number of nodes. GFP-IST enables efficient route computation and resilient packet forwarding in the presence of multiple simultaneous failures. Extensive simulation results demonstrate that our approach outperforms several fault-tolerant routing schemes in terms of average path length, path construction time, and fault recovery success rate, especially in large-scale and high-failure-rate network environments.},
   archive      = {J_TC},
-  author       = {Yiming Li and Laiping Zhao and Shize Bian and Yuhang Zhang and Guowei Liu and Huahui Yang and Mingyang Zhao and Keqiu Li},
-  doi          = {10.1109/TC.2025.3624373},
+  author       = {Mengjie Lv and Fu Xiao and Weibei Fan and Lei Han and Jian Qiao and Sun-Yuan Hsieh},
+  doi          = {10.1109/TC.2025.3644354},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
-  pages        = {1--14},
+  month        = {12},
+  pages        = {1--13},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {Galaxy: An elastic FaaS control plane for highly-scalable instance scheduling},
+  title        = {An efficient and fault-tolerant data transmission scheme in data center networks},
   year         = {2025},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). FIITED: Fine-grained embedding dimension optimization during training for recommender systems. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3625161'>www</a>)
+(2025). Parallel delay-driven layer assignment leveraging hierarchical task graph modeling for advanced technology nodes. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3644353'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Huge embedding tables in modern deep learning recommender models (DLRM) require prohibitively large memory during training and inference. This paper proposes FIITED, a system to automatically reduce the memory footprint via FIne-grained In-Training Embedding Dimension pruning. By leveraging the key insight that embedding vectors are not equally important, FIITED adaptively adjusts the dimension of each individual embedding vector during model training, assigning larger dimensions to more important embeddings while adapting to dynamic changes in data. We prioritize embedding dimensions with higher frequencies and gradients as more important. To enable efficient pruning of embeddings and their dimensions during model training, we propose an embedding storage system based on virtually-hashed physically-indexed hash tables. Experiments on two industry models and months of realistic datasets show that FIITED can reduce DLRM embedding size by more than 65’ while preserving model quality, outperforming state-of-the-art in-training embedding pruning methods and increasing the reduction ratio by 1.3× to 1.67×. On public datasets, FIITED can reduce the size of embedding tables by 2.2× to 800× with negligible accuracy drop, achieving 1.05× to 12.5× improvement in reduction ratio compared to baselines while improving model throughput.},
+  abstract     = {Very large scale integration (VLSI) circuits typically consist of millions of nets, posing significant challenges for efficient physical design. Interconnect delay has become a critical factor for timing performance in technology nodes at 5nm and beyond. Additionally, the coupling effect among the wires increases the complexity of delay optimization. Moreover, tapering constraints are essential in advanced technology nodes to ensure manufacturability. Furthermore, the ever-increasing scale of modern designs necessitates a high-performance computing (HPC) framework to accelerate delay-driven layer assignment in advanced technology nodes. To address these challenges, we propose ParDelay, a parallel delay-driven layer assignment leveraging hierarchical task graph modeling while considering tapering constraints for advanced technology nodes, which includes the following five key techniques: 1) A general deterministic parallel framework is proposed for delay-driven layer assignment, leveraging a hierarchical task graph to enable both internet and inter-node parallelism. 2) A delay- and overflow-driven tapering repairing strategy is proposed to eliminate tapering violations while further optimizing net delay. 3) A local delay-critical net filtering method is proposed to analyze local delay criticality to guide layer assignment, thereby minimizing delay while eliminating overflow. 4) To mitigate the coupling effect, we propose a net shielding algorithm that reduces wire density for maximum delay candidate nets to optimize maximum delay. 5) A delay-aware refinement strategy is proposed to classify nets by their delay rank and assign distinct non-default-rule (NDR) wire permissions and refinement objectives, thereby reducing delay. Experimental results demonstrate that, compared to existing layer assignment algorithms and parallel routing frameworks, our approach effectively reduces delay, via count, and runtime under the tapering constraints.},
   archive      = {J_TC},
-  author       = {Qinyi Luo and Penghan Wang and Wei Zhang and Fan Lai and Jiachen Mao and Xiaohan Wei and Jun Song and Wei-Yu Tsai and Shuai Yang and Yuxi Hu and Xuehai Qian},
-  doi          = {10.1109/TC.2025.3625161},
+  author       = {Zepeng Li and Zhen Zhuang and Genggeng Liu and Wen-Hao Liu and Tsung-Yi Ho and Ting-Chi Wang},
+  doi          = {10.1109/TC.2025.3644353},
   journal      = {IEEE Transactions on Computers},
-  month        = {11},
+  month        = {12},
   pages        = {1--14},
   shortjournal = {IEEE Trans. Comput.},
-  title        = {FIITED: Fine-grained embedding dimension optimization during training for recommender systems},
+  title        = {Parallel delay-driven layer assignment leveraging hierarchical task graph modeling for advanced technology nodes},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SHEEO+: Enabling learning-based efficiency optimizer with shadow cycles in resource constrained autonomous embedded systems. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3644184'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The emerging trend of autonomous embedded systems (AES) is promising to minimize human intervention in critical tasks. In the pursuit of maximal per-watt performance, the complex hardware and software of AES require intelligent energy efficiency optimizers (EO), and the stochastic runtime variances require continuous EO. However, deploying the desirable ondevice EO causes severe performance slowdown due to contention on limited computing power with the AES pipeline. We find that there are ignored and underutilized heterogeneous resources within AES for costly EO, which results from unbalanced accelerator behaviors and misaligned parallel inference executions. We experimentally and theoretically analyze the Shadow Cycles within the realistic autonomous Bird’s Eye View pipeline on commercial embedded platforms, categorizing them into vertical and horizontal types with distinct properties. In this paper, we introduce SHEEO+, a continuous and intelligent energy efficiency optimizer that utilizes ignored heterogeneous shadow cycles. It achieves continuous and lightweight AES monitoring with the observation module, as well as intelligent and efficient AES power management with the optimization module. On the one hand, SHEEO+ observes both the internal runtime status and external environment variance with portable interfaces to capture shadow cycles and real-time states. On the other hand, SHEEO+ optimizes power configurations per iteration based on deep reinforcement learning (DRL) methods. It tailors DRL for two types of shadow cycles and invocates optimization processes based on resource availability. To extensively evaluate SHEEO+, we implement a prototype and deploy it on realistic edge platforms. The evaluation results show that SHEEO+ utilizes up to 74.2% shadow cycles and achieves up to 18.6% energy efficiency improvements compared to state-of-the-art energy efficiency optimizers with negligible deployment overheads.},
+  archive      = {J_TC},
+  author       = {Xinkai Wang and Chao Li and Yiyang Li and Lingyu Sun and Cheng Xu and Xiaofeng Hou and Jing Wang and Minyi Guo and Yaqian Zhao},
+  doi          = {10.1109/TC.2025.3644184},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {SHEEO+: Enabling learning-based efficiency optimizer with shadow cycles in resource constrained autonomous embedded systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SCRec: A scalable computational storage system with statistical sharding and tensor-train decomposition for recommendation models. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3644342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep Learning Recommendation Models (DLRMs) are essential for personalized content delivery in web applications, but their parameter sizes have grown to terabytes, with memory bandwidth demands exceeding TB/s. Furthermore, the workload intensity within the model varies based on the target mechanism, making it difficult to build an optimized recommendation system. In this paper, we propose SCRec, a scalable computational storage recommendation system that can handle TB-scale industrial DLRMs while guaranteeing high bandwidth requirements. SCRec utilizes a software framework that features a mixed-integer programming (MIP)-based cost model, efficiently fetching data based on data access patterns and adaptively configuring memory-centric and compute-centric cores. Additionally, SCRec integrates hardware acceleration cores to enhance DLRM computations, particularly allowing for the high-performance reconstruction of approximated embedding vectors from extremely compressed tensor-train (TT) format. By combining its software framework and hardware accelerators, while eliminating data communication overhead by being implemented on a single server, SCRec achieves substantial improvements in DLRM inference performance. It delivers up to 55.77× speedup compared to a CPU-DRAM system with no loss in accuracy and up to 13.35× energy efficiency gains over a multi-GPU system.},
+  archive      = {J_TC},
+  author       = {Jinho Yang and Ji-Hoon Kim and Joo-Young Kim},
+  doi          = {10.1109/TC.2025.3644342},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {SCRec: A scalable computational storage system with statistical sharding and tensor-train decomposition for recommendation models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TolerStore: Tolerating malicious nodes in decentralized storage network. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3644302'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A decentralized storage network (DSN) collects idle storage resources from Internet nodes for low-cost rental to users, and its scale has grown exponentially. In a DSN, most users rely on a centralized third-party service provider (SP) to process userside data and interact with decentralized storage nodes (SNs), making users suffer from a single point of failure. Additionally, since both SP and SNs may offer malicious services, enabling fault tolerance, data confidentiality, and availability guarantee with public verifiability is crucial in the presence of such threats. In this paper, we propose TolerStore, a completely decentralized service framework for DSNs with decentralized SPs and SNs, which can tolerate Byzantine SPs and malicious SNs. To the best of our knowledge, TolerStore is the first to develop a blockchain with multiple SPs for privacy-aware data processing in DSNs, which is formally proven to ensure Byzantine fault tolerance, data confidentiality, public verification, and data availability. Furthermore, we propose an optimized Byzantine Fault-Tolerant consensus with an adaptive leader rotation, incorporating homomorphic fingerprints to verify privacy-aware data processing with enhanced performance. We implement a TolerStore prototype over Hyperledger Fabric, and extensive experiments show that it tolerates [$\frac{N-1}{3}$] Byzantine SPs and 50% malicious SNs with up to 99.99% data availability.},
+  archive      = {J_TC},
+  author       = {Wanning Bao and Liangmin Wang and Haiqin Wu and Dian Shen and Boris Düdder},
+  doi          = {10.1109/TC.2025.3644302},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {TolerStore: Tolerating malicious nodes in decentralized storage network},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Q-VESA: Accelerating quantization-aware vector search for fast retrieval in prompt engineering. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3644935'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Similarity search has drawn significant attention due to the growing demand for AI prompt engineering, which leverages retrieval-augmented generation (RAG) systems to maximize the efficiency of large language models (LLMs). Improving the performance of memory-intensive data retrieval processes using approximate nearest neighbor search (ANNS) algorithms has become increasingly crucial for delivering high-quality generative AI services. In this work, we propose Q-VESA, a software-hardware collaborative solution designed to accelerate low-precision graph-based vector search while preserving recall rates comparable to high-precision. We perform a comprehensive analysis of hierarchical navigable small-world (HNSW), one of the most promising graph-based ANNS methods, using recent datasets tailored for RAG systems. Unlike standard vector database datasets, vector data used in LLMs present unique challenges for low-precision search. To address these, we introduce software-oriented precision partitioning techniques that enable mixed-precision computations during graph traversal without compromising hardware performance. The Q-VESA architecture is developed with two key innovations: a database restructuring scheme with vector data segments, and a dedicated accelerator design to maximize throughput in distance computations. Experimental results demonstrate that Q-VESA on a CPU system achieves query-per-second (QPS) speedups of up to 1.81× in the SIMD execution mode. Furthermore, leveraging minimal area overhead, the ASIC implementation delivers an additional speedup of up to 58.3×, 16.5× and 1.5× compared to the CPU, GPU and the state-of-the-art ASIC-based accelerator, respectively.},
+  archive      = {J_TC},
+  author       = {Seongjoon Cho and Junyoung Park and Donghyun Kang and Moohyeon Nam and Hongchan Roh and Moo-Kyoung Chung and Se-Hyun Yang and Seungkyu Choi},
+  doi          = {10.1109/TC.2025.3644935},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Q-VESA: Accelerating quantization-aware vector search for fast retrieval in prompt engineering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). QuanGuard: Error evolution–based fingerprinting for fraud detection in quantum cloud services. <em>TC</em>, 1--12. (<a href='https://doi.org/10.1109/TC.2025.3645773'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum computing users increasingly access quantum hardware through cloud platforms and are charged based on usage. Because these resources are scarce and expensive, users often request specific devices to ensure performance, while providers may reassign jobs to other devices to maximize throughput, potentially compromising user expectations. Thus, we present QuanGuard, an efficient fingerprinting framework for verifying whether the allocated quantum resources match user selections. QuanGuard constructs dynamic fingerprints from the noisy execution results of a probing circuit, exploiting device-specific error evolution patterns to identify hardware uniquely. We further develop an error evolution algorithm that generates user-side fingerprints for lightweight matching against assigned resources. The method requires only a single probing circuit per detection, making it highly practical for current quantum cloud platforms. Experiments on seven IBM quantum computers show that QuanGuard achieves accurate and reliable device verification with minimal overhead.},
+  archive      = {J_TC},
+  author       = {Jindi Wu and Tianjie Hu and Qun Li},
+  doi          = {10.1109/TC.2025.3645773},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--12},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {QuanGuard: Error evolution–based fingerprinting for fraud detection in quantum cloud services},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). KconfigTune: Automatic performance tuning for linux kernel configuration. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3644413'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Linux kernel offers nearly 20,000 configuration options, making it highly customizable but also extremely challenging to manually optimize for performance. The diversity of operating environments and workloads further limits the effectiveness of static or expert-crafted configurations. This paper introduces KconfigTune, an automated tuning system that jointly optimizes Linux kernel configuration options and system-level parameters (e.g., procfs entries). We propose extconfig to expand the parameter search space and, for the first time, address configuration dependencies that arise during automated tuning. To ensure valid and bootable kernels, we design a dependency automatic fix tool and a GRUB-based mechanism. KconfigTune models the tuning process as a machine learning problem and applies Bayesian optimization with a random forest model to efficiently explore the vast and interdependent configuration space. Unlike prior approaches that focus solely on either kernel options or system parameters, KconfigTune achieves deeper integration by jointly tuning both compile-time and runtime behaviors. Experimental results show significant performance improvements, with gains of 18.62% and 19.92% over the default configuration in UnixBench and LEBench tests, respectively. Compared to the state-of-the-art, KconfigTune outperforms by 2.9% and 12.69% in these benchmarks. Ablation studies further confirm that these gains primarily stem from the combined tuning of kernel configurations and system-level parameters.},
+  archive      = {J_TC},
+  author       = {Ying Sun and Fangqi Bi and Jiatai He and Shen Qu and Yanjun Wu and Pengpeng Hou},
+  doi          = {10.1109/TC.2025.3644413},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {KconfigTune: Automatic performance tuning for linux kernel configuration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PLP-DVS: Adaptive energy scaling of capacitor-based power loss protection in SSDs. <em>TC</em>, 1--12. (<a href='https://doi.org/10.1109/TC.2025.3645132'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A capacitor-based Power Loss Protection (PLP) has been widely adopted in modern enterprise-level solid-state drives (SSD) for data security and performance. It becomes challenging to guarantee lifetime data security as SSD capacity rapidly increases in limited physical volume and cost. In this work, we proposed a dynamic control of capacitor voltage to enhance the reliability and energy efficiency of the PLP capacitors. Unlike previous studies, we reduce the voltage charged in the capacitor according to the status of the volatile contents to be protected. The proposed method is implemented in an SSD platform prototype. We successfully verified the feasibility of synchronized control of the capacitor voltage and volatile contents. The experimental result shows that the proposed method can reduce the capacitor voltage by 33% on average, corresponding to a 2.27 times longer lifetime and 41% reduction of leakage-induced energy loss. Finally, we can reduce the over-design factor by 36% of the fixed voltage setup.},
+  archive      = {J_TC},
+  author       = {Jaehyeok Cho and Sunghyun Park and Sungyong Ahn and Jaehyun Park and Donghwa Shin},
+  doi          = {10.1109/TC.2025.3645132},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--12},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {PLP-DVS: Adaptive energy scaling of capacitor-based power loss protection in SSDs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-component fault tolerance and path construction in interconnection networks. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3645082'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of interconnection networks, reliability analysis is of utmost importance, especially considering the increasing vulnerability of components as the network scales. Fault tolerance is a key aspect in this regard, and extra connectivity and component connectivity are two crucial metrics for its assessment. In this paper, we establish a theoretical framework for multi-component fault tolerance in the augmented k-ary n-cube AQn,k, a hypercube-derived interconnection network commonly used in distributed-memory architectures. We derive a general result for the r-component connectivity of AQn,k as $4n(n - 1) - \lfloor{\frac{{5{{(r - 1)}^2}}}{2}}\rfloor$ (n ≥ 4, k ≥ 4, and 2 ≤ r ≤ n). Furthermore, we extend the result to explore the h-extra r-component connectivity of AQn,k as (8n − 10)(r−1) −2(r−2) (n ≥ 4, k ≥ 4, h = 1 and 2≤r≤n). Based on these theoretical results, we propose a novel fault-tolerant path algorithm for AQn,k that handles h-extra r-component faults. The algorithm first preprocesses and classifies fault-free components, which efficiently determines whether two fault-free nodes belong to the same component, thereby avoiding ineffective path searches. When two fault-free nodes are in the same component, we employ a hybrid greedy-BFS algorithm to construct fault-free paths between them. To validate the algorithm, we conduct comprehensive simulations on AQn,k with varying parameters. The experimental results demonstrate that the proposed algorithm achieves constant-time path existence queries after preprocessing, significantly reduces path discovery time in multi-query scenarios compared to conventional methods, and maintains near-optimal path lengths while exhibiting superior scalability as network dimensions increase. Furthermore, the algorithm demonstrates robust and highly efficient performance even under fault conditions significantly exceeding theoretical connectivity limits. Additionally, the greedy strategy effectively resolves the vast majority of pathfinding scenarios, confirming its effectiveness under h-extra r-component fault conditions.},
+  archive      = {J_TC},
+  author       = {Xueli Sun and Shuangxiang Kan and Jianxi Fan and Weibei Fan and Jin Qi and Zhenjiang Dong},
+  doi          = {10.1109/TC.2025.3645082},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Multi-component fault tolerance and path construction in interconnection networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LPPUBR: Lightweight privacy-preserving unsupervised medical image bitmap retrieval in IoT. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3645855'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the widespread application of Internet of Things (IoT) technology in the medical field, real-time collection and transmission of medical images become feasible. However, existing privacy-preserving image retrieval schemes often suffer from low efficiency and high communication overhead when operated in resource-constrained IoT environments due to the lack of efficient models. Thus, achieving efficient and secure medicalimage retrieval on limited-resource devices has emerged as a critical challenge. To address this, we propose LPPUBR, a lightweight, privacy-preserving, unsupervised bitmap retrieval scheme designed for IoT environments with constrained resources. LPPUBR utilizes a secure and lightweight deep learning model to extract deep feature descriptors from images and employs product quantization (PQ) to encode them into binary bitmaps, enhancing retrieval efficiency while reducing computational and storage costs. Particularly, a cross-quantization contrastive learning strategy is applied to jointly train the neural network model and PQ codewords for unsupervised learning. Furthermore, to improve interaction efficiency and reduce communication costs among multiple servers, we optimize the intermediate value recovery operation and redesign the related protocols in n-party secret sharing using a group communication strategy. A comprehensive theoretical analysis and experimental evaluation demonstrate that LPPUBR maintains retrieval accuracy comparable to the original unsupervised model while ensuring data security. Moreover, LPPUBR surpasses existing schemes in terms of computational cost, communication overhead, and retrieval efficiency.},
+  archive      = {J_TC},
+  author       = {Yifan Wang and Ruizhong Du and Mingyue Li and Dongliang Xu and Chunfu Jia and Can Mei},
+  doi          = {10.1109/TC.2025.3645855},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {LPPUBR: Lightweight privacy-preserving unsupervised medical image bitmap retrieval in IoT},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AdaptiveCore: Adaptive parallel core decomposition framework. <em>TC</em>, 1--13. (<a href='https://doi.org/10.1109/TC.2025.3646191'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Core decomposition is a widely used hierarchical analysis algorithm for large-scale graphs. It achieves this decomposition by iteratively peeling the vertices along with their adjacency edges off into different hierarchies. With the timeliness requirements of modern applications, many researchers have introduced accelerators, particularly GPUs, to improve the computational efficiency of graph algorithms. However, the empty, sparse, and numerous hierarchies in large graphs lead to inefficient computation and parallelism, not only including unnecessary searching for the hierarchy’s vertices, but also significant thread wastage when peeling off the adjacency edges of these vertices. In this paper, we propose an adaptive parallel framework for core decomposition, named AdaptiveCore. First, it improves vertex searching efficiency by adaptively skipping the empty hierarchies and reducing the search space. Moreover, it greatly improves thread utilization by adaptively allocating the available threads to peel off the adjacency edges. Comprehensive experiments show that, compared with the state-of-the-art works, the proposed framework achieves an average speedup of 7.1× on the GPU platform and up to 2.0× on the multi-core CPU platform.},
+  archive      = {J_TC},
+  author       = {Chen Zhao and Zhigao Zheng and Hao Huang and Hao Liu and Dacheng Tao},
+  doi          = {10.1109/TC.2025.3646191},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--13},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {AdaptiveCore: Adaptive parallel core decomposition framework},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Practical asynchronous BFT from local coinst. <em>TC</em>, 1--14. (<a href='https://doi.org/10.1109/TC.2025.3643147'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Asynchronous Byzantine fault-tolerant (BFT) protocols assuming no timing assumptions are inherently more robust than their partially synchronous counterparts, but typically have much weaker security guarantees. We design new and efficient asynchronous BFT protocols matching all security guarantees of partially synchronous protocols. To achieve the goal, we have developed the local coin based BFT approach–one long deemed as being inefficient–and designed more efficient asynchronous binary agreement (ABA) protocols and their reproposable ABA (RABA) versions from local coins. Notably, our techniques on ABA and RABA allow us to build more efficient ABA protocols from common coins. We implemented four BFT protocols in a new Golang library, including BEAT, two WaterBear protocols, and FlatWorm. The WaterBear protocols use the conventional BFT workflow, while FlatWorm leverages the framework separating message transmission from consensus and significantly improves the system throughput. Via extensive evaluation, we show that our WaterBear protocols and FlatWorm are efficient under both failure-free and failure scenarios. Notably, WaterBear-QS consistently outperforms BEAT across all metrics and FlatWorm significantly outpaces WaterBear-QS. For example, with 16 replicas, FlatWorm achieves a throughput of 213.04ktx/sec—5.63× that of BEAT and 3.43× that of WaterBear-QS.},
+  archive      = {J_TC},
+  author       = {Baohan Huang and Haibin Zhang and Sisi Duan and Boxin Zhao and Liehuang Zhu},
+  doi          = {10.1109/TC.2025.3643147},
+  journal      = {IEEE Transactions on Computers},
+  month        = {12},
+  pages        = {1--14},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Practical asynchronous BFT from local coinst},
   year         = {2025},
 }
 </textarea>

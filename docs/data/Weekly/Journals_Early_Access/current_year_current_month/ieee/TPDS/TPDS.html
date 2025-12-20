@@ -25,27 +25,8 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 5</h2>
+<h2 id="tpds">TPDS - 4</h2>
 <ul>
-<li><details>
-<summary>
-(2025). Scheduling jobs under a variable number of processors. <em>TPDS</em>, 1--16. (<a href='https://doi.org/10.1109/TPDS.2025.3638703'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Even though it is usually assumed that data centers can always operate at maximum capacity, there have been recent scenarios where the amount of electricity that can be used by data centers evolve over time. Hence, the number of available processors is not a constant anymore. In this work, we assume that jobs can be checkpointed before a resource change. Indeed, in the scenarios that we consider, the resource provider warns the user before a change in the number of processors. It is thus possible to anticipate and take checkpoints before the change happens, such that no work is ever lost. The goal is then to maximize the goodput and/or the minimum yield of jobs within the next section (time between two changes in the number of processors). We model the problem and design greedy solutions and sophisticated dynamic programming algorithms with some optimality results for jobs of infinite duration, and adapt the algorithms to finite jobs. A comprehensive set of simulations, building on real-life job sets, demonstrates the performance of the proposed algorithms. Most algorithms achieve a useful platform utilization (goodput) of over 95%. With infinite jobs, the algorithms also keep fairness by having a relative minimum yield above 0.8, meaning that each job gets a good access to the platform (80% of the time that it would have had if each job had its perfect share of the platform). For finite jobs, the minimum yield can be low since very short new jobs may have to wait until the beginning of the next section to start (and finish), significantly impacting their yield. However, for 75% of the jobs within each workload, the yield ratio between these jobs is at most at a factor two, hence demonstrating the fairness of the proposed algorithms.},
-  archive      = {J_TPDS},
-  author       = {Anne Benoit and Joachim Cendrier and Frédéric Vivien},
-  doi          = {10.1109/TPDS.2025.3638703},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {12},
-  pages        = {1--16},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Scheduling jobs under a variable number of processors},
-  year         = {2025},
-}
-</textarea>
-</details></li>
 <li><details>
 <summary>
 (2025). EdgeDup: Popularity-aware communication-efficient decentralized edge data deduplication. <em>TPDS</em>, 1--13. (<a href='https://doi.org/10.1109/TPDS.2025.3638945'>www</a>)
@@ -67,44 +48,6 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Cross-rack aware recycle technique in erasure-coded data centers. <em>TPDS</em>, 1--15. (<a href='https://doi.org/10.1109/TPDS.2025.3639066'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Data centers commonly use erasure codes to maintain high data reliability with lower storage overhead than replication. However, recycling invalid data blocks caused by deletion and update operations is challenging in erasure-coded data centers. Erasure codes organize data blocks into stripes, and we cannot directly delete invalid data blocks like replication to ensure the redundancy of the remaining valid blocks within a stripe. When considering the recycling issues in data centers, existing studies still need to address the following problems: ignoring heavy cross-rack traffic and the load imbalance problem during recycling, and incurring high disk seeks that affect writing performance after recycling. This paper presents the first systematic study on data re cycling in erasure-coded data centers and proposes a Cross rack Aware Recycle (CARecycle) technique. The key idea is migrating valid data blocks from certain stripes to rewrite invalid ones in others, thereby releasing the invalid blocks for certain stripes. Specifically, CARecycle first carefully examines the block distribution for each stripe and generates an efficient recycle solution for migrating and releasing, with the primary objective of reducing cross-rack traffic and disk seek load of nodes. Due to the rewriting of invalid data blocks, parity blocks in multiple stripes need to be updated concurrently. Thus, it further batch processes multiple stripes and selectively arranges appropriate stripes into a batch to achieve uniform cross-rack traffic load distribution. In addition, CARecycle can be extended to adapt to different erasure codes and boost recycling in heterogeneous network environments. Large-scale simulations and Amazon EC2 experiments show that CARecycle can reduce up to 33.8% cross rack traffic and 28.64%-59.64% recycle time while incurring low disk seek, compared to a state-of-the-art recycling technique.},
-  archive      = {J_TPDS},
-  author       = {Hai Zhou and Dan Feng},
-  doi          = {10.1109/TPDS.2025.3639066},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {12},
-  pages        = {1--15},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Cross-rack aware recycle technique in erasure-coded data centers},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Enabling tile-based direct query on adaptively compressed data with GPU acceleration. <em>TPDS</em>, 1--18. (<a href='https://doi.org/10.1109/TPDS.2025.3639485'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The explosive growth of data poses significant challenges for GPU-based databases, which must balance limited memory capacity with the need for high-speed query execution. Compression has become an essential technique for optimizing memory utilization and reducing data movement. However, its benefits have been limited to the necessary data decompression. Querying compressed data conventionally requires decompression, which causes the query process to be significantly slower than a direct query on uncompressed data. To address this problem, this paper presents a novel GPU-accelerated tile-based direct query framework that successfully eliminates the limitation, significantly enhancing query performance. By employing direct query strategies, the framework minimizes data movement and maximizes memory bandwidth utilization. It incorporates tilebased hardware-conscious execution strategies for direct query, including memory management and control flow coordination, to improve execution efficiency. Additionally, adaptive data-driven compression formats are paired with tailored SQL operators to enable efficient support for diverse queries. Our experiments, conducted using the Star Schema Benchmark, show an average improvement of 3.5× compared to the state-of-the-art tilebased decompression scheme, while maintaining the space-saving advantages of compression. Notably, our solution consistently outperforms existing direct execution schemes for compressed data across all query types.},
-  archive      = {J_TPDS},
-  author       = {Yu Zhang and Feng Zhang and Yani Liu and Huanchen Zhang and Jidong Zhai and Wenchao Zhou and Xiaoyong Du},
-  doi          = {10.1109/TPDS.2025.3639485},
-  journal      = {IEEE Transactions on Parallel and Distributed Systems},
-  month        = {12},
-  pages        = {1--18},
-  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
-  title        = {Enabling tile-based direct query on adaptively compressed data with GPU acceleration},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
 (2025). A survey on machine learning-based HPC I/O analysis and optimization. <em>TPDS</em>, 1--15. (<a href='https://doi.org/10.1109/TPDS.2025.3639682'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -118,6 +61,44 @@
   pages        = {1--15},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A survey on machine learning-based HPC I/O analysis and optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computational burst buffers: Accelerating HPC I/O via in-storage compression offloading. <em>TPDS</em>, 1--15. (<a href='https://doi.org/10.1109/TPDS.2025.3643175'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Burst buffers (BBs) act as an intermediate storage layer between compute nodes and parallel file systems (PFS), effectively alleviating the I/O performance gap in high-performance computing (HPC). As scientific simulations and AI workloads generate larger checkpoints and analysis outputs, BB capacity shortages and PFS bandwidth bottlenecks are emerging, and CPU-based compression is not an effective solution due to its high overhead. We introduce Computational Burst Buffers (CBBs), a storage paradigm that embeds hardware compression engines such as application-specific integrated circuit (ASIC) inside computational storage drives (CSDs) at the BB tier. CBB transparently offloads both lossless and error-bounded lossy compression from CPUs to CSDs, thereby (i) expanding effective SSD-backed BB capacity, (ii) reducing BB–PFS traffic, and (iii) eliminating contention and energy overheads of CPU-based compression. Unlike prior CSD-based compression designs targeting databases or flash caching, CBB co-designs the burst-buffer layer and CSD hardware for HPC and quantitatively evaluates compression offload in BB–PFS hierarchies. We prototype CBB using a PCIe 5.0 CSD with an ASIC Zstd-like compressor and an FPGA prototype of an SZ entropy encoder, and evaluate CBB on a 16-node cluster. Experiments with four representative HPC applications and a large-scale workflow simulator show up to 61% lower application runtime, 8–12× higher cache hit ratios, and substantially reduced compute-node CPU utilization compared to software compression and conventional BBs. These results demonstrate that compression-aware BBs with CSDs provide a practical, scalable path to next-generation HPC storage.},
+  archive      = {J_TPDS},
+  author       = {Xiang Chen and Bing Lu and Haoquan Long and Huizhang Luo and Yili Ma and Guangming Tan and Dingwen Tao and Fei Wu and Tao Lu},
+  doi          = {10.1109/TPDS.2025.3643175},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Computational burst buffers: Accelerating HPC I/O via in-storage compression offloading},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cost-effective empirical performance modeling. <em>TPDS</em>, 1--18. (<a href='https://doi.org/10.1109/TPDS.2025.3646119'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Performance models help us to understand how HPC applications scale, which is crucial for efficiently utilizing HPC resources. They describe the performance (e.g., runtime) as a function of one or more execution parameters (e.g., problem size and the degree of parallelism). Creating one manually for a given program is challenging and time-consuming. Automatically learning a model from performance data is a viable alternative, but potentially resource-intensive. Extra-P is a tool that implements this approach. The user begins by selecting values for each parameter. Each combination of values defines a possible measurement point. The choice of measurement points affects the quality and cost of the resulting models, creating a complex optimization problem. A naive approach takes measurements for all possible measurement points, the number of which grows exponentially with the number of parameters. In our earlier work, we demonstrated that a quasi-linear number of points is sufficient and that prioritizing the least expensive points is a generic strategy with a good trade-off between cost and quality. Here, we present an improved selection strategy based on Gaussian process regression (GPR) that selects points individually for each modeling task. In our synthetic evaluation, which was based on tens of thousands of artificially generated functions, the naive approach achieved 66% accuracy with two model parameters and 5% artificial noise. At only 10% of the naïve approach's cost, the generic approach already achieved 47.3% accuracy, while the GPR-based approach achieved even 77.8% accuracy. Similar improvements were observed in experiments involving different numbers of model parameters and noise levels, as well as in case studies with realistic applications.},
+  archive      = {J_TPDS},
+  author       = {Marcus Ritter and Benedikt Naumann and Alexandru Calotoiu and Sebastian Rinke and Thorsten Reimann and Torsten Hoefler and Felix Wolf},
+  doi          = {10.1109/TPDS.2025.3646119},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1--18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Cost-effective empirical performance modeling},
   year         = {2025},
 }
 </textarea>

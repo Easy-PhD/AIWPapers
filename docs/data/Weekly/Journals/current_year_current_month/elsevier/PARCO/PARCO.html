@@ -25,8 +25,48 @@
 </head>
 <body>
 
-<h2 id="parco">PARCO - 1</h2>
+<h2 id="parco">PARCO - 5</h2>
 <ul>
+<li><details>
+<summary>
+(2026). PROAD: Boosting caffe training via improving LevelDB I/O performance with parallel read, out-of-order optimization, and adaptive design. <em>PARCO</em>, <em>127</em>, 103181. (<a href='https://doi.org/10.1016/j.parco.2025.103181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Caffe, one of the most popular deep learning frameworks, trains models by reading training data from the storage engine, LevelDB, and feeding it into the computation engine. This paper analyzes the challenges faced by data reading in Caffe Training: (1) Fetch, Parse, and Transform—the three steps of reading each image—are serial, and each image is read sequentially; (2) Frequent disk I/O—each image read triggers an I/O operation—significantly increases the data reading time; (3) Caffe calls LevelDB’s range query method to read training data, but this leads to unnecessary pointer comparison operations, wasting CPU resources; (4) Since LevelDB reads training data in key order during range queries, the fixed order of training data across epochs may cause overfitting and lower the model’s test accuracy. Based on these challenges, this paper proposes Parallel Read, Out-of-Order Optimization, and Adaptive Design strategies to design a new I/O layer, PROAD, for Caffe that systematically reconstructs and optimizes LevelDB’s original data reading mechanism, thus improving LevelDB I/O performance for Caffe Training. The Parallel Read method pipelines the Fetch, Parse, and Transform steps and accelerates reading via large block reads; Out-of-Order Optimization discards the range scan feature of LevelDB, allowing Caffe to read training data in a random manner during training, avoiding the original key comparison overhead and providing a boost to model accuracy; while the Adaptive Design method supports efficient reading of training data with different resolutions. Based on these designs, this paper implements PROAD and deploys it in Caffe for performance evaluation. Experimental results show that Caffe with PROAD significantly improves data reading performance during training, especially for high-resolution datasets, where data reading time in Caffe with PROAD is reduced by 14%–42% compared to Caffe with LevelDB and 6%–34% compared to Caffe with LMDB. Furthermore, Caffe with PROAD improves model test accuracy due to the Out-of-Order Optimization strategy, while consuming relatively reasonable memory resources.},
+  archive      = {J_PARCO},
+  author       = {Yubiao Pan and Ailing Tian and Huizhen Zhang},
+  doi          = {10.1016/j.parco.2025.103181},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103181},
+  shortjournal = {Parallel Comput.},
+  title        = {PROAD: Boosting caffe training via improving LevelDB I/O performance with parallel read, out-of-order optimization, and adaptive design},
+  volume       = {127},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Cache partitioning for sparse matrix–vector multiplication on the A64FX. <em>PARCO</em>, <em>127</em>, 103169. (<a href='https://doi.org/10.1016/j.parco.2025.103169'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One of the novel features of the Fujitsu A64FX CPU is the sector cache . This feature enables hardware-supported partitioning of the L1 and L2 caches and allows the programmer control of which partition is used to place data in. This paper performs an in-depth study of applying the sector cache to sparse matrix-vector multiplication (SpMV) in the Compressed Sparse Row (CSR) format using a collection of 490 sparse matrices. A performance model based on reuse analysis is used to better understand situations in which and how the sector cache leads to improved cache reuse and to predict cache behavior. The model predicts the number of L2 cache misses within an error of 2% without cache partitioning. With sector cache enabled, depending on the configuration, the model predicts the number of L2 cache missed within 2–3% and 4–18% for sequential and parallel SpMV with 48 threads, respectively. Further experiments show the effect of various sector cache configurations on performance. A median speedup of about 1.05 × is achieved, whereas the maximum speedup is about 1.6 × .},
+  archive      = {J_PARCO},
+  author       = {Sergej Breiter and James D. Trotter and Karl Fürlinger},
+  doi          = {10.1016/j.parco.2025.103169},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103169},
+  shortjournal = {Parallel Comput.},
+  title        = {Cache partitioning for sparse matrix–vector multiplication on the A64FX},
+  volume       = {127},
+  year         = {2026},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2026). Machine learning-driven fault-tolerant core mapping in network-on-chip architectures for advanced computing networks. <em>PARCO</em>, <em>127</em>, 103167. (<a href='https://doi.org/10.1016/j.parco.2025.103167'>www</a>)
@@ -42,6 +82,46 @@
   pages        = {103167},
   shortjournal = {Parallel Comput.},
   title        = {Machine learning-driven fault-tolerant core mapping in network-on-chip architectures for advanced computing networks},
+  volume       = {127},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Benchmark of classical disk array and software-defined storage on near-identical hardware. <em>PARCO</em>, <em>127</em>, 103166. (<a href='https://doi.org/10.1016/j.parco.2025.103166'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents a comparative analysis of two storage approaches: a SAN disk array, exemplified by an HPE 3PAR device, and a software-defined storage cluster constructed with the Ceph software. The objective of this comparison is to ascertain whether a software-defined storage cluster built with commodity servers can achieve comparable performance to a SAN disk array with a similar hardware configuration. The configuration used identical numbers of components of matching speeds, capacities, and hardware generation from the same manufacturer. By relaxing some requirements on the software-defined storage, we were able to benchmark all RAID levels with corresponding replication and erasure code settings. The results revealed that 3PAR performed 31 times better for 4 KiB data block writes than Ceph. On the contrary, the Ceph cluster surpassed 3PAR by a factor of 1.4 in 16 MiB large-block reads. The differences are explained in the text based on the theory of operation of the two types of storage. We propose criteria for choosing the correct type of technology for individual use cases.},
+  archive      = {J_PARCO},
+  author       = {Tomas Vondra and David Sebek},
+  doi          = {10.1016/j.parco.2025.103166},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103166},
+  shortjournal = {Parallel Comput.},
+  title        = {Benchmark of classical disk array and software-defined storage on near-identical hardware},
+  volume       = {127},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Butterfly factorization for vision transformers on multi-IPU systems. <em>PARCO</em>, <em>127</em>, 103165. (<a href='https://doi.org/10.1016/j.parco.2025.103165'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in machine learning have led to increasingly large and complex models, placing significant demands on computation and memory. Techniques such as Butterfly factorization have emerged to reduce model parameters and memory footprints while preserving accuracy. Specialized hardware accelerators, such as Graphcore’s Intelligence Processing Units (IPUs), are designed to address these challenges through massive parallelism and efficient on-chip memory utilization. In this paper, we extend our analysis of Butterfly structures for efficient utilization on single and multiple IPUs, comparing their performance with GPUs. These structures drastically reduce the number of parameters and memory footprint while preserving model accuracy. Experimental results on the Graphcore GC200 IPU chip, compared with an NVIDIA A30 GPU, demonstrate a 98.5% compression ratio, with speedups of 1.6 × and 1.3 × for Butterfly and Pixelated Butterfly structures, respectively. Extending our evaluation to Vision Transformer (ViT) models, we compare Multi-GPU and Multi-IPU systems on the M2000 machine: Multi-GPU reaches a maximum accuracy of 84.51% with a training time of 401.44 min, whereas Multi-IPU attains a higher maximum accuracy of 88.92% with a training time of 694.03 min. These results demonstrate that Butterfly factorization enables substantial compression of ViT layers (up to 97.17%) while improving model accuracy. The findings highlight the promise of IPU machines as a suitable platform for large-scale machine learning model training, especially when coupled with sparsification methods like Butterfly factorization, thanks to their efficient support for model parallelism.},
+  archive      = {J_PARCO},
+  author       = {S.-Kazem Shekofteh and Daniel Bogacz and Christian Alles and Holger Fröning},
+  doi          = {10.1016/j.parco.2025.103165},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103165},
+  shortjournal = {Parallel Comput.},
+  title        = {Butterfly factorization for vision transformers on multi-IPU systems},
   volume       = {127},
   year         = {2026},
 }

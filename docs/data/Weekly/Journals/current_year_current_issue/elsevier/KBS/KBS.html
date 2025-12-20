@@ -25,864 +25,784 @@
 </head>
 <body>
 
-<h2 id="kbs">KBS - 43</h2>
+<h2 id="kbs">KBS - 39</h2>
 <ul>
 <li><details>
 <summary>
-(2026). Efficient small object detection based on multi-level implicit feature enhancement and presence region mask guidance. <em>KBS</em>, <em>333</em>, 115020. (<a href='https://doi.org/10.1016/j.knosys.2025.115020'>www</a>)
+(2026). Semantically interpretable soft prompt tuning via projection-guided alignment. <em>KBS</em>, <em>334</em>, 115140. (<a href='https://doi.org/10.1016/j.knosys.2025.115140'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Small object detection has wide application value in aerospace, urban planning, automatic driving and other fields. Limited by the problems of small object size and little feature information, existing detection methods are difficult to achieve excellent performance. In this paper, an efficient small object detection method based on multi-level implicit feature enhancement and presence region mask guidance is proposed. First, a multi-level implicit relation learning module is designed to accomplish image feature enhancement by mining the implicit mapping between low-resolution and high-resolution images. Secondly, to address the problem of increased computational burden caused by feature enhancement, a presence region mask guidance strategy(PRMG) that balances accuracy and efficiency is proposed. The presence regions of small objects are first quickly localized, and then sparse convolution is utilized to accomplish efficient object detection in a query-based approach. Extensive experimental results on Visdrone and AI-TOD datasets prove that the proposed method can effectively improve the detection accuracy and speed up the inference process.},
+  abstract     = {Soft prompt tuning has emerged as a parameter-efficient alternative to full fine-tuning. Yet, it remains inherently opaque since learned prompt vectors occupy a high-dimensional latent space with no direct semantic correspondence, making their behavior difficult to interpret, and this lack of interpretability limits both theoretical understanding and trust in applications where transparency is critical. To address this problem, we introduce Projection-Guided Soft Prompt Tuning (PGSPT), a framework that explicitly integrates semantic projection into the training process. At the end of each epoch, PGSPT projects soft prompt vectors onto a fixed, corpus-derived word embedding space and identifies their nearest semantic neighbors. These projected tokens serve a dual role, functioning first as interpretable linguistic proxies that allow researchers to trace and analyze the evolving semantics of soft prompts, and second as lightweight alignment signals that weakly nudge optimization toward semantically coherent regions while preserving the integrity of the primary task objective. Through this semantic-in-the-loop feedback, PGSPT provides a transparent view of prompt dynamics while maintaining the efficiency of standard tuning. We evaluate PGSPT across nine NLP benchmarks and demonstrate that it maintains competitive accuracy while substantially improving interpretability, as evidenced by smoother semantic transitions, more stable projection trajectories, and alignment with task-relevant concepts over training, highlighting PGSPT as a practical approach to bridging the gap between effective soft prompt optimization and human-centered interpretability.},
   archive      = {J_KBS},
-  author       = {Runshi Wang and Jinfu Yang and Mingai Li and Dechen Hao},
-  doi          = {10.1016/j.knosys.2025.115020},
+  author       = {Chieh-Sheng Liou and Cheng-Ru Wei and Wei-Po Lee},
+  doi          = {10.1016/j.knosys.2025.115140},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {115020},
+  month        = {2},
+  pages        = {115140},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Efficient small object detection based on multi-level implicit feature enhancement and presence region mask guidance},
-  volume       = {333},
+  title        = {Semantically interpretable soft prompt tuning via projection-guided alignment},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Integrated attention using entity type constraints and relation augmentation for distantly supervised relation extraction. <em>KBS</em>, <em>333</em>, 115006. (<a href='https://doi.org/10.1016/j.knosys.2025.115006'>www</a>)
+(2026). WMC-net: Wavelet-enhanced mamba with contextual fusion network for medical image segmentation. <em>KBS</em>, <em>334</em>, 115134. (<a href='https://doi.org/10.1016/j.knosys.2025.115134'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Attention mechanisms are frequently employed in distantly supervised relation extraction (DSRE) to mitigate label noise and long-tailed relations. However, most previous studies have relied on noisy instances to train DSRE models, inevitably leading to error propagation and accumulation. To alleviate this issue, we propose an integrated attention mechanism to exploit background information, including entity types and relations. Furthermore, we design a novel integrated attention-based relation extraction framework (IARE). Specifically, IARE employs graph convolutional networks (GCNs) to extract interactive features between different relations connected by entity types, which can facilitate the transfer of useful information from data-rich to data-scarce relations. In addition, entity types are employed as constraint rules to mitigate the interference of label noise by reducing the weights of incorrectly labeled instances. Moreover, relation augmentation is adopted to enrich sentence representations and improve the long-tailed relation extraction further. Extensive experimental results show that our IARE model outperforms other state-of-the-art baselines for both denoising and long-tailed relation extraction.},
+  abstract     = {Medical image segmentation plays a crucial role in clinical diagnosis but still faces challenges due to complex anatomical structures and fine-grained lesion boundaries. Vision Mamba (ViM) models show promise in modeling long-range dependencies with linear complexity. However, most ViM methods flatten spatial tokens, overlooking local dependencies and limiting dynamic spatial context modeling. To address these challenges, this paper proposes the Wavelet-Enhanced Mamba with Contextual Fusion Network for Medical Image Segmentation (WMC-Net). First, the Selective State Space Model(S6) module incorporates wavelet transformation to simultaneously capture low-frequency structural information and high-frequency detail features, achieving frequency domain enhancement. This enhances the network's perception of local boundaries and textural details, thereby improving the modeling of short-range dependencies. Concurrently, it introduces convolutional and pooling branches to construct the Wavelet-Mamba with Convolution and Pooling (WMCP) module, thereby enhancing local nonlinear modeling and detail representation capabilities. Second, the Multi-Head Fusion and Augmentation (MHFA) module was designed during the jump connection phase to achieve cross-layer feature fusion and structure-aware augmentation. Finally, a Deformable Mask Attention Enhancement (DMAE) module is introduced at the decoder output to perform fine-grained optimization of the final features through channel-space attention modulation, thereby enhancing the model's segmentation capability for complex lesion regions and boundary structures. We conducted extensive experiments on five public medical image segmentation datasets: ISIC2017, PH2, Synapse, Kvasir-SEG, and CVC-ClinicDB, respectively, for skin lesions, intestinal polyps, and abdominal multiple organs. The results demonstrate that WMC-Net outperforms existing mainstream methods in both accuracy and robustness.},
   archive      = {J_KBS},
-  author       = {Bao Liu and Yuxin Zhang and Jiaqi Li},
-  doi          = {10.1016/j.knosys.2025.115006},
+  author       = {Chao Fan and Tianjia Zhao and Mengyang Yun and Li Chen and Huijun Zhao and Xueting Wan and Ranyang Li and Xiaodong Guo},
+  doi          = {10.1016/j.knosys.2025.115134},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {115006},
+  month        = {2},
+  pages        = {115134},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Integrated attention using entity type constraints and relation augmentation for distantly supervised relation extraction},
-  volume       = {333},
+  title        = {WMC-net: Wavelet-enhanced mamba with contextual fusion network for medical image segmentation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). A graph-guided LLM prompting for supply-demand reasoning in substation flood prevention. <em>KBS</em>, <em>333</em>, 115004. (<a href='https://doi.org/10.1016/j.knosys.2025.115004'>www</a>)
+(2026). Topological and semantic contrastive graph clustering by ricci curvature augmentation and hypergraph fusion. <em>KBS</em>, <em>334</em>, 115130. (<a href='https://doi.org/10.1016/j.knosys.2025.115130'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Frequent flood events necessitate supply-demand reasoning for the safe operation of substation. Recent advances demonstrate the potential capabilities of large language models (LLM) in reasoning tasks, yet domain alignment remains challenging in flood prevention scenarios. To address this, we propose a graph-guided LLM prompting framework for supply-demand reasoning tasks. Firstly, a domain-adaptive CasRel model is proposed to extract triples for building a pattern-aware flood Knowledge Graph (KG) with dynamic characteristic embeddings. The embedding is achieved by a well-defined meteorological pattern vector, effectively encoding the flood disaster pattern. A graph attention network is then employed via a two-stage strategy to retrieve the top-K relevant historical cases, which serve as both factual reference and formatted demonstration. A knowledge-guided prompting mechanism incorporates these cases using a chain-of-thought reasoning strategy, aligned with Transformer-predicted flood risk levels. This guides LLMs to generate context-aware, risk-sensitive supply recommendations. Extensive experiments on real-world flood prevention datasets demonstrate that all designed components and proposed improvements make unique contributions to generation quality. Our framework significantly mitigates LLM hallucination, offering better reasoning accuracy and stability across different LLMs. Moreover, the proposed framework that combines domain KGs with tailored prompt engineering is highly generalizable and can be extended for decision support in a wide range of high-stakes, climate-sensitive scenarios.},
+  abstract     = {Contrastive graph clustering is an advanced technology in the field of cluster analysis. By leveraging graph neural networks and contrastive learning paradigm, it enables the coupling of topological structure and node semantic information for attributed graph networks. Graph augmentation and positive sample selection are two essentials of contrastive graph clustering. However, existing graph augmentation methods tend to disrupt the cluster structures, and most positive sample selectors suffer from the false negative sample problem. In this paper, we propose a Topological and Semantic Contrastive Graph Clustering (TSCGC) model consisting of three learning components. The representation learning component augments original graph using Ricci curvature to preserve the cluster structure, and introduces hypergraph view to capture high-order relationships. Graph and hypergraph convolutional networks are used to encode the triple-view embeddings. Meanwhile, we develop a dual contrastive learning component to extract the topological and semantic information. To reduce the number of false negatives, it utilizes K-means to generate pseudo cluster labels to guide the selection of positive samples. The self-supervised learning component is leveraged to align the three graph views. The final clustering results are obtained by performing K-means on the aligned embeddings. We demonstrated the effectiveness by comparing the performance of TSCGC with 13 clustering baselines on six real-world networks. Ablations verified the validity of key components and the impact of parameter settings were also analyzed. We further applied TSCGC to identify the function types of 10,370 buildings in ShenZhen City, China based on multi-source geospatial data. It achieved the highest accuracy and exhibit significant potential in handling complex network structures and high-dimensional node features. The code is available at: https://github.com/ZPGuiGroupWhu/TSCGC .},
   archive      = {J_KBS},
-  author       = {Lan Lou and Xuanhua Ke and Shijian Liu and Cailong Zhao and Jia Peng},
-  doi          = {10.1016/j.knosys.2025.115004},
+  author       = {Dehua Peng and Guangyao Fang and Zhipeng Gui and Yuhang Liu and Huayi Wu},
+  doi          = {10.1016/j.knosys.2025.115130},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {115004},
+  month        = {2},
+  pages        = {115130},
   shortjournal = {Knowl. Based Syst.},
-  title        = {A graph-guided LLM prompting for supply-demand reasoning in substation flood prevention},
-  volume       = {333},
+  title        = {Topological and semantic contrastive graph clustering by ricci curvature augmentation and hypergraph fusion},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). AKBs & MKBs: Knowledge-based systems to predict breast cancer mortality. <em>KBS</em>, <em>333</em>, 115003. (<a href='https://doi.org/10.1016/j.knosys.2025.115003'>www</a>)
+(2026). Aggregated text steganalysis toward social network based on efficient multi-perspective feature fusion. <em>KBS</em>, <em>334</em>, 115129. (<a href='https://doi.org/10.1016/j.knosys.2025.115129'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Breast cancer is a serious health concern that has been significantly impacted by next-generation genomic technologies. In order to comprehend the risk of mortality linked with breast cancer genomic data, a combination of survival analysis and machine learning has been utilized. This study employed logistic regression odds ratios and critical features based on deep learning to extract the level of risk. The odds ratios and risk scores were concatenated into two additional knowledge-based systems using an additive (AKBs) and multiplicative (MKBs) model. Gene set enrichment and gene ontology were utilized to identify gene functions and pathways related to breast cancer mortality. The findings demonstrated that AKBs and MKBs performed better than deep learning and logistic regression models, with an average accuracy of 87%. Next-generation DNA and RNA genomic sequences were used under the clinical characteristics of breast cancer. AKBs and MKBs effectively categorized high-risk missense mutations and candidate genes, which were highly correlated with overall breast cancer mortality. The findings of this study indicated that AKBs and MKBs may improve the identification of candidate genes associated with all-cause mortality. This study introduced two knowledge-based systems (AKBs and MKBs) to identify high-risk missense mutations associated with mortality based on critical features. Our results provide interpretable signals for biomarker discovery in retrospective data; further prospective studies are necessary.},
+  abstract     = {Existing text steganalysis methods primarily focus on analyzing and classifying individual texts. However, due to the limited information content within single texts characterized by non-standard linguistic features and the vast scale of social network data, these steganalysis methods suffer from inadequate accuracy and inefficiency when applied in real-world social networks. To improve accuracy and efficiency of text steganalysis in social networks, this paper proposes an efficient aggregated text steganalysis model based on multi-perspective feature fusion. It aggregates multiple fragmented texts from the same user into a “text bag”, extracting bag-level features from three different perspectives, namely content style, punctuation pattern, and sentiment distribution, to address information scarcity in single texts. It also introduces a novel multi-scale heterogeneous feature fusion component to minimize overhead while obtaining discriminative aggregated features, enabling accurate and efficient steganalysis. Experimental results show that the proposed model outperforms single text-oriented models, offering fast processing, high accuracy, and showing strong generalization in complex social network scenarios. This work presents a novel insight and method for text steganalysis and provides more effective guarantees for the information security of social networks.},
   archive      = {J_KBS},
-  author       = {Cheng-Hong Yang and Sin-Hua Moi and Ming-Feng Hou and Li-Yeh Chuang and Yu-Da Lin},
-  doi          = {10.1016/j.knosys.2025.115003},
+  author       = {Qiong Xu and Ru Zhang and Jianyi Liu and Yongfeng Huang},
+  doi          = {10.1016/j.knosys.2025.115129},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {115003},
+  month        = {2},
+  pages        = {115129},
   shortjournal = {Knowl. Based Syst.},
-  title        = {AKBs & MKBs: Knowledge-based systems to predict breast cancer mortality},
-  volume       = {333},
+  title        = {Aggregated text steganalysis toward social network based on efficient multi-perspective feature fusion},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Spatiotemporal multi-view trend-aware network for traffic flow prediction. <em>KBS</em>, <em>333</em>, 115002. (<a href='https://doi.org/10.1016/j.knosys.2025.115002'>www</a>)
+(2026). Text-guided parameter-efficient fine-tuning: A decoupled framework applicable to pre-trained vision models. <em>KBS</em>, <em>334</em>, 115125. (<a href='https://doi.org/10.1016/j.knosys.2025.115125'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Accurate traffic flow prediction is a critical technology in intelligent transportation systems, playing a vital role in future travel planning, enhancing urban traffic efficiency, and supporting decision-making for transportation management authorities. However, existing mainstream spatiotemporal methods often struggle to effectively and efficiently capture the complex spatiotemporal dependencies in road networks. Moreover, these approaches are constrained by spatial heterogeneity, failing to fully account for the diverse spatiotemporal patterns of individual nodes. To address these challenges, this paper proposes a Spatiotemporal Multi-View Trend-Aware Network (SMVTAN), which integrates Fast Parallel Learning (FPL), Serial Learning (SL), and Trend-Aware Multi-Head Self-Attention (TrMHA). First, FPL significantly reduces the number of parameters by constructing an asymmetric spatiotemporal adjacency matrix while enhancing the capability of extracting spatiotemporal features without loss of information. Second, SL complements FPL by incorporating a spatial-to-temporal and temporal-to-spatial learning sequence, effectively expanding both spatial and temporal receptive fields while mitigating information overshadowing. Finally, TrMHA leverages local contextual information and is specifically designed for numerical sequence representation transformation, enabling the prediction model to better capture the temporal dynamics of traffic data. The experimental results show that the MAE, RMSE, and MAPE of the SMVTAN model are improved by 0.16%, 1.16%, and 0.08%; 2.21%, 2.07, and 0.43%, respectively, when compared with the existing optimal baseline method, ST-WA, on the PeMS04 and PeMS08 datasets.},
+  abstract     = {Pre-trained vision models (PVMs) have shown remarkable generalization across diverse visual tasks. To adapt these large-scale models efficiently, Parameter-Efficient Fine-Tuning (PEFT) methods introduce a small number of trainable parameters while keeping the backbone frozen. However, most existing PEFT approaches rely solely on visual supervision and cannot flexibly leverage external semantic knowledge, limiting their effectiveness in fine-grained and cross-domain scenarios. This work enhances parameter-efficient adaptation of vision models by explicitly incorporating semantic knowledge from natural language, improving performance in low-shot and domain-shifted settings with few additional parameters. We propose Text-Guided Parameter-Efficient Fine-Tuning (TGT) , a decoupled framework that augments PEFT with rich semantic guidance from natural language. TGT comprises three components: (1) semantic initialization of the classifier using text embeddings from CLIP, (2) auxiliary supervision from fine-grained descriptions generated by a Large Language Model (LLM), and (3) a contrastive alignment loss to bridge the modality gap between visual and textual representations. The framework is compatible with diverse PEFT backbones and requires only a lightweight projection layer for cross-modal alignment. Extensive experiments on five fine-grained few-shot benchmarks show that TGT consistently improves state-of-the-art PEFT methods, achieving gains of up to +5.47 % on VPT-Deep. On the VTAB-1K benchmark, TGT also delivers a consistent boost, improving average accuracy from 75.9 % to 76.4 % with 0.39M additional parameters. Ablation studies confirm the complementary contributions of each module. These results demonstrate that TGT is a flexible, lightweight, and generalizable solution for enhancing vision model adaptation under scarce or shifted data conditions.},
   archive      = {J_KBS},
-  author       = {Linlong Chen and Linbiao Chen and Hongyan Wang},
-  doi          = {10.1016/j.knosys.2025.115002},
+  author       = {Jiajia Zhang and Shengsheng Wang},
+  doi          = {10.1016/j.knosys.2025.115125},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {115002},
+  month        = {2},
+  pages        = {115125},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Spatiotemporal multi-view trend-aware network for traffic flow prediction},
-  volume       = {333},
+  title        = {Text-guided parameter-efficient fine-tuning: A decoupled framework applicable to pre-trained vision models},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Research on dynamic obstacle avoidance for industrial AGVs using decay model-based multi-objective Q-learning. <em>KBS</em>, <em>333</em>, 115000. (<a href='https://doi.org/10.1016/j.knosys.2025.115000'>www</a>)
+(2026). A framework for mining CPS specification based on neural hybrid automata. <em>KBS</em>, <em>334</em>, 115124. (<a href='https://doi.org/10.1016/j.knosys.2025.115124'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper tackles the challenges of path planning for industrial Automated Guided Vehicles (AGVs) in both static and dynamic environments by introducing a novel Decay Model-Based Multi-Objective Q-Learning (DMMOQL) algorithm. In this framework, an abstract decay model reinterprets Q-values as decayed information propagated from the goal state, thereby establishing a value update mechanism that mitigates the problems of sparse rewards and unstable values in traditional Q-learning. To operationalize this model, multiple decay factors are formulated to capture planning objectives such as path length and turning frequency, thereby enabling interpretable and flexible regulation of value propagation. Furthermore, a proximity-aware Q-value adjustment strategy is developed to enable rapid local adaptation to dynamic obstacles, enhancing real-time responsiveness and supporting emergent conflict avoidance in multi-agent scenarios. Extensive simulations in both static and dynamic scenarios, along with validations in representative industrial AGV navigation tasks, demonstrate that DMMOQL achieves faster convergence, higher path quality, and greater adaptability. This work provides both theoretical insights and practical contributions to autonomous AGV navigation in dynamic industrial environments.},
+  abstract     = {Cyber–physical systems (CPS) combine continuous dynamics with discrete events, making manual construction of hybrid automata costly and error-prone. This paper proposes a data-driven framework for mining neural hybrid automata (NHA) directly from unlabeled multivariate CPS trajectories. The framework first applies multivariate change-point detection and WDTW-based segment clustering, with a composite Silhouette+MDL criterion to select the number of modes, to materialize an explicit finite-state transition system. State-conditioned feed-forward networks are then trained to model continuous flows and guard conditions over admissible transitions, yielding an executable and auditable NHA. The approach is instantiated on the Simulink engine-timing benchmark with hundreds of simulated runs. Grouped 5-fold cross-validation and an independent blind test show that the method recovers compact automata with consistent structure, achieves low single-step prediction error for engine variables, and attains high precision and recall for guard activation. Robustness, hyperparameter sensitivity, and scalability studies indicate that the framework is stable under moderate sensor noise, largely insensitive to most thresholds, and computationally feasible for offline analysis. The case-study results suggest that the proposed NHA mining pipeline offers a practical and interpretable route to data-driven hybrid modeling for this class of CPS benchmarks.},
   archive      = {J_KBS},
-  author       = {Dongdong Li and Dunbing Tang and Changchun Liu and Zequn Zhang and Lei Wang},
-  doi          = {10.1016/j.knosys.2025.115000},
+  author       = {Chao Xing and Zining Cao and Zhen Li},
+  doi          = {10.1016/j.knosys.2025.115124},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {115000},
+  month        = {2},
+  pages        = {115124},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Research on dynamic obstacle avoidance for industrial AGVs using decay model-based multi-objective Q-learning},
-  volume       = {333},
+  title        = {A framework for mining CPS specification based on neural hybrid automata},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Towards strategic persuasion: Unveiling users’ susceptibility to persuasive strategies in dialogues. <em>KBS</em>, <em>333</em>, 114999. (<a href='https://doi.org/10.1016/j.knosys.2025.114999'>www</a>)
+(2026). Span-level detection of AI-generated scientific text via contrastive learning and structural calibration. <em>KBS</em>, <em>334</em>, 115123. (<a href='https://doi.org/10.1016/j.knosys.2025.115123'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Generative AI’s rapid evolution has made dialogue systems essential for social interaction. Developing intelligent persuasive dialogue systems can facilitate public discourse and enhance the online social environment. However, existing studies primarily focus on exploring the effectiveness of strategies from the persuader’s perspective, with limited exploration of the persuadee’s personalized susceptibility of towards different strategies. To bridge this gap, we introduce a novel task called Susceptibility Strategy Detection, aimed at identifying the persuasive strategies that users are susceptible to. To support this new task, we develop a refined dataset P4G+ based on PersuasionforGood dataset and propose a Dual Attitude-sensitive framework for Susceptibility Strategy detection (DASS) by analyzing the persuasive process, user interactions, and content within dialogues. Experiments have shown that the proposed method outperforms three types of baseline methods, including sequence-based, graph-based, and LLM-based models, in identifying users’ susceptible strategies. The code and dataset will be made available at https://github.com/Ada-Chen1221/Susceptibility-Strategy-Detection-DASS .},
+  abstract     = {The rapid adoption of large language models (LLMs) in scientific writing raises serious concerns regarding authorship integrity and the reliability of scholarly publications. Existing detection approaches mainly rely on document-level classification or surface-level statistical cues; however, they neglect fine-grained span localization, exhibit weak calibration, and often fail to generalize across disciplines and generators. To address these limitations, we present Sci-SpanDet, a structure-aware framework for detecting AI-generated scholarly texts. The proposed method combines section-conditioned stylistic modeling with multi-level contrastive learning to capture nuanced human-AI differences while mitigating topic dependence, thereby enhancing cross-domain robustness. In addition, it integrates BIO-CRF sequence labeling with pointer-based boundary decoding and confidence calibration to enable precise span-level detection and reliable probability estimates. Extensive experiments on a newly constructed cross-disciplinary dataset of 100,000 annotated samples generated by multiple LLM families (GPT, Qwen, DeepSeek, LLaMA) demonstrate that Sci-SpanDet achieves state-of-the-art performance, with F1(AI) of 80.17, AUROC of 92.63, and Span-F1 of 74.36. Furthermore, it shows strong resilience under adversarial rewriting and maintains balanced accuracy across IMRaD sections and diverse disciplines, substantially surpassing existing baselines. To support reproducibility and encourage future research on AI-generated text detection in scholarly documents, we plan to release the curated dataset and source code at a later stage.},
   archive      = {J_KBS},
-  author       = {Yida Chen and Bo Liu and Mingrui Hu and Mingjie Dai and Jiuxin Cao and Hantao Zhao},
-  doi          = {10.1016/j.knosys.2025.114999},
+  author       = {Zhen Yin and Shenghua Wang},
+  doi          = {10.1016/j.knosys.2025.115123},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114999},
+  month        = {2},
+  pages        = {115123},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Towards strategic persuasion: Unveiling users’ susceptibility to persuasive strategies in dialogues},
-  volume       = {333},
+  title        = {Span-level detection of AI-generated scientific text via contrastive learning and structural calibration},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Enhancing forensic human identification using panoramic dental radiographs with a binarized simplicial convolutional neural networks approach. <em>KBS</em>, <em>333</em>, 114998. (<a href='https://doi.org/10.1016/j.knosys.2025.114998'>www</a>)
+(2026). Mul-VMamba: Multimodal semantic segmentation using selection-fusion-based vision-mamba. <em>KBS</em>, <em>334</em>, 115119. (<a href='https://doi.org/10.1016/j.knosys.2025.115119'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Forensic human identification focuses on establishing individual identity in post-mortem cases where traditional methods may fail. Panoramic dental radiographs are valuable due to the unique and durable nature of dental structures, but identification accuracy is hindered by age-related changes, dental treatments, and imaging noise. In this manuscript, enhancing forensic human identification using panoramic dental radiographs with a binarized Simplicial convolutional neural networks approach (FHI-PDR-BSCNN). At first, the input images are collected from panoramic radiographs to improve accuracy in dental based human identification. The collected images are then fed into the pre-processing segment, where normalization is done using the Adaptive Two-Stage Unscented Kalman Filter (ATSUKF). Then the pre-processed images are given to Weighted Multi-View Evidential Clustering (WMVEC) for the segmentation of dental regions. Then the segmented images are given to the Directional Short-Time Fractional Fourier Transform (DSTFRFT) for feature extraction. Then the extracted features are provided to Binarized Simplicial Convolutional Neural Network (BSCNN) to identify individuals based on unique dental traits. The Human Evolutionary Optimization (HEO) is utilized to enhance the weight parameters of BSCNN. The proposed FHI-PDRBSCNN approach implemented in Python, demonstrates substantial improvements in accuracy and Receiver Operating Characteristic (ROC). The FHI-PDR-BSCNN achieves an accuracy of 99.9 %, outperforming the existing, like Convolutional neural network for automated tooth segmentation on intraoral scans (CNN-ATS-IS), Comparison of CT dental reconstruction methods for use in identification of the deceased (CTDR-UID-DCN), and Optimized Multi-Scale Detection and Numbering of Teeth in Panoramic Radiographs utilizing DentifyNet (OMSD-NTPR-DN).},
+  abstract     = {For tasks such as autonomous driving and remote sensing, integrating multimodal data (RGB, depth, infrared, and others) can significantly enhance the accuracy and robustness of semantic segmentation under complex environmental conditions, thereby providing precise and reliable information for downstream tasks. However, existing approaches emphasize segmentation accuracy at the expense of efficiency. To address this trade-off, we propose a multimodal semantic segmentation network based on the linear complexity Selective State Space Model (S6, a.k.a Mamba), dubbed Mul-VMamba. Mul-VMamba establishes selection-fusion relationships among multimodal features, enabling semantic segmentation with any input modalities. Specifically, the Mamba Spatial-consistency Selective Module (MSSM) adaptively extracts feature mapping relationships and filters out redundant features at identical spatial locations, preserving the spatial relationships between each modality. Additionally, the Mamba Cross-Fusion Module (MCFM) introduces a Cross Selective State Space Model (Cross-S6), establishing the relationship between S6 and multimodal features, achieving optimal fusion performance. Qualitative and quantitative evaluations on the MCubes and DeLiVER datasets demonstrate the efficacy and efficiency of Mul-VMamba. Notably, Mul-VMamba achieves 54.65 % / 68.98 % mIoU on Mcubes / DeLiVER datasets using only 55.33M params. The source code of Mul-VMamba is publicly available at https://github.com/Mask0913/Mul-VMamba .},
   archive      = {J_KBS},
-  author       = {Sagar V Joshi and Trupti N Pawase and Deepak B Patil and Amol B Rajmane and Vaishnaw G Kale and Shubhangi B Patil},
-  doi          = {10.1016/j.knosys.2025.114998},
+  author       = {Rongrong Ni and Yuanhui Guo and Biao Yang and Yi Liu and Hai Wang and Chuan Hu},
+  doi          = {10.1016/j.knosys.2025.115119},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114998},
+  month        = {2},
+  pages        = {115119},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Enhancing forensic human identification using panoramic dental radiographs with a binarized simplicial convolutional neural networks approach},
-  volume       = {333},
+  title        = {Mul-VMamba: Multimodal semantic segmentation using selection-fusion-based vision-mamba},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). CoxSE: Exploring the potential of self-explaining neural networks with cox proportional hazards model for survival analysis. <em>KBS</em>, <em>333</em>, 114996. (<a href='https://doi.org/10.1016/j.knosys.2025.114996'>www</a>)
+(2026). Semantic-guided policy network for zero-shot object goal visual navigation. <em>KBS</em>, <em>334</em>, 115112. (<a href='https://doi.org/10.1016/j.knosys.2025.115112'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The Cox Proportional Hazards (CPH) model has long been the preferred survival model for its explainability. However, to increase its predictive power beyond its linear log-risk, it was extended to utilize deep neural networks, sacrificing its explainability. In this work, we explore the potential of self-explaining neural networks (SENN) for survival analysis. We propose a new locally explainable Cox proportional hazards model, named CoxSE, by estimating a locally-linear log-hazard function using the SENN. We also propose a modification to the Neural additive (NAM) model, hybrid with SENN, named CoxSENAM, which enables the control of the stability and consistency of the generated explanations. Several experiments using synthetic and real datasets are presented, benchmarking CoxSE and CoxSENAM against a NAM-based model, a DeepSurv model explained with SHAP, and a linear CPH model. The results show that, unlike the NAM-based model, the SENN-based model can provide more stable and consistent explanations while maintaining the predictive power of the black-box model. The results also show that, due to their structural design, NAM-based models demonstrate better robustness to non-informative features. Among the models, the hybrid model exhibits the best robustness. Full implementation is available on GitHub.},
+  abstract     = {Object goal visual navigation (ObjNav) is a difficult task that requires an agent to identify and locate target objects using visual observations. In open-world assistive scenarios, robots must handle a wide variety of target classes, many of which cannot be fully covered during training. To address this issue, we focus on zero-shot object goal visual navigation (ZS-ObjNav), which aims to guide robots towards targets in novel, previously unknown categories. In contrast to existing ZS-ObjNav methods, which use semantic embeddings in a simplistic manner, we propose a novel framework, the semantic-guided policy network (SGPNet), that explicitly leverages semantic information to improve perception and navigation. In particular, we propose a semantic-guided dynamic convolution (SeConv) module, which facilitates the extraction of specialised visual features that correspond to diverse target semantic embeddings. Furthermore, a skip connection actor policy (SCAP) module is introduced, which generates actor network weight biases using semantic embeddings. This module aims to improve the transferability of the navigation policy. To validate SGPNet, extensive experiments are performed on the AI2-THOR platform. The experimental results not only indicate the competitive or superior performance of SGPNet relative to existing methods on seen and unseen object sets but also emphasise the advantages of SGPNet as a ZS-ObjNav framework, such as high generalisation ability.},
   archive      = {J_KBS},
-  author       = {Abdallah Alabdallah and Omar Hamed and Mattias Ohlsson and Thorsteinn Rögnvaldsson and Sepideh Pashami},
-  doi          = {10.1016/j.knosys.2025.114996},
+  author       = {Guoguang Hua and Yaqiong Ding and Yuhuan Chen and Dan Xiang and Wenbin Zou},
+  doi          = {10.1016/j.knosys.2025.115112},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114996},
+  month        = {2},
+  pages        = {115112},
   shortjournal = {Knowl. Based Syst.},
-  title        = {CoxSE: Exploring the potential of self-explaining neural networks with cox proportional hazards model for survival analysis},
-  volume       = {333},
+  title        = {Semantic-guided policy network for zero-shot object goal visual navigation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Landmark-based graph convolutional neural network for interpretable catheter malposition detection. <em>KBS</em>, <em>333</em>, 114993. (<a href='https://doi.org/10.1016/j.knosys.2025.114993'>www</a>)
+(2026). A new feature reconstruction method and multilabel ensemble strategy for non-intrusive load recognition. <em>KBS</em>, <em>334</em>, 115111. (<a href='https://doi.org/10.1016/j.knosys.2025.115111'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Hospital patients can have catheters and lines inserted during their admission to give medicines or to do medical tests quickly, especially central venous catheters (CVCs). Following the insertion process, the position of the catheter is commonly verified based on the X-ray images to detect the malposition, avoiding a series of complications. Recently, deep learning frameworks have shown their potential to assist in detecting the malposition of the CVC in X-ray images. However, these deep learning approaches meet three main challenges: 1) The absence and ambiguous anatomical landmarks in X-ray images make the implementation of the landmark-annotation-based framework particularly challenging. 2) Most of the existing deep learning frameworks have a large number of parameters and a large computation workload. 3) The feature significance for the deep-learning framework to detect the misplaced catheter is not well studied, which may impact the understanding of the deep-learning model results. Therefore, a framework based on a graph convolutional neural network (GCN) is proposed in this work to detect catheter malposition. It achieves an AUC of 0.867 with 0.0229 million parameters. Even with a landmark missing, it still achieves an AUC of 0.855. It is demonstrated that the proposed framework can tolerate the missing and ambiguous landmarks in chest X-rays (CXRs) and get acceptable detection performance. Additionally, the proposed method achieves state-of-the-art performance with a relatively small number of parameters. Moreover, the features much more important for catheter malposition detection can be verified by the proposed framework to make the catheter malposition detection framework more understandable.},
+  abstract     = {Energy-consuming information of buildings is of great significance in smart grid construction and further energy conservation. Non-intrusive load monitoring (NILM) is now an important method to get detailed energy consumption in a building. However, the effectiveness and accuracy of the traditional NILM methods are in need of further improvement. In the paper, a novel load identification model based on integral kernel principal component analysis (IKPCA) and the multilabel multi-learner ensemble strategy is proposed, which can avoid the drawbacks of traditional NILMs and enhance model performance. The IKPCA method is designed by using integral kernel functions. It can learn the nonlinear relationship among features, get rid of useless feature information, and establish a new feature structure that is convenient for classifiers to study. The proposed multilabel ensemble model combines heterogeneous multilabel learners and differentiated balanced training sets to guarantee diversity and multi-objective grey wolf optimization is adopted to select and weight the base models to get satisfactory overall performance. In addition, a multilabel data balancing method is also designed, which benefits model learning a lot. Several contrast experiments are performed on the REDD public dataset and the macro-F1score and micro-F1score of the proposed model have reached 0.9818 and 0.9892, exceeding the existing advanced models.},
   archive      = {J_KBS},
-  author       = {Yuhan Wang and Hak Keung Lam},
-  doi          = {10.1016/j.knosys.2025.114993},
+  author       = {Chengming Yu and Hui Liu and Chengqing Yu and Guangxi Yan and Zijie Cao},
+  doi          = {10.1016/j.knosys.2025.115111},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114993},
+  month        = {2},
+  pages        = {115111},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Landmark-based graph convolutional neural network for interpretable catheter malposition detection},
-  volume       = {333},
+  title        = {A new feature reconstruction method and multilabel ensemble strategy for non-intrusive load recognition},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). ML-LQI: A multi-modal learning method for low-quality imbalanced modality data with interpretability. <em>KBS</em>, <em>333</em>, 114991. (<a href='https://doi.org/10.1016/j.knosys.2025.114991'>www</a>)
+(2026). Multi-plane multi-slice longitudinal MRI for deep ensemble progression detection based on enhanced residual multi-head self-attention. <em>KBS</em>, <em>334</em>, 115104. (<a href='https://doi.org/10.1016/j.knosys.2025.115104'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Multi-modal learning enhances the perception and decision-making of a model by integrating information from numerous modalities. However, multi-modal data often suffer from low-quality and imbalance issues, such as noise, incompleteness, and information discrepancies caused by sensor errors, environmental interference, and transmission losses. Existing methods typically address only one type of low-quality imbalance, rely excessively on high-quality modalities, employ limited feature extraction strategies, and struggle to mitigate cross-modal distribution differences and semantic biases, thereby hindering fusion performance. Moreover, most approaches lack dynamic quantification and interpretability of modality contributions. To address these issues, this paper proposes a multi-modal learning method for low-quality imbalanced modality data with interpretability (ML-LQI). A conditional Wasserstein generative adversarial network with gradient penalty–based cross-modal enhancement module is designed to generate enhanced weak-modality samples aligned with strong-modality distributions through adversarial training, thereby alleviating modality imbalance. A transformer–based cross-modal fusion module is developed to improve perceptual and representational capabilities by integrating local and global features and capturing inter-modal interactions via bidirectional cross-modal attention. The modality attention weight mechanism–based adaptive fuser dynamically adjusts fusion weights according to each modality’s semantic contribution, enabling efficient fusion and collaborative learning in a unified semantic space. Finally, a DeepSHAP–based modality contribution scoring module quantifies the actual contributions of different modalities, identifies and analyzes low-quality imbalances, and enhances interpretability in the decision-making process. Extensive experiments on three public datasets demonstrate the superior performance, robustness, and interpretability of ML-LQI compared with state-of-the-art methods.},
+  abstract     = {Early and accurate detection of Alzheimer’s disease (AD) progression remains a critical challenge in neuroimaging, as existing methods often rely on single-plane or cross-sectional MRI data, neglecting the rich spatiotemporal dynamics captured in multi-plane longitudinal imaging. To address this gap, we propose a novel deep ensemble framework that leverages multi-plane volumetric representations of 3D longitudinal MRI data for enhanced AD progression detection. Our approach introduces a unified 3D volumetric representation of longitudinal MRI by integrating spatially aligned slices from axial, coronal, and sagittal planes across four longitudinal time points (Baseline, M06, M12, and M18), preserving both spatial and temporal context. Our proposed framework employs an optimized heterogeneous deep ensemble setup of 3D-CNN models (i.e., 3D-EfficientNet, 3D-DenseNet, and 3D-ResNet) to extract complementary spatio-temporal features from each anatomical plane, followed by a BiLSTM network with an Enhanced Residual Multi-Head Self-Attention (ERMHA) mechanism to model long-range dependencies and emphasize discriminative spatiotemporal patterns. Comprehensive experiments on the ADNI dataset demonstrate that our proposed framework achieves state-of-the-art performance, with a mean accuracy of 93.73%, sensitivity of 91.72%, specificity of 90.36%, and an AUC of 91.58%, significantly outperforming single-plane based models (best mAUC: 68.24%) and homogeneous ensemble approaches (mAUC: 82.75%). External validation on the NACC cohort further confirms generalizability, with performance metrics improving consistently as data from more longitudinal time steps are incorporated (mAUC: 86.37% at M18). Furthermore, explainability analysis using gradient-weighted attention maps reveals that model predictions are driven by neuroanatomically plausible patterns, with attention focused on hippocampal and entorhinal regions in early progression and extending to temporo-parietal cortices in advanced stages in AD, aligning with established neuropathological trajectories. The proposed framework advances intelligent decision support systems in clinical neuroimaging by combining multi-plane feature fusion, temporal modeling, and ensemble learning, offering a robust and generalized solution for early AD progression detection. Its modular design and computational efficiency make it suitable for integration into knowledge-based diagnostic systems. The dataset and code used in this study are available to the research community at the following link: https://github.com/InfoLab-SKKU/mpms-mri-progression.git},
   archive      = {J_KBS},
-  author       = {Fuyuan Zhao and Xiangang Cao and Yong Duan and Xin Yang and Xinyuan Zhang and Xin Zhang and Yubo Zhang},
-  doi          = {10.1016/j.knosys.2025.114991},
+  author       = {Nasir Rahim and Shaker El-Sappagh and Mustaqeem Khan and Maria Bashir and Younhyun Jung and Tamer Abuhmed},
+  doi          = {10.1016/j.knosys.2025.115104},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114991},
+  month        = {2},
+  pages        = {115104},
   shortjournal = {Knowl. Based Syst.},
-  title        = {ML-LQI: A multi-modal learning method for low-quality imbalanced modality data with interpretability},
-  volume       = {333},
+  title        = {Multi-plane multi-slice longitudinal MRI for deep ensemble progression detection based on enhanced residual multi-head self-attention},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Mamba2Diff: An enhanced diffusion framework for goal-conditioned imitation learning in robotic long-horizon action modeling. <em>KBS</em>, <em>333</em>, 114990. (<a href='https://doi.org/10.1016/j.knosys.2025.114990'>www</a>)
+(2026). Integrated multilayer reinforcement model: Explaining the dynamics of online radicalization. <em>KBS</em>, <em>334</em>, 115103. (<a href='https://doi.org/10.1016/j.knosys.2025.115103'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Executing long-horizon, high-precision, goal-oriented tasks is essential for enabling robots to perform complex manipulation procedures in dynamic environments. In light of this, Goal-Conditioned Imitation Learning (GCIL) leverages human demonstrations to derive goal-oriented policies, demonstrating significant promise in autonomous robotic manipulation of intricate tasks. However, current GCIL approaches face challenges in capturing both long- and short-term dependencies and in generating consistent behaviors, especially within high-dimensional and dynamic environments. To address these limitations, we propose a novel diffusion-based framework, Mamba2Diff, which aims to improve policy generation by effectively capturing temporal dependencies from multi-modal inputs, thereby enhancing both action consistency and generation accuracy. The core of Mamba2Diff includes the Bidirectional Gated Mamba2 (BDGM) module, which extracts global features through bidirectional information flow, ensuring stability and consistency in long-horizon action modeling. Additionally, a Convolution-Enhanced Gated Recurrent Unit (CGRU) module is incorporated to efficiently capture short-term dependencies, balancing long- and short-term information to further improve generation precision. The effectiveness of Mamba2Diff is evaluated across three simulated environments and a customized real-world robotic platform. The results demonstrate that Mamba2Diff consistently outperforms both diffusion-based and non-diffusion-based baselines in long-horizon manipulation tasks, achieving superior performance in terms of precision, efficiency, and temporal consistency, with significant advantages observed during the later stages of task execution. These findings highlight the model’s capacity to generate reliable and accurate robotic behaviors, underscoring its potential for deployment in dynamic, real-world applications.},
+  abstract     = {Online social platforms have become a fertile ground for the rapid spread of extremist narratives, yet traditional single-layer network analyses overlook the interplay of content, timing, and polarization that fuels radicalization. We introduce the Integrated Multilayer Reinforcement Model (IMRM), a unified framework that represents each user as a node in four interdependent layers (interaction, content similarity, temporal dynamics, and sentiment) and explicitly encodes feedback loops via uniform interlayer coupling. We define three novel measures: Composite Reinforced Centrality (CRC), which multiplicatively aggregates a user’s normalized influence across layers; Temporal Burst Influence (TBI), which captures episodic surges in activity; and Sentiment Synchronization Coefficient (SSC), which quantifies emotional alignment with peers. We derive four theoretical propositions linking these measures to radicalization processes and validate them on Reddit data surrounding five major United States socio-political events. Our experiments reveal that (i) high CRC users have a high probability of being radicalized, (ii) radicalized users have higher values of both TBI and SSC, (iii) bridging nodes linking different communities exhibit elevated CRC, and (iv) CRC remains a robust, context-invariant predictor of radical engagement. The findings aim at highlighting how online radicalization emerges from the synergistic fusion of who you interact with, what you share, when you act, and how you feel.},
   archive      = {J_KBS},
-  author       = {Guangpeng Zhao and Quan Liu and Wupeng Deng and Jiwei Hu},
-  doi          = {10.1016/j.knosys.2025.114990},
+  author       = {Enrico Corradini and Francesco Cauteruccio},
+  doi          = {10.1016/j.knosys.2025.115103},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114990},
+  month        = {2},
+  pages        = {115103},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Mamba2Diff: An enhanced diffusion framework for goal-conditioned imitation learning in robotic long-horizon action modeling},
-  volume       = {333},
+  title        = {Integrated multilayer reinforcement model: Explaining the dynamics of online radicalization},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). TempQA: An LLM-based framework for temporal knowledge graph question answering. <em>KBS</em>, <em>333</em>, 114988. (<a href='https://doi.org/10.1016/j.knosys.2025.114988'>www</a>)
+(2026). Edge-awarenet: A graph neural approach for efficient multi-item auction mechanism design. <em>KBS</em>, <em>334</em>, 115097. (<a href='https://doi.org/10.1016/j.knosys.2025.115097'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Temporal Knowledge Graph Question Answering (TKGQA) is a challenging task requiring models to reason over time-sensitive facts stored in temporal knowledge graphs (TKGs) as real-world knowledge evolves. Existing TKGQA approaches often fine-tune pretrained language models on labeled data, but these methods require large training sets and struggle to generalize, especially on queries with complex temporal constraints. To address this, we introduce TempQA, an innovative zero-shot TKGQA framework leveraging large language models (LLMs) without the need for task-specific training. TempQA employs a retrieval-augmented approach by first translating TKG facts into natural-language sentences and creating corresponding embeddings. Given a query, it retrieves relevant context by computing semantic similarity between the query and embedded sentences, subsequently providing the query alongside the top-k retrieved facts as context to an LLM (GPT-3.5 or GPT-4) to generate temporally-informed answers. Experimental evaluations on MultiTQ and CronQuestions datasets demonstrate that TempQA significantly outperforms existing baselines, underscoring the capability of LLMs–when combined with effective retrieval strategies–to serve as robust zero-shot temporal reasoners. This work highlights a promising direction toward effective TKGQA solutions without dependency on extensive training data.},
+  abstract     = {Auction mechanism design is a central problem in economics, focusing on the development of rules that guide the behavior of market participants to achieve efficient resource allocation. Auctions have become important tools for resource allocation and price discovery across diverse markets. Nevertheless, designing mechanisms for multi-item, multi-bidder settings remains a theoretical and computational challenge. This paper proposes an efficient neural network architecture EwareNet (short for Edge-Aware Network), that formulates and solves the auction mechanism optimization problem on graphs. To this end, we propose a graph representation for multi-setting auctions, which is reconstructed by integrating the original node and edge information into virtual nodes, reformulating the original structure as a line graph. This transformation converts edge interactions into explicit structural elements that standard graph neural networks (GNNs) can effectively process, thereby enabling edge-centric tasks. On the one hand, the line graph structure is constructed based on auction prior knowledge, offering a more efficient information-propagation pathway than fully connected interaction schemes. On the other hand, it facilitates the joint modeling of local and global interactions, thereby enhancing the network’s ability to support optimal allocation and payment decisions. Finally, we conduct extensive experiments on synthetic valuation profiles, and the results show that our model can perform at least 3x faster than state-of-the-art methods while achieving competitive performance in key indicators, and significantly reducing the number of parameters.},
   archive      = {J_KBS},
-  author       = {Qianyi Hu and Xinhui Tu and Ao Li and Biao Yao},
-  doi          = {10.1016/j.knosys.2025.114988},
+  author       = {Xinyan Cao and Yang Yang and Jiaqi Li and Guangyu Zhao and Jilong Tang and Jin Duan and Bin Guo},
+  doi          = {10.1016/j.knosys.2025.115097},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114988},
+  month        = {2},
+  pages        = {115097},
   shortjournal = {Knowl. Based Syst.},
-  title        = {TempQA: An LLM-based framework for temporal knowledge graph question answering},
-  volume       = {333},
+  title        = {Edge-awarenet: A graph neural approach for efficient multi-item auction mechanism design},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Balancer: Temporal knowledge graph embedding for novel events reasoning with contrastive learning. <em>KBS</em>, <em>333</em>, 114984. (<a href='https://doi.org/10.1016/j.knosys.2025.114984'>www</a>)
+(2026). Mix-domain contrastive learning with mamba generator for unpaired H&E-to-IHC stain translation. <em>KBS</em>, <em>334</em>, 115096. (<a href='https://doi.org/10.1016/j.knosys.2025.115096'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Temporal knowledge graphs (TKGs) offer a new way to analyze real-world scenarios with temporal information. Among TKG reasoning, extrapolation gains significant attention due to its practical applications in real-world scenarios, such as event prediction. While existing methods rely heavily on historical events for reasoning, they struggle to predict novel events like unprecedented disasters or new human behaviors, due to the structural limitations of models. We propose a new model, Balancer, which enhances focus on novel events while ensuring accurate prediction of historical ones. Specifically, we use supervised contrastive learning to obtain the comparative representation of historical and novel events, which is used to train a binary classifier to provide an auxiliary vector for the prediction phase. This auxiliary vector helps the model differentiate between the novel and historical events. A time information embedding module captures potential periodic and cumulative features in historical facts. Experimental results demonstrate the superiority of Balancer. In addition, we introduce multiple novel modules to include richer information in embeddings of entities and relations. On the TKG reasoning task, our model improves the Hits@1 metric over baseline by 21.12 %, 23.21 %, and 51.40 % on the YAGO, ICEWS14, and ICEWS18 datasets, respectively. Additionally, experiments validate the feasibility of the model in uncovering novel events, its overall exceptional performance, and its robustness across datasets with varying structural characteristics.},
+  abstract     = {While Immunohistochemical (IHC) staining technique offers great assistance in precise cancer diagnosis, it struggles with the requirement for adequate healthcare professionals and expensive equipment, posing a significant barrier to the widespread applications of pathology diagnostic services. To address this issue, image translation approaches are developed to transfer the low-cost Hematoxylin and Eosin (H&E) stained images into the IHC domain. However, current research typically relies on Generative Adversarial Networks (GANs) to achieve appearance mapping from the H&E domain to the IHC domain, which falls short of real-world cancer diagnostic needs. In this paper, we propose a Mix-Domain Contrastive Learning method with a Mamba generator (MambaMDCL) to translate H&E images into virtual IHC images with consistent pathology. Specifically, we first introduce Mix-Domain Contrastive Learning (MDCL) to maintain pathological consistency between local patches from the same locations within the H&E-IHC image pair by pulling the matching patches together and pushing the unmatching ones away in the embedding space. Additionally, to identify stainable components and translate them into the IHC domain, a U-shape Mamba generator (U-Mamba) is designed to perceive the distribution of cancer cells across the entire image by modeling long-range dependencies between patches with linear complexity. Despite its reduced number of parameters, U-Mamba demonstrates a stronger perception of stainable components in tissues. Experimental results on two H&E-to-IHC translation datasets show that MambaMDCL outperforms existing approaches and achieves state-of-the-art performance across multiple metrics, further promoting the application of H&E-to-IHC stain translation techniques in real-world cancer diagnosis. The source will be available upon publication.},
   archive      = {J_KBS},
-  author       = {Zhenyu Kuang and Bo Qu and Xiang Li and Cong Li},
-  doi          = {10.1016/j.knosys.2025.114984},
+  author       = {Zhong Zhang and Song Wang and Huan Yan and Ming Xu and Guanghui Wang},
+  doi          = {10.1016/j.knosys.2025.115096},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114984},
+  month        = {2},
+  pages        = {115096},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Balancer: Temporal knowledge graph embedding for novel events reasoning with contrastive learning},
-  volume       = {333},
+  title        = {Mix-domain contrastive learning with mamba generator for unpaired H&E-to-IHC stain translation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). DDINet: A multi-task neural network for accurate drug-drug interaction prediction and effect analysis. <em>KBS</em>, <em>333</em>, 114981. (<a href='https://doi.org/10.1016/j.knosys.2025.114981'>www</a>)
+(2026). IVC-DB: Iterative verification correction method guided by dual-backward mathematical reasoning in large language models. <em>KBS</em>, <em>334</em>, 115095. (<a href='https://doi.org/10.1016/j.knosys.2025.115095'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Drug-Drug Interactions (DDIs) can lead to unexpected adverse effects, posing major challenges in both healthcare and drug research. As polypharmacy becomes increasingly common, the risk of harmful DDIs continues to rise, underscoring the need for accurate and efficient predictive models. To address this, we propose DDINet , a lightweight deep neural network composed of five fully connected layers, designed to predict DDIs and their associated biological effects using molecular fingerprints derived from SMILES representations. Unlike complex graph-based architectures, DDINet emphasizes generalization, computational efficiency, and interpretability. The model was rigorously evaluated across three experimental scenarios S1 (random splits), S2 (seen-unseen drugs), and S3 (unseen-unseen drugs) as well as under scaffold-based partitioning to ensure structural disjointness. DDINet achieved competitive or superior results across all settings, maintaining high AUROC and AUPR scores even under stringent unseen-drug conditions. Statistical validation using the DeLong test confirmed the significance of its generalization capability, while efficiency analysis demonstrated a fourfold speed advantage over graph-based models. External validation on the Kangzhou dataset further highlighted its robustness and real-world applicability. Overall, DDINet provides a practical, scalable, and reliable framework for large-scale DDI prediction and adverse effect analysis, supporting safer drug development and informed clinical decision-making. The source code and dataset are publicly available at GitHub repository .},
+  abstract     = {Large Language Models (LLMs) have demonstrated remarkable potential in mathematical reasoning tasks. However, forward chain-of-thought (CoT) reasoning tends to overly rely on the surface description of questions, making it vulnerable to slight modifications of specific numbers or terms, which can significantly impair question-solving performance. Current bidirectional reasoning approaches attempt to alleviate the limitations of unidirectional reasoning by introducing backward reasoning to verify the forward answer. However, LLMs often underperform in backward reasoning, potentially introducing cascading errors during the verification process and thus constraining overall reasoning performances. To address this challenge, we propose the Iterative Verification Correction Method Guided by Dual-Backward (IVC-DB) framework. IVC-DB generates diverse styles of backward question pairs through contextual consistency and a templated method, establishing a dual backward verification mechanism consisting of conclusion verification and premise verification. Furthermore, the framework incorporates iterative modules for reasoning, verification, and correction, which dynamically refine candidate solutions and reduce errors in the verification stage. This design mitigates potential errors in backward reasoning and enhances the mathematical question-solving capabilities of LLMs. Experimental results show that IVC-DB significantly outperforms state-of-the-art methods across seven mathematical reasoning datasets and two non-mathematical tasks, achieving average accuracies of 89.8 % with GPT-3.5-Turbo and 94.5 % with GPT-4. Ablation studies further reveal the complementary nature of different backward question styles and the crucial role of dual verification in reducing cascading errors.},
   archive      = {J_KBS},
-  author       = {Sabir Ali and Waleed Alam and Kil To Chong and Hilal Tyara},
-  doi          = {10.1016/j.knosys.2025.114981},
+  author       = {Kunpeng Du and Xuan Zhang and Chen Gao and Rui Zhu and Shaobo Liu and Tong Li and Zhi Jin},
+  doi          = {10.1016/j.knosys.2025.115095},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114981},
+  month        = {2},
+  pages        = {115095},
   shortjournal = {Knowl. Based Syst.},
-  title        = {DDINet: A multi-task neural network for accurate drug-drug interaction prediction and effect analysis},
-  volume       = {333},
+  title        = {IVC-DB: Iterative verification correction method guided by dual-backward mathematical reasoning in large language models},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Utilizing large language models for integrating document-level contextual semantic into pseudo-relevance feedback. <em>KBS</em>, <em>333</em>, 114980. (<a href='https://doi.org/10.1016/j.knosys.2025.114980'>www</a>)
+(2026). P-MLP: Language-conditioned task planning with multimodal lexical priors over labels. <em>KBS</em>, <em>334</em>, 115094. (<a href='https://doi.org/10.1016/j.knosys.2025.115094'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Pseudo-Relevance Feedback (PRF) is a key technique in information retrieval (IR). Traditional implementations rely on statistical information, such as term frequency, for precise matching and relevance assessment. However, these methods struggle to fully capture the deep semantic integrity of query terms, especially in handling polysemy, high semantic relevance, and long-document comprehension. To address these challenges, this paper innovatively proposes a large language model-assisted PRF probabilistic model. The model first employs a precise matching algorithm to evaluate and determine the term-level weights, and then uses a large language model to encode the contextual relationships within the query and feedback documents, thereby accurately acquiring the global semantic weights of terms relevant to the query at the document level. By adjusting a balancing factor to allocate weights between these two components, the model comprehensively selects expanded terms for constructing a new query representation and executing query expansion (QE). This model not only facilitates approximate matching through the integration of global semantic features of documents but also effectively combines with the precise matching information of traditional PRF models, enabling a comprehensive and accurate optimization of queries from a broader perspective. To validate effectiveness, extensive empirical analyses on five TREC datasets assess performance across key metrics such as MAP, P@10, NDCG, and MRR. Experimental results show significant improvements over baseline models. Comparative analyses and case studies confirm that the expanded terms maintain high semantic relevance and consistency with the original query while preserving diversity and effectively capturing global document semantics, establishing an efficient QE mechanism.},
+  abstract     = {Task planning is essential for robots to successfully complete domestic tasks. However, language-conditioned task planning is challenging because it requires grounding language in perception and actions, which are conducive to long-horizon task execution. An intuitive option is to purely learn this capability from expert demonstrations, but this often means reliance on limited task-specific knowledge, and hence poor generalization to novel environments. Our key insight is that label names inherently carry semantic definitions and evoke visual associations, which can offer additional commonsense priors that prompt the agent task planning. Thus, we propose a label-informed framework, P-MLP , for efficient Planning with Multimodal Lexical Priors. We externalize the priors associated with label names from large models and propose a probabilistic label embedding modeling process that learns distributional representations to enhance the expressiveness of label representation. To exploit these rich label priors throughout the plan sequence, we introduce a Hawkes-based label-aware decoder that explicitly integrates prior knowledge into intensity modeling to inform sequential generation with respect to long-horizon planning. Extensive experiments and comparisons with strong baselines on the embodied ALFRED task from LoTa-Bench show that P-MLP consistently achieves superior performance in terms of the accuracy and quality of planning. Code will be available at https://github.com/yipliu/P-MLP .},
   archive      = {J_KBS},
-  author       = {Min Pan and Wenrui Xiong and Yu Liu and Junmei Wang and Feng Deng and Ellen Anne Huang and Jinguang Chen and Jimmy X. Huang},
-  doi          = {10.1016/j.knosys.2025.114980},
+  author       = {Yiping Liu and Wei Sun and Yan Zheng and Jian Liu and Lu Chen and Yuchen Zhao and Genwei Zhang and Hongshan Yu and Ajmal Mian},
+  doi          = {10.1016/j.knosys.2025.115094},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114980},
+  month        = {2},
+  pages        = {115094},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Utilizing large language models for integrating document-level contextual semantic into pseudo-relevance feedback},
-  volume       = {333},
+  title        = {P-MLP: Language-conditioned task planning with multimodal lexical priors over labels},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Causal reasoning meets heuristic strategies: Enhancing RAG through fine-tuning and knowledge interaction. <em>KBS</em>, <em>333</em>, 114976. (<a href='https://doi.org/10.1016/j.knosys.2025.114976'>www</a>)
+(2026). IDFG: Information-regularized diversity-fidelity graph for EEG emotion recognition. <em>KBS</em>, <em>334</em>, 115092. (<a href='https://doi.org/10.1016/j.knosys.2025.115092'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Retrieval-augmented Generation (RAG) enhances large language models (LLMs) with external knowledge, but traditional approaches typically rely on surface-level relevance and lack robustness to noisy or conflicting information. In real-world scenarios, users often pose complex queries that require accurate, contextually grounded reasoning, posing two key challenges for RAG systems. The first challenge is how to extract truly supportive evidence from noisy or topically similar but uninformative documents. The second challenge is how to resolve conflicts between internal parameterized knowledge and external knowledge from retrieved documents. To address these challenges, we propose CRGS-RAG, a framework that incorporates the Causal Reasoning Fine-Tuning Strategy and Game-Theory-Inspired Knowledge Fusion Strategy. The Causal Reasoning Fine-Tuning Strategy improves model robustness by training it to focus on causally relevant evidence, while the Game-Theory-Inspired Knowledge Fusion Strategy enables CRGS-RAG to adaptively integrate internal parameterized knowledge and external knowledge from retrieved documents under conflicting conditions. Experiments on five open-domain QA benchmark datasets show that CRGS-RAG consistently outperforms the state-of-the-art RAG baselines in accuracy and consistency. Furthermore, ablation studies reveal that the Causal Reasoning Fine-Tuning Strategy significantly enhances CRGS-RAG’s reasoning ability under noisy retrieval, while the Game-Theory-Inspired Knowledge Fusion Strategy module improves factual alignment and robustness in fusing knowledge from multiple sources. To facilitate reproduction, our code is available at https://github.com/yuanlill/CRGS-RAG .},
+  abstract     = {Predicting the distribution of unseen target subjects based on limited EEG data from source subjects poses significant challenges. Existing approaches augment EEG data to enrich source knowledge but overlook the diversity and emotional fidelity of the generated samples. This oversight results in insufficient domain diversity and emotional semantic information for designing a generalized model that is robust to intersubject variability. To address this issue, this study proposes an Information-Regularized Diversity-Fidelity Graph (IDFG) from a mutual information perspective for EEG emotion recognition. The graph diversity augmentation module leverages statistical uncertainty and information regularization to enhance EEG graph diversity, equipping the model with rich emotional knowledge against subject variability. In addition, the graph emotion decoupling module unifies decoupling learning with information regularization to purify emotional semantics. Moreover, the graph fidelity learning module preserves the semantic fidelity between the original and generated EEG graphs by integrating consistency learning with supervised learning. Extensive experiments on three public EEG datasets (SEED, SEED-IV, SEED-V) demonstrate that IDFG significantly outperforms baselines, achieving cross-subject recognition accuracy of 93.29 %, 81.32 %, and 79.75 %, respectively. Furthermore, cross-dataset comparison and visual analysis of IDFG reveal that preserving diversity and emotional fidelity enhances model generalization.},
   archive      = {J_KBS},
-  author       = {Xun Luo and Yuzhong Chen and Yanhao Tu and Wenju Qiu},
-  doi          = {10.1016/j.knosys.2025.114976},
+  author       = {Bianna Chen and C. L. Philip Chen and Tong Zhang},
+  doi          = {10.1016/j.knosys.2025.115092},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114976},
+  month        = {2},
+  pages        = {115092},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Causal reasoning meets heuristic strategies: Enhancing RAG through fine-tuning and knowledge interaction},
-  volume       = {333},
+  title        = {IDFG: Information-regularized diversity-fidelity graph for EEG emotion recognition},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Hierarchical attention and dynamic consistency filtering for robust aerial multi-view stereo. <em>KBS</em>, <em>333</em>, 114973. (<a href='https://doi.org/10.1016/j.knosys.2025.114973'>www</a>)
+(2026). Domain selection in transfer learning for reference evapotranspiration estimation. <em>KBS</em>, <em>334</em>, 115091. (<a href='https://doi.org/10.1016/j.knosys.2025.115091'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Existing deep learning-based multi-view stereo (MVS) methods for aerial imagery primarily rely on conventional convolutional neural network (CNN) for feature extraction. Although CNN are effective at capturing local patterns, their fixed receptive fields constrain cross-scale dependency modeling and global context reasoning, which becomes particularly challenging under the large-scale variations and complex textures characteristic of aerial scenes. To address these issues, we propose HADC-MVSNet, a novel aerial MVS framework that integrates hierarchical attention with a spatially adaptive receptive field design. Specifically, the Dynamic Swin-Transformer Feature Extraction module (DSFE) enables flexible adaptation to diverse aerial datasets while effectively modeling both global and cross-scale context. In addition, Feature Fusion with Deformable Convolution (FFDC) are incorporated to enhance local geometric modeling, thereby improving the adaptability of feature fusion and strengthening cross-view alignment. Furthermore, HADC-MVSNet introduces a Multi-stage photometric consistency with geometric consistency module (MPG). By combining multi-view photometric and geometric constraints to refine depth map fusion, it adaptively suppresses outliers and enhances robustness under varying scene complexities. As a result, this method achieves more reliable depth fusion, higher-quality point screening, and ultimately, more complete and accurate 3D point cloud reconstruction. Extensive experiments on multiple aerial image datasets demonstrate that HADC-MVSNet outperforms state-of-the-art methods in both depth estimation accuracy and reconstruction robustness, confirming its effectiveness and practicality in robust aerial multi-view stereo vision.},
+  abstract     = {Evaluating supervised models for estimating reference evapotranspiration (ET o ) is crucial when there is a domain shift, meaning the models should be tested at stations not used during training. In such cases, an external k-fold validation can be performed, reserving different stations for testing in each iteration. However, this simple approach may include training data from stations that differ substantially from the testing station, which can reduce the model's generalizability due to domain shift. Therefore, this study focused on transfer-learning (TL) based modeling of ET o to enhance the performance of temperature-based gene expression programming (GEP) models for spatial (external) modeling. Specifically, transductive TL, which emphasizes domain selection via an instance-based approach, was employed by applying preliminary clustering methods for the first time in the literature. Various initial clusters of training stations were defined based on factors such as the aridity index (IA), the continentality index (CICU), principal component analysis (PCA), the self-organizing maps (SOM), and k-means clustering. K-fold validation was conducted within each cluster, which provided intra-cluster and cross-cluster assessments. The models achieved lower accuracy when a global k-fold validation was used without preliminary clustering for source domain selection. The findings revealed the importance of the similarity between source (training) and target stations in model performance, indicating that preliminary clustering may be beneficial before data splitting in supervised machine learning development. When station clustering is appropriate, the intra-cluster approach generally yields more accurate results than the cross-cluster approach.},
   archive      = {J_KBS},
-  author       = {Lina Wang and Jiayu Zhang and Ziqing Wang and Shuheng Liu and Jiangfeng She},
-  doi          = {10.1016/j.knosys.2025.114973},
+  author       = {Mohammad Hossein Kazemi and Jalal Shiri and Abolfazal Majnooni and Sepideh Karimi and Pau Marti},
+  doi          = {10.1016/j.knosys.2025.115091},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114973},
+  month        = {2},
+  pages        = {115091},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Hierarchical attention and dynamic consistency filtering for robust aerial multi-view stereo},
-  volume       = {333},
+  title        = {Domain selection in transfer learning for reference evapotranspiration estimation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). FedDHE: A dual entropy-driven framework for robust federated learning in heterogeneous environments. <em>KBS</em>, <em>333</em>, 114972. (<a href='https://doi.org/10.1016/j.knosys.2025.114972'>www</a>)
+(2026). Poison once, fool many: Practical poisoning attacks against text-to-image retrieval systems. <em>KBS</em>, <em>334</em>, 115090. (<a href='https://doi.org/10.1016/j.knosys.2025.115090'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Federated Learning (FL) faces substantial challenges in heterogeneous environments, where balancing global model consistency with client-specific variations remains a fundamental dilemma. This paper introduces FedDHE, an optimization framework that leverages dual entropy-driven mechanisms to address these challenges. The framework makes two key contributions: it develops an entropy-based dynamic client selection strategy that evaluates participants by analyzing the entropy of model feature outputs alongside data volume metrics, enabling the identification of high-quality contributors while preserving data diversity. Additionally, FedDHE implements a layer-wise weighted aggregation mechanism that adaptively calibrates aggregation weights according to entropy distributions across neural network layers, prioritizing layers with greater stability and information richness. Comprehensive experiments on three benchmark datasets–Fashion-MNIST, CIFAR-10, and CIFAR-100–demonstrate that FedDHE consistently outperforms seven state-of-the-art FL algorithms, including the widely adopted FedAvg. The framework achieves notable accuracy improvements of 9.02 % and 6.29 % on CIFAR-10 and CIFAR-100, respectively, compared to the best-performing baseline methods. These empirical results validate the effectiveness of our entropy-driven approach in mitigating data heterogeneity while maintaining robust global model performance.},
+  abstract     = {Text-to-Image retrieval (IR) systems are widely used to match images to specific textual queries, often leveraging publicly available Vision-Language Pretrained models (VLPs) for their generalization capabilities. However, due to the diverse and open nature of the image data they rely on, these systems remain vulnerable to data poisoning attacks, where malicious images are injected into the database to manipulate retrieval results. Prior work has demonstrated the effectiveness of attacks when the exact user query is known at retrieval time. However, this assumption is often impractical, as users tend to express similar intents using varied, semantically equivalent queries (e.g., through synonyms), which reduces the effectiveness of existing attacks. In this paper, we address this gap by proposing an attack that remains effective even when users issue semantically varied queries. We introduce Collisio , a novel poisoning method that crafts a single poisoned image to be retrieved under any semantically equivalent form of a target query. To achieve this, Collisio leverages an Expectation over Queries (EoQ) strategy, generating a diverse set of synthetic and selectively transformed query variants, and then optimizes the poisoned image to align with them. We extensively evaluate Collisio on the Flickr30k and MSCOCO datasets across multiple VLPs, demonstrating the severity of Collisio under realistic query variations. Given the implications of this vulnerability, we examine countermeasures based on adversarially trained models and a data preprocessing defense, highlighting both their mitigation potential and the trade-offs involved.},
   archive      = {J_KBS},
-  author       = {Zhe Li and Shaopeng Guan and Debao Wang},
-  doi          = {10.1016/j.knosys.2025.114972},
+  author       = {Dario Lazzaro and Raffaele Mura and Antonio Emanuele CIná and Giuseppe Laurita and Gianni Vercelli and Luca Oneto and Battista Biggio and Fabio Roli},
+  doi          = {10.1016/j.knosys.2025.115090},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114972},
+  month        = {2},
+  pages        = {115090},
   shortjournal = {Knowl. Based Syst.},
-  title        = {FedDHE: A dual entropy-driven framework for robust federated learning in heterogeneous environments},
-  volume       = {333},
+  title        = {Poison once, fool many: Practical poisoning attacks against text-to-image retrieval systems},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). From evaluation to detection: Advancing poisoning attack defense in recommender systems. <em>KBS</em>, <em>333</em>, 114963. (<a href='https://doi.org/10.1016/j.knosys.2025.114963'>www</a>)
+(2026). AMSP-net: Adaptive multi-scale patch network for long time-series forecasting. <em>KBS</em>, <em>334</em>, 115083. (<a href='https://doi.org/10.1016/j.knosys.2025.115083'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recommender systems are essential for delivering personalized suggestions on digital platforms but remain vulnerable to poisoning attacks. Over the past two decades, various detection models have been proposed to counter these threats. However, the absence of a standardized evaluation framework, along with inconsistent experimental settings and overly simplified evaluation scenarios, has impeded fair comparison and limited the practical deployment of existing detection models. To address these issues, this paper proposes a standardized evaluation framework and implements it as a library named RG-DX. Our framework unifies the evaluation process into a scenario-based, six-stage pipeline with clear definitions, rigorous requirements, and specific restrictions. The library integrates 11 attack models, 17 detectors, flexible injection strategies, scalable scenario generation, and multi-dimensional evaluation dimensions to accommodate diverse research needs. Analysis based on RG-DX reveals that existing detectors perform well in specific scenarios yet struggle to maintain their effectiveness under more challenging conditions. Motivated by this finding, an evaluation-driven detector, named E-Detector, is also proposed. Our detector addresses the limitations of existing approaches by integrating user preferences and relationships into a unified signed bipartite network that considers dual perspectives. It further employs suspicious scores to guide aggregation and augmentation processes, enhancing the separation between malicious and benign users. Extensive experiments conducted on four datasets, with over 1000 injected instances, demonstrate the value of our framework and validate the effectiveness, reliability, and robustness of E-Detector. We also summarize the evaluation insights to offer valuable guidance in the ongoing arms race in recommender security.},
+  abstract     = {Time Series Forecasting (TSF) is widely used in fields such as weather forecasting, energy monitoring, and traffic planning. However, real-world time series are highly complex and variable, exhibiting significant multi-scale features, making accurate forecasting challenging. Although several deep learning-based scale decomposition methods have been proposed and have led to some improvements in prediction accuracy, they often fail to fully consider the fusion of multi-dimensional features across scales, particularly neglecting the random fluctuation features lost due to pooling and downsampling. To address these limitations, this paper proposes the Adaptive Multi-scale Patch Network (AMSP-Net) for Long-term Time Series Forecasting (LTSF). AMSP-Net introduces an Adaptive Scale-wise Patch-size (ASP) mechanism and employs a Multi-Layer Perceptron (MLP) architecture to achieve cross-scale fusion of random fluctuation, seasonal, and trend features. In addition, we design an Adaptive Weighted Prediction (AWP) module that integrates multiple linear predictors. This module not only exploits the complementary nature of multi-scale features to improve accuracy but also dynamically adjusts the contribution of each scale according to temporal variations, thereby enhancing generalization in LTSF tasks. Extensive experiments on multiple real-world datasets demonstrate that AMSP-Net achieves superior predictive performance on small-scale variable datasets compared to the state-of-the-art algorithms.},
   archive      = {J_KBS},
-  author       = {Weiming Song and Lihua Chen and Ru Ma and Fuzhi Zhang},
-  doi          = {10.1016/j.knosys.2025.114963},
+  author       = {Yangbo Xu and Dongsheng Liu and Tong Wu and Junjie Lin and Yahui Chen},
+  doi          = {10.1016/j.knosys.2025.115083},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114963},
+  month        = {2},
+  pages        = {115083},
   shortjournal = {Knowl. Based Syst.},
-  title        = {From evaluation to detection: Advancing poisoning attack defense in recommender systems},
-  volume       = {333},
+  title        = {AMSP-net: Adaptive multi-scale patch network for long time-series forecasting},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Diverse and high-quality text generation assisted by large language models. <em>KBS</em>, <em>333</em>, 114954. (<a href='https://doi.org/10.1016/j.knosys.2025.114954'>www</a>)
+(2026). A multi-view graph neural network with subgraph variational autoencoder for class-imbalanced node classification. <em>KBS</em>, <em>334</em>, 115081. (<a href='https://doi.org/10.1016/j.knosys.2025.115081'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The capability of many large pre-trained language models to generate natural-sounding, high-quality texts enables them to assist humans across various domains. However, the demand to generate a set of diverse, yet qualitative responses that satisfy different human preferences is often overlooked. Recently, Quality-Diversity (QD) algorithms have emerged as a promising approach for addressing these requirements in generation tasks, yet their applications in natural language generation remain under-explored. In this paper, we employ MAP-Elites, a conventional QD algorithm, to search for a wide range of responses with high-performing scores in different niches of hand-crafted features representing angles of human preferences. We adopt QD through AI Feedback (QDAIF) which uses large language models to modify (mutate) previously found texts into new ones and evaluate the value of such features and generation quality. However, QDAIF only focuses on creative writing tasks where there is no explicit task objective, unlike input instance-based tasks (e.g., summarizing a paragraph). We, thus, adjust the original pipeline to be more flexible on these tasks and further enhance the mutation procedure by introducing an assigned diversity mechanism which actively steers mutation towards unexplored preferences. Experiments show that our method successfully discovers diverse and high-quality texts both qualitatively and quantitatively in distinct categories of six natural language tasks including text continuation, abstractive summarization, data to text, generative commonsense, question answering and chitchat dialogue. Source code and supplementary materials can be found at: https://github.com/ELO-Lab/TextGenQD .},
+  abstract     = {Class imbalance in graph-structured data critically compromises the generalization ability of Graph Neural Networks (GNNs), leading to classification bias toward majority classes. Existing solutions predominantly rely on node generation techniques based on Synthetic Minority Over-sampling Technique (SMOTE) and Mixup to mitigate imbalance. However, these methods suffer from three fundamental limitations: (1) inefficient single-node synthesis, (2) compromised validity due to the fact that high neighbor similarity does not ensure class consistency, and (3) disruption of graph topology caused by the introduction of numerous low-validity nodes. To address these issues, a multi-view GNN framework integrating a Subgraph Variational Autoencoder (SVAE), termed GraphMV-SVAE, is proposed in this study. The key innovation lies in a holistic approach that synergizes uncertainty-aware neighbor filtering with batch-wise minority subgraph generation, fundamentally overcoming the limitations of prior node-level interpolation methods. First, an Evidence Deep Learning (EDL)-based uncertainty classifier is employed to filter reliable neighbors, thereby preventing invalid connections. Then, the SVAE is introduced to enable batch generation of discriminative minority nodes, effectively overcoming the inefficiency of prior interpolation-based methods that synthesize nodes individually. Moreover, unlike conventional Variational Autoencoders that generate independent and identically distributed samples, the proposed SVAE incorporates a novel quantum-inspired reparameterization strategy with class-mean constraints and non-class divergence, ensuring that the generated nodes are category-aware and maintain inter-class separability for enhanced feature discriminability. Semantic consistency between original and synthetic views is preserved through multi-view learning with a Feature Interaction Transformer. Comprehensive evaluations involving eleven baseline methods across six benchmark datasets demonstrate that the proposed framework achieves state-of-the-art performance, with notable improvements observed across various settings. For instance, on the Cora-LT dataset with a GCN backbone, the method achieves substantial absolute gains in all evaluation metrics. Superior results are consistently observed across all three GNN architectures (GCN, GAT, and GraphSAGE), with overall performance leading all compared methods. Additional experiments on large-scale graphs further confirm its robustness and scalability, achieving accuracy improvements of 2.68 % and 1.43 % on the obgn-arxiv and CoraFull datasets, respectively, while avoiding out-of-memory issues that affect several baseline approaches.},
   archive      = {J_KBS},
-  author       = {Thai Huy Nguyen and Ngoc Hoang Luong},
-  doi          = {10.1016/j.knosys.2025.114954},
+  author       = {Longqing Du and Zhirong Huang and Jiecheng Li and Guixian Zhang and Debo Cheng and Guangquan Lu and Shichao Zhang},
+  doi          = {10.1016/j.knosys.2025.115081},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114954},
+  month        = {2},
+  pages        = {115081},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Diverse and high-quality text generation assisted by large language models},
-  volume       = {333},
+  title        = {A multi-view graph neural network with subgraph variational autoencoder for class-imbalanced node classification},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). GLDS-GCN: Dual-stream graph convolutional network for skeleton-based abnormal action recognition. <em>KBS</em>, <em>333</em>, 114953. (<a href='https://doi.org/10.1016/j.knosys.2025.114953'>www</a>)
+(2026). AHE: Adaptive hybrid-sampling ensemble for large-scale highly imbalanced data classification. <em>KBS</em>, <em>334</em>, 115080. (<a href='https://doi.org/10.1016/j.knosys.2025.115080'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Abnormal action recognition that is specifically focused on human health is essential in fields such as smart healthcare and health surveillance. Compared with ordinary action recognition, it is a more challenging task on Graph Convolutional Networks (GCNs): (1) The discriminative features of abnormal action are typically locally sensitive and only exist in specific spatial-temporal segments; (2) existing methods lack the ability to model high-order semantic relationships between joint nodes; and (3) traditional feature extraction paradigms struggle to capture the dynamic coupling relationship of spatiotemporal features. To address these issues, we propose a Global-Local Dual-Stream Graph Convolutional Neural Network (GLDS-GCN). The method comprehensively models the long- and short-term dependencies between joints by performing the Temporal-Channel Interaction Graph Convolution Module (TCI-GCM) and a Context-Aware-Region Module (CARM), which enhances the capture of both global motion features and local detail features, respectively. Additionally, the Spatial-Temporal Collaborative Fusion Module (CFM) dynamically adjusts the local and global spatial-temporal feature representations for different action instances to address the information imbalance. Finally, a Motion Enhancement Unit (MEU) combines a Multi-Scale Temporal Convolutional Network (MS-TCN) to suppress redundant static features and emphasize motion variations, which improves the model’s sensitivity to dynamic changes. Experimental results demonstrate the effectiveness of GLDS-GCN on the NTU RGB+D, NTU RGB+D 120, and abnormal action datasets.},
+  abstract     = {Imbalanced data commonly exist in research fields and bias classifiers toward the class with a dominating sample size, leading to significant degradation in classification performance. Various data-level and ensemble-based methods have demonstrated notable success on small-scale imbalanced datasets with moderate imbalance ratios. However, they frequently encounter challenges like noise interference and information loss when dealing with large-scale and highly imbalanced data. To overcome these limitations, we introduce AHE , an A daptive H ybrid-sampling E nsemble in this paper for large-scale highly imbalanced data classification. Aiming at enhancing the scarce representation of the minority class with minimal noise introduction while mitigating information loss from the majority class, a novel hybrid-sampling pipeline is designed to construct informative training sets for base classifiers, which over-samples the minority class for partial augmentation and under-samples the majority class to achieve class balance. In the over-sampling phase, AHE determines an appropriate sampling amount based on within-class imbalance of the minority class and employs an improved SMOTE method for sample generation. In the under-sampling phase, AHE updates a dynamic histogram based on classification hardness to segment the majority class into diversified sampling subspaces and uniformly samples training data from each bin. Finally, base classifiers are combined in a boosting-like paradigm to form an ensemble classification model. Extensive experiments on 24 benchmark datasets demonstrate that AHE achieves state-of-the-art performance against 17 baseline methods, particularly excelling in F1, G-mean, and MCC scores, which validates the effectiveness of the adaptive hybrid-sampling mechanism in AHE and its capability in large-scale imbalanced classification scenarios.},
   archive      = {J_KBS},
-  author       = {Yuqi Zhang and Minghua Liu and Xinyi Mao and Xiaoxia Liu},
-  doi          = {10.1016/j.knosys.2025.114953},
+  author       = {Xingjian Zeng and Yali Yuan and Hantao Mei and Guang Cheng},
+  doi          = {10.1016/j.knosys.2025.115080},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114953},
+  month        = {2},
+  pages        = {115080},
   shortjournal = {Knowl. Based Syst.},
-  title        = {GLDS-GCN: Dual-stream graph convolutional network for skeleton-based abnormal action recognition},
-  volume       = {333},
+  title        = {AHE: Adaptive hybrid-sampling ensemble for large-scale highly imbalanced data classification},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). IA-MUNet: A knowledge-guided instance-aware mamba-UNet for efficient multiclass dental image segmentation. <em>KBS</em>, <em>333</em>, 114949. (<a href='https://doi.org/10.1016/j.knosys.2025.114949'>www</a>)
+(2026). Feature selection via enhanced rough hypercuboid approach with overlap degree and distance measure. <em>KBS</em>, <em>334</em>, 115072. (<a href='https://doi.org/10.1016/j.knosys.2025.115072'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {State-space models (SSMs), which are knowledge-driven sequence-modeling techniques, are recognized for their dynamic representation and computational efficiency, enabling the effective modeling of spatial and temporal dependencies in vision tasks. In this study, we present Instance-Aware Mamba-UNet (IA-MUNet), an intelligent segmentation framework that integrates an SSM-based UNet architecture with instance-level knowledge to segment individual objects across multiple classes accurately. The proposed approach combines YOLOv10-based bounding-box extraction for precise localization with an encoder–decoder structure enhanced by Visual State Space blocks and a 2D Selective Scan mechanism to model both long-range dependencies and fine-grained spatial details. To improve instance distinction, Instance-Aware Blocks are embedded within the skip connections, incorporating prior knowledge from bounding-boxes as spatial attention cues to separate closely positioned or morphologically similar objects effectively. The results of experiments on a composite dental radiograph dataset demonstrate that IA-MUNet consistently outperforms state-of-the-art models such as Swin-Unet, Attention U-Net, VM-UNet, and YOLOv8 in terms of segmentation accuracy and robustness, while maintaining the lowest computational cost (0.77 GFLOPS). Specifically, IA-MUNet achieves a Dice score of 92.94 %, Jaccard index of 88.71 %, and precision of 97.33 %, representing improvements of 1.74 %, 2.01 %, and 0.53 % points, respectively, over the best-performing baseline models. The knowledge-guided and computationally efficient design of IA-MUNet highlights its potential for broader applications in medical imaging and other vision tasks that demand precise instance-level understanding under resource constraints.},
+  abstract     = {Feature selection refers to a data optimization method that can effectively improve classification performance and the running speed of data analysis. By utilizing rough sets (RSs) and hypercuboid learning, the rough hypercuboid (RH) approach provides an effective evaluation criterion for selecting discriminative features from numerical datasets. However, a major issue in the existing RH is excessive reliance on the positive region while ignoring boundary region information, which can result in the loss of implicit classificatory knowledge. To address this issue, this study introduces a novel evaluation criterion that not only considers the positive region of RH but also the average distance from boundary objects to the center of the positive region, called enhanced RH with distance measure (DMRH). Compared to methods based on dependency functions that lack boundary region information, DMRH effectively captures and utilizes it for improved feature selection. Experimental results show it outperforms standard RH and other feature selection algorithms in classification performance. To further enhance efficiency for high-dimensional datasets, this study proposes an optimization algorithm based on the measure of overlap degree, called the enhanced RH approach with overlap degree and distance measure (ODDMRH). This method incorporates the coincidence degree of RH (RHCD) and distance (DS) to define enhanced RH with overlap degree (ODRH), which can pre-sort and filter attributes before applying DMRH. Compared to DMRH, experiments demonstrate that ODDMRH significantly reduces the number of attribute searches, thereby greatly improving runtime efficiency for high-dimensional datasets.},
   archive      = {J_KBS},
-  author       = {Hamza Shafiq and Shaily Bajpai and Bumshik Lee},
-  doi          = {10.1016/j.knosys.2025.114949},
+  author       = {Jin Cao and Chuan Luo and Linlin Xie and Tianrui Li and Hongmei Chen},
+  doi          = {10.1016/j.knosys.2025.115072},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114949},
+  month        = {2},
+  pages        = {115072},
   shortjournal = {Knowl. Based Syst.},
-  title        = {IA-MUNet: A knowledge-guided instance-aware mamba-UNet for efficient multiclass dental image segmentation},
-  volume       = {333},
+  title        = {Feature selection via enhanced rough hypercuboid approach with overlap degree and distance measure},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Representation learning for skeleton-based action recognition from a causal perspective. <em>KBS</em>, <em>333</em>, 114948. (<a href='https://doi.org/10.1016/j.knosys.2025.114948'>www</a>)
+(2026). Classifier guidance and domain cooperation for multisource unsupervised domain adaptation. <em>KBS</em>, <em>334</em>, 115057. (<a href='https://doi.org/10.1016/j.knosys.2025.115057'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent advances in contrastive learning have demonstrated remarkable potential for skeleton-based action recognition. Existing methods primarily focus on designing models to learn correlation-driven spatiotemporal dependencies between positive and negative pairs. While these efforts are valuable, they often overlook the essential causal logic underlying the task, introducing spurious correlations that limit the performance ceiling. In this work, we first conduct a systematic causal analysis of the contrastive action representation learning pipeline, explicitly modeling confounders that interfere with semantic representations. Building upon causal interventions, we propose a novel causal action representation learning (CausalARL) framework. It alleviates the interference and captures direct causal effects through a well-designed spectrum-informed non-causal perturbation strategy and a front-door experts module, ensuring robust representation learning. We validate CausalARL through extensive experiments on the NTU RGB+D (60 and 120) and PKU-MMD datasets across downstream tasks, including action recognition, action retrieval, transfer learning, and semi-supervised learning. Results show that CausalARL outperforms state-of-the-art methods across multiple benchmarks.},
+  abstract     = {Traditional deep learning models usually rely on identical data distributions for their training and testing sets. Unfortunately, this assumption rarely holds in real-world applications. This challenge has led to the proposal of unsupervised domain adaptation (UDA). While centred on transfers between single source and target domains, most UDA methods do not capitalize on the wealth of labelled resources that are present across multiple source domains. This gap is addressed herein by focusing on multisource unsupervised domain adaptation (MUDA), where knowledge is transferred from multiple source domains to an unlabelled target domain. The existing MUDA methods focus primarily on reducing discrepancies between the source and target domains and often overlook the goal of improving the performance of the utilized classifier across different domains, which is equally crucial for effectively implementing domain adaptation. To overcome this limitation, we propose a novel approach called classifier guidance and domain cooperation (CGDC). Our method calculates the accuracy of a classifier in the target domain using a probability-inspired approach that considers data transformation costs and classifier precision in the high-level feature space of the target domain. This enables high-performance classifiers to guide classifiers with lower performance. Additionally, we introduce a mixup-based multi-information fusion strategy to create enriched domains by combining information derived from the source and target domains. A comparison with many methods on public datasets shows the effectiveness of our CGDC approach in image classification tasks. Specifically, CGDC achieves improvements of 4.3 % on Office-Home and 1.9 % on Office-31 over the best baseline methods.},
   archive      = {J_KBS},
-  author       = {Mengxian Hu and Liuyi Wang and Chenpeng Yao and Qingqing Yan and Chengju Liu and Qijun Chen},
-  doi          = {10.1016/j.knosys.2025.114948},
+  author       = {Ming Zhao and Yifan Lan and Yuwu Lu and Leyao Yuan and Wenmeng Zhang},
+  doi          = {10.1016/j.knosys.2025.115057},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114948},
+  month        = {2},
+  pages        = {115057},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Representation learning for skeleton-based action recognition from a causal perspective},
-  volume       = {333},
+  title        = {Classifier guidance and domain cooperation for multisource unsupervised domain adaptation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Thalamocortical burst gating enables event-locked memory. <em>KBS</em>, <em>333</em>, 114947. (<a href='https://doi.org/10.1016/j.knosys.2025.114947'>www</a>)
+(2026). A novel hybrid multi-regularization total variation model for edge-aware image smoothing. <em>KBS</em>, <em>334</em>, 115053. (<a href='https://doi.org/10.1016/j.knosys.2025.115053'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Not all moments merit equal memory – depth should be saved for what matters! Forecasting natural and engineered signals often requires allocating memory selectively to intermittent, high-value events rather than spreading it uniformly over time. Standard reservoir computing–while simple to train–typically uses static leaks that cannot decide when to extend memory. We introduce a thalamocortical burst-gated echo state network, a fixed-weight reservoir that adaptively lengthens memory at salient onsets. A thalamic relay forms both a fast trace and a slow packet; a two-factor gate (readiness from prior hyperpolarization current depolarization), together with a reticular inhibitory loop, switches between tonic relay and packetized output, yielding event-locked, adaptive time constants. We provide explicit, checkable echo-state conditions by casting the joint update as a block contraction and enforce them via simple norm scaling; training remains a single ridge regression, with optional exposure of burst features to the readout. Across chaotic and event-intermittent benchmarks (e.g., Lorenz-63, Rössler, arrhythmia/ECG, sunspot), we observe consistent gains in multi-step prediction horizon, onset detection, and readout sample efficiency over size-matched reservoirs with static leaks. By embedding a biologically grounded gating mechanism within an echo state network while preserving its simplicity, our approach improves forecasting of intermittent dynamics and offers a transparent inductive bias for broader computational neuroscience and control tasks.},
+  abstract     = {Image smoothing is a fundamental technique in numerous image processing applications, and continuous advancements enhance its performance. However, existing methods still face a challenge in maintaining an optimal balance between smoothing intensity and edge preservation. They often suffer from halos and gradient reversal artifacts. To address these issues, this paper introduces a novel H ybrid M ulti- R egularization T otal V ariation model for smoothing tasks, termed HMRTV . It aims to decompose an image into primary structural and textural components via embedding three hybrid regularizations. Specifically, the HMRTV model introduces exponential functions acting as regularizations to achieve edge-aware capability, which can provide a more precise separation of edge structures and textures. Additionally, a dedicated texture regularization term is incorporated into the HMRTV model to enhance texture sparsity, leading to mitigating the occurrence of halos and gradient reversal artifacts. We provide a complete mathematical derivation for a numerical solution to the HMRTV model. Extensive experiments demonstrate that HMRTV significantly outperforms state-of-the-art smoothing approaches.},
   archive      = {J_KBS},
-  author       = {Pradeep Singh and Balasubramanian Raman},
-  doi          = {10.1016/j.knosys.2025.114947},
+  author       = {Huiqing Qi and Chongning Zhang and Fang Li and Xiaoliu Luo},
+  doi          = {10.1016/j.knosys.2025.115053},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114947},
+  month        = {2},
+  pages        = {115053},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Thalamocortical burst gating enables event-locked memory},
-  volume       = {333},
+  title        = {A novel hybrid multi-regularization total variation model for edge-aware image smoothing},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Deep long-range spatiotemporal dependency synthetic minority oversampling technique for imbalance-bearing fault diagnosis. <em>KBS</em>, <em>333</em>, 114944. (<a href='https://doi.org/10.1016/j.knosys.2025.114944'>www</a>)
+(2026). Mitigating modal discrepancies for visible-infrared person re-identification via high-order nonlinear constraint. <em>KBS</em>, <em>334</em>, 115052. (<a href='https://doi.org/10.1016/j.knosys.2025.115052'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Bearing fault diagnosis is critical for preventing industrial downtime, but real-world datasets suffer from extreme class imbalance, which biases deep models toward the majority class. Existing oversampling techniques neglect long-range spatiotemporal dependencies, leading to low-fidelity minority samples and poor generalization. To solve the problem, we propose Deep Long-Range Spatiotemporal Dependency Synthetic Minority Oversampling Technique (DLRSD-SMOTE). The proposed method begins with a novel Signal Feature Transform block, which employs Continuous Wavelet Transform and convolutional layers to convert 1D time-domain signals into 2D time-frequency feature heatmaps, enhancing model expressiveness and feature learning. Next, the proposed Seaformer Auto-Encoding and Decoding blocks extract high-dimensional features and model long-range spatiotemporal dependencies. A well-designed Auxiliary Feature Classifier block is then used to generate class-specific synthetic samples. To ensure stable convergence of the proposed DLRSD-SMOTE network and enable the generation of high-quality samples, a customized optimization loss function is constructed. This function is designed based on both the sample reconstruction error and the classification accuracy of category labels, thereby effectively guiding the training process. Finally, a Multi-Class Filtering SMOTE block is proposed to retain only high-quality samples and enhance minority class representations, thereby ensuring class balance. Extensive experiments on two real-world datasets confirm the superior performance of DLRSD-SMOTE over recent baselines. Ablation studies further validate the contributions of each module. Notably, under a 1:5 balance ratio, DLRSD-SMOTE achieves an accuracy of 99.02 %. Code is available at: https://github.com/amstlldj/DLRSD-SMOTE .},
+  abstract     = {One of the principal challenges in the visible-infrared person re-identification (VI-ReID) task is bridging the modality gap between visible and infrared images. Most existing methods transfer single-modal feature extractors to VI-ReID without sufficient consideration of cross-modal characteristics, and apply metric learning losses with Euclidean distance as the common metric. However, the substantial differences between visible and infrared modalities make it difficult for such designs to capture complex nonlinear cross-modal relations. To overcome these issues, this paper proposes the Reproducing Kernel Hilbert Space-Based Modal Discrepancy Reduction Network (RMDR-Net), which optimizes cross-modal discrepancies by employing Reproducing Kernel Hilbert Space (RKHS) similarity metrics. RMDR-Net includes a novel High-order Nonlinear Discriminative loss, which initially mitigates cross-modal discrepancies by capturing the high-order nonlinear relationships between features in RKHS. Moreover, Gram Matrix Consistency loss is designed to enhance distributional consistency both within and between modalities, which revealing underlying feature relationships and further promoting multimodal alignment. Additionally, the Multi-Scale Enhanced Dual Attention module is proposed to capture cross-modal fine-grained differences and obtain discriminative features. Extensive experiments on several public datasets demonstrate that our network surpasses other state-of-the-art methods.},
   archive      = {J_KBS},
-  author       = {Hong-Liang Dai and Dong-Jie Lin and Jun-Pu He and Si-Ting Huang and Xin-Yu Fang},
-  doi          = {10.1016/j.knosys.2025.114944},
+  author       = {Junyu Liu and Yanzhen Xiong and Jinjia Peng and Huibing Wang},
+  doi          = {10.1016/j.knosys.2025.115052},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114944},
+  month        = {2},
+  pages        = {115052},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Deep long-range spatiotemporal dependency synthetic minority oversampling technique for imbalance-bearing fault diagnosis},
-  volume       = {333},
+  title        = {Mitigating modal discrepancies for visible-infrared person re-identification via high-order nonlinear constraint},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Context-aware contrastive learning via structural harmony preservation for generalized category discovery. <em>KBS</em>, <em>333</em>, 114942. (<a href='https://doi.org/10.1016/j.knosys.2025.114942'>www</a>)
+(2026). GLEm-net: Unified framework for data reduction with categorical and numerical features. <em>KBS</em>, <em>334</em>, 115049. (<a href='https://doi.org/10.1016/j.knosys.2025.115049'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {This paper addresses the challenge of Generalized Category Discovery (GCD), where models must recognize both known and unknown categories in an open-world setting. We propose a novel Context-Aware Contrastive Learning (CACL) framework that leverages local structural information and dynamic contextual relationships in the feature space. Our approach introduces a Dynamic Context Aggregation (DCA) mechanism, which integrates neighborhood information into sample representations, implicitly forming a dynamic graph structure. We further incorporate structure preservation constraints to maintain the intrinsic relationships of the data during contrastive learning. This method enhances feature representation quality and improves the model’s ability to discover and represent unknown categories. Extensive experiments on generic, fine-grained, and handwritten character recognition tasks show that our CACL framework significantly outperforms state-of-the-art GCD algorithms, showcasing its effectiveness in handling complex, real-world data distributions and discovering novel categories. Notably, CACL achieves comparable performance even without prior knowledge of the actual number of classes, demonstrating its robustness in realistic scenarios.},
+  abstract     = {In an era of effortless data collection, the impact of machine learning — especially neural networks (NNs) — is undeniable. As datasets grow in size and complexity, efficiently handling mixed data types, including categorical and numerical features, becomes critical. Feature encoding and selection play a key role in improving NN performance, efficiency, interpretability, and generalisation. This paper presents GLEm-Net (Grouped Lasso with Embeddings Network), a novel NN-based approach that seamlessly integrates feature encoding and selection directly into the training process. GLEm-Net uses embedding layers to process categorical features with high cardinality, simplifying the model and improving generalisation. By extending the grouped Lasso regularisation to explicitly consider categorical features, GLEm-Net automatically identifies the most relevant features during training and returns them to the analyst. We evaluate GLEm-Net on open and proprietary industry datasets and compare it to state-of-the-art feature selection methodologies. Results show that GLEm-Net adapts to each dataset by allowing the NN to directly select subsets of most important features, offering on par performance with the best state-of-the-art feature selection methods, while eliminating the need for the external feature encoding and selection steps that are now incorporated in the NN training stage.},
   archive      = {J_KBS},
-  author       = {Wenbo Hu and Yue Lu and Xinchen Ma and Ching Y. Suen},
-  doi          = {10.1016/j.knosys.2025.114942},
+  author       = {Francesco De Santis and Danilo Giordano and Marco Mellia},
+  doi          = {10.1016/j.knosys.2025.115049},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114942},
+  month        = {2},
+  pages        = {115049},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Context-aware contrastive learning via structural harmony preservation for generalized category discovery},
-  volume       = {333},
+  title        = {GLEm-net: Unified framework for data reduction with categorical and numerical features},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). One-step incomplete multi-view clustering via imputed anchor graph discretization. <em>KBS</em>, <em>333</em>, 114935. (<a href='https://doi.org/10.1016/j.knosys.2025.114935'>www</a>)
+(2026). Federated LSTM autoencoders for time series anomaly detection in production-scale HPC systems. <em>KBS</em>, <em>334</em>, 115043. (<a href='https://doi.org/10.1016/j.knosys.2025.115043'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Incomplete multi-view clustering (IMVC) seeks to harness complementary information across multiple views while tackling the challenges inherent in missing data. Modeling inter-sample relationships can mitigate the impact of missing data, but it is computationally expensive. Anchor-graph-based IMC methods offer a more efficient alternative by constructing graphs with a small set of anchors rather than all samples. Nevertheless, existing methods suffer from some limitations that compromise their effectiveness. First, most of them learn a common structure using only available data from observed views, thereby neglecting valuable but unobserved structure hidden in missing samples. Second, their dependence on separate post-processing steps to obtain labels creates a multi-step pipeline that not only constrains the model’s capacity to learn latent information but also introduces the disjoint optimization issues. To address these issues, we propose One-step Incomplete Multi-view Clustering via Imputed Anchor Graph Dscretization (OIMC-IAGD). Our method introduces a novel anchor graph imputation mechanism to integrate both observed and inferred structural information, and a one-step framework that simultaneously performs anchor graph imputation and discrete label acquisition. Comprehensive experiments in multiple datasets demonstrate that OIMC-IAGD consistently outperforms state-of-the-art baselines, achieving a superior balance between clustering effectiveness and computational efficiency. The demo code of this work is publicly available at https://github.com/WuShisi/OIMC-IAGD-master},
+  abstract     = {High-Performance Computing (HPC) systems are becoming increasingly vulnerable to anomalies as their scale and complexity grow. In this work, we propose a federated learning (FL) framework that integrates Long Short-Term Memory (LSTM) autoencoders for time series anomaly detection, allowing decentralized model training without sharing raw data. Using real telemetry from the Marconi100 Tier-0 supercomputer, our approach improves the average F1-score from 0.388 to 0.867 (+123 %) and the AUC from 0.334 to 0.808 (+142 %). It also cuts the training data requirement by a factor of 15, reducing the collection period from 4.5 months to just 1.25 weeks. These improvements are consistent across unsupervised, semi-supervised, and supervised settings, and significance testing with the Wilcoxon signed-rank test confirms they are statistically robust ( p < 0.01). To our knowledge, this is the first comprehensive evaluation of FL-based LSTM autoencoders for anomaly detection in real HPC environments.},
   archive      = {J_KBS},
-  author       = {Jinghan Wu and Rankun Chen and Haoran Wang and Xuetao Zhang and Ben Yang and Badong Chen},
-  doi          = {10.1016/j.knosys.2025.114935},
+  author       = {Emmen Farooq and Michela Milano and Andrea Borghesi},
+  doi          = {10.1016/j.knosys.2025.115043},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114935},
+  month        = {2},
+  pages        = {115043},
   shortjournal = {Knowl. Based Syst.},
-  title        = {One-step incomplete multi-view clustering via imputed anchor graph discretization},
-  volume       = {333},
+  title        = {Federated LSTM autoencoders for time series anomaly detection in production-scale HPC systems},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). MSD-rep: Multi-scale discriminative representation learning for chromosome classification with small datasets. <em>KBS</em>, <em>333</em>, 114933. (<a href='https://doi.org/10.1016/j.knosys.2025.114933'>www</a>)
+(2026). EADOD: Ensemble adversarial defense via orthogonal distillation. <em>KBS</em>, <em>334</em>, 115042. (<a href='https://doi.org/10.1016/j.knosys.2025.115042'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Chromosome classification is a critical yet challenging task in cytogenetics, particularly under small-data conditions where chromosome images often exhibit high similarity and shape deformation. To address this, we propose MSD-Rep, a novel representation learning-based framework that prioritizes the extraction of semantically rich and discriminative representations before classification. Inspired by the multi-resolution nature of microscopic observation, we design a Multi-Scale Convolution Block (MSCB) to capture both fine-grained and global features of chromosomes. Furthermore, we introduce Residual ReduNet Blocks (RRBs), which implement a representation refinement strategy derived from the Maximum Coding Rate Reduction principle, enhancing feature separability through iterative residual transformations. Comprehensive experiments on both public and private datasets demonstrate that MSD-Rep achieves superior accuracy (98.20 % and 99.02 %, respectively), even when trained on small or imbalanced datasets. Our approach also maintains low model complexity and fast inference speed, making it practical for real-world deployment. The results highlight the effectiveness of representation-driven modeling in small-data biomedical image analysis.},
+  abstract     = {Deep neural networks are highly vulnerable to adversarial attacks, where imperceptible perturbations can cause catastrophic misclassification. While ensemble-based defenses have shown promise by leveraging model diversity to reduce adversarial transferability, existing methods often require expensive training from scratch and struggle to balance diversity with task performance. In this paper, we propose Ensemble Adversarial Defense via Orthogonal Distillation (EADOD), a novel defense framework that enhances the adversarial robustness of pre-trained models through knowledge distillation with orthogonal subspace projections. Compared to traditional ensemble-based defense methods, this approach can significantly improve the adversarial defense performance of pre-trained models with lower training costs. Our method creates diverse student models by aligning their features with the teacher model across mutually orthogonal subspaces, effectively reducing feature correlation and adversarial transferability among ensemble members. We theoretically demonstrate that orthogonal projection matrices enforce gradient orthogonality between student models, inherently limiting attack transferability. To address the information loss caused by subspace projection, we introduce controlled overlapping subspaces and stochastic perturbation training to balance robustness with task accuracy. Extensive experiments on CIFAR-100 and Tiny-ImageNet demonstrate EADOD’s superiority. For example, under a strong black-box PGD attack on CIFAR-100, EADOD achieves 39.84 % accuracy, a substantial margin of over 5.8 percentage points above the next-best ensemble method. It also shows superior robustness in white-box (18.97 % accuracy vs. PGD) and adaptive attack scenarios (14.82 % accuracy vs. adaptive PGD), consistently outperforming state-of-the-art defenses. This enhanced robustness is achieved with remarkable efficiency, with training times up to 12x faster than competing methods, all while maintaining clean accuracy comparable to the original teacher model.},
   archive      = {J_KBS},
-  author       = {Haoxi Zhang and Minghui Li and Yi Lai and Maiqi Wang and Linfeng Yu and Edward Szczerbicki},
-  doi          = {10.1016/j.knosys.2025.114933},
+  author       = {Xinyuan Miao and Mingqi Qiao and Wei Huang and Jiayu Du and Fan Zhang and Jing Zhao and Guangjiao Zhou},
+  doi          = {10.1016/j.knosys.2025.115042},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114933},
+  month        = {2},
+  pages        = {115042},
   shortjournal = {Knowl. Based Syst.},
-  title        = {MSD-rep: Multi-scale discriminative representation learning for chromosome classification with small datasets},
-  volume       = {333},
+  title        = {EADOD: Ensemble adversarial defense via orthogonal distillation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Pseudo knowledge driven and lightweight reverse distillation for multimodal anomaly detection. <em>KBS</em>, <em>333</em>, 114930. (<a href='https://doi.org/10.1016/j.knosys.2025.114930'>www</a>)
+(2026). RCLEAF: Reliable contrastive learning-driven efficient adaptive fusion for multi-view clustering. <em>KBS</em>, <em>334</em>, 115028. (<a href='https://doi.org/10.1016/j.knosys.2025.115028'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Multimodal data derived from 3D point clouds and RGB images provides the potential to provide richer contextual information, making it as an important tool for improving anomaly detection effectiveness in industrial fields. Due to the reliance on external memory and insufficient integration of complementary modal features, existing approaches often suffer from high computational costs. To address this challenge, we propose a pseudo knowledge driven and lightweight r everse d istillation for m ultimodal a nomaly d etection (RDMAD) to achieve real-time, lightweight and high-precision anomaly detection in industrial settings. Specifically, RDMAD integrates a multimodal teacher encoder for distillation target generation, an OCBE module, and a learnable student decoder for reconstructing fused multimodal representations. The teacher encoder extracts complementary features from RGB images and auxiliary modalities, which are fused through a modal fusion module, while a pseudo-knowledge generator is introduced to simulate anomalies by injecting noise into RGB images during training. Furthermore, a multimodal projection layer is incorporated after each fusion module to ensure compact and anomaly-free representations. Comprehensive evaluations on the MVTec-3D AD and Eyecandies benchmarks demonstrate that RDMAD outperforms state-of-the-art methods in anomaly detection and localization. Notably, it achieves an AUPRO of 97.5 % for anomaly localization, underscoring its robustness and practical effectiveness.},
+  abstract     = {Deep multi-view clustering (DMVC) faces critical challenges in achieving the reliable cross-view consistency while maintaining an efficient fusion of complementary information. In response to these challenges, we propose a Reliable Contrastive Learning-Driven Efficient Adaptive Fusion (RCLEAF) framework. Specifically, to mitigate unreliable cross-view consistency, we propose a Reliable Contrastive Learning (RCL) mechanism consisting of Reliable Centroid Representation Contrastive Learning (RCRCL) and Reliable Feature Representation Contrastive Learning (RFRCL). RCRCL enhances consistent inter-cluster separability through self-weighted contrastive learning on reliable cluster centroids, which are constructed based on spatial affinity. Complementarily, RFRCL improves instance-level alignment by performing contrastive learning on reliable sample pairs, which eliminates false negatives via joint discrimination of cluster assignment, sample affinity, and centroid proximity. To address the inadequate collaboration between the view fusion and contrastive learning, as well as the high computational complexity of fusion strategies, we propose a novel Contrastive Learning-Driven Efficient Adaptive Fusion (CLEAF) module that dynamically allocates view-specific fusion weights based on contrastive loss feedback, enabling linear-time complexity fusion without the need for attention or Transformer mechanisms. Extensive experiments on twelve benchmark datasets demonstrate the superior performance of the proposed RCLEAF over eleven state-of-the-art methods.},
   archive      = {J_KBS},
-  author       = {Wenye Cai and Jiayin Li and Li Xu and Renjie Lin},
-  doi          = {10.1016/j.knosys.2025.114930},
+  author       = {Yugen Yi and Zehui Zhang and Litao Huang and Jingkai Guo and Yali Peng and Wei Zhou and Jianzhong Wang},
+  doi          = {10.1016/j.knosys.2025.115028},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114930},
+  month        = {2},
+  pages        = {115028},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Pseudo knowledge driven and lightweight reverse distillation for multimodal anomaly detection},
-  volume       = {333},
+  title        = {RCLEAF: Reliable contrastive learning-driven efficient adaptive fusion for multi-view clustering},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). ADCNet: Adaptive dual-domain collaborative network for remote sensing change detection. <em>KBS</em>, <em>333</em>, 114928. (<a href='https://doi.org/10.1016/j.knosys.2025.114928'>www</a>)
+(2026). Graph node embedding by neighborhood prediction based on multiview contrastive learning. <em>KBS</em>, <em>334</em>, 115026. (<a href='https://doi.org/10.1016/j.knosys.2025.115026'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recent advances in deep learning have significantly enhanced remote sensing change detection (RSCD), enabling high-precision analysis of imagery. However, existing methods often struggle to effectively integrate spatial- and frequency-domain information, limiting their ability to capture complex, fine-grained changes. To address this, we propose the Adaptive Dual-domain Collaborative Network (ADCNet), which seamlessly combines Dual-domain information for optimal global-local feature modeling. ADCNet comprises two key modules: the Dual-domain Guided Fusion (DGF) module, which employs Discrete Cosine Transform (DCT) to extract frequency components, decoupling high- and low-frequency signals to preserve global patterns in low-frequencies and highlight crucial high-frequency details for detecting small-scale changes; and the Adaptive Frequency-domain Hybrid Attention (AFHA) module, which fuses multi-scale features to reconstruct spatial structures and fine-grained local details. Extensive experiments on three RSCD datasets show that ADCNet achieves state-of-the-art performance, effectively capturing complex changes with high accuracy and efficiency. Our code is publicly available at https://github.com/CD-ADCNet/ADCNet .},
+  abstract     = {The connectivity between nodes and their neighbors (neighborhood structure) represents the most fundamental and intrinsic information in graphs. Graph representation learning deeply extracts useful information in graphs using graph neural networks, showing superior performance in various graph-based tasks. This study introduces a novel graph representation learning method, namely Graph contrastive learning by neighborhood prediction (GraphNP). Specifically, we design a new graph neural network architecture that incorporates neighborhood structural information to predict node embeddings. Beyond direct neighbors, the architecture hierarchically processes and aggregates multihop neighbor information to construct node embeddings. Furthermore, we incorporate multiview contrastive learning objectives that contrast multiple predicted embeddings with target embeddings in original view, to avoid reliance on manually crafted negative samples while avoiding complex momentum encoders. Extensive experiments on eight benchmark datasets reveal that GraphNP outperforms competing models, achieving an average performance gain of 12.9 % and a maximum improvement of 25.7 %, thereby confirming its effectiveness.},
   archive      = {J_KBS},
-  author       = {Yumei Tong and Panpan Zheng and Wenbin Tang and Liejun Wang},
-  doi          = {10.1016/j.knosys.2025.114928},
+  author       = {Chen Liu and Xuan Yao and Lixin Zhou},
+  doi          = {10.1016/j.knosys.2025.115026},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114928},
+  month        = {2},
+  pages        = {115026},
   shortjournal = {Knowl. Based Syst.},
-  title        = {ADCNet: Adaptive dual-domain collaborative network for remote sensing change detection},
-  volume       = {333},
+  title        = {Graph node embedding by neighborhood prediction based on multiview contrastive learning},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Decoupled pedestrian trajectory prediction network with near-aware attention. <em>KBS</em>, <em>333</em>, 114913. (<a href='https://doi.org/10.1016/j.knosys.2025.114913'>www</a>)
+(2026). Enhancing fake review detection: A robust and adaptive approach for data streams. <em>KBS</em>, <em>334</em>, 115025. (<a href='https://doi.org/10.1016/j.knosys.2025.115025'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Pedestrian trajectory prediction estimates future pedestrian positions based on historical trajectories and is crucial for autonomous driving and robotics navigation. The existing methods, although improving prediction accuracy, often introduce redundant information or excessive updates to features, leading to increased model complexity and reduced inference speed. Simplified models, although faster, may overlook complex interactions, leading to reduced accuracy in dense scenes. To address this issue, we propose a decoupled pedestrian trajectory prediction network with near-aware attention (NADP). The network adopts a decoupled design (DD) strategy, dividing the network into two complementary sub-networks: the feature optimization network and the trajectory generation network. DD maintains high accuracy while enhancing inference, avoiding redundant processing during trajectory inference in existing methods. The feature optimization network employs the near-aware attention module (NAAM) to capture the pedestrian’s latent motion patterns and interaction effects through key feature matching and local masking, learning spatiotemporal dependencies and generating the predicted trajectory encoding (PTE) with core information, thereby improving accuracy. The trajectory generation network predicts based on the PTE, avoiding further optimization and updates, significantly reducing computational burden, and enhancing inference speed. Experimental results demonstrate that NADP achieves state-of-the-art prediction accuracy and inference speed in both deterministic and stochastic trajectory prediction tasks on the ETH-UCY and SDD datasets.},
+  abstract     = {Online consumer reviews are pivotal in e-commerce, yet their integrity is increasingly threatened by sophisticated fake reviews that undermine market trust and consumer confidence. The dynamic, noisy, and unstructured nature of this user generated content poses significant challenges for conventional detection methods. To address this, we propose Dynamic Classification for Online Content (DCOC), a kernel-based online framework for real-time data streams that incorporates a slope-adjusted ramp loss to enhance robustness against noise and outliers. Through extensive experiments on real-world datasets from TripAdvisor, Yelp, and Amazon, DCOC delivers superior or highly competitive performance across datasets, with statistically significant gains over most baselines. Further noise tolerance experiments confirm its stability, maintaining strong performance even with up to 30 % data noise. These results validate DCOC as a robust, adaptive, and efficient solution for detecting fake reviews in complex, dynamic online environments.},
   archive      = {J_KBS},
-  author       = {Zhenzhen He and Xiaorong Gan and Ziyang Chen and Yabo Wu and Yongjun Zhang and Wenting Li},
-  doi          = {10.1016/j.knosys.2025.114913},
+  author       = {Zhipeng Zhang and Eric W.T. Ngai and Senmao Xia and Zhibin Wu},
+  doi          = {10.1016/j.knosys.2025.115025},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114913},
+  month        = {2},
+  pages        = {115025},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Decoupled pedestrian trajectory prediction network with near-aware attention},
-  volume       = {333},
+  title        = {Enhancing fake review detection: A robust and adaptive approach for data streams},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Decision support for in-operation monitoring of the WEST tokamak first wall using multimodal large language model (LLM) on infrared imaging. <em>KBS</em>, <em>333</em>, 114912. (<a href='https://doi.org/10.1016/j.knosys.2025.114912'>www</a>)
+(2026). AttCL-GAN: Attentional contrastive learning-based generative adversarial network for modality completion of medical images. <em>KBS</em>, <em>334</em>, 115017. (<a href='https://doi.org/10.1016/j.knosys.2025.115017'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {First wall protection is a critical challenge in fusion machine operation, requiring rapid and precise diagnostic capabilities. The infrared diagnostics of long-pulse fusion machines, generate a large amount of video data. At WEST, the analysis of infrared thermal data is currently performed by Plasma-facing component Protection Officers (PPOs). This work presents a novel multimodal Large Language Model (LLM) approach to support PPOs in their diagnostic tasks. The framework addresses multiple challenges in fusion machine first wall monitoring by integrating infrared data (images and temperature curves) with domain-specific expertise. Key features include the preservation of data privacy, capturing a priori expert knowledge, quick post-pulse analysis capabilities, and the incorporation of expert feedback loops. The system employs prompt engineering and Low-Rank fine-tuning to embed domain knowledge directly into the diagnostic process. An ablation study using synthetic data demonstrated that a false recognition rate below 0.01 for hot spot characteristics could be achieved with 100 training samples. Based on these findings, the model was fine-tuned using 150 pairs of real-world images and corresponding prompts. This tool, once appropriately fine-tuned, was successfully implemented in the WEST control room during the C10 (10/2024 - 12/2024). Performance evaluation showed that of all the feedback collected, 32 % were rated as “OK” and 41 % as “positive response”. This development marks a significant advancement in automated diagnostic capabilities for fusion operations.},
+  abstract     = {Most multi-modal medical image analysis models require datasets to be modal-balanced. However, existing multi-modal medical datasets often suffer from modality missing problems due to practical factors. Therefore, in this study, we propose a novel generative model, AttCL-GAN, to remedy three issues encountered when applying the multi-domain model StarGAN v2 to medical images generation. Further by utilizing the proposed modality completion strategy, we achieve the data imputation under arbitrary modality missing scenarios. The advancements of AttCL-GAN are mainly threefold: Firstly, we integrate the idea of contrastive learning and attention mechanism to guide the network in learning domain-independent content during image translations using attention information from spatial and channel dimensions. Then, the attentional AdaIN generator is introduced into the network. By adding the refined features and original features together and feeding them into AdaIN, the generator’s ability to generate tissue details is enhanced. Finally, to alleviate the problem of high inter-modal similarity of generated images, we propose a style code diversity loss, which increases the diversity of images by enlarging the Euclidean distance between codes of different modalities in the latent space. Extensive experimental results on a real-world multi-modal brain MRI dataset show that (i) The proposed AttCL-GAN significantly outperforms the state-of-the-art GAN-based data augmentation methods in both the generation and segmentation tasks in terms of all metrics; (ii) The proposed three advancements are all effective and essential for AttCL-GAN to achieve the superior performances in both tasks.},
   archive      = {J_KBS},
-  author       = {Valentin Gorse and Raphael Mitteau and Julien Marot and the West Team},
-  doi          = {10.1016/j.knosys.2025.114912},
+  author       = {Zhenghua Xu and Jiaqi Tang and Dan Yao and Zhenzhen Wang and Thomas Lukasiewicz},
+  doi          = {10.1016/j.knosys.2025.115017},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114912},
+  month        = {2},
+  pages        = {115017},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Decision support for in-operation monitoring of the WEST tokamak first wall using multimodal large language model (LLM) on infrared imaging},
-  volume       = {333},
+  title        = {AttCL-GAN: Attentional contrastive learning-based generative adversarial network for modality completion of medical images},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). MultiFatorial evolutionary algorithm with nodedepth encoding for inter-domain path computation under node-defined domain uniqueness constraint. <em>KBS</em>, <em>333</em>, 114910. (<a href='https://doi.org/10.1016/j.knosys.2025.114910'>www</a>)
+(2026). Multi-level alignment network for unsupervised domain adaptive multi-modality object re-identification. <em>KBS</em>, <em>334</em>, 115015. (<a href='https://doi.org/10.1016/j.knosys.2025.115015'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The Inter-Domain Path Computation problem with Node-defined Domain Uniqueness Constraint (IDPC-NDU) is recognized as NP-Hard and is particularly relevant for packet routing within multi-domain networks, such as those utilizing the Hierarchical Path Computation Element (h-PCE) architecture. The goal of this problem is to identify the shortest path between two designated nodes while ensuring that each domain is visited no more than once. While numerous algorithms have addressed this problem in recent years, they face two main limitations: 1) complex encoding and decoding processes; and 2) single-task development without knowledge transfer between multiple tasks to improve solution quality. To address these limitations, this paper introduces an effective Multifactorial Evolutionary Algorithm with Node-depth Encoding (NDE-MFEA) for IDPC-NDU. We develop a novel solution encoding using a tree representation that adheres to domain constraints, making solution construction more practical. The algorithm leverages implicit knowledge transfer in multifactorial optimization to improve exploitation ability in promising solution spaces. Extensive experiments comparing our approach against several competitive algorithms demonstrate that NDE-MFEA significantly outperforms existing methods in terms of solution quality, convergence trends, and computational efficiency.},
+  abstract     = {Existing multi-modality object re-identification methods demonstrate robust performance in complex environments, but this is predominantly contingent upon the test and training data sharing an identical distribution. However, performance degrades significantly when applied to the real world (target domains) with distribution differences from the training data (source domain). Single-modality domain adaptation methods that do not account for multi-modality domain gaps and complementary modality information do not achieve satisfactory performance. To alleviate this, we first introduce the task of unsupervised domain adaptation multi-modality object ReID, aiming to address the challenge of distribution shift in multi-modality scenarios and its impact on model performance. We further propose a novel Multi-level Alignment Network (MAN), which performs alignment strategies at the pseudo-label level, domain level, and modality level by leveraging multi-modality information consistency, multi-modality distribution discrepancy, and multi-modality information diversity. Specifically, Consistency-driven Pseudo-label Alignment (CPA) aims to mitigate the effects of pseudo-label noise from clustering by aligning pseudo-labels and filtering reliable samples based on consistency scores. Prototype-guided Domain Distribution Alignment (PDA) narrows the domain gap between the source and target domains by minimizing the distribution distance between the prototype of one domain and the instances of another domain. Margin-preserved modality distribution alignment (MMA) aligns modality distributions within the same domain by keeping the distribution of instances to a marginal distance from the prototype distribution and preserves modality diversity and complementary information. Experiments conducted on vehicle and person datasets WMVeID863, RGBNT100, RGBNT201, and Market1501-MM validate the effectiveness of the proposed method.},
   archive      = {J_KBS},
-  author       = {Do Tuan Anh and Ha-Bang Ban and Huynh Thi Thanh Binh and Dao Tran and Pham Dinh Thanh},
-  doi          = {10.1016/j.knosys.2025.114910},
+  author       = {Yusong Sheng and Yuhe Ding and Aihua Zheng and Ziqi Liu and Zi Wang and Jin Tang},
+  doi          = {10.1016/j.knosys.2025.115015},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114910},
+  month        = {2},
+  pages        = {115015},
   shortjournal = {Knowl. Based Syst.},
-  title        = {MultiFatorial evolutionary algorithm with nodedepth encoding for inter-domain path computation under node-defined domain uniqueness constraint},
-  volume       = {333},
+  title        = {Multi-level alignment network for unsupervised domain adaptive multi-modality object re-identification},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). RDAM: Domain adaptation under small and class-imbalanced samples. <em>KBS</em>, <em>333</em>, 114909. (<a href='https://doi.org/10.1016/j.knosys.2025.114909'>www</a>)
+(2026). Distributional actor critic with hierarchical attention-based state representation for dialogue policy learning. <em>KBS</em>, <em>334</em>, 115005. (<a href='https://doi.org/10.1016/j.knosys.2025.115005'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Domain Adaptation aims to transfer knowledge from a labeled source domain to an unlabeled target domain by aligning their feature distributions. Although notable advancements have been achieved, domain adaptation remains challenging for scenarios involving small sample size and class-imbalanced datasets, where limited and imbalanced data hinder effective domain alignment. To address this issue, we propose RDAM (Feature Regeneration Domain Adaptation with Manifold Maintenance Loss), a novel framework that enhances cross domain generalization under data scarcity and class imbalance. Our key idea is to perform feature regeneration in the source domain to balance feature quantities, thereby constructing a more comprehensive and inclusive source representation whose spatial distribution effectively covers that of the target domain. To further preserve local geometric structures and improve alignment of ambiguous or boundary samples, we introduce the manifold maintenance loss, which enforces consistency in neighborhood relationships across domains. We evaluate RDAM on four time series datasets and four image domain adaptation benchmarks. Extensive experiments show that our method achieves superior accuracy and robustness across diverse modalities and imbalance settings.},
+  abstract     = {Dialogue management is a crucial component of dialogue systems, consisting of a dialogue state tracker and a policy learner. This paper proposes a novel framework that integrates a hierarchical attention-based state representation (HTransR) and a distributional dueling model within an actor-critic algorithm with context-aware noise (CODACAN) for dialogue policy learning. HTransR is designed to capture the dependencies within and between the states in a dialogue sequence. It utilizes a customized static transformer, called TransCAT, for representing multi-hot states and a dual attention mechanism for aggregating the state representations. CODACAN is an actor-critic algorithm that employs a dueling network with context-aware Gaussian noise and learns a categorical distribution over the actions. The proposed framework is evaluated on datasets collected from Amazon Mechanical Turk across three domains and demonstrates significant improvements over several baselines in terms of automatic metrics. The results highlight the effectiveness of CODACAN compared to other DQN extensions and the benefits of combining CODACAN with HTransR for faster convergence and greater stability.},
   archive      = {J_KBS},
-  author       = {Youquan Fu and Song Huang and Zhixi Feng and Yue Ma},
-  doi          = {10.1016/j.knosys.2025.114909},
+  author       = {Yasaman Saffari and Javad Salimi Sartakhti},
+  doi          = {10.1016/j.knosys.2025.115005},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114909},
+  month        = {2},
+  pages        = {115005},
   shortjournal = {Knowl. Based Syst.},
-  title        = {RDAM: Domain adaptation under small and class-imbalanced samples},
-  volume       = {333},
+  title        = {Distributional actor critic with hierarchical attention-based state representation for dialogue policy learning},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). A dual autoencoder-like NMF with higher-order graph regularization for topic modeling. <em>KBS</em>, <em>333</em>, 114907. (<a href='https://doi.org/10.1016/j.knosys.2025.114907'>www</a>)
+(2026). CAT: A high-performance cross-attributes and cross-tasks for one-stage 3D object detection. <em>KBS</em>, <em>334</em>, 114995. (<a href='https://doi.org/10.1016/j.knosys.2025.114995'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Recently, algebraic approaches to topic modeling, such as Non-negative Matrix Factorization (NMF), have received considerable attention due to their interpretability, simplicity, and flexibility. Nonetheless, most current methods perform clustering in only one direction–focusing on either data points (representing documents) or features (representing words)–and thus fail to fully exploit the inherent duality that simultaneous co-clustering can provide. To overcome this limitation, we introduce a Dual Autoencoder-like NMF method with Higher-Order Graph Regularization (DAHOG-NMF) for topic modeling. This approach leverages the inherent co-clustering property of NMF to jointly learn latent representations for both documents and words. Building on this foundation and inspired by autoencoder architectures–which learn compact representations by reconstructing input data–DAHOG-NMF encodes and decodes both documents and words, thereby uncovering underlying structures from both domains. Additionally, DAHOG-NMF utilizes a dual graph regularization with second-order nearest-neighbor relationships to simultaneously model the geometric structures of documents and words. By uncovering connections among data samples and features that might be overlooked by first-order neighborhoods, this method builds a higher-order graph regularizer, thereby enhancing the preservation of the local and global structures in both manifolds. Comprehensive experiments on multiple benchmark datasets highlight the effectiveness and clear advantage of DAHOG-NMF compared to various classical and state-of-the-art topic modeling methods. The source code is available at https://github.com/MaryamMajidi93/DAHOG-NMF .},
+  abstract     = {Real-time 3D object detection is a critical component of autonomous driving systems, yet existing one-stage detectors still face performance bottlenecks. We experimentally reveal that two kinds of incongruities suppress detection performance: (1) Attribute inconsistency refers to poor cooperation among regression attributes, which causes poor localization quality. (2) Task incongruity refers to the lack of correlation between regression and classification tasks, resulting in inefficient category prediction. To address these issues, this paper proposes a Cross-Attribute and Cross-Task (CAT) detector based on collaboration. This is the first framework to explicitly promote collaboration between regression attributes and regression and classification tasks. Specifically, to mitigate the incongruity among attributes, Regression Attribute Collaboration (RAC) is proposed to conduct joint prediction. RAC merges prediction branches to enhance the correlation between coordinates and geometric attributes in regression tasks. As for task incongruity, Cross-Task Collaboration (CTC) is designed based on a weighted incentive strategy. In particular, CTC uses geometric distribution features to incentivize classification scores, to establish an association between the regression and classification tasks. Comprehensive experiments demonstrate that CAT effectively mitigates cross-attribute and cross-task incongruity. The CAT method achieves state-of-the-art performance on the ONCE dataset and the Waymo dataset.},
   archive      = {J_KBS},
-  author       = {Maryam Majidi and Farid Saberi-Movahed and Mohammad Ghasemzadeh and Sahar Vahdati},
-  doi          = {10.1016/j.knosys.2025.114907},
+  author       = {Yu Qin and Yiqiang Wu and Chang Liu and Chenghai Mao and Jia Liu and Jiacheng Sun and Yan Peng},
+  doi          = {10.1016/j.knosys.2025.114995},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114907},
+  month        = {2},
+  pages        = {114995},
   shortjournal = {Knowl. Based Syst.},
-  title        = {A dual autoencoder-like NMF with higher-order graph regularization for topic modeling},
-  volume       = {333},
+  title        = {CAT: A high-performance cross-attributes and cross-tasks for one-stage 3D object detection},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Prodigal: Backdoor defense for federated learning beyond robust aggregation. <em>KBS</em>, <em>333</em>, 114903. (<a href='https://doi.org/10.1016/j.knosys.2025.114903'>www</a>)
+(2026). STCC: Scale-aware transformer for crowd counting. <em>KBS</em>, <em>334</em>, 114992. (<a href='https://doi.org/10.1016/j.knosys.2025.114992'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Federated learning is susceptible to backdoor attacks due to its stealthiness. Existing robust aggregation defenses, e.g., RLR and RFA, utilize robust statistics to filter out backdoored gradients in each aggregation step. However, as evidenced by much recent literature, these robust aggregation solutions are too fragile to defend against backdoor attacks. We first discover that their fundamental reason for failure is due to the immediate removal of the poisoned parameters in each aggregation step, because this operation will trigger the malicious clients to transfer the poisoning effect to other coordinates, which we name the poisoning transfer effect . With this important finding, we propose a robust federated backdoor defense that breaks the conventional removal paradigm. Prodigal follows three key steps: First, it uses the TOPK gradient as a robust statistic to identify each client’s most important parameters. Second, it utilizes quorum consensus to divide each client’s TOPK parameters into common and outlier parameters, and aggregates the common parameters. Third, instead of removing those poisoned parameters in each aggregation phase, the poisoned parameters (i.e, outlier parameters) are kept in the model and distributed to the attackers, which prevents the poisoning from transferring to other benign parameters. Experiments show that our defense achieves a much more robust defense performance.},
+  abstract     = {In order to improve counting accuracy under different crowd density scenarios, a novel multi-scale aware crowd counting network named STCC is proposed in this paper. Specifically, it adopts Biformer-small with dynamic sparse attention for feature extraction, which automatically filters and retains key-value pairs for critical regions. Furthermore, an element-wise multi-scale token aware enhancement module is designed to refine feature maps of different scales, which enables our model to concentrate on features more relevant to crowd counting. Inspired by U-MixFormer, a decoder called U2-MixFormer is proposed. It not only enhances the model’s perception of spatial positions, but also further improves its ability to capture and integrate cross-scale features. Extensive experiments on six crowd counting datasets demonstrate that STCC has strong competitiveness, achieving state-of-the-art performance on the ShanghaiTech A and JHU-Crowd++ datasets.},
   archive      = {J_KBS},
-  author       = {Guozhi Liu and Weiwei Lin and Tiansheng Huang and Fang Shi and Xiumin Wang and Li Shen},
-  doi          = {10.1016/j.knosys.2025.114903},
+  author       = {Xingxuan Jia and Na Li and Nam Ling and Che Wang and Jiaqi Chen and Qian Wang},
+  doi          = {10.1016/j.knosys.2025.114992},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114903},
+  month        = {2},
+  pages        = {114992},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Prodigal: Backdoor defense for federated learning beyond robust aggregation},
-  volume       = {333},
+  title        = {STCC: Scale-aware transformer for crowd counting},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). JCLRec: Joint diffusion model and dual contrastive learning for sequential recommendation. <em>KBS</em>, <em>333</em>, 114888. (<a href='https://doi.org/10.1016/j.knosys.2025.114888'>www</a>)
+(2026). Towards multi-clause automated deduction and theorem generation: Constructing and applying standard contradictions. <em>KBS</em>, <em>334</em>, 114985. (<a href='https://doi.org/10.1016/j.knosys.2025.114985'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Sequential recommendation (SR) methods encode dynamic preferences from a user’s historical data, usually constructed as a discriminant paradigm. Recent studies mainly reconstruct it into a learning-to-generate paradigm through the Classifier-Free Guided diffusion model and achieve remarkable results. This paradigm performs a forward noise addition and reverse reconstruction process in the embedding space of the target item. The generated results depend on the guidance signal used during the reconstruction process. Precise guidance reduces the deviation between the generated item and user preferences. However, this guidance signal is constructed from the embedding of user historical interaction sequences, which remains affected by data sparsity. This study proposes a novel dual contrastive learning method for sequential recommendation within the learning-to-generate paradigm, marking the first attempt to address the impact of data sparsity on the guidance signal during the reverse process. Building on this, we proposed a framework named J oint Diffusion Model and Dual C ontrastive L earning for Sequential Rec ommendation (JCLRec). This method optimizes the guidance signal through contrastive learning, thereby enhancing the quality of the generated results. Specifically, this paper analyzes the optimization differences between the InfoNCE loss commonly used in SR tasks and the reconstruction loss used in the learning-to-generate paradigm. It proposes a feasible contrastive loss under this paradigm while maintaining the feature of not relying on negative sampling. In addition, to ensure the effectiveness of the contrastive learning strategy under this loss, this paper constructs two contrastive views. The first view is constructed through artificial rules to reduce the influence of data sparsity on the guidance signal. The second view is constructed through an optimized hard positive sampling strategy to reduce the semantic deviation effect brought by the previous operation on the guidance signal. Finally, this paper explores an effective combination of contrastive views and the learning-to-generate paradigm, proposing the JCLRec framework. The effectiveness of JCLRec is evaluated with existing methods on three challenging datasets, where the improvement rate under the HR@(5, 10, 20) indicator is from 5.2 % to 18.6 %, and NDCG@(5, 10, 20) is from 2.9 % to 23.4 %.},
+  abstract     = {Trustworthy AI requires reasoning systems that are both powerful and transparent. Automated Reasoning (AR) is central to formal reasoning, yet classical binary resolution is limited: each step handles only two clauses and removes at most two literals. To move beyond this bottleneck, the concepts of standard contradiction and contradiction-separation-based deduction were introduced in 2018. This paper extends that framework by systematically constructing and applying standard contradictions for multi-clause deduction and automated theorem generation. We focus on two key forms—the maximum triangular and triangular-type standard contradictions —and present methods for building them. Using these structures, we develop a procedure to test the satisfiability of clause sets and derive formulas to count the sub-contradictions they contain. These results establish a foundation for dynamic multi-clause automated deduction and theorem generation, expanding the expressive and deductive reach of reasoning systems beyond the classical binary paradigm.},
   archive      = {J_KBS},
-  author       = {Kai Zhu and Jing Li and Yue He and Mingfeng Wang and Jiaheng Yu and Jun Chang and Jun Wan},
-  doi          = {10.1016/j.knosys.2025.114888},
+  author       = {Yang Xu and Shuwei Chen and Xiaomei Zhong and Jun Liu and Xingxing He},
+  doi          = {10.1016/j.knosys.2025.114985},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114888},
+  month        = {2},
+  pages        = {114985},
   shortjournal = {Knowl. Based Syst.},
-  title        = {JCLRec: Joint diffusion model and dual contrastive learning for sequential recommendation},
-  volume       = {333},
+  title        = {Towards multi-clause automated deduction and theorem generation: Constructing and applying standard contradictions},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2026). Intrusion detection system based on multi scale deep bidirectional gated recurrent neural network for securing IoT. <em>KBS</em>, <em>333</em>, 114881. (<a href='https://doi.org/10.1016/j.knosys.2025.114881'>www</a>)
+(2026). An explainable hybrid deep learning-enabled intelligent fault detection and diagnosis approach for automotive software systems validation. <em>KBS</em>, <em>334</em>, 114922. (<a href='https://doi.org/10.1016/j.knosys.2025.114922'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {With the increasing proliferation of IoT devices, ensuring security has become paramount. Existing approaches may lack effectiveness in accurately identifying and classifying attacks in IoT environments. In this paper, an Intrusion Detection System based on Multi-scale Deep Bidirectional Gated Recurrent Neural Network (IDS-MDBGRNN-IoT) is proposed to address security issues in IoT networks. The primary objective of this paper is to develop an IDS-MDBGRNN-IoT system capable of accurately detecting and classifying security threats in IoT networks. Initially data is gathered from the NSL-KDD dataset and pre-processed using slide window variational adaptive Kalman filter to remove duplicates and unwanted data. Feature selection is performed using modified binary grey wolf optimization (MBGWO) to select optimal features. Then the Multi scale Deep Bi-directional Gated Recurrent Neural Network (MDBGRNN) model is employed to classify the attacks. The proposed model is implemented in Python and analysed under some performance metrics like accuracy, precision, specificity using the benchmark datasets of NSL-KDD and UNSW-NB15. The proposed IDS-MDBGRNN-IoT method attains 99.97 % higher accuracy on NSL-KDD, 99.95 % higher accuracy on UNSW-NB15 compared with existing methods respectively. The proposed IDS-MDBGRNN-IoT system demonstrates superior performance in detecting and classifying security threats in IoT networks.},
+  abstract     = {Advancements in data-driven machine learning have emerged as a pivotal element in supporting automotive software systems (ASSs) engineering across various levels of the V-development process. During system verification and validation, the integration of an intelligent fault detection and diagnosis (FDD) model with test recordings analysis process serves as a powerful tool for efficiency, ensuring functional safety. However, the lack of interpretability of the black-box FDD models developed not only hinders understanding of the cause underlying the prediction but also prevents the model from being adapted based on the prediction result. This, in turn, increases the computational cost required for developing a complex FDD model and limits confidence in real-time safety-critical applications. To address this challenge, a novel explainable method for fault detection, identification, and localization is proposed in this article with the aim of providing a clear understanding of the logic behind the prediction outcome. To this end, a hybrid 1dCNN-GRU-based intelligent model was developed to analyze the recordings from the real-time validation process of ASSs. The employment of explainable AI techniques, i.e., IGs, DeepLIFT, Gradient SHAP, and DeepLIFT SHAP, was instrumental in enabling model adaptation and facilitating the root cause analysis (RCA). The proposed approach is applied to the real-time dataset collected during a virtual test drive performed by the user on hardware-in-the-loop (HIL) system. A thorough evaluation of the model’s performance revealed its superiority in diagnosing the fault type and location compared to state-of-the-art models. By integrating XAI techniques, the proposed approach offers a high-performance, low-computational-cost DL model with improved interpretability, which not only supports safety engineers but also contributes to the optimisation of the real-time validation process of ASSs.},
   archive      = {J_KBS},
-  author       = {F.H. Shajin and S. Sivakumar and Ravi Kiran Varma P and P. Vijayakumar},
-  doi          = {10.1016/j.knosys.2025.114881},
+  author       = {Mohammad Abboush and Ehab Ghannoum and Andreas Rausch},
+  doi          = {10.1016/j.knosys.2025.114922},
   journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114881},
+  month        = {2},
+  pages        = {114922},
   shortjournal = {Knowl. Based Syst.},
-  title        = {Intrusion detection system based on multi scale deep bidirectional gated recurrent neural network for securing IoT},
-  volume       = {333},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). INNAR: Intelligent known and novel aircraft recognition introducing novelty detection interface. <em>KBS</em>, <em>333</em>, 114862. (<a href='https://doi.org/10.1016/j.knosys.2025.114862'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {This research addresses precise aircraft recognition in remote sensing imagery, offering a novel, scalable and AI-driven solution. The primary hurdle in combat identification in remote sensing imagery is the accurate recognition of Novel (or Unknown ) classes of aircraft in addition to Known aircraft types. Traditional methods, such as human expert-driven combat identification and image classification-based aircraft recognition, fall short in identifying Novel classes. Our approach not only classifies known aircraft types through image classification, but also introduces a new methodology for recognizing Novel , previously unknown, aircraft types using the novelty detection interface that leverages few-shot and similarity learning. We propose an end-to-end framework that adapts to the diverse and versatile process of military aircraft recognition by training a generalized embedder. Our approach achieves F1 scores of 0.861 and 0.936 outperforming Isolation Forest’s 0.861, 0.785 and Local Outlier Factor’s 0.918, 0.851, for classification of known classes and identification of novel class, respectively. The research not only opens new avenues for domain experts, but also demonstrates unique capabilities in distinguishing and identifying various aircraft types, contributing robustness for effective real-time aircraft recognition.},
-  archive      = {J_KBS},
-  author       = {Ahmad Saeed and Haasha Bin Atif and Usman Habib and Mohsin Bilal},
-  doi          = {10.1016/j.knosys.2025.114862},
-  journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114862},
-  shortjournal = {Knowl. Based Syst.},
-  title        = {INNAR: Intelligent known and novel aircraft recognition introducing novelty detection interface},
-  volume       = {333},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Reliable image super-resolution using dual-teacher knowledge distillation. <em>KBS</em>, <em>333</em>, 114843. (<a href='https://doi.org/10.1016/j.knosys.2025.114843'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Reliable image super-resolution (SR) requires recovery of accurate textures and trustworthy details for real-world applications. It is challenging for SR methods to achieve both high reconstruction fidelity and desirable perceptual quality, even at the cost of excessive computational complexity. As a model-compression technique, knowledge distillation (KD) provides a solution for training an efficient lightweight student model with the guidance of a high-performance teacher network. However, untrustworthy teachers that generate false textures will increase generalization errors in SR KD, resulting in a performance detriment of their student. To address these issues, we present a theoretical analysis of errors that arise in SR KD and discuss various conditions for distinguishing “good” teachers that generate reliable and learnable textures. Based on our theoretical criteria, we propose a dual-teacher KD (DTKD) framework that incorporates both fidelity and perceptual teachers to train lightweight and balanced SR student models. To reduce errors in KD training, we design plug-in modules of image entropy routing and two attention loss functions. To construct a “good” perceptual teacher for KD training, we further design an edge-guided SR network, called EdgeSRN, which replaces generative adversarial networks by incorporating edge-enhanced learning to reduce artifacts. Extensive evaluations regarding both the reconstruction accuracy and perceptual quality verify that student models trained using the proposed DTKD outperform other state-of-the-art SR methods with fewer network parameters and lower computation costs. The code is available at https://github.com/lizhangray/SRDTKD .},
-  archive      = {J_KBS},
-  author       = {Zhan Li and Weijun Yuan and Boyang Yao and Yihang Chen and Bir Bhanu and Kehuan Zhang},
-  doi          = {10.1016/j.knosys.2025.114843},
-  journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114843},
-  shortjournal = {Knowl. Based Syst.},
-  title        = {Reliable image super-resolution using dual-teacher knowledge distillation},
-  volume       = {333},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Event-guided object detection under spiking transmission. <em>KBS</em>, <em>333</em>, 114776. (<a href='https://doi.org/10.1016/j.knosys.2025.114776'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Spiking neural networks (SNNs), which are third-generation neural networks inspired by biology, encode spatiotemporal dynamic information via spike signal transmission. Previous studies on event-based vision have achieved excellent detection performance in typical scenes; however, they encountered significant challenges in complex scenes. The spatiotemporal transmission characteristics of SNNs have emerged as a key solution for addressing the aforementioned challenges. Particularly, the binary spike communication characteristics of SNNs are highly suitable for event-based vision because they effectively avoid unnecessary computation and communication costs. Therefore, the use of SNNs for high-precision high-performance detection is crucial. Accordingly, we analyzed the performance limitations of existing spiking backbone networks to develop a new one called SpikeNeXt, which is a deep and directly trainable network that ensures effective temporal information transmission. Then, we theoretically discuss that SpikeNeXt could avoid gradient explosions or vanishing when attempting to extend the network depth. Based on this, we constructed an event-guided object-detection framework under spiking transmission, called EGSTNet, which attempts to train a deep SNN by using temporal event information to guide intensity images. We propose a novel fusion method called the event-visible integration fusion (EVI-Fuse) strategy, which utilizes measurement information from the event stream dimension, then applies adaptive integration to reconstruct high-frequency details from blurred frames. The fused output features can preserve both the texture details of visible images and the edge characteristics of events. The results demonstrate that our framework achieves a 28.7% mean average precision on the PKU-DAVIS-SOD automotive dataset within six epochs, indicating that our spiking-based framework achieves high communication efficiency and low energy consumption, surpassing the performance of traditional artificial neural networks. The code and pre-trained models are available at https://github.com/wang1239t/Event-Guide-Object-Detection-Under-Spiking-Transmission},
-  archive      = {J_KBS},
-  author       = {Hechong Wang and Shilong Jing and Chengshan Han and Yuchen Zhao and Hailong Liu and Hengyi Lv},
-  doi          = {10.1016/j.knosys.2025.114776},
-  journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114776},
-  shortjournal = {Knowl. Based Syst.},
-  title        = {Event-guided object detection under spiking transmission},
-  volume       = {333},
-  year         = {2026},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2026). Modeling high-order relationships and dynamic preferences for group recommendation. <em>KBS</em>, <em>333</em>, 114362. (<a href='https://doi.org/10.1016/j.knosys.2025.114362'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {With the rise of group-focused activities, the need for recommender systems tailored to groups instead of individuals has become urgent. Existing work often focuses on binary user-item or group-item relationships, neglecting the high-order relationships of synergistic ternary interactions among users, groups, and items. They also struggle to effectively capture the complex interactions among group members, overlooking the dynamic preferences and potential compromises generated by individual members, particularly the contextual interdependencies within groups. To address these issues, we propose a novel High-order Relationships and Dynamic Preferences (HRDP) model for group recommendation. In order to capture the high-order relationships and preferences within ternary interactions, we construct a synergistic multi-layer fusion graph convolutional network, which leverages the synergies of multi-entity interactions to generate richer embedded representations. In addition, HRDP learns dynamic preferences and consensus through a preference aggregator that captures mutual influences among members, enabling adaptive integration of individual interests within group contexts. It also takes into account the different key characteristics of items as they interact with individuals and groups, and explicitly models the differences and connections between user preferences and group preferences. This enables the model to more accurately perceive the attractiveness of items in different contexts. We evaluate HRDP on three real-world datasets and experimental results demonstrate that our model outperforms state-of-the-art methods.},
-  archive      = {J_KBS},
-  author       = {Ming He and Changle Li and Man Zhou and Yongjie Zheng and Xiaojing Wang},
-  doi          = {10.1016/j.knosys.2025.114362},
-  journal      = {Knowledge-Based Systems},
-  month        = {1},
-  pages        = {114362},
-  shortjournal = {Knowl. Based Syst.},
-  title        = {Modeling high-order relationships and dynamic preferences for group recommendation},
-  volume       = {333},
+  title        = {An explainable hybrid deep learning-enabled intelligent fault detection and diagnosis approach for automotive software systems validation},
+  volume       = {334},
   year         = {2026},
 }
 </textarea>

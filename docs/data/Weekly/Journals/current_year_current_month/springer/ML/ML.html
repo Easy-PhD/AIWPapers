@@ -25,677 +25,110 @@
 </head>
 <body>
 
-<h2 id="ml">ML - 32</h2>
+<h2 id="ml">ML - 5</h2>
 <ul>
 <li><details>
 <summary>
-(2025). LEAP: Linear equations for classifier accuracy prediction under prior probability shift. <em>ML</em>, <em>114</em>(12), 293--35. (<a href='https://doi.org/10.1007/s10994-025-06878-y'>www</a>)
+(2026). Enhancing low-degree graph neural networks via joint training and improved message passing. <em>ML</em>, <em>115</em>(1), 5--20. (<a href='https://doi.org/10.1007/s10994-025-06944-5'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The standard technique for predicting the accuracy that a classifier will have on unseen data (classifier accuracy prediction—CAP) is cross-validation (CV). However, CV relies on the assumption that the training data and the test data are sampled from the same distribution, an assumption that is often violated in many real-world scenarios. When such violations occur (i.e., in the presence of dataset shift), the estimates returned by CV are unreliable. The contribution of this paper is three-fold. First, we propose a CAP method specifically designed to work under prior probability shift (PPS), an instance of dataset shift in which the training and test distributions are characterized by different class priors. This method estimates the $$n^2$$ entries of the contingency table of the test data (thus allowing to estimate the value of any specific evaluation measure) by solving a system of $$n^2$$ independent linear equations, with n the number of classes. Second, we show that the equations that the cells of the contingency table must satisfy are actually more than $$n^2$$ , which gives rise to an overconstrained problem, and present a family of methods each based on a different selection of $$n^2$$ such equations. Third, we observe that, since a key step of the above methods involves predicting the class priors of the test data, one can exploit intuitions from the field of class prior estimation (a.k.a. “quantification”). Our experiments show that, when combined with state-of-the-art quantification techniques, under PPS our methods tend to outperform existing CAP methods.},
+  abstract     = {Graph Neural Networks (GNNs) have achieved significant success in tasks involving graph-structured data, such as node classification and link prediction. However, low-degree graphs, which are common in real-world situations, pose a significant challenge to GNN performance by limiting information dissemination and hindering the capture of long-range dependencies. In this paper, we propose a novel method, JT-IMPN (Joint Training Integrated Message Passing Network), to address this issue. Firstly, we introduce IMPM (Improved Message Passing Mechanism), which improves the message-passing mechanism by incorporating residual connections and multi-hop embeddings, thereby generating more accurate node embeddings and mitigating the problem of over-smoothing. Secondly, we construct a global-connectivity graph utilising the node embeddings obtained from IMPM, to enhance the reliability of the constructed graph. Additionally, during the construction process, to enhance overall robustness, the three enhanced graphs were fused into a unified global-connectivity graph. Finally, we propose a joint training framework that integrates low-degree and global-connectivity graphs, benefiting from both local and global information while mitigating the impact of excessive information from neighboring nodes. The experimental results for the node classification task highlight the superiority of our model.},
   archive      = {J_ML},
-  author       = {Volpi, Lorenzo and Moreo, Alejandro and Sebastiani, Fabrizio},
-  doi          = {10.1007/s10994-025-06878-y},
+  author       = {Sun, Zedong and Li, Jian and Liu, Guanjun},
+  doi          = {10.1007/s10994-025-06944-5},
   journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {293--35},
+  month        = {1},
+  number       = {1},
+  pages        = {5--20},
   shortjournal = {Mach. Learn.},
-  title        = {LEAP: Linear equations for classifier accuracy prediction under prior probability shift},
-  volume       = {114},
-  year         = {2025},
+  title        = {Enhancing low-degree graph neural networks via joint training and improved message passing},
+  volume       = {115},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Preference-based opponent shaping in differentiable games. <em>ML</em>, <em>114</em>(12), 292--30. (<a href='https://doi.org/10.1007/s10994-025-06893-z'>www</a>)
+(2026). Evaluating the robustness of explainable AI in medical image recognition under natural and adversarial data corruption. <em>ML</em>, <em>115</em>(1), 4--21. (<a href='https://doi.org/10.1007/s10994-025-06919-6'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Strategy learning in game environments with multi-agent is a challenging problem. Since each agent’s reward is determined by the joint strategy, a greedy learning strategy that aims to maximize its own reward may fall into a local optimum. Recent studies have proposed the opponent modeling and shaping methods for game environments. These methods enhance the efficiency of strategy learning by modeling the strategies and updating processes of other agents. However, these methods often rely on simple predictions of opponent strategy changes. Due to the lack of modeling behavioral preferences such as cooperation and competition, they are usually applicable only to predefined scenarios and lack generalization capabilities. In this paper, we propose a novel Preference-based Opponent Shaping (PBOS) method to enhance the strategy learning process by shaping agents’ preferences towards cooperation. We introduce the preference parameter, which is incorporated into the agent’s loss function, thus allowing the agent to directly consider the opponent’s loss function when updating the strategy. We update the preference parameters concurrently with strategy learning to ensure that agents can adapt to any cooperative or competitive game environment. Through a series of experiments, we verify the performance of PBOS algorithm in a variety of differentiable games. The experimental results show that the PBOS algorithm can guide the agent to learn the appropriate preference parameters, so as to achieve better reward distribution in multiple game environments.},
+  abstract     = {The integration of Explainable AI (XAI) into healthcare promises greater transparency and interpretability of machine learning models, enabling clinicians to understand predictions and make more reliable medical decisions. Yet, the robustness of XAI methods remains uncertain, as small input perturbations can drastically change their explanations, posing critical risks in clinical settings where they may lead to misdiagnoses or inappropriate treatment. Motivated by the central role of XAI in healthcare decision-making, this paper examines its robustness in the presence of data corruption. We systematically evaluate the stability of widely used XAI techniques against both naturally occurring noise (e.g., JPEG compression) and adversarial manipulations that alter explanations without affecting model predictions. To this end, we introduce a set of evaluation metrics that capture complementary aspects of explanation stability, ranging from pixel-level consistency to spatial coherence, and propose a protocol for assessing the resilience of XAI methods across diverse perturbation sources. Our analysis spans three medical imaging datasets, various convolutional and transformer models, and ten post-hoc XAI methods, including Grad-CAM++ for convolutional networks and LibraGrad for vision transformers. We find that current XAI techniques are often unstable, even under imperceptible perturbations. For adversarial noise, a clear set of robust methods emerges, whereas for natural noise, performance varies, with some methods maintaining spatial stability and others preserving pixel-wise consistency. All results together highlight the need for multi-perspective evaluation when selecting XAI techniques in practice.},
   archive      = {J_ML},
-  author       = {Qiao, Xinyu and Hu, Yudong and Han, Congying and Wu, Weiyan and Guo, Tiande},
-  doi          = {10.1007/s10994-025-06893-z},
+  author       = {Repetto, Sara and Maljkovic, Igor and Lotto, Michele and Cinà, Antonio Emanuele and Vascon, Sebastiano and Roli, Fabio},
+  doi          = {10.1007/s10994-025-06919-6},
   journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {292--30},
+  month        = {1},
+  number       = {1},
+  pages        = {4--21},
   shortjournal = {Mach. Learn.},
-  title        = {Preference-based opponent shaping in differentiable games},
-  volume       = {114},
-  year         = {2025},
+  title        = {Evaluating the robustness of explainable AI in medical image recognition under natural and adversarial data corruption},
+  volume       = {115},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). A robust adversarial ensemble with causal (feature interaction) interpretations for image classification. <em>ML</em>, <em>114</em>(12), 291--24. (<a href='https://doi.org/10.1007/s10994-025-06894-y'>www</a>)
+(2026). Anticipating to change: A proactive approach for concept drift adaptation in data streams. <em>ML</em>, <em>115</em>(1), 3--52. (<a href='https://doi.org/10.1007/s10994-025-06945-4'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Deep learning-based discriminative classifiers, despite their remarkable success, remain vulnerable to adversarial examples that can mislead model predictions. While adversarial training can enhance robustness, it fails to address the intrinsic vulnerability stemming from the opaque nature of these black-box models. In this paper, we present a deep ensemble model that combines discriminative features with generative models to achieve both high classification accuracy and strong adversarial robustness. Our approach integrates a bottom-level pre-trained discriminative network for feature extraction with a top-level generative classification network that models adversarial input distributions through a deep latent variable model. Using variational Bayes, our model achieves superior robustness against diverse white-box adversarial attacks without requiring adversarial training. Extensive experiments on CIFAR-10 and CIFAR-100 demonstrate our model’s superior adversarial robustness. Through evaluations using counterfactual metrics and feature interaction-based metrics, we establish correlations between model interpretability and adversarial robustness. Our architecture’s generative component is generalizable and can serve as an auxiliary network adaptable to various pre-trained discriminative models. We demonstrate this generalizability through experiments on Tiny-ImageNet with different backbone architectures, indicating the potential applicability of our approach to larger-scale classification datasets.},
+  abstract     = {Adapting to drifting data streams remains a key challenge in online learning, where effective model adaptation depends on timely concept drift detection. Most existing approaches respond to drift only after distributional changes occur, reacting to concept drift, limiting their ability to prevent the classifier’s performance degradation. This work introduces a novel methodology to anticipate concept drift and enable proactive adaptation before the data distribution shift negatively impacts the classifier. We propose four proactive adaptation strategies based on the Very Fast Decision Tree (VFDT) algorithm to leverage data trends to estimate proactive changes in the classifier, mitigating or even preventing the performance degradation consequence of the concept drift. We evaluate the proposed methods across four scenarios with diverse data stream configurations. Results demonstrate that proactive adaptation reduces the adverse effects of concept drift and improves classification performance. In particular, the proposed strategies consistently outperformed in settings with incremental drift, underscoring the potential of anticipatory approaches and addressing a notable gap in the current literature.},
   archive      = {J_ML},
-  author       = {Zhao, Chunheng and Pisu, Pierluigi and Comert, Gurcan and Begashaw, Negash and Vaidyan, Varghese and Hubig, Nina},
-  doi          = {10.1007/s10994-025-06894-y},
+  author       = {Guerrero Cano, Juan Valentín and Aguiar, Gabriel Jonas and Cano, Alberto},
+  doi          = {10.1007/s10994-025-06945-4},
   journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {291--24},
+  month        = {1},
+  number       = {1},
+  pages        = {3--52},
   shortjournal = {Mach. Learn.},
-  title        = {A robust adversarial ensemble with causal (feature interaction) interpretations for image classification},
-  volume       = {114},
-  year         = {2025},
+  title        = {Anticipating to change: A proactive approach for concept drift adaptation in data streams},
+  volume       = {115},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Learning complementary knowledge via trusted multi-view space decomposition for self-supervised contrastive learning. <em>ML</em>, <em>114</em>(12), 290--29. (<a href='https://doi.org/10.1007/s10994-025-06927-6'>www</a>)
+(2026). The FFN as a key-value memory: Functional specialization in transformer computation. <em>ML</em>, <em>115</em>(1), 2--19. (<a href='https://doi.org/10.1007/s10994-025-06948-1'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {The contrastive learning paradigm achieves the state-of-the-art in the field of self-supervised learning, which is based on a foundational assumption that the discriminative information is mostly contained in the shared information among views. Yet, we argue that view-shared information alone is not sufficient for specific downstream tasks and certain views often contain complementary knowledge. In this paper, we propose a novel trusted multi-view decoupled contrast method to incorporate such complementary knowledge for self-supervised learning. Instead of only learning in a common space, our method additionally maps the representations into several decoupled spaces. Each decoupled space is associated with a particular view by assuming that the view does not contain view-specific discriminative information, so it is treated as the negative for applying contrastive learning in this space. However, this assumption may not hold for all decoupled spaces. We measure the trustworthiness that the assumption is valid for each space by a Dirichlet distribution-based approach. To tackle the issue that contrastive learning in different spaces affects the optimization of each other, we propose topology-preserving compactness regularization, which enables our method to learn local compact representations robustly against interference. Empirically, our method outperforms state-of-the-art methods in benchmark downstream tasks.},
+  abstract     = {The feed-forward network (FFN) is a central but underexplored component of the transformer architecture. Traditionally viewed as a generic “capacity-adding” block, its precise computational role remains unclear. In this paper, we advance a mechanistic reinterpretation of the FFN as a content-addressable key-value memory composed of sparse specialized circuits. Using a controlled synthetic “conditional computation” task, we demonstrate that self-attention alone does not support input-dependent logic, while non-linear FFN is essential. Analysis of hidden activations reveals a principle of extreme sparsity, quantified via the Gini coefficient, and targeted interventions uncover non-overlapping groups of neurons forming distinct computational circuits (e.g., SUM vs. MAX). We validate this modularity with a targeted ablation experiment that provides definitive causal proof through a classic double dissociation. Further, we identify a hierarchical structure, where generalist neurons route information to task-specialist sub-circuits. Validation in a pre-trained DistilBERT model confirms that these principles extend to real-world language processing, where FFNs exhibit pervasive sparsity and specialization for core linguistic categories such as nouns and verbs. Together, these results go beyond the descriptive analogies of “FFNs as memory” and provide systematic and structural evidence that FFN is a dynamic computational engine that underpins the success of transformer models.},
   archive      = {J_ML},
-  author       = {Li, Jiangmeng and Zhao, Yunze and Jin, Yifan and Zheng, Changwen and Qiang, Wenwen},
-  doi          = {10.1007/s10994-025-06927-6},
+  author       = {Rahman, Zaryab and Din, Fakhrud and Khalid, Shah and Karthikeyan, Rishi},
+  doi          = {10.1007/s10994-025-06948-1},
   journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {290--29},
+  month        = {1},
+  number       = {1},
+  pages        = {2--19},
   shortjournal = {Mach. Learn.},
-  title        = {Learning complementary knowledge via trusted multi-view space decomposition for self-supervised contrastive learning},
-  volume       = {114},
-  year         = {2025},
+  title        = {The FFN as a key-value memory: Functional specialization in transformer computation},
+  volume       = {115},
+  year         = {2026},
 }
 </textarea>
 </details></li>
 <li><details>
 <summary>
-(2025). Minimal learning machine for multi-label learning. <em>ML</em>, <em>114</em>(12), 289--40. (<a href='https://doi.org/10.1007/s10994-025-06923-w'>www</a>)
+(2026). DiverSeed: Integrating active learning for target domain data generation in instruction tuning. <em>ML</em>, <em>115</em>(1), 1--23. (<a href='https://doi.org/10.1007/s10994-025-06926-7'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
-  abstract     = {Distance-based supervised method, the minimal learning machine, constructs a predictive model from data by learning a mapping between input and output distance matrices. In this paper, we propose new methods and evaluate how their core component, the distance mapping, can be adapted to multi-label learning. The proposed approach is based on combining the distance mapping with an inverse distance weighting. Although the proposal is one of the simplest methods in the multi-label learning literature, it achieves state-of-the-art performance for small to moderate-sized multi-label learning problems. In addition to its simplicity, the proposed method is fully deterministic: Its hyper-parameter can be selected via ranking loss-based statistic which has a closed form, thus avoiding conventional cross-validation-based hyper-parameter tuning. In addition, due to its simple linear distance mapping-based construction, we demonstrate that the proposed method can assess the uncertainty of the predictions for multi-label classification, which is a valuable capability for data-centric machine learning pipelines.},
+  abstract     = {Instruction tuning has demonstrated its potential in aligning large language models (LLMs) to downstream domains; however, this approach heavily relies on extensive, high-quality datasets for fine-tuning through instructions. The construction of a dataset tailored to the target domain becomes crucial, especially when the datasets in downstream domains are scarce. In response, we introduce DiverSeed, a framework based on LLMs for generating datasets specific to target domains. DiverSeed can generate large-scale, diversified datasets based on several seeds from the target domain. Specifically, the pattern of the generated data aligns with that of the reference seed data, thereby reducing the presence of noisy data and elevating the overall quality of the final dataset. Meanwhile, to augment the efficiency of data utilization in the training process and diminish the redundancy in our constructed dataset, we employ seed update and data selection approaches based on active learning strategies. Finally, building upon the DiverSeed framework, we leveraged LLMs to generate two separate high-quality datasets, specifically tailored for mathematical and commonsense reasoning domains. We perform generated data by DiverSeed to finetune different LLMs, and extensive experiments demonstrate that our generated data significantly outperform the gold datasets and other data generation methods. Besides, a comprehensive series of experiments and analyses have established that both the seed update and data selection strategies we proposed effectively enhance the diversity of the generated data, thereby improving the efficacy of model training.},
   archive      = {J_ML},
-  author       = {Hämäläinen, Joonas and Hubermont, Antoine and Souza, Amauri and Mattos, César L. C. and Gomes, João P. P. and Kärkkäinen, Tommi},
-  doi          = {10.1007/s10994-025-06923-w},
+  author       = {Gao, Jingsheng and Qi, Mengnan and Gao, Xian and Xiang, Suncheng and Ji, Ke and Ruan, Jiacheng and Liu, Ting and Fu, Yuzhuo},
+  doi          = {10.1007/s10994-025-06926-7},
   journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {289--40},
-  shortjournal = {Mach. Learn.},
-  title        = {Minimal learning machine for multi-label learning},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Interpretable deep reinforcement learning via concept-based policy distillation. <em>ML</em>, <em>114</em>(12), 288--32. (<a href='https://doi.org/10.1007/s10994-025-06928-5'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Deep reinforcement learning policies perform exceptionally well in applications like Atari games, chess, Go, and poker. However, they are incomprehensible, making the process of extracting new knowledge and understanding policy behavior difficult. For the same reason, deploying these policies in high-stakes applications like healthcare, finance, and criminal justice is infeasible. To rectify the incomprehensibility issue, we propose a new concept-based policy distillation method for convolutional neural network-based policies. Our method transforms raw image states into human-interpretable concepts using non-negative matrix factorization on the policy’s activations. The concepts express features in an interpretable way and detail how the policy represents the world internally. We use the concepts to train a distilled policy represented using sparse linear models. The distilled policy chooses one linear model from a set of linear models to make action predictions. Employing a single sparse linear model reduces the complexity, making it easier for humans to understand policy behavior. Experimentally, we show the effectiveness of our distilled policy in four environments: Car Racing, Pong, Breakout, and Ms Pacman. We illustrate that inspecting these linear models gives local and global insight into how the black box policy works. Furthermore, we demonstrate that these linear models perform well by faithfully using the same features as the black box policy and capturing the black box policy’s behavior in critical states. The code, data, trained models, and TensorBoard logs with hyperparameters used are provided ( https://github.com/observer4599/interpretable-concept-based-policy-distillation ).},
-  archive      = {J_ML},
-  author       = {Bekkemoen, Yanzhe and Langseth, Helge},
-  doi          = {10.1007/s10994-025-06928-5},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {288--32},
-  shortjournal = {Mach. Learn.},
-  title        = {Interpretable deep reinforcement learning via concept-based policy distillation},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Explaining random forest and XGBoost with shallow decision trees by co-clustering feature importance. <em>ML</em>, <em>114</em>(12), 287--27. (<a href='https://doi.org/10.1007/s10994-025-06932-9'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Transparency is a non-functional requirement of machine learning that promotes interpretable models and easily explainable outcomes. Unfortunately, interpretable classification models, such as linear, rule-based, and decision tree models, are superseded by more accurate but complex learning paradigms, such as deep neural networks and ensemble methods. More specifically, for tabular data classification, models based on tree ensembles, such as random forest or XGBoost, are still competitive compared to deep learning ones and are often preferred to the latter. However, they share the same interpretability issues, due to the complexity of the learned model and, consequently, offer low explainability of predictions. Existing solutions consist of computing some feature importance score or extracting an approximate surrogate model from the learned tree ensemble. However, these methods lead to surrogate models with either poor fidelity or questionable comprehensibility. In this paper, we propose to improve this trade-off using Goodman-Kruskal’s association measure to find groups of instances with predictions that are explained by shared groups of features. To build this structure, instances are first described by SHAP values, which capture local feature importance, and then co-clustered with features on the basis of these SHAP values. Next, a surrogate model is built as a set of shallow decision trees learned for the different groups of instances and subsets of relevant features. Our experiments show that our method produces surrogate models that explain random forest and XGBoost classifiers with competitive fidelity and higher comprehensibility compared to recent state-of-the-art competitors.},
-  archive      = {J_ML},
-  author       = {Pensa, Ruggero G. and Crombach, Anton and Peignier, Sergio and Rigotti, Christophe},
-  doi          = {10.1007/s10994-025-06932-9},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {287--27},
-  shortjournal = {Mach. Learn.},
-  title        = {Explaining random forest and XGBoost with shallow decision trees by co-clustering feature importance},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Beyond what’s normal: Bimodal and heaviside alternatives to gaussian process regression. <em>ML</em>, <em>114</em>(12), 286--25. (<a href='https://doi.org/10.1007/s10994-025-06934-7'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Gaussian process regression is a fundamental tool of applied machine learning, valued for its analytical tractability and ability to quantify uncertainty. Its power stems from the advantageous properties of the Gaussian distribution, particularly the fact that its marginal and conditional distributions are also Gaussian. We present two further stochastic process regressors that meet these same stability criteria. Furthermore, these regressors provide useful properties that supplement those offered by Gaussian process regression, namely a bimodal predictive distribution and a finite-support predictive distribution respectively, and we illustrate the practical advantages these bring through example applications. Importantly, the proposed stochastic process regressors maintain computational complexity and analytical interpretability equivalent to that of Gaussian process regression. We also provide open-source implementations to facilitate adoption and further development by the research community.},
-  archive      = {J_ML},
-  author       = {Whitehead, Thomas M.},
-  doi          = {10.1007/s10994-025-06934-7},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {286--25},
-  shortjournal = {Mach. Learn.},
-  title        = {Beyond what’s normal: Bimodal and heaviside alternatives to gaussian process regression},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Beyond limits: Enhancing the extrapolation performance of regression models by leaving the boundary out. <em>ML</em>, <em>114</em>(12), 285--35. (<a href='https://doi.org/10.1007/s10994-025-06933-8'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {While standard data splitting methods assume that the training and testing data are drawn from the same distribution, real-world engineering applications frequently require making predictions in unseen input regions. For example, to optimize design parameters of a certain system, surrogate regression models can be used to map the systems’ design parameters to the system’s performance, and used to predict the performance of new configurations, a task that involves significant extrapolation. Despite the critical importance in such contexts, extrapolation has received surprisingly little attention in the literature. This paper seeks to reduce the gap in the prediction performance between the interpolation and extrapolation regimes of machine learning regression models in engineering, such that the quality of the predictions in extrapolation approaches the quality in interpolation. For that, we introduce leave-boundary-out (LBO), a data splitting method intended to identify models with superior extrapolation performance to the boundaries of the training distribution that exploits enhanced hyperparameter sensitivity in out-of-distribution regions. We first validate LBO in synthetic experiments, then verify its effectiveness across four real-world use cases in mechanical, process, and materials engineering. LBO consistently enhances the extrapolation performance of regression methods in comparison with a typical data splitting approach, albeit with a trade-off in interpolation. Our key findings reveal that: (i) models developed with extrapolation considerations in the data splitting generalize better beyond the training distributions, (ii) these models are most of the times simpler than those selected by a standard approach, and (iii) LBO reduces extrapolation performance gaps between localized regression methods (radial basis function kernel-based in our experiments) and trend search-based methods, in principle better suited for extrapolation. Our results highlight the importance of incorporating extrapolation requirements into the design and evaluation of machine learning regression models for engineering applications in real-world scenarios.},
-  archive      = {J_ML},
-  author       = {Ambrosio Garcia, Francisco and Naets, Frank},
-  doi          = {10.1007/s10994-025-06933-8},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {285--35},
-  shortjournal = {Mach. Learn.},
-  title        = {Beyond limits: Enhancing the extrapolation performance of regression models by leaving the boundary out},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Birds look like cars: Adversarial analysis of intrinsically interpretable deep learning. <em>ML</em>, <em>114</em>(12), 284--31. (<a href='https://doi.org/10.1007/s10994-025-06896-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {A common belief is that intrinsically interpretable deep learning models ensure a correct, intuitive understanding of their behavior and offer greater robustness against accidental errors or intentional manipulation. However, these beliefs have not been comprehensively verified, and growing evidence casts doubt on them. In this paper, we highlight the risks related to overreliance and susceptibility to adversarial manipulation of these so-called “intrinsically (aka inherently) interpretable” models by design. We introduce two strategies for adversarial analysis with prototype manipulation and backdoor attacks against prototype-based networks, and discuss how concept bottleneck models defend against these attacks. Fooling the model’s reasoning by exploiting its use of latent prototypes manifests the inherent uninterpretability of deep neural networks, leading to a false sense of security reinforced by a visual confirmation bias. The reported limitations of part-prototype networks put their trustworthiness and applicability into question, motivating further work on the robustness and alignment of (deep) interpretable models.},
-  archive      = {J_ML},
-  author       = {Baniecki, Hubert and Biecek, Przemyslaw},
-  doi          = {10.1007/s10994-025-06896-w},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {284--31},
-  shortjournal = {Mach. Learn.},
-  title        = {Birds look like cars: Adversarial analysis of intrinsically interpretable deep learning},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). When interpretability meets noise: An LLM-assisted hybrid deep logical rule learning framework. <em>ML</em>, <em>114</em>(12), 283--29. (<a href='https://doi.org/10.1007/s10994-025-06931-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Despite the impressive performance of deep neural networks (DNNs) in natural language processing tasks, their black-box nature greatly limits their applications in life-critical domains. Recently, a growing body of explainable models has been proposed to elucidate the internal working mechanisms of DNNs and enhance their transparency for human comprehension. However, these models fail to provide sufficient insights into model robustness, particularly in learning with noisy labels, thereby limiting their practical utility. To address this gap, we propose a novel LLM-assisted Hybrid Deep logical Rule Learning (HDRL) framework to empower high interpretability with strong noise robustness in high-stakes applications. HDRL adopts a two-phase rule learning paradigm that integrates neural learning with first-order logic, enabling direct interpretability, domain knowledge utilization, and label noise learning. In the first phase, we introduce the Template-based Heuristic Rule Learning (THRL) system, which leverages the predefined rule template and the assistance of large language models (LLMs) to refine and denoise the input space. Based on this, we propose an active rule learning (ARL) system in the second phase to drive logical explanations for model predictions. Extensive experiments across diverse noisy scenarios demonstrate that HDRL can achieve superior performance, high interpretability, and strong noise robustness. This advancement pushes the boundaries of existing rule-based learning methods in noise-prone settings. Furthermore, a case study on the real-world dataset illustrates how HDRL produces accurate and faithful logical explanations for its predictions. Additional counterfactual reasoning on HDRL confirms that these explanations are causally consistent with the underlying decision logic of DNNs.},
-  archive      = {J_ML},
-  author       = {Chen, Yulin and Yuan, Bo and Chen, Chen and Li, Zhaoqun and Liao, Beishui},
-  doi          = {10.1007/s10994-025-06931-w},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {283--29},
-  shortjournal = {Mach. Learn.},
-  title        = {When interpretability meets noise: An LLM-assisted hybrid deep logical rule learning framework},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Empirical evaluation of normalizing flows in markov chain monte carlo. <em>ML</em>, <em>114</em>(12), 282--50. (<a href='https://doi.org/10.1007/s10994-025-06900-3'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Recent advances in MCMC use normalizing flows to precondition target distributions and enable jumps to distant regions. However, there is currently no systematic comparison of different normalizing flow architectures for MCMC. As such, many works choose simple flow architectures that are readily available and do not consider other models. Guidelines for choosing an appropriate architecture would reduce analysis time for practitioners and motivate researchers to take the recommended models as foundations to be improved. We provide the first such guideline by extensively evaluating many normalizing flow architectures on various flow-based MCMC methods and target distributions. When the target density gradient is available, we show that flow-based MCMC outperforms classic MCMC for suitable NF architecture choices with minor hyperparameter tuning. When the gradient is unavailable, flow-based MCMC wins with off-the-shelf architectures. We find contractive residual flows to be the best general-purpose models with relatively low sensitivity to hyperparameter choice. We also provide various insights into normalizing flow behavior within MCMC when varying their hyperparameters, properties of target distributions, and the overall computational budget.},
-  archive      = {J_ML},
-  author       = {Nabergoj, David and Štrumbelj, Erik},
-  doi          = {10.1007/s10994-025-06900-3},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {282--50},
-  shortjournal = {Mach. Learn.},
-  title        = {Empirical evaluation of normalizing flows in markov chain monte carlo},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An investigation of visual foundation models robustness. <em>ML</em>, <em>114</em>(12), 281--29. (<a href='https://doi.org/10.1007/s10994-025-06853-7'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Visual Foundation Models (VFMs) are becoming ubiquitous in computer vision, powering systems for diverse tasks such as object detection, image classification, segmentation, pose estimation, and motion tracking. VFMs are capitalizing on seminal innovations in deep learning models, such as LeNet-5, AlexNet, ResNet, VGGNet, InceptionNet, DenseNet, YOLO, and ViT, to deliver superior performance across a range of critical computer vision applications. These include security-sensitive domains like biometric verification, autonomous vehicle perception, and medical image analysis, where robustness is essential to fostering trust between technology and the end-users. This article investigates network robustness requirements crucial in computer vision systems to adapt effectively to dynamic environments influenced by factors such as lighting, weather conditions, and sensor characteristics. We examine the prevalent empirical defenses and robust training employed to enhance vision network robustness against real-world challenges such as distributional shifts, noisy and spatially distorted inputs, and adversarial attacks. Subsequently, we provide a comprehensive analysis of the challenges associated with these defense mechanisms, including network properties and components to guide ablation studies and benchmarking metrics to evaluate network robustness.},
-  archive      = {J_ML},
-  author       = {Gupta, Sandeep and Passerone, Roberto},
-  doi          = {10.1007/s10994-025-06853-7},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {281--29},
-  shortjournal = {Mach. Learn.},
-  title        = {An investigation of visual foundation models robustness},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Ddog: Optimizing multi-hop inference via dual-driven retrieval and reasoning path. <em>ML</em>, <em>114</em>(12), 280--28. (<a href='https://doi.org/10.1007/s10994-025-06917-8'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Retrieval-Augmented Generation (RAG) mitigates issues such as hallucinations, limited knowledge coverage, and outdated information in large language models by incorporating external knowledge. In the real world, structured data like knowledge graphs are widely used. However, RAG struggles when processing structured data, particularly in scenarios requiring efficient handling of complex reasoning tasks. While Graph Retrieval-Augmented Generation (GraphRAG) improves multi-hop reasoning by leveraging graph structures, its performance is limited by incomplete coverage of static knowledge graphs, rigid path searches, and semantic gaps in cross-document reasoning. To address these challenges, this paper proposes Dual-Driven Optimization on GraphRAG (DDOG), which enhances the integrity of multi-hop reasoning paths and the reliability of answer generation through a dual-driven collaborative mechanism that combines static graph retrieval and dynamic knowledge expansion. Experimental results demonstrate that DDOG improves answer accuracy by an average of 18.6% on the HotPotQA, WikiHop, and CWQ datasets compared to directly using all retrieved documents, and achieves an average 9.5% improvement in EM over the baseline GraphRAG. DDOG exhibits significantly enhanced robustness in scenarios involving multi-hop inference path breaks. This study offers an efficient and scalable solution for complex reasoning tasks and introduces a new methodological perspective for dynamic knowledge integration and path optimization.},
-  archive      = {J_ML},
-  author       = {Chen, Yan and Gu, Bruce and Gao, Longxiang and Fu, Kexue and Qu, Youyang and Cui, Lei},
-  doi          = {10.1007/s10994-025-06917-8},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {280--28},
-  shortjournal = {Mach. Learn.},
-  title        = {Ddog: Optimizing multi-hop inference via dual-driven retrieval and reasoning path},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Multi-modal co-learning for earth observation: Enhancing single-modality models via modality collaboration. <em>ML</em>, <em>114</em>(12), 279--26. (<a href='https://doi.org/10.1007/s10994-025-06903-0'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Multi-modal co-learning is emerging as an effective paradigm in machine learning, enabling models to collaboratively learn from different modalities to enhance single-modality predictions. Earth Observation (EO) represents a quintessential domain for multi-modal data analysis, wherein diverse remote sensors collect data to sense our planet. This unprecedented volume of data introduces novel challenges. Specifically, the access to the same sensor modalities at both training and inference stages becomes increasingly complex based on real-world constraints affecting remote sensing platforms. In this context, multi-modal co-learning presents a promising strategy to leverage the vast amount of sensor-derived data available at the training stage to improve single-modality models for inference-time deployment. Most current research efforts focus on designing customized solutions for either particular downstream tasks or specific modalities available at the inference stage. To address this, we propose a novel multi-modal co-learning framework capable of generalizing across various tasks without targeting a specific modality for inference. Our approach combines contrastive and modality discriminative learning together to guide single-modality models to structure the internal model manifold into modality-shared and modality-specific information. We evaluate our framework on four EO benchmarks spanning classification and regression tasks across different sensor modalities, where only one of the modalities available during training is accessible at inference time. Our results demonstrate consistent predictive improvements over state-of-the-art approaches from the recent machine learning and computer vision literature, as well as EO-specific methods. The obtained findings validate our framework in the single-modality inference scenarios across a diverse range of EO applications.},
-  archive      = {J_ML},
-  author       = {Mena, Francisco and Ienco, Dino and Dantas, Càssio F. and Interdonato, Roberto and Dengel, Andreas},
-  doi          = {10.1007/s10994-025-06903-0},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {279--26},
-  shortjournal = {Mach. Learn.},
-  title        = {Multi-modal co-learning for earth observation: Enhancing single-modality models via modality collaboration},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). MetaML: A multi-label meta-learning approach for pipeline recommendation. <em>ML</em>, <em>114</em>(12), 278--71. (<a href='https://doi.org/10.1007/s10994-025-06909-8'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {In the machine learning (ML) literature, AutoML refers to the automated definition of a sequence of necessary steps to achieve an ML task, such as classification. Each of these steps of the ML pipeline, involving data preprocessing and algorithm selection, normally allows extensive variation, leading to large search spaces which makes it hard to find optimal pipelines for a certain problem. Most of the approaches so far presented to carry out AutoML rely on Bayesian optimization methods that have shown to be successful, albeit at high computational costs. Therefore, we propose a method that employs meta-learning (MtL) for recommending pipelines, taking into account the interdependence of its steps. MtL allows us to shift the computational complexity to an offline training phase. At the same time, we approach the search space complexity problem by designing an algorithm that carefully curates the pipeline candidates based on past ML experiments, optimizing the training and effective performance of the pipeline recommendation model. An analysis using 152 datasets shows that MetaML achieves final classification performance equivalent or superior to state-of-the-art methods but incurs much lower computational times. The source code for the experiments is available at the project’s repository ( https://github.com/cynthiamaia/MetaML ).},
-  archive      = {J_ML},
-  author       = {Maia, Cynthia Moreira and de Amorim, Lucas B. V. and Cavalcanti, George D. C. and Cruz, Rafael M. O.},
-  doi          = {10.1007/s10994-025-06909-8},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {278--71},
-  shortjournal = {Mach. Learn.},
-  title        = {MetaML: A multi-label meta-learning approach for pipeline recommendation},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Grid-mapping pseudo-count constraint for offline reinforcement learning. <em>ML</em>, <em>114</em>(12), 277--31. (<a href='https://doi.org/10.1007/s10994-025-06925-8'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Offline reinforcement learning learns from a static dataset without interacting with environments, which ensures security during the training process and thus has promising application prospects. However, directly applying naive reinforcement learning algorithms usually fails in an offline environment due to inaccurate estimation of the Q-value associated with out-of-distribution (OOD) state-action pairs by the Q-value approximation. It is an effective way to solve this problem by penalizing the Q-value of OOD state-action pairs. Among the methods of punishing OOD state-action pairs, count-based methods have demonstrated efficacy in discrete domains in a simple formulation. Inspired by it, a novel pseudo-count method for continuous environments called grid-mapping pseudo-count method (GPC) is proposed by extending the count-based method from discrete to continuous environments. Firstly, the continuous state and action space are mapped to discrete spaces using Grid-Mapping, and then the Q-values of OOD state-action pairs are constrained through pseudo-count. Secondly, a theoretical proof is provided to demonstrate that GPC can obtain appropriate uncertainty constraints. Thirdly, GPC is combined with soft actor-critic algorithm (SAC) to create a novel algorithm called GPC-SAC. Finally, experiments on D4RL datasets are conducted to show that GPC-SAC has state-of-the-art performance and lower computational cost than other algorithms that constrain the Q-value.},
-  archive      = {J_ML},
-  author       = {Shen, Yi and Huang, Hanyan},
-  doi          = {10.1007/s10994-025-06925-8},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {277--31},
-  shortjournal = {Mach. Learn.},
-  title        = {Grid-mapping pseudo-count constraint for offline reinforcement learning},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Time series representations classroom (TSRC): A teacher-student-based framework for interpretability-enhanced unsupervised time series representation learning. <em>ML</em>, <em>114</em>(12), 276--47. (<a href='https://doi.org/10.1007/s10994-025-06895-x'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Time series representation learning is the process of extracting condensed and meaningful representations from raw sequential data, with unsupervised representation learning offering methods to do so without the need for labelled data. Reconstruction-based deep-learning methods are capable of deriving representations from sequential data in an unsupervised setting and offer enhanced interpretability due to their capability of decoding extracted representations; however, these methods often fall short of contrastive-based methods regarding the quality of representations, as the latter utilise contrastive learning to produce representations that are as close as possible in the embedding space for similar samples and far apart for dissimilar ones. We propose Time Series Representations Classroom (TSRC), a framework that leverages knowledge distillation and curriculum learning to combine the interpretability of reconstruction-based methods with the capabilities of contrastive-based methods. This framework consists of a hybrid loss function that combines reconstruction and contrastive losses and a curriculum that guides the learning process. We compare the performance of methods trained within the TSRC framework using the downstream task of time series clustering on 112 datasets from the UCR Archive against the same methods trained without the TSRC framework and 4 baselines from the literature. Our empirical results demonstrate that methods trained within the TSRC framework deliver better results compared to the same methods trained without it, achieving higher average rankings between 6.88% and 17.47% in external cluster evaluation and between 62.15% and 75.07% in internal cluster evaluation. Furthermore, the results demonstrate that models trained using the TSRC framework produce representations that are more transferable, achieving, without additional tuning, on average 14.02% higher average rankings in time series classification compared to the same models trained without the TSRC framework.},
-  archive      = {J_ML},
-  author       = {Skaf, Wadie and Baratchi, Mitra and Hoos, Holger},
-  doi          = {10.1007/s10994-025-06895-x},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {276--47},
-  shortjournal = {Mach. Learn.},
-  title        = {Time series representations classroom (TSRC): A teacher-student-based framework for interpretability-enhanced unsupervised time series representation learning},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Learning de-biased environment models for delivery incentive policy optimization on food delivery platforms. <em>ML</em>, <em>114</em>(12), 1--29. (<a href='https://doi.org/10.1007/s10994-025-06846-6'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Accurate environmental modeling is essential for model-based offline policy optimization. Traditional empirical risk minimization can yield biased models if data collection is subject to selection bias, potentially misguiding policy optimization. This issue is especially pertinent in real-world decision-making scenarios where data collection often depends on optimized, non-random behavior policies. This paper addresses such a practical challenge of offline policy optimization under selection bias, with a focus on delivery incentive policies for food delivery platforms. We propose a novel framework for offline optimization of these policies, based on a de-biased environmental model. Initially, the framework learns a de-biased order acceptance rate and delivery time prediction model from historical data through adversarial weighted empirical risk minimization, constituting the environment model. Subsequently, it employs operation research solvers to derive historic best actions based on the learned de-biased environment model, determining the optimal bonus amount and reasonable incentive time limit for each order under budget constraints. Finally, a policy neural network is trained to map environmental states to these optimized actions, enabling efficient and executable policies for real-time decision-making. To verify the effectiveness and efficiency of our framework, both offline experiments on a real-world dataset and online A/B tests on the Meituan food delivery platform are conducted. Results demonstrate that our framework outperforms baseline methods in both model accuracy and policy optimization performance in offline experiments and realizes a 9% reduction in the customer complaint rate in reality.},
-  archive      = {J_ML},
-  author       = {Liu, Yu-Ren and Chen, Xiong-Hui and Xiao, Siyuan and Yang, Xinyu and Qi, Xintong and Zhou, Linjun and Yu, Yang and Huang, Fangsheng},
-  doi          = {10.1007/s10994-025-06846-6},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--29},
-  shortjournal = {Mach. Learn.},
-  title        = {Learning de-biased environment models for delivery incentive policy optimization on food delivery platforms},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Common abductive explanations in first order logic. <em>ML</em>, <em>114</em>(12), 1--35. (<a href='https://doi.org/10.1007/s10994-025-06869-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We build upon a recent definition of a common explanation for the label shared by a group of observations. The motivation stems from explaining how a specific action, when playing a card game, leads to an acceptable reward at the end of the game. Since there are various ways to achieve this goal, groups of acceptable trajectories are first extracted from a rule-based ILP model. Subsequently, common explanations are enumerated for each group of trajectories. A significant contribution of this article is the introduction of a new definition of preferred common explanations: they must be both subset-minimal and maximally instantiated. These so-called leq-minimal common explanations (leq-MCEs for short) happen to be subsets of the least general generalisation of the observations in the group. We propose efficient algorithms to enumerate leq-MCEs and a scheme to extract a diverse subset of these leq-MCEs to be presented to human interlocutors. Experiments are conducted on a card game.},
-  archive      = {J_ML},
-  author       = {Rouveirol, Céline and Soldano, Henry and Kazi Aoual, Malik and Ventos, Véronique},
-  doi          = {10.1007/s10994-025-06869-z},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--35},
-  shortjournal = {Mach. Learn.},
-  title        = {Common abductive explanations in first order logic},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Evaluation of geographical distortions in language models. <em>ML</em>, <em>114</em>(12), 1--32. (<a href='https://doi.org/10.1007/s10994-025-06916-9'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Geographic bias in language models (LMs) is an underexplored dimension of model fairness, despite growing attention being given to other social biases. We investigate whether LMs provide equally accurate representations across all global regions and propose a benchmark of four indicators to detect undertrained and underperforming areas: (i) indirect assessment of geographic training data coverage via tokenizer analysis, (ii) evaluation of basic geographic knowledge, (iii) detection of geographic distortions, and (iv) visualization of performance disparities through maps. Applying this framework to ten widely used encoder- and decoder-based models, we find systematic overrepresentation of Western countries and consistent underrepresentation of several African, Eastern European, and Middle Eastern regions, leading to measurable performance gaps. We further analyse the impact of these biases on downstream tasks, particularly in crisis response, and show that regions most vulnerable to natural disasters are often those with poorer LM coverage. Our findings underscore the need for geographically balanced LMs to ensure equitable and effective global applications.},
-  archive      = {J_ML},
-  author       = {Decoupes, Rémy and Interdonato, Roberto and Roche, Mathieu and Teisseire, Maguelonne and Valentin, Sarah},
-  doi          = {10.1007/s10994-025-06916-9},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--32},
-  shortjournal = {Mach. Learn.},
-  title        = {Evaluation of geographical distortions in language models},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Explaining word embeddings with perfect fidelity: A case study in predicting research impact. <em>ML</em>, <em>114</em>(12), 1--28. (<a href='https://doi.org/10.1007/s10994-025-06870-6'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The best-performing approaches for scholarly document quality prediction are based on embedding models. In addition to their performance when used in classifiers, embedding models can also provide predictions even for words that were not contained in the labelled training data for the classification model, which is important in the context of the ever-evolving research terminology. Although model-agnostic explanation methods, such as Local interpretable model-agnostic explanations, can be applied to explain machine learning classifiers trained on embedding models, these produce results with questionable correspondence to the model. We introduce a new feature importance method, Self-Model Entities Rated (SMER), for logistic regression-based classification models trained on word embeddings. We show that SMER has theoretically perfect fidelity with the explained model, as the average of logits of SMER scores for individual words (SMER explanation) exactly corresponds to the logit of the prediction of the explained model. Quantitative and qualitative evaluation is performed through five diverse experiments conducted on 50,000 research articles (papers) from the CORD-19 corpus. Through an AOPC curve analysis, we experimentally demonstrate that SMER produces better explanations than LIME, SHAP and global tree surrogates.},
-  archive      = {J_ML},
-  author       = {Dvořáčková, Lucie and Joachimiak, Marcin P. and Černý, Michal and Kubecová, Adriana and Sklenák, Vilém and Kliegr, Tomáš},
-  doi          = {10.1007/s10994-025-06870-6},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--28},
-  shortjournal = {Mach. Learn.},
-  title        = {Explaining word embeddings with perfect fidelity: A case study in predicting research impact},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Simplification of forest classifiers and regressors by sharing branching conditions. <em>ML</em>, <em>114</em>(12), 1--38. (<a href='https://doi.org/10.1007/s10994-025-06850-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {We propose a novel method for simplifying a tree ensemble, not only for size reduction but also to enhance interpretability. Our simplification of a tree ensemble needs a set of feature vectors. It is formalized as the problem of sharing as many branching conditions as possible among the component tree internal nodes, under the constraint that the decision paths of all the given feature vectors must remain unchanged. For a branching condition that a value of some feature is, at most, a threshold θ, the range of θ satisfying such a constraint can be represented as an interval. Thus, the problem of minimizing the number of distinct branching conditions by sharing them under the constraint is reduced to the problem of finding the minimum set of thresholds that intersect all the constraint-satisfying range intervals of thresholds for branching conditions on the same feature. We propose an algorithm for the original problem that utilizes a known greedy algorithm to efficiently solve the reduced problem. To promote further sharing of branching conditions, we also study two constraint-relaxed versions of the problem: (1) allowing decision path change of a specified ratio of the given feature vectors at each branching node, (2) allowing constraint breaking of a specified ratio of the branching nodes. We also extended our algorithm for both relaxations. The effectiveness of our method is demonstrated through comprehensive experiments using 21 datasets (13 classification and 8 regression datasets in the UCI Machine Learning Repository) and 4 classifiers/regressors (random forest, extremely randomized trees, AdaBoost, and gradient boosting). Branching condition sharing is effective even after applying other types of simplification methods, such as those that reduce trees, root-to-leaf paths, or nodes. It enables compact hardware implementation of a tree ensemble by sharing comparators.},
-  archive      = {J_ML},
-  author       = {Marui, Naoki and Nakamura, Atsuyoshi and Sakurada, Kento},
-  doi          = {10.1007/s10994-025-06850-w},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--38},
-  shortjournal = {Mach. Learn.},
-  title        = {Simplification of forest classifiers and regressors by sharing branching conditions},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Deep sub-ensembles meets quantile regression: Uncertainty-aware imputation for time series. <em>ML</em>, <em>114</em>(12), 1--20. (<a href='https://doi.org/10.1007/s10994-025-06922-x'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Real-world time series data often exhibits substantial missing values, posing challenges for advanced analysis. A common approach to addressing this issue is imputation, where the primary challenge lies in determining the appropriate values to fill in. While previous deep learning methods have proven effective for time series imputation, they often produce overconfident imputations, which poses a potentially overlooked risk to the reliability of the intelligent system. Diffusion methods are proficient in estimating probability distributions but face challenges under a high missing rate and are, moreover, computationally expensive due to the nature of the generative model framework. In this paper, we propose Quantile Sub-Ensembles, a novel method that estimates uncertainty with ensembles of quantile-regression-based task networks and incorporate Quantile Sub-Ensembles into a non-generative time series imputation method. Our method not only produces accurate and reliable imputations, but also remains computationally efficient due to its non-generative framework. We conduct extensive experiments on five real-world datasets, and the results demonstrates superior performance in both deterministic and probabilistic imputation compared to baselines across most experimental settings. The code is available at https://github.com/yingliu-coder/QSE .},
-  archive      = {J_ML},
-  author       = {Liu, Ying and Cui, Peng and Hu, Wenbo and Hong, Richang},
-  doi          = {10.1007/s10994-025-06922-x},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--20},
-  shortjournal = {Mach. Learn.},
-  title        = {Deep sub-ensembles meets quantile regression: Uncertainty-aware imputation for time series},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Trustworthy representation learning via information funnels and bottlenecks. <em>ML</em>, <em>114</em>(12), 1--26. (<a href='https://doi.org/10.1007/s10994-025-06924-9'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Ensuring trustworthiness in machine learning—by balancing utility, fairness, and privacy—remains a critical challenge, particularly in representation learning. In this work, we investigate a family of closely related information-theoretic objectives, including information funnels and bottlenecks, designed to extract invariant representations from data. We introduce the Conditional Privacy Funnel with Side-information (CPFSI), a novel formulation within this family, applicable in both fully and semi-supervised settings. Given the intractability of these objectives, we derive neural-network-based approximations via amortized variational inference. We systematically analyze the trade-offs between utility, invariance, and representation fidelity, offering new insights into the Pareto frontiers of these methods. Our results demonstrate that CPFSI effectively balances these competing objectives and frequently outperforms existing approaches. Furthermore, we show that by intervening on sensitive attributes in CPFSI’s predictive posterior enhances fairness while maintaining predictive performance. Finally, we focus on the real-world applicability of these approaches, particularly for learning robust and fair representations from tabular datasets in data scarce-environments—a modality where these methods are often especially relevant.},
-  archive      = {J_ML},
-  author       = {de Freitas, João Machado and Geiger, Bernhard C.},
-  doi          = {10.1007/s10994-025-06924-9},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--26},
-  shortjournal = {Mach. Learn.},
-  title        = {Trustworthy representation learning via information funnels and bottlenecks},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Least-squares temporal difference with expected eligibility traces. <em>ML</em>, <em>114</em>(12), 1--21. (<a href='https://doi.org/10.1007/s10994-025-06912-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Temporal Difference (TD) and Least-Squares Temporal Difference (LSTD) are related methods to estimate the value function of a Markov Decision Process (MDP). While TD is a direct method using local data to update the value function estimate, LSTD is a Bellman projected equation method using full data to compute a one-time estimate. TD( $$\lambda $$ ) and LSTD( $$\lambda $$ ) extend TD and LSTD with eligibility traces. While estimating the value function, TD( $$\lambda $$ ) and LSTD( $$\lambda $$ ) use actual histories of features as traces. Recently, expected eligibility traces have been proposed for TD( $$\lambda $$ ) to not only include actual histories, but also all potential histories of features that could have occurred based on the model or the available data. While this idea can account for non-linear feature architectures, here we limit ourselves to linear feature architectures with full data updates in the context of LSTD. We show that, in striking contrast with the direct versions, an extension of LSTD to include the theoretical expected eligibility traces is equivalent to LSTD without eligibility traces (LSTD(0)). We obtain a similar result if we consider mixed eligibility traces; a combination of expected eligibility traces and ordinary eligibility traces. In fact, we show that LSTD with theoretical mixed eligibility traces is equivalent to LSTD( $$\lambda ^\prime $$ ) for a given $$\lambda ^\prime $$ that captures both the decay of the eligibility trace, as well as the balance between the expected eligibility trace and the ordinary trace. Furthermore, we consider alternative methods LSET( $$\lambda $$ ) and LSET( $$\eta $$ , $$\lambda $$ ), which rely on the empirical means of the eligibility traces rather than the theoretical expected eligibility traces, and show that their value estimates converges to those of LSTD(0) and LSTD( $$\lambda ^\prime $$ ).},
-  archive      = {J_ML},
-  author       = {van Zuijlen, Roy and Antunes, Duarte},
-  doi          = {10.1007/s10994-025-06912-z},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--21},
-  shortjournal = {Mach. Learn.},
-  title        = {Least-squares temporal difference with expected eligibility traces},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Efficient quantification on large-scale networks. <em>ML</em>, <em>114</em>(12), 1--26. (<a href='https://doi.org/10.1007/s10994-025-06915-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Network quantification (NQ) is the problem of estimating the proportions of nodes belonging to each class in subsets of unlabelled graph nodes. When prior probability shift is at play, this task cannot be effectively addressed by first classifying the nodes and then counting the class predictions. In addition, unlike non-relational quantification, NQ demands enhanced flexibility in order to capture a broad range of connectivity patterns, resilience to the challenge of heterophily, and scalability to large networks. In order to meet these stringent requirements, we introduce XNQ, a novel method that synergizes the flexibility and efficiency of the unsupervised node embeddings computed by randomized recursive Graph Neural Networks, with an Expectation-Maximization algorithm that provides a robust quantification-aware adjustment to the output probabilities of a calibrated node classifier. In an extensive evaluation, in which we also validate the design choices underpinning XNQ through comprehensive ablation experiments, we find that XNQ consistently and significantly improves on the best network quantification methods to date, thereby setting the new state of the art for this challenging task. XNQ also provides a training speed-up of up to 10x–100x over other methods based on graph learning.},
-  archive      = {J_ML},
-  author       = {Micheli, Alessio and Moreo, Alejandro and Podda, Marco and Sebastiani, Fabrizio and Simoni, William and Tortorella, Domenico},
-  doi          = {10.1007/s10994-025-06915-w},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--26},
-  shortjournal = {Mach. Learn.},
-  title        = {Efficient quantification on large-scale networks},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Histogram approaches for imbalanced data streams regression. <em>ML</em>, <em>114</em>(12), 1--47. (<a href='https://doi.org/10.1007/s10994-025-06892-0'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Imbalanced domains pose a significant challenge in real-world predictive analytics, particularly in the context of regression. While existing research has primarily focused on batch learning from static datasets, limited attention has been given to imbalanced regression in online learning scenarios. Intending to address this gap, in prior work, we proposed sampling strategies based on Chebyshev’s inequality as the first methodologies designed explicitly for data streams. However, these approaches operated under the restrictive assumption that rare instances exclusively reside at distribution extremes. This study introduces histogram-based sampling strategies to overcome this constraint, proposing flexible solutions for imbalanced regression in evolving data streams. The proposed techniques - Histogram-based Undersampling (HistUS) and Histogram-based Oversampling (HistOS) - employ incremental online histograms to dynamically detect and prioritize rare instances across arbitrary regions of the target distribution to improve predictions in the rare cases. Comprehensive experiments on synthetic and real-world benchmarks demonstrate that HistUS and HistOS substantially improve rare-case prediction accuracy, outperforming baseline models while maintaining competitiveness with Chebyshev-based approaches.},
-  archive      = {J_ML},
-  author       = {Aminian, Ehsan and Ribeiro, Rita P. and Gama, Joao},
-  doi          = {10.1007/s10994-025-06892-0},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--47},
-  shortjournal = {Mach. Learn.},
-  title        = {Histogram approaches for imbalanced data streams regression},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). User migration in blockchain-based online social networks through the lens of temporal node representation shift. <em>ML</em>, <em>114</em>(12), 1--23. (<a href='https://doi.org/10.1007/s10994-025-06905-y'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {User migration in online social networks represents a critical phenomenon that can reshape platform dynamics and lead to abrupt structural changes, often triggered by technical, social, or competitive factors. In the context of blockchain-based online social networks, migration events can be particularly disruptive when triggered by hard forks - fundamental splits in the underlying blockchain protocol that create two incompatible versions of the platform. However, understanding how users adapt their behavior before, during, and after such events remains a challenging research question. To address this challenge, we rely on the framework of graph representation learning, with a particular focus on Temporal Graph Neural Networks (TGNNs). In particular, we analyze how node representations returned by TGNNs evolve during the migration event and examine how representation shifts can mirror changes in users’ behavioral patterns and platform interactions. Our study focuses on Steemit, a blockchain-based social network that experienced a significant user migration following a hard fork in its supporting blockchain infrastructure. Our findings highlight that both the prediction performance and node representation are influenced by the occurrence of the migration event. We detect shifts in node representations that correspond to changes in individual user behavior throughout the event. Furthermore, group-centric analysis reveals changes in behavior and memberships among similar users during different transition periods. Additionally, we find a level of polarization in node representations caused by the migration event, which gradually diminishes over time, resulting in more evenly distributed dimensions of node representations months after the first migration. We compare our approach against two baselines based on network statistics and pre-trained LLM embeddings, showing that TGNNs better capture the distribution shift derived by the migration. To summarize, this work offers valuable insights into user behavior dynamics during platform migrations, demonstrating the effectiveness of temporal graph learning approaches in analyzing such transitions in an automated manner.},
-  archive      = {J_ML},
-  author       = {Dileo, Manuel and Zignani, Matteo},
-  doi          = {10.1007/s10994-025-06905-y},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
+  month        = {1},
+  number       = {1},
   pages        = {1--23},
   shortjournal = {Mach. Learn.},
-  title        = {User migration in blockchain-based online social networks through the lens of temporal node representation shift},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). An efficient model training framework for green AI. <em>ML</em>, <em>114</em>(12), 1--35. (<a href='https://doi.org/10.1007/s10994-025-06907-w'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {Training deep neural networks (DNNs) is increasingly recognized as a major contributor to the energy footprint of Artificial Intelligence (AI). Existing dataset pruning (DP) and active learning (AL) techniques reduce training data volumes but often introduce costly computations that undermine their energy-saving potential. This paper introduces Play it Straight and its enhanced variant Re-Play it Straight, two adaptive training algorithms that combine random subset sampling with lightweight AL-inspired instance selection. The proposed framework achieves a better balance between accuracy and energy efficiency by incrementally fine-tuning models on small, informative subsets, while controlling computational overhead. Experiments on multiple benchmark datasets demonstrate substantial reductions in training energy compared to state-of-the-art DP and AL methods, with Re-Play it Straight consistently delivering superior performance. These results highlight the potential of our approach to support more sustainable deep learning practices, contributing to the broader goals of Green AI.},
-  archive      = {J_ML},
-  author       = {Scala, Francesco and Flesca, Sergio and Pontieri, Luigi},
-  doi          = {10.1007/s10994-025-06907-w},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--35},
-  shortjournal = {Mach. Learn.},
-  title        = {An efficient model training framework for green AI},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). LLiMe: Enhancing text classifier explanations with large language models. <em>ML</em>, <em>114</em>(12), 1--26. (<a href='https://doi.org/10.1007/s10994-025-06920-z'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {The widespread diffusion of text black-box classifiers necessitates explainable AI (XAI) techniques for this domain. A seminal XAI technique is Local Interpretable Model-agnostic Explanations (LIME). For text classification, LIME maps an input sentence and its neighbours into a bag of words, using a linear regressor as an interpretable model. However, this strategy has significant limitations. Neighbouring sentences are constructed solely by extracting subsets of the input sentence, which may fail to accurately capture the local decision boundary. Moreover, these subsets are not guaranteed to be representative of the classification classes, potentially leading to unbalanced or misleading interpretability. Additionally, such generated sentences might lack semantic coherence. Furthermore, the resulting explanation is often limited to confirming the relevance of a term or highlighting the impact of its removal, without providing deeper insights. This work tries to overcome these limitations by proposing LLiMean extension of LIME that exploits advances in Large Language Models (LLMs) to perform a classifier-driven generation of the neighbourhood. Our approach allows neighbours to employ a vocabulary larger than that of the input text. A generation procedure is introduced to more effectively capture the local decision boundary by ensuring generated samples span all classes involved in the classification. Additionally, an LLM-driven explanation and a counterfactual generation procedure are presented, returning the most relevant set of editing operations to influence the black-box predictor’s decision. Thus, the approach provides a richer, easier-to-interpret explanation and high-quality counterfactuals compared to standard LIME. Experiments on real datasets witness the technique’s effectiveness in providing suitable, relevant, and interpretable explanations.},
-  archive      = {J_ML},
-  author       = {Angiulli, Fabrizio and De Luca, Francesco and Fassetti, Fabio and Nisticò, Simona},
-  doi          = {10.1007/s10994-025-06920-z},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--26},
-  shortjournal = {Mach. Learn.},
-  title        = {LLiMe: Enhancing text classifier explanations with large language models},
-  volume       = {114},
-  year         = {2025},
-}
-</textarea>
-</details></li>
-<li><details>
-<summary>
-(2025). Model-driven validation of visual explanations for multimodal emotion recognition. <em>ML</em>, <em>114</em>(12), 1--27. (<a href='https://doi.org/10.1007/s10994-025-06921-y'>www</a>)
-</summary>
-<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
-@article{ ,
-  abstract     = {AI-based emotion recognition approaches may benefit from the integration of multimodal data, but their explainability and validation is still a critical challenge. Indeed, the limited neurophysiological understanding of novel multimodal features, e.g. brain-heart interaction, can be insufficient to assess whether the AI-extracted physiological insights (i.e., the model explanations) accurately reflect the real underlying physiological processes. To validate the explanations obtained by an AI-based model in this context, we introduce a novel framework that autonomously identifies the optimal explanations for a black-box model used in emotion recognition. Our approach leverages a convolutional neural network to process BHI features, which are derived from EEG and HRV data and rearranged as images. A model-agnostic methodology is employed to extract local explanations, which are then dynamically evaluated to select the most accurate for representing specific emotional states. The effectiveness of the proposed framework is evaluated across multiple classification tasks, including up to 9-level arousal and valence emotion classification, as well as nine discrete emotions classification, using the MAHNOB-HCI and DEAP datasets. The system achieved remarkable accuracy levels, consistently reaching approximately 97–98% across all tasks. Furthermore, our dynamic selection framework revealed that Integrated Gradients outperformed other state-of-the-art explainable AI approaches in reliably capturing global explanations.},
-  archive      = {J_ML},
-  author       = {Gagliardi, Guido and Alfeo, Antonio Luca and Catrambone, Vincenzo and Cimino, Mario G. C. A. and De Vos, Maarten and Valenza, Gaetano},
-  doi          = {10.1007/s10994-025-06921-y},
-  journal      = {Machine Learning},
-  month        = {12},
-  number       = {12},
-  pages        = {1--27},
-  shortjournal = {Mach. Learn.},
-  title        = {Model-driven validation of visual explanations for multimodal emotion recognition},
-  volume       = {114},
-  year         = {2025},
+  title        = {DiverSeed: Integrating active learning for target domain data generation in instruction tuning},
+  volume       = {115},
+  year         = {2026},
 }
 </textarea>
 </details></li>
